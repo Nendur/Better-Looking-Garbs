@@ -1,10 +1,12 @@
 Changelog:
 
+  New hair and beardstyles for Norse,
+  the beards and female hair are from SeeK's Proper Northmen.
   New pupil/iris layers for West-African portraits.
   Changed king+ tier Hellenic shield models to a decorated style.
   Using unused alternate shield models for Jewish religion.
-  Fixed Ugric falback portraits.
-  More ironman portait versions.
+  Fixed Ugric fallback portraits.
+  More ironman portrait versions.
   Added Celtiberian portraits for mod use.
   Replaced Fylkir crown with the Norse winged religious head crown.
 

@@ -417,9 +417,9 @@ if [ -f "${DLC}070.dlc" ]; then
 	fi
 else
 	echo "Monks and Mystics Content Pack absent."
-	#if [[ $norse -eq 1 ]]; then
-	#	LIST="$LIST dlc070rdlc020/*"
-	#fi
+	if [[ $norse -eq 1 ]]; then
+		LIST="$LIST dlc070rdlc020/*"
+	fi
 	if [ -f "${DLC}037.dlc" ]; then
 		LIST="$LIST dlc070rdlc037/*"
 	fi

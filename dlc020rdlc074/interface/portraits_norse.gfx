@@ -239,26 +239,26 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	#spriteType = {
-	#	name = "GFX_norse_male_beard_behind_christian"
-	#	texturefile = "gfx\\fallbacks\\western_pagan_male\\northman_male_beard_behind_1.dds"
-	#	noOfFrames = 13
-	#	norefcount = yes
-	#}
+	spriteType = {
+		name = "GFX_norse_male_beard_behind_christian"
+		texturefile = "gfx\\fallbacks\\western_pagan_male\\northman_male_beard_behind_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
 
-	#spriteType = {
-	#	name = "GFX_norse_male_beard_behind_midage_christian"
-	#	texturefile = "gfx\\fallbacks\\western_pagan_male\\northman_male_beard_behind_2.dds"
-	#	noOfFrames = 13
-	#	norefcount = yes
-	#}
+	spriteType = {
+		name = "GFX_norse_male_beard_behind_midage_christian"
+		texturefile = "gfx\\fallbacks\\western_pagan_male\\northman_male_beard_behind_2.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
 
-	#spriteType = {
-	#	name = "GFX_norse_male_beard_behind_oldage_christian"
-	#	texturefile = "gfx\\fallbacks\\western_pagan_male\\northman_male_beard_behind_3.dds"
-	#	noOfFrames = 13
-	#	norefcount = yes
-	#}
+	spriteType = {
+		name = "GFX_norse_male_beard_behind_oldage_christian"
+		texturefile = "gfx\\fallbacks\\western_pagan_male\\northman_male_beard_behind_3.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
 
 	spriteType = {
 		name = "GFX_norse_male_base"
