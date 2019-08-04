@@ -1,0 +1,95 @@
+objectTypes = {
+	################################################
+	#### HEAVY_INFANTRY ############################
+	################################################
+
+	pdxmesh = {
+		name = "frankishgfx_HEAVY_INFANTRY_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_frankish.mesh"
+		scale = 1.04f
+	}
+	pdxmesh = {
+		name = "frankishgfx_HEAVY_INFANTRY_shield"
+		file = "gfx\models\Attachments\westerngfx_early_kiteshield_heavy.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_INFANTRY ############################
+	################################################
+	pdxmesh = {
+		name = "frankishgfx_LIGHT_INFANTRY_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_frankish.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_ARCHERS_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_southern_archer.mesh"
+		scale = 1.22f
+	}
+
+	################################################
+	#### PIKEMEN ###################################
+	################################################
+
+	pdxmesh = {
+		name = "frankishgfx_PIKEMEN_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_frankish.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### KNIGHTS ###################################
+	################################################
+
+	pdxmesh = {
+		name = "frankishgfx_KNIGHTS_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_celtic.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_KNIGHTS_shield"
+		file = "gfx\models\Attachments\westerngfx_early_kiteshield_heavy.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_CAVALRY #############################
+	################################################
+
+	pdxmesh = {
+		name = "frankishgfx_LIGHT_CAVALRY_early"
+		file = "gfx\models\westerngfx_early_light_horse.mesh"
+
+		animation = { id = "attack"		type = "char_horse_attack_animation" }
+		animation = { id = "idle"		type = "char_horse_idle_animation" }
+		animation = { id = "move"		type = "char_horse_moving_animation" }
+
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_LIGHT_CAVALRY_rider_early"
+		file = "gfx\models\westerngfx_early_light_cavalry.mesh"
+
+		animation = { id = "attack"		type = "char_light_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "char_light_cavalry_idle_animation" }
+		animation = { id = "move"		type = "char_light_cavalry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_LIGHT_CAVALRY_weapon_early"
+		file = "gfx\models\Attachments\char_early_pike.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_LIGHT_CAVALRY_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_frankish.mesh"
+		scale = 1.0f
+	}
+}

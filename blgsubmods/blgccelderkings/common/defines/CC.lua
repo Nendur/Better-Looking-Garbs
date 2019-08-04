@@ -1,0 +1,2 @@
+NDefines.NGraphics.CITY_MAIN_BUILDING_LEVEL_2 = 15
+NDefines.NGraphics.CITY_MAIN_BUILDING_LEVEL_3 = 30

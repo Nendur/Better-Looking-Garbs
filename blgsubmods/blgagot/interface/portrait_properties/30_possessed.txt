@@ -1,0 +1,70 @@
+#p30 eye effects
+30 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 100
+			is_alive = no
+		}
+	}
+	1 = { #Demon Child (fantasy only)
+		factor = 100 
+		modifier = {
+			factor = 0
+			NOT = {
+				has_character_modifier = demon_horns
+			}
+		}
+	}
+	2 = { # possessed
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = possessed }
+		}
+	}
+	3 = { # wolfblooded
+		factor = 100
+		modifier = {
+			factor = 0
+			NOR = {
+				culture_group = dragon_group
+				has_character_modifier = wolf_blood
+				has_character_flag = demon_child
+				has_character_flag = demon_child_fake
+				has_character_flag = demon_child_non_pagan
+			}
+		}
+	}
+	4 = { # incapable
+		factor = 100
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = incapable
+				trait = sick_incapable
+			}
+		}
+	}
+	5 = { # lunatic
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = lunatic }
+		}
+	}
+	6 = { # depressed
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = depressed }
+		}
+	}
+	7 = { # stressed
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = stressed }
+		}
+	}
+}

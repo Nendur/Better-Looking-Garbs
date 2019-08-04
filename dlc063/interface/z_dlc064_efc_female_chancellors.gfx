@@ -1,0 +1,134 @@
+objectTypes = {
+
+#Easterngfx
+
+	pdxmesh = {
+		name = "easterngfx_job_chancellor_female"
+		file = "gfx/models/Mapindicators/cote_western_female_chancellor.mesh"
+		animation = { id = "idle"		type = "cote_western_female_chancellor_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "easterngfx_job_treasurer_female"
+		file = "gfx/models/Mapindicators/cote_western_female_stewardess.mesh"
+		animation = { id = "idle"		type = "cote_western_female_stewardess_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "easterngfx_job_spymaster_female"
+		file = "gfx/models/Mapindicators/cote_western_female_spymaster.mesh"
+		animation = { id = "idle"		type = "cote_western_female_spymaster_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "easterngfx_job_marshal_female"
+		file = "gfx/models/Mapindicators/cote_western_female_marshal.mesh"
+		animation = { id = "idle"		type = "cote_western_female_marshal_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "ugricgfx_job_marshal_female"
+		file = "gfx/models/Mapindicators/cote_western_female_marshal.mesh"
+		animation = { id = "idle"		type = "cote_western_female_marshal_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "easterngfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_western_female_spiritual.mesh"
+		animation = { id = "idle"		type = "cote_western_female_spiritual_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "orthodox_dlc_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_western_female_spiritual.mesh"
+		animation = { id = "idle"		type = "cote_western_female_spiritual_idle_animation" }
+		scale = 1.0
+	}
+
+# Byzantinegfx
+
+	pdxmesh = {
+		name = "byzantinegfx_job_chancellor_female"
+		file = "gfx/models/Mapindicators/cote_western_female_chancellor.mesh"
+		animation = { id = "idle"		type = "cote_western_female_chancellor_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_job_treasurer_female"
+		file = "gfx/models/Mapindicators/cote_western_female_stewardess.mesh"
+		animation = { id = "idle"		type = "cote_western_female_stewardess_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_job_spymaster_female"
+		file = "gfx/models/Mapindicators/cote_western_female_spymaster.mesh"
+		animation = { id = "idle"		type = "cote_western_female_spymaster_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_job_marshal_female"
+		file = "gfx/models/Mapindicators/cote_western_female_marshal.mesh"
+		animation = { id = "idle"		type = "cote_western_female_marshal_idle_animation" }
+		scale = 1.0
+	}
+
+# Africangfx
+	pdxmesh = {
+		name = "africangfx_job_chancellor_female"
+		file = "gfx/models/Mapindicators/cote_mongol_chancellor_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_chancellor_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "africangfx_job_treasurer_female"
+		file = "gfx/models/Mapindicators/cote_mongol_steward_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_steward_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "africangfx_job_spymaster_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spymaster_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spymaster_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "africangfx_job_marshal_female"
+		file = "gfx/models/Mapindicators/cote_mongol_marshal_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_marshal_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "africangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 1.0
+	}
+
+# Mesoamerican
+	pdxmesh = {
+		name = "mesoamericangfx_job_spiritual"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "mesoamericangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 1.0
+	}
+}

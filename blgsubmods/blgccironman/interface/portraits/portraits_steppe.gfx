@@ -1,0 +1,62 @@
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_clothing_pecheneg_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_culture = pecheneg
+					portrait_culture = khazar
+					portrait_culture = bolghar
+				}
+			}
+		}
+
+		layer = {
+			"GFX_pecheneg_male_clothes_behind:c0"
+			"GFX_pecheneg_male_headgear_behind:c1"
+			"GFX_pecheneg_male_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_pecheneg_male_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {10 12 13}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_pecheneg_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_culture = pecheneg
+					portrait_culture = khazar
+					portrait_culture = bolghar
+				}
+			}
+		}
+
+		layer = {
+			"GFX_pecheneg_female_clothes_behind:c0"
+			"GFX_pecheneg_female_headgear_behind:c1"
+			"GFX_pecheneg_female_clothes:c2"
+			"GFX_cuman_female_headgear_mid:c3"
+			"GFX_empty:c4"
+			"GFX_pecheneg_female_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {10 12 13}
+	}
+}

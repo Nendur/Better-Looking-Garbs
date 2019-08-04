@@ -1,0 +1,70 @@
+blg_italian = {
+	culture_group = latin
+}
+
+blg_north_african = {
+	culture_group = central_african
+}
+
+blg_french = {
+	always = no
+}
+
+blg_veiled_tagelmust = {
+	always = no
+}
+
+blg_uncrowned = {
+	always = no
+}
+
+blg_saint = {
+	always = no
+}
+
+blg_desert_monk = {
+	always = no
+}
+
+blg_petty_empire = {
+	always = no
+}
+
+blg_royalty = {
+	always = no
+}
+
+blg_crowned = {
+	always = no
+}
+
+blg_religion_orthodox = {
+	OR = {
+		religion = adoptionism
+		religion = sabellianism
+		religion = psilanthropism
+		religion = nicene
+		religion = binitarian
+		religion = marcionism
+		religion = apollinarian
+		religion = docetic
+		religion = pneumatomachians
+		religion = patripassianism
+		religion = georgian_orthodox
+	}
+}
+
+blg_religion_orientorthodox = {
+	OR = {
+		religion = valentinianism
+		religion = audianistic
+		religion = monarchianism
+	}
+}
+
+religion_openly_celtic_or_reformed_trigger = {
+	OR = {
+		religion = celtic_pagan_reformed
+		religion = celtic_pagan
+	}
+}

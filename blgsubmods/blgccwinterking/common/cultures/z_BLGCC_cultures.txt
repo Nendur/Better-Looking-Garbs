@@ -1,0 +1,155 @@
+celtic = {
+	graphical_cultures = { celticgfx westerngfx }
+
+	romanobritish = {
+		graphical_cultures = { gallicgfx bretongfx }
+	}
+	armorican = {
+		graphical_cultures = { bretongfx }
+	}
+	breton = {
+		graphical_cultures = { bretongfx }
+	}
+}
+
+germanic = {
+	graphical_cultures = { westerngfx }
+
+	anglosaxon = {
+		graphical_cultures = { saxongfx englishgfx }
+	}
+	oldfrisian = {
+		graphical_cultures = { saxongfx englishgfx }
+	}
+	frisian = {
+		graphical_cultures = { saxongfx englishgfx }
+	}
+	oldfrankish = {
+		graphical_cultures = { oldfrankishgfx germangfx }
+		unit_graphical_cultures = { oldfrankishgfx frankishgfx }
+	}
+	frankish = {
+		graphical_cultures = { oldfrankishgfx }
+		unit_graphical_cultures = { oldfrankishgfx }
+	}
+	dutch = {
+		graphical_cultures = { dutchgfx }
+	}
+	ostrogoth = {
+		graphical_cultures = { crimeangfx germangfx }
+	}
+	oldsaxon = {
+		graphical_cultures = { saxongfx englishgfx }
+	}
+	saxon = {
+		graphical_cultures = { saxongfx englishgfx }
+	}
+	jute = {
+		graphical_cultures = { saxongfx englishgfx }
+	}
+	angle = {
+		graphical_cultures = { saxongfx englishgfx }
+	}
+	burgundian = {
+		graphical_cultures = { lombardgfx germangfx occitangfx }
+	}
+	visigoth = {
+		graphical_cultures = { visigothgfx southerngfx }
+	}
+	taifal = {
+		graphical_cultures = { alangfx }
+	}
+	norse_gael = {
+		graphical_cultures = { norsegaelgfx norsegfx celticgfx }
+	}
+	vandal = {
+		graphical_cultures = { visigothgfx germangfx southerngfx }
+	}
+	suebic = {
+		graphical_cultures = { germangfx }
+	}
+	alemannic = {
+		graphical_cultures = { germangfx }
+	}
+	bavarian = {
+		graphical_cultures = { germangfx }
+	}
+}
+
+altaic = {
+	graphical_cultures = { mongolgfx muslimgfx }
+
+	hunnic = {
+		graphical_cultures = { cumangfx }
+	}
+}
+
+imperiale = {
+	roman = {
+		graphical_cultures = { romangfx italiangfx southerngfx }
+	}
+	romanogallic = {
+		graphical_cultures = { gallicgfx romangfx occitangfx }
+	}
+	romanoaquitanian = {
+		graphical_cultures = { trueoccitangfx romangfx occitangfx westerngfx }
+	}
+	romanogermanic = {
+		graphical_cultures = { lombardgfx germangfx }
+	}
+	romanoscandian = {
+		graphical_cultures = { lombardgfx germangfx }
+	}
+	romanonumidian = {
+		graphical_cultures = { siciliangfx berbergfx muslimgfx }
+	}
+	romanoafrican = {
+		graphical_cultures = { siciliangfx berbergfx muslimgfx }
+	}
+	romanohispanic = {
+		graphical_cultures = { southerngfx occitangfx }
+	}
+	romanoillyrian = {
+		graphical_cultures = { romanobalkangfx croatsouthslavicgfx byzantinegfx easterngfx }
+	}
+	armenian = {
+		graphical_cultures = { georgiangfx byzantinegfx easterngfx }
+	}
+	romanosyrian = {
+		graphical_cultures = { semitegfx levantinegfx arabicgfx muslimgfx }
+	}
+	romanothracian = {
+		graphical_cultures = { romanobalkangfx serbsouthslavicgfx byzantinegfx easterngfx }
+	}
+}
+
+romance = {
+	graphical_cultures = { westerngfx }
+
+	french = {
+		graphical_cultures = { frankishgfx }
+	}
+	occitan = {
+		graphical_cultures = { trueoccitangfx occitangfx frankishgfx }
+	}
+	arpitan = {
+		graphical_cultures = { trueoccitangfx occitangfx frankishgfx }
+	}
+	gallo_burgundian = {
+		graphical_cultures = { lombardgfx trueoccitangfx occitangfx frankishgfx }
+	}
+}
+
+israelite = {
+	graphical_cultures = { byzantinegfx easterngfx }
+
+	hebrew = {
+		graphical_cultures = { semitegfx }
+	}
+}
+
+basque = {
+	vasconian = {
+		graphical_cultures = { southerngfx westerngfx }
+	}
+}

@@ -1,0 +1,192 @@
+# p6 EK Overlays (Werewolf, Chicken etc)
+35 = {
+	0 = {
+		factor = 1
+	}
+	1 = {
+		factor = 100
+		trigger = {
+			OR = {
+				trait = known_lycan
+				AND = {
+					trait = lycan
+					OR = {
+						has_character_flag = hunting_lycan
+						has_character_flag = always_lycan
+					}
+				}
+			}
+		}
+	}
+	2 =  {
+		factor = 100
+		trigger = {
+			trait = polymorph_chicken
+		}
+	}
+	3 = {
+		factor = 99
+		trigger = {
+			trait = hagraven
+		}
+		modifier = {
+			factor = 100
+			has_character_flag = hagraven_1
+		}
+	}
+	4 = {
+		factor = 99
+		trigger = {
+			trait = hagraven
+		}
+		modifier = {
+			factor = 100
+			has_character_flag = hagraven_2
+		}
+	}
+	5 = {
+		factor = 99
+		trigger = {
+			trait = hagraven
+		}
+		modifier = {
+			factor = 100
+			has_character_flag = hagraven_3
+		}
+	}
+	6 = {
+		factor = 100
+		trigger = {
+			trait = azura
+		}
+	}
+	7 = {
+		factor = 100
+		trigger = {
+			trait = boethiah
+		}
+	}
+	8 = {
+		factor = 100
+		trigger = {
+			trait = clavicus
+		}
+	}
+	9 = {
+		factor = 100
+		trigger = {
+			trait = hermaeus
+		}
+	}
+	10 = {
+		factor = 100
+		trigger = {
+			trait = hircine
+		}
+	}
+	11 = {
+		factor = 100
+		trigger = {
+			trait = malacath
+		}
+	}
+	12 = {
+		factor = 100
+		trigger = {
+			trait = mehrunes
+		}
+	}
+	13 = {
+		factor = 100
+		trigger = {
+			trait = mephala
+		}
+	}
+	14 = {
+		factor = 100
+		trigger = {
+			trait = meridia
+		}
+	}
+	15 = {
+		factor = 100
+		trigger = {
+			trait = molag_bal
+		}
+	}
+	16 = {
+		factor = 100
+		trigger = {
+			trait = namira
+		}
+	}
+	17 = {
+		factor = 100
+		trigger = {
+			trait = nocturnal
+		}
+	}
+	18 = {
+		factor = 100
+		trigger = {
+			trait = peryite
+		}
+	}
+	19 = {
+		factor = 100
+		trigger = {
+			trait = sanguine
+		}
+	}
+	20 = {
+		factor = 100
+		trigger = {
+			trait = sheogorath
+		}
+	}
+	21 = {
+		factor = 100
+		trigger = {
+			trait = vaermina
+		}
+	}
+	22 = {
+		factor = 100
+		trigger = {
+			trait = jyggalag
+		}
+	}
+	23 = {
+		factor = 100
+		trigger = {
+			trait = the_ideal_masters
+		}
+	}
+	24 = {
+		factor = 100
+		trigger = {
+			trait = almalexia
+		}
+	}
+	25 = {
+		factor = 100
+		trigger = {
+			OR = {
+				trait = sothasil
+				trait = dagothur
+			}
+		}
+	}
+	26 = {
+		factor = 100
+		trigger = {
+			trait = vivec
+		}
+	}
+	#27 = { # Beyond property limit
+	#	factor = 100
+	#	trigger = {
+	#		trait = dagothur
+	#	}
+	#}
+}

@@ -1,0 +1,31 @@
+objectTypes = {
+
+	EMFXActorType = {
+		name = "siberiangfx_LIGHT_INFANTRY"
+		actorfile = "gfx\models\fu_pikeman.xac"
+		
+		 idle   = "gfx\models\fu_infantry_2_idle.xsm"
+		 move   = "gfx\models\fu_infantry_2_moving.xsm"
+		 attack = "gfx\models\fu_infantry_2_attack.xsm"
+		
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "balticgfx_LIGHT_INFANTRY"
+		actorfile = "gfx\models\fu_light_infantry.xac"
+		
+		 idle   = "gfx\models\fu_infantry_2_idle.xsm"
+		 move   = "gfx\models\fu_infantry_2_moving.xsm"
+		 attack = "gfx\models\fu_infantry_2_attack.xsm"
+		
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "balticgfx_LIGHT_INFANTRY_helmet"
+		actorfile = "gfx\models\no_object.xac"  
+		scale = 0.000001f
+	}
+}
+

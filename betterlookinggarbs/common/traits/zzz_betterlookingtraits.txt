@@ -1,0 +1,22 @@
+blgspawn = {
+	birth = 10000
+	inherit_chance = 100
+	hidden = yes
+	random = no
+	customizer = no
+	#cached = yes
+}
+
+blgcaon = {
+	hidden = yes
+	random = no
+	customizer = no
+	opposites = { blgcaoff }
+}
+
+blgcaoff = {
+	hidden = yes
+	random = no
+	customizer = no
+	opposites = { blgcaon }
+}

@@ -1,0 +1,410 @@
+spriteTypes = {
+
+# Andalusian clothing for European Muslims
+	portraitType = {
+		name = "PORTRAIT_clothing_andalusian_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_religion = muslim_aliite_reformed
+					portrait_religion = muslim_domination_reformed
+					portrait_religion = sunni
+					portrait_religion = ashari
+					portrait_religion = athari
+					portrait_religion = maturidi
+					portrait_religion = murjiah
+					portrait_religion = zahiri
+					portrait_religion = shiite
+					portrait_religion = kharijite
+					portrait_religion = qarmatian
+					portrait_religion = sufi
+					portrait_religion = ilm_islam
+					portrait_religion = ghazi_islam
+					portrait_religion = hurufi
+					portrait_religion = mutazil
+					portrait_religion = ibadi
+					portrait_religion = marabout
+					portrait_religion = haruri
+					portrait_religion = druze
+				}
+				OR = {
+					portrait_culture = andalusian_arabic
+					portrait_culture = saqaliba
+					portrait_culture_group = latin
+					portrait_culture_group = iberian
+					portrait_culture_group = celtic
+					portrait_culture_group = central_germanic
+					portrait_culture_group = north_germanic
+					portrait_culture_group = west_germanic
+					portrait_culture_group = west_slavic
+					portrait_culture_group = east_slavic
+					portrait_culture_group = south_slavic
+					portrait_culture_group = finno_ugric
+					portrait_culture_group = baltic
+				}
+			}
+		}
+
+		layer = {
+			#"GFX_muslim_male_clothes_behind:c0"
+			"GFX_muslim_male_headgear_behind_early:c1"
+			#"GFX_andalusian_male_clothes:c2"
+			"GFX_muslim_male_headgear_mid_early:c3"
+			#"GFX_empty:c4"
+			"GFX_muslim_male_headgear_early:c5"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_andalusian_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_religion = muslim_aliite_reformed
+					portrait_religion = muslim_domination_reformed
+					portrait_religion = sunni
+					portrait_religion = ashari
+					portrait_religion = athari
+					portrait_religion = maturidi
+					portrait_religion = murjiah
+					portrait_religion = zahiri
+					portrait_religion = shiite
+					portrait_religion = kharijite
+					portrait_religion = qarmatian
+					portrait_religion = sufi
+					portrait_religion = ilm_islam
+					portrait_religion = ghazi_islam
+					portrait_religion = hurufi
+					portrait_religion = mutazil
+					portrait_religion = ibadi
+					portrait_religion = marabout
+					portrait_religion = haruri
+					portrait_religion = druze
+				}
+				OR = {
+					portrait_culture = andalusian_arabic
+					portrait_culture = saqaliba
+					portrait_culture_group = latin
+					portrait_culture_group = iberian
+					portrait_culture_group = celtic
+					portrait_culture_group = central_germanic
+					portrait_culture_group = north_germanic
+					portrait_culture_group = west_germanic
+					portrait_culture_group = west_slavic
+					portrait_culture_group = east_slavic
+					portrait_culture_group = south_slavic
+					portrait_culture_group = finno_ugric
+					portrait_culture_group = baltic
+				}
+			}
+		}
+
+		layer = {
+			#"GFX_andalusian_female_clothes_behind:c0"
+			#"GFX_andalusian_female_clothes:c2"
+			"GFX_muslim_female_headgear_behind_early:c1"
+			"GFX_muslim_female_headgear_mid_early:c3"
+			#"GFX_empty:c4"
+			"GFX_muslim_female_headgear_early:c5"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+# West-African pagan clothing
+	portraitType = {
+		name = "PORTRAIT_clothing_westafrican_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_religion = serer_reformed
+					portrait_religion = mande_pagan
+					portrait_religion = yoruba
+					portrait_religion = nyame
+					portrait_religion = anansi
+					portrait_religion = bantu_pagan_reformed
+					portrait_religion = nyakalagan_reformed
+					portrait_religion = zande_pagan_reformed
+					portrait_religion = zulu_pagan_reformed
+					portrait_religion = kintu
+					portrait_religion = batembuzi
+					portrait_religion = imana
+					portrait_religion = nyasaye
+					portrait_religion = nyau
+					portrait_religion = makonde_pagan
+					portrait_religion = mwari
+					portrait_religion = zande_pagan
+					portrait_religion = zulu_pagan
+					portrait_religion = berber_pagan_reformed
+					portrait_religion = berber_pagan
+					portrait_religion = gurzil
+					portrait_religion = amanai
+					portrait_religion = ethiopian_war_reformed
+					portrait_religion = waaq
+				}
+			}
+		}
+
+		layer = {
+			#"GFX_westafrican_male_clothes_behind:c0"
+			"GFX_westafrican_male_headgear_behind:c1"
+			#"GFX_westafrican_male_clothes:c2"
+			"GFX_empty:c3"
+			#"GFX_empty:c4"
+			"GFX_westafrican_male_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {12 13}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_westafrican_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_religion = serer_reformed
+					portrait_religion = mande_pagan
+					portrait_religion = yoruba
+					portrait_religion = nyame
+					portrait_religion = anansi
+					portrait_religion = bantu_pagan_reformed
+					portrait_religion = nyakalagan_reformed
+					portrait_religion = zande_pagan_reformed
+					portrait_religion = zulu_pagan_reformed
+					portrait_religion = kintu
+					portrait_religion = batembuzi
+					portrait_religion = imana
+					portrait_religion = nyasaye
+					portrait_religion = nyau
+					portrait_religion = makonde_pagan
+					portrait_religion = mwari
+					portrait_religion = zande_pagan
+					portrait_religion = zulu_pagan
+					portrait_religion = berber_pagan_reformed
+					portrait_religion = berber_pagan
+					portrait_religion = gurzil
+					portrait_religion = amanai
+					portrait_religion = ethiopian_war_reformed
+					portrait_religion = waaq
+				}
+			}
+		}
+
+		layer = {
+			#"GFX_westafrican_female_clothes_behind:c0"
+			"GFX_westafrican_female_headgear_behind:c1"
+			#"GFX_westafrican_female_clothes:c2"
+			"GFX_empty:c3"
+			#"GFX_empty:c4"
+			"GFX_westafrican_female_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {12 13}
+	}
+
+# Tengri pagan clothing for Europeans
+	portraitType = {
+		name = "PORTRAIT_clothing_tengri_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_religion = erlik_reformed
+					portrait_religion = tengri_bud_reformed
+					portrait_religion = tengri_confucian_reformed
+					portrait_religion = tengri_mani_reformed
+					portrait_religion = tengri_pagan_reformed
+					portrait_religion = tengri_rod_reformed
+					portrait_religion = vattisenyaly_reformed
+					portrait_religion = tengri_pagan
+					portrait_religion = tengri_ahriman
+					portrait_religion = tengri_bud
+					portrait_religion = tengri_confucian
+					portrait_religion = tengri_mani
+					portrait_religion = tengri_rod
+					portrait_religion = vattisenyaly
+					portrait_religion = erlik
+				}
+				OR = {
+					portrait_culture = hungarian
+					portrait_culture_group = latin
+					portrait_culture_group = iberian
+					portrait_culture_group = celtic
+					portrait_culture_group = central_germanic
+					portrait_culture_group = north_germanic
+					portrait_culture_group = west_germanic
+					portrait_culture_group = byzantine
+					portrait_culture_group = caucasian
+				}
+			}
+		}
+
+		layer = {
+			#"GFX_hungarian_male_clothes_behind:c0"
+			"GFX_hungarian_male_headgear_behind:c1"
+			#"GFX_hungarian_male_clothes:c2"
+			"GFX_empty:c3"
+			#"GFX_hungarian_male_clothes_infront:c4"
+			"GFX_hungarian_male_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {10 12 13}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_tengri_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_religion = erlik_reformed
+					portrait_religion = tengri_bud_reformed
+					portrait_religion = tengri_confucian_reformed
+					portrait_religion = tengri_mani_reformed
+					portrait_religion = tengri_pagan_reformed
+					portrait_religion = tengri_rod_reformed
+					portrait_religion = vattisenyaly_reformed
+					portrait_religion = tengri_pagan
+					portrait_religion = tengri_ahriman
+					portrait_religion = tengri_bud
+					portrait_religion = tengri_confucian
+					portrait_religion = tengri_mani
+					portrait_religion = tengri_rod
+					portrait_religion = vattisenyaly
+					portrait_religion = erlik
+				}
+				OR = {
+					portrait_culture = hungarian
+					portrait_culture_group = latin
+					portrait_culture_group = iberian
+					portrait_culture_group = celtic
+					portrait_culture_group = central_germanic
+					portrait_culture_group = north_germanic
+					portrait_culture_group = west_germanic
+					portrait_culture_group = byzantine
+					portrait_culture_group = caucasian
+				}
+			}
+		}
+
+		layer = {
+			#"GFX_pecheneg_female_clothes_behind:c0"
+			"GFX_pecheneg_female_headgear_behind:c1"
+			#"GFX_pecheneg_female_clothes:c2"
+			"GFX_empty:c3"
+			#"GFX_empty:c4"
+			"GFX_pecheneg_female_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {10 12 13}
+	}
+
+# Slavic pagan clothing
+	portraitType = {
+		name = "PORTRAIT_clothing_slavic_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_religion = slavic_pagan_reformed
+					portrait_religion = perun
+					portrait_religion = veles
+					portrait_religion = slavic_pagan
+					portrait_religion = rod
+					portrait_religion = svaroh
+					portrait_religion = dazhbog
+					portrait_religion = svetovid
+				}
+			}
+		}
+
+		layer = {
+			"GFX_westernslavic_male_clothes_behind_early:c0"
+			"GFX_westernslavic_male_headgear_behind_early:c1"
+			"GFX_westernslavic_male_clothes_early:c2"
+			"GFX_westernslavic_male_headgear_mid_early:c3"
+			"GFX_empty:c4"
+			"GFX_westernslavic_male_headgear_early:c5"
+			"GFX_empty:c7"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_slavic_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_religion = slavic_pagan_reformed
+					portrait_religion = perun
+					portrait_religion = veles
+					portrait_religion = slavic_pagan
+					portrait_religion = rod
+					portrait_religion = svaroh
+					portrait_religion = dazhbog
+					portrait_religion = svetovid
+				}
+			}
+		}
+
+		layer = {
+			"GFX_westernslavic_female_clothes_behind_early:c0"
+			"GFX_westernslavic_female_headgear_behind_early:c1"
+			"GFX_westernslavic_female_clothes_early:c2"
+			"GFX_westernslavic_female_headgear_mid_early:c3"
+			"GFX_westernslavic_female_clothes_infront_early:c4"
+			"GFX_westernslavic_female_headgear_early:c5"
+			"GFX_empty:c7"
+		}
+
+		headgear_that_hides_hair = { 0 2 3 }
+	}
+}

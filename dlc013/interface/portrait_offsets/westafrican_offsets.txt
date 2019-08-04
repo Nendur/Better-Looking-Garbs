@@ -1,0 +1,3 @@
+GFX_westafrican_male_nose 76x69
+GFX_westafrican_male_nose_midage 76x69
+GFX_westafrican_male_nose_oldage 76x69

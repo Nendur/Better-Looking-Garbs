@@ -1,0 +1,61 @@
+# p6 imprisoned
+6 = {
+	0 = { # blank
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				prisoner = yes
+				#death_reason = death_dungeon
+			}
+		}
+	}
+	1 = { # prisoner
+		factor = 100
+		hide_layers = { 19 = { } } #Hide layers with special crowns.
+		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = { 31 = { } }
+		hide_layers = { 32 = { } }
+		hide_layers = { 33 = { } }
+		hide_layers = { 36 = { } } #Hide scepters.
+		modifier = {
+			factor = 0
+			OR = {
+				prisoner = no
+				practical_age < 16
+				has_character_modifier = house_arrest
+				has_character_modifier = the_oubliette
+			}
+			#NOT = { death_reason = death_dungeon }
+		}
+	}
+	2 = { # clean prison
+		factor = 100
+		hide_layers = { 19 = { } } #Hide layers with special crowns.
+		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = { 31 = { } }
+		hide_layers = { 32 = { } }
+		hide_layers = { 33 = { } }
+		hide_layers = { 36 = { } } #Hide scepters.
+		modifier = {
+			factor = 0
+			NOR = {
+				has_character_modifier = house_arrest
+				practical_age < 16
+			}
+		}
+	}
+	3 = { # iron collar
+		factor = 100
+		hide_layers = { 19 = { } } #Hide layers with special crowns.
+		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = { 31 = { } }
+		hide_layers = { 32 = { } }
+		hide_layers = { 33 = { } }
+		hide_layers = { 36 = { } } #Hide scepters.
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = the_oubliette }
+		}
+	}
+}

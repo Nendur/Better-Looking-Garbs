@@ -1,0 +1,535 @@
+# p4 beard
+4 = {
+	0 = { #Beardless when young
+		factor = 40
+		modifier = {
+			factor = 0
+			practical_age > 21
+			NOT = { trait = eunuch }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_beard value = 1 } }
+			NAND = {
+				likes_buddhists = yes
+				is_priest = yes
+			}
+		}
+		modifier = {
+			factor = 0.1
+			true_religion_group = christian
+			NOR = {
+				true_religion = catholic
+				is_heresy_of = catholic
+			}
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 1 }
+			}
+		}
+	}
+
+	1 = { #Light beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				true_religion_group = christian
+				true_religion_group = muslim
+				likes_buddhists = yes
+			}
+			NOR = {
+				true_religion = catholic
+				is_heresy_of = catholic
+				graphical_culture = byzantinegfx
+			}
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 2 }
+			}
+		}
+	}
+
+	2 = { #Beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				true_religion_group = muslim
+				likes_buddhists = yes
+			}
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = norsegaelgfx
+				graphical_culture = celtiberiangfx
+			}
+			NOR = {
+				true_religion_group = pagan_group
+				is_tribal = yes
+				is_nomadic = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 3 }
+			}
+		}
+	}
+
+	3 = { #Beard
+		factor = 1
+		modifier = {
+			factor = 0
+			likes_buddhists = yes
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 4 }
+			}
+		}
+	}
+
+	4 = { #Small mustache and beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				true_religion_group = christian
+				true_religion_group = muslim
+				likes_buddhists = yes
+			}
+			NOR = {
+				true_religion = catholic
+				is_heresy_of = catholic
+				graphical_culture = byzantinegfx
+			}
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 5 }
+			}
+		}
+	}
+
+	5 = { #Spanish mustache
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				true_religion_group = christian
+				true_religion_group = muslim
+				likes_buddhists = yes
+			}
+			NOR = {
+				true_religion = catholic
+				is_heresy_of = catholic
+				graphical_culture = byzantinegfx
+			}
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 6 }
+			}
+		}
+	}
+
+	6 = { #Beard no mustache
+		factor = 1
+		modifier = {
+			factor = 0
+			likes_buddhists = yes
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 7 }
+			}
+		}
+	}
+
+	7 = { #Evil stache
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				true_religion_group = christian
+				likes_buddhists = yes
+			}
+			NOR = {
+				true_religion = catholic
+				is_heresy_of = catholic
+			}
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = norsegaelgfx
+				graphical_culture = celtiberiangfx
+			}
+			NOR = {
+				true_religion_group = pagan_group
+				is_tribal = yes
+				is_nomadic = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 8 }
+			}
+		}
+	}
+
+	8 = { # DLC beards
+		factor = 1
+		modifier = {
+			factor = 0
+			likes_buddhists = yes
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 9 }
+			}
+		}
+	}
+
+	9 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			likes_buddhists = yes
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 10 }
+			}
+		}
+	}
+
+	10 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				true_religion_group = christian
+				likes_buddhists = yes
+			}
+			NOR = {
+				religion = catholic
+				is_heresy_of = catholic
+			}
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 11 }
+			}
+		}
+	}
+
+	11 = { # Last Indian beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = norsegaelgfx
+				graphical_culture = celtiberiangfx
+				graphical_culture = crimeangfx
+				graphical_culture = turkishgfx
+				graphical_culture = steppegfx
+				graphical_culture = centralasiangfx
+				graphical_culture = alangfx
+				graphical_culture = sogdiangfx
+				graphical_culture = persiangfx
+				graphical_culture = georgiangfx
+				graphical_culture = indusgfx
+				graphical_culture = levantinegfx
+			}
+		}
+		modifier = {
+			factor = 0
+			likes_buddhists = yes
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 12 }
+			}
+		}
+	}
+
+	12 = { # New Byzantine beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = norsegaelgfx
+				graphical_culture = celtiberiangfx
+				graphical_culture = crimeangfx
+				graphical_culture = turkishgfx
+				graphical_culture = steppegfx
+				graphical_culture = centralasiangfx
+				graphical_culture = alangfx
+				graphical_culture = sogdiangfx
+				graphical_culture = persiangfx
+				graphical_culture = georgiangfx
+				graphical_culture = indusgfx
+				graphical_culture = levantinegfx
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				true_religion_group = christian
+				likes_buddhists = yes
+			}
+			NOR = {
+				true_religion = catholic
+				is_heresy_of = catholic
+			}
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 13 }
+			}
+		}
+	}
+
+	13 = { # New Byzantine beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = norsegaelgfx
+				graphical_culture = celtiberiangfx
+				graphical_culture = crimeangfx
+				graphical_culture = turkishgfx
+				graphical_culture = steppegfx
+				graphical_culture = centralasiangfx
+				graphical_culture = alangfx
+				graphical_culture = sogdiangfx
+				graphical_culture = siberiangfx
+				graphical_culture = khitangfx
+				graphical_culture = persiangfx
+				graphical_culture = georgiangfx
+				graphical_culture = indusgfx
+				graphical_culture = levantinegfx
+				graphical_culture = indiangfx
+				graphical_culture = centralindiangfx
+				graphical_culture = assamesegfx
+				graphical_culture = afghangfx
+			}
+		}
+		modifier = {
+			factor = 0
+			likes_buddhists = yes
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 14 }
+			}
+		}
+	}
+
+	14 = { # New Byzantine beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = norsegaelgfx
+				graphical_culture = celtiberiangfx
+				graphical_culture = crimeangfx
+				graphical_culture = turkishgfx
+				graphical_culture = steppegfx
+				graphical_culture = centralasiangfx
+				graphical_culture = alangfx
+				graphical_culture = sogdiangfx
+				graphical_culture = siberiangfx
+				graphical_culture = khitangfx
+				graphical_culture = persiangfx
+				graphical_culture = georgiangfx
+				graphical_culture = indusgfx
+				graphical_culture = indiangfx
+				graphical_culture = centralindiangfx
+				graphical_culture = assamesegfx
+				graphical_culture = afghangfx
+			}
+		}
+		modifier = {
+			factor = 0
+			likes_buddhists = yes
+			is_priest = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 15 }
+			}
+		}
+	}
+
+	15 = { # Loopback to beardless
+		factor = 4
+		modifier = {
+			factor = 0.1
+			true_religion_group = muslim
+		}
+		modifier = {
+			factor = 0
+			true_religion_group = christian
+			NOR = {
+				true_religion = catholic
+				is_heresy_of = catholic
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				true_religion = catholic
+				is_heresy_of = catholic
+				religion_openly_hellenic_or_reformed_trigger = yes
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				culture = italian
+				culture = sardinian
+				culture = norman
+				culture = roman
+				culture = pecheneg
+				blg_italian = yes
+			}
+		}
+		modifier = {
+			factor = 3
+			culture_group = iberian
+		}
+		modifier = {
+			factor = 100 #No longer bearded Ottavian.
+			character = 145290
+		}
+		modifier = { # frankish men less likely to wear beards after the 12th century
+			factor = 2
+			year = 1100
+			culture = frankish
+		}
+		modifier = { # frankish men less likely to wear beards after the 12th century
+			factor = 2
+			year = 1150
+			culture = frankish
+		}
+		modifier = { # frankish men less likely to wear beards after the 12th century
+			factor = 2
+			year = 1200
+			culture = frankish
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = norsegaelgfx
+				graphical_culture = celtiberiangfx
+				graphical_culture = crimeangfx
+				graphical_culture = turkishgfx
+				graphical_culture = steppegfx
+				graphical_culture = centralasiangfx
+				graphical_culture = alangfx
+				graphical_culture = sogdiangfx
+				graphical_culture = siberiangfx
+				graphical_culture = khitangfx
+				graphical_culture = persiangfx
+				graphical_culture = georgiangfx
+				graphical_culture = indusgfx
+				graphical_culture = indiangfx
+				graphical_culture = centralindiangfx
+				graphical_culture = assamesegfx
+				graphical_culture = afghangfx
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 1 }
+			}
+		}
+	}
+}

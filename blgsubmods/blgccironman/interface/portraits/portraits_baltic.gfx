@@ -1,0 +1,86 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_baltic_male_headgear_behind"
+		texturefile = "gfx\\characters\\baltic_male\\baltic_male_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_baltic_male_headgear"
+		texturefile = "gfx\\characters\\baltic_male\\baltic_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_baltic_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_culture_group = baltic
+			}
+		}
+
+		layer = {
+			"GFX_westernslavic_male_clothes_behind_early:c0"
+			"GFX_baltic_male_headgear_behind:c1"
+			"GFX_westernslavic_male_clothes_early:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_baltic_male_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	spriteType = {
+		name = "GFX_baltic_female_headgear_behind"
+		texturefile = "gfx\\characters\\baltic_female\\baltic_female_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_baltic_female_headgear"
+		texturefile = "gfx\\characters\\baltic_female\\baltic_female_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_baltic_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_culture_group = baltic
+			}
+		}
+
+		layer = {
+			"GFX_westernslavic_female_clothes_behind_early:c0"
+			"GFX_baltic_female_headgear_behind:c1"
+			"GFX_westernslavic_female_clothes_early:c2"
+			"GFX_empty:c3"
+			"GFX_westernslavic_female_clothes_infront_early:c4"
+			"GFX_baltic_female_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+}

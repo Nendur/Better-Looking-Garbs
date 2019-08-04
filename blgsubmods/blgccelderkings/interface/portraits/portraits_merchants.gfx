@@ -1,0 +1,138 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_byzmerchant_male_clothes_behind"
+		texturefile = "gfx\\characters\\merchant_male\\byzmerchant_male_clothes_behind.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzmerchant_male_clothes"
+		texturefile = "gfx\\characters\\merchant_male\\byzmerchant_male_clothes.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_romanmerchant_female_clothes_behind"
+		texturefile = "gfx\\characters\\merchant_female\\roman_female_clothes_behind.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_romanmerchant_female_clothes"
+		texturefile = "gfx\\characters\\merchant_female\\roman_female_clothes.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_merchant_latin_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 2500
+				portrait_is_patrician = yes
+				portrait_is_female = no
+				portrait_in_command = no
+				portrait_clothing = yes
+				portrait_culture_group = nedic
+			}
+		}
+
+		layer = {
+			"GFX_merchant_male_clothes_behind:c0"
+			"GFX_merchant_male_headgear_behind:c1"
+			"GFX_merchant_male_clothes:c2"
+			"GFX_merchant_male_headgear:c5"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_empty:c7"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_merchant_latin_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 2500
+				portrait_is_patrician = yes
+				portrait_is_female = yes
+				portrait_in_command = no
+				portrait_clothing = yes
+				portrait_culture_group = nedic
+			}
+		}
+
+		layer = {
+			"GFX_merchant_female_clothes_behind:c0"
+			"GFX_merchant_female_headgear_behind:c1"
+			"GFX_merchant_female_clothes:c2"
+			"GFX_merchant_female_headgear:c5"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_empty:c7"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_merchant_yokudan_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 2500
+				portrait_is_patrician = yes
+				portrait_is_female = no
+				portrait_in_command = no
+				portrait_clothing = yes
+				portrait_culture_group = yokudan_group
+			}
+		}
+
+		layer = {
+			"GFX_byzmerchant_male_clothes_behind:c0"
+			"GFX_merchant_male_headgear_behind:c1"
+			"GFX_byzmerchant_male_clothes:c2"
+			"GFX_merchant_male_headgear:c5"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_empty:c7"
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_merchant_yokudan_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 2600
+				portrait_is_patrician = yes
+				portrait_is_female = yes
+				portrait_in_command = no
+				portrait_clothing = yes
+				portrait_culture_group = yokudan_group
+			}
+		}
+
+		layer = {
+			"GFX_romanmerchant_female_clothes_behind:c0"
+			"GFX_merchant_female_headgear_behind:c1"
+			"GFX_romanmerchant_female_clothes:c2"
+			"GFX_merchant_female_headgear:c5"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_empty:c7"
+		}
+	}
+}

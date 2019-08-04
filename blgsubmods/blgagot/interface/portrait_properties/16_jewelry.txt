@@ -1,0 +1,45 @@
+# p16 valyrian steel indicator
+16 = {
+	0 = { # blank
+		factor = 100
+		# modifier = {
+			# factor = 0
+			# chinese_empress_jewelry_trigger = yes
+		# }
+		modifier = {
+			factor = 0
+			any_artifact = {
+				OR = {
+					has_artifact_flag = valyrian_steel 
+					has_artifact_flag = valyrian_armour
+					artifact_type = lightbringer
+					artifact_type = dragon_egg
+				}
+			}
+		}
+	}
+
+	1 = { # Full face pearls and earrings/valyrian steel indicator
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { 
+				any_artifact = {
+					OR = {
+						has_artifact_flag = valyrian_steel 
+						has_artifact_flag = valyrian_armour
+						artifact_type = lightbringer
+					}
+				}
+			}
+		}
+	}
+	
+	2 = { # pearl earrings only/dragon egg indicator
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { has_artifact = dragon_egg }
+		}
+	}
+}

@@ -1,0 +1,460 @@
+#p33 frankish Culture Underlayer and Hair - Female
+33 = {
+	0 = { # Blank
+		factor = 100
+		modifier = {
+			factor = 0
+			#has_dlc = "Holy Fury"
+			is_female = yes
+			#is_priest = no
+			#is_merchant_republic = no
+			NOR = {
+				has_portrait_property = { layer = 5 index = 9 }
+				has_portrait_property = { layer = 5 index = 10 }
+				has_portrait_property = { layer = 5 index = 12 }
+				has_portrait_property = { layer = 5 index = 13 }
+			}
+			OR = {
+				higher_tier_than = BARON
+				spouse = { higher_tier_than = BARON }
+			}
+			OR = {
+				culture = frankish
+				culture = occitan
+				blg_french = yes
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 1 } }
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_underlayer value = 0 }
+				is_variable_equal = { which = ca_underlayer value = 1 }
+			}
+		}
+	}
+	1 = { # Empress / Queen Pre-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+					year = 1180
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 2 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 2 }
+		}
+	}
+	2 = { # Empress / Queen Pre-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+					year = 1180
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 3 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 3 }
+		}
+	}
+	3 = { # Empress / Queen Pre-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+					year = 1180
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 4 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 4 }
+		}
+	}
+	4 = { # Empress / Queen Pre-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+					year = 1180
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 5 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 5 }
+		}
+	}
+	5 = { # Empress / Queen Post-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+					NOT = { year = 1180 }
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 6 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 6 }
+		}
+	}
+	6 = { # Empress / Queen Post-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+					NOT = { year = 1180 }
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 7 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 7 }
+		}
+	}
+	7 = { # Empress / Queen Post-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+					NOT = { year = 1180 }
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 8 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 8 }
+		}
+	}
+	8 = { # Empress / Queen Post-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+					NOT = { year = 1180 }
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 9 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 9 }
+		}
+	}
+	9 = { # Duchess Early
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { year = 1180 }
+					OR = {
+						real_tier = DUKE
+						spouse = { real_tier = DUKE }
+					}
+					NOR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 10 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 10 }
+		}
+	}
+	10 = { # Duchess Early
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { year = 1180 }
+					OR = {
+						real_tier = DUKE
+						spouse = { real_tier = DUKE }
+					}
+					NOR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 11 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 11 }
+		}
+	}
+	11 = { # Duchess Early
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { year = 1180 }
+					OR = {
+						real_tier = DUKE
+						spouse = { real_tier = DUKE }
+					}
+					NOR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 12 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 12 }
+		}
+	}
+	12 = { # Duchess Early
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { year = 1180 }
+					OR = {
+						real_tier = DUKE
+						spouse = { real_tier = DUKE }
+					}
+					NOR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 13 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 13 }
+		}
+	}
+	13 = { # Duchess Post-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					year = 1180
+					OR = {
+						real_tier = DUKE
+						spouse = { real_tier = DUKE }
+					}
+					NOR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 14 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 14 }
+		}
+	}
+	14 = { # Duchess Post-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					year = 1180
+					OR = {
+						real_tier = DUKE
+						spouse = { real_tier = DUKE }
+					}
+					NOR = {
+						higher_real_tier_than = DUKE
+						spouse = { higher_real_tier_than = DUKE }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 15 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 15 }
+		}
+	}
+	15 = { # Countess Early
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { year = 1180 }
+					NOR = {
+						higher_real_tier_than = COUNT
+						spouse = { higher_real_tier_than = COUNT }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 16 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 16 }
+		}
+	}
+	16 = { # Countess Early
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { year = 1180 }
+					NOR = {
+						higher_real_tier_than = COUNT
+						spouse = { higher_real_tier_than = COUNT }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 17 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 17 }
+		}
+	}
+	17 = { # Countess Early
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { year = 1180 }
+					NOR = {
+						higher_real_tier_than = COUNT
+						spouse = { higher_real_tier_than = COUNT }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 18 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 18 }
+		}
+	}
+	18 = { # Countess Post-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					year = 1180
+					NOR = {
+						higher_real_tier_than = COUNT
+						spouse = { higher_real_tier_than = COUNT }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 19 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 19 }
+		}
+	}
+	19 = { # Countess Post-1180
+		factor = 5
+		hide_layers = { 1 = { } }
+		trigger = {
+			OR = {
+				AND = {
+					year = 1180
+					NOR = {
+						higher_real_tier_than = COUNT
+						spouse = { higher_real_tier_than = COUNT }
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 20 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_underlayer value = 20 }
+		}
+	}
+}

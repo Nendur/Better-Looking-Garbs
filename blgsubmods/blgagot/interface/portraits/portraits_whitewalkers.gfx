@@ -1,0 +1,436 @@
+############## White Walkers ##########################
+spriteTypes = {
+
+# White Walker Male
+
+	spriteType = {
+		name = "GFX_winter_male_base"
+		texturefile = "gfx\\characters\\winter_male\\winter_male_base_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_winter_male_clothes"
+		texturefile = "gfx\\characters\\winter_male\\winter_male_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_winter_male_clothes_behind"
+		texturefile = "gfx\\characters\\winter_male\\winter_male_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_winter_male_headgear"
+		texturefile = "gfx\\characters\\winter_male\\winter_male_headgear.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_winter_male_headgear_mid"
+		texturefile = "gfx\\characters\\winter_male\\winter_male_headgear_mid.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_winter_male_headgear_behind"
+		texturefile = "gfx\\characters\\winter_male\\winter_male_headgear_behind.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_whitewalkergfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_northern_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_winter_male_clothes_behind:p3:c0"
+			"GFX_winter_male_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_easternslavic_male_hair_behind:p1:h:y"
+			"GFX_easternslavic_male_beard_behind:p4:h:y"
+			"GFX_winter_male_base:p2"
+			"GFX_character_freckles:p20"
+			"GFX_character_easternslavic_male_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_winter_male_clothes:p3:c2"
+			"GFX_winter_male_headgear_mid:p5:c3"
+			"GFX_easternslavic_male_beard:p4:h:y"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_possessed:p30:o0x1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_easternslavic_male_hair:p1:h:y"
+			":p5:c7:h"
+			"GFX_empty:p3:c4"
+			"GFX_winter_male_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight, Golden
+            { 115 110 100 } { 255 250 250 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 151 194 }
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_whitewalkergfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_northern_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_winter_male_clothes_behind:p3:c0"
+			"GFX_winter_male_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_easternslavic_male_hair_behind:p1:h:y"
+			"GFX_easternslavic_male_beard_behind:p4:h:y"
+			"GFX_winter_male_base:p2"
+			"GFX_character_freckles:p20"
+			"GFX_character_easternslavic_male_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_winter_male_clothes:p3:c2"
+			"GFX_winter_male_headgear_mid:p5:c3"
+			"GFX_easternslavic_male_beard:p4:h:y"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_possessed:p30:o0x1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_easternslavic_male_hair:p1:h:y"
+			":p5:c7:h"
+			"GFX_empty:p3:c4"
+			"GFX_winter_male_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight, Golden
+            { 115 110 100 } { 255 250 250 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 151 194 }
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_whitewalkergfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_northern_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_winter_male_clothes_behind:p3:c0"
+			"GFX_winter_male_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_easternslavic_male_hair_behind:p1:h:y"
+			"GFX_easternslavic_male_beard_behind:p4:h:y"
+			"GFX_winter_male_base:p2"
+			"GFX_character_freckles:p20"
+			"GFX_character_easternslavic_male_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_winter_male_clothes:p3:c2"
+			"GFX_winter_male_headgear_mid:p5:c3"
+			"GFX_easternslavic_male_beard:p4:h:y"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_possessed:p30:o0x1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+		   	"GFX_easternslavic_male_hair:p1:h:y"
+			":p5:c7:h"
+			"GFX_empty:p3:c4"
+			"GFX_winter_male_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight, Golden
+            { 115 110 100 } { 255 250 250 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 151 194 }
+		}
+	}
+
+# White Walker Female
+
+	spriteType = {
+		name = "GFX_winter_female_base"
+		texturefile = "gfx\\characters\\winter_female\\winter_female_base_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_winter_female_clothes"
+		texturefile = "gfx\\characters\\winter_female\\winter_female_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_winter_female_clothes_behind"
+		texturefile = "gfx\\characters\\winter_female\\winter_female_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_winter_female_headgear"
+		texturefile = "gfx\\characters\\winter_female\\winter_female_headgear.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_winter_female_headgear_mid"
+		texturefile = "gfx\\characters\\winter_female\\winter_female_headgear_mid.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_winter_female_headgear_behind"
+		texturefile = "gfx\\characters\\winter_female\\winter_female_headgear_behind.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_whitewalkergfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_northern_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_winter_female_clothes_behind:p3:c0"
+			"GFX_winter_female_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_easternslavic_female_hair_behind:p1:h:y"
+			"GFX_winter_female_base:p2"
+			"GFX_chinese_female_makeup2:p15"
+			"GFX_character_freckles:p20"
+			"GFX_character_easternslavic_female_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_possessed:p30"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_winter_female_clothes:p3:c2"
+			"GFX_winter_female_headgear_mid:p5:c3"
+			"GFX_easternslavic_female_hair:p1:h:y"
+			":p5:c7:h"
+			"GFX_empty:p3:c4"
+			"GFX_winter_female_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight, Golden
+            { 115 110 100 } { 255 250 250 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 151 194 }
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_whitewalkergfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_northern_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_winter_female_clothes_behind:p3:c0"
+			"GFX_winter_female_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_easternslavic_female_hair_behind:p1:h:y"
+			"GFX_winter_female_base:p2"
+			"GFX_chinese_female_makeup2:p15"
+			"GFX_character_freckles:p20"
+			"GFX_character_easternslavic_female_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_possessed:p30"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_winter_female_clothes:p3:c2"
+			"GFX_winter_female_headgear_mid:p5:c3"
+			"GFX_easternslavic_female_hair:p1:h:y"
+			":p5:c7:h"
+			"GFX_empty:p3:c4"
+			"GFX_winter_female_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight, Golden
+            { 115 110 100 } { 255 250 250 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 151 194 }
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_whitewalkergfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_northern_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_winter_female_clothes_behind:p3:c0"
+			"GFX_winter_female_headgear_behind:p5:c1"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_easternslavic_female_hair_behind:p1:h:y"
+			"GFX_winter_female_base:p2"
+			"GFX_chinese_female_makeup2:p15"
+			"GFX_character_freckles:p20"
+			"GFX_character_easternslavic_female_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_possessed:p30"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_winter_female_clothes:p3:c2"
+			"GFX_winter_female_headgear_mid:p5:c3"
+			"GFX_easternslavic_female_hair:p1:h:y"
+			":p5:c7:h"
+			"GFX_empty:p3:c4"
+			"GFX_winter_female_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight, Golden
+            { 115 110 100 } { 255 250 250 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 151 194 }
+		}
+	}
+}

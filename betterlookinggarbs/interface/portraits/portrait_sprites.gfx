@@ -1,0 +1,402 @@
+spriteTypes = {
+
+### SHARED ####
+	spriteType = {
+		name = "GFX_player_overlay"
+		texturefile = "gfx\\characters\\shared\\player_overlay.dds"
+		noOfFrames = 2
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_imprisoned"
+		texturefile = "gfx\\characters\\shared\\imprisoned.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_reddots"
+		texturefile = "gfx\\characters\\shared\\red_dots.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_boils"
+		texturefile = "gfx\\characters\\shared\\boils.dds"
+		noOfFrames = 6
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_scars"
+		texturefile = "gfx\\characters\\shared\\scars\\scars.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_character_scars_mid"
+		texturefile = "gfx\\characters\\shared\\scars\\scars_mid.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_character_scars_high"
+		texturefile = "gfx\\characters\\shared\\scars\\scars_high.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_scars_dark"
+		texturefile = "gfx\\characters\\shared\\scars\\scars_dark.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_character_scars_mid_dark"
+		texturefile = "gfx\\characters\\shared\\scars\\scars_mid_dark.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_character_scars_high_dark"
+		texturefile = "gfx\\characters\\shared\\scars\\scars_high_dark.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_scars_light"
+		texturefile = "gfx\\characters\\shared\\scars\\scars_light.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_character_scars_mid_light"
+		texturefile = "gfx\\characters\\shared\\scars\\scars_mid_light.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_character_scars_high_light"
+		texturefile = "gfx\\characters\\shared\\scars\\scars_high_light.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_scepters"
+		texturefile = "gfx\\characters\\shared\\special_scepters.dds"
+		noOfFrames = 22
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_masks"
+		texturefile = "gfx\\characters\\shared\\special_masks.dds"
+		noOfFrames = 9
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_crowns"
+		texturefile = "gfx\\characters\\shared\\special_crowns.dds"
+		noOfFrames = 26
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_crowns_mid"
+		texturefile = "gfx\\characters\\shared\\special_crowns_mid.dds"
+		noOfFrames = 26
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_crowns_behind"
+		texturefile = "gfx\\characters\\shared\\special_crowns_behind.dds"
+		noOfFrames = 26
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_helmets"
+		texturefile = "gfx\\characters\\shared\\special_helmets.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_blinded_eyes"
+		texturefile = "gfx\\characters\\shared\\blinded_eyes.dds"
+		noOfFrames = 9
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_empty"
+		texturefile = "gfx\\characters\\shared\\empty.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dummy"
+		texturefile = "gfx\\characters\\shared\\empty.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_mask"
+		texturefile = "gfx\\characters\\shared\\maimed_masks.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_eyepatch"
+		texturefile = "gfx\\characters\\shared\\maimed_eyepatch.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_freckles"
+		texturefile = "gfx\\characters\\shared\\freckles.dds"
+		noOfFrames = 6
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_blood_splatter"
+		texturefile = "gfx\\characters\\shared\\blood_splatter.dds"
+		noOfFrames = 6
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_black_eye"
+		texturefile = "gfx\\characters\\shared\\black_eye.dds"
+		noOfFrames = 11
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_possessed"
+		texturefile = "gfx\\characters\\shared\\character_possessed.dds"
+		noOfFrames = 8
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_tattoos"
+		texturefile = "gfx\\characters\\shared\\character_tattoos.dds"
+		noOfFrames = 25
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_warpaint"
+		texturefile = "gfx\\characters\\shared\\character_warpaint.dds"
+		noOfFrames = 9
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_character_warpaint_wide"
+		texturefile = "gfx\\characters\\shared\\character_warpaint_wide.dds"
+		noOfFrames = 9
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_lover_overlay"
+		texturefile = "gfx\\characters\\shared\\lover_overlay.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_background_items"
+		texturefile = "gfx\\characters\\shared\\background_items.dds"
+		noOfFrames = 20
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_clothing_monk_male_hair"
+		textureFile = "gfx/characters/clothing/monk_male_hair.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### BACKGROUNDS ####
+
+	spriteType = {
+		name = "GFX_character_background"
+		texturefile = "gfx\\characters\\shared\\backgrounds.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_muslim_background"
+		texturefile = "gfx\\characters\\shared\\muslim_backgrounds.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_northern_background"
+		texturefile = "gfx\\characters\\shared\\northern_backgrounds.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_steppe_background"
+		texturefile = "gfx\\characters\\shared\\steppe_backgrounds.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_background"
+		texturefile = "gfx\\characters\\shared\\southern_backgrounds.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_indian_background"
+		texturefile = "gfx\\characters\\shared\\indian_backgrounds.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_background_frames"
+		texturefile = "gfx\\characters\\shared\\background_frames.dds"
+		noOfFrames = 8
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_child_back"
+		texturefile = "gfx\\characters\\shared\\child_backgrounds.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### RELIGIOUS MALE ####
+
+	spriteType = {
+		name = "GFX_religious_male_clothes"
+		texturefile = "gfx\\characters\\religious_male_clothes.dds"
+		noOfframes = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_male_clothes_behind"
+		texturefile = "gfx\\characters\\religious_male_clothes_behind.dds"
+		noOfframes = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_male_headgear"
+		texturefile = "gfx\\characters\\religious_male_headgear.dds"
+		noOfframes = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_male_headgear_behind"
+		texturefile = "gfx\\characters\\religious_male_headgear_behind.dds"
+		noOfframes = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### RELIGIOUS FEMALE ####
+
+	spriteType = {
+		name = "GFX_religious_female_clothes"
+		texturefile = "gfx\\characters\\religious_female_clothes.dds"
+		noOfframes = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_female_clothes_behind"
+		texturefile = "gfx\\characters\\religious_female_clothes_behind.dds"
+		noOfframes = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_female_headgear"
+		texturefile = "gfx\\characters\\religious_female_headgear.dds"
+		noOfframes = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_female_headgear_behind"
+		texturefile = "gfx\\characters\\religious_female_headgear_behind.dds"
+		noOfframes = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+}

@@ -1,0 +1,165 @@
+objectTypes = {
+
+	#######################################################
+	#######################################################
+	#####											  #####
+	#####			Iberian Unit Pack				  #####
+	#####											  #####
+	#######################################################
+	#######################################################
+
+	################################################
+	#### HEAVY_INFANTRY ############################
+	################################################
+
+	pdxmesh = {
+		name = "westerngfx_HEAVY_INFANTRY_weapon"
+		file = "gfx\models\Attachments\ibup_sword.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_HEAVY_INFANTRY_weapon"
+		file = "gfx\models\Attachments\ibup_sword.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "southerngfx_HEAVY_INFANTRY_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_INFANTRY ############################
+	################################################
+
+	pdxmesh = {
+		name = "southerngfx_LIGHT_INFANTRY_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### PIKEMEN ###################################
+	################################################
+
+	pdxmesh = {
+		name = "southerngfx_PIKEMEN_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### ARCHERS ###################################
+	################################################
+
+	pdxmesh = {
+		name = "southerngfx_ARCHERS_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### KNIGHTS ###################################
+	################################################
+	pdxmesh = {
+		name = "southerngfx_KNIGHTS"
+		file = "gfx\models\ibup_light_horse.mesh"
+
+		animation = { id = "attack"		type = "ibup_horse_attack_animation" }
+		animation = { id = "idle"		type = "ibup_horse_idle_animation" }
+		animation = { id = "move"		type = "ibup_horse_moving_animation" }
+
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "southerngfx_KNIGHTS_late"
+		file = "gfx\models\ibup_heavy_horse.mesh"
+
+		animation = { id = "attack"		type = "ibup_horse_attack_animation" }
+		animation = { id = "idle"		type = "ibup_horse_idle_animation" }
+		animation = { id = "move"		type = "ibup_horse_moving_animation" }
+
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_KNIGHTS_late"
+		file = "gfx\models\ibup_heavy_horse.mesh"
+
+		animation = { id = "attack"		type = "ibup_horse_attack_animation" }
+		animation = { id = "idle"		type = "ibup_horse_idle_animation" }
+		animation = { id = "move"		type = "ibup_horse_moving_animation" }
+
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_KNIGHTS_rider"
+		file = "gfx\models\ibup_knight.mesh"
+
+		animation = { id = "attack"		type = "ibup_horse_attack_animation" }
+		animation = { id = "idle"		type = "ibup_heavy_cavalry_idle_animation" }
+		animation = { id = "move"		type = "ibup_heavy_cavalry_moving_animation" }
+
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "southerngfx_KNIGHTS_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_KNIGHTS_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_KNIGHTS_weapon"
+		file = "gfx\models\Attachments\ibup_spear.mesh"
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "germangfx_KNIGHTS_weapon_late"
+		file = "gfx\models\Attachments\ibup_mace.mesh"
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "southerngfx_KNIGHTS_shield_late"
+		file = "gfx\models\Attachments\ibup_heatershield.mesh"
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "westerngfx_KNIGHTS_weapon"
+		file = "gfx\models\Attachments\ibup_sword.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_CAVALRY #############################
+	################################################
+
+	pdxmesh = {
+		name = "southerngfx_LIGHT_CAVALRY_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### horse_archers #############################
+	################################################
+
+	pdxmesh = {
+		name = "southerngfx_horse_archers_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+}

@@ -1,0 +1,44 @@
+# Warriors of Faith reused as Councillors
+objectTypes = {
+	EMFXActorType = {
+		name = "arabicgfx_job_marshal"
+		actorfile = "gfx\models\holy_order_hashshashin.xac"
+		idle   = "gfx\models\Mapindicators\Western_Marshal_Idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "africangfx_job_marshal"
+		actorfile = "gfx\models\holy_order_west_african.xac"
+		idle   = "gfx\models\Mapindicators\Western_Marshal_Idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "easterngfx_job_marshal"
+		actorfile = "gfx\models\holy_order_slavic.xac"
+		idle   = "gfx\models\Mapindicators\Western_Marshal_Idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "ugricgfx_job_marshal"
+		actorfile = "gfx\models\holy_order_finnish.xac"
+		idle   = "gfx\models\Mapindicators\Western_Marshal_Idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "persiangfx_job_marshal"
+		actorfile = "gfx\models\holy_order_immortals.xac"
+		idle   = "gfx\models\Mapindicators\Western_Marshal_Idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "mesoamericangfx_job_marshal"
+		actorfile = "gfx\models\holy_orders_aztec.xac"
+		idle   = "gfx\models\Mapindicators\Western_Marshal_Idle.xsm"
+		scale = 1.0f
+	}
+}

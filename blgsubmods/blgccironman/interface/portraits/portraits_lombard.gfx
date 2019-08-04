@@ -1,0 +1,54 @@
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_clothing_lombard_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_culture = lombard
+			}
+		}
+
+		layer = {
+			"GFX_italian_male_clothes_behind_early:c0"
+			"GFX_italian_male_headgear_behind_early:c1"
+			"GFX_italian_male_clothes_early:c2"
+			"GFX_italian_male_headgear_mid_early:c3"
+			"GFX_empty:c4"
+			"GFX_italian_male_headgear_early:c5"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_lombard_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_culture = lombard
+			}
+		}
+
+		layer = {
+			"GFX_italian_female_clothes_behind_early:c0"
+			"GFX_italian_female_headgear_behind_early:c1"
+			"GFX_italian_female_clothes_early:c2"
+			"GFX_italian_female_headgear_mid_early:c3"
+			"GFX_empty:c4"
+			"GFX_italian_female_headgear_early:c5"
+		}
+
+		headgear_that_hides_hair = {12 13}
+	}
+}

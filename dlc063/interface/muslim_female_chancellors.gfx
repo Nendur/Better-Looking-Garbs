@@ -1,0 +1,44 @@
+###MUSLIM FEMALE###
+objectTypes = {
+	pdxmesh = {
+		name = "muslimgfx_job_chancellor_female"
+		file = "gfx/models/Mapindicators/cote_mongol_chancellor_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_chancellor_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "muslimgfx_job_spymaster_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spymaster_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spymaster_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "muslimgfx_job_treasurer_female"
+		file = "gfx/models/Mapindicators/cote_mongol_steward_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_steward_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "muslimgfx_job_marshal_female"
+		file = "gfx/models/Mapindicators/cote_mongol_marshal_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_marshal_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "arabicgfx_job_marshal_female"
+		file = "gfx/models/Mapindicators/cote_mongol_marshal_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_marshal_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "persiangfx_job_marshal_female"
+		file = "gfx/models/Mapindicators/cote_mongol_marshal_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_marshal_female_idle_animation" }
+		scale = 1.0
+	}
+}

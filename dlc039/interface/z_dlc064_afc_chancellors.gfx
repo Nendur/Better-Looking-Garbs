@@ -1,0 +1,61 @@
+objectTypes = {
+
+# Reuse Indian Councillors for Africans and Aztecs.
+# African
+	EMFXActorType = {
+		name = "africangfx_job_chancellor"
+		actorfile = "gfx\models\Mapindicators\indian_chancellor.xac"
+		idle   = "gfx\models\Mapindicators\indian_chancellor_idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "africangfx_job_treasurer"
+		actorfile = "gfx\models\Mapindicators\indian_steward.xac"
+		idle   = "gfx\models\Mapindicators\indian_steward_idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "africangfx_job_spymaster"
+		actorfile = "gfx\models\Mapindicators\indian_spymaster.xac"
+		idle   = "gfx\models\Mapindicators\indian_spymaster_idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "africangfx_job_marshal"
+		actorfile = "gfx\models\Mapindicators\indian_marshal.xac"
+		idle   = "gfx\models\Mapindicators\indian_marshal_idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "africangfx_job_spiritual"
+		actorfile = "gfx\models\indian_pikemen.xac"
+		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
+		scale = 1.0f
+	}
+
+# Meso-American
+	EMFXActorType = {
+		name = "mesoamericangfx_job_treasurer"
+		actorfile = "gfx\models\Mapindicators\indian_steward.xac"
+		idle   = "gfx\models\Mapindicators\indian_steward_idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "mesoamericangfx_job_marshal"
+		actorfile = "gfx\models\Mapindicators\indian_marshal.xac"
+		idle   = "gfx\models\Mapindicators\indian_marshal_idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "mesoamericangfx_job_spiritual"
+		actorfile = "gfx\models\indian_pikemen.xac"
+		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
+		scale = 1.0f
+	}
+}

@@ -1,0 +1,22 @@
+objectTypes = {
+	EMFXActorType = {
+		name = "norsegfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\Norse_LordSpiritual.xac"
+		idle   = "gfx\models\Mapindicators\Norse_LordSpiritual_Idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "pagangfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\Norse_LordSpiritual.xac"
+		idle   = "gfx\models\Mapindicators\Norse_LordSpiritual_Idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "mongolgfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\Norse_LordSpiritual.xac"
+		idle   = "gfx\models\Mapindicators\Norse_LordSpiritual_Idle.xsm"
+		scale = 1.0f
+	}
+}

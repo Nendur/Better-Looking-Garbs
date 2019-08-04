@@ -1,0 +1,400 @@
+### KA PO'TUN ###
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_kapotungfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_muslim_background:p0"
+			"GFX_muslim_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_indian_male_clothes_behind:p3:c0"
+			"GFX_empty:p5:c1"
+			"GFX_frankish_male_overlayer_behind:p31"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_empty:p1:h:y"
+			"GFX_empty:p4:h:y"
+			"GFX_kapotun_male_base:p2"
+			"GFX_kapotun_male_white:d0"
+			"GFX_kapotun_male_eyes:d4"
+			"GFX_kapotun_male_stripes:d1"
+			"GFX_kapotun_male_nose:d2"
+			"GFX_kapotun_male_mouth:d7"
+			"GFX_character_harelip_african:p24:o3x-9"
+			"GFX_child_back:p17"
+			"PORTRAIT_kapotungfx_child_male:p18"
+			"GFX_character_african_male_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_indian_male_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_male_overlayer_mid:p31"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_kapotun_male_beards:p4:h:y"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_possessed:p30:o2x-1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_empty:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_empty:p5:c5"
+			"GFX_frankish_male_overlayer:p31"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 255 255 255 }
+		}
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_kapotungfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_muslim_background:p0"
+			"GFX_muslim_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_indian_male_clothes_behind:p3:c0"
+			"GFX_empty:p5:c1"
+			"GFX_frankish_male_overlayer_behind:p31"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_empty:p1:h:y"
+			"GFX_empty:p4:h:y"
+			"GFX_kapotun_male_base:p2"
+			"GFX_kapotun_male_white:d0"
+			"GFX_kapotun_male_eyes:d4"
+			"GFX_kapotun_male_stripes:d1"
+			"GFX_kapotun_male_nose:d2"
+			"GFX_kapotun_male_mouth:d7"
+			"GFX_character_harelip_african:p24:o3x-9"
+			"GFX_character_african_male_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_indian_male_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_male_overlayer_mid:p31"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_kapotun_male_beards:p4:h:y"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_possessed:p30:o2x-1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_empty:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_empty:p5:c5"
+			"GFX_frankish_male_overlayer:p31"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 255 255 255 }
+		}
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_kapotungfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_muslim_background:p0"
+			"GFX_muslim_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_indian_male_clothes_behind:p3:c0"
+			"GFX_empty:p5:c1"
+			"GFX_frankish_male_overlayer_behind:p31"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_empty:p1:h:y"
+			"GFX_empty:p4:h:y"
+			"GFX_kapotun_male_base:p2"
+			"GFX_kapotun_male_white:d0"
+			"GFX_kapotun_male_eyes:d4"
+			"GFX_kapotun_male_stripes:d1"
+			"GFX_kapotun_male_nose:d2"
+			"GFX_kapotun_male_mouth:d7"
+			"GFX_character_harelip_african:p24:o3x-9"
+			"GFX_character_african_male_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_indian_male_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_male_overlayer_mid:p31"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_kapotun_male_beards:p4:h:y"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_possessed:p30:o2x-1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_empty:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_empty:p5:c5"
+			"GFX_frankish_male_overlayer:p31"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 255 255 255 }
+		}
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_kapotungfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_muslim_background:p0"
+			"GFX_muslim_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_indian_female_clothes_behind:p3:c0"
+			"GFX_empty:p5:c1"
+			"GFX_frankish_female_undermain_behind:p33"
+			"GFX_frankish_female_overlayer_behind:p32"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_empty:p1:h:y"
+			"GFX_kapotun_female_base:p2"
+			"GFX_kapotun_female_white:d0"
+			"GFX_kapotun_female_eyes:d4"
+			"GFX_kapotun_female_stripes:d1"
+			"GFX_kapotun_female_nose:d2"
+			"GFX_kapotun_female_mouth:d7"
+			"GFX_character_harelip_african:p24:o3x-9"
+			"GFX_child_back:p17"
+			"PORTRAIT_kapotungfx_child_female:p18"
+			"GFX_character_african_female_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_possessed:p30:o2x-1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_indian_female_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_empty:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_frankish_female_undermain:p33"
+			"GFX_empty:p5:c5"
+			"GFX_frankish_female_overlayer:p32"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 255 255 255 }
+		}
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_kapotungfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_muslim_background:p0"
+			"GFX_muslim_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_indian_female_clothes_behind:p3:c0"
+			"GFX_empty:p5:c1"
+			"GFX_frankish_female_undermain_behind:p33"
+			"GFX_frankish_female_overlayer_behind:p32"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_empty:p1:h:y"
+			"GFX_kapotun_female_base:p2"
+			"GFX_kapotun_female_white:d0"
+			"GFX_kapotun_female_eyes:d4"
+			"GFX_kapotun_female_stripes:d1"
+			"GFX_kapotun_female_nose:d2"
+			"GFX_kapotun_female_mouth:d7"
+			"GFX_character_harelip_african:p24:o3x-9"
+			"GFX_character_african_female_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_possessed:p30:o2x-1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_indian_female_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_empty:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_frankish_female_undermain:p33"
+			"GFX_empty:p5:c5"
+			"GFX_frankish_female_overlayer:p32"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 255 255 255 }
+		}
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_kapotungfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_muslim_background:p0"
+			"GFX_muslim_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_indian_female_clothes_behind:p3:c0"
+			"GFX_empty:p5:c1"
+			"GFX_frankish_female_undermain_behind:p33"
+			"GFX_frankish_female_overlayer_behind:p32"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_empty:p1:h:y"
+			"GFX_kapotun_female_base:p2"
+			"GFX_kapotun_female_white:d0"
+			"GFX_kapotun_female_eyes:d4"
+			"GFX_kapotun_female_stripes:d1"
+			"GFX_kapotun_female_nose:d2"
+			"GFX_kapotun_female_mouth:d7"
+			"GFX_character_harelip_african:p24:o3x-9"
+			"GFX_character_african_female_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_possessed:p30:o2x-1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_indian_female_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_empty:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_frankish_female_undermain:p33"
+			"GFX_empty:p5:c5"
+			"GFX_frankish_female_overlayer:p32"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 255 255 255 }
+		}
+		headgear_that_hides_hair = { }
+	}
+}

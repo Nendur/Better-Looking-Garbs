@@ -1,0 +1,87 @@
+spriteTypes = {
+
+### OUTREMER MALE ####
+
+	spriteType = {
+		name = "GFX_outremer_male_clothes_behind"
+		texturefile = "gfx\\fallbacks\\muslim_male\\muslim_male_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_male_headgear_behind"
+		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_male_clothes"
+		texturefile = "gfx\\fallbacks\\muslim_male\\muslim_male_clothes.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_male_headgear_mid"
+		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_headgear_mid.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_male_headgear"
+		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### OUTREMER FEMALE ####
+
+	spriteType = {
+		name = "GFX_outremer_female_clothes_behind"
+		texturefile = "gfx\\fallbacks\\muslim_female\\muslim_female_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_female_headgear_behind"
+		texturefile = "gfx\\characters\\byzantine_female\\byzantine_female_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_female_clothes"
+		texturefile = "gfx\\fallbacks\\muslim_female\\muslim_female_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_female_headgear_mid"
+		texturefile = "gfx\\characters\\byzantine_female\\byzantine_female_headgear_mid.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_female_headgear"
+		texturefile = "gfx\\characters\\byzantine_female\\byzantine_female_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+}
+

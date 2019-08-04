@@ -1,0 +1,29 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_merchant_male_clothes_behind"
+		texturefile = "gfx\\characters\\merchant_male\\byzmerchant_male_clothes_behind.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_merchant_male_clothes"
+		texturefile = "gfx\\characters\\merchant_male\\byzmerchant_male_clothes.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_merchant_female_clothes_behind"
+		texturefile = "gfx\\characters\\merchant_female\\roman_female_clothes_behind.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_merchant_female_clothes"
+		texturefile = "gfx\\characters\\merchant_female\\roman_female_clothes.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+}

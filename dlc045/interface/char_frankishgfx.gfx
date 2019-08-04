@@ -1,0 +1,33 @@
+objectTypes = {
+	################################################
+	#### HEAVY_INFANTRY ############################
+	################################################
+
+	pdxmesh = {
+		name = "frankishgfx_HEAVY_INFANTRY_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_frankish.mesh"
+		scale = 1.04f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_HEAVY_INFANTRY_shield"
+		file = "gfx\models\Attachments\westerngfx_early_kiteshield_heavy.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### KNIGHTS ###################################
+	################################################
+
+	pdxmesh = {
+		name = "frankishgfx_KNIGHTS_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_celtic.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_KNIGHTS_shield"
+		file = "gfx\models\Attachments\westerngfx_early_kiteshield_heavy.mesh"
+		scale = 1.0f
+	}
+}

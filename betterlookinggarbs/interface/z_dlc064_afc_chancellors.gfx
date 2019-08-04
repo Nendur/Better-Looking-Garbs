@@ -1,0 +1,17 @@
+objectTypes = {
+
+# Priests
+	EMFXActorType = {
+		name = "africangfx_job_spiritual"
+		actorfile = "gfx\models\indian_pikemen.xac"
+		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "mesoamericangfx_job_spiritual"
+		actorfile = "gfx\models\indian_pikemen.xac"
+		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
+		scale = 1.0f
+	}
+}

@@ -1,0 +1,82 @@
+18 = {
+	0 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			practical_age < 14
+		}
+	}
+	1 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			practical_age < 12
+		}
+	}
+	2 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			practical_age < 9
+		}
+		hide_layers = { 7 = {} }
+		hide_layers = { 9 = {} }
+		hide_layers = { 12 = {} }
+		hide_layers = { 13 = {} }
+		hide_layers = { 23 = {} }
+		hide_layers = { 25 = {} }
+		hide_layers = { 26 = {} }
+	}
+	3 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			practical_age < 6
+		}
+		hide_layers = { 7 = {} }
+		hide_layers = { 9 = {} }
+		hide_layers = { 12 = {} }
+		hide_layers = { 13 = {} }
+		hide_layers = { 23 = {} }
+		hide_layers = { 25 = {} }
+		hide_layers = { 26 = {} }
+	}
+	4 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			practical_age < 3
+		}
+		hide_layers = { 7 = {} }
+		hide_layers = { 9 = {} }
+		hide_layers = { 12 = {} }
+		hide_layers = { 13 = {} }
+		hide_layers = { 23 = {} }
+		hide_layers = { 25 = {} }
+		hide_layers = { 26 = {} }
+	}
+	5 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			practical_age < 1
+		}
+		hide_layers = { 7 = {} }
+		hide_layers = { 9 = {} }
+		hide_layers = { 12 = {} }
+		hide_layers = { 13 = {} }
+		hide_layers = { 23 = {} }
+		hide_layers = { 25 = {} }
+		hide_layers = { 26 = {} }
+	}
+	6 = {
+		factor = 100
+		hide_layers = { 7 = {} }
+		hide_layers = { 9 = {} }
+		hide_layers = { 12 = {} }
+		hide_layers = { 13 = {} }
+		hide_layers = { 23 = {} }
+		hide_layers = { 25 = {} }
+		hide_layers = { 26 = {} }
+	}
+}

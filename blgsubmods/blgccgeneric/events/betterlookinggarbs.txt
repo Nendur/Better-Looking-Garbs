@@ -1,0 +1,109 @@
+###################################
+#
+# Better Looking Garbs
+#
+# Events to alter ethnicity on newly created characters.
+#
+###################################
+
+namespace = blg
+
+# Ethnic diversity in random courtier spawns.
+character_event = {
+	id = blg.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	ai = yes
+	min_age = 1
+	trigger = {
+		trait = blgspawn
+	}
+	immediate = {
+		remove_trait = blgspawn
+	}
+
+	option = { # Leave unchanged / Ruler culture
+		ai_chance = {
+			factor = 6
+		}
+	}
+
+	option = { # Local province
+		ai_chance = { factor = 3 }
+		trigger = {
+			employer = {
+				is_landed = yes
+				ROOT = { race = PREV } 
+			}
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+		}
+
+		random_realm_province = {
+			ROOT = {
+				set_graphical_culture = PREV
+				# random = { chance = 25 culture = PREV }
+				# random = { chance = 25 religion = PREV }
+			}
+		}
+	}
+
+	option = { # Neighbour of local province
+		ai_chance = { factor = 3 }
+		trigger = {
+			employer = {
+				is_landed = yes
+				ROOT = { race = PREV } 
+			}
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+		}
+
+		random_realm_province = {
+			random_neighbor_province = {
+				ROOT = {
+					set_graphical_culture = PREV
+					# random = { chance = 25 culture = PREV }
+					# random = { chance = 25 religion = PREV }
+				}
+			}
+		}
+	}
+}
+
+# Mixed ethnicity for children.
+# Called from on_birth
+character_event = {
+	id = blg.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_trait = blgspawn
+	}
+}
+
+# Installatian check event.
+character_event = {
+	id    = blg.4
+	title = blg.4.title
+	desc  = blg.4.desc
+
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_intrigue
+	hide_from = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = blg.4.opt
+	}
+}
+
+# Add additional freckled graphical cultures.
+character_event = { 
+	id = blg.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = { }
+}

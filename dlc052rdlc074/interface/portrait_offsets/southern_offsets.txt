@@ -1,0 +1,9 @@
+GFX_southern_male_mouth 2x0
+GFX_southern_male_nose 2x0
+GFX_southern_male_mouth_midage 2x0
+GFX_southern_male_nose_midage 2x0
+GFX_southern_male_mouth_oldage 2x0
+GFX_southern_male_nose_oldage 2x0
+GFX_southern_female_nose 1x0
+GFX_southern_female_nose_midage 1x0
+GFX_southern_female_nose_oldage 1x0

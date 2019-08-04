@@ -1,0 +1,343 @@
+#p31 frankish Culture Overlayer - Male
+31 = {
+	0 = { # Blank
+		factor = 1
+		modifier = {
+			factor = 100
+			is_female = yes
+		}
+		modifier = {
+			factor = 100
+			NOT = { has_dlc = "Holy Fury" }
+		}
+		modifier = {
+			factor = 100
+			NOR = {
+				culture = breton
+				AND = { is_alive = yes check_variable = { which = ca_overlayer value = 2 } }
+			}
+		}
+		modifier = {
+			factor = 100
+			is_priest = yes
+		}
+		modifier = {
+			factor = 100
+			is_merchant_republic = yes
+			in_command = no
+		}
+		modifier = {
+			factor = 100
+			has_portrait_property = { layer = 5 index = 9 }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 1 }
+		}
+	}
+	1 = { # Military Helm 01
+		factor = 100
+		trigger = {
+			OR = {
+				AND = {
+					has_portrait_property = { layer = 5 index = 10 }
+					OR = {
+						is_alive = no
+						is_variable_equal = { which = ca_overlayer value = 0 } 
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 2 } 
+			}
+		}
+	}
+	2 = { # Military Helm 02
+		factor = 99
+		trigger = {
+			OR = {
+				has_portrait_property = { layer = 5 index = 13 }
+				is_variable_equal = { which = ca_overlayer value = 3 } 
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 3 }
+		}
+	}
+	3 = { # Military Helm 03
+		factor = 99
+		trigger = {
+			OR = {
+				has_portrait_property = { layer = 5 index = 13 }
+				is_variable_equal = { which = ca_overlayer value = 4 } 
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 4 }
+		}
+	}
+	4 = { # Military Helm 04
+		factor = 99
+		trigger = {
+			OR = {
+				has_portrait_property = { layer = 5 index = 12 }
+				has_portrait_property = { layer = 5 index = 13 }
+				is_variable_equal = { which = ca_overlayer value = 5 } 
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 5 }
+		}
+	}
+	5 = { # Count Accessories
+		factor = 1
+		modifier = {
+			factor = 0
+			NOR = {
+				real_tier = count
+				spouse = { real_tier = count }
+				has_minor_title = title_prince
+				spouse = { has_minor_title = title_prince }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 6 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 6 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 6 }
+		}
+	}
+	6 = { # Count Accessories
+		factor = 1
+		modifier = {
+			factor = 0
+			NOR = {
+				real_tier = count
+				spouse = { real_tier = count }
+				has_minor_title = title_prince
+				spouse = { has_minor_title = title_prince }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 7 }
+		}
+	}
+	7 = { # Count Accessories
+		factor = 1
+		modifier = {
+			factor = 0
+			NOR = {
+				real_tier = count
+				spouse = { real_tier = count }
+				has_minor_title = title_prince
+				spouse = { has_minor_title = title_prince }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 8 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 8 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 8 }
+		}
+	}
+	8 = { # Count Accessories
+		factor = 1
+		hide_layers = { 1 = { } }
+		modifier = {
+			factor = 0
+			NOR = {
+				real_tier = count
+				spouse = { real_tier = count }
+				has_minor_title = title_prince
+				spouse = { has_minor_title = title_prince }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 9 }
+		}
+	}
+	9 = { # Count Accessories
+		factor = 1
+		modifier = {
+			factor = 0
+			NOR = {
+				real_tier = count
+				spouse = { real_tier = count }
+				has_minor_title = title_prince
+				spouse = { has_minor_title = title_prince }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 10 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 10 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 10 }
+		}
+	}
+	10 = { # Duke Accessories
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 11 } }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				real_tier = DUKE
+				spouse = { real_tier = DUKE }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 11 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 11 }
+		}
+	}
+	11 = { # Duke Accessories
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 12 } }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				real_tier = DUKE
+				spouse = { real_tier = DUKE }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 12 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 12 }
+		}
+	}
+	12 = { # Duke Accessories
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 13 } }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				real_tier = DUKE
+				spouse = { real_tier = DUKE }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 13 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 13 }
+		}
+	}
+	13 = { # Duke Accessories
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 14 } }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				real_tier = DUKE
+				spouse = { real_tier = DUKE }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 14 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 14 }
+		}
+	}
+	14 = { # Duke Accessories
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 15 } }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				real_tier = DUKE
+				spouse = { real_tier = DUKE }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 15 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_overlayer value = 15 }
+		}
+	}
+}

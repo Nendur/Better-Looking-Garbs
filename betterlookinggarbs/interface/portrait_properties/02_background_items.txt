@@ -1,0 +1,309 @@
+# p2 items
+2 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 100
+			prisoner = yes
+			NOT = { trait = saint }
+		}
+	}
+	1 = { # saint
+		factor = 100
+		hide_layers = { 19 = { } } #Hide layers with special crowns.
+		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+		trigger = {
+			trait = saint
+		}
+	}
+	2 = { # Holy Banner of Mohammad
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = { artifact_type = holy_banner_of_mohammad is_artifact_active = yes }
+			}
+		}
+	}
+	3 = { # Derafsh Kaviani
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = { artifact_type = derafsh_kaviani is_artifact_active = yes }
+			}
+		}
+	}
+	4 = { # golden sword
+		factor = 5
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = sword
+					has_artifact_flag = jewelry
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	5 = { # scimitar
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				religion_group = muslim
+				has_dharmic_religion_trigger = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				any_artifact = {
+					has_artifact_flag = sword
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	6 = { # scimitar
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				religion_group = muslim
+				has_dharmic_religion_trigger = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = sword
+					quality < 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	7 = { # sword
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				religion_group = muslim
+				has_dharmic_religion_trigger = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = sword
+					NOT = { has_artifact_flag = jewelry }
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	8 = { # sword
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				religion_group = muslim
+				has_dharmic_religion_trigger = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = sword
+					NOT = { has_artifact_flag = jewelry }
+					quality < 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	9 = { # +2 Axe
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					OR = {
+						artifact_type = loot_axe
+						AND = {
+							has_artifact_flag = axe
+							quality >= 5
+						}
+					}
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	10 = { # axe
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = axe
+					quality < 5
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	11 = { # axe
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = axe
+					quality < 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	12 = { # bow
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = bow
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	13 = { # bow
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = bow
+					quality < 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	14 = { # dog
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_character_modifier = pet_hunting_dog
+				trait = masterless_dog
+				trait = house_dog
+			}
+		}
+	}
+	15 = { # cat
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = pet_cat }
+		}
+	}
+	16 = { # owl
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = pet_owl }
+		}
+	}
+	17 = { # horse
+		factor = 50
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = nomad_warhorse }
+		}
+	}
+	18 = { # parrot
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = pet_parrot }
+		}
+	}
+	19 = { # rat
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = pet_rat_dungeon }
+		}
+	}
+}

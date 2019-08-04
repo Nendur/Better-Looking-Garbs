@@ -1,0 +1,87 @@
+# p21 physique
+21 = {
+	0 = { # blank
+		factor = 100
+		trigger = {
+			NOR = { 
+				trait = is_fat
+				trait = sturdy
+				AND = {
+					trait = dwarf
+					NOT = { trait = fair }
+				}
+			}
+		}
+	}
+	1 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			trait = is_fat
+		}
+		modifier = {
+			factor = 0
+			practical_age = 30
+		}
+	}
+	2 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			trait = is_fat
+		}
+		modifier = {
+			factor = 0
+			NOT = { practical_age = 30 }
+		}
+		modifier = {
+			factor = 0
+			practical_age = 50
+		}
+	}
+	3 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			trait = is_fat
+		}
+		modifier = {
+			factor = 0
+			NOT = { practical_age = 50 }
+		}
+	}
+	4 = { 
+		factor = 100
+		trigger = {
+			trait = is_fat
+		}
+		modifier = {
+			factor = 0
+			practical_age = 30
+		}
+	}
+	5 = { 
+		factor = 100
+		trigger = {
+			trait = is_fat
+		}
+		modifier = {
+			factor = 0
+			NOT = { practical_age = 30 }
+		}
+		modifier = {
+			factor = 0
+			practical_age = 50
+		}
+	}
+	6 = { 
+		factor = 100
+		trigger = {
+			trait = is_fat
+		}
+		modifier = {
+			factor = 0
+			NOT = { practical_age = 50 }
+		}
+	}
+}

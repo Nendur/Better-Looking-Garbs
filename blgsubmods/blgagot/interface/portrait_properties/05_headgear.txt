@@ -1,0 +1,577 @@
+# p5 headgear
+5 = {
+	# Big, elaborate crown
+	0 = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { can_wear_a_crown_trigger = yes }
+		}
+		modifier = {
+			factor = 5
+			trait = proud
+		}
+		modifier = {
+			factor = 0.05
+			trait = humble
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 1 }
+		}
+	}
+
+	# Warrior-king's crown
+	1 = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { can_wear_a_crown_trigger = yes }
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				martial = 12
+				trait = master_warrior
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 2 }
+		}
+	}
+
+	# Diplomat-King's Crown
+	2 = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { can_wear_a_crown_trigger = yes }
+		}
+		modifier = {
+			factor = 5
+			diplomacy = 12
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 3 }
+		}
+	}
+
+	# Non-Specific Crown
+	3 = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { can_wear_a_crown_trigger = yes }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 4 }
+		}
+	}
+
+	# Simple golden band
+	4 = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { can_wear_a_crown_trigger = yes }
+		}
+		modifier = {
+			factor = 0.05
+			trait = proud
+		}
+		modifier = {
+			factor = 5
+			trait = humble
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 5 }
+		}
+	}
+
+	# Common headgear 1 - Hat (Common)
+	5 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+			}
+			NOR = {
+				trait = in_hiding
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 6 } }
+		}
+		modifier = {
+			factor = 2
+			dynasty = none
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 6 }
+		}
+	}
+
+	# Common headgear 2 - Hat (Fancy)
+	6 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+			}
+			NOR = {
+				trait = in_hiding
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 7 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { dynasty = none }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 7 }
+		}
+	}
+
+	# Common headgear 3 - Coif
+	7 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+			}
+			NOR = {
+				trait = in_hiding
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 8 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 8 }
+		}
+	}
+
+	# Common headgear 4 - Hood
+	8 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+			}
+			NOR = {
+				trait = in_hiding
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 9 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 9 }
+		}
+	}
+
+	# Shady headgear
+	9 = {
+		factor = 3
+		modifier = {
+			factor = 0
+			OR = {
+				higher_tier_than = DUKE
+				any_spouse = { higher_tier_than = DUKE }
+			}
+			NOR = {
+				trait = in_hiding
+				trait = peasant_leader
+				trait = heresiarch
+				trait = leper
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 10 } }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_job_title = job_spymaster
+				trait = in_hiding
+				trait = leper
+			}
+			OR = {
+				real_tier = duke
+				NOT = { intrigue = 16 }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 10 } }
+		}
+		modifier = {
+			factor = 33
+			OR = {
+				has_job_title = job_spymaster
+				trait = leper
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 10 }
+		}
+	}
+
+	# Martial headgear
+	10 = {
+		factor = 90
+		modifier = {
+			factor = 0
+			may_wear_martial_headgear_trigger = no
+			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = knight
+				does_not_wear_martial_headgear_trigger = yes
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 11 }
+		}
+	}
+
+	# Blank
+	11 = {
+		factor = 3
+		modifier = {
+			factor = 10
+			OR = {
+				trait = slave
+				trait = maester
+				trait = nightswatch
+			}
+		}
+		modifier = {
+			factor = 100	#Certain
+			OR = {
+				prisoner = yes
+				trait = archmaester
+				trait = not_a_bear
+				AND = {
+					in_command = no
+					OR =  {
+						trait = bearded_priest
+						has_job_title  = job_marshal
+						primary_title = { OR = { mercenary = yes holy_order = yes } }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 12 }
+		}
+	}
+
+	# Kingsguard - Replaced by override
+	12 = {
+		factor = 0
+	}
+
+	# City Watch/Unsullied
+	13 = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			NAND = {
+				has_minor_title  =  title_commander_gold_cloaks
+				OR = {
+					culture_group = dornish
+					culture_group = andal
+					culture_group = first_men
+					culture_group = free_folk
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			may_wear_martial_headgear_trigger = no
+		}
+	}
+
+	# Knight
+	14 = {
+		factor = 90
+		modifier = {
+			factor = 0
+			NOT = { trait = knight }
+		}
+		modifier = {
+			factor = 0
+			may_wear_martial_headgear_trigger = no
+		}
+		modifier = {
+			factor = 0
+			does_not_wear_martial_headgear_trigger = yes
+		}
+	}
+	# Great House Helm 1
+	15 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			may_wear_martial_headgear_trigger = no
+		}
+		modifier = {
+			factor = 0
+			does_not_wear_martial_headgear_trigger = yes
+		}
+		modifier = {
+			factor = 0
+			NOR = {	#Only for these graphical cultures
+				culture = stormlander	
+				culture = reachman
+				culture = westerman
+				culture = riverlander
+				culture = valeman
+				culture_group = first_men
+				culture_group = iron_isles_culture
+				culture = high_valyrian
+				culture = eastern_valyrian
+				culture_group = dornish
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				higher_tier_than = DUKE
+				AND = {
+					liege = { higher_tier_than = DUKE }
+					NOT = { higher_tier_than = COUNT } #Only low-tier bannerman wear their liege's armor
+				}
+				dynasty = 317	#Baratheon
+				dynasty = 1544	#Durrandon
+				dynasty = 450224	#Stagborn
+				dynasty = 450225	#Stormhart
+				dynasty = 450226	#Durrande
+				dynasty = 450227	#Deer
+				dynasty = 253 #Tyrell
+				dynasty = 1254 #Gardener
+				dynasty = 450228	#Bloodrose
+				dynasty = 450229	#Blackrose
+				dynasty = 450230	#Smallrose
+				dynasty = 450231	#Greenrose
+				dynasty = 190 #Lannister
+				dynasty = 450208	#Silvermane
+				dynasty = 450209	#Redclaw
+				dynasty = 450210	#Roaring
+				dynasty = 450211	#Lionford
+				dynasty = 159 #Tully
+				dynasty = 450216	#Redriver
+				dynasty = 450217	#Darkfish
+				dynasty = 450218	#Goldfish
+				dynasty = 450219	#Steeltrout
+				dynasty = 178 #Arryn
+				dynasty = 450220	#Redwing
+				dynasty = 450221	#Kestrel
+				dynasty = 450222	#Bluebird
+				dynasty = 450223	#Skywarden
+				dynasty = 59		#Stark
+				dynasty = 450200	#Whitewolf
+				dynasty = 450201	#Goldfang
+				dynasty = 450202	#Dreadwolf
+				dynasty = 450203	#Winterhold
+				dynasty = 107 #Greyjoy
+				dynasty = 450232	#Silverink
+				dynasty = 450233	#Redjoy
+				dynasty = 450234	#Ironkraken
+				dynasty = 450235	#Hardman
+				dynasty = 496 #Targaryen
+				dynasty = 57 #Blackfyre
+				dynasty = 450204	#Redwyrm
+				dynasty = 450205	#Truedrake
+				dynasty = 450206	#Fyreblood
+				dynasty = 450207	#Goldfyre
+				dynasty = 1 #Martell
+				dynasty = 450212	#Darksun
+				dynasty = 450213	#Sunviper
+				dynasty = 450214	#Blackadder
+				dynasty = 450215	#Snakespear
+			}
+		}
+	}
+	# Great House Helm 2
+	16 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			may_wear_martial_headgear_trigger = no
+		}
+		modifier = {
+			factor = 0
+			does_not_wear_martial_headgear_trigger = yes
+		}
+		modifier = {
+			factor = 0
+			NOR = {	#Only for these graphical cultures
+				culture = stormlander
+				culture = riverlander
+				culture_group = first_men
+				culture_group = dornish
+			}
+		}	
+		modifier = {
+			factor = 0
+			NOR = {
+				higher_tier_than = DUKE
+				AND = {
+					liege = { higher_tier_than = DUKE }
+					NOT = { higher_tier_than = COUNT } #Only low-tier bannerman wear their liege's armor
+				}
+				dynasty = 317	#Baratheon
+				dynasty = 1544	#Durrandon
+				dynasty = 450224	#Stagborn
+				dynasty = 450225	#Stormhart
+				dynasty = 450226	#Durrande
+				dynasty = 450227	#Deer
+				dynasty = 127		#Frey
+				dynasty = 450236	#Twinchild
+				dynasty = 450237	#Goldcross
+				dynasty = 450238	#Tollbridge
+				dynasty = 450239	#Northgate
+				dynasty = 87		#Bolton
+				dynasty = 450355	#Skinner
+				dynasty = 450356	#Culling
+				dynasty = 450357	#Wailbeck
+				dynasty = 12		#Yronwood
+				dynasty = 450313	#Glendour
+				dynasty = 450314	#Arqert
+				dynasty = 450315	#Blackgate
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {		#Only gets House Armor if...
+				AND = {		#Stormlander Culture and a Rhllor/Cadet Baratheon
+					OR = {
+						AND = {
+							dynasty = 317	#Baratheon
+							religion = rhllor	#Stannis
+						}
+						dynasty = 450224	#Stagborn
+						dynasty = 450225	#Stormhart
+						dynasty = 450226	#Durrande
+						dynasty = 450227	#Deer
+					}
+					culture = stormlander
+				}
+				AND = {			#Stormlander bannerman employed by Rhllor/Cadet Baratheons
+					culture = stormlander
+					OR = {
+						AND = {
+							liege = {  dynasty = 317  }
+							liege = {  religion = rhllor  }
+						}
+						liege = {  dynasty = 450224}	#Stagborn
+						liege = {  dynasty = 450225}	#Stormhart
+						liege = {  dynasty = 450226}	#Durrande
+						liege = {  dynasty = 450227}	#Deer
+					}
+					NOT = {	higher_tier_than = COUNT }	#Only low-tier bannerman wear their liege's armor
+				}
+				AND = {		#Riverlander and a Frey
+					OR = {
+						dynasty = 127		#Frey
+						dynasty = 450236	#Twinchild
+						dynasty = 450237	#Goldcross
+						dynasty = 450238	#Tollbridge
+						dynasty = 450239	#Northgate
+					}
+					culture = riverlander
+				}
+				AND = {			#Riverlander bannerman employed by the Freys
+					culture = riverlander
+					OR = {
+						liege = {  dynasty = 127  }	#Frey
+						liege = {  dynasty = 450236}	#Twinchild
+						liege = {  dynasty = 450237}	#Goldcross
+						liege = {  dynasty = 450238}	#Tollbridge
+						liege = {  dynasty = 450239}	#Northgate
+					}
+					NOT = {	higher_tier_than = COUNT }	#Only low-tier bannerman wear their liege's armor
+				}
+				AND = {		#Northman and a Bolton
+					OR = {
+						dynasty = 87		#Bolton
+						dynasty = 450355	#Skinner
+						dynasty = 450356	#Culling
+						dynasty = 450357	#Wailbeck
+					}
+					culture = northman
+				}
+				AND = {			#Northman bannerman employed by the Boltons
+					culture = northman
+					OR = {
+						liege = {  dynasty = 87  }	#Bolton
+						liege = {  dynasty = 450355}	#Skinner
+						liege = {  dynasty = 450356}	#Culling
+						liege = {  dynasty = 450357}	#Wailbeck
+					}
+					NOT = {	higher_tier_than = COUNT }	#Only low-tier bannerman wear their liege's armor
+				}
+				AND = {		#Dornish and an Yronwood
+					OR = {
+						dynasty = 12		#Yronwood
+						dynasty = 450313	#Glendour
+						dynasty = 450314	#Arqert
+						dynasty = 450315	#Blackgate
+					}
+					culture_group = dornish
+				}
+				AND = {			#Dornish bannerman employed by the Yronwoods
+					culture_group = dornish
+					OR = {
+						liege = {  dynasty = 12	}	#Yronwood
+						liege = {  dynasty = 450313 }	#Glendour
+						liege = {  dynasty = 450314 }	#Arqert
+						liege = {  dynasty = 450315 }	#Blackgate
+					}
+					NOT = {	higher_tier_than = COUNT }	#Only low-tier bannerman wear their liege's armor
+				}
+			}
+		}
+	}
+}

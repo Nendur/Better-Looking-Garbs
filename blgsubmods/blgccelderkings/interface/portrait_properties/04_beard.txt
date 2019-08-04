@@ -1,0 +1,351 @@
+# p4 beard
+4 = {
+	0 = { #Beardless when young
+		factor = 40
+		modifier = {
+			factor = 0
+			practical_age > 21
+			NOT = { trait = eunuch }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_beard value = 1 } }
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 1 }
+			}
+		}
+	}
+
+	1 = { #Light beard
+		factor = 1
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 2 }
+			}
+		}
+	}
+
+	2 = { #Beard
+		factor = 1
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 3 }
+			}
+		}
+	}
+
+	3 = { #Beard
+		factor = 1
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 4 }
+			}
+		}
+	}
+
+	4 = { #Small mustache and beard
+		factor = 1
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 5 }
+			}
+		}
+	}
+
+	5 = { #Spanish mustache
+		factor = 1
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 6 }
+			}
+		}
+	}
+
+	6 = { #Beard no mustache
+		factor = 1
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 7 }
+			}
+		}
+	}
+
+	7 = { #Evil stache
+		factor = 1
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 8 }
+			}
+		}
+	}
+
+	8 = { # DLC beards
+		factor = 1
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 9 }
+			}
+		}
+	}
+
+	9 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 10 }
+			}
+		}
+	}
+
+	10 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 11 }
+			}
+		}
+	}
+
+	11 = { # Last Indian beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = norsegfx
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 12 }
+			}
+		}
+	}
+
+	12 = { # New Byzantine beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = norsegfx
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 13 }
+			}
+		}
+	}
+
+	13 = { # New Byzantine beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = norsegfx
+				graphical_culture = africangfx
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 14 }
+			}
+		}
+	}
+
+	14 = { # New Byzantine beard
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				graphical_culture = norsegfx
+				graphical_culture = africangfx
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 15 }
+			}
+		}
+	}
+
+	15 = { # Loopback to beardless
+		factor = 4
+
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 1 }
+			}
+		}
+	}
+
+	16 = {
+		factor = 1
+		trigger = {
+			OR = {
+				graphical_culture = argoniangfx
+				graphical_culture = anequinagfx
+				graphical_culture = pellitinegfx
+				graphical_culture = dunmergfx
+				graphical_culture = bosmergfx
+				graphical_culture = altmergfx
+				graphical_culture = maormergfx
+				graphical_culture = orsimergfx
+				graphical_culture = ayleidgfx
+				graphical_culture = falmergfx
+				graphical_culture = dremoragfx
+				graphical_culture = tangmogfx
+				graphical_culture = tsaescigfx
+				graphical_culture = kamalgfx
+				graphical_culture = chinesegfx
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 16 }
+			}
+		}
+	}
+
+	17 = {
+		factor = 1
+		trigger = {
+			OR = {
+				graphical_culture = argoniangfx
+				graphical_culture = anequinagfx
+				graphical_culture = pellitinegfx
+				graphical_culture = dunmergfx
+				graphical_culture = bosmergfx
+				graphical_culture = altmergfx
+				graphical_culture = maormergfx
+				graphical_culture = orsimergfx
+				graphical_culture = ayleidgfx
+				graphical_culture = falmergfx
+				graphical_culture = dremoragfx
+				graphical_culture = tangmogfx
+				graphical_culture = tsaescigfx
+				graphical_culture = kamalgfx
+				graphical_culture = chinesegfx
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 17 }
+			}
+		}
+	}
+
+	18 = {
+		factor = 1
+		trigger = {
+			OR = {
+				graphical_culture = argoniangfx
+				graphical_culture = anequinagfx
+				graphical_culture = pellitinegfx
+				graphical_culture = dunmergfx
+				graphical_culture = bosmergfx
+				graphical_culture = altmergfx
+				graphical_culture = maormergfx
+				graphical_culture = orsimergfx
+				graphical_culture = ayleidgfx
+				graphical_culture = falmergfx
+				graphical_culture = dremoragfx
+				graphical_culture = tangmogfx
+				graphical_culture = tsaescigfx
+				graphical_culture = kamalgfx
+				graphical_culture = chinesegfx
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 18 }
+			}
+		}
+	}
+
+	19 = {
+		factor = 1
+		trigger = {
+			OR = {
+				graphical_culture = argoniangfx
+				graphical_culture = anequinagfx
+				graphical_culture = pellitinegfx
+				graphical_culture = dunmergfx
+				graphical_culture = bosmergfx
+				graphical_culture = altmergfx
+				graphical_culture = maormergfx
+				graphical_culture = orsimergfx
+				graphical_culture = ayleidgfx
+				graphical_culture = falmergfx
+				graphical_culture = dremoragfx
+				graphical_culture = tangmogfx
+				graphical_culture = tsaescigfx
+				graphical_culture = kamalgfx
+				graphical_culture = chinesegfx
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 19 }
+			}
+		}
+	}
+}

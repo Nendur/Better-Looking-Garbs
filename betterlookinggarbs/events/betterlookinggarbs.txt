@@ -1,0 +1,2469 @@
+###################################
+#
+# Better Looking Garbs
+#
+# Events to alter ethnicity on newly created characters.
+#
+###################################
+
+namespace = blg
+
+# Ethnic diversity in random courtier spawns.
+character_event = {
+	id = blg.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	ai = yes
+	min_age = 1
+	trigger = {
+		trait = blgspawn
+	}
+	immediate = {
+		remove_trait = blgspawn
+	}
+
+	option = { # Leave unchanged / Ruler culture
+		ai_chance = {
+			factor = 6
+			modifier = {
+				factor = 0.5
+				OR = {
+					culture = turkish
+					culture = norman
+				}
+				OR = {
+					is_alternate_start = no
+					has_alternate_start_parameter = { key = culture value = historical }
+				}
+			}
+		}
+	}
+
+	option = { # Local province
+		ai_chance = { factor = 3 }
+		trigger = {
+			employer = {
+				is_landed = yes
+				ROOT = { race = PREV } 
+			}
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+		}
+
+		random_realm_province = {
+			ROOT = {
+				set_graphical_culture = PREV
+				# random = { chance = 25 culture = PREV }
+				# random = { chance = 25 religion = PREV }
+			}
+		}
+	}
+
+	option = { # Neighbour of local province
+		ai_chance = { factor = 2 }
+		trigger = {
+			employer = {
+				is_landed = yes
+				ROOT = { race = PREV } 
+			}
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+		}
+
+		random_realm_province = {
+			random_neighbor_province = {
+				ROOT = {
+					set_graphical_culture = PREV
+					# random = { chance = 25 culture = PREV }
+					# random = { chance = 25 religion = PREV }
+				}
+			}
+		}
+	}
+
+	option = { # Geographical region
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 3
+				culture = norman
+				OR = {
+					is_alternate_start = no
+					has_alternate_start_parameter = { key = culture value = historical }
+				}
+			}
+		}
+		trigger = {
+			employer = {
+				is_landed = yes
+				ROOT = { race = PREV } 
+			}
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				is_alternate_start = no
+				has_alternate_start_parameter = { key = culture value = historical }
+			}
+		}
+
+		random_realm_province = {
+			ROOT = {
+				if = {
+					limit = { PREV = { region = custom_england } }
+					if = {
+						limit = {
+							NOR = {
+								graphical_culture = englishgfx
+								graphical_culture = celticgfx
+								graphical_culture = bretongfx
+								graphical_culture = norsegfx
+								graphical_culture = saxongfx
+								graphical_culture = normangfx
+								graphical_culture = norsegaelgfx
+							}
+						}
+						set_graphical_culture = english
+					}
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = custom_scotland }
+						NOR = {
+							graphical_culture = celticgfx
+							graphical_culture = bretongfx
+							graphical_culture = norsegaelgfx
+						}
+					}
+					set_graphical_culture = scottish
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_europe_west_brittania }
+						NOR = {
+							graphical_culture = celticgfx
+							graphical_culture = bretongfx
+							graphical_culture = norsegaelgfx
+						}
+					}
+					set_graphical_culture = welsh
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = custom_frisia }
+						NOR = {
+							graphical_culture = westerngfx
+							graphical_culture = dutchgfx
+							graphical_culture = saxongfx
+						}
+					}
+					set_graphical_culture = dutch
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_europe_west_germania }
+						NOR = {
+							graphical_culture = germangfx
+							graphical_culture = westerngfx
+							graphical_culture = dutchgfx
+							graphical_culture = saxongfx
+							graphical_culture = westernslavicgfx
+							graphical_culture = bohemiangfx
+							graphical_culture = pomeraniangfx
+						}
+					}
+					set_graphical_culture = german
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_europe_west_francia }
+						NOR = {
+							graphical_culture = frankishgfx
+							graphical_culture = westerngfx
+							graphical_culture = dutchgfx
+							graphical_culture = saxongfx
+							graphical_culture = bretongfx
+							graphical_culture = trueoccitangfx
+							graphical_culture = occitangfx
+							graphical_culture = basquegfx
+							graphical_culture = gallicgfx
+						}
+					}
+					set_graphical_culture = frankish
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_europe_west_iberia }
+						NOR = {
+							graphical_culture = southerngfx
+							graphical_culture = basquegfx
+							graphical_culture = andalusiangfx
+							graphical_culture = celtiberiangfx
+						}
+					}
+					if = {
+						limit = { religion_group = christian }
+						set_graphical_culture = catalan
+						break = yes
+					}
+					set_graphical_culture = andalusian_arabic
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = custom_eastern_baltic }
+					}
+					if = {
+						limit = {
+							PREV = { region = world_europe_north }
+							NOR = {
+								graphical_culture = balticgfx
+								graphical_culture = ugricgfx
+								graphical_culture = celticgfx
+							}
+						}
+						set_graphical_culture = finnish
+						break = yes
+					}
+					if = {
+						limit = {
+							NOR = {
+								graphical_culture = balticgfx
+								graphical_culture = ugricgfx
+							}
+						}
+						set_graphical_culture = lithuanian
+					}
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_europe_north }
+						NOR = {
+							graphical_culture = norsegfx
+							graphical_culture = balticgfx
+							graphical_culture = ugricgfx
+						}
+					}
+					set_graphical_culture = norse
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_europe_south_east }
+						NOR = {
+							graphical_culture = croatsouthslavicgfx
+							graphical_culture = serbsouthslavicgfx
+							graphical_culture = byzantinegfx
+							graphical_culture = romanobalkangfx
+							graphical_culture = vlachgfx
+							graphical_culture = dalmatiangfx
+						}
+					}
+					set_graphical_culture = croatian
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = {
+							duchy = {
+								OR = {
+									title = d_sicily
+									title = d_benevento
+									title = d_capua
+									title = d_apulia
+									title = d_salerno
+									title = d_calabria
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							NOR = {
+								graphical_culture = siciliangfx
+								graphical_culture = berbergfx
+								graphical_culture = andalusiangfx
+							}
+						}
+						set_graphical_culture = sicilian
+					}
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_europe_south_italy }
+						NOR = {
+							graphical_culture = italiangfx
+							graphical_culture = lombardgfx
+							graphical_culture = romangfx
+							graphical_culture = siciliangfx
+							graphical_culture = dalmatiangfx
+							graphical_culture = bohemiangfx
+						}
+					}
+					set_graphical_culture = italian
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = custom_russia }
+					}
+					if = {
+						limit = {
+							NOT = { graphical_culture = easternslavicgfx }
+						}
+						set_graphical_culture = russian
+					}
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_asia_minor }
+						NOR = {
+							graphical_culture = byzantinegfx
+							graphical_culture = georgiangfx
+							graphical_culture = vlachgfx
+							graphical_culture = persiangfx
+							graphical_culture = alangfx
+							graphical_culture = kurdishgfx
+							graphical_culture = outremergfx
+						}
+					}
+					set_graphical_culture = armenian
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_middle_east_jerusalem }
+						NOR = {
+							graphical_culture = levantinegfx
+							graphical_culture = semitegfx
+							graphical_culture = ashkenazigfx
+							graphical_culture = kurdishgfx
+							graphical_culture = outremergfx
+							graphical_culture = egyptiangfx
+						}
+					}
+					set_graphical_culture = levantine_arabic
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_middle_east_arabia }
+						NOR = {
+							graphical_culture = arabicgfx
+							graphical_culture = egyptiangfx
+							graphical_culture = muslimgfx
+							graphical_culture = kurdishgfx
+							graphical_culture = outremergfx
+						}
+					}
+					set_graphical_culture = bedouin_arabic
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_india_deccan }
+						NOR = {
+							graphical_culture = southindiangfx
+							graphical_culture = centralindiangfx
+						}
+					}
+					set_graphical_culture = marathi
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_india }
+						NOR = {
+							graphical_culture = indiangfx
+							graphical_culture = indusgfx
+							graphical_culture = assamesegfx
+							graphical_culture = southindiangfx
+							graphical_culture = centralindiangfx
+						}
+					}
+					set_graphical_culture = hindustani
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_persia }
+						NOR = {
+							graphical_culture = persiangfx
+							graphical_culture = afghangfx
+							graphical_culture = sogdiangfx
+							graphical_culture = kurdishgfx
+						}
+					}
+					set_graphical_culture = persian
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_africa_north }
+						NOR = {
+							graphical_culture = berbergfx
+							graphical_culture = egyptiangfx
+						}
+					}
+					if = {
+						limit = { has_global_flag = SWMH }
+						set_graphical_culture = berber
+						break = yes
+					}
+					set_graphical_culture = maghreb_arabic
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_africa_west }
+						NOR = {
+							graphical_culture = westafricangfx
+							graphical_culture = centralafricangfx
+						}
+					}
+					set_graphical_culture = manden
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_africa_central }
+						NOR = {
+							graphical_culture = centralafricangfx
+							graphical_culture = nubiangfx
+							graphical_culture = africangfx
+							graphical_culture = somaligfx
+						}
+					}
+					set_graphical_culture = hausa
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_africa_east }
+						NOR = {
+							graphical_culture = africangfx
+							graphical_culture = nubiangfx
+							graphical_culture = somaligfx
+							graphical_culture = egyptiangfx
+							graphical_culture = centralafricangfx
+						}
+					}
+					set_graphical_culture = somali
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_steppe_tarim }
+						NOR = {
+							graphical_culture = sogdiangfx
+							graphical_culture = centralasiangfx
+						}
+					}
+					set_graphical_culture = sogdian
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_steppe_east }
+						NOR = {
+							graphical_culture = mongolgfx
+							graphical_culture = khitangfx
+							graphical_culture = centralasiangfx
+							graphical_culture = siberiangfx
+						}
+					}
+					set_graphical_culture = uyghur
+					break = yes
+				}
+				if = {
+					limit = {
+						PREV = { region = world_himalayas }
+						NOR = {
+							graphical_culture = bodpagfx
+							graphical_culture = khitangfx
+							graphical_culture = assamesegfx
+							graphical_culture = centralasiangfx
+							graphical_culture = tangutgfx
+						}
+					}
+					set_graphical_culture = bodpa
+					break = yes
+				}
+			}
+		}
+	}
+
+	option = { # North African mixed areas
+		ai_chance = { factor = 4 }
+		trigger = {
+			OR = {
+				culture = maghreb_arabic
+				blg_north_african = yes
+			}
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				is_alternate_start = no
+				has_alternate_start_parameter = { key = culture value = historical }
+			}
+		}
+
+		random_list = {
+			40 = {
+				if = {
+					limit = { NOT = { has_global_flag = SWMH } }
+					set_graphical_culture = maghreb_arabic
+				}
+				if = {
+					limit = { has_global_flag = SWMH }
+					set_graphical_culture = berber
+				}
+			}
+			20 = { set_graphical_culture = egyptian_arabic }
+			10 = { set_graphical_culture = bedouin_arabic }
+			10 = { set_graphical_culture = andalusian_arabic }
+			20 = { set_graphical_culture = manden }
+		}
+	}
+
+	option = { # East African mixed areas
+		ai_chance = { factor = 4 }
+		trigger = {
+			culture_group = east_african
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				is_alternate_start = no
+				has_alternate_start_parameter = { key = culture value = historical }
+			}
+		}
+
+		random_list = {
+			40 = { set_graphical_culture = ethiopian }
+			10 = { set_graphical_culture = bedouin_arabic }
+			20 = { set_graphical_culture = nubian }
+		}
+	}
+
+	option = { # Steppe mixed areas
+		ai_chance = { factor = 2 }
+		trigger = {
+			culture_group = altaic
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				is_alternate_start = no
+				has_alternate_start_parameter = { key = culture value = historical }
+			}
+		}
+
+		random_list = {
+			30 = { set_graphical_culture = cuman }
+			30 = { set_graphical_culture = bolghar }
+			20 = { set_graphical_culture = pecheneg }
+			10 = { set_graphical_culture = sogdian }
+			20 = {
+				modifier = {
+					factor = 0
+					NOT = { capital_scope = { OR = { region = world_steppe_east region = world_steppe_tarim } } }
+				}
+				set_graphical_culture = kirghiz
+			}
+		}
+	}
+
+	option = { # Italian mixed portraits
+		ai_chance = { factor = 4 }
+		trigger = {
+			culture = italian
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				is_alternate_start = no
+				has_alternate_start_parameter = { key = culture value = historical }
+			}
+		}
+
+		random_list = {
+			60 = { set_graphical_culture = italian }
+			20 = { set_graphical_culture = lombard }
+			10 = { set_graphical_culture = sicilian }
+		}
+	}
+
+	option = { # Bear species
+		ai_chance = { factor = 100 }
+		trigger = {
+			OR = {
+				graphical_culture = beargfx
+				graphical_culture = polarbeargfx
+				graphical_culture = blackbeargfx
+			}
+		}
+
+		if = {
+			limit = {
+				location = {
+					OR = {
+						region = world_europe_north
+						region = world_europe_east
+					}
+					climate = severe_winter
+				}
+			}
+			set_graphical_culture = polar_bear
+		}
+		else_if = {
+			limit = {
+				location = {
+					OR = {
+						region = world_persia
+						region = world_india
+						region = world_steppe_east
+						region = world_himalayas
+					}
+				}
+			}
+			set_graphical_culture = black_bear
+		}
+		else = {
+			set_graphical_culture = bear
+		}
+	}
+}
+
+# Mixed ethnicity for children.
+# Called from on_birth
+character_event = {
+	id = blg.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_trait = blgspawn
+	}
+
+	option = { # Leave unchanged
+		ai_chance = { factor = 4 }
+	}
+
+	option = { # Mixed
+		ai_chance = { factor = 6 }
+
+		#Animals
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = horsegfx
+							graphical_culture = catgfx
+							graphical_culture = beargfx
+							graphical_culture = polarbeargfx
+							graphical_culture = blackbeargfx
+							graphical_culture = hedgehoggfx
+							graphical_culture = duckgfx
+							graphical_culture = doggfx
+							graphical_culture = elephantgfx
+							graphical_culture = dragongfx
+							graphical_culture = redpandagfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = horsegfx
+							graphical_culture = catgfx
+							graphical_culture = beargfx
+							graphical_culture = polarbeargfx
+							graphical_culture = blackbeargfx
+							graphical_culture = hedgehoggfx
+							graphical_culture = duckgfx
+							graphical_culture = doggfx
+							graphical_culture = elephantgfx
+							graphical_culture = dragongfx
+							graphical_culture = redpandagfx
+						}
+					}
+				}
+			}
+			break = yes # No point trying
+		}
+
+		#African
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = africangfx
+							graphical_culture = westafricangfx
+							graphical_culture = centralafricangfx
+							graphical_culture = nubiangfx
+							graphical_culture = somaligfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = africangfx
+							graphical_culture = westafricangfx
+							graphical_culture = centralafricangfx
+							graphical_culture = nubiangfx
+							graphical_culture = somaligfx
+						}
+					}
+				}
+			}
+			if = { #African-Eastern
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = muslimgfx
+								graphical_culture = arabicgfx
+								graphical_culture = egyptiangfx
+								graphical_culture = persiangfx
+								graphical_culture = afghangfx
+								graphical_culture = alangfx
+								graphical_culture = sogdiangfx
+								graphical_culture = kurdishgfx
+								graphical_culture = levantinegfx
+								graphical_culture = semitegfx
+								graphical_culture = byzantinegfx
+								graphical_culture = georgiangfx
+								graphical_culture = turkishgfx
+								graphical_culture = cumangfx
+								graphical_culture = pecheneggfx
+								graphical_culture = avargfx
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = siberiangfx
+								graphical_culture = steppegfx
+								graphical_culture = khitangfx
+								graphical_culture = chinesegfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = muslimgfx
+								graphical_culture = arabicgfx
+								graphical_culture = egyptiangfx
+								graphical_culture = persiangfx
+								graphical_culture = afghangfx
+								graphical_culture = alangfx
+								graphical_culture = sogdiangfx
+								graphical_culture = kurdishgfx
+								graphical_culture = levantinegfx
+								graphical_culture = semitegfx
+								graphical_culture = byzantinegfx
+								graphical_culture = georgiangfx
+								graphical_culture = turkishgfx
+								graphical_culture = cumangfx
+								graphical_culture = pecheneggfx
+								graphical_culture = avargfx
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = siberiangfx
+								graphical_culture = steppegfx
+								graphical_culture = khitangfx
+								graphical_culture = chinesegfx
+							}
+						}
+					}
+				}
+				if = { #West-African-Eastern
+					limit = {
+						OR = {
+							true_father_even_if_dead = {
+								OR = {
+									graphical_culture = westafricangfx
+									graphical_culture = centralafricangfx
+									graphical_culture = nubiangfx
+								}
+							}
+							mother_even_if_dead = {
+								OR = {
+									graphical_culture = westafricangfx
+									graphical_culture = centralafricangfx
+									graphical_culture = nubiangfx
+								}
+							}
+						}
+					}
+					set_graphical_culture = somali
+					break = yes
+				}
+				if = { #East-African-Eastern
+					limit = {
+						OR = {
+							true_father_even_if_dead = {
+								OR = {
+									graphical_culture = africangfx
+									graphical_culture = somaligfx
+								}
+							}
+							mother_even_if_dead = {
+								OR = {
+									graphical_culture = africangfx
+									graphical_culture = somaligfx
+								}
+							}
+						}
+						NOR = {
+							true_father_even_if_dead = {
+								OR = {
+									graphical_culture = muslimgfx
+									graphical_culture = arabicgfx
+									graphical_culture = egyptiangfx
+								}
+							}
+							mother_even_if_dead = {
+								OR = {
+									graphical_culture = muslimgfx
+									graphical_culture = arabicgfx
+									graphical_culture = egyptiangfx
+								}
+							}
+						}
+					}
+					set_graphical_culture = egyptian_arabic
+					break = yes
+				}
+				break = yes
+			}
+			if = { #African-Indian
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = indiangfx
+								graphical_culture = indusgfx
+								graphical_culture = bodpagfx
+								graphical_culture = assamesegfx
+								graphical_culture = tangutgfx
+								graphical_culture = mesoamericangfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = indiangfx
+								graphical_culture = indusgfx
+								graphical_culture = bodpagfx
+								graphical_culture = assamesegfx
+								graphical_culture = tangutgfx
+								graphical_culture = mesoamericangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = tamil
+				break = yes
+			}
+			if = { #African-Iberian
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = southerngfx
+								graphical_culture = andalusiangfx
+								graphical_culture = basquegfx
+								graphical_culture = celtiberiangfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = southerngfx
+								graphical_culture = andalusiangfx
+								graphical_culture = basquegfx
+								graphical_culture = celtiberiangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = maghreb_arabic
+				break = yes
+			}
+			if = { #African-European
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							NOT = {
+								graphical_culture = africangfx
+								graphical_culture = westafricangfx
+								graphical_culture = centralafricangfx
+								graphical_culture = nubiangfx
+								graphical_culture = somaligfx
+								graphical_culture = berbergfx
+								graphical_culture = siciliangfx
+								graphical_culture = centralindiangfx
+								graphical_culture = southindiangfx
+							}
+						}
+						mother_even_if_dead = {
+							NOT = {
+								graphical_culture = africangfx
+								graphical_culture = westafricangfx
+								graphical_culture = centralafricangfx
+								graphical_culture = nubiangfx
+								graphical_culture = somaligfx
+								graphical_culture = berbergfx
+								graphical_culture = siciliangfx
+								graphical_culture = centralindiangfx
+								graphical_culture = southindiangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = egyptian_arabic
+				break = yes
+			}
+			break = yes
+		}
+
+		#South-Indian
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = southindiangfx
+							graphical_culture = centralindiangfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = southindiangfx
+							graphical_culture = centralindiangfx
+						}
+					}
+				}
+			}
+			if = { #South-Indian-Altaic
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = turkishgfx
+								graphical_culture = cumangfx
+								graphical_culture = pecheneggfx
+								graphical_culture = steppegfx
+								graphical_culture = avargfx
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = siberiangfx
+								graphical_culture = khitangfx
+								graphical_culture = chinesegfx
+								graphical_culture = bodpagfx
+								graphical_culture = tangutgfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = turkishgfx
+								graphical_culture = cumangfx
+								graphical_culture = pecheneggfx
+								graphical_culture = steppegfx
+								graphical_culture = avargfx
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = siberiangfx
+								graphical_culture = khitangfx
+								graphical_culture = chinesegfx
+								graphical_culture = bodpagfx
+								graphical_culture = tangutgfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = assamese
+				break = yes
+			}
+			if = { #South-Indian-Other
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							NOT = {
+								graphical_culture = indiangfx
+								graphical_culture = southindiangfx
+								graphical_culture = centralindiangfx
+								graphical_culture = assamesegfx
+								graphical_culture = indusgfx
+								graphical_culture = muslimgfx
+								graphical_culture = arabicgfx
+								graphical_culture = egyptiangfx
+								graphical_culture = mesoamericangfx
+							}
+						}
+						mother_even_if_dead = {
+							NOT = {
+								graphical_culture = indiangfx
+								graphical_culture = southindiangfx
+								graphical_culture = centralindiangfx
+								graphical_culture = assamesegfx
+								graphical_culture = indusgfx
+								graphical_culture = muslimgfx
+								graphical_culture = arabicgfx
+								graphical_culture = egyptiangfx
+								graphical_culture = mesoamericangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = panjabi
+				break = yes
+			}
+			break = yes
+		}
+
+		#Indian
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = indiangfx
+							graphical_culture = indusgfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = indiangfx
+							graphical_culture = indusgfx
+						}
+					}
+				}
+			}
+			if = { #Indian-Mongolian
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = khitangfx
+								graphical_culture = bodpagfx
+								graphical_culture = tangutgfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = khitangfx
+								graphical_culture = bodpagfx
+								graphical_culture = tangutgfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = assamese
+				break = yes
+			}
+			if = { #Indian-Turkic
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = turkishgfx
+								graphical_culture = cumangfx
+								graphical_culture = pecheneggfx
+								graphical_culture = steppegfx
+								graphical_culture = avargfx
+								graphical_culture = siberiangfx
+								graphical_culture = chinesegfx
+								graphical_culture = ugricgfx
+								graphical_culture = magyargfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = turkishgfx
+								graphical_culture = cumangfx
+								graphical_culture = pecheneggfx
+								graphical_culture = steppegfx
+								graphical_culture = avargfx
+								graphical_culture = siberiangfx
+								graphical_culture = chinesegfx
+								graphical_culture = ugricgfx
+								graphical_culture = magyargfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = tangut
+				break = yes
+			}
+			if = { #Indian-Other
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							NOT = {
+								graphical_culture = indiangfx
+								graphical_culture = assamesegfx
+								graphical_culture = indusgfx
+								graphical_culture = afghangfx
+								graphical_culture = muslimgfx
+								graphical_culture = arabicgfx
+								graphical_culture = egyptiangfx
+								graphical_culture = mesoamericangfx
+							}
+						}
+						mother_even_if_dead = {
+							NOT = {
+								graphical_culture = indiangfx
+								graphical_culture = assamesegfx
+								graphical_culture = indusgfx
+								graphical_culture = afghangfx
+								graphical_culture = muslimgfx
+								graphical_culture = arabicgfx
+								graphical_culture = egyptiangfx
+								graphical_culture = mesoamericangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = afghan
+				break = yes
+			}
+			break = yes
+		}
+
+		#Tibetan
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = bodpagfx
+							graphical_culture = assamesegfx
+							graphical_culture = tangutgfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = bodpagfx
+							graphical_culture = assamesegfx
+							graphical_culture = tangutgfx
+						}
+					}
+				}
+			}
+			if = { #Tibetan-Turkic
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = turkishgfx
+								graphical_culture = steppegfx
+								graphical_culture = cumangfx
+								graphical_culture = pecheneggfx
+								graphical_culture = avargfx
+								graphical_culture = siberiangfx
+								graphical_culture = chinesegfx
+								graphical_culture = ugricgfx
+								graphical_culture = magyargfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = turkishgfx
+								graphical_culture = steppegfx
+								graphical_culture = cumangfx
+								graphical_culture = pecheneggfx
+								graphical_culture = avargfx
+								graphical_culture = siberiangfx
+								graphical_culture = chinesegfx
+								graphical_culture = ugricgfx
+								graphical_culture = magyargfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = uyghur
+				break = yes
+			}
+			if = { #Tibetan-European
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							NOT = {
+								graphical_culture = bodpagfx
+								graphical_culture = assamesegfx
+								graphical_culture = tangutgfx
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = khitangfx
+								graphical_culture = persiangfx
+								graphical_culture = afghangfx
+								graphical_culture = alangfx
+								graphical_culture = sogdiangfx
+								graphical_culture = kurdishgfx
+								graphical_culture = muslimgfx
+								graphical_culture = arabicgfx
+								graphical_culture = egyptiangfx
+								graphical_culture = mesoamericangfx
+							}
+						}
+						mother_even_if_dead = {
+							NOT = {
+								graphical_culture = bodpagfx
+								graphical_culture = assamesegfx
+								graphical_culture = tangutgfx
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = khitangfx
+								graphical_culture = persiangfx
+								graphical_culture = afghangfx
+								graphical_culture = alangfx
+								graphical_culture = sogdiangfx
+								graphical_culture = kurdishgfx
+								graphical_culture = muslimgfx
+								graphical_culture = arabicgfx
+								graphical_culture = egyptiangfx
+								graphical_culture = mesoamericangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = afghan
+				break = yes
+			}
+			break = yes
+		}
+
+		#Arabic
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = muslimgfx
+							graphical_culture = arabicgfx
+							graphical_culture = egyptiangfx
+							graphical_culture = berbergfx
+							graphical_culture = mesoamericangfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = muslimgfx
+							graphical_culture = arabicgfx
+							graphical_culture = egyptiangfx
+							graphical_culture = berbergfx
+							graphical_culture = mesoamericangfx
+						}
+					}
+				}
+			}
+			if = { #Arabic-Altaic
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = cumangfx
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = siberiangfx
+								graphical_culture = khitangfx
+								graphical_culture = turkishgfx
+								graphical_culture = pecheneggfx
+								graphical_culture = avargfx
+								graphical_culture = chinesegfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = cumangfx
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = siberiangfx
+								graphical_culture = khitangfx
+								graphical_culture = turkishgfx
+								graphical_culture = pecheneggfx
+								graphical_culture = avargfx
+								graphical_culture = chinesegfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = bolghar
+				break = yes
+			}
+			if = { #Arabic-Eastern-European
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = byzantinegfx
+								graphical_culture = georgiangfx
+								graphical_culture = easternslavicgfx
+								graphical_culture = westernslavicgfx
+								graphical_culture = bohemiangfx
+								graphical_culture = pomeraniangfx
+								graphical_culture = croatsouthslavicgfx
+								graphical_culture = serbsouthslavicgfx
+								graphical_culture = vlachgfx
+								graphical_culture = magyargfx
+								graphical_culture = ugricgfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = byzantinegfx
+								graphical_culture = georgiangfx
+								graphical_culture = easternslavicgfx
+								graphical_culture = westernslavicgfx
+								graphical_culture = bohemiangfx
+								graphical_culture = pomeraniangfx
+								graphical_culture = croatsouthslavicgfx
+								graphical_culture = serbsouthslavicgfx
+								graphical_culture = vlachgfx
+								graphical_culture = magyargfx
+								graphical_culture = ugricgfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = levantine_arabic
+				break = yes
+			}
+			if = { #Arabic-European
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							NOT = {
+								graphical_culture = muslimgfx
+								graphical_culture = arabicgfx
+								graphical_culture = egyptiangfx
+								graphical_culture = indusgfx
+								graphical_culture = levantinegfx
+								graphical_culture = semitegfx
+								graphical_culture = persiangfx
+								graphical_culture = alangfx
+								graphical_culture = afghangfx
+								graphical_culture = sogdiangfx
+								graphical_culture = kurdishgfx
+								graphical_culture = andalusiangfx
+								graphical_culture = berbergfx
+								graphical_culture = siciliangfx
+								graphical_culture = steppegfx
+								graphical_culture = mesoamericangfx
+							}
+						}
+						mother_even_if_dead = {
+							NOT = {
+								graphical_culture = muslimgfx
+								graphical_culture = arabicgfx
+								graphical_culture = egyptiangfx
+								graphical_culture = indusgfx
+								graphical_culture = levantinegfx
+								graphical_culture = semitegfx
+								graphical_culture = persiangfx
+								graphical_culture = alangfx
+								graphical_culture = afghangfx
+								graphical_culture = sogdiangfx
+								graphical_culture = kurdishgfx
+								graphical_culture = andalusiangfx
+								graphical_culture = berbergfx
+								graphical_culture = siciliangfx
+								graphical_culture = steppegfx
+								graphical_culture = mesoamericangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = andalusian_arabic
+				break = yes
+			}
+			break = yes
+		}
+
+		#Steppes
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = cumangfx
+							graphical_culture = steppegfx
+							graphical_culture = mongolgfx
+							graphical_culture = centralasiangfx
+							graphical_culture = siberiangfx
+							graphical_culture = khitangfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = cumangfx
+							graphical_culture = steppegfx
+							graphical_culture = mongolgfx
+							graphical_culture = centralasiangfx
+							graphical_culture = siberiangfx
+							graphical_culture = khitangfx
+						}
+					}
+				}
+			}
+			if = { #Mongol-Persian
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = persiangfx
+								graphical_culture = afghangfx
+								graphical_culture = kurdishgfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = persiangfx
+								graphical_culture = afghangfx
+								graphical_culture = kurdishgfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = sogdian
+				break = yes
+			}
+			if = { #Mongol-European
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							NOT = {
+								graphical_culture = turkishgfx
+								graphical_culture = steppegfx
+								graphical_culture = cumangfx
+								graphical_culture = pecheneggfx
+								graphical_culture = avargfx
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = siberiangfx
+								graphical_culture = khitangfx
+								graphical_culture = chinesegfx
+								graphical_culture = alangfx
+								graphical_culture = sogdiangfx
+								graphical_culture = levantinegfx
+								graphical_culture = semitegfx
+							}
+						}
+						mother_even_if_dead = {
+							NOT = {
+								graphical_culture = turkishgfx
+								graphical_culture = steppegfx
+								graphical_culture = cumangfx
+								graphical_culture = pecheneggfx
+								graphical_culture = avargfx
+								graphical_culture = mongolgfx
+								graphical_culture = centralasiangfx
+								graphical_culture = siberiangfx
+								graphical_culture = khitangfx
+								graphical_culture = chinesegfx
+								graphical_culture = alangfx
+								graphical_culture = sogdiangfx
+								graphical_culture = levantinegfx
+								graphical_culture = semitegfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = avar
+				break = yes
+			}
+			break = yes
+		}
+
+		#Byzantine/Levant/Persian
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = byzantinegfx
+							graphical_culture = georgiangfx
+							graphical_culture = levantinegfx
+							graphical_culture = semitegfx
+							graphical_culture = persiangfx
+							graphical_culture = afghangfx
+							graphical_culture = alangfx
+							graphical_culture = sogdiangfx
+							graphical_culture = kurdishgfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = byzantinegfx
+							graphical_culture = georgiangfx
+							graphical_culture = levantinegfx
+							graphical_culture = semitegfx
+							graphical_culture = persiangfx
+							graphical_culture = afghangfx
+							graphical_culture = alangfx
+							graphical_culture = sogdiangfx
+							graphical_culture = kurdishgfx
+						}
+					}
+				}
+			}
+			if = { #Byzantine-Persian
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							graphical_culture = byzantinegfx
+						}
+						mother_even_if_dead = {
+							graphical_culture = byzantinegfx
+						}
+					}
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = persiangfx
+								graphical_culture = afghangfx
+								graphical_culture = alangfx
+								graphical_culture = sogdiangfx
+								graphical_culture = kurdishgfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = persiangfx
+								graphical_culture = afghangfx
+								graphical_culture = alangfx
+								graphical_culture = sogdiangfx
+								graphical_culture = kurdishgfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = armenian
+				break = yes
+			}
+			if = { #Byzantine-Eastern
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = easternslavicgfx
+								graphical_culture = westernslavicgfx
+								graphical_culture = croatsouthslavicgfx
+								graphical_culture = serbsouthslavicgfx
+								graphical_culture = dalmatiangfx
+								graphical_culture = romanobalkangfx
+								graphical_culture = pomeraniangfx
+								graphical_culture = bohemiangfx
+								graphical_culture = magyargfx
+								graphical_culture = avargfx
+								graphical_culture = balticgfx
+								graphical_culture = ugricgfx
+								graphical_culture = chinesegfx
+								graphical_culture = celtiberiangfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = easternslavicgfx
+								graphical_culture = westernslavicgfx
+								graphical_culture = croatsouthslavicgfx
+								graphical_culture = serbsouthslavicgfx
+								graphical_culture = dalmatiangfx
+								graphical_culture = romanobalkangfx
+								graphical_culture = pomeraniangfx
+								graphical_culture = bohemiangfx
+								graphical_culture = magyargfx
+								graphical_culture = avargfx
+								graphical_culture = balticgfx
+								graphical_culture = ugricgfx
+								graphical_culture = chinesegfx
+								graphical_culture = celtiberiangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = romanian
+				break = yes
+			}
+			if = { #Byzantine-Southern
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = italiangfx
+								graphical_culture = romangfx
+								graphical_culture = occitangfx
+								graphical_culture = trueoccitangfx
+								graphical_culture = southerngfx
+								graphical_culture = andalusiangfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = italiangfx
+								graphical_culture = romangfx
+								graphical_culture = occitangfx
+								graphical_culture = trueoccitangfx
+								graphical_culture = southerngfx
+								graphical_culture = andalusiangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = sicilian
+				break = yes
+			}
+			if = { #Byzantine-European
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = lombardgfx
+								graphical_culture = frankishgfx
+								graphical_culture = germangfx
+								graphical_culture = oldfrankishgfx
+								graphical_culture = celticgfx
+								graphical_culture = bretongfx
+								graphical_culture = dutchgfx
+								graphical_culture = westerngfx
+								graphical_culture = englishgfx
+								graphical_culture = saxongfx
+								graphical_culture = norsegfx
+								graphical_culture = norsegaelgfx
+								graphical_culture = normangfx
+								graphical_culture = crimeangfx
+								graphical_culture = visigothgfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = lombardgfx
+								graphical_culture = frankishgfx
+								graphical_culture = germangfx
+								graphical_culture = oldfrankishgfx
+								graphical_culture = celticgfx
+								graphical_culture = bretongfx
+								graphical_culture = dutchgfx
+								graphical_culture = westerngfx
+								graphical_culture = englishgfx
+								graphical_culture = saxongfx
+								graphical_culture = norsegfx
+								graphical_culture = norsegaelgfx
+								graphical_culture = normangfx
+								graphical_culture = crimeangfx
+								graphical_culture = visigothgfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = basque
+				break = yes
+			}
+			break = yes
+		}
+
+		#Western Steppe
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = turkishgfx
+							graphical_culture = pecheneggfx
+							graphical_culture = avargfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = turkishgfx
+							graphical_culture = pecheneggfx
+							graphical_culture = avargfx
+						}
+					}
+				}
+			}
+			if = { #Steppe-Northern
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = westernslavicgfx
+								graphical_culture = pomeraniangfx
+								graphical_culture = bohemiangfx
+								graphical_culture = balticgfx
+								graphical_culture = ugricgfx
+								graphical_culture = norsegfx
+								graphical_culture = norsegaelgfx
+								graphical_culture = crimeangfx
+								graphical_culture = englishgfx
+								graphical_culture = normangfx
+								graphical_culture = saxongfx
+								graphical_culture = dutchgfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = westernslavicgfx
+								graphical_culture = pomeraniangfx
+								graphical_culture = bohemiangfx
+								graphical_culture = balticgfx
+								graphical_culture = ugricgfx
+								graphical_culture = norsegfx
+								graphical_culture = norsegaelgfx
+								graphical_culture = crimeangfx
+								graphical_culture = englishgfx
+								graphical_culture = normangfx
+								graphical_culture = saxongfx
+								graphical_culture = dutchgfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = russian
+				break = yes
+			}
+			if = { #Steppe-Western
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							NOT = {
+								graphical_culture = turkishgfx
+								graphical_culture = pecheneggfx
+								graphical_culture = avargfx
+								graphical_culture = easternslavicgfx
+								graphical_culture = magyargfx
+								graphical_culture = chinesegfx
+							}
+						}
+						mother_even_if_dead = {
+							NOT = {
+								graphical_culture = turkishgfx
+								graphical_culture = pecheneggfx
+								graphical_culture = avargfx
+								graphical_culture = easternslavicgfx
+								graphical_culture = magyargfx
+								graphical_culture = chinesegfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = hungarian
+				break = yes
+			}
+			break = yes
+		}
+
+		#Southernslavic
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = croatsouthslavicgfx
+							graphical_culture = serbsouthslavicgfx
+							graphical_culture = romanobalkangfx
+							graphical_culture = vlachgfx
+							graphical_culture = ashkenazigfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = croatsouthslavicgfx
+							graphical_culture = serbsouthslavicgfx
+							graphical_culture = romanobalkangfx
+							graphical_culture = vlachgfx
+							graphical_culture = ashkenazigfx
+						}
+					}
+				}
+			}
+			if = { #Southernslavic-Southern
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = italiangfx
+								graphical_culture = siciliangfx
+								graphical_culture = romangfx
+								graphical_culture = southerngfx
+								graphical_culture = andalusiangfx
+								graphical_culture = trueoccitangfx
+								graphical_culture = occitangfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = italiangfx
+								graphical_culture = siciliangfx
+								graphical_culture = romangfx
+								graphical_culture = southerngfx
+								graphical_culture = andalusiangfx
+								graphical_culture = trueoccitangfx
+								graphical_culture = occitangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = dalmatian
+				break = yes
+			}
+			if = { #Southernslavic-Western
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = germangfx
+								graphical_culture = frankishgfx
+								graphical_culture = oldfrankishgfx
+								graphical_culture = lombardgfx
+								graphical_culture = basquegfx
+								graphical_culture = celticgfx
+								graphical_culture = bretongfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = germangfx
+								graphical_culture = frankishgfx
+								graphical_culture = oldfrankishgfx
+								graphical_culture = lombardgfx
+								graphical_culture = basquegfx
+								graphical_culture = celticgfx
+								graphical_culture = bretongfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = bohemian
+				break = yes
+			}
+			if = { #Southernslavic-Northern
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = westerngfx
+								graphical_culture = englishgfx
+								graphical_culture = dutchgfx
+								graphical_culture = normangfx
+								graphical_culture = norsegfx
+								graphical_culture = norsegaelgfx
+								graphical_culture = crimeangfx
+								graphical_culture = saxongfx
+								graphical_culture = ugricgfx
+								graphical_culture = balticgfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = westerngfx
+								graphical_culture = englishgfx
+								graphical_culture = dutchgfx
+								graphical_culture = normangfx
+								graphical_culture = norsegfx
+								graphical_culture = norsegaelgfx
+								graphical_culture = crimeangfx
+								graphical_culture = saxongfx
+								graphical_culture = ugricgfx
+								graphical_culture = balticgfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = polish
+				break = yes
+			}
+			break = yes
+		}
+
+		#Southern
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = southerngfx
+							graphical_culture = andalusiangfx
+							graphical_culture = italiangfx
+							graphical_culture = siciliangfx
+							graphical_culture = romangfx
+							graphical_culture = dalmatiangfx
+							graphical_culture = basquegfx
+							graphical_culture = celtiberiangfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = southerngfx
+							graphical_culture = andalusiangfx
+							graphical_culture = italiangfx
+							graphical_culture = siciliangfx
+							graphical_culture = romangfx
+							graphical_culture = dalmatiangfx
+							graphical_culture = basquegfx
+							graphical_culture = celtiberiangfx
+						}
+					}
+				}
+			}
+			if = { #Southern-Other
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							NOR = {
+								graphical_culture = italiangfx
+								graphical_culture = siciliangfx
+								graphical_culture = romangfx
+								graphical_culture = dalmatiangfx
+								graphical_culture = southerngfx
+								graphical_culture = andalusiangfx
+								graphical_culture = trueoccitangfx
+								graphical_culture = occitangfx
+								graphical_culture = basquegfx
+								graphical_culture = celtiberiangfx
+								graphical_culture = visigothgfx
+								graphical_culture = lombardgfx
+								graphical_culture = chinesegfx
+							}
+						}
+						mother_even_if_dead = {
+							NOR = {
+								graphical_culture = italiangfx
+								graphical_culture = siciliangfx
+								graphical_culture = romangfx
+								graphical_culture = dalmatiangfx
+								graphical_culture = southerngfx
+								graphical_culture = andalusiangfx
+								graphical_culture = trueoccitangfx
+								graphical_culture = occitangfx
+								graphical_culture = basquegfx
+								graphical_culture = celtiberiangfx
+								graphical_culture = visigothgfx
+								graphical_culture = lombardgfx
+								graphical_culture = chinesegfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = occitan
+				break = yes
+			}
+			break = yes
+		}
+
+		#Western
+		if = {
+			limit = {
+				OR = {
+					true_father_even_if_dead = {
+						OR = {
+							graphical_culture = westerngfx
+							graphical_culture = englishgfx
+							graphical_culture = dutchgfx
+							graphical_culture = germangfx
+							graphical_culture = frankishgfx
+							graphical_culture = oldfrankishgfx
+							graphical_culture = normangfx
+							graphical_culture = lombardgfx
+							graphical_culture = visigothgfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							graphical_culture = westerngfx
+							graphical_culture = englishgfx
+							graphical_culture = dutchgfx
+							graphical_culture = germangfx
+							graphical_culture = frankishgfx
+							graphical_culture = oldfrankishgfx
+							graphical_culture = normangfx
+							graphical_culture = lombardgfx
+							graphical_culture = visigothgfx
+						}
+					}
+				}
+			}
+			if = { #Western-Slavic/Ugric
+				limit = {
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = easternslavicgfx
+								graphical_culture = ugricgfx
+								graphical_culture = magyargfx
+								graphical_culture = balticgfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = easternslavicgfx
+								graphical_culture = ugricgfx
+								graphical_culture = magyargfx
+								graphical_culture = balticgfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = polish
+				break = yes
+			}
+			if = { #Western-Celtic
+				limit = {
+					OR = {
+						true_father_even_if_dead = { graphical_culture = celticgfx }
+						mother_even_if_dead = { graphical_culture = celticgfx }
+					}
+				}
+				set_graphical_culture = welsh
+				break = yes
+			}
+			if = { #Western-Norse
+				limit = {
+					NOR = {
+						true_father_even_if_dead = {
+							graphical_culture = normangfx
+						}
+						mother_even_if_dead = {
+							graphical_culture = normangfx
+						}
+					}
+					OR = {
+						true_father_even_if_dead = {
+							OR = {
+								graphical_culture = norsegfx
+								graphical_culture = norsegaelgfx
+								graphical_culture = crimeangfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								graphical_culture = norsegfx
+								graphical_culture = norsegaelgfx
+								graphical_culture = crimeangfx
+							}
+						}
+					}
+				}
+				set_graphical_culture = saxon
+				break = yes
+			}
+			break = yes
+		}
+	}
+}
+
+# Installatian check event.
+character_event = {
+	id    = blg.4
+	title = blg.4.title
+	desc  = blg.4.desc
+
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_intrigue
+	hide_from = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = blg.4.opt
+	}
+}
+
+# Add additional freckled graphical cultures.
+character_event = { 
+	id = blg.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOR = {
+			trait = freckles
+			trait = freckles_2
+			trait = freckles_3
+			trait = freckles_4
+			trait = freckles_5
+		} 
+		OR = { 
+			graphical_culture = bretongfx
+			graphical_culture = englishgfx
+			graphical_culture = norsegaelgfx 
+			graphical_culture = celtiberiangfx
+			AND = { 
+				culture = uyghur
+				graphical_culture = centralasiangfx 
+			}
+			AND = { 
+				culture = komi #udmurt
+				graphical_culture = ugricgfx 
+			}
+			AND = { 
+				culture = tocharian
+				graphical_culture = sogdiangfx 
+			}
+			mother_even_if_dead = { 
+				OR = { 
+					trait = freckles_3
+					trait = freckles_2
+					trait = freckles 
+					trait = freckles_4
+					trait = freckles_5
+				} 
+			}
+			real_father_even_if_dead = { 
+				OR = { 
+					trait = freckles_3
+					trait = freckles_2
+					trait = freckles 
+					trait = freckles_4
+					trait = freckles_5
+				} 
+			}
+			mother_even_if_dead = { #Rare cases of a non-gfx gaining the trait anyway due to mixed-race union.
+				OR = { 
+					graphical_culture = bretongfx
+					graphical_culture = englishgfx
+					graphical_culture = norsegaelgfx
+					graphical_culture = celtiberiangfx
+					AND = { 
+						culture = uyghur
+						graphical_culture = centralasiangfx 
+					}
+					AND = { 
+						culture = komi
+						graphical_culture = ugricgfx 
+					}
+					AND = { 
+						culture = tocharian
+						graphical_culture = sogdiangfx 
+					}
+				} 
+			}
+			real_father_even_if_dead = { 
+				OR = { 
+					graphical_culture = bretongfx
+					graphical_culture = englishgfx
+					graphical_culture = norsegaelgfx 
+					AND = { 
+						culture = uyghur
+						graphical_culture = centralasiangfx 
+					}
+					AND = { 
+						culture = komi
+						graphical_culture = ugricgfx 
+					}
+					AND = { 
+						culture = tocharian
+						graphical_culture = sogdiangfx 
+					}
+				} 
+			}
+			real_father_even_if_dead = { 
+				real_father_even_if_dead = { 
+					OR = { 
+						graphical_culture = bretongfx
+						graphical_culture = englishgfx
+						graphical_culture = norsegaelgfx
+						graphical_culture = celtiberiangfx
+						AND = { 
+							culture = uyghur
+							graphical_culture = centralasiangfx 
+						}
+						AND = { 
+							culture = komi
+							graphical_culture = ugricgfx 
+						}
+						AND = { 
+							culture = tocharian
+							graphical_culture = sogdiangfx 
+						}
+					} 
+				}
+			}
+			mother_even_if_dead = { 
+				mother_even_if_dead = { 
+					OR = { 
+						graphical_culture = bretongfx
+						graphical_culture = englishgfx
+						graphical_culture = norsegaelgfx
+						graphical_culture = celtiberiangfx
+						AND = { 
+							culture = uyghur
+							graphical_culture = centralasiangfx 
+						}
+						AND = { 
+							culture = komi
+							graphical_culture = ugricgfx 
+						}
+						AND = { 
+							culture = tocharian
+							graphical_culture = sogdiangfx 
+						}
+					} 
+				}
+			}
+		}
+	}
+	immediate = { 
+		random_list = { 
+			2 = { 
+				add_trait = freckles_5 
+				modifier = { 
+					factor = 5
+					mother_even_if_dead = { trait = freckles_5 }
+				}
+				modifier = { 
+					factor = 5
+					real_father_even_if_dead = { trait = freckles_5 }
+				}
+				#Grandparents
+				modifier = { 
+					factor = 4
+					real_father_even_if_dead = { real_father_even_if_dead = { trait = freckles_5 } }
+				}
+				modifier = { 
+					factor = 4
+					mother_even_if_dead = { mother_even_if_dead = { trait = freckles_5 } }
+				}
+
+				modifier = { 
+					factor = 3
+					mother_even_if_dead = { trait = freckles_4 }
+				}
+				modifier = { 
+					factor = 3
+					real_father_even_if_dead = { trait = freckles_4 }
+				}
+				#Grandparents
+				modifier = { 
+					factor = 2
+					real_father_even_if_dead = { real_father_even_if_dead = { trait = freckles_4 } }
+				}
+				modifier = { 
+					factor = 2
+					mother_even_if_dead = { mother_even_if_dead = { trait = freckles_4 } }
+				}
+				#Multiplier bonus	
+				modifier = { 
+					factor = 2
+					real_father_even_if_dead = { trait = freckles_4 }
+					mother_even_if_dead = { trait = freckles_4 }
+				}
+				#The thickest versions should only appear if a parent already has the freckles gene, not appear out of nowhere.
+				trigger = { 
+					mother_even_if_dead = { 
+						OR = { 
+							trait = freckles_3
+							trait = freckles_2
+							trait = freckles 
+							trait = freckles_4
+							trait = freckles_5
+						} 	
+					}
+					real_father_even_if_dead = { 
+						OR = { 
+							trait = freckles_3
+							trait = freckles_2
+							trait = freckles 
+							trait = freckles_4
+							trait = freckles_5
+						} 
+					}
+				}
+			}
+			6 = { 
+				add_trait = freckles_4 
+				modifier = { 
+					factor = 4
+					mother_even_if_dead = { trait = freckles_4 }
+				}
+				modifier = { 
+					factor = 4
+					real_father_even_if_dead = { trait = freckles_4 }
+				}
+				#Grandparents
+				modifier = { 
+					factor = 3
+					real_father_even_if_dead = { real_father_even_if_dead = { trait = freckles_4 } }
+				}
+				modifier = { 
+					factor = 3
+					mother_even_if_dead = { mother_even_if_dead = { trait = freckles_4 } }
+				}
+				
+				modifier = { 
+					factor = 2
+					mother_even_if_dead = { trait = freckles }
+				}
+				modifier = { 
+					factor = 2
+					real_father_even_if_dead = { trait = freckles }
+				}
+				#Grandparents
+				modifier = { 
+					factor = 1.5
+					real_father_even_if_dead = { real_father_even_if_dead = { trait = freckles } }
+				}
+				modifier = { 
+					factor = 1.5
+					mother_even_if_dead = { mother_even_if_dead = { trait = freckles } }
+				}
+				#Multiplier bonus	
+				modifier = { 
+					factor = 2
+					real_father_even_if_dead = { trait = freckles }
+					mother_even_if_dead = { trait = freckles }
+				}
+				#The thickest versions should only appear if a parent already has the freckles gene, not appear out of nowhere.
+				trigger = { 
+					mother_even_if_dead = { 
+						OR = { 
+							trait = freckles_3
+							trait = freckles_2
+							trait = freckles 
+							trait = freckles_4
+							trait = freckles_5
+						} 	
+					}
+					real_father_even_if_dead = { 
+						OR = { 
+							trait = freckles_3
+							trait = freckles_2
+							trait = freckles 
+							trait = freckles_4
+							trait = freckles_5
+						} 
+					}
+				}
+			}
+			7 = { 
+				add_trait = freckles 
+				modifier = { 
+					factor = 4
+					mother_even_if_dead = { trait = freckles }
+				}
+				modifier = { 
+					factor = 4
+					real_father_even_if_dead = { trait = freckles }
+				}
+				#Grandparents
+				modifier = { 
+					factor = 3
+					real_father_even_if_dead = { real_father_even_if_dead = { trait = freckles } }
+				}
+				modifier = { 
+					factor = 3
+					mother_even_if_dead = { mother_even_if_dead = { trait = freckles } }
+				}
+				
+				modifier = { 
+					factor = 2
+					mother_even_if_dead = { trait = freckles_2 }
+				}
+				modifier = { 
+					factor = 2
+					real_father_even_if_dead = { trait = freckles_2 }
+				}
+				#Grandparents
+				modifier = { 
+					factor = 1.5
+					real_father_even_if_dead = { real_father_even_if_dead = { trait = freckles_2 } }
+				}
+				modifier = { 
+					factor = 1.5
+					mother_even_if_dead = { mother_even_if_dead = { trait = freckles_2 } }
+				}
+				#Multiplier bonus	
+				modifier = { 
+					factor = 2
+					real_father_even_if_dead = { trait = freckles_2 }
+					mother_even_if_dead = { trait = freckles_2 }
+				}
+				#The thickest versions should only appear if a parent already has the freckles gene, not appear out of nowhere.
+				trigger = { 
+					mother_even_if_dead = { 
+						OR = { 
+							trait = freckles_3
+							trait = freckles_2
+							trait = freckles 
+							trait = freckles_4
+							trait = freckles_5
+						} 	
+					}
+					real_father_even_if_dead = { 
+						OR = { 
+							trait = freckles_3
+							trait = freckles_2
+							trait = freckles 
+							trait = freckles_4
+							trait = freckles_5
+						} 
+					}
+				}
+			}
+			7 = { 
+				add_trait = freckles_2 
+				modifier = { 
+					factor = 4
+					mother_even_if_dead = { trait = freckles_2 }
+				}
+				modifier = { 
+					factor = 4
+					real_father_even_if_dead = { trait = freckles_2 }
+				}
+				#Grandparents
+				modifier = { 
+					factor = 3
+					real_father_even_if_dead = { real_father_even_if_dead = { trait = freckles_2 } }
+				}
+				modifier = { 
+					factor = 3
+					mother_even_if_dead = { mother_even_if_dead = { trait = freckles_2 } }
+				}
+				
+				modifier = { 
+					factor = 2
+					mother_even_if_dead = { trait = freckles_3 }
+				}
+				modifier = { 
+					factor = 2
+					real_father_even_if_dead = { trait = freckles_3 }
+				}
+				#Grandparents
+				modifier = { 
+					factor = 1.5
+					real_father_even_if_dead = { real_father_even_if_dead = { trait = freckles_3 } }
+				}
+				modifier = { 
+					factor = 1.5
+					mother_even_if_dead = { mother_even_if_dead = { trait = freckles_3 } }
+				}
+				#Multiplier bonus	
+				modifier = { 
+					factor = 2
+					real_father_even_if_dead = { trait = freckles_3 }
+					mother_even_if_dead = { trait = freckles_3 }
+				}
+			}
+			10 = { 
+				add_trait = freckles_3 
+				modifier = { 
+					factor = 2
+					mother_even_if_dead = { trait = freckles_3 }
+				}
+				modifier = { 
+					factor = 2
+					real_father_even_if_dead = { trait = freckles_3 }
+				}
+				#Grandparents
+				modifier = { 
+					factor = 1.5
+					real_father_even_if_dead = { real_father_even_if_dead = { trait = freckles_3 } }
+				}
+				modifier = { 
+					factor = 1.5
+					mother_even_if_dead = { mother_even_if_dead = { trait = freckles_3 } }
+				}
+			}
+			80 = { } #Nothing
+		}
+	}
+}

@@ -1,0 +1,472 @@
+############## TSAESCI ##########################
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_tsaescigfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_tsaesci_background:p0"
+			"GFX_tsaesci_background:p0:c6"
+			"GFX_empty:p3:c0"
+			"GFX_tsaesci_male_headgear_behind:p5:c1"
+			"GFX_frankish_male_overlayer_behind:p31"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_tsaesci_male_hair_behind:p1:h:y"
+			"GFX_empty:p4:h:y"
+			"GFX_tsaesci_male_base:p2"
+			"GFX_tsaesci_male_neck:d0"
+			"GFX_tsaesci_male_cheeks:d4"
+			"GFX_tsaesci_male_chin:d1"
+			"GFX_tsaesci_male_mouth:d2"
+			"GFX_tsaesci_male_nose:d3"
+			"GFX_tsaesci_male_eyes:d6"
+			"GFX_character_harelip_ugric:p24:o3x-4"
+			"GFX_child_back:p17"
+			"PORTRAIT_tsaescigfx_child_male:p18"
+			"GFX_character_freckles:p20"
+			"GFX_character_chinese_male_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_tsaesci_male_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_male_overlayer_mid:p31"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_tsaesci_male_beard:p4:h:y"
+			"GFX_character_possessed:p30:o4x-3"
+			"GFX_character_scars_light:p7:y"
+			"GFX_character_scars_mid_light:p25"
+			"GFX_character_scars_high_light:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o4x-3"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+		   	"GFX_tsaesci_male_hair:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_tsaesci_male_headgear:p5:c5"
+			"GFX_frankish_male_overlayer:p31"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 25 25 25 } { 255 255 255 }
+			{ 10 10 10 } { 65 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 75 0 0 } { 255 255 255 }
+			{ 10 10 10 } { 0 10 75 } { 255 255 255 }
+			{ 10 10 10 } { 0 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 45 0 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 103 34 34 }
+			{ 96 34 103 }
+		}
+
+		headgear_that_hides_hair = {10 15}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_tsaescigfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_tsaesci_background:p0"
+			"GFX_tsaesci_background:p0:c6"
+			"GFX_empty:p3:c0"
+			"GFX_tsaesci_male_headgear_behind:p5:c1"
+			"GFX_frankish_male_overlayer_behind:p31"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_tsaesci_male_hair_behind:p1:h:y"
+			"GFX_empty:p4:h:y"
+			"GFX_tsaesci_male_base:p2"
+			"GFX_tsaesci_male_neck:d0"
+			"GFX_tsaesci_male_cheeks:d4"
+			"GFX_tsaesci_male_chin:d1"
+			"GFX_tsaesci_male_mouth:d2"
+			"GFX_tsaesci_male_nose:d3"
+			"GFX_tsaesci_male_eyes:d6"
+			"GFX_character_harelip_ugric:p24:o3x-4"
+			"GFX_character_freckles:p20"
+			"GFX_character_chinese_male_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_tsaesci_male_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_male_overlayer_mid:p31"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_tsaesci_male_beard:p4:h:y"
+			"GFX_character_possessed:p30:o4x-3"
+			"GFX_character_scars_light:p7:y"
+			"GFX_character_scars_mid_light:p25"
+			"GFX_character_scars_high_light:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o4x-3"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+		   	"GFX_tsaesci_male_hair:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_tsaesci_male_headgear:p5:c5"
+			"GFX_frankish_male_overlayer:p31"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 25 25 25 } { 255 255 255 }
+			{ 10 10 10 } { 65 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 75 0 0 } { 255 255 255 }
+			{ 10 10 10 } { 0 10 75 } { 255 255 255 }
+			{ 10 10 10 } { 0 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 45 0 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 103 34 34 }
+			{ 96 34 103 }
+		}
+
+		headgear_that_hides_hair = {10 15}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_tsaescigfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_tsaesci_background:p0"
+			"GFX_tsaesci_background:p0:c6"
+			"GFX_empty:p3:c0"
+			"GFX_tsaesci_male_headgear_behind:p5:c1"
+			"GFX_frankish_male_overlayer_behind:p31"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_tsaesci_male_hair_behind:p1:h:y"
+			"GFX_empty:p4:h:y"
+			"GFX_tsaesci_male_base:p2"
+			"GFX_tsaesci_male_neck:d0"
+			"GFX_tsaesci_male_cheeks:d4"
+			"GFX_tsaesci_male_chin:d1"
+			"GFX_tsaesci_male_mouth:d2"
+			"GFX_tsaesci_male_nose:d3"
+			"GFX_tsaesci_male_eyes:d6"
+			"GFX_character_harelip_ugric:p24:o3x-4"
+			"GFX_character_freckles:p20"
+			"GFX_character_chinese_male_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_tsaesci_male_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_male_overlayer_mid:p31"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_tsaesci_male_beard:p4:h:y"
+			"GFX_character_possessed:p30:o4x-3"
+			"GFX_character_scars_light:p7:y"
+			"GFX_character_scars_mid_light:p25"
+			"GFX_character_scars_high_light:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o4x-3"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+		   	"GFX_tsaesci_male_hair:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_tsaesci_male_headgear:p5:c5"
+			"GFX_frankish_male_overlayer:p31"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 25 25 25 } { 255 255 255 }
+			{ 10 10 10 } { 65 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 75 0 0 } { 255 255 255 }
+			{ 10 10 10 } { 0 10 75 } { 255 255 255 }
+			{ 10 10 10 } { 0 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 45 0 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 103 34 34 }
+			{ 96 34 103 }
+		}
+
+		headgear_that_hides_hair = {10 15}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_tsaescigfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_tsaesci_background:p0"
+			"GFX_tsaesci_background:p0:c6"
+			"GFX_empty:p3:c0"
+			"GFX_tsaesci_female_headgear_behind:p5:c1"
+			"GFX_frankish_female_undermain_behind:p33"
+			"GFX_frankish_female_undermain_hair_behind:p33:h"
+			"GFX_frankish_female_overlayer_behind:p32"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_tsaesci_female_hair_behind:p1:h:y"
+			"GFX_tsaesci_female_base:p2"
+			"GFX_tsaesci_female_neck:d0"
+			"GFX_tsaesci_female_cheeks:d4"
+			"GFX_tsaesci_female_chin:d1"
+			"GFX_tsaesci_female_mouth:d2"
+			"GFX_tsaesci_female_nose:d3"
+			"GFX_tsaesci_female_eyes:d6"
+			"GFX_character_harelip_ugric:p24"
+			"GFX_child_back:p17"
+			"PORTRAIT_tsaescigfx_child_female:p18"
+			"GFX_chinese_female_makeup1:p14"
+			"GFX_chinese_female_makeup2:p15"
+			"GFX_character_freckles:p20"
+			"GFX_character_chinese_female_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars_light:p7:y"
+			"GFX_character_scars_mid_light:p25"
+			"GFX_character_scars_high_light:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_possessed:p30:o2x-1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_tsaesci_female_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_tsaesci_female_hair:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_frankish_female_undermain_hair:p33:h"
+			"GFX_frankish_female_undermain:p33"
+			"GFX_tsaesci_female_headgear:p5:c5"
+			"GFX_frankish_female_overlayer:p32"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 25 25 25 } { 255 255 255 }
+			{ 10 10 10 } { 65 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 75 0 0 } { 255 255 255 }
+			{ 10 10 10 } { 0 10 75 } { 255 255 255 }
+			{ 10 10 10 } { 0 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 45 0 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 103 34 34 }
+			{ 96 34 103 }
+		}
+
+		headgear_that_hides_hair = {15}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_tsaescigfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_tsaesci_background:p0"
+			"GFX_tsaesci_background:p0:c6"
+			"GFX_empty:p3:c0"
+			"GFX_tsaesci_female_headgear_behind:p5:c1"
+			"GFX_frankish_female_undermain_behind:p33"
+			"GFX_frankish_female_undermain_hair_behind:p33:h"
+			"GFX_frankish_female_overlayer_behind:p32"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_tsaesci_female_hair_behind:p1:h:y"
+			"GFX_tsaesci_female_base:p2"
+			"GFX_tsaesci_female_neck:d0"
+			"GFX_tsaesci_female_cheeks:d4"
+			"GFX_tsaesci_female_chin:d1"
+			"GFX_tsaesci_female_mouth:d2"
+			"GFX_tsaesci_female_nose:d3"
+			"GFX_tsaesci_female_eyes:d6"
+			"GFX_character_harelip_ugric:p24"
+			"GFX_chinese_female_makeup1:p14"
+			"GFX_chinese_female_makeup2:p15"
+			"GFX_character_freckles:p20"
+			"GFX_character_chinese_female_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars_light:p7:y"
+			"GFX_character_scars_mid_light:p25"
+			"GFX_character_scars_high_light:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_possessed:p30:o2x-1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_tsaesci_female_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_tsaesci_female_hair:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_frankish_female_undermain_hair:p33:h"
+			"GFX_frankish_female_undermain:p33"
+			"GFX_tsaesci_female_headgear:p5:c5"
+			"GFX_frankish_female_overlayer:p32"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 25 25 25 } { 255 255 255 }
+			{ 10 10 10 } { 65 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 75 0 0 } { 255 255 255 }
+			{ 10 10 10 } { 0 10 75 } { 255 255 255 }
+			{ 10 10 10 } { 0 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 45 0 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 103 34 34 }
+			{ 96 34 103 }
+		}
+
+		headgear_that_hides_hair = {15}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_tsaescigfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_tsaesci_background:p0"
+			"GFX_tsaesci_background:p0:c6"
+			"GFX_empty:p3:c0"
+			"GFX_tsaesci_female_headgear_behind:p5:c1"
+			"GFX_frankish_female_undermain_behind:p33"
+			"GFX_frankish_female_undermain_hair_behind:p33:h"
+			"GFX_frankish_female_overlayer_behind:p32"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_tsaesci_female_hair_behind:p1:h:y"
+			"GFX_tsaesci_female_base:p2"
+			"GFX_tsaesci_female_neck:d0"
+			"GFX_tsaesci_female_cheeks:d4"
+			"GFX_tsaesci_female_chin:d1"
+			"GFX_tsaesci_female_mouth:d2"
+			"GFX_tsaesci_female_nose:d3"
+			"GFX_tsaesci_female_eyes:d6"
+			"GFX_character_harelip_ugric:p24"
+			"GFX_chinese_female_makeup1:p14"
+			"GFX_chinese_female_makeup2:p15"
+			"GFX_character_freckles:p20"
+			"GFX_character_chinese_female_pale:p22"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars_light:p7:y"
+			"GFX_character_scars_mid_light:p25"
+			"GFX_character_scars_high_light:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_possessed:p30:o2x-1"
+			"GFX_character_eyepatch:p13:y:o32x63"
+			"GFX_character_mask:p12:y:o40x45"
+			"GFX_tsaesci_female_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_empty:p5:c3"
+			"GFX_character_special_crowns_mid:p19"
+			"GFX_tsaesci_female_hair:p1:h:y"
+			"GFX_empty:p5:c7:h"
+			"GFX_frankish_female_undermain_hair:p33:h"
+			"GFX_frankish_female_undermain:p33"
+			"GFX_tsaesci_female_headgear:p5:c5"
+			"GFX_frankish_female_overlayer:p32"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } { 25 25 25 } { 255 255 255 }
+			{ 10 10 10 } { 65 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 75 0 0 } { 255 255 255 }
+			{ 10 10 10 } { 0 10 75 } { 255 255 255 }
+			{ 10 10 10 } { 0 30 0 } { 255 255 255 }
+			{ 10 10 10 } { 45 0 50 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 103 34 34 }
+			{ 96 34 103 }
+		}
+
+		headgear_that_hides_hair = {15}
+	}
+}

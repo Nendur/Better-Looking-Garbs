@@ -1,0 +1,167 @@
+31 = { #Dragons
+	0 = {
+		factor = 100
+		trigger = {
+			OR = {
+				trait = dragon_1
+				NOT = { culture = dragon_culture }
+			}
+		}
+	}
+	1 = {
+		factor = 100
+		trigger = {
+			trait = dragon_27
+		}
+	}
+	2 = {
+		factor = 100
+		trigger = {
+			trait = dragon_2
+		}
+	}
+	3 = {
+		factor = 100
+		trigger = {
+			trait = dragon_3
+		}
+	}
+	4 = {
+		factor = 100
+		trigger = {
+			trait = dragon_4
+		}
+	}
+	5 = {
+		factor = 100
+		trigger = {
+			trait = dragon_5
+		}
+	}
+	6 = {
+		factor = 100
+		trigger = {
+			trait = dragon_6
+		}
+	}
+	7 = {
+		factor = 100
+		trigger = {
+			trait = dragon_7
+		}
+	}
+	8 = {
+		factor = 100
+		trigger = {
+			trait = dragon_8
+		}
+	}
+	9 = {
+		factor = 100
+		trigger = {
+			trait = dragon_9
+		}
+	}
+	10 = {
+		factor = 100
+		trigger = {
+			trait = dragon_10
+		}
+	}
+	11 = {
+		factor = 100
+		trigger = {
+			trait = dragon_11
+		}
+	}
+	12 = {
+		factor = 100
+		trigger = {
+			trait = dragon_12
+		}
+	}
+	13 = {
+		factor = 100
+		trigger = {
+			trait = dragon_13
+		}
+	}
+	14 = {
+		factor = 100
+		trigger = {
+			trait = dragon_14
+		}
+	}
+	15 = {
+		factor = 100
+		trigger = {
+			trait = dragon_15
+		}
+	}
+	16 = {
+		factor = 100
+		trigger = {
+			trait = dragon_16
+		}
+	}
+	17 = {
+		factor = 100
+		trigger = {
+			trait = dragon_17
+		}
+	}
+	18 = {
+		factor = 100
+		trigger = {
+			trait = dragon_18
+		}
+	}
+	19 = {
+		factor = 100
+		trigger = {
+			trait = dragon_19
+		}
+	}
+	20 = {
+		factor = 100
+		trigger = {
+			trait = dragon_20
+		}
+	}
+	21 = {
+		factor = 100
+		trigger = {
+			trait = dragon_21
+		}
+	}
+	22 = {
+		factor = 100
+		trigger = {
+			trait = dragon_22
+		}
+	}
+	23 = {
+		factor = 100
+		trigger = {
+			trait = dragon_23
+		}
+	}
+	24 = {
+		factor = 100
+		trigger = {
+			trait = dragon_24
+		}
+	}
+	25 = {
+		factor = 100
+		trigger = {
+			trait = dragon_25
+		}
+	}
+	26 = {
+		factor = 100
+		trigger = {
+			trait = dragon_26
+		}
+	}
+}

@@ -1,0 +1,60 @@
+blg_italian = {
+	culture_group = italian_group
+}
+
+blg_north_african = {
+	culture_group = north_african
+}
+
+blg_french = {
+	culture = arpitan
+}
+
+blg_veiled_tagelmust = {
+	culture = tagelmust
+}
+
+blg_uncrowned = {
+	emf_needs_coronation = yes
+}
+
+blg_saint = {
+	trait = saint
+}
+
+blg_desert_monk = {
+	OR = {
+		trait = desert_father
+		trait = desert_mother
+	}
+}
+
+blg_petty_empire = {
+	always = no
+}
+
+blg_royalty = {
+	has_minor_title = title_king_of_romans
+}
+
+blg_crowned = {
+	always = no
+}
+
+blg_religion_orthodox = {
+	OR = {
+		religion = apostolic
+		religion = tondrakian
+	}
+}
+
+blg_religion_orientorthodox = {
+	OR = {
+		religion = syriac
+		religion = maronite
+	}
+}
+
+religion_openly_celtic_or_reformed_trigger = {
+	always = no
+}

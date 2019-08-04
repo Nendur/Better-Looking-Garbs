@@ -1,0 +1,43 @@
+blg_italian = {
+	always = no
+}
+
+blg_north_african = {
+	always = no
+}
+
+blg_french = {
+	always = no
+}
+
+blg_desert_monk = {
+	always = no
+}
+
+blg_petty_empire = {
+	always = no
+}
+
+blg_uncrowned = {
+	always = no
+}
+
+blg_royalty = {
+	always = no
+}
+
+blg_crowned = {
+	always = no
+}
+
+blg_religion_orthodox = {
+	always = no
+}
+
+blg_religion_orientorthodox = {
+	always = no
+}
+
+religion_openly_celtic_or_reformed_trigger = {
+	always = no
+}

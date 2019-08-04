@@ -1,0 +1,274 @@
+############## Bodpa aka Central Tibetan ##########################
+spriteTypes = {
+
+	spriteType = {
+		name = "PORTRAIT_bodpagfx_child_male"
+		texturefile = "gfx\\characters\\default_son_bodpa.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_bodpagfx_child_female"
+		texturefile = "gfx\\characters\\default_daughter_bodpa.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_son_base"
+		textureFile = "gfx/characters/bodpa_male/bodpa_son_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_sonhair"
+		textureFile = "gfx/characters/bodpa_male/bodpa_son_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_son_eyes"
+		textureFile = "gfx/characters/bodpa_male/bodpa_son_eyes.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_daughter_base"
+		textureFile = "gfx/characters/bodpa_female/bodpa_daughter_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_daughterhair"
+		textureFile = "gfx/characters/bodpa_female/bodpa_daughter_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_daughter_eyes"
+		textureFile = "gfx/characters/bodpa_female/bodpa_daughter_eyes.dds"
+		noOfFrames = 7
+	}
+
+### BODPA MALE ####
+
+	spriteType = {
+		name = "GFX_bodpa_male_headgear_behind"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair_behind"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_behind_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair_behind_midage"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_behind_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair_behind_oldage"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_behind_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_beard_behind"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_beard_behind_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_beard_behind_midage"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_beard_behind_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_beard_behind_oldage"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_beard_behind_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_beard"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_beard_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_beard_midage"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_beard_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_beard_oldage"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_beard_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair_midage"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair_oldage"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair_mid"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_mid_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair_mid_midage"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_mid_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair_mid_oldage"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_mid_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair_ribbon_front"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_ribbon_front.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_hair_ribbon_mid"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_hair_ribbon_mid.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_headgear_mid"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_headgear_mid.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_male_headgear"
+		texturefile = "gfx\\characters\\bodpa_male\\bodpa_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+#### BODPA FEMALE ####
+
+	spriteType = {
+		name = "GFX_bodpa_female_headgear_behind"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_female_hair_behind"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_hair_behind_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_female_hair_behind_midage"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_hair_behind_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_female_hair_behind_oldage"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_hair_behind_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_female_hair"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_hair_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_female_hair_midage"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_hair_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_female_hair_oldage"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_hair_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_female_headgear_mid"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_headgear_mid.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_female_headgear"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_female_hair_ribbon_front"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_hair_ribbon_front.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bodpa_female_hair_ribbon_behind"
+		texturefile = "gfx\\characters\\bodpa_female\\bodpa_female_hair_ribbon_behind.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+}

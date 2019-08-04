@@ -1,0 +1,103 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "PORTRAIT_outremergfx_child_male"
+		texturefile = "gfx\\characters\\default_son_frankish.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_outremergfx_child_female"
+		texturefile = "gfx\\characters\\default_daughter_frankish.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### OUTREMER MALE ####
+
+	spriteType = {
+		name = "GFX_outremer_male_clothes_behind"
+		texturefile = "gfx\\characters\\outremer_male\\outremer_male_clothes_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_male_headgear_behind"
+		texturefile = "gfx\\characters\\outremer_male\\outremer_male_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_male_clothes"
+		texturefile = "gfx\\characters\\outremer_male\\outremer_male_clothes.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_male_headgear_mid"
+		texturefile = "gfx\\characters\\outremer_male\\outremer_male_headgear_mid.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_male_headgear"
+		texturefile = "gfx\\characters\\outremer_male\\outremer_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### OUTREMER FEMALE ####
+
+	spriteType = {
+		name = "GFX_outremer_female_clothes_behind"
+		texturefile = "gfx\\characters\\outremer_female\\outremer_female_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_female_headgear_behind"
+		texturefile = "gfx\\characters\\outremer_female\\outremer_female_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_female_clothes"
+		texturefile = "gfx\\characters\\outremer_female\\outremer_female_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_female_headgear_mid"
+		texturefile = "gfx\\characters\\outremer_female\\outremer_female_headgear_mid.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_outremer_female_headgear"
+		texturefile = "gfx\\characters\\outremer_female\\outremer_female_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+}
+

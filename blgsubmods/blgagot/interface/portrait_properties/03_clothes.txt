@@ -1,0 +1,598 @@
+# p3 clothes
+3 = {
+	0 = { # Royal clothes 1
+		factor = 1
+		modifier = {
+			factor = 3
+			OR = {
+				tier = EMPEROR
+				spouse = { tier = EMPEROR }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = humble
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 1 } }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				AND = {
+					trait = proud
+					OR = {
+						real_tier = duke
+						spouse = { real_tier = duke }
+					}
+				}
+			}
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 1 }
+		}
+	}
+
+	1 = { # Royal clothes 2
+		factor = 1
+		modifier = {
+			factor = 3
+			OR = {
+				tier = EMPEROR
+				spouse = { tier = EMPEROR }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = humble
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 2 } }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				AND = {
+					trait = proud
+					OR = {
+						real_tier = duke
+						spouse = { real_tier = duke }
+					}
+				}
+			}
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 2 }
+		}
+	}
+
+	2 = { # Royal clothes 3
+		factor = 1
+		modifier = {
+			factor = 3
+			OR = {
+				tier = EMPEROR
+				spouse = { tier = EMPEROR }
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = humble
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 3 } }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				higher_real_tier_than = duke
+				spouse = { higher_real_tier_than = duke }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				AND = {
+					trait = proud
+					OR = {
+						real_tier = duke
+						spouse = { real_tier = duke }
+					}
+				}
+			}
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 3 }
+		}
+	}
+
+	3 = { # Noble clothes 1
+		factor = 1
+		modifier = {
+			factor = 0
+			NOR = {
+				is_ruler = yes
+				spouse = { is_ruler = yes }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				trait = proud
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = peasant_leader
+				trait = heresiarch
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 4 }
+		}
+	}
+
+	4 = { # Noble clothes 2
+		factor = 1
+		modifier = {
+			factor = 0
+			NOR = {
+				is_ruler = yes
+				spouse = { is_ruler = yes }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				trait = proud
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = peasant_leader
+				trait = heresiarch
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 5 }
+		}
+	}
+
+	5 = { # Noble clothes 3
+		factor = 1
+		modifier = {
+			factor = 0
+			NOR = {
+				is_ruler = yes
+				spouse = { is_ruler = yes }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				trait = proud
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = peasant_leader
+				trait = heresiarch
+			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 6 }
+		}
+	}
+
+	6 = { # Modest clothes 1
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				is_ruler = yes
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				spouse = { higher_real_tier_than = count }
+			}
+			NOR = {
+				trait = humble
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 7 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 7 }
+		}
+	}
+
+	7 = { # Modest clothes 2
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				is_ruler = yes
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				spouse = { higher_real_tier_than = count }
+			}
+			NOR = {
+				trait = humble
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 8 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 8 }
+		}
+	}
+
+	8 = { # Modest clothes 3
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				is_ruler = yes
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				spouse = { higher_real_tier_than = count }
+			}
+			NOR = {
+				trait = humble
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 9 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 9 }
+		}
+	}
+
+	9 = { # Shady clothes
+		factor = 3
+		modifier = {
+			factor = 0
+			OR = {
+				higher_tier_than = DUKE
+				AND = {
+					tier = DUKE
+					demesne_size = 1
+				}
+				spouse = { higher_tier_than = DUKE }
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 10 } }
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_job_title = job_spymaster }
+			NOT = { intrigue = 10 }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 10 } }
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 10 }
+		}
+	}
+
+	# Martial
+	10 = {
+		factor = 90
+		modifier = {
+			factor = 0
+			NOR = {
+				AND = {
+					in_command = yes
+					OR = {
+						war = yes
+						liege = { war = yes }
+					}
+				}
+				in_battle = yes
+				in_siege = yes
+				death_reason = death_battle
+				death_reason = death_duel
+				has_job_title = job_marshal
+				government = military_command_government
+				government = order_government
+				death_reason = death_battle
+				death_reason = death_duel
+				primary_title = {
+					OR = {
+						mercenary = yes
+						holy_order = yes
+					}
+				}
+				AND = {
+					trait = undead
+					combat_rating = 10
+				}
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 11 } }
+		}
+		modifier = {
+			factor = 0
+			trait = knight
+		}
+	}
+
+	# Ragged prison clothes
+	11 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				prisoner = no
+				has_character_modifier = house_arrest
+			}
+			NOT = { trait = slave }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 12 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_councillor = yes
+				is_voter = yes
+				has_minor_title = title_regent
+			}
+		}
+	}
+
+	# Maester robes and chain
+	12 = {
+		factor = 0 # Override version
+	}
+
+	# Kingsguard armor
+	13 = {
+		factor = 0 # Override version
+	}
+
+	# Nightswatch clothes
+	14 = {
+		factor = 0 # Override version
+	}
+
+	# Goldcloak/Unsullied clothes
+	15 = {
+		factor = 500
+		modifier = {
+			factor = 0
+			NOT = {  
+				AND = {
+					has_minor_title  =  title_commander_gold_cloaks
+					OR = {
+						culture_group = dornish
+						culture_group = andal
+						culture_group = first_men
+						culture_group = free_folk
+					}
+				}
+			}
+		}
+	}
+
+	# Knight
+	16 = {
+		factor = 90
+		modifier = {
+			factor = 0
+			NOT = { trait = knight }
+		}
+		modifier = {
+			factor = 0
+			in_command = no
+			NOT = { government = military_command_government }
+			NOT = { government = order_government }
+			NOT = { has_job_title  = job_marshal }
+			NOT = { primary_title = { OR = { mercenary = yes holy_order = yes } } }
+			NOT = { liege = { primary_title = { OR = { mercenary = yes holy_order = yes } } } }
+			NOT = { trait = bearded_priest }
+			#NOT = { trait = shieldmaiden }
+			NAND = {
+				trait = undead
+				combat_rating = 10
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = no
+			NOT = { government = military_command_government }
+			NOT = { government = order_government }
+			NOT = { death_reason = death_battle }
+		}
+	}
+
+	# Great House Armor 1
+	17 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			in_command = no
+			NOT = { government = military_command_government }
+			NOT = { government = order_government }
+			NOT = { has_job_title  = job_marshal }
+			NAND = {
+				trait = undead
+				combat_rating = 10
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					is_female = yes		#Andal females do not have House Armor yet
+					culture_group = andal
+				}
+				AND = {
+					is_alive = no
+					NOT = { government = military_command_government }
+					NOT = { government = order_government }
+					NOT = { death_reason = death_battle }
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {	#Only for these graphical cultures
+				culture = stormlander	
+				culture = reachman
+				culture = westerman
+				culture = riverlander
+				culture = valeman
+				culture_group = first_men
+				culture_group = iron_isles_culture
+				culture = high_valyrian
+				culture = eastern_valyrian
+				culture_group = dornish
+			}
+		}	
+		modifier = {
+			factor = 0
+			NOR = {
+				higher_tier_than = DUKE
+				AND = {
+					liege = { higher_tier_than = DUKE }
+					NOT = { higher_tier_than = COUNT } #Only low-tier bannerman wear their liege's armor
+				}
+				dynasty = 317	#Baratheon
+				dynasty = 1544	#Durrandon
+				dynasty = 450224	#Stagborn
+				dynasty = 450225	#Stormhart
+				dynasty = 450226	#Durrande
+				dynasty = 450227	#Deer
+				dynasty = 253 #Tyrell
+				dynasty = 1254 #Gardener
+				dynasty = 450228	#Bloodrose
+				dynasty = 450229	#Blackrose
+				dynasty = 450230	#Smallrose
+				dynasty = 450231	#Greenrose
+				dynasty = 190 #Lannister
+				dynasty = 450208	#Silvermane
+				dynasty = 450209	#Redclaw
+				dynasty = 450210	#Roaring
+				dynasty = 450211	#Lionford
+				dynasty = 159 #Tully
+				dynasty = 450216	#Redriver
+				dynasty = 450217	#Darkfish
+				dynasty = 450218	#Goldfish
+				dynasty = 450219	#Steeltrout
+				dynasty = 178 #Arryn
+				dynasty = 450220	#Redwing
+				dynasty = 450221	#Kestrel
+				dynasty = 450222	#Bluebird
+				dynasty = 450223	#Skywarden
+				dynasty = 59		#Stark
+				dynasty = 450200	#Whitewolf
+				dynasty = 450201	#Goldfang
+				dynasty = 450202	#Dreadwolf
+				dynasty = 450203	#Winterhold
+				dynasty = 107 #Greyjoy
+				dynasty = 450232	#Silverink
+				dynasty = 450233	#Redjoy
+				dynasty = 450234	#Ironkraken
+				dynasty = 450235	#Hardman
+				dynasty = 496 #Targaryen
+				dynasty = 57 #Blackfyre
+				dynasty = 450204	#Redwyrm
+				dynasty = 450205	#Truedrake
+				dynasty = 450206	#Fyreblood
+				dynasty = 450207	#Goldfyre
+				dynasty = 1 #Martell
+				dynasty = 450212	#Darksun
+				dynasty = 450213	#Sunviper
+				dynasty = 450214	#Blackadder
+				dynasty = 450215	#Snakespear
+			}
+		}
+	}
+	# Great House Armor 2
+	18 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			in_command = no
+			NOT = { government = military_command_government }
+			NOT = { government = order_government }
+			NOT = { has_job_title  = job_marshal }
+			NAND = {
+				trait = undead
+				combat_rating = 10
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					is_female = yes		#Andal females do not have House Armor yet
+					culture_group = andal
+				}
+				AND = {
+					is_alive = no
+					NOT = { government = military_command_government }
+					NOT = { government = order_government }
+					NOT = { death_reason = death_battle }
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {	#Only for these graphical cultures
+				culture = stormlander	
+			}
+		}	
+		modifier = {
+			factor = 0
+			NOR = {
+				higher_tier_than = DUKE
+				AND = {
+					liege = { higher_tier_than = DUKE }
+					NOT = { higher_tier_than = COUNT } #Only low-tier bannerman wear their liege's armor
+				}
+				dynasty = 317	#Baratheon
+				dynasty = 1544	#Durrandon
+				dynasty = 450224	#Stagborn
+				dynasty = 450225	#Stormhart
+				dynasty = 450226	#Durrande
+				dynasty = 450227	#Deer
+			}
+		}
+	}
+}

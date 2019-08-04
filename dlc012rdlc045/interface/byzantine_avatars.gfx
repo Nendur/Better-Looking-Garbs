@@ -1,0 +1,295 @@
+objectTypes = {
+
+	#######################################################
+	#######################################################
+	#####											  #####
+	#####				Early_Greek					  #####
+	#####											  #####
+	#######################################################
+	#######################################################
+
+	################################################
+	#### HEAVY_INFANTRY ############################
+	################################################
+	pdxmesh = {
+		name = "byzantinegfx_HEAVY_INFANTRY"
+		file = "gfx\models\easterngfx_early_heavy_infantry.mesh"
+
+		animation = { id = "attack"		type = "char_infantry_attack_animation" }
+		animation = { id = "idle"		type = "char_infantry_idle_animation" }
+		animation = { id = "move"		type = "char_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_HEAVY_INFANTRY_weapon"
+		file = "gfx\models\Attachments\easterngfx_early_sword.mesh"
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_HEAVY_INFANTRY_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_infantry_helmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_HEAVY_INFANTRY_shield"
+		file = "gfx\models\Attachments\easterngfx_early_heavy_shield.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_INFANTRY ############################
+	################################################
+	pdxmesh = {
+		name = "byzantinegfx_LIGHT_INFANTRY"
+		file = "gfx\models\easterngfx_early_light_infantry.mesh"
+
+		animation = { id = "attack"		type = "char_infantry_attack_animation" }
+		animation = { id = "idle"		type = "char_infantry_idle_animation" }
+		animation = { id = "move"		type = "char_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_LIGHT_INFANTRY_weapon"
+		file = "gfx\models\Attachments\easterngfx_early_sword.mesh"
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_LIGHT_INFANTRY_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_infantry_helmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_LIGHT_INFANTRY_shield"
+		file = "gfx\models\Attachments\easterngfx_early_heavy_shield.mesh"
+		scale = 1.0f
+	}
+
+
+	################################################
+	#### PIKEMEN ###################################
+	################################################
+	pdxmesh = {
+		name = "byzantinegfx_PIKEMEN"
+		file = "gfx\models\easterngfx_early_pikeman.mesh"
+
+		animation = { id = "attack"		type = "char_pikeman_attack_animation" }
+		animation = { id = "idle"		type = "char_pikeman_idle_animation" }
+		animation = { id = "move"		type = "char_pikeman_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_PIKEMEN_weapon"
+		file = "gfx\models\Attachments\char_early_pike.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_PIKEMEN_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_helmet_pikemen.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_PIKEMEN_shield"
+		file = "gfx\models\Attachments\easterngfx_early_heavy_shield.mesh"
+		scale = 1.0f
+	}
+
+
+
+	################################################
+	#### ARCHERS ###################################
+	################################################
+	pdxmesh = {
+		name = "byzantinegfx_ARCHERS"
+		file = "gfx\models\easterngfx_early_archer.mesh"
+
+		animation = { id = "attack"		type = "char_archer_attack_animation" }
+		animation = { id = "idle"		type = "char_archer_idle_animation" }
+		animation = { id = "move"		type = "char_archer_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_ARCHERS_weapon"
+		file = "gfx\models\Attachments\char_early_bolt.mesh"
+
+		animation = { id = "attack"		type = "char_early_arrow_attack_animation" }
+		animation = { id = "idle"		type = "char_early_arrow_idle_animation" }
+		animation = { id = "move"		type = "char_early_arrow_moving_animation" }
+
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_ARCHERS_shield"
+		file = "gfx\models\Attachments\westerngfx_early_solenarion.mesh"
+
+		animation = { id = "attack"		type = "char_early_bow_attack_animation" }
+		animation = { id = "idle"		type = "char_early_bow_idle_animation" }
+		animation = { id = "move"		type = "char_early_bow_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_ARCHERS_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_light_cavalry.mesh"
+		scale = 1.0f
+	}
+
+
+	################################################
+	#### KNIGHTS ###################################
+	################################################
+
+	EMFXActorType = {
+		name = "byzantinegfx_KNIGHTS"
+		actorfile = "gfx\models\Muslim_Heavy_Horse.xac"
+
+		idle   = "gfx\models\Horse_Idle.xsm"
+		move   = "gfx\models\Horse_Moving.xsm"
+		attack = "gfx\models\Horse_Attack.xsm"
+
+		scale = 0.9f
+	}
+
+	EMFXActorType = {
+		name = "byzantinegfx_KNIGHTS_rider"
+		actorfile = "gfx\models\Muslim_Heavy_Cavalry.xac"
+
+		idle   = "gfx\models\Cavalry_Sword_and_Shield_Idle.xsm"
+		move   = "gfx\models\Cavalry_Sword_and_Shield_Moving.xsm"
+		attack = "gfx\models\Cavalry_Sword_and_Shield_Attack.xsm"
+
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "byzantinegfx_KNIGHTS_weapon"
+		actorfile = "gfx\models\Attachments\Banner_Sword.xac"
+
+		idle   = "gfx\models\Attachments\Banner_anim.xsm"
+		move   = "gfx\models\Attachments\Banner_anim.xsm"
+		attack = "gfx\models\Attachments\Sword_Anim.xsm"
+
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "byzantinegfx_KNIGHTS_shield"
+		actorfile = "gfx\models\Attachments\Shield_Knight01.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "byzantinegfx_KNIGHTS_helmet"
+		actorfile = "gfx\models\Attachments\Helmet_11.xac"
+		scale = 1.03f
+	}
+
+	################################################
+	#### LIGHT_CAVALRY #############################
+	################################################
+	pdxmesh = {
+		name = "byzantinegfx_LIGHT_CAVALRY"
+		file = "gfx\models\westerngfx_early_light_horse.mesh"
+
+		animation = { id = "attack"		type = "char_horse_attack_animation" }
+		animation = { id = "idle"		type = "char_horse_idle_animation" }
+		animation = { id = "move"		type = "char_horse_moving_animation" }
+
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_LIGHT_CAVALRY_rider"
+		file = "gfx\models\westerngfx_early_light_cavalry.mesh"
+
+		animation = { id = "attack"		type = "char_light_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "char_light_cavalry_idle_animation" }
+		animation = { id = "move"		type = "char_light_cavalry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_LIGHT_CAVALRY_weapon"
+		file = "gfx\models\Attachments\char_early_pike.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_LIGHT_CAVALRY_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_helmet_light_cavalry.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### horse_archers #############################
+	################################################
+	pdxmesh = {
+		name = "byzantinegfx_horse_archers"
+		file = "gfx\models\westerngfx_early_light_horse.mesh"
+
+		animation = { id = "attack"		type = "char_horse_attack_animation" }
+		animation = { id = "idle"		type = "char_horse_idle_animation" }
+		animation = { id = "move"		type = "char_horse_moving_animation" }
+
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_horse_archers_rider"
+		file = "gfx\models\westerngfx_early_mounted_archer.mesh"
+
+		animation = { id = "attack"		type = "char_mounted_archer_attack_animation" }
+		animation = { id = "idle"		type = "char_mounted_archer_idle_animation" }
+		animation = { id = "move"		type = "char_mounted_archer_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_horse_archers_weapon"
+		file = "gfx\models\Attachments\char_early_arrow.mesh"
+
+		animation = { id = "attack"		type = "char_early_arrow_attack_animation" }
+		animation = { id = "idle"		type = "char_early_arrow_idle_animation" }
+		animation = { id = "move"		type = "char_early_arrow_moving_animation" }
+
+
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_horse_archers_shield"
+		file = "gfx\models\Attachments\char_early_bow.mesh"
+
+		animation = { id = "attack"		type = "char_early_bow_attack_animation" }
+		animation = { id = "idle"		type = "char_early_bow_idle_animation" }
+		animation = { id = "move"		type = "char_early_bow_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "byzantinegfx_horse_archers_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_light_cavalry.mesh"
+
+		scale = 1.0f
+	}
+}

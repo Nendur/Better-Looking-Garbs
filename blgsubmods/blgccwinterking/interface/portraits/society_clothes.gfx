@@ -1,0 +1,754 @@
+spriteTypes = {
+
+	# File contains society specific clothing
+
+	# monastic_order_benedictine
+
+	# Male
+
+	spriteType = {
+		name = "GFX_society_benedictine_male_clothing_behind"
+		textureFile = "gfx/characters/societies/mom_benedictine_male_clothing_behind.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_society_benedictine_male_clothing_front"
+		textureFile = "gfx/characters/societies/mom_benedictine_male_clothing_front.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_society_benedictine_male_headgear_front"
+		textureFile = "gfx/characters/societies/mom_benedictine_male_headgear_front.dds"
+		noOfFrames = 2
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_benedictine_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_society = monastic_order_benedictine
+					portrait_society = monastic_order_culdees
+					portrait_society = monastic_order_arian
+				}
+				OR = {
+					portrait_government = theocracy_government
+					NOT = { portrait_tier = baron }
+					portrait_society_rank = 3
+					portrait_society_rank = 4
+					portrait_has_trait = monk
+					portrait_has_trait = on_pilgrimage
+					portrait_has_trait = blgcaon
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_benedictine_male_clothing_behind:c0"
+			"GFX_society_benedictine_male_clothing_front:c2"
+			"GFX_society_benedictine_male_headgear_front:c5"
+			"GFX_clothing_monk_male_hair:c7"
+			"GFX_empty:c3"
+			"GFX_empty:c1"
+			"GFX_empty:c4"
+		}
+
+		# Tonsure hairstyle, no beard
+		allow_property_values = {
+			4 = {
+				0 = {
+					always = yes
+				}
+			}
+			31 = {
+				0 = {
+					always = yes
+				}
+			}
+			36 = { # Staff overlap
+				0 = {
+					always = yes
+				}
+			}
+		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+	}
+
+	# Female
+
+	spriteType = {
+		name = "GFX_society_benedictine_female_clothing_behind"
+		textureFile = "gfx/characters/societies/mom_benedictine_female_clothing_behind.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_society_benedictine_female_clothing_front"
+		textureFile = "gfx/characters/societies/mom_benedictine_female_clothing_front.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_society_benedictine_female_headgear_behind"
+		textureFile = "gfx/characters/societies/mom_benedictine_female_headgear_behind.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_society_benedictine_female_headgear_front"
+		textureFile = "gfx/characters/societies/mom_benedictine_female_headgear_front.dds"
+		noOfFrames = 2
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_benedictine_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_society = monastic_order_benedictine
+					portrait_society = monastic_order_culdees
+					portrait_society = monastic_order_arian
+				}
+				OR = {
+					portrait_government = theocracy_government
+					NOT = { portrait_tier = baron }
+					portrait_society_rank = 3
+					portrait_society_rank = 4
+					portrait_has_trait = nun
+					portrait_has_trait = on_pilgrimage
+					portrait_has_trait = blgcaon
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_benedictine_female_clothing_behind:c0"
+			"GFX_society_benedictine_female_clothing_front:c2"
+			"GFX_empty:c3"
+			"GFX_society_benedictine_female_headgear_behind:c1"
+			"GFX_society_benedictine_female_headgear_front:c5"
+			"GFX_empty:c4"
+		}
+
+		# Hide hair
+		allow_property_values = {
+			1 = {
+				0 = {
+					always = yes
+				}
+			}
+			32 = {
+				0 = {
+					always = yes
+				}
+			}
+			33 = {
+				0 = {
+					always = yes
+				}
+			}
+		}
+	}
+
+	# monastic_order_orthodox
+
+	# Male
+
+	spriteType = {
+		name = "GFX_society_orthodox_monk_male_clothing_behind"
+		textureFile = "gfx/characters/societies/mom_orthodox_monk_male_clothing_back.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_society_orthodox_monk_male_clothing_front"
+		textureFile = "gfx/characters/societies/mom_orthodox_monk_male_clothing_front.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_society_orthodox_monk_male_headgear_behind"
+		textureFile = "gfx/characters/societies/mom_orthodox_monk_male_headgear_behind.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_society_orthodox_monk_male_headgear_front"
+		textureFile = "gfx/characters/societies/mom_orthodox_monk_male_headgear_front.dds"
+		noOfFrames = 5
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_orthodox_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					#portrait_society = monastic_order_orthodox
+					#portrait_society = monastic_order_monophysite
+					portrait_society = monastic_order_nestorian
+				}
+				OR = {
+					portrait_government = theocracy_government
+					NOT = { portrait_tier = baron }
+					portrait_society_rank = 3
+					portrait_society_rank = 4
+					portrait_has_trait = monk
+					portrait_has_trait = on_pilgrimage
+					portrait_has_trait = blgcaon
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_orthodox_monk_male_clothing_behind:c0"
+			"GFX_society_orthodox_monk_male_clothing_front:c2"
+			"GFX_society_orthodox_monk_male_headgear_behind:c1"
+			"GFX_society_orthodox_monk_male_headgear_front:c5"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+		}
+
+		# Ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			31 = {
+				0 = {
+					always = yes
+				}
+			}
+		}
+	}
+
+	# Female
+
+	spriteType = {
+		name = "GFX_society_orthodox_monk_female_headgear_behind"
+		textureFile = "gfx/characters/societies/mom_orthodox_monk_female_headgear_behind.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_society_orthodox_monk_female_headgear_front"
+		textureFile = "gfx/characters/societies/mom_orthodox_monk_female_headgear_front.dds"
+		noOfFrames = 5
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_orthodox_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					#portrait_society = monastic_order_orthodox
+					#portrait_society = monastic_order_monophysite
+					portrait_society = monastic_order_nestorian
+				}
+				OR = {
+					portrait_government = theocracy_government
+					NOT = { portrait_tier = baron }
+					portrait_society_rank = 3
+					portrait_society_rank = 4
+					portrait_has_trait = nun
+					portrait_has_trait = on_pilgrimage
+					portrait_has_trait = blgcaon
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_empty:c0"
+			"GFX_empty:c2"
+			"GFX_empty:c3"
+			"GFX_society_orthodox_monk_female_headgear_behind:c1"
+			"GFX_society_orthodox_monk_female_headgear_front:c5"
+			"GFX_empty:c4"
+		}
+
+		# Hide hair, ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.
+		allow_property_values = {
+			1 = {
+				0 = {
+					always = yes
+				}
+			}
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			32 = {
+				0 = {
+					always = yes
+				}
+			}
+			33 = {
+				0 = {
+					always = yes
+				}
+			}
+		}
+	}
+
+	# hermetics
+
+	# male
+
+	spriteType = {
+		name = "GFX_society_hermetic_male_clothing_behind"
+		textureFile = "gfx/characters/societies/mom_hermetic_male_clothing_behind.dds"
+		noOfFrames = 9
+	}
+
+	spriteType = {
+		name = "GFX_society_hermetic_male_clothing_front"
+		textureFile = "gfx/characters/societies/mom_hermetic_male_clothing_front.dds"
+		noOfFrames = 9
+	}
+
+	spriteType = {
+		name = "GFX_society_hermetic_male_headgear_behind"
+		textureFile = "gfx/characters/societies/mom_hermetic_male_headgear_behind.dds"
+		noOfFrames = 9
+	}
+
+	spriteType = {
+		name = "GFX_society_hermetic_male_headgear_front"
+		textureFile = "gfx/characters/societies/mom_hermetic_male_headgear_front.dds"
+		noOfFrames = 9
+	}
+
+	spriteType = {
+		name = "GFX_society_hermetic_male_headgear_mid"
+		textureFile = "gfx/characters/societies/mom_hermetic_male_headgear_mid.dds"
+		noOfFrames = 9
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_hermetic_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = hermetics
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_society_rank = 3
+					portrait_society_rank = 4
+					portrait_has_trait = blgcaon
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_hermetic_male_clothing_behind:c0"
+			"GFX_society_hermetic_male_clothing_front:c2"
+			"GFX_society_hermetic_male_headgear_behind:c1"
+			"GFX_society_hermetic_male_headgear_front:c5"
+			"GFX_society_hermetic_male_headgear_mid:c3"
+			"GFX_empty:c4"
+		}
+
+		# Appropriate clothing
+		allow_property_values = {
+			3 = {
+				0 = { # Western
+					OR = {
+						portrait_culture_group = celtic
+						portrait_culture_group = romance
+						portrait_culture_group = basque
+					}
+				}
+				1 = { # Nordic
+					portrait_culture_group = germanic
+				}
+				2 = { # Baltic/Slavic
+					always = no
+				}
+				3 = { # Muslim
+					OR = {
+						portrait_culture_group = arabic
+						portrait_culture_group = israelite
+						portrait_culture = romanosyrian
+					}
+				}
+				4 = { # Indian
+					always = no
+				}
+				5 = { # Central Asian
+					OR = {
+						portrait_culture_group = altaic
+						portrait_culture_group = sarmatian
+						portrait_culture = taifal
+					}
+				}
+				6 = { # West African
+					OR = {
+						portrait_culture_group = african
+						portrait_culture = romanonumidian
+						portrait_culture = romanoafrican
+					}
+				}
+				7 = { # East African
+					OR = {
+						portrait_culture_group = african
+						portrait_culture = romanonumidian
+						portrait_culture = romanoafrican
+					}
+				}
+				8 = { # Byzantine
+					portrait_culture_group = imperiale
+				}
+			}
+			5 = {
+				0 = { # Western
+					OR = {
+						portrait_culture_group = celtic
+						portrait_culture_group = romance
+						portrait_culture_group = basque
+						portrait_culture_group = germanic
+					}
+				}
+				1 = { # Nordic
+					always = no
+				}
+				2 = { # Baltic/Slavic
+					always = no
+				}
+				3 = { # Muslim
+					OR = {
+						portrait_culture_group = arabic
+						portrait_culture_group = israelite
+						portrait_culture = romanosyrian
+					}
+				}
+				4 = { # Indian
+					always = no
+				}
+				5 = { # Central Asian
+					OR = {
+						portrait_culture_group = altaic
+						portrait_culture_group = sarmatian
+						portrait_culture = taifal
+					}
+				}
+				6 = { # West African
+					OR = {
+						portrait_culture_group = african
+						portrait_culture = romanonumidian
+						portrait_culture = romanoafrican
+					}
+				}
+				7 = { # East African
+					OR = {
+						portrait_culture_group = african
+						portrait_culture = romanonumidian
+						portrait_culture = romanoafrican
+					}
+				}
+				8 = { # Byzantine
+					portrait_culture_group = imperiale
+				}
+			}
+			31 = {
+				0 = {
+					always = yes
+				}
+			}
+		}
+	}
+
+	# female
+
+	spriteType = {
+		name = "GFX_society_hermetic_female_clothing_behind"
+		textureFile = "gfx/characters/societies/mom_hermetic_female_clothing_behind.dds"
+		noOfFrames = 9
+	}
+
+	spriteType = {
+		name = "GFX_society_hermetic_female_clothing_front"
+		textureFile = "gfx/characters/societies/mom_hermetic_female_clothing_front.dds"
+		noOfFrames = 9
+	}
+
+	spriteType = {
+		name = "GFX_society_hermetic_female_headgear_behind"
+		textureFile = "gfx/characters/societies/mom_hermetic_female_headgear_behind.dds"
+		noOfFrames = 9
+	}
+
+	spriteType = {
+		name = "GFX_society_hermetic_female_headgear_front"
+		textureFile = "gfx/characters/societies/mom_hermetic_female_headgear_front.dds"
+		noOfFrames = 9
+	}
+
+	spriteType = {
+		name = "GFX_society_hermetic_female_headgear_mid"
+		textureFile = "gfx/characters/societies/mom_hermetic_female_headgear_mid.dds"
+		noOfFrames = 9
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_hermetic_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = hermetics
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_society_rank = 3
+					portrait_society_rank = 4
+					portrait_has_trait = blgcaon
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_hermetic_female_clothing_behind:c0"
+			"GFX_society_hermetic_female_clothing_front:c2"
+			"GFX_society_hermetic_female_headgear_behind:c1"
+			"GFX_society_hermetic_female_headgear_front:c5"
+			"GFX_society_hermetic_female_headgear_mid:c3"
+			"GFX_empty:c4"
+		}
+
+		# Hide hair on 3rd, 4th, and 9th slot ( slavic, muslim, byzantine )
+		allow_property_values = {
+			1 = {
+				0 = {
+					OR = {
+						portrait_culture_group = imperiale
+						portrait_culture_group = arabic
+						portrait_culture_group = israelite
+						portrait_culture = romanosyrian
+					}
+				}
+			}
+			3 = {
+				0 = { # Western
+					OR = {
+						portrait_culture_group = celtic
+						portrait_culture_group = romance
+						portrait_culture_group = basque
+					}
+				}
+				1 = { # Nordic
+					portrait_culture_group = germanic
+				}
+				2 = { # Baltic/Slavic
+					always = no
+				}
+				3 = { # Muslim
+					OR = {
+						portrait_culture_group = arabic
+						portrait_culture_group = israelite
+						portrait_culture = romanosyrian
+					}
+				}
+				4 = { # Indian
+					always = no
+				}
+				5 = { # Central Asian
+					OR = {
+						portrait_culture_group = altaic
+						portrait_culture_group = sarmatian
+						portrait_culture = taifal
+					}
+				}
+				6 = { # West African
+					OR = {
+						portrait_culture_group = african
+						portrait_culture = romanonumidian
+						portrait_culture = romanoafrican
+					}
+				}
+				7 = { # East African
+					OR = {
+						portrait_culture_group = african
+						portrait_culture = romanonumidian
+						portrait_culture = romanoafrican
+					}
+				}
+				8 = { # Byzantine
+					portrait_culture_group = imperiale
+				}
+			}
+			5 = {
+				0 = { # Western
+					OR = {
+						portrait_culture_group = celtic
+						portrait_culture_group = romance
+						portrait_culture_group = basque
+						portrait_culture_group = germanic
+					}
+				}
+				1 = { # Nordic
+					always = no
+				}
+				2 = { # Baltic/Slavic
+					always = no
+				}
+				3 = { # Muslim
+					OR = {
+						portrait_culture_group = arabic
+						portrait_culture_group = israelite
+						portrait_culture = romanosyrian
+					}
+				}
+				4 = { # Indian
+					always = no
+				}
+				5 = { # Central Asian
+					OR = {
+						portrait_culture_group = altaic
+						portrait_culture_group = sarmatian
+						portrait_culture = taifal
+					}
+				}
+				6 = { # West African
+					OR = {
+						portrait_culture_group = african
+						portrait_culture = romanonumidian
+						portrait_culture = romanoafrican
+					}
+				}
+				7 = { # East African
+					OR = {
+						portrait_culture_group = african
+						portrait_culture = romanonumidian
+						portrait_culture = romanoafrican
+					}
+				}
+				8 = { # Byzantine
+					portrait_culture_group = imperiale
+				}
+			}
+			32 = {
+				0 = {
+					always = yes
+				}
+			}
+			33 = {
+				0 = {
+					always = yes
+				}
+			}
+		}
+	}
+}

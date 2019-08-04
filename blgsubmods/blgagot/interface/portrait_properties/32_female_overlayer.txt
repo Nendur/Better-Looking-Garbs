@@ -1,0 +1,6 @@
+#p32 frankish Culture Overlayer - Female
+32 = {
+	0 = { # Blank
+		factor = 100
+	}
+}

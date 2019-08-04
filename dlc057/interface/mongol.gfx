@@ -1,0 +1,44 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "mongolgfx_HEAVY_INFANTRY_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "mongolgfx_LIGHT_INFANTRY_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "mongolgfx_PIKEMEN_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "mongolgfx_ARCHERS_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "mongolgfx_KNIGHTS_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "mongolgfx_LIGHT_CAVALRY_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "mongolgfx_horse_archers_helmet"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+}

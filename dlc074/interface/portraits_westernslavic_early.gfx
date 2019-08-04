@@ -1,0 +1,84 @@
+############## WESTERNSLAVIC EARLY ##########################
+spriteTypes = {
+
+### WESTERNSLAVIC MALE EARLY ####
+
+	spriteType = {
+		name = "GFX_westernslavic_male_clothes_behind_early"
+		texturefile = "gfx\\characters\\westernslavic_male\\westernslavic_male_clothes_behind_early.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_westernslavic_male_headgear_behind_early"
+		texturefile = "gfx\\characters\\westernslavic_male\\westernslavic_male_headgear_behind_early.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_westernslavic_male_headgear_mid_early"
+		texturefile = "gfx\\characters\\westernslavic_male\\westernslavic_male_headgear_mid_early.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_westernslavic_male_clothes_early"
+		texturefile = "gfx\\characters\\westernslavic_male\\westernslavic_male_clothes_early.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_westernslavic_male_headgear_early"
+		texturefile = "gfx\\characters\\westernslavic_male\\westernslavic_male_headgear_early.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+#### WESTERNSLAVIC FEMALE EARLY ####
+
+	spriteType = {
+		name = "GFX_westernslavic_female_clothes_behind_early"
+		texturefile = "gfx\\characters\\westernslavic_female\\westernslavic_female_clothes_behind_early.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_westernslavic_female_headgear_behind_early"
+		texturefile = "gfx\\characters\\westernslavic_female\\westernslavic_female_headgear_behind_early.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_westernslavic_female_clothes_early"
+		texturefile = "gfx\\characters\\westernslavic_female\\westernslavic_female_clothes_early.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_westernslavic_female_clothes_infront_early"
+		texturefile = "gfx\\characters\\westernslavic_female\\westernslavic_female_clothes_infront_early.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_westernslavic_female_headgear_early"
+		texturefile = "gfx\\characters\\westernslavic_female\\westernslavic_female_headgear_early.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_westernslavic_female_headgear_mid_early"
+		texturefile = "gfx\\characters\\westernslavic_female\\westernslavic_female_headgear_mid_early.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+}

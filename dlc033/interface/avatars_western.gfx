@@ -1,0 +1,340 @@
+# Base Western from Military Orders
+
+objectTypes = {
+
+	EMFXActorType = {
+		name = "westerngfx_LIGHT_INFANTRY"
+		actorfile = "gfx\models\christian_light_infantry.xac"
+		idle   = "gfx\models\christian_infantry_idle.xsm"
+		move   = "gfx\models\christian_infantry_moving.xsm"
+		attack = "gfx\models\christian_infantry_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_LIGHT_INFANTRY_weapon"
+		actorfile = "gfx\models\Attachments\Axe_01.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "southerngfx_LIGHT_INFANTRY_weapon"
+		actorfile = "gfx\models\Attachments\christian_sword.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_LIGHT_INFANTRY_shield"
+		actorfile = "gfx\models\Attachments\christian_small_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_PIKEMEN"
+		actorfile = "gfx\models\christian_pikeman.xac"
+		idle   = "gfx\models\christian_pikeman_idle.xsm"
+		move   = "gfx\models\christian_pikeman_moving.xsm"
+		attack = "gfx\models\christian_pikeman_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_PIKEMEN_weapon"
+		actorfile = "gfx\models\Attachments\christian_pike.xac"
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_PIKEMEN_shield"
+		actorfile = "gfx\models\Attachments\christian_small_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "frankishgfx_PIKEMEN_shield"
+		actorfile = "gfx\models\Attachments\christian_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "normangfx_PIKEMEN_shield"
+		actorfile = "gfx\models\Attachments\christian_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_ARCHERS"
+		actorfile = "gfx\models\christian_archer.xac"
+		idle   = "gfx\models\christian_archer_idle.xsm"
+		move   = "gfx\models\christian_archer_moving.xsm"
+		attack = "gfx\models\christian_archer_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_ARCHERS_weapon"
+		actorfile = "gfx\models\Attachments\christian_arrow.xac"
+		idle   = "gfx\models\Attachments\christian_arrow_idle.xsm"
+		move   = "gfx\models\Attachments\christian_arrow_idle.xsm"
+		attack = "gfx\models\Attachments\christian_arrow_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_ARCHERS_shield"
+		actorfile = "gfx\models\Attachments\christian_bow.xac"
+		idle   = "gfx\models\Attachments\christian_bow_idle.xsm"
+		move   = "gfx\models\Attachments\christian_bow_idle.xsm"
+		attack  = "gfx\models\Attachments\christian_bow_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_HEAVY_INFANTRY"
+		actorfile = "gfx\models\christian_heavy_infantry.xac"
+		idle   = "gfx\models\christian_infantry_idle.xsm"
+		move   = "gfx\models\christian_infantry_moving.xsm"
+		attack = "gfx\models\christian_infantry_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_HEAVY_INFANTRY_weapon"
+		actorfile = "gfx\models\Attachments\christian_sword.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_HEAVY_INFANTRY_shield"
+		actorfile = "gfx\models\Attachments\christian_small_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "frankishgfx_HEAVY_INFANTRY_shield"
+		actorfile = "gfx\models\Attachments\christian_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "normangfx_HEAVY_INFANTRY_shield"
+		actorfile = "gfx\models\Attachments\christian_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_LIGHT_CAVALRY"
+		actorfile = "gfx\models\christian_horse.xac"
+		idle   = "gfx\models\christian_horse_idle.xsm"
+		move   = "gfx\models\christian_horse_moving.xsm"
+		attack = "gfx\models\christian_horse_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "southerngfx_LIGHT_CAVALRY"
+		actorfile = "gfx\models\Muslim_Horse.xac"
+
+		idle   = "gfx\models\Horse_Idle.xsm"
+		move   = "gfx\models\Horse_Moving.xsm"
+		attack = "gfx\models\Horse_Attack.xsm"
+
+		scale = 0.9f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_LIGHT_CAVALRY_rider"
+		actorfile = "gfx\models\christian_light_cavalry.xac"
+		idle   = "gfx\models\christian_light_cavalry_idle.xsm"
+		move   = "gfx\models\christian_light_cavalry_moving.xsm"
+		attack = "gfx\models\christian_light_cavalry_attack.xsm"
+		scale = 0.95f
+	}
+
+	EMFXActorType = {
+		name = "southerngfx_LIGHT_CAVALRY_rider"
+		actorfile = "gfx\models\christian_light_cavalry.xac"
+		idle   = "gfx\models\christian_light_cavalry_idle.xsm"
+		move   = "gfx\models\christian_light_cavalry_moving.xsm"
+		attack = "gfx\models\christian_light_cavalry_attack.xsm"
+		scale = 0.95f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_LIGHT_CAVALRY_weapon"
+		actorfile = "gfx\models\Attachments\christian_pike.xac"
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
+		name = "southerngfx_LIGHT_CAVALRY_weapon"
+		actorfile = "gfx\models\Attachments\christian_pike.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_horse_archers"
+		actorfile = "gfx\models\Horse.xac"
+
+		idle   = "gfx\models\Horse_Idle.xsm"
+		move   = "gfx\models\Horse_Moving.xsm"
+		attack = "gfx\models\Horse_Running.xsm"
+
+		scale = 0.9f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_horse_archers_rider"
+		actorfile = "gfx\models\christian_mounted_archer.xac"
+		idle   = "gfx\models\christian_mounted_archer_idle.xsm"
+		move   = "gfx\models\christian_mounted_archer_moving.xsm"
+		attack = "gfx\models\christian_mounted_archer_attack.xsm"
+		scale = 0.95f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_horse_archers_weapon"
+		actorfile = "gfx\models\Attachments\christian_arrow.xac"
+		idle   = "gfx\models\Attachments\christian_arrow_idle.xsm"
+		move   = "gfx\models\Attachments\christian_arrow_idle.xsm"
+		attack = "gfx\models\Attachments\christian_arrow_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_horse_archers_shield"
+		actorfile = "gfx\models\Attachments\christian_bow.xac"
+		idle   = "gfx\models\Attachments\christian_bow_idle.xsm"
+		move   = "gfx\models\Attachments\christian_bow_idle.xsm"
+		attack  =  "gfx\models\Attachments\christian_bow_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_KNIGHTS"
+		actorfile = "gfx\models\christian_horse.xac"
+		idle   = "gfx\models\christian_horse_idle.xsm"
+		move   = "gfx\models\christian_horse_moving.xsm"
+		attack = "gfx\models\christian_horse_attack.xsm"
+		scale = 0.9f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_KNIGHTS_rider"
+		actorfile = "gfx\models\christian_heavy_cavalry.xac"
+		idle   = "gfx\models\christian_heavy_cavalry_tabard_idle.xsm"
+		move   = "gfx\models\christian_heavy_cavalry_tabard_moving.xsm"
+		attack = "gfx\models\christian_heavy_cavalry_tabard_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_KNIGHTS_weapon"
+		actorfile = "gfx\models\Attachments\christian_banner_and_sword.xac"
+		idle   = "gfx\models\Attachments\christian_banner_anim.xsm"
+		move   = "gfx\models\Attachments\christian_banner_anim.xsm"
+		attack  =  "gfx\models\Attachments\christian_sword_anim.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_KNIGHTS_shield"
+		actorfile = "gfx\models\Attachments\christian_heavy_cavalry_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_KNIGHTS_late"
+		actorfile = "gfx\models\christian_horse.xac"
+		idle   = "gfx\models\christian_horse_idle.xsm"
+		move   = "gfx\models\christian_horse_moving.xsm"
+		attack = "gfx\models\christian_horse_attack.xsm"
+		scale = 0.9f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_KNIGHTS_rider_late"
+		actorfile = "gfx\models\Western_Heavy_Cavalry.xac"
+
+		idle   = "gfx\models\Cavalry_Sword_and_Shield_Idle.xsm"
+		move   = "gfx\models\Cavalry_Sword_and_Shield_Moving.xsm"
+		attack = "gfx\models\Cavalry_Sword_and_Shield_Attack.xsm"
+
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_KNIGHTS_weapon_late"
+		actorfile = "gfx\models\Attachments\christian_banner_and_sword.xac"
+		idle   = "gfx\models\Attachments\christian_banner_anim.xsm"
+		move   = "gfx\models\Attachments\christian_banner_anim.xsm"
+		attack  =  "gfx\models\Attachments\christian_sword_anim.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_KNIGHTS_shield_late"
+		actorfile = "gfx\models\Attachments\christian_heavy_cavalry_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "frankishgfx_KNIGHTS_shield_late"
+		actorfile = "gfx\models\Attachments\christian_heavy_cavalry_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "englishgfx_KNIGHTS_shield_late"
+		actorfile = "gfx\models\Attachments\Shield_Tear_01_Checker.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "normangfx_KNIGHTS_shield_late"
+		actorfile = "gfx\models\Attachments\Shield_Tear_02_Norman.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "germangfx_KNIGHTS_shield_late"
+		actorfile = "gfx\models\Attachments\Shield_Kite_01_Chevron.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_KNIGHTS_helmet_late"
+		actorfile = "gfx\models\Attachments\Helmet_03.xac"
+		scale = 1.03f
+	}
+
+	EMFXActorType = {
+		name = "normangfx_KNIGHTS_helmet_late"
+		actorfile = "gfx\models\Attachments\Helmet_15.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "germangfx_KNIGHTS_helmet_late"
+		actorfile = "gfx\models\Attachments\Helmet_13.xac"
+		scale = 1.08f
+	}
+
+	EMFXActorType = {
+		name = "italiangfx_KNIGHTS_helmet_late"
+		actorfile = "gfx\models\Attachments\Helmet_06.xac"
+		scale = 1.04f
+	}
+
+	EMFXActorType = {
+		name = "englishgfx_KNIGHTS_helmet_late"
+		actorfile = "gfx\models\Attachments\Helmet_07.xac"
+		scale = 1.03f
+	}
+
+	EMFXActorType = {
+		name = "frankishgfx_KNIGHTS_helmet_late"
+		actorfile = "gfx\models\Attachments\Helmet_16.xac"
+		scale = 1.0f
+	}
+}

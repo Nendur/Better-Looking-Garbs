@@ -1,0 +1,182 @@
+spriteTypes = {
+
+### Monks
+
+	spriteType = {
+		name = "GFX_clothing_monk_clothes"
+		textureFile = "gfx/characters/clothing/monk_clothes.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_clothing_monk_clothes_behind"
+		textureFile = "gfx/characters/clothing/monk_clothes_behind.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_clothing_monk_headgear"
+		textureFile = "gfx/characters/clothing/monk_headgear.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_clothing_monk_headgear_behind"
+		textureFile = "gfx/characters/clothing/monk_headgear_behind.dds"
+		noOfFrames = 2
+	}
+
+
+	portraitType = {
+		name = "PORTRAIT_clothing_monk"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 5000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_has_trait = monk
+				NOR = {
+					portrait_religion = hindu
+					portrait_religion = buddhist
+					portrait_religion = jain
+					portrait_religion = taoist
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+			}
+		}
+
+		layer = {
+			"GFX_clothing_monk_clothes_behind:c0"
+			"GFX_clothing_monk_headgear_behind:c1"
+			"GFX_clothing_monk_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_clothing_monk_headgear:c5"
+			"GFX_clothing_monk_male_hair:c7"
+		}
+
+		# Tonsure hairstyle
+		allow_property_values = {
+			3 = {
+				0 = {
+					OR = {
+						portrait_religion = catholic
+						portrait_religion = cathar
+						portrait_religion = fraticelli
+						portrait_religion = waldensian
+						portrait_religion = lollard
+					}
+				}
+				1 = {
+					NOR = {
+						portrait_religion = catholic
+						portrait_religion = cathar
+						portrait_religion = fraticelli
+						portrait_religion = waldensian
+						portrait_religion = lollard
+					}
+				}
+			}
+			5 = {
+				0 = {
+					OR = {
+						portrait_religion = catholic
+						portrait_religion = cathar
+						portrait_religion = fraticelli
+						portrait_religion = waldensian
+						portrait_religion = lollard
+					}
+				}
+				1 = {
+					NOR = {
+						portrait_religion = catholic
+						portrait_religion = cathar
+						portrait_religion = fraticelli
+						portrait_religion = waldensian
+						portrait_religion = lollard
+					}
+				}
+			}
+			31 = {
+				0 = {
+					always = yes
+				}
+			}
+		}
+
+		headgear_that_hides_hair = { 0 }
+	}
+
+### Nun
+
+	spriteType = {
+		name = "GFX_clothing_nun_headgear"
+		textureFile = "gfx/characters/clothing/nun_headgear.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_clothing_nun_headgear_behind"
+		textureFile = "gfx/characters/clothing/nun_headgear_behind.dds"
+		noOfFrames = 1
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_nun"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 5000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_has_trait = nun
+				NOR = {
+					portrait_religion = hindu
+					portrait_religion = buddhist
+					portrait_religion = jain
+					portrait_religion = taoist
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+			}
+		}
+
+		layer = {
+			"GFX_empty:c0"
+			"GFX_clothing_nun_headgear_behind:c1"
+			"GFX_empty:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_clothing_nun_headgear:c5"
+		}
+
+		# Hide hair
+		allow_property_values = {
+			1 = {
+				0 = {
+					always = yes
+				}
+			}
+			32 = {
+				0 = {
+					always = yes
+				}
+			}
+			33 = {
+				0 = {
+					always = yes
+				}
+			}
+		}
+	}
+}

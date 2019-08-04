@@ -1,0 +1,242 @@
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_sloadgfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_indian_background:p0"
+			"GFX_indian_background:p0:c6"
+			"GFX_sload_heads:d0"
+			"GFX_character_harelip_west_african:p24:o10x10"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23:o0x-3"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_mask:p12:y:o54x42"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_sloadgfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_indian_background:p0"
+			"GFX_indian_background:p0:c6"
+			"GFX_sload_heads:d0"
+			"GFX_character_harelip_west_african:p24:o10x10"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23:o0x-3"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_mask:p12:y:o54x42"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_sloadgfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_indian_background:p0"
+			"GFX_indian_background:p0:c6"
+			"GFX_sload_heads:d0"
+			"GFX_character_harelip_west_african:p24:o10x10"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23:o0x-3"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_mask:p12:y:o54x42"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_sloadgfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_indian_background:p0"
+			"GFX_indian_background:p0:c6"
+			"GFX_sload_heads:d0"
+			"GFX_character_harelip_west_african:p24:o10x10"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23:o0x-3"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_mask:p12:y:o54x42"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_sloadgfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_indian_background:p0"
+			"GFX_indian_background:p0:c6"
+			"GFX_sload_heads:d0"
+			"GFX_character_harelip_west_african:p24:o10x10"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23:o0x-3"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_mask:p12:y:o54x42"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_sloadgfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_indian_background:p0"
+			"GFX_indian_background:p0:c6"
+			"GFX_sload_heads:d0"
+			"GFX_character_harelip_west_african:p24:o10x10"
+			"GFX_character_tattoos:p28"
+			"GFX_character_warpaint:p29"
+			"GFX_character_boils:p9"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8"
+			"GFX_character_black_eye:p23:o0x-3"
+			"GFX_character_blinded_eyes:p10:o2x-1"
+			"GFX_character_mask:p12:y:o54x42"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+}

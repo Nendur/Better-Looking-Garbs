@@ -1,0 +1,200 @@
+nedic = {
+	graphical_cultures = { westerngfx }
+
+	imperial = {
+		graphical_cultures = { southerngfx byzantinegfx }
+		unit_graphical_cultures = { southerngfx }
+	}
+	nibenean = {
+		graphical_cultures = { byzantinegfx }
+		unit_graphical_cultures = { southerngfx }
+	}
+	colovian = {
+		graphical_cultures = { westernslavicgfx southerngfx byzantinegfx }
+		unit_graphical_cultures = { romangfx italiangfx southerngfx }
+	}
+	skaal = {
+		graphical_cultures = { norsegfx }
+		unit_graphical_cultures = { balticgfc }
+	}
+	breton = {
+		graphical_cultures = { frankishgfx englishgfx }
+	}
+	reachmen = {
+		graphical_cultures = { easternslavicgfx pagangfx ugricgfx }
+		unit_graphical_cultures = { celticgfx }
+	}
+	atmoran = {
+		graphical_cultures = { norsegfx }
+		unit_graphical_cultures = { balticgfc }
+	}
+}
+
+yokudan_group = {
+	graphical_cultures = { muslimgfx }
+
+	yokudan = {
+		graphical_cultures = { africangfx westafricangfx }
+		unit_graphical_cultures = { arabicgfx muslimgfx }
+	}
+	forebear = {
+		graphical_cultures = { westafricangfx africangfx }
+		unit_graphical_cultures = { arabicgfx muslimgfx }
+	}
+	crown = {
+		graphical_cultures = { africangfx westafricangfx }
+		unit_graphical_cultures = { arabicgfx muslimgfx }
+	}
+	lhotunic = {
+		graphical_cultures = { africangfx westafricangfx }
+		unit_graphical_cultures = { arabicgfx muslimgfx }
+	}
+}
+
+aldmeris = {
+	graphical_cultures = { mesoamericangfx cumangfx arabicgfx indiangfx muslimgfx }
+
+	bosmer = {
+		graphical_cultures = { bosmergfx mongolgfx }
+	}
+	ayleid = {
+		graphical_cultures = { ayleidgfx bodpagfx mongolgfx }
+	}
+	altmer = {
+		graphical_cultures = { altmergfx somaligfx semitegfx dutchgfx mongolgfx }
+		unit_graphical_cultures = { chinesegfx mongolgfx }
+	}
+	maormer = {
+		graphical_cultures = { maormergfx southindiangfx sogdiangfx mongolgfx }
+		unit_graphical_cultures = { saxongfx byzantinegfx }
+	}
+	falmer = {
+		graphical_cultures = { falmergfx persiangfx mongolgfx }
+		unit_graphical_cultures = { easternslavicgfx easterngfx }
+	}
+	dwemer = {
+		graphical_cultures = { dwemergfx byzantinegfx }
+	}
+}
+
+chimeris = {
+	graphical_cultures = { easterngfx }
+
+	orsimer = {
+		graphical_cultures = { orsimergfx andalusiangfx mongolgfx cumangfx muslimgfx }
+		unit_graphical_cultures = { levantinegfx muslimgfx }
+	}
+	ashlander = {
+		graphical_cultures = { dunmergfx turkishgfx mongolgfx indiangfx cumangfx muslimgfx }
+	}
+	dunmer = {
+		graphical_cultures = { dunmergfx turkishgfx mongolgfx indiangfx cumangfx muslimgfx }
+	}
+	chimer = {
+		graphical_cultures = { chimergfx turkishgfx mongolgfx indiangfx cumangfx muslimgfx }
+	}
+}
+
+argonian = {
+	graphical_cultures = { westafricangfx indiangfx easterngfx }
+
+	agaceph = {
+		graphical_cultures = { argoniangfx }
+	}
+	archein = {
+		graphical_cultures = { argoniangfx }
+	}
+	paatru = {
+		graphical_cultures = { argoniangfx }
+	}
+	sarpa = {
+		graphical_cultures = { argoniangfx }
+	}
+	naga = {
+		graphical_cultures = { argoniangfx }
+	}
+	lukiul = {
+		graphical_cultures = { argoniangfx }
+	}
+}
+
+khajiit = {
+	graphical_cultures = { muslimgfx }
+
+	pellitinian = {
+		graphical_cultures = { pellitinegfx serbsouthslavicgfx }
+		unit_graphical_cultures = { berbergfx }
+	}
+	anequinan = {
+		graphical_cultures = { anequinagfx serbsouthslavicgfx }
+		unit_graphical_cultures = { berbergfx }
+	}
+}
+
+tsaesci_group = {
+	tsaesci = {
+		graphical_cultures = { tsaescigfx romangfx bretongfx muslimgfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx muslimgfx }
+	}
+}
+
+kamal_group = {
+	kamal = {
+		graphical_cultures = { kamalgfx siberiangfx ugricgfx }
+	}
+}
+
+tangmo_group = {
+	graphical_cultures = { mesoamericangfx africangfx muslimgfx }
+
+	tangmo = {
+		graphical_cultures = { tangmogfx }
+	}
+}
+
+potun_group = {
+	potun = {
+		graphical_cultures = { kapotungfx persiangfx muslimgfx }
+		unit_graphical_cultures = { aztecholygfx africangfx muslimgfx }
+	}
+}
+
+islander_group = {
+	akaviri = {
+		graphical_cultures = { chinesegfx muslimgfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx muslimgfx }
+	}
+	quey = {
+		graphical_cultures = { indiangfx muslimgfx }
+		unit_graphical_cultures = { africangfx byzantinegfx }
+	}
+}
+
+sload_group = {
+	sload = {
+		graphical_cultures = { sloadgfx maormergfx jewishholygfx byzantinegfx }
+	}
+}
+
+undead = {
+	draugr = {
+		graphical_cultures = { draugrgfx skeletongfx }
+	}
+	skeleton = {
+		graphical_cultures = { skeletongfx }
+	}
+	outsider = {
+		graphical_cultures = { skeletongfx }
+	}
+}
+
+daedra = {
+	dremora = {
+		graphical_cultures = { dremoragfx dunmergfx mesoamericangfx indiangfx muslimgfx }
+		unit_graphical_cultures = { immortalsgfx hashshashingfx africangfx }
+	}
+	daedric = {
+		graphical_cultures = { dremoragfx dunmergfx mesoamericangfx indiangfx muslimgfx }
+		unit_graphical_cultures = { hashshashingfx africangfx }
+	}
+}

@@ -1,0 +1,285 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_duck_male_base"
+		texturefile = "gfx\\characters\\duck_portraits\\duck_male_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_duck_female_base"
+		texturefile = "gfx\\characters\\duck_portraits\\duck_female_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_duck_male_beak"
+		texturefile = "gfx\\characters\\duck_portraits\\duck_male_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	# children
+	spriteType = {
+		name = "PORTRAIT_duckgfx_child_male"
+		texturefile = "gfx\\characters\\duck_portraits\\duck_son.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_duckgfx_child_female"
+		texturefile = "gfx\\characters\\duck_portraits\\duck_daughter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_duck_son_base"
+		texturefile = "gfx\\characters\\duck_portraits\\duck_son_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_duck_daughter_base"
+		texturefile = "gfx\\characters\\duck_portraits\\duck_daughter_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_duckgfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_duck_male_beak:p3:c4"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_duck_male_base:p2"
+			"GFX_child_back:p17"
+			"GFX_duck_son_base:p18"
+			"GFX_character_scars:p7:y:o-20x0"
+			"GFX_character_scars_mid:p25:o-20x0"
+			"GFX_character_scars_high:p26:o-20x0"
+			"GFX_character_black_eye:p23:o-4x21"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_duckgfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_duck_male_beak:p3:c4"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_duck_male_base:p2"
+			"GFX_character_scars:p7:y:o-20x0"
+			"GFX_character_scars_mid:p25:o-20x0"
+			"GFX_character_scars_high:p26:o-20x0"
+			"GFX_character_black_eye:p23:o-4x21"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_duckgfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_duck_male_beak:p3:c4"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_duck_male_base:p2"
+			"GFX_character_scars:p7:y:o-20x0"
+			"GFX_character_scars_mid:p25:o-20x0"
+			"GFX_character_scars_high:p26:o-20x0"
+			"GFX_character_black_eye:p23:o-4x21"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_duckgfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_duck_male_beak:p3:c4"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_duck_female_base:p2"
+			"GFX_child_back:p17"
+			"GFX_duck_daughter_base:p18"
+			"GFX_character_scars:p7:y:o-20x0"
+			"GFX_character_scars_mid:p25:o-20x0"
+			"GFX_character_scars_high:p26:o-20x0"
+			"GFX_character_black_eye:p23:o-4x21"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_duckgfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_duck_male_beak:p3:c4"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_duck_female_base:p2"
+			"GFX_character_scars:p7:y:o-20x0"
+			"GFX_character_scars_mid:p25:o-20x0"
+			"GFX_character_scars_high:p26:o-20x0"
+			"GFX_character_black_eye:p23:o-4x21"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_duckgfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_duck_male_beak:p3:c4"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_duck_female_base:p2"
+			"GFX_character_scars:p7:y:o-20x0"
+			"GFX_character_scars_mid:p25:o-20x0"
+			"GFX_character_scars_high:p26:o-20x0"
+			"GFX_character_black_eye:p23:o-4x21"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+}

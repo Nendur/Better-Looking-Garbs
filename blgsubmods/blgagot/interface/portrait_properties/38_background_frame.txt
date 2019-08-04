@@ -1,0 +1,101 @@
+# p38 Background frames
+38 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 100
+			NOR = {
+				is_ruler = yes
+				spouse = { is_ruler = yes }
+			}
+		}
+		modifier = {
+			factor = 100
+			OR = {
+				NOT = { host = { at_location = ROOT } }
+				in_command = yes
+				trait = in_hiding
+				trait = travelling
+				trait = on_pilgrimage
+				is_tribal = yes
+				government = wildling_feudal_government
+				government = outlaw_government
+				government = winter_government
+				culture = lhazareen
+			}
+		}
+	}
+	1 = { # Wooden window
+		factor = 2
+		trigger = {
+			is_nomadic = no
+		}
+	}
+	2 = { # Stone window
+		factor = 2
+		trigger = {
+			capital_holding = {
+				NOR = {
+					holding_type = tribal
+					holding_type = nomad
+				}
+			}
+		}
+	}
+	3 = { # Stone window
+		factor = 2
+		trigger = {
+			capital_holding = {
+				NOR = {
+					holding_type = tribal
+					holding_type = nomad
+				}
+			}
+		}
+	}
+	4 = { # Nomad window
+		factor = 2
+		trigger = {
+			capital_scope = {
+				OR = {
+					region = world_summer_sea
+					region = world_far_east
+				}
+			}
+		}
+	}
+	5 = { # Stone window
+		factor = 2
+		trigger = {
+			capital_holding = {
+				NOR = {
+					holding_type = tribal
+					holding_type = nomad
+				}
+			}
+		}
+	}
+	6 = { # Glass window
+		factor = 1
+		trigger = {
+			capital_holding = {
+				NOR = {
+					holding_type = tribal
+					holding_type = nomad
+				}
+			}
+		}
+	}
+	7 = { # Grated window
+		factor = 1
+		trigger = {
+			capital_holding = {
+				NOR = {
+					holding_type = tribal
+					holding_type = nomad
+				}
+			}
+			capital_scope = { region = world_essos }
+		}
+	}
+}

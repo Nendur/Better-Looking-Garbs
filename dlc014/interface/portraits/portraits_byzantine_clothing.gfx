@@ -1,0 +1,132 @@
+############## BYZANTINE REGULAR CLOTHING ##########################
+spriteTypes = {
+
+# Children
+	spriteType = {
+		name = "PORTRAIT_byzantinegfx_child_male"
+		texturefile = "gfx\\characters\\default_son_byzantine.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_byzantinegfx_child_female"
+		texturefile = "gfx\\characters\\default_daughter_byzantine.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_son_base"
+		textureFile = "gfx/characters/byzantine_male/byzantine_son_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_sonhair"
+		textureFile = "gfx/characters/byzantine_male/byzantine_son_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_son_eyes"
+		textureFile = "gfx/characters/byzantine_male/byzantine_son_eyes.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_daughter_base"
+		textureFile = "gfx/characters/byzantine_female/byzantine_daughter_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_daughterhair"
+		textureFile = "gfx/characters/byzantine_female/byzantine_daughter_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_daughter_eyes"
+		textureFile = "gfx/characters/byzantine_female/byzantine_daughter_eyes.dds"
+		noOfFrames = 7
+	}
+
+# Clothing
+	spriteType = {
+		name = "GFX_byzantine_male_clothes_behind"
+		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_headgear_behind"
+		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_headgear_mid"
+		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_headgear_mid.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_clothes"
+		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_clothes_infront"
+		texturefile = "gfx\\characters\\shared\\empty.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_headgear"
+		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_female_clothes_behind"
+		texturefile = "gfx\\characters\\byzantine_female\\byzantine_female_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_female_headgear_behind"
+		texturefile = "gfx\\characters\\byzantine_female\\byzantine_female_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_female_clothes"
+		texturefile = "gfx\\characters\\byzantine_female\\byzantine_female_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_female_headgear_mid"
+		texturefile = "gfx\\characters\\byzantine_female\\byzantine_female_headgear_mid.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_female_headgear"
+		texturefile = "gfx\\characters\\byzantine_female\\byzantine_female_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+}

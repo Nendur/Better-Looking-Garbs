@@ -1,0 +1,62 @@
+# p11 player
+11 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 0
+			ai = no
+			multiplayer = yes
+		}
+		modifier = {
+			factor = 0
+			is_alive = no
+			trait = i_used_to_be_a_player
+		}
+	}
+
+	1 = { # player
+		factor = 100
+		trigger = {
+			OR = {
+				AND = {
+					ai = no
+					multiplayer = yes
+				}
+				AND = {
+					is_alive = no
+					trait = i_used_to_be_a_player
+				}
+			}
+		}
+	}
+
+	2 = { # bear
+		factor = 100
+		trigger = {
+			trait = not_a_bear
+		}
+	}
+	
+	3 = { #Used to hide hair on Norvoshi characters
+		factor = 100
+		hide_layers = { 1 = { } } #Hides hair
+		trigger = {
+			OR = {
+				AND = { #Norvoshi slaves are shaved
+					trait = slave
+					NOT = { trait = bearded_priest }
+					liege = { culture = norvosi }
+				}
+				AND = { #Norvoshi women shave off all of their hair, though noblewomen don wigs
+					is_female = yes
+					dynasty = none
+					NOT = { trait = bearded_priest }
+					OR = {
+						culture = norvosi
+						liege = { culture = norvosi }
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_clothing_dutch_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_culture = dutch
+			}
+		}
+
+		layer = {
+			"GFX_saxon_male_headgear_behind:c1"
+			"GFX_saxon_male_headgear_mid:c3"
+			"GFX_saxon_male_headgear:c5"
+		}
+
+		headgear_that_hides_hair = { 10 12 13 14 }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_dutch_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_culture = dutch
+			}
+		}
+
+		layer = {
+			"GFX_saxon_female_headgear_behind:c1"
+			"GFX_saxon_female_headgear_mid:c3"
+			"GFX_saxon_female_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+}

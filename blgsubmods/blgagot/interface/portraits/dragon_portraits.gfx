@@ -1,0 +1,218 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_dragon_male_base"
+		texturefile = "gfx\\characters\\dragons\\dragons.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dragon_male_headgear_behind"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_male_headgear_behind.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dragon_female_headgear_behind"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_female_headgear_behind.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	# children
+	spriteType = {
+		name = "PORTRAIT_dragongfx_child_male"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_son.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_dragongfx_child_female"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_daughter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dragon_son_base"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_son_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dragon_daughter_base"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_daughter_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_dragon_male_headgear_behind:p3:c0"
+			"GFX_dragon_male_base:p31"
+			"GFX_child_back:p17"
+			"GFX_dragon_son_base:p18"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_dragon_male_headgear_behind:p3:c0"
+			"GFX_dragon_male_base:p31"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_dragon_male_headgear_behind:p3:c0"
+			"GFX_dragon_male_base:p31"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_dragon_male_headgear_behind:p3:c0"
+			"GFX_dragon_male_base:p31"
+			"GFX_child_back:p17"
+			"GFX_dragon_daughter_base:p18"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_dragon_male_headgear_behind:p3:c0"
+			"GFX_dragon_male_base:p31"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_dragon_male_headgear_behind:p3:c0"
+			"GFX_dragon_male_base:p31"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+			"GFX_character_special_artifact:p16"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+}

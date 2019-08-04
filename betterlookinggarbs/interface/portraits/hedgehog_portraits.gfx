@@ -1,0 +1,328 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_hedgehog_male_base"
+		texturefile = "gfx\\characters\\hedgehog\\hedgehog_male_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_hedgehog_female_base"
+		texturefile = "gfx\\characters\\hedgehog\\hedgehog_female_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_hedgehog_male_old_base"
+		texturefile = "gfx\\characters\\hedgehog\\hedgehog_male_base_old.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_hedgehog_female_old_base"
+		texturefile = "gfx\\characters\\hedgehog\\hedgehog_female_base_old.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_hedgehog_male_headgear"
+		texturefile = "gfx\\characters\\hedgehog\\hedgehog_male_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	# children
+	spriteType = {
+		name = "PORTRAIT_hedgehoggfx_child_male"
+		texturefile = "gfx\\characters\\hedgehog\\hedgehog_son.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_hedgehoggfx_child_female"
+		texturefile = "gfx\\characters\\hedgehog\\hedgehog_daughter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_hedgehog_son_base"
+		texturefile = "gfx\\characters\\hedgehog\\hedgehog_son_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_hedgehoggfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dummy:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_hedgehog_male_headgear:p5:c5"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_hedgehog_male_base:p2"
+			"GFX_child_back:p17"
+			"GFX_hedgehog_son_base:p18"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o2x-17"
+			"GFX_character_black_eye:p23:o9x-11"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o35x54"
+			"GFX_character_mask:p12:y:o54x37"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_hedgehoggfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dummy:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_hedgehog_male_headgear:p5:c5"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_hedgehog_male_base:p2"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o2x-17"
+			"GFX_character_black_eye:p23:o9x-11"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o35x54"
+			"GFX_character_mask:p12:y:o54x37"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_hedgehoggfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dummy:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_hedgehog_male_headgear:p5:c5"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_hedgehog_male_old_base:p2"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o2x-17"
+			"GFX_character_black_eye:p23:o9x-11"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o35x54"
+			"GFX_character_mask:p12:y:o54x37"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_hedgehoggfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dummy:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_hedgehog_male_headgear:p5:c5"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_hedgehog_female_base:p2"
+			"GFX_child_back:p17"
+			"GFX_hedgehog_son_base:p18"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o2x-17"
+			"GFX_character_black_eye:p23:o9x-11"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o35x54"
+			"GFX_character_mask:p12:y:o54x37"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_hedgehoggfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dummy:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_hedgehog_male_headgear:p5:c5"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_hedgehog_female_base:p2"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o2x-17"
+			"GFX_character_black_eye:p23:o9x-11"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o35x54"
+			"GFX_character_mask:p12:y:o54x37"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_hedgehoggfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dummy:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_hedgehog_male_headgear:p5:c5"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_hedgehog_female_old_base:p2"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o2x-17"
+			"GFX_character_black_eye:p23:o9x-11"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o35x54"
+			"GFX_character_mask:p12:y:o54x37"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
+	}
+}

@@ -1,0 +1,34 @@
+targetted_decisions = {
+
+	customise_attire = {
+		ai = no
+		filter = all_including_me
+		ai_target_filter = none
+
+		from_potential = {}
+		potential = {}
+		allow = {
+			is_adult = yes
+			OR = {	#Make multiplayer gamers well-behaved.
+				character = FROM
+				AND = {
+					ai = yes
+					host = {
+						OR = {
+							character = FROM
+							ai = yes
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			FROM = { character_event = { id = blg.100 } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

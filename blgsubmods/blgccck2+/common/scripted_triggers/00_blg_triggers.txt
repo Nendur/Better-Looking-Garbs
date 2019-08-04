@@ -1,0 +1,93 @@
+blg_italian = {
+	OR = {
+		culture_group = italian_group
+		culture_group = island_romance
+	}
+}
+
+blg_north_african = {
+	OR = {
+		culture_group = maghrebi
+		culture_group = amazigh
+	}
+}
+
+blg_french = {
+	always = no
+}
+
+blg_veiled_tagelmust = {
+	culture = tuareg
+}
+
+blg_uncrowned = {
+	always = no
+}
+
+blg_saint = {
+	trait = saint
+}
+
+blg_desert_monk = {
+	OR = {
+		trait = desert_father
+		trait = desert_mother
+	}
+}
+
+blg_petty_empire = {
+	primary_title = {
+		OR = {
+			title = e_great_britain
+			title = e_yugoslavia
+		}
+	}
+}
+
+blg_royalty = {
+	always = no
+}
+
+blg_crowned = {
+	OR = {
+		trait = crowned
+		trait = strong_basileus
+		trait = weak_basileus
+		trait = crowned_by_relhead
+		trait = crowned_by_vip
+		trait = crowned_by_pope_stolen
+	}
+}
+
+blg_religion_orthodox = {
+	OR = {
+		religion = apostolic
+		religion = tondrakian
+	}
+}
+
+blg_religion_orientorthodox = {
+	always = no
+}
+
+likes_africans = {
+	OR = {
+		culture_group = west_african
+		culture_group = east_african
+	}
+}
+
+likes_byzantines = {
+	culture_group = byzantine
+}
+
+likes_altaics = {
+	culture_group = altaic
+}
+
+likes_latino_iberians = {
+	OR = {
+		culture_group = latin
+		culture_group = iberian
+	}
+}

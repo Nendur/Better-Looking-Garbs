@@ -1,0 +1,3 @@
+GFX_easternslavic_female_nose 11x10
+GFX_easternslavic_female_nose_midage 11x10
+GFX_easternslavic_female_nose_oldage 11x10

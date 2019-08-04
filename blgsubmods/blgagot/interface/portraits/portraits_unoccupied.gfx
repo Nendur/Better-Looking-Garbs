@@ -1,0 +1,220 @@
+############## UNOCCUPIED ##########################
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ruin_background"
+		texturefile = "gfx\\characters\\unoccupied\\ruin.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ruingfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_ruin_background:p0"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 114 39 141 } { 214 139 241 } { 255 255 255 }
+			{ 39 74 214 } { 139 174 314 } { 255 255 255 }
+			{ 34 103 36 } { 134 203 136 } { 255 255 255 }
+			{ 202 61 53 } { 302 161 153 } { 255 255 255 }
+			{ 203 181 52 } { 303 281 152 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 34 103 36 }
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 150 30 150 }
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ruingfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_ruin_background:p0"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 114 39 141 } { 214 139 241 } { 255 255 255 }
+			{ 39 74 214 } { 139 174 314 } { 255 255 255 }
+			{ 34 103 36 } { 134 203 136 } { 255 255 255 }
+			{ 202 61 53 } { 302 161 153 } { 255 255 255 }
+			{ 203 181 52 } { 303 281 152 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 34 103 36 }
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 150 30 150 }
+		}
+
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ruingfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_ruin_background:p0"
+		}
+
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 114 39 141 } { 214 139 241 } { 255 255 255 }
+			{ 39 74 214 } { 139 174 314 } { 255 255 255 }
+			{ 34 103 36 } { 134 203 136 } { 255 255 255 }
+			{ 202 61 53 } { 302 161 153 } { 255 255 255 }
+			{ 203 181 52 } { 303 281 152 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 34 103 36 }
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 150 30 150 }
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ruingfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_ruin_background:p0"
+		}
+
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+			{ 40 22 18 } { 200 195 0 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 34 103 36 }
+			{ 150 30 150 }
+			{ 118 0 200 }
+			{ 220 208 255 }
+			{ 150 30 150 }
+			{ 118 0 200 }
+			{ 220 208 255 }
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ruingfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_ruin_background:p0"
+		}
+
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+			{ 40 22 18 } { 200 195 0 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 34 103 36 }
+			{ 150 30 150 }
+			{ 118 0 200 }
+			{ 220 208 255 }
+			{ 150 30 150 }
+			{ 118 0 200 }
+			{ 220 208 255 }
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ruingfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_ruin_background:p0"
+		}
+
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+			{ 40 22 18 } { 200 195 0 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+			{ 34 103 36 }
+			{ 150 30 150 }
+			{ 118 0 200 }
+			{ 220 208 255 }
+			{ 150 30 150 }
+			{ 118 0 200 }
+			{ 220 208 255 }
+		}
+	}
+}

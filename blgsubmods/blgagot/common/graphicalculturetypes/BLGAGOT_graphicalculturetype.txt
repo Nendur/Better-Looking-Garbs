@@ -1,0 +1,24 @@
+# Skin tones are 0 (light), 1 (tan), 2 (dark) and 3 (black)
+
+# Misc
+thenngfx = {
+	skin_tone = 0
+}
+braavosigfx = {
+	skin_tone = 1
+}
+moraqigfx = {
+	skin_tone = 2
+}
+nghaigfx = {
+	skin_tone = 1
+}
+asabhadgfx = {
+	skin_tone = 1
+}
+greywastegfx = {
+	skin_tone = 0
+}
+firstmangfx = {
+	skin_tone = 0
+}

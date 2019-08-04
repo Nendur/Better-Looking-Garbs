@@ -1,0 +1,56 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_character_imprisoned"
+		texturefile = "gfx\\characters\\shared\\imprisoned.dds"
+		noOfFrames = 5
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_masks" #NOTE: THIS IS NOW USED FOR OUR OVERLAYS (Chickens, Hagravens, Werewolves etc)
+		texturefile = "gfx\\characters\\shared\\ek_overlays.dds"
+		noOfFrames = 28
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_crowns_behind"
+		texturefile = "gfx\\characters\\headgear\\nord_male_back.dds"
+		noOfFrames = 24
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_crowns_mid"
+		texturefile = "gfx\\characters\\headgear\\nord_male_mid.dds"
+		noOfFrames = 24
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_crowns"
+		texturefile = "gfx\\characters\\headgear\\nord_male_front.dds"
+		noOfFrames = 24
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_undead_male_headgear"
+		texturefile = "gfx\\characters\\headgear\\undead_male_front.dds"
+		noOfFrames = 24
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_mediterranean_male_headgear_mid"
+		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_headgear_mid.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+}

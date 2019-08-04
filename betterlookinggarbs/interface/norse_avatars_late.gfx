@@ -1,0 +1,8 @@
+objectTypes = {
+	EMFXActorType = {
+		name = "norsegfx_GALLEYS_late"
+		actorfile = "gfx\models\Cog.xac"
+		idle   = "gfx\models\Cog_Moving.xsm"
+		scale = 1.5f
+	}
+}

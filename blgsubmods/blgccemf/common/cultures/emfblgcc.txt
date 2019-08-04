@@ -1,0 +1,14 @@
+north_germanic = {
+	norsegaelic = {
+		graphical_cultures = { norsegaelgfx celticgfx norsegfx }
+	}
+}
+
+latin = {
+	sicilian = {
+		graphical_cultures = { siciliangfx italiangfx southerngfx }
+	}
+	neapolitan = {
+		graphical_cultures = { siciliangfx italiangfx southerngfx }
+	}
+}

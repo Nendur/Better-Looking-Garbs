@@ -1,0 +1,24 @@
+# p37 Special Relations (lover/rival)
+37 = {
+	0 = { # blank
+		factor = 1
+	}
+	1 = { 
+		factor = 100
+		trigger = {
+			any_player = { is_rival = PREV }
+		}
+	}
+	2 = { 
+		factor = 100
+		trigger = {
+			any_player = { is_lover = PREV }
+		}
+	}
+	3 = { 
+		factor = 100
+		trigger = {
+			any_player = { is_friend = PREV }
+		}
+	}
+}

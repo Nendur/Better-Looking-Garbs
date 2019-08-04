@@ -1,0 +1,54 @@
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_clothing_afghan_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_culture = afghan
+					portrait_culture = baloch
+				}
+			}
+		}
+
+		layer = {
+			"GFX_indian_male_headgear_behind:c1"
+			"GFX_empty:c3"
+			"GFX_indian_male_headgear:c5"
+		}
+
+		headgear_that_hides_hair = { 7 10 12 13 }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_afghan_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_culture = afghan
+					portrait_culture = baloch
+				}
+			}
+		}
+
+		layer = {
+			"GFX_indian_female_headgear_behind:c1"
+			"GFX_indian_female_headgear_mid:c3"
+			"GFX_indian_female_headgear:c5"
+		}
+
+		headgear_that_hides_hair = { 10 12 13 }
+	}
+}

@@ -1,0 +1,54 @@
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_clothing_ashkenazi_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_culture = ashkenazi
+			}
+		}
+
+		layer = {
+			"GFX_outremer_male_clothes_behind:c0"
+			"GFX_byzantine_male_headgear_behind_late:c1"
+			"GFX_outremer_male_clothes:c2"
+			"GFX_byzantine_male_headgear_mid_late:c3"
+			"GFX_empty:c4"
+			"GFX_byzantine_male_headgear_late:c5"
+		}
+
+		headgear_that_hides_hair = {10 12 13}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_ashkenazi_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_culture = ashkenazi
+			}
+		}
+
+		layer = {
+			"GFX_outremer_female_clothes_behind:c0"
+			"GFX_byzantine_female_headgear_behind_late:c1"
+			"GFX_outremer_female_clothes:c2"
+			"GFX_byzantine_female_headgear_mid_late:c3"
+			"GFX_empty:c4"
+			"GFX_byzantine_female_headgear_late:c5"
+		}
+
+		headgear_that_hides_hair = {10 12 13}
+	}
+}

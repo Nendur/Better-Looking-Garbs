@@ -1,0 +1,138 @@
+############## Croat southernslavic ##########################
+
+### Designed to represent southern slavs under the influence of Catholic-oriented western cultural pressure - i.e. Croats, Slovenes, etc.
+spriteTypes = {
+
+	spriteType = {
+		name = "PORTRAIT_croatsouthslavicgfx_child_male"
+		texturefile = "gfx\\characters\\default_son_croat_southslavic.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_croatsouthslavicgfx_child_female"
+		texturefile = "gfx\\characters\\default_daughter_croat_southslavic.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_magyargfx_child_male"
+		texturefile = "gfx\\characters\\default_son_croat_southslavic.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_magyargfx_child_female"
+		texturefile = "gfx\\characters\\default_daughter_croat_southslavic.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_son_base"
+		textureFile = "gfx/characters/southslavic_male/croat_southslavic_son_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_sonhair"
+		textureFile = "gfx/characters/southslavic_male/croat_southslavic_son_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_daughter_base"
+		textureFile = "gfx/characters/southslavic_female/croat_southslavic_daughter_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_daughterhair"
+		textureFile = "gfx/characters/southslavic_female/croat_southslavic_daughter_hair.dds"
+		noOfFrames = 7
+	}
+
+### CROAT SOUTHSLAVIC MALE ####
+	
+	spriteType = {
+		name = "GFX_croatsouthslavic_male_clothes_behind"
+		texturefile = "gfx\\characters\\southslavic_male\\croat_southslavic_male_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_male_headgear_behind"
+		texturefile = "gfx\\characters\\southslavic_male\\croat_southslavic_male_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_male_headgear_mid"
+		texturefile = "gfx\\characters\\southslavic_male\\croat_southslavic_male_headgear_mid.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_male_clothes"
+		texturefile = "gfx\\characters\\southslavic_male\\croat_southslavic_male_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_male_headgear"
+		texturefile = "gfx\\characters\\southslavic_male\\croat_southslavic_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+#### CROAT SOUTHSLAVIC FEMALE ####
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_female_clothes_behind"
+		texturefile = "gfx\\characters\\southslavic_female\\croat_southslavic_female_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_female_headgear_behind"
+		texturefile = "gfx\\characters\\southslavic_female\\croat_southslavic_female_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_female_clothes"
+		texturefile = "gfx\\characters\\southslavic_female\\croat_southslavic_female_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_female_headgear"
+		texturefile = "gfx\\characters\\southslavic_female\\croat_southslavic_female_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_female_headgear_mid"
+		texturefile = "gfx\\characters\\southslavic_female\\croat_southslavic_female_headgear_mid.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_female_headgear_behind_mid"
+		texturefile = "gfx\\characters\\southslavic_female\\croat_southslavic_female_headgear_behind_mid.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+}

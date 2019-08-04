@@ -1,0 +1,568 @@
+Changelog:
+
+  New pupil/iris layers for West-African portraits.
+  Changed king+ tier Hellenic shield models to a decorated style.
+  Using unused alternate shield models for Jewish religion.
+  Fixed Ugric falback portraits.
+  More ironman portait versions.
+  Added Celtiberian portraits for mod use.
+  Replaced Fylkir crown with the Norse winged religious head crown.
+
+02-06-2019
+  Update to 3.2.0
+  Moved the additional religious clothing to the special crown layer for compatibility.
+  - The Religous Clothing submod has become obsolete.
+  - Now works on ironman games.
+  - Autocephalous leaders are treated as religious heads. 
+  Customise Appearence support for the French headgear accessories.
+  Added more fallback portraits from Holy Fury portraits.
+  Added a number of ironman clothing override conversions of non-ironman portraits.
+  Added More Bloodlines support to the AGOT submod.
+
+03-04-2019
+  Update to 3.1.0
+  Added Elder Kings compatibility submod.
+  Updated portrait backgrounds with more graphics from the new default set and other additions.
+  Added the background window frames as a new layer for more combination possibilities.
+  Updated remaining chins.
+  Block scepters and such when society clothing has staves or spears.
+  Dukes of non-European cultures get a wider selection of headgear,
+  opening up royal clothing to dukes in balance.
+  Swap default bear type to brown bears.
+  Reorganized portrait properties into separate files.
+  Changed parts of the West-African faces with less bulky replacements.
+  Replaced more of the West-African beards and hair with East-African versions.
+  Add a lesser glow for friends besides the lovers and rivals.
+
+18-02-2019
+  Updated AGOT, HIP & Winter King submods.
+  Reshaded Italian/Roman chinlines.
+  Split the hair from Roman female headgear into an actual hairlayer.
+  Changed Italian/Roman beards to Muslim and Occitan beards to Roman.
+  Changed Sogdian clothing to Bodpa headgear and Turkish clothes.
+  Replaced Basque faces.
+  Redone the Ugric and Bodpa skintone changes.
+  Another round of effect offset adjustments.
+  Fixed religious head clothing that was rescaled.
+  Reusing Aztec map shields for Zoroastrians.
+  Pick together a plain circle map shield set for Hellenics.  
+  Patched up more of the coronation implementation mess for viceroys and non-feudals.
+  Expanded the selection options for merchant republic clothing.
+  Updated the chin sets of the modern style portraits to the physique mechanic.
+  Updated all location checks for backgrounds after further testing the various scopes.
+  Replaced new character handling script hook.
+  Reduce religious clothing to 27 slot limit.
+
+24-12-2018
+  Numerous bugfixes.
+  Rework the switch to tonsures for monks and monastic orders to function for all cultures.
+  Same technique to shave heads for Buddhist orders.
+  Smoother Turkish faces.
+  Grime covering for uncouth characters.
+  Further animal portrait support.
+  Some more religious clothing changes.
+  Avoid the Satanist face masks on player characters.
+  Clean up white shadows on Italian headgear.
+
+11-12-2018
+  Update to Holy Fury 3.0.1.1.
+  - Added religious clothing settings are broken at the moment.
+    You can use the BLG religious clothing submod if no other mod changes religions.
+  - Some of the fat chins will be updated later.
+  - New background will be integrated later.
+  - Several sets of merchant clothing added, but with a limited implementation for a last moment patch.
+  - Shuffled old layer effects around with the new layers.
+  - Mixed up clothing for non-Abrahamic Satanists.
+  - Given non-temporal pagan religious heads the new graphics too.
+  - Muslim early and late clothing is instead split between Arabic and Berber styles.
+  - Replaced Italian eyes with French to see if that fits in better.
+  - Limit courtier script to generic cases on random worlds.
+
+  Time to clear out more old portraits:
+  - Changed Easternslavic to Westernslavic faces.
+  - Changed Norse to English faces.
+  - Changed Celtic to French faces.
+  - Changed Occitan to Italian faces.
+  - Changed Basque to French faces.
+  - Changed Aztec to NW-Indian faces.
+  - Changed Dutch to German clothing and French beards.
+
+  Added Kurdish, Tangut, Avar, Vlach, Visigoth, Old Frankish and Egyptian portraits.
+  Added Lux Invicta compatibility submod.
+  Added tablet, trident and totem scepter artifact graphics.
+  Lunatics and mystics can use pagan masks when disfigured.
+  Use monastic clothes while on pilgrimage.
+  Cleaned up animal portrait layers.
+  Shrunken nose sizes of Norse and Russian women.
+  Subtler papal tiara jewelry.
+  Reorganized unit mods to clean up and reduce system load.
+  Alternative Eastern European, Baltic and Hungarian unit recombinations.
+  Dropped early Mongol units.
+  Replaced Hellenic/Misc priest model with a new version.
+  Replaced late Norse heavy units with early German.
+  Replaced vanilla-cloned Persian unit equipment with Turkish and Indian items.
+  Replaced vanilla Western councillors with picks from pagan and Orthodox sets.
+  Mark former player characters with player ring.
+  Hiding society clothing hides African mask as well.
+  Added early Iberian group portraits with early Italian headgear.
+  Block non-warrior society clothing when in command.
+  Split early Frankish and early French unit sets.
+
+14-07-2018
+  Add a baby stage to the child portraits.
+  Improve and fix handling of a.o. Tibetans in mixed child script.
+  Avoid pagan hermetic clothing for theologians and scholars.
+  Widen cultural hermetic clothing options further.
+  Society clothing for ranks 3 and 4 is used by default now.
+  Adjust special troop graphical weight for separated maintenance.
+  Fix headgear+hair layer to use hair-color.
+  Fix some unit models failing with only implicit westerngfx backing.
+
+06-06-2018
+  Update to 2.8.2.1
+  Brighten and anti-alias Finno-Ugric faces.
+  Desaturate Iberian women a bit.
+  Fix more mouth/nose layering issues.
+  Fix edge of Norse female eyes.
+  Use the real sword artifacts over ceremonial ones.
+  Replace compatible mod checks to deal with ever increasing workshop bugginess.
+
+28-04-2018
+  Rescale Norse portraits to be in line with other portraits.
+  Narrower and smoother faces for Indian women.
+  Reduce aging a bit on older western, Muslim, Norse and Celtic portraits.
+  Drop broken western/Mongol hybrid for western steppes.
+  More effect offset adjustments.
+  Use Norse for English faces fallback.
+  Add Court Jester outfit.
+  Lighten more irises.
+  AGOT: Swap Celtic and Norse faces, add Strong Seed portraits.
+
+12-12-2017
+  Update to 2.8.1(.1)
+  Update Game of Thrones submod to 1.6.
+  Check if displayed artifacts are equipped.
+
+28-11-2017
+  Plunder hermetic society clothing for pagan religious clothing.
+  Remove stray changes from ironman submod.
+  Adjust Tibetan men a bit more for contrast.
+  Make Jogos Nhai for the new Mongol portraits.
+
+23-11-2017
+  Update to Jade Dragon 2.8.
+  Integrate new Chinese, Tibetan and animal portraits.
+  Match male and female Bodpa faces to each other by making two paired sets.
+  Replace all Mongol faces with Bodpa assets.
+  Hijack one of the new culture layer tags for the backgrounds.
+  Use Chinese make-up instead of attractive trait make-up.
+  Completely realistic bear spawns.
+  Change Taoist priest avatar to Buddhist model.
+  Add Taoist religious clothing.
+  Fix Saxon headgear fallbacks.
+  Change Mongol beards to Cuman.
+  Change late Mongol clothes to Bodpa.
+  Change Central-Asian clothes to Mongol.
+  Change Sogdians to to Bodpa beards and female hair.
+
+30-10-2017
+  Restore Game of Thrones changes that got lost in packaging, Customizable Attire supported now.
+  Humble and proud can affect clothing choice.
+
+25-10-2017
+  Add a Game of Thrones compatibility submod.
+  Add hair, beard, scar, mask, eyepatch and blindfold choices to customizable attire.
+  Customizable attire portrait refresh workaround.
+  Add more child scaling ranges.
+  Revert a few artifact graphics.
+  Move the multiplayer ring to the prison layer.
+  Edit South Indian beards into Muslim beard replacement.
+  Change Siberian portraits to Cuman faces.
+  Force the updated version of Byzantine portraits over the Early Eastern pack.
+  Add more fallback portraits based on later content packs.
+  Fix unconditional install of Norse portraits.
+
+15-08-2017
+  Reduce artifact graphic sizes and contrast.
+  Visible weapon artifacts only when leading armies, crown jewels and pets only otherwise.
+  Fix Germanic pagan female hair override, didn't apply offsets.
+  Change Indian young women to a narrower and smoother facial structure.
+  Refit Arabic shoulder size.
+  Before installation base portrait files are used instead of broken dlc portraits.
+  Clean up of installer code to reduce antivirus false positives.
+  Optimize installer by eliminating the use of temporary files.
+
+01-05-2017
+  Fix missing file from ironman add-on.
+  Fixes to installer version check.
+  Added horse-wigs and foals and horse unit pack.
+
+26-04-2017
+  2.7.1 update.
+  Put the child portraits into the regular portrait system with hair, eye and background layers.
+  Generated scaled versions of the child portraits.
+  Adapt Keinwyns Customisable Attire decision mod.
+  Move non-vanilla script bits to scripted_triggers to clean up the error log.
+  Change Christian Norse beard to German.
+  Tone down German red hair colour a bit.
+  Give cardinals clothing a tighter fit now that they aren't stuffing miters under them.
+  Such Doge, so serene, much Corno Ducale.
+  Check for multiple install locations in the installer.
+
+23-03-2017
+  Add a collection of artifacts, weapons and pets to the portraits.
+  Redone Egyptian faces to replace Bedouin as well.
+  Change Somali to previous Egyptian clothing.
+  Increase shading of German/English dark blonde hair-color.
+  Brighten several iris sprite sets.
+  Add Germanic pagan and Christian-Arabic clothing overrides.
+  Push trait load order to the end.
+  Made Berber/Sicilian skintone a shade lighter.
+  Fix unit pack combination errors.
+
+12-03-2017
+  Monks and Mystics update.
+  Tan German women a bit to match the men.
+  Change West-Germanics and West-Slavics to English faces.
+  Change French, Bohemians and Lombards to German faces.
+  Change Norman to Norse face with English clothing and hair.
+  Change Occitan to English hairstyles.
+  Replace western light unit types with Military Order models.
+  Set up the Dome of the Rock model that was left unused for some reason.
+  Add a proof of concept artifact graphics layer.
+  Implement special clothing with society override system.
+  Restrict monastic clothing to monks, priests and landless characters.
+  Drop other society clothing rank limit below dukes.
+  Diversify hermetic clothing some more.
+  Expand Orthodox monastic clothing to other eastern Christians.
+  Switch to cached trait based character spawn detection.
+  Change Bretons to western eye shape.
+  Move African pagan, Hungarian pagan and Andalusian Muslim clothing to override system.
+  Add additional path verification and selection dialogs to the installer.
+
+14-02-2017
+  Add installer detection for the alternate South Indian Portraits.
+
+17-01-2017
+  Background overhaul creating 4 variant sets.
+  Blend in the replacement western female mouths better.
+  Added Celtic druid religious clothing.
+  Added Winter King compatibility add-on.
+  Moved Hindu tilaka from South-Indian headgear to shared layer and base selection on religious branch.
+  Updates to female Mediterranean and Western-Slavic headgear.
+  Switched Bulgarians to early Byzantine clothing.
+
+18-10-2016
+  Added a generic compatibility submod for basic wider support. Useful for Map Generator. Still incompatible with most other portrait changes.
+  Russian portraits get delayed aging on male cheeks/chins and female eyes.
+  Southern-Slavic and Bulgarian portraits get a light version of Greek faces.
+  Lower graphical weights of cavalry units, give up on elephants in favour of archers.
+  Saxons clean up in hair and beard-style mid era.
+  Higher chance of beardless Catholic priests.
+  Added more holy order cavalry models.
+  More compatible method of vanilla disease submod, needs clean install.
+  Queen mothers dress like princesses.
+  Young eunuchs stay beardless.
+  Despots wear a crown.
+  Finetuned positioning for eye based effects.
+  Moved some Muslim units around on a northern/southern division.
+  Using old Mongol models for early units.
+  Replaced the various fallback Mediterranean portraits with the abandoned Byzantine set.
+  Replaced Eastern-Slavic beards with Ugric ones.
+  Generalized first Iberian clothing option.
+  Courtier spawn ethnicity system based on geographical regions.
+  Modernized early western headgear sets for vanilla replacements.
+  English portraits based on mostly Celtic faces.
+  Update western female noses and mouths based on Norse and Celtic assets.
+  Changed more background rules from culture to region based.
+  Hair goes bald after 80 years.
+  Fix nose overlap on East African women.
+
+31-08-2016
+  The Reaper's Due update.
+  NOTE: The African portraits were renamed and moved, do a clean mod and submod install!
+  Replaced Ethiopians with new East Africans.
+  Made lighter East Africans variant for Egyptians.
+  Reskinned spiritual councillor for Zoroastrians and Hellenes.
+  Added fever and vomiting disease effects.
+  Reduced makeup on attractive characters and avoid it on Africans.
+  Mixed Conclave/Reaper female councillors for Norse, Muslim, Indian and Mesoamerican.
+  Adapted the new eyepath set for the fully blind.
+  Delay plated knight models to late era, updated mid-era units.
+  Changed Occitan to southern faces.
+  Changed French hair and beardstyles to southern.
+  Moved blindfolds above ear and beard layers.
+  Updated European camel and elephant unit models.
+
+09-08-2016
+  Fix male western hair size/alignment.
+  Move CK2+ trait effects back to general for use in HIP.
+  Demote the worn crowns for uncrowned rulers.
+  Trim Ugric shoulder size to avoid clipping issues.
+  Fix Charlemagne early unit packs used without having other unit packs.
+
+01-03-2016
+  Remove cardinal garb on papal succession.
+  Add some more western and Muslim hair and beardstyles from Rein005s BTPortraits and steppe portraits.
+  Switch Mongol hairstyle to Cuman.
+  Switch Hungarian hairstyle to Ugric.
+  Add tiered armour for Ugric and South-Indian sets.
+  Add NW Indian variant with Persian eyes, hair- and beardstyles.
+  Add Chinese portraits from Horse Lords Remake.
+  Add Lombard portraits.
+  Change early Hungarian/Avar portraits to Turkish faces.
+  Make most people beardless until age 22.
+  Update mixed-child code for skintone changes.
+  Tweak equipment of German and Frankish later early units.
+  Add a new trait overlay graphics for possessed, ugly and attractive.
+  Round the klobuk into an earlier koukoulion form.
+  Add clothing for eastern Christian religious heads and monks.
+  Add a installation check message.
+
+03-02-2016
+  Conclave update
+  Adapt Game of Thrones clothing into German, French and Norman sets and Baltic headgear.
+  Added new English, French and German crowns and headgear.
+  Split ironman modes African portraits.
+  Depurple Norse faces.
+  Add a shared clothing overlay for monks, nuns, cardinals and saints.
+  Switched to official Iberian and Persian retouches.
+  Add partial set of Norse councillors to Celtic cultures.
+  Change male Norse priest councillor to Jomsviking.
+  Extent female councillors to all councillor model sets.
+  Add missing overlays to Ugrics and South Indians.
+  Use South Indians as an Indian fallback.
+  Dropped NW Indians for now.
+  Add central Indians with South-Indian faces and North-Indian stylings.
+  Limit new Arabic ships to arabicgfx, leaving the Republics Muslim ships for the rest.
+  Bump up the monuments scale a little.
+
+27-12-2015
+  Adjust Persian faces lighting levels.
+  Change Muslim heavy infantry/cavalry units to Bektashi model.
+  Added East-African faces from darkened Arab faces for Ethiopians and Somali, split from previous Nubians and Berbers.
+  Add spawn mixing to the East-Africans.
+  Add royal/ducal helmets for women.
+  Select crowns for petty kings.
+  Higher nobles only wear armour when at war or in battle.
+  Change Ashkenazi to Crusader culture portraits.
+  Added late-game Turkish portraits.
+  Various small fixes.
+
+26-10-2015
+  Additional religious outfits for Oriental Christian, African, Finnic, Slavic, Hellenic and Aztec priests.
+  Apply liposuction to the dreaded double chins.
+  Crusader state portraits added.
+  Changed Non-pagan steppe clothes to Pecheneg.
+  Modified Turkish eyes for steppe portraits.
+  Another colour adjustment tweak to Iberians.
+
+12-10-2015
+  Updated compatibility add-ons. (SWMH and EMF add-ons should be used together now if applicable.)
+  Lightened Iberian and Indian skintone variants added.
+  New Coptic and Hebrew/Assyrian/Aramean portraits.
+
+03-08-2015
+  Update for 2.4.2/3.
+  Updated installer.
+  Mongol & Khitan portraits from Horse Lords Remake + ahhheygao & rein005.
+  Check for hidden father in child ethnicity event.
+  Rework early western units for general use.
+  Non-early Frankish units get helmets and Italian heavy infantry/cavalry units.
+  Use Spanish and Italian parts for French and German knights.
+  Use Frankish heavy infantry/cavalry for Romans and early Italians.
+  Rebalanced unit display weights.
+  Override Bektashi and Hashashin horse archer models.
+  Updated Cuman and Arab wargear.
+
+16-07-2015
+  2.4 Horse Lords update.
+  Installer added. (See updated installation instructions)
+  Switch to partial culture overrides for increased compatibility with mods and updates.
+  Compatible with Cuman portraits.
+  Western steppes use Cuman faces.
+  Central-Asians use Cuman clothing, hair and kids.
+  Pechenegs use Cuman hair and beards.
+  Downgrade nomad vassal clothes and tributary emperor crowns.
+
+  New Slavic and Baltic helmets.
+  Added tagelmust to African and Berber headgear.
+  Keep early units for Eastern-Europeans, North-Africans and Andalusians.
+  Remove parts of the early units of Eastern-Slavic and Turkish units.
+  Use Orthodox priest councillor for all eastern Christians.
+  Give Warriors of Faith more use as marshals and priests.
+  Use early/Saxon unit packs for all German, French and English. Override late game knights.
+
+02-07-2015
+  Stripped out all DLC-dependent files.
+  Merged in the fallback add-on.
+  Other add-ons are now included inside the mod.
+
+  New Pecheneg portraits: Turkish faces with Mongol beards and Pecheneg clothing.
+  Changed Christian Norse to Saxon clothes.
+  Changed West-Slavic to western faces.
+  Changed Italians to Byzantine hairstyles.
+  Changed South-Slavs to Byzantine beards.
+  Changed Steppe portraits to Turkish beards.
+  Added pagan Maghreb-Berber portraits and made other Africans Christian/Muslim only.
+  Added a tribal interior background.
+  Changed male Italian clothing to southern.
+  Changed Southern-Slavic clothes to early western.
+  Changed Norman to Norse faces, with a high likelihood of using local ethnicities.
+
+20-05-2015
+  Added 7 western beards from Game of Thrones and steppe faces.
+  Added 3 old Mediterranean beards to Muslims.
+  Shaved down western and African noses to reduce overlap with beards.
+  New Finno-Ugric portrait assets made by Lord of Pain.
+  Added Assamese Indo-Mongoloid portraits based on CPRf+.
+  Updated to the full set of Crackdtoothgrins Steppe Faces clothing.
+  Reorganized child-ethnicity code.
+  Filled in the remaining noble helmet lineup.
+  Changed Alan to Turkish beards, pagan-slavic headgear, steppe clothes and lighter colours.
+  Changed Ethiopian clothes to African, Levantines to Persian beards.
+  Added some of Shaytanas skin recolours for fallback usage.
+  Added alternate western female clothes to Germans.
+  Added Roman portraits made by Silfae.
+  Readded Sogdian and Gothic portraits from CPR.
+  Finetuning of hair/beard offsets.
+  Updated vanilla unit models and refitted helmets.
+  Setup some mixes of councillor & priests avatars.
+
+16-04-2015
+  To deal with the lightning level issues: Changed Iberian and Italian to Greek faces, Andalusian, Sicilian and Maghreb to southern faces.
+  Added basque: western face with Iberian hair/clothes from CPR and Sicilian: southern face with Italian clothes.
+  Italians use merchant clothes with old Mediterranean headgear, early portraits use early Byzantine clothes.
+  Base early Germanic portraits use Norse Christian hair and beards.
+  Cleanup of unused graphicalculturetypes.
+  Africans use Berber headgear when not pagan.
+  Ugric and Siberians use steppe clothing and Baltic/Norse headgear.
+  Added Cuman portraits: Turkish base with steppe clothing and hair/eye colours.
+  Added Steppe non-pagan variant with Turkish clothing.
+
+18-12-2014
+  Various fixes.
+  Added more Byzantine/southern hair colours from CPR.
+  Updated Georgian headgear.
+
+16-12-2014
+  Way of Life update
+  Updated to new Mediterranean and Iberian/southern portraits.
+  Iberian portraits have their disabled blond hair/blue eyes options enabled.
+  Expanded the property list for beards to the new maximum.
+  Occitans use Iberian hair/beardstyles and old Iberian clothing.
+  Italians use Iberian portraits with old Byzantine headgear.
+  Southern-Slavics and Levantines get the old Mediterranean children.
+
+07-11-2014
+  Event to diversify ethnicity of some of new courtiers based on realm provinces and neighbours.
+  Event to set newborns ethnicity for mixed parents.
+  Additional diversity in North-Africa and the steppes.
+  New pagan & Western-Slavic headgear sprites.
+  More bugfixes in Mediterranean portraits & exorcism of the ghost beard.
+  Italian and Occitan early portraits.
+  Base snow backgrounds on winter system.
+  Base more backgrounds on location.
+  Merge Crackdtoothgrins religious outfits again.
+  Update to 2.2.0.6 early portrait naming scheme
+
+18-10-2014
+  Fixed blank portrait bug in Byzantine portraits
+  Added Arab, Mongol & Russian hair colours from Portrait Realignment Pack
+  Merged Sleight of Hands name list fixes.
+
+17-10-2014
+  Updated to 2.2.0.1
+  Saxons, Byzantines and Arabic Muslims always use the new early outfits. Except with female Byzantine headgear swapped.
+  Southern women use the other Byzantine outfits.
+  Added pagan variants to all Slavic cultures. Pagan clothes with Mongol headgear, likely to be changed more later.
+  New fallback add-on for incomplete DLC.
+  Reverted Mediterranean eye sprites.
+  Merged remaining sprite loading files.
+  Reorganized layering for noses, beards and diseases.
+  Cleaned up corruption on western and Muslim headgear.
+  Various edited western headgear for diversity.
+  Limit hair/beard selection to the various frame counts.
+  Added early Hungarian and Avar portrait on based on the steppe portrait.
+  Select fitting headgear for monks and nuns.
+  Keep prison graphics for dead prisoners.
+  Changed Occitan portraits to Mediterranean hairstyle.
+  Updated Georgian/Armenian portraits from CPR.
+  Adjusted Turkish & Persian headgear selection based on religion.
+  Slightly edited Celtic headgear, for Bretons and late game Celtics.
+
+01-09-2014
+  Merge Persian/Norse sprite loading in portrait files in a bugfix attempt.
+  Lighter (actually visible) Mediterranean irises, added additional brown color to compensate.
+  Set Volga Bulgars to steppegfx graphics.
+  Indian and Persian nobles use helmets when leading troops.
+
+27-05-2014
+  Added Persian portrait DLC, used in Persian, Afghan, Alan and Sogdian portraits.
+  Made Levantine portraits independent of Persians.
+  Fixed a bunch of misalignments after figuring out negative offsets are possible.
+  Changed Southern-Slavic hair to Eastern-Slavic, Central-Asian beards to Turkish and Siberian hair to Norse.
+  Renamed vanilla Norse/Eastern-European unit models to stop the conflict with DLC Norse units.
+  Mixed up more vanilla unit model variations.
+  Allow some of the headgear for counts and barons.
+  Fixed gap in Norse hoods.
+
+06-05-2014
+  Overhauled hair selection code to function beyond western males only.
+  Replaced one younger bald western hairstyle.
+  Created Christian Norse crowns.
+  Added Norsegael portraits by Cybrxkhan.
+  Added Tengri Bulgar portraits.
+  Added Mongol children by AnaxXiphos
+  Replaced Mediterranean male eyes with desaturated original version, fixes the reddish shadow.
+  Replaced Mediterranean male neck with original and western overlapping combo, making tanned necks of normal width.
+  Improve Mediterranean male noses to cover the base nose.
+  Starting to rebuild sprites using Nvidia texture tools for better quality, especially the shadows.
+  Updated cultures for easier province icon compatibility.
+
+10-04-2014
+  2.1.2 patch
+
+07-04-2014
+  2.1.2.1 beta patch, uses compressed western portraits with fixes.
+  Afghan and west Indian portraits using Persian resp. Arabic base with Indian clothes.
+  Steppe and Central-Asian cultures use Turkish hair and female clothes.
+  Hungarians use Cuman clothes and when pagan, Turkish hair.
+  Reworked background selection.
+  Changed some unit graphics (restored Muslim horse archers,Polish->Russian,Baltic->balticholy,Bulgarian,Alan-Byzantine)
+
+26-03-2014
+    2.1 Update
+    Recoloured Mediterranean male faces, still somewhat early version.
+    Removed all imperial war headgear, it was almost all identical to the normal crowns.
+    Updated wargear selection code, give better armor to dukes and grand masters.
+    Lepers wear hoods to cover up their disease and glitchy layering.
+    Dead characters no longer show temporary disease/trait effects.
+    Filled gap on Norse ducal headbands.
+    Added Mongolian noble war gear.
+    Persian have Byzantine beards.
+    Southslavs based on Bohemian with Greek clothes and western hats.
+    Bulgar based on Mediterranean with Russian outfits.
+    Hungarians get Mongolian hair and beardstyles.
+    Westslavs based on Eastern-Slavic faces.
+    Dropped Muslim unit fix, fixed in patch.
+    Removed Turkish Muslim clothes to ease compatibility.
+
+26-02-2014
+    Diseases reordered for priority and graphics touched up
+    Fixed Georgian/Bulgarian headgear
+    Fixed SMHM text encoding
+    Fixed pure white hair on some elderly women
+    Moved scar/disease layering order over the nose for Arabs.
+
+17-02-2014
+    Takeover
+    Uses portrait backgrounds and religious clothing from VIET Immersion by Cybrxkhan
+    Partially integrated Scarred mod by Euroland
+    Updated Mediterranean hair-colours from VIET
+    Reverted to the older Berber / Maghreb split
+    Adapted Georgian portrait to BLG war-helmets from CPR by Cybrxkhan
+    Adapted Southern-Slavic and Hungarian portraits from Recycled Units Pack by Thiomay
+    Added Levantine portrait: Persian face with default Arabic clothing
+    Added Bulgarian portrait: Steppe face with Georgian headgear
+    Shiny plastic Muslim unit fix

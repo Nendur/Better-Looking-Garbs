@@ -1,0 +1,190 @@
+############## Ugric ##########################
+# Ugric portraits by Lord of Pain
+spriteTypes = {
+
+### Ugric male ####
+
+	spriteType = {
+		name = "GFX_ugric_male_clothes_behind"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_clothes_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_clothes"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_clothes.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_headgear_behind"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_headgear"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_hair_behind"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_hair_behind_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_hair_behind_midage"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_hair_behind_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_hair_behind_oldage"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_hair_behind_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_mouth"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_mouth_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_mouth_midage"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_mouth_2.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_mouth_oldage"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_mouth_3.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_hair"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_hair_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_hair_midage"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_hair_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_hair_oldage"
+		texturefile = "gfx\\characters\\ugric_male\\ugric_male_hair_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_nose"
+		texturefile = "gfx\\characters\\norse_male\\norse_male_nose_1.dds"
+		noOfFrames = 10
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_nose_midage"
+		texturefile = "gfx\\characters\\norse_male\\norse_male_nose_2.dds"
+		noOfFrames = 10
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_male_nose_oldage"
+		texturefile = "gfx\\characters\\norse_male\\norse_male_nose_3.dds"
+		noOfFrames = 10
+		norefcount = yes
+	}
+
+#### Ugric female ####
+
+	spriteType = {
+		name = "GFX_ugric_female_clothes_behind"
+		texturefile = "gfx\\characters\\ugric_female\\ugric_female_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_female_clothes"
+		texturefile = "gfx\\characters\\ugric_female\\ugric_female_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_female_headgear_behind"
+		texturefile = "gfx\\characters\\ugric_female\\ugric_female_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_female_headgear"
+		texturefile = "gfx\\characters\\ugric_female\\ugric_female_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_female_hair"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_1.dds"
+		noOfFrames = 10
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_female_hair_midage"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_2.dds"
+		noOfFrames = 10
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_female_hair_oldage"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_3.dds"
+		noOfFrames = 10
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_female_hair_behind"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_behind_1.dds"
+		noOfFrames = 10
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_female_hair_behind_midage"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_behind_2.dds"
+		noOfFrames = 10
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_ugric_female_hair_behind_oldage"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_behind_3.dds"
+		noOfFrames = 10
+		norefcount = yes
+	}
+}

@@ -1,0 +1,88 @@
+# p8 red dots - Tilaka
+8 = {
+	0 = { # blank
+		factor = 20
+		modifier = {
+			factor = 100
+			likes_hindus = no
+		}
+		modifier = {
+			factor = 0.01
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				trait = zealous
+				has_minor_title = title_guru
+				society_member_of = monastic_order_hindu
+				has_character_flag = diwali_feast_begun
+				has_character_flag = attending_diwali_feast
+			}
+		}
+	}
+	1 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaivist_hindu trait = smartist_hindu }
+		}
+	}
+	2 = {
+		factor = 1
+		trigger = {
+			OR = { trait = vaishnavist_hindu trait = smartist_hindu }
+		}
+	}
+	3 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaktist_hindu trait = smartist_hindu }
+		}
+	}
+	4 = {
+		factor = 1
+		trigger = {
+			OR = { trait = vaishnavist_hindu trait = smartist_hindu }
+		}
+	}
+	5 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaktist_hindu trait = smartist_hindu }
+		}
+	}
+	6 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaivist_hindu trait = smartist_hindu }
+		}
+	}
+	7 = {
+		factor = 1
+		trigger = {
+			OR = { trait = vaishnavist_hindu trait = smartist_hindu }
+		}
+	}
+	8 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaktist_hindu trait = smartist_hindu }
+		}
+	}
+	9 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaktist_hindu trait = smartist_hindu }
+		}
+	}
+	10 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaivist_hindu trait = smartist_hindu }
+		}
+	}
+	11 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaivist_hindu trait = smartist_hindu }
+		}
+	}
+}

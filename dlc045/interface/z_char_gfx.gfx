@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "italiangfx_KNIGHTS_rider"
+		file = "gfx\models\westerngfx_early_heavy_cavalry.mesh"
+		animation = { id = "attack"		type = "char_heavy_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "char_heavy_cavalry_idle_animation" }
+		animation = { id = "move"		type = "char_heavy_cavalry_moving_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "italiangfx_KNIGHTS_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_southern_heavy_cavalry.mesh"
+		scale = 1.0f
+	}
+}

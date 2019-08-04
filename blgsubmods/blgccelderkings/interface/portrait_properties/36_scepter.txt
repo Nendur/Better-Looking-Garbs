@@ -1,0 +1,322 @@
+# p36 Special Scepters
+36 = {
+	0 = { # blank
+		factor = 1
+	}
+	1 = { # Bon Fylkir Scepter
+		factor = 0
+	}
+	2 = { # Hellenic Fylkir Scepter
+		factor = 0
+	}
+	3 = { # Holy Grail
+		factor = 0
+	}
+	4 = { # Mjolnir
+		factor = 0
+	}
+	5 = { # Tablet
+		factor = 75
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = tablet
+					is_artifact_active = yes
+				}
+			}
+		}
+	}
+	6 = { # African Scepter
+		factor = 100
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = totem
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	7 = { # Scepter
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					OR = {
+						has_artifact_flag = scepter
+						has_artifact_flag = staff
+					}
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	8 = { # Scepter
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					OR = {
+						has_artifact_flag = scepter
+						has_artifact_flag = staff
+					}
+					quality == 2
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	9 = { # Scepter
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					OR = {
+						has_artifact_flag = scepter
+						has_artifact_flag = staff
+					}
+					quality <= 1
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	10 = { # Necklace
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NAND = {
+				is_female = yes
+				practical_age = 16
+				any_artifact = {
+					has_artifact_flag = necklace
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	11 = { # Necklace
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NAND = {
+				is_female = yes
+				practical_age = 16
+				any_artifact = {
+					has_artifact_flag = necklace
+					quality == 2
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	12 = { # Necklace
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NAND = {
+				is_female = yes
+				practical_age = 16
+				any_artifact = {
+					has_artifact_flag = necklace
+					quality < 2
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	13 = { # Lance
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				any_artifact = {
+					OR = {
+						has_artifact_flag = lance
+						has_artifact_flag = spear
+					}
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	14 = { # Lance
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					OR = {
+						has_artifact_flag = lance
+						has_artifact_flag = spear
+					}
+					quality < 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	15 = { # Trident
+		factor = 100
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					OR = {
+						artifact_type = lance_tier_3_trident
+						artifact_type = lance_tier_4_trident
+					}
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	16 = { # Mace
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = mace
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	17 = { # Mace
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = mace
+					quality < 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	18 = { # Dagger
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = dagger
+					quality > 1
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	19 = { # Dagger
+		factor = 10
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = dagger
+					quality <= 1
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	20 = { # Book
+		factor = 10
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = book
+					is_artifact_active = yes
+				}
+			}
+		}
+	}
+	21 = { # Ingredients
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = ingredient
+					is_artifact_active = yes
+				}
+			}
+		}
+	}
+}

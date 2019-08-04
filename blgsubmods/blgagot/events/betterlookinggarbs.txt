@@ -1,0 +1,245 @@
+###################################
+#
+# Better Looking Garbs
+#
+# Events to alter ethnicity on newly created characters.
+#
+###################################
+
+namespace = blg
+
+# Ethnic diversity in random courtier spawns.
+character_event = {
+	id = blg.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	ai = yes
+	min_age = 1
+	trigger = {
+		trait = blgspawn
+	}
+	immediate = {
+		remove_trait = blgspawn
+		character_event = { id = blg.7 }
+	}
+
+	option = { # Leave unchanged / Ruler culture
+		ai_chance = {
+			factor = 6
+		}
+	}
+
+	option = { # Local province
+		ai_chance = { factor = 3 }
+		trigger = {
+			employer = {
+				is_landed = yes
+				ROOT = { race = PREV } 
+			}
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			NOR = {
+				culture_group = winter_group
+				culture_group = unoccupied_group
+				culture_group = old_races
+				culture = high_valyrian
+				culture = dragon_culture
+			}
+		}
+
+		random_realm_province = {
+			limit = {
+				NOR = {
+					culture_group = winter_group
+					culture_group = unoccupied_group
+					culture_group = old_races
+					culture = high_valyrian
+					culture = dragon_culture
+				}
+			}
+			ROOT = {
+				set_graphical_culture = PREV
+				# random = { chance = 25 culture = PREV }
+				# random = { chance = 25 religion = PREV }
+			}
+		}
+	}
+
+	option = { # Neighbour of local province
+		ai_chance = { factor = 2 }
+		trigger = {
+			employer = {
+				is_landed = yes
+				ROOT = { race = PREV } 
+			}
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			NOR = {
+				culture_group = winter_group
+				culture_group = unoccupied_group
+				culture_group = old_races
+				culture = high_valyrian
+				culture = dragon_culture
+			}
+		}
+
+		random_realm_province = {
+			random_neighbor_province = {
+				limit = {
+					NOR = {
+						culture_group = winter_group
+						culture_group = unoccupied_group
+						culture_group = old_races
+						culture = high_valyrian
+						culture = dragon_culture
+					}
+				}
+				ROOT = {
+					set_graphical_culture = PREV
+					# random = { chance = 25 culture = PREV }
+					# random = { chance = 25 religion = PREV }
+				}
+			}
+		}
+	}
+
+	option = { # Bear species
+		ai_chance = { factor = 100 }
+		trigger = {
+			OR = {
+				graphical_culture = beargfx
+				graphical_culture = polarbeargfx
+				graphical_culture = blackbeargfx
+			}
+		}
+
+		if = {
+			limit = {
+				location = {
+					OR = {
+						region = world_north
+						region = world_shivering_sea
+					}
+					OR = {
+						terrain = arctic
+						has_province_modifier = asoiaf_normal_winter
+						has_province_modifier = asoiaf_harsh_winter
+					}
+				}
+			}
+			set_graphical_culture = polar_bear
+		}
+		else_if = {
+			limit = {
+				location = {
+					region = world_essos
+				}
+			}
+			set_graphical_culture = black_bear
+		}
+		else = {
+			set_graphical_culture = bear
+		}
+	}
+}
+
+# Mixed ethnicity for children.
+# Called from on_birth
+character_event = {
+	id = blg.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_trait = blgspawn
+	}
+}
+
+# Installatian check event.
+character_event = {
+	id    = blg.4
+	title = blg.4.title
+	desc  = blg.4.desc
+
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_intrigue
+	hide_from = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = blg.4.opt
+	}
+}
+
+# Add tattoos
+character_event = {
+	id = blg.7
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { employer = { primary_title = { title = c_fiery_hand } } }
+			add_trait = african_tattoo_10
+		}
+		else_if = {
+			limit = {
+				OR = {
+					trait = slave
+					trait = former_slave
+				}
+				OR = {
+					culture = volantene
+					employer = { culture = volantene }
+					employer = { culture = eastern_valyrian }
+				}
+			}
+
+			if = {
+				limit = { trait = red_priest }
+				add_character_modifier = { name = zun_warpaint_1 duration = -1 }
+			}
+			else_if = {
+				limit = { has_minor_title = court_jester }
+				add_character_modifier = { name = aztec_warpaint_1 duration = -1 }
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_minor_title = title_commander
+						employer = { primary_title = { mercenary = yes } }
+					}
+				}
+				add_trait = african_tattoo_9
+			}
+			else = {
+				random_list = {
+					10 = { add_character_modifier = { name = finnish_warpaint_1 duration = -1 } }
+					10 = { add_character_modifier = { name = finnish_warpaint_2 duration = -1 } }
+					10 = { add_character_modifier = { name = zun_warpaint_2 duration = -1 } }
+					10 = { add_trait = african_tattoo_2 }
+					10 = { add_trait = african_tattoo_3 }
+				}
+			}
+		}
+		else_if = {
+			limit = { culture = shadowlander }
+
+			random_list = {
+				10 = { add_trait = norse_tattoo_1 }
+				10 = { add_trait = norse_tattoo_2 }
+				10 = { add_trait = norse_tattoo_3 }
+				10 = { add_trait = norse_tattoo_4 }
+				10 = { add_trait = norse_tattoo_5 }
+				10 = { add_trait = norse_tattoo_6 }
+				10 = { add_trait = slavic_tattoo_1 }
+				10 = { add_trait = slavic_tattoo_2 }
+				10 = { add_trait = slavic_tattoo_3 }
+				10 = { add_trait = slavic_tattoo_4 }
+				10 = { add_trait = slavic_tattoo_5 }
+				10 = { add_trait = slavic_tattoo_6 }
+			}
+		}
+	}
+}

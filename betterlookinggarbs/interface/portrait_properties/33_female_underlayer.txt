@@ -1,0 +1,6 @@
+#p33 frankish Culture Underlayer and Hair - Female
+33 = {
+	0 = { # Blank
+		factor = 100
+	}
+}

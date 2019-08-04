@@ -1,0 +1,370 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "PORTRAIT_catgfx_child_male"
+		texturefile = "gfx\\characters\\kitten_male.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_catgfx_child_female"
+		texturefile = "gfx\\characters\\kitten_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_cat_male_base"
+		texturefile = "gfx\\characters\\cat\\cat_male_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_cat_female_base"
+		texturefile = "gfx\\characters\\cat\\cat_female_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_cat_son_base"
+		texturefile = "gfx\\characters\\cat\\cat_son_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_cat_daughter_base"
+		texturefile = "gfx\\characters\\cat\\cat_daughter_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_cat_androgyn_headgear"
+		texturefile = "gfx\\characters\\cat\\cat_androgyn_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### CAT MALE ####
+	portraitType = {
+		name = "PORTRAIT_catgfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_empty:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_cat_male_base:p2"
+			"GFX_child_back:p17"
+			"GFX_cat_son_base:p18"
+			"GFX_character_scars:p7:y:o0x-10"
+			"GFX_character_scars_mid:p25:o0x-10"
+			"GFX_character_scars_high:p26:o0x-10"
+			"GFX_character_reddots:p8:o-9x0"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o34x73"
+			"GFX_character_mask:p12:y:o43x46"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 36 35 29 } { 196 172 91 } { 255 255 255 }
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+		}
+
+		headgear_that_hides_hair = { 10 }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_catgfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_empty:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_cat_male_base:p2"
+			"GFX_character_scars:p7:y:o0x-10"
+			"GFX_character_scars_mid:p25:o0x-10"
+			"GFX_character_scars_high:p26:o0x-10"
+			"GFX_character_reddots:p8:o-9x0"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o34x73"
+			"GFX_character_mask:p12:y:o43x46"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+
+			{ 36 35 29 } { 196 172 91 } { 255 255 255 }
+			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+		}
+
+		headgear_that_hides_hair = { 10 }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_catgfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_empty:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_cat_male_base:p2"
+			"GFX_character_scars:p7:y:o0x-10"
+			"GFX_character_scars_mid:p25:o0x-10"
+			"GFX_character_scars_high:p26:o0x-10"
+			"GFX_character_reddots:p8:o-9x0"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o34x73"
+			"GFX_character_mask:p12:y:o43x46"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
+			{ 15 8 0 } { 214 210 195 } { 255 255 255 }
+			{ 10 10 10 } { 143 134 127 } { 255 255 255 }
+			{ 30 22 18 } { 174 161 151 } { 255 255 255 }
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+		}
+
+		headgear_that_hides_hair = { 10 }
+	}
+
+### CAT FEMALE ####
+
+	portraitType = {
+		name = "PORTRAIT_catgfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_empty:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_cat_female_base:p2"
+			"GFX_child_back:p17"
+			"GFX_cat_daughter_base:p18"
+			"GFX_character_scars:p7:y:o0x-10"
+			"GFX_character_scars_mid:p25:o0x-10"
+			"GFX_character_scars_high:p26:o0x-10"
+			"GFX_character_reddots:p8:o-9x0"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o34x73"
+			"GFX_character_mask:p12:y:o43x46"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 36 35 29 } { 196 172 91 } { 255 255 255 }
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_catgfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_empty:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_cat_female_base:p2"
+			"GFX_character_scars:p7:y:o0x-10"
+			"GFX_character_scars_mid:p25:o0x-10"
+			"GFX_character_scars_high:p26:o0x-10"
+			"GFX_character_reddots:p8:o-9x0"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o34x73"
+			"GFX_character_mask:p12:y:o43x46"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 36 35 29 } { 196 172 91 } { 255 255 255 }
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_catgfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_southern_background:p0"
+			"GFX_empty:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_southern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_cat_female_base:p2"
+			"GFX_character_scars:p7:y:o0x-10"
+			"GFX_character_scars_mid:p25:o0x-10"
+			"GFX_character_scars_high:p26:o0x-10"
+			"GFX_character_reddots:p8:o-9x0"
+			"GFX_character_black_eye:p23"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o34x73"
+			"GFX_character_mask:p12:y:o43x46"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
+			{ 15 8 0 } { 214 210 195 } { 255 255 255 }
+			{ 10 10 10 } { 143 134 127 } { 255 255 255 }
+			{ 30 22 18 } { 174 161 151 } { 255 255 255 }
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193}
+			{ 120 74 46 }
+			{ 34 103 36 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+}

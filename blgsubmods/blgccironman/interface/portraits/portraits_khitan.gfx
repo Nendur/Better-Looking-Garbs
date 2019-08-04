@@ -1,0 +1,102 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_khitan_male_clothes_behind"
+		texturefile = "gfx\\characters\\khitan_male\\khitan_male_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_khitan_male_headgear_behind"
+		texturefile = "gfx\\characters\\khitan_male\\khitan_male_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_khitan_male_clothes"
+		texturefile = "gfx\\characters\\khitan_male\\khitan_male_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_khitan_male_headgear"
+		texturefile = "gfx\\characters\\khitan_male\\khitan_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_khitan_female_clothes_behind"
+		texturefile = "gfx\\characters\\khitan_female\\khitan_female_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_khitan_female_clothes"
+		texturefile = "gfx\\characters\\khitan_female\\khitan_female_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_khitan_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_culture = khitan
+					portrait_culture = tangut
+				}
+			}
+		}
+
+		layer = {
+			"GFX_khitan_male_clothes_behind:c0"
+			"GFX_khitan_male_headgear_behind:c1"
+			"GFX_khitan_male_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_khitan_male_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_khitan_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_culture = khitan
+					portrait_culture = tangut
+				}
+			}
+		}
+
+		layer = {
+			"GFX_khitan_female_clothes_behind:c0"
+			"GFX_chinese_female_headgear_behind:c1"
+			"GFX_khitan_female_clothes:c2"
+			"GFX_chinese_female_headgear_mid:c3"
+			"GFX_empty:c4"
+			"GFX_chinese_female_headgear:c5"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+}

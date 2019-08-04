@@ -1,0 +1,23 @@
+#p22 malnourished
+22 = {
+	0 = { # blank
+		factor = 1
+	}
+
+	1 = { #pale
+		factor = 100
+		trigger = {
+			OR = {
+				trait = is_malnourished
+				trait = fatigue
+				trait = malaise
+				trait = cancer
+				trait = has_tuberculosis
+				trait = has_swamp_rot
+				trait = has_measles
+				trait = vampire
+				trait = lich
+			}
+		}
+	}
+}

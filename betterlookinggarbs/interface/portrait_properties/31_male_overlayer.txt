@@ -1,0 +1,6 @@
+#p31 frankish Culture Overlayer - Male
+31 = {
+	0 = { # Blank
+		factor = 100
+	}
+}

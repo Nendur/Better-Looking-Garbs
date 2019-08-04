@@ -1,0 +1,50 @@
+objectTypes = {
+
+	################################################
+	#### HEAVY_INFANTRY ############################
+	################################################
+	pdxmesh = {
+		name = "normangfx_HEAVY_INFANTRY_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_norman.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "normangfx_HEAVY_INFANTRY_shield"
+		file = "gfx\models\Attachments\westerngfx_early_kiteshield_heavy.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_INFANTRY ############################
+	################################################
+	pdxmesh = {
+		name = "normangfx_LIGHT_INFANTRY_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_norman.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### PIKEMEN ###################################
+	################################################
+	pdxmesh = {
+		name = "normangfx_PIKEMEN_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_norman.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### KNIGHTS ###################################
+	################################################
+	pdxmesh = {
+		name = "normangfx_KNIGHTS_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_norman.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "normangfx_KNIGHTS_shield"
+		file = "gfx\models\Attachments\westerngfx_early_kiteshield_heavy.mesh"
+		scale = 1.0f
+	}
+}

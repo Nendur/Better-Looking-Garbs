@@ -1,0 +1,101 @@
+# p10 blinded
+10 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 100
+			is_alive = no
+			NOR = {
+				trait = warlock
+				has_nickname = nick_the_drunkard
+			}
+		}
+	}
+	1 = { # leper
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = leper }
+		}
+		modifier = {
+			factor = 0
+			has_dlc = "Reapers"
+			NOT = { trait = disfigured }
+		}
+	}
+	2 = { # syphilitic
+		factor = 100
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = syphilitic
+				trait = has_aztec_disease
+				trait = has_pox
+			}
+		}
+	}
+	3 = { # pnuemonia
+		factor = 100
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = pneumonic 
+				trait = warlock
+				trait = has_drank_shade_of_the_evening
+			}
+		}
+		modifier = {
+			factor = 0
+			practical_age < 15
+		}
+	}
+	4 = { # fever
+		factor = 100
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = fever
+				trait = has_typhoid_fever
+				trait = has_bloody_flux
+				trait = has_butterfly_fever
+			}
+		}
+	}
+	5 = { # ill
+		factor = 100
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = ill
+				trait = flu
+			}
+		}
+	}
+	6 = { # drunkard
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = drunkard }
+		}
+	}
+	7 = { # vomit
+		factor = 0
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = vomiting
+				trait = food_poisoning
+			}
+		}
+	}
+	8 = { # imbecile
+		factor = 100
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = imbecile
+				trait = rabies
+			}
+		}
+	}
+}

@@ -1,0 +1,358 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_dog_male_base"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_male_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_female_base"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_female_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_doggfx_child_male"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_son.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_doggfx_child_female"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_daughter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_son_base"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_son_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_daughter_base"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_daughter_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_male_crowns"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_male_crowns.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_male_clothes"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_male_clothes.dds"
+		noOfFrames = 6
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_male_headgear"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_male_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_male_headgear_mid"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_male_headgear_mid.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_male_headgear_behind"
+		texturefile = "gfx\\characters\\dog_portraits\\dog_male_headgear_behind.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_doggfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_character_background:p0"
+			"GFX_dog_male_headgear_behind:p5:c1"
+			"GFX_dog_male_headgear_mid:p5:c3"
+			"GFX_dog_male_headgear:p5:c5"
+			"GFX_character_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dog_male_base:p2"
+			"GFX_dog_male_clothes:d4"
+			"GFX_dog_male_crowns:d0"
+			"GFX_child_back:p17"
+			"GFX_dog_son_base:p18"
+			"GFX_character_scars:p7:y:o-20x10"
+			"GFX_character_scars_mid:p25:o-20x10"
+			"GFX_character_scars_high:p26:o-20x10"
+			"GFX_character_reddots:p8:o-12x19"
+			"GFX_character_black_eye:p23:o-4x16"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_mask:p12:y:o39x72"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_doggfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_character_background:p0"
+			"GFX_dog_male_headgear_behind:p5:c1"
+			"GFX_dog_male_headgear_mid:p5:c3"
+			"GFX_dog_male_headgear:p5:c5"
+			"GFX_character_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dog_male_base:p2"
+			"GFX_dog_male_clothes:d4"
+			"GFX_dog_male_crowns:d0"
+			"GFX_character_scars:p7:y:o-20x10"
+			"GFX_character_scars_mid:p25:o-20x10"
+			"GFX_character_scars_high:p26:o-20x10"
+			"GFX_character_reddots:p8:o-12x19"
+			"GFX_character_black_eye:p23:o-4x16"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_mask:p12:y:o39x72"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_doggfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_character_background:p0"
+			"GFX_dog_male_headgear_behind:p5:c1"
+			"GFX_dog_male_headgear_mid:p5:c3"
+			"GFX_dog_male_headgear:p5:c5"
+			"GFX_character_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dog_male_base:p2"
+			"GFX_dog_male_clothes:d4"
+			"GFX_dog_male_crowns:d0"
+			"GFX_character_scars:p7:y:o-20x10"
+			"GFX_character_scars_mid:p25:o-20x10"
+			"GFX_character_scars_high:p26:o-20x10"
+			"GFX_character_reddots:p8:o-12x19"
+			"GFX_character_black_eye:p23:o-4x16"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_mask:p12:y:o39x72"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_doggfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_character_background:p0"
+			"GFX_dog_male_headgear_behind:p5:c1"
+			"GFX_dog_male_headgear_mid:p5:c3"
+			"GFX_dog_male_headgear:p5:c5"
+			"GFX_character_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dog_female_base:p2"
+			#"GFX_dog_male_clothes:d4"
+			"GFX_dog_male_crowns:d0"
+			"GFX_child_back:p17"
+			"GFX_dog_daughter_base:p18"
+			"GFX_character_scars:p7:y:o-20x10"
+			"GFX_character_scars_mid:p25:o-20x10"
+			"GFX_character_scars_high:p26:o-20x10"
+			"GFX_character_reddots:p8:o-12x19"
+			"GFX_character_black_eye:p23:o-4x16"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_mask:p12:y:o39x72"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_doggfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_character_background:p0"
+			"GFX_dog_male_headgear_behind:p5:c1"
+			"GFX_dog_male_headgear_mid:p5:c3"
+			"GFX_dog_male_headgear:p5:c5"
+			"GFX_character_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dog_female_base:p2"
+			#"GFX_dog_male_clothes:d4"
+			"GFX_dog_male_crowns:d0"
+			"GFX_character_scars:p7:y:o-20x10"
+			"GFX_character_scars_mid:p25:o-20x10"
+			"GFX_character_scars_high:p26:o-20x10"
+			"GFX_character_reddots:p8:o-12x19"
+			"GFX_character_black_eye:p23:o-4x16"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_mask:p12:y:o39x72"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_doggfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_character_background:p0"
+			"GFX_dog_male_headgear_behind:p5:c1"
+			"GFX_dog_male_headgear_mid:p5:c3"
+			"GFX_dog_male_headgear:p5:c5"
+			"GFX_character_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dog_female_base:p2"
+			#"GFX_dog_male_clothes:d4"
+			"GFX_dog_male_crowns:d0"
+			"GFX_character_scars:p7:y:o-20x10"
+			"GFX_character_scars_mid:p25:o-20x10"
+			"GFX_character_scars_high:p26:o-20x10"
+			"GFX_character_reddots:p8:o-12x19"
+			"GFX_character_black_eye:p23:o-4x16"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_mask:p12:y:o39x72"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+}

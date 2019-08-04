@@ -1,0 +1,311 @@
+andal = {
+	riverlander = {
+		graphical_cultures = { riverlandergfx easterngfx }
+	}
+	westerman = {
+		graphical_cultures = { westermangfx frankishgfx }
+	}
+	valeman = {
+		graphical_cultures = { valemangfx germangfx }
+	}
+	crownlander = {
+		graphical_cultures = { crownlandergfx romangfx italiangfx }
+	}
+	stormlander = {
+		graphical_cultures = { stormlandergfx englishgfx }
+	}
+	reachman = {
+		graphical_cultures = { reachmangfx }
+		unit_graphical_cultures = { reachmangfx southerngfx }
+	}
+	sisterman = {
+		graphical_cultures = { sistermangfx }
+	}
+	old_andal = {
+		graphical_cultures = { valemangfx germangfx }
+	}
+	dornish_andal = {
+		graphical_cultures = { dornishgfx }
+		unit_graphical_cultures = { reachmangfx southerngfx }
+	}
+	northman_andal = {
+		graphical_cultures = { valemangfx }
+	}
+}
+
+dornish = {
+	graphical_cultures = { dornishgfx arabicgfx muslimgfx }
+
+	stone_dornish = {
+		graphical_cultures = { stonedornishgfx levantinegfx }
+	}
+	sand_dornish = {
+		graphical_cultures = { sanddornishgfx levantinegfx }
+	}
+	salt_dornish = {
+		graphical_cultures = { saltdornishgfx levantinegfx }
+	}
+	rhoynar = {
+		graphical_cultures = { saltdornishgfx berbergfx }
+	}
+}
+
+first_men = {
+	graphical_cultures = { celticgfx }
+
+	northman = {
+		graphical_cultures = { northmangfx }
+	}
+	hill_clansman = {
+		graphical_cultures = { northmangfx freefolkgfx }
+	}
+	crannogman = {
+		graphical_cultures = { northmangfx freefolkgfx }
+	}
+	half_southron = {
+		graphical_cultures = { reachmangfx }
+	}
+	crackclawmen = {
+		graphical_cultures = { firstmangfx northmangfx }
+	}
+	moon_clansman = {
+		graphical_cultures = { freefolkgfx balticgfx easterngfx }
+	}
+	skagosi = {
+		graphical_cultures = { freefolkgfx }
+	}
+	old_first_man = {
+		graphical_cultures = { firstmangfx northmangfx freefolkgfx }
+	}
+}
+
+free_folk = {
+	graphical_cultures = { freefolkgfx norsegfx easterngfx }
+
+	wildling = {
+		graphical_cultures = { freefolkgfx }
+	}
+	thenn = {
+		graphical_cultures = { thenngfx finnishholygfx }
+	}
+	frozen_shore = {
+		graphical_cultures = { freefolkgfx }
+	}
+	hornfoot = {
+		graphical_cultures = { freefolkgfx }
+	}
+	cannibal_clan = {
+		graphical_cultures = { freefolkgfx }
+	}
+	nightrunner = {
+		graphical_cultures = { freefolkgfx }
+	}
+}
+
+iron_isles_culture = {
+	graphical_cultures = { pagangfx saxongfx norsegfx westerngfx }
+}
+
+valyrian = {
+	graphical_cultures = { valyriangfx byzantinegfx republicsgfx westerngfx }
+	unit_graphical_cultures = { italiangfx southerngfx }
+}
+
+free_cities = {
+	graphical_cultures = { republicsgfx byzantinegfx westerngfx }
+
+	pentosi = {
+		graphical_cultures = { pentosigfx }
+	}
+	braavosi = {
+		graphical_cultures = { braavosigfx byzantinegfx westerngfx }
+	}
+	lysene = {
+		graphical_cultures = { lysenegfx }
+	}
+	qohorik = {
+		graphical_cultures = { freecitiesgfx easternslavicgfx }
+	}
+	norvosi = {
+		graphical_cultures = { norvosigfx orthodoxholygfx easternslavicgfx }
+	}
+	myrman = {
+		graphical_cultures = { myrmangfx saltdornishgfx }
+	}
+	tyroshi = {
+		graphical_cultures = { tyroshigfx }
+	}
+	volantene = {
+		graphical_cultures = { freecitiesgfx }
+	}
+	lorathi = {
+		graphical_cultures = { pentosigfx easternslavicgfx westerngfx }
+	}
+	essarian = {
+		graphical_cultures = { freecitiesgfx easternslavicgfx }
+	}
+	gogossosi = {
+		graphical_cultures = { freecitiesgfx }
+	}
+}
+
+ghiscari_group = {
+	graphical_cultures = { arabicgfx muslimgfx }
+}
+
+dothraki_group = {
+	graphical_cultures = { mongolgfx muslimgfx }
+
+	dothraki = {
+		graphical_cultures = { dothrakigfx }
+		unit_graphical_cultures = { mesoamericangfx indiangfx muslimgfx }
+	}
+	lhazareen = {
+		graphical_cultures = { lhazareengfx mongolgfx muslimgfx }
+		unit_graphical_cultures = { berbergfx muslimgfx }
+	}
+}
+
+hyrkoon_group = {
+	graphical_cultures = { bodpagfx turkishgfx muslimgfx }
+}
+
+sarnor_group = {
+	graphical_cultures = { indiangfx muslimgfx }
+	sarnorian = {
+		graphical_cultures = { sarnorigfx ibbenesegfx }
+	}
+	omberi = {
+		graphical_cultures = { sarnorigfx ibbenesegfx }
+	}
+}
+
+moraqi_group = {
+	graphical_cultures = { mesoamericangfx }
+
+	farosi = {
+		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
+		unit_graphical_cultures = { mongolgfx muslimgfx }
+	}
+	moraqi = {
+		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
+		unit_graphical_cultures = { mongolgfx muslimgfx }
+	}
+	zabhadi = {
+		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
+		unit_graphical_cultures = { mongolgfx muslimgfx }
+	}
+	vahari = {
+		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
+		unit_graphical_cultures = { mongolgfx muslimgfx }
+	}
+}
+
+yi_ti_group = {
+	graphical_cultures = { chinesegfx indiangfx muslimgfx }
+
+	yi_ti = {
+		graphical_cultures = { yitigfx }
+	}
+	asabhadi = {
+		graphical_cultures = { asabhadgfx }
+	}
+}
+
+jade_islands_group = {
+	graphical_cultures = { indiangfx muslimgfx }
+
+	lengi = {
+		graphical_cultures = { naathigfx }
+	}
+}
+
+asshai_group = {
+	graphical_cultures = { bodpagfx southyrosgfx turkishgfx arabicgfx muslimgfx }
+
+	asshai = {
+		graphical_cultures = { shadowlandergfx }
+	}
+	shadowlander = {
+		graphical_cultures = { shadowlandergfx }
+	}
+}
+
+further_east = {
+	graphical_cultures = { freefolkgfx pagangfx easterngfx }
+
+	grey_waste = {
+		graphical_cultures = { greywastegfx siberiangfx ugricgfx }
+	}
+}
+
+qarth_group = {
+	graphical_cultures = { ghiscarigfx persiangfx muslimgfx }
+}
+
+ibbenese_group = {
+	graphical_cultures = { easternslavicgfx pagangfx easterngfx }
+
+	ibbenese = {
+		graphical_cultures = { ibbenesegfx ugricgfx }
+	}
+}
+
+jogos_nhai_group = {
+	graphical_cultures = { mongolgfx muslimgfx }
+
+	jogos_nhai = {
+		graphical_cultures = { jogosgfx }
+	}
+}
+
+nghai_group = {
+	graphical_cultures = { bodpagfx mongolgfx muslimgfx }
+
+	nghai = {
+		graphical_cultures = { nghaigfx }
+	}
+}
+
+islander_group = {
+	islander = {
+		graphical_cultures = { islandergfx pagangfx jewishholygfx magyargfx freefolkgfx easterngfx }
+	}
+}
+
+summer_islands = {
+	graphical_cultures = { africangfx mesoamericangfx indiangfx muslimgfx }
+
+	summer_islander = {
+		graphical_cultures = { southyrosgfx }
+	}
+}
+
+sothoryos_islands = {
+	graphical_cultures = { africangfx southyrosgfx muslimgfx }
+
+	basilisk_islander = {
+		graphical_cultures = { westafricangfx }
+	}
+	brindlemen = {
+		graphical_cultures = { brindlegfx aztecholygfx }
+	}
+}
+
+naath_group = {
+	graphical_cultures = { africangfx southyrosgfx muslimgfx }
+
+	naathi = {
+		graphical_cultures = { naathigfx }
+	}
+}
+
+old_races = {
+	giant = {
+		graphical_cultures = { giantgfx norseholygfx norsegfx }
+	}
+}
+
+winter_group = {
+	graphical_cultures = { whitewalkergfx pagangfx easternslavicgfx easterngfx }
+}

@@ -1,0 +1,432 @@
+# p19 Special crowns
+19 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 100
+			in_command = yes
+			is_priest = no
+			OR = {
+				war = yes
+				liege = { war = yes }
+				is_ruler = no
+			}
+			has_game_rule = {
+				name = martial_headgear
+				value = on
+			}
+		}
+		modifier = {
+			factor = 100
+			check_variable = { which = ca_headgear value = 1 }
+		}
+	}
+	1 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #HRE crown
+			factor = 0
+			NOR = {
+				any_artifact = {
+					artifact_type = crown_hre
+					is_artifact_equipped = yes
+				}
+				trait = dead_crown_hre
+			}
+		}
+	}
+	2 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #Byzantine Crown
+			factor = 0
+			NOR = {
+				any_artifact = {
+					artifact_type = crown_byzantine
+					is_artifact_equipped = yes
+				}
+				trait = dead_crown_byzantine
+			}
+		}
+		modifier = { #Already present
+			factor = 0
+			culture = greek
+		}
+	}
+	3 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #Cursed Diamond Crown
+			factor = 0
+			NOR = {
+				any_artifact = {
+					artifact_type = cursed_diamond_crown
+					is_artifact_equipped = yes
+				}
+				trait = dead_cursed_diamond_crown
+			}
+		}
+	}
+	4 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #Iron Crown of Lombardy
+			factor = 0
+			NOR = {
+				any_artifact = {
+					artifact_type = iron_crown_of_lombardy
+					is_artifact_equipped = yes
+				}
+				trait = dead_iron_crown_lombardy
+			}
+		}
+	}
+	5 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #Imperial Laurels
+			factor = 0
+			NOT = { trait = augustus }
+		}
+	}
+	6 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #Pahlavi Crown
+			factor = 0
+			NOR = {
+				any_artifact = {
+					artifact_type = crown_pahlavi
+					is_artifact_equipped = yes
+				}
+				trait = dead_crown_pahlavi
+			}
+		}
+	}
+	7 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #Fylkir Crown
+			factor = 0
+			NOR = {
+				any_artifact = {
+					artifact_type = crown_fylkir
+					is_artifact_equipped = yes
+				}
+				trait = dead_crown_fylkir
+			}
+		}
+	}
+	8 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #Tengri Fylkir Crown
+			factor = 0
+			NOR = {
+				any_artifact = {
+					artifact_type = crown_tengri_fylkir
+					is_artifact_equipped = yes
+				}
+				trait = dead_crown_tengri_fylkir
+			}
+		}
+	}
+	9 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		trigger = { #Finnish Fylkir Crown
+			OR = {
+				AND = {
+					is_priest = yes
+					religion_openly_finnish_or_reformed_trigger = yes
+				}
+				any_artifact = {
+					artifact_type = crown_finnish_fylkir
+					is_artifact_equipped = yes
+				}
+				trait = dead_crown_finnish_fylkir
+			}
+		}
+	}
+	10 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		trigger = { #West-African Fylkir Crown
+			OR = {
+				any_artifact = {
+					artifact_type = crown_west_african_fylkir
+					is_artifact_equipped = yes
+				}
+				trait = dead_crown_west_african_fylkir
+				AND = {
+					is_priest = yes
+					rightful_religious_head = ROOT
+					religion_openly_aztec_or_reformed_trigger = yes
+				}
+			}
+		}
+	}
+	11 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #Slavic/Romva Fylkir Crown
+			factor = 0
+			NOR = {
+				any_artifact = {
+					artifact_type = crown_slavic_fylkir
+					is_artifact_equipped = yes
+				}
+				any_artifact = {
+					artifact_type = crown_romuva_fylkir
+					is_artifact_equipped = yes
+				}
+				trait = dead_crown_slavic_fylkir
+				trait = dead_crown_romuva_fylkir
+				AND = {
+					is_priest = yes
+					rightful_religious_head = ROOT
+					religion_openly_slavic_or_reformed_trigger = yes
+				}
+			}
+		}
+	}
+	12 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #Zunist Fylkir Crown
+			factor = 0
+			NOR = {
+				any_artifact = {
+					artifact_type = crown_zun_fylkir
+					is_artifact_equipped = yes
+				}
+				trait = dead_crown_zun_fylkir
+				primary_title = { title = d_zun_pagan_reformed }
+			}
+		}
+	}
+	13 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = { #Aztec Fylkir Crown
+			factor = 0
+			NOR = {
+				any_artifact = {
+					artifact_type = crown_aztec_fylkir
+					is_artifact_equipped = yes
+				}
+				trait = dead_crown_aztec_fylkir
+			}
+		}
+	}
+	14 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		modifier = {
+			factor = 0
+			year = 1245
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_minor_title = title_cardinal
+				has_minor_title = title_fraticelli_cardinal
+			}
+		}
+	}
+	15 = {
+		factor = 100
+		hide_layers = { 3 = { } } #Hide layer 3 (clothes) when this frame is picked.
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		modifier = {
+			factor = 0
+			NOT = {
+				year = 1245
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_minor_title = title_cardinal
+				has_minor_title = title_fraticelli_cardinal
+			}
+		}
+	}
+	16 = {
+		factor = 100
+		hide_layers = {1 = {}}
+		hide_layers = {5 = {}} #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		trigger = {
+			primary_title = {
+				OR = {
+					title = k_venice
+					title = d_venice
+				}
+			}
+			is_merchant_republic = yes
+		}
+	}
+	17 = {
+		factor = 100
+		hide_layers = {3 = {}} #Hide layer 3 (clothes) when this frame is picked.
+		hide_layers = {5 = {}} #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		trigger = {
+			has_minor_title = title_court_jester
+		}
+	}
+	18 = {
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		trigger = {
+			is_priest = yes
+			rightful_religious_head = ROOT
+			OR = {
+				religion = orthodox
+				religion = monothelite
+				religion = iconoclast
+				religion = paulician
+				blg_religion_orthodox = yes
+			}
+		}
+	}
+	19 = {
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		trigger = {
+			is_priest = yes
+			rightful_religious_head = ROOT
+			OR = {
+				religion = miaphysite
+				religion = monophysite
+				religion = nestorian
+				religion = messalian
+				blg_religion_orientorthodox = yes
+			}
+		}
+	}
+	20 = {
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		trigger = {
+			is_priest = yes
+			is_female = no
+			OR = {
+				religion = miaphysite
+				religion = monophysite
+				religion = nestorian
+				religion = messalian
+				blg_religion_orientorthodox = yes
+			}
+		}
+	}
+	21 = {
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		trigger = {
+			is_priest = yes
+			OR = {
+				religion = cathar
+				religion = waldensian
+				religion = lollard
+				religion = bogomilist
+			}
+		}
+	}
+	22 = {
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		trigger = {
+			is_priest = yes
+			religion_openly_slavic_or_reformed_trigger = yes
+		}
+	}
+	23 = {
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		trigger = {
+			is_priest = yes
+			religion_openly_aztec_or_reformed_trigger = yes
+		}
+	}
+	24 = {
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		trigger = {
+			is_priest = yes
+			religion = taoist
+		}
+	}
+	25 = {
+		factor = 100
+		#hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		trigger = {
+			is_priest = yes
+			religion_openly_celtic_or_reformed_trigger = yes
+		}
+	}
+}

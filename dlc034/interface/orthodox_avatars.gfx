@@ -1,0 +1,112 @@
+objectTypes = {
+
+	#######################################################
+	#######################################################
+	#####											  #####
+	#####			Orthodox Holy Order				  #####
+	#####											  #####
+	#######################################################
+	#######################################################
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_LIGHT_INFANTRY"
+		actorfile = "gfx\models\holy_order_orthodox.xac"
+		 idle   = "gfx\models\holy_order_infantry_idle.xsm"
+		 move   = "gfx\models\holy_order_infantry_moving.xsm"
+		 attack = "gfx\models\holy_order_infantry_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_LIGHT_INFANTRY_helmet"
+		actorfile = "gfx\models\no_object.xac"
+		scale = 0.000001f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_LIGHT_INFANTRY_shield"
+		actorfile = "gfx\models\Attachments\holy_order_orthodox_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_PIKEMEN"
+		actorfile = "gfx\models\holy_order_orthodox.xac"
+		idle   = "gfx\models\holy_order_pikeman_idle.xsm"
+		move   = "gfx\models\holy_order_pikeman_moving.xsm"
+		attack = "gfx\models\holy_order_pikeman_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_PIKEMEN_helmet"
+		actorfile = "gfx\models\no_object.xac"
+		scale = 0.00001f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_PIKEMEN_shield"
+		actorfile = "gfx\models\Attachments\holy_order_orthodox_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_HEAVY_INFANTRY"
+		actorfile = "gfx\models\holy_order_orthodox.xac"
+		idle   = "gfx\models\holy_order_infantry_idle.xsm"
+		move   = "gfx\models\holy_order_infantry_moving.xsm"
+		attack = "gfx\models\holy_order_infantry_attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_HEAVY_INFANTRY_shield"
+		actorfile = "gfx\models\Attachments\holy_order_orthodox_shield.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_HEAVY_INFANTRY_helmet"
+		actorfile = "gfx\models\no_object.xac"
+		scale = 0.00001f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_KNIGHTS_rider"
+		actorfile = "gfx\models\holy_order_orthodox.xac"
+		idle   = "gfx\models\Heavy_Cavalry_2_Idle.xsm"
+		move   = "gfx\models\Heavy_Cavalry_2_Moving.xsm"
+		attack = "gfx\models\Heavy_Cavalry_2_Attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_KNIGHTS_weapon"
+		actorfile = "gfx\models\Attachments\Banner_Sword.xac"
+		idle   = "gfx\models\Attachments\Banner_anim.xsm"
+		move   = "gfx\models\Attachments\Banner_anim.xsm"
+		attack = "gfx\models\Attachments\Sword_Anim.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_KNIGHTS_helmet"
+		actorfile = "gfx\models\no_object.xac"
+		scale = 0.000001f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_horse_archers_rider"
+		actorfile = "gfx\models\holy_order_orthodox.xac"
+		idle   = "gfx\models\Mounted_Archer_Idle.xsm"
+		move   = "gfx\models\Mounted_Archer_Moving.xsm"
+		attack = "gfx\models\Mounted_Archer_Attack.xsm"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_horse_archers_helmet"
+		actorfile = "gfx\models\no_object.xac"
+		scale = 0.000001f
+	}
+}

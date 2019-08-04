@@ -1,0 +1,97 @@
+#### SOUTHERNSLAVIC NON-DLC ####
+spriteTypes = {
+
+# Children
+	spriteType = {
+		name = "GFX_croatsouthslavic_son_base"
+		textureFile = "gfx/characters/western_male/western_son_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_sonhair"
+		textureFile = "gfx/characters/western_male/western_son_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_daughter_base"
+		textureFile = "gfx/characters/western_female/western_daughter_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_daughterhair"
+		textureFile = "gfx/characters/western_female/western_daughter_hair.dds"
+		noOfFrames = 7
+	}
+
+# Male
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_male_clothes_behind"
+		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_clothes_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_male_clothes"
+		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_clothes.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_male_headgear_behind"
+		texturefile = "gfx\\characters\\western_male\\western_male_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_male_headgear_mid"
+		texturefile = "gfx\\characters\\western_male\\western_male_headgear_mid.dds"
+		noOfFrames = 10
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_male_headgear"
+		texturefile = "gfx\\fallbacks\\occitan_male\\occitan_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+#### WESTERNSLAVIC FEMALE ####
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_female_clothes_behind"
+		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_female_clothes"
+		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_female_headgear_behind"
+		texturefile = "gfx\\characters\\westernslavic_female\\westernslavic_female_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_croatsouthslavic_female_headgear"
+		texturefile = "gfx\\characters\\westernslavic_female\\westernslavic_female_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+}

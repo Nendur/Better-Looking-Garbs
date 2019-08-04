@@ -1,0 +1,293 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_character_boils"
+		texturefile = "gfx\\characters\\shared\\boils.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_scars"
+		texturefile = "gfx\\characters\\shared\\scars\\scars.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_player_overlay"
+		texturefile = "gfx\\characters\\shared\\player_overlay.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_mask"
+		texturefile = "gfx\\characters\\shared\\maimed_masks.dds"
+		noOfFrames = 16
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_crowns"
+		texturefile = "gfx\\characters\\shared\\special_crowns.dds"
+		noOfFrames = 22
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_crowns_behind"
+		texturefile = "gfx\\characters\\shared\\special_crowns_behind.dds"
+		noOfFrames = 22
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	##AGOT valyrian steel indicator
+	spriteType = {
+		name = "GFX_character_special_artifact"
+		texturefile = "gfx\\characters\\shared\\special_artifact.dds"
+		noOfFrames = 3
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_masks"
+		texturefile = "gfx\\characters\\shared\\skinchanger.dds"
+		noOfFrames = 5
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_male_clothes"
+		texturefile = "gfx\\characters\\religious_male_clothes.dds"
+		noOfframes = 17
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_male_clothes_behind"
+		texturefile = "gfx\\characters\\religious_male_clothes_behind.dds"
+		noOfframes = 17
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_male_headgear"
+		texturefile = "gfx\\characters\\religious_male_headgear.dds"
+		noOfframes = 17
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_male_headgear_behind"
+		texturefile = "gfx\\characters\\religious_male_headgear_behind.dds"
+		noOfframes = 17
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_female_clothes"
+		texturefile = "gfx\\characters\\religious_female_clothes.dds"
+		noOfframes = 17
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_female_clothes_behind"
+		texturefile = "gfx\\characters\\religious_female_clothes_behind.dds"
+		noOfframes = 17
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_female_headgear"
+		texturefile = "gfx\\characters\\religious_female_headgear.dds"
+		noOfframes = 17
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_religious_female_headgear_behind"
+		texturefile = "gfx\\characters\\religious_female_headgear_behind.dds"
+		noOfframes = 17
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### ANDAL MALE ####
+
+	spriteType = {
+		name = "GFX_western_male_hair_behind"
+		texturefile = "gfx\\characters\\andal_male\\western_male_hair_behind_1.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_male_hair_behind_midage"
+		texturefile = "gfx\\characters\\andal_male\\western_male_hair_behind_2.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_male_hair_behind_oldage"
+		texturefile = "gfx\\characters\\andal_male\\western_male_hair_behind_3.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_western_male_hair"
+		texturefile = "gfx\\characters\\andal_male\\western_male_hair_1.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_male_hair_midage"
+		texturefile = "gfx\\characters\\andal_male\\western_male_hair_2.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_male_hair_oldage"
+		texturefile = "gfx\\characters\\andal_male\\western_male_hair_3.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_male_beard_behind"
+		texturefile = "gfx\\characters\\andal_male\\western_male_beard_behind_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_male_beard_behind_midage"
+		texturefile = "gfx\\characters\\andal_male\\western_male_beard_behind_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_male_beard_behind_oldage"
+		texturefile = "gfx\\characters\\andal_male\\western_male_beard_behind_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_male_beard"
+		texturefile = "gfx\\characters\\andal_male\\western_male_beard_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_male_beard_midage"
+		texturefile = "gfx\\characters\\andal_male\\western_male_beard_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_male_beard_oldage"
+		texturefile = "gfx\\characters\\andal_male\\western_male_beard_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### ANDAL FEMALE ####
+
+	spriteType = {
+		name = "GFX_western_female_hair_behind"
+		texturefile = "gfx\\characters\\andal_female\\western_female_hair_behind_1.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_female_hair_behind_midage"
+		texturefile = "gfx\\characters\\andal_female\\western_female_hair_behind_2.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_female_hair_behind_oldage"
+		texturefile = "gfx\\characters\\andal_female\\western_female_hair_behind_3.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_female_hair"
+		texturefile = "gfx\\characters\\andal_female\\western_female_hair_1.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_female_hair_midage"
+		texturefile = "gfx\\characters\\andal_female\\western_female_hair_2.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_western_female_hair_oldage"
+		texturefile = "gfx\\characters\\andal_female\\western_female_hair_3.dds"
+		noOfFrames = 21
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_andal_female_clothes"
+		texturefile = "gfx\\characters\\andal_female\\andal_female_clothes.dds"
+		noOfFrames = 17
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_andal_female_clothes_behind"
+		texturefile = "gfx\\characters\\andal_female\\andal_female_clothes_behind.dds"
+		noOfFrames = 17
+		norefcount = yes
+		can_be_lowres = yes
+	}
+}

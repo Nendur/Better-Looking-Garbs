@@ -1,0 +1,13 @@
+GFX_norse_female_mouth 72x48
+GFX_norse_female_nose 80x65
+GFX_norse_female_eyes 49x79
+GFX_norse_female_eyes2 72x88
+GFX_norse_female_ear 28x54
+GFX_norse_female_mouth_midage 72x49
+GFX_norse_female_nose_midage 80x64
+GFX_norse_female_eyes_midage 46x76
+GFX_norse_female_ear_midage 28x54
+GFX_norse_female_mouth_oldage 72x50
+GFX_norse_female_nose_oldage 79x64
+GFX_norse_female_eyes_oldage 47x74
+GFX_norse_female_ear_oldage 28x54

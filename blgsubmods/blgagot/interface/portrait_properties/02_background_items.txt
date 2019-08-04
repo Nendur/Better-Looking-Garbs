@@ -1,0 +1,302 @@
+# p2 items
+2 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 100
+			prisoner = yes
+		}
+		modifier = {
+			factor = 100
+			is_alive = no
+		}
+	}
+	1 = { # Iron Throne
+		factor = 1
+		trigger = {
+			employer = { has_landed_title = e_iron_throne }
+		}
+		modifier = {
+			factor = 75
+			has_landed_title = e_iron_throne
+		}
+		hide_layers = { 38 = {} }
+	}
+	2 = { # The Wall
+		factor = 5
+		trigger = {
+			location = { region = world_the_wall }
+		}
+		modifier = {
+			factor = 5
+			trait = nightswatch
+		}
+	}
+	3 = { # Godswood
+		factor = 0.1
+		trigger = {
+			OR = {
+				religion = old_gods
+				religion_group = wildling_religion
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+		modifier = {
+			factor = 100
+			OR = {
+				is_theocracy = yes
+				trait = zealous
+			}
+		}
+	}
+	4 = { # golden sword
+		factor = 100
+		#modifier = {
+		#	factor = 0
+		#	in_command = no
+		#}
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = dawn
+				trait = lightbringer
+			}
+		}
+	}
+	5 = { # scimitar
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dothraki }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				any_artifact = {
+					OR = {
+						has_artifact_flag = sword
+						has_artifact_flag = arakh
+					}
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	6 = { # scimitar
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dothraki }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = sword
+					quality < 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	7 = { # valyrian sword
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = valyrian_steel
+					has_artifact_flag = sword
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	8 = { # sword
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			culture = dothraki
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = sword
+					NOT = { has_artifact_flag = valyrian_steel }
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	9 = { # +2 Axe
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = axe
+					quality >= 5
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	10 = { # axe
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = axe
+					quality < 5
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	11 = { # axe
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+			NOT = { trait = bearded_priest }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = bearded_priest
+				any_artifact = {
+					has_artifact_flag = axe
+					quality < 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	12 = { # bow
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = bow
+					quality >= 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	13 = { # bow
+		factor = 25
+		modifier = {
+			factor = 0
+			in_command = no
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_artifact = {
+					has_artifact_flag = bow
+					quality < 3
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+	14 = { # dog
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_character_modifier = pet_hunting_dog
+			}
+		}
+	}
+	15 = { # cat
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = pet_cat }
+		}
+	}
+	16 = { # owl
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = pet_owl }
+		}
+	}
+	17 = { # horse
+		factor = 50
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = nomad_warhorse }
+		}
+	}
+	18 = { # parrot
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = pet_parrot }
+		}
+	}
+	19 = { # rat
+		factor = 50
+		modifier = {
+			factor = 0
+			in_command = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_character_modifier = pet_rat_dungeon }
+		}
+	}
+}

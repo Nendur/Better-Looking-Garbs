@@ -1,0 +1,109 @@
+objectTypes = {
+	pdxmesh = {
+		name = "norsegfx_HEAVY_INFANTRY_late"
+		file = "gfx\models\gerup_early_heavy_infantry.mesh"
+
+		animation = { id = "attack"		type = "gerup_early_infantry_attack_animation" }
+		animation = { id = "idle"		type = "gerup_early_infantry_idle_animation" }
+		animation = { id = "move"		type = "gerup_early_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "norsegfx_HEAVY_INFANTRY_weapon_late"
+		file = "gfx\models\Attachments\gerup_early_sword.mesh"
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "norsegfx_HEAVY_INFANTRY_helmet_late"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "norsegfx_HEAVY_INFANTRY_shield_late"
+		file = "gfx\models\Attachments\gerup_early_heavy_shield.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "norsegfx_PIKEMEN_late"
+		file = "gfx\models\gerup_early_heavy_infantry.mesh"
+
+		animation = { id = "attack"		type = "gerup_early_pikeman_attack_animation" }
+		animation = { id = "idle"		type = "gerup_early_pikeman_idle_animation" }
+		animation = { id = "move"		type = "gerup_early_pikeman_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "norsegfx_PIKEMEN_weapon_late"
+		file = "gfx\models\Attachments\gerup_early_spear.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "norsegfx_PIKEMEN_shield_late"
+		file = "gfx\models\Attachments\gerup_early_heavy_shield.mesh"
+		scale = 1.0f
+	}
+
+
+	pdxmesh = {
+		name = "norsegfx_PIKEMEN_helmet_late"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "norsegfx_KNIGHTS_late"
+		file = "gfx\models\gerup_early_heavy_horse.mesh"
+
+		animation = { id = "attack"		type = "gerup_early_horse_attack_animation" }
+		animation = { id = "idle"		type = "gerup_early_horse_idle_animation" }
+		animation = { id = "move"		type = "gerup_early_horse_moving_animation" }
+
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "norsegfx_KNIGHTS_rider_late"
+		file = "gfx\models\gerup_early_knight.mesh"
+
+		animation = { id = "attack"		type = "gerup_early_heavy_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "gerup_early_heavy_cavalry_idle_animation" }
+		animation = { id = "move"		type = "gerup_early_heavy_cavalry_moving_animation" }
+
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "norsegfx_KNIGHTS_weapon_late"
+		file = "gfx\models\Attachments\gerup_early_sword.mesh"
+
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "norsegfx_KNIGHTS_helmet_late"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "norsegfx_KNIGHTS_shield_late"
+		file = "gfx\models\Attachments\gerup_early_heavycav_shield.mesh"
+		scale = 0.9
+	}
+
+	EMFXActorType = {
+		name = "norsegfx_GALLEYS_late"
+		actorfile = "gfx\models\Cog.xac"
+		idle   = "gfx\models\Cog_Moving.xsm"
+		scale = 1.5f
+	}
+}

@@ -1,0 +1,31 @@
+###INDIAN FEMALE###
+objectTypes = {
+
+	pdxmesh = {
+		name = "indiangfx_job_chancellor_female"
+		file = "gfx/models/Mapindicators/afc_african_chancellor_female.mesh"
+		animation = { id = "idle"		type = "afc_african_chancellor_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "indiangfx_job_treasurer_female"
+		file = "gfx/models/Mapindicators/afc_african_steward_female.mesh"
+		animation = { id = "idle"		type = "afc_african_steward_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "indiangfx_job_spymaster_female"
+		file = "gfx/models/Mapindicators/afc_african_spymaster_female.mesh"
+		animation = { id = "idle"		type = "afc_african_spymaster_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "indiangfx_job_marshal_female"
+		file = "gfx/models/Mapindicators/afc_african_marshal_female.mesh"
+		animation = { id = "idle"		type = "afc_african_marshal_female_idle_animation" }
+		scale = 1.0
+	}
+}
