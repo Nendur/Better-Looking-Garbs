@@ -125,7 +125,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "mongolgfx_HEAVY_INFANTRY_shield"
-		actorfile = "gfx\models\Attachments\Shield_Arab_01.xac"
+		actorfile = "gfx\models\Attachments\Shield_Arab_02.xac"
 		scale = 1.0f
 	}
 

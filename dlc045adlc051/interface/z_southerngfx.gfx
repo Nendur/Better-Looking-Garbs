@@ -13,12 +13,6 @@ objectTypes = {
 	################################################
 
 	pdxmesh = {
-		name = "westerngfx_HEAVY_INFANTRY_weapon"
-		file = "gfx\models\Attachments\ibup_sword.mesh"
-		scale = 1.0f
-	}
-
-	pdxmesh = {
 		name = "frankishgfx_HEAVY_INFANTRY_weapon"
 		file = "gfx\models\Attachments\ibup_sword.mesh"
 		scale = 1.0f
@@ -135,12 +129,6 @@ objectTypes = {
 		name = "southerngfx_KNIGHTS_shield_late"
 		file = "gfx\models\Attachments\ibup_heatershield.mesh"
 		scale = 0.9
-	}
-
-	pdxmesh = {
-		name = "westerngfx_KNIGHTS_weapon"
-		file = "gfx\models\Attachments\ibup_sword.mesh"
-		scale = 1.0f
 	}
 
 	################################################

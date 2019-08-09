@@ -179,6 +179,45 @@ fi
 echo Crusader Kings II installation found in $CK2
 
 DLC="$CK2/dlc/dlc"
+#First pass
+if [[ -f "${DLC}014.dlc" ]] || [[ -f "${DLC}047.dlc" ]]; then
+	LIST="$LIST 1dlc014odlc047/*"
+fi
+if [ -f "${DLC}016.dlc" ]; then
+	LIST="$LIST 1dlc016/*"
+	russian=1
+fi
+if [ -f "${DLC}020.dlc" ]; then
+	LIST="$LIST 1dlc020/*"
+	norse=1
+fi
+if [ -f "${DLC}045.dlc" ]; then
+	charlemagne=1
+	LIST="$LIST 1dlc045/*"
+fi
+if [ -f "${DLC}063.dlc" ]; then
+	conclave=1
+	LIST="$LIST 1dlc063/*"
+fi
+if [ -f "${DLC}074.dlc" ]; then
+	holyfury=1
+	LIST="$LIST 1dlc074/*"
+fi
+#Second pass
+if [ -f "${DLC}047.dlc" ]; then
+	earlyeast=1
+	LIST="$LIST 2dlc047/*"
+fi
+if [ -f "${DLC}067.dlc" ]; then
+	reapers=1
+	LIST="$LIST 2dlc067/*"
+fi
+if [ -f "${DLC}070.dlc" ]; then
+	monks=1
+	LIST="$LIST 2dlc070/*"
+fi
+
+#Main pass
 if [ -f "${DLC}002.dlc" ]; then
 	echo Mongol Face Pack present.
 	LIST="dlc002/*"
@@ -210,13 +249,10 @@ else echo Mediterranean Portraits absent.; fi
 
 if [ -f "${DLC}015.dlc" ]; then
 	LIST="$LIST dlc015/*"
-elif [ -f "${DLC}045.dlc" ]; then
-	LIST="$LIST dlc015rdlc045/*"
 fi
-if [ -f "${DLC}016.dlc" ]; then
+if [[ $russian -eq 1 ]]; then
 	echo Russian Portraits present.
 	LIST="$LIST dlc016/*"
-	russian=1
 	[[ $byzantine -eq 1 ]] && LIST="$LIST dlc014adlc016/*"
 else echo Russian Portraits absent.; fi
 
@@ -225,10 +261,9 @@ if [ -f "${DLC}018.dlc" ]; then
 	LIST="$LIST dlc018/*"
 else echo Sunset Invasion absent.; fi
 
-if [ -f "${DLC}020.dlc" ]; then
+if [[ $norse -eq 1 ]]; then
 	echo Norse Portraits present.
 	LIST="$LIST dlc020/*"
-	norse=1
 else echo Norse Portraits absent.; fi
 if [ -f "${DLC}021.dlc" ]; then
 	LIST="$LIST dlc021/*"
@@ -266,8 +301,6 @@ else echo Warriors of Faith Unit Pack absent.; fi
 
 if [ -f "${DLC}037.dlc" ]; then
 	LIST="$LIST dlc037/*"
-elif [ -f "${DLC}045.dlc" ]; then
-	LIST="$LIST dlc037rdlc045/*"
 fi
 if [ -f "${DLC}038.dlc" ]; then
 	LIST="$LIST dlc038/*"
@@ -290,8 +323,8 @@ if [ -f "${DLC}041.dlc" ]; then
 	LIST="$LIST dlc041/*"
 else echo Turkish Portraits absent.; fi
 
-if [ -f "${DLC}043.dlc" ]; then
-	LIST="$LIST dlc043/*"
+if [[ -f "${DLC}043.dlc" ]] && [[ $indian -eq 1 ]]; then
+	LIST="$LIST dlc043adlc039/*"
 fi
 if [ -f "${DLC}044.dlc" ]; then
 	echo Persian Portraits present.
@@ -305,13 +338,8 @@ else
 	#fi
 fi
 
-if [ -f "${DLC}045.dlc" ]; then
+if [[ $charlemagne -eq 1 ]]; then
 	echo Charlemagne present.
-	charlemagne=1
-	LIST="$LIST dlc045/*"
-	if [[ ! -f "${DLC}012.dlc" ]]; then
-		LIST="$LIST dlc012rdlc045/*"
-	fi
 	[ -f "${DLC}015.dlc" ] && LIST="$LIST dlc045adlc015/*"
 	if [[ -z $holy ]]; then
 		LIST="$LIST dlc033rdlc045/*"
@@ -320,6 +348,7 @@ if [ -f "${DLC}045.dlc" ]; then
 	[ -f "${DLC}051.dlc" ] && LIST="$LIST dlc045adlc051/*"
 	[ -f "${DLC}008.dlc" ] || LIST="$LIST dlc008rdlc045/*"
 else echo Charlemagne absent.; fi
+
 if [ -f "${DLC}046.dlc" ]; then
 	echo Early Western Clothing Pack present.
 	LIST="$LIST dlc046/*"
@@ -327,11 +356,10 @@ if [ -f "${DLC}046.dlc" ]; then
 		LIST="$LIST dlc046adlc014/*"
 	fi
 else echo Early Western Clothing Pack absent.; fi
-if [ -f "${DLC}047.dlc" ]; then
+if [[ $earlyeast -eq 1 ]]; then
 	echo Early Eastern Clothing Pack present.
-	earlyeast=1
 	LIST="$LIST dlc047/*"
-	[ -z $byzantine ] && LIST="$LIST dlc014odlc047/* dlc014rdlc047/*"
+	[ -z $byzantine ] && LIST="$LIST dlc014odlc047/*"
 else echo Early Eastern Clothing Pack absent.; fi
 
 if [ -f "${DLC}052.dlc" ]; then
@@ -343,9 +371,6 @@ if [ -f "${DLC}052.dlc" ]; then
 	fi
 else
 	echo Iberian Portraits absent.;
-	#if [[ $byzantine -eq 1 ]] || [[ -f "${DLC}047.dlc" ]]; then
-	#	LIST="$LIST dlc052rdlc014odlc047/*"
-	#fi
 fi
 
 if [ -f "${DLC}057.dlc" ]; then
@@ -367,13 +392,9 @@ if [ -f "${DLC}060.dlc" ]; then
 	LIST="$LIST dlc060/*"
 fi
 
-if [ -f "${DLC}063.dlc" ]; then
+if [[ $conclave -eq 1 ]]; then
 	echo Conclave Content Pack present.
-	conclave=1
 	LIST="$LIST dlc063/*"
-	if [ -z $russian ]; then
-		LIST="$LIST dlc016rdlc063/*"
-	fi
 else
 	echo Conclave Content Pack absent.
 	if [[ $celtic -eq 1 ]] && [[ $mongol -eq 1 ]] && [[ $norse -eq 1 ]]; then
@@ -391,16 +412,9 @@ if [[ -f "${DLC}065.dlc" ]] || [[ -f "${DLC}072.dlc" ]]; then
 	fi
 else echo South Indian Portraits absent.; fi
 
-if [ -f "${DLC}067.dlc" ]; then
+if [[ $reapers -eq 1 ]]; then
 	echo "The Reaper's Due Content Pack present."
-	reapers=1
 	LIST="$LIST dlc067/*"
-	if [[ ! -f "${DLC}013.dlc" ]]; then
-		LIST="$LIST dlc013rdlc067/*"
-	fi
-	if [[ -z $byzantine && ! -f "${DLC}047.dlc" ]]; then
-		LIST="$LIST dlc014rdlc067/*"
-	fi
 else
 	echo "The Reaper's Due Content Pack absent."
 		if [[ $westafrican -eq 1 ]]; then
@@ -408,13 +422,9 @@ else
 	fi
 fi
 
-if [ -f "${DLC}070.dlc" ]; then
+if [[ $monks -eq 1 ]]; then
 	echo "Monks and Mystics Content Pack present."
-	monks=1
 	LIST="$LIST dlc070/*"
-	if [[ -z $norse ]]; then
-		LIST="$LIST dlc020rdlc070/*"
-	fi
 else
 	echo "Monks and Mystics Content Pack absent."
 	if [[ $norse -eq 1 ]]; then
@@ -438,32 +448,11 @@ else
 	echo "Jade Dragon absent."
 fi
 
-if [ -f "${DLC}074.dlc" ]; then
+if [[ $holyfury -eq 1 ]]; then
 	echo "Holy Fury present."
 	LIST="$LIST dlc074/*"
 	if [ -f "${DLC}046.dlc" ]; then
 		LIST="$LIST dlc074adlc046/*"
-	fi
-	if [[ -z $byzantine ]] || [[ -z $earlyeast ]]; then
-		LIST="$LIST dlc014odlc047rdlc074/*"
-	fi
-	if [[ -z $persian ]]; then
-		LIST="$LIST dlc044rdlc074/*"
-	fi
-	if [[ -z $southern ]]; then
-		LIST="$LIST dlc052rdlc074/*"
-	fi
-	if [[ -z $conclave ]]; then
-		LIST="$LIST dlc063rdlc074/*"
-	fi
-	if [[ -z $reapers ]]; then
-		LIST="$LIST dlc067rdlc074/*"
-	fi
-	if [[ -z $monks ]]; then
-		LIST="$LIST dlc070rdlc074/*"
-		if [[ -z $norse ]]; then
-			LIST="$LIST dlc020rdlc074/*"
-		fi
 	fi
 else
 	echo "Holy Fury absent."
@@ -506,7 +495,7 @@ fi
 
 #Combining files
 mkdir merge
-for dir in dlc*
+for dir in *dlc*
 do
 	if [ -d $dir ]; then
 		cd $dir

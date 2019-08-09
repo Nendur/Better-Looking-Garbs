@@ -1,0 +1,129 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "westernslavicgfx_HEAVY_INFANTRY_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_westernslavic_helmet.mesh"
+
+		scale = 1.0f
+	}
+	pdxmesh = {
+		name = "magyargfx_HEAVY_INFANTRY_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_helmet.mesh"
+
+		scale = 1.0f
+	}
+	pdxmesh = {
+		name = "easternslavicgfx_HEAVY_INFANTRY_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_helmet.mesh"
+
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_INFANTRY ############################
+	################################################
+
+	pdxmesh = {
+		name = "magyargfx_LIGHT_INFANTRY_weapon"
+		file = "gfx\models\Attachments\muslimgfx_early_scimitar.mesh"
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "westernslavicgfx_LIGHT_INFANTRY_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_westernslavic_helmet.mesh"
+
+		scale = 1.0f
+	}
+
+	################################################
+	#### ARCHERS ###################################
+	################################################
+
+	pdxmesh = {
+		name = "easternslavicgfx_ARCHERS_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_archer_helmet.mesh"
+
+		scale = 1.0f
+	}
+	pdxmesh = {
+		name = "magyargfx_ARCHERS_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_archer_helmet.mesh"
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "serbsouthslavicgfx_ARCHERS_weapon"
+		file = "gfx\models\Attachments\char_early_bolt.mesh"
+
+		animation = { id = "attack"		type = "char_early_arrow_attack_animation" }
+		animation = { id = "idle"		type = "char_early_arrow_idle_animation" }
+		animation = { id = "move"		type = "char_early_arrow_moving_animation" }
+
+		scale = 0.8f
+	}
+	pdxmesh = {
+		name = "serbsouthslavicgfx_ARCHERS_shield"
+		file = "gfx\models\Attachments\westerngfx_early_solenarion.mesh"
+
+		animation = { id = "attack"		type = "char_early_bow_attack_animation" }
+		animation = { id = "idle"		type = "char_early_bow_idle_animation" }
+		animation = { id = "move"		type = "char_early_bow_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	################################################
+	#### KNIGHTS ###################################
+	################################################
+
+	pdxmesh = {
+		name = "westernslavicgfx_KNIGHTS_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_westernslavic_cavalry_helmet.mesh"
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "magyargfx_KNIGHTS_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_cavalry_helmet.mesh"
+
+		scale = 1.0f
+	}
+	pdxmesh = {
+		name = "easternslavicgfx_KNIGHTS_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_cavalry_helmet.mesh"
+
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_CAVALRY #############################
+	################################################
+
+	pdxmesh = {
+		name = "magyargfx_LIGHT_CAVALRY_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_archer_helmet.mesh"
+
+		scale = 1.0f
+	}
+
+	################################################
+	#### horse_archers #############################
+	################################################
+
+	pdxmesh = {
+		name = "easternslavicgfx_horse_archers_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_archer_helmet.mesh"
+
+		scale = 1.0f
+	}
+	pdxmesh = {
+		name = "magyargfx_horse_archers_helmet"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_archer_helmet.mesh"
+
+		scale = 1.0f
+	}
+}

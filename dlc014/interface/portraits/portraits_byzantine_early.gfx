@@ -36,20 +36,6 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	spriteType = {
-		name = "GFX_southernslavic_male_clothes_behind"
-		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_clothes_behind.dds"
-		noOfFrames = 12
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_southernslavic_male_clothes"
-		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_clothes.dds"
-		noOfFrames = 12
-		norefcount = yes
-	}
-
 ###BYZANTINE FEMALE SPRITE LOCATIONS###
 
 	spriteType = {

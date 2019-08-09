@@ -24,5 +24,3 @@ GFX_arabic_female_mouth_oldage 74x52
 GFX_arabic_female_nose_oldage 79x61
 GFX_arabic_female_eyes_oldage 47x75
 GFX_arabic_female_ear_oldage 28x60
-GFX_african_male_eyes2 71x88
-GFX_african_female_eyes2 71x88

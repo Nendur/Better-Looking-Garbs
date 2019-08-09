@@ -750,42 +750,42 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_norse_female_hair_christian"
-		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_1.dds"
+		texturefile = "gfx\\characters\\norse_female\\norse_female_hair_1.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_female_hair_midage_christian"
-		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_2.dds"
+		texturefile = "gfx\\characters\\norse_female\\norse_female_hair_2.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_female_hair_oldage_christian"
-		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_3.dds"
+		texturefile = "gfx\\characters\\norse_female\\norse_female_hair_3.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_female_hair_behind_christian"
-		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_behind_1.dds"
+		texturefile = "gfx\\characters\\norse_female\\norse_female_hair_behind_1.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_female_hair_behind_midage_christian"
-		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_behind_2.dds"
+		texturefile = "gfx\\characters\\norse_female\\norse_female_hair_behind_2.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_female_hair_behind_oldage_christian"
-		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_hair_behind_3.dds"
+		texturefile = "gfx\\characters\\norse_female\\norse_female_hair_behind_3.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}

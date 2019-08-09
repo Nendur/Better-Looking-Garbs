@@ -1,0 +1,39 @@
+############## East African ##########################
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_african_male_headgear_behind"
+		texturefile = "gfx\\characters\\outremer_male\\outremer_male_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_african_male_headgear"
+		texturefile = "gfx\\characters\\outremer_male\\outremer_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_african_female_headgear_behind"
+		texturefile = "gfx\\characters\\outremer_female\\outremer_female_headgear_behind.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_african_female_headgear_mid"
+		texturefile = "gfx\\characters\\shared\\empty.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_african_female_headgear"
+		texturefile = "gfx\\characters\\outremer_female\\outremer_female_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+}

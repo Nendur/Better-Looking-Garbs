@@ -1,6 +1,6 @@
 #!/bin/sh
 rm betterlookinggarbs/betterlookinggarbsextra.zip
-zip -rPhr37yw3tre4gg84y betterlookinggarbs/betterlookinggarbsextra.zip dlc*/gfx/*
-zip -r betterlookinggarbs/betterlookinggarbsextra.zip dlc*/interface/*
+zip -rPhr37yw3tre4gg84y betterlookinggarbs/betterlookinggarbsextra.zip *dlc*/gfx/*
+zip -r betterlookinggarbs/betterlookinggarbsextra.zip *dlc*/interface/*
 ./betterlookinggarbsinstall.sh '/home/maarten/Crusader Kings II'
 rm -r ../blgsubmods ../submods ../betterlookinggarbs/betterlookinggarbsextra.zip

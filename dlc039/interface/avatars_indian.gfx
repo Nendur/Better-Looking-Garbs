@@ -123,17 +123,6 @@ objectTypes = {
 		scale = 1.0f
 	}
 
-	EMFXActorType = {
-		name = "persiangfx_ARCHERS_shield"
-		actorfile = "gfx\models\indian_bow.xac"
-
-		idle   = "gfx\models\indian_bow_idle.xsm"
-		move   = "gfx\models\indian_bow_idle.xsm"
-		attack = "gfx\models\indian_bow_attack.xsm"
-
-		scale = 1.0f
-	}
-
 # HEAVY INFANTRY
 
 	EMFXActorType = {
@@ -157,12 +146,6 @@ objectTypes = {
 		name = "indiangfx_HEAVY_INFANTRY_weapon"
 		actorfile = "gfx\models\indian_axe.xac"
 		scale = 0.8f
-	}
-
-	EMFXActorType = {
-		name = "persiangfx_HEAVY_INFANTRY_shield"
-		actorfile = "gfx\models\indian_shield_small.xac"
-		scale = 1.2f
 	}
 
 #### Heavy Cavalry Knight
@@ -202,12 +185,6 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
-		name = "persiangfx_KNIGHT_shield"
-		actorfile = "gfx\models\indian_shield_small.xac"
-		scale = 1.2f
-	}
-
-	EMFXActorType = {
 		name = "indiangfx_KNIGHTS_weapon"
 		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
@@ -228,12 +205,6 @@ objectTypes = {
 		name = "indiangfx_LIGHT_INFANTRY_shield"
 		actorfile = "gfx\models\indian_shield_small.xac"
 		scale = 0.8f
-	}
-
-	EMFXActorType = {
-		name = "persiangfx_LIGHT_INFANTRY_shield"
-		actorfile = "gfx\models\indian_shield_small.xac"
-		scale = 1.1f
 	}
 
 	EMFXActorType = {
@@ -299,19 +270,7 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
-		name = "persiangfx_PIKEMEN_weapon"
-		actorfile = "gfx\models\indian_lance.xac"
-		scale = 1.0f
-	}
-
-	EMFXActorType = {
 		name = "indiangfx_PIKEMEN_shield"
-		actorfile = "gfx\models\indian_shield_small.xac"
-		scale = 1.2f
-	}
-
-	EMFXActorType = {
-		name = "persiangfx_PIKEMEN_shield"
 		actorfile = "gfx\models\indian_shield_small.xac"
 		scale = 1.2f
 	}
@@ -397,15 +356,6 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "indiangfx_horse_archers_shield"
-		actorfile = "gfx\models\indian_bow.xac"
-		idle   = "gfx\models\indian_bow_idle.xsm"
-		move   = "gfx\models\indian_bow_idle.xsm"
-		attack = "gfx\models\indian_bow_attack.xsm"
-		scale = 1.0f
-	}
-
-	EMFXActorType = {
-		name = "persiangfx_horse_archers_shield"
 		actorfile = "gfx\models\indian_bow.xac"
 		idle   = "gfx\models\indian_bow_idle.xsm"
 		move   = "gfx\models\indian_bow_idle.xsm"
