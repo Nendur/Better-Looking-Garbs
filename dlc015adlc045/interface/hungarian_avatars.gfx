@@ -1,0 +1,37 @@
+objectTypes = {
+	pdxmesh = {
+		name = "magyargfx_HEAVY_INFANTRY_helmet_early"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_helmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "magyargfx_LIGHT_INFANTRY_weapon_early"
+		file = "gfx\models\Attachments\muslimgfx_early_scimitar.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "magyargfx_ARCHERS_helmet_early"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_archer_helmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "magyargfx_KNIGHTS_helmet_early"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_cavalry_helmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "magyargfx_LIGHT_CAVALRY_helmet_early"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_archer_helmet.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "magyargfx_horse_archers_helmet_early"
+		file = "gfx\models\Attachments\easterngfx_early_easternslavic_archer_helmet.mesh"
+		scale = 1.0f
+	}
+}

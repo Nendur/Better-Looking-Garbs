@@ -1,0 +1,139 @@
+objectTypes = {
+
+	#######################################################
+	#######################################################
+	#####											  #####
+	#####				Early_Muslim				  #####
+	#####											  #####
+	#######################################################
+	#######################################################
+
+	pdxmesh = {
+		name = "muslimgfx_LIGHT_INFANTRY_shield_early"
+		file = "gfx\models\Attachments\char_early_buckler_shield.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "muslimgfx_HEAVY_INFANTRY_early"
+		file = "gfx\models\muslimgfx_early_heavy_infantry.mesh"
+		animation = { id = "attack"		type = "char_infantry_attack_animation" }
+		animation = { id = "idle"		type = "char_infantry_idle_animation" }
+		animation = { id = "move"		type = "char_infantry_moving_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "muslimgfx_HEAVY_INFANTRY_helmet_early"
+		file = "gfx\models\Attachments\muslimgfx_early_helmet_turkish_infantry.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "muslimgfx_HEAVY_INFANTRY_shield_early"
+		file = "gfx\models\Attachments\muslimgfx_early_shield_heavy.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "muslimgfx_KNIGHTS_rider_early"
+		file = "gfx\models\muslimgfx_early_heavy_cavalry.mesh"
+		animation = { id = "attack"		type = "char_heavy_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "char_heavy_cavalry_idle_animation" }
+		animation = { id = "move"		type = "char_heavy_cavalry_moving_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "muslimgfx_KNIGHTS_helmet_early"
+		file = "gfx\models\Attachments\muslimgfx_early_helmet_heavy_cavalry.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "berbergfx_HEAVY_INFANTRY_early"
+		file = "gfx\models\muslimgfx_early_heavy_infantry.mesh"
+		animation = { id = "attack"		type = "char_infantry_attack_animation" }
+		animation = { id = "idle"		type = "char_infantry_idle_animation" }
+		animation = { id = "move"		type = "char_infantry_moving_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "berbergfx_HEAVY_INFANTRY_helmet_early"
+		file = "gfx\models\Attachments\muslimgfx_early_helmet_pikemen.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "berbergfx_KNIGHTS_rider_early"
+		file = "gfx\models\muslimgfx_early_heavy_cavalry.mesh"
+		animation = { id = "attack"		type = "char_heavy_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "char_heavy_cavalry_idle_animation" }
+		animation = { id = "move"		type = "char_heavy_cavalry_moving_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "berbergfx_KNIGHTS_helmet_early"
+		file = "gfx\models\Attachments\muslimgfx_early_helmet_heavy_cavalry.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "levantinegfx_HEAVY_INFANTRY_early"
+		file = "gfx\models\muslimgfx_early_heavy_infantry.mesh"
+		animation = { id = "attack"		type = "char_infantry_attack_animation" }
+		animation = { id = "idle"		type = "char_infantry_idle_animation" }
+		animation = { id = "move"		type = "char_infantry_moving_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "muslimgfx_HEAVY_INFANTRY_helmet_early"
+		file = "gfx\models\Attachments\muslimgfx_early_helmet_heavy_infantry.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "levantinegfx_KNIGHTS_rider_early"
+		file = "gfx\models\muslimgfx_early_heavy_cavalry.mesh"
+		animation = { id = "attack"		type = "char_heavy_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "char_heavy_cavalry_idle_animation" }
+		animation = { id = "move"		type = "char_heavy_cavalry_moving_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "levantinegfx_KNIGHTS_helmet_early"
+		file = "gfx\models\Attachments\muslimgfx_early_helmet_heavy_cavalry.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_HEAVY_INFANTRY_early"
+		file = "gfx\models\easterngfx_early_heavy_infantry.mesh"
+		animation = { id = "attack"		type = "char_infantry_attack_animation" }
+		animation = { id = "idle"		type = "char_infantry_idle_animation" }
+		animation = { id = "move"		type = "char_infantry_moving_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_HEAVY_INFANTRY_helmet_early"
+		file = "gfx\models\Attachments\muslimgfx_early_helmet_pikemen.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_HEAVY_INFANTRY_shield_early"
+		file = "gfx\models\Attachments\muslimgfx_early_shield_heavy.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_PIKEMEN_shield_early"
+		file = "gfx\models\Attachments\muslimgfx_early_shield_pikeman.mesh"
+		scale = 1.0f
+	}
+}

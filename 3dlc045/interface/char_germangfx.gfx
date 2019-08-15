@@ -1,0 +1,19 @@
+objectTypes = {
+	pdxmesh = {
+		name = "germangfx_LIGHT_INFANTRY_shield"
+		file = "gfx\models\Attachments\westerngfx_early_heavy_shield.mesh"
+		scale = 0.95f
+	}
+
+	pdxmesh = {
+		name = "germangfx_HEAVY_INFANTRY_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_german.mesh"
+		scale = 1.01f
+	}
+
+	pdxmesh = {
+		name = "germangfx_KNIGHTS_helmet"
+		file = "gfx\models\Attachments\westerngfx_early_helmet_german.mesh"
+		scale = 1.0f
+	}
+}

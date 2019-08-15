@@ -109,23 +109,8 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "muslimgfx_HEAVY_INFANTRY"
-		file = "gfx\models\muslimgfx_early_heavy_infantry.mesh"
-		animation = { id = "attack"		type = "char_infantry_attack_animation" }
-		animation = { id = "idle"		type = "char_infantry_idle_animation" }
-		animation = { id = "move"		type = "char_infantry_moving_animation" }
-		scale = 1.0f
-	}
-
-	pdxmesh = {
 		name = "muslimgfx_HEAVY_INFANTRY_weapon"
 		file = "gfx\models\Attachments\muslimgfx_early_scimitar.mesh"
-		scale = 1.0f
-	}
-
-	pdxmesh = {
-		name = "muslimgfx_HEAVY_INFANTRY_helmet"
-		file = "gfx\models\Attachments\muslimgfx_early_helmet_heavy_infantry.mesh"
 		scale = 1.0f
 	}
 
@@ -172,23 +157,8 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "muslimgfx_KNIGHTS_rider"
-		file = "gfx\models\muslimgfx_early_heavy_cavalry.mesh"
-		animation = { id = "attack"		type = "char_heavy_cavalry_attack_animation" }
-		animation = { id = "idle"		type = "char_heavy_cavalry_idle_animation" }
-		animation = { id = "move"		type = "char_heavy_cavalry_moving_animation" }
-		scale = 1.0f
-	}
-
-	pdxmesh = {
 		name = "muslimgfx_KNIGHTS_weapon"
 		file = "gfx\models\Attachments\muslimgfx_early_scimitar.mesh"
-		scale = 1.0f
-	}
-
-	pdxmesh = {
-		name = "muslimgfx_KNIGHTS_helmet"
-		file = "gfx\models\Attachments\muslimgfx_early_helmet_heavy_cavalry.mesh"
 		scale = 1.0f
 	}
 
@@ -278,7 +248,7 @@ objectTypes = {
 		move   = "gfx\models\African_Camel_Moving.xsm"
 		attack = "gfx\models\African_Camel_Attack.xsm"
 
-		scale = 0.9f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -289,7 +259,7 @@ objectTypes = {
 		move   = "gfx\models\African_Camel_Moving.xsm"
 		attack = "gfx\models\African_Camel_Attack.xsm"
 
-		scale = 0.9f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -300,13 +270,13 @@ objectTypes = {
 		move   = "gfx\models\arab_camel_rider_moving.xsm"
 		attack = "gfx\models\arab_camel_rider_attack.xsm"
 
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "muslimgfx_camel_cavalry_weapon"
 		actorfile = "gfx\models\Attachments\Spear_02.xac"
-		scale = 1.0f
+		scale = 0.9f
 	}
 
 	EMFXActorType = {
@@ -328,7 +298,7 @@ objectTypes = {
 		move   = "gfx\models\indian_archer_idle.xsm"
 		attack = "gfx\models\indian_archer_attack.xsm"
 
-		scale = 1.0f
+		scale = 0.9f
 	}
 
 	EMFXActorType = {

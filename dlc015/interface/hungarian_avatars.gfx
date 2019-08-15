@@ -1,0 +1,7 @@
+objectTypes = {
+	EMFXActorType = {
+		name = "magyargfx_LIGHT_INFANTRY_weapon"
+		actorfile = "gfx\models\Attachments\Sword_03.xac"
+		scale = 1.0f
+	}
+}

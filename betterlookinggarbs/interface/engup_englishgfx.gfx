@@ -1,0 +1,37 @@
+objectTypes = {
+	EMFXActorType = {
+		name = "englishgfx_KNIGHTS_shield_late"
+		actorfile = "gfx\models\Attachments\Shield_Tear_01_Checker.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "normangfx_KNIGHTS_shield_late"
+		actorfile = "gfx\models\Attachments\Shield_Tear_02_Norman.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "germangfx_KNIGHTS_shield_late"
+		actorfile = "gfx\models\Attachments\Shield_Kite_01_Chevron.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "englishgfx_KNIGHTS_helmet_late"
+		actorfile = "gfx\models\Attachments\Helmet_07.xac"
+		scale = 1.03f
+	}
+
+	EMFXActorType = {
+		name = "normangfx_KNIGHTS_helmet_late"
+		actorfile = "gfx\models\Attachments\Helmet_15.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "germangfx_KNIGHTS_helmet_late"
+		actorfile = "gfx\models\Attachments\Helmet_13.xac"
+		scale = 1.08f
+	}
+}

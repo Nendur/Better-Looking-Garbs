@@ -1,0 +1,259 @@
+objectTypes = {
+	################################################
+	#### HEAVY_INFANTRY ############################
+	################################################
+	pdxmesh = {
+		name = "westerngfx_HEAVY_INFANTRY"
+		file = "gfx\models\gerup_pikemen.mesh"
+
+		animation = { id = "attack"		type = "engup_infantry_attack_animation" }
+		animation = { id = "idle"		type = "engup_infantry_idle_animation" }
+		animation = { id = "move"		type = "engup_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_HEAVY_INFANTRY_late"
+		file = "gfx\models\engup_heavy_infantry.mesh"
+
+		animation = { id = "attack"		type = "engup_infantry_attack_animation" }
+		animation = { id = "idle"		type = "engup_infantry_idle_animation" }
+		animation = { id = "move"		type = "engup_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_HEAVY_INFANTRY_weapon"
+		file = "gfx\models\Attachments\engup_sword.mesh"
+		scale = 1.1f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_HEAVY_INFANTRY_shield"
+		file = "gfx\models\Attachments\gerup_lightshield.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_HEAVY_INFANTRY_shield_late"
+		file = "gfx\models\Attachments\engup_heavy_infantry_shield.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_INFANTRY ############################
+	################################################
+	pdxmesh = {
+		name = "westerngfx_LIGHT_INFANTRY"
+		file = "gfx\models\gerup_light_infantry.mesh"
+
+		animation = { id = "attack"		type = "engup_infantry_attack_animation" }
+		animation = { id = "idle"		type = "engup_infantry_idle_animation" }
+		animation = { id = "move"		type = "engup_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_LIGHT_INFANTRY_weapon"
+		file = "gfx\models\Attachments\engup_sword.mesh"
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_LIGHT_INFANTRY_shield"
+		file = "gfx\models\Attachments\engup_lightshield.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### PIKEMEN ###################################
+	################################################
+	EMFXActorType = {
+		name = "westerngfx_PIKEMEN"
+		actorfile = "gfx\models\Western_Pikeman.xac"
+
+		idle   = "gfx\models\pikeman_idle.xsm"
+		move   = "gfx\models\Pikeman_Moving.xsm"
+		attack = "gfx\models\Pikeman_Attack.xsm"
+
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_PIKEMEN_weapon"
+		actorfile = "gfx\models\Attachments\Spear_01.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_PIKEMEN_helmet"
+		actorfile = "gfx\models\Attachments\Helmet_16.xac"
+		scale = 1.04f
+	}
+
+	################################################
+	#### ARCHERS ###################################
+	################################################
+	pdxmesh = {
+		name = "westerngfx_ARCHERS"
+		file = "gfx\models\engup_archer.mesh"
+
+		animation = { id = "attack"		type = "engup_archer_attack_animation" }
+		animation = { id = "idle"		type = "engup_archer_idle_animation" }
+		animation = { id = "move"		type = "engup_archer_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_ARCHERS_weapon"
+		file = "gfx\models\Attachments\engup_arrow.mesh"
+
+		animation = { id = "attack"		type = "engup_arrow_attack_animation" }
+		animation = { id = "idle"		type = "engup_arrow_idle_animation" }
+		animation = { id = "move"		type = "engup_arrow_moving_animation" }
+
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_ARCHERS_shield"
+		file = "gfx\models\Attachments\engup_bow.mesh"
+
+		animation = { id = "attack"		type = "engup_bow_attack_animation" }
+		animation = { id = "idle"		type = "engup_bow_idle_animation" }
+		animation = { id = "move"		type = "engup_bow_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	################################################
+	#### KNIGHTS ###################################
+	################################################
+	pdxmesh = {
+		name = "westerngfx_KNIGHTS"
+		file = "gfx\models\engup_heavy_horse.mesh"
+
+		animation = { id = "attack"		type = "engup_horse_attack_animation" }
+		animation = { id = "idle"		type = "engup_horse_idle_animation" }
+		animation = { id = "move"		type = "engup_horse_moving_animation" }
+
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "westerngfx_KNIGHTS_rider"
+		file = "gfx\models\engup_light_cavalry.mesh"
+
+		animation = { id = "attack"		type = "engup_heavy_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "engup_heavy_cavalry_idle_animation" }
+		animation = { id = "move"		type = "engup_heavy_cavalry_moving_animation" }
+
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "westerngfx_KNIGHTS_rider_late"
+		file = "gfx\models\engup_heavy_cavalry.mesh"
+
+		animation = { id = "attack"		type = "engup_heavy_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "engup_heavy_cavalry_idle_animation" }
+		animation = { id = "move"		type = "engup_heavy_cavalry_moving_animation" }
+
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "westerngfx_KNIGHTS_weapon"
+		file = "gfx\models\Attachments\engup_sword.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "westerngfx_KNIGHTS_shield"
+		file = "gfx\models\Attachments\engup_heavyshield.mesh"
+		scale = 0.9
+	}
+
+	################################################
+	#### LIGHT_CAVALRY #############################
+	################################################
+	pdxmesh = {
+		name = "westerngfx_LIGHT_CAVALRY"
+		file = "gfx\models\engup_light_horse.mesh"
+
+		animation = { id = "attack"		type = "engup_horse_attack_animation" }
+		animation = { id = "idle"		type = "engup_horse_idle_animation" }
+		animation = { id = "move"		type = "engup_horse_moving_animation" }
+
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_LIGHT_CAVALRY_rider"
+		file = "gfx\models\engup_light_cavalry.mesh"
+
+		animation = { id = "attack"		type = "engup_light_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "engup_light_cavalry_idle_animation" }
+		animation = { id = "move"		type = "engup_light_cavalry_moving_animation" }
+
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_LIGHT_CAVALRY_weapon"
+		file = "gfx\models\Attachments\engup_spear.mesh"
+		scale = 0.9f
+	}
+
+	################################################
+	#### horse_archers #############################
+	################################################
+	pdxmesh = {
+		name = "westerngfx_horse_archers"
+		file = "gfx\models\engup_light_horse.mesh"
+
+		animation = { id = "attack"		type = "engup_horse_attack_animation" }
+		animation = { id = "idle"		type = "engup_horse_idle_animation" }
+		animation = { id = "move"		type = "engup_horse_moving_animation" }
+
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_horse_archers_rider"
+		file = "gfx\models\engup_archer.mesh"
+
+		animation = { id = "attack"		type = "engup_mounted_archer_attack_animation" }
+		animation = { id = "idle"		type = "engup_mounted_archer_idle_animation" }
+		animation = { id = "move"		type = "engup_mounted_archer_moving_animation" }
+
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_horse_archers_weapon"
+		file = "gfx\models\Attachments\engup_arrow.mesh"
+
+		animation = { id = "attack"		type = "engup_arrow_attack_animation" }
+		animation = { id = "idle"		type = "engup_arrow_idle_animation" }
+		animation = { id = "move"		type = "engup_arrow_moving_animation" }
+
+		scale = 0.75f
+	}
+
+	pdxmesh = {
+		name = "westerngfx_horse_archers_shield"
+		file = "gfx\models\Attachments\engup_bow.mesh"
+
+		animation = { id = "attack"		type = "engup_bow_attack_animation" }
+		animation = { id = "idle"		type = "engup_bow_idle_animation" }
+		animation = { id = "move"		type = "engup_bow_moving_animation" }
+
+		scale = 0.9f
+	}
+}
