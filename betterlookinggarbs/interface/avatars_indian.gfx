@@ -176,13 +176,13 @@ objectTypes = {
 		move   = "gfx\models\arab_camel_rider_moving.xsm"
 		attack = "gfx\models\arab_camel_rider_attack.xsm"
 
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "indiangfx_camel_cavalry_weapon"
 		actorfile = "gfx\models\Attachments\Spear_02.xac"
-		scale = 1.0f
+		scale = 0.9f
 	}
 
 	EMFXActorType = {

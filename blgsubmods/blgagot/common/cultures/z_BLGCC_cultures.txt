@@ -29,7 +29,7 @@ andal = {
 		unit_graphical_cultures = { reachmangfx southerngfx }
 	}
 	northman_andal = {
-		graphical_cultures = { valemangfx }
+		graphical_cultures = { valemangfx normangfx }
 	}
 }
 
@@ -168,10 +168,24 @@ dothraki_group = {
 
 hyrkoon_group = {
 	graphical_cultures = { bodpagfx turkishgfx muslimgfx }
+
+	hyrkooni = {
+		unit_graphical_cultures = { turkishgfx muslimgfx }
+	}
+	kayakayanayan = {
+		unit_graphical_cultures = { turkishgfx muslimgfx }
+	}
+	samyrianan = {
+		unit_graphical_cultures = { turkishgfx muslimgfx }
+	}
+	bayasabhadi = {
+		unit_graphical_cultures = { turkishgfx muslimgfx }
+	}
 }
 
 sarnor_group = {
 	graphical_cultures = { indiangfx muslimgfx }
+
 	sarnorian = {
 		graphical_cultures = { sarnorigfx ibbenesegfx }
 	}
@@ -185,19 +199,19 @@ moraqi_group = {
 
 	farosi = {
 		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
-		unit_graphical_cultures = { mongolgfx muslimgfx }
+		unit_graphical_cultures = { bodpagfx mongolgfx muslimgfx }
 	}
 	moraqi = {
 		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
-		unit_graphical_cultures = { mongolgfx muslimgfx }
+		unit_graphical_cultures = { bodpagfx mongolgfx muslimgfx }
 	}
 	zabhadi = {
 		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
-		unit_graphical_cultures = { mongolgfx muslimgfx }
+		unit_graphical_cultures = { bodpagfx mongolgfx muslimgfx }
 	}
 	vahari = {
 		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
-		unit_graphical_cultures = { mongolgfx muslimgfx }
+		unit_graphical_cultures = { bodpagfx mongolgfx muslimgfx }
 	}
 }
 
@@ -216,7 +230,7 @@ jade_islands_group = {
 	graphical_cultures = { indiangfx muslimgfx }
 
 	lengi = {
-		graphical_cultures = { naathigfx }
+		graphical_cultures = { naathigfx southindiangfx }
 	}
 }
 
@@ -225,9 +239,11 @@ asshai_group = {
 
 	asshai = {
 		graphical_cultures = { shadowlandergfx }
+		unit_graphical_cultures = { cumangfx turkishgfx arabicgfx muslimgfx }
 	}
 	shadowlander = {
 		graphical_cultures = { shadowlandergfx }
+		unit_graphical_cultures = { cumangfx turkishgfx arabicgfx muslimgfx }
 	}
 }
 

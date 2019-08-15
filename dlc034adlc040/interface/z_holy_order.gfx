@@ -1,5 +1,36 @@
 # Fix Muslim Holy Orders
 objectTypes = {
+	EMFXActorType = {
+		name = "bektashigfx_LIGHT_CAVALRY"
+		actorfile = "gfx\models\turkish_light_cavalry_horse.xac"
+		idle   = "gfx\models\turkish_horse_2_idle.xsm"
+		move   = "gfx\models\turkish_horse_2_moving.xsm"
+		attack = "gfx\models\turkish_horse_2_attack.xsm"
+		scale = 0.9f
+	}
+	EMFXActorType = {
+		name = "bektashigfx_LIGHT_CAVALRY_rider"
+		actorfile = "gfx\models\holy_order_dervish.xac"
+		idle   = "gfx\models\turkish_heavy_cavalry_2_idle.xsm"
+		move   = "gfx\models\turkish_heavy_cavalry_2_moving.xsm"
+		attack = "gfx\models\turkish_heavy_cavalry_2_attack.xsm"
+		scale = 1.0f
+	}
+	EMFXActorType = {
+		name = "bektashigfx_LIGHT_CAVALRY_weapon"
+		actorfile = "gfx\models\Attachments\holy_order_dervish_sword.xac"
+		scale = 1.0f
+	}
+	EMFXActorType = {
+		name = "bektashigfx_LIGHT_CAVALRY_helmet"
+		actorfile = "gfx\models\no_object.xac"
+		scale = 0.000001f
+	}
+	EMFXActorType = {
+		name = "bektashigfx_LIGHT_CAVALRY_shield"
+		actorfile = "gfx\models\Attachments\turkish_heavy_cavalry_shield.xac"
+		scale = 1.0f
+	}
 
 	EMFXActorType = {
 		name = "bektashigfx_horse_archers"
@@ -11,7 +42,7 @@ objectTypes = {
 	}
 	EMFXActorType = {
 		name = "bektashigfx_horse_archers_rider"
-		actorfile = "gfx\models\holy_order_immortals.xac"
+		actorfile = "gfx\models\holy_order_dervish.xac"
 		idle   = "gfx\models\turkish_heavy_cavalry_2_idle.xsm"
 		move   = "gfx\models\turkish_heavy_cavalry_2_moving.xsm"
 		attack = "gfx\models\turkish_heavy_cavalry_2_attack.xsm"
@@ -39,12 +70,12 @@ objectTypes = {
 		idle   = "gfx\models\arab_camel_rider_idle.xsm"
 		move   = "gfx\models\arab_camel_rider_moving.xsm"
 		attack = "gfx\models\arab_camel_rider_attack.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 	EMFXActorType = {
 		name = "bektashigfx_camel_cavalry_weapon"
 		actorfile = "gfx\models\Attachments\turkish_pike.xac"
-		scale = 1.0f
+		scale = 0.9f
 	}
 	EMFXActorType = {
 		name = "bektashigfx_camel_cavalry_helmet"
@@ -111,6 +142,20 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
+		name = "immortalsgfx_LIGHT_CAVALRY_rider"
+		actorfile = "gfx\models\holy_order_immortals.xac"
+		idle   = "gfx\models\Mounted_Archer_Idle.xsm"
+		move   = "gfx\models\Mounted_Archer_Moving.xsm"
+		attack = "gfx\models\Mounted_Archer_Attack.xsm"
+		scale = 1.0f
+	}
+	EMFXActorType = {
+		name = "immortalsgfx_LIGHT_CAVALRY_helmet"
+		actorfile = "gfx\models\no_object.xac"
+		scale = 0.000001f
+	}
+
+	EMFXActorType = {
 		name = "immortalsgfx_horse_archers_rider"
 		actorfile = "gfx\models\holy_order_immortals.xac"
 		idle   = "gfx\models\Mounted_Archer_Idle.xsm"
@@ -122,5 +167,23 @@ objectTypes = {
 		name = "immortalsgfx_horse_archers_helmet"
 		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
+	}
+	
+	EMFXActorType = {
+		name = "cumangfx_LIGHT_INFANTRY_weapon"
+		actorfile = "gfx\models\Attachments\holy_order_dervish_sword.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "turkishgfx_HEAVY_INFANTRY_shield"
+		actorfile = "gfx\models\Attachments\holy_order_dervish_shield.xac"
+		scale = 0.6f
+	}
+
+	EMFXActorType = {
+		name = "turkishgfx_PIKEMAN_shield"
+		actorfile = "gfx\models\Attachments\holy_order_dervish_shield.xac"
+		scale = 1.0f
 	}
 }

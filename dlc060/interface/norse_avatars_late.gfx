@@ -25,7 +25,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "norsegfx_HEAVY_INFANTRY_shield_late"
-		file = "gfx\models\Attachments\gerup_early_heavy_shield.mesh"
+		file = "gfx\models\Attachments\itup_heavy_shield.mesh"
 		scale = 1.0f
 	}
 
@@ -48,7 +48,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "norsegfx_PIKEMEN_shield_late"
-		file = "gfx\models\Attachments\gerup_early_heavy_shield.mesh"
+		file = "gfx\models\Attachments\itup_pikeman_shield.mesh"
 		scale = 1.0f
 	}
 
@@ -61,7 +61,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "norsegfx_KNIGHTS_late"
-		file = "gfx\models\gerup_early_heavy_horse.mesh"
+		file = "gfx\models\gerup_early_light_horse.mesh"
 
 		animation = { id = "attack"		type = "gerup_early_horse_attack_animation" }
 		animation = { id = "idle"		type = "gerup_early_horse_idle_animation" }
@@ -96,7 +96,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "norsegfx_KNIGHTS_shield_late"
-		file = "gfx\models\Attachments\gerup_early_heavycav_shield.mesh"
+		file = "gfx\models\Attachments\itup_heavy_shield.mesh"
 		scale = 0.9
 	}
 

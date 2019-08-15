@@ -2,7 +2,7 @@ horse_group = {
 	graphical_cultures = { mongolgfx }
 
 	horse = {
-		graphical_cultures = { horsegfx cumangfx }
+		graphical_cultures = { horsegfx steppegfx }
 	}
 }
 

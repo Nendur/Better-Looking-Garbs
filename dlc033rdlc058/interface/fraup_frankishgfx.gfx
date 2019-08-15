@@ -31,7 +31,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "frankishgfx_HEAVY_INFANTRY_helmet_early"
-		file = "gfx\models\Attachments\fraup_early_dummy.mesh"
+		file = "gfx\models\dummyhelmet.mesh"
 		scale = 1.0f
 	}
 
@@ -58,7 +58,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "frankishgfx_LIGHT_INFANTRY_helmet_early"
-		file = "gfx\models\Attachments\fraup_early_dummy.mesh"
+		file = "gfx\models\dummyhelmet.mesh"
 		scale = 1.0f
 	}
 
@@ -97,7 +97,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "frankishgfx_PIKEMEN_helmet_early"
-		file = "gfx\models\Attachments\fraup_early_dummy.mesh"
+		file = "gfx\models\dummyhelmet.mesh"
 		scale = 1.0f
 	}
 
@@ -139,7 +139,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "frankishgfx_ARCHERS_helmet_early"
-		file = "gfx\models\Attachments\fraup_early_dummy.mesh"
+		file = "gfx\models\dummyhelmet.mesh"
 		scale = 1.0f
 	}
 
@@ -167,7 +167,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "frankishgfx_KNIGHTS_helmet"
-		file = "gfx\models\Attachments\fraup_early_dummy.mesh"
+		file = "gfx\models\dummyhelmet.mesh"
 		scale = 0.9
 	}
 
@@ -239,7 +239,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "frankishgfx_LIGHT_CAVALRY_helmet"
-		file = "gfx\models\Attachments\fraup_early_dummy.mesh"
+		file = "gfx\models\dummyhelmet.mesh"
 		scale = 0.9f
 	}
 
@@ -292,7 +292,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "frankishgfx_horse_archers_helmet"
-		file = "gfx\models\Attachments\fraup_early_dummy.mesh"
+		file = "gfx\models\dummyhelmet.mesh"
 
 		scale = 0.9f
 	}

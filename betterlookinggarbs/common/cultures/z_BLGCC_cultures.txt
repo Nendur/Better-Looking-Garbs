@@ -75,6 +75,9 @@ byzantine = {
 	coptic = {
 		graphical_cultures = { egyptiangfx muslimgfx }
 	}
+	crimean_gothic = {
+		unit_graphical_cultures = { germangfx westerngfx }
+	}
 }
 
 celtic = {
@@ -121,7 +124,7 @@ altaic = {
 		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}
 	bolghar = { # Oghur Turkish
-		graphical_cultures = { steppegfx cumangfx }
+		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}
 	avar = { # Oghur Turkish
 		graphical_cultures = { avargfx turkishgfx }
@@ -133,7 +136,7 @@ altaic = {
 		graphical_cultures = { centralasiangfx cumangfx turkishgfx }
 	}
 	uyghur = {
-		graphical_cultures = { centralasiangfx cumangfx }
+		graphical_cultures = { centralasiangfx }
 	}
 	khitan = {
 		graphical_cultures = { khitangfx chinesegfx }

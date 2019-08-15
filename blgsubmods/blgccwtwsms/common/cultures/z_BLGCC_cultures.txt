@@ -380,10 +380,10 @@ altaic = {
 		graphical_cultures = { sogdiangfx turkishgfx }
 	}
 	utigur = {
-		graphical_cultures = { steppegfx cumangfx }
+		graphical_cultures = { steppegfx }
 	}
 	kutrigur = {
-		graphical_cultures = { steppegfx cumangfx }
+		graphical_cultures = { steppegfx }
 	}
 	barsil = {
 		graphical_cultures = { steppegfx cumangfx turkishgfx }
@@ -395,7 +395,7 @@ altaic = {
 		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}
 	bolghar = {
-		graphical_cultures = { steppegfx cumangfx }
+		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}
 	white_croatian = {
 		graphical_cultures = { magyargfx turkishgfx }
@@ -404,7 +404,7 @@ altaic = {
 		graphical_cultures = { avargfx turkishgfx }
 	}
 	tiele = {
-		graphical_cultures = { centralasiangfx cumangfx }
+		graphical_cultures = { centralasiangfx cumangfx turkishgfx }
 	}
 	karluk = {
 		graphical_cultures = { centralasiangfx cumangfx turkishgfx }
@@ -413,19 +413,19 @@ altaic = {
 		graphical_cultures = { centralasiangfx cumangfx turkishgfx }
 	}
 	uyghur = {
-		graphical_cultures = { centralasiangfx cumangfx }
+		graphical_cultures = { centralasiangfx }
 	}
 	hunnic = {
-		graphical_cultures = { cumangfx }
+		graphical_cultures = { cumangfx turkishgfx }
 	}
 	hunno_bulgar = { # Hunnic + Bolghar
-		graphical_cultures = { cumangfx }
+		graphical_cultures = { cumangfx turkishgfx }
 	}
 	khitan = {
 		graphical_cultures = { khitangfx chinesegfx }
 	}
 	chuyue = {
-		graphical_cultures = { centralasiangfx cumangfx }
+		graphical_cultures = { centralasiangfx }
 	}
 }
 

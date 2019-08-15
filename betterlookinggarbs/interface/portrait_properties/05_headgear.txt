@@ -121,6 +121,7 @@
 			is_republic = yes
 			NAND = {
 				is_merchant_republic = yes
+				in_command = no
 				OR = {
 					likes_latino_iberians = yes
 					likes_celts = yes
@@ -241,6 +242,7 @@
 			is_republic = yes
 			NAND = {
 				is_merchant_republic = yes
+				in_command = no
 				OR = {
 					likes_latino_iberians = yes
 					likes_celts = yes
@@ -366,6 +368,7 @@
 			is_republic = yes
 			NAND = {
 				is_merchant_republic = yes
+				in_command = no
 				OR = {
 					likes_latino_iberians = yes
 					likes_celts = yes
@@ -508,6 +511,7 @@
 			is_republic = yes
 			NAND = {
 				is_merchant_republic = yes
+				in_command = no
 				OR = {
 					likes_latino_iberians = yes
 					likes_celts = yes
@@ -1474,6 +1478,7 @@
 				}
 				AND = {
 					is_merchant_republic = yes
+					in_command = no
 					OR = {
 						likes_latino_iberians = yes
 						likes_celts = yes

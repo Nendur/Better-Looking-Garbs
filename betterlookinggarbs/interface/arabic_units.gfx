@@ -45,7 +45,7 @@ objectTypes = {
 		move   = "gfx\models\arab_camel_moving.xsm"
 		attack = "gfx\models\arab_camel_attack.xsm"
 		
-		scale = 0.9f
+		scale = 0.8f
 	}
 	
 	EMFXActorType = {
@@ -56,18 +56,12 @@ objectTypes = {
 		move   = "gfx\models\arab_camel_rider_moving.xsm"
 		attack = "gfx\models\arab_camel_rider_attack.xsm"
 		
-		scale = 1.0f
+		scale = 0.8f
 	}
 	
 	EMFXActorType = {
 		name = "arabicgfx_camel_cavalry_weapon"
 		actorfile = "gfx\models\Attachments\Spear_02.xac"
-		scale = 1.0f
+		scale = 0.9f
 	}
-	
-	#EMFXActorType = {
-	#	name = "arabicgfx_camel_cavalry_helmet"
-	#	actorfile = "gfx\models\Attachments\Helmet_04_Arab.xac"
-	#	scale = 1.0f
-	#}
 }

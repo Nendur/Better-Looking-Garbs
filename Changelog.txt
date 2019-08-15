@@ -8,6 +8,8 @@ Changelog:
   Fixed Ugric fallback portraits.
   More ironman portrait versions.
   More fallback replacements.
+  Unit pack tweaks, incl. early Muslims, Cuman, Bodpa and South-Indian sets.
+  Smaller scaling on Camel units.
   Added Celtiberian portraits for mod use.
   Replaced Fylkir crown with the Norse winged religious head crown.
 

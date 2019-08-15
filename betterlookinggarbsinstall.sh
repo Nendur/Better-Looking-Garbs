@@ -179,6 +179,7 @@ fi
 echo Crusader Kings II installation found in $CK2
 
 DLC="$CK2/dlc/dlc"
+LIST=""
 #First pass
 if [[ -f "${DLC}014.dlc" ]] || [[ -f "${DLC}047.dlc" ]]; then
 	LIST="$LIST 1dlc014odlc047/*"
@@ -190,10 +191,6 @@ fi
 if [ -f "${DLC}020.dlc" ]; then
 	LIST="$LIST 1dlc020/*"
 	norse=1
-fi
-if [ -f "${DLC}045.dlc" ]; then
-	charlemagne=1
-	LIST="$LIST 1dlc045/*"
 fi
 if [ -f "${DLC}063.dlc" ]; then
 	conclave=1
@@ -216,11 +213,16 @@ if [ -f "${DLC}070.dlc" ]; then
 	monks=1
 	LIST="$LIST 2dlc070/*"
 fi
+#Third pass
+if [ -f "${DLC}045.dlc" ]; then
+	charlemagne=1
+	LIST="$LIST 3dlc045/*"
+fi
 
 #Main pass
 if [ -f "${DLC}002.dlc" ]; then
 	echo Mongol Face Pack present.
-	LIST="dlc002/*"
+	LIST="$LIST dlc002/*"
 	mongol=1
 	if [ -f "${DLC}016.dlc" ]; then
 		LIST="$LIST dlc002adlc016/*"
@@ -249,6 +251,7 @@ else echo Mediterranean Portraits absent.; fi
 
 if [ -f "${DLC}015.dlc" ]; then
 	LIST="$LIST dlc015/*"
+	[ $charlemagne -eq 1 ] && LIST="$LIST dlc015adlc045/*"
 fi
 if [[ $russian -eq 1 ]]; then
 	echo Russian Portraits present.
@@ -340,7 +343,6 @@ fi
 
 if [[ $charlemagne -eq 1 ]]; then
 	echo Charlemagne present.
-	[ -f "${DLC}015.dlc" ] && LIST="$LIST dlc045adlc015/*"
 	if [[ -z $holy ]]; then
 		LIST="$LIST dlc033rdlc045/*"
 	fi
@@ -375,6 +377,7 @@ fi
 
 if [ -f "${DLC}057.dlc" ]; then
 	echo Cuman Portraits present.
+	horselords=1
 	LIST="$LIST dlc057/*"
 	if [[ ! -f "${DLC}041.dlc" ]]; then
 		LIST="$LIST dlc041rdlc057/*"
@@ -417,7 +420,7 @@ if [[ $reapers -eq 1 ]]; then
 	LIST="$LIST dlc067/*"
 else
 	echo "The Reaper's Due Content Pack absent."
-		if [[ $westafrican -eq 1 ]]; then
+	if [[ $westafrican -eq 1 ]]; then
 		LIST="$LIST dlc067rdlc013/*"
 	fi
 fi
@@ -444,6 +447,9 @@ fi
 if [ -f "${DLC}073.dlc" ]; then
 	echo "Jade Dragon present."
 	LIST="$LIST dlc073/*"
+	if [[ $horselords -eq 1 ]]; then
+		LIST="$LIST dlc073adlc057/*"
+	fi
 else
 	echo "Jade Dragon absent."
 fi

@@ -12,8 +12,19 @@ objectTypes = {
 	#### HEAVY_INFANTRY ############################
 	################################################
 	pdxmesh = {
-		name = "italiangfx_HEAVY_INFANTRY"
+		name = "italiangfx_HEAVY_INFANTRY_late"
 		file = "gfx\models\itup_heavy_infantry.mesh"
+
+		animation = { id = "attack"		type = "itup_infantry_attack_animation" }
+		animation = { id = "idle"		type = "itup_infantry_idle_animation" }
+		animation = { id = "move"		type = "itup_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "italiangfx_HEAVY_INFANTRY"
+		file = "gfx\models\itup_pikeman.mesh"
 
 		animation = { id = "attack"		type = "itup_infantry_attack_animation" }
 		animation = { id = "idle"		type = "itup_infantry_idle_animation" }
@@ -25,14 +36,12 @@ objectTypes = {
 	pdxmesh = {
 		name = "italiangfx_HEAVY_INFANTRY_weapon"
 		file = "gfx\models\Attachments\itup_sword.mesh"
-
 		scale = 1.0f
 	}
 
 	pdxmesh = {
 		name = "italiangfx_HEAVY_INFANTRY_weapon_early"
 		file = "gfx\models\Attachments\fraup_early_sword.mesh"
-
 		scale = 1.0f
 	}
 
@@ -49,20 +58,8 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "italiangfx_HEAVY_INFANTRY_early"
-		file = "gfx\models\fraup_early_heavy_infantry.mesh"
-
-		animation = { id = "attack"		type = "fraup_infantry_attack_animation" }
-		animation = { id = "idle"		type = "fraup_infantry_idle_animation" }
-		animation = { id = "move"		type = "fraup_infantry_moving_animation" }
-
-		scale = 1.0f
-	}
-
-	pdxmesh = {
 		name = "italiangfx_HEAVY_INFANTRY_weapon_early"
 		file = "gfx\models\Attachments\fraup_early_sword.mesh"
-
 		scale = 1.0f
 	}
 
@@ -103,6 +100,17 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "frankishgfx_HEAVY_INFANTRY"
+		file = "gfx\models\itup_pikeman.mesh"
+
+		animation = { id = "attack"		type = "itup_infantry_attack_animation" }
+		animation = { id = "idle"		type = "itup_infantry_idle_animation" }
+		animation = { id = "move"		type = "itup_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "frankishgfx_HEAVY_INFANTRY_late"
 		file = "gfx\models\itup_heavy_infantry.mesh"
 
 		animation = { id = "attack"		type = "itup_infantry_attack_animation" }
@@ -142,7 +150,7 @@ objectTypes = {
 		name = "italiangfx_LIGHT_INFANTRY_weapon"
 		file = "gfx\models\Attachments\itup_sword.mesh"
 
-		scale = 1.0f
+		scale = 0.9f
 	}
 
 	pdxmesh = {
@@ -162,7 +170,7 @@ objectTypes = {
 	################################################
 	pdxmesh = {
 		name = "italiangfx_PIKEMEN"
-		file = "gfx\models\itup_pikeman.mesh"
+		file = "gfx\models\itup_light_cavalry.mesh"
 
 		animation = { id = "attack"		type = "itup_pikeman_attack_animation" }
 		animation = { id = "idle"		type = "itup_pikeman_idle_animation" }
@@ -172,12 +180,12 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "italiangfx_PIKEMEN_early"
-		file = "gfx\models\fraup_early_heavy_infantry.mesh"
+		name = "italiangfx_PIKEMEN_late"
+		file = "gfx\models\itup_pikeman.mesh"
 
-		animation = { id = "attack"		type = "fraup_pikeman_attack_animation" }
-		animation = { id = "idle"		type = "fraup_pikeman_idle_animation" }
-		animation = { id = "move"		type = "fraup_pikeman_moving_animation" }
+		animation = { id = "attack"		type = "itup_pikeman_attack_animation" }
+		animation = { id = "idle"		type = "itup_pikeman_idle_animation" }
+		animation = { id = "move"		type = "itup_pikeman_moving_animation" }
 
 		scale = 1.0f
 	}
@@ -287,17 +295,18 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "italiangfx_KNIGHTS_rider"
-		file = "gfx\models\itup_heavy_cavalry.mesh"
+		file = "gfx\models\fraup_early_heavy_cavalry.mesh"
 
-		animation = { id = "attack"		type = "itup_heavy_cavalry_attack_animation" }
-		animation = { id = "idle"		type = "itup_heavy_cavalry_idle_animation" }
-		animation = { id = "move"		type = "itup_heavy_cavalry_moving_animation" }
+		animation = { id = "attack"		type = "fraup_heavy_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "fraup_heavy_cavalry_idle_animation" }
+		animation = { id = "move"		type = "fraup_heavy_cavalry_moving_animation" }
 
 		scale = 0.9
 	}
+
 	pdxmesh = {
 		name = "italiangfx_KNIGHTS_rider_late"
-		file = "gfx\models\itup_heavy_cavalry.mesh"
+		file = "gfx\models\itup_heavy_infantry.mesh"
 
 		animation = { id = "attack"		type = "itup_heavy_cavalry_attack_animation" }
 		animation = { id = "idle"		type = "itup_heavy_cavalry_idle_animation" }

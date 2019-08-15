@@ -30,6 +30,28 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
+		name = "andalusiangfx_horse_archers_rider"
+		actorfile = "gfx\models\Muslim_Mounted_Archer.xac"
+
+		idle   = "gfx\models\Mounted_Archer_Idle.xsm"
+		move   = "gfx\models\Mounted_Archer_Moving.xsm"
+		attack = "gfx\models\Mounted_Archer_Attack.xsm"
+
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "berbergfx_horse_archers_rider"
+		actorfile = "gfx\models\Muslim_Light_Cavalry.xac"
+
+		idle   = "gfx\models\Mounted_Archer_Idle.xsm"
+		move   = "gfx\models\Mounted_Archer_Moving.xsm"
+		attack = "gfx\models\Mounted_Archer_Attack.xsm"
+
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
 		name = "muslimgfx_horse_archers_weapon"
 		actorfile = "gfx\models\Attachments\Arrow.xac"
 
@@ -65,7 +87,7 @@ objectTypes = {
 		move   = "gfx\models\African_Camel_Moving.xsm"
 		attack = "gfx\models\African_Camel_Attack.xsm"
 
-		scale = 0.9f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -76,7 +98,7 @@ objectTypes = {
 		move   = "gfx\models\African_Camel_Moving.xsm"
 		attack = "gfx\models\African_Camel_Attack.xsm"
 
-		scale = 0.9f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -87,7 +109,7 @@ objectTypes = {
 		move   = "gfx\models\arab_camel_rider_moving.xsm"
 		attack = "gfx\models\arab_camel_rider_attack.xsm"
 
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -98,7 +120,7 @@ objectTypes = {
 		move   = "gfx\models\arab_camel_rider_moving.xsm"
 		attack = "gfx\models\arab_camel_rider_attack.xsm"
 
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -110,7 +132,7 @@ objectTypes = {
 	EMFXActorType = {
 		name = "muslimgfx_camel_cavalry_weapon"
 		actorfile = "gfx\models\Attachments\Spear_02.xac"
-		scale = 1.0f
+		scale = 0.9f
 	}
 
 	EMFXActorType = {
@@ -131,7 +153,7 @@ objectTypes = {
 		idle   = "gfx\models\indian_archer_idle.xsm"
 		move   = "gfx\models\indian_archer_idle.xsm"
 		attack = "gfx\models\indian_archer_attack.xsm"
-		scale = 1.0f
+		scale = 0.9f
 	}
 
 	EMFXActorType = {
@@ -158,7 +180,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "muslimgfx_war_elephants_helmet"
-		actorfile = "gfx\models\Attachments\Helmet_03.xac"
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 }

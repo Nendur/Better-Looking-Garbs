@@ -564,6 +564,7 @@
 				}
 				AND = {
 					is_merchant_republic = yes
+					in_command = no
 					OR = {
 						likes_latino_iberians = yes
 						likes_byzantines = yes

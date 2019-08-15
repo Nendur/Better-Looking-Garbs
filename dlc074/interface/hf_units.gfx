@@ -227,11 +227,7 @@ objectTypes = {
 		file = "gfx\models\hf_berber_heavy_infantry_shield.mesh"
 		scale = 0.9
 	}
-	pdxmesh = {
-		name = "berbergfx_KNIGHTS_helmet"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
-	}
+
 	########## LIGHT CAVALRY
 	pdxmesh = {
 		name = "berbergfx_LIGHT_CAVALRY"
@@ -258,11 +254,6 @@ objectTypes = {
 		file = "gfx\models\hf_berber_light_infantry_sword.mesh"
 
 		scale = 0.9
-	}
-	pdxmesh = {
-		name = "berbergfx_LIGHT_CAVALRY_helmet"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
 	}
 
 	########## HEAVY CAVALRY
@@ -297,11 +288,7 @@ objectTypes = {
 		file = "gfx\models\hf_levantine_heavy_infantry_shield.mesh"
 		scale = 0.9
 	}
-	pdxmesh = {
-		name = "levantinegfx_KNIGHTS_helmet"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
-	}
+
 	########## LIGHT CAVALRY
 	pdxmesh = {
 		name = "levantinegfx_LIGHT_CAVALRY"
@@ -328,16 +315,6 @@ objectTypes = {
 		file = "gfx\models\hf_levantine_light_infantry_sword.mesh"
 
 		scale = 0.9
-	}
-	pdxmesh = {
-		name = "levantinegfx_LIGHT_CAVALRY_shield"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
-	}
-	pdxmesh = {
-		name = "levantinegfx_LIGHT_CAVALRY_helmet"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
 	}
 
 	################################################
@@ -366,11 +343,6 @@ objectTypes = {
 
 		scale = 1.0f
 	}
-	pdxmesh = {
-		name = "berbergfx_HEAVY_INFANTRY_helmet"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
-	}
 
 	pdxmesh = {
 		name = "berbergfx_LIGHT_INFANTRY"
@@ -394,11 +366,6 @@ objectTypes = {
 
 		scale = 1.0f
 	}
-	pdxmesh = {
-		name = "berbergfx_LIGHT_INFANTRY_helmet"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
-	}
 
 	pdxmesh = {
 		name = "berbergfx_PIKEMEN"
@@ -420,11 +387,6 @@ objectTypes = {
 		file = "gfx\models\hf_berber_pikeman_shield.mesh"
 		scale = 1.0f
 	}
-	pdxmesh = {
-		name = "berbergfx_PIKEMEN_helmet"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
-	}
 
 	pdxmesh = {
 		name = "berbergfx_ARCHERS"
@@ -440,16 +402,6 @@ objectTypes = {
 		name = "berbergfx_ARCHERS_shield"
 		file = "gfx\models\hf_berber_archer_bow.mesh"
 
-		scale = 1.0f
-	}
-	pdxmesh = {
-		name = "berbergfx_ARCHERS_weapon"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
-	}
-	pdxmesh = {
-		name = "berbergfx_ARCHERS_helmet"
-		file = "gfx\models\hf_null.mesh"
 		scale = 1.0f
 	}
 
@@ -479,11 +431,6 @@ objectTypes = {
 
 		scale = 1.0f
 	}
-	pdxmesh = {
-		name = "levantinegfx_HEAVY_INFANTRY_helmet"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
-	}
 
 	pdxmesh = {
 		name = "levantinegfx_LIGHT_INFANTRY"
@@ -507,11 +454,6 @@ objectTypes = {
 
 		scale = 1.0f
 	}
-	pdxmesh = {
-		name = "levantinegfx_LIGHT_INFANTRY_helmet"
-		file = "gfx\models\hf_null.mesh"
-		scale = 1.0f
-	}
 
 	pdxmesh = {
 		name = "levantinegfx_ARCHERS"
@@ -527,17 +469,6 @@ objectTypes = {
 		name = "levantinegfx_ARCHERS_shield"
 		file = "gfx\models\hf_levantine_archer_bow.mesh"
 
-		scale = 1.0f
-	}
-	pdxmesh = {
-		name = "levantinegfx_ARCHERS_weapon"
-		file = "gfx\models\hf_null.mesh"
-
-		scale = 1.0f
-	}
-	pdxmesh = {
-		name = "levantinegfx_ARCHERS_helmet"
-		file = "gfx\models\hf_null.mesh"
 		scale = 1.0f
 	}
 
@@ -561,9 +492,62 @@ objectTypes = {
 		file = "gfx\models\hf_levantine_pikeman_shield.mesh"
 		scale = 1.0f
 	}
+
 	pdxmesh = {
-		name = "levantinegfx_PIKEMEN_helmet"
-		file = "gfx\models\hf_null.mesh"
+		name = "andalusiangfx_LIGHT_INFANTRY_weapon"
+		file = "gfx\models\hf_levantine_light_infantry_sword.mesh"
 		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_LIGHT_INFANTRY_shield"
+		file = "gfx\models\hf_arabian_light_infantry_shield.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_PIKEMEN_weapon"
+		file = "gfx\models\hf_levantine_pikeman_spear.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_PIKEMEN_shield"
+		file = "gfx\models\hf_levantine_pikeman_shield.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_HEAVY_INFANTRY"
+		file = "gfx\models\hf_arabian_heavy_infantry.mesh"
+
+		animation = { id = "attack"		type = "hf_infantry_attack_animation" }
+		animation = { id = "idle"		type = "hf_infantry_idle_animation" }
+		animation = { id = "move"		type = "hf_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_HEAVY_INFANTRY_shield"
+		file = "gfx\models\hf_levantine_heavy_infantry_shield.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_LIGHT_CAVALRY_rider"
+		file = "gfx\models\hf_levantine_light_infantry.mesh"
+
+		animation = { id = "attack"		type = "hf_heavy_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "hf_heavy_cavalry_idle_animation" }
+		animation = { id = "move"		type = "hf_heavy_cavalry_moving_animation" }
+
+		scale = 0.9
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_KNIGHTS_shield"
+		file = "gfx\models\hf_levantine_heavy_infantry_shield.mesh"
+		scale = 0.9
 	}
 }

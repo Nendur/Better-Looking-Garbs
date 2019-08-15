@@ -233,7 +233,7 @@ objectTypes = {
 		move   = "gfx\models\African_Camel_Moving.xsm"
 		attack = "gfx\models\African_Camel_Attack.xsm"
 
-		scale = 0.9f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -242,13 +242,13 @@ objectTypes = {
 		idle   = "gfx\models\arab_camel_rider_idle.xsm"
 		move   = "gfx\models\arab_camel_rider_moving.xsm"
 		attack = "gfx\models\arab_camel_rider_attack.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "westerngfx_camel_cavalry_weapon"
 		actorfile = "gfx\models\Attachments\Spear_01.xac"
-		scale = 1.0f
+		scale = 0.9f
 	}
 
 	EMFXActorType = {
@@ -274,7 +274,7 @@ objectTypes = {
 		idle   = "gfx\models\saxon_archer_2_idle.xsm"
 		move   = "gfx\models\saxon_archer_2_idle.xsm"
 		attack = "gfx\models\saxon_archer_2_attack.xsm"
-		scale = 1.0f
+		scale = 0.9f
 	}
 
 	EMFXActorType = {

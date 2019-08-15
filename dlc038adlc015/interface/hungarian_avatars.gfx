@@ -36,12 +36,6 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
-		name = "magyargfx_LIGHT_INFANTRY_weapon_early"
-		actorfile = "gfx\models\Attachments\fu_infantry_sword.xac"
-		scale = 1.0f
-	}
-
-	EMFXActorType = {
 		name = "magyargfx_LIGHT_INFANTRY_shield"
 		actorfile = "gfx\models\Attachments\fu_light_inf_shield.xac"
 		scale = 1.3f
@@ -116,7 +110,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "magyargfx_HEAVY_INFANTRY"
-		actorfile = "gfx\models\Russian_Pikeman.xac"
+		actorfile = "gfx\models\Russian_Archer.xac"
 
 		idle   = "gfx\models\fu_infantry_2_idle.xsm"
 		move   = "gfx\models\fu_infantry_2_moving.xsm"
@@ -133,8 +127,8 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "magyargfx_HEAVY_INFANTRY_shield"
-		actorfile = "gfx\models\Attachments\Russian_Pikeman_Shield.xac"
-		scale = 1.0f
+		actorfile = "gfx\models\Attachments\Russian_Heavy_Infantry_Shield.xac"
+		scale = 1.2f
 	}
 
 	EMFXActorType = {

@@ -581,6 +581,7 @@
 				}
 				AND = {
 					is_merchant_republic = yes
+					in_command = no
 					OR = {
 						culture_group = nedic
 						culture_group = yokudan_group

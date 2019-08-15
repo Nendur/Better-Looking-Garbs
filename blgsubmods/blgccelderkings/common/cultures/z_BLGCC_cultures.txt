@@ -85,13 +85,13 @@ chimeris = {
 		unit_graphical_cultures = { levantinegfx muslimgfx }
 	}
 	ashlander = {
-		graphical_cultures = { dunmergfx turkishgfx mongolgfx indiangfx cumangfx muslimgfx }
+		graphical_cultures = { dunmergfx cumangfx turkishgfx mongolgfx indiangfx muslimgfx }
 	}
 	dunmer = {
 		graphical_cultures = { dunmergfx turkishgfx mongolgfx indiangfx cumangfx muslimgfx }
 	}
 	chimer = {
-		graphical_cultures = { chimergfx turkishgfx mongolgfx indiangfx cumangfx muslimgfx }
+		graphical_cultures = { chimergfx cumangfx turkishgfx mongolgfx indiangfx muslimgfx }
 	}
 }
 

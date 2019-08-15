@@ -159,7 +159,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "westerngfx_mammoths_helmet"
-		actorfile = "gfx\models\Attachments\Helmet_01.xac"
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 

@@ -196,16 +196,16 @@ altaic = {
 		graphical_cultures = { pecheneggfx steppegfx turkishgfx }
 	}
 	bulgar = {
-		graphical_cultures = { steppegfx cumangfx }
+		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}
 	uyghur = {
-		graphical_cultures = { centralasiangfx cumangfx }
+		graphical_cultures = { centralasiangfx }
 	}
 	hungarian = {
 		graphical_cultures = { magyargfx easterngfx }
 	}
 	hunnic = {
-		graphical_cultures = { centralasiangfx cumangfx }
+		graphical_cultures = { centralasiangfx steppegfx }
 	}
 	khazar = {
 		graphical_cultures = { steppegfx cumangfx turkishgfx }
