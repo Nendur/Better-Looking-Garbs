@@ -11,9 +11,7 @@
 				}
 			}
 		}
-		hide_layers = {
-			18 = { always = yes }
-		}
+		hide_layers = { 18 = {} } # Adult: Hide child face
 	}
 	1 = {
 		factor = 100
@@ -41,6 +39,14 @@
 	}
 	2 = {
 		factor = 1
+		trigger = {
+			OR = {
+				trait = haughty
+				trait = proud
+				trait = ambitious
+				has_focus = focus_ch_pride
+			}
+		}
 		modifier = {
 			factor = 50
 			OR = {
@@ -71,6 +77,12 @@
 	}
 	3 = {
 		factor = 5
+		trigger = {
+			OR = {
+				father = { always = yes }
+				mother = { always = yes }
+			}
+		}
 		modifier = {
 			factor = 10
 			OR = {
@@ -127,6 +139,14 @@
 	}
 	5 = {
 		factor = 1
+		trigger = {
+			OR = {
+				trait = rowdy
+				trait = brave
+				trait = cruel
+				has_focus = focus_ed_martial
+			}
+		}
 		modifier = {
 			factor = 50
 			OR = {
@@ -158,6 +178,15 @@
 	}
 	6 = {
 		factor = 1
+		trigger = {
+			OR = {
+				trait = willful
+				trait = ambitious
+				trait = stubborn
+				has_focus = focus_ch_etiquette
+				has_focus = focus_ed_diplomacy
+			}
+		}
 		modifier = {
 			factor = 50
 			OR = {
@@ -190,9 +219,8 @@
 		hide_layers = { 33 = {} }
 	}
 	7 = {
-		factor = 1
-		modifier = {
-			factor = 50
+		factor = 50
+		trigger = {
 			OR = {
 				trait = brooding
 				trait = shy
@@ -273,6 +301,9 @@
 	}
 	10 = {
 		factor = 2
+		trigger = {
+			age = 6
+		}
 		modifier = {
 			factor = 25
 			OR = {
@@ -338,6 +369,15 @@
 	}
 	12 = {
 		factor = 1
+		trigger = {
+			OR = {
+				trait = curious
+				trait = deceitful
+				trait = paranoid
+				trait = envious
+				has_focus = focus_ed_intrigue
+			}
+		}
 		modifier = {
 			factor = 50
 			OR = {
@@ -368,6 +408,14 @@
 	}
 	13 = {
 		factor = 1
+		trigger = {
+			OR = {
+				trait = idolizer
+				trait = zealous
+				trait = humble
+				has_focus = focus_ch_faith
+			}
+		}
 		modifier = {
 			factor = 50
 			OR = {

@@ -11,6 +11,8 @@ Changelog:
   Unit pack tweaks, incl. early Muslims, Cuman, Bodpa and South-Indian sets.
   Smaller scaling on Camel units.
   Added Celtiberian portraits for mod use.
+  Replaced female Turkish mouths with Cuman mouths.
+  Stricter conditions on child backgrounds.
   Replaced Fylkir crown with the Norse winged religious head crown.
 
 02-06-2019
