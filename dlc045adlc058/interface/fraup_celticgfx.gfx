@@ -1,0 +1,225 @@
+objectTypes = {
+	#########################################################
+	#########################################################
+	#####											  	#####
+	#####		Early Celtic		Unit Pack			#####
+	#####											  	#####
+	#########################################################
+	#########################################################
+
+	################################################
+	#### HEAVY_INFANTRY ############################
+	################################################
+	pdxmesh = {
+		name = "celticgfx_HEAVY_INFANTRY_early"
+		file = "gfx\models\fraup_early_pikemen.mesh"
+
+		animation = { id = "attack"		type = "char_infantry_attack_animation" }
+		animation = { id = "idle"		type = "char_infantry_idle_animation" }
+		animation = { id = "move"		type = "char_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_HEAVY_INFANTRY_weapon_early"
+		file = "gfx\models\Attachments\westerngfx_early_sword.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_HEAVY_INFANTRY_shield_early"
+		file = "gfx\models\Attachments\westerngfx_early_celtic_shield.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_HEAVY_INFANTRY_helmet_early"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_INFANTRY ############################
+	################################################
+	pdxmesh = {
+		name = "celticgfx_LIGHT_INFANTRY_early"
+		file = "gfx\models\fraup_early_light_infantry.mesh"
+
+		animation = { id = "attack"		type = "fraup_infantry_attack_animation" }
+		animation = { id = "idle"		type = "fraup_infantry_idle_animation" }
+		animation = { id = "move"		type = "fraup_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_LIGHT_INFANTRY_weapon_early"
+		file = "gfx\models\Attachments\westerngfx_early_celtic_axe.mesh"
+		scale = 1.3f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_LIGHT_INFANTRY_shield_early"
+		file = "gfx\models\Attachments\westerngfx_early_pictish_shield.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_LIGHT_INFANTRY_helmet_early"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### PIKEMEN ###################################
+	################################################
+	pdxmesh = {
+		name = "celticgfx_PIKEMEN_early"
+		file = "gfx\models\fraup_early_archer.mesh"
+
+		animation = { id = "attack"		type = "fraup_pikeman_attack_animation" }
+		animation = { id = "idle"		type = "fraup_pikeman_idle_animation" }
+		animation = { id = "move"		type = "fraup_pikeman_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_PIKEMEN_weapon_early"
+		file = "gfx\models\Attachments\westerngfx_early_celtic_pike.mesh"
+		scale = 1.2f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_PIKEMEN_shield_early"
+		file = "gfx\models\Attachments\westerngfx_early_pictish_shield.mesh"
+		scale = 1.1f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_PIKEMEN_helmet_early"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### ARCHERS ###################################
+	################################################
+	pdxmesh = {
+		name = "celticgfx_ARCHERS_early"
+		file = "gfx\models\fraup_early_archer.mesh"
+
+		animation = { id = "attack"		type = "fraup_archer_attack_animation" }
+		animation = { id = "idle"		type = "fraup_archer_idle_animation" }
+		animation = { id = "move"		type = "fraup_archer_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_ARCHERS_weapon_early"
+		file = "gfx\models\Attachments\char_early_arrow.mesh"
+		animation = { id = "attack"		type = "char_early_arrow_attack_animation" }
+		animation = { id = "idle"		type = "char_early_arrow_idle_animation" }
+		animation = { id = "move"		type = "char_early_arrow_moving_animation" }
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_ARCHERS_shield_early"
+		file = "gfx\models\Attachments\westerngfx_early_longbow.mesh"		
+		animation = { id = "attack"		type = "char_early_bow_attack_animation" }
+		animation = { id = "idle"		type = "char_early_bow_idle_animation" }
+		animation = { id = "move"		type = "char_early_bow_moving_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_ARCHERS_helmet_early"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### LIGHT_CAVALRY #############################
+	################################################
+	pdxmesh = {
+		name = "celticgfx_LIGHT_CAVALRY_early"
+		file = "gfx\models\westerngfx_early_light_horse.mesh"
+		animation = { id = "attack"		type = "char_horse_attack_animation" }
+		animation = { id = "idle"		type = "char_horse_idle_animation" }
+		animation = { id = "move"		type = "char_horse_moving_animation" }
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_LIGHT_CAVALRY_rider_early"
+		file = "gfx\models\fraup_early_light_cavalry.mesh"
+
+		animation = { id = "attack"		type = "fraup_light_cavalry_attack_animation" }
+		animation = { id = "idle"		type = "fraup_light_cavalry_idle_animation" }
+		animation = { id = "move"		type = "fraup_light_cavalry_moving_animation" }
+
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_LIGHT_CAVALRY_weapon_early"
+		file = "gfx\models\Attachments\westerngfx_early_celtic_pike.mesh"
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_LIGHT_CAVALRY_helmet_early"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+
+	################################################
+	#### horse_archers #############################
+	################################################
+	pdxmesh = {
+		name = "celticgfx_horse_archers_early"
+		file = "gfx\models\westerngfx_early_light_horse.mesh"
+		animation = { id = "attack"		type = "char_horse_attack_animation" }
+		animation = { id = "idle"		type = "char_horse_idle_animation" }
+		animation = { id = "move"		type = "char_horse_moving_animation" }
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_horse_archers_rider_early"
+		file = "gfx\models\fraup_early_mounted_archer.mesh"
+
+		animation = { id = "attack"		type = "fraup_mounted_archer_attack_animation" }
+		animation = { id = "idle"		type = "fraup_mounted_archer_idle_animation" }
+		animation = { id = "move"		type = "fraup_mounted_archer_moving_animation" }
+
+		scale = 0.9f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_horse_archers_weapon_early"
+		file = "gfx\models\Attachments\char_early_arrow.mesh"
+		animation = { id = "attack"		type = "char_early_arrow_attack_animation" }
+		animation = { id = "idle"		type = "char_early_arrow_idle_animation" }
+		animation = { id = "move"		type = "char_early_arrow_moving_animation" }
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_horse_archers_shield_early"
+		file = "gfx\models\Attachments\char_early_bow.mesh"
+		animation = { id = "attack"		type = "char_early_bow_attack_animation" }
+		animation = { id = "idle"		type = "char_early_bow_idle_animation" }
+		animation = { id = "move"		type = "char_early_bow_moving_animation" }
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "celticgfx_horse_archers_helmet_early"
+		file = "gfx\models\dummyhelmet.mesh"
+		scale = 1.0f
+	}
+}

@@ -99,40 +99,6 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
-		name = "balticgfx_LIGHT_CAVALRY"
-		actorfile = "gfx\models\Norse_Horse.xac"
-
-		idle   = "gfx\models\Norse_Horse_2_Idle.xsm"
-		move   = "gfx\models\Norse_Horse_Moving.xsm"
-		attack = "gfx\models\Norse_Horse_2_Attack.xsm"
-
-		scale = 1.0f
-	}
-
-	EMFXActorType = {
-		name = "balticgfx_LIGHT_CAVALRY_rider"
-		actorfile = "gfx\models\Norse_Light_Cavalry.xac"
-
-		 idle   = "gfx\models\Norse_Light_Cavalry_2_Idle.xsm"
-	 	 move   = "gfx\models\Norse_Light_Cavalry_2_Moving.xsm"
-		 attack = "gfx\models\Norse_Light_Cavalry_2_Attack.xsm"
-
-		scale = 0.95f
-	}
-
-	EMFXActorType = {
-		name = "balticgfx_LIGHT_CAVALRY_weapon"
-		actorfile = "gfx\models\Attachments\Norse_Pike.xac"
-		scale = 1.0f
-	}
-
-	EMFXActorType = {
-		name = "balticgfx_LIGHT_CAVALRY_helmet"
-		actorfile = "gfx\models\no_object.xac"
-		scale = 0.000001f
-	}
-
-	EMFXActorType = {
 		name = "balticgfx_horse_archers"
 		actorfile = "gfx\models\Norse_Horse.xac"
 
