@@ -48,14 +48,6 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
-	spriteType = {
-		name = "GFX_lover_overlay"
-		texturefile = "gfx\\characters\\shared\\lover_overlay.dds"
-		noOfFrames = 6
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
 	##AGOT valyrian steel indicator
 	spriteType = {
 		name = "GFX_character_special_artifact"

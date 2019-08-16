@@ -1,34 +1,50 @@
-# p37 Special Relations (lover/rival) #TODO_CD: update once we have proper scopes
+# p37 Special Relations (lover/rival)
 37 = {
 	0 = { # blank
 		factor = 1
+		modifier = {
+			factor = 100
+			multiplayer = yes
+		}
 	}
 	1 = { 
 		factor = 100
 		trigger = {
-			any_player = { is_rival = PREV }
+			any_player = { ROOT = { is_plot_target_of = PREV } }
 		}
 	}
 	2 = { 
 		factor = 100
 		trigger = {
-			any_player = { is_lover = PREV }
+			any_player = { ROOT = { is_quest_target_of = PREV } }
 		}
 	}
 	3 = { 
+		factor = 100
+		trigger = {
+			any_player = { is_rival = PREV }
+		}
+	}
+	4 = { 
+		factor = 100
+		trigger = {
+			any_player = { is_lover = PREV }
+		}
+	}
+	5 = { 
 		factor = 100
 		trigger = {
 			NOT = { trait = dragon }
 			any_player = { is_friend = PREV }
 		}
 	}
-	4 = { 
+	6 = { 
 		factor = 100
 		trigger = {
-			any_player = { reverse_has_opinion_modifier = { who = PREV modifier = opinion_blood_feud } }
+			any_player = { has_feud_with = PREV }
 		}
 	}
-	5 = { 
+	7 = { 
 		factor = 100
 		trigger = {
 			trait = dragon

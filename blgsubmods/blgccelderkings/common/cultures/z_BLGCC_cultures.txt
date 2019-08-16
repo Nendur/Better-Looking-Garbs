@@ -13,9 +13,11 @@ nedic = {
 		graphical_cultures = { westernslavicgfx southerngfx byzantinegfx }
 		unit_graphical_cultures = { romangfx italiangfx southerngfx }
 	}
+	nord = {
+		unit_graphical_cultures = { saxongfx }
+	}
 	skaal = {
 		graphical_cultures = { norsegfx }
-		unit_graphical_cultures = { balticgfc }
 	}
 	breton = {
 		graphical_cultures = { frankishgfx englishgfx }
@@ -26,7 +28,6 @@ nedic = {
 	}
 	atmoran = {
 		graphical_cultures = { norsegfx }
-		unit_graphical_cultures = { balticgfc }
 	}
 }
 
@@ -39,7 +40,7 @@ yokudan_group = {
 	}
 	forebear = {
 		graphical_cultures = { westafricangfx africangfx }
-		unit_graphical_cultures = { arabicgfx muslimgfx }
+		unit_graphical_cultures = { andalusiangfx arabicgfx muslimgfx }
 	}
 	crown = {
 		graphical_cultures = { africangfx westafricangfx }
@@ -66,7 +67,7 @@ aldmeris = {
 	}
 	maormer = {
 		graphical_cultures = { maormergfx southindiangfx sogdiangfx mongolgfx }
-		unit_graphical_cultures = { saxongfx byzantinegfx }
+		unit_graphical_cultures = { magyargfx byzantinegfx }
 	}
 	falmer = {
 		graphical_cultures = { falmergfx persiangfx mongolgfx }
@@ -172,7 +173,7 @@ islander_group = {
 
 sload_group = {
 	sload = {
-		graphical_cultures = { sloadgfx maormergfx jewishholygfx byzantinegfx }
+		graphical_cultures = { sloadgfx maormergfx jewishholygfx easterngfx }
 	}
 }
 
