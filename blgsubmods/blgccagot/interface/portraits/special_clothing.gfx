@@ -1,0 +1,171 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_knight_clothes"
+		textureFile = "gfx/characters/knight_clothes.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_knight_clothes_behind"
+		textureFile = "gfx/characters/knight_clothes_behind.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_knight_headgear"
+		textureFile = "gfx/characters/knight_headgear.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_knight_headgear_behind"
+		textureFile = "gfx/characters/knight_headgear_behind.dds"
+		noOfFrames = 2
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_knight"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_clothing = yes
+				portrait_has_trait = knight
+				OR = {
+					portrait_in_command = yes
+					portrait_government = military_command_government
+				}
+				OR = {
+					portrait_is_female = yes
+					NOR = {
+						portrait_culture_group = andal
+						portrait_culture_group = iron_isles_culture
+						portrait_culture = high_valyrian
+						portrait_culture = eastern_valyrian
+						portrait_culture_group = dornish
+					}
+				}
+			}
+		}
+
+		layer = {
+			"GFX_knight_clothes_behind:c0"
+			"GFX_knight_headgear_behind:c1"
+			"GFX_knight_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_knight_headgear:c5"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			5 = {
+				0 = {
+					NOR = {
+						portrait_in_command = yes
+						portrait_has_trait = undead
+					}
+				}
+				1 = {
+					OR = {
+						portrait_in_command = yes
+						portrait_has_trait = undead
+					}
+				}
+			}
+		}
+
+		headgear_that_hides_hair = { 1 }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_male_priest"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_has_trait = red_priest
+					portrait_has_trait = septon
+				}
+				NOT = { portrait_government = theocracy_government }
+			}
+		}
+
+		layer = {
+			"GFX_religious_male_clothes_behind:c0"
+			"GFX_empty:c1"
+			"GFX_religious_male_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_empty:c5"
+		}
+
+		allow_property_values = {
+			3 = {
+				1 = {
+					portrait_has_trait = red_priest
+				}
+				2 = {
+					portrait_has_trait = septon
+				}
+			}
+			5 = {
+				1 = {
+					portrait_has_trait = red_priest
+				}
+				2 = {
+					portrait_has_trait = septon
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_female_priest"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_has_trait = red_priest
+					portrait_has_trait = septa
+				}
+				NOT = { portrait_government = theocracy_government }
+			}
+		}
+
+		layer = {
+			"GFX_religious_female_clothes_behind:c0"
+			"GFX_religious_female_headgear_behind:c1"
+			"GFX_religious_female_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_religious_female_headgear:c5"
+		}
+
+		allow_property_values = {
+			3 = {
+				1 = {
+					portrait_has_trait = red_priest
+				}
+				2 = {
+					portrait_has_trait = septa
+				}
+			}
+			5 = {
+				1 = {
+					portrait_has_trait = red_priest
+				}
+				2 = {
+					portrait_has_trait = septa
+				}
+			}
+		}
+	}
+}

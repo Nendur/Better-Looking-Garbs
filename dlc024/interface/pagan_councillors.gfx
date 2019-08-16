@@ -19,4 +19,11 @@ objectTypes = {
 		idle   = "gfx\models\Mapindicators\Norse_LordSpiritual_Idle.xsm"
 		scale = 1.0f
 	}
+
+	EMFXActorType = {
+		name = "easterngfx_job_spymaster"
+		actorfile = "gfx\models\Mapindicators\Norse_Spymaster.xac"
+		idle   = "gfx\models\Mapindicators\Norse_Spymaster_Idle.xsm"
+		scale = 1.0f
+	}
 }

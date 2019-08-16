@@ -306,9 +306,13 @@
 		}
 	}
 
-	# Kingsguard - Replaced by override
+	# Kingsguard
 	12 = {
-		factor = 0
+		factor = 100
+		trigger = {
+			trait = kingsguard
+			may_wear_martial_headgear_trigger = yes
+		}
 	}
 
 	# City Watch/Unsullied

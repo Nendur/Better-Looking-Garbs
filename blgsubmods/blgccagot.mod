@@ -1,9 +1,10 @@
-name="BLG for A Game of Thrones"
-path="mod/blgagot"
+name="BLG/CC for A Game of Thrones"
+path="mod/blgccagot"
 dependencies=
 {
 	"A Game of Thrones"
 	"AGOT Congenital Overhaul"
+	"Cultural Cities Remix"
 	"Better Looking Garbs"
 	"Better Looking Garbs Full"
 }

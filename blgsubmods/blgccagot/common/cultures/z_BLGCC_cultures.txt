@@ -1,35 +1,35 @@
 andal = {
 	riverlander = {
-		graphical_cultures = { riverlandergfx easterngfx }
+		graphical_cultures = { riverlandergfx englishgfx }
 	}
 	westerman = {
 		graphical_cultures = { westermangfx frankishgfx }
 	}
 	valeman = {
-		graphical_cultures = { valemangfx germangfx }
+		graphical_cultures = { valemangfx normangfx }
 	}
 	crownlander = {
-		graphical_cultures = { crownlandergfx romangfx italiangfx }
+		graphical_cultures = { crownlandergfx occitangfx frankishgfx }
 	}
 	stormlander = {
-		graphical_cultures = { stormlandergfx englishgfx }
+		graphical_cultures = { stormlandergfx germangfx }
 	}
 	reachman = {
-		graphical_cultures = { reachmangfx }
+		graphical_cultures = { reachmangfx italiangfx southerngfx }
 		unit_graphical_cultures = { reachmangfx southerngfx }
 	}
 	sisterman = {
 		graphical_cultures = { sistermangfx }
 	}
 	old_andal = {
-		graphical_cultures = { valemangfx germangfx }
+		graphical_cultures = { valemangfx dutchgfx germangfx }
 	}
 	dornish_andal = {
-		graphical_cultures = { dornishgfx }
+		graphical_cultures = { dornishgfx italiangfx southerngfx }
 		unit_graphical_cultures = { reachmangfx southerngfx }
 	}
 	northman_andal = {
-		graphical_cultures = { valemangfx normangfx }
+		graphical_cultures = { valemangfx }
 	}
 }
 
@@ -37,13 +37,13 @@ dornish = {
 	graphical_cultures = { dornishgfx arabicgfx muslimgfx }
 
 	stone_dornish = {
-		graphical_cultures = { stonedornishgfx levantinegfx }
+		graphical_cultures = { stonedornishgfx levantinegfx andalusiangfx }
 	}
 	sand_dornish = {
-		graphical_cultures = { sanddornishgfx levantinegfx }
+		graphical_cultures = { sanddornishgfx levantinegfx andalusiangfx }
 	}
 	salt_dornish = {
-		graphical_cultures = { saltdornishgfx levantinegfx }
+		graphical_cultures = { saltdornishgfx levantinegfx andalusiangfx }
 	}
 	rhoynar = {
 		graphical_cultures = { saltdornishgfx berbergfx }
@@ -63,7 +63,7 @@ first_men = {
 		graphical_cultures = { northmangfx freefolkgfx }
 	}
 	half_southron = {
-		graphical_cultures = { reachmangfx }
+		graphical_cultures = { reachmangfx westerngfx }
 	}
 	crackclawmen = {
 		graphical_cultures = { firstmangfx northmangfx }
@@ -108,14 +108,27 @@ iron_isles_culture = {
 
 valyrian = {
 	graphical_cultures = { valyriangfx byzantinegfx republicsgfx westerngfx }
-	unit_graphical_cultures = { italiangfx southerngfx }
+	unit_graphical_cultures = { valyriangfx italiangfx southerngfx }
+
+	eastern_valyrian = {
+		graphical_cultures = { westvalyriangfx romangfx }
+	}
+	mantaryan = {
+		graphical_cultures = { westvalyriangfx romangfx }
+	}
+	tolosi = {
+		graphical_cultures = { westvalyriangfx romangfx }
+	}
+	elyrian = {
+		graphical_cultures = { westvalyriangfx romangfx }
+	}
 }
 
 free_cities = {
 	graphical_cultures = { republicsgfx byzantinegfx westerngfx }
 
 	pentosi = {
-		graphical_cultures = { pentosigfx }
+		graphical_cultures = { pentosigfx republicsgfx croatsouthslavicgfx easterngfx }
 	}
 	braavosi = {
 		graphical_cultures = { braavosigfx byzantinegfx westerngfx }
@@ -133,19 +146,21 @@ free_cities = {
 		graphical_cultures = { myrmangfx saltdornishgfx }
 	}
 	tyroshi = {
-		graphical_cultures = { tyroshigfx }
+		graphical_cultures = { tyroshigfx republicsgfx croatsouthslavicgfx easterngfx }
 	}
 	volantene = {
 		graphical_cultures = { freecitiesgfx }
 	}
 	lorathi = {
-		graphical_cultures = { pentosigfx easternslavicgfx westerngfx }
+		graphical_cultures = { pentosigfx magyargfx easterngfx westerngfx }
 	}
 	essarian = {
-		graphical_cultures = { freecitiesgfx easternslavicgfx }
+		graphical_cultures = { freecitiesgfx }
+		unit_graphical_cultures = { serbsouthslavicgfx republicsgfx easterngfx }
 	}
 	gogossosi = {
 		graphical_cultures = { freecitiesgfx }
+		unit_graphical_cultures = { serbsouthslavicgfx republicsgfx easterngfx }
 	}
 }
 
@@ -158,7 +173,7 @@ dothraki_group = {
 
 	dothraki = {
 		graphical_cultures = { dothrakigfx }
-		unit_graphical_cultures = { mesoamericangfx indiangfx muslimgfx }
+		unit_graphical_cultures = { mesoamericangfx southindiangfx indiangfx muslimgfx }
 	}
 	lhazareen = {
 		graphical_cultures = { lhazareengfx mongolgfx muslimgfx }
@@ -187,10 +202,12 @@ sarnor_group = {
 	graphical_cultures = { indiangfx muslimgfx }
 
 	sarnorian = {
-		graphical_cultures = { sarnorigfx ibbenesegfx }
+		graphical_cultures = { sarnorigfx easternslavicgfx ibbenesegfx }
+		unit_graphical_cultures = { indiangfx muslimgfx }
 	}
 	omberi = {
-		graphical_cultures = { sarnorigfx ibbenesegfx }
+		graphical_cultures = { sarnorigfx easternslavicgfx ibbenesegfx }
+		unit_graphical_cultures = { indiangfx muslimgfx }
 	}
 }
 
@@ -198,31 +215,33 @@ moraqi_group = {
 	graphical_cultures = { mesoamericangfx }
 
 	farosi = {
-		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
+		graphical_cultures = { moraqigfx southyrosgfx turkishgfx indiangfx muslimgfx }
 		unit_graphical_cultures = { bodpagfx mongolgfx muslimgfx }
 	}
 	moraqi = {
-		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
+		graphical_cultures = { moraqigfx southyrosgfx turkishgfx  indiangfx muslimgfx }
 		unit_graphical_cultures = { bodpagfx mongolgfx muslimgfx }
 	}
 	zabhadi = {
-		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
+		graphical_cultures = { moraqigfx southyrosgfx turkishgfx  indiangfx muslimgfx }
 		unit_graphical_cultures = { bodpagfx mongolgfx muslimgfx }
 	}
 	vahari = {
-		graphical_cultures = { moraqigfx southyrosgfx indiangfx muslimgfx }
+		graphical_cultures = { moraqigfx southyrosgfx turkishgfx  indiangfx muslimgfx }
 		unit_graphical_cultures = { bodpagfx mongolgfx muslimgfx }
 	}
 }
 
 yi_ti_group = {
-	graphical_cultures = { chinesegfx indiangfx muslimgfx }
+	graphical_cultures = { chinesegfx muslimgfx }
 
 	yi_ti = {
-		graphical_cultures = { yitigfx }
+		graphical_cultures = { yitigfx southindiangfx indiangfx }
+		unit_graphical_cultures = { chinesegfx }
 	}
 	asabhadi = {
-		graphical_cultures = { asabhadgfx }
+		graphical_cultures = { asabhadgfx southindiangfx indiangfx }
+		unit_graphical_cultures = { chinesegfx }
 	}
 }
 
@@ -260,10 +279,11 @@ qarth_group = {
 }
 
 ibbenese_group = {
-	graphical_cultures = { easternslavicgfx pagangfx easterngfx }
+	graphical_cultures = { easterngfx }
 
 	ibbenese = {
-		graphical_cultures = { ibbenesegfx ugricgfx }
+		graphical_cultures = { ibbenesegfx pagangfx }
+		unit_graphical_cultures = { ibbenesegfx ugricgfx }
 	}
 }
 
@@ -285,7 +305,7 @@ nghai_group = {
 
 islander_group = {
 	islander = {
-		graphical_cultures = { islandergfx pagangfx jewishholygfx magyargfx freefolkgfx easterngfx }
+		graphical_cultures = { islandergfx pagangfx pomeraniangfx mesoamericangfx easterngfx }
 	}
 }
 
@@ -323,5 +343,5 @@ old_races = {
 }
 
 winter_group = {
-	graphical_cultures = { whitewalkergfx pagangfx easternslavicgfx easterngfx }
+	graphical_cultures = { whitewalkergfx pagangfx pomeraniangfx easternslavicgfx easterngfx }
 }

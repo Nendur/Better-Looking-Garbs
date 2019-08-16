@@ -1,0 +1,3 @@
+--NDefines.NGraphics.CITY_SPRAWL_AMOUNT = 0.9
+NDefines.NGraphics.CITY_MAIN_BUILDING_LEVEL_2 = 5
+NDefines.NGraphics.CITY_MAIN_BUILDING_LEVEL_3 = 10

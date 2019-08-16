@@ -31,14 +31,6 @@ objectTypes = {
 		scale = 1.0f
 	}
 
-# Eastern European
-	EMFXActorType = {
-		name = "easterngfx_job_spymaster"
-		actorfile = "gfx\models\Mapindicators\Norse_Spymaster.xac"
-		idle   = "gfx\models\Mapindicators\Norse_Spymaster_Idle.xsm"
-		scale = 1.0f
-	}
-
 # Celtic
 	EMFXActorType = {
 		name = "celticgfx_job_chancellor"
