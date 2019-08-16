@@ -4,7 +4,7 @@ objectTypes = {
 	################################################
 	pdxmesh = {
 		name = "westerngfx_HEAVY_INFANTRY"
-		file = "gfx\models\gerup_pikemen.mesh"
+		file = "gfx\models\engup_pikemen.mesh"
 
 		animation = { id = "attack"		type = "engup_infantry_attack_animation" }
 		animation = { id = "idle"		type = "engup_infantry_idle_animation" }
@@ -91,8 +91,8 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "westerngfx_PIKEMEN_helmet"
-		actorfile = "gfx\models\Attachments\Helmet_16.xac"
-		scale = 1.04f
+		actorfile = "gfx\models\Attachments\Helmet_13.xac"
+		scale = 1.08f
 	}
 
 	################################################
