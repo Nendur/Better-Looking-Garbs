@@ -9,10 +9,22 @@ objectTypes = {
 		animation = { id = "idle"		type = "efc_eastern_chancellor_female_idle_animation" }
 		scale = 1.0
 	}
+	pdxmesh = {
+		name = "orthodox_dlc_job_chancellor_female"
+		file = "gfx/models/Mapindicators/efc_eastern_chancellor_female.mesh"		
+		animation = { id = "idle"		type = "efc_eastern_chancellor_female_idle_animation" }
+		scale = 1.0
+	}
 
 	##### Steward	--------------------------------------------------------------------------
 	pdxmesh = {
 		name = "easterngfx_job_treasurer_female"
+		file = "gfx/models/Mapindicators/efc_eastern_stewardess_female.mesh"
+		animation = { id = "idle"		type = "efc_eastern_stewardess_female_idle_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "orthodox_dlc_job_treasurer_female"
 		file = "gfx/models/Mapindicators/efc_eastern_stewardess_female.mesh"
 		animation = { id = "idle"		type = "efc_eastern_stewardess_female_idle_animation" }
 		scale = 1.0
@@ -25,10 +37,22 @@ objectTypes = {
 		animation = { id = "idle"		type = "efc_eastern_spymaster_female_idle_animation" }
 		scale = 1.0
 	}
+	pdxmesh = {
+		name = "orthodox_dlc_job_spymaster_female"
+		file = "gfx/models/Mapindicators/efc_eastern_spymaster_female.mesh"
+		animation = { id = "idle"		type = "efc_eastern_spymaster_female_idle_animation" }
+		scale = 1.0
+	}
 
 	##### Marshal	--------------------------------------------------------------------------
 	pdxmesh = {
 		name = "easterngfx_job_marshal_female"
+		file = "gfx/models/Mapindicators/efc_eastern_marshal_female.mesh"
+		animation = { id = "idle"		type = "efc_eastern_marshal_female_idle_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "orthodox_dlc_job_marshal_female"
 		file = "gfx/models/Mapindicators/efc_eastern_marshal_female.mesh"
 		animation = { id = "idle"		type = "efc_eastern_marshal_female_idle_animation" }
 		scale = 1.0
@@ -50,7 +74,6 @@ objectTypes = {
 
 ###BYZANTINE FEMALE###
 
-	##### Chancellor --------------------------------------------------------------------------
 	pdxmesh = {
 		name = "byzantinegfx_job_chancellor_female"
 		file = "gfx/models/Mapindicators/efc_eastern_chancellor_female.mesh"
@@ -58,7 +81,6 @@ objectTypes = {
 		scale = 1.0
 	}
 
-	##### Steward	--------------------------------------------------------------------------
 	pdxmesh = {
 		name = "byzantinegfx_job_treasurer_female"
 		file = "gfx/models/Mapindicators/efc_eastern_stewardess_female.mesh"
@@ -66,7 +88,6 @@ objectTypes = {
 		scale = 1.0
 	}
 
-	##### Spymaster	--------------------------------------------------------------------------
 	pdxmesh = {
 		name = "byzantinegfx_job_spymaster_female"
 		file = "gfx/models/Mapindicators/efc_eastern_spymaster_female.mesh"
@@ -74,7 +95,6 @@ objectTypes = {
 		scale = 1.0
 	}
 
-	##### Marshal	--------------------------------------------------------------------------
 	pdxmesh = {
 		name = "byzantinegfx_job_marshal_female"
 		file = "gfx/models/Mapindicators/efc_eastern_marshal_female.mesh"
