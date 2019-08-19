@@ -3,18 +3,19 @@ Changelog:
   New hair and beardstyles for Norse,
   the beards and female hair are from SeeK's Proper Northmen.
   New pupil/iris layers for West-African portraits.
+  Many Unit pack tweaks, incl. early Muslims, early Celtic, Norman, Cuman, Bodpa and South-Indian variants.
+  Smaller scaling on Camel units.
   Changed king+ tier Hellenic shield models to a decorated style.
   Using unused alternate shield models for Jewish religion.
   Fixed Ugric fallback portraits.
   More ironman portrait versions.
   More fallback replacements.
-  Unit pack tweaks, incl. early Muslims, Norman, Cuman, Bodpa and South-Indian sets.
-  Smaller scaling on Camel units.
   Added Celtiberian portraits for mod use.
   Replaced female Turkish mouths with Cuman mouths.
   Stricter conditions on child backgrounds.
-  Added colour overlays for quest and plot targets and clan bonds and feuds.
+  Added colour overlays for quest & plot targets and foes & allies.
   Replaced Fylkir crown with the Norse winged religious head crown.
+  Added AGOT crowns for Slavic, Baltic and Finnic religious heads.
 
 02-06-2019
   Update to 3.2.0

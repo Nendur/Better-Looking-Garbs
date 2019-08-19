@@ -4,23 +4,21 @@
 		factor = 1
 		modifier = {
 			factor = 100
+			in_command = yes
+			is_priest = no
+			OR = {
+				war = yes
+				liege = { war = yes }
+				is_ruler = no
+			}
 			has_game_rule = {
 				name = martial_headgear
 				value = on
 			}
-			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						is_ruler = no
-					}
-				}
-			}
-			NOR = {
-				has_minor_title = title_manichaean_bishop
-			}
+		}
+		modifier = {
+			factor = 100
+			check_variable = { which = ca_headgear value = 1 }
 		}
 	}
 	1 = {
@@ -175,6 +173,22 @@
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
+		modifier = { #Zunist Fylkir Crown
+			factor = 0
+			NOR = { 
+				any_artifact = {
+					artifact_type = crown_alan_fylkir
+					is_artifact_equipped = yes 
+				}
+				trait = dead_crown_alan_fylkir
+			}
+		}
+	}
+	12 = {
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
 		modifier = { #Slavic/Romva Fylkir Crown
 			factor = 0
 			NOR = { 
@@ -193,22 +207,6 @@
 				trait = dead_crown_briton_fylkir
 				trait = dead_crown_pict_fylkir
 				trait = dead_crown_gael_fylkir
-			}
-		}
-	}
-	12 = {
-		factor = 100
-		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = {31 = {}}
-		hide_layers = {32 = {}}
-		modifier = { #Zunist Fylkir Crown
-			factor = 0
-			NOR = { 
-				any_artifact = {
-					artifact_type = crown_alan_fylkir
-					is_artifact_equipped = yes 
-				}
-				trait = dead_crown_alan_fylkir
 			}
 		}
 	}
@@ -276,27 +274,10 @@
 		}
 	}
 	19 = {
-		factor = 100
-		hide_layers = { 5 = {}}
-		hide_layers = {31 = {}}
-		hide_layers = {32 = {}}
-		hide_layers = {33 = {}}
-		trigger = {
-			is_priest = yes
-			rightful_religious_head = ROOT
-			religion = nestorian
-		}
+		factor = 0
 	}
 	20 = {
-		factor = 100
-		hide_layers = { 5 = {}}
-		hide_layers = {31 = {}}
-		hide_layers = {32 = {}}
-		hide_layers = {33 = {}}
-		trigger = {
-			is_priest = yes
-			religion = nestorian
-		}
+		factor = 0
 	}
 	21 = {
 		factor = 0
@@ -308,9 +289,6 @@
 		factor = 0
 	}
 	24 = {
-		factor = 0
-	}
-	25 = {
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}

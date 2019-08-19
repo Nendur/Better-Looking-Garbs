@@ -32,7 +32,12 @@ blg_religion_orthodox = {
 		religion = priscillian
 		religion = arian
 		religion = gnostic
+		religion = nestorian
 	}
+}
+
+blg_religion_orientorthodox = {
+	religion = nestorian
 }
 
 religion_openly_west_african_or_reformed_trigger = {

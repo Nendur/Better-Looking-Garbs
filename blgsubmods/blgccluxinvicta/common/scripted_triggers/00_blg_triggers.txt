@@ -44,6 +44,8 @@ blg_religion_orthodox = {
 		religion = montanist
 		religion = sabellianist
 		religion = valentinian
+		religion = docetist
+		religion = apollinarist
 	}
 }
 

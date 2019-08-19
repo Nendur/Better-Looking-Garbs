@@ -7,48 +7,51 @@
 			multiplayer = yes
 		}
 	}
-	1 = { 
+	1 = {
 		factor = 100
 		trigger = {
 			any_player = { ROOT = { is_plot_target_of = PREV } }
 		}
 	}
-	2 = { 
+	2 = {
 		factor = 100
 		trigger = {
 			any_player = { ROOT = { is_quest_target_of = PREV } }
 		}
 	}
-	3 = { 
+	3 = {
 		factor = 100
 		trigger = {
 			any_player = { is_rival = PREV }
 		}
 	}
-	4 = { 
+	4 = {
 		factor = 100
 		trigger = {
 			any_player = { is_lover = PREV }
 		}
 	}
-	5 = { 
+	5 = {
 		factor = 100
 		trigger = {
-			NOT = { trait = dragon }
 			any_player = { is_friend = PREV }
 		}
 	}
-	6 = { 
+	6 = {
 		factor = 100
 		trigger = {
-			any_player = { has_feud_with = PREV }
+			any_player = {
+				OR = {
+					ROOT = { is_foe = PREV }
+					reverse_has_opinion_modifier = { who = PREV modifier = opinion_blood_feud }
+				}
+			}
 		}
 	}
-	7 = { 
+	7 = {
 		factor = 100
 		trigger = {
-			trait = dragon
-			any_player = { is_friend = PREV }
+			any_player = { is_allied_with = PREV }
 		}
 	}
 }

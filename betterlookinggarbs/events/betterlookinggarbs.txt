@@ -45,7 +45,7 @@ character_event = {
 		trigger = {
 			employer = {
 				is_landed = yes
-				ROOT = { race = PREV } 
+				race = ROOT
 			}
 			OR = { dynasty = none num_of_dynasty_members <= 1 }
 		}
@@ -64,7 +64,7 @@ character_event = {
 		trigger = {
 			employer = {
 				is_landed = yes
-				ROOT = { race = PREV } 
+				race = ROOT
 			}
 			OR = { dynasty = none num_of_dynasty_members <= 1 }
 		}
@@ -95,7 +95,7 @@ character_event = {
 		trigger = {
 			employer = {
 				is_landed = yes
-				ROOT = { race = PREV } 
+				race = ROOT
 			}
 			OR = { dynasty = none num_of_dynasty_members <= 1 }
 			OR = {

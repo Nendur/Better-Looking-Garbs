@@ -45,6 +45,8 @@ blg_religion_orthodox = {
 	OR = {
 		religion = apostolic
 		religion = tondrakian
+		religion = syriac
+		religion = maronite
 	}
 }
 

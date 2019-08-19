@@ -54,7 +54,7 @@ first_men = {
 	graphical_cultures = { celticgfx }
 
 	northman = {
-		graphical_cultures = { northmangfx }
+		graphical_cultures = { northmangfx bretongfx }
 	}
 	hill_clansman = {
 		graphical_cultures = { northmangfx freefolkgfx }

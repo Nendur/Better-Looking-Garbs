@@ -195,6 +195,9 @@ altaic = {
 	avar = {
 		graphical_cultures = { pecheneggfx steppegfx turkishgfx }
 	}
+	cuman = {
+		graphical_cultures = { cumangfx turkishgfx }
+	}
 	bulgar = {
 		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}

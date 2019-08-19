@@ -51,6 +51,9 @@ blg_religion_orthodox = {
 		religion = pneumatomachians
 		religion = patripassianism
 		religion = georgian_orthodox
+		religion = valentinianism
+		religion = audianistic
+		religion = monarchianism
 	}
 }
 
