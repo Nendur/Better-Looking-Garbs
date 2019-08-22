@@ -34,6 +34,7 @@ character_event = {
 		ai_chance = { factor = 3 }
 		trigger = {
 			employer = {
+				NOT = { character = no }
 				is_landed = yes
 				race = ROOT
 			}
@@ -50,6 +51,7 @@ character_event = {
 		random_realm_province = {
 			limit = {
 				NOR = {
+					province = no
 					culture_group = winter_group
 					culture_group = unoccupied_group
 					culture_group = old_races
@@ -69,6 +71,7 @@ character_event = {
 		ai_chance = { factor = 2 }
 		trigger = {
 			employer = {
+				NOT = { character = no }
 				is_landed = yes
 				race = ROOT
 			}
@@ -83,9 +86,11 @@ character_event = {
 		}
 
 		random_realm_province = {
+			limit = { NOT = { province = no } }
 			random_neighbor_province = {
 				limit = {
 					NOR = {
+						province = no
 						culture_group = winter_group
 						culture_group = unoccupied_group
 						culture_group = old_races

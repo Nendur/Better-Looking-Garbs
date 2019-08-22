@@ -33,6 +33,7 @@ character_event = {
 		ai_chance = { factor = 3 }
 		trigger = {
 			employer = {
+				NOT = { character = no }
 				is_landed = yes
 				race = ROOT
 			}
@@ -40,10 +41,9 @@ character_event = {
 		}
 
 		random_realm_province = {
+			limit = { NOT = { province = no } }
 			ROOT = {
 				set_graphical_culture = PREV
-				# random = { chance = 25 culture = PREV }
-				# random = { chance = 25 religion = PREV }
 			}
 		}
 	}
@@ -52,6 +52,7 @@ character_event = {
 		ai_chance = { factor = 3 }
 		trigger = {
 			employer = {
+				NOT = { character = no }
 				is_landed = yes
 				race = ROOT
 			}
@@ -59,11 +60,11 @@ character_event = {
 		}
 
 		random_realm_province = {
+			limit = { NOT = { province = no } }
 			random_neighbor_province = {
+				limit = { NOT = { province = no } }
 				ROOT = {
 					set_graphical_culture = PREV
-					# random = { chance = 25 culture = PREV }
-					# random = { chance = 25 religion = PREV }
 				}
 			}
 		}
