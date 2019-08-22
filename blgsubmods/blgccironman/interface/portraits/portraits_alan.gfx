@@ -22,7 +22,7 @@ spriteTypes = {
 			"GFX_westernslavic_male_headgear_behind_early:c1"
 			"GFX_hungarian_male_clothes:c2"
 			"GFX_westernslavic_male_headgear_mid_early:c3"
-			"GFX_hungarian_male_clothes_infront:c4"
+			"GFX_empty:c4"
 			"GFX_westernslavic_male_headgear_early:c5"
 		}
 

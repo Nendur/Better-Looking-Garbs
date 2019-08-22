@@ -16,24 +16,24 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	spriteType = {
-		name = "GFX_hungarian_male_clothes_infront"
-		texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_clothes_infront.dds"
-		noOfFrames = 14
-		norefcount = yes
-		can_be_lowres = yes
-	}
+	#spriteType = {
+	#	name = "GFX_hungarian_male_clothes_infront"
+	#	texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_clothes_infront.dds"
+	#	noOfFrames = 14
+	#	norefcount = yes
+	#	can_be_lowres = yes
+	#}
 
 	spriteType = {
 		name = "GFX_hungarian_male_headgear_behind"
-		texturefile = "gfx\\characters\\hungarian_male\\cuman_male_headgear_behind.dds"
+		texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_headgear_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_hungarian_male_headgear"
-		texturefile = "gfx\\characters\\hungarian_male\\cuman_male_headgear.dds"
+		texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
@@ -89,7 +89,7 @@ spriteTypes = {
 			"GFX_character_mask:p12:y:o40x45"
 		   	"GFX_ugric_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
-			"GFX_hungarian_male_clothes_infront:p3:c4"
+			"GFX_empty:p3:c4"
 			"GFX_serbsouthslavic_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
@@ -170,7 +170,7 @@ spriteTypes = {
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_ugric_male_hair_midage:p1:h:y"
 			"GFX_empty:p5:c7:h"
-			"GFX_hungarian_male_clothes_infront:p3:c4"
+			"GFX_empty:p3:c4"
 			"GFX_serbsouthslavic_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
@@ -251,7 +251,7 @@ spriteTypes = {
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_ugric_male_hair_oldage:p1:h:y"
 			"GFX_empty:p5:c7:h"
-			"GFX_hungarian_male_clothes_infront:p3:c4"
+			"GFX_empty:p3:c4"
 			"GFX_serbsouthslavic_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
