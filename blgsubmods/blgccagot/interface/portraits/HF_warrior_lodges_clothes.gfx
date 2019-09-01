@@ -182,7 +182,7 @@ spriteTypes = {
 			}
 		}
 
-		headgear_that_hides_hair = { 3 }
+		headgear_that_hides_hair = { 2 3 }
 	}
 }
 
@@ -1130,6 +1130,8 @@ spriteTypes = {
 			"GFX_empty:c4"
 			"GFX_society_warrior_lodge_tengri_male_clothes_infront:c7"
 		}
+
+		headgear_that_hides_hair = { 1 2 3 }
 	}
 	
 	
@@ -1190,6 +1192,8 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_tengri_female_headgear:p5:c5"
 			"GFX_society_warrior_lodge_tengri_female_clothes_infront:c7"
 		}
+
+		headgear_that_hides_hair = { 1 2 3 }
 	}
 }
 

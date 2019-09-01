@@ -354,13 +354,6 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	#spriteType = {
-	#	name = "GFX_norse_male_clothes_infront"
-	#	texturefile = "gfx\\characters\\norse_male\\norse_male_clothes_infront.dds"
-	#	noOfFrames = 16
-	#	norefcount = yes
-	#}
-
 	spriteType = {
 		name = "GFX_norse_male_headgear"
 		texturefile = "gfx\\characters\\norse_male\\norse_male_headgear.dds"
@@ -368,11 +361,24 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	# Christian variants
+# Christian variants
+	spriteType = {
+		name = "GFX_norse_male_clothes_behind_christian"
+		texturefile = "gfx\\characters\\norse_christian_male\\norse_male_clothes_behind_christian.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_norse_male_clothes_christian"
+		texturefile = "gfx\\characters\\norse_christian_male\\norse_male_clothes_christian.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
 
 	spriteType = {
 		name = "GFX_norse_male_headgear_christian"
-		texturefile = "gfx\\characters\\norse_male\\norse_male_headgear_christian.dds"
+		texturefile = "gfx\\characters\\norse_christian_male\\norse_male_headgear_christian.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
@@ -732,18 +738,31 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	# Christian variants
+# Christian variants
+	spriteType = {
+		name = "GFX_norse_female_clothes_behind_christian"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_clothes_behind_christian.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_norse_female_clothes_christian"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_clothes_christian.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
 
 	spriteType = {
 		name = "GFX_norse_female_headgear_christian"
-		texturefile = "gfx\\characters\\norse_female\\norse_female_headgear_christian.dds"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_headgear_christian.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_female_headgear_behind_christian"
-		texturefile = "gfx\\characters\\norse_female\\norse_female_headgear_behind_christian.dds"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_headgear_behind_christian.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}

@@ -40,7 +40,7 @@
 	6 = {
 		factor = 100
 		trigger = {
-			any_player = { ROOT = { is_foe = PREV } }
+			any_player = { is_foe = PREV }
 		}
 	}
 	7 = {

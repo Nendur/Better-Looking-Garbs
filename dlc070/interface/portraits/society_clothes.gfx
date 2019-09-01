@@ -69,6 +69,9 @@ spriteTypes = {
 					always = yes
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -153,6 +156,9 @@ spriteTypes = {
 				0 = {
 					always = yes
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {
@@ -246,6 +252,9 @@ spriteTypes = {
 					always = yes
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -313,6 +322,9 @@ spriteTypes = {
 				0 = {
 					always = yes
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {
@@ -436,6 +448,9 @@ spriteTypes = {
 					portrait_culture_group = east_slavic
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -544,6 +559,9 @@ spriteTypes = {
 					portrait_culture_group = east_slavic
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -585,11 +603,11 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	spriteType = {
-		name = "GFX_society_monastic_order_hindu_vaishnavite_male_headgear_mid"
-		textureFile = "gfx/characters/societies/mom_vaishnavite_monk_male_headgear_mid.dds"
-		noOfFrames = 2
-	}
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_vaishnavite_male_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_vaishnavite_monk_male_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_vaishnavite_clothing_male"
@@ -623,16 +641,14 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_vaishnavite_male_clothing_behind:c0"
 			"GFX_society_monastic_order_hindu_vaishnavite_male_clothing_front:c2"
 			"GFX_society_monastic_order_hindu_vaishnavite_male_headgear_front:c5"
-			"GFX_society_monastic_order_hindu_vaishnavite_male_headgear_mid:c3"
+			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			8 = {
-				0 = {
-					always = yes
-				}
+			19 = {
+				0 = { always = yes }
 			}
 			31 = {
 				0 = {
@@ -661,11 +677,11 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	spriteType = {
-		name = "GFX_society_monastic_order_hindu_vaishnavite_female_headgear_mid"
-		textureFile = "gfx/characters/societies/mom_vaishnavite_monk_female_headgear_mid.dds"
-		noOfFrames = 2
-	}
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_vaishnavite_female_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_vaishnavite_monk_female_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_vaishnavite_clothing_female"
@@ -698,17 +714,15 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_front:c5"
-			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_mid:c3"
+			"GFX_empty:c3"
 			"GFX_empty:c0"
 			"GFX_empty:c2"
 			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			8 = {
-				0 = {
-					always = yes
-				}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {
@@ -751,11 +765,11 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	spriteType = {
-		name = "GFX_society_monastic_order_hindu_smarta_male_headgear_mid"
-		textureFile = "gfx/characters/societies/mom_smarta_monk_male_headgear_mid.dds"
-		noOfFrames = 2
-	}
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_smarta_male_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_smarta_monk_male_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_smarta_clothing_male"
@@ -790,15 +804,13 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_smarta_male_clothing_front:c2"
 			"GFX_society_monastic_order_hindu_smarta_male_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_smarta_male_headgear_front:c5"
-			"GFX_society_monastic_order_hindu_smarta_male_headgear_mid:c3"
+			"GFX_empty:c3"
 			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			8 = {
-				0 = {
-					always = yes
-				}
+			19 = {
+				0 = { always = yes }
 			}
 			31 = {
 				0 = {
@@ -883,10 +895,8 @@ spriteTypes = {
 		}
 
 		allow_property_values = {
-			8 = {
-				0 = {
-					always = yes
-				}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {
@@ -917,11 +927,11 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	spriteType = {
-		name = "GFX_society_monastic_order_hindu_shakti_male_headgear_mid"
-		textureFile = "gfx/characters/societies/mom_shakti_monk_male_headgear_mid.dds"
-		noOfFrames = 2
-	}
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_shakti_male_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_shakti_monk_male_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_shakti_clothing_male"
@@ -954,17 +964,15 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_hindu_shakti_male_clothing_behind:c0"
 			"GFX_society_monastic_order_hindu_shakti_male_clothing_front:c2"
-			"GFX_society_monastic_order_hindu_shakti_male_headgear_mid:c3"
+			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_empty:c5"
 			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			8 = {
-				0 = {
-					always = yes
-				}
+			19 = {
+				0 = { always = yes }
 			}
 			31 = {
 				0 = {
@@ -988,11 +996,11 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	spriteType = {
-		name = "GFX_society_monastic_order_hindu_shakti_female_headgear_mid"
-		textureFile = "gfx/characters/societies/mom_shakti_monk_female_headgear_mid.dds"
-		noOfFrames = 2
-	}
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_shakti_female_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_shakti_monk_female_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_shakti_clothing_female"
@@ -1025,17 +1033,15 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_hindu_shakti_female_clothing_behind:c0"
 			"GFX_society_monastic_order_hindu_shakti_female_clothing_front:c2"
-			"GFX_society_monastic_order_hindu_shakti_female_headgear_mid:c3"
+			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_empty:c5"
 			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			8 = {
-				0 = {
-					always = yes
-				}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {
@@ -1066,11 +1072,11 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	spriteType = {
-		name = "GFX_society_monastic_order_hindu_shaivite_male_headgear_mid"
-		textureFile = "gfx/characters/societies/mom_shaivite_monk_male_headgear_mid.dds"
-		noOfFrames = 2
-	}
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_shaivite_male_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_shaivite_monk_male_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_shaivite_clothing_male"
@@ -1103,17 +1109,15 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_hindu_shaivite_male_clothing_behind:c0"
 			"GFX_society_monastic_order_hindu_shaivite_male_clothing_front:c2"
-			"GFX_society_monastic_order_hindu_shaivite_male_headgear_mid:c3"
+			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_empty:c5"
 			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			8 = {
-				0 = {
-					always = yes
-				}
+			19 = {
+				0 = { always = yes }
 			}
 			31 = {
 				0 = {
@@ -1137,11 +1141,11 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	spriteType = {
-		name = "GFX_society_monastic_order_hindu_shaivite_female_headgear_mid"
-		textureFile = "gfx/characters/societies/mom_shaivite_monk_female_headgear_mid.dds"
-		noOfFrames = 2
-	}
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_shaivite_female_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_shaivite_monk_female_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_shaivite_clothing_female"
@@ -1174,17 +1178,15 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_hindu_shaivite_female_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_shaivite_female_headgear_front:c5"
-			"GFX_society_monastic_order_hindu_shaivite_female_headgear_mid:c3"
+			"GFX_empty:c3"
 			"GFX_empty:c0"
 			"GFX_empty:c2"
 			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			8 = {
-				0 = {
-					always = yes
-				}
+			19 = {
+				0 = { always = yes }
 			}
 			31 = {
 				0 = {
@@ -1256,6 +1258,9 @@ spriteTypes = {
 					portrait_age < oldage
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -1324,6 +1329,9 @@ spriteTypes = {
 
 		# Hide hair
 		allow_property_values = {
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -1399,6 +1407,9 @@ spriteTypes = {
 					portrait_age < oldage
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -1462,6 +1473,9 @@ spriteTypes = {
 
 		# Hide hair
 		allow_property_values = {
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -1537,6 +1551,9 @@ spriteTypes = {
 					portrait_age < oldage
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -1600,6 +1617,9 @@ spriteTypes = {
 
 		# Hide hair
 		allow_property_values = {
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -1671,6 +1691,9 @@ spriteTypes = {
 					always = yes
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -1741,6 +1764,9 @@ spriteTypes = {
 				1 = {
 					always = yes
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {
@@ -1829,6 +1855,9 @@ spriteTypes = {
 					always = yes
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -1908,6 +1937,9 @@ spriteTypes = {
 				1 = {
 					always = yes
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {
@@ -2208,6 +2240,9 @@ spriteTypes = {
 					}
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -2481,6 +2516,9 @@ spriteTypes = {
 					}
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -2551,6 +2589,9 @@ spriteTypes = {
 		}
 
 		allow_property_values = {
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -2678,6 +2719,9 @@ spriteTypes = {
 					NOT = { portrait_has_trait = i_used_to_be_a_player }
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -2788,6 +2832,9 @@ spriteTypes = {
 					NOT = { portrait_has_trait = i_used_to_be_a_player }
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -2895,6 +2942,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -2994,6 +3044,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -3082,6 +3135,9 @@ spriteTypes = {
 					NOT = { portrait_has_trait = i_used_to_be_a_player }
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -3169,6 +3225,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 					NOT = { portrait_has_trait = i_used_to_be_a_player }
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {

@@ -289,6 +289,9 @@
 		factor = 0
 	}
 	24 = {
+		factor = 0
+	}
+	25 = {
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}

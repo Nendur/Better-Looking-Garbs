@@ -92,6 +92,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -203,6 +206,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -215,7 +221,7 @@ spriteTypes = {
 			}
 		}
 
-		headgear_that_hides_hair = { 3 }
+		headgear_that_hides_hair = { 2 3 }
 	}
 
 	# Warrior Lodges - BALTIC
@@ -317,6 +323,9 @@ spriteTypes = {
 				3 = {
 					portrait_society_rank = 4
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 			31 = {
 				0 = {
@@ -429,6 +438,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -539,6 +551,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -634,6 +649,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -724,11 +742,6 @@ spriteTypes = {
 
 		# Correct rank
 		allow_property_values = {
-			1 = {
-				6 = {
-					always = yes
-				}
-			}
 			3 = {
 				0 = {
 					portrait_society_rank = 1
@@ -757,12 +770,17 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
 				}
 			}
 		}
+
+		headgear_that_hides_hair = { 1 2 3 }
 	}
 
 
@@ -828,11 +846,6 @@ spriteTypes = {
 
 		# Correct rank
 		allow_property_values = {
-			1 = {
-				6 = {
-					always = yes
-				}
-			}
 			3 = {
 				0 = {
 					portrait_society_rank = 1
@@ -861,6 +874,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			32 = {
 				0 = {
 					always = yes
@@ -872,5 +888,7 @@ spriteTypes = {
 				}
 			}
 		}
+
+		headgear_that_hides_hair = { 1 2 3 }
 	}
 }

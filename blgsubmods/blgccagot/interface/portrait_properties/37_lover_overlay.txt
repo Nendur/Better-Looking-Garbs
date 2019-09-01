@@ -42,7 +42,7 @@
 		trigger = {
 			any_player = {
 				OR = {
-					ROOT = { is_foe = PREV }
+					is_foe = PREV
 					reverse_has_opinion_modifier = { who = PREV modifier = opinion_blood_feud }
 				}
 			}

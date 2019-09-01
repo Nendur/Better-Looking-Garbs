@@ -9,7 +9,7 @@ spriteTypes = {
 			"GFX_northern_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_saxon_male_clothes_behind_early:p3:c0"
+			"GFX_norse_male_clothes_behind_christian:p3:c0"
 			"GFX_norse_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
@@ -29,7 +29,7 @@ spriteTypes = {
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
 			"GFX_character_boils:p9"
-			"GFX_saxon_male_clothes_early:p3:c2"
+			"GFX_norse_male_clothes_christian:p3:c2"
 			"GFX_norse_male_headgear_mid:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
@@ -94,7 +94,7 @@ spriteTypes = {
 			"GFX_northern_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_saxon_male_clothes_behind_early:p3:c0"
+			"GFX_norse_male_clothes_behind_christian:p3:c0"
 			"GFX_norse_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
@@ -114,7 +114,7 @@ spriteTypes = {
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
 			"GFX_character_boils:p9"
-			"GFX_saxon_male_clothes_early:p3:c2"
+			"GFX_norse_male_clothes_christian:p3:c2"
 			"GFX_norse_male_headgear_mid:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
@@ -175,7 +175,7 @@ spriteTypes = {
 			"GFX_northern_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_saxon_male_clothes_behind_early:p3:c0"
+			"GFX_norse_male_clothes_behind_christian:p3:c0"
 			"GFX_norse_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
@@ -195,7 +195,7 @@ spriteTypes = {
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
 			"GFX_character_boils:p9"
-			"GFX_saxon_male_clothes_early:p3:c2"
+			"GFX_norse_male_clothes_christian:p3:c2"
 			"GFX_norse_male_headgear_mid:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
@@ -252,7 +252,7 @@ spriteTypes = {
 			"GFX_northern_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_saxon_female_clothes_behind_early:p3:c0"
+			"GFX_norse_female_clothes_behind_christian:p3:c0"
 			"GFX_norse_female_headgear_behind_christian:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
@@ -290,7 +290,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_saxon_female_clothes_early:p3:c2"
+			"GFX_norse_female_clothes_christian:p3:c2"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_norse_female_hair:p1:h:y"
@@ -328,7 +328,7 @@ spriteTypes = {
 			{ 34 103 36 }
 			{ 166 223 244 }
 		}
-		headgear_that_hides_hair = { }
+		headgear_that_hides_hair = { 10 12 13 }
 	}
 
 	portraitType = {
@@ -339,7 +339,7 @@ spriteTypes = {
 			"GFX_northern_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_saxon_female_clothes_behind_early:p3:c0"
+			"GFX_norse_female_clothes_behind_christian:p3:c0"
 			"GFX_norse_female_headgear_behind_christian:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
@@ -373,7 +373,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_saxon_female_clothes_early:p3:c2"
+			"GFX_norse_female_clothes_christian:p3:c2"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_norse_female_hair_midage:p1:h:y"
@@ -411,7 +411,7 @@ spriteTypes = {
 			{ 34 103 36 }
 			{ 166 223 244 }
 		}
-		headgear_that_hides_hair = { }
+		headgear_that_hides_hair = { 10 12 13 }
 	}
 
 	portraitType = {
@@ -422,7 +422,7 @@ spriteTypes = {
 			"GFX_northern_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_saxon_female_clothes_behind_early:p3:c0"
+			"GFX_norse_female_clothes_behind_christian:p3:c0"
 			"GFX_norse_female_headgear_behind_christian:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
@@ -456,7 +456,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_saxon_female_clothes_early:p3:c2"
+			"GFX_norse_female_clothes_christian:p3:c2"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_norse_female_hair_oldage:p1:h:y"
@@ -489,6 +489,6 @@ spriteTypes = {
 			{ 166 223 244 }
 		}
 
-		headgear_that_hides_hair = { }
+		headgear_that_hides_hair = { 10 12 13 }
 	}
 }

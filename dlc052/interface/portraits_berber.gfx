@@ -110,21 +110,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_berber_male_nose"
 		texturefile = "gfx\\characters\\berber_male\\berber_male_nose_1.dds"
-		noOfFrames = 10
+		noOfFrames = 12
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_nose_midage"
 		texturefile = "gfx\\characters\\berber_male\\berber_male_nose_2.dds"
-		noOfFrames = 10
+		noOfFrames = 12
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_nose_oldage"
 		texturefile = "gfx\\characters\\berber_male\\berber_male_nose_3.dds"
-		noOfFrames = 10
+		noOfFrames = 12
 		norefcount = yes
 	}
 
@@ -288,21 +288,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_berber_female_nose"
 		texturefile = "gfx\\characters\\berber_female\\berber_female_nose_1.dds"
-		noOfFrames = 10
+		noOfFrames = 12
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_nose_midage"
 		texturefile = "gfx\\characters\\berber_female\\berber_female_nose_2.dds"
-		noOfFrames = 10
+		noOfFrames = 12
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_nose_oldage"
 		texturefile = "gfx\\characters\\berber_female\\berber_female_nose_3.dds"
-		noOfFrames = 10
+		noOfFrames = 12
 		norefcount = yes
 	}
 

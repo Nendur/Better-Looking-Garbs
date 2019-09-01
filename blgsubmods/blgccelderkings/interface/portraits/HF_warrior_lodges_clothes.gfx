@@ -161,7 +161,6 @@ spriteTypes = {
 		#	"GFX_society_warrior_lodge_norse_female_hairlayer_behind:p5:c6:h"
 			"GFX_society_warrior_lodge_norse_female_clothes:p3:c2"
 			"GFX_society_warrior_lodge_norse_female_headgear_mid:p5:c3"
-			#TODO test hair
 			"GFX_society_warrior_lodge_norse_female_hairlayer_front:p5:c7:h"
 			"GFX_society_warrior_lodge_norse_female_headgear:p5:c5"
 			"GFX_empty:c4"
@@ -209,7 +208,7 @@ spriteTypes = {
 			}
 		}
 
-		headgear_that_hides_hair = { 3 }
+		headgear_that_hides_hair = { 2 3 }
 	}
 
 	# Warrior Lodges - ZUN

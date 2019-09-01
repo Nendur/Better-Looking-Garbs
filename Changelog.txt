@@ -1,7 +1,8 @@
 Changelog:
 
-  New hair and beardstyles for Norse,
-  the beards and female hair are from SeeK's Proper Northmen.
+  New hair and beardstyles, clothing and headgear for Norse,
+  -the beards and female hair are from SeeK's Proper Northmen.
+  New sets of Baltic headgear.
   New pupil/iris layers for West-African portraits.
   Many Unit pack tweaks, incl. early Muslims, early Celtic, Norman, Cuman, Bodpa and South-Indian variants.
   Smaller scaling on Camel units.
@@ -16,6 +17,8 @@ Changelog:
   Added colour overlays for quest & plot targets and foes & allies.
   Replaced Fylkir crown with the Norse winged religious head crown.
   Added AGOT crowns for Slavic, Baltic and Finnic religious heads.
+  Picked some new priest clothing out of warrior lodge sets.
+  Moved Hindu monastic society tilaka to the general set.
 
 02-06-2019
   Update to 3.2.0

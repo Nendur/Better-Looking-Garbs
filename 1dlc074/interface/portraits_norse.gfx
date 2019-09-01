@@ -48,15 +48,15 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_norse_male_headgear_behind"
-		texturefile = "gfx\\characters\\baltic_male\\baltic_male_headgear_behind.dds"
+		texturefile = "gfx\\characters\\norse_male\\norse_male_headgear_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_male_headgear_mid"
-		texturefile = "gfx\\characters\\shared\\empty.dds"
-		noOfFrames = 1
+		texturefile = "gfx\\characters\\norse_male\\norse_male_headgear_mid.dds"
+		noOfFrames = 14
 		norefcount = yes
 	}
 
@@ -68,24 +68,30 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_norse_male_clothes_infront"
-		texturefile = "gfx\\characters\\shared\\empty.dds"
-		noOfFrames = 1
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_norse_male_headgear"
-		texturefile = "gfx\\characters\\baltic_male\\baltic_male_headgear.dds"
+		texturefile = "gfx\\characters\\norse_male\\norse_male_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
 
-	# Christian variants
+# Christian variants
+	spriteType = {
+		name = "GFX_norse_male_clothes_behind_christian"
+		texturefile = "gfx\\characters\\norse_christian_male\\norse_male_clothes_behind_christian.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_norse_male_clothes_christian"
+		texturefile = "gfx\\characters\\norse_christian_male\\norse_male_clothes_christian.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
 
 	spriteType = {
 		name = "GFX_norse_male_headgear_christian"
-		texturefile = "gfx\\fallbacks\\german_male\\german_male_headgear.dds"
+		texturefile = "gfx\\characters\\norse_male\\norse_male_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
@@ -495,7 +501,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_norse_female_headgear_behind"
-		texturefile = "gfx\\characters\\baltic_female\\baltic_female_headgear_behind.dds"
+		texturefile = "gfx\\characters\\norse_female\\norse_female_headgear_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
@@ -509,23 +515,36 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_norse_female_headgear"
-		texturefile = "gfx\\characters\\baltic_female\\baltic_female_headgear.dds"
+		texturefile = "gfx\\characters\\norse_female\\norse_female_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
 
-	# Christian variants
+# Christian variants
+	spriteType = {
+		name = "GFX_norse_female_clothes_behind_christian"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_clothes_behind_christian.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_norse_female_clothes_christian"
+		texturefile = "gfx\\characters\\norse_christian_female\\norse_female_clothes_christian.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
 
 	spriteType = {
 		name = "GFX_norse_female_headgear_christian"
-		texturefile = "gfx\\fallbacks\\german_female\\german_female_headgear.dds"
+		texturefile = "gfx\\characters\\norse_female\\norse_female_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_female_headgear_behind_christian"
-		texturefile = "gfx\\fallbacks\\german_female\\german_female_headgear_behind.dds"
+		texturefile = "gfx\\characters\\norse_female\\norse_female_headgear_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}

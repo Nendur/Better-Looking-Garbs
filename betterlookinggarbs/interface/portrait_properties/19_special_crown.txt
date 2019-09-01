@@ -363,7 +363,7 @@
 			religion_openly_finnish_or_reformed_trigger = yes
 		}
 	}
-	22 = {
+	22 = { #Aztec Priest
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}
@@ -375,7 +375,7 @@
 			religion_openly_aztec_or_reformed_trigger = yes
 		}
 	}
-	23 = {
+	23 = { #Taoist Priest
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}
@@ -387,7 +387,22 @@
 			religion = taoist
 		}
 	}
-	24 = {
+	24 = { #Zun Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+		trigger = {
+			is_priest = yes
+			OR = {
+				religion_openly_zun_or_reformed_trigger = yes
+				religion_openly_bon_or_reformed_trigger = yes
+			}
+		}
+	}
+	25 = { #Celtic Priest
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}

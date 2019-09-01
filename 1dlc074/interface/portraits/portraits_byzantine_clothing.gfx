@@ -53,16 +53,16 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_byzantine_male_clothes_behind"
-		texturefile = "gfx\\characters\\roman_male\\roman_male_clothes_behind.dds"
-		noOfFrames = 14
+		texturefile = "gfx\\characters\\southslavic_male\\serb_southslavic_male_clothes_behind.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_byzantine_male_clothes"
-		texturefile = "gfx\\characters\\roman_male\\roman_male_clothes.dds"
-		noOfFrames = 14
+		texturefile = "gfx\\characters\\southslavic_male\\serb_southslavic_male_clothes.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -101,7 +101,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_byzantine_female_clothes_behind"
-		texturefile = "gfx\\characters\\roman_female\\roman_female_clothes_behind.dds"
+		texturefile = "gfx\\characters\\southslavic_female\\serb_southslavic_female_clothes_behind.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -109,7 +109,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_byzantine_female_clothes"
-		texturefile = "gfx\\characters\\roman_female\\roman_female_clothes.dds"
+		texturefile = "gfx\\characters\\southslavic_female\\serb_southslavic_female_clothes.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -143,15 +143,15 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_byzantine_male_clothes_behind_early"
-		texturefile = "gfx\\characters\\roman_male\\roman_male_clothes_behind.dds"
-		noOfFrames = 14
+		texturefile = "gfx\\characters\\southslavic_male\\serb_southslavic_male_clothes_behind.dds"
+		noOfFrames = 12
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_byzantine_male_clothes_early"
-		texturefile = "gfx\\characters\\roman_male\\roman_male_clothes.dds"
-		noOfFrames = 14
+		texturefile = "gfx\\characters\\southslavic_male\\serb_southslavic_male_clothes.dds"
+		noOfFrames = 12
 		norefcount = yes
 	}
 
@@ -180,14 +180,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_byzantine_female_clothes_behind_early"
-		texturefile = "gfx\\characters\\roman_female\\roman_female_clothes_behind.dds"
+		texturefile = "gfx\\characters\\southslavic_female\\serb_southslavic_female_clothes_behind.dds"
 		noOfFrames = 12
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_byzantine_female_clothes_early"
-		texturefile = "gfx\\characters\\roman_female\\roman_female_clothes.dds"
+		texturefile = "gfx\\characters\\southslavic_female\\serb_southslavic_female_clothes.dds"
 		noOfFrames = 12
 		norefcount = yes
 	}
@@ -217,15 +217,15 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_byzantine_male_clothes_behind_late"
-		texturefile = "gfx\\fallbacks\\frankish_male\\frankish_male_clothes_behind.dds"
-		noOfFrames = 14
+		texturefile = "gfx\\characters\\southslavic_male\\serb_southslavic_male_clothes_behind.dds"
+		noOfFrames = 12
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_byzantine_male_clothes_late"
-		texturefile = "gfx\\fallbacks\\frankish_male\\frankish_male_clothes.dds"
-		noOfFrames = 14
+		texturefile = "gfx\\characters\\southslavic_male\\serb_southslavic_male_clothes.dds"
+		noOfFrames = 12
 		norefcount = yes
 	}
 
@@ -253,14 +253,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_byzantine_female_clothes_behind_late"
-		texturefile = "gfx\\fallbacks\\frankish_female\\frankish_female_clothes_behind.dds"
+		texturefile = "gfx\\characters\\southslavic_female\\serb_southslavic_female_clothes_behind.dds"
 		noOfFrames = 12
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_byzantine_female_clothes_late"
-		texturefile = "gfx\\fallbacks\\frankish_female\\frankish_female_clothes.dds"
+		texturefile = "gfx\\characters\\southslavic_female\\serb_southslavic_female_clothes.dds"
 		noOfFrames = 12
 		norefcount = yes
 	}

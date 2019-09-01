@@ -1,4 +1,25 @@
 objectTypes = {
+
+### Tengri shields ######################################################
+
+	EMFXActorType = {
+		name = "mongolgfx_king_shield"
+		actorfile = "gfx\models\Shields\mongol_king_shield.xac"
+		scale = 0.35f
+		use_animation = no
+		cull_distance = 550.0f
+		scale_on_cull_distance = no
+	}
+
+	EMFXActorType = {
+		name = "mongolgfx_emperor_shield"
+		actorfile = "gfx\models\Shields\mongol_empire_shield.xac"
+		scale = 0.35f
+		use_animation = no
+		cull_distance = 550.0f
+		scale_on_cull_distance = no
+	}
+
 ### Hellenic shields ######################################################
 	EMFXActorType = {
 		name = "hellenicgfx_count_shield"

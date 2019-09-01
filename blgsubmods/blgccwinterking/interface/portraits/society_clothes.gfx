@@ -73,6 +73,9 @@ spriteTypes = {
 					always = yes
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -161,6 +164,9 @@ spriteTypes = {
 				0 = {
 					always = yes
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {
@@ -274,6 +280,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				0 = { always = yes }
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -371,6 +380,9 @@ spriteTypes = {
 				3 = {
 					portrait_society_rank = 4
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {
@@ -553,6 +565,9 @@ spriteTypes = {
 				8 = { # Byzantine
 					portrait_culture_group = imperiale
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 			31 = {
 				0 = {
@@ -738,6 +753,9 @@ spriteTypes = {
 				8 = { # Byzantine
 					portrait_culture_group = imperiale
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = {

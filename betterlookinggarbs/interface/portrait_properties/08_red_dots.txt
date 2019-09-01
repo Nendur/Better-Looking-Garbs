@@ -3,10 +3,6 @@
 	0 = { # blank
 		factor = 20
 		modifier = {
-			factor = 100
-			likes_hindus = no
-		}
-		modifier = {
 			factor = 0.01
 			OR = {
 				is_priest = yes
@@ -14,39 +10,65 @@
 				trait = zealous
 				has_minor_title = title_guru
 				society_member_of = monastic_order_hindu
+				trait = on_indian_pilgrimage
 				has_character_flag = diwali_feast_begun
 				has_character_flag = attending_diwali_feast
 			}
 		}
 	}
 	1 = {
-		factor = 1
+		factor = 5
 		trigger = {
-			OR = { trait = shaivist_hindu trait = smartist_hindu }
+			trait = shaivist_hindu
+			OR = {
+				is_ascetic_trigger = yes
+				trait = zealous
+				society_member_of = monastic_order_hindu
+			}
 		}
 	}
 	2 = {
-		factor = 1
+		factor = 5
 		trigger = {
-			OR = { trait = vaishnavist_hindu trait = smartist_hindu }
+			trait = shaivist_hindu
+			OR = {
+				is_ascetic_trigger = yes
+				trait = zealous
+				society_member_of = monastic_order_hindu
+			}
 		}
 	}
 	3 = {
-		factor = 1
+		factor = 5
 		trigger = {
-			OR = { trait = shaktist_hindu trait = smartist_hindu }
+			trait = shaktist_hindu
+			OR = {
+				is_ascetic_trigger = yes
+				trait = zealous
+				society_member_of = monastic_order_hindu
+			}
 		}
 	}
 	4 = {
-		factor = 1
+		factor = 5
 		trigger = {
-			OR = { trait = vaishnavist_hindu trait = smartist_hindu }
+			trait = vaishnavist_hindu
+			OR = {
+				is_ascetic_trigger = yes
+				trait = zealous
+				society_member_of = monastic_order_hindu
+			}
 		}
 	}
 	5 = {
-		factor = 1
+		factor = 5
 		trigger = {
-			OR = { trait = shaktist_hindu trait = smartist_hindu }
+			trait = vaishnavist_hindu
+			OR = {
+				is_ascetic_trigger = yes
+				trait = zealous
+				society_member_of = monastic_order_hindu
+			}
 		}
 	}
 	6 = {
@@ -58,7 +80,7 @@
 	7 = {
 		factor = 1
 		trigger = {
-			OR = { trait = vaishnavist_hindu trait = smartist_hindu }
+			trait = vaishnavist_hindu
 		}
 	}
 	8 = {
@@ -70,19 +92,91 @@
 	9 = {
 		factor = 1
 		trigger = {
-			OR = { trait = shaktist_hindu trait = smartist_hindu }
+			OR = { trait = vaishnavist_hindu trait = smartist_hindu }
 		}
 	}
 	10 = {
 		factor = 1
 		trigger = {
-			OR = { trait = shaivist_hindu trait = smartist_hindu }
+			OR = { trait = shaktist_hindu trait = smartist_hindu }
 		}
 	}
 	11 = {
 		factor = 1
 		trigger = {
 			OR = { trait = shaivist_hindu trait = smartist_hindu }
+		}
+	}
+	12 = {
+		factor = 1
+		trigger = {
+			OR = { trait = vaishnavist_hindu trait = smartist_hindu }
+		}
+	}
+	13 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaktist_hindu trait = smartist_hindu }
+		}
+	}
+	14 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaktist_hindu trait = smartist_hindu }
+		}
+	}
+	15 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaivist_hindu trait = smartist_hindu }
+		}
+	}
+	16 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaivist_hindu trait = smartist_hindu }
+		}
+	}
+	17 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaivist_hindu trait = smartist_hindu }
+		}
+	}
+	18 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaktist_hindu trait = smartist_hindu }
+		}
+	}
+	19 = {
+		factor = 1
+		trigger = {
+			OR = { trait = shaktist_hindu trait = smartist_hindu }
+		}
+	}
+	20 = {
+		factor = 1
+		trigger = {
+			trait = smartist_hindu
+		}
+	}
+	21 = {
+		factor = 1
+		trigger = {
+			trait = smartist_hindu
+		}
+	}
+	22 = {
+		factor = 1
+		trigger = {
+			trait = vaishnavist_hindu
+		}
+	}
+	23 = {
+		factor = 1
+		trigger = {
+			trait = vaishnavist_hindu
 		}
 	}
 }
