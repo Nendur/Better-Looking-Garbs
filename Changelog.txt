@@ -19,6 +19,7 @@ Changelog:
   Added AGOT crowns for Slavic, Baltic and Finnic religious heads.
   Picked some new priest clothing out of warrior lodge sets.
   Moved Hindu monastic society tilaka to the general set.
+  Port Russian eyes to the Westernslavic faces for Russian portraits.
 
 02-06-2019
   Update to 3.2.0
