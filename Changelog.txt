@@ -20,6 +20,7 @@ Changelog:
   Picked some new priest clothing out of warrior lodge sets.
   Moved Hindu monastic society tilaka to the general set.
   Port Russian eyes to the Westernslavic faces for Russian portraits.
+  Mixed Turkish and Ugric faces for early Hungarian and Tocharian portraits.
 
 02-06-2019
   Update to 3.2.0

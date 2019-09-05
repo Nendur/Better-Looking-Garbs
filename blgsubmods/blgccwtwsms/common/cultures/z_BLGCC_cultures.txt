@@ -363,7 +363,7 @@ baltic = {
 
 east_anatolic = {
 	tocharian = {
-		graphical_cultures = { sogdiangfx persiangfx }
+		graphical_cultures = { tochariangfx sogdiangfx persiangfx }
 	}
 }
 
@@ -398,7 +398,7 @@ altaic = {
 		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}
 	white_croatian = {
-		graphical_cultures = { magyargfx turkishgfx }
+		graphical_cultures = { avargfx turkishgfx }
 	}
 	avar = {
 		graphical_cultures = { avargfx turkishgfx }

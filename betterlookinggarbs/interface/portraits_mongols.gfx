@@ -12,7 +12,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_mongol_male_headgear_behind"
-		texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_headgear_behind.dds"
+		texturefile = "gfx\\characters\\magyar_male\\hungarian_male_headgear_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
@@ -117,7 +117,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_mongol_male_headgear"
-		texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_headgear.dds"
+		texturefile = "gfx\\characters\\magyar_male\\hungarian_male_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}

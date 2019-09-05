@@ -213,7 +213,7 @@ magyar = {
 
 iranian = {
 	tocharian = {
-		graphical_cultures = { sogdiangfx persiangfx cumangfx }
+		graphical_cultures = { tochariangfx sogdiangfx persiangfx cumangfx }
 		secondary_event_pictures = turkish
 	}
 	kurdish = {

@@ -240,7 +240,7 @@ iranian = {
 		graphical_cultures = { sogdiangfx persiangfx }
 	}
 	tocharian = {
-		graphical_cultures = { sogdiangfx persiangfx }
+		graphical_cultures = { tochariangfx sogdiangfx persiangfx }
 	}
 	kurdish = {
 		graphical_cultures = { kurdishgfx persiangfx }

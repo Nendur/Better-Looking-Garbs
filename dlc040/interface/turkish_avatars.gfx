@@ -331,7 +331,7 @@ objectTypes = {
 		idle   = "gfx\models\arab_camel_rider_idle.xsm"
 		move   = "gfx\models\arab_camel_rider_moving.xsm"
 		attack = "gfx\models\arab_camel_rider_attack.xsm"
-		scale = 0.8f
+		scale = 0.9f
 	}
 
 	EMFXActorType = {

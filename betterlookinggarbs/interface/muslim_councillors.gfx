@@ -40,4 +40,12 @@ objectTypes = {
 		idle   = "gfx\models\Mapindicators\Western_Marshal_Idle.xsm"
 		scale = 1.0f
 	}
+
+	EMFXActorType = {
+		name = "chinesegfx_job_spymaster"
+		actorfile = "gfx\models\Mapindicators\Muslim_Spymaster.xac"
+
+		idle   = "gfx\models\Mapindicators\Muslim_Spymaster_idle.xsm"
+		scale = 1.0f
+	}
 }

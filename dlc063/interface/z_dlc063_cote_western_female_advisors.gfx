@@ -72,4 +72,11 @@ objectTypes = {
 		animation = { id = "idle"		type = "cote_western_female_spymaster_idle_animation" }
 		scale = 1.0
 	}
+
+	pdxmesh = {
+		name = "chinesegfx_job_treasurer"
+		file = "gfx/models/Mapindicators/cote_mongol_steward.mesh"
+		animation = { id = "idle"		type = "cote_mongol_steward_idle_animation" }
+		scale = 1.0
+	}
 }

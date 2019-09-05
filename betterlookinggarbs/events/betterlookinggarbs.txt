@@ -470,6 +470,7 @@ character_event = {
 						NOR = {
 							graphical_culture = sogdiangfx
 							graphical_culture = centralasiangfx
+							graphical_culture = tochariangfx
 						}
 					}
 					set_graphical_culture = sogdian
@@ -749,6 +750,7 @@ character_event = {
 								graphical_culture = steppegfx
 								graphical_culture = khitangfx
 								graphical_culture = chinesegfx
+								graphical_culture = tochariangfx
 							}
 						}
 						mother_even_if_dead = {
@@ -775,6 +777,7 @@ character_event = {
 								graphical_culture = steppegfx
 								graphical_culture = khitangfx
 								graphical_culture = chinesegfx
+								graphical_culture = tochariangfx
 							}
 						}
 					}
@@ -1277,6 +1280,7 @@ character_event = {
 								graphical_culture = pecheneggfx
 								graphical_culture = avargfx
 								graphical_culture = chinesegfx
+								graphical_culture = tochariangfx
 							}
 						}
 						mother_even_if_dead = {
@@ -1290,6 +1294,7 @@ character_event = {
 								graphical_culture = pecheneggfx
 								graphical_culture = avargfx
 								graphical_culture = chinesegfx
+								graphical_culture = tochariangfx
 							}
 						}
 					}
@@ -1677,6 +1682,7 @@ character_event = {
 							graphical_culture = turkishgfx
 							graphical_culture = pecheneggfx
 							graphical_culture = avargfx
+							graphical_culture = tochariangfx
 						}
 					}
 					mother_even_if_dead = {
@@ -1684,6 +1690,7 @@ character_event = {
 							graphical_culture = turkishgfx
 							graphical_culture = pecheneggfx
 							graphical_culture = avargfx
+							graphical_culture = tochariangfx
 						}
 					}
 				}
@@ -1736,6 +1743,7 @@ character_event = {
 								graphical_culture = turkishgfx
 								graphical_culture = pecheneggfx
 								graphical_culture = avargfx
+								graphical_culture = tochariangfx
 								graphical_culture = easternslavicgfx
 								graphical_culture = magyargfx
 								graphical_culture = chinesegfx
@@ -1746,6 +1754,7 @@ character_event = {
 								graphical_culture = turkishgfx
 								graphical_culture = pecheneggfx
 								graphical_culture = avargfx
+								graphical_culture = tochariangfx
 								graphical_culture = easternslavicgfx
 								graphical_culture = magyargfx
 								graphical_culture = chinesegfx
@@ -2093,7 +2102,7 @@ character_event = {
 			graphical_culture = bretongfx
 			graphical_culture = englishgfx
 			graphical_culture = norsegaelgfx 
-			graphical_culture = celtiberiangfx
+			graphical_culture = tochariangfx
 			AND = { 
 				culture = uyghur
 				graphical_culture = centralasiangfx 
@@ -2101,10 +2110,6 @@ character_event = {
 			AND = { 
 				culture = komi #udmurt
 				graphical_culture = ugricgfx 
-			}
-			AND = { 
-				culture = tocharian
-				graphical_culture = sogdiangfx 
 			}
 			mother_even_if_dead = { 
 				OR = { 
@@ -2129,7 +2134,7 @@ character_event = {
 					graphical_culture = bretongfx
 					graphical_culture = englishgfx
 					graphical_culture = norsegaelgfx
-					graphical_culture = celtiberiangfx
+					graphical_culture = tochariangfx
 					AND = { 
 						culture = uyghur
 						graphical_culture = centralasiangfx 
@@ -2137,10 +2142,6 @@ character_event = {
 					AND = { 
 						culture = komi
 						graphical_culture = ugricgfx 
-					}
-					AND = { 
-						culture = tocharian
-						graphical_culture = sogdiangfx 
 					}
 				} 
 			}
@@ -2148,7 +2149,7 @@ character_event = {
 				OR = { 
 					graphical_culture = bretongfx
 					graphical_culture = englishgfx
-					graphical_culture = norsegaelgfx 
+					graphical_culture = tochariangfx
 					AND = { 
 						culture = uyghur
 						graphical_culture = centralasiangfx 
@@ -2156,10 +2157,6 @@ character_event = {
 					AND = { 
 						culture = komi
 						graphical_culture = ugricgfx 
-					}
-					AND = { 
-						culture = tocharian
-						graphical_culture = sogdiangfx 
 					}
 				} 
 			}
@@ -2169,7 +2166,7 @@ character_event = {
 						graphical_culture = bretongfx
 						graphical_culture = englishgfx
 						graphical_culture = norsegaelgfx
-						graphical_culture = celtiberiangfx
+						graphical_culture = tochariangfx
 						AND = { 
 							culture = uyghur
 							graphical_culture = centralasiangfx 
@@ -2177,10 +2174,6 @@ character_event = {
 						AND = { 
 							culture = komi
 							graphical_culture = ugricgfx 
-						}
-						AND = { 
-							culture = tocharian
-							graphical_culture = sogdiangfx 
 						}
 					} 
 				}
@@ -2191,7 +2184,7 @@ character_event = {
 						graphical_culture = bretongfx
 						graphical_culture = englishgfx
 						graphical_culture = norsegaelgfx
-						graphical_culture = celtiberiangfx
+						graphical_culture = tochariangfx
 						AND = { 
 							culture = uyghur
 							graphical_culture = centralasiangfx 
@@ -2199,10 +2192,6 @@ character_event = {
 						AND = { 
 							culture = komi
 							graphical_culture = ugricgfx 
-						}
-						AND = { 
-							culture = tocharian
-							graphical_culture = sogdiangfx 
 						}
 					} 
 				}

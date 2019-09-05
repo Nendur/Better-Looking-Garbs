@@ -122,3 +122,6 @@ oldfrankishgfx = {
 celtiberiangfx = {
 	skin_tone = 1
 }
+tochariangfx = {
+	skin_tone = 1
+}

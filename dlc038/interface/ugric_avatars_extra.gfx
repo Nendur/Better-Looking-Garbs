@@ -29,7 +29,7 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
-		name = "westerngfx_LIGHT_CAVALRY"
+		name = "balticgfx_LIGHT_CAVALRY"
 		actorfile = "gfx\models\Horse.xac"
 		idle   = "gfx\models\Horse_Idle.xsm"
 		move   = "gfx\models\Horse_Moving.xsm"

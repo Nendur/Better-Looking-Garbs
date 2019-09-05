@@ -4,21 +4,21 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_hungarian_male_clothes"
-		texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_clothes.dds"
+		texturefile = "gfx\\characters\\magyar_male\\hungarian_male_clothes.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_hungarian_male_clothes_behind"
-		texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_clothes_behind.dds"
+		texturefile = "gfx\\characters\\magyar_male\\hungarian_male_clothes_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
 
 	#spriteType = {
 	#	name = "GFX_hungarian_male_clothes_infront"
-	#	texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_clothes_infront.dds"
+	#	texturefile = "gfx\\characters\\magyar_male\\hungarian_male_clothes_infront.dds"
 	#	noOfFrames = 14
 	#	norefcount = yes
 	#	can_be_lowres = yes
@@ -26,14 +26,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_hungarian_male_headgear_behind"
-		texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_headgear_behind.dds"
+		texturefile = "gfx\\characters\\magyar_male\\hungarian_male_headgear_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_hungarian_male_headgear"
-		texturefile = "gfx\\characters\\hungarian_male\\hungarian_male_headgear.dds"
+		texturefile = "gfx\\characters\\magyar_male\\hungarian_male_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}

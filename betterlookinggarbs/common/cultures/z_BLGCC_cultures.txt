@@ -191,7 +191,7 @@ iranian = {
 		secondary_event_pictures = turkish
 	}
 	tocharian = {
-		graphical_cultures = { sogdiangfx persiangfx }
+		graphical_cultures = { tochariangfx sogdiangfx persiangfx }
 		secondary_event_pictures = turkish
 	}
 	kurdish = {
