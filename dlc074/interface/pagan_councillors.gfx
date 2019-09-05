@@ -73,27 +73,6 @@ objectTypes = {
 		scale = 1.0f
 	}
 
-	pdxmesh = {
-		name = "hellenicgfx_job_spiritual_female"
-		file = "gfx/models/Mapindicators/sfc_jewish_female.mesh"
-		animation = { id = "idle"		type = "sfc_jewish_female_idle_animation" }
-		scale = 1.0
-	}
-
-	pdxmesh = {
-		name = "persiangfx_job_spiritual_female"
-		file = "gfx/models/Mapindicators/ifc_jain_female.mesh"
-		animation = { id = "idle"		type = "ifc_jain_female_idle_animation" }
-		scale = 1.0
-	}
-
-	pdxmesh = {
-		name = "egyptiangfx_job_spiritual_female"
-		file = "gfx/models/Mapindicators/ifc_jain_female.mesh"
-		animation = { id = "idle"		type = "ifc_jain_female_idle_animation" }
-		scale = 1.0
-	}
-
 ### Replacements ######################################################
 
 	pdxmesh = {
@@ -115,5 +94,40 @@ objectTypes = {
 		file = "gfx\models\Mapindicators\hf_pagan_spymaster_male.mesh"
 		animation = { id = "idle"		type = "hf_pagan_spymaster_male_idle_animation" }
 		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "hellenicgfx_job_spiritual"
+		file = "gfx\models\Mapindicators\hf_roman_chancellor_male.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "persiangfx_job_spiritual"
+		file = "gfx\models\Mapindicators\hf_roman_chancellor_male.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "hellenicgfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/sfc_jewish_female.mesh"
+		animation = { id = "idle"		type = "sfc_jewish_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "persiangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/ifc_jain_female.mesh"
+		animation = { id = "idle"		type = "ifc_jain_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "egyptiangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/ifc_jain_female.mesh"
+		animation = { id = "idle"		type = "ifc_jain_female_idle_animation" }
+		scale = 1.0
 	}
 }

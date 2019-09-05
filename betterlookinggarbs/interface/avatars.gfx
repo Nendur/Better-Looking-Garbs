@@ -72,24 +72,6 @@ objectTypes = {
 		scale = 1.0f
 	}
 
-	# Pagan Priests
-
-	EMFXActorType = {
-		name = "persiangfx_job_spiritual"
-		actorfile = "gfx\models\Mapindicators\misc_priest.xac"
-
-		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
-		scale = 1.0f
-	}
-
-	EMFXActorType = {
-		name = "hellenicgfx_job_spiritual"
-		actorfile = "gfx\models\Mapindicators\misc_priest.xac"
-
-		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
-		scale = 1.0f
-	}
-
 	#######################################################
 	#######################################################
 	#####											  #####
