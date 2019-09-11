@@ -36,11 +36,7 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
-				OR = {
-					portrait_has_trait = monk
-					portrait_has_trait = perfecti
-					portrait_has_trait = desert_father
-				}
+				portrait_has_trait = monk
 				OR = {
 					portrait_religion = catholic
 					portrait_religion = cathar
@@ -50,16 +46,39 @@ spriteTypes = {
 					portrait_religion = orthodox
 					portrait_religion = miaphysite
 					portrait_religion = monophysite
+					portrait_religion = adoptionism
 					portrait_religion = bogomilist
 					portrait_religion = monothelite
 					portrait_religion = iconoclast
 					portrait_religion = paulician
 					portrait_religion = nestorian
 					portrait_religion = messalian
-					portrait_religion = apostolic
-					portrait_religion = tondrakian
-					portrait_religion = adoptionist
-					portrait_religion = chalcedonian
+					portrait_religion = sabellianism
+					portrait_religion = psilanthropism
+					portrait_religion = aquileian
+					portrait_religion = nicene
+					portrait_religion = total_depravity
+					portrait_religion = eutychian
+					portrait_religion = binitarian
+					portrait_religion = antinomianism
+					portrait_religion = ebionites
+					portrait_religion = marcionism
+					portrait_religion = montanist
+					portrait_religion = sethian
+					portrait_religion = valentinianism
+					portrait_religion = apollinarian
+					portrait_religion = docetic
+					portrait_religion = pneumatomachians
+					portrait_religion = melchisedechianism
+					portrait_religion = patripassianism
+					portrait_religion = arian
+					portrait_religion = donatism
+					portrait_religion = priscillianism
+					portrait_religion = insular
+					portrait_religion = pelagianism
+					portrait_religion = georgian_orthodox
+					portrait_religion = audianistic
+					portrait_religion = monarchianism
 				}
 				OR = {
 					portrait_in_command = no
@@ -72,10 +91,10 @@ spriteTypes = {
 			"GFX_clothing_monk_clothes_behind:c0"
 			"GFX_clothing_monk_headgear_behind:c1"
 			"GFX_clothing_monk_clothes:c2"
-			"GFX_clothing_monk_male_hair:c7"
 			"GFX_empty:c3"
 			"GFX_empty:c4"
 			"GFX_clothing_monk_headgear:c5"
+			"GFX_clothing_monk_male_hair:c7"
 		}
 
 		# Tonsure hairstyle
@@ -88,8 +107,7 @@ spriteTypes = {
 						portrait_religion = fraticelli
 						portrait_religion = waldensian
 						portrait_religion = lollard
-						portrait_religion = adoptionist
-						portrait_religion = chalcedonian
+						portrait_religion = arian
 					}
 				}
 				1 = {
@@ -99,8 +117,7 @@ spriteTypes = {
 						portrait_religion = fraticelli
 						portrait_religion = waldensian
 						portrait_religion = lollard
-						portrait_religion = adoptionist
-						portrait_religion = chalcedonian
+						portrait_religion = arian
 					}
 				}
 			}
@@ -112,8 +129,7 @@ spriteTypes = {
 						portrait_religion = fraticelli
 						portrait_religion = waldensian
 						portrait_religion = lollard
-						portrait_religion = adoptionist
-						portrait_religion = chalcedonian
+						portrait_religion = arian
 					}
 				}
 				1 = {
@@ -123,8 +139,7 @@ spriteTypes = {
 						portrait_religion = fraticelli
 						portrait_religion = waldensian
 						portrait_religion = lollard
-						portrait_religion = adoptionist
-						portrait_religion = chalcedonian
+						portrait_religion = arian
 					}
 				}
 			}
@@ -160,11 +175,7 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
-				OR = {
-					portrait_has_trait = nun
-					portrait_has_trait = perfecti
-					portrait_has_trait = desert_mother
-				}
+				portrait_has_trait = nun
 				OR = {
 					portrait_religion = catholic
 					portrait_religion = cathar
@@ -174,16 +185,39 @@ spriteTypes = {
 					portrait_religion = orthodox
 					portrait_religion = miaphysite
 					portrait_religion = monophysite
+					portrait_religion = adoptionism
 					portrait_religion = bogomilist
 					portrait_religion = monothelite
 					portrait_religion = iconoclast
 					portrait_religion = paulician
 					portrait_religion = nestorian
 					portrait_religion = messalian
-					portrait_religion = apostolic
-					portrait_religion = tondrakian
-					portrait_religion = adoptionist
-					portrait_religion = chalcedonian
+					portrait_religion = sabellianism
+					portrait_religion = psilanthropism
+					portrait_religion = aquileian
+					portrait_religion = nicene
+					portrait_religion = total_depravity
+					portrait_religion = eutychian
+					portrait_religion = binitarian
+					portrait_religion = antinomianism
+					portrait_religion = ebionites
+					portrait_religion = marcionism
+					portrait_religion = montanist
+					portrait_religion = sethian
+					portrait_religion = valentinianism
+					portrait_religion = apollinarian
+					portrait_religion = docetic
+					portrait_religion = pneumatomachians
+					portrait_religion = melchisedechianism
+					portrait_religion = patripassianism
+					portrait_religion = arian
+					portrait_religion = donatism
+					portrait_religion = priscillianism
+					portrait_religion = insular
+					portrait_religion = pelagianism
+					portrait_religion = georgian_orthodox
+					portrait_religion = audianistic
+					portrait_religion = monarchianism
 				}
 				OR = {
 					portrait_in_command = no

@@ -1,0 +1,6 @@
+# p34 Special Helmets
+34 = {
+	0 = { # blank
+		factor = 100
+	}
+}

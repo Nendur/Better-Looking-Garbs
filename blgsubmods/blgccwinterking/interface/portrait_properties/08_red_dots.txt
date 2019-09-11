@@ -1,0 +1,6 @@
+# p8 red dots - Tilaka
+8 = {
+	0 = {
+		factor = 100
+	}
+}

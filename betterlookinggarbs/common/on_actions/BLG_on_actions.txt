@@ -7,7 +7,7 @@ on_employer_change = {
 on_birth = {
 	events = {
 		blg.2 # Set graphical culture from parents.
-		blg.7 # Freckles
+		#blg.7 # Freckles
 	}
 }
 

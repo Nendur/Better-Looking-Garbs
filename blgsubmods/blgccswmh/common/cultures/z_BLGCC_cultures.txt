@@ -159,7 +159,7 @@ altaic = {
 		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}
 	avar = { # Oghur Turkish
-		graphical_cultures = { avargfx turkishgfx }
+		graphical_cultures = { avargfx steppegfx turkishgfx }
 	}
 	karluk = {
 		graphical_cultures = { centralasiangfx cumangfx turkishgfx }

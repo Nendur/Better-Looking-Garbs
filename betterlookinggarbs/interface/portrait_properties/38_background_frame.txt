@@ -85,6 +85,10 @@
 					holding_type = nomad
 				}
 			}
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
 		}
 	}
 	7 = { # Grated window
@@ -104,6 +108,10 @@
 					region = world_india
 					region = world_steppe
 				}
+			}
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
 			}
 		}
 	}

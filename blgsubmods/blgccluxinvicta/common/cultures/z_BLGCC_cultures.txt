@@ -1,4 +1,7 @@
 byzantine = {
+	greek = {
+		graphical_cultures = { byzantinegfx }
+	}
 	gandharan = {
 		graphical_cultures = { indohellengfx indiangfx muslimgfx }
 	}
@@ -17,13 +20,13 @@ latin = {
 		graphical_cultures = { romangfx italiangfx byzantinegfx }
 	}
 	dacian = {
-		graphical_cultures = { vlachgfx serbsouthslavicgfx easternslavicgfx }
+		graphical_cultures = { romanobalkangfx serbsouthslavicgfx easternslavicgfx }
 	}
 	occitan = {
 		graphical_cultures = { trueoccitangfx occitangfx frankishgfx }
 	}
 	romanian = {
-		graphical_cultures = { romanobalkangfx romangfx byzantinegfx }
+		graphical_cultures = { vlachgfx romangfx byzantinegfx }
 	}
 	romanobrython = {
 		graphical_cultures = { gallicgfx romangfx }
@@ -147,7 +150,7 @@ central_germanic = {
 		graphical_cultures = { lombardgfx }
 	}
 	suevic = {
-		graphical_cultures = { visigothgfx }
+		graphical_cultures = { germangfx }
 	}
 	ostrogothic = {
 		graphical_cultures = { crimeangfx }
@@ -193,7 +196,7 @@ altaic = {
 	graphical_cultures = { mongolgfx muslimgfx }
 
 	avar = {
-		graphical_cultures = { pecheneggfx steppegfx turkishgfx }
+		graphical_cultures = { avargfx steppegfx turkishgfx }
 	}
 	cuman = {
 		graphical_cultures = { cumangfx turkishgfx }

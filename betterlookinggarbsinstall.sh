@@ -77,13 +77,14 @@ if [ -d "${MODS}WTWSMS" -o -f "${MODS}wtwsms.zip" -o -f "${MODS}blgccwtwsms.mod"
 	fi
 	echo "WTWSMS compatibility add-on installed."
 fi
-if [ -d "${MODS}A Game of Thrones" -o -f "${MODS}a game of thrones.zip" -o -f "${MODS}blgagot.mod" ]; then
+if [ -d "${MODS}A Game of Thrones" -o -f "${MODS}a game of thrones.zip" -o -f "${MODS}blgagot.mod" -o -f "${MODS}blgccagot.mod" ]; then
 	if [ -f "$BLGZIP" ]; then
-		unzip -uoq "$BLGZIP" "submods/blgagot*" -d"$MODS"
+		unzip -uoq "$BLGZIP" "submods/blgccagot*" -d"$MODS"
 	fi
-	if [ -f "${ADDONS}/blgagot.mod" ]; then
+	if [ -f "${ADDONS}/blgccagot.mod" ]; then
+		[ -d "${MODS}/blgccagot" ] && rm -r "${MODS}/blgccagot.mod" "${MODS}/blgccagot"
 		[ -d "${MODS}/blgagot" ] && rm -r "${MODS}/blgagot.mod" "${MODS}/blgagot"
-		mv "${ADDONS}"/blgagot* "$MODS"
+		mv "${ADDONS}"/blgccagot* "$MODS"
 	fi
 	echo "A Game of Thrones compatibility add-on installed."
 fi

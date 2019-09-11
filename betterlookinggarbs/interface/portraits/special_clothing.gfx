@@ -26,7 +26,6 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-
 	portraitType = {
 		name = "PORTRAIT_clothing_monk"
 		effectFile = "gfx/FX/portrait.lua"
@@ -38,11 +37,21 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_clothing = yes
 				portrait_has_trait = monk
-				NOR = {
-					portrait_religion = hindu
-					portrait_religion = buddhist
-					portrait_religion = jain
-					portrait_religion = taoist
+				OR = {
+					portrait_religion = catholic
+					portrait_religion = cathar
+					portrait_religion = fraticelli
+					portrait_religion = waldensian
+					portrait_religion = lollard
+					portrait_religion = orthodox
+					portrait_religion = miaphysite
+					portrait_religion = monophysite
+					portrait_religion = bogomilist
+					portrait_religion = monothelite
+					portrait_religion = iconoclast
+					portrait_religion = paulician
+					portrait_religion = nestorian
+					portrait_religion = messalian
 				}
 				OR = {
 					portrait_in_command = no
@@ -104,9 +113,7 @@ spriteTypes = {
 				}
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 
@@ -138,11 +145,21 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_clothing = yes
 				portrait_has_trait = nun
-				NOR = {
-					portrait_religion = hindu
-					portrait_religion = buddhist
-					portrait_religion = jain
-					portrait_religion = taoist
+				OR = {
+					portrait_religion = catholic
+					portrait_religion = cathar
+					portrait_religion = fraticelli
+					portrait_religion = waldensian
+					portrait_religion = lollard
+					portrait_religion = orthodox
+					portrait_religion = miaphysite
+					portrait_religion = monophysite
+					portrait_religion = bogomilist
+					portrait_religion = monothelite
+					portrait_religion = iconoclast
+					portrait_religion = paulician
+					portrait_religion = nestorian
+					portrait_religion = messalian
 				}
 				OR = {
 					portrait_in_command = no
@@ -160,23 +177,15 @@ spriteTypes = {
 			"GFX_clothing_nun_headgear:c5"
 		}
 
-		# Hide hair
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
 	}
 }

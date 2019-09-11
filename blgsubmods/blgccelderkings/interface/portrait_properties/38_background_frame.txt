@@ -74,6 +74,10 @@
 					holding_type = nomad
 				}
 			}
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
 		}
 	}
 	7 = { # Grated window
@@ -87,6 +91,10 @@
 			}
 			capital_scope = {
 				NOT = { culture_group = nedic }
+			}
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
 			}
 		}
 	}

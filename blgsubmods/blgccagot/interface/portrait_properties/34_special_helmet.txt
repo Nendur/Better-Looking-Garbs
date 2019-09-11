@@ -1,0 +1,56 @@
+# p34 Special Helmets
+34 = {
+	0 = { # blank
+		factor = 1
+	}
+	1 = { #Templar special headgear.
+		factor = 0
+	}
+	2 = {  #Crusader King helmet - Male.
+		factor = 0
+	}
+	3 = { #Crusader King helmet - Female.
+		factor = 0
+	}
+	4 = { #Hospitaler special headgear.
+		factor = 0
+	}
+	5 = {  #Teuton special headgear.
+		factor = 0
+	}
+	6 = { #Wearable Winged Helmet
+		factor = 0
+	}
+	7 = {  #Calatrava/Santiago special headgear.
+		factor = 0
+	}
+	8 = { #Wearable Wrapped Helmet
+		factor = 0
+	}
+	9 = { #Livonian special headgear.
+		factor = 0
+	}
+	10 = { #Unicorn headgear.
+		factor = 100
+		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
+		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = { 1 = { } } #Hide Hair.
+		hide_layers = { 3 = { } } #Hide Clothes.
+		hide_layers = { 19 = { } } #Hide layers with special crowns.
+		hide_layers = { 31 = { } } #Veil overload.
+		hide_layers = { 32 = { } }
+		hide_layers = { 33 = { } }
+		trigger = {
+			any_artifact = {
+				artifact_type = crown_unicorn_helmet
+				is_artifact_equipped = yes
+			}
+		}
+	}
+	11 = { #Miaphysite priest
+		factor = 0
+	}
+	12 = { #Zunist Crown
+		factor = 0
+	}
+}

@@ -22,11 +22,14 @@ Changelog:
   Port Russian eyes to the Westernslavic faces for Russian portraits.
   Mixed Turkish and Ugric faces for early Hungarian and Tocharian portraits.
   Another go at making a Hellenic priest model.
+  Restrict Monk and Nun clothing to Christian religions.
+  Add a freckle setup script for later spawned characters with varying rates for all cultures.
+  Replace broken freckle inheritance script.
 
 02-06-2019
   Update to 3.2.0
   Moved the additional religious clothing to the special crown layer for compatibility.
-  - The Religous Clothing submod has become obsolete.
+  - The Religious Clothing submod has become obsolete.
   - Now works on ironman games.
   - Autocephalous leaders are treated as religious heads. 
   Customise Appearence support for the French headgear accessories.

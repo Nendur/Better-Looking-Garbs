@@ -18,10 +18,6 @@ blg_uncrowned = {
 	always = no
 }
 
-blg_saint = {
-	always = no
-}
-
 blg_desert_monk = {
 	always = no
 }
@@ -46,6 +42,8 @@ blg_religion_orthodox = {
 		religion = valentinian
 		religion = docetist
 		religion = apollinarist
+		religion = nasrani_reformed
+		religion = nasrani
 	}
 }
 
@@ -53,6 +51,9 @@ blg_religion_orientorthodox = {
 	OR = {
 		religion = docetist
 		religion = apollinarist
+		religion = melkite
+		religion = nasrani_reformed
+		religion = nasrani
 	}
 }
 
@@ -91,10 +92,7 @@ likes_celts = {
 	culture_group = celtic
 }
 likes_finno_ugrics = {
-	OR = {
-		culture_group = finno_ugric
-		culture_group = magyar
-	}
+	culture_group = finno_ugric
 }
 likes_altaics = {
 	culture_group = altaic

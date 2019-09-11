@@ -287,7 +287,7 @@ continental_celtic = {
 		secondary_event_pictures = breton
 	}
 	east_gallic = {
-		graphical_cultures = { celticgfx }
+		graphical_cultures = { celtiberiangfx }
 		secondary_event_pictures = breton
 	}
 	armorican = {
@@ -398,10 +398,10 @@ altaic = {
 		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}
 	white_croatian = {
-		graphical_cultures = { avargfx turkishgfx }
+		graphical_cultures = { avargfx steppegfx turkishgfx }
 	}
 	avar = {
-		graphical_cultures = { avargfx turkishgfx }
+		graphical_cultures = { avargfx steppegfx turkishgfx }
 	}
 	tiele = {
 		graphical_cultures = { centralasiangfx cumangfx turkishgfx }

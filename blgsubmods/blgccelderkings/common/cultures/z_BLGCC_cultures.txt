@@ -62,11 +62,10 @@ aldmeris = {
 		graphical_cultures = { ayleidgfx bodpagfx mongolgfx }
 	}
 	altmer = {
-		graphical_cultures = { altmergfx somaligfx semitegfx dutchgfx mongolgfx }
-		unit_graphical_cultures = { chinesegfx mongolgfx }
+		graphical_cultures = { altmergfx somaligfx semitegfx chinesegfx mongolgfx }
 	}
 	maormer = {
-		graphical_cultures = { maormergfx southindiangfx sogdiangfx mongolgfx }
+		graphical_cultures = { maormergfx southindiangfx sogdiangfx chinesegfx mongolgfx }
 		unit_graphical_cultures = { magyargfx byzantinegfx }
 	}
 	falmer = {
@@ -89,10 +88,10 @@ chimeris = {
 		graphical_cultures = { dunmergfx cumangfx turkishgfx mongolgfx indiangfx muslimgfx }
 	}
 	dunmer = {
-		graphical_cultures = { dunmergfx turkishgfx mongolgfx indiangfx cumangfx muslimgfx }
+		graphical_cultures = { dunmergfx turkishgfx chinesegfx mongolgfx indiangfx cumangfx muslimgfx }
 	}
 	chimer = {
-		graphical_cultures = { chimergfx cumangfx turkishgfx mongolgfx indiangfx muslimgfx }
+		graphical_cultures = { chimergfx turkishgfx chinesegfx mongolgfx indiangfx muslimgfx }
 	}
 }
 

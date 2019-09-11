@@ -19,9 +19,6 @@ character_event = {
 	trigger = {
 		trait = blgspawn
 	}
-	immediate = {
-		remove_trait = blgspawn
-	}
 
 	option = { # Leave unchanged / Ruler culture
 		ai_chance = {
@@ -69,6 +66,84 @@ character_event = {
 			}
 		}
 	}
+
+	# Add freckles to new characters.
+	after = {
+		remove_trait = blgspawn
+
+		random_list = {
+			2 = { add_trait = freckles_5 }
+			6 = { add_trait = freckles_4 }
+			7 = { add_trait = freckles }
+			7 = { add_trait = freckles_2 }
+			10 = { add_trait = freckles_3 }
+			5000 = {
+				modifier = {
+					factor = 0.01
+					graphical_culture = celticgfx
+				}
+				modifier = {
+					factor = 0.02
+					graphical_culture = bretongfx
+				}
+				modifier = {
+					factor = 0.04
+					OR = {
+						graphical_culture = norsegaelgfx
+						graphical_culture = tochariangfx
+					}
+				}
+				modifier = {
+					factor = 0.06
+					OR = {
+						graphical_culture = norsegfx
+						graphical_culture = saxongfx
+					}
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						graphical_culture = englishgfx
+						graphical_culture = westerngfx
+						graphical_culture = dutchgfx
+						graphical_culture = normangfx
+					}
+				}
+				modifier = {
+					factor = 0.2
+					OR = {
+						graphical_culture = germangfx
+						graphical_culture = frankishgfx
+						graphical_culture = oldfrankishgfx
+						graphical_culture = gallicgfx
+						graphical_culture = celtiberiangfx
+					}
+				}
+				modifier = {
+					factor = 0.5
+					OR = {
+						graphical_culture = sogdiangfx
+						graphical_culture = ashkenazigfx
+						graphical_culture = berbergfx
+						graphical_culture = vlachgfx
+						graphical_culture = romanobalkangfx
+						graphical_culture = lombardgfx
+					}
+				}
+				modifier = {
+					factor = 0.75
+					OR = {
+						graphical_culture = crimeangfx
+						graphical_culture = visigothgfx
+						graphical_culture = chinesegfx
+						graphical_culture = afghangfx
+						graphical_culture = siberiangfx
+						graphical_culture = bohemiangfx
+					}
+				}
+			}
+		}
+	}
 }
 
 # Mixed ethnicity for children.
@@ -98,13 +173,4 @@ character_event = {
 	option = {
 		name = blg.4.opt
 	}
-}
-
-# Add additional freckled graphical cultures.
-character_event = { 
-	id = blg.7
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = { }
 }

@@ -145,6 +145,103 @@ character_event = {
 			set_graphical_culture = bear
 		}
 	}
+
+	# Add freckles to new characters.
+	after = {
+		if = {
+			limit = {
+				NOR = {
+					graphical_culture = whitewalkergfx
+					graphical_culture = ruingfx
+					graphical_culture = islandergfx
+					graphical_culture = brindlegfx
+					graphical_culture = giantgfx
+					graphical_culture = cotfgfx
+					graphical_culture = dragongfx
+				}
+			}
+
+			random_list = {
+				2 = { add_trait = freckles_5 }
+				6 = { add_trait = freckles_4 }
+				7 = { add_trait = freckles }
+				7 = { add_trait = freckles_2 }
+				10 = { add_trait = freckles_3 }
+				5000 = {
+					modifier = {
+						factor = 0.025
+						OR = {
+							graphical_culture = riverlandergfx
+							graphical_culture = tullygfx
+						}
+					}
+					modifier = {
+						factor = 0.05
+						OR = {
+							graphical_culture = valemangfx
+							graphical_culture = arryngfx
+						}
+					}
+					modifier = {
+						factor = 0.075
+						OR = {
+							graphical_culture = westermangfx
+							graphical_culture = lannistergfx
+							graphical_culture = reynegfx
+							graphical_culture = sistermangfx
+						}
+					}
+					modifier = {
+						factor = 0.1
+						OR = {
+							graphical_culture = crownlandergfx
+							graphical_culture = stormlandergfx
+							graphical_culture = baratheongfx
+						}
+					}
+					modifier = {
+						factor = 0.25
+						OR = {
+							graphical_culture = reachmangfx
+							graphical_culture = tyrellgfx
+							graphical_culture = northmangfx
+							graphical_culture = starkgfx
+						}
+					}
+					modifier = {
+						factor = 0.5
+						OR = {
+							graphical_culture = ironborngfx
+							graphical_culture = hoaregfx
+							graphical_culture = greyjoygfx
+							graphical_culture = dornishgfx
+							graphical_culture = stonedornishgfx
+						}
+					}
+					modifier = {
+						factor = 0.6
+						OR = {
+							graphical_culture = pentosigfx
+							graphical_culture = braavosigfx
+							graphical_culture = norvosigfx
+							graphical_culture = myrmangfx
+							graphical_culture = ghiscarigfx
+						}
+					}
+					modifier = {
+						factor = 0.75
+						OR = {
+							graphical_culture = freefolkgfx
+							graphical_culture = firstmangfx
+							graphical_culture = saltdornishgfx
+							graphical_culture = sanddornishgfx
+							graphical_culture = martellgfx
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 # Mixed ethnicity for children.
@@ -156,6 +253,421 @@ character_event = {
 
 	immediate = {
 		remove_trait = blgspawn
+
+		if = {
+			limit = {
+				NOR = {
+					trait = freckles
+					trait = freckles_2
+					trait = freckles_3
+					trait = freckles_4
+					trait = freckles_5
+				}
+				OR = {
+					graphical_culture = riverlandergfx
+					graphical_culture = tullygfx
+					graphical_culture = valemangfx
+					graphical_culture = arryngfx
+					mother_even_if_dead = {
+						OR = {
+							trait = freckles_3
+							trait = freckles_2
+							trait = freckles
+							trait = freckles_4
+							trait = freckles_5
+							mother_even_if_dead = {
+								OR = {
+									trait = freckles_3
+									trait = freckles_2
+									trait = freckles
+									trait = freckles_4
+									trait = freckles_5
+								}
+							}
+							true_father_even_if_dead = {
+								OR = {
+									trait = freckles_3
+									trait = freckles_2
+									trait = freckles
+									trait = freckles_4
+									trait = freckles_5
+								}
+							}
+							graphical_culture = riverlandergfx
+							graphical_culture = tullygfx
+							graphical_culture = valemangfx
+							graphical_culture = arryngfx
+						}
+					}
+					true_father_even_if_dead = {
+						OR = {
+							trait = freckles_3
+							trait = freckles_2
+							trait = freckles
+							trait = freckles_4
+							trait = freckles_5
+							mother_even_if_dead = {
+								OR = {
+									trait = freckles_3
+									trait = freckles_2
+									trait = freckles
+									trait = freckles_4
+									trait = freckles_5
+								}
+							}
+							true_father_even_if_dead = {
+								OR = {
+									trait = freckles_3
+									trait = freckles_2
+									trait = freckles
+									trait = freckles_4
+									trait = freckles_5
+								}
+							}
+							graphical_culture = riverlandergfx
+							graphical_culture = tullygfx
+							graphical_culture = valemangfx
+							graphical_culture = arryngfx
+						}
+					}
+				}
+			}
+
+			random_list = {
+				2 = {
+					add_trait = freckles_5
+					modifier = {
+						factor = 5
+						mother_even_if_dead = { trait = freckles_5 }
+					}
+					modifier = {
+						factor = 5
+						true_father_even_if_dead = { trait = freckles_5 }
+					}
+					#Grandparents
+					modifier = {
+						factor = 4
+						true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_5 } }
+					}
+					modifier = {
+						factor = 4
+						true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_5 } }
+					}
+					modifier = {
+						factor = 4
+						mother_even_if_dead = { mother_even_if_dead = { trait = freckles_5 } }
+					}
+					modifier = {
+						factor = 4
+						mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_5 } }
+					}
+
+					modifier = {
+						factor = 3
+						mother_even_if_dead = { trait = freckles_4 }
+					}
+					modifier = {
+						factor = 3
+						true_father_even_if_dead = { trait = freckles_4 }
+					}
+					#Grandparents
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_4 } }
+					}
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_4 } }
+					}
+					modifier = {
+						factor = 2
+						mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_4 } }
+					}
+					modifier = {
+						factor = 2
+						mother_even_if_dead = { mother_even_if_dead = { trait = freckles_4 } }
+					}
+					#Multiplier bonus
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { trait = freckles_4 }
+						mother_even_if_dead = { trait = freckles_4 }
+					}
+					#The thickest versions should only appear if a parent already has the freckles gene, not appear out of nowhere.
+					trigger = {
+						mother_even_if_dead = {
+							OR = {
+								trait = freckles_3
+								trait = freckles_2
+								trait = freckles
+								trait = freckles_4
+								trait = freckles_5
+							}
+						}
+						true_father_even_if_dead = {
+							OR = {
+								trait = freckles_3
+								trait = freckles_2
+								trait = freckles
+								trait = freckles_4
+								trait = freckles_5
+							}
+						}
+					}
+				}
+				6 = {
+					add_trait = freckles_4
+					modifier = {
+						factor = 4
+						mother_even_if_dead = { trait = freckles_4 }
+					}
+					modifier = {
+						factor = 4
+						true_father_even_if_dead = { trait = freckles_4 }
+					}
+					#Grandparents
+					modifier = {
+						factor = 3
+						true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_4 } }
+					}
+					modifier = {
+						factor = 3
+						true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_4 } }
+					}
+					modifier = {
+						factor = 3
+						mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_4 } }
+					}
+					modifier = {
+						factor = 3
+						mother_even_if_dead = { mother_even_if_dead = { trait = freckles_4 } }
+					}
+
+					modifier = {
+						factor = 2
+						mother_even_if_dead = { trait = freckles }
+					}
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { trait = freckles }
+					}
+					#Grandparents
+					modifier = {
+						factor = 1.5
+						true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles } }
+					}
+					modifier = {
+						factor = 1.5
+						true_father_even_if_dead = { mother_even_if_dead = { trait = freckles } }
+					}
+					modifier = {
+						factor = 1.5
+						mother_even_if_dead = { true_father_even_if_dead = { trait = freckles } }
+					}
+					modifier = {
+						factor = 1.5
+						mother_even_if_dead = { mother_even_if_dead = { trait = freckles } }
+					}
+					#Multiplier bonus
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { trait = freckles }
+						mother_even_if_dead = { trait = freckles }
+					}
+					#The thickest versions should only appear if a parent already has the freckles gene, not appear out of nowhere.
+					trigger = {
+						mother_even_if_dead = {
+							OR = {
+								trait = freckles_3
+								trait = freckles_2
+								trait = freckles
+								trait = freckles_4
+								trait = freckles_5
+							}
+						}
+						true_father_even_if_dead = {
+							OR = {
+								trait = freckles_3
+								trait = freckles_2
+								trait = freckles
+								trait = freckles_4
+								trait = freckles_5
+							}
+						}
+					}
+				}
+				7 = {
+					add_trait = freckles
+					modifier = {
+						factor = 4
+						mother_even_if_dead = { trait = freckles }
+					}
+					modifier = {
+						factor = 4
+						true_father_even_if_dead = { trait = freckles }
+					}
+					#Grandparents
+					modifier = {
+						factor = 3
+						true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles } }
+					}
+					modifier = {
+						factor = 3
+						true_father_even_if_dead = { mother_even_if_dead = { trait = freckles } }
+					}
+					modifier = {
+						factor = 3
+						mother_even_if_dead = { true_father_even_if_dead = { trait = freckles } }
+					}
+					modifier = {
+						factor = 3
+						mother_even_if_dead = { mother_even_if_dead = { trait = freckles } }
+					}
+
+					modifier = {
+						factor = 2
+						mother_even_if_dead = { trait = freckles_2 }
+					}
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { trait = freckles_2 }
+					}
+					#Grandparents
+					modifier = {
+						factor = 1.5
+						true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_2 } }
+					}
+					modifier = {
+						factor = 1.5
+						true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_2 } }
+					}
+					modifier = {
+						factor = 1.5
+						mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_2 } }
+					}
+					modifier = {
+						factor = 1.5
+						mother_even_if_dead = { mother_even_if_dead = { trait = freckles_2 } }
+					}
+					#Multiplier bonus
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { trait = freckles_2 }
+						mother_even_if_dead = { trait = freckles_2 }
+					}
+					#The thickest versions should only appear if a parent already has the freckles gene, not appear out of nowhere.
+					trigger = {
+						mother_even_if_dead = {
+							OR = {
+								trait = freckles_3
+								trait = freckles_2
+								trait = freckles
+								trait = freckles_4
+								trait = freckles_5
+							}
+						}
+						true_father_even_if_dead = {
+							OR = {
+								trait = freckles_3
+								trait = freckles_2
+								trait = freckles
+								trait = freckles_4
+								trait = freckles_5
+							}
+						}
+					}
+				}
+				7 = {
+					add_trait = freckles_2
+					modifier = {
+						factor = 4
+						mother_even_if_dead = { trait = freckles_2 }
+					}
+					modifier = {
+						factor = 4
+						true_father_even_if_dead = { trait = freckles_2 }
+					}
+					#Grandparents
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_2 } }
+					}
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_2 } }
+					}
+					modifier = {
+						factor = 2
+						mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_2 } }
+					}
+					modifier = {
+						factor = 2
+						mother_even_if_dead = { mother_even_if_dead = { trait = freckles_2 } }
+					}
+
+					modifier = {
+						factor = 2
+						mother_even_if_dead = { trait = freckles_3 }
+					}
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { trait = freckles_3 }
+					}
+					#Grandparents
+					modifier = {
+						factor = 1.5
+						true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_3 } }
+					}
+					modifier = {
+						factor = 1.5
+						true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_3 } }
+					}
+					modifier = {
+						factor = 1.5
+						mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_3 } }
+					}
+					modifier = {
+						factor = 1.5
+						mother_even_if_dead = { mother_even_if_dead = { trait = freckles_3 } }
+					}
+					#Multiplier bonus
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { trait = freckles_3 }
+						mother_even_if_dead = { trait = freckles_3 }
+					}
+				}
+				10 = {
+					add_trait = freckles_3
+					modifier = {
+						factor = 2
+						mother_even_if_dead = { trait = freckles_3 }
+					}
+					modifier = {
+						factor = 2
+						true_father_even_if_dead = { trait = freckles_3 }
+					}
+					#Grandparents
+					modifier = {
+						factor = 1.5
+						true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_3 } }
+					}
+					modifier = {
+						factor = 1.5
+						true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_3 } }
+					}
+					modifier = {
+						factor = 1.5
+						mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_3 } }
+					}
+					modifier = {
+						factor = 1.5
+						mother_even_if_dead = { mother_even_if_dead = { trait = freckles_3 } }
+					}
+				}
+				80 = { } #Nothing
+			}
+		}
 	}
 }
 

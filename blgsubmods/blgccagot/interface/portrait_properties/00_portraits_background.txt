@@ -24,8 +24,7 @@
 			}
 
 			NOR = {
-				is_tribal = yes
-				government = wildling_feudal_government
+				has_tribal_government_trigger = yes
 				government = outlaw_government
 				government = winter_government
 				culture = lhazareen
@@ -545,10 +544,8 @@
 						}
 					}
 				}
-				is_nomadic = yes
-				is_tribal = yes
+				has_tribal_or_nomadic_government_trigger = yes
 				culture = lhazareen
-				government = wildling_feudal_government
 			}
 
 			NOR = {
@@ -581,10 +578,8 @@
 						}
 					}
 				}
-				is_nomadic = yes
-				is_tribal = yes
+				has_tribal_or_nomadic_government_trigger = yes
 				culture = lhazareen
-				government = wildling_feudal_government
 			}
 
 			NOT = { has_character_modifier = in_seclusion }

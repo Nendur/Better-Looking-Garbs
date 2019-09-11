@@ -38,6 +38,14 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_has_trait = monk
 				OR = {
+					portrait_religion = catholic
+					portrait_religion = pelagian
+					portrait_religion = nestorian
+					portrait_religion = priscillian
+					portrait_religion = arian
+					portrait_religion = gnostic
+				}
+				OR = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
@@ -58,18 +66,38 @@ spriteTypes = {
 		allow_property_values = {
 			3 = {
 				0 = {
-					always = yes
+					OR = {
+						portrait_religion = catholic
+						portrait_religion = pelagian
+						portrait_religion = priscillian
+						portrait_religion = arian
+					}
+				}
+				1 = {
+					OR = {
+						portrait_religion = nestorian
+						portrait_religion = gnostic
+					}
 				}
 			}
 			5 = {
 				0 = {
-					always = yes
+					OR = {
+						portrait_religion = catholic
+						portrait_religion = pelagian
+						portrait_religion = priscillian
+						portrait_religion = arian
+					}
+				}
+				1 = {
+					OR = {
+						portrait_religion = nestorian
+						portrait_religion = gnostic
+					}
 				}
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 
@@ -102,6 +130,14 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_has_trait = nun
 				OR = {
+					portrait_religion = catholic
+					portrait_religion = pelagian
+					portrait_religion = nestorian
+					portrait_religion = priscillian
+					portrait_religion = arian
+					portrait_religion = gnostic
+				}
+				OR = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
@@ -117,23 +153,15 @@ spriteTypes = {
 			"GFX_clothing_nun_headgear:c5"
 		}
 
-		# Hide hair
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
 	}
 }

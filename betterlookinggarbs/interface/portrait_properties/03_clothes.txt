@@ -428,7 +428,6 @@
 					likes_africans = yes
 					likes_mesoamericans = yes
 					culture_group = israelite
-					blg_italian = yes
 					blg_north_african = yes
 				}
 			}
@@ -462,7 +461,6 @@
 				likes_africans = yes
 				likes_mesoamericans = yes
 				culture_group = israelite
-				blg_italian = yes
 				blg_north_african = yes
 			}
 		}
@@ -499,7 +497,6 @@
 					likes_africans = yes
 					likes_mesoamericans = yes
 					culture_group = israelite
-					blg_italian = yes
 					blg_north_african = yes
 				}
 			}
@@ -529,7 +526,6 @@
 				likes_africans = yes
 				likes_mesoamericans = yes
 				culture_group = israelite
-				blg_italian = yes
 				blg_north_african = yes
 			}
 		}
@@ -574,7 +570,6 @@
 						likes_africans = yes
 						likes_mesoamericans = yes
 						culture_group = israelite
-						blg_italian = yes
 						blg_north_african = yes
 					}
 				}
@@ -593,7 +588,6 @@
 				likes_africans = yes
 				likes_mesoamericans = yes
 				culture_group = israelite
-				blg_italian = yes
 				blg_north_african = yes
 			}
 		}
