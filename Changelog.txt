@@ -1,5 +1,6 @@
 Changelog:
 
+12-09-2019
   New hair and beardstyles, clothing and headgear for Norse,
   -the beards and female hair are from SeeK's Proper Northmen.
   New sets of Baltic headgear.

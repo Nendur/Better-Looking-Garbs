@@ -24,12 +24,12 @@
 			}
 
 			NOR = {
+				has_pilgrimage_trait_trigger = yes
 				has_tribal_government_trigger = yes
 				government = outlaw_government
 				government = winter_government
 				culture = lhazareen
 				trait = in_hiding
-				trait = on_pilgrimage
 			}
 		}
 		modifier = {
@@ -64,8 +64,8 @@
 		modifier = {
 			factor = 0
 			OR = {
+				has_pilgrimage_trait_trigger = yes
 				trait = in_hiding
-				trait = on_pilgrimage
 				government = winter_government
 			}
 		}
@@ -170,9 +170,8 @@
 		modifier = {
 			factor = 0
 			OR = {
+				has_pilgrimage_trait_trigger = yes
 				trait = in_hiding
-				trait = travelling
-				trait = on_pilgrimage
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -249,9 +248,8 @@
 
 	7 = { # Dolmen
 		factor = 1
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				religion_group = dothraki_rel_group
 				religion_group = jogos_rel_group
 				religion_group = lhazar_rel_group
@@ -262,7 +260,10 @@
 		}
 		modifier = {
 			factor = 30
-			is_theocracy = yes
+			OR = {
+				is_theocracy = yes
+				has_priest_trait_trigger = yes
+			}
 		}
 		modifier = {
 			factor = 10
@@ -307,18 +308,12 @@
 			OR = {
 				is_theocracy = yes
 				trait = zealous
-				trait = septon
-				trait = septa
-				trait = silent_sister
+				has_priest_trait_trigger = yes
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				trait = septon
-				trait = septa
-				trait = silent_sister
-			}
+			has_priest_trait_trigger = yes
 		}
 		hide_layers = { 38 = {} }
 	}
@@ -711,7 +706,6 @@
 			OR = {
 				government = wildling_feudal_government
 				trait = in_hiding
-				trait = on_pilgrimage
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -795,8 +789,8 @@
 		modifier = {
 			factor = 0
 			OR = {
+				has_pilgrimage_trait_trigger = yes
 				trait = in_hiding
-				trait = on_pilgrimage
 				government = winter_government
 			}
 		}
@@ -812,9 +806,8 @@
 		modifier = {
 			factor = 0
 			OR = {
+				has_pilgrimage_trait_trigger = yes
 				trait = in_hiding
-				trait = travelling
-				trait = on_pilgrimage
 				government = winter_government
 			}
 		}
@@ -852,9 +845,8 @@
 		modifier = {
 			factor = 0
 			OR = {
+				has_pilgrimage_trait_trigger = yes
 				trait = in_hiding
-				trait = travelling
-				trait = on_pilgrimage
 				government = winter_government
 			}
 		}
@@ -888,8 +880,7 @@
 		modifier = {
 			factor = 0
 			OR = {
-				trait = travelling
-				trait = on_pilgrimage
+				has_pilgrimage_trait_trigger = yes
 				government = winter_government
 			}
 		}
@@ -934,9 +925,12 @@
 					terrain = arctic
 					has_province_modifier = asoiaf_normal_winter
 					has_province_modifier = asoiaf_harsh_winter
-					government = winter_government
 				}
 			}
+		}
+		modifier = {
+			factor = 10
+			government = winter_government
 		}
 	}
 

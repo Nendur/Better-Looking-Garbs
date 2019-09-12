@@ -719,7 +719,6 @@ character_event = {
 					OR = {
 						graphical_culture = crimeangfx
 						graphical_culture = visigothgfx
-						graphical_culture = chinesegfx
 						graphical_culture = afghangfx
 						graphical_culture = siberiangfx
 						graphical_culture = bohemiangfx

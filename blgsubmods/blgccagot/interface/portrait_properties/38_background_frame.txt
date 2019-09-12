@@ -14,11 +14,9 @@
 			OR = {
 				NOT = { host = { at_location = ROOT } }
 				in_command = yes
+				has_pilgrimage_trait_trigger = yes
 				trait = in_hiding
-				trait = travelling
-				trait = on_pilgrimage
-				is_tribal = yes
-				government = wildling_feudal_government
+				has_tribal_government_trigger = yes
 				government = outlaw_government
 				government = winter_government
 				culture = lhazareen
