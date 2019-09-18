@@ -609,28 +609,11 @@ character_event = {
 		}
 
 		if = {
-			limit = {
-				location = {
-					OR = {
-						region = world_europe_north
-						region = world_europe_east
-					}
-					climate = severe_winter
-				}
-			}
+			limit = { blg_polar_bear = yes }
 			set_graphical_culture = polar_bear
 		}
 		else_if = {
-			limit = {
-				location = {
-					OR = {
-						region = world_persia
-						region = world_india
-						region = world_steppe_east
-						region = world_himalayas
-					}
-				}
-			}
+			limit = { blg_black_bear = yes }
 			set_graphical_culture = black_bear
 		}
 		else = {

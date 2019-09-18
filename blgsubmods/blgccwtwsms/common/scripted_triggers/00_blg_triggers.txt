@@ -10,15 +10,7 @@ blg_french = {
 	always = no
 }
 
-blg_veiled_tagelmust = {
-	always = no
-}
-
 blg_uncrowned = {
-	always = no
-}
-
-blg_saint = {
 	always = no
 }
 
@@ -65,9 +57,23 @@ blg_religion_orientorthodox = {
 	}
 }
 
-religion_openly_celtic_or_reformed_trigger = {
-	OR = {
-		religion = celtic_pagan_reformed
-		religion = celtic_pagan
+blg_polar_bear = {
+	location = {
+		OR = {
+			region = world_europe_north
+			terrain = arctic
+		}
+		climate = severe_winter
+	}
+}
+
+blg_black_bear = {
+	location = {
+		OR = {
+			region = world_persia
+			region = world_india
+			region = world_steppe_tarim
+			region = world_himalayas
+		}
 	}
 }

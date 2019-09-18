@@ -10,16 +10,8 @@ blg_french = {
 	culture = arpitan
 }
 
-blg_veiled_tagelmust = {
-	culture = tagelmust
-}
-
 blg_uncrowned = {
 	emf_needs_coronation = yes
-}
-
-blg_saint = {
-	trait = saint
 }
 
 blg_desert_monk = {
@@ -57,6 +49,23 @@ blg_religion_orientorthodox = {
 	}
 }
 
-religion_openly_celtic_or_reformed_trigger = {
-	always = no
+blg_polar_bear = {
+	location = {
+		OR = {
+			region = world_europe_north
+			terrain = arctic
+		}
+		climate = severe_winter
+	}
+}
+
+blg_black_bear = {
+	location = {
+		OR = {
+			region = world_persia
+			region = world_india
+			region = world_steppe_tarim
+			region = world_himalayas
+		}
+	}
 }

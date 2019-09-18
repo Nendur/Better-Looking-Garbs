@@ -24,10 +24,6 @@ blg_uncrowned = {
 	always = no
 }
 
-blg_saint = {
-	trait = saint
-}
-
 blg_desert_monk = {
 	OR = {
 		trait = desert_father
@@ -92,5 +88,30 @@ likes_latino_iberians = {
 		culture_group = italian_group
 		culture_group = island_romance
 		culture_group = vasconic
+	}
+}
+
+religion_openly_in_celtic_subgroup_trigger = {
+	religion_openly_celtic_or_reformed_trigger = yes
+}
+
+blg_polar_bear = {
+	location = {
+		OR = {
+			region = world_europe_north
+			terrain = arctic
+		}
+		climate = severe_winter
+	}
+}
+
+blg_black_bear = {
+	location = {
+		OR = {
+			region = world_persia
+			region = world_india
+			region = world_steppe_tarim
+			region = world_himalayas
+		}
 	}
 }

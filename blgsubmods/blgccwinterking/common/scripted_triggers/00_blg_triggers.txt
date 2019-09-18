@@ -13,10 +13,6 @@ blg_french = {
 	}
 }
 
-blg_veiled_tagelmust = {
-	always = no
-}
-
 blg_desert_monk = {
 	always = no
 }
@@ -45,5 +41,19 @@ religion_openly_west_african_or_reformed_trigger = {
 }
 
 religion_openly_bon_or_reformed_trigger = {
+	always = no
+}
+
+blg_polar_bear = {
+	location = {
+		OR = {
+			region = custom_scandinavia
+			terrain = arctic
+		}
+		climate = severe_winter
+	}
+}
+
+blg_black_bear = {
 	always = no
 }

@@ -458,6 +458,9 @@ fi
 if [[ $holyfury -eq 1 ]]; then
 	echo "Holy Fury present."
 	LIST="$LIST dlc074/*"
+	if [[ $russian -eq 1 ]]; then
+		LIST="$LIST dlc074adlc016/*"
+	fi
 	if [ -f "${DLC}046.dlc" ]; then
 		LIST="$LIST dlc074adlc046/*"
 	fi

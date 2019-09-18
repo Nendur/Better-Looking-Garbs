@@ -300,7 +300,7 @@
 		hide_layers = {33 = {}}
 		trigger = {
 			is_priest = yes
-			religion_openly_celtic_or_reformed_trigger = yes
+			religion_openly_in_celtic_subgroup_trigger = yes
 		}
 	}
 }

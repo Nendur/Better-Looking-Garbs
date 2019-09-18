@@ -10,10 +10,6 @@ blg_french = {
 	always = no
 }
 
-blg_veiled_tagelmust = {
-	always = no
-}
-
 blg_uncrowned = {
 	always = no
 }
@@ -57,7 +53,7 @@ blg_religion_orientorthodox = {
 	}
 }
 
-religion_openly_celtic_or_reformed_trigger = {
+religion_openly_in_celtic_subgroup_trigger = {
 	OR = {
 		religion = celtic_pagan_reformed
 		religion = iberian_pagan_reformed
@@ -137,4 +133,25 @@ religion_openly_bon_or_reformed_trigger = {
 
 religion_openly_hellenic_or_reformed_trigger = {
 	religion_group = graecoroman_group
+}
+
+blg_polar_bear = {
+	location = {
+		OR = {
+			region = world_europe_north
+			terrain = arctic
+		}
+		climate = severe_winter
+	}
+}
+
+blg_black_bear = {
+	location = {
+		OR = {
+			region = world_persia
+			region = world_india
+			region = world_steppe_tarim
+			region = world_himalayas
+		}
+	}
 }

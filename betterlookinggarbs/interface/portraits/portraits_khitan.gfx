@@ -132,7 +132,7 @@ spriteTypes = {
 			{ 120 74 46 }
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 12 13 }
 	}
 
 	portraitType = {
@@ -213,7 +213,7 @@ spriteTypes = {
 			{ 120 74 46 }
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 12 13 }
 	}
 
 	portraitType = {
@@ -294,7 +294,7 @@ spriteTypes = {
 			{ 120 74 46 }
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 12 13 }
 	}
 
 #### KHITAN FEMALE ####
@@ -384,7 +384,7 @@ spriteTypes = {
 			{ 120 74 46 }
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 12 13 }
 	}
 
 	portraitType = {
@@ -468,7 +468,7 @@ spriteTypes = {
 			{ 120 74 46 }
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 12 13 }
 	}
 
 	portraitType = {
@@ -552,6 +552,6 @@ spriteTypes = {
 			{ 120 74 46 }
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 12 13 }
 	}
 }

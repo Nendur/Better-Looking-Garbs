@@ -78,12 +78,7 @@ character_event = {
 		}
 
 		if = {
-			limit = {
-				location = {
-					region = custom_scandinavia
-					climate = severe_winter
-				}
-			}
+			limit = { blg_polar_bear = yes }
 			set_graphical_culture = polar_bear
 		}
 		else = {
