@@ -978,6 +978,7 @@ character_event = {
 								graphical_culture = siciliangfx
 								graphical_culture = centralindiangfx
 								graphical_culture = southindiangfx
+								graphical_culture = khmergfx
 							}
 						}
 						mother_even_if_dead = {
@@ -991,6 +992,7 @@ character_event = {
 								graphical_culture = siciliangfx
 								graphical_culture = centralindiangfx
 								graphical_culture = southindiangfx
+								graphical_culture = khmergfx
 							}
 						}
 					}
@@ -1072,6 +1074,7 @@ character_event = {
 								graphical_culture = muslimgfx
 								graphical_culture = arabicgfx
 								graphical_culture = egyptiangfx
+								graphical_culture = khmergfx
 								graphical_culture = mesoamericangfx
 							}
 						}
@@ -1085,6 +1088,7 @@ character_event = {
 								graphical_culture = muslimgfx
 								graphical_culture = arabicgfx
 								graphical_culture = egyptiangfx
+								graphical_culture = khmergfx
 								graphical_culture = mesoamericangfx
 							}
 						}
@@ -1186,6 +1190,7 @@ character_event = {
 								graphical_culture = muslimgfx
 								graphical_culture = arabicgfx
 								graphical_culture = egyptiangfx
+								graphical_culture = khmergfx
 								graphical_culture = mesoamericangfx
 							}
 						}
@@ -1198,6 +1203,7 @@ character_event = {
 								graphical_culture = muslimgfx
 								graphical_culture = arabicgfx
 								graphical_culture = egyptiangfx
+								graphical_culture = khmergfx
 								graphical_culture = mesoamericangfx
 							}
 						}
@@ -1218,6 +1224,7 @@ character_event = {
 							graphical_culture = bodpagfx
 							graphical_culture = assamesegfx
 							graphical_culture = tangutgfx
+							graphical_culture = khmergfx
 						}
 					}
 					mother_even_if_dead = {
@@ -1225,6 +1232,7 @@ character_event = {
 							graphical_culture = bodpagfx
 							graphical_culture = assamesegfx
 							graphical_culture = tangutgfx
+							graphical_culture = khmergfx
 						}
 					}
 				}
@@ -1282,6 +1290,7 @@ character_event = {
 								graphical_culture = muslimgfx
 								graphical_culture = arabicgfx
 								graphical_culture = egyptiangfx
+								graphical_culture = khmergfx
 								graphical_culture = mesoamericangfx
 							}
 						}
@@ -1301,6 +1310,7 @@ character_event = {
 								graphical_culture = muslimgfx
 								graphical_culture = arabicgfx
 								graphical_culture = egyptiangfx
+								graphical_culture = khmergfx
 								graphical_culture = mesoamericangfx
 							}
 						}

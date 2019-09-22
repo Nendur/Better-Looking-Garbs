@@ -125,3 +125,6 @@ celtiberiangfx = {
 tochariangfx = {
 	skin_tone = 1
 }
+khmergfx = {
+	skin_tone = 2
+}
