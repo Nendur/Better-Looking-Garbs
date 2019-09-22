@@ -53,6 +53,16 @@ blg_religion_orientorthodox = {
 	}
 }
 
+blg_religion_chinese = {
+	OR = {
+		religion = tao_reformed
+		religion = confucian
+		religion = tao
+		religion = nasrani_reformed
+		religion = nasrani
+	}
+}
+
 religion_openly_in_celtic_subgroup_trigger = {
 	OR = {
 		religion = celtic_pagan_reformed
@@ -133,6 +143,17 @@ religion_openly_bon_or_reformed_trigger = {
 
 religion_openly_hellenic_or_reformed_trigger = {
 	religion_group = graecoroman_group
+}
+
+blg_chinese = {
+	OR = {
+		culture = sinohellenic
+		culture = zhao
+	}
+}
+
+blg_regular_helmet = {
+	always = no
 }
 
 blg_polar_bear = {

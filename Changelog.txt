@@ -1,5 +1,11 @@
 Changelog:
 
+  Added Tianxia compatibility submod.
+  Added new South-East Asian portraits.
+  Fixed Ancient Religions Celtic compatibility.
+  Fixed Chinese crowns getting blocked by republic government type.
+  Changed Chinese offmap support for generalized offmap support.
+
 12-09-2019
   New hair and beardstyles, clothing and headgear for Norse,
   -the beards and female hair are from SeeK's Proper Northmen.

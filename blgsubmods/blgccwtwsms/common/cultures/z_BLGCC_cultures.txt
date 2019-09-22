@@ -854,19 +854,19 @@ proto_carpathian = {
 }
 
 southeast_asian_group = {
-	graphical_cultures = { indiangfx muslimgfx }
+	graphical_cultures = { southindiangfx indiangfx muslimgfx }
 
 	manipuri = {
-		graphical_cultures = { assamesegfx }
+		graphical_cultures = { khmergfx }
 	}
 	arakanese = {
-		graphical_cultures = { assamesegfx }
+		graphical_cultures = { khmergfx }
 	}
 	naga = {
-		graphical_cultures = { assamesegfx }
+		graphical_cultures = { khmergfx }
 	}
 	bodo = {
-		graphical_cultures = { assamesegfx }
+		graphical_cultures = { khmergfx }
 	}
 }
 

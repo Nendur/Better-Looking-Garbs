@@ -384,7 +384,10 @@
 		hide_layers = {33 = {}}
 		trigger = {
 			is_priest = yes
-			religion = taoist
+			OR = {
+				religion = taoist
+				blg_religion_chinese = yes
+			}
 		}
 	}
 	24 = { #Zun Priest

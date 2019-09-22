@@ -511,7 +511,10 @@
 		}
 		modifier = {
 			factor = 0.99
-			culture = han
+			OR = {
+				culture = han
+				blg_chinese = yes
+			}
 		}
 		modifier = {
 			factor = 0.01
@@ -536,7 +539,10 @@
 		trigger = {
 			OR = {
 				AND = {
-					culture = han
+					OR = {
+						culture = han
+						blg_chinese = yes
+					}
 					OR = {
 						higher_real_tier_than = count
 						spouse = { higher_real_tier_than = count }

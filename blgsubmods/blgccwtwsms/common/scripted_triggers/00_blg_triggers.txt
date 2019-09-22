@@ -57,6 +57,18 @@ blg_religion_orientorthodox = {
 	}
 }
 
+blg_religion_chinese = {
+	always = no
+}
+
+blg_chinese = {
+	always = no
+}
+
+blg_regular_helmet = {
+	always = no
+}
+
 blg_polar_bear = {
 	location = {
 		OR = {

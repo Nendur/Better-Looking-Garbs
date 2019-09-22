@@ -36,11 +36,23 @@ blg_religion_orientorthodox = {
 	religion = nestorian
 }
 
+blg_religion_chinese = {
+	always = no
+}
+
 religion_openly_west_african_or_reformed_trigger = {
 	always = no
 }
 
 religion_openly_bon_or_reformed_trigger = {
+	always = no
+}
+
+blg_chinese = {
+	always = no
+}
+
+blg_regular_helmet = {
 	always = no
 }
 

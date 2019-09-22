@@ -6,6 +6,10 @@
 			factor = 100
 			multiplayer = yes
 		}
+		modifier = {
+			factor = 100
+			has_game_started = no
+		}
 	}
 	1 = {
 		factor = 100

@@ -66,6 +66,10 @@ blg_religion_orientorthodox = {
 	always = no
 }
 
+blg_religion_chinese = {
+	always = no
+}
+
 likes_africans = {
 	OR = {
 		culture_group = west_african
@@ -93,6 +97,14 @@ likes_latino_iberians = {
 
 religion_openly_in_celtic_subgroup_trigger = {
 	religion_openly_celtic_or_reformed_trigger = yes
+}
+
+blg_chinese = {
+	always = no
+}
+
+blg_regular_helmet = {
+	always = no
 }
 
 blg_polar_bear = {

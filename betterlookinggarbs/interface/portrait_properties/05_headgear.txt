@@ -11,7 +11,7 @@
 					NAND = { trait = uncrowned is_feudal = yes }
 					NOT = { blg_uncrowned = yes }
 				}
-				is_offmap_tag_including_dead = offmap_china
+				is_or_was_offmap_power_ruler = yes
 			}
 		}
 		modifier = {
@@ -36,7 +36,7 @@
 				AND = { trait = uncrowned is_feudal = yes }
 				blg_uncrowned = yes
 				blg_petty_empire = yes
-				has_landed_title = e_china_west_governor
+				is_offmap_governor = yes
 				song_dynasty_futou_trigger = yes
 				check_variable = { which = ca_headgear value = 2 }
 			}
@@ -119,6 +119,7 @@
 		modifier = {
 			factor = 0
 			is_republic = yes
+			is_or_was_offmap_power_ruler = no
 			NAND = {
 				is_merchant_republic = yes
 				in_command = no
@@ -156,6 +157,7 @@
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
 				blg_royalty = yes
+				is_or_was_offmap_power_ruler = yes
 			}
 		}
 		modifier = {
@@ -239,6 +241,7 @@
 		modifier = {
 			factor = 0
 			is_republic = yes
+			is_or_was_offmap_power_ruler = no
 			NAND = {
 				is_merchant_republic = yes
 				in_command = no
@@ -281,6 +284,7 @@
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
 				blg_royalty = yes
+				is_or_was_offmap_power_ruler = yes
 			}
 		}
 		modifier = {
@@ -364,6 +368,7 @@
 		modifier = {
 			factor = 0
 			is_republic = yes
+			is_or_was_offmap_power_ruler = no
 			NAND = {
 				is_merchant_republic = yes
 				in_command = no
@@ -406,7 +411,7 @@
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
 				blg_royalty = yes
-				is_offmap_tag_including_dead = offmap_china
+				is_or_was_offmap_power_ruler = yes
 				AND = { # Petty kings
 					OR = {
 						AND = { independent = yes real_tier = duke }
@@ -505,7 +510,17 @@
 		}
 		modifier = {
 			factor = 0
+			OR = {
+				culture = han
+				culture = tangut
+				blg_chinese = yes
+			}
+			song_dynasty_futou_trigger = no
+		}
+		modifier = {
+			factor = 0
 			is_republic = yes
+			is_or_was_offmap_power_ruler = no
 			NAND = {
 				is_merchant_republic = yes
 				in_command = no
@@ -1097,7 +1112,8 @@
 				}
 			}
 			NOR = {
-				culture_group = mesoamerican
+				likes_mesoamericans = yes
+				blg_regular_helmet = yes
 				trait = uncrowned
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
@@ -1341,7 +1357,10 @@
 		}
 		modifier = {
 			factor = 0.99
-			culture = han
+			OR = {
+				culture = han
+				blg_chinese = yes
+			}
 		}
 		modifier = {
 			factor = 0.01
@@ -1415,7 +1434,10 @@
 		}
 		modifier = {
 			factor = 0.99
-			culture = han
+			OR = {
+				culture = han
+				blg_chinese = yes
+			}
 		}
 		modifier = {
 			factor = 0.01
@@ -1439,7 +1461,10 @@
 		trigger = {
 			OR = {
 				AND = {
-					culture = han
+					OR = {
+						culture = han
+						blg_chinese = yes
+					}
 					OR = {
 						higher_real_tier_than = count
 						spouse = { higher_real_tier_than = count }
