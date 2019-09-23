@@ -483,6 +483,7 @@
 				graphical_culture = westafricangfx
 				graphical_culture = norsegfx
 				graphical_culture = siberiangfx
+				graphical_culture = hellenicgfx
 			}
 		}
 		modifier = {
@@ -583,6 +584,7 @@
 				graphical_culture = westafricangfx
 				graphical_culture = norsegfx
 				graphical_culture = siberiangfx
+				graphical_culture = hellenicgfx
 			}
 		}
 		modifier = {
@@ -682,6 +684,7 @@
 				graphical_culture = westafricangfx
 				graphical_culture = norsegfx
 				graphical_culture = siberiangfx
+				graphical_culture = hellenicgfx
 			}
 		}
 		modifier = {
@@ -760,6 +763,7 @@
 				graphical_culture = lombardgfx
 				graphical_culture = khitangfx
 				graphical_culture = westafricangfx
+				graphical_culture = hellenicgfx
 			}
 		}
 		modifier = {
@@ -848,6 +852,7 @@
 				graphical_culture = lombardgfx
 				graphical_culture = khitangfx
 				graphical_culture = westafricangfx
+				graphical_culture = hellenicgfx
 			}
 		}
 		modifier = {

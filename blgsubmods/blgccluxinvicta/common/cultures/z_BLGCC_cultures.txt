@@ -1,6 +1,14 @@
 byzantine = {
+	graphical_cultures = { byzantinegfx byzantinegfx }
+
+	hellenistic = {
+		graphical_cultures = { hellenicgfx }
+	}
 	greek = {
 		graphical_cultures = { byzantinegfx }
+	}
+	indohellenic = {
+		graphical_cultures = { hellenicgfx }
 	}
 	gandharan = {
 		graphical_cultures = { indohellengfx indiangfx muslimgfx }
@@ -37,6 +45,12 @@ latin = {
 	romanogothic = {
 		graphical_cultures = { visigothgfx }
 	}
+	sicilian = {
+		graphical_cultures = { siciliangfx italiangfx southerngfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
+	}
 }
 
 iranian = {
@@ -54,6 +68,12 @@ iranian = {
 	}
 	tocharian = {
 		graphical_cultures = { sogdiangfx persiangfx }
+	}
+	sogdian = {
+		graphical_cultures = { sogdiangfx persiangfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
 	}
 }
 
@@ -129,6 +149,12 @@ north_germanic = {
 	icelandic = {
 		graphical_cultures = { norsegfx }
 	}
+	norse = {
+		graphical_cultures = { norsegfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
+	}
 }
 
 central_germanic = {
@@ -166,6 +192,12 @@ west_germanic = {
 	}
 	dutch = {
 		graphical_cultures = { dutchgfx }
+	}
+	english = {
+		graphical_cultures = { englishgfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
 	}
 }
 
@@ -219,6 +251,19 @@ altaic = {
 	pecheneg = {
 		graphical_cultures = { pecheneggfx steppegfx turkishgfx }
 	}
+
+	bolghar = {
+		graphical_cultures = { steppegfx cumangfx turkishgfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
+	}
+	kirghiz = {
+		graphical_cultures = { centralasiangfx cumangfx turkishgfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
+	}
 }
 
 bantu = {
@@ -247,6 +292,12 @@ bantu = {
 	}
 	zulu = {
 		graphical_cultures = { westafricangfx africangfx }
+	}
+	manden = {
+		graphical_cultures = { westafricangfx africangfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
 	}
 }
 
@@ -295,6 +346,12 @@ ethiopic = {
 	}
 	macrobian = {
 		graphical_cultures = { somaligfx africangfx westafricangfx }
+	}
+	somali = {
+		graphical_cultures = { somaligfx africangfx westafricangfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
 	}
 }
 
@@ -390,6 +447,12 @@ indoaryan = {
 	}
 	saurashtra = {
 		graphical_cultures = { indusgfx }
+	}
+	hindustani = {
+		graphical_cultures = { indiangfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
 	}
 }
 

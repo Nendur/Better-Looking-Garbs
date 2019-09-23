@@ -115,6 +115,9 @@ imperiale = {
 	armenian = {
 		graphical_cultures = { georgiangfx byzantinegfx easterngfx }
 	}
+	greek = {
+		graphical_cultures = { hellenicgfx byzantinegfx easterngfx }
+	}
 	romanosyrian = {
 		graphical_cultures = { semitegfx levantinegfx arabicgfx muslimgfx }
 	}
