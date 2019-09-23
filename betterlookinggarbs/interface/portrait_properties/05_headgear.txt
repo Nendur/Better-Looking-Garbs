@@ -140,6 +140,7 @@
 			spouse = { is_republic = yes } #Dead wives of Patricians are nogovernment, thus they would wear crowns for being married to a King-tier.
 			is_alive = no
 			is_ruler = no
+			is_or_was_offmap_power_ruler = no
 		}
 	}
 
@@ -262,6 +263,7 @@
 			spouse = { is_republic = yes }
 			is_alive = no
 			is_ruler = no
+			is_or_was_offmap_power_ruler = no
 		}
 		modifier = {
 			factor = 100
@@ -389,6 +391,7 @@
 			spouse = { is_republic = yes }
 			is_alive = no
 			is_ruler = no
+			is_or_was_offmap_power_ruler = no
 		}
 		modifier = {
 			factor = 100
@@ -541,6 +544,7 @@
 			spouse = { is_republic = yes }
 			is_alive = no
 			is_ruler = no
+			is_or_was_offmap_power_ruler = no
 		}
 		modifier = {
 			factor = 100
