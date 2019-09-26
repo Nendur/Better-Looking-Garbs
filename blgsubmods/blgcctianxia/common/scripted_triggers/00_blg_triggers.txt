@@ -1,0 +1,80 @@
+blg_italian = {
+	always = no
+}
+
+blg_north_african = {
+	always = no
+}
+
+blg_french = {
+	always = no
+}
+
+blg_desert_monk = {
+	always = no
+}
+
+blg_petty_empire = {
+	always = no
+}
+
+blg_uncrowned = {
+	always = no
+}
+
+blg_royalty = {
+	always = no
+}
+
+blg_crowned = {
+	always = no
+}
+
+blg_religion_orthodox = {
+	always = no
+}
+
+blg_religion_orientorthodox = {
+	always = no
+}
+
+blg_religion_chinese = {
+	religion = shinto
+}
+
+blg_chinese = {
+	culture_group = chinese_group
+}
+
+blg_regular_helmet = {
+	OR = {
+		culture_group = japonic
+		culture_group = koreanic
+		culture = viet
+	}
+}
+
+blg_polar_bear = {
+	location = {
+		OR = {
+			region = world_europe_north
+			region = world_manchuria
+			region = custom_yezo
+			terrain = arctic
+		}
+		climate = severe_winter
+	}
+}
+
+blg_black_bear = {
+	location = {
+		OR = {
+			region = world_persia
+			region = world_india
+			region = world_steppe_tarim
+			region = world_tibet
+			region = world_far_east
+			region = world_south_east_asia
+		}
+	}
+}

@@ -4,6 +4,18 @@ spriteTypes = {
 ### South East Asian male ####
 
 	spriteType = {
+		name = "GFX_southasian_son_base"
+		textureFile = "gfx/characters/southasian_male/southasian_son_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_southasian_daughter_base"
+		textureFile = "gfx/characters/southasian_female/southasian_daughter_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
 		name = "GFX_southasian_male_base"
 		texturefile = "gfx\\characters\\southasian_male\\southasian_male_base_1.dds"
 		noOfFrames = 1

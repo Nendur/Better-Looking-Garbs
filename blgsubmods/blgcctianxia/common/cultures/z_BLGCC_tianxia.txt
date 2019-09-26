@@ -1,0 +1,116 @@
+altaic = {
+	buryat = {
+		graphical_cultures = { mongolgfx }
+	}
+	jurchen = {
+		graphical_cultures = { khitangfx }
+	}
+}
+
+tibetan_group = {  
+	bamar = {
+		graphical_cultures = { assamesegfx southindiangfx indiangfx muslimgfx }
+	}
+}
+
+japonic = {
+	graphical_cultures = { japanesegfx turkishgfx chinesegfx mongolgfx arabicgfx cumangfx muslimgfx }
+
+	yamato = {
+		graphical_cultures = { japanesegfx }
+	}
+	japanese = {
+		graphical_cultures = { japanesegfx }
+	}
+	ryukyuan = {
+		graphical_cultures = { japanesegfx }
+	}
+	emishi = {
+		graphical_cultures = { ainugfx mongolgfx }
+		unit_graphical_cultures = { siberiangfx ugricgfx }
+	}
+	ainu = {
+		graphical_cultures = { ainugfx mongolgfx }
+		unit_graphical_cultures = { siberiangfx ugricgfx }
+	}
+}
+
+koreanic = {
+	graphical_cultures = { koreangfx bretongfx chinesegfx mongolgfx muslimgfx }
+	unit_graphical_cultures = { bodpagfx mongolgfx }
+
+	korean = {
+		graphical_cultures = { koreangfx }
+	}
+	jeju = {
+		graphical_cultures = { koreangfx }
+	}
+}
+
+paleosiberian = {
+	graphical_cultures = { mongolgfx cumangfx muslimgfx }
+
+	nivkh = {
+		graphical_cultures = { siberiangfx ugricgfx }
+	}
+}
+
+mon_khmer_group = {
+	graphical_cultures = { southindiangfx pomeraniangfx indiangfx muslimgfx }
+
+	khmer = {
+		graphical_cultures = { khmergfx }
+	}
+	mon = {
+		graphical_cultures = { khmergfx }
+	}
+	viet = {
+		graphical_cultures = { koreangfx chinesegfx mongolgfx }
+	}
+	cham = {
+		graphical_cultures = { khmergfx }
+	}
+}
+
+tai_kadai_group = {
+	graphical_cultures = { southindiangfx afghangfx indiangfx muslimgfx }
+
+	thai = {
+		graphical_cultures = { khmergfx }
+	}
+	lao = {
+		graphical_cultures = { khmergfx }
+	}
+	shan = {
+		graphical_cultures = { khmergfx }
+	}
+}
+
+malayo_polynesian_group = {
+	graphical_cultures = { southindiangfx tribalgfx indiangfx muslimgfx }
+
+	malay = {
+		graphical_cultures = { khmergfx }
+	}
+	tagalog = {
+		graphical_cultures = { khmergfx }
+	}
+	javanese = {
+		graphical_cultures = { khmergfx }
+	}
+	minangkabau = {
+		graphical_cultures = { khmergfx }
+	}
+	taiwanese = {
+		graphical_cultures = { khmergfx }
+	}
+	acehnese = {
+		graphical_cultures = { khmergfx }
+	}
+	dayak = {
+		graphical_cultures = { khmergfx }
+	}
+	minahasan = {
+		graphical_cultures = { khmergfx }
+	}
+}

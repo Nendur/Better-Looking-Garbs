@@ -49,12 +49,12 @@ Installation:
       * If you use the HIP Extended Mechanics & Flavor mod, play with both Better Looking Garbs and the BLG/CC for EMF mod.
       * Both HIP add-ons should be used if applicable. CPR+ will not be compatible with BLG.
       * If you use the CK2Plus mod, play with both Better Looking Garbs and the BLG/CC for CK2Plus mod.
+      * If you use the Game of Thrones mod, play with both Better Looking Garbs and the BLG for A Game of Thrones mod.
+      * If you use the Elder Kings mod, play with both Better Looking Garbs and the BLG/CC for Elder Kings mod.
       * If you use the When The World Stopped Making Sense mod, play with both Better Looking Garbs and the BLG/CC for WTWSMS mod.
       * If you use the The Winter King mod, play with both Better Looking Garbs and the BLG/CC for The Winter King mod.
-      * If you use the Game of Thrones mod, play with both Better Looking Garbs and the BLG for A Game of Thrones mod.
       * If you use the Lux Invicta mod, play with both Better Looking Garbs and the BLG/CC for Lux Invicta mod.
-      * If you use the Elder Kings mod, play with both Better Looking Garbs and the BLG/CC for Elder Kings mod.
-      * If you use a different mod with non-standard cultures, play with both Better Looking Garbs and the BLG/CC generic compatibility mod.
+      * If you use the Tianxia: Silk Road Expansion mod, play with both Better Looking Garbs and the BLG/CC for Tianxia mod. The Tianxia: Japanese, Korean & Ainu Portraits are needed as well.
       * If you want to play for achievements, play with both Better Looking Garbs and the BLG/CC with ironman achievements mod. This disables several portraits. Not needed for modded ironman.
       * If you dislike the wounding and disease graphics, play with both Better Looking Garbs and the no disease mod.
 

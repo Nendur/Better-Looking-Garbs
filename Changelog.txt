@@ -1,6 +1,6 @@
 Changelog:
 
-  Added Tianxia compatibility submod.
+  Added Tianxia: Silk Road Expansion compatibility submod. The Tianxia: Japanese, Korean & Ainu Portraits are needed as well.
   Added new South-East Asian portraits.
   Added Hellenic Greek portraits for earlier era mods.
   Fixed Ancient Religions Celtic compatibility.

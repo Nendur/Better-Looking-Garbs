@@ -67,16 +67,6 @@ if [ -d "${MODS}CK2Plus" -o -f "${MODS}ck2plus.zip" -o -f "${MODS}blgccck2+.mod"
 	fi
 	echo "CK2 Plus compatibility add-on installed."
 fi
-if [ -d "${MODS}WTWSMS" -o -f "${MODS}wtwsms.zip" -o -f "${MODS}blgccwtwsms.mod" ]; then
-	if [ -f "$BLGZIP" ]; then
-		unzip -uoq "$BLGZIP" "submods/blgccwtwsms*" -d"$MODS"
-	fi
-	if [ -f "${ADDONS}/blgccwtwsms.mod" ]; then
-		[ -d "${MODS}/blgccwtwsms" ] && rm -r "${MODS}/blgccwtwsms.mod" "${MODS}/blgccwtwsms"
-		mv "${ADDONS}"/blgccwtwsms* "$MODS"
-	fi
-	echo "WTWSMS compatibility add-on installed."
-fi
 if [ -d "${MODS}A Game of Thrones" -o -f "${MODS}a game of thrones.zip" -o -f "${MODS}blgagot.mod" -o -f "${MODS}blgccagot.mod" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccagot*" -d"$MODS"
@@ -98,6 +88,16 @@ if [ -d "${MODS}EK021" -o -f "${MODS}EK021.mod" ]; then
 	fi
 	echo "Elder Kings compatibility add-on installed."
 fi
+if [ -d "${MODS}WTWSMS" -o -f "${MODS}wtwsms.zip" -o -f "${MODS}blgccwtwsms.mod" ]; then
+	if [ -f "$BLGZIP" ]; then
+		unzip -uoq "$BLGZIP" "submods/blgccwtwsms*" -d"$MODS"
+	fi
+	if [ -f "${ADDONS}/blgccwtwsms.mod" ]; then
+		[ -d "${MODS}/blgccwtwsms" ] && rm -r "${MODS}/blgccwtwsms.mod" "${MODS}/blgccwtwsms"
+		mv "${ADDONS}"/blgccwtwsms* "$MODS"
+	fi
+	echo "WTWSMS compatibility add-on installed."
+fi
 if [ -d "${MODS}Britannia" -o -f "${MODS}britannia.zip" -o -f "${MODS}blgccwinterking.mod" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccwinterking*" -d"$MODS"
@@ -118,6 +118,16 @@ if [ -d "${MODS}Lux Invicta" -o -f "${MODS}Lux Invicta.mod" ]; then
 	fi
 	echo "Lux Invicta compatibility add-on installed."
 fi
+if [ -d "${MODS}Tianxia" -o -f "${MODS}Tianxia.mod" ]; then
+	if [ -f "$BLGZIP" ]; then
+		unzip -uoq "$BLGZIP" "submods/blgcctianxia*" -d"$MODS"
+	fi
+	if [ -f "${ADDONS}/blgcctianxia.mod" ]; then
+		[ -d "${MODS}/blgcctianxia" ] && rm -r "${MODS}/blgcctianxia.mod" "${MODS}/blgcctianxia"
+		mv "${ADDONS}"/blgcctianxia* "$MODS"
+	fi
+	echo "Tianxia compatibility add-on installed."
+fi
 if [ -f "${MODS}blgccironman.mod" -o -n "`grep ironman=yes \"${MODS}/../settings.txt\"`" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccironman*" -d"$MODS"
@@ -137,13 +147,6 @@ if [ -f "${MODS}blgnodisease.mod" ]; then
 		mv "${ADDONS}"/blgnodisease* "$MODS"
 	fi
 	echo "Vanilla disease graphics add-on installed."
-fi
-if [ -f "$BLGZIP" ]; then
-	unzip -uoq "$BLGZIP" "submods/blgreligion*" -d"$MODS"
-fi
-if [ -f "${ADDONS}/blgreligion.mod" ]; then
-	[ -d "${MODS}/blgreligion" ] && rm -r "${MODS}/blgreligion.mod" "${MODS}/blgreligion"
-	mv "${ADDONS}"/blgreligion* "$MODS"
 fi
 
 if [ -n "$1" ] && [ -d "$1/dlc" ]; then
