@@ -1,0 +1,39 @@
+blg_new_characters = {
+	name = "BLG_NEW_CHARACTERS"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = historical
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "BLG_NEW_CHARACTERS_HISTORICAL_DESC"
+	}
+	option = {
+		name = limited
+		text = "RULE_OPTION_LIMITED"
+		desc = "BLG_NEW_CHARACTERS_LIMITED_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "BLG_NEW_CHARACTERS_OFF_DESC"
+	}
+}
+
+blg_child_birth = {
+	name = "BLG_CHILD_BIRTH"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON_DEFAULT"
+		desc = "BLG_CHILD_BIRTH_ON_DESC"
+	}
+	option = {
+		name = limited
+		text = "RULE_OPTION_LIMITED"
+		desc = "BLG_CHILD_BIRTH_LIMITED_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "BLG_CHILD_BIRTH_OFF_DESC"
+	}
+}

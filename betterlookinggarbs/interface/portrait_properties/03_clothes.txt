@@ -19,7 +19,7 @@
 				spouse = { higher_real_tier_than = count }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				is_offmap_tag_including_dead = offmap_china
+				is_or_was_offmap_power_ruler = yes
 			}
 		}
 		modifier = {
@@ -47,7 +47,7 @@
 				spouse = { higher_real_tier_than = count }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				is_offmap_tag_including_dead = offmap_china
+				is_or_was_offmap_power_ruler = yes
 			}
 		}
 		modifier = {
@@ -75,7 +75,7 @@
 				spouse = { higher_real_tier_than = count }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				is_offmap_tag_including_dead = offmap_china
+				is_or_was_offmap_power_ruler = yes
 			}
 		}
 		modifier = {
@@ -102,6 +102,7 @@
 			OR = {
 				higher_real_tier_than = duke
 				spouse = { higher_real_tier_than = duke }
+				is_or_was_offmap_power_ruler = yes
 			}
 			NOT = { trait = humble }
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 4 } }
@@ -137,6 +138,7 @@
 			OR = {
 				higher_real_tier_than = duke
 				spouse = { higher_real_tier_than = duke }
+				is_or_was_offmap_power_ruler = yes
 			}
 			NOT = { trait = humble }
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 4 } }
@@ -172,6 +174,7 @@
 			OR = {
 				higher_real_tier_than = duke
 				spouse = { higher_real_tier_than = duke }
+				is_or_was_offmap_power_ruler = yes
 			}
 			NOT = { trait = humble }
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 4 } }
@@ -199,6 +202,7 @@
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				spouse = { higher_real_tier_than = count }
+				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
 				trait = humble
@@ -271,6 +275,7 @@
 			OR = {
 				higher_real_tier_than = duke
 				spouse = { higher_real_tier_than = duke }
+				is_or_was_offmap_power_ruler = yes
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 10 } }
 		}
@@ -377,6 +382,7 @@
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				spouse = { higher_real_tier_than = count }
+				is_or_was_offmap_power_ruler = yes
 			}
 		}
 	}

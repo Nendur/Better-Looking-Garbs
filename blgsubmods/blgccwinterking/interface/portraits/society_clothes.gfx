@@ -158,13 +158,7 @@ spriteTypes = {
 			"GFX_empty:c4"
 		}
 
-		# Hide hair
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			19 = {
 				0 = { always = yes }
 			}
@@ -179,6 +173,8 @@ spriteTypes = {
 				}
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
 	}
 
 	# monastic_order_orthodox
@@ -346,13 +342,7 @@ spriteTypes = {
 			"GFX_empty:c4"
 		}
 
-		# Hide hair, ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			3 = {
 				0 = {
 					portrait_society_rank = 1
@@ -395,6 +385,8 @@ spriteTypes = {
 				}
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 }
 	}
 
 	# hermetics
@@ -643,18 +635,7 @@ spriteTypes = {
 			"GFX_empty:c4"
 		}
 
-		# Hide hair on 3rd, 4th, and 9th slot ( slavic, muslim, byzantine )
 		allow_property_values = {
-			1 = {
-				0 = {
-					OR = {
-						portrait_culture_group = imperiale
-						portrait_culture_group = arabic
-						portrait_culture_group = israelite
-						portrait_culture = romanosyrian
-					}
-				}
-			}
 			3 = {
 				0 = { # Western
 					OR = {
@@ -768,5 +749,8 @@ spriteTypes = {
 				}
 			}
 		}
+
+		# Hide hair on 3rd, 4th, and 9th slot ( slavic, muslim, byzantine )
+		headgear_that_hides_hair = { 2 3 8 }
 	}
 }

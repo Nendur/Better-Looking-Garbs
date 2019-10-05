@@ -7,7 +7,7 @@ horse_group = {
 }
 
 cat_group = {
-	graphical_cultures = { berberggfx arabicgfx muslimgfx }
+	graphical_cultures = { berbergfx arabicgfx muslimgfx }
 }
 
 bear_group = {

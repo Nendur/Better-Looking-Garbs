@@ -46,6 +46,7 @@ character_event = {
 				culture = high_valyrian
 				culture = dragon_culture
 			}
+			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
 		random_realm_province = {
@@ -83,6 +84,7 @@ character_event = {
 				culture = high_valyrian
 				culture = dragon_culture
 			}
+			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
 		random_realm_province = {
@@ -674,7 +676,7 @@ character_event = {
 # Installatian check event.
 character_event = {
 	id    = blg.4
-	title = blg.4.title
+	title = BETTER_LOOKING_GARBS
 	desc  = blg.4.desc
 
 	picture = GFX_evt_church_council

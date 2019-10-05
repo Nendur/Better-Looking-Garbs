@@ -289,38 +289,7 @@ spriteTypes = {
 			"GFX_empty:c4"
 		}
 		
-		# Hide hair on 3rd, 4th, and 9th slot ( slavic, muslim, byzantine )
 		allow_property_values = {
-			1 = {
-				0 = {
-					OR = {
-						portrait_culture_group = sarnor_group
-						portrait_culture_group = ghiscari_group
-						NOR = {
-							portrait_culture_group = yi_ti_group
-							portrait_culture_group = jade_islands_group
-							portrait_culture_group = asshai_group
-							portrait_culture_group = qarth_group
-							portrait_culture_group = hyrkoon_group
-							portrait_culture_group = sarnor_group
-							portrait_culture_group = ghiscari_group
-							portrait_culture_group = summer_islands
-							portrait_culture = basilisk_islander	
-							portrait_culture_group = naath_group
-							portrait_culture_group = further_east
-							portrait_culture_group = free_folk
-							portrait_culture = moon_clansman
-							portrait_culture = skagosi
-							portrait_culture = brindlemen
-							portrait_culture_group = moraqi_group
-							portrait_culture_group = nghai_group
-							portrait_culture_group = dothraki_group
-							portrait_culture_group = jogos_nhai_group	
-							portrait_culture_group = ibbenese_group
-						}
-					}
-				}
-			}
 			3 = {
 				0 = { # Far East
 					OR = {
@@ -466,6 +435,9 @@ spriteTypes = {
 				}
 			}
 		}
+
+		# Hide hair on 3rd, 4th, and 9th slot ( slavic, muslim, byzantine )
+		headgear_that_hides_hair = { 2 3 8 }
 	}
 
 	# the_satanists
@@ -650,11 +622,6 @@ spriteTypes = {
 		
 		# No hair, correct rank
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			3 = {
 				0 = {
 					portrait_society_rank = 1
@@ -691,6 +658,8 @@ spriteTypes = {
 				}
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 }
 	}
 	
 	
@@ -812,11 +781,6 @@ spriteTypes = {
 
 		# No hair, correct rank
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			3 = {
 				0 = {
 					portrait_society_rank = 1
@@ -853,5 +817,7 @@ spriteTypes = {
 				}
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 }
 	}
 }

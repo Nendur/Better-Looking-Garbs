@@ -1,10 +1,18 @@
-blg.4.title;Better Looking Garbs;;;;;;;;;;;;;x
+BETTER_LOOKING_GARBS;Better Looking Garbs;;;;;;;;;;;;;x
 blg.4.desc;Welcome to using Better Looking Garbs.\nTo complete the installation and gain full integration with available DLC assets you should use the BLG installer.\nRun betterlookinggarbsinstall.exe in Documents\Paradox Interactive\Crusader Kings II\mod or bundled in betterlookinggarbs.zip. See the readme file for the full instructions.;;;;;;;;;;;;;x
 blg.4.opt;I will do this.;;;;;;;;;;;;;x
 sicilian;Sicilian;Sicilien;Sizilianisch;;Sicilian;;;;;;;;;x
 brown_bear;Bear;ours;Bär;;Oso;;;;;;;;;x
 black_bear;Bear;ours;Bär;;Oso;;;;;;;;;x
 polar_bear;Bear;ours;Bär;;Oso;;;;;;;;;x
+BLG_NEW_CHARACTERS;§ZBLG:§! New Character Variation;;;;;;;;;;;;;x
+BLG_NEW_CHARACTERS_HISTORICAL_DESC;New character ethnicities will be varied based on the populations within or near the realm they come from. Both the current population and the historical population will be represented.;;;;;;;;;;;;;x
+BLG_NEW_CHARACTERS_LIMITED_DESC;New character ethnicities will be varied based on the populations within or near the realm they come from. No culture or region specific options will be used.;;;;;;;;;;;;;x
+BLG_NEW_CHARACTERS_OFF_DESC;New character ethnicities will not be altered.;;;;;;;;;;;;;x
+BLG_CHILD_BIRTH;§ZBLG:§! Newborn child handling;;;;;;;;;;;;;x
+BLG_CHILD_BIRTH_ON_DESC;Newborn children can get a different ethnicity representing the midpoint between their parents. Similar ethnicities will be shifted to the child's culture.;;;;;;;;;;;;;x
+BLG_CHILD_BIRTH_LIMITED_DESC;Newborn children can get a different ethnicity representing the midpoint between their parents.;;;;;;;;;;;;;x
+BLG_CHILD_BIRTH_OFF_DESC;Newborn children will not be altered.;;;;;;;;;;;;;x
 ca_headgear;headgear;couvre-chef;Kopfbedeckung;;corona;;;;;;;;;x
 ca_clothes;clothes;habits;Kleidung;;ropajes;;;;;;;;;x
 ca_mask;mask;;;;;;;;;;;;;x

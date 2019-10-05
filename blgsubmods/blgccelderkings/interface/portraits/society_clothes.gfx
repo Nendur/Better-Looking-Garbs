@@ -150,11 +150,6 @@ spriteTypes = {
 		}
 
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			3 = {
 				0 = {
 					portrait_society_rank = 1
@@ -200,6 +195,8 @@ spriteTypes = {
 				}
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 }
 	}
 
 	spriteType = {
@@ -405,5 +402,7 @@ spriteTypes = {
 				}
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 }
 	}
 }

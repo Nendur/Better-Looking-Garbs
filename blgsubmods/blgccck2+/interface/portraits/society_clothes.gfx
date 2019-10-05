@@ -66,22 +66,16 @@ spriteTypes = {
 		# Tonsure hairstyle, no beard
 		allow_property_values = {
 			4 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			19 = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			36 = { # Staff overlap
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 
@@ -152,27 +146,19 @@ spriteTypes = {
 			"GFX_empty:c4"
 		}
 
-		# Hide hair
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			19 = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
 	}
 
 	# monastic_order_dominican
@@ -226,6 +212,7 @@ spriteTypes = {
 					portrait_society_rank = 3
 					portrait_society_rank = 4
 					portrait_has_trait = monk
+					portrait_has_trait = perfecti
 					portrait_has_trait = on_pilgrimage
 					portrait_has_trait = blgcaon
 				}
@@ -250,17 +237,13 @@ spriteTypes = {
 		# Tonsure hairstyle, no beard
 		allow_property_values = {
 			4 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			19 = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 
@@ -319,27 +302,19 @@ spriteTypes = {
 			"GFX_empty:c4"
 		}
 
-		# Hide hair
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			19 = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
 	}
 
 	# monastic_order_orthodox
@@ -457,9 +432,7 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -523,11 +496,6 @@ spriteTypes = {
 
 		# Hide hair, ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			3 = {
 				0 = {
 					portrait_society_rank = 1
@@ -569,12 +537,15 @@ spriteTypes = {
 			19 = {
 				0 = { always = yes }
 			}
-			31 = {
-				0 = {
-					always = yes
-				}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 }
 	}
 
 	# monastic_order_nestorian
@@ -604,6 +575,12 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_vaishnavite_monk_male_headgear_front.dds"
 		noOfFrames = 2
 	}
+
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_vaishnavite_male_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_vaishnavite_monk_male_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_vaishnavite_clothing_male"
@@ -647,14 +624,10 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			36 = { # Staff overlap
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -672,6 +645,12 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_vaishnavite_monk_female_headgear_front.dds"
 		noOfFrames = 2
 	}
+
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_vaishnavite_female_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_vaishnavite_monk_female_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_vaishnavite_clothing_female"
@@ -715,14 +694,10 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -754,6 +729,12 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_smarta_monk_male_headgear_front.dds"
 		noOfFrames = 2
 	}
+
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_smarta_male_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_smarta_monk_male_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_smarta_clothing_male"
@@ -797,14 +778,10 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			36 = { # Staff overlap
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -883,14 +860,10 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -910,6 +883,12 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_shakti_monk_male_clothing_front.dds"
 		noOfFrames = 2
 	}
+
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_shakti_male_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_shakti_monk_male_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_shakti_clothing_male"
@@ -953,9 +932,7 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -973,6 +950,12 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_shakti_monk_female_clothing_front.dds"
 		noOfFrames = 2
 	}
+
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_shakti_female_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_shakti_monk_female_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_shakti_clothing_female"
@@ -1016,14 +999,10 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -1043,6 +1022,12 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_shaivite_monk_male_clothing_front.dds"
 		noOfFrames = 2
 	}
+
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_shaivite_male_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_shaivite_monk_male_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_shaivite_clothing_male"
@@ -1086,9 +1071,7 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -1106,6 +1089,12 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_shaivite_monk_female_headgear_front.dds"
 		noOfFrames = 2
 	}
+
+	#spriteType = {
+	#	name = "GFX_society_monastic_order_hindu_shaivite_female_headgear_mid"
+	#	textureFile = "gfx/characters/societies/mom_shaivite_monk_female_headgear_mid.dds"
+	#	noOfFrames = 2
+	#}
 
 	portraitType = {
 		name = "PORTRAIT_society_monastic_order_hindu_shaivite_clothing_female"
@@ -1148,15 +1137,8 @@ spriteTypes = {
 			19 = {
 				0 = { always = yes }
 			}
-			32 = {
-				0 = {
-					always = yes
-				}
-			}
-			33 = {
-				0 = {
-					always = yes
-				}
+			31 = {
+				0 = { always = yes }
 			}
 		}
 	}
@@ -1231,10 +1213,11 @@ spriteTypes = {
 			19 = {
 				0 = { always = yes }
 			}
-			31 = {
-				0 = {
-					always = yes
-				}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
 			}
 		}
 
@@ -1303,14 +1286,10 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 
@@ -1381,9 +1360,7 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 
@@ -1447,14 +1424,10 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 
@@ -1525,9 +1498,7 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 
@@ -1591,14 +1562,10 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 
@@ -1657,17 +1624,13 @@ spriteTypes = {
 		# Hide hair, beard
 		allow_property_values = {
 			4 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			19 = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 
@@ -1728,25 +1691,17 @@ spriteTypes = {
 
 		allow_property_values = {
 			3 = {
-				0 = {
-					always = yes
-				}
-				1 = {
-					always = yes
-				}
+				0 = { always = yes }
+				1 = { always = yes }
 			}
 			19 = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -1818,20 +1773,14 @@ spriteTypes = {
 
 		allow_property_values = {
 			3 = {
-				0 = {
-					always = yes
-				}
-				1 = {
-					always = yes
-				}
+				0 = { always = yes }
+				1 = { always = yes }
 			}
 			19 = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -1901,25 +1850,17 @@ spriteTypes = {
 
 		allow_property_values = {
 			3 = {
-				0 = {
-					always = yes
-				}
-				1 = {
-					always = yes
-				}
+				0 = { always = yes }
+				1 = { always = yes }
 			}
 			19 = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -2258,9 +2199,7 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -2331,22 +2270,7 @@ spriteTypes = {
 			"GFX_empty:c4"
 		}
 
-		# Hide hair on 3rd, 4th, and 9th slot ( slavic, muslim, byzantine )
 		allow_property_values = {
-			1 = {
-				0 = {
-					OR = {
-						portrait_culture_group = baltic
-						portrait_culture_group = east_slavic
-						portrait_culture_group = west_slavic
-						portrait_culture_group = south_slavic
-						portrait_culture_group = east_romance
-						portrait_culture_group = arabic
-						portrait_culture_group = iranian
-						portrait_culture_group = byzantine
-					}
-				}
-			}
 			3 = {
 				0 = { # Western
 					NOR = {
@@ -2579,16 +2503,15 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
+
+		# Hide hair on 3rd, 4th, and 9th slot ( slavic, muslim, byzantine )
+		headgear_that_hides_hair = { 2 3 8 }
 	}
 
 	# the_assassins
@@ -2652,19 +2575,13 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -2723,7 +2640,6 @@ spriteTypes = {
 					portrait_society = cult_of_angra_mainyu
 					portrait_society = cult_of_titan
 					portrait_society = cult_of_apep
-
 				}
 				OR = {
 					NOT = { portrait_tier = duke }
@@ -2789,9 +2705,7 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -2864,11 +2778,6 @@ spriteTypes = {
 
 		# No hair, correct rank
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			3 = {
 				0 = {
 					portrait_society_rank = 1
@@ -2908,17 +2817,16 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 }
 	}
+
 	# the_voudons
 
 	# Male
@@ -3017,9 +2925,7 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -3119,14 +3025,10 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -3211,9 +3113,7 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -3259,11 +3159,6 @@ spriteTypes = {
 
 		# No hair, correct rank
 		allow_property_values = {
-			1 = {
-				0 = {
-					always = yes
-				}
-			}
 			3 = {
 				0 = {
 					portrait_society_rank = 1
@@ -3303,15 +3198,13 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
+
+		headgear_that_hides_hair = { 0 1 2 3 }
 	}
 }

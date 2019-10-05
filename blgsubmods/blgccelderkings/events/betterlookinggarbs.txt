@@ -99,7 +99,7 @@ character_event = {
 # Installatian check event.
 character_event = {
 	id    = blg.4
-	title = blg.4.title
+	title = BETTER_LOOKING_GARBS
 	desc  = blg.4.desc
 
 	picture = GFX_evt_church_council

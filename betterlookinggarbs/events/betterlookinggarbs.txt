@@ -33,6 +33,7 @@ character_event = {
 					is_alternate_start = no
 					has_alternate_start_parameter = { key = culture value = historical }
 				}
+				has_game_rule = { name = blg_new_characters value = historical }
 			}
 		}
 	}
@@ -46,6 +47,7 @@ character_event = {
 				race = ROOT
 			}
 			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
 		random_realm_province = {
@@ -67,6 +69,7 @@ character_event = {
 				race = ROOT
 			}
 			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
 		random_realm_province = {
@@ -88,10 +91,6 @@ character_event = {
 			modifier = {
 				factor = 3
 				culture = norman
-				OR = {
-					is_alternate_start = no
-					has_alternate_start_parameter = { key = culture value = historical }
-				}
 			}
 		}
 		trigger = {
@@ -105,6 +104,7 @@ character_event = {
 				is_alternate_start = no
 				has_alternate_start_parameter = { key = culture value = historical }
 			}
+			has_game_rule = { name = blg_new_characters value = historical }
 		}
 
 		random_realm_province = {
@@ -426,8 +426,8 @@ character_event = {
 								}
 							}
 							if = {
-								limit = { culture_group = dravidian_group }
-								set_graphical_culture = tamil
+								limit = { likes_dravidians = yes }
+								set_graphical_culture = telugu
 							}
 							else = {
 								set_graphical_culture = marathi
@@ -447,7 +447,7 @@ character_event = {
 									graphical_culture = centralindiangfx
 								}
 							}
-							set_graphical_culture = hindustani
+							set_graphical_culture = bengali
 						}
 					}
 				}
@@ -599,6 +599,7 @@ character_event = {
 				is_alternate_start = no
 				has_alternate_start_parameter = { key = culture value = historical }
 			}
+			has_game_rule = { name = blg_new_characters value = historical }
 		}
 
 		random_list = {
@@ -628,6 +629,7 @@ character_event = {
 				is_alternate_start = no
 				has_alternate_start_parameter = { key = culture value = historical }
 			}
+			has_game_rule = { name = blg_new_characters value = historical }
 		}
 
 		random_list = {
@@ -640,17 +642,18 @@ character_event = {
 	option = { # Steppe mixed areas
 		ai_chance = { factor = 2 }
 		trigger = {
-			culture_group = altaic
+			likes_altaics = yes
 			OR = { dynasty = none num_of_dynasty_members <= 1 }
 			OR = {
 				is_alternate_start = no
 				has_alternate_start_parameter = { key = culture value = historical }
 			}
+			has_game_rule = { name = blg_new_characters value = historical }
 		}
 
 		random_list = {
 			30 = { set_graphical_culture = cuman }
-			30 = { set_graphical_culture = bolghar }
+			30 = { set_graphical_culture = khazar }
 			20 = { set_graphical_culture = pecheneg }
 			10 = { set_graphical_culture = sogdian }
 			20 = {
@@ -658,7 +661,7 @@ character_event = {
 					factor = 0
 					NOT = { capital_scope = { OR = { region = world_steppe_east region = world_steppe_tarim } } }
 				}
-				set_graphical_culture = kirghiz
+				set_graphical_culture = uyghur
 			}
 		}
 	}
@@ -672,6 +675,7 @@ character_event = {
 				is_alternate_start = no
 				has_alternate_start_parameter = { key = culture value = historical }
 			}
+			has_game_rule = { name = blg_new_characters value = historical }
 		}
 
 		random_list = {
@@ -814,13 +818,14 @@ character_event = {
 		ai_chance = { factor = 6 }
 
 		trigger = { #Only handle known graphical cultures
+			NOT = { has_game_rule = { name = blg_child_birth value = off } }
+
 			true_father_even_if_dead = {
 				OR = {
 					graphical_culture = westerngfx
 					graphical_culture = frankishgfx
 					graphical_culture = englishgfx
 					graphical_culture = germangfx
-					graphical_culture = occitangfx
 					graphical_culture = trueoccitangfx
 					graphical_culture = southerngfx
 					graphical_culture = celticgfx
@@ -902,7 +907,6 @@ character_event = {
 					graphical_culture = frankishgfx
 					graphical_culture = englishgfx
 					graphical_culture = germangfx
-					graphical_culture = occitangfx
 					graphical_culture = trueoccitangfx
 					graphical_culture = southerngfx
 					graphical_culture = celticgfx
@@ -1156,14 +1160,14 @@ character_event = {
 				if = {
 					limit = {
 						OR = {
-							culture_group = indo_aryan_group 
-							culture_group = tibetan_group 
+							likes_indians = yes
+							likes_dravidians = yes
 						}
 					}
 					set_graphical_culture = marathi
 				}
 				else = {
-					set_graphical_culture = tamil
+					set_graphical_culture = telugu
 				}
 			}
 			else_if = { #African-Iberian
@@ -1286,8 +1290,8 @@ character_event = {
 				if = {
 					limit = {
 						OR = {
-							culture_group = tibetan_group
-							culture_group = altaic
+							likes_tibetans = yes
+							likes_altaics = yes
 						}
 					}
 					set_graphical_culture = bodpa
@@ -1340,11 +1344,12 @@ character_event = {
 				if = {
 					limit = {
 						OR = {
-							culture_group = indo_aryan_group 
-							culture_group = tibetan_group 
+							likes_indians = yes
+							likes_dravidians = yes
+							likes_tibetans = yes
 						}
 					}
-					set_graphical_culture = hindustani
+					set_graphical_culture = bengali
 				}
 				else = {
 					set_graphical_culture = panjabi
@@ -1392,8 +1397,8 @@ character_event = {
 				if = {
 					limit = {
 						OR = {
-							culture_group = tibetan_group
-							culture_group = altaic
+							likes_tibetans = yes
+							likes_altaics = yes
 						}
 					}
 					set_graphical_culture = bodpa
@@ -1496,7 +1501,7 @@ character_event = {
 					}
 				}
 				if = {
-					limit = { culture_group = mesoamerican }
+					limit = { likes_mesoamericans = yes }
 					set_graphical_culture = nahuatl
 				}
 				else = {
@@ -1629,8 +1634,8 @@ character_event = {
 				if = {
 					limit = {
 						OR = {
-							culture_group = tibetan_group
-							culture_group = altaic
+							likes_tibetans = yes
+							likes_altaics = yes
 							culture_group = chinese_group
 						}
 					}
@@ -1699,7 +1704,7 @@ character_event = {
 						}
 					}
 				}
-				set_graphical_culture = bolghar
+				set_graphical_culture = khazar
 			}
 			else_if = { #Arabic-Eastern-European
 				limit = {
@@ -1741,7 +1746,7 @@ character_event = {
 				if = {
 					limit = {
 						OR = {
-							culture_group = byzantine
+							likes_byzantines = yes
 							culture_group = israelite
 						}
 					}
@@ -1893,16 +1898,16 @@ character_event = {
 				if = {
 					limit = {
 						OR = {
-							culture_group = indo_aryan_group 
-							culture_group = tibetan_group 
-							culture_group = dravidian_group 
+							likes_indians = yes
+							likes_dravidians = yes
+							likes_tibetans = yes
 							culture_group = chinese_group 
 						}
 					}
 					set_graphical_culture = tocharian
 				}
 				else_if = {
-					limit = { culture_group = altaic }
+					limit = { likes_altaics = yes }
 					set_graphical_culture = turkish
 				}
 				else = {
@@ -2251,22 +2256,16 @@ character_event = {
 					OR = {
 						true_father_even_if_dead = {
 							OR = {
-								graphical_culture = germangfx
 								graphical_culture = frankishgfx
-								graphical_culture = oldfrankishgfx
-								graphical_culture = lombardgfx
-								graphical_culture = basquegfx
+								graphical_culture = outremergfx
 								graphical_culture = celticgfx
 								graphical_culture = bretongfx
 							}
 						}
 						mother_even_if_dead = {
 							OR = {
-								graphical_culture = germangfx
 								graphical_culture = frankishgfx
-								graphical_culture = oldfrankishgfx
-								graphical_culture = lombardgfx
-								graphical_culture = basquegfx
+								graphical_culture = outremergfx
 								graphical_culture = celticgfx
 								graphical_culture = bretongfx
 							}
@@ -2480,12 +2479,899 @@ character_event = {
 			}
 		}
 	}
+
+	#Change hairstyles etc. to the childs cultural upbringing.
+	after = {
+		if = {
+			limit = { has_game_rule = { name = blg_child_birth value = on } }
+
+			#Norse/English
+			if = {
+				limit = {
+					OR = {
+						graphical_culture = norsegfx
+						graphical_culture = saxongfx
+						graphical_culture = norsegaelgfx
+						graphical_culture = crimeangfx
+						graphical_culture = englishgfx
+						graphical_culture = normangfx
+						graphical_culture = dutchgfx
+						graphical_culture = westerngfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = english
+							culture_group = iberian
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_iranians = yes
+							culture_group = israelite
+						}
+					}
+					set_graphical_culture = english
+				}
+				else_if = {
+					limit = {
+						likes_latino_iberians = yes
+						NOT = { graphical_culture = normangfx }
+					}
+					set_graphical_culture = norman
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = saxon
+							culture = old_saxon
+							culture = frisian
+							likes_celts = yes
+							AND = {
+								OR = {
+									culture_group = west_germanic
+									culture_group = central_germanic
+								}
+								OR = {
+									religion_group = pagan_group
+									religion_openly_norse_or_reformed_trigger = yes
+								}
+							}
+						}
+						NOR = {
+							graphical_culture = saxongfx
+							graphical_culture = norsegaelgfx
+						}
+					}
+					set_graphical_culture = saxon
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = dutch
+							culture_group = central_germanic
+						}
+						NOR = {
+							religion_group = pagan_group
+							religion_openly_norse_or_reformed_trigger = yes
+						}
+						NOR = {
+							graphical_culture = westerngfx
+							graphical_culture = dutchgfx
+						}
+					}
+					set_graphical_culture = dutch
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture_group = north_germanic
+							culture_group = finno_ugric
+						}
+						NOR = {
+							graphical_culture = norsegfx
+							graphical_culture = norsegaelgfx
+						}
+					}
+					set_graphical_culture = norse
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = crimean_gothic
+							likes_byzantines = yes
+							likes_altaics = yes
+							culture_group = west_slavic
+							culture_group = south_slavic
+							culture_group = east_slavic
+							culture_group = magyar
+							culture_group = chinese_group
+						}
+						NOT = { graphical_culture = crimeangfx }
+					}
+					set_graphical_culture = crimean_gothic
+				}
+			}
+
+			#German
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = germangfx
+						graphical_culture = oldfrankishgfx
+						graphical_culture = lombardgfx
+						graphical_culture = visigothgfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = lombard
+							culture_group = iberian
+							likes_byzantines = yes
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_iranians = yes
+							likes_altaics = yes
+							likes_africans = yes
+						}
+						NOR = {
+							graphical_culture = lombardgfx
+							graphical_culture = visigothgfx
+						}
+					}
+					set_graphical_culture = lombard
+				}
+				else_if = {
+					limit = {
+						culture_group = latin
+						NOT = { graphical_culture = oldfrankishgfx }
+					}
+					set_graphical_culture = old_frankish
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = german
+							culture_group = west_germanic
+							culture_group = north_germanic
+							likes_celts = yes
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+						}
+						NOR = {
+							graphical_culture = germangfx
+							graphical_culture = oldfrankishgfx
+						}
+					}
+					set_graphical_culture = german
+				}
+			}
+
+			#Frankish
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = frankishgfx
+						graphical_culture = outremergfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = frankish
+							culture = norman
+							likes_germanics = yes
+							likes_celts = yes
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+						}
+						NOT = { graphical_culture = frankishgfx }
+					}
+					set_graphical_culture = frankish
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = italian
+							culture = roman
+							blg_italian = yes
+							likes_byzantines = yes
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_iranians = yes
+							likes_altaics = yes
+							likes_africans = yes
+							culture_group = israelite
+						}
+						NOT = { graphical_culture = outremergfx }
+					}
+					set_graphical_culture = outremer
+				}
+			}
+
+			#Celtic
+			else_if = {
+				limit = {
+					graphical_culture = celticgfx
+				}
+				if = {
+					limit = {
+						OR = {
+							likes_latino_iberians = yes
+							likes_byzantines = yes
+							culture_group = central_germanic
+							culture_group = west_slavic
+							culture_group = south_slavic
+							culture_group = east_slavic
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_iranians = yes
+							culture_group = israelite
+							culture_group = chinese_group
+							likes_indians = yes
+							likes_dravidians = yes
+							likes_tibetans = yes
+						}
+					}
+					set_graphical_culture = breton
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = bretongfx
+						graphical_culture = gallicgfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = irish
+							culture = scottish
+							culture = pictish
+							culture_group = north_germanic
+							culture_group = baltic
+							culture_group = finno_ugric
+						}
+					}
+					set_graphical_culture = scottish
+				}
+			}
+
+			#Italian
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = italiangfx
+						graphical_culture = romangfx
+						graphical_culture = trueoccitangfx
+						graphical_culture = dalmatiangfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = frankish
+							culture = old_frankish
+							culture = norman
+							culture = occitan
+						}
+						NOR = {
+							graphical_culture = trueoccitangfx
+							graphical_culture = romangfx
+						}
+					}
+					set_graphical_culture = roman
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture_group = west_germanic
+							culture_group = north_germanic
+							likes_celts = yes
+						}
+						NOT = { graphical_culture = trueoccitangfx }
+					}
+					set_graphical_culture = occitan
+				}
+				else_if = {
+					limit = {
+						OR = {
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_africans = yes
+							likes_iranians = yes
+							likes_indians = yes
+							likes_dravidians = yes
+							likes_tibetans = yes
+						}
+						NOT = { graphical_culture = italiangfx }
+					}
+					set_graphical_culture = italian
+				}
+				else_if = {
+					limit = {
+						OR = {
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+							likes_altaics = yes
+							likes_mesoamericans = yes
+							culture_group = israelite
+						}
+						NOT = { graphical_culture = dalmatiangfx }
+					}
+					set_graphical_culture = dalmatian
+				}
+			}
+
+			#Byzantine
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = byzantinegfx
+						graphical_culture = hellenicgfx
+						graphical_culture = georgiangfx
+						graphical_culture = siciliangfx
+					}
+				}
+				if = {
+					limit = {
+						graphical_culture = siciliangfx
+						OR = {
+							likes_byzantines = yes
+							likes_africans = yes
+							likes_iranians = yes
+						}
+					}
+					set_graphical_culture = greek
+				}
+				else_if = {
+					limit = {
+						likes_latino_iberians = yes
+						NOT = { graphical_culture = siciliangfx }
+					}
+					set_graphical_culture = sicilian
+				}
+			}
+
+			#Turkish
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = turkishgfx
+						graphical_culture = pecheneggfx
+						graphical_culture = avargfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = turkish
+							culture = khazar
+							culture = bolghar
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_iranians = yes
+							likes_indians = yes
+							likes_dravidians = yes
+							likes_tibetans = yes
+						}
+						NOT = { graphical_culture = turkishgfx }
+					}
+					set_graphical_culture = turkish
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = pecheneg
+							culture = cuman
+							culture = mongol
+							culture = karluk
+							culture = kirghiz
+							culture = uyghur
+							likes_mesoamericans = yes
+						}
+						NOT = { graphical_culture = pecheneggfx }
+					}
+					set_graphical_culture = pecheneg
+				}
+				else_if = {
+					limit = {
+						OR = {
+							likes_byzantines = yes
+							likes_germanics = yes
+							likes_latino_iberians = yes
+							likes_balto_slavics = yes
+							likes_celts = yes
+						}
+						NOT = { graphical_culture = avargfx }
+					}
+					set_graphical_culture = avar
+				}
+			}
+
+			#Cuman
+			else_if = {
+				limit = {
+					graphical_culture = cumangfx
+				}
+				if = {
+					limit = {
+						OR = {
+							likes_byzantines = yes
+							likes_germanics = yes
+							likes_latino_iberians = yes
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+							likes_celts = yes
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_iranians = yes
+							likes_indians = yes
+							likes_dravidians = yes
+						}
+					}
+					set_graphical_culture = khazar
+				}
+			}
+
+			#Mongol
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = mongolgfx
+						graphical_culture = khitangfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = pecheneg
+							culture = cuman
+							culture = mongol
+							culture = karluk
+							culture = kirghiz
+							culture = uyghur
+							likes_mesoamericans = yes
+						}
+						NOT = { graphical_culture = mongolgfx }
+					}
+					set_graphical_culture = mongolgfx
+				}
+				else_if = {
+					limit = {
+						OR = {
+							likes_byzantines = yes
+							likes_germanics = yes
+							likes_latino_iberians = yes
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+							likes_celts = yes
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_iranians = yes
+							likes_indians = yes
+							likes_dravidians = yes
+							culture_group = chinese_group
+							culture_group = israelite
+						}
+						NOT = { graphical_culture = khitangfx }
+					}
+					set_graphical_culture = khitan
+				}
+			}
+
+			#Levantine
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = levantinegfx
+						graphical_culture = semitegfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							likes_germanics = yes
+							likes_latino_iberians = yes
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+							likes_celts = yes
+							blg_north_african = yes
+							likes_indians = yes
+							likes_dravidians = yes
+							culture_group = chinese_group
+						}
+						NOT = { graphical_culture = levantinegfx }
+					}
+					set_graphical_culture = levantine_arabic
+				}
+				else_if = {
+					limit = {
+						OR = {
+							likes_byzantines = yes
+							culture_group = israelite
+						}
+						NOT = { graphical_culture = semitegfx }
+					}
+					set_graphical_culture = assyrian
+				}
+			}
+
+			#West-Slavic
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = westernslavicgfx
+						graphical_culture = bohemiangfx
+						graphical_culture = pomeraniangfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture_group = west_slavic
+							culture_group = east_slavic
+							culture_group = finno_ugric
+							culture_group = baltic
+							culture_group = north_germanic
+							likes_celts = yes
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_iranians = yes
+							likes_altaics = yes
+						}
+						NOR = {
+							graphical_culture = westernslavicgfx 
+							graphical_culture = pomeraniangfx 
+							culture = bohemian
+						}
+					}
+					set_graphical_culture = polish
+				}
+				else_if = {
+					limit = {
+						OR = {
+							likes_byzantines = yes
+							likes_latino_iberians = yes
+							culture_group = west_germanic
+							culture_group = central_germanic
+							culture_group = south_slavic
+							culture_group = magyar
+						}
+						NOT = { graphical_culture = bohemiangfx }
+					}
+					set_graphical_culture = bohemian
+				}
+			}
+
+			#South-Slavic
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = croatsouthslavicgfx
+						graphical_culture = serbsouthslavicgfx
+						AND = {
+							graphical_culture = magyargfx
+							year = 950
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = croatian
+							culture = bosnian
+							culture_group = west_slavic
+							culture_group = east_slavic
+							culture_group = baltic
+							likes_germanics = yes
+							likes_celts = yes
+						}
+						NOR = {
+							graphical_culture = croatsouthslavicgfx 
+							culture = bohemian
+						}
+					}
+					set_graphical_culture = croatian
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = serbian
+							culture = bulgarian
+							culture = romanian
+							culture = bohemian
+							culture = carantanian
+							likes_byzantines = yes
+							likes_latino_iberians = yes
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_iranians = yes
+							likes_africans = yes
+						}
+						NOT = { graphical_culture = serbsouthslavicgfx }
+					}
+					set_graphical_culture = serbian
+				}
+				else_if = {
+					limit = {
+						year = 950
+						OR = {
+							likes_finno_ugrics = yes
+							likes_altaics = yes
+							culture_group = chinese_group
+						}
+						NOT = { graphical_culture = magyargfx }
+					}
+					set_graphical_culture = hungarian
+				}
+			}
+
+			#Persian
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = persiangfx
+						graphical_culture = afghangfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = persian
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_africans = yes
+							likes_altaics = yes
+							likes_byzantines = yes
+							likes_germanics = yes
+							likes_latino_iberians = yes
+							likes_balto_slavics = yes
+							likes_celts = yes
+							likes_finno_ugrics = yes
+							culture_group = israelite
+						}
+						NOT = { graphical_culture = persiangfx }
+					}
+					set_graphical_culture = persian
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = afghan
+							culture = baloch
+							likes_indians = yes
+							likes_dravidians = yes
+							likes_tibetans = yes
+							culture_group = chinese_group
+						}
+						NOT = { graphical_culture = afghangfx }
+					}
+					set_graphical_culture = afghan
+				}
+			}
+
+			#Steppe Iranians
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = alangfx
+						graphical_culture = sogdiangfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = persian
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_africans = yes
+							likes_byzantines = yes
+							likes_germanics = yes
+							likes_latino_iberians = yes
+							likes_balto_slavics = yes
+							likes_celts = yes
+							likes_finno_ugrics = yes
+						}
+						NOT = { graphical_culture = alangfx }
+					}
+					set_graphical_culture = alan
+				}
+				else_if = {
+					limit = {
+						OR = {
+							likes_altaics = yes
+							likes_indians = yes
+							likes_dravidians = yes
+							likes_tibetans = yes
+							culture_group = chinese_group
+						}
+						NOT = { graphical_culture = sogdiangfx }
+					}
+					set_graphical_culture = sogdian
+				}
+			}
+
+			#East African
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = africangfx
+						graphical_culture = somaligfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture_group = west_african
+							likes_byzantines = yes
+							likes_germanics = yes
+							likes_celts = yes
+							religion_openly_west_african_or_reformed_trigger = yes
+						}
+						NOT = { graphical_culture = africangfx }
+					}
+					set_graphical_culture = ethiopian
+				}
+				else_if = {
+					limit = {
+						OR = {
+							likes_arabs = yes
+							likes_iranians = yes
+							likes_altaics = yes
+							likes_indians = yes
+							likes_dravidians = yes
+							likes_tibetans = yes
+							culture_group = chinese_group
+							likes_latino_iberians = yes
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+						}
+						NOT = { graphical_culture = somaligfx }
+					}
+					set_graphical_culture = somali
+				}
+			}
+
+			#West African
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = westafricangfx
+						graphical_culture = centralafricangfx
+						graphical_culture = nubiangfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							culture_group = central_african
+							likes_arabs = yes
+							likes_iranians = yes
+							likes_altaics = yes
+							likes_indians = yes
+							likes_dravidians = yes
+							likes_tibetans = yes
+							culture_group = chinese_group
+							likes_latino_iberians = yes
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+						}
+						NOT = { graphical_culture = centralafricangfx }
+					}
+					set_graphical_culture = hausa
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = nubian
+							culture = ethiopian
+							likes_byzantines = yes
+							likes_germanics = yes
+							likes_celts = yes
+						}
+						NOT = { graphical_culture = nubiangfx }
+					}
+					set_graphical_culture = nubian
+				}
+			}
+
+			#Indian
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = southindiangfx
+						graphical_culture = centralindiangfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							likes_arabs = yes
+							likes_dravidians = yes
+							likes_tibetans = yes
+							likes_altaics = yes
+							likes_africans = yes
+						}
+						NOT = { graphical_culture = southindiangfx }
+					}
+					set_graphical_culture = telugu
+				}
+				else_if = {
+					limit = {
+						OR = {
+							likes_indians = yes
+							likes_latino_iberians = yes
+							likes_germanics = yes
+							likes_celts = yes
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+						}
+						NOT = { graphical_culture = centralindiangfx }
+					}
+					set_graphical_culture = marathi
+				}
+			}
+
+			#Tibetan
+			else_if = {
+				limit = {
+					OR = {
+						graphical_culture = bodpagfx
+						graphical_culture = assamesegfx
+						graphical_culture = tangutgfx
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							likes_tibetans = yes
+							likes_altaics = yes
+							likes_africans = yes
+						}
+						NOR = {
+							graphical_culture = bodpagfx 
+							graphical_culture = tangutgfx
+						}
+					}
+					set_graphical_culture = bodpa
+				}
+				else_if = {
+					limit = {
+						OR = {
+							likes_indians = yes
+							likes_dravidians = yes
+							likes_arabs = yes
+							blg_north_african = yes
+							likes_iranians = yes
+							likes_latino_iberians = yes
+							likes_germanics = yes
+							likes_celts = yes
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+							likes_byzantines = yes
+						}
+						NOT = { graphical_culture = assamesegfx }
+					}
+					set_graphical_culture = assamese
+				}
+				else_if = {
+					limit = {
+						culture_group = chinese_group
+						NOT = { graphical_culture = tangutgfx }
+					}
+					set_graphical_culture = tangut
+				}
+			}
+		}
+	}
 }
 
 # Installatian check event.
 character_event = {
 	id    = blg.4
-	title = blg.4.title
+	title = BETTER_LOOKING_GARBS
 	desc  = blg.4.desc
 
 	picture = GFX_evt_church_council

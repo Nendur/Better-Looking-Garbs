@@ -1,4 +1,4 @@
-on_employer_change = {
+on_host_change = {
 	events = {
 		blg.1 # New spawn ethnic diversity.
 	}
