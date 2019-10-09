@@ -4,15 +4,28 @@
 		factor = 100
 		modifier = {
 			factor = 0.01
-			has_fair_trait_trigger = yes
+			trait = fair
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+		modifier = {
+			factor = 0.02
+			trait = groomed
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
+			}
 		}
 	}
 
 	1 = { # white powder
 		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { culture = akaviri }
+		trigger = {
+			culture = akaviri
 		}
 	}
 
@@ -22,9 +35,8 @@
 
 	3 = { # white powder and rouge a
 		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { culture = akaviri }
+		trigger = {
+			culture = akaviri
 		}
 	}
 
@@ -34,9 +46,8 @@
 
 	5 = { # white powder and rouge b
 		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { culture = akaviri }
+		trigger = {
+			culture = akaviri
 		}
 	}
 }

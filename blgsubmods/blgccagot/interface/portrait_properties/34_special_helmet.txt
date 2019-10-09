@@ -32,14 +32,7 @@
 	}
 	10 = { #Unicorn headgear.
 		factor = 100
-		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
-		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = { 1 = { } } #Hide Hair.
-		hide_layers = { 3 = { } } #Hide Clothes.
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
-		hide_layers = { 31 = { } } #Veil overload.
-		hide_layers = { 32 = { } }
-		hide_layers = { 33 = { } }
+		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks)
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_unicorn_helmet

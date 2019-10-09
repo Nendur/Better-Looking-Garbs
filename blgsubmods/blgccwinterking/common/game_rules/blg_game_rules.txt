@@ -1,0 +1,94 @@
+blg_new_characters = {
+	name = "BLG_NEW_CHARACTERS"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = limited
+		text = "RULE_OPTION_LIMITED"
+		desc = "BLG_NEW_CHARACTERS_LIMITED_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "BLG_NEW_CHARACTERS_OFF_DESC"
+	}
+}
+
+blg_artifacts = {
+	name = "BLG_ARTIFACTS"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "BLG_ARTIFACTS_ON_DESC"
+	}
+	option = {
+		name = weapons
+		text = "RULE_OPTION_WEAPONS"
+		desc = "BLG_ARTIFACTS_WEAPONS_DESC"
+	}
+	option = {
+		name = rare
+		text = "RULE_OPTION_RARE"
+		desc = "BLG_ARTIFACTS_RARE_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "BLG_ARTIFACTS_OFF_DESC"
+	}
+}
+
+blg_traits = {
+	name = "BLG_TRAITS"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "BLG_TRAITS_ON_DESC"
+	}
+	option = {
+		name = nolunatic
+		text = "RULE_OPTION_NOLUNATIC"
+		desc = "BLG_TRAITS_NOLUNATIC_DESC"
+	}
+	option = {
+		name = notraits
+		text = "RULE_OPTION_NOTRAITS"
+		desc = "BLG_TRAITS_NOTRAITS_DESC"
+	}
+	option = {
+		name = nodisease
+		text = "RULE_OPTION_NODISEASE"
+		desc = "BLG_TRAITS_NODISEASE_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "BLG_TRAITS_OFF_DESC"
+	}
+}
+
+blg_wounds = {
+	name = "BLG_WOUNDS"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "BLG_WOUNDS_ON_DESC"
+	}
+	option = {
+		name = nomasks
+		text = "RULE_OPTION_NOMASKS"
+		desc = "BLG_WOUNDS_NOMASKS_DESC"
+	}
+	option = {
+		name = nowounds
+		text = "RULE_OPTION_NOWOUNDS"
+		desc = "BLG_WOUNDS_NOWOUNDS_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "BLG_WOUNDS_OFF_DESC"
+	}
+}

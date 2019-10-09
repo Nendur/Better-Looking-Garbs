@@ -2936,7 +2936,7 @@ character_event = {
 						}
 						NOT = { graphical_culture = mongolgfx }
 					}
-					set_graphical_culture = mongolgfx
+					set_graphical_culture = mongol
 				}
 				else_if = {
 					limit = {

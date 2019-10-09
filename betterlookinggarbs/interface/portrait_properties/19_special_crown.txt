@@ -26,9 +26,9 @@
 		hide_layers = { 5 = {}}
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = crown_hre
 					is_artifact_equipped = yes
@@ -42,9 +42,9 @@
 		hide_layers = { 5 = {}}
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = crown_byzantine
 					is_artifact_equipped = yes
@@ -62,9 +62,9 @@
 		hide_layers = { 5 = {}}
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = cursed_diamond_crown
 					is_artifact_equipped = yes
@@ -78,9 +78,9 @@
 		hide_layers = { 5 = {}}
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = iron_crown_of_lombardy
 					is_artifact_equipped = yes
@@ -94,9 +94,8 @@
 		hide_layers = { 5 = {}}
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = {
-			factor = 0
-			NOT = { trait = augustus }
+		trigger = {
+			trait = augustus
 		}
 	}
 	6 = { #Pahlavi Crown
@@ -104,9 +103,9 @@
 		hide_layers = { 5 = {}}
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = crown_pahlavi
 					is_artifact_equipped = yes
@@ -121,6 +120,7 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
 			OR = {
 				any_artifact = {
 					artifact_type = crown_fylkir
@@ -141,6 +141,7 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
 			OR = {
 				any_artifact = {
 					artifact_type = crown_tengri_fylkir
@@ -156,6 +157,7 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
 			OR = {
 				any_artifact = {
 					artifact_type = crown_finnish_fylkir
@@ -176,6 +178,7 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
 			OR = {
 				any_artifact = {
 					artifact_type = crown_west_african_fylkir
@@ -196,6 +199,7 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
 			OR = {
 				any_artifact = {
 					artifact_type = crown_slavic_fylkir
@@ -216,6 +220,7 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
 			OR = {
 				any_artifact = {
 					artifact_type = crown_romuva_fylkir
@@ -236,6 +241,7 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
 			OR = {
 				any_artifact = {
 					artifact_type = crown_aztec_fylkir

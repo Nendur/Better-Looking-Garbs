@@ -6,13 +6,35 @@ brown_bear;Bear;ours;Bär;;Oso;;;;;;;;;x
 black_bear;Bear;ours;Bär;;Oso;;;;;;;;;x
 polar_bear;Bear;ours;Bär;;Oso;;;;;;;;;x
 BLG_NEW_CHARACTERS;§ZBLG:§! New Character Variation;;;;;;;;;;;;;x
-BLG_NEW_CHARACTERS_HISTORICAL_DESC;New character ethnicities will be varied based on the populations within or near the realm they come from. Both the current population and the historical population will be represented.;;;;;;;;;;;;;x
+BLG_NEW_CHARACTERS_HISTORICAL_DESC;New character ethnicities will be varied based on the populations within or near the realm they come from. Both the current population and the historical inhabitants will be represented.;;;;;;;;;;;;;x
 BLG_NEW_CHARACTERS_LIMITED_DESC;New character ethnicities will be varied based on the populations within or near the realm they come from. No culture or region specific options will be used.;;;;;;;;;;;;;x
-BLG_NEW_CHARACTERS_OFF_DESC;New character ethnicities will not be altered.;;;;;;;;;;;;;x
-BLG_CHILD_BIRTH;§ZBLG:§! Newborn child handling;;;;;;;;;;;;;x
+BLG_NEW_CHARACTERS_OFF_DESC;New character ethnicities will NOT be altered.;;;;;;;;;;;;;x
+BLG_CHILD_BIRTH;§ZBLG:§! Newborn Child Handling;;;;;;;;;;;;;x
 BLG_CHILD_BIRTH_ON_DESC;Newborn children can get a different ethnicity representing the midpoint between their parents. Similar ethnicities will be shifted to the child's culture.;;;;;;;;;;;;;x
 BLG_CHILD_BIRTH_LIMITED_DESC;Newborn children can get a different ethnicity representing the midpoint between their parents.;;;;;;;;;;;;;x
-BLG_CHILD_BIRTH_OFF_DESC;Newborn children will not be altered.;;;;;;;;;;;;;x
+BLG_CHILD_BIRTH_OFF_DESC;Newborn children will NOT be altered.;;;;;;;;;;;;;x
+BLG_ARTIFACTS;§ZBLG:§! Artifacts;;;;;;;;;;;;;x
+RULE_OPTION_WEAPONS;Weapons;;;;;;;;;;;;;x
+BLG_ARTIFACTS_ON_DESC;Equipped artifacts and pets can be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_ARTIFACTS_WEAPONS_DESC;Only weapons and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_ARTIFACTS_RARE_DESC;Only rare and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_ARTIFACTS_OFF_DESC;No artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_TRAITS;§ZBLG:§! Traits and Diseases;;;;;;;;;;;;;x
+BLG_TRAITS_ON_DESC;Effects for traits and diseases will be shown in the character portrait.;;;;;;;;;;;;;x
+RULE_OPTION_NOLUNATIC;No Lunatic and Possessed;;;;;;;;;;;;;x
+BLG_TRAITS_NOLUNATIC_DESC;Effects for lunatic and possessed characters will be excluded from showing in the character portrait.;;;;;;;;;;;;;x
+RULE_OPTION_NOTRAITS;No Traits;;;;;;;;;;;;;x
+BLG_TRAITS_NOTRAITS_DESC;Most effects from traits will be excluded from showing in the character portrait.;;;;;;;;;;;;;x
+RULE_OPTION_NODISEASE;No Traits and Diseases;;;;;;;;;;;;;x
+BLG_TRAITS_NODISEASE_DESC;Effects for traits and diseases will NOT be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_TRAITS_OFF_DESC;Effects for traits and diseases will be NOT shown in the character portrait. Effects from overweight and harelipped characters will NOT be shown in addition.;;;;;;;;;;;;;x
+BLG_WOUNDS;§ZBLG:§! Wounds and Scars;;;;;;;;;;;;;x
+BLG_WOUNDS_ON_DESC;Effects for wounded and scarred characters will be shown in the character portrait.;;;;;;;;;;;;;x
+RULE_OPTION_NOMASKS;No Disfigurement Masks;;;;;;;;;;;;;x
+BLG_WOUNDS_NOMASKS_DESC;Effects for wounded and scarred characters will be shown in the character portrait. Disfigured characters will NOT wear masks.;;;;;;;;;;;;;x
+RULE_OPTION_NOWOUNDS;No Wounds;;;;;;;;;;;;;x
+BLG_WOUNDS_NOWOUNDS_DESC;Effects for wounded characters will NOT be shown in the character portrait. Scars will be shown. Disfigured characters will NOT wear masks.;;;;;;;;;;;;;x
+BLG_WOUNDS_OFF_DESC;Effects for wounded and scarred characters will NOT be shown in the character portrait. Characters will NOT wear masks or blindfolds.;;;;;;;;;;;;;x
 ca_headgear;headgear;couvre-chef;Kopfbedeckung;;corona;;;;;;;;;x
 ca_clothes;clothes;habits;Kleidung;;ropajes;;;;;;;;;x
 ca_mask;mask;;;;;;;;;;;;;x

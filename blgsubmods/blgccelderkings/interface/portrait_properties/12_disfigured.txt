@@ -5,7 +5,14 @@
 		modifier = {
 			factor = 0
 			OR = {
-				trait = disfigured
+				AND = {
+					trait = disfigured
+					NOR = {
+						has_game_rule = { name = blg_wounds value = nomasks }
+						has_game_rule = { name = blg_wounds value = nowounds }
+						has_game_rule = { name = blg_wounds value = off }
+					}
+				}
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}

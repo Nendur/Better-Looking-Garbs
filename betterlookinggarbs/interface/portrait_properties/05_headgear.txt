@@ -8,8 +8,6 @@
 				real_tier = emperor
 				spouse = {
 					real_tier = emperor
-					NAND = { trait = uncrowned is_feudal = yes }
-					NOT = { blg_uncrowned = yes }
 				}
 				is_or_was_offmap_power_ruler = yes
 			}
@@ -33,8 +31,6 @@
 				trait = heresiarch
 				trait = leper
 				trait = in_hiding
-				AND = { trait = uncrowned is_feudal = yes }
-				blg_uncrowned = yes
 				blg_petty_empire = yes
 				is_offmap_governor = yes
 				song_dynasty_futou_trigger = yes
@@ -43,17 +39,26 @@
 		}
 		modifier = { #If you are a living Emperor and are not crowned, you don't wear a crown.
 			factor = 0
-			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+			real_tier = EMPEROR
+			is_feudal = yes
+			is_landed = yes
+			OR = {
+				AND = {
+					has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+				}
+				blg_uncrowned = yes
+			}
+			OR = {
+				is_alive = yes
+				trait = uncrowned
+			}
 			OR = {
 				has_game_started = yes
 				is_save_game = yes
-			}
-			real_tier = EMPEROR
-			is_alive = yes
-			is_feudal = yes
-			OR = {
-				religion = catholic
-				religion = fraticelli
 			}
 			NOR = {
 				trait = crowned_by_priest
@@ -65,19 +70,28 @@
 		}
 		modifier = {
 			factor = 0
-			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+			NOT = { real_tier = EMPEROR }
 			OR = {
 				has_game_started = yes
 				is_save_game = yes
 			}
-			NOT = { real_tier = EMPEROR }
 			spouse = {
 				real_tier = EMPEROR
-				is_alive = yes
 				is_feudal = yes
+				is_landed = yes
 				OR = {
-					religion = catholic
-					religion = fraticelli
+					AND = {
+						has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+						OR = {
+							religion = catholic
+							religion = fraticelli
+						}
+					}
+					blg_uncrowned = yes
+				}
+				OR = {
+					is_alive = yes
+					trait = uncrowned
 				}
 				NOR = {
 					trait = crowned_by_priest
@@ -152,8 +166,6 @@
 				higher_real_tier_than = duke
 				spouse = {
 					higher_real_tier_than = duke
-					NAND = { trait = uncrowned is_feudal = yes primary_title = { is_vice_royalty = no } }
-					NOT = { blg_uncrowned = yes }
 				}
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
@@ -164,26 +176,33 @@
 		modifier = {
 			factor = 0
 			OR = {
-				AND = { trait = uncrowned is_feudal = yes primary_title = { is_vice_royalty = no } }
-				blg_uncrowned = yes
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
 			}
 		}
-		modifier = { #If you are a living Emperor and are not crowned, you don't wear a crown.
+		modifier = { #If you are a king and are not crowned, you don't wear a crown.
 			factor = 0
-			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+			higher_real_tier_than = duke
+			is_feudal = yes
+			is_landed = yes
+			OR = {
+				AND = {
+					has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+				}
+				blg_uncrowned = yes
+			}
+			OR = {
+				is_alive = yes
+				trait = uncrowned
+			}
 			OR = {
 				has_game_started = yes
 				is_save_game = yes
-			}
-			real_tier = KING
-			is_alive = yes
-			is_feudal = yes
-			OR = {
-				religion = catholic
-				religion = fraticelli
 			}
 			NOR = {
 				trait = crowned_by_priest
@@ -196,19 +215,28 @@
 		}
 		modifier = {
 			factor = 0
-			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+			NOT = { higher_real_tier_than = duke }
 			OR = {
 				has_game_started = yes
 				is_save_game = yes
 			}
-			NOT = { real_tier = KING }
 			spouse = {
-				real_tier = KING
-				is_alive = yes
+				higher_real_tier_than = duke
 				is_feudal = yes
+				is_landed = yes
 				OR = {
-					religion = catholic
-					religion = fraticelli
+					AND = {
+						has_dlc = "Holy Fury"
+						OR = {
+							religion = catholic
+							religion = fraticelli
+						}
+					}
+					blg_uncrowned = yes
+				}
+				OR = {
+					is_alive = yes
+					trait = uncrowned
 				}
 				NOR = {
 					trait = crowned_by_priest
@@ -231,7 +259,7 @@
 			factor = 0
 			spouse = {
 				is_nomadic = yes
-				real_tier = KING
+				higher_real_tier_than = duke
 				NOT = {
 					population = 5000
 				}
@@ -280,8 +308,6 @@
 				higher_real_tier_than = duke
 				spouse = {
 					higher_real_tier_than = duke
-					NAND = { trait = uncrowned is_feudal = yes primary_title = { is_vice_royalty = no } }
-					NOT = { blg_uncrowned = yes }
 				}
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
@@ -292,26 +318,33 @@
 		modifier = {
 			factor = 0
 			OR = {
-				AND = { trait = uncrowned is_feudal = yes primary_title = { is_vice_royalty = no } }
-				blg_uncrowned = yes
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
 			}
 		}
-		modifier = { #If you are a living Emperor and are not crowned, you don't wear a crown.
+		modifier = { #If you are a king and are not crowned, you don't wear a crown.
 			factor = 0
-			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+			higher_real_tier_than = duke
+			is_feudal = yes
+			is_landed = yes
+			OR = {
+				AND = {
+					has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+				}
+				blg_uncrowned = yes
+			}
+			OR = {
+				is_alive = yes
+				trait = uncrowned
+			}
 			OR = {
 				has_game_started = yes
 				is_save_game = yes
-			}
-			real_tier = KING
-			is_alive = yes
-			is_feudal = yes
-			OR = {
-				religion = catholic
-				religion = fraticelli
 			}
 			NOR = {
 				trait = crowned_by_priest
@@ -324,19 +357,28 @@
 		}
 		modifier = {
 			factor = 0
-			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+			NOT = { higher_real_tier_than = duke }
 			OR = {
 				has_game_started = yes
 				is_save_game = yes
 			}
-			NOT = { real_tier = KING }
 			spouse = {
-				real_tier = KING
-				is_alive = yes
+				higher_real_tier_than = duke
 				is_feudal = yes
+				is_landed = yes
 				OR = {
-					religion = catholic
-					religion = fraticelli
+					AND = {
+						has_dlc = "Holy Fury"
+						OR = {
+							religion = catholic
+							religion = fraticelli
+						}
+					}
+					blg_uncrowned = yes
+				}
+				OR = {
+					is_alive = yes
+					trait = uncrowned
 				}
 				NOR = {
 					trait = crowned_by_priest
@@ -359,7 +401,7 @@
 			factor = 0
 			spouse = {
 				is_nomadic = yes
-				real_tier = KING
+				higher_real_tier_than = duke
 				NOT = {
 					population = 5000
 				}
@@ -408,8 +450,6 @@
 				higher_real_tier_than = duke
 				spouse = {
 					higher_real_tier_than = duke
-					NAND = { trait = uncrowned is_feudal = yes primary_title = { is_vice_royalty = no } }
-					NOT = { blg_uncrowned = yes }
 				}
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
@@ -432,26 +472,33 @@
 		modifier = {
 			factor = 0
 			OR = {
-				AND = { trait = uncrowned is_feudal = yes primary_title = { is_vice_royalty = no } }
-				blg_uncrowned = yes
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
 			}
 		}
-		modifier = { #If you are a living Emperor and are not crowned, you don't wear a crown.
+		modifier = { #If you are a king and are not crowned, you don't wear a crown.
 			factor = 0
-			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+			higher_real_tier_than = duke
+			is_feudal = yes
+			is_landed = yes
+			OR = {
+				AND = {
+					has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+				}
+				blg_uncrowned = yes
+			}
+			OR = {
+				is_alive = yes
+				trait = uncrowned
+			}
 			OR = {
 				has_game_started = yes
 				is_save_game = yes
-			}
-			real_tier = KING
-			is_alive = yes
-			is_feudal = yes
-			OR = {
-				religion = catholic
-				religion = fraticelli
 			}
 			NOR = {
 				trait = crowned_by_priest
@@ -464,19 +511,28 @@
 		}
 		modifier = {
 			factor = 0
-			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+			NOT = { higher_real_tier_than = duke }
 			OR = {
 				has_game_started = yes
 				is_save_game = yes
 			}
-			NOT = { real_tier = KING }
 			spouse = {
-				real_tier = KING
-				is_alive = yes
+				higher_real_tier_than = duke
 				is_feudal = yes
+				is_landed = yes
 				OR = {
-					religion = catholic
-					religion = fraticelli
+					AND = {
+						has_dlc = "Holy Fury"
+						OR = {
+							religion = catholic
+							religion = fraticelli
+						}
+					}
+					blg_uncrowned = yes
+				}
+				OR = {
+					is_alive = yes
+					trait = uncrowned
 				}
 				NOR = {
 					trait = crowned_by_priest
@@ -499,7 +555,7 @@
 			factor = 0
 			spouse = {
 				is_nomadic = yes
-				real_tier = KING
+				higher_real_tier_than = duke
 				NOT = {
 					population = 5000
 				}
@@ -568,45 +624,64 @@
 			factor = 0
 			is_republic = no
 			is_nomadic = no
-			NOT = { trait = uncrowned }
 			OR = {
 				AND = {
 					higher_real_tier_than = DUKE
 					OR = {
-						NOT = { has_dlc = "Holy Fury" }
 						NOR = {
-							religion = catholic
-							religion = fraticelli
+							AND = {
+								has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+								OR = {
+									religion = catholic
+									religion = fraticelli
+								}
+							}
+							blg_uncrowned = yes
 						}
 						trait = crowned_by_priest
 						trait = crowned_by_bishop
 						trait = crowned_by_pope
 						trait = crowned_by_myself
 						blg_crowned = yes
+						is_landed = no
 						primary_title = { is_vice_royalty = yes }
 						AND = {
 							has_game_started = no
 							is_save_game = no
+						}
+						AND = {
+							is_alive = no
+							NOT = { trait = uncrowned }
 						}
 					}
 				}
 				spouse = {
 					higher_real_tier_than = DUKE
 					OR = {
-						NOT = { has_dlc = "Holy Fury" }
 						NOR = {
-							religion = catholic
-							religion = fraticelli
+							AND = {
+								has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+								OR = {
+									religion = catholic
+									religion = fraticelli
+								}
+							}
+							blg_uncrowned = yes
 						}
 						trait = crowned_by_priest
 						trait = crowned_by_bishop
 						trait = crowned_by_pope
 						trait = crowned_by_myself
 						blg_crowned = yes
+						is_landed = no
 						primary_title = { is_vice_royalty = yes }
 						AND = {
 							has_game_started = no
 							is_save_game = no
+						}
+						AND = {
+							is_alive = no
+							NOT = { trait = uncrowned }
 						}
 					}
 				}
@@ -1279,43 +1354,28 @@
 				spouse = { real_tier = emperor }
 			}
 		}
-		modifier = {
-			factor = 0
-			trait = uncrowned
-			is_feudal = yes
-			primary_title = { is_vice_royalty = no }
-		}
-		modifier = {
-			factor = 0
-			blg_uncrowned = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = { higher_real_tier_than = duke }
-			spouse = {
-				OR = {
-					AND = {
-						trait = uncrowned
-						is_feudal = yes
-						primary_title = { is_vice_royalty = no }
-					}
-					blg_uncrowned = yes
-				}
-			}
-		}
-		modifier = {
+		modifier = { #If you are a king and are not crowned, you don't wear a crown.
 			factor = 0
 			higher_real_tier_than = duke
-			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+			is_feudal = yes
+			is_landed = yes
+			OR = {
+				AND = {
+					has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
+					OR = {
+						religion = catholic
+						religion = fraticelli
+					}
+				}
+				blg_uncrowned = yes
+			}
+			OR = {
+				is_alive = yes
+				trait = uncrowned
+			}
 			OR = {
 				has_game_started = yes
 				is_save_game = yes
-			}
-			is_alive = yes
-			is_feudal = yes
-			OR = {
-				religion = catholic
-				religion = fraticelli
 			}
 			NOR = {
 				trait = crowned_by_priest
@@ -1329,18 +1389,27 @@
 		modifier = {
 			factor = 0
 			NOT = { higher_real_tier_than = duke }
-			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
 			OR = {
 				has_game_started = yes
 				is_save_game = yes
 			}
 			spouse = {
 				higher_real_tier_than = duke
-				is_alive = yes
 				is_feudal = yes
+				is_landed = yes
 				OR = {
-					religion = catholic
-					religion = fraticelli
+					AND = {
+						has_dlc = "Holy Fury"
+						OR = {
+							religion = catholic
+							religion = fraticelli
+						}
+					}
+					blg_uncrowned = yes
+				}
+				OR = {
+					is_alive = yes
+					trait = uncrowned
 				}
 				NOR = {
 					trait = crowned_by_priest

@@ -4,76 +4,74 @@
 		factor = 1
 		modifier = {
 			factor = 100
-			is_alive = no
+			OR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
+			}
 		}
 	}
 	1 = { #Demon Child (fantasy only)
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = {
-				has_game_rule = {
-					name = supernatural_events
-					value = unrestricted
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				has_character_modifier = demon_horns
+		trigger = {
+			has_character_modifier = demon_horns
+			NOR = {
+				has_game_rule = { name = supernatural_events value = off }
+				has_game_rule = { name = blg_traits value = nolunatic } 
 			}
 		}
 	}
 	2 = { # possessed
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = possessed }
+		trigger = {
+			trait = possessed
+			is_alive = yes
+			NOT = { has_game_rule = { name = blg_traits value = nolunatic } }
 		}
 	}
 	3 = { # wolfblooded
 		factor = 100
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				culture_group = dragon_group
 				has_character_modifier = wolf_blood
 				has_character_flag = demon_child
 				has_character_flag = demon_child_fake
 				has_character_flag = demon_child_non_pagan
 			}
+			NOT = { has_game_rule = { name = blg_traits value = nolunatic } }
 		}
 	}
 	4 = { # incapable
 		factor = 100
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				trait = incapable
 				trait = sick_incapable
 			}
+			is_alive = yes
 		}
 	}
 	5 = { # lunatic
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = lunatic }
+		trigger = {
+			trait = lunatic
+			is_alive = yes
+			NOT = { has_game_rule = { name = blg_traits value = nolunatic } }
 		}
 	}
 	6 = { # depressed
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = depressed }
+		trigger = {
+			trait = depressed
+			is_alive = yes
 		}
 	}
 	7 = { # stressed
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = stressed }
+		trigger = {
+			trait = stressed
+			is_alive = yes
 		}
 	}
 }

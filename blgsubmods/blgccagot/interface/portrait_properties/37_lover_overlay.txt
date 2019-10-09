@@ -6,6 +6,10 @@
 			factor = 100
 			multiplayer = yes
 		}
+		modifier = {
+			factor = 100
+			has_game_started = no
+		}
 	}
 	1 = {
 		factor = 100
@@ -35,6 +39,7 @@
 		factor = 100
 		trigger = {
 			any_player = { is_friend = PREV }
+			NOT = { trait = dragon }
 		}
 	}
 	6 = {
@@ -51,7 +56,12 @@
 	7 = {
 		factor = 100
 		trigger = {
-			any_player = { is_allied_with = PREV }
+			any_player = {
+				OR = {
+					is_allied_with = PREV 
+					is_friend = PREV
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,16 @@
+#p24 harelip
+24 = {
+	0 = { #blank
+		factor = 100
+		trigger = {
+			OR = {
+				NOT = { trait = harelip }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+	1 = { #harelip
+		factor = 100
+		hide_layers = { 15 = {}} #Hide lipstick
+	}
+}

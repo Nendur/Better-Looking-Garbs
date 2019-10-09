@@ -1,0 +1,136 @@
+#p23 black eye
+23 = {
+	0 = { # blank
+		factor = 100
+		modifier = {
+			factor = 0
+			is_alive = yes
+			OR = {
+				has_injury_trigger = yes
+				trait = maimed
+				trait = disfigured
+				trait = burned
+				has_character_modifier = black_eye
+				has_character_modifier = concussion
+			}
+			NOR = {
+				has_game_rule = { name = blg_wounds value = nowounds }
+				has_game_rule = { name = blg_wounds value = off }
+			}
+		}
+	}
+	1 = { #Concussion AND Black eye.
+		factor = 1
+		modifier = {
+			factor = 100
+			has_character_modifier = concussion
+			has_character_modifier = black_eye
+		}
+		trigger = {
+			NOT = { trait = disfigured }
+		}
+	}
+	2 = { #Concussion.
+		factor = 1
+		modifier = {
+			factor = 100
+			has_character_modifier = concussion
+		}
+		trigger = {
+			NOT = { trait = disfigured }
+		}
+	}
+	3 = { #black eye.
+		factor = 1
+		modifier = {
+			factor = 100
+			has_character_modifier = black_eye
+		}
+		trigger = {
+			OR = {
+				has_character_modifier = black_eye
+				NOR = {
+					trait = severely_injured
+					trait = maimed
+					trait = disfigured
+				}
+			}
+		}
+	}
+	4 = { #cheek
+		factor = 1
+		trigger = {
+			NOR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+			}
+		}
+	}
+	5 = { #eye
+		factor = 1
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+				trait = burned
+			}
+		}
+	}
+	6 = { #bandage
+		factor = 1
+		trigger = {
+			NOT = { trait = disfigured }
+		}
+	}
+	7 = { #chin
+		factor = 1
+		trigger = {
+			NOR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+			}
+		}
+	}
+	8 = { #forehead
+		factor = 1
+		trigger = {
+			NOR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+			}
+		}
+	}
+	9 = { #eye
+		factor = 1
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+				trait = burned
+			}
+		}
+	}
+	10 = { #disfigured
+		factor = 1
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = maimed
+				trait = disfigured
+			}
+		}
+		modifier = {
+			factor = 100
+			character = 5190 #Tyrion
+		}
+		modifier = {
+			factor = 100
+			character = 80012571 #Rorge
+		}
+	}
+}

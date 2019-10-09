@@ -8,9 +8,8 @@
 20 = {
 	0 = { # blank
 		factor = 100
-		modifier = {
-			factor = 0
-			OR = {
+		trigger = {
+			NOR = {
 				trait = freckles_3
 				trait = freckles_2
 				trait = freckles
@@ -22,37 +21,32 @@
 
 	1 = { # freckles
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = freckles }
+		trigger = {
+			trait = freckles
 		}
 	}
 	2 = { # freckles
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = freckles_2 }
+		trigger = {
+			trait = freckles_2
 		}
 	}
 	3 = { # freckles
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = freckles_3 }
+		trigger = {
+			trait = freckles_3
 		}
 	}
 	4 = { # freckles
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = freckles_4 }
+		trigger = {
+			trait = freckles_4
 		}
 	}
 	5 = { # freckles
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = freckles_5 }
+		trigger = {
+			trait = freckles_5
 		}
 	}
 }

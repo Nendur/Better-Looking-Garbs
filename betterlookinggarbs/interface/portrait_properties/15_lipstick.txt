@@ -8,9 +8,20 @@
 		}
 		modifier = {
 			factor = 0.01
-			OR = {
-				trait = fair
-				trait = groomed
+			trait = fair
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+		modifier = {
+			factor = 0.02
+			trait = groomed
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
 			}
 		}
 	}

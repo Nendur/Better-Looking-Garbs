@@ -5,7 +5,10 @@
 		modifier = {
 			factor = 100
 			prisoner = yes
-			NOT = { trait = saint }
+			NOR = {
+				trait = saint
+				has_character_modifier = pet_rat_dungeon
+			}
 		}
 	}
 	1 = { # saint
@@ -24,264 +27,264 @@
 	}
 	4 = { # golden sword
 		factor = 5
-		modifier = {
-			factor = 0
-			in_command = no
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_artifact = {
-					has_artifact_flag = sword
-					has_artifact_flag = jewelry
-					is_artifact_equipped = yes
-				}
+		trigger = {
+			in_command = yes
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+			}
+			any_artifact = {
+				has_artifact_flag = sword
+				has_artifact_flag = jewelry
+				is_artifact_equipped = yes
 			}
 		}
 	}
 	5 = { # scimitar
 		factor = 25
-		modifier = {
-			factor = 0
-			in_command = no
-		}
-		modifier = {
-			factor = 0
+		trigger = {
+			in_command = yes
 			NOR = {
-				culture_group = yokudan_group
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
 			}
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				any_artifact = {
-					has_artifact_flag = sword
-					quality >= 3
-					is_artifact_equipped = yes
-				}
+			culture_group = yokudan_group
+			any_artifact = {
+				has_artifact_flag = sword
+				quality >= 3
+				is_artifact_equipped = yes
 			}
 		}
 	}
 	6 = { # scimitar
 		factor = 25
-		modifier = {
-			factor = 0
-			in_command = no
-		}
-		modifier = {
-			factor = 0
+		trigger = {
+			in_command = yes
 			NOR = {
-				culture_group = yokudan_group
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
 			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_artifact = {
-					has_artifact_flag = sword
-					quality < 3
-					is_artifact_equipped = yes
-				}
+			culture_group = yokudan_group
+			any_artifact = {
+				has_artifact_flag = sword
+				quality < 3
+				is_artifact_equipped = yes
 			}
 		}
 	}
 	7 = { # sword
 		factor = 25
-		modifier = {
-			factor = 0
-			in_command = no
-		}
-		modifier = {
-			factor = 0
-			culture_group = yokudan_group
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_artifact = {
-					has_artifact_flag = sword
-					NOT = { has_artifact_flag = jewelry }
-					quality >= 3
-					is_artifact_equipped = yes
-				}
+		trigger = {
+			in_command = yes
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+			}
+			NOR = {
+				culture_group = yokudan_group
+			}
+			any_artifact = {
+				has_artifact_flag = sword
+				NOT = { has_artifact_flag = jewelry }
+				quality >= 3
+				is_artifact_equipped = yes
 			}
 		}
 	}
 	8 = { # sword
 		factor = 25
-		modifier = {
-			factor = 0
-			in_command = no
-		}
-		modifier = {
-			factor = 0
-			culture_group = yokudan_group
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_artifact = {
-					has_artifact_flag = sword
-					NOT = { has_artifact_flag = jewelry }
-					quality < 3
-					is_artifact_equipped = yes
-				}
+		trigger = {
+			in_command = yes
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+			}
+			NOR = {
+				culture_group = yokudan_group
+			}
+			any_artifact = {
+				has_artifact_flag = sword
+				NOT = { has_artifact_flag = jewelry }
+				quality < 3
+				is_artifact_equipped = yes
 			}
 		}
 	}
 	9 = { # +2 Axe
 		factor = 25
-		modifier = {
-			factor = 0
-			in_command = no
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_artifact = {
-					OR = {
-						artifact_type = loot_axe
-						AND = {
-							has_artifact_flag = axe
-							quality >= 5
-						}
+		trigger = {
+			in_command = yes
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+			}
+			any_artifact = {
+				OR = {
+					artifact_type = loot_axe
+					AND = {
+						has_artifact_flag = axe
+						quality >= 5
 					}
-					is_artifact_equipped = yes
 				}
+				is_artifact_equipped = yes
 			}
 		}
 	}
 	10 = { # axe
 		factor = 25
-		modifier = {
-			factor = 0
-			in_command = no
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_artifact = {
-					has_artifact_flag = axe
-					quality < 5
-					quality >= 3
-					is_artifact_equipped = yes
-				}
+		trigger = {
+			in_command = yes
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+			}
+			any_artifact = {
+				has_artifact_flag = axe
+				quality < 5
+				quality >= 3
+				is_artifact_equipped = yes
 			}
 		}
 	}
 	11 = { # axe
 		factor = 25
-		modifier = {
-			factor = 0
-			in_command = no
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_artifact = {
-					has_artifact_flag = axe
-					quality < 3
-					is_artifact_equipped = yes
-				}
+		trigger = {
+			in_command = yes
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+			}
+			any_artifact = {
+				has_artifact_flag = axe
+				quality < 3
+				is_artifact_equipped = yes
 			}
 		}
 	}
 	12 = { # bow
 		factor = 25
-		modifier = {
-			factor = 0
-			in_command = no
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_artifact = {
-					has_artifact_flag = bow
-					quality >= 3
-					is_artifact_equipped = yes
-				}
+		trigger = {
+			in_command = yes
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+			}
+			any_artifact = {
+				has_artifact_flag = bow
+				quality >= 3
+				is_artifact_equipped = yes
 			}
 		}
 	}
 	13 = { # bow
 		factor = 25
-		modifier = {
-			factor = 0
-			in_command = no
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_artifact = {
-					has_artifact_flag = bow
-					quality < 3
-					is_artifact_equipped = yes
-				}
+		trigger = {
+			in_command = yes
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+			}
+			any_artifact = {
+				has_artifact_flag = bow
+				quality < 3
+				is_artifact_equipped = yes
 			}
 		}
 	}
 	14 = { # dog
 		factor = 50
-		modifier = {
-			factor = 0
-			in_command = yes
-		}
-		modifier = {
-			factor = 0
+		trigger = {
+			in_command = no
 			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			OR = {
 				has_character_modifier = pet_hunting_dog
+				any_artifact = {
+					has_artifact_flag = dog
+					is_artifact_equipped = yes
+				}
 			}
 		}
 	}
 	15 = { # cat
 		factor = 50
-		modifier = {
-			factor = 0
-			in_command = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_character_modifier = pet_cat }
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			OR = {
+				has_character_modifier = pet_cat
+				any_artifact = {
+					artifact_type = pet_cat
+					is_artifact_equipped = yes
+				}
+			}
 		}
 	}
 	16 = { # owl
 		factor = 50
-		modifier = {
-			factor = 0
-			in_command = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_character_modifier = pet_owl }
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			has_character_modifier = pet_owl
 		}
 	}
 	17 = { # horse
 		factor = 50
-		modifier = {
-			factor = 0
-			NOT = { has_character_modifier = nomad_warhorse }
+		trigger = {
+			in_command = yes
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			OR = {
+				has_character_modifier = nomad_warhorse
+				any_artifact = {
+					has_artifact_flag = horse
+					is_artifact_equipped = yes
+				}
+			}
 		}
 	}
 	18 = { # parrot
 		factor = 50
-		modifier = {
-			factor = 0
-			in_command = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_character_modifier = pet_parrot }
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			has_character_modifier = pet_parrot
 		}
 	}
 	19 = { # rat
 		factor = 50
-		modifier = {
-			factor = 0
-			in_command = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_character_modifier = pet_rat_dungeon }
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			OR = {
+				has_character_modifier = pet_rat_dungeon
+				any_artifact = {
+					artifact_type = pet_skeever
+					is_artifact_equipped = yes
+				}
+			}
 		}
 	}
 }

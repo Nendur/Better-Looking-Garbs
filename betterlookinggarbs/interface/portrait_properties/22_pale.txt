@@ -14,6 +14,10 @@
 				trait = cancer
 				trait = has_tuberculosis
 			}
+			NOR = {
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
+			}
 		}
 	}
 }

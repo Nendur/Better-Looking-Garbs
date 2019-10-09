@@ -1,0 +1,3 @@
+chinese_makeup_trigger = {
+	always = no
+}

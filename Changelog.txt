@@ -1,11 +1,16 @@
 Changelog:
 
-  Added Tianxia: Silk Road Expansion compatibility submod. The Tianxia: Japanese, Korean & Ainu Portraits are needed as well.
+  Added a number of game rules to configure the portrait effects and the character handling scripts.
+  Added Tianxia: Silk Road Expansion compatibility submod. The Tianxia: Japanese, Korean & Ainu Portraits are required.
   Added new South-East Asian portraits.
+  The child handling event has a second pass to switch closely related ethnicities to fit the hairstyle to the child's culture.
+  The child handling event will now safely ignore unknown culture types.
+  Install the mixed Russian and Tocharian portraits with their dlc checks to fix misplaced eyes.
   Added Hellenic Greek portraits for earlier era mods.
   Fixed Ancient Religions Celtic compatibility.
   Fixed Chinese crowns getting blocked by republic government type.
   Changed Chinese offmap support to generalized offmap support.
+  Fixed EMF coronation support.
 
 12-09-2019
   New hair and beardstyles, clothing and headgear for Norse,

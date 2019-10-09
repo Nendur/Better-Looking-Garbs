@@ -4,98 +4,102 @@
 		factor = 1
 		modifier = {
 			factor = 100
-			is_alive = no
-			NOR = {
-				trait = warlock
-				has_nickname = nick_the_drunkard
+			OR = {
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
 			}
 		}
 	}
 	1 = { # leper
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = leper }
-		}
-		modifier = {
-			factor = 0
-			has_dlc = "Reapers"
-			NOT = { trait = disfigured }
+		trigger = {
+			trait = leper
+			OR = {
+				trait = disfigured
+				NOT = { has_dlc = "Reapers" }
+			}
+			is_alive = yes
 		}
 	}
 	2 = { # syphilitic
 		factor = 100
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				trait = syphilitic
 				trait = has_aztec_disease
 				trait = has_pox
 			}
+			is_alive = yes
 		}
 	}
 	3 = { # pnuemonia
 		factor = 100
-		modifier = {
-			factor = 0
-			NOR = {
-				trait = pneumonic 
+		trigger = {
+			OR = {
+				AND = {
+					trait = pneumonic 
+					is_alive = yes
+				}
 				trait = warlock
 				trait = has_drank_shade_of_the_evening
 			}
-		}
-		modifier = {
-			factor = 0
-			practical_age < 15
+			practical_age = 15
 		}
 	}
 	4 = { # fever
 		factor = 100
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				trait = fever
 				trait = has_typhoid_fever
 				trait = has_bloody_flux
 				trait = has_butterfly_fever
 			}
+			is_alive = yes
 		}
 	}
 	5 = { # ill
 		factor = 100
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				trait = ill
 				trait = flu
 			}
+			is_alive = yes
 		}
 	}
 	6 = { # drunkard
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = drunkard }
+		trigger = {
+			trait = drunkard
+			OR = {
+				is_alive = yes
+				has_nickname = nick_the_drunkard
+			}
+			NOT = { has_game_rule = { name = blg_traits value = notraits } }
 		}
 	}
 	7 = { # vomit
 		factor = 0
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				trait = vomiting
 				trait = food_poisoning
 			}
+			is_alive = yes
 		}
 	}
 	8 = { # imbecile
 		factor = 100
-		modifier = {
-			factor = 0
-			NOR = {
-				trait = imbecile
+		trigger = {
+			OR = {
+				AND = {
+					trait = imbecile
+					NOT = { has_game_rule = { name = blg_traits value = notraits } }
+				}
 				trait = rabies
 			}
+			is_alive = yes
 		}
 	}
 }

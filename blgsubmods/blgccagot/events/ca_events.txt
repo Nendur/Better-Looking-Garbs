@@ -37,6 +37,7 @@ character_event = {
 					}
 				}
 			}
+			NOT = { has_game_rule = { name = blg_wounds value = off } }
 		}
 		repeat_event = { id = blg.130 }
 	}

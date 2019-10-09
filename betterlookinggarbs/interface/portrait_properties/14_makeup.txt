@@ -8,18 +8,31 @@
 		}
 		modifier = {
 			factor = 0.01
-			OR = {
-				trait = fair
-				trait = groomed
+			trait = fair
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+		modifier = {
+			factor = 0.02
+			trait = groomed
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
 			}
 		}
 	}
 
 	1 = { # white powder
 		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { culture_group = chinese_group }
+		trigger = {
+			OR = {
+				culture = han
+				blg_chinese = yes
+			}
 		}
 	}
 
@@ -29,9 +42,11 @@
 
 	3 = { # white powder and rouge a
 		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { culture_group = chinese_group }
+		trigger = {
+			OR = {
+				culture = han
+				blg_chinese = yes
+			}
 		}
 	}
 
@@ -41,9 +56,11 @@
 
 	5 = { # white powder and rouge b
 		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { culture_group = chinese_group }
+		trigger = {
+			OR = {
+				culture = han
+				blg_chinese = yes
+			}
 		}
 	}
 }

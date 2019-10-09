@@ -3,13 +3,16 @@
 	0 = { # blank
 		factor = 100
 		trigger = {
-			NOR = { 
-				trait = is_fat
-				trait = sturdy
-				AND = {
-					trait = dwarf
-					NOT = { trait = fair }
+			OR = {
+				NOR = { 
+					trait = is_fat
+					trait = sturdy
+					AND = {
+						trait = dwarf
+						NOT = { trait = fair }
+					}
 				}
+				has_game_rule = { name = blg_traits value = off }
 			}
 		}
 	}

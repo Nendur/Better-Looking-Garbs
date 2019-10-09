@@ -21,14 +21,14 @@
 			check_variable = { which = ca_headgear value = 1 }
 		}
 	}
-	1 = {
+	1 = { #HRE crown
 		factor = 100
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = { #HRE crown
-			factor = 0
-			NOR = {
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = crown_hre
 					is_artifact_equipped = yes
@@ -37,14 +37,14 @@
 			}
 		}
 	}
-	2 = {
+	2 = { #Byzantine Crown
 		factor = 100
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = { #Byzantine Crown
-			factor = 0
-			NOR = {
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					OR = {
 						artifact_type = crown_byzantine
@@ -60,14 +60,14 @@
 			culture = greek
 		}
 	}
-	3 = {
+	3 = { #Cursed Diamond Crown
 		factor = 100
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = { #Cursed Diamond Crown
-			factor = 0
-			NOR = {
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = cursed_diamond_crown
 					is_artifact_equipped = yes
@@ -76,14 +76,14 @@
 			}
 		}
 	}
-	4 = {
+	4 = { #Iron Crown of Lombardy
 		factor = 100
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = { #Iron Crown of Lombardy
-			factor = 0
-			NOR = {
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = iron_crown_of_lombardy
 					is_artifact_equipped = yes
@@ -105,14 +105,14 @@
 	6 = {
 		factor = 0
 	}
-	7 = {
+	7 = { #Fylkir Crown
 		factor = 100
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = { #Fylkir Crown
-			factor = 0
-			NOR = { 
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = crown_fylkir
 					is_artifact_equipped = yes 
@@ -133,27 +133,22 @@
 					artifact_type = crown_gothic_fylkir
 					is_artifact_equipped = yes 
 				}
-				any_artifact = {
-					artifact_type = crown_vasconic_fylkir
-					is_artifact_equipped = yes 
-				}
 				trait = dead_crown_fylkir
 				trait = dead_crown_germanic_fylkir
 				trait = dead_crown_frankish_fylkir
 				trait = dead_crown_suebic_fylkir
 				trait = dead_crown_gothic_fylkir
-				trait = dead_crown_vasconic_fylkir
 			}
 		}
 	}
-	8 = {
+	8 = { #Tengri Fylkir Crown
 		factor = 100
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = { #Tengri Fylkir Crown
-			factor = 0
-			NOR = {
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = crown_tengri_fylkir
 					is_artifact_equipped = yes
@@ -163,7 +158,20 @@
 		}
 	}
 	9 = {
-		factor = 0
+		factor = 100
+		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
+				any_artifact = {
+					artifact_type = crown_vasconic_fylkir
+					is_artifact_equipped = yes 
+				}
+				trait = dead_crown_vasconic_fylkir
+			}
+		}
 	}
 	10 = {
 		factor = 0
@@ -173,9 +181,9 @@
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = { #Zunist Fylkir Crown
-			factor = 0
-			NOR = { 
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = crown_alan_fylkir
 					is_artifact_equipped = yes 
@@ -184,14 +192,14 @@
 			}
 		}
 	}
-	12 = {
+	12 = { #Slavic/Romva Fylkir Crown
 		factor = 100
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = { #Slavic/Romva Fylkir Crown
-			factor = 0
-			NOR = { 
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
 				any_artifact = {
 					artifact_type = crown_briton_fylkir
 					is_artifact_equipped = yes 

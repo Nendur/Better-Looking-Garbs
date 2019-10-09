@@ -11,7 +11,7 @@ blg_french = {
 }
 
 blg_uncrowned = {
-	emf_needs_coronation = yes
+	emf_common_coronation_requirements = yes
 }
 
 blg_desert_monk = {
@@ -30,7 +30,7 @@ blg_royalty = {
 }
 
 blg_crowned = {
-	always = no
+	emf_is_crowned = yes
 }
 
 blg_religion_orthodox = {

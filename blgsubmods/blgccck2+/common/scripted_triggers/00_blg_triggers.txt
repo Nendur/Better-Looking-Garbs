@@ -16,12 +16,8 @@ blg_french = {
 	always = no
 }
 
-blg_veiled_tagelmust = {
-	culture = tuareg
-}
-
 blg_uncrowned = {
-	always = no
+	trait = uncrowned
 }
 
 blg_desert_monk = {
@@ -70,31 +66,6 @@ blg_religion_chinese = {
 	always = no
 }
 
-likes_africans = {
-	OR = {
-		culture_group = west_african
-		culture_group = east_african
-	}
-}
-
-likes_byzantines = {
-	culture_group = byzantine
-}
-
-likes_altaics = {
-	culture_group = altaic
-}
-
-likes_latino_iberians = {
-	OR = {
-		culture_group = latin
-		culture_group = iberian
-		culture_group = italian_group
-		culture_group = island_romance
-		culture_group = vasconic
-	}
-}
-
 religion_openly_in_celtic_subgroup_trigger = {
 	religion_openly_celtic_or_reformed_trigger = yes
 }
@@ -125,5 +96,56 @@ blg_black_bear = {
 			region = world_steppe_tarim
 			region = world_himalayas
 		}
+	}
+}
+
+likes_germanics = {
+	OR = {
+		culture_group = north_germanic
+		culture_group = central_germanic
+		culture_group = west_germanic
+		culture_group = franco_germanic
+	}
+}
+
+likes_latino_iberians = {
+	OR = {
+		culture_group = latin
+		culture_group = iberian
+		culture_group = italian_group
+		culture_group = island_romance
+		culture_group = vasconic
+	}
+}
+
+likes_byzantines = {
+	culture_group = byzantine
+}
+
+likes_finno_ugrics = {
+	OR = {
+		culture_group = finno_ugric
+		culture_group = magyar
+	}
+}
+
+likes_balto_slavics = {
+	OR = {
+		culture_group = baltic
+		culture_group = east_slavic
+		culture_group = west_slavic
+		culture_group = south_slavic
+	}
+}
+
+likes_altaics = {
+	culture_group = altaic
+}
+
+likes_africans = {
+	OR = {
+		culture_group = west_african
+		culture_group = east_african
+		culture_group = central_african
 	}
 }

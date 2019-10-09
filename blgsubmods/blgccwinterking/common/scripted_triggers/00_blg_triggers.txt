@@ -17,6 +17,20 @@ blg_desert_monk = {
 	always = no
 }
 
+blg_uncrowned = {
+	has_dlc = "Holy Fury"
+	religion_group = christian
+	are_coronations_active_trigger = yes
+}
+
+blg_royalty = {
+	always = no
+}
+
+blg_crowned = {
+	are_coronations_active_trigger = no
+}
+
 blg_petty_empire = {
 	always = no
 }

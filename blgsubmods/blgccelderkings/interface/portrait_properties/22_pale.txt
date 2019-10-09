@@ -18,6 +18,10 @@
 				trait = vampire
 				trait = lich
 			}
+			NOR = {
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
+			}
 		}
 	}
 }
