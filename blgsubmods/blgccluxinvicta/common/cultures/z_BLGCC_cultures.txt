@@ -273,7 +273,7 @@ altaic = {
 		graphical_cultures = { magyargfx easterngfx }
 	}
 	hunnic = {
-		graphical_cultures = { centralasiangfx steppegfx }
+		graphical_cultures = { hunnicgfx steppegfx }
 	}
 	khazar = {
 		graphical_cultures = { steppegfx cumangfx turkishgfx }

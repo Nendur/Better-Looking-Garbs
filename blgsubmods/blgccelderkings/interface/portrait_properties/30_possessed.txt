@@ -16,7 +16,7 @@
 		trigger = {
 			OR = {
 				trait = lich
-				has_character_modifier = pureblood_vampire
+				#has_character_modifier = pureblood_vampire
 				has_character_flag = stage_4_vampire
 			}
 			OR = {

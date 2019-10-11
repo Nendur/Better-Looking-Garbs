@@ -446,46 +446,46 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
-#### JOGOS MALE ####
+#### HUNNIC MALE ####
 
 	spriteType = {
-		name = "GFX_jogos_male_base"
-		texturefile = "gfx\\characters\\mongol_male\\jogos_male_base_1.dds"
+		name = "GFX_hunnic_male_base"
+		texturefile = "gfx\\characters\\hunnic_male\\hunnic_male_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_jogos_male_base_midage"
-		texturefile = "gfx\\characters\\mongol_male\\jogos_male_base_2.dds"
+		name = "GFX_hunnic_male_base_midage"
+		texturefile = "gfx\\characters\\hunnic_male\\hunnic_male_base_2.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_jogos_male_base_oldage"
-		texturefile = "gfx\\characters\\mongol_male\\jogos_male_base_3.dds"
+		name = "GFX_hunnic_male_base_oldage"
+		texturefile = "gfx\\characters\\hunnic_male\\hunnic_male_base_3.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_jogos_male_eyes"
-		texturefile = "gfx\\characters\\mongol_male\\jogos_male_eyes_1.dds"
+		name = "GFX_hunnic_male_eyes"
+		texturefile = "gfx\\characters\\hunnic_male\\hunnic_male_eyes_1.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_jogos_male_eyes_midage"
-		texturefile = "gfx\\characters\\mongol_male\\jogos_male_eyes_2.dds"
+		name = "GFX_hunnic_male_eyes_midage"
+		texturefile = "gfx\\characters\\hunnic_male\\hunnic_male_eyes_2.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_jogos_male_eyes_oldage"
-		texturefile = "gfx\\characters\\mongol_male\\jogos_male_eyes_3.dds"
+		name = "GFX_hunnic_male_eyes_oldage"
+		texturefile = "gfx\\characters\\hunnic_male\\hunnic_male_eyes_3.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}
@@ -883,46 +883,46 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
-#### JOGOS FEMALE ####
+#### HUNNIC FEMALE ####
 
 	spriteType = {
-		name = "GFX_jogos_female_base"
-		texturefile = "gfx\\characters\\mongol_female\\jogos_female_base_1.dds"
+		name = "GFX_hunnic_female_base"
+		texturefile = "gfx\\characters\\hunnic_female\\hunnic_female_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_jogos_female_base_midage"
-		texturefile = "gfx\\characters\\mongol_female\\jogos_female_base_2.dds"
+		name = "GFX_hunnic_female_base_midage"
+		texturefile = "gfx\\characters\\hunnic_female\\hunnic_female_base_2.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_jogos_female_base_oldage"
-		texturefile = "gfx\\characters\\mongol_female\\jogos_female_base_3.dds"
+		name = "GFX_hunnic_female_base_oldage"
+		texturefile = "gfx\\characters\\hunnic_female\\hunnic_female_base_3.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_jogos_female_eyes"
-		texturefile = "gfx\\characters\\mongol_female\\jogos_female_eyes_1.dds"
+		name = "GFX_hunnic_female_eyes"
+		texturefile = "gfx\\characters\\hunnic_female\\hunnic_female_eyes_1.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_jogos_female_eyes_midage"
-		texturefile = "gfx\\characters\\mongol_female\\jogos_female_eyes_2.dds"
+		name = "GFX_hunnic_female_eyes_midage"
+		texturefile = "gfx\\characters\\hunnic_female\\hunnic_female_eyes_2.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_jogos_female_eyes_oldage"
-		texturefile = "gfx\\characters\\mongol_female\\jogos_female_eyes_3.dds"
+		name = "GFX_hunnic_female_eyes_oldage"
+		texturefile = "gfx\\characters\\hunnic_female\\hunnic_female_eyes_3.dds"
 		noOfFrames = 10
 		norefcount = yes
 	}

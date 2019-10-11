@@ -254,6 +254,50 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
+#### HUNNIC MALE ####
+
+	spriteType = {
+		name = "GFX_hunnic_male_base"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_base_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_hunnic_male_base_midage"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_base_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_hunnic_male_base_oldage"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_base_3.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_hunnic_male_eyes"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_eyes_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_hunnic_male_eyes_midage"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_eyes_2.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_hunnic_male_eyes_oldage"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_eyes_3.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
 #### MONGOL FEMALE ####
 
 	spriteType = {
@@ -468,6 +512,50 @@ spriteTypes = {
 		noOfFrames = 2
 		norefcount = yes
 		can_be_lowres = yes
+	}
+
+#### HUNNIC FEMALE ####
+
+	spriteType = {
+		name = "GFX_hunnic_female_base"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_base_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_hunnic_female_base_midage"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_base_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_hunnic_female_base_oldage"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_base_3.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_hunnic_female_eyes"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_eyes_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_hunnic_female_eyes_midage"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_eyes_2.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_hunnic_female_eyes_oldage"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_eyes_3.dds"
+		noOfFrames = 13
+		norefcount = yes
 	}
 
 #### BODPA MALE ####

@@ -416,10 +416,10 @@ altaic = {
 		graphical_cultures = { centralasiangfx }
 	}
 	hunnic = {
-		graphical_cultures = { cumangfx turkishgfx }
+		graphical_cultures = { hunnicgfx steppegfx }
 	}
 	hunno_bulgar = { # Hunnic + Bolghar
-		graphical_cultures = { cumangfx turkishgfx }
+		graphical_cultures = { hunnicgfx steppegfx }
 	}
 	khitan = {
 		graphical_cultures = { khitangfx chinesegfx }

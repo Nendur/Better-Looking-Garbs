@@ -128,3 +128,6 @@ tochariangfx = {
 khmergfx = {
 	skin_tone = 2
 }
+hunnicgfx = {
+	skin_tone = 1
+}

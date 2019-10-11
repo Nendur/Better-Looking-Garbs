@@ -712,6 +712,14 @@ character_event = {
 	after = {
 		remove_trait = blgspawn
 
+		if = {
+			limit= {
+				graphical_culture = hunnicgfx
+				is_lowborn = yes
+			}
+			set_graphical_culture = uyghur
+		}
+
 		random_list = {
 			2 = { add_trait = freckles_5 }
 			6 = { add_trait = freckles_4 }
@@ -899,6 +907,7 @@ character_event = {
 					graphical_culture = celtiberiangfx
 					graphical_culture = tochariangfx
 					graphical_culture = khmergfx
+					graphical_culture = hunnicgfx
 				}
 			}
 			mother_even_if_dead = {
@@ -980,6 +989,7 @@ character_event = {
 					graphical_culture = celtiberiangfx
 					graphical_culture = tochariangfx
 					graphical_culture = khmergfx
+					graphical_culture = hunnicgfx
 				}
 			}
 		}
@@ -1037,6 +1047,7 @@ character_event = {
 								graphical_culture = khitangfx
 								graphical_culture = chinesegfx
 								graphical_culture = tochariangfx
+								graphical_culture = hunnicgfx
 							}
 						}
 						mother_even_if_dead = {
@@ -1065,6 +1076,7 @@ character_event = {
 								graphical_culture = khitangfx
 								graphical_culture = chinesegfx
 								graphical_culture = tochariangfx
+								graphical_culture = hunnicgfx
 							}
 						}
 					}
@@ -1269,6 +1281,7 @@ character_event = {
 								graphical_culture = siberiangfx
 								graphical_culture = khitangfx
 								graphical_culture = chinesegfx
+								graphical_culture = hunnicgfx
 							}
 						}
 						mother_even_if_dead = {
@@ -1283,6 +1296,7 @@ character_event = {
 								graphical_culture = siberiangfx
 								graphical_culture = khitangfx
 								graphical_culture = chinesegfx
+								graphical_culture = hunnicgfx
 							}
 						}
 					}
@@ -1383,6 +1397,7 @@ character_event = {
 								graphical_culture = mongolgfx
 								graphical_culture = centralasiangfx
 								graphical_culture = khitangfx
+								graphical_culture = hunnicgfx
 							}
 						}
 						mother_even_if_dead = {
@@ -1390,6 +1405,7 @@ character_event = {
 								graphical_culture = mongolgfx
 								graphical_culture = centralasiangfx
 								graphical_culture = khitangfx
+								graphical_culture = hunnicgfx
 							}
 						}
 					}
@@ -1607,6 +1623,7 @@ character_event = {
 								graphical_culture = egyptiangfx
 								graphical_culture = khmergfx
 								graphical_culture = mesoamericangfx
+								graphical_culture = hunnicgfx
 							}
 						}
 						mother_even_if_dead = {
@@ -1627,6 +1644,7 @@ character_event = {
 								graphical_culture = egyptiangfx
 								graphical_culture = khmergfx
 								graphical_culture = mesoamericangfx
+								graphical_culture = hunnicgfx
 							}
 						}
 					}
@@ -1686,6 +1704,7 @@ character_event = {
 								graphical_culture = avargfx
 								graphical_culture = chinesegfx
 								graphical_culture = tochariangfx
+								graphical_culture = hunnicgfx
 							}
 						}
 						mother_even_if_dead = {
@@ -1700,6 +1719,7 @@ character_event = {
 								graphical_culture = avargfx
 								graphical_culture = chinesegfx
 								graphical_culture = tochariangfx
+								graphical_culture = hunnicgfx
 							}
 						}
 					}
@@ -1817,6 +1837,7 @@ character_event = {
 							graphical_culture = centralasiangfx
 							graphical_culture = siberiangfx
 							graphical_culture = khitangfx
+							graphical_culture = hunnicgfx
 						}
 					}
 					mother_even_if_dead = {
@@ -1827,6 +1848,7 @@ character_event = {
 							graphical_culture = centralasiangfx
 							graphical_culture = siberiangfx
 							graphical_culture = khitangfx
+							graphical_culture = hunnicgfx
 						}
 					}
 				}
@@ -1868,6 +1890,7 @@ character_event = {
 								graphical_culture = centralasiangfx
 								graphical_culture = siberiangfx
 								graphical_culture = khitangfx
+								graphical_culture = hunnicgfx
 								graphical_culture = chinesegfx
 								graphical_culture = alangfx
 								graphical_culture = sogdiangfx
@@ -1886,6 +1909,7 @@ character_event = {
 								graphical_culture = centralasiangfx
 								graphical_culture = siberiangfx
 								graphical_culture = khitangfx
+								graphical_culture = hunnicgfx
 								graphical_culture = chinesegfx
 								graphical_culture = alangfx
 								graphical_culture = sogdiangfx
@@ -2482,6 +2506,15 @@ character_event = {
 
 	#Change hairstyles etc. to the childs cultural upbringing.
 	after = {
+
+		if = {
+			limit= {
+				graphical_culture = hunnicgfx
+				is_lowborn = yes
+			}
+			set_graphical_culture = uyghur
+		}
+
 		if = {
 			limit = { has_game_rule = { name = blg_child_birth value = on } }
 

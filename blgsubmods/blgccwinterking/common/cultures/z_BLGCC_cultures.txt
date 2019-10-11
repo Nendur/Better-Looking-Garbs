@@ -80,7 +80,7 @@ altaic = {
 	graphical_cultures = { mongolgfx muslimgfx }
 
 	hunnic = {
-		graphical_cultures = { cumangfx }
+		graphical_cultures = { hunnicgfx steppegfx }
 	}
 }
 

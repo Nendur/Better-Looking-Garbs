@@ -7,6 +7,7 @@ Changelog:
   The child handling event will now safely ignore unknown culture types.
   Install the mixed Russian and Tocharian portraits with their dlc checks to fix misplaced eyes.
   Added Hellenic Greek portraits for earlier era mods.
+  Added Hunnic portraits with cranial deformation.
   Fixed Ancient Religions Celtic compatibility.
   Fixed Chinese crowns getting blocked by republic government type.
   Changed Chinese offmap support to generalized offmap support.
