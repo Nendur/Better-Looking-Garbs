@@ -171,6 +171,23 @@
 				has_minor_title = title_augusta
 				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
+				AND = { # Petty kings
+					OR = {
+						AND = { independent = yes real_tier = duke }
+						spouse = { independent = yes real_tier = duke }
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture_group = east_african
+						culture = saxon
+						likes_arabs = yes
+						likes_iranians = yes
+						likes_tibetans = yes
+						blg_north_african = yes
+					}
+				}
 			}
 		}
 		modifier = {
@@ -313,6 +330,23 @@
 				has_minor_title = title_augusta
 				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
+				AND = { # Petty kings
+					OR = {
+						AND = { independent = yes real_tier = duke }
+						spouse = { independent = yes real_tier = duke }
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture_group = east_african
+						culture = saxon
+						likes_arabs = yes
+						likes_iranians = yes
+						likes_tibetans = yes
+						blg_north_african = yes
+					}
+				}
 			}
 		}
 		modifier = {
@@ -462,9 +496,13 @@
 					}
 					OR = {
 						culture_group = north_germanic
+						culture_group = finno_ugric
 						culture_group = celtic
 						culture_group = east_african
 						culture = saxon
+						likes_arabs = yes
+						likes_tibetans = yes
+						blg_north_african = yes
 					}
 				}
 			}
@@ -735,10 +773,7 @@
 				AND = {
 					is_ruler = yes
 					is_female = no
-					OR = {
-						culture_group = north_germanic
-						likes_celts = yes
-					}
+					likes_celts = yes
 				}
 			}
 			NOR = {

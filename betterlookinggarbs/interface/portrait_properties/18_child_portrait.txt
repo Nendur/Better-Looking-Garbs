@@ -4,6 +4,11 @@
 		modifier = {
 			factor = 0
 			practical_age < 14
+			NOR = {
+				has_game_rule = { name = blg_children value = 16noscale }
+				has_game_rule = { name = blg_children value = 15noscale }
+				has_game_rule = { name = blg_children value = 14noscale }
+			}
 		}
 	}
 	1 = {
@@ -69,7 +74,7 @@
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
 	}
-	6 = {
+	6 = { #Baby
 		factor = 100
 		hide_layers = { 7 = {} }
 		hide_layers = { 9 = {} }

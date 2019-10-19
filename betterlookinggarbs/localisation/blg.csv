@@ -19,6 +19,15 @@ BLG_ARTIFACTS_ON_DESC;Equipped artifacts and pets can be shown in the character 
 BLG_ARTIFACTS_WEAPONS_DESC;Only weapons and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
 BLG_ARTIFACTS_RARE_DESC;Only rare and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
 BLG_ARTIFACTS_OFF_DESC;No artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_CHILDREN;§ZBLG:§! Child Portraits;;;;;;;;;;;;;x
+RULE_OPTION_BLG_CHILDREN_16_SCALING;Until age 16;;;;;;;;;;;;;x
+RULE_OPTION_BLG_CHILDREN_15_SCALING;Until age 15;;;;;;;;;;;;;x
+RULE_OPTION_BLG_CHILDREN_14_SCALING;Until age 14;;;;;;;;;;;;;x
+BLG_CHILDREN_SCALING;Child portraits will grow with age until the switch to adult portraits.;;;;;;;;;;;;;x
+RULE_OPTION_BLG_CHILDREN_16_NOSCALING;Until age 16, No size scaling;;;;;;;;;;;;;x
+RULE_OPTION_BLG_CHILDREN_15_NOSCALING;Until age 15, No size scaling;;;;;;;;;;;;;x
+RULE_OPTION_BLG_CHILDREN_14_NOSCALING;Until age 14, No size scaling;;;;;;;;;;;;;x
+BLG_CHILDREN_NOSCALING;Child portraits will show at full size until the switch to adult portraits.;;;;;;;;;;;;;x
 BLG_TRAITS;§ZBLG:§! Traits and Diseases;;;;;;;;;;;;;x
 BLG_TRAITS_ON_DESC;Effects for traits and diseases will be shown in the character portrait.;;;;;;;;;;;;;x
 RULE_OPTION_NOLUNATIC;No Lunatic and Possessed;;;;;;;;;;;;;x

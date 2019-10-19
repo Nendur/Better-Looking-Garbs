@@ -38,6 +38,41 @@ blg_artifacts = {
 	}
 }
 
+blg_children = {
+	name = "BLG_CHILDREN"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = 15
+		text = "RULE_OPTION_BLG_CHILDREN_15_SCALING"
+		desc = "BLG_CHILDREN_SCALING"
+	}
+	option = {
+		name = 16
+		text = "RULE_OPTION_BLG_CHILDREN_16_SCALING"
+		desc = "BLG_CHILDREN_SCALING"
+	}
+	option = {
+		name = 14
+		text = "RULE_OPTION_BLG_CHILDREN_14_SCALING"
+		desc = "BLG_CHILDREN_SCALING"
+	}
+	option = {
+		name = 16noscale
+		text = "RULE_OPTION_BLG_CHILDREN_16_NOSCALING"
+		desc = "BLG_CHILDREN_NOSCALING"
+	}
+	option = {
+		name = 15noscale
+		text = "RULE_OPTION_BLG_CHILDREN_15_NOSCALING"
+		desc = "BLG_CHILDREN_NOSCALING"
+	}
+	option = {
+		name = 14noscale
+		text = "RULE_OPTION_BLG_CHILDREN_14_NOSCALING"
+		desc = "BLG_CHILDREN_NOSCALING"
+	}
+}
+
 blg_traits = {
 	name = "BLG_TRAITS"
 	group = "BETTER_LOOKING_GARBS"

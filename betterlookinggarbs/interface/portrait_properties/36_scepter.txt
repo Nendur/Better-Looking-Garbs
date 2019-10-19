@@ -50,7 +50,7 @@
 			OR = {
 				has_artifact = holy_grail
 				has_artifact = holy_chalice
-				has_artifact = water_of_blessed_mantle
+				#has_artifact = water_of_blessed_mantle
 				has_artifact = cup_of_jamshid
 			}
 		}

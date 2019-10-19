@@ -1,5 +1,6 @@
 Changelog:
 
+15-10-2019
   Added a number of game rules to configure the portrait effects and the character handling scripts.
   Added Tianxia: Silk Road Expansion compatibility submod. The Tianxia: Japanese, Korean & Ainu Portraits are required.
   Added new South-East Asian portraits.
@@ -12,6 +13,8 @@ Changelog:
   Fixed Chinese crowns getting blocked by republic government type.
   Changed Chinese offmap support to generalized offmap support.
   Fixed EMF coronation support.
+  Included alternate special crown sprites with original Fylkir crowns.
+  Use petty king rules for more cultures without real crowns.
 
 12-09-2019
   New hair and beardstyles, clothing and headgear for Norse,

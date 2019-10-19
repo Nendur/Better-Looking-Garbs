@@ -685,6 +685,27 @@ character_event = {
 
 	is_triggered_only = yes
 
+	ai = no
+	trigger = {
+		OR = {
+			has_dlc = "The Sword of Islam"
+			has_dlc = "Legacy of Rome"
+			has_dlc = "Sunset Invasion"
+			has_dlc = "The Republic"
+			has_dlc = "The Old Gods"
+			has_dlc = "Sons of Abraham"
+			has_dlc = "Rajas of India"
+			has_dlc = "Charlemagne"
+			has_dlc = "Way of Life"
+			has_dlc = "Horse Lords"
+			has_dlc = "Conclave"
+			has_dlc = "Reapers"
+			has_dlc = "Mystics"
+			has_dlc = "Jade Dragon"
+			has_dlc = "Holy Fury"
+		}
+	}
+
 	option = {
 		name = blg.4.opt
 	}

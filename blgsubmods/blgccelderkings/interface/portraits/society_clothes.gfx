@@ -93,6 +93,11 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
+			19 = {
+				10 = {
+					always = yes
+				}
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -182,6 +187,11 @@ spriteTypes = {
 				}
 				4 = {
 					portrait_society_rank = 4
+				}
+			}
+			19 = {
+				10 = {
+					always = yes
 				}
 			}
 			32 = {
@@ -293,6 +303,11 @@ spriteTypes = {
 					}
 				}
 			}
+			19 = {
+				10 = {
+					always = yes
+				}
+			}
 			31 = {
 				0 = {
 					always = yes
@@ -389,6 +404,11 @@ spriteTypes = {
 						portrait_society_rank = 3
 						portrait_society_rank = 4
 					}
+				}
+			}
+			19 = {
+				10 = {
+					always = yes
 				}
 			}
 			32 = {
