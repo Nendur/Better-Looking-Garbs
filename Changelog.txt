@@ -10,6 +10,7 @@ Changelog:
   Nubians changed to fallback African faces.
   Adjusted Berber skintone.
   AGOT and Elder Kings updated with the new face sets.
+  Added pagan mid-era Norse and Easternslavic portraits.
 
 15-10-2019
   Added a number of game rules to configure the portrait effects and the character handling scripts.
