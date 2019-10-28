@@ -1,9 +1,11 @@
+############## BERBER ##########################
 spriteTypes = {
 
-# Darker Iberian Male
+### BERBER MALE ####
+
 	spriteType = {
 		name = "GFX_berber_male_base"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_base_1.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -11,7 +13,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_male_base_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_base_2.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_base_2.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -19,7 +21,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_male_base_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_base_3.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_base_3.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -27,7 +29,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_male_neck"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_neck_1.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_neck_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -35,7 +37,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_male_neck_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_neck_2.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_neck_2.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -43,7 +45,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_male_neck_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_neck_3.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_neck_3.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -51,31 +53,31 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_male_cheeks"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_cheeks_1.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_cheeks_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_cheeks_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_cheeks_2.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_cheeks_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_cheeks_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_cheeks_3.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_cheeks_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_chin"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_chin_1.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_chin_1.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -83,7 +85,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_male_chin_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_chin_2.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_chin_2.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -91,120 +93,129 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_male_chin_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_chin_3.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_chin_3.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
+		name = "GFX_berber_male_clothes"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_clothes.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_berber_male_mouth"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_mouth_1.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_mouth_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_mouth_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_mouth_2.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_mouth_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_mouth_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_mouth_3.dds"
-		noOfFrames = 13
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_berber_male_nose"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_nose_1.dds"
-		noOfFrames = 13
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_berber_male_nose_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_nose_2.dds"
-		noOfFrames = 13
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_berber_male_nose_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_nose_3.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_mouth_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_eyes"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_eyes_1.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_eyes_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_eyes_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_eyes_2.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_eyes_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_eyes_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_eyes_3.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_eyes_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_berber_male_nose"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_nose_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_berber_male_nose_midage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_nose_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_berber_male_nose_oldage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_nose_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_ear"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_ear_1.dds"
-		noOfFrames = 5
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_ear_1.dds"
+		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_ear_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_ear_2.dds"
-		noOfFrames = 5
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_ear_2.dds"
+		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_male_ear_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_ear_3.dds"
-		noOfFrames = 5
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_ear_3.dds"
+		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_character_berber_male_physique"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_physique.dds"
+		texturefile = "gfx\\characters\\shared\\physique\\egyptian_male_physique.dds"
 		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
-# Darker Iberian Female
+### BERBER FEMALE ####
+
 	spriteType = {
 		name = "GFX_berber_female_base"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_base_1.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -212,7 +223,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_female_base_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_base_2.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_base_2.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -220,7 +231,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_female_base_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_base_3.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_base_3.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -228,7 +239,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_female_neck"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_neck_1.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_neck_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -236,7 +247,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_female_neck_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_neck_2.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_neck_2.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -244,7 +255,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_female_neck_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_neck_3.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_neck_3.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -252,151 +263,151 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_berber_female_cheeks"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_cheeks_1.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_cheeks_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_cheeks_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_cheeks_2.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_cheeks_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_cheeks_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_cheeks_3.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_cheeks_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_chin"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_chin_1.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_chin_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_chin_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_chin_2.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_chin_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_chin_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_chin_3.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_chin_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_mouth"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_mouth_1.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_mouth_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_mouth_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_mouth_2.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_mouth_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_mouth_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_mouth_3.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_mouth_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_nose"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_nose_1.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_nose_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_nose_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_nose_2.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_nose_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_nose_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_nose_3.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_nose_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_eyes"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_eyes_1.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_eyes_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_eyes_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_eyes_2.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_eyes_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_eyes_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_eyes_3.dds"
-		noOfFrames = 13
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_eyes_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_ear"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_ear_1.dds"
-		noOfFrames = 5
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_ear_1.dds"
+		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_ear_midage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_ear_2.dds"
-		noOfFrames = 5
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_ear_2.dds"
+		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_berber_female_ear_oldage"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_ear_3.dds"
-		noOfFrames = 5
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_ear_3.dds"
+		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_character_berber_female_physique"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_physique.dds"
+		texturefile = "gfx\\characters\\shared\\physique\\egyptian_female_physique.dds"
 		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes

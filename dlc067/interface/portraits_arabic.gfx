@@ -4,55 +4,19 @@ spriteTypes = {
 # children
 
 	spriteType = {
-		name = "PORTRAIT_muslimgfx_child_male"
-		texturefile = "gfx\\characters\\default_son_muslim.tga"
+		name = "PORTRAIT_arabicgfx_child_male"
+		texturefile = "gfx\\characters\\default_son_egyptian.tga"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
-		name = "PORTRAIT_muslimgfx_child_female"
-		texturefile = "gfx\\characters\\default_daughter_muslim.tga"
+		name = "PORTRAIT_arabicgfx_child_female"
+		texturefile = "gfx\\characters\\default_daughter_egyptian.tga"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_muslim_son_base"
-		textureFile = "gfx\\characters\\muslim_male\\muslim_son_base.dds"
-		noOfFrames = 7
-	}
-
-	spriteType = {
-		name = "GFX_muslim_sonhair"
-		textureFile = "gfx\\characters\\muslim_male\\muslim_son_hair.dds"
-		noOfFrames = 7
-	}
-
-	spriteType = {
-		name = "GFX_muslim_son_eyes"
-		textureFile = "gfx\\characters\\muslim_male\\muslim_son_eyes.dds"
-		noOfFrames = 7
-	}
-
-	spriteType = {
-		name = "GFX_muslim_daughter_base"
-		textureFile = "gfx\\characters\\muslim_female\\muslim_daughter_base.dds"
-		noOfFrames = 7
-	}
-
-	spriteType = {
-		name = "GFX_muslim_daughterhair"
-		textureFile = "gfx\\characters\\muslim_female\\muslim_daughter_hair.dds"
-		noOfFrames = 7
-	}
-
-	spriteType = {
-		name = "GFX_muslim_daughter_eyes"
-		textureFile = "gfx\\characters\\muslim_female\\muslim_daughter_eyes.dds"
-		noOfFrames = 7
 	}
 
 ### MUSLIM MALE ####
@@ -241,16 +205,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_character_muslim_male_pale"
-		texturefile = "gfx\\characters\\shared\\pale\\east_african_male_pale.dds"
-		noOfFrames = 2
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
 		name = "GFX_character_harelip_arabic"
-		texturefile = "gfx\\characters\\muslim_male\\harelip_muslim.dds"
+		texturefile = "gfx\\characters\\shared\\harelip\\harelip_arabic.dds"
 		noOfFrames = 2
 		norefcount = yes
 		can_be_lowres = yes
@@ -437,14 +393,6 @@ spriteTypes = {
 		name = "GFX_character_arabic_female_physique"
 		texturefile = "gfx\\characters\\arabic_female\\muslim_female_physique.dds"
 		noOfFrames = 7
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_character_muslim_female_pale"
-		texturefile = "gfx\\characters\\shared\\pale\\east_african_female_pale.dds"
-		noOfFrames = 2
 		norefcount = yes
 		can_be_lowres = yes
 	}

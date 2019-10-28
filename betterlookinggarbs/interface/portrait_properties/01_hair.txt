@@ -323,6 +323,7 @@
 				graphical_culture = levantinegfx
 				graphical_culture = berbergfx
 				graphical_culture = egyptiangfx
+				graphical_culture = copticgfx
 				graphical_culture = semitegfx
 			}
 		}
@@ -364,8 +365,6 @@
 				graphical_culture = muslimgfx
 				graphical_culture = arabicgfx
 				graphical_culture = levantinegfx
-				graphical_culture = berbergfx
-				graphical_culture = egyptiangfx
 				graphical_culture = semitegfx
 				graphical_culture = norsegfx
 				graphical_culture = siberiangfx
@@ -706,6 +705,9 @@
 				graphical_culture = serbsouthslavicgfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = vlachgfx
+				graphical_culture = egyptiangfx
+				graphical_culture = copticgfx
+				graphical_culture = berbergfx
 			}
 		}
 		modifier = {

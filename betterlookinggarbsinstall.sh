@@ -434,9 +434,6 @@ if [[ $monks -eq 1 ]]; then
 	LIST="$LIST dlc070/*"
 else
 	echo "Monks and Mystics Content Pack absent."
-	if [[ $norse -eq 1 ]]; then
-		LIST="$LIST dlc070rdlc020/*"
-	fi
 	if [ -f "${DLC}037.dlc" ]; then
 		LIST="$LIST dlc070rdlc037/*"
 	fi
@@ -469,14 +466,8 @@ if [[ $holyfury -eq 1 ]]; then
 	fi
 else
 	echo "Holy Fury absent."
-	if [[ $byzantine -eq 1 ]] || [[ $earlyeast -eq 1 ]]; then
-		LIST="$LIST dlc074rdlc014odlc047/*"
-	fi
 	if [[ $monks -eq 1 ]]; then
 		LIST="$LIST dlc074rdlc070/*"
-	fi
-	if [[ -z $monks ]] && [[ $celtic -eq 1 ]]; then
-		LIST="$LIST dlc070rdlc028/*"
 	fi
 fi
 

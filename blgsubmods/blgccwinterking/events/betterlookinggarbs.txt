@@ -32,7 +32,7 @@ character_event = {
 			employer = {
 				NOT = { character = no }
 				is_landed = yes
-				race = ROOT
+				culture = ROOT
 			}
 			OR = { dynasty = none num_of_dynasty_members <= 1 }
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
@@ -52,7 +52,7 @@ character_event = {
 			employer = {
 				NOT = { character = no }
 				is_landed = yes
-				race = ROOT
+				culture = ROOT
 			}
 			OR = { dynasty = none num_of_dynasty_members <= 1 }
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }

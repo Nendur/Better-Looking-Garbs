@@ -73,7 +73,7 @@ byzantine = {
 		graphical_cultures = { semitegfx levantinegfx muslimgfx }
 	}
 	coptic = {
-		graphical_cultures = { egyptiangfx muslimgfx }
+		graphical_cultures = { copticgfx egyptiangfx muslimgfx }
 	}
 	crimean_gothic = {
 		unit_graphical_cultures = { germangfx westerngfx }

@@ -1,5 +1,16 @@
 Changelog:
 
+28-10-2019
+  Overhauled the fallback portraits into the Hotep's Dream; Everyone is various shades of Egyptian now.
+  Integrated Egyptian portraits.
+  Fixed Egyptian female cheeks.
+  Added Coptic portraits.
+  Keeping the fallback replacement Italian faces, moving previous faces to Occitan.
+  Ashkenazi changed to fallback European faces.
+  Nubians changed to fallback African faces.
+  Adjusted Berber skintone.
+  AGOT and Elder Kings updated with the new face sets.
+
 15-10-2019
   Added a number of game rules to configure the portrait effects and the character handling scripts.
   Added Tianxia: Silk Road Expansion compatibility submod. The Tianxia: Japanese, Korean & Ainu Portraits are required.

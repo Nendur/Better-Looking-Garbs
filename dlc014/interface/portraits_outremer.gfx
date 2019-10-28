@@ -4,8 +4,8 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_outremer_male_clothes_behind"
-		texturefile = "gfx\\fallbacks\\muslim_male\\muslim_male_clothes_behind.dds"
-		noOfFrames = 12
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_clothes_behind.dds"
+		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -20,7 +20,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_outremer_male_clothes"
-		texturefile = "gfx\\fallbacks\\muslim_male\\muslim_male_clothes.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_clothes.dds"
 		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
@@ -46,7 +46,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_outremer_female_clothes_behind"
-		texturefile = "gfx\\fallbacks\\muslim_female\\muslim_female_clothes_behind.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_clothes_behind.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -62,7 +62,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_outremer_female_clothes"
-		texturefile = "gfx\\fallbacks\\muslim_female\\muslim_female_clothes.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_clothes.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes

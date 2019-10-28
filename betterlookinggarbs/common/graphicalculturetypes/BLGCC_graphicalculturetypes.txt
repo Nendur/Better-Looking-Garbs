@@ -47,9 +47,6 @@ siciliangfx = {
 pomeraniangfx = {
 	skin_tone = 0
 }
-egyptiangfx = {
-	skin_tone = 2
-}
 turkishgfx = {
 	skin_tone = 1
 }
@@ -130,4 +127,7 @@ khmergfx = {
 }
 hunnicgfx = {
 	skin_tone = 1
+}
+copticgfx = {
+	skin_tone = 2
 }

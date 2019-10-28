@@ -19,6 +19,12 @@ byzantine = {
 	viethellenic = {
 		graphical_cultures = { tangutgfx chinesegfx indiangfx muslimgfx }
 	}
+	ashkenazi = {
+		graphical_cultures = { ashkenazigfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
+	}
 	assyrian = {
 		graphical_cultures = { semitegfx levantinegfx muslimgfx }
 		alternate_start = { always = no }
@@ -119,6 +125,12 @@ arabic = {
 	}
 	saqaliba = {
 		graphical_cultures = { serbsouthslavicgfx berbergfx }
+	}
+	coptic = {
+		graphical_cultures = { copticgfx egyptiangfx arabicgfx }
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
 	}
 }
 

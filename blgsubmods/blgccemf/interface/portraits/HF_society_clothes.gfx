@@ -1,0 +1,242 @@
+spriteTypes = {
+
+### Stoics
+
+	spriteType = {
+		name = "GFX_society_monastic_order_stoics_male_clothing_behind"
+		textureFile = "gfx/characters/societies/hf_stoic_male_clothing_behind.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_society_monastic_order_stoics_male_clothing_front"
+		textureFile = "gfx/characters/societies/hf_stoic_male_clothing_front.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_society_monastic_order_stoics_male_headgear_front"
+		textureFile = "gfx/characters/societies/hf_stoic_male_headgear_front.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_society_monastic_order_stoics_male_headgear_behind"
+		textureFile = "gfx/characters/societies/hf_stoic_male_headgear_behind.dds"
+		noOfFrames = 4
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_monastic_order_stoics_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_clothing = yes
+				portrait_society = monastic_order_stoics
+				OR = {
+					#portrait_government = theocracy_government
+					#NOT = { portrait_tier = baron }
+					portrait_society_rank = 3
+					portrait_society_rank = 4
+					portrait_has_trait = blgcaon
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_monastic_order_stoics_male_clothing_behind:c0"
+			"GFX_society_monastic_order_stoics_male_clothing_front:c2"
+			"GFX_society_monastic_order_stoics_male_headgear_mid:c3"
+			"GFX_society_monastic_order_stoics_male_headgear_front:c5"
+			"GFX_society_monastic_order_stoics_male_headgear_behind:c1"
+			"GFX_empty:c7"
+			"GFX_empty:c4"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					always = no
+					#portrait_society_rank = 1
+				}
+				1 = {
+					always = no
+					#portrait_society_rank = 2
+				}
+				2 = {
+					OR = {
+						portrait_society_rank = 1
+						portrait_society_rank = 2
+						portrait_society_rank = 3
+					}
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = {
+					always = yes
+				}
+			}
+			32 = {
+				0 = {
+					always = yes
+				}
+			}
+			33 = {
+				0 = {
+					always = yes
+				}
+			}
+		}
+	}
+
+### Bacchants
+
+	spriteType = {
+		name = "GFX_society_bacchant_male_clothing_behind"
+		textureFile = "gfx/characters/societies/hf_bacchant_male_clothing_behind.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_society_bacchant_male_clothing_front"
+		textureFile = "gfx/characters/societies/hf_bacchant_male_clothing_front.dds"
+		noOfFrames = 4
+	}
+
+	#spriteType = {
+	#	name = "GFX_society_bacchant_male_headgear_mid"
+	#	textureFile = "gfx/characters/societies/hf_bacchant_male_headgear_mid.dds"
+	#	noOfFrames = 4
+	#}
+
+	spriteType = {
+		name = "GFX_society_bacchant_male_headgear_front"
+		textureFile = "gfx/characters/societies/hf_bacchant_male_headgear_front.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_society_bacchant_male_headgear_behind"
+		textureFile = "gfx/characters/societies/hf_bacchant_male_headgear_behind.dds"
+		noOfFrames = 4
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_bacchant_clothing_male"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				#portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_society = the_bacchants
+					portrait_society = the_cult_of_kali
+					portrait_society = followers_of_ahuiateteo
+				}
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_society_rank = 3
+					portrait_society_rank = 4
+					portrait_has_trait = blgcaon
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_bacchant_male_clothing_behind:c0"
+			"GFX_society_bacchant_male_clothing_front:c2"
+			"GFX_empty:c3"
+			"GFX_society_bacchant_male_headgear_front:c5"
+			"GFX_society_bacchant_male_headgear_behind:c1"
+			"GFX_empty:c7"
+			"GFX_empty:c4"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = {
+					always = yes
+				}
+			}
+			32 = {
+				0 = {
+					always = yes
+				}
+			}
+			33 = {
+				0 = {
+					always = yes
+				}
+			}
+		}
+	}
+}

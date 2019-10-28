@@ -491,6 +491,7 @@
 				culture = roman
 				culture = pecheneg
 				blg_italian = yes
+				likes_mesoamericans = yes
 			}
 		}
 		modifier = {

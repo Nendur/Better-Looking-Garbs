@@ -1,6 +1,206 @@
 #### Nubian Portraits ####
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_nubian_male_base"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_base_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_base_midage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_base_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_base_oldage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_base_3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_neck"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_neck_1.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_neck_midage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_neck_2.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_neck_oldage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_neck_3.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_cheeks"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_cheeks_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_cheeks_midage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_cheeks_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_cheeks_oldage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_cheeks_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_chin"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_chin_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_chin_midage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_chin_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_chin_oldage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_chin_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_mouth"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_mouth_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_mouth_midage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_mouth_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_mouth_oldage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_mouth_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_eyes"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_eyes_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_eyes_midage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_eyes_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_eyes_oldage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_eyes_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_nose"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_nose_1.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_nose_midage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_nose_2.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_nose_oldage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_nose_3.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_ear"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_ear_1.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_ear_midage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_ear_2.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_male_ear_oldage"
+		texturefile = "gfx\\characters\\nubian_male\\african_male_ear_3.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_nubian_male_physique"
+		texturefile = "gfx\\characters\\shared\\physique\\nubian_male_physique.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
 	portraitType = {
 		name = "PORTRAIT_nubiangfx_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -9,23 +209,23 @@ spriteTypes = {
 			"GFX_muslim_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_westafrican_male_clothes_behind:p3:c0"
-			"GFX_byzantine_male_headgear_behind_early:p5:c1"
+			"GFX_african_male_clothes_behind:p3:c0"
+			"GFX_african_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_african_male_hair_behind:p1:h:y"
-			"GFX_african_male_beard_behind:p4:h:y"
-			"GFX_westafrican_male_base:p2"
-			"GFX_westafrican_male_neck:d0"
-			"GFX_westafrican_male_chin:d1"
-			"GFX_character_african_male_physique:p21"
-			"GFX_westafrican_male_cheeks:d4"
-			"GFX_westafrican_male_mouth:d2"
+			"GFX_african_male_hair_behind:p1:h:y:o1x1"
+			"GFX_african_male_beard_behind:p4:h:y:o2x-1"
+			"GFX_nubian_male_base:p2"
+			"GFX_nubian_male_neck:d0"
+			"GFX_nubian_male_chin:d1"
+			"GFX_character_nubian_male_physique:p21"
+			"GFX_nubian_male_cheeks:d4"
+			"GFX_nubian_male_mouth:d2"
 			"GFX_character_harelip_west_african:p24"
-			"GFX_westafrican_male_eyes:d6"
-			"GFX_westafrican_male_eyes2:d6:e"
-			"GFX_westafrican_male_ear:d7"
-			"GFX_westafrican_male_nose:d3"
+			"GFX_nubian_male_eyes:d6"
+			"GFX_egyptian_male_eyes2:d6:e"
+			"GFX_nubian_male_ear:d7"
+			"GFX_nubian_male_nose:d3"
 			"GFX_child_back:p17"
 			"GFX_westafrican_son_base:p18"
 			"GFX_westafrican_sonhair:p18:h"
@@ -34,11 +234,11 @@ spriteTypes = {
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
 			"GFX_character_boils:p9"
-			"GFX_westafrican_male_clothes:p3:c2"
-			"GFX_byzantine_male_headgear_mid_early:p5:c3"
+			"GFX_african_male_clothes:p3:c2"
+			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
-			"GFX_african_male_beard:p4:h:y"
+			"GFX_african_male_beard:p4:h:y:o2x-1"
 			"GFX_character_freckles:p20"
 			"GFX_character_scars_dark:p7:y"
 			"GFX_character_scars_mid_dark:p25"
@@ -49,10 +249,10 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o-1x2"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-		   	"GFX_african_male_hair:p1:h:y"
+		   	"GFX_african_male_hair:p1:h:y:o1x1"
 			"GFX_empty:p5:c7:h"
 			"GFX_empty:p3:c4"
-			"GFX_byzantine_male_headgear_early:p5:c5"
+			"GFX_african_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -81,7 +281,7 @@ spriteTypes = {
 			{ 77 54 21 } #Medium Brown
 		}
 
-		headgear_that_hides_hair = {10 12 13}
+		headgear_that_hides_hair = {}
 	}
 
 	portraitType = {
@@ -92,32 +292,32 @@ spriteTypes = {
 			"GFX_muslim_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_westafrican_male_clothes_behind:p3:c0"
-			"GFX_byzantine_male_headgear_behind_early:p5:c1"
+			"GFX_african_male_clothes_behind:p3:c0"
+			"GFX_african_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_african_male_hair_behind_midage:p1:h:y"
-			"GFX_african_male_beard_behind_midage:p4:h:y"
-			"GFX_westafrican_male_base_midage:p2"
-			"GFX_westafrican_male_neck_midage:d0"
-			"GFX_westafrican_male_chin_midage:d1"
-			"GFX_character_african_male_physique:p21"
-			"GFX_westafrican_male_cheeks_midage:d4"
-			"GFX_westafrican_male_mouth_midage:d2"
+			"GFX_african_male_hair_behind_midage:p1:h:y:o1x1"
+			"GFX_african_male_beard_behind_midage:p4:h:y:o2x-1"
+			"GFX_nubian_male_base_midage:p2"
+			"GFX_nubian_male_neck_midage:d0"
+			"GFX_nubian_male_chin_midage:d1"
+			"GFX_character_nubian_male_physique:p21"
+			"GFX_nubian_male_cheeks_midage:d4"
+			"GFX_nubian_male_mouth_midage:d2"
 			"GFX_character_harelip_west_african:p24"
-			"GFX_westafrican_male_eyes_midage:d6"
-			"GFX_westafrican_male_eyes2:d6:e"
-			"GFX_westafrican_male_ear_midage:d7"
-			"GFX_westafrican_male_nose_midage:d3"
+			"GFX_nubian_male_eyes_midage:d6"
+			"GFX_egyptian_male_eyes2:d6:e"
+			"GFX_nubian_male_ear_midage:d7"
+			"GFX_nubian_male_nose_midage:d3"
 			"GFX_character_african_male_pale:p22"
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
 			"GFX_character_boils:p9"
-			"GFX_westafrican_male_clothes:p3:c2"
-			"GFX_byzantine_male_headgear_mid_early:p5:c3"
+			"GFX_african_male_clothes:p3:c2"
+			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
-			"GFX_african_male_beard_midage:p4:h:y"
+			"GFX_african_male_beard_midage:p4:h:y:o2x-1"
 			"GFX_character_freckles:p20"
 			"GFX_character_scars_dark:p7:y"
 			"GFX_character_scars_mid_dark:p25"
@@ -128,10 +328,10 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o-1x2"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_african_male_hair_midage:p1:h:y"
+			"GFX_african_male_hair_midage:p1:h:y:o1x1"
 			"GFX_empty:p5:c7:h"
 			"GFX_empty:p3:c4"
-			"GFX_byzantine_male_headgear_early:p5:c5"
+			"GFX_african_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -160,7 +360,7 @@ spriteTypes = {
 			{ 77 54 21 } #Medium Brown
 		}
 
-		headgear_that_hides_hair = {10 12 13}
+		headgear_that_hides_hair = {}
 	}
 
 	portraitType = {
@@ -171,32 +371,32 @@ spriteTypes = {
 			"GFX_muslim_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_westafrican_male_clothes_behind:p3:c0"
-			"GFX_byzantine_male_headgear_behind_early:p5:c1"
+			"GFX_african_male_clothes_behind:p3:c0"
+			"GFX_african_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_african_male_hair_behind_oldage:p1:h:y"
-			"GFX_african_male_beard_behind_oldage:p4:h:y"
-			"GFX_westafrican_male_base_oldage:p2"
-			"GFX_westafrican_male_neck_oldage:d0"
-			"GFX_westafrican_male_chin_oldage:d1"
-			"GFX_character_african_male_physique:p21"
-			"GFX_westafrican_male_cheeks_oldage:d4"
-			"GFX_westafrican_male_mouth_oldage:d2"
+			"GFX_african_male_hair_behind_oldage:p1:h:y:o1x1"
+			"GFX_african_male_beard_behind_oldage:p4:h:y:o2x-1"
+			"GFX_nubian_male_base_oldage:p2"
+			"GFX_nubian_male_neck_oldage:d0"
+			"GFX_nubian_male_chin_oldage:d1"
+			"GFX_character_nubian_male_physique:p21"
+			"GFX_nubian_male_cheeks_oldage:d4"
+			"GFX_nubian_male_mouth_oldage:d2"
 			"GFX_character_harelip_west_african:p24"
-			"GFX_westafrican_male_eyes_oldage:d6"
-			"GFX_westafrican_male_eyes2:d6:e"
-			"GFX_westafrican_male_ear_oldage:d7"
-			"GFX_westafrican_male_nose_oldage:d3"
+			"GFX_nubian_male_eyes_oldage:d6"
+			"GFX_egyptian_male_eyes2:d6:e"
+			"GFX_nubian_male_ear_oldage:d7"
+			"GFX_nubian_male_nose_oldage:d3"
 			"GFX_character_african_male_pale:p22"
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
 			"GFX_character_boils:p9"
-			"GFX_westafrican_male_clothes:p3:c2"
-			"GFX_byzantine_male_headgear_mid_early:p5:c3"
+			"GFX_african_male_clothes:p3:c2"
+			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
-			"GFX_african_male_beard_oldage:p4:h:y"
+			"GFX_african_male_beard_oldage:p4:h:y:o2x-1"
 			"GFX_character_freckles:p20"
 			"GFX_character_scars_dark:p7:y"
 			"GFX_character_scars_mid_dark:p25"
@@ -207,10 +407,10 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o-1x2"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_african_male_hair_oldage:p1:h:y"
+			"GFX_african_male_hair_oldage:p1:h:y:o1x1"
 			"GFX_empty:p5:c7:h"
 			"GFX_empty:p3:c4"
-			"GFX_byzantine_male_headgear_early:p5:c5"
+			"GFX_african_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -239,10 +439,210 @@ spriteTypes = {
 			{ 77 54 21 } #Medium Brown
 		}
 
-		headgear_that_hides_hair = {10 12 13}
+		headgear_that_hides_hair = {}
 	}
 
 #### NUBIAN FEMALE ####
+
+	spriteType = {
+		name = "GFX_nubian_female_base"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_base_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_base_midage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_base_2.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_base_oldage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_base_3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_neck"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_neck_1.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_neck_midage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_neck_2.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_neck_oldage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_neck_3.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_cheeks"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_cheeks_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_cheeks_midage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_cheeks_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_cheeks_oldage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_cheeks_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_chin"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_chin_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_chin_midage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_chin_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_chin_oldage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_chin_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_mouth"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_mouth_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_mouth_midage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_mouth_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_mouth_oldage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_mouth_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_nose"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_nose_1.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_nose_midage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_nose_2.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_nose_oldage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_nose_3.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_eyes"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_eyes_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_eyes_midage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_eyes_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_eyes_oldage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_eyes_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_ear"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_ear_1.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_ear_midage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_ear_2.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_nubian_female_ear_oldage"
+		texturefile = "gfx\\characters\\nubian_female\\african_female_ear_3.dds"
+		noOfFrames = 4
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_nubian_female_physique"
+		texturefile = "gfx\\characters\\shared\\physique\\nubian_female_physique.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
 
 	portraitType = {
 		name = "PORTRAIT_nubiangfx_female"
@@ -252,24 +652,24 @@ spriteTypes = {
 			"GFX_muslim_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_westafrican_female_clothes_behind:p3:c0"
-			"GFX_byzantine_female_headgear_behind_early:p5:c1"
+			"GFX_african_female_clothes_behind:p3:c0"
+			"GFX_african_female_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_african_female_hair_behind:p1:h:y"
-			"GFX_westafrican_female_base:p2"
-			"GFX_westafrican_female_neck:d0"
-			"GFX_westafrican_female_chin:d1"
-			"GFX_character_african_female_physique:p21"
-			"GFX_westafrican_female_cheeks:d4"
-			"GFX_westafrican_female_eyes:d6"
-			"GFX_westafrican_female_eyes2:d6:e"
-			"GFX_westafrican_female_mouth:d2"
+			"GFX_nubian_female_base:p2"
+			"GFX_nubian_female_neck:d0"
+			"GFX_nubian_female_chin:d1"
+			"GFX_character_nubian_female_physique:p21"
+			"GFX_nubian_female_cheeks:d4"
+			"GFX_nubian_female_eyes:d6"
+			"GFX_egyptian_female_eyes2:d6:e"
+			"GFX_nubian_female_mouth:d2"
 			"GFX_character_harelip_west_african:p24"
-			"GFX_westafrican_female_nose:d3"
-			"GFX_westafrican_female_ear:d7"
+			"GFX_nubian_female_nose:d3"
+			"GFX_nubian_female_ear:d7"
 			"GFX_child_back:p17"
 			"GFX_westafrican_daughter_base:p18"
 			"GFX_westafrican_daughterhair:p18:h"
@@ -290,15 +690,15 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o-1x3"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_westafrican_female_clothes:p3:c2"
-			"GFX_byzantine_female_headgear_mid_early:p5:c3"
+			"GFX_african_female_clothes:p3:c2"
+			"GFX_african_female_headgear_mid:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_african_female_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_empty:p3:c4"
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
-			"GFX_byzantine_female_headgear_early:p5:c5"
+			"GFX_african_female_headgear:p5:c5"
 			"GFX_frankish_female_overlayer:p32"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -328,7 +728,7 @@ spriteTypes = {
 			{ 77 54 21 } #Medium Brown
 		}
 
-		headgear_that_hides_hair = {10 12 13}
+		headgear_that_hides_hair = {}
 	}
 
 	portraitType = {
@@ -339,24 +739,24 @@ spriteTypes = {
 			"GFX_muslim_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_westafrican_female_clothes_behind:p3:c0"
-			"GFX_byzantine_female_headgear_behind_early:p5:c1"
+			"GFX_african_female_clothes_behind:p3:c0"
+			"GFX_african_female_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_african_female_hair_behind_midage:p1:h:y"
-			"GFX_westafrican_female_base_midage:p2"
-			"GFX_westafrican_female_neck_midage:d0"
-			"GFX_westafrican_female_chin_midage:d1"
-			"GFX_character_african_female_physique:p21"
-			"GFX_westafrican_female_cheeks_midage:d4"
-			"GFX_westafrican_female_eyes_midage:d6"
-			"GFX_westafrican_female_eyes2:d6:e"
-			"GFX_westafrican_female_mouth_midage:d2"
+			"GFX_nubian_female_base_midage:p2"
+			"GFX_nubian_female_neck_midage:d0"
+			"GFX_nubian_female_chin_midage:d1"
+			"GFX_character_nubian_female_physique:p21"
+			"GFX_nubian_female_cheeks_midage:d4"
+			"GFX_nubian_female_eyes_midage:d6"
+			"GFX_egyptian_female_eyes2:d6:e"
+			"GFX_nubian_female_mouth_midage:d2"
 			"GFX_character_harelip_west_african:p24"
-			"GFX_westafrican_female_nose_midage:d3"
-			"GFX_westafrican_female_ear_midage:d7"
+			"GFX_nubian_female_nose_midage:d3"
+			"GFX_nubian_female_ear_midage:d7"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_chinese_female_makeup2:p15"
 			"GFX_character_freckles:p20"
@@ -373,15 +773,15 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o-1x3"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_westafrican_female_clothes:p3:c2"
-			"GFX_byzantine_female_headgear_mid_early:p5:c3"
+			"GFX_african_female_clothes:p3:c2"
+			"GFX_african_female_headgear_mid:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_african_female_hair_midage:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_empty:p3:c4"
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
-			"GFX_byzantine_female_headgear_early:p5:c5"
+			"GFX_african_female_headgear:p5:c5"
 			"GFX_frankish_female_overlayer:p32"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -410,7 +810,7 @@ spriteTypes = {
 			{ 77 54 21 } #Medium Brown
 		}
 
-		headgear_that_hides_hair = {10 12 13}
+		headgear_that_hides_hair = {}
 	}
 
 	portraitType = {
@@ -421,24 +821,24 @@ spriteTypes = {
 			"GFX_muslim_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
-			"GFX_westafrican_female_clothes_behind:p3:c0"
-			"GFX_byzantine_female_headgear_behind_early:p5:c1"
+			"GFX_african_female_clothes_behind:p3:c0"
+			"GFX_african_female_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_african_female_hair_behind_oldage:p1:h:y"
-			"GFX_westafrican_female_base_oldage:p2"
-			"GFX_westafrican_female_neck_oldage:d0"
-			"GFX_westafrican_female_chin_oldage:d1"
-			"GFX_character_african_female_physique:p21"
-			"GFX_westafrican_female_cheeks_oldage:d4"
-			"GFX_westafrican_female_eyes_oldage:d6"
-			"GFX_westafrican_female_eyes2:d6:e"
-			"GFX_westafrican_female_mouth_oldage:d2"
+			"GFX_nubian_female_base_oldage:p2"
+			"GFX_nubian_female_neck_oldage:d0"
+			"GFX_nubian_female_chin_oldage:d1"
+			"GFX_character_nubian_female_physique:p21"
+			"GFX_nubian_female_cheeks_oldage:d4"
+			"GFX_nubian_female_eyes_oldage:d6"
+			"GFX_egyptian_female_eyes2:d6:e"
+			"GFX_nubian_female_mouth_oldage:d2"
 			"GFX_character_harelip_west_african:p24"
-			"GFX_westafrican_female_nose_oldage:d3"
-			"GFX_westafrican_female_ear_oldage:d7"
+			"GFX_nubian_female_nose_oldage:d3"
+			"GFX_nubian_female_ear_oldage:d7"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_chinese_female_makeup2:p15"
 			"GFX_character_freckles:p20"
@@ -455,15 +855,15 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o-1x3"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_westafrican_female_clothes:p3:c2"
-			"GFX_byzantine_female_headgear_mid_early:p5:c3"
+			"GFX_african_female_clothes:p3:c2"
+			"GFX_african_female_headgear_mid:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_african_female_hair_oldage:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_empty:p3:c4"
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
-			"GFX_byzantine_female_headgear_early:p5:c5"
+			"GFX_african_female_headgear:p5:c5"
 			"GFX_frankish_female_overlayer:p32"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -492,6 +892,6 @@ spriteTypes = {
 			{ 77 54 21 } #Medium Brown
 		}
 
-		headgear_that_hides_hair = {10 12 13}
+		headgear_that_hides_hair = {}
 	}
 }

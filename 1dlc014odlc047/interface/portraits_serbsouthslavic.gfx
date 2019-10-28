@@ -336,7 +336,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_southslavic_male_physique"
-		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_physique.dds"
+		texturefile = "gfx\\characters\\shared\\physique\\illyrian_male_physique.dds"
 		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
@@ -601,7 +601,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_southslavic_female_physique"
-		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_physique.dds"
+		texturefile = "gfx\\characters\\shared\\physique\\illyrian_female_physique.dds"
 		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes

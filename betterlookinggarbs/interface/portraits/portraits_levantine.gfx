@@ -1,56 +1,6 @@
 ############## LEVANTINE ##########################
 spriteTypes = {
 
-	spriteType = {
-		name = "PORTRAIT_levantinegfx_child_male"
-		texturefile = "gfx\\characters\\default_son_mediterranean.tga"
-		noOfFrames = 1
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "PORTRAIT_levantinegfx_child_female"
-		texturefile = "gfx\\characters\\default_daughter_mediterranean.tga"
-		noOfFrames = 1
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_levantine_son_base"
-		textureFile = "gfx\\characters\\muslim_male\\levantine_son_base.dds"
-		noOfFrames = 7
-	}
-
-	spriteType = {
-		name = "GFX_levantine_sonhair"
-		textureFile = "gfx\\characters\\muslim_male\\levantine_son_hair.dds"
-		noOfFrames = 7
-	}
-
-	spriteType = {
-		name = "GFX_levantine_son_eyes"
-		textureFile = "gfx\\characters\\muslim_male\\levantine_son_eyes.dds"
-		noOfFrames = 7
-	}
-
-	spriteType = {
-		name = "GFX_levantine_daughter_base"
-		textureFile = "gfx\\characters\\muslim_female\\levantine_daughter_base.dds"
-		noOfFrames = 7
-	}
-
-	spriteType = {
-		name = "GFX_levantine_daughterhair"
-		textureFile = "gfx\\characters\\muslim_female\\levantine_daughter_hair.dds"
-		noOfFrames = 7
-	}
-
-	spriteType = {
-		name = "GFX_levantine_daughter_eyes"
-		textureFile = "gfx\\characters\\muslim_female\\levantine_daughter_eyes.dds"
-		noOfFrames = 7
-	}
-
 	portraitType = {
 		name = "PORTRAIT_levantinegfx_male"
 		effectFile = "gfx/FX/portrait.lua"

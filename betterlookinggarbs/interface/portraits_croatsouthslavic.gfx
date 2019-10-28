@@ -30,16 +30,18 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_croatsouthslavic_male_clothes_behind"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_clothes_behind.dds"
-		noOfFrames = 14
+		texturefile = "gfx\\characters\\western_male\\western_male_clothes_behind.dds"
+		noOfFrames = 16
 		norefcount = yes
+		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_croatsouthslavic_male_clothes"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_clothes.dds"
-		noOfFrames = 14
+		texturefile = "gfx\\characters\\western_male\\western_male_clothes.dds"
+		noOfFrames = 16
 		norefcount = yes
+		can_be_lowres = yes
 	}
 
 	spriteType = {
@@ -67,14 +69,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_croatsouthslavic_female_clothes_behind"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_clothes_behind.dds"
+		texturefile = "gfx\\characters\\western_female\\western_female_clothes_behind.dds"
 		noOfFrames = 12
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_croatsouthslavic_female_clothes"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_clothes.dds"
+		texturefile = "gfx\\characters\\western_female\\western_female_clothes.dds"
 		noOfFrames = 12
 		norefcount = yes
 	}

@@ -2,16 +2,16 @@
 spriteTypes = {
 
 	#spriteType = {
-	#	name = "GFX_egyptian_male_clothes"
-	#	texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_clothes.dds"
+	#	name = "GFX_somali_male_clothes"
+	#	texturefile = "gfx\\characters\\somali_male\\somali_male_clothes.dds"
 	#	noOfFrames = 14
 	#	norefcount = yes
 	#	can_be_lowres = yes
 	#}
 
 	spriteType = {
-		name = "GFX_egyptian_male_headgear"
-		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_headgear.dds"
+		name = "GFX_somali_male_headgear"
+		texturefile = "gfx\\characters\\somali_male\\somali_male_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
@@ -68,7 +68,7 @@ spriteTypes = {
 		   	"GFX_african_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_empty:p3:c4"
-			"GFX_egyptian_male_headgear:p5:c5"
+			"GFX_somali_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -147,7 +147,7 @@ spriteTypes = {
 			"GFX_african_male_hair_midage:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_empty:p3:c4"
-			"GFX_egyptian_male_headgear:p5:c5"
+			"GFX_somali_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -226,7 +226,7 @@ spriteTypes = {
 			"GFX_african_male_hair_oldage:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_empty:p3:c4"
-			"GFX_egyptian_male_headgear:p5:c5"
+			"GFX_somali_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"

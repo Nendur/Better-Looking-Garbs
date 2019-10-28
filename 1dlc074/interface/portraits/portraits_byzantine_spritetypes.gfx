@@ -46,27 +46,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_byzantine_male_beard_behind"
-		texturefile = "gfx\\characters\\roman_male\\roman_male_beard_behind_1.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_byzantine_male_beard_behind_midage"
-		texturefile = "gfx\\characters\\roman_male\\roman_male_beard_behind_2.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_byzantine_male_beard_behind_oldage"
-		texturefile = "gfx\\characters\\roman_male\\roman_male_beard_behind_3.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_byzantine_male_cheeks"
 		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_cheeks_1.dds"
 		noOfFrames = 10
@@ -221,27 +200,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_byzantine_male_beard"
-		texturefile = "gfx\\characters\\roman_male\\roman_male_beard_1.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_byzantine_male_beard_midage"
-		texturefile = "gfx\\characters\\roman_male\\roman_male_beard_2.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_byzantine_male_beard_oldage"
-		texturefile = "gfx\\characters\\roman_male\\roman_male_beard_3.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_byzantine_male_hair"
 		texturefile = "gfx\\characters\\roman_male\\roman_male_hair_1.dds"
 		noOfFrames = 15
@@ -260,6 +218,54 @@ spriteTypes = {
 		texturefile = "gfx\\characters\\roman_male\\roman_male_hair_3.dds"
 		noOfFrames = 15
 		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_beard_behind"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_beard_behind_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_beard_behind_midage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_beard_behind_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_beard_behind_oldage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_beard_behind_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_beard"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_beard_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_beard_midage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_beard_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_byzantine_male_beard_oldage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_beard_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
 	}
 
 	spriteType = {
@@ -517,7 +523,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_male_base"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_base_1.dds"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -525,7 +531,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_male_base_midage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_base_2.dds"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_base_2.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -533,7 +539,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_male_base_oldage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_base_3.dds"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_base_3.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -541,7 +547,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_male_neck"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_neck_1.dds"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_neck_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -549,7 +555,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_male_neck_midage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_neck_2.dds"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_neck_2.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -557,7 +563,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_male_neck_oldage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_neck_3.dds"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_neck_3.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -565,127 +571,127 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_male_cheeks"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_cheeks_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_cheeks_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_cheeks_midage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_cheeks_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_cheeks_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_cheeks_oldage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_cheeks_2.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_cheeks_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_chin"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_chin_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_chin_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_chin_midage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_chin_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_chin_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_chin_oldage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_chin_2.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_chin_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_mouth"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_mouth_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_mouth_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_mouth_midage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_mouth_2.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_mouth_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_mouth_oldage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_mouth_3.dds"
-		noOfFrames = 10
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_illyrian_male_nose"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_nose_1.dds"
-		noOfFrames = 10
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_illyrian_male_nose_midage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_nose_2.dds"
-		noOfFrames = 10
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_illyrian_male_nose_oldage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_nose_3.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_mouth_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_eyes"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_eyes_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_eyes_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_eyes_midage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_eyes_2.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_eyes_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_eyes_oldage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_eyes_3.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_eyes_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_illyrian_male_nose"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_nose_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_illyrian_male_nose_midage"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_nose_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_illyrian_male_nose_oldage"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_nose_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_male_ear"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_ear_1.dds"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_ear_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -693,7 +699,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_male_ear_midage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_ear_2.dds"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_ear_2.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -701,7 +707,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_male_ear_oldage"
-		texturefile = "gfx\\characters\\southslavic_male\\southslavic_male_ear_3.dds"
+		texturefile = "gfx\\characters\\illyrian_male\\illyrian_male_ear_3.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -709,7 +715,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_illyrian_male_physique"
-		texturefile = "gfx\\characters\\shared\\physique\\southslavic_male_physique.dds"
+		texturefile = "gfx\\characters\\shared\\physique\\illyrian_male_physique.dds"
 		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
@@ -719,7 +725,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_female_base"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_base_1.dds"
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -727,7 +733,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_female_base_midage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_base_2.dds"
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_base_2.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -735,7 +741,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_female_base_oldage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_base_3.dds"
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_base_3.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -743,7 +749,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_female_neck"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_neck_1.dds"
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_neck_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -751,7 +757,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_female_neck_midage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_neck_2.dds"
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_neck_2.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -759,7 +765,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_female_neck_oldage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_neck_3.dds"
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_neck_3.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -767,127 +773,127 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_female_cheeks"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_cheeks_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_cheeks_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_cheeks_midage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_cheeks_2.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_cheeks_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_cheeks_oldage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_cheeks_3.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_cheeks_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_chin"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_chin_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_chin_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_chin_midage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_chin_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_chin_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_chin_oldage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_chin_2.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_chin_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_mouth"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_mouth_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_mouth_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_mouth_midage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_mouth_2.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_mouth_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_mouth_oldage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_mouth_3.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_mouth_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_nose"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_nose_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_nose_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_nose_midage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_nose_2.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_nose_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_nose_oldage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_nose_3.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_nose_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_eyes"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_eyes_1.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_eyes_1.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_eyes_midage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_eyes_2.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_eyes_2.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_eyes_oldage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_eyes_3.dds"
-		noOfFrames = 10
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_eyes_3.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_illyrian_female_ear"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_ear_1.dds"
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_ear_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -895,7 +901,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_female_ear_midage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_ear_2.dds"
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_ear_2.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -903,7 +909,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_illyrian_female_ear_oldage"
-		texturefile = "gfx\\characters\\southslavic_female\\southslavic_female_ear_3.dds"
+		texturefile = "gfx\\characters\\illyrian_female\\illyrian_female_ear_3.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -911,7 +917,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_illyrian_female_physique"
-		texturefile = "gfx\\characters\\shared\\physique\\southslavic_female_physique.dds"
+		texturefile = "gfx\\characters\\shared\\physique\\illyrian_female_physique.dds"
 		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes

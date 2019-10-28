@@ -80,27 +80,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_southern_male_hair_behind"
-		texturefile = "gfx\\characters\\western_male\\western_male_hair_behind_1.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_southern_male_hair_behind_midage"
-		texturefile = "gfx\\characters\\western_male\\western_male_hair_behind_2.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_southern_male_hair_behind_oldage"
-		texturefile = "gfx\\characters\\western_male\\western_male_hair_behind_3.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_southern_male_beard_behind"
 		texturefile = "gfx\\characters\\frankish_male\\frankish_male_beard_behind_1.dds"
 		noOfFrames = 15
@@ -150,27 +129,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_southern_male_hair"
-		texturefile = "gfx\\characters\\western_male\\western_male_hair_1.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_southern_male_hair_midage"
-		texturefile = "gfx\\characters\\western_male\\western_male_hair_2.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_southern_male_hair_oldage"
-		texturefile = "gfx\\characters\\western_male\\western_male_hair_3.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_southern_male_clothes"
 		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_clothes.dds"
 		noOfFrames = 14
@@ -182,6 +140,54 @@ spriteTypes = {
 		texturefile = "gfx\\characters\\italian_male\\italian_male_headgear_early.dds"
 		noOfFrames = 14
 		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_male_hair_behind"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_hair_behind_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_male_hair_behind_midage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_hair_behind_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_male_hair_behind_oldage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_hair_behind_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_male_hair"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_hair_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_male_hair_midage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_hair_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_male_hair_oldage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_hair_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
 	}
 
 	spriteType = {
@@ -416,51 +422,9 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_southern_female_hair_behind"
-		texturefile = "gfx\\characters\\italian_female\\italian_female_hair_behind_1.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_southern_female_hair_behind_midage"
-		texturefile = "gfx\\characters\\italian_female\\italian_female_hair_behind_2.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_southern_female_hair_behind_oldage"
-		texturefile = "gfx\\characters\\italian_female\\italian_female_hair_behind_3.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_southern_female_clothes"
 		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_clothes.dds"
 		noOfFrames = 12
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_southern_female_hair"
-		texturefile = "gfx\\characters\\italian_female\\italian_female_hair_1.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_southern_female_hair_midage"
-		texturefile = "gfx\\characters\\italian_female\\italian_female_hair_2.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_southern_female_hair_oldage"
-		texturefile = "gfx\\characters\\italian_female\\italian_female_hair_3.dds"
-		noOfFrames = 15
 		norefcount = yes
 	}
 
@@ -469,6 +433,54 @@ spriteTypes = {
 		texturefile = "gfx\\characters\\italian_female\\italian_female_headgear_early.dds"
 		noOfFrames = 14
 		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_female_hair_behind"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_hair_behind_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_female_hair_behind_midage"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_hair_behind_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_female_hair_behind_oldage"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_hair_behind_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_female_hair"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_hair_1.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_female_hair_midage"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_hair_2.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_southern_female_hair_oldage"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_hair_3.dds"
+		noOfFrames = 15
+		norefcount = yes
+		can_be_lowres = yes
 	}
 
 	spriteType = {

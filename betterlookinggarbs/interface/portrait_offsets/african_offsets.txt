@@ -1,2 +1,0 @@
-GFX_african_male_eyes2 71x88
-GFX_african_female_eyes2 71x88

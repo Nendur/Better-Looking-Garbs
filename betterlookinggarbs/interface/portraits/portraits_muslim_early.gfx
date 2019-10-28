@@ -4,15 +4,15 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_muslim_male_clothes_behind_early"
-		texturefile = "gfx\\fallbacks\\muslim_male\\muslim_male_clothes_behind.dds"
-		noOfFrames = 12
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_clothes_behind.dds"
+		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_muslim_male_headgear_behind_early"
-		texturefile = "gfx\\characters\\muslim_male\\berber_male_headgear_behind.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_headgear_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
@@ -20,7 +20,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_muslim_male_clothes_early"
-		texturefile = "gfx\\fallbacks\\andalusian_male\\andalusian_male_clothes.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_clothes.dds"
 		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
@@ -28,15 +28,15 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_muslim_male_headgear_mid_early"
-		texturefile = "gfx\\characters\\shared\\empty.dds"
-		noOfFrames = 1
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_headgear_mid.dds"
+		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_muslim_male_headgear_early"
-		texturefile = "gfx\\fallbacks\\andalusian_male\\andalusian_male_headgear.dds"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
@@ -46,7 +46,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_muslim_female_clothes_behind_early"
-		texturefile = "gfx\\fallbacks\\muslim_female\\muslim_female_clothes_behind.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_clothes_behind.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -54,7 +54,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_muslim_female_headgear_behind_early"
-		texturefile = "gfx\\characters\\muslim_female\\muslim_female_headgear_behind.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_headgear_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
@@ -62,7 +62,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_muslim_female_clothes_early"
-		texturefile = "gfx\\fallbacks\\muslim_female\\muslim_female_clothes.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_clothes.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -70,15 +70,15 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_muslim_female_headgear_mid_early"
-		texturefile = "gfx\\characters\\shared\\empty.dds"
-		noOfFrames = 1
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_headgear_mid.dds"
+		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
 		name = "GFX_muslim_female_headgear_early"
-		texturefile = "gfx\\characters\\muslim_female\\muslim_female_headgear.dds"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
