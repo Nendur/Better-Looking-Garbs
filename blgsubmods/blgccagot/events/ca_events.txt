@@ -401,7 +401,12 @@ character_event = {
 				NOT = { trait = blgcaoff }
 			}
 		}
-		hidden_tooltip = { FROM = { add_trait = blgcaoff } }
+		hidden_tooltip = {
+			FROM = {
+				add_trait = blgcaoff
+				remove_trait = blgquesting
+			} 
+		}
 		repeat_event = { id = blg.110 }
 	}
 

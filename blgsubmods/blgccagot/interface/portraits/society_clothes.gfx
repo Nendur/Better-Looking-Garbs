@@ -42,15 +42,17 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = alchemists_guild
 				OR = {
-					portrait_society_rank = 2
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					NOT = { portrait_tier = duke }
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
-				NOT = { portrait_tier = DUKE }
-				NOT = { portrait_tier = KING }
-				NOT = { portrait_tier = EMPEROR }
-				NOT = { higher_tier_than = COUNT }
 				OR = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
@@ -262,15 +264,17 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = alchemists_guild
 				OR = {
-					portrait_society_rank = 2
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					NOT = { portrait_tier = duke }
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
-				NOT = { portrait_tier = DUKE }
-				NOT = { portrait_tier = KING }
-				NOT = { portrait_tier = EMPEROR }
-				NOT = { higher_tier_than = COUNT }
 				OR = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
@@ -494,9 +498,15 @@ spriteTypes = {
 				}
 				OR = {
 					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
@@ -598,9 +608,15 @@ spriteTypes = {
 				}
 				OR = {
 					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
@@ -680,9 +696,15 @@ spriteTypes = {
 				}
 				OR = {
 					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
@@ -758,9 +780,15 @@ spriteTypes = {
 				}
 				OR = {
 					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no

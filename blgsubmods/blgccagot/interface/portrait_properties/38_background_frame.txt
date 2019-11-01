@@ -33,9 +33,11 @@
 		factor = 2
 		trigger = {
 			capital_holding = {
-				NOR = {
-					holding_type = tribal
-					holding_type = nomad
+				OR = {
+					holding_type = castle
+					holding_type = city
+					holding_type = temple
+					holding_type = family_palace
 				}
 			}
 		}
@@ -44,9 +46,11 @@
 		factor = 2
 		trigger = {
 			capital_holding = {
-				NOR = {
-					holding_type = tribal
-					holding_type = nomad
+				OR = {
+					holding_type = castle
+					holding_type = city
+					holding_type = temple
+					holding_type = family_palace
 				}
 			}
 		}
@@ -66,9 +70,11 @@
 		factor = 2
 		trigger = {
 			capital_holding = {
-				NOR = {
-					holding_type = tribal
-					holding_type = nomad
+				OR = {
+					holding_type = castle
+					holding_type = city
+					holding_type = temple
+					holding_type = family_palace
 				}
 			}
 		}
@@ -77,9 +83,11 @@
 		factor = 1
 		trigger = {
 			capital_holding = {
-				NOR = {
-					holding_type = tribal
-					holding_type = nomad
+				OR = {
+					holding_type = castle
+					holding_type = city
+					holding_type = temple
+					holding_type = family_palace
 				}
 			}
 			OR = {
@@ -92,9 +100,11 @@
 		factor = 1
 		trigger = {
 			capital_holding = {
-				NOR = {
-					holding_type = tribal
-					holding_type = nomad
+				OR = {
+					holding_type = castle
+					holding_type = city
+					holding_type = temple
+					holding_type = family_palace
 				}
 			}
 			capital_scope = { region = world_essos }

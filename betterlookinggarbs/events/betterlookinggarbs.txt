@@ -3538,6 +3538,22 @@ character_event = {
 	}
 }
 
+# Check when new society quests start.
+character_event = {
+	id = blg.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_any_quest = yes
+		NOT = { trait = blgcaoff }
+	}
+
+	immediate = {
+		add_trait = blgquesting
+	}
+}
+
 # Installatian check event.
 character_event = {
 	id    = blg.4

@@ -40,6 +40,12 @@ spriteTypes = {
 				portrait_clothing = yes
 				# portrait_society = warrior_lodge_norse
 				portrait_society = warrior_lodge_finnish
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
@@ -135,6 +141,12 @@ spriteTypes = {
 				portrait_clothing = yes
 				# portrait_society = warrior_lodge_norse
 				portrait_society = warrior_lodge_finnish
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
@@ -238,6 +250,12 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_norse
 				#portrait_society = warrior_lodge_baltic
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
@@ -339,6 +357,12 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_norse
 				#portrait_society = warrior_lodge_baltic
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
@@ -753,6 +777,12 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_bon
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
@@ -843,6 +873,12 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_bon
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
@@ -961,6 +997,12 @@ spriteTypes = {
 					portrait_has_trait = schemer
 					portrait_has_trait = erudite
 				}
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
@@ -1040,6 +1082,12 @@ spriteTypes = {
 					portrait_has_trait = schemer
 					portrait_has_trait = erudite
 				}
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
@@ -1117,6 +1165,12 @@ spriteTypes = {
 					portrait_has_trait = brilliant_strategist
 					portrait_has_trait = strategist
 				}
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
@@ -1178,6 +1232,12 @@ spriteTypes = {
 					portrait_has_trait = skilled_tactician
 					portrait_has_trait = brilliant_strategist
 					portrait_has_trait = strategist
+				}
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1245,6 +1305,12 @@ spriteTypes = {
 					portrait_has_trait = skilled_tactician
 					portrait_has_trait = brilliant_strategist
 					portrait_has_trait = strategist
+				}
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1314,6 +1380,12 @@ spriteTypes = {
 					portrait_has_trait = skilled_tactician
 					portrait_has_trait = brilliant_strategist
 					portrait_has_trait = strategist
+				}
+				OR = {
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}

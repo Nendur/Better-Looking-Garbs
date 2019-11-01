@@ -37,9 +37,15 @@ spriteTypes = {
 				portrait_society = moth_priests_tamriel
 				OR = {
 					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
@@ -133,9 +139,15 @@ spriteTypes = {
 				portrait_society = moth_priests_tamriel
 				OR = {
 					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
@@ -252,9 +264,15 @@ spriteTypes = {
 				portrait_society = greybeards_tamriel
 				OR = {
 					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
@@ -355,9 +373,15 @@ spriteTypes = {
 				portrait_society = greybeards_tamriel
 				OR = {
 					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no

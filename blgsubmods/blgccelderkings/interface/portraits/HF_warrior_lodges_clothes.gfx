@@ -40,10 +40,10 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = companions_tamriel
 				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -151,10 +151,10 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = companions_tamriel
 				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -261,10 +261,10 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = ansei_guild_tamriel
 				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -333,10 +333,10 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = ansei_guild_tamriel
 				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_society_rank = 3
-					portrait_society_rank = 4
+					NOT = { portrait_tier = baron }
+					portrait_in_command = yes
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}

@@ -15,9 +15,10 @@
 				AND = {
 					siege = { is_attacker = no }
 					capital_holding = {
-						NOR = {
-							holding_type = tribal
-							holding_type = nomad
+						OR = {
+							holding_type = castle
+							holding_type = city
+							holding_type = temple
 						}
 					}
 				}
@@ -650,9 +651,13 @@
 							region = world_dorne
 							region = world_summer_sea
 						}
+						OR = {
+							holding_type = castle
+							holding_type = city
+							holding_type = temple
+							holding_type = family_palace
+						}
 						NOR = {
-							holding_type = tribal
-							holding_type = nomad
 							culture = lhazareen
 							culture = shadowlander
 						}
@@ -661,9 +666,11 @@
 				AND = {
 					is_abroad = no
 					capital_holding = {
-						NOR = {
-							holding_type = tribal
-							holding_type = nomad
+						OR = {
+							holding_type = castle
+							holding_type = city
+							holding_type = temple
+							holding_type = family_palace
 						}
 					}
 					capital_scope = {
@@ -718,9 +725,13 @@
 				AND = {
 					is_abroad = yes
 					location = {
-						NOR = {
-							holding_type = tribal
-							holding_type = nomad
+						OR = {
+							holding_type = castle
+							holding_type = city
+							holding_type = temple
+							holding_type = family_palace
+						}
+						NOT = {
 							region = world_beyond_the_wall
 						}
 					}
@@ -728,9 +739,13 @@
 				AND = {
 					is_abroad = no
 					capital_holding = {
-						NOR = {
-							holding_type = tribal
-							holding_type = nomad
+						OR = {
+							holding_type = castle
+							holding_type = city
+							holding_type = temple
+							holding_type = family_palace
+						}
+						NOT = {
 							region = world_beyond_the_wall
 						}
 					}
@@ -825,18 +840,22 @@
 				AND = {
 					is_abroad = yes
 					location = {
-						NOR = {
-							holding_type = tribal
-							holding_type = nomad
+						OR = {
+							holding_type = castle
+							holding_type = city
+							holding_type = temple
+							holding_type = family_palace
 						}
 					}
 				}
 				AND = {
 					is_abroad = no
 					capital_holding = {
-						NOR = {
-							holding_type = tribal
-							holding_type = nomad
+						OR = {
+							holding_type = castle
+							holding_type = city
+							holding_type = temple
+							holding_type = family_palace
 						}
 					}
 				}
@@ -860,18 +879,22 @@
 				AND = {
 					is_abroad = yes
 					location = {
-						NOR = {
-							holding_type = tribal
-							holding_type = nomad
+						OR = {
+							holding_type = castle
+							holding_type = city
+							holding_type = temple
+							holding_type = family_palace
 						}
 					}
 				}
 				AND = {
 					is_abroad = no
 					capital_holding = {
-						NOR = {
-							holding_type = tribal
-							holding_type = nomad
+						OR = {
+							holding_type = castle
+							holding_type = city
+							holding_type = temple
+							holding_type = family_palace
 						}
 					}
 				}

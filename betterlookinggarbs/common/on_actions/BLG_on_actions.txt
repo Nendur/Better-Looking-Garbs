@@ -24,3 +24,24 @@ on_chronicle_owner_change = {
 		add_trait = i_used_to_be_a_player
 	}
 }
+
+on_society_bi_yearly_pulse = {
+	effect = {
+		#Some use immediate events and some delayed.
+		character_event = { id = blg.3 days = 1 }
+		character_event = { id = blg.3 days = 10 }
+		character_event = { id = blg.3 days = 15 }
+	}
+}
+
+on_quest_success = {
+	effect = {
+		remove_trait = blgquesting
+	}
+}
+
+on_quest_failure = {
+	effect = {
+		remove_trait = blgquesting
+	}
+}

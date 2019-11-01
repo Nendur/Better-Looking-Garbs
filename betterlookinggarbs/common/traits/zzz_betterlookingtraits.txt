@@ -20,3 +20,9 @@ blgcaoff = {
 	customizer = no
 	opposites = { blgcaon }
 }
+
+blgquesting = {
+	hidden = yes
+	random = no
+	customizer = no
+}
