@@ -1,0 +1,15 @@
+arabic = {
+	djinni = { 
+		graphical_cultures = { arabicgfx }
+	}
+}
+
+east_african = {
+	egyptian = {
+		graphical_cultures = { copticgfx egyptiangfx }
+	}
+}
+
+dragon_culture_group = {
+	graphical_cultures = { norsegfx westerngfx }
+}

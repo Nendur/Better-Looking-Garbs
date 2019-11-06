@@ -1,0 +1,26 @@
+#p22 malnourished
+22 = {
+	0 = { # blank
+		factor = 1
+	}
+
+	1 = { #pale
+		factor = 100
+		trigger = {
+			OR = {
+				trait = is_malnourished
+				trait = fatigue
+				trait = malaise
+				trait = cancer
+				trait = has_tuberculosis
+				trait = known_vampire
+				trait = mummy
+				trait = zombie_infection
+			}
+			NOR = {
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+}

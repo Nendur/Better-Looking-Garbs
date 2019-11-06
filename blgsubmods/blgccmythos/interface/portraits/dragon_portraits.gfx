@@ -1,0 +1,299 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_dragon_male_headgear_behind"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_male_headgear_behind.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dragon_female_headgear_behind"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_female_headgear_behind.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dragon_son_base"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_son_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dragon_daughter_base"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_daughter_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dragon_male_headgear_behind:p3:c0"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dragon_male_base:p2"
+			"GFX_dragon_male_neck:d0"
+			"GFX_dragon_male_chin:d1"
+			"GFX_dragon_male_eyes:d6"
+			"GFX_dragon_male_ear:d7"
+			"GFX_child_back:p17"
+			"GFX_dragon_son_base:p18"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o8x-18"
+			"GFX_character_black_eye:p23:o15x-12"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o42x50"
+			"GFX_character_mask:p12:y:o57x27"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dragon_male_headgear_behind:p3:c0"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dragon_male_base_midage:p2"
+			"GFX_dragon_male_neck_midage:d0"
+			"GFX_dragon_male_chin_midage:d1"
+			"GFX_dragon_male_eyes_midage:d6"
+			"GFX_dragon_male_ear_midage:d7"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o8x-18"
+			"GFX_character_black_eye:p23:o15x-12"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o42x50"
+			"GFX_character_mask:p12:y:o57x27"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dragon_male_headgear_behind:p3:c0"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dragon_male_base_oldage:p2"
+			"GFX_dragon_male_neck_oldage:d0"
+			"GFX_dragon_male_chin_oldage:d1"
+			"GFX_dragon_male_eyes_oldage:d6"
+			"GFX_dragon_male_ear_oldage:d7"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o8x-18"
+			"GFX_character_black_eye:p23:o15x-12"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o42x50"
+			"GFX_character_mask:p12:y:o57x27"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dragon_female_headgear_behind:p3:c0"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dragon_female_base:p2"
+			"GFX_dragon_female_neck:d0"
+			"GFX_dragon_female_chin:d1"
+			"GFX_dragon_female_eyes:d6"
+			"GFX_child_back:p17"
+			"GFX_dragon_daughter_base:p18"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o8x-18"
+			"GFX_character_black_eye:p23:o15x-12"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o42x50"
+			"GFX_character_mask:p12:y:o57x27"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dragon_female_headgear_behind:p3:c0"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dragon_female_base_midage:p2"
+			"GFX_dragon_female_neck_midage:d0"
+			"GFX_dragon_female_chin_midage:d1"
+			"GFX_dragon_female_eyes_midage:d6"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o8x-18"
+			"GFX_character_black_eye:p23:o15x-12"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o42x50"
+			"GFX_character_mask:p12:y:o57x27"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_dragongfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_northern_background:p0"
+			"GFX_dragon_female_headgear_behind:p3:c0"
+			"GFX_northern_background:p0"
+			"GFX_empty:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_items:p2"
+			"GFX_dragon_female_base_oldage:p2"
+			"GFX_dragon_female_neck_oldage:d0"
+			"GFX_dragon_female_chin_oldage:d1"
+			"GFX_dragon_female_eyes_oldage:d6"
+			"GFX_character_scars:p7:y"
+			"GFX_character_scars_mid:p25"
+			"GFX_character_scars_high:p26"
+			"GFX_character_reddots:p8:o8x-18"
+			"GFX_character_black_eye:p23:o15x-12"
+			"GFX_character_blinded_eyes:p10"
+			"GFX_character_eyepatch:p13:y:o42x50"
+			"GFX_character_mask:p12:y:o57x27"
+			"GFX_character_special_masks:p35"
+			"GFX_character_special_scepters:p36"
+			"GFX_character_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_player_overlay:p11"
+			"GFX_character_imprisoned:p6"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 58 109 193 }
+		}
+
+		headgear_that_hides_hair = { }
+	}
+}
