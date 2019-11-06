@@ -19,7 +19,7 @@ spriteTypes = {
 
 		layer = {
 			"GFX_indian_male_headgear_behind:c1"
-			"GFX_empty:c3"
+			"GFX_indian_male_headgear_mid:c3"
 			"GFX_indian_male_headgear:c5"
 		}
 

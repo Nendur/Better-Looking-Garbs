@@ -286,7 +286,10 @@
 				AND = {
 					is_priest = yes
 					rightful_religious_head = ROOT
-					religion_openly_zun_or_reformed_trigger = yes
+					OR = {
+						religion_openly_zun_or_reformed_trigger = yes
+						religion_openly_egyptian_or_reformed_trigger = yes
+					}
 				}
 			}
 		}

@@ -36,7 +36,10 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = monastic_order_benedictine
 				OR = {
-					portrait_government = theocracy_government
+					AND = {
+						portrait_government = theocracy_government
+						NOT = { portrait_tier = king }
+					}
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = monk
 					portrait_has_trait = perfecti
@@ -150,7 +153,10 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = monastic_order_benedictine
 				OR = {
-					portrait_government = theocracy_government
+					AND = {
+						portrait_government = theocracy_government
+						NOT = { portrait_tier = king }
+					}
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = nun
 					portrait_has_trait = perfecti
@@ -236,7 +242,10 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = monastic_order_dominican
 				OR = {
-					portrait_government = theocracy_government
+					AND = {
+						portrait_government = theocracy_government
+						NOT = { portrait_tier = king }
+					}
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = monk
 					portrait_has_trait = on_pilgrimage
@@ -262,6 +271,9 @@ spriteTypes = {
 
 		# Tonsure hairstyle, no beard
 		allow_property_values = {
+			3 = {
+				1 = { always = yes }
+			}
 			4 = {
 				0 = { always = yes }
 			}
@@ -337,7 +349,10 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = monastic_order_dominican
 				OR = {
-					portrait_government = theocracy_government
+					AND = {
+						portrait_government = theocracy_government
+						NOT = { portrait_tier = king }
+					}
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = nun
 					portrait_has_trait = on_pilgrimage
@@ -421,7 +436,10 @@ spriteTypes = {
 					portrait_society = monastic_order_apostolic
 				}
 				OR = {
-					portrait_government = theocracy_government
+					AND = {
+						portrait_government = theocracy_government
+						NOT = { portrait_tier = king }
+					}
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = monk
 					portrait_has_trait = perfecti
@@ -576,7 +594,10 @@ spriteTypes = {
 					portrait_society = monastic_order_apostolic
 				}
 				OR = {
-					portrait_government = theocracy_government
+					AND = {
+						portrait_government = theocracy_government
+						NOT = { portrait_tier = king }
+					}
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = nun
 					portrait_has_trait = perfecti

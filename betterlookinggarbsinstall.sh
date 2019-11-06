@@ -128,6 +128,16 @@ if [ -d "${MODS}Tianxia" -o -f "${MODS}Tianxia.mod" ]; then
 	fi
 	echo "Tianxia compatibility add-on installed."
 fi
+if [ -d "${MODS}Mythos 2" -o -f "${MODS}Mythos2.mod" ]; then
+	if [ -f "$BLGZIP" ]; then
+		unzip -uoq "$BLGZIP" "submods/blgccmythos*" -d"$MODS"
+	fi
+	if [ -f "${ADDONS}/blgccmythos.mod" ]; then
+		[ -d "${MODS}/blgccmythos" ] && rm -r "${MODS}/blgccmythos.mod" "${MODS}/blgccmythos"
+		mv "${ADDONS}"/blgccmythos* "$MODS"
+	fi
+	echo "Mythos compatibility add-on installed."
+fi
 if [ -f "${MODS}blgccironman.mod" -o -n "`grep ironman=yes \"${MODS}/../settings.txt\"`" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccironman*" -d"$MODS"

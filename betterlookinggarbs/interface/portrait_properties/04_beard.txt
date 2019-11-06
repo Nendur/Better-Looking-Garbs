@@ -498,10 +498,10 @@
 			factor = 3
 			culture_group = iberian
 		}
-		modifier = {
-			factor = 100 #No longer bearded Ottavian.
-			character = 145290
-		}
+		#modifier = {
+		#	factor = 100 #No longer bearded Ottavian.
+		#	character = 145290
+		#}
 		modifier = { # frankish men less likely to wear beards after the 12th century
 			factor = 2
 			year = 1100
@@ -516,6 +516,12 @@
 			factor = 2
 			year = 1200
 			culture = frankish
+		}
+		modifier = {
+			factor = 2
+			culture = roman
+			tier = emperor
+			year_of_birth < 770
 		}
 		modifier = {
 			factor = 0

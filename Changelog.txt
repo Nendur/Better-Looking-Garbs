@@ -2,8 +2,10 @@ Changelog:
 
   Monastic lay members (i.e. rulers) will wear society clothing with regular headgear.
   Limit Warrior lodge clothing to times leading troops or landless courtiers.
-  Added society quest detection to enable society clothing.
+  Added society quest detection to toggle society clothing.
   Clearer plot target ring.
+  Further adjustment of the fallback face graphics.
+  Added Mythos compatibility submod.
 
 28-10-2019
   Overhauled the fallback portraits into the Hotep's Dream; Everyone is various shades of Egyptian now.

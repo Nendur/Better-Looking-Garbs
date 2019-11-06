@@ -30,13 +30,6 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "indiangfx_job_spiritual_female"
-		file = "gfx/models/Mapindicators/ifc_indian_spiritual_female.mesh"
-		animation = { id = "idle"		type = "ifc_indian_spiritual_female_idle_animation" }
-		scale = 1.0
-	}
-
-	pdxmesh = {
 		name = "hindugfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/ifc_indian_spiritual_female.mesh"
 		animation = { id = "idle"		type = "ifc_indian_spiritual_female_idle_animation" }

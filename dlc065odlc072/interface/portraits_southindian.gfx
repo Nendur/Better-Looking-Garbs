@@ -264,12 +264,12 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	#spriteType = {
-	#	name = "GFX_southindian_male_headgear_mid"
-	#	texturefile = "gfx\\characters\\southindian_male\\southindian_male_headgear_mid.dds"
-	#	noOfFrames = 12
-	#	norefcount = yes
-	#}
+	spriteType = {
+		name = "GFX_southindian_male_headgear_mid"
+		texturefile = "gfx\\characters\\southindian_male\\southindian_male_headgear_mid.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
 
 	spriteType = {
 		name = "GFX_southindian_male_ear"

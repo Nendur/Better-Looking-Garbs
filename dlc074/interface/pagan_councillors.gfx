@@ -73,6 +73,20 @@ objectTypes = {
 		scale = 1.0f
 	}
 
+	pdxmesh = {
+		name = "oldgodsgfx_job_spiritual"
+		file = "gfx\models\Mapindicators\hf_pagan_priest_male.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_male_idle_animation" }
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "oldgodsgfx_job_spiritual_female"
+		file = "gfx\models\Mapindicators\hf_pagan_priest_female.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
+		scale = 1.0f
+	}
+
 ### Replacements ######################################################
 
 	pdxmesh = {

@@ -16,20 +16,6 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
-		name = "rhllorgfx_job_spiritual"
-		actorfile = "gfx\models\Mapindicators\priest_buddhist.xac"
-		idle   = "gfx\models\Mapindicators\priest_buddhist_idle.xsm"
-		scale = 1.0f
-	}
-
-	pdxmesh = {
-		name = "rhllorgfx_job_spiritual_female"
-		file = "gfx/models/Mapindicators/ifc_buddhist_female.mesh"
-		animation = { id = "idle"		type = "ifc_buddhist_female_idle_animation" }
-		scale = 1.0
-	}
-
-	EMFXActorType = {
 		name = "reachmangfx_GALLEYS"
 		actorfile = "gfx\models\Cog.xac"
 		idle   = "gfx\models\Cog_Moving.xsm"

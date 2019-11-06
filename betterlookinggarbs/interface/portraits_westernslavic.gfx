@@ -312,7 +312,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_westernslavic_male_nose"
-		texturefile = "gfx\\characters\\ashkenazi_male\\ashkenazi_male_nose_1.dds"
+		texturefile = "gfx\\fallbacks\german_male\western_male_nose_1.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -320,7 +320,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_westernslavic_male_nose_midage"
-		texturefile = "gfx\\characters\\ashkenazi_male\\ashkenazi_male_nose_2.dds"
+		texturefile = "gfx\\fallbacks\german_male\western_male_nose_2.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -328,7 +328,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_westernslavic_male_nose_oldage"
-		texturefile = "gfx\\characters\\ashkenazi_male\\ashkenazi_male_nose_3.dds"
+		texturefile = "gfx\\fallbacks\german_male\western_male_nose_3.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes

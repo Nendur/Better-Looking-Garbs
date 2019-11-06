@@ -666,6 +666,14 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_persian_female_headgear_mid"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_headgear_mid.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_persian_female_headgear"
 		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_headgear.dds"
 		noOfFrames = 14

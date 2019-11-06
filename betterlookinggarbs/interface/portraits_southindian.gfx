@@ -82,6 +82,14 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_southindian_male_headgear_mid"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_headgear_mid.dds"
+		noOfFrames = 14
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_southindian_male_hair_behind"
 		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_hair_behind_1.dds"
 		noOfFrames = 15
