@@ -2,7 +2,7 @@ celtic = {
 	graphical_cultures = { celticgfx westerngfx }
 
 	romanobritish = {
-		graphical_cultures = { gallicgfx bretongfx }
+		graphical_cultures = { romanobritishgfx bretongfx }
 	}
 	armorican = {
 		graphical_cultures = { bretongfx }
@@ -92,7 +92,7 @@ imperiale = {
 		graphical_cultures = { gallicgfx romangfx occitangfx }
 	}
 	romanoaquitanian = {
-		graphical_cultures = { trueoccitangfx romangfx occitangfx westerngfx }
+		graphical_cultures = { gallicgfx romangfx occitangfx }
 	}
 	romanogermanic = {
 		graphical_cultures = { lombardgfx germangfx }

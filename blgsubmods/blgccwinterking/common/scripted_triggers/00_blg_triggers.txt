@@ -7,10 +7,7 @@ blg_north_african = {
 }
 
 blg_french = {
-	OR = {
-		culture = arpitan
-		culture = romanoaquitanian
-	}
+	culture = arpitan
 }
 
 blg_desert_monk = {

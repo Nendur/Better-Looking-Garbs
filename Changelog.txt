@@ -5,7 +5,8 @@ Changelog:
   Added society quest detection to toggle society clothing.
   Clearer plot target ring.
   Further adjustment of the fallback face graphics.
-  Added new alternate non-Norse pagan shield emblems.
+  Split Romano-Gallic and Romano-British portraits.
+  Added new alternate non-Norse pagan map shields.
   Added Mythos compatibility submod.
 
 28-10-2019

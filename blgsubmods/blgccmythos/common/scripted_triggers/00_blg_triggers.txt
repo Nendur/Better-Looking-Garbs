@@ -73,3 +73,7 @@ blg_black_bear = {
 		}
 	}
 }
+
+religion_openly_egyptian_or_reformed_trigger = {
+	religion_openly_kemetic_or_reformed_trigger = yes
+}

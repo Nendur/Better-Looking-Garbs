@@ -799,3 +799,141 @@ character_event = {
 		}
 	}
 }
+
+# Bearly Legal
+long_character_event = {
+	id = bear.6
+	
+	title = bear.6.title
+	desc = bear.6.desc
+	picture = GFX_evt_feast
+	
+	is_triggered_only = yes
+	
+	prisoner = no
+	only_capable = yes
+	
+	trigger = {
+		event_target:bear = {
+			prisoner = no
+			host = { character = ROOT }
+			is_alive = yes
+			ai = yes
+		}
+	}
+	
+	fail_trigger_effect = {
+		clr_character_flag = secret_bear_chain
+	}
+	
+	immediate = {
+		event_target:bear = {
+			culture_scope = { save_event_target_as = original_culture }
+			gfx_culture_scope = { save_event_target_as = original_gfx_culture }
+			clr_character_flag = secret_bear
+
+			if = {
+				limit = {
+					location = {
+						OR = {
+							region = world_north
+							region = world_shivering_sea
+						}
+						OR = {
+							terrain = arctic
+							has_province_modifier = asoiaf_normal_winter
+							has_province_modifier = asoiaf_harsh_winter
+						}
+					}
+				}
+				set_graphical_culture = polar_bear
+			}
+			else_if = {
+				limit = {
+					location = {
+						region = world_essos
+					}
+				}
+				set_graphical_culture = black_bear
+			}
+			else = {
+				set_graphical_culture = bear
+			}
+			culture = bear
+		}
+	}
+	
+	option = {
+		name = bear.6.a
+	}
+	option = {
+		name = bear.6.undo
+		custom_tooltip = {
+			text = UNDO_BEAR_TRANSFORMATION
+			event_target:bear = {
+				set_graphical_culture = event_target:original_culture
+				culture = event_target:original_gfx_culture
+			}
+		}
+	}
+	option = {
+		name = bear.6.b
+		trigger = {
+			NOT = { trait = hunter }
+		}
+	}
+	option = {
+		name = bear.6.d
+		trigger = {
+			NOR = {
+				trait = cannibal_trait
+				trait = lunatic
+			}
+		}
+	}
+	option = {
+		tooltip_info = cannibal_trait
+		name = bear.6.e
+		trigger = {
+			trait = cannibal_trait
+		}
+		event_target:bear = {
+			death = {
+				death_reason = death_execution_eaten
+				killer = ROOT
+			}
+		}
+	}
+	option = {
+		tooltip_info = lunatic
+		name = bear.6.e
+		trigger = {
+			NOT = { trait = cannibal_trait }
+			trait = lunatic
+		}
+		event_target:bear = {
+			death = {
+				death_reason = death_execution_eaten
+				killer = ROOT
+			}
+		}
+	}
+	option = {
+		tooltip_info = hunter
+		name = bear.6.f
+		trigger = {
+			trait = hunter
+		}
+		event_target:bear = {
+			death = {
+				death_reason = death_execution_hunt
+				killer = ROOT
+			}
+		}
+		prestige = 100
+	}
+	
+	after = {
+		clr_character_flag = secret_bear_chain
+	}
+}

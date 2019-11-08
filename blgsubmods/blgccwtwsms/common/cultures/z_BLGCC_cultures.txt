@@ -110,10 +110,10 @@ latin = {
 		graphical_cultures = { italiangfx southerngfx mediterraneangfx }
 	}
 	romano_british = {
-		graphical_cultures = { bretongfx britongfx celticgfx }
+		graphical_cultures = { romanobritishgfx bretongfx britongfx celticgfx }
 	}
 	british_romance = {
-		graphical_cultures = { gallicgfx romangfx }
+		graphical_cultures = { romanobritishgfx gallicgfx romangfx }
 	}
 	romansh = {
 		graphical_cultures = { lombardgfx occitangfx italiangfx southerngfx }

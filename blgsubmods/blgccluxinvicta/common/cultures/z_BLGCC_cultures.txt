@@ -49,7 +49,7 @@ latin = {
 		graphical_cultures = { vlachgfx romangfx byzantinegfx }
 	}
 	romanobrython = {
-		graphical_cultures = { gallicgfx romangfx }
+		graphical_cultures = { romanobritishgfx gallicgfx romangfx bretongfx }
 	}
 	galloroman = {
 		graphical_cultures = { gallicgfx romangfx occitangfx }
