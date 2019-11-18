@@ -8,6 +8,7 @@
 			is_female = yes
 			#is_priest = no
 			#is_merchant_republic = no
+			prisoner = no
 			NOR = {
 				has_portrait_property = { layer = 5 index = 9 }
 				has_portrait_property = { layer = 5 index = 10 }
@@ -15,8 +16,14 @@
 				has_portrait_property = { layer = 5 index = 13 }
 			}
 			OR = {
-				higher_tier_than = BARON
-				spouse = { higher_tier_than = BARON }
+				AND = {
+					higher_tier_than = baron
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					higher_tier_than = baron
+					NOT = { blg_lowrank = yes }
+				}
 			}
 			OR = {
 				culture = frankish
@@ -44,7 +51,7 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					year = 1180
+					year_of_birth = 1180
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 2 } }
 			}
@@ -65,7 +72,7 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					year = 1180
+					year_of_birth = 1180
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 3 } }
 			}
@@ -86,7 +93,7 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					year = 1180
+					year_of_birth = 1180
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 4 } }
 			}
@@ -107,7 +114,7 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					year = 1180
+					year_of_birth = 1180
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 5 } }
 			}
@@ -128,7 +135,7 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 6 } }
 			}
@@ -149,7 +156,7 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 7 } }
 			}
@@ -170,7 +177,7 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 8 } }
 			}
@@ -191,7 +198,7 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 9 } }
 			}
@@ -208,7 +215,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -233,7 +240,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -258,7 +265,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -283,7 +290,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -308,7 +315,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -333,7 +340,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -358,7 +365,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -379,7 +386,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -400,7 +407,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -421,7 +428,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -442,7 +449,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }

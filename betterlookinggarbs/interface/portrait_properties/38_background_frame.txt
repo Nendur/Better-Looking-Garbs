@@ -20,6 +20,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				blg_landless = yes
 			}
 		}
 	}
@@ -94,8 +95,14 @@
 				}
 			}
 			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
+				AND = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
 			}
 		}
 	}
@@ -120,8 +127,14 @@
 				}
 			}
 			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
+				AND = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
 			}
 		}
 	}

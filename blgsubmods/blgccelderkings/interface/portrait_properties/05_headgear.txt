@@ -628,6 +628,10 @@
 				value = off
 			}
 		}
+		modifier = {
+			factor = 0
+			trait = saint
+		}
 	}
 
 	11 = { # Blank
@@ -643,9 +647,11 @@
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
+				prisoner = yes
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
+				trait = saint
 				employer = { government = order_government }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 12 } }
@@ -679,6 +685,13 @@
 			factor = 100
 			employer = { government = order_government }
 			in_command = no
+		}
+		modifier = {
+			factor = 1000
+			OR = {
+				prisoner = yes
+				trait = saint
+			}
 		}
 		modifier = {
 			factor = 1000

@@ -6,6 +6,7 @@
 			factor = 100
 			in_command = yes
 			is_priest = no
+			NOT = { blg_priest = yes }
 			OR = {
 				war = yes
 				liege = { war = yes }
@@ -27,7 +28,15 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = leper
+				trait = saint
+				blg_saint = yes
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = crown_hre
@@ -43,7 +52,15 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = leper
+				trait = saint
+				blg_saint = yes
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = crown_byzantine
@@ -63,7 +80,15 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = leper
+				trait = saint
+				blg_saint = yes
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = cursed_diamond_crown
@@ -79,7 +104,15 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = leper
+				trait = saint
+				blg_saint = yes
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = iron_crown_of_lombardy
@@ -96,6 +129,13 @@
 		hide_layers = {32 = {}}
 		trigger = {
 			trait = augustus
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = leper
+			}
 		}
 	}
 	6 = { #Pahlavi Crown
@@ -104,7 +144,15 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = leper
+				trait = saint
+				blg_saint = yes
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = crown_pahlavi
@@ -120,7 +168,11 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = leper
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = crown_fylkir
@@ -141,7 +193,11 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = leper
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = crown_tengri_fylkir
@@ -157,7 +213,11 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = leper
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = crown_finnish_fylkir
@@ -178,7 +238,11 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = leper
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = crown_west_african_fylkir
@@ -199,7 +263,11 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = leper
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = crown_slavic_fylkir
@@ -220,7 +288,11 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = leper
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = crown_romuva_fylkir
@@ -241,7 +313,11 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off } 
+				trait = in_hiding
+				trait = leper
+			}
 			OR = {
 				any_artifact = {
 					artifact_type = crown_aztec_fylkir
@@ -286,6 +362,14 @@
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
 		trigger = {
+			NOR = {
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = leper
+				trait = saint
+				blg_saint = yes
+			}
 			primary_title = {
 				OR = {
 					title = k_venice
@@ -304,6 +388,14 @@
 		hide_layers = {33 = {}}
 		trigger = {
 			has_minor_title = title_court_jester
+			NOR = {
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = leper
+				trait = saint
+				blg_saint = yes
+			}
 		}
 	}
 	18 = { #Orthodox Patriarch
@@ -313,7 +405,10 @@
 		hide_layers = {32 = {}}
 		hide_layers = {33 = {}}
 		trigger = {
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			rightful_religious_head = ROOT
 			OR = {
 				religion = orthodox
@@ -336,7 +431,10 @@
 		hide_layers = {32 = {}}
 		hide_layers = {33 = {}}
 		trigger = {
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			OR = {
 				religion = cathar
 				religion = waldensian
@@ -353,7 +451,10 @@
 		hide_layers = {32 = {}}
 		hide_layers = {33 = {}}
 		trigger = {
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			religion_openly_slavic_or_reformed_trigger = yes
 		}
 	}
@@ -365,7 +466,10 @@
 		hide_layers = {32 = {}}
 		hide_layers = {33 = {}}
 		trigger = {
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			religion_openly_finnish_or_reformed_trigger = yes
 		}
 	}
@@ -377,7 +481,10 @@
 		hide_layers = {32 = {}}
 		hide_layers = {33 = {}}
 		trigger = {
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			religion_openly_aztec_or_reformed_trigger = yes
 		}
 	}
@@ -389,7 +496,10 @@
 		hide_layers = {32 = {}}
 		hide_layers = {33 = {}}
 		trigger = {
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			OR = {
 				religion = taoist
 				blg_religion_chinese = yes
@@ -404,7 +514,10 @@
 		hide_layers = {32 = {}}
 		hide_layers = {33 = {}}
 		trigger = {
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			OR = {
 				religion_openly_zun_or_reformed_trigger = yes
 				religion_openly_bon_or_reformed_trigger = yes
@@ -419,7 +532,10 @@
 		hide_layers = {32 = {}}
 		hide_layers = {33 = {}}
 		trigger = {
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			religion_openly_in_celtic_subgroup_trigger = yes
 		}
 	}

@@ -13,16 +13,6 @@
 			}
 		}
 		modifier = {
-			factor = 0.1
-			true_religion_group = christian
-			NOR = {
-				true_religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-			}
-			is_priest = yes
-		}
-		modifier = {
 			factor = 0
 			is_alive = yes
 			NOR = {
@@ -78,6 +68,7 @@
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = norsegaelgfx
+				graphical_culture = crimeangfx
 				graphical_culture = celtiberiangfx
 			}
 			NOR = {
@@ -211,6 +202,7 @@
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = norsegaelgfx
+				graphical_culture = crimeangfx
 				graphical_culture = celtiberiangfx
 			}
 			NOR = {
@@ -467,11 +459,12 @@
 			}
 			OR = {
 				is_priest = yes
+				blg_priest = yes
 				is_ascetic_trigger = yes
 			}
 		}
 		modifier = {
-			factor = 10
+			factor = 15
 			OR = {
 				true_religion = catholic
 				is_heresy_of = catholic
@@ -479,7 +472,9 @@
 			}
 			OR = {
 				is_priest = yes
+				blg_priest = yes
 				is_ascetic_trigger = yes
+				is_christian_monastic_member_trigger = yes
 			}
 		}
 		modifier = {
@@ -504,17 +499,17 @@
 		#}
 		modifier = { # frankish men less likely to wear beards after the 12th century
 			factor = 2
-			year = 1100
+			year_of_birth = 1100
 			culture = frankish
 		}
 		modifier = { # frankish men less likely to wear beards after the 12th century
 			factor = 2
-			year = 1150
+			year_of_birth = 1150
 			culture = frankish
 		}
 		modifier = { # frankish men less likely to wear beards after the 12th century
 			factor = 2
-			year = 1200
+			year_of_birth = 1200
 			culture = frankish
 		}
 		modifier = {

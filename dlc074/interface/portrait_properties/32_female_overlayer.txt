@@ -21,16 +21,18 @@
 		}
 		modifier = {
 			factor = 100
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+				prisoner = yes
+				trait = saint
+				has_portrait_property = { layer = 5 index = 9 }
+			}
 		}
 		modifier = {
 			factor = 100
 			is_merchant_republic = yes
 			in_command = no
-		}
-		modifier = {
-			factor = 100
-			has_portrait_property = { layer = 5 index = 9 }
 		}
 		modifier = {
 			factor = 100
@@ -101,7 +103,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
@@ -122,7 +124,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
@@ -143,7 +145,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
@@ -164,7 +166,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
@@ -185,7 +187,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
@@ -212,7 +214,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -238,7 +240,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -264,7 +266,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					year = 1180
+					year_of_birth = 1180
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -290,7 +292,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					year = 1180
+					year_of_birth = 1180
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -317,7 +319,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					year = 1180
+					year_of_birth = 1180
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -345,7 +347,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					year = 1180
+					year_of_birth = 1180
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -367,7 +369,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					is_ruler = no
 					spouse = { is_ruler = no }
 					OR = {
@@ -396,7 +398,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					is_ruler = no
 					spouse = { is_ruler = no }
 					OR = {
@@ -425,7 +427,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					is_ruler = no
 					spouse = { is_ruler = no }
 					OR = {
@@ -454,7 +456,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year = 1180 }
+					NOT = { year_of_birth = 1180 }
 					is_ruler = no
 					spouse = { is_ruler = no }
 					OR = {
@@ -482,7 +484,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					is_ruler = no
 					spouse = { is_ruler = no }
 					OR = {
@@ -509,7 +511,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					is_ruler = no
 					spouse = { is_ruler = no }
 					OR = {
@@ -536,7 +538,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					is_ruler = no
 					spouse = { is_ruler = no }
 					OR = {
@@ -565,7 +567,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					is_ruler = no
 					spouse = { is_ruler = no }
 					OR = {
@@ -594,7 +596,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year = 1180
+					year_of_birth = 1180
 					is_ruler = no
 					spouse = { is_ruler = no }
 					OR = {

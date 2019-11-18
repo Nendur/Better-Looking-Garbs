@@ -42,7 +42,6 @@ spriteTypes = {
 					}
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = monk
-					portrait_has_trait = on_pilgrimage
 					portrait_has_trait = blgcaon
 				}
 				OR = {
@@ -93,7 +92,10 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = monastic_order_benedictine
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_pilgrimage
+				}
 			}
 		}
 
@@ -101,16 +103,6 @@ spriteTypes = {
 			"GFX_society_benedictine_male_clothing_behind:c0"
 			"GFX_society_benedictine_male_clothing_front:c2"
 			"GFX_empty:c4"
-		}
-
-		# Tonsure hairstyle, no beard
-		allow_property_values = {
-			1 = {
-				6 = { portrait_is_female = no }
-			}
-			#4 = {
-			#	0 = { always = yes }
-			#}
 		}
 	}
 
@@ -166,7 +158,10 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_pilgrimage
+				}
 			}
 		}
 
@@ -246,7 +241,6 @@ spriteTypes = {
 					}
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = monk
-					portrait_has_trait = on_pilgrimage
 					portrait_has_trait = blgcaon
 				}
 				OR = {
@@ -297,7 +291,10 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = monastic_order_dominican
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_pilgrimage
+				}
 			}
 		}
 
@@ -307,17 +304,10 @@ spriteTypes = {
 			"GFX_empty:c4"
 		}
 
-		# Tonsure hairstyle, no beard
 		allow_property_values = {
-			1 = {
-				6 = { portrait_is_female = no }
-			}
 			3 = {
 				1 = { always = yes }
 			}
-			#4 = {
-			#	0 = { always = yes }
-			#}
 		}
 	}
 
@@ -361,13 +351,16 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_pilgrimage
+				}
 			}
 		}
 
 		layer = {
-			"GFX_empty:c0"
-			"GFX_empty:c2"
+			"GFX_society_benedictine_female_clothing_behind:c0"
+			"GFX_society_benedictine_female_clothing_front:c2"
 			"GFX_empty:c3"
 			"GFX_society_dominican_female_headgear_behind:c1"
 			"GFX_society_dominican_female_headgear_front:c5"
@@ -454,7 +447,10 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_pilgrimage
+				}
 			}
 		}
 
@@ -623,13 +619,16 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_pilgrimage
+				}
 			}
 		}
 
 		layer = {
-			"GFX_empty:c0"
-			"GFX_empty:c2"
+			"GFX_society_benedictine_female_clothing_behind:c0"
+			"GFX_society_benedictine_female_clothing_front:c2"
 			"GFX_empty:c3"
 			"GFX_society_orthodox_monk_female_headgear_behind:c1"
 			"GFX_society_orthodox_monk_female_headgear_front:c5"

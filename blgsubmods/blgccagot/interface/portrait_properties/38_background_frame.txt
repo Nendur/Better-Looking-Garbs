@@ -91,8 +91,14 @@
 				}
 			}
 			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
+				AND = {
+					higher_real_tier_than = count
+					primary_title = { is_landless_type_title = no }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					primary_title = { is_landless_type_title = no }
+				}
 			}
 		}
 	}
@@ -109,8 +115,14 @@
 			}
 			capital_scope = { region = world_essos }
 			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
+				AND = {
+					higher_real_tier_than = count
+					primary_title = { is_landless_type_title = no }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					primary_title = { is_landless_type_title = no }
+				}
 			}
 		}
 	}

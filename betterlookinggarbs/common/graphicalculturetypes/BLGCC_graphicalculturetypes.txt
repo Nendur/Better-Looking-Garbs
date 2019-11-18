@@ -131,9 +131,6 @@ khmergfx = {
 hunnicgfx = {
 	skin_tone = 1
 }
-egyptian = {
-	skin_tone = 2
-}
 copticgfx = {
 	skin_tone = 2
 }

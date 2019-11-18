@@ -52,7 +52,10 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -145,16 +148,19 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
 		layer = {
+			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_behind:c0"
+			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_front:c2"
 			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_front:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c0"
-			"GFX_empty:c2"
 			"GFX_empty:c4"
 		}
 
@@ -228,7 +234,10 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -333,7 +342,10 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -404,7 +416,10 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -494,7 +509,10 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -589,7 +607,10 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -679,16 +700,19 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
 		layer = {
+			"GFX_society_monastic_order_hindu_shaivite_female_headgear_behind:c0"
+			"GFX_society_monastic_order_hindu_shaivite_female_headgear_front:c2"
 			"GFX_society_monastic_order_hindu_shaivite_female_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_shaivite_female_headgear_front:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c0"
-			"GFX_empty:c2"
 			"GFX_empty:c4"
 		}
 
@@ -789,7 +813,10 @@ spriteTypes = {
 				portrait_society = monastic_order_buddhist
 				portrait_has_trait = vajrayana_buddhist
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -878,7 +905,10 @@ spriteTypes = {
 				portrait_society = monastic_order_buddhist
 				portrait_has_trait = vajrayana_buddhist
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -971,7 +1001,10 @@ spriteTypes = {
 				portrait_society = monastic_order_buddhist
 				portrait_has_trait = theravada_buddhist
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -1060,7 +1093,10 @@ spriteTypes = {
 				portrait_society = monastic_order_buddhist
 				portrait_has_trait = theravada_buddhist
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -1153,7 +1189,10 @@ spriteTypes = {
 				portrait_society = monastic_order_buddhist
 				portrait_has_trait = mahayana_buddhist
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -1242,7 +1281,10 @@ spriteTypes = {
 				portrait_society = monastic_order_buddhist
 				portrait_has_trait = mahayana_buddhist
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -1354,13 +1396,16 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
 		layer = {
-			"GFX_empty:c0"
-			"GFX_empty:c2"
+			"GFX_society_monastic_order_jain_svetambara_female_clothing_behind:c0"
+			"GFX_society_monastic_order_jain_svetambara_female_clothing_front:c2"
 			"GFX_empty:c3"
 			"GFX_society_monastic_order_jain_digambara_female_headgear_behind:c1"
 			"GFX_society_monastic_order_jain_digambara_female_headgear_front:c5"
@@ -1432,7 +1477,10 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 
@@ -1528,7 +1576,10 @@ spriteTypes = {
 					portrait_in_command = no
 					portrait_government = theocracy_government
 				}
-				NOT = { portrait_has_trait = blgcaoff }
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_indian_pilgrimage
+				}
 			}
 		}
 

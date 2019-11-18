@@ -273,8 +273,11 @@
 			OR = {
 				NOT = { religion_group = christian }
 				NOR = {
+					is_priest = yes
+					blg_priest = yes
 					has_education_learning_trigger = yes
 					is_ascetic_trigger = yes
+					is_christian_monastic_member_trigger = yes
 				}
 			}
 		}

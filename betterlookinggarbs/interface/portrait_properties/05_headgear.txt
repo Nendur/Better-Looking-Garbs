@@ -27,10 +27,15 @@
 				in_siege = yes
 				death_reason = death_battle
 				is_tributary = yes
+				prisoner = yes
 				trait = peasant_leader
 				trait = heresiarch
 				trait = leper
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				blg_saint = yes
 				blg_petty_empire = yes
 				is_offmap_governor = yes
 				song_dynasty_futou_trigger = yes
@@ -173,8 +178,16 @@
 				is_or_was_offmap_power_ruler = yes
 				AND = { # Petty kings
 					OR = {
-						AND = { independent = yes real_tier = duke }
-						spouse = { independent = yes real_tier = duke }
+						AND = {
+							real_tier = duke
+							independent = yes
+							primary_title = { is_landless_type_title = no }
+						}
+						spouse = {
+							real_tier = duke
+							independent = yes
+							primary_title = { is_landless_type_title = no }
+						}
 					}
 					OR = {
 						culture_group = north_germanic
@@ -194,6 +207,8 @@
 			factor = 0
 			OR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 			}
@@ -332,8 +347,16 @@
 				is_or_was_offmap_power_ruler = yes
 				AND = { # Petty kings
 					OR = {
-						AND = { independent = yes real_tier = duke }
-						spouse = { independent = yes real_tier = duke }
+						AND = {
+							real_tier = duke
+							independent = yes
+							primary_title = { is_landless_type_title = no }
+						}
+						spouse = {
+							real_tier = duke
+							independent = yes
+							primary_title = { is_landless_type_title = no }
+						}
 					}
 					OR = {
 						culture_group = north_germanic
@@ -353,6 +376,8 @@
 			factor = 0
 			OR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 			}
@@ -491,8 +516,16 @@
 				is_or_was_offmap_power_ruler = yes
 				AND = { # Petty kings
 					OR = {
-						AND = { independent = yes real_tier = duke }
-						spouse = { independent = yes real_tier = duke }
+						AND = {
+							real_tier = duke
+							independent = yes
+							primary_title = { is_landless_type_title = no }
+						}
+						spouse = {
+							real_tier = duke
+							independent = yes
+							primary_title = { is_landless_type_title = no }
+						}
 					}
 					OR = {
 						culture_group = north_germanic
@@ -511,6 +544,8 @@
 			factor = 0
 			OR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 			}
@@ -652,8 +687,14 @@
 		modifier = {
 			factor = 0
 			NOR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
+				AND = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					higher_real_tier_than = count 
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 			}
@@ -733,6 +774,8 @@
 				has_minor_title = title_augusta
 				blg_royalty = yes
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 			}
@@ -741,8 +784,16 @@
 		modifier = { # Petty kings
 			factor = 0
 			OR = {
-				AND = { independent = yes real_tier = duke }
-				spouse = { independent = yes real_tier = duke }
+				AND = {
+					real_tier = duke
+					independent = yes
+					primary_title = { is_landless_type_title = no }
+				}
+				spouse = {
+					real_tier = duke
+					independent = yes
+					primary_title = { is_landless_type_title = no }
+				}
 			}
 			OR = {
 				culture_group = north_germanic
@@ -767,9 +818,20 @@
 			OR = {
 				higher_real_tier_than = duke
 				spouse = { higher_real_tier_than = duke }
-				AND = { real_tier = duke independent = yes }
-				spouse = { real_tier = duke independent = yes }
+				AND = {
+					real_tier = duke
+					independent = yes
+					primary_title = { is_landless_type_title = no }
+				}
+				spouse = {
+					real_tier = duke
+					independent = yes
+					primary_title = { is_landless_type_title = no }
+				}
 				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 				AND = {
 					is_ruler = yes
@@ -779,6 +841,8 @@
 			}
 			NOR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 				trait = leper
@@ -788,12 +852,20 @@
 		modifier = {
 			factor = 0
 			OR = {
-				real_tier = duke
-				spouse = { real_tier = duke }
+				AND = {
+					real_tier = duke
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					real_tier = duke
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 			}
 			NOR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 				trait = leper
@@ -873,13 +945,26 @@
 			OR = {
 				higher_real_tier_than = duke
 				spouse = { higher_real_tier_than = duke }
-				AND = { real_tier = duke independent = yes }
-				spouse = { real_tier = duke independent = yes }
+				AND = {
+					real_tier = duke
+					independent = yes
+					primary_title = { is_landless_type_title = no }
+				}
+				spouse = {
+					real_tier = duke
+					independent = yes
+					primary_title = { is_landless_type_title = no }
+				}
 				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 			}
@@ -888,12 +973,20 @@
 		modifier = {
 			factor = 0
 			OR = {
-				real_tier = duke
-				spouse = { real_tier = duke }
+				AND = {
+					real_tier = duke
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					real_tier = duke
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 			}
 			NOR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 				likes_altaics = yes
@@ -989,13 +1082,26 @@
 			OR = {
 				higher_real_tier_than = duke
 				spouse = { higher_real_tier_than = duke }
-				AND = { real_tier = duke independent = yes }
-				spouse = { real_tier = duke independent = yes }
+				AND = {
+					real_tier = duke
+					independent = yes
+					primary_title = { is_landless_type_title = no }
+				}
+				spouse = {
+					real_tier = duke
+					independent = yes
+					primary_title = { is_landless_type_title = no }
+				}
 				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 			}
@@ -1004,12 +1110,20 @@
 		modifier = {
 			factor = 0
 			OR = {
-				real_tier = duke
-				spouse = { real_tier = duke }
+				AND = {
+					real_tier = duke
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					real_tier = duke
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 			}
 			NOR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 				likes_altaics = yes
@@ -1066,13 +1180,26 @@
 			OR = {
 				higher_real_tier_than = duke
 				spouse = { higher_real_tier_than = duke }
-				AND = { real_tier = duke independent = yes }
-				spouse = { real_tier = duke independent = yes }
+				AND = {
+					real_tier = duke
+					independent = yes
+					primary_title = { is_landless_type_title = no }
+				}
+				spouse = {
+					real_tier = duke
+					independent = yes
+					primary_title = { is_landless_type_title = no }
+				}
 				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 			}
@@ -1081,12 +1208,20 @@
 		modifier = {
 			factor = 0
 			OR = {
-				real_tier = duke
-				spouse = { real_tier = duke }
+				AND = {
+					real_tier = duke
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					real_tier = duke
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 			}
 			NOR = {
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
 				likes_altaics = yes
@@ -1184,6 +1319,7 @@
 			OR = {
 				real_tier = duke
 				NOT = { intrigue = 16 }
+				primary_title = { is_landless_type_title = no }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 10 } }
 		}
@@ -1224,6 +1360,7 @@
 				AND = {
 					real_tier = duke
 					primary_title = { mercenary = no }
+					NOT = { blg_lowrank = yes }
 				}
 			}
 			NOR = {
@@ -1250,6 +1387,7 @@
 				death_reason = death_battle
 				#death_reason = death_duel
 				primary_title = { mercenary = yes }
+				blg_soldier = yes
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
 		}
@@ -1260,6 +1398,10 @@
 				value = off
 			}
 		}
+		modifier = {
+			factor = 0
+			trait = saint
+		}
 	}
 
 	11 = { # Blank
@@ -1267,43 +1409,31 @@
 		modifier = {
 			factor = 0
 			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				AND = { real_tier = duke independent = yes }
-				spouse = { real_tier = duke independent = yes }
+				AND = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
+				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
+				prisoner = yes
 				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
+				trait = saint
+				blg_saint = yes
 				employer = { government = order_government }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 12 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				real_tier = duke
-				spouse = { real_tier = duke }
-				has_minor_title = title_prince
-			}
-			NOR = {
-				trait = in_hiding
-				trait = peasant_leader
-				trait = heresiarch
-				employer = { government = order_government }
-				likes_altaics = yes
-				likes_arabs = yes
-				likes_iranians = yes
-				likes_africans = yes
-				likes_indians = yes
-				likes_dravidians = yes
-				likes_tibetans = yes
-				likes_mesoamericans = yes
-				culture_group = central_african
-				blg_north_african = yes
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 12 } }
 		}
@@ -1323,6 +1453,15 @@
 			factor = 100
 			employer = { government = order_government }
 			in_command = no
+			NOT = { religion_group = muslim }
+		}
+		modifier = {
+			factor = 1000
+			OR = {
+				prisoner = yes
+				trait = saint
+				blg_saint = yes
+			}
 		}
 		modifier = {
 			factor = 4
@@ -1498,6 +1637,7 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						government = order_government
 					}
 				}
 				in_battle = yes
@@ -1505,10 +1645,6 @@
 				has_job_title = job_marshal
 				death_reason = death_battle
 				#death_reason = death_duel
-				AND = {
-					government = order_government
-					in_command = yes
-				}
 				has_landed_title = e_china_west_governor
 			}
 			NAND = {
@@ -1584,6 +1720,7 @@
 							OR = {
 								war = yes
 								liege = { war = yes }
+								government = order_government
 							}
 						}
 						in_battle = yes
@@ -1591,10 +1728,6 @@
 						has_job_title = job_marshal
 						death_reason = death_battle
 						#death_reason = death_duel
-						AND = {
-							government = order_government
-							in_command = yes
-						}
 						has_landed_title = e_china_west_governor
 					}
 					has_game_rule = {

@@ -169,9 +169,9 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_empty:c0"
+			"GFX_clothing_monk_clothes_behind:c0"
 			"GFX_clothing_nun_headgear_behind:c1"
-			"GFX_empty:c2"
+			"GFX_clothing_monk_clothes:c2"
 			"GFX_empty:c3"
 			"GFX_empty:c4"
 			"GFX_clothing_nun_headgear:c5"

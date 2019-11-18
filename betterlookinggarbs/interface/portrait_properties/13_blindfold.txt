@@ -127,7 +127,10 @@
 				is_heresy_of = catholic
 				is_parent_religion = catholic
 			}
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 		}
 		modifier = {
 			factor = 0
@@ -400,7 +403,10 @@
 				is_heresy_of = catholic
 				is_parent_religion = catholic
 			}
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 		}
 		modifier = {
 			factor = 0

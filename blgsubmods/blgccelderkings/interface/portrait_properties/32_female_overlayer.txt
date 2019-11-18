@@ -19,16 +19,17 @@
 		}
 		modifier = {
 			factor = 100
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				prisoner = yes
+				trait = saint
+				has_portrait_property = { layer = 5 index = 9 }
+			}
 		}
 		modifier = {
 			factor = 100
 			is_merchant_republic = yes
 			in_command = no
-		}
-		modifier = {
-			factor = 100
-			has_portrait_property = { layer = 5 index = 9 }
 		}
 		modifier = {
 			factor = 100

@@ -13,8 +13,9 @@
 	}
 	1 = { # saint
 		factor = 100
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = { 19 = { } } #Hide layers with special crowns.
+		hide_layers = { 31 = { } }
 		trigger = {
 			trait = saint
 		}

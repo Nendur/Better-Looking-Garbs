@@ -186,12 +186,20 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_any_quest = yes
+		is_in_society = yes
 		NOT = { trait = blgcaoff }
 	}
 
 	immediate = {
-		add_trait = blgquesting
+		if = {
+			limit = {
+				has_any_quest = yes
+			}
+			add_trait = blgquesting
+		}
+		else = {
+			repeat_event = { id = blg.3 days = 7}
+		}
 	}
 }
 

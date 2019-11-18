@@ -7,5 +7,5 @@ dependencies={
 	"AGOT More Bloodlines Submod"
 	"Cultural Cities Remix"
 }
-tags={ Graphics Portraits }
+tags={ Graphics Portraits Units Councillors Shields HIP CK2Plus AGOT "Elder Kings" WTWSMS "Lux Invicta" Tianxia Mythos }
 picture="betterlookinggarbs.jpg"

@@ -21,7 +21,10 @@
 		}
 		modifier = {
 			factor = 100
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 		}
 		modifier = {
 			factor = 100

@@ -1,13 +1,19 @@
 Changelog:
 
+18-11-2019
+  Added Mythos compatibility submod.
+  Integrated Rise to Power mod compatibility.
+  Added new alternate non-Norse pagan map shields.
   Monastic lay members (i.e. rulers) will wear society clothing with regular headgear.
   Limit Warrior lodge clothing to times leading troops or landless courtiers.
   Added society quest detection to toggle society clothing.
   Clearer plot target ring.
-  Further adjustment of the fallback face graphics.
+  Further devepment of the baseline fallback face graphics.
   Split Romano-Gallic and Romano-British portraits.
-  Added new alternate non-Norse pagan map shields.
-  Added Mythos compatibility submod.
+  Finish applying noble minor titles like despot and queen mother to clothing consistently.
+  When hiding headgear on prisoners and saints, avoid hair hiding headgear selections.
+  Added clothes to nun outfits in case of headgear hiding.
+  Changed some current year checks to year of birth checks for history view.
 
 28-10-2019
   Overhauled the fallback portraits into the Hotep's Dream; Everyone is various shades of Egyptian now.

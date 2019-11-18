@@ -83,8 +83,14 @@
 				}
 			}
 			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
+				AND = {
+					higher_real_tier_than = count
+					primary_title = { is_landless_type_title = no }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					primary_title = { is_landless_type_title = no }
+				}
 			}
 		}
 	}
@@ -103,8 +109,14 @@
 				NOT = { culture_group = nedic }
 			}
 			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
+				AND = {
+					higher_real_tier_than = count
+					primary_title = { is_landless_type_title = no }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					primary_title = { is_landless_type_title = no }
+				}
 			}
 		}
 	}

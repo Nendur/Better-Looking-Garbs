@@ -49,8 +49,12 @@ blg_chinese = {
 blg_regular_helmet = {
 	OR = {
 		culture_group = undead_culture_group
-		culture_group = supernatural_culture_group
+		culture = ethereal_culture
 	}
+}
+
+blg_saint = {
+	always = no
 }
 
 blg_polar_bear = {
@@ -76,4 +80,53 @@ blg_black_bear = {
 
 religion_openly_egyptian_or_reformed_trigger = {
 	religion_openly_kemetic_or_reformed_trigger = yes
+}
+
+blg_lowrank = {
+	OR = {
+		government = rtp_lowborn_g
+		government = rtp_noble_g
+		government = rtp_baron_g
+		government = rtp_baron_iqta_g
+		government = rtp_baron_monastic_g
+		government = rtp_baron_republic_g
+		government = rtp_baron_theocracy_g
+		government = rtp_baron_mercenary_g
+		government = rtp_republic_g
+		government = rtp_mercenary_g
+	}
+}
+
+blg_landless = {
+	OR = {
+		government = rtp_lowborn_g
+		government = rtp_noble_g
+	}
+}
+
+blg_priest = {
+	is_ruler = yes
+	OR = {
+		government = rtp_theocracy_g
+		government = rtp_baron_theocracy_g
+		government = playable_theocracy_government
+	}
+}
+
+blg_soldier = {
+	OR = {
+		has_character_flag = rtp_temporary_soldier
+		has_character_flag = rtp_invasion_prestige
+		has_character_flag = rtp_invasion_gold
+		has_character_flag = rtp_invasion_barony
+		has_character_flag = rtp_invasion_county
+		has_character_flag = rtp_temporary_mercenary
+		AND = {
+			is_ruler = yes
+			OR = {
+				government = rtp_mercenary_g
+				government = rtp_baron_mercenary_g
+			}
+		}
+	}
 }

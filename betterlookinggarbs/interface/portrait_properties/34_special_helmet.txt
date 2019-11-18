@@ -259,7 +259,10 @@
 	11 = { #Miaphysite priest
 		factor = 100
 		trigger = {
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			is_female = no
 			OR = {
 				religion = miaphysite

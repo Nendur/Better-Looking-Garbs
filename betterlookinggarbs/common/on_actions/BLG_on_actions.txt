@@ -15,7 +15,10 @@ on_chronicle_start = {
 	effect = {
 		add_trait = i_used_to_be_a_player
 		remove_trait = blgspawn
-		any_character = { character_event = { id = blg.1 } } # Initial ethnic diversity.
+		if = {
+			limit = { is_multiplayer_host_character = yes }
+			any_character = { character_event = { id = blg.1 } } # Initial ethnic diversity.
+		}
 	}
 }
 
@@ -26,11 +29,8 @@ on_chronicle_owner_change = {
 }
 
 on_society_bi_yearly_pulse = {
-	effect = {
-		#Some use immediate events and some delayed.
-		character_event = { id = blg.3 days = 1 }
-		character_event = { id = blg.3 days = 10 }
-		character_event = { id = blg.3 days = 15 }
+	events = {
+		blg.3 # Toggle society clothing when quests start.
 	}
 }
 

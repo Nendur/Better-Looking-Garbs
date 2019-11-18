@@ -277,7 +277,10 @@
 		}
 		modifier = {
 			factor = 30
-			is_theocracy = yes
+			OR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			religion_group = pagan_group
 			has_secret_religion = no
 		}
@@ -337,7 +340,8 @@
 		modifier = {
 			factor = 10
 			OR = {
-				is_theocracy = yes
+				is_priest = yes
+				blg_priest = yes
 				has_focus = focus_theology
 				trait = zealous
 			}
@@ -345,9 +349,11 @@
 		modifier = {
 			factor = 0
 			NOR = {
-				has_pious_trait_trigger = yes
+				is_priest = yes
 				is_theocracy = yes
+				blg_priest = yes
 				has_focus = focus_theology
+				has_pious_trait_trigger = yes
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -904,6 +910,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				blg_lowrank = yes
 			}
 		}
 		hide_layers = { 38 = {} }

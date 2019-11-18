@@ -10,6 +10,8 @@ east_african = {
 	}
 }
 
-dragon_culture_group = {
-	graphical_cultures = { norsegfx westerngfx }
+supernatural_culture_group = {
+	demon_culture = {
+		graphical_cultures = { demongfx levantinegfx africangfx muslimgfx }
+	}
 }

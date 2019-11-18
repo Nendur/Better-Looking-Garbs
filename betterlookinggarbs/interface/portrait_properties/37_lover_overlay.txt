@@ -20,7 +20,10 @@
 	2 = {
 		factor = 100
 		trigger = {
-			any_player = { ROOT = { is_quest_target_of = PREV } }
+			any_player = {
+				NOT = { character = ROOT }
+				ROOT = { is_quest_target_of = PREV }
+			}
 		}
 	}
 	3 = {

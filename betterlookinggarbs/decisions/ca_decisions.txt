@@ -6,9 +6,26 @@ targetted_decisions = {
 		ai_target_filter = none
 
 		from_potential = {}
-		potential = {}
+		potential = {
+			OR = {
+				practical_age = 16
+				AND = {
+					practical_age = 15
+					OR = {
+						has_game_rule = { name = blg_children value = 15 }
+						has_game_rule = { name = blg_children value = 15noscale }
+					}
+				}
+				AND = {
+					practical_age = 14
+					OR = {
+						has_game_rule = { name = blg_children value = 14 }
+						has_game_rule = { name = blg_children value = 14noscale }
+					}
+				}
+			}
+		}
 		allow = {
-			is_adult = yes
 			OR = {	#Make multiplayer gamers well-behaved.
 				character = FROM
 				AND = {

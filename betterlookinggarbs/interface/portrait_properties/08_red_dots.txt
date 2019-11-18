@@ -6,6 +6,7 @@
 			factor = 0.01
 			OR = {
 				is_priest = yes
+				blg_priest = yes
 				is_ascetic_trigger = yes
 				trait = zealous
 				has_minor_title = title_guru

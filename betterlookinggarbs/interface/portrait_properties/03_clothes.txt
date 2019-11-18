@@ -19,6 +19,9 @@
 				spouse = { higher_real_tier_than = duke }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 		}
@@ -47,6 +50,9 @@
 				spouse = { higher_real_tier_than = duke }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 		}
@@ -75,6 +81,9 @@
 				spouse = { higher_real_tier_than = duke }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 		}
@@ -90,8 +99,14 @@
 		modifier = {
 			factor = 0
 			NOR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				AND = {
+					is_ruler = yes
+					NOT = { blg_landless = yes }
+				}
+				spouse = {
+					is_ruler = yes
+					NOT = { blg_landless = yes }
+				}
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				trait = proud
@@ -126,8 +141,14 @@
 		modifier = {
 			factor = 0
 			NOR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				AND = {
+					is_ruler = yes
+					NOT = { blg_landless = yes }
+				}
+				spouse = {
+					is_ruler = yes
+					NOT = { blg_landless = yes }
+				}
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				trait = proud
@@ -162,8 +183,14 @@
 		modifier = {
 			factor = 0
 			NOR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				AND = {
+					is_ruler = yes
+					NOT = { blg_landless = yes }
+				}
+				spouse = {
+					is_ruler = yes
+					NOT = { blg_landless = yes }
+				}
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				trait = proud
@@ -198,10 +225,19 @@
 		modifier = {
 			factor = 0
 			OR = {
-				is_ruler = yes
+				AND = {
+					is_ruler = yes
+					NOT = { blg_landless = yes }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				spouse = { higher_real_tier_than = count }
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
@@ -223,10 +259,19 @@
 		modifier = {
 			factor = 0
 			OR = {
-				is_ruler = yes
+				AND = {
+					is_ruler = yes
+					NOT = { blg_landless = yes }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				spouse = { higher_real_tier_than = count }
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
@@ -248,10 +293,19 @@
 		modifier = {
 			factor = 0
 			OR = {
-				is_ruler = yes
+				AND = {
+					is_ruler = yes
+					NOT = { blg_landless = yes }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				spouse = { higher_real_tier_than = count }
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
@@ -286,6 +340,7 @@
 			OR = {
 				real_tier = duke
 				NOT = { intrigue = 10 }
+				blg_lowrank = yes
 			}
 		}
 		modifier = {
@@ -301,8 +356,14 @@
 			factor = 0
 			is_female = no
 			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
+				AND = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					higher_real_tier_than = count
+					NOT = { blg_lowrank = yes }
+				}
 			}
 			NOR = {
 				primary_title = { mercenary = yes }
@@ -329,6 +390,7 @@
 				employer = { government = order_government }
 				employer = { primary_title = { mercenary = yes } }
 				trait = shieldmaiden
+				blg_soldier = yes
 				AND = {
 					culture_group = iberian
 					NOR = {
