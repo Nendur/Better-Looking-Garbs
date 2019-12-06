@@ -8,7 +8,7 @@ While based around the use of DLC assets these are not required, an installer wi
 Features:
 
 * Over 60 portrait sets with several additional early, late and religious variants.
-* 5 Vanilla face sets before portrait packs.
+* 6 Vanilla face sets before portrait packs.
 * 15 Vanilla clothing sets.
 * Improved vanilla Muslim faces in Arabic and African variations.
 * Additional beards for the western and Muslim sets.

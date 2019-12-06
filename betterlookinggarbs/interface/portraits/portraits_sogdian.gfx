@@ -37,7 +37,7 @@ spriteTypes = {
 			"GFX_persian_male_nose:d3"
 			"GFX_child_back:p17"
 			"GFX_persian_son_base:p18"
-			"GFX_turkish_sonhair:p18:h"
+			"GFX_persian_sonhair:p18:h"
 			"GFX_persian_son_eyes:p18:e"
 			"GFX_character_freckles:p20"
 			"GFX_character_scars:p7:y"

@@ -31,7 +31,10 @@
 		}
 		modifier = {
 			factor = 5
-			has_job_title = job_chancellor
+			OR = {
+				has_job_title = job_chancellor
+				has_minor_title = guard_mt
+			}
 		}
 		modifier = {
 			factor = 0
@@ -81,6 +84,16 @@
 
 	2 = { # dungeon
 		factor = 4
+		trigger = {
+			OR = {
+				prisoner = yes
+				death_reason = death_dungeon
+				death_reason = death_slavery
+				#trait = wroth
+				trait = cruel
+				trait = impaler
+			}
+		}
 		modifier = {
 			factor = 100
 			OR = {
@@ -91,18 +104,23 @@
 		}
 		modifier = {
 			factor = 0
-			NOR = {
-				#trait = wroth
-				trait = cruel
-				trait = impaler
-				death_reason = death_dungeon
-				death_reason = death_slavery
-			}
-			prisoner = no
+			has_character_modifier = house_arrest
 		}
 		modifier = {
 			factor = 0
-			has_character_modifier = house_arrest
+			OR = {
+				trait = in_hiding
+				trait = travelling
+				trait = on_pilgrimage
+				trait = on_hajj
+				trait = on_indian_pilgrimage
+				trait = kow_tow_travels
+			}
+			NOR = {
+				prisoner = yes
+				death_reason = death_dungeon
+				death_reason = death_slavery
+			}
 		}
 		hide_layers = { 38 = {} }
 	}
@@ -141,6 +159,8 @@
 			OR = {
 				trait = hunter
 				trait = falconer
+				has_minor_title = poacher_mt
+				has_minor_title = brigand_mt
 			}
 		}
 	}
@@ -224,6 +244,7 @@
 				has_character_flag = jarilo_feast_vassal
 				has_character_flag = diwali_feast_begun
 				has_character_flag = attending_diwali_feast
+				has_minor_title = server_mt
 			}
 		}
 		modifier = {
@@ -250,6 +271,9 @@
 			NOR = {
 				in_command = yes
 				has_job_title = job_marshal
+				blg_soldier = yes
+				has_minor_title = veteran_mt
+				has_minor_title = officer_mt
 			}
 		}
 		modifier = {
@@ -299,9 +323,8 @@
 
 	8 = { # Gallows
 		factor = 2
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				trait = cruel
 				trait = impaler
 				death_execution_trigger = yes
@@ -321,6 +344,18 @@
 				death_sacrificed_trigger = yes
 				has_character_flag = holding_blot
 				has_character_flag = attending_blot
+			}
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			OR = {
+				trait = in_hiding
+				trait = travelling
+				trait = on_pilgrimage
+				trait = on_hajj
+				trait = on_indian_pilgrimage
+				trait = kow_tow_travels
 			}
 		}
 	}
@@ -422,6 +457,8 @@
 			OR = {
 				trait = hunter
 				trait = falconer
+				has_minor_title = poacher_mt
+				has_minor_title = brigand_mt
 			}
 		}
 	}
@@ -550,6 +587,8 @@
 			OR = {
 				trait = hunter
 				trait = falconer
+				has_minor_title = poacher_mt
+				has_minor_title = brigand_mt
 			}
 		}
 	}
@@ -673,7 +712,10 @@
 		}
 		modifier = {
 			factor = 10
-			has_job_title = job_chancellor
+			OR = {
+				has_job_title = job_chancellor
+				has_minor_title = guard_mt
+			}
 		}
 		modifier = {
 			factor = 10
@@ -799,7 +841,12 @@
 		}
 		modifier = {
 			factor = 100
-			death_reason = death_rabble
+			OR = {
+				death_reason = death_rabble
+				has_minor_title = pickpocket_mt
+				has_minor_title = town_crier_mt
+				has_minor_title = peddler_mt
+			}
 		}
 	}
 
@@ -820,6 +867,8 @@
 				trait = gamer
 				#trait = erudite
 				trait = physician
+				has_minor_title = scribe_mt
+				has_minor_title = librarian_mt
 			}
 		}
 		modifier = {
@@ -952,6 +1001,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				blg_landless = yes
 			}
 		}
 		hide_layers = { 38 = {} }

@@ -209,8 +209,14 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						AND = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
+						spouse = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -235,8 +241,14 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						AND = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
+						spouse = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -261,8 +273,14 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						AND = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
+						spouse = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -287,8 +305,14 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						AND = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
+						spouse = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -314,8 +338,14 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						AND = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
+						spouse = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -342,8 +372,14 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						AND = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
+						spouse = {
+							is_ruler = yes
+							NOT = { blg_landless = yes }
+						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}

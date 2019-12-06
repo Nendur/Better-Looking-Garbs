@@ -1,5 +1,8 @@
 Changelog:
 
+  New baby portrait sprites.
+  Child portraits properly filled and cropped to portrait rings.
+
 18-11-2019
   Added Mythos compatibility submod.
   Integrated Rise to Power mod compatibility.

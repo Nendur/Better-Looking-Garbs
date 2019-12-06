@@ -1374,7 +1374,10 @@
 			factor = 0
 			NOR = {
 				AND = {
-					in_command = yes
+					OR = {
+						in_command = yes
+						blg_soldier = yes
+					}
 					OR = {
 						war = yes
 						liege = { war = yes }
@@ -1387,7 +1390,6 @@
 				death_reason = death_battle
 				#death_reason = death_duel
 				primary_title = { mercenary = yes }
-				blg_soldier = yes
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
 		}

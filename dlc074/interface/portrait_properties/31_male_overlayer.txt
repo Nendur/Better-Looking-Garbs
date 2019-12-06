@@ -101,15 +101,20 @@
 	}
 	5 = { # Count Accessories
 		factor = 1
-		modifier = {
-			factor = 0
-			NOR = {
-				real_tier = count
-				spouse = { real_tier = count }
+		trigger = {
+			OR = {
+				AND = {
+					real_tier = count
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					real_tier = count
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 				spouse = { has_minor_title = title_prince }
+				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 6 } }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 6 } }
 		}
 		modifier = {
 			factor = 0
@@ -127,15 +132,20 @@
 	}
 	6 = { # Count Accessories
 		factor = 1
-		modifier = {
-			factor = 0
-			NOR = {
-				real_tier = count
-				spouse = { real_tier = count }
+		trigger = {
+			OR = {
+				AND = {
+					real_tier = count
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					real_tier = count
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 				spouse = { has_minor_title = title_prince }
+				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
 		}
 		modifier = {
 			factor = 0
@@ -153,15 +163,20 @@
 	}
 	7 = { # Count Accessories
 		factor = 1
-		modifier = {
-			factor = 0
-			NOR = {
-				real_tier = count
-				spouse = { real_tier = count }
+		trigger = {
+			OR = {
+				AND = {
+					real_tier = count
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					real_tier = count
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 				spouse = { has_minor_title = title_prince }
+				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 8 } }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 8 } }
 		}
 		modifier = {
 			factor = 0
@@ -180,15 +195,20 @@
 	8 = { # Count Accessories
 		factor = 1
 		hide_layers = { 1 = { } }
-		modifier = {
-			factor = 0
-			NOR = {
-				real_tier = count
-				spouse = { real_tier = count }
+		trigger = {
+			OR = {
+				AND = {
+					real_tier = count
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					real_tier = count
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 				spouse = { has_minor_title = title_prince }
+				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
 		}
 		modifier = {
 			factor = 0
@@ -206,15 +226,20 @@
 	}
 	9 = { # Count Accessories
 		factor = 1
-		modifier = {
-			factor = 0
-			NOR = {
-				real_tier = count
-				spouse = { real_tier = count }
+		trigger = {
+			OR = {
+				AND = {
+					real_tier = count
+					NOT = { blg_lowrank = yes }
+				}
+				spouse = {
+					real_tier = count
+					NOT = { blg_lowrank = yes }
+				}
 				has_minor_title = title_prince
 				spouse = { has_minor_title = title_prince }
+				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 10 } }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 10 } }
 		}
 		modifier = {
 			factor = 0
