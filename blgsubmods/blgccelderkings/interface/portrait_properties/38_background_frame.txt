@@ -5,8 +5,8 @@
 		modifier = {
 			factor = 100
 			NOR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				is_landed = yes
+				spouse = { is_landed = yes }
 			}
 		}
 		modifier = {
@@ -83,14 +83,8 @@
 				}
 			}
 			OR = {
-				AND = {
-					higher_real_tier_than = count
-					primary_title = { is_landless_type_title = no }
-				}
-				spouse = {
-					higher_real_tier_than = count
-					primary_title = { is_landless_type_title = no }
-				}
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
 			}
 		}
 	}
@@ -109,14 +103,8 @@
 				NOT = { culture_group = nedic }
 			}
 			OR = {
-				AND = {
-					higher_real_tier_than = count
-					primary_title = { is_landless_type_title = no }
-				}
-				spouse = {
-					higher_real_tier_than = count
-					primary_title = { is_landless_type_title = no }
-				}
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
 			}
 		}
 	}

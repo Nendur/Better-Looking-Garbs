@@ -78,7 +78,7 @@ if [ -d "${MODS}A Game of Thrones" -o -f "${MODS}a game of thrones.zip" -o -f "$
 	fi
 	echo "A Game of Thrones compatibility add-on installed."
 fi
-if [ -d "${MODS}EK021" -o -f "${MODS}EK021.mod" ]; then
+if [ -d "${MODS}EK021" -o -d "${MODS}EKSVN" -o -f "${MODS}EK021.mod" -o -f "${MODS}ESM.mod" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccelderkings*" -d"$MODS"
 	fi

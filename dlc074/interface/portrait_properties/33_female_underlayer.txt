@@ -3,7 +3,7 @@
 	0 = { # Blank
 		factor = 100
 		modifier = {
-			factor = 0
+			factor = 0.05
 			#has_dlc = "Holy Fury"
 			is_female = yes
 			#is_priest = no
@@ -18,17 +18,29 @@
 			OR = {
 				AND = {
 					higher_tier_than = baron
-					NOT = { blg_lowrank = yes }
+					is_landed = yes
 				}
 				spouse = {
 					higher_tier_than = baron
-					NOT = { blg_lowrank = yes }
+					is_landed = yes
 				}
 			}
+			religion_group = christian
 			OR = {
-				culture = frankish
-				culture = occitan
-				blg_french = yes
+				likes_latino_iberians = yes
+				likes_germanics = yes
+				likes_celts = yes
+				likes_balto_slavics = yes
+				culture_group = magyar
+			}
+			OR = {
+				is_married = yes
+				any_spouse_even_if_dead = { is_alive = no }
+				age  = 40
+				trait = chaste
+				trait = celibate
+				trait = zealous
+				is_ascetic_trigger = yes
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 1 } }
 		}
@@ -52,6 +64,12 @@
 						spouse = { higher_real_tier_than = DUKE }
 					}
 					year_of_birth = 1180
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 2 } }
 			}
@@ -73,6 +91,12 @@
 						spouse = { higher_real_tier_than = DUKE }
 					}
 					year_of_birth = 1180
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 3 } }
 			}
@@ -94,6 +118,12 @@
 						spouse = { higher_real_tier_than = DUKE }
 					}
 					year_of_birth = 1180
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 4 } }
 			}
@@ -115,6 +145,12 @@
 						spouse = { higher_real_tier_than = DUKE }
 					}
 					year_of_birth = 1180
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 5 } }
 			}
@@ -136,6 +172,12 @@
 						spouse = { higher_real_tier_than = DUKE }
 					}
 					NOT = { year_of_birth = 1180 }
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 6 } }
 			}
@@ -157,6 +199,12 @@
 						spouse = { higher_real_tier_than = DUKE }
 					}
 					NOT = { year_of_birth = 1180 }
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 7 } }
 			}
@@ -178,6 +226,12 @@
 						spouse = { higher_real_tier_than = DUKE }
 					}
 					NOT = { year_of_birth = 1180 }
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 8 } }
 			}
@@ -199,6 +253,12 @@
 						spouse = { higher_real_tier_than = DUKE }
 					}
 					NOT = { year_of_birth = 1180 }
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 9 } }
 			}
@@ -210,7 +270,7 @@
 		}
 	}
 	9 = { # Duchess Early
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
@@ -235,7 +295,7 @@
 		}
 	}
 	10 = { # Duchess Early
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
@@ -248,6 +308,12 @@
 					NOR = {
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 11 } }
@@ -260,7 +326,7 @@
 		}
 	}
 	11 = { # Duchess Early
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
@@ -273,6 +339,12 @@
 					NOR = {
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 12 } }
@@ -285,7 +357,7 @@
 		}
 	}
 	12 = { # Duchess Early
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
@@ -299,6 +371,12 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+						culture_group = east_slavic
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 13 } }
 			}
@@ -310,7 +388,7 @@
 		}
 	}
 	13 = { # Duchess Post-1180
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
@@ -335,7 +413,7 @@
 		}
 	}
 	14 = { # Duchess Post-1180
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
@@ -360,7 +438,7 @@
 		}
 	}
 	15 = { # Countess Early
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
@@ -369,6 +447,11 @@
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 16 } }
@@ -381,7 +464,7 @@
 		}
 	}
 	16 = { # Countess Early
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
@@ -402,7 +485,7 @@
 		}
 	}
 	17 = { # Countess Early
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
@@ -411,6 +494,11 @@
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 18 } }
@@ -423,7 +511,7 @@
 		}
 	}
 	18 = { # Countess Post-1180
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
@@ -444,7 +532,7 @@
 		}
 	}
 	19 = { # Countess Post-1180
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {

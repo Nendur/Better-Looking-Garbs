@@ -107,28 +107,6 @@ blg_black_bear = {
 	}
 }
 
-blg_lowrank = {
-	OR = {
-		government = rtp_lowborn_g
-		government = rtp_noble_g
-		government = rtp_baron_g
-		government = rtp_baron_iqta_g
-		government = rtp_baron_monastic_g
-		government = rtp_baron_republic_g
-		government = rtp_baron_theocracy_g
-		government = rtp_baron_mercenary_g
-		government = rtp_republic_g
-		government = rtp_mercenary_g
-	}
-}
-
-blg_landless = {
-	OR = {
-		government = rtp_lowborn_g
-		government = rtp_noble_g
-	}
-}
-
 blg_priest = {
 	is_ruler = yes
 	OR = {
@@ -142,11 +120,16 @@ blg_soldier = {
 	OR = {
 		has_character_flag = rtp_temporary_soldier
 		has_character_flag = rtp_temporary_mercenary
+		has_character_flag = rtp_temporary_crusader
+		has_minor_title = sellsword_mt
 		AND = {
 			is_ruler = yes
 			OR = {
 				government = rtp_mercenary_g
 				government = rtp_baron_mercenary_g
+				government = rtp_landless_mercenary_g
+				government = rtp_landless_order_g
+				government = rtp_baron_order_g
 			}
 		}
 	}

@@ -595,7 +595,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_character_roman_male_physique"
+		name = "GFX_character_italian_male_physique"
 		texturefile = "gfx\\characters\\shared\\physique\\italian_male_physique.dds"
 		noOfFrames = 7
 		norefcount = yes
@@ -795,7 +795,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_character_roman_female_physique"
+		name = "GFX_character_italian_female_physique"
 		texturefile = "gfx\\characters\\shared\\physique\\italian_female_physique.dds"
 		noOfFrames = 7
 		norefcount = yes

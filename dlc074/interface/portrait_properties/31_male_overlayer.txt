@@ -103,14 +103,8 @@
 		factor = 1
 		trigger = {
 			OR = {
-				AND = {
-					real_tier = count
-					NOT = { blg_lowrank = yes }
-				}
-				spouse = {
-					real_tier = count
-					NOT = { blg_lowrank = yes }
-				}
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				spouse = { has_minor_title = title_prince }
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 6 } }
@@ -134,14 +128,8 @@
 		factor = 1
 		trigger = {
 			OR = {
-				AND = {
-					real_tier = count
-					NOT = { blg_lowrank = yes }
-				}
-				spouse = {
-					real_tier = count
-					NOT = { blg_lowrank = yes }
-				}
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				spouse = { has_minor_title = title_prince }
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
@@ -165,14 +153,8 @@
 		factor = 1
 		trigger = {
 			OR = {
-				AND = {
-					real_tier = count
-					NOT = { blg_lowrank = yes }
-				}
-				spouse = {
-					real_tier = count
-					NOT = { blg_lowrank = yes }
-				}
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				spouse = { has_minor_title = title_prince }
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 8 } }
@@ -197,14 +179,8 @@
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
-				AND = {
-					real_tier = count
-					NOT = { blg_lowrank = yes }
-				}
-				spouse = {
-					real_tier = count
-					NOT = { blg_lowrank = yes }
-				}
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				spouse = { has_minor_title = title_prince }
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
@@ -228,14 +204,8 @@
 		factor = 1
 		trigger = {
 			OR = {
-				AND = {
-					real_tier = count
-					NOT = { blg_lowrank = yes }
-				}
-				spouse = {
-					real_tier = count
-					NOT = { blg_lowrank = yes }
-				}
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				spouse = { has_minor_title = title_prince }
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 10 } }

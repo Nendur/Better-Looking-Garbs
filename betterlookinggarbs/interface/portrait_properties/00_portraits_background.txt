@@ -89,7 +89,6 @@
 				prisoner = yes
 				death_reason = death_dungeon
 				death_reason = death_slavery
-				#trait = wroth
 				trait = cruel
 				trait = impaler
 			}
@@ -99,7 +98,6 @@
 			OR = {
 				prisoner = yes
 				death_reason = death_dungeon
-				death_reason = death_slavery
 			}
 		}
 		modifier = {
@@ -119,7 +117,6 @@
 			NOR = {
 				prisoner = yes
 				death_reason = death_dungeon
-				death_reason = death_slavery
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -362,14 +359,13 @@
 
 	9 = { # Church
 		factor = 2
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				NOT = { religion_group = christian }
-				trait = cynical
-				trait = excommunicated
-				trait = kow_tow_travels
-				has_secret_religion = yes
+				is_priest = yes
+				is_theocracy = yes
+				blg_priest = yes
+				has_focus = focus_theology
+				has_pious_trait_trigger = yes
 			}
 		}
 		modifier = {
@@ -383,12 +379,12 @@
 		}
 		modifier = {
 			factor = 0
-			NOR = {
-				is_priest = yes
-				is_theocracy = yes
-				blg_priest = yes
-				has_focus = focus_theology
-				has_pious_trait_trigger = yes
+			OR = {
+				NOT = { religion_group = christian }
+				trait = cynical
+				trait = excommunicated
+				trait = kow_tow_travels
+				has_secret_religion = yes
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -465,9 +461,8 @@
 
 	12 = { # Ocean w ships
 		factor = 2
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				is_at_sea = yes
 				is_patrician = yes
 				location = { has_trade_post = yes port = yes }
@@ -922,8 +917,14 @@
 		factor = 3
 		trigger = {
 			OR = {
-				higher_real_tier_than = baron
-				spouse = { higher_real_tier_than = baron }
+				AND = {
+					higher_real_tier_than = baron
+					primary_title = { is_landless_type_title = no }
+				}
+				spouse = {
+					higher_real_tier_than = baron
+					primary_title = { is_landless_type_title = no }
+				}
 			}
 			OR = {
 				AND = {
@@ -959,7 +960,6 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
-				blg_lowrank = yes
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -1001,7 +1001,6 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
-				blg_landless = yes
 			}
 		}
 		hide_layers = { 38 = {} }

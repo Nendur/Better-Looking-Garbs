@@ -5,8 +5,8 @@
 		modifier = {
 			factor = 100
 			NOR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				is_landed = yes
+				spouse = { is_landed = yes }
 			}
 		}
 		modifier = {
@@ -20,7 +20,6 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
-				blg_landless = yes
 			}
 		}
 	}
@@ -95,14 +94,8 @@
 				}
 			}
 			OR = {
-				AND = {
-					higher_real_tier_than = count
-					NOT = { blg_lowrank = yes }
-				}
-				spouse = {
-					higher_real_tier_than = count
-					NOT = { blg_lowrank = yes }
-				}
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
 			}
 		}
 	}
@@ -127,14 +120,8 @@
 				}
 			}
 			OR = {
-				AND = {
-					higher_real_tier_than = count
-					NOT = { blg_lowrank = yes }
-				}
-				spouse = {
-					higher_real_tier_than = count
-					NOT = { blg_lowrank = yes }
-				}
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
 			}
 		}
 	}

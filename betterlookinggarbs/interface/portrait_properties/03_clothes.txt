@@ -96,17 +96,10 @@
 
 	3 = { # Noble clothes 1
 		factor = 1
-		modifier = {
-			factor = 0
-			NOR = {
-				AND = {
-					is_ruler = yes
-					NOT = { blg_landless = yes }
-				}
-				spouse = {
-					is_ruler = yes
-					NOT = { blg_landless = yes }
-				}
+		trigger = {
+			OR = {
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				trait = proud
@@ -138,17 +131,10 @@
 
 	4 = { # Noble clothes 2
 		factor = 1
-		modifier = {
-			factor = 0
-			NOR = {
-				AND = {
-					is_ruler = yes
-					NOT = { blg_landless = yes }
-				}
-				spouse = {
-					is_ruler = yes
-					NOT = { blg_landless = yes }
-				}
+		trigger = {
+			OR = {
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				trait = proud
@@ -180,17 +166,10 @@
 
 	5 = { # Noble clothes 3
 		factor = 1
-		modifier = {
-			factor = 0
-			NOR = {
-				AND = {
-					is_ruler = yes
-					NOT = { blg_landless = yes }
-				}
-				spouse = {
-					is_ruler = yes
-					NOT = { blg_landless = yes }
-				}
+		trigger = {
+			OR = {
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				trait = proud
@@ -225,14 +204,8 @@
 		modifier = {
 			factor = 0
 			OR = {
-				AND = {
-					is_ruler = yes
-					NOT = { blg_landless = yes }
-				}
-				spouse = {
-					higher_real_tier_than = count
-					NOT = { blg_lowrank = yes }
-				}
+				is_landed = yes
+				spouse = { higher_real_tier_than = count }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				has_minor_title = title_despot
@@ -259,14 +232,8 @@
 		modifier = {
 			factor = 0
 			OR = {
-				AND = {
-					is_ruler = yes
-					NOT = { blg_landless = yes }
-				}
-				spouse = {
-					higher_real_tier_than = count
-					NOT = { blg_lowrank = yes }
-				}
+				is_landed = yes
+				spouse = { higher_real_tier_than = count }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				has_minor_title = title_despot
@@ -293,14 +260,8 @@
 		modifier = {
 			factor = 0
 			OR = {
-				AND = {
-					is_ruler = yes
-					NOT = { blg_landless = yes }
-				}
-				spouse = {
-					higher_real_tier_than = count
-					NOT = { blg_lowrank = yes }
-				}
+				is_landed = yes
+				spouse = { higher_real_tier_than = count }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				has_minor_title = title_despot
@@ -340,7 +301,6 @@
 			OR = {
 				real_tier = duke
 				NOT = { intrigue = 10 }
-				blg_lowrank = yes
 			}
 		}
 		modifier = {
@@ -356,14 +316,8 @@
 			factor = 0
 			is_female = no
 			OR = {
-				AND = {
-					higher_real_tier_than = count
-					NOT = { blg_lowrank = yes }
-				}
-				spouse = {
-					higher_real_tier_than = count
-					NOT = { blg_lowrank = yes }
-				}
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
 			}
 			NOR = {
 				primary_title = { mercenary = yes }
@@ -440,10 +394,13 @@
 				culture = andalusian_arabic
 			}
 			OR = {
-				is_ruler = yes
+				is_landed = yes
+				spouse = { higher_real_tier_than = count }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				spouse = { higher_real_tier_than = count }
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+				blg_royalty = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 		}

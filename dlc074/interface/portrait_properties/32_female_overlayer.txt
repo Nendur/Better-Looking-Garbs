@@ -13,9 +13,16 @@
 		modifier = {
 			factor = 100
 			NOR = {
-				culture = frankish
-				culture = occitan
-				blg_french = yes
+				likes_latino_iberians = yes
+				AND = {
+					religion_group = christian
+					OR = {
+						likes_germanics = yes
+						likes_celts = yes
+						likes_balto_slavics = yes
+						culture_group = magyar
+					}
+				}
 				AND = { is_alive = yes check_variable = { which = ca_overlayer value = 2 } }
 			}
 		}
@@ -26,6 +33,7 @@
 				blg_priest = yes
 				prisoner = yes
 				trait = saint
+				blg_saint = yes
 				has_portrait_property = { layer = 5 index = 9 }
 			}
 		}
@@ -47,6 +55,11 @@
 				AND = {
 					has_portrait_property = { layer = 5 index = 10 }
 					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+					}
+					OR = {
 						is_alive = no
 						is_variable_equal = { which = ca_overlayer value = 0 } 
 					}
@@ -59,7 +72,14 @@
 		factor = 99
 		trigger = {
 			OR = {
-				has_portrait_property = { layer = 5 index = 13 }
+				AND = {
+					has_portrait_property = { layer = 5 index = 13 }
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+					}
+				}
 				is_variable_equal = { which = ca_overlayer value = 3 } 
 			}
 		}
@@ -73,7 +93,14 @@
 		factor = 99
 		trigger = {
 			OR = {
-				has_portrait_property = { layer = 5 index = 13 }
+				AND = {
+					has_portrait_property = { layer = 5 index = 13 }
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+					}
+				}
 				is_variable_equal = { which = ca_overlayer value = 4 } 
 			}
 		}
@@ -87,8 +114,17 @@
 		factor = 99
 		trigger = {
 			OR = {
-				has_portrait_property = { layer = 5 index = 12 }
-				has_portrait_property = { layer = 5 index = 13 }
+				AND = {
+					OR = {
+						has_portrait_property = { layer = 5 index = 12 }
+						has_portrait_property = { layer = 5 index = 13 }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+					}
+				}
 				is_variable_equal = { which = ca_overlayer value = 5 } 
 			}
 		}
@@ -108,6 +144,11 @@
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 6 } }
@@ -130,6 +171,11 @@
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
 					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
 			}
@@ -150,6 +196,11 @@
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 8 } }
@@ -172,6 +223,11 @@
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
 					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
 			}
@@ -193,6 +249,11 @@
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
 					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 10 } }
 			}
@@ -210,12 +271,12 @@
 				AND = {
 					OR = {
 						AND = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						spouse = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
@@ -224,6 +285,11 @@
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 11 } }
@@ -242,12 +308,12 @@
 				AND = {
 					OR = {
 						AND = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						spouse = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
@@ -256,6 +322,11 @@
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 12 } }
@@ -274,12 +345,12 @@
 				AND = {
 					OR = {
 						AND = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						spouse = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
@@ -288,6 +359,11 @@
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 13 } }
@@ -306,12 +382,12 @@
 				AND = {
 					OR = {
 						AND = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						spouse = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
@@ -320,6 +396,11 @@
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 14 } }
@@ -339,12 +420,12 @@
 				AND = {
 					OR = {
 						AND = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						spouse = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
@@ -353,6 +434,11 @@
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 15 } }
@@ -373,12 +459,12 @@
 				AND = {
 					OR = {
 						AND = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						spouse = {
-							is_ruler = yes
-							NOT = { blg_landless = yes }
+							real_tier = count
+							primary_title = { is_landless_type_title = no }
 						}
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
@@ -387,6 +473,11 @@
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 16 } }
@@ -399,15 +490,16 @@
 		}
 	}
 	16 = { # Non-noble Pre-1180
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
+		hide_layers = { 5 = { } }
 		hide_layers = { 33 = { } } #Veil overload.
 		trigger = {
 			OR = {
 				AND = {
 					NOT = { year_of_birth = 1180 }
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -428,15 +520,16 @@
 		}
 	}
 	17 = { # Non-noble Pre-1180
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
+		hide_layers = { 5 = { } }
 		hide_layers = { 33 = { } } #Veil overload.
 		trigger = {
 			OR = {
 				AND = {
 					NOT = { year_of_birth = 1180 }
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -457,15 +550,16 @@
 		}
 	}
 	18 = { # Non-noble Pre-1180
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
+		hide_layers = { 5 = { } }
 		hide_layers = { 33 = { } } #Veil overload.
 		trigger = {
 			OR = {
 				AND = {
 					NOT = { year_of_birth = 1180 }
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -486,15 +580,16 @@
 		}
 	}
 	19 = { # Non-noble Pre-1180
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
+		hide_layers = { 5 = { } }
 		hide_layers = { 33 = { } } #Veil overload.
 		trigger = {
 			OR = {
 				AND = {
 					NOT = { year_of_birth = 1180 }
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -515,14 +610,15 @@
 		}
 	}
 	20 = { # Non-noble Post-1180
-		factor = 5
+		factor = 1
+		hide_layers = { 5 = { } }
 		hide_layers = { 33 = { } } #Veil overload.
 		trigger = {
 			OR = {
 				AND = {
 					year_of_birth = 1180
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -543,13 +639,14 @@
 		}
 	}
 	21 = { # Non-noble Post-1180
-		factor = 5
+		factor = 1
+		hide_layers = { 5 = { } }
 		trigger = {
 			OR = {
 				AND = {
 					year_of_birth = 1180
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -570,13 +667,14 @@
 		}
 	}
 	22 = { # Non-noble Post-1180
-		factor = 5
+		factor = 1
+		hide_layers = { 5 = { } }
 		trigger = {
 			OR = {
 				AND = {
 					year_of_birth = 1180
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -597,15 +695,16 @@
 		}
 	}
 	23 = { # Non-noble Post-1180
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
+		hide_layers = { 5 = { } }
 		hide_layers = { 33 = { } } #Veil overload.
 		trigger = {
 			OR = {
 				AND = {
 					year_of_birth = 1180
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -626,15 +725,16 @@
 		}
 	}
 	24 = { # Non-noble Post-1180
-		factor = 5
+		factor = 1
 		hide_layers = { 1 = { } }
+		hide_layers = { 5 = { } }
 		hide_layers = { 33 = { } } #Veil overload.
 		trigger = {
 			OR = {
 				AND = {
 					year_of_birth = 1180
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
