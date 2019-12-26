@@ -4,9 +4,10 @@ Changelog:
   Child portraits properly filled and cropped to portrait rings.
   Adjusted Eastern Slavic children skintone.
   Adjusted Berber skintone.
-  Generalized most Rise to Power scripts.
+  Generalized landless character support.
   Adapted French rules for unveiled young women into a general rule.
-  Using French courtier veils for most European cultures.
+  Using French layered veils for most European cultures.
+  Replaced the supposedly buggy true_father scopes.
 
 18-11-2019
   Added Mythos compatibility submod.

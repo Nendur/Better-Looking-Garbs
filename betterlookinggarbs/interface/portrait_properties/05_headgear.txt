@@ -900,10 +900,7 @@
 				culture = occitan
 				blg_french = yes
 			}
-			OR = {
-				real_tier = count
-				spouse = { real_tier = count }
-			}
+			NOT = { has_portrait_property = { layer = 31 index = 0 } }
 		}
 		modifier = { # Specific rules for frankish / Occitanian layering
 			factor = 0
@@ -914,8 +911,11 @@
 				culture = occitan
 				blg_french = yes
 			}
-			has_portrait_property = { layer = 32 index = 0 }
-			has_portrait_property = { layer = 33 index = 0 }
+			OR = {
+				is_married = no
+				NOT = { age = 40 }
+				#has_portrait_property = { layer = 32 index = 0 }
+			}
 		}
 		modifier = {
 			factor = 100
@@ -1031,10 +1031,7 @@
 				culture = occitan
 				blg_french = yes
 			}
-			OR = {
-				real_tier = count
-				spouse = { real_tier = count }
-			}
+			NOT = { has_portrait_property = { layer = 31 index = 0 } }
 		}
 		modifier = { # Specific rules for frankish / Occitanian layering
 			factor = 0
@@ -1045,8 +1042,11 @@
 				culture = occitan
 				blg_french = yes
 			}
-			has_portrait_property = { layer = 32 index = 0 }
-			has_portrait_property = { layer = 33 index = 0 }
+			OR = {
+				is_married = no
+				NOT = { age = 40 }
+				#has_portrait_property = { layer = 32 index = 0 }
+			}
 		}
 		modifier = {
 			factor = 100
@@ -1123,10 +1123,7 @@
 				culture = occitan
 				blg_french = yes
 			}
-			OR = {
-				real_tier = count
-				spouse = { real_tier = count }
-			}
+			NOT = { has_portrait_property = { layer = 31 index = 0 } }
 		}
 		modifier = { # Specific rules for frankish / Occitanian layering
 			factor = 0
@@ -1137,8 +1134,11 @@
 				culture = occitan
 				blg_french = yes
 			}
-			has_portrait_property = { layer = 32 index = 0 }
-			has_portrait_property = { layer = 33 index = 0 }
+			OR = {
+				is_married = no
+				NOT = { age = 40 }
+				#has_portrait_property = { layer = 32 index = 0 }
+			}
 		}
 		modifier = {
 			factor = 100
@@ -1235,10 +1235,7 @@
 				culture = occitan
 				blg_french = yes
 			}
-			OR = {
-				real_tier = count
-				spouse = { real_tier = count }
-			}
+			NOT = { has_portrait_property = { layer = 31 index = 0 } }
 		}
 		modifier = { # Specific rules for frankish / Occitanian layering
 			factor = 0
@@ -1249,8 +1246,11 @@
 				culture = occitan
 				blg_french = yes
 			}
-			has_portrait_property = { layer = 32 index = 0 }
-			has_portrait_property = { layer = 33 index = 0 }
+			OR = {
+				is_married = no
+				NOT = { age = 40 }
+				#has_portrait_property = { layer = 32 index = 0 }
+			}
 		}
 		modifier = {
 			factor = 100

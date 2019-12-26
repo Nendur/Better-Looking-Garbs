@@ -155,6 +155,9 @@ altaic = {
 	khazar = { # Oghur Turkish
 		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}
+	khavar = {
+		graphical_cultures = { steppegfx cumangfx turkishgfx }
+	}
 	bolghar = { # Oghur Turkish
 		graphical_cultures = { steppegfx cumangfx turkishgfx }
 	}
@@ -224,6 +227,9 @@ south_slavic = {
 }
 
 magyar = {
+	old_hungarian = {
+		graphical_cultures = { magyargfx cumangfx turkishgfx mongolgfx }
+	}
 	hungarian = {
 		graphical_cultures = { magyargfx }
 	}

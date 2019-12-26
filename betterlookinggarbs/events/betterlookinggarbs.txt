@@ -834,88 +834,177 @@ character_event = {
 		trigger = { #Only handle known graphical cultures
 			NOT = { has_game_rule = { name = blg_child_birth value = off } }
 
-			true_father_even_if_dead = {
-				OR = {
-					graphical_culture = westerngfx
-					graphical_culture = frankishgfx
-					graphical_culture = englishgfx
-					graphical_culture = germangfx
-					graphical_culture = trueoccitangfx
-					graphical_culture = southerngfx
-					graphical_culture = celticgfx
-					graphical_culture = norsegfx
-					graphical_culture = saxongfx
-					graphical_culture = normangfx
-					graphical_culture = italiangfx
-					graphical_culture = romangfx
-					graphical_culture = dalmatiangfx
-					graphical_culture = crimeangfx
-					graphical_culture = outremergfx
-					graphical_culture = easternslavicgfx
-					graphical_culture = westernslavicgfx
-					graphical_culture = croatsouthslavicgfx
-					graphical_culture = serbsouthslavicgfx
-					graphical_culture = byzantinegfx
-					graphical_culture = ugricgfx
-					graphical_culture = magyargfx
-					graphical_culture = muslimgfx
-					graphical_culture = arabicgfx
-					graphical_culture = turkishgfx
-					graphical_culture = cumangfx
-					graphical_culture = mongolgfx
-					graphical_culture = africangfx
-					graphical_culture = andalusiangfx
-					graphical_culture = chinesegfx
-					graphical_culture = bodpagfx
-					graphical_culture = berbergfx
-					graphical_culture = levantinegfx
-					graphical_culture = westafricangfx
-					graphical_culture = persiangfx
-					graphical_culture = indiangfx
-					graphical_culture = southindiangfx
-					graphical_culture = mesoamericangfx
-					graphical_culture = hellenicgfx
-					graphical_culture = centralafricangfx
-					graphical_culture = centralasiangfx
-					graphical_culture = steppegfx
-					graphical_culture = siberiangfx
-					graphical_culture = balticgfx
-					graphical_culture = bretongfx
-					graphical_culture = bohemiangfx
-					graphical_culture = alangfx
-					graphical_culture = georgiangfx
-					graphical_culture = norsegaelgfx
-					graphical_culture = visigothgfx
-					graphical_culture = sogdiangfx
-					graphical_culture = dutchgfx
-					graphical_culture = siciliangfx
-					graphical_culture = pomeraniangfx
-					graphical_culture = egyptiangfx
-					graphical_culture = pecheneggfx
-					graphical_culture = afghangfx
-					graphical_culture = indusgfx
-					graphical_culture = assamesegfx
-					graphical_culture = centralindiangfx
-					graphical_culture = basquegfx
-					graphical_culture = lombardgfx
-					graphical_culture = khitangfx
-					graphical_culture = semitegfx
-					graphical_culture = ashkenazigfx
-					graphical_culture = nubiangfx
-					graphical_culture = somaligfx
-					graphical_culture = gallicgfx
-					graphical_culture = romanobalkangfx
-					graphical_culture = kurdishgfx
-					graphical_culture = tangutgfx
-					graphical_culture = avargfx
-					graphical_culture = vlachgfx
-					graphical_culture = oldfrankishgfx
-					graphical_culture = celtiberiangfx
-					graphical_culture = tochariangfx
-					graphical_culture = khmergfx
-					graphical_culture = hunnicgfx
-					graphical_culture = copticgfx
-					graphical_culture = romanobritishgfx
+			trigger_if = {
+				limit = { is_father_real_father = yes }
+				father_even_if_dead = { 
+					OR = {
+						graphical_culture = westerngfx
+						graphical_culture = frankishgfx
+						graphical_culture = englishgfx
+						graphical_culture = germangfx
+						graphical_culture = trueoccitangfx
+						graphical_culture = southerngfx
+						graphical_culture = celticgfx
+						graphical_culture = norsegfx
+						graphical_culture = saxongfx
+						graphical_culture = normangfx
+						graphical_culture = italiangfx
+						graphical_culture = romangfx
+						graphical_culture = dalmatiangfx
+						graphical_culture = crimeangfx
+						graphical_culture = outremergfx
+						graphical_culture = easternslavicgfx
+						graphical_culture = westernslavicgfx
+						graphical_culture = croatsouthslavicgfx
+						graphical_culture = serbsouthslavicgfx
+						graphical_culture = byzantinegfx
+						graphical_culture = ugricgfx
+						graphical_culture = magyargfx
+						graphical_culture = muslimgfx
+						graphical_culture = arabicgfx
+						graphical_culture = turkishgfx
+						graphical_culture = cumangfx
+						graphical_culture = mongolgfx
+						graphical_culture = africangfx
+						graphical_culture = andalusiangfx
+						graphical_culture = chinesegfx
+						graphical_culture = bodpagfx
+						graphical_culture = berbergfx
+						graphical_culture = levantinegfx
+						graphical_culture = westafricangfx
+						graphical_culture = persiangfx
+						graphical_culture = indiangfx
+						graphical_culture = southindiangfx
+						graphical_culture = mesoamericangfx
+						graphical_culture = hellenicgfx
+						graphical_culture = centralafricangfx
+						graphical_culture = centralasiangfx
+						graphical_culture = steppegfx
+						graphical_culture = siberiangfx
+						graphical_culture = balticgfx
+						graphical_culture = bretongfx
+						graphical_culture = bohemiangfx
+						graphical_culture = alangfx
+						graphical_culture = georgiangfx
+						graphical_culture = norsegaelgfx
+						graphical_culture = visigothgfx
+						graphical_culture = sogdiangfx
+						graphical_culture = dutchgfx
+						graphical_culture = siciliangfx
+						graphical_culture = pomeraniangfx
+						graphical_culture = egyptiangfx
+						graphical_culture = pecheneggfx
+						graphical_culture = afghangfx
+						graphical_culture = indusgfx
+						graphical_culture = assamesegfx
+						graphical_culture = centralindiangfx
+						graphical_culture = basquegfx
+						graphical_culture = lombardgfx
+						graphical_culture = khitangfx
+						graphical_culture = semitegfx
+						graphical_culture = ashkenazigfx
+						graphical_culture = nubiangfx
+						graphical_culture = somaligfx
+						graphical_culture = gallicgfx
+						graphical_culture = romanobalkangfx
+						graphical_culture = kurdishgfx
+						graphical_culture = tangutgfx
+						graphical_culture = avargfx
+						graphical_culture = vlachgfx
+						graphical_culture = oldfrankishgfx
+						graphical_culture = celtiberiangfx
+						graphical_culture = tochariangfx
+						graphical_culture = khmergfx
+						graphical_culture = hunnicgfx
+						graphical_culture = copticgfx
+						graphical_culture = romanobritishgfx
+					}
+				}
+			}
+			trigger_else = {
+				real_father_even_if_dead = { 
+					OR = {
+						graphical_culture = westerngfx
+						graphical_culture = frankishgfx
+						graphical_culture = englishgfx
+						graphical_culture = germangfx
+						graphical_culture = trueoccitangfx
+						graphical_culture = southerngfx
+						graphical_culture = celticgfx
+						graphical_culture = norsegfx
+						graphical_culture = saxongfx
+						graphical_culture = normangfx
+						graphical_culture = italiangfx
+						graphical_culture = romangfx
+						graphical_culture = dalmatiangfx
+						graphical_culture = crimeangfx
+						graphical_culture = outremergfx
+						graphical_culture = easternslavicgfx
+						graphical_culture = westernslavicgfx
+						graphical_culture = croatsouthslavicgfx
+						graphical_culture = serbsouthslavicgfx
+						graphical_culture = byzantinegfx
+						graphical_culture = ugricgfx
+						graphical_culture = magyargfx
+						graphical_culture = muslimgfx
+						graphical_culture = arabicgfx
+						graphical_culture = turkishgfx
+						graphical_culture = cumangfx
+						graphical_culture = mongolgfx
+						graphical_culture = africangfx
+						graphical_culture = andalusiangfx
+						graphical_culture = chinesegfx
+						graphical_culture = bodpagfx
+						graphical_culture = berbergfx
+						graphical_culture = levantinegfx
+						graphical_culture = westafricangfx
+						graphical_culture = persiangfx
+						graphical_culture = indiangfx
+						graphical_culture = southindiangfx
+						graphical_culture = mesoamericangfx
+						graphical_culture = hellenicgfx
+						graphical_culture = centralafricangfx
+						graphical_culture = centralasiangfx
+						graphical_culture = steppegfx
+						graphical_culture = siberiangfx
+						graphical_culture = balticgfx
+						graphical_culture = bretongfx
+						graphical_culture = bohemiangfx
+						graphical_culture = alangfx
+						graphical_culture = georgiangfx
+						graphical_culture = norsegaelgfx
+						graphical_culture = visigothgfx
+						graphical_culture = sogdiangfx
+						graphical_culture = dutchgfx
+						graphical_culture = siciliangfx
+						graphical_culture = pomeraniangfx
+						graphical_culture = egyptiangfx
+						graphical_culture = pecheneggfx
+						graphical_culture = afghangfx
+						graphical_culture = indusgfx
+						graphical_culture = assamesegfx
+						graphical_culture = centralindiangfx
+						graphical_culture = basquegfx
+						graphical_culture = lombardgfx
+						graphical_culture = khitangfx
+						graphical_culture = semitegfx
+						graphical_culture = ashkenazigfx
+						graphical_culture = nubiangfx
+						graphical_culture = somaligfx
+						graphical_culture = gallicgfx
+						graphical_culture = romanobalkangfx
+						graphical_culture = kurdishgfx
+						graphical_culture = tangutgfx
+						graphical_culture = avargfx
+						graphical_culture = vlachgfx
+						graphical_culture = oldfrankishgfx
+						graphical_culture = celtiberiangfx
+						graphical_culture = tochariangfx
+						graphical_culture = khmergfx
+						graphical_culture = hunnicgfx
+						graphical_culture = copticgfx
+						graphical_culture = romanobritishgfx
+					}
 				}
 			}
 			mother_even_if_dead = {
@@ -1004,11 +1093,19 @@ character_event = {
 			}
 		}
 
+		if = {
+			limit = { is_father_real_father = yes }
+			father_even_if_dead = { save_event_target_as = father }
+		}
+		else = {
+			real_father_even_if_dead = { save_event_target_as = father }
+		}
+
 		#African
 		if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = africangfx
 							graphical_culture = westafricangfx
@@ -1031,7 +1128,7 @@ character_event = {
 			if = { #African-Eastern
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = muslimgfx
 								graphical_culture = arabicgfx
@@ -1096,7 +1193,7 @@ character_event = {
 				if = { #West-African-Eastern
 					limit = {
 						OR = {
-							true_father_even_if_dead = {
+							event_target:father = {
 								OR = {
 									graphical_culture = westafricangfx
 									graphical_culture = centralafricangfx
@@ -1123,7 +1220,7 @@ character_event = {
 				else_if = { #East-African-Eastern
 					limit = {
 						OR = {
-							true_father_even_if_dead = {
+							event_target:father = {
 								OR = {
 									graphical_culture = africangfx
 									graphical_culture = somaligfx
@@ -1137,7 +1234,7 @@ character_event = {
 							}
 						}
 						NOR = {
-							true_father_even_if_dead = {
+							event_target:father = {
 								OR = {
 									graphical_culture = muslimgfx
 									graphical_culture = arabicgfx
@@ -1161,7 +1258,7 @@ character_event = {
 			else_if = { #African-Indian
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = indiangfx
 								graphical_culture = indusgfx
@@ -1199,7 +1296,7 @@ character_event = {
 			else_if = { #African-Iberian
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = southerngfx
 								graphical_culture = andalusiangfx
@@ -1228,7 +1325,7 @@ character_event = {
 			else_if = { #African-European
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							NOT = {
 								graphical_culture = africangfx
 								graphical_culture = westafricangfx
@@ -1266,7 +1363,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = southindiangfx
 							graphical_culture = centralindiangfx
@@ -1283,7 +1380,7 @@ character_event = {
 			if = { #South-Indian-Altaic
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = turkishgfx
 								graphical_culture = cumangfx
@@ -1335,7 +1432,7 @@ character_event = {
 			else_if = { #South-Indian-Other
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							NOT = {
 								graphical_culture = indiangfx
 								graphical_culture = southindiangfx
@@ -1391,7 +1488,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = indiangfx
 							graphical_culture = indusgfx
@@ -1408,7 +1505,7 @@ character_event = {
 			if = { #Indian-Mongolian
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = mongolgfx
 								graphical_culture = centralasiangfx
@@ -1446,7 +1543,7 @@ character_event = {
 			else_if = { #Indian-Turkic
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = turkishgfx
 								graphical_culture = cumangfx
@@ -1500,7 +1597,7 @@ character_event = {
 			else_if = { #Indian-Other
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							NOT = {
 								graphical_culture = indiangfx
 								graphical_culture = assamesegfx
@@ -1548,7 +1645,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = bodpagfx
 							graphical_culture = assamesegfx
@@ -1569,7 +1666,7 @@ character_event = {
 			if = { #Tibetan-Turkic
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = steppegfx
 								graphical_culture = cumangfx
@@ -1623,7 +1720,7 @@ character_event = {
 			else_if = { #Tibetan-European
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							NOT = {
 								graphical_culture = bodpagfx
 								graphical_culture = assamesegfx
@@ -1689,7 +1786,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = muslimgfx
 							graphical_culture = arabicgfx
@@ -1714,7 +1811,7 @@ character_event = {
 			if = { #Arabic-Altaic
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = cumangfx
 								graphical_culture = mongolgfx
@@ -1751,7 +1848,7 @@ character_event = {
 			else_if = { #Arabic-Eastern-European
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = byzantinegfx
 								graphical_culture = georgiangfx
@@ -1803,7 +1900,7 @@ character_event = {
 			else_if = { #Arabic-European
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							NOT = {
 								graphical_culture = muslimgfx
 								graphical_culture = arabicgfx
@@ -1855,7 +1952,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = cumangfx
 							graphical_culture = steppegfx
@@ -1882,7 +1979,7 @@ character_event = {
 			if = { #Mongol-Persian
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = persiangfx
 								graphical_culture = afghangfx
@@ -1905,7 +2002,7 @@ character_event = {
 			else_if = { #Mongol-European
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							NOT = {
 								graphical_culture = turkishgfx
 								graphical_culture = steppegfx
@@ -1970,7 +2067,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = levantinegfx
 							graphical_culture = semitegfx
@@ -1997,7 +2094,7 @@ character_event = {
 			if = { #Levant-Byzantine
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = byzantinegfx
 								graphical_culture = hellenicgfx
@@ -2028,7 +2125,7 @@ character_event = {
 			else_if = { #Levant-Southern
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = italiangfx
 								graphical_culture = romangfx
@@ -2061,7 +2158,7 @@ character_event = {
 			else_if = { #Levant-European
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = lombardgfx
 								graphical_culture = frankishgfx
@@ -2123,7 +2220,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = byzantinegfx
 							graphical_culture = georgiangfx
@@ -2144,7 +2241,7 @@ character_event = {
 			if = { #Byzantine-Eastern
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = easternslavicgfx
 								graphical_culture = westernslavicgfx
@@ -2187,7 +2284,7 @@ character_event = {
 			else_if = { #Byzantine-Southern
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = italiangfx
 								graphical_culture = romangfx
@@ -2216,7 +2313,7 @@ character_event = {
 			else_if = { #Byzantine-European
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = lombardgfx
 								graphical_culture = frankishgfx
@@ -2268,7 +2365,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = turkishgfx
 							graphical_culture = pecheneggfx
@@ -2289,7 +2386,7 @@ character_event = {
 			if = { #Steppe-Northern
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = westernslavicgfx
 								graphical_culture = pomeraniangfx
@@ -2328,7 +2425,7 @@ character_event = {
 			else_if = { #Steppe-Western
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							NOT = {
 								graphical_culture = turkishgfx
 								graphical_culture = pecheneggfx
@@ -2360,7 +2457,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = croatsouthslavicgfx
 							graphical_culture = serbsouthslavicgfx
@@ -2381,7 +2478,7 @@ character_event = {
 			if = { #Southernslavic-Southern
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = italiangfx
 								graphical_culture = romangfx
@@ -2410,7 +2507,7 @@ character_event = {
 			else_if = { #Southernslavic-Western
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = westerngfx
 								graphical_culture = englishgfx
@@ -2443,7 +2540,7 @@ character_event = {
 			else_if = { #Southernslavic-Northern
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = norsegfx
 								graphical_culture = norsegaelgfx
@@ -2473,7 +2570,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = southerngfx
 							graphical_culture = andalusiangfx
@@ -2500,7 +2597,7 @@ character_event = {
 			if = { #Southern-Other
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							NOR = {
 								graphical_culture = italiangfx
 								graphical_culture = romangfx
@@ -2542,7 +2639,7 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							graphical_culture = westerngfx
 							graphical_culture = englishgfx
@@ -2573,7 +2670,7 @@ character_event = {
 			if = { #Western-Slavic/Ugric
 				limit = {
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = easternslavicgfx
 								graphical_culture = ugricgfx
@@ -2596,7 +2693,7 @@ character_event = {
 			else_if = { #Western-Celtic
 				limit = {
 					OR = {
-						true_father_even_if_dead = { graphical_culture = celticgfx }
+						event_target:father = { graphical_culture = celticgfx }
 						mother_even_if_dead = { graphical_culture = celticgfx }
 					}
 				}
@@ -2605,7 +2702,7 @@ character_event = {
 			else_if = { #Western-Norse
 				limit = {
 					NOR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							graphical_culture = normangfx
 						}
 						mother_even_if_dead = {
@@ -2613,7 +2710,7 @@ character_event = {
 						}
 					}
 					OR = {
-						true_father_even_if_dead = {
+						event_target:father = {
 							OR = {
 								graphical_culture = norsegfx
 								graphical_culture = norsegaelgfx
@@ -3673,37 +3770,6 @@ character_event = {
 							trait = freckles_5
 						}
 					}
-				}
-			}
-			true_father_even_if_dead = {
-				OR = {
-					trait = freckles_3
-					trait = freckles_2
-					trait = freckles
-					trait = freckles_4
-					trait = freckles_5
-					mother_even_if_dead = {
-						OR = {
-							trait = freckles_3
-							trait = freckles_2
-							trait = freckles
-							trait = freckles_4
-							trait = freckles_5
-						}
-					}
-					true_father_even_if_dead = {
-						OR = {
-							trait = freckles_3
-							trait = freckles_2
-							trait = freckles
-							trait = freckles_4
-							trait = freckles_5
-						}
-					}
-				}
-			}
-			mother_even_if_dead = { #Rare cases of a non-gfx gaining the trait anyway due to mixed-race union.
-				OR = {
 					graphical_culture = norsegfx
 					graphical_culture = saxongfx
 					graphical_culture = celticgfx
@@ -3721,22 +3787,92 @@ character_event = {
 					}
 				}
 			}
-			true_father_even_if_dead = {
-				OR = {
-					graphical_culture = norsegfx
-					graphical_culture = saxongfx
-					graphical_culture = celticgfx
-					graphical_culture = bretongfx
-					graphical_culture = romanobritishgfx
-					graphical_culture = norsegaelgfx
-					graphical_culture = tochariangfx
-					AND = {
-						culture = uyghur
-						graphical_culture = centralasiangfx
+			trigger_if = {
+				limit = { is_father_real_father = yes }
+				father_even_if_dead = { 
+					OR = {
+						trait = freckles_3
+						trait = freckles_2
+						trait = freckles
+						trait = freckles_4
+						trait = freckles_5
+						mother_even_if_dead = {
+							OR = {
+								trait = freckles_3
+								trait = freckles_2
+								trait = freckles
+								trait = freckles_4
+								trait = freckles_5
+							}
+						}
+						true_father_even_if_dead = {
+							OR = {
+								trait = freckles_3
+								trait = freckles_2
+								trait = freckles
+								trait = freckles_4
+								trait = freckles_5
+							}
+						}
+						graphical_culture = norsegfx
+						graphical_culture = saxongfx
+						graphical_culture = celticgfx
+						graphical_culture = bretongfx
+						graphical_culture = romanobritishgfx
+						graphical_culture = norsegaelgfx
+						graphical_culture = tochariangfx
+						AND = {
+							culture = uyghur
+							graphical_culture = centralasiangfx
+						}
+						AND = {
+							culture = komi #udmurt
+							graphical_culture = ugricgfx
+						}
 					}
-					AND = {
-						culture = komi #udmurt
-						graphical_culture = ugricgfx
+				}
+			}
+			trigger_else = {
+				real_father_even_if_dead = { 
+					OR = {
+						trait = freckles_3
+						trait = freckles_2
+						trait = freckles
+						trait = freckles_4
+						trait = freckles_5
+						mother_even_if_dead = {
+							OR = {
+								trait = freckles_3
+								trait = freckles_2
+								trait = freckles
+								trait = freckles_4
+								trait = freckles_5
+							}
+						}
+						true_father_even_if_dead = {
+							OR = {
+								trait = freckles_3
+								trait = freckles_2
+								trait = freckles
+								trait = freckles_4
+								trait = freckles_5
+							}
+						}
+						graphical_culture = norsegfx
+						graphical_culture = saxongfx
+						graphical_culture = celticgfx
+						graphical_culture = bretongfx
+						graphical_culture = romanobritishgfx
+						graphical_culture = norsegaelgfx
+						graphical_culture = tochariangfx
+						AND = {
+							culture = uyghur
+							graphical_culture = centralasiangfx
+						}
+						AND = {
+							culture = komi #udmurt
+							graphical_culture = ugricgfx
+						}
 					}
 				}
 			}
@@ -3744,6 +3880,32 @@ character_event = {
 	}
 
 	immediate = {
+		if = {
+			limit = { is_father_real_father = yes }
+			father_even_if_dead = { save_event_target_as = father }
+		}
+		else = {
+			real_father_even_if_dead = { save_event_target_as = father }
+		}
+		event_target:father = {
+			if = {
+				limit = { is_father_real_father = yes }
+				father_even_if_dead = { save_event_target_as = paternalgrandfather }
+			}
+			else = {
+				real_father_even_if_dead = { save_event_target_as = paternalgrandfather }
+			}
+		}
+		mother_even_if_dead = {
+			if = {
+				limit = { is_father_real_father = yes }
+				father_even_if_dead = { save_event_target_as = maternalgrandfather }
+			}
+			else = {
+				real_father_even_if_dead = { save_event_target_as = maternalgrandfather }
+			}
+		}
+
 		random_list = {
 			2 = {
 				add_trait = freckles_5
@@ -3753,16 +3915,16 @@ character_event = {
 				}
 				modifier = {
 					factor = 5
-					true_father_even_if_dead = { trait = freckles_5 }
+					event_target:father = { trait = freckles_5 }
 				}
 				#Grandparents
 				modifier = {
 					factor = 4
-					true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_5 } }
+					event_target:paternalgrandfather = { trait = freckles_5 }
 				}
 				modifier = {
 					factor = 4
-					true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_5 } }
+					event_target:father = { mother_even_if_dead = { trait = freckles_5 } }
 				}
 				modifier = {
 					factor = 4
@@ -3770,7 +3932,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 4
-					mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_5 } }
+					event_target:maternalgrandfather = { trait = freckles_5 }
 				}
 
 				modifier = {
@@ -3779,20 +3941,20 @@ character_event = {
 				}
 				modifier = {
 					factor = 3
-					true_father_even_if_dead = { trait = freckles_4 }
+					event_target:father = { trait = freckles_4 }
 				}
 				#Grandparents
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_4 } }
+					event_target:paternalgrandfather = { trait = freckles_4 }
 				}
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_4 } }
+					event_target:father = { mother_even_if_dead = { trait = freckles_4 } }
 				}
 				modifier = {
 					factor = 2
-					mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_4 } }
+					event_target:maternalgrandfather = { trait = freckles_4 }
 				}
 				modifier = {
 					factor = 2
@@ -3801,7 +3963,7 @@ character_event = {
 				#Multiplier bonus
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { trait = freckles_4 }
+					event_target:father = { trait = freckles_4 }
 					mother_even_if_dead = { trait = freckles_4 }
 				}
 				#The thickest versions should only appear if a parent already has the freckles gene, not appear out of nowhere.
@@ -3815,7 +3977,7 @@ character_event = {
 							trait = freckles_5
 						}
 					}
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							trait = freckles_3
 							trait = freckles_2
@@ -3834,20 +3996,20 @@ character_event = {
 				}
 				modifier = {
 					factor = 4
-					true_father_even_if_dead = { trait = freckles_4 }
+					event_target:father = { trait = freckles_4 }
 				}
 				#Grandparents
 				modifier = {
 					factor = 3
-					true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_4 } }
+					event_target:paternalgrandfather = { trait = freckles_4 }
 				}
 				modifier = {
 					factor = 3
-					true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_4 } }
+					event_target:father = { mother_even_if_dead = { trait = freckles_4 } }
 				}
 				modifier = {
 					factor = 3
-					mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_4 } }
+					event_target:maternalgrandfather = { trait = freckles_4 }
 				}
 				modifier = {
 					factor = 3
@@ -3860,20 +4022,20 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { trait = freckles }
+					event_target:father = { trait = freckles }
 				}
 				#Grandparents
 				modifier = {
 					factor = 1.5
-					true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles } }
+					event_target:paternalgrandfather = { trait = freckles }
 				}
 				modifier = {
 					factor = 1.5
-					true_father_even_if_dead = { mother_even_if_dead = { trait = freckles } }
+					event_target:father = { mother_even_if_dead = { trait = freckles } }
 				}
 				modifier = {
 					factor = 1.5
-					mother_even_if_dead = { true_father_even_if_dead = { trait = freckles } }
+					event_target:maternalgrandfather = { trait = freckles }
 				}
 				modifier = {
 					factor = 1.5
@@ -3882,7 +4044,7 @@ character_event = {
 				#Multiplier bonus
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { trait = freckles }
+					event_target:father = { trait = freckles }
 					mother_even_if_dead = { trait = freckles }
 				}
 				#The thickest versions should only appear if a parent already has the freckles gene, not appear out of nowhere.
@@ -3896,7 +4058,7 @@ character_event = {
 							trait = freckles_5
 						}
 					}
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							trait = freckles_3
 							trait = freckles_2
@@ -3915,20 +4077,20 @@ character_event = {
 				}
 				modifier = {
 					factor = 4
-					true_father_even_if_dead = { trait = freckles }
+					event_target:father = { trait = freckles }
 				}
 				#Grandparents
 				modifier = {
 					factor = 3
-					true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles } }
+					event_target:paternalgrandfather = { trait = freckles }
 				}
 				modifier = {
 					factor = 3
-					true_father_even_if_dead = { mother_even_if_dead = { trait = freckles } }
+					event_target:father = { mother_even_if_dead = { trait = freckles } }
 				}
 				modifier = {
 					factor = 3
-					mother_even_if_dead = { true_father_even_if_dead = { trait = freckles } }
+					event_target:maternalgrandfather = { trait = freckles }
 				}
 				modifier = {
 					factor = 3
@@ -3941,20 +4103,20 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { trait = freckles_2 }
+					event_target:father = { trait = freckles_2 }
 				}
 				#Grandparents
 				modifier = {
 					factor = 1.5
-					true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_2 } }
+					event_target:paternalgrandfather = { trait = freckles_2 }
 				}
 				modifier = {
 					factor = 1.5
-					true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_2 } }
+					event_target:father = { mother_even_if_dead = { trait = freckles_2 } }
 				}
 				modifier = {
 					factor = 1.5
-					mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_2 } }
+					event_target:maternalgrandfather = { trait = freckles_2 }
 				}
 				modifier = {
 					factor = 1.5
@@ -3963,7 +4125,7 @@ character_event = {
 				#Multiplier bonus
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { trait = freckles_2 }
+					event_target:father = { trait = freckles_2 }
 					mother_even_if_dead = { trait = freckles_2 }
 				}
 				#The thickest versions should only appear if a parent already has the freckles gene, not appear out of nowhere.
@@ -3977,7 +4139,7 @@ character_event = {
 							trait = freckles_5
 						}
 					}
-					true_father_even_if_dead = {
+					event_target:father = {
 						OR = {
 							trait = freckles_3
 							trait = freckles_2
@@ -3996,20 +4158,20 @@ character_event = {
 				}
 				modifier = {
 					factor = 4
-					true_father_even_if_dead = { trait = freckles_2 }
+					event_target:father = { trait = freckles_2 }
 				}
 				#Grandparents
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_2 } }
+					event_target:paternalgrandfather = { trait = freckles_2 }
 				}
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_2 } }
+					event_target:father = { mother_even_if_dead = { trait = freckles_2 } }
 				}
 				modifier = {
 					factor = 2
-					mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_2 } }
+					event_target:maternalgrandfather = { trait = freckles_2 }
 				}
 				modifier = {
 					factor = 2
@@ -4022,20 +4184,20 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { trait = freckles_3 }
+					event_target:father = { trait = freckles_3 }
 				}
 				#Grandparents
 				modifier = {
 					factor = 1.5
-					true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_3 } }
+					event_target:paternalgrandfather = { trait = freckles_3 }
 				}
 				modifier = {
 					factor = 1.5
-					true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_3 } }
+					event_target:father = { mother_even_if_dead = { trait = freckles_3 } }
 				}
 				modifier = {
 					factor = 1.5
-					mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_3 } }
+					event_target:maternalgrandfather = { trait = freckles_3 }
 				}
 				modifier = {
 					factor = 1.5
@@ -4044,7 +4206,7 @@ character_event = {
 				#Multiplier bonus
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { trait = freckles_3 }
+					event_target:father = { trait = freckles_3 }
 					mother_even_if_dead = { trait = freckles_3 }
 				}
 			}
@@ -4056,20 +4218,20 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					true_father_even_if_dead = { trait = freckles_3 }
+					event_target:father = { trait = freckles_3 }
 				}
 				#Grandparents
 				modifier = {
 					factor = 1.5
-					true_father_even_if_dead = { true_father_even_if_dead = { trait = freckles_3 } }
+					event_target:paternalgrandfather = { trait = freckles_3 }
 				}
 				modifier = {
 					factor = 1.5
-					true_father_even_if_dead = { mother_even_if_dead = { trait = freckles_3 } }
+					event_target:father = { mother_even_if_dead = { trait = freckles_3 } }
 				}
 				modifier = {
 					factor = 1.5
-					mother_even_if_dead = { true_father_even_if_dead = { trait = freckles_3 } }
+					event_target:maternalgrandfather = { trait = freckles_3 }
 				}
 				modifier = {
 					factor = 1.5

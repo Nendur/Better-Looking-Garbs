@@ -1,7 +1,7 @@
 #p32 frankish Culture Overlayer - Female
 32 = {
 	0 = { # Blank
-		factor = 1
+		factor = 10
 		modifier = {
 			factor = 100
 			is_female = no
@@ -135,11 +135,11 @@
 		}
 	}
 	5 = { # Duchess Accessories - Early
-		factor = 5
+		factor = 10
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
@@ -161,11 +161,11 @@
 		}
 	}
 	6 = { # Duchess Accessories - Early
-		factor = 5
+		factor = 10
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
@@ -187,11 +187,11 @@
 		}
 	}
 	7 = { # Duchess Accessories - Early
-		factor = 5
+		factor = 10
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
@@ -213,11 +213,11 @@
 		}
 	}
 	8 = { # Duchess Accessories - Post-1180
-		factor = 5
+		factor = 10
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1180
+					year_of_birth = 1160
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
@@ -239,11 +239,11 @@
 		}
 	}
 	9 = { # Duchess Accessories - Post-1180
-		factor = 5
+		factor = 10
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1180
+					year_of_birth = 1160
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
@@ -281,7 +281,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -318,7 +318,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -355,7 +355,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					year_of_birth = 1180
+					year_of_birth = 1160
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -392,7 +392,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					year_of_birth = 1180
+					year_of_birth = 1160
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -430,7 +430,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					year_of_birth = 1180
+					year_of_birth = 1160
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -469,7 +469,7 @@
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
-					year_of_birth = 1180
+					year_of_birth = 1160
 					NOR = {
 						higher_real_tier_than = COUNT
 						spouse = { higher_real_tier_than = COUNT }
@@ -497,7 +497,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					is_landed = no
 					spouse = { is_landed = no }
 					OR = {
@@ -527,7 +527,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					is_landed = no
 					spouse = { is_landed = no }
 					OR = {
@@ -557,7 +557,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					is_landed = no
 					spouse = { is_landed = no }
 					OR = {
@@ -587,7 +587,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					is_landed = no
 					spouse = { is_landed = no }
 					OR = {
@@ -611,12 +611,12 @@
 	}
 	20 = { # Non-noble Post-1180
 		factor = 1
-		hide_layers = { 5 = { } }
+		#hide_layers = { 5 = { } }
 		hide_layers = { 33 = { } } #Veil overload.
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1180
+					year_of_birth = 1160
 					is_landed = no
 					spouse = { is_landed = no }
 					OR = {
@@ -644,7 +644,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1180
+					year_of_birth = 1160
 					is_landed = no
 					spouse = { is_landed = no }
 					OR = {
@@ -668,11 +668,10 @@
 	}
 	22 = { # Non-noble Post-1180
 		factor = 1
-		hide_layers = { 5 = { } }
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1180
+					year_of_birth = 1160
 					is_landed = no
 					spouse = { is_landed = no }
 					OR = {
@@ -702,7 +701,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1180
+					year_of_birth = 1160
 					is_landed = no
 					spouse = { is_landed = no }
 					OR = {
@@ -732,7 +731,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1180
+					year_of_birth = 1160
 					is_landed = no
 					spouse = { is_landed = no }
 					OR = {

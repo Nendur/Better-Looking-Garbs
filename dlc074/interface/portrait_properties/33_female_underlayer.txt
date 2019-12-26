@@ -3,7 +3,7 @@
 	0 = { # Blank
 		factor = 100
 		modifier = {
-			factor = 0.05
+			factor = 0.1
 			#has_dlc = "Holy Fury"
 			is_female = yes
 			#is_priest = no
@@ -14,16 +14,9 @@
 				has_portrait_property = { layer = 5 index = 10 }
 				has_portrait_property = { layer = 5 index = 12 }
 				has_portrait_property = { layer = 5 index = 13 }
-			}
-			OR = {
-				AND = {
-					higher_tier_than = baron
-					is_landed = yes
-				}
-				spouse = {
-					higher_tier_than = baron
-					is_landed = yes
-				}
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
 			}
 			religion_group = christian
 			OR = {
@@ -63,12 +56,14 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					year_of_birth = 1180
+					year_of_birth = 1160
 					OR = {
 						culture = frankish
 						culture = occitan
 						blg_french = yes
+						likes_celts = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 2 } }
@@ -90,12 +85,14 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					year_of_birth = 1180
+					year_of_birth = 1160
 					OR = {
 						culture = frankish
 						culture = occitan
 						blg_french = yes
+						likes_celts = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 3 } }
@@ -117,12 +114,14 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					year_of_birth = 1180
+					year_of_birth = 1160
 					OR = {
 						culture = frankish
 						culture = occitan
 						blg_french = yes
+						likes_celts = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 4 } }
@@ -144,12 +143,14 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					year_of_birth = 1180
+					year_of_birth = 1160
 					OR = {
 						culture = frankish
 						culture = occitan
 						blg_french = yes
+						likes_celts = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 5 } }
@@ -171,12 +172,14 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					OR = {
 						culture = frankish
 						culture = occitan
 						blg_french = yes
+						likes_celts = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 6 } }
@@ -198,12 +201,14 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					OR = {
 						culture = frankish
 						culture = occitan
 						blg_french = yes
+						likes_celts = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 7 } }
@@ -225,12 +230,14 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					OR = {
 						culture = frankish
 						culture = occitan
 						blg_french = yes
+						likes_celts = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 8 } }
@@ -252,12 +259,14 @@
 						higher_real_tier_than = DUKE
 						spouse = { higher_real_tier_than = DUKE }
 					}
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					OR = {
 						culture = frankish
 						culture = occitan
 						blg_french = yes
+						likes_celts = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 9 } }
@@ -275,7 +284,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -300,7 +309,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -312,8 +321,10 @@
 					OR = {
 						culture = frankish
 						culture = occitan
+						culture = outremer
 						blg_french = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 11 } }
@@ -331,7 +342,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -343,8 +354,10 @@
 					OR = {
 						culture = frankish
 						culture = occitan
+						culture = outremer
 						blg_french = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 12 } }
@@ -362,7 +375,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
+					NOT = { year_of_birth = 1160 }
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -374,8 +387,10 @@
 					OR = {
 						culture = frankish
 						culture = occitan
+						culture = outremer
 						blg_french = yes
 						culture_group = east_slavic
+						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 13 } }
@@ -393,7 +408,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1180
+					year_of_birth = 1160
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -418,7 +433,7 @@
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1180
+					year_of_birth = 1160
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
@@ -443,16 +458,12 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
-					NOR = {
-						higher_real_tier_than = COUNT
-						spouse = { higher_real_tier_than = COUNT }
-					}
-					OR = {
-						culture = frankish
-						culture = occitan
-						blg_french = yes
-					}
+					NOT = { year_of_birth = 1160 }
+					#OR = {
+					#	culture = frankish
+					#	culture = occitan
+					#	blg_french = yes
+					#}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 16 } }
 			}
@@ -468,13 +479,7 @@
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
-				AND = {
-					NOT = { year_of_birth = 1180 }
-					NOR = {
-						higher_real_tier_than = COUNT
-						spouse = { higher_real_tier_than = COUNT }
-					}
-				}
+				NOT = { year_of_birth = 1160 }
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 17 } }
 			}
 		}
@@ -490,16 +495,12 @@
 		trigger = {
 			OR = {
 				AND = {
-					NOT = { year_of_birth = 1180 }
-					NOR = {
-						higher_real_tier_than = COUNT
-						spouse = { higher_real_tier_than = COUNT }
-					}
-					OR = {
-						culture = frankish
-						culture = occitan
-						blg_french = yes
-					}
+					NOT = { year_of_birth = 1160 }
+					#OR = {
+					#	culture = frankish
+					#	culture = occitan
+					#	blg_french = yes
+					#}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 18 } }
 			}
@@ -515,13 +516,7 @@
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
-				AND = {
-					year_of_birth = 1180
-					NOR = {
-						higher_real_tier_than = COUNT
-						spouse = { higher_real_tier_than = COUNT }
-					}
-				}
+				year_of_birth = 1160
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 19 } }
 			}
 		}
@@ -536,13 +531,7 @@
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
-				AND = {
-					year_of_birth = 1180
-					NOR = {
-						higher_real_tier_than = COUNT
-						spouse = { higher_real_tier_than = COUNT }
-					}
-				}
+				year_of_birth = 1160
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 20 } }
 			}
 		}
