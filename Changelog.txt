@@ -3,8 +3,8 @@ Changelog:
   New baby portrait sprites.
   Child portraits properly filled and cropped to portrait rings.
   Adjusted Eastern Slavic children skintone.
-  Adjusted Berber skintone.
-  Generalized landless character support.
+  Adjusted Berber and Italian skintone.
+  Generalized landless player support.
   Adapted French rules for unveiled young women into a general rule.
   Using French layered veils for most European cultures.
   Replaced the supposedly buggy true_father scopes.
