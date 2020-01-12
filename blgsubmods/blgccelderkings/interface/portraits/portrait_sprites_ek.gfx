@@ -16,6 +16,14 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_character_special_helmets"
+		texturefile = "gfx\\characters\\shared\\unique_characters.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_character_special_crowns_behind"
 		texturefile = "gfx\\characters\\headgear\\nord_male_back.dds"
 		noOfFrames = 24

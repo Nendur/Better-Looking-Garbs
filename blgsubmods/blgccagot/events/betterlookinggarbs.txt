@@ -43,8 +43,10 @@ character_event = {
 				culture_group = winter_group
 				culture_group = unoccupied_group
 				culture_group = old_races
+				culture_group = islander_group
 				culture = high_valyrian
 				culture = dragon_culture
+				culture = brindlemen
 			}
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
@@ -56,8 +58,10 @@ character_event = {
 					culture_group = winter_group
 					culture_group = unoccupied_group
 					culture_group = old_races
+					culture_group = islander_group
 					culture = high_valyrian
 					culture = dragon_culture
+					culture = brindlemen
 				}
 			}
 			ROOT = {
@@ -81,8 +85,10 @@ character_event = {
 				culture_group = winter_group
 				culture_group = unoccupied_group
 				culture_group = old_races
+				culture_group = islander_group
 				culture = high_valyrian
 				culture = dragon_culture
+				culture = brindlemen
 			}
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
@@ -96,8 +102,10 @@ character_event = {
 						culture_group = winter_group
 						culture_group = unoccupied_group
 						culture_group = old_races
+						culture_group = islander_group
 						culture = high_valyrian
 						culture = dragon_culture
+						culture = brindlemen
 					}
 				}
 				ROOT = {

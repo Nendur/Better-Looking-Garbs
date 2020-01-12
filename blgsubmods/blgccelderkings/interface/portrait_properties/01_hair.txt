@@ -362,6 +362,7 @@
 				graphical_culture = orsimergfx
 				graphical_culture = ayleidgfx
 				graphical_culture = falmergfx
+				graphical_culture = dwemergfx
 				graphical_culture = dremoragfx
 				graphical_culture = tangmogfx
 				graphical_culture = tsaescigfx
@@ -393,6 +394,7 @@
 				graphical_culture = orsimergfx
 				graphical_culture = ayleidgfx
 				graphical_culture = falmergfx
+				graphical_culture = dwemergfx
 				graphical_culture = dremoragfx
 				graphical_culture = tangmogfx
 				graphical_culture = tsaescigfx
@@ -424,6 +426,7 @@
 				graphical_culture = orsimergfx
 				graphical_culture = ayleidgfx
 				graphical_culture = falmergfx
+				graphical_culture = dwemergfx
 				graphical_culture = dremoragfx
 				graphical_culture = tangmogfx
 				graphical_culture = tsaescigfx
@@ -455,6 +458,7 @@
 				graphical_culture = orsimergfx
 				graphical_culture = ayleidgfx
 				graphical_culture = falmergfx
+				graphical_culture = dwemergfx
 				graphical_culture = tangmogfx
 				graphical_culture = tsaescigfx
 				graphical_culture = kamalgfx
@@ -485,6 +489,7 @@
 				graphical_culture = orsimergfx
 				graphical_culture = ayleidgfx
 				graphical_culture = falmergfx
+				graphical_culture = dwemergfx
 				graphical_culture = dremoragfx
 				graphical_culture = tangmogfx
 				graphical_culture = tsaescigfx

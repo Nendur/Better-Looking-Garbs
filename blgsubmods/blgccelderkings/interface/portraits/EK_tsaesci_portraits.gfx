@@ -1,6 +1,30 @@
 ############## TSAESCI ##########################
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_tsaesci_son_base"
+		textureFile = "gfx/characters/tsaesci_son_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_tsaesci_sonhair"
+		textureFile = "gfx/characters/tsaesci_son_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_tsaesci_daughter_base"
+		textureFile = "gfx/characters/tsaesci_daughter_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_tsaesci_daughterhair"
+		textureFile = "gfx/characters/tsaesci_daughter_hair.dds"
+		noOfFrames = 7
+	}
+
 	portraitType = {
 		name = "PORTRAIT_tsaescigfx_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -22,7 +46,8 @@ spriteTypes = {
 			"GFX_tsaesci_male_eyes:d6"
 			"GFX_character_harelip_ugric:p24:o3x-4"
 			"GFX_child_back:p17"
-			"PORTRAIT_tsaescigfx_child_male:p18"
+			"GFX_tsaesci_son_base:p18"
+			"GFX_tsaesci_sonhair:p18:h"
 			"GFX_character_freckles:p20"
 			"GFX_character_chinese_male_pale:p22"
 			"GFX_character_tattoos:p28"
@@ -253,7 +278,8 @@ spriteTypes = {
 			"GFX_tsaesci_female_eyes:d6"
 			"GFX_character_harelip_ugric:p24"
 			"GFX_child_back:p17"
-			"PORTRAIT_tsaescigfx_child_female:p18"
+			"GFX_tsaesci_daughter_base:p18"
+			"GFX_tsaesci_daughterhair:p18:h"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_chinese_female_makeup2:p15"
 			"GFX_character_freckles:p20"

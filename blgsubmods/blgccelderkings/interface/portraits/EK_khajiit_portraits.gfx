@@ -1,6 +1,30 @@
 ########## KHAJIIT ##########
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_khajiit_anequina_son"
+		textureFile = "gfx/characters/khajiit_anequina_son.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_khajiit_anequina_daughter"
+		textureFile = "gfx/characters/khajiit_anequina_daughter.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_khajiit_pellitine_son"
+		textureFile = "gfx/characters/khajiit_pellitine_son.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_khajiit_pellitine_daughter"
+		textureFile = "gfx/characters/khajiit_pellitine_daughter.dds"
+		noOfFrames = 7
+	}
+
 	portraitType = {
 		name = "PORTRAIT_anequinagfx_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -24,7 +48,7 @@ spriteTypes = {
 			"GFX_khajiit_male_nose:d3"
 			"GFX_khajiit_male_ear:d7"
 			"GFX_child_back:p17"
-			"PORTRAIT_anequinagfx_child_male:p18"
+			"GFX_khajiit_anequina_son:p18"
 			"GFX_character_african_male_pale:p22"
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
@@ -257,7 +281,7 @@ spriteTypes = {
 			"GFX_khajiit_female_eyes:d6"
 			"GFX_khajiit_female_nose:d3"
 			"GFX_child_back:p17"
-			"PORTRAIT_anequinagfx_child_male:p18"
+			"GFX_khajiit_anequina_daughter:p18"
 			"GFX_chinese_female_makeup2:p15:o1x3"
 			"GFX_character_african_female_pale:p22"
 			"GFX_character_tattoos:p28"
@@ -493,7 +517,7 @@ spriteTypes = {
 			"GFX_khajiit_male_nose:d3"
 			"GFX_khajiit_male_ear:d7"
 			"GFX_child_back:p17"
-			"PORTRAIT_pellitinegfx_child_male:p18"
+			"GFX_khajiit_pellitine_son:p18"
 			"GFX_character_african_male_pale:p22"
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
@@ -726,7 +750,7 @@ spriteTypes = {
 			"GFX_khajiit_female_eyes:d6"
 			"GFX_khajiit_female_nose:d3"
 			"GFX_child_back:p17"
-			"PORTRAIT_pellitinegfx_child_male:p18"
+			"GFX_khajiit_pellitine_daughter:p18"
 			"GFX_chinese_female_makeup2:p15:o1x3"
 			"GFX_character_african_female_pale:p22"
 			"GFX_character_tattoos:p28"

@@ -728,6 +728,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 			NAND = {
 				is_merchant_republic = yes
@@ -751,6 +752,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {
@@ -787,6 +789,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {
@@ -799,6 +802,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 			is_feudal = yes
 			NOR = {
@@ -817,6 +821,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 			is_feudal = yes
 			higher_real_tier_than = duke
@@ -857,6 +862,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 			NAND = {
 				is_merchant_republic = yes
@@ -905,6 +911,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {
@@ -917,6 +924,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 			is_feudal = yes
 			NOR = {
@@ -935,6 +943,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 			is_feudal = yes
 			higher_real_tier_than = duke
@@ -997,6 +1006,7 @@
 						culture_group = argonian
 						culture_group = daedra
 						culture = akaviri
+						culture = dwemer
 					}
 					OR = {
 						has_job_title = job_spymaster
@@ -1065,6 +1075,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 	}
@@ -1086,6 +1097,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {
@@ -1137,6 +1149,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {
@@ -1188,6 +1201,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {
@@ -1247,6 +1261,7 @@
 				culture_group = argonian
 				culture_group = daedra
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {
@@ -1312,9 +1327,9 @@
 	#TBD, Khajiit mane temporarily here
 	24 = {
 		factor = 100
-		modifier = {
-			factor = 0
-			NOT = { trait = mane }
+		trigger = {
+			trait = mane
+			is_adult = yes
 		}
 	}
 

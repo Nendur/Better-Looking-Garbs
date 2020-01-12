@@ -1,12 +1,36 @@
 ### MAORMER ###
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_maormer_son_base"
+		textureFile = "gfx/characters/maormer_son_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_maormer_sonhair"
+		textureFile = "gfx/characters/maormer_son_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_maormer_daughter_base"
+		textureFile = "gfx/characters/maormer_daughter_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_maormer_daughterhair"
+		textureFile = "gfx/characters/maormer_daughter_hair.dds"
+		noOfFrames = 7
+	}
+
 	portraitType = {
 		name = "PORTRAIT_maormergfx_male"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_maormer_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_persian_male_clothes_behind:p3:c0"
@@ -25,7 +49,8 @@ spriteTypes = {
 			"GFX_maormer_male_headgear_mid:d8"
 			"GFX_character_harelip_ugric:p24"
 			"GFX_child_back:p17"
-			"PORTRAIT_maormergfx_child_male:p18"
+			"GFX_maormer_son_base:p18"
+			"GFX_maormer_sonhair:p18:h"
 			"GFX_character_easternslavic_male_pale:p22"
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
@@ -86,7 +111,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_maormer_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_persian_male_clothes_behind:p3:c0"
@@ -164,7 +189,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_maormer_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_persian_male_clothes_behind:p3:c0"
@@ -242,7 +267,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_maormer_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_persian_female_clothes_behind:p3:c0"
@@ -263,7 +288,8 @@ spriteTypes = {
 			"GFX_maormer_female_headgear_mid:d8"
 			"GFX_character_harelip_ugric:p24:o0x1"
 			"GFX_child_back:p17"
-			"PORTRAIT_maormergfx_child_female:p18"
+			"GFX_maormer_daughter_base:p18"
+			"GFX_maormer_daughterhair:p18:h"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_chinese_female_makeup2:p15"
 			"GFX_character_freckles:p20"
@@ -326,7 +352,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_maormer_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_persian_female_clothes_behind:p3:c0"
@@ -408,7 +434,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_maormer_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_persian_female_clothes_behind:p3:c0"

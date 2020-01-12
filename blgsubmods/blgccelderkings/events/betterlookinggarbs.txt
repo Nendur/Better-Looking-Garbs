@@ -61,17 +61,13 @@ character_event = {
 					}
 					modifier = {
 						factor = 0.1
-						OR = {
-							graphical_culture = westernslavicgfx
-							trait = colovian
-						}
+						graphical_culture = westernslavicgfx
 					}
 					modifier = {
 						factor = 0.5
 						OR = {
 							graphical_culture = southerngfx
 							graphical_culture = ayleidgfx
-							trait = imperial
 						}
 					}
 					modifier = {

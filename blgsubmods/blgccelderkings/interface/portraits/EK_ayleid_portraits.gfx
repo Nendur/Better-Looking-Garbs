@@ -1,12 +1,36 @@
 ### AYLEID ###
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_ayleid_son_base"
+		textureFile = "gfx/characters/ayleid_son_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_ayleid_sonhair"
+		textureFile = "gfx/characters/ayleid_son_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_ayleid_daughter_base"
+		textureFile = "gfx/characters/ayleid_daughter_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_ayleid_daughterhair"
+		textureFile = "gfx/characters/ayleid_daughter_hair.dds"
+		noOfFrames = 7
+	}
+
 	portraitType = {
 		name = "PORTRAIT_ayleidgfx_male"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_ayleid_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_mesoamerican_male_clothes_behind:p3:c0"
@@ -24,7 +48,8 @@ spriteTypes = {
 			"GFX_bosmer_male_eyes:d6"
 			"GFX_character_harelip_indian:p24:o0x-2"
 			"GFX_child_back:p17"
-			"PORTRAIT_ayleidgfx_child_male:p18"
+			"GFX_ayleid_son_base:p18"
+			"GFX_ayleid_sonhair:p18:h"
 			"GFX_character_easternslavic_male_pale:p22"
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
@@ -85,7 +110,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_ayleid_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_mesoamerican_male_clothes_behind:p3:c0"
@@ -162,7 +187,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_ayleid_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_mesoamerican_male_clothes_behind:p3:c0"
@@ -239,7 +264,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_ayleid_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_mesoamerican_female_clothes_behind:p3:c0"
@@ -259,7 +284,8 @@ spriteTypes = {
 			"GFX_ayleid_female_ear:d7"
 			"GFX_character_harelip_indian:p24"
 			"GFX_child_back:p17"
-			"PORTRAIT_ayleidgfx_child_female:p18"
+			"GFX_ayleid_daughter_base:p18"
+			"GFX_ayleid_daughterhair:p18:h"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_chinese_female_makeup2:p15"
 			"GFX_character_freckles:p20"
@@ -322,7 +348,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_ayleid_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_mesoamerican_female_clothes_behind:p3:c0"
@@ -403,7 +429,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
-			"GFX_indian_background:p0:c6"
+			"GFX_ayleid_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_mesoamerican_female_clothes_behind:p3:c0"

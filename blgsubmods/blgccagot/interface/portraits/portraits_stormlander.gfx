@@ -2,35 +2,35 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_stormlander_male_clothes"
-		texturefile = "gfx\\characters\\andal_male\\stormlander_male_clothes.dds"
+		texturefile = "gfx\\characters\\stormlander_male\\stormlander_male_clothes.dds"
 		noOfFrames = 19
 		norefcount = yes
 		can_be_lowres = yes
 	}
 	spriteType = {
 		name = "GFX_stormlander_male_clothes_behind"
-		texturefile = "gfx\\characters\\andal_male\\stormlander_male_clothes_behind.dds"
+		texturefile = "gfx\\characters\\stormlander_male\\stormlander_male_clothes_behind.dds"
 		noOfFrames = 19
 		norefcount = yes
 		can_be_lowres = yes
 	}
 	spriteType = {
 		name = "GFX_stormlander_male_headgear_behind"
-		texturefile = "gfx\\characters\\andal_male\\stormlander_male_headgear_behind.dds"
+		texturefile = "gfx\\characters\\stormlander_male\\stormlander_male_headgear_behind.dds"
 		noOfFrames = 17
 		norefcount = yes
 		can_be_lowres = yes
 	}
 	spriteType = {
 		name = "GFX_stormlander_male_headgear_mid"
-		texturefile = "gfx\\characters\\andal_male\\stormlander_male_headgear_mid.dds"
+		texturefile = "gfx\\characters\\stormlander_male\\stormlander_male_headgear_mid.dds"
 		noOfFrames = 17
 		norefcount = yes
 		can_be_lowres = yes
 	}
 	spriteType = {
 		name = "GFX_stormlander_male_headgear"
-		texturefile = "gfx\\characters\\andal_male\\stormlander_male_headgear.dds"
+		texturefile = "gfx\\characters\\stormlander_male\\stormlander_male_headgear.dds"
 		noOfFrames = 17
 		norefcount = yes
 		can_be_lowres = yes
@@ -287,7 +287,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_stormlander_female_headgear_behind"
-		texturefile = "gfx\\characters\\andal_female\\stormlander_female_headgear_behind.dds"
+		texturefile = "gfx\\characters\\stormlander_female\\stormlander_female_headgear_behind.dds"
 		noOfFrames = 17
 		norefcount = yes
 		can_be_lowres = yes
@@ -295,7 +295,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_stormlander_female_headgear"
-		texturefile = "gfx\\characters\\andal_female\\stormlander_female_headgear.dds"
+		texturefile = "gfx\\characters\\stormlander_female\\stormlander_female_headgear.dds"
 		noOfFrames = 17
 		norefcount = yes
 		can_be_lowres = yes

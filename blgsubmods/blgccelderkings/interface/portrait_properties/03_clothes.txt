@@ -398,6 +398,7 @@
 				culture_group = khajiit
 				culture_group = argonian
 				culture = akaviri
+				culture = dwemer
 			}
 			NAND = {
 				is_merchant_republic = yes
@@ -425,6 +426,7 @@
 				culture_group = khajiit
 				culture_group = argonian
 				culture = akaviri
+				culture = dwemer
 			}
 			NOR = {
 				real_tier = emperor
@@ -481,6 +483,7 @@
 				culture_group = khajiit
 				culture_group = argonian
 				culture = akaviri
+				culture = dwemer
 			}
 			NAND = {
 				is_merchant_republic = yes
@@ -506,6 +509,7 @@
 				culture_group = khajiit
 				culture_group = argonian
 				culture = akaviri
+				culture = dwemer
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 14 } }
 		}
@@ -522,6 +526,7 @@
 				culture_group = khajiit
 				culture_group = argonian
 				culture = akaviri
+				culture = dwemer
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 14 } }
 		}
@@ -555,6 +560,7 @@
 						culture_group = khajiit
 						culture_group = argonian
 						culture = akaviri
+						culture = dwemer
 						culture = dunmer
 						culture = ashlander
 					}
@@ -616,6 +622,7 @@
 				culture_group = khajiit
 				culture_group = argonian
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {
@@ -666,6 +673,7 @@
 				culture_group = khajiit
 				culture_group = argonian
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {
@@ -716,6 +724,7 @@
 				culture_group = khajiit
 				culture_group = argonian
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {
@@ -775,6 +784,7 @@
 				culture_group = khajiit
 				culture_group = argonian
 				culture = akaviri
+				culture = dwemer
 			}
 		}
 		modifier = {

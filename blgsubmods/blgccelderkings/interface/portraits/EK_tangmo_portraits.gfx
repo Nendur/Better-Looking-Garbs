@@ -1,6 +1,18 @@
 ############## TANG MO ##########################
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_tangmo_son"
+		textureFile = "gfx/characters/tangmo_son.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_tangmo_daughter"
+		textureFile = "gfx/characters/tangmo_daughter.dds"
+		noOfFrames = 7
+	}
+
 	portraitType = {
 		name = "PORTRAIT_tangmogfx_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -21,7 +33,7 @@ spriteTypes = {
 			"GFX_tangmo_male_ear:d7"
 			"GFX_character_harelip_west_african:p24:o0x-9"
 			"GFX_child_back:p17"
-			"PORTRAIT_tangmogfx_child_male:p18"
+			"GFX_tangmo_son:p18"
 			"GFX_character_african_male_pale:p22"
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
@@ -243,7 +255,7 @@ spriteTypes = {
 			"GFX_tangmo_female_ear:d7"
 			"GFX_character_harelip_west_african:p24:o0x-8"
 			"GFX_child_back:p17"
-			"PORTRAIT_tangmogfx_child_female:p18"
+			"GFX_tangmo_daughter:p18"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_african_female_pale:p22"
 			"GFX_character_tattoos:p28"

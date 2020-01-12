@@ -1,12 +1,36 @@
 ### ORSIMER ###
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_orsimer_son_base"
+		textureFile = "gfx/characters/orsimer_son_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_orsimer_sonhair"
+		textureFile = "gfx/characters/orsimer_son_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_orsimer_daughter_base"
+		textureFile = "gfx/characters/orsimer_daughter_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_orsimer_daughterhair"
+		textureFile = "gfx/characters/orsimer_daughter_hair.dds"
+		noOfFrames = 7
+	}
+
 	portraitType = {
 		name = "PORTRAIT_orsimergfx_male"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_northern_background:p0"
-			"GFX_northern_background:p0:c6"
+			"GFX_steppe_background:p0"
+			"GFX_steppe_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_saxon_male_clothes_behind_early:p3:c0"
@@ -23,7 +47,8 @@ spriteTypes = {
 			"GFX_orsimer_male_ear:d7"
 			"GFX_orsimer_male_nose:d3"
 			"GFX_child_back:p17"
-			"PORTRAIT_orsimergfx_child_male:p18"
+			"GFX_orsimer_son_base:p18"
+			"GFX_orsimer_sonhair:p18:h"
 			"GFX_character_easternslavic_male_pale:p22"
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
@@ -83,8 +108,8 @@ spriteTypes = {
 		name = "PORTRAIT_orsimergfx_male1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_northern_background:p0"
-			"GFX_northern_background:p0:c6"
+			"GFX_steppe_background:p0"
+			"GFX_steppe_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_saxon_male_clothes_behind_early:p3:c0"
@@ -159,8 +184,8 @@ spriteTypes = {
 		name = "PORTRAIT_orsimergfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_northern_background:p0"
-			"GFX_northern_background:p0:c6"
+			"GFX_steppe_background:p0"
+			"GFX_steppe_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_saxon_male_clothes_behind_early:p3:c0"
@@ -235,8 +260,8 @@ spriteTypes = {
 		name = "PORTRAIT_orsimergfx_female"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_northern_background:p0"
-			"GFX_northern_background:p0:c6"
+			"GFX_steppe_background:p0"
+			"GFX_steppe_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_saxon_female_clothes_behind_early:p3:c0"
@@ -255,7 +280,8 @@ spriteTypes = {
 			"GFX_orsimer_female_nose:d3"
 			"GFX_orsimer_female_ear:d7"
 			"GFX_child_back:p17"
-			"PORTRAIT_orsimergfx_child_female:p18"
+			"GFX_orsimer_daughter_base:p18"
+			"GFX_orsimer_daughterhair:p18:h"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_freckles:p20"
 			"GFX_character_easternslavic_female_pale:p22"
@@ -316,8 +342,8 @@ spriteTypes = {
 		name = "PORTRAIT_orsimergfx_female1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_northern_background:p0"
-			"GFX_northern_background:p0:c6"
+			"GFX_steppe_background:p0"
+			"GFX_steppe_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_saxon_female_clothes_behind_early:p3:c0"
@@ -395,8 +421,8 @@ spriteTypes = {
 		name = "PORTRAIT_orsimergfx_female2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_northern_background:p0"
-			"GFX_northern_background:p0:c6"
+			"GFX_steppe_background:p0"
+			"GFX_steppe_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_saxon_female_clothes_behind_early:p3:c0"

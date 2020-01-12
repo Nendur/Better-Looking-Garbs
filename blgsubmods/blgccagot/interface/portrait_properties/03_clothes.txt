@@ -542,6 +542,38 @@
 				dynasty = 450215	#Snakespear
 			}
 		}
+		modifier = {	#Should use Great House Armor 2 instead
+			factor = 0
+			OR = {
+				AND = {  		#Stormlander Culture and a Rhllor/Cadet Baratheon
+					OR = {
+						AND = {
+							dynasty = 317	#Baratheon
+							religion = rhllor	#Stannis
+						}
+						dynasty = 450224	#Stagborn
+						dynasty = 450225	#Stormhart
+						dynasty = 450226	#Durrande
+						dynasty = 450227	#Deer
+					}
+					culture = stormlander
+				}
+				AND = {			#Stormlander bannerman employed by Rhllor/Cadet Baratheons
+					culture = stormlander
+					OR = {
+						AND = {
+							liege = {  dynasty = 317  }
+							liege = {  religion = rhllor  }
+						}
+						liege = {  dynasty = 450224}	#Stagborn
+						liege = {  dynasty = 450225}	#Stormhart
+						liege = {  dynasty = 450226}	#Durrande
+						liege = {  dynasty = 450227}	#Deer
+					}
+					NOT = {	higher_tier_than = COUNT }	#Only low-tier bannerman wear their liege's armor
+				}
+			}
+		}
 	}
 	# Great House Armor 2
 	18 = {
@@ -577,21 +609,37 @@
 			NOT = {	#Only for these graphical cultures
 				culture = stormlander	
 			}
-		}	
+		}
 		modifier = {
 			factor = 0
 			NOR = {
-				higher_tier_than = DUKE
-				AND = {
-					liege = { higher_tier_than = DUKE }
-					NOT = { higher_tier_than = COUNT } #Only low-tier bannerman wear their liege's armor
+				AND = {  		#Stormlander Culture and a Rhllor/Cadet Baratheon
+					OR = {
+						AND = {
+							dynasty = 317	#Baratheon
+							religion = rhllor	#Stannis
+						}
+						dynasty = 450224	#Stagborn
+						dynasty = 450225	#Stormhart
+						dynasty = 450226	#Durrande
+						dynasty = 450227	#Deer
+					}
+					culture = stormlander
 				}
-				dynasty = 317	#Baratheon
-				dynasty = 1544	#Durrandon
-				dynasty = 450224	#Stagborn
-				dynasty = 450225	#Stormhart
-				dynasty = 450226	#Durrande
-				dynasty = 450227	#Deer
+				AND = {			#Stormlander bannerman employed by Rhllor/Cadet Baratheons
+					culture = stormlander
+					OR = {
+						AND = {
+							liege = {  dynasty = 317  }
+							liege = {  religion = rhllor  }
+						}
+						liege = {  dynasty = 450224}	#Stagborn
+						liege = {  dynasty = 450225}	#Stormhart
+						liege = {  dynasty = 450226}	#Durrande
+						liege = {  dynasty = 450227}	#Deer
+					}
+					NOT = {	higher_tier_than = COUNT }	#Only low-tier bannerman wear their liege's armor
+				}
 			}
 		}
 	}

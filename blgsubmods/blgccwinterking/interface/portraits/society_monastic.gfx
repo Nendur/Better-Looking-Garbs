@@ -104,6 +104,10 @@ spriteTypes = {
 					NOT = { portrait_has_trait = blgcaoff }
 					portrait_has_trait = on_pilgrimage
 				}
+				NAND = {
+					portrait_government = theocracy_government
+					portrait_tier = king
+				}
 			}
 		}
 

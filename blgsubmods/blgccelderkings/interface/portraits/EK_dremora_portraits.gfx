@@ -6,7 +6,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_steppe_background:p0"
-			"GFX_steppe_background:p0:c6"
+			"GFX_dremora_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_argonian_male_hair_behind:d0"
@@ -27,7 +27,8 @@ spriteTypes = {
 #			"GFX_maormer_male_headgear_mid:d8"
 			"GFX_character_harelip_ugric:p24"
 			"GFX_child_back:p17"
-			"PORTRAIT_dunmergfx_child_male:p18"
+			"GFX_dunmer_son_base:p18"
+			"GFX_dunmer_sonhair:p18:h"
 			"GFX_character_easternslavic_male_pale:p22"
 			"GFX_character_tattoos:p28"
 			"GFX_character_warpaint:p29"
@@ -87,7 +88,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_steppe_background:p0"
-			"GFX_steppe_background:p0:c6"
+			"GFX_dremora_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_argonian_male_hair_behind:d0"
@@ -166,7 +167,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_steppe_background:p0"
-			"GFX_steppe_background:p0:c6"
+			"GFX_dremora_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_argonian_male_hair_behind:d0"
@@ -245,7 +246,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_steppe_background:p0"
-			"GFX_steppe_background:p0:c6"
+			"GFX_dremora_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_argonian_male_hair_behind:d0"
@@ -268,7 +269,8 @@ spriteTypes = {
 #			"GFX_maormer_female_headgear_mid:d8"
 			"GFX_character_harelip_ugric:p24:o0x1"
 			"GFX_child_back:p17"
-			"PORTRAIT_dunmergfx_child_female:p18"
+			"GFX_dunmer_daughter_base:p18"
+			"GFX_dunmer_daughterhair:p18:h"
 			"GFX_western_female_makeup1:p14"
 			"GFX_western_female_makeup2:p15"
 			"GFX_character_freckles:p20"
@@ -330,7 +332,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_steppe_background:p0"
-			"GFX_steppe_background:p0:c6"
+			"GFX_dremora_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_argonian_male_hair_behind:d0"
@@ -413,7 +415,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_steppe_background:p0"
-			"GFX_steppe_background:p0:c6"
+			"GFX_dremora_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_items:p2"
 			"GFX_argonian_male_hair_behind:d0"

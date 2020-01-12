@@ -2,35 +2,35 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_valeman_male_clothes"
-		texturefile = "gfx\\characters\\andal_male\\valeman_male_clothes.dds"
+		texturefile = "gfx\\characters\\valeman_male\\valeman_male_clothes.dds"
 		noOfFrames = 18
 		norefcount = yes
 		can_be_lowres = yes
 	}
 	spriteType = {
 		name = "GFX_valeman_male_clothes_behind"
-		texturefile = "gfx\\characters\\andal_male\\valeman_male_clothes_behind.dds"
+		texturefile = "gfx\\characters\\valeman_male\\valeman_male_clothes_behind.dds"
 		noOfFrames = 18
 		norefcount = yes
 		can_be_lowres = yes
 	}
 	spriteType = {
 		name = "GFX_valeman_male_headgear_behind"
-		texturefile = "gfx\\characters\\andal_male\\valeman_male_headgear_behind.dds"
+		texturefile = "gfx\\characters\\valeman_male\\valeman_male_headgear_behind.dds"
 		noOfFrames = 16
 		norefcount = yes
 		can_be_lowres = yes
 	}
 	spriteType = {
 		name = "GFX_valeman_male_headgear_mid"
-		texturefile = "gfx\\characters\\andal_male\\valeman_male_headgear_mid.dds"
+		texturefile = "gfx\\characters\\valeman_male\\valeman_male_headgear_mid.dds"
 		noOfFrames = 16
 		norefcount = yes
 		can_be_lowres = yes
 	}
 	spriteType = {
 		name = "GFX_valeman_male_headgear"
-		texturefile = "gfx\\characters\\andal_male\\valeman_male_headgear.dds"
+		texturefile = "gfx\\characters\\valeman_male\\valeman_male_headgear.dds"
 		noOfFrames = 16
 		norefcount = yes
 		can_be_lowres = yes
@@ -285,7 +285,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_valeman_female_headgear_behind"
-		texturefile = "gfx\\characters\\andal_female\\valeman_female_headgear_behind.dds"
+		texturefile = "gfx\\characters\\valeman_female\\valeman_female_headgear_behind.dds"
 		noOfFrames = 16
 		norefcount = yes
 		can_be_lowres = yes
@@ -293,7 +293,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_valeman_female_headgear"
-		texturefile = "gfx\\characters\\andal_female\\valeman_female_headgear.dds"
+		texturefile = "gfx\\characters\\valeman_female\\valeman_female_headgear.dds"
 		noOfFrames = 16
 		norefcount = yes
 		can_be_lowres = yes

@@ -1,6 +1,82 @@
-# p34 Special Helmets
+# p34 Special Characters
 34 = {
 	0 = { # blank
 		factor = 100
+		 modifier = {
+			factor = 0
+			is_unique_portrait = yes
+		 }
+	}
+	1 = { #Patrick Stewart, with hair
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = {	trait = tiber_portrait }
+		}
+		modifier = {
+			factor = 0
+			age > 49
+			age < 15
+		}
+	}
+	2 = { #Patrick Stewart, without hair
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = tiber_portrait }
+		}
+		modifier = {
+			factor = 0
+			age < 59
+		}
+	}
+	3 = { #Sean Bean
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = martin_portrait }
+		}
+	}
+	4 = { #Divayth Fyr
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { character = 49700 }
+		}
+	}
+	5 = { #Alfe
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { character = 49701 }
+		}
+	}
+	6 = { #Beyte
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { character = 49702 }
+		}
+	}
+	7 = { #Delte
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { character = 49703 }
+		}
+	}
+	8 = { #Uupse
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { character = 49704 }
+		}
+	}
+	9 = { #Yagrum
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { character = 300499 }
+		}
 	}
 }

@@ -1,6 +1,30 @@
 ############## KAMAL ##########################
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_kamal_son_base"
+		textureFile = "gfx/characters/kamal_son_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_kamal_sonhair"
+		textureFile = "gfx/characters/kamal_son_hair.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_kamal_daughter_base"
+		textureFile = "gfx/characters/kamal_daughter_base.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_kamal_daughterhair"
+		textureFile = "gfx/characters/kamal_daughter_hair.dds"
+		noOfFrames = 7
+	}
+
 	portraitType = {
 		name = "PORTRAIT_kamalgfx_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -22,7 +46,8 @@ spriteTypes = {
 			"GFX_kamal_male_eyes:d6"
 			"GFX_character_harelip_western:p24"
 			"GFX_child_back:p17"
-			"PORTRAIT_kamalgfx_child_male:p18"
+			"GFX_kamal_son_base:p18"
+			"GFX_kamal_sonhair:p18:h"
 			"GFX_character_freckles:p20"
 			"GFX_character_cuman_male_pale:p22"
 			"GFX_character_tattoos:p28"
@@ -236,7 +261,8 @@ spriteTypes = {
 			"GFX_kamal_female_eyes:d6"
 			"GFX_character_harelip_western:p24:o-2x4"
 			"GFX_child_back:p17"
-			"PORTRAIT_kamalgfx_child_female:p18"
+			"GFX_kamal_daughter_base:p18"
+			"GFX_kamal_daughterhair:p18:h"
 			"GFX_kamal_female_makeup1:p14"
 			"GFX_kamal_female_makeup2:p15"
 			"GFX_character_freckles:p20"

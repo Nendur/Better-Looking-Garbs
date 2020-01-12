@@ -10,4 +10,4 @@ dependencies=
 	"Better Looking Garbs"
 	"Better Looking Garbs Full"
 }
-supported_checksums = { BAAG IETF YIEE OVIM FTQY QUZM ORUJ KBXK }
+supported_checksums = { JHKC WTXH FDJN GPMN PNVA }

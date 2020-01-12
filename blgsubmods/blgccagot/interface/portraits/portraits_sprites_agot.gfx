@@ -35,7 +35,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_special_crowns"
 		texturefile = "gfx\\characters\\shared\\special_crowns.dds"
-		noOfFrames = 22
+		noOfFrames = 27
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -43,7 +43,23 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_special_crowns_behind"
 		texturefile = "gfx\\characters\\shared\\special_crowns_behind.dds"
-		noOfFrames = 22
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_crownsB"
+		texturefile = "gfx\\characters\\shared\\special_crownsB.dds"
+		noOfFrames = 8
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_crownsB_behind"
+		texturefile = "gfx\\characters\\shared\\special_crownsB_behind.dds"
+		noOfFrames = 8
 		norefcount = yes
 		can_be_lowres = yes
 	}

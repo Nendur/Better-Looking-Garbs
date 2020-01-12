@@ -63,7 +63,7 @@ first_men = {
 		graphical_cultures = { northmangfx freefolkgfx }
 	}
 	half_southron = {
-		graphical_cultures = { reachmangfx westerngfx }
+		graphical_cultures = { halfsouthrongfx westerngfx }
 	}
 	crackclawmen = {
 		graphical_cultures = { firstmangfx northmangfx }
