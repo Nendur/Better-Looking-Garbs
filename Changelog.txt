@@ -1,5 +1,8 @@
 Changelog:
 
+  Applied Orrie's workshop dependencies fix.
+  Added AGOT More bloodlines genetic portraits.
+
 12-01-2020
   Using French layered veils for most European cultures.
   Adapted French rules for unveiled young women into a general rule.

@@ -26,11 +26,11 @@ if [ -z "$1" ] || [ "$1" != "-continue" ]; then
 		fi
 		unzip -uoq "$BLGZIP" betterlookinggarbsextra.zip -d"$BLGTMP"
 		#unzip -uoq "$BLGZIP" betterlookinggarbsinstall.sh -d"$BLGTMP"
-		unzip -uoq "$BLGZIP" betterlookinggarbs.fix -d"$MODS"
-		mv -f "$MODS/betterlookinggarbs.fix" "$MODS/betterlookinggarbs.mod"
-		if [ -f "${MODS}/betterlookinggarbs.mod.mod" ]; then
-			rm "${MODS}/betterlookinggarbs.mod.mod"
-		fi
+		#unzip -uoq "$BLGZIP" betterlookinggarbs.fix -d"$MODS"
+		#mv -f "$MODS/betterlookinggarbs.fix" "$MODS/betterlookinggarbs.mod"
+		#if [ -f "${MODS}/betterlookinggarbs.mod.mod" ]; then
+		#	rm "${MODS}/betterlookinggarbs.mod.mod"
+		#fi
 		#bash "$BLGTMP/betterlookinggarbsinstall.sh" -continue
 		#exit
 		ADDONS="${MODS}submods"

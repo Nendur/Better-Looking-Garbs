@@ -9,14 +9,15 @@ rm -rf ../betterlookinggarbsfull/gfx/fallbacks
 cp -r blgsubmods ../betterlookinggarbsfull/submods
 cp "Better Looking Garbs - Readme.txt" ../betterlookinggarbsfull
 cp betterlookinggarbs.jpg ../betterlookinggarbsfull
-cp betterlookinggarbsfull.mod ../betterlookinggarbsfull
+#cp betterlookinggarbsfull.mod ../betterlookinggarbsfull
 cp Changelog.txt ../betterlookinggarbsfull
 
+cp -f betterlookinggarbsupload.mod ../betterlookinggarbs.mod
 cp -r betterlookinggarbs ..
 cp -r blgsubmods ../betterlookinggarbs/submods
 cp "Better Looking Garbs - Readme.txt" ../betterlookinggarbs
 cp betterlookinggarbs.jpg ../betterlookinggarbs
-cp betterlookinggarbs.fix ../betterlookinggarbs
+#cp betterlookinggarbs.fix ../betterlookinggarbs
 cp Changelog.txt ../betterlookinggarbs
 cp betterlookinggarbsinstall.exe ../betterlookinggarbs
 cp betterlookinggarbsinstall.sh ../betterlookinggarbs

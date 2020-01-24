@@ -1,0 +1,234 @@
+###################################
+#
+# Better Looking Garbs
+#
+# Events to alter ethnicity on newly created characters.
+#
+###################################
+
+namespace = blg
+
+# Ethnic diversity in random courtier spawns.
+character_event = {
+	id = blg.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	ai = yes
+	min_age = 1
+	trigger = {
+		trait = blgspawn
+	}
+
+	option = { # Leave unchanged / Ruler culture
+		ai_chance = {
+			factor = 6
+		}
+	}
+
+	option = { # Local province
+		ai_chance = { factor = 3 }
+		trigger = {
+			employer = {
+				NOT = { character = no }
+				is_landed = yes
+				culture = ROOT
+			}
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			NOT = { has_game_rule = { name = blg_new_characters value = off } }
+		}
+
+		random_realm_province = {
+			limit = { NOT = { province = no } }
+			ROOT = {
+				set_graphical_culture = PREV
+			}
+		}
+	}
+
+	option = { # Neighbour of local province
+		ai_chance = { factor = 2 }
+		trigger = {
+			employer = {
+				NOT = { character = no }
+				is_landed = yes
+				culture = ROOT
+			}
+			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			NOT = { has_game_rule = { name = blg_new_characters value = off } }
+		}
+
+		random_realm_province = {
+			limit = { NOT = { province = no } }
+			random_neighbor_province = {
+				limit = { NOT = { province = no } }
+				ROOT = {
+					set_graphical_culture = PREV
+				}
+			}
+		}
+	}
+
+	# Add freckles to new characters.
+	after = {
+		remove_trait = blgspawn
+
+		if = {
+			limit= {
+				graphical_culture = hunnicgfx
+				is_lowborn = yes
+			}
+			set_graphical_culture = uyghur
+		}
+
+		random_list = {
+			2 = { add_trait = freckles_5 }
+			6 = { add_trait = freckles_4 }
+			7 = { add_trait = freckles }
+			7 = { add_trait = freckles_2 }
+			10 = { add_trait = freckles_3 }
+			5000 = {
+				modifier = {
+					factor = 0.01
+					graphical_culture = celticgfx
+					NOT = { has_global_flag = EMF } #Duplicate script
+				}
+				modifier = {
+					factor = 0.02
+					OR = {
+						graphical_culture = bretongfx
+						graphical_culture = romanobritishgfx
+					}
+				}
+				modifier = {
+					factor = 0.04
+					OR = {
+						graphical_culture = norsegaelgfx
+						graphical_culture = tochariangfx
+					}
+				}
+				modifier = {
+					factor = 0.06
+					OR = {
+						graphical_culture = norsegfx
+						graphical_culture = saxongfx
+					}
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						graphical_culture = englishgfx
+						graphical_culture = westerngfx
+						graphical_culture = dutchgfx
+						graphical_culture = normangfx
+					}
+				}
+				modifier = {
+					factor = 0.2
+					OR = {
+						graphical_culture = germangfx
+						graphical_culture = frankishgfx
+						graphical_culture = oldfrankishgfx
+						graphical_culture = gallicgfx
+						graphical_culture = celtiberiangfx
+					}
+				}
+				modifier = {
+					factor = 0.5
+					OR = {
+						graphical_culture = sogdiangfx
+						graphical_culture = ashkenazigfx
+						graphical_culture = berbergfx
+						graphical_culture = vlachgfx
+						graphical_culture = romanobalkangfx
+						graphical_culture = lombardgfx
+					}
+				}
+				modifier = {
+					factor = 0.75
+					OR = {
+						graphical_culture = crimeangfx
+						graphical_culture = visigothgfx
+						graphical_culture = afghangfx
+						graphical_culture = siberiangfx
+						graphical_culture = bohemiangfx
+					}
+				}
+			}
+		}
+	}
+}
+
+# Mixed ethnicity for children.
+# Called from on_birth
+character_event = {
+	id = blg.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_trait = blgspawn
+	}
+}
+
+# Check when new society quests start.
+character_event = {
+	id = blg.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_in_society = yes
+		NOT = { trait = blgcaoff }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_any_quest = yes
+			}
+			add_trait = blgquesting
+		}
+		else = {
+			repeat_event = { id = blg.3 days = 7}
+		}
+	}
+}
+
+# Installatian check event.
+character_event = {
+	id    = blg.4
+	title = BETTER_LOOKING_GARBS
+	desc  = blg.4.desc
+
+	picture = GFX_evt_church_council
+	border = GFX_event_normal_frame_intrigue
+	hide_from = yes
+
+	is_triggered_only = yes
+
+	ai = no
+	trigger = {
+		OR = {
+			has_dlc = "The Sword of Islam"
+			has_dlc = "Legacy of Rome"
+			has_dlc = "Sunset Invasion"
+			has_dlc = "The Republic"
+			has_dlc = "The Old Gods"
+			has_dlc = "Sons of Abraham"
+			has_dlc = "Rajas of India"
+			has_dlc = "Charlemagne"
+			has_dlc = "Way of Life"
+			has_dlc = "Horse Lords"
+			has_dlc = "Conclave"
+			has_dlc = "Reapers"
+			has_dlc = "Mystics"
+			has_dlc = "Jade Dragon"
+			has_dlc = "Holy Fury"
+		}
+	}
+
+	option = {
+		name = blg.4.opt
+	}
+}

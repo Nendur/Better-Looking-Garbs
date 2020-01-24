@@ -1,4 +1,6 @@
 andal = {
+	graphical_cultures = { occitangfx westerngfx }
+
 	riverlander = {
 		graphical_cultures = { riverlandergfx englishgfx }
 	}
@@ -66,7 +68,7 @@ first_men = {
 		graphical_cultures = { halfsouthrongfx westerngfx }
 	}
 	crackclawmen = {
-		graphical_cultures = { firstmangfx northmangfx }
+		graphical_cultures = { firstmangfx northmangfx pomeraniangfx }
 	}
 	moon_clansman = {
 		graphical_cultures = { freefolkgfx balticgfx easterngfx }
@@ -75,7 +77,7 @@ first_men = {
 		graphical_cultures = { freefolkgfx }
 	}
 	old_first_man = {
-		graphical_cultures = { firstmangfx northmangfx freefolkgfx }
+		graphical_cultures = { firstmangfx northmangfx pomeraniangfx freefolkgfx }
 	}
 }
 

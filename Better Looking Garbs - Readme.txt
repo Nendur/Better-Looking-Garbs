@@ -49,7 +49,7 @@ Installation:
       * If you use the HIP Extended Mechanics & Flavor mod, play with both Better Looking Garbs and the BLG/CC for EMF mod.
       * Both HIP add-ons should be used if applicable. CPR+ will not be compatible with BLG.
       * If you use the CK2Plus mod, play with both Better Looking Garbs and the BLG/CC for CK2Plus mod.
-      * If you use the Game of Thrones mod, play with both Better Looking Garbs and the BLG for A Game of Thrones mod.
+      * If you use the Game of Thrones mod, play with both Better Looking Garbs and the BLG/CC for A Game of Thrones mod.
       * If you use the Elder Kings mod, play with both Better Looking Garbs and the BLG/CC for Elder Kings mod.
       * If you use the When The World Stopped Making Sense mod, play with both Better Looking Garbs and the BLG/CC for WTWSMS mod.
       * If you use the The Winter King mod, play with both Better Looking Garbs and the BLG/CC for The Winter King mod.
