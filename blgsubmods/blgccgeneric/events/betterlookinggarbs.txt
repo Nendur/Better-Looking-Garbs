@@ -21,6 +21,7 @@ character_event = {
 	}
 
 	option = { # Leave unchanged / Ruler culture
+		trigger = { gfx_culture_scope = { always = yes } }
 		ai_chance = {
 			factor = 6
 		}
@@ -34,7 +35,10 @@ character_event = {
 				is_landed = yes
 				culture = ROOT
 			}
-			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				dynasty = none
+				num_of_dynasty_members <= 1
+			}
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
@@ -54,7 +58,10 @@ character_event = {
 				is_landed = yes
 				culture = ROOT
 			}
-			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				dynasty = none
+				num_of_dynasty_members <= 1
+			}
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
@@ -73,12 +80,12 @@ character_event = {
 	after = {
 		remove_trait = blgspawn
 
+		# Fix noculture
 		if = {
 			limit= {
-				graphical_culture = hunnicgfx
-				is_lowborn = yes
+				NOT = { gfx_culture_scope = { always = yes } }
 			}
-			set_graphical_culture = uyghur
+			set_graphical_culture = ROOT
 		}
 
 		random_list = {
@@ -189,7 +196,10 @@ character_event = {
 			}
 			add_trait = blgquesting
 		}
-		else = {
+		else_if = {
+			limit = {
+				NOT = { has_character_modifier = quest_cooldown_timer }
+			}
 			repeat_event = { id = blg.3 days = 7}
 		}
 	}
@@ -230,5 +240,20 @@ character_event = {
 
 	option = {
 		name = blg.4.opt
+	}
+}
+
+# Initial ethnic diversity.
+character_event = {
+	id = blg.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_multiplayer_host_character = yes
+	}
+
+	immediate = {
+		any_character = { character_event = { id = blg.1 } }
 	}
 }

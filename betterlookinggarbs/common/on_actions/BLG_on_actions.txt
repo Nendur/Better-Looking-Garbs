@@ -7,24 +7,6 @@ on_host_change = {
 on_birth = {
 	events = {
 		blg.2 # Set graphical culture from parents.
-		#blg.7 # Freckles
-	}
-}
-
-on_chronicle_start = {
-	effect = {
-		add_trait = i_used_to_be_a_player
-		remove_trait = blgspawn
-		if = {
-			limit = { is_multiplayer_host_character = yes }
-			any_character = { character_event = { id = blg.1 } } # Initial ethnic diversity.
-		}
-	}
-}
-
-on_chronicle_owner_change = {
-	effect = {
-		add_trait = i_used_to_be_a_player
 	}
 }
 
@@ -43,5 +25,20 @@ on_quest_success = {
 on_quest_failure = {
 	effect = {
 		remove_trait = blgquesting
+	}
+}
+
+on_chronicle_start = {
+	effect = {
+		add_trait = i_used_to_be_a_player
+		remove_trait = blgspawn
+		character_event = { id = blg.5 }
+		character_event = { id = blg.5 days = 1 }
+	}
+}
+
+on_chronicle_owner_change = {
+	effect = {
+		add_trait = i_used_to_be_a_player
 	}
 }

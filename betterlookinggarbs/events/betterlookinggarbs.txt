@@ -21,6 +21,7 @@ character_event = {
 	}
 
 	option = { # Leave unchanged / Ruler culture
+		trigger = { gfx_culture_scope = { always = yes } }
 		ai_chance = {
 			factor = 6
 			modifier = {
@@ -46,7 +47,10 @@ character_event = {
 				is_landed = yes
 				culture = ROOT
 			}
-			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				dynasty = none
+				num_of_dynasty_members <= 1
+			}
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
@@ -68,7 +72,10 @@ character_event = {
 				is_landed = yes
 				culture = ROOT
 			}
-			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				dynasty = none
+				num_of_dynasty_members <= 1
+			}
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
@@ -99,7 +106,10 @@ character_event = {
 				is_landed = yes
 				culture = ROOT
 			}
-			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				dynasty = none
+				num_of_dynasty_members <= 1
+			}
 			OR = {
 				is_alternate_start = no
 				has_alternate_start_parameter = { key = culture value = historical }
@@ -599,7 +609,10 @@ character_event = {
 				culture = maghreb_arabic
 				blg_north_african = yes
 			}
-			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				dynasty = none
+				num_of_dynasty_members <= 1
+			}
 			OR = {
 				is_alternate_start = no
 				has_alternate_start_parameter = { key = culture value = historical }
@@ -629,7 +642,10 @@ character_event = {
 		ai_chance = { factor = 4 }
 		trigger = {
 			culture_group = east_african
-			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				dynasty = none
+				num_of_dynasty_members <= 1
+			}
 			OR = {
 				is_alternate_start = no
 				has_alternate_start_parameter = { key = culture value = historical }
@@ -648,7 +664,10 @@ character_event = {
 		ai_chance = { factor = 2 }
 		trigger = {
 			likes_altaics = yes
-			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				dynasty = none
+				num_of_dynasty_members <= 1
+			}
 			OR = {
 				is_alternate_start = no
 				has_alternate_start_parameter = { key = culture value = historical }
@@ -675,7 +694,10 @@ character_event = {
 		ai_chance = { factor = 4 }
 		trigger = {
 			culture = italian
-			OR = { dynasty = none num_of_dynasty_members <= 1 }
+			OR = {
+				dynasty = none
+				num_of_dynasty_members <= 1
+			}
 			OR = {
 				is_alternate_start = no
 				has_alternate_start_parameter = { key = culture value = historical }
@@ -717,6 +739,15 @@ character_event = {
 	after = {
 		remove_trait = blgspawn
 
+		# Fix noculture
+		if = {
+			limit= {
+				NOT = { gfx_culture_scope = { always = yes } }
+			}
+			set_graphical_culture = ROOT
+		}
+
+		# Hunnic headbinding for nobility only.
 		if = {
 			limit= {
 				graphical_culture = hunnicgfx
@@ -3649,6 +3680,30 @@ character_event = {
 				}
 			}
 		}
+
+		#Testing log
+		if = {
+			limit = { is_father_real_father = yes }
+			father_even_if_dead = { gfx_culture_scope = { save_event_target_as = gfxfather } }
+		}
+		else = {
+			real_father_even_if_dead = { gfx_culture_scope = { save_event_target_as = gfxfather } }
+		}
+		mother_even_if_dead = { gfx_culture_scope = { save_event_target_as = gfxmother } }
+		gfx_culture_scope = { save_event_target_as = gfxchild }
+
+		if = {
+			limit = {
+				event_target:gfxchild = {
+					NOR = {
+						event_target:gfxfather = { culture = PREV }
+						event_target:gfxmother = { culture = PREV }
+					}
+				}
+			}
+
+			log = "MIXED CHILD: [Root.GetFullName] is a [Root.Culture.GetName] [gfxchild.Culture.GetName] from [gfxfather.Culture.GetName] and [gfxmother.Culture.GetName]."
+		}
 	}
 }
 
@@ -3670,7 +3725,10 @@ character_event = {
 			}
 			add_trait = blgquesting
 		}
-		else = {
+		else_if = {
+			limit = {
+				NOT = { has_character_modifier = quest_cooldown_timer }
+			}
 			repeat_event = { id = blg.3 days = 7}
 		}
 	}
@@ -3711,6 +3769,21 @@ character_event = {
 
 	option = {
 		name = blg.4.opt
+	}
+}
+
+# Initial ethnic diversity.
+character_event = {
+	id = blg.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_multiplayer_host_character = yes
+	}
+
+	immediate = {
+		any_character = { character_event = { id = blg.1 } }
 	}
 }
 
