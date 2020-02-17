@@ -41,6 +41,7 @@ spriteTypes = {
 						portrait_government = theocracy_government
 						NOT = { portrait_tier = king }
 					}
+					portrait_government = order_government
 					portrait_has_trait = monk
 					portrait_has_trait = blgcaon
 				}
@@ -153,6 +154,7 @@ spriteTypes = {
 						portrait_government = theocracy_government
 						NOT = { portrait_tier = king }
 					}
+					portrait_government = order_government
 					portrait_has_trait = nun
 					portrait_has_trait = on_pilgrimage
 					portrait_has_trait = blgcaon
@@ -244,6 +246,7 @@ spriteTypes = {
 						portrait_government = theocracy_government
 						NOT = { portrait_tier = king }
 					}
+					portrait_government = order_government
 					portrait_has_trait = monk
 					portrait_has_trait = blgcaon
 				}
@@ -350,6 +353,7 @@ spriteTypes = {
 						portrait_government = theocracy_government
 						NOT = { portrait_tier = king }
 					}
+					portrait_government = order_government
 					portrait_has_trait = nun
 					portrait_has_trait = on_pilgrimage
 					portrait_has_trait = blgcaon
@@ -428,17 +432,14 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
-				OR = {
-					portrait_society = monastic_order_orthodox
-					portrait_society = monastic_order_monophysite
-					portrait_society = monastic_order_nestorian
-				}
+				portrait_society = monastic_order_orthodox
 				OR = {
 					NOT = { portrait_tier = baron }
 					AND = {
 						portrait_government = theocracy_government
 						NOT = { portrait_tier = king }
 					}
+					portrait_government = order_government
 					portrait_has_trait = monk
 					portrait_has_trait = on_pilgrimage
 					portrait_has_trait = blgcaon
@@ -562,6 +563,85 @@ spriteTypes = {
 		}
 	}
 
+	portraitType = {
+		name = "PORTRAIT_society_monophysite_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_society = monastic_order_monophysite
+					portrait_society = monastic_order_nestorian
+				}
+				OR = {
+					NOT = { portrait_tier = baron }
+					AND = {
+						portrait_government = theocracy_government
+						NOT = { portrait_tier = king }
+					}
+					portrait_government = order_government
+					portrait_has_trait = monk
+					portrait_has_trait = on_pilgrimage
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				OR = {
+					NOT = { portrait_has_trait = blgcaoff }
+					portrait_has_trait = on_pilgrimage
+				}
+			}
+		}
+
+		layer = {
+			"GFX_society_orthodox_monk_male_clothing_behind:c0"
+			"GFX_society_orthodox_monk_male_clothing_front:c2"
+			"GFX_empty:c1"
+			"GFX_society_benedictine_male_headgear_front:c5"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+		}
+
+		# Ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+					portrait_culture_group = byzantine
+				}
+				4 = {
+					portrait_society_rank = 4
+					NOT = { portrait_culture_group = byzantine }
+				}
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			36 = { # Staff overlap
+				0 = { always = yes }
+			}
+		}
+	}
+
 	# Female
 
 	spriteType = {
@@ -597,6 +677,7 @@ spriteTypes = {
 						portrait_government = theocracy_government
 						NOT = { portrait_tier = king }
 					}
+					portrait_government = order_government
 					portrait_has_trait = nun
 					portrait_has_trait = on_pilgrimage
 					portrait_has_trait = blgcaon

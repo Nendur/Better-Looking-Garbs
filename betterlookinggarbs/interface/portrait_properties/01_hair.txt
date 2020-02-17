@@ -269,6 +269,13 @@
 				graphical_culture = serbsouthslavicgfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = vlachgfx
+				graphical_culture = muslimgfx
+				graphical_culture = egyptiangfx
+				graphical_culture = arabicgfx
+				graphical_culture = berbergfx
+				graphical_culture = copticgfx
+				graphical_culture = levantinegfx
+				graphical_culture = semitegfx
 			}
 			OR = {
 				NOT = { religion_group = christian }
@@ -304,6 +311,13 @@
 				graphical_culture = serbsouthslavicgfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = vlachgfx
+				graphical_culture = muslimgfx
+				graphical_culture = egyptiangfx
+				graphical_culture = arabicgfx
+				graphical_culture = berbergfx
+				graphical_culture = copticgfx
+				graphical_culture = levantinegfx
+				graphical_culture = semitegfx
 			}
 		}
 		modifier = {

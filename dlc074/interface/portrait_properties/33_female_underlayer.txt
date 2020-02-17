@@ -457,14 +457,7 @@
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
-				AND = {
-					NOT = { year_of_birth = 1160 }
-					#OR = {
-					#	culture = frankish
-					#	culture = occitan
-					#	blg_french = yes
-					#}
-				}
+				NOT = { year_of_birth = 1160 }
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 16 } }
 			}
 		}
@@ -494,14 +487,7 @@
 		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
-				AND = {
-					NOT = { year_of_birth = 1160 }
-					#OR = {
-					#	culture = frankish
-					#	culture = occitan
-					#	blg_french = yes
-					#}
-				}
+				NOT = { year_of_birth = 1160 }
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 18 } }
 			}
 		}

@@ -43,6 +43,7 @@ spriteTypes = {
 				portrait_has_trait = vaishnavist_hindu
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
@@ -138,6 +139,7 @@ spriteTypes = {
 				portrait_has_trait = vaishnavist_hindu
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
@@ -225,6 +227,7 @@ spriteTypes = {
 				portrait_has_trait = smartist_hindu
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
@@ -332,6 +335,7 @@ spriteTypes = {
 				portrait_has_trait = smartist_hindu
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
@@ -407,6 +411,7 @@ spriteTypes = {
 				portrait_has_trait = shaktist_hindu
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
@@ -500,6 +505,7 @@ spriteTypes = {
 				portrait_has_trait = shaktist_hindu
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
@@ -598,6 +604,7 @@ spriteTypes = {
 				portrait_has_trait = shaivist_hindu
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
@@ -690,6 +697,7 @@ spriteTypes = {
 				portrait_has_trait = shaivist_hindu
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
@@ -752,6 +760,7 @@ spriteTypes = {
 				portrait_has_trait = digambara_jain
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = muni
 					portrait_has_trait = blgcaon
@@ -817,6 +826,7 @@ spriteTypes = {
 				portrait_has_trait = digambara_jain
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = aryika
 					portrait_has_trait = on_indian_pilgrimage
@@ -898,6 +908,7 @@ spriteTypes = {
 				portrait_society = monastic_order_jain
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = muni
 					portrait_has_trait = on_indian_pilgrimage
@@ -997,6 +1008,7 @@ spriteTypes = {
 				portrait_has_trait = svetambara_jain
 				OR = {
 					portrait_government = theocracy_government
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = aryika
 					portrait_has_trait = on_indian_pilgrimage

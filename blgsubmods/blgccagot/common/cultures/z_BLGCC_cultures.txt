@@ -158,11 +158,11 @@ free_cities = {
 	}
 	essarian = {
 		graphical_cultures = { freecitiesgfx }
-		unit_graphical_cultures = { serbsouthslavicgfx republicsgfx easterngfx }
+		unit_graphical_cultures = { freecitiesgfx serbsouthslavicgfx republicsgfx easterngfx }
 	}
 	gogossosi = {
 		graphical_cultures = { freecitiesgfx }
-		unit_graphical_cultures = { serbsouthslavicgfx republicsgfx easterngfx }
+		unit_graphical_cultures = { freecitiesgfx serbsouthslavicgfx republicsgfx easterngfx }
 	}
 }
 

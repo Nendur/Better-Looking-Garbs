@@ -265,11 +265,6 @@
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
 					}
-					OR = {
-						culture = frankish
-						culture = occitan
-						blg_french = yes
-					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
 			}
@@ -300,11 +295,6 @@
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
-					}
-					OR = {
-						culture = frankish
-						culture = occitan
-						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 10 } }
@@ -812,6 +802,11 @@
 						trait = nun
 						trait = zealous
 					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 21 } }
 			}
@@ -853,6 +848,11 @@
 						trait = celibate
 						trait = nun
 						trait = zealous
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 22 } }

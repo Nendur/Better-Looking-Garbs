@@ -500,7 +500,11 @@
 		modifier = { # frankish men less likely to wear beards after the 12th century
 			factor = 2
 			year_of_birth = 1100
-			culture = frankish
+			OR = {
+				true_religion = catholic
+				is_heresy_of = catholic
+				is_parent_religion = catholic
+			}
 		}
 		modifier = { # frankish men less likely to wear beards after the 12th century
 			factor = 2

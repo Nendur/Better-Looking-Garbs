@@ -44,6 +44,7 @@ spriteTypes = {
 						portrait_government = theocracy_government
 						NOT = { portrait_tier = king }
 					}
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = monk
 					portrait_has_trait = blgcaon
@@ -164,6 +165,7 @@ spriteTypes = {
 						portrait_government = theocracy_government
 						NOT = { portrait_tier = king }
 					}
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = nun
 					portrait_has_trait = on_pilgrimage
@@ -249,6 +251,7 @@ spriteTypes = {
 						portrait_government = theocracy_government
 						NOT = { portrait_tier = king }
 					}
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = monk
 					portrait_has_trait = on_pilgrimage
@@ -269,8 +272,8 @@ spriteTypes = {
 		layer = {
 			"GFX_society_orthodox_monk_male_clothing_behind:c0"
 			"GFX_society_orthodox_monk_male_clothing_front:c2"
-			"GFX_society_orthodox_monk_male_headgear_behind:c1"
-			"GFX_society_orthodox_monk_male_headgear_front:c5"
+			"GFX_empty:c1"
+			"GFX_society_benedictine_male_headgear_front:c5"
 			"GFX_empty:c3"
 			"GFX_empty:c4"
 		}
@@ -289,26 +292,20 @@ spriteTypes = {
 				}
 				3 = {
 					portrait_society_rank = 4
+					portrait_culture_group = byzantine
 				}
-			}
-			5 = {
-				0 = {
-					portrait_society_rank = 1
-				}
-				1 = {
-					portrait_society_rank = 2
-				}
-				2 = {
-					portrait_society_rank = 3
-				}
-				3 = {
+				4 = {
 					portrait_society_rank = 4
+					NOT = { portrait_culture_group = byzantine }
 				}
 			}
 			19 = {
 				0 = { always = yes }
 			}
 			31 = {
+				0 = { always = yes }
+			}
+			36 = { # Staff overlap
 				0 = { always = yes }
 			}
 		}
@@ -378,16 +375,13 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
-				OR = {
-					#portrait_society = monastic_order_orthodox
-					#portrait_society = monastic_order_monophysite
-					portrait_society = monastic_order_nestorian
-				}
+				portrait_society = monastic_order_nestorian
 				OR = {
 					AND = {
 						portrait_government = theocracy_government
 						NOT = { portrait_tier = king }
 					}
+					portrait_government = order_government
 					NOT = { portrait_tier = baron }
 					portrait_has_trait = nun
 					portrait_has_trait = on_pilgrimage

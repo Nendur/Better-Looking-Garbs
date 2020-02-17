@@ -25,7 +25,7 @@ spriteTypes = {
 	}
 
 	portraitType = {
-		name = "PORTRAIT_society_orthodox_clothing_male"
+		name = "PORTRAIT_society_mothpriests_clothing_male"
 		effectFile = "gfx/FX/portrait.lua"
 
 		weight = {
@@ -127,7 +127,7 @@ spriteTypes = {
 	}
 
 	portraitType = {
-		name = "PORTRAIT_society_orthodox_clothing_female"
+		name = "PORTRAIT_society_mothpriests_clothing_female"
 		effectFile = "gfx/FX/portrait.lua"
 
 		weight = {
@@ -158,8 +158,8 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_empty:c0"
-			"GFX_empty:c2"
+			"GFX_society_orthodox_monk_male_clothing_behind:c0"
+			"GFX_society_orthodox_monk_male_clothing_front:c2"
 			"GFX_empty:c3"
 			"GFX_society_orthodox_monk_female_headgear_behind:c1"
 			"GFX_society_orthodox_monk_female_headgear_front:c5"
@@ -222,15 +222,15 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_society_satanist_male_clothing_behind"
-		textureFile = "gfx/characters/societies/mom_satanist_male_clothing_behind.dds"
-		noOfFrames = 4
+		name = "GFX_society_benedictine_male_clothing_behind"
+		textureFile = "gfx/characters/societies/mom_benedictine_male_clothing_behind.dds"
+		noOfFrames = 2
 	}
 
 	spriteType = {
-		name = "GFX_society_satanist_male_clothing_front"
-		textureFile = "gfx/characters/societies/mom_satanist_male_clothing_front.dds"
-		noOfFrames = 4
+		name = "GFX_society_benedictine_male_clothing_front"
+		textureFile = "gfx/characters/societies/mom_benedictine_male_clothing_front.dds"
+		noOfFrames = 2
 	}
 
 	spriteType = {
@@ -252,7 +252,7 @@ spriteTypes = {
 	}
 
 	portraitType = {
-		name = "PORTRAIT_society_satanist_clothing_male"
+		name = "PORTRAIT_society_greybeards_clothing_male"
 		effectFile = "gfx/FX/portrait.lua"
 
 		weight = {
@@ -283,8 +283,8 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_society_satanist_male_clothing_behind:c0"
-			"GFX_society_satanist_male_clothing_front:c2"
+			"GFX_society_benedictine_male_clothing_behind:c0"
+			"GFX_society_benedictine_male_clothing_front:c2"
 			"GFX_society_satanist_male_headgear_mid:c3"
 			"GFX_society_satanist_male_headgear_front:c5"
 			"GFX_society_satanist_male_headgear_behind:c1"
@@ -337,18 +337,6 @@ spriteTypes = {
 	# Female
 
 	spriteType = {
-		name = "GFX_society_satanist_female_clothing_behind"
-		textureFile = "gfx/characters/societies/mom_satanist_female_clothing_behind.dds"
-		noOfFrames = 4
-	}
-
-	spriteType = {
-		name = "GFX_society_satanist_female_clothing_front"
-		textureFile = "gfx/characters/societies/mom_satanist_female_clothing_front.dds"
-		noOfFrames = 4
-	}
-
-	spriteType = {
 		name = "GFX_society_satanist_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_satanist_female_headgear_front.dds"
 		noOfFrames = 4
@@ -361,7 +349,7 @@ spriteTypes = {
 	}
 
 	portraitType = {
-		name = "PORTRAIT_society_satanist_clothing_female"
+		name = "PORTRAIT_society_greybeards_clothing_female"
 		effectFile = "gfx/FX/portrait.lua"
 
 		weight = {
@@ -392,8 +380,8 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_society_satanist_female_clothing_behind:c0"
-			"GFX_society_satanist_female_clothing_front:c2"
+			"GFX_society_benedictine_male_clothing_behind:c0"
+			"GFX_society_benedictine_male_clothing_front:c2"
 			"GFX_empty:c3"
 			"GFX_society_satanist_female_headgear_front:c5"
 			"GFX_society_satanist_female_headgear_behind:c1"
