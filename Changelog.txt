@@ -3,6 +3,7 @@ Changelog:
   Applied Orrie's workshop dependencies fix.
   Reduce chance of headgear changes.
   New combination for Miaphysite and Nestorian monastic clothing.
+  Add more Stoic society clothes.
   Logging the mixed children events for debugging data.
   Always replace noculture ethnicities.
   Added AGOT More bloodlines genetic portraits.

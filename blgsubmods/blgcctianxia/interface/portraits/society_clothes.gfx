@@ -1013,9 +1013,6 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -1035,18 +1032,6 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_vodoun_female_clothing_front.dds"
 		noOfFrames = 4
 	}
-
-	#spriteType = {
-	#	name = "GFX_society_vodoun_female_headgear_front"
-	#	textureFile = "gfx/characters/societies/mom_vodoun_female_headgear_front.dds"
-	#	noOfFrames = 4
-	#}
-
-	#spriteType = {
-	#	name = "GFX_society_vodoun_female_headgear_behind"
-	#	textureFile = "gfx/characters/societies/mom_vodoun_female_headgear_behind.dds"
-	#	noOfFrames = 4
-	#}
 
 	portraitType = {
 		effectFile = "gfx/FX/portrait.lua"
@@ -1118,9 +1103,6 @@ spriteTypes = {
 				3 = {
 					portrait_society_rank = 4
 				}
-			}
-			19 = {
-				0 = { always = yes }
 			}
 			32 = {
 				0 = { always = yes }

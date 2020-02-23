@@ -3779,7 +3779,10 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		is_multiplayer_host_character = yes
+		OR = {
+			is_multiplayer_host_character = yes
+			is_local_human_observer = yes
+		}
 	}
 
 	immediate = {

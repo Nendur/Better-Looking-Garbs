@@ -30,33 +30,6 @@ blg_crowned = {
 	always = no
 }
 
-blg_religion_orthodox = {
-	OR = {
-		religion = adoptionism
-		religion = sabellianism
-		religion = psilanthropism
-		religion = nicene
-		religion = binitarian
-		religion = marcionism
-		religion = apollinarian
-		religion = docetic
-		religion = pneumatomachians
-		religion = patripassianism
-		religion = georgian_orthodox
-		religion = valentinianism
-		religion = audianistic
-		religion = monarchianism
-	}
-}
-
-blg_religion_orientorthodox = {
-	OR = {
-		religion = valentinianism
-		religion = audianistic
-		religion = monarchianism
-	}
-}
-
 blg_religion_chinese = {
 	always = no
 }

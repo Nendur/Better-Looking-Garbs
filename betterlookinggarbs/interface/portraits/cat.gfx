@@ -54,6 +54,14 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
+	spriteType = {
+		name = "GFX_cat_androgyn_hair"
+		texturefile = "gfx\\characters\\cat\\cat_androgyn_hair.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
 ### CAT MALE ####
 	portraitType = {
 		name = "PORTRAIT_catgfx_male"
@@ -63,6 +71,7 @@ spriteTypes = {
 			"GFX_empty:p5:c1"
 			"GFX_empty:p5:c3"
 			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_cat_androgyn_hair:p5:c7:h"
 			"GFX_southern_background:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
@@ -116,6 +125,7 @@ spriteTypes = {
 			"GFX_empty:p5:c1"
 			"GFX_empty:p5:c3"
 			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_cat_androgyn_hair:p5:c7:h"
 			"GFX_southern_background:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
@@ -168,6 +178,7 @@ spriteTypes = {
 			"GFX_empty:p5:c1"
 			"GFX_empty:p5:c3"
 			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_cat_androgyn_hair:p5:c7:h"
 			"GFX_southern_background:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
@@ -221,6 +232,7 @@ spriteTypes = {
 			"GFX_empty:p5:c1"
 			"GFX_empty:p5:c3"
 			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_cat_androgyn_hair:p5:c7:h"
 			"GFX_southern_background:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
@@ -274,6 +286,7 @@ spriteTypes = {
 			"GFX_empty:p5:c1"
 			"GFX_empty:p5:c3"
 			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_cat_androgyn_hair:p5:c7:h"
 			"GFX_southern_background:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
@@ -325,6 +338,7 @@ spriteTypes = {
 			"GFX_empty:p5:c1"
 			"GFX_empty:p5:c3"
 			"GFX_cat_androgyn_headgear:p5:c5"
+			"GFX_cat_androgyn_hair:p5:c7:h"
 			"GFX_southern_background:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"

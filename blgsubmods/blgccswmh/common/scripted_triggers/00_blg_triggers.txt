@@ -33,22 +33,6 @@ blg_crowned = {
 	emf_is_crowned = yes
 }
 
-blg_religion_orthodox = {
-	OR = {
-		religion = apostolic
-		religion = tondrakian
-		religion = syriac
-		religion = maronite
-	}
-}
-
-blg_religion_orientorthodox = {
-	OR = {
-		religion = syriac
-		religion = maronite
-	}
-}
-
 blg_religion_chinese = {
 	always = no
 }

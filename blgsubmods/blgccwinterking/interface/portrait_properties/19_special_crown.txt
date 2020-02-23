@@ -226,15 +226,9 @@
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = {
-			factor = 0
-			year = 1245
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				has_minor_title = title_manichaean_bishop
-			}
+		trigger = {
+			year < 1245
+			has_minor_title = title_manichaean_bishop
 		}
 	}
 	15 = {
@@ -243,17 +237,9 @@
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = {31 = {}}
 		hide_layers = {32 = {}}
-		modifier = {
-			factor = 0
-			NOT = {
-				year = 1245
-			}
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				has_minor_title = title_manichaean_bishop
-			}
+		trigger = {
+			year = 1245
+			has_minor_title = title_manichaean_bishop
 		}
 	}
 	16 = {
@@ -278,7 +264,7 @@
 		trigger = {
 			is_priest = yes
 			rightful_religious_head = ROOT
-			blg_religion_orthodox = yes
+			religion_group = christian
 		}
 	}
 	19 = {

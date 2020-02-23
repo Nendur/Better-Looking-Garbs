@@ -30,29 +30,6 @@ blg_crowned = {
 	always = yes
 }
 
-blg_religion_orthodox = {
-	OR = {
-		religion = melkite
-		religion = montanist
-		religion = sabellianist
-		religion = valentinian
-		religion = docetist
-		religion = apollinarist
-		religion = nasrani_reformed
-		religion = nasrani
-	}
-}
-
-blg_religion_orientorthodox = {
-	OR = {
-		religion = docetist
-		religion = apollinarist
-		religion = melkite
-		religion = nasrani_reformed
-		religion = nasrani
-	}
-}
-
 blg_religion_chinese = {
 	OR = {
 		religion = tao_reformed

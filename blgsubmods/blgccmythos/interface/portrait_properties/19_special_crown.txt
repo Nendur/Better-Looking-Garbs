@@ -341,17 +341,12 @@
 		hide_layers = {33 = {}}
 		trigger = {
 			is_priest = yes
+			religion_group = christian
 			rightful_religious_head = ROOT
-			OR = {
-				religion = orthodox
-				religion = monothelite
-				religion = iconoclast
-				religion = paulician
-				religion = miaphysite
-				religion = monophysite
-				religion = nestorian
-				religion = messalian
-				blg_religion_orthodox = yes
+			NOR = {
+				religion = catholic
+				is_heresy_of = catholic
+				is_parent_religion = catholic
 			}
 		}
 	}

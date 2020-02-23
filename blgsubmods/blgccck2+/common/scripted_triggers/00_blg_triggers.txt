@@ -51,17 +51,6 @@ blg_crowned = {
 	}
 }
 
-blg_religion_orthodox = {
-	OR = {
-		religion = apostolic
-		religion = tondrakian
-	}
-}
-
-blg_religion_orientorthodox = {
-	always = no
-}
-
 blg_religion_chinese = {
 	always = no
 }

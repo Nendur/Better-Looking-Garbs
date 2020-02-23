@@ -32,21 +32,6 @@ blg_petty_empire = {
 	always = no
 }
 
-blg_religion_orthodox = {
-	OR = {
-		religion = catholic
-		religion = pelagian
-		religion = priscillian
-		religion = arian
-		religion = gnostic
-		religion = nestorian
-	}
-}
-
-blg_religion_orientorthodox = {
-	religion = nestorian
-}
-
 blg_religion_chinese = {
 	always = no
 }

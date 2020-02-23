@@ -4,26 +4,7 @@
 		factor = 1
 	}
 	1 = { #Templar special headgear.
-		factor = 100
-		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
-		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = { 1 = { } } #Hide Hair.
-		hide_layers = { 3 = { } } #Hide Clothes.
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
-		hide_layers = { 31 = { } } #Veil overload.
-		hide_layers = { 32 = { } }
-		hide_layers = { 33 = { } }
-		trigger = {
-			OR = {
-				has_landed_title = d_knights_templar
-				liege = { has_landed_title = d_knights_templar }
-			}
-			in_command = yes
-			has_game_rule = {
-				name = martial_headgear
-				value = on
-			}
-		}
+		factor = 0
 	}
 	2 = {  #Crusader King helmet - Male.
 		factor = 100
@@ -92,50 +73,10 @@
 		}
 	}
 	4 = { #Hospitaler special headgear.
-		factor = 100
-		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
-		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = { 1 = { } } #Hide Hair.
-		hide_layers = { 3 = { } } #Hide Clothes.
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
-		hide_layers = { 31 = { } } #Veil overload.
-		hide_layers = { 32 = { } }
-		hide_layers = { 33 = { } }
-		trigger = {
-			OR = {
-				has_landed_title = d_knights_hospitaler
-				liege = { has_landed_title = d_knights_hospitaler }
-			}
-			in_command = yes
-			has_game_rule = {
-				name = martial_headgear
-				value = on
-			}
-		}
+		factor = 0
 	}
 	5 = {  #Teuton special headgear.
-		factor = 100
-		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
-		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = { 1 = { } } #Hide Hair.
-		hide_layers = { 3 = { } } #Hide Clothes.
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
-		hide_layers = { 31 = { } } #Veil overload.
-		hide_layers = { 32 = { } }
-		hide_layers = { 33 = { } }
-		trigger = {
-			OR = {
-				has_landed_title = d_teutonic_order
-				has_landed_title = k_teutonic_state
-				liege = { has_landed_title = d_teutonic_order }
-				liege = { has_landed_title = k_teutonic_state }
-			}
-			in_command = yes
-			has_game_rule = {
-				name = martial_headgear
-				value = on
-			}
-		}
+		factor = 0
 	}
 	6 = { #Wearable Winged Helmet
 		factor = 100
@@ -169,28 +110,7 @@
 		}
 	}
 	7 = {  #Calatrava/Santiago special headgear.
-		factor = 100
-		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
-		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = { 1 = { } } #Hide Hair.
-		hide_layers = { 3 = { } } #Hide Clothes.
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
-		hide_layers = { 31 = { } } #Veil overload.
-		hide_layers = { 32 = { } }
-		hide_layers = { 33 = { } }
-		trigger = {
-			OR = {
-				has_landed_title = d_knights_santiago
-				has_landed_title = d_knights_calatrava
-				liege = { has_landed_title = d_knights_santiago }
-				liege = { has_landed_title = d_knights_calatrava }
-			}
-			in_command = yes
-			has_game_rule = {
-				name = martial_headgear
-				value = on
-			}
-		}
+		factor = 0
 	}
 	8 = { #Wearable Wrapped Helmet
 		factor = 100
@@ -225,26 +145,7 @@
 		}
 	}
 	9 = { #Livonian special headgear.
-		factor = 100
-		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
-		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = { 1 = { } } #Hide Hair.
-		hide_layers = { 3 = { } } #Hide Clothes.
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
-		hide_layers = { 31 = { } } #Veil overload.
-		hide_layers = { 32 = { } }
-		hide_layers = { 33 = { } }
-		trigger = {
-			OR = {
-				has_landed_title = d_livonian_order
-				liege = { has_landed_title = d_livonian_order }
-			}
-			in_command = yes
-			has_game_rule = {
-				name = martial_headgear
-				value = on
-			}
-		}
+		factor = 0
 	}
 	10 = { #Unicorn headgear.
 		factor = 100
@@ -259,16 +160,12 @@
 	11 = { #Miaphysite priest
 		factor = 100
 		trigger = {
-			religion_group = christian
 			OR = {
 				is_priest = yes
 				blg_priest = yes
 			}
 			is_female = no
 			OR = {
-				religion = miaphysite
-				is_heresy_of = miaphysite
-				is_parent_religion = miaphysite
 				religion = nestorian
 				is_heresy_of = nestorian
 				is_parent_religion = nestorian
@@ -282,21 +179,9 @@
 		hide_layers = {32 = {}}
 		trigger = {
 			NOT = { has_game_rule = { name = blg_artifacts value = off } }
-			OR = {
-				any_artifact = {
-					artifact_type = crown_zun_fylkir
-					is_artifact_equipped = yes
-				}
-				trait = dead_crown_zun_fylkir
-				AND = {
-					is_priest = yes
-					rightful_religious_head = ROOT
-					OR = {
-						religion_openly_zun_or_reformed_trigger = yes
-						religion_openly_egyptian_or_reformed_trigger = yes
-					}
-				}
-			}
+			is_priest = yes
+			rightful_religious_head = ROOT
+			religion_openly_egyptian_or_reformed_trigger = yes
 		}
 	}
 	13 = { #Early Christian priest

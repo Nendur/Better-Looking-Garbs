@@ -30,14 +30,6 @@ blg_crowned = {
 	always = no
 }
 
-blg_religion_orthodox = {
-	always = no
-}
-
-blg_religion_orientorthodox = {
-	always = no
-}
-
 blg_religion_chinese = {
 	always = no
 }

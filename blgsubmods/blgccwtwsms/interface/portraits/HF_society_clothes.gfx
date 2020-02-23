@@ -1,6 +1,6 @@
 spriteTypes = {
 
-	# Stoics
+### Stoics
 
 	spriteType = {
 		name = "GFX_society_monastic_order_stoics_male_clothing_behind"
@@ -28,20 +28,21 @@ spriteTypes = {
 
 	portraitType = {
 		effectFile = "gfx/FX/portrait.lua"
-		name = "PORTRAIT_society_monastic_order_stoics_clothing"
+		name = "PORTRAIT_society_monastic_order_stoics_clothing_male"
 
 		weight = {
 			additive_modifier = {
 				value = 10000
 				portrait_age > child
 				portrait_clothing = yes
+				portrait_is_female = no
 				portrait_society = monastic_order_stoics
 				OR = {
 					portrait_government = theocracy_government
 					NOT = { portrait_tier = baron }
-					portrait_society_rank = 3
 					portrait_society_rank = 4
 					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
@@ -54,7 +55,7 @@ spriteTypes = {
 		layer = { 
 			"GFX_society_monastic_order_stoics_male_clothing_behind:c0"
 			"GFX_society_monastic_order_stoics_male_clothing_front:c2"
-			"GFX_society_monastic_order_stoics_male_headgear_mid:c3"
+			"GFX_empty:c3"
 			"GFX_society_monastic_order_stoics_male_headgear_front:c5"
 			"GFX_society_monastic_order_stoics_male_headgear_behind:c1"
 			"GFX_empty:c7"
@@ -65,19 +66,13 @@ spriteTypes = {
 		allow_property_values = {
 			3 = {
 				0 = {
-					always = no
-					#portrait_society_rank = 1
+					portrait_society_rank = 1
 				}
 				1 = {
-					always = no
-					#portrait_society_rank = 2
+					portrait_society_rank = 2
 				}
 				2 = {
-					OR = {
-						portrait_society_rank = 1
-						portrait_society_rank = 2
-						portrait_society_rank = 3
-					}
+					portrait_society_rank = 3
 				}
 				3 = {
 					portrait_society_rank = 4
@@ -85,41 +80,111 @@ spriteTypes = {
 			}
 			5 = {
 				0 = {
-					always = no
-					#portrait_society_rank = 1
+					portrait_society_rank = 1
 				}
 				1 = {
-					always = no
-					#portrait_society_rank = 2
+					portrait_society_rank = 2
 				}
 				2 = {
-					always = no
-					#portrait_society_rank = 3
+					portrait_society_rank = 3
 				}
 				3 = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
-				0 = {
-					always = yes
-				}
-			}
-			32 = {
-				0 = {
-					always = yes
-				}
-			}
-			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
+
+	spriteType = {
+		name = "GFX_society_monastic_order_stoics_female_clothing_behind"
+		textureFile = "gfx/characters/societies/hf_stoic_female_clothing_behind.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_society_monastic_order_stoics_female_clothing_front"
+		textureFile = "gfx/characters/societies/hf_stoic_female_clothing_front.dds"
+		noOfFrames = 4
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_monastic_order_stoics_clothing_female"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_clothing = yes
+				portrait_is_female = yes
+				portrait_society = monastic_order_stoics
+				OR = {
+					portrait_government = theocracy_government
+					NOT = { portrait_tier = baron }
+					portrait_society_rank = 4
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_monastic_order_stoics_female_clothing_behind:c0"
+			"GFX_society_monastic_order_stoics_female_clothing_front:c2"
+			"GFX_empty:c3"
+			"GFX_society_monastic_order_stoics_male_headgear_front:c5"
+			"GFX_society_monastic_order_stoics_male_headgear_behind:c1"
+			"GFX_empty:c7"
+			"GFX_empty:c4"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+		}
+	}
+
 	# Male
 
 	spriteType = {
