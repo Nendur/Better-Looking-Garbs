@@ -89,13 +89,8 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -199,18 +194,11 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
+			32 = {
 				0 = { always = yes }
 			}
-			32 = {
-				0 = {
-					always = yes
-				}
-			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 

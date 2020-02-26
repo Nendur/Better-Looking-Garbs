@@ -175,6 +175,7 @@
 			religion_group = christian
 			is_in_society = no
 			is_priest = yes
+			is_female = no
 		}
 	}
 }

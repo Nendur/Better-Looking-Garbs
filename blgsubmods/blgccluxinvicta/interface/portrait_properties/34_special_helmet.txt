@@ -190,6 +190,7 @@
 		trigger = {
 			religion_group = christian
 			is_in_society = no
+			is_female = no
 			OR = {
 				is_priest = yes
 				blg_priest = yes

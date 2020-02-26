@@ -282,9 +282,6 @@ spriteTypes = {
 					}
 				}
 			}
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -571,9 +568,6 @@ spriteTypes = {
 					}
 				}
 			}
-			19 = {
-				0 = { always = yes }
-			}
 			32 = {
 				0 = { always = yes }
 			}
@@ -665,10 +659,6 @@ spriteTypes = {
 	}
 
 	# the_satanists
-	# the_trollcrafters
-	# the_cult_of_kali
-	# the_cold_ones
-	# the_plaguebringers
 
 	# Male
 
@@ -1113,6 +1103,99 @@ spriteTypes = {
 		}
 	}
 
+	# the_trollcrafters
+
+	portraitType = {
+		name = "PORTRAIT_society_trollcrafters_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = the_trollcrafters
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_norse_male_clothes_behind:p3:c0"
+			"GFX_society_satanist_female_headgear_behind:c1"
+			"GFX_society_warrior_lodge_norse_male_clothes:p3:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_society_satanist_female_headgear_front:c5"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					OR = {
+						portrait_society_rank = 1
+						portrait_society_rank = 2
+					}
+				}
+				2 = {
+					portrait_society_rank = 4
+				}
+				3 = {
+					portrait_society_rank = 3
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					OR = {
+						portrait_society_rank = 3
+						AND = {
+							portrait_society_rank = 4
+							portrait_has_trait = i_used_to_be_a_player
+						}
+					}
+				}
+				3 = {
+					portrait_society_rank = 4
+					NOT = { portrait_has_trait = i_used_to_be_a_player }
+				}
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+		}
+
+		headgear_that_hides_hair = { 0 1 2 3 }
+	}
+
+	# the_cold_ones
+	# the_plaguebringers
+
 	portraitType = {
 		name = "PORTRAIT_society_evilpagan_clothing_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -1124,7 +1207,6 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_clothing = yes
 				OR = {
-					portrait_society = the_trollcrafters
 					portrait_society = the_cold_ones
 					portrait_society = the_plaguebringers
 					portrait_society = the_procession_of_pox
@@ -1241,8 +1323,8 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_society_vodoun_female_clothing_behind:c0"
-			"GFX_society_vodoun_female_clothing_front:c2"
+			"GFX_society_vodoun_male_clothing_behind:c0"
+			"GFX_society_vodoun_male_clothing_front:c2"
 			"GFX_empty:c3"
 			"GFX_society_satanist_female_headgear_front:c5"
 			"GFX_society_satanist_female_headgear_behind:c1"

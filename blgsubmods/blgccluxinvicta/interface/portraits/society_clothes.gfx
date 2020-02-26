@@ -255,9 +255,6 @@ spriteTypes = {
 					}
 				}
 			}
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -516,9 +513,6 @@ spriteTypes = {
 						portrait_culture_group = chinese
 					}
 				}
-			}
-			19 = {
-				0 = { always = yes }
 			}
 			32 = {
 				0 = { always = yes }

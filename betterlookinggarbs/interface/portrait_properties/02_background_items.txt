@@ -17,9 +17,11 @@
 		#hide_layers = { 19 = { } } #Hide layers with special crowns.
 		hide_layers = { 31 = { } }
 		trigger = {
+			is_alive = no
 			OR = {
 				trait = saint
 				blg_saint = yes
+				has_nickname = nick_the_saint
 			}
 		}
 	}

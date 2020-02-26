@@ -186,6 +186,7 @@ spriteTypes = {
 	}
 
 ### Bacchants
+### the_cult_of_kali
 
 	spriteType = {
 		name = "GFX_society_bacchant_male_clothing_behind"
