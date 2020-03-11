@@ -43,7 +43,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_celtic_male_clothes_behind"
 		texturefile = "gfx\\characters\\western_male\\western_male_clothes_behind.dds"
-		noOfFrames = 16
+		noOfFrames = 14
 		norefcount = yes
 	}
 
@@ -148,7 +148,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_celtic_male_clothes"
 		texturefile = "gfx\\characters\\western_male\\western_male_clothes.dds"
-		noOfFrames = 16
+		noOfFrames = 14
 		norefcount = yes
 	}
 

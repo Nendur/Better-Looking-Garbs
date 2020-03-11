@@ -56,7 +56,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_serbsouthslavic_male_headgear_behind"
-		texturefile = "gfx\\characters\\western_male\\western_male_headgear_behind.dds"
+		texturefile = "gfx\\characters\\westernslavic_male\\westernslavic_male_headgear_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
@@ -70,7 +70,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_serbsouthslavic_male_headgear"
-		texturefile = "gfx\\fallbacks\\occitan_male\\occitan_male_headgear.dds"
+		texturefile = "gfx\\characters\\westernslavic_male\\westernslavic_male_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}

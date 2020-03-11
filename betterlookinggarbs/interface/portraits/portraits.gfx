@@ -59,7 +59,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_western_male_clothes_behind"
 		texturefile = "gfx\\characters\\western_male\\western_male_clothes_behind.dds"
-		noOfFrames = 16
+		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -299,7 +299,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_western_male_clothes"
 		texturefile = "gfx\\characters\\western_male\\western_male_clothes.dds"
-		noOfFrames = 16
+		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -380,22 +380,6 @@ spriteTypes = {
 		name = "GFX_western_male_hair_oldage"
 		texturefile = "gfx\\characters\\western_male\\western_male_hair_3.dds"
 		noOfFrames = 15
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_western_male_clothes_infront"
-		texturefile = "gfx\\characters\\western_male\\western_male_clothes_infront.dds"
-		noOfFrames = 14
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_western_male_clothes_infront_partial"
-		texturefile = "gfx\\characters\\western_male\\western_male_clothes_infront_partial.dds"
-		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -484,7 +468,7 @@ spriteTypes = {
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_german_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
-			"GFX_western_male_clothes_infront:p3:c4"
+			"GFX_empty:p3:c4"
 			"GFX_saxon_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
@@ -524,7 +508,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 }
+		headgear_that_hides_hair = {}
 	}
 
 	portraitType = {
@@ -573,7 +557,7 @@ spriteTypes = {
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_german_male_hair_midage:p1:h:y"
 			"GFX_empty:p5:c7:h"
-			"GFX_western_male_clothes_infront:p3:c4"
+			"GFX_empty:p3:c4"
 			"GFX_saxon_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
@@ -612,7 +596,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 }
+		headgear_that_hides_hair = {}
 	}
 
 	portraitType = {
@@ -661,7 +645,7 @@ spriteTypes = {
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_german_male_hair_oldage:p1:h:y"
 			"GFX_empty:p5:c7:h"
-			"GFX_western_male_clothes_infront:p3:c4"
+			"GFX_empty:p3:c4"
 			"GFX_saxon_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
@@ -700,7 +684,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 }
+		headgear_that_hides_hair = {}
 	}
 
 ### WESTERN FEMALE ####

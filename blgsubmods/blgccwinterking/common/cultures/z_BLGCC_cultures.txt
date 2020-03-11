@@ -91,6 +91,9 @@ imperiale = {
 	romanogallic = {
 		graphical_cultures = { gallicgfx romangfx occitangfx }
 	}
+	romanorhaetian = {
+		graphical_cultures = { gallicgfx romangfx occitangfx }
+	}
 	romanoaquitanian = {
 		graphical_cultures = { gallicgfx romangfx occitangfx }
 	}
@@ -101,10 +104,10 @@ imperiale = {
 		graphical_cultures = { lombardgfx germangfx }
 	}
 	romanonumidian = {
-		graphical_cultures = { siciliangfx berbergfx muslimgfx }
+		graphical_cultures = { copticgfx berbergfx muslimgfx }
 	}
 	romanoafrican = {
-		graphical_cultures = { siciliangfx berbergfx muslimgfx }
+		graphical_cultures = { copticgfx berbergfx muslimgfx }
 	}
 	romanohispanic = {
 		graphical_cultures = { southerngfx occitangfx }
@@ -120,6 +123,9 @@ imperiale = {
 	}
 	romanosyrian = {
 		graphical_cultures = { semitegfx levantinegfx arabicgfx muslimgfx }
+	}
+	romanoegyptian = {
+		graphical_cultures = { copticgfx egyptiangfx muslimgfx }
 	}
 	romanothracian = {
 		graphical_cultures = { romanobalkangfx serbsouthslavicgfx byzantinegfx easterngfx }

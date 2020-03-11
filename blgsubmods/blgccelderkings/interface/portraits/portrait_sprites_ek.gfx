@@ -18,7 +18,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_special_helmets"
 		texturefile = "gfx\\characters\\shared\\unique_characters.dds"
-		noOfFrames = 10
+		noOfFrames = 27
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -53,12 +53,5 @@ spriteTypes = {
 		noOfFrames = 24
 		norefcount = yes
 		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_mediterranean_male_headgear_mid"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_headgear_mid.dds"
-		noOfFrames = 14
-		norefcount = yes
 	}
 }

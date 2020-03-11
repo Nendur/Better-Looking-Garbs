@@ -394,7 +394,6 @@ character_event = {
 					NOT = { check_variable = { which = ca_headgear value = 12 } }
 					AND = {
 						NOT = { check_variable = { which = ca_headgear value = 14 } }
-						is_female = no
 						OR= {
 							higher_real_tier_than = count
 							spouse = { higher_real_tier_than = count }
@@ -402,7 +401,6 @@ character_event = {
 					}
 					AND = {
 						NOT = { check_variable = { which = ca_headgear value = 15 } }
-						is_female = no
 						OR= {
 							real_tier = emperor
 							spouse = { real_tier = emperor }

@@ -94,7 +94,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_chinese_male_clothes"
 		texturefile = "gfx\\characters\\khitan_male\\khitan_male_clothes.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 

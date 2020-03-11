@@ -57,7 +57,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_turkish_male_clothes_behind"
 		texturefile = "gfx\\characters\\turkish_male\\turkish_male_clothes_behind.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 
@@ -264,12 +264,12 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	spriteType = {
-		name = "GFX_turkish_male_headgear_mid"
-		texturefile = "gfx\\characters\\turkish_male\\turkish_male_headgear_mid.dds"
-		noOfFrames = 14
-		norefcount = yes
-	}
+	#spriteType = {
+	#	name = "GFX_turkish_male_headgear_mid"
+	#	texturefile = "gfx\\characters\\turkish_male\\turkish_male_headgear_mid.dds"
+	#	noOfFrames = 14
+	#	norefcount = yes
+	#}
 
 	spriteType = {
 		name = "GFX_turkish_male_ear"
@@ -337,7 +337,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_turkish_male_clothes"
 		texturefile = "gfx\\characters\\turkish_male\\turkish_male_clothes.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 

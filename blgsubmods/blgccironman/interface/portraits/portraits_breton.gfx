@@ -22,7 +22,7 @@ spriteTypes = {
 			"GFX_celtic_male_headgear_behind:c1"
 			"GFX_western_male_clothes:c2"
 			"GFX_celtic_male_headgear_mid:c3"
-			"GFX_western_male_clothes_infront:c4"
+			"GFX_empty:c4"
 			"GFX_celtic_male_headgear_2:c5"
 		}
 
@@ -51,7 +51,7 @@ spriteTypes = {
 			"GFX_celtic_female_headgear_behind:c1"
 			"GFX_western_female_clothes:c2"
 			"GFX_empty:c3"
-			"GFX_western_female_clothes_infront:c4"
+			"GFX_empty:c4"
 			"GFX_celtic_female_headgear:c5"
 		}
 

@@ -175,7 +175,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_turkish_male_clothes_behind"
 		texturefile = "gfx\\characters\\cuman_male\\cuman_male_clothes_behind.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 
@@ -357,7 +357,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_turkish_male_clothes"
 		texturefile = "gfx\\characters\\cuman_male\\cuman_male_clothes.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 

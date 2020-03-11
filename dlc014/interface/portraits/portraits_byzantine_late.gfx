@@ -5,7 +5,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_byzantine_male_clothes_behind_late"
 		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_clothes_behind.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 
@@ -18,7 +18,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_byzantine_male_headgear_mid_late"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_headgear_mid.dds"
+		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_headgear_mid.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
@@ -26,7 +26,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_byzantine_male_clothes_late"
 		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_clothes.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 

@@ -43,7 +43,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_english_male_clothes_behind"
 		texturefile = "gfx\\characters\\western_male\\western_male_clothes_behind.dds"
-		noOfFrames = 16
+		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -66,7 +66,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_headgear"
-		texturefile = "gfx\\characters\\norman_male\\norman_male_headgear.dds"
+		texturefile = "gfx\\characters\\english_male\\english_male_headgear.dds"
 		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes
@@ -74,15 +74,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_clothes"
-		texturefile = "gfx\\characters\\norman_male\\norman_male_clothes.dds"
-		noOfFrames = 14
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_english_male_clothes_infront"
-		texturefile = "gfx\\characters\\western_male\\western_male_clothes_infront.dds"
+		texturefile = "gfx\\characters\\english_male\\english_male_clothes.dds"
 		noOfFrames = 14
 		norefcount = yes
 		can_be_lowres = yes

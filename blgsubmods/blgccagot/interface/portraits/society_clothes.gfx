@@ -799,8 +799,8 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_society_vodoun_female_clothing_behind:c0"
-			"GFX_society_vodoun_female_clothing_front:c2"
+			"GFX_society_vodoun_male_clothing_behind:c0"
+			"GFX_society_vodoun_male_clothing_front:c2"
 			"GFX_empty:c3"
 			"GFX_society_satanist_female_headgear_front:c5"
 			"GFX_society_satanist_female_headgear_behind:c1"

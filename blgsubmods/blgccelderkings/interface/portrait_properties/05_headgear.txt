@@ -666,7 +666,6 @@
 						primary_title = { mercenary = yes }
 					}
 				}
-				has_job_title = job_marshal
 				in_battle = yes
 				in_siege = yes
 				death_reason = death_battle
@@ -902,7 +901,6 @@
 				}
 				in_battle = yes
 				in_siege = yes
-				has_job_title = job_marshal
 				death_reason = death_battle
 				#death_reason = death_duel
 				AND = {
@@ -1030,7 +1028,6 @@
 						}
 						in_battle = yes
 						in_siege = yes
-						has_job_title = job_marshal
 						death_reason = death_battle
 						#death_reason = death_duel
 						AND = {
@@ -1104,7 +1101,6 @@
 				}
 				in_battle = yes
 				in_siege = yes
-				has_job_title = job_marshal
 				death_reason = death_battle
 				AND = {
 					government = order_government

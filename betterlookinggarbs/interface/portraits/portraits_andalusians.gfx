@@ -1,22 +1,6 @@
 ### ANDALUSIANS ###
 spriteTypes = {
 
-	#spriteType = {
-	#	name = "GFX_andalusian_male_clothes"
-	#	texturefile = "gfx\\characters\\andalusian_male\\andalusian_male_clothes.dds"
-	#	noOfFrames = 14
-	#	norefcount = yes
-	#	can_be_lowres = yes
-	#}
-
-	#spriteType = {
-	#	name = "GFX_andalusian_male_headgear"
-	#	texturefile = "gfx\\characters\\andalusian_male\\andalusian_male_headgear.dds"
-	#	noOfFrames = 14
-	#	norefcount = yes
-	#	can_be_lowres = yes
-	#}
-
 	portraitType = {
 		name = "PORTRAIT_andalusiangfx_male"
 		effectFile = "gfx/FX/portrait.lua"

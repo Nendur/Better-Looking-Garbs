@@ -15,13 +15,6 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	spriteType = {
-		name = "GFX_italian_male_headgear_mid"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_headgear_mid.dds"
-		noOfFrames = 14
-		norefcount = yes
-	}
-
 	portraitType = {
 		name = "PORTRAIT_italiangfx_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -57,7 +50,7 @@ spriteTypes = {
 			"GFX_character_warpaint:p29"
 			"GFX_character_boils:p9"
 			"GFX_italian_male_clothes:p3:c2"
-			"GFX_italian_male_headgear_mid:p5:c3"
+			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_egyptian_male_beard:p4:h:y"
@@ -139,7 +132,7 @@ spriteTypes = {
 			"GFX_character_warpaint:p29"
 			"GFX_character_boils:p9"
 			"GFX_italian_male_clothes:p3:c2"
-			"GFX_italian_male_headgear_mid:p5:c3"
+			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_egyptian_male_beard_midage:p4:h:y"
@@ -221,7 +214,7 @@ spriteTypes = {
 			"GFX_character_warpaint:p29"
 			"GFX_character_boils:p9"
 			"GFX_italian_male_clothes:p3:c2"
-			"GFX_italian_male_headgear_mid:p5:c3"
+			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_egyptian_male_beard_oldage:p4:h:y"
@@ -282,13 +275,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_italian_female_headgear_mid"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_headgear_mid.dds"
-		noOfFrames = 14
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_italian_female_headgear"
 		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_headgear.dds"
 		noOfFrames = 14
@@ -342,7 +328,7 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_italian_female_clothes:p3:c2"
-			"GFX_italian_female_headgear_mid:p5:c3"
+			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_italian_female_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
@@ -427,7 +413,7 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_italian_female_clothes:p3:c2"
-			"GFX_italian_female_headgear_mid:p5:c3"
+			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_italian_female_hair_midage:p1:h:y"
 			"GFX_empty:p5:c7:h"
@@ -512,7 +498,7 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_italian_female_clothes:p3:c2"
-			"GFX_italian_female_headgear_mid:p5:c3"
+			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_italian_female_hair_oldage:p1:h:y"
 			"GFX_empty:p5:c7:h"

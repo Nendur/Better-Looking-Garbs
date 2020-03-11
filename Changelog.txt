@@ -1,9 +1,14 @@
 Changelog:
 
+  Moved maille coifs from clothes to headgear to get proper hair covering.
+  Added armour to clothing sets that didn't have it.
+  Marshalls will now wear military clothes without helmets.
   Applied Orrie's workshop dependencies fix.
-  Reduce chance of headgear changes.
+  Reduce chance of random headgear changes.
   New combination for Miaphysite and Nestorian monastic clothing.
+  New combinations for Assassins, Followers of Hel and Otzo society clothing.
   Add more Stoic society clothes.
+  Remove headgear from priests of modded early Christian branches.
   Logging the mixed children events for debugging data.
   Always replace noculture ethnicities.
   Added AGOT More bloodlines genetic portraits.

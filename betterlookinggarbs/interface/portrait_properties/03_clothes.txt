@@ -319,10 +319,7 @@
 				higher_real_tier_than = count
 				spouse = { higher_real_tier_than = count }
 			}
-			NOR = {
-				primary_title = { mercenary = yes }
-				culture_group = east_african
-			}
+			#NOT = { primary_title = { mercenary = yes } }
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 11 } }
 		}
 		modifier = {
@@ -345,64 +342,8 @@
 				employer = { primary_title = { mercenary = yes } }
 				trait = shieldmaiden
 				blg_soldier = yes
-				AND = {
-					culture_group = iberian
-					NOR = {
-						culture = occitan
-						culture = andalusian_arabic
-					}
-				}
-				culture_group = iranian
-				culture_group = indo_aryan_group
-				culture = greek
-				culture = turkish
-				culture = cuman
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 11 } }
-		}
-		modifier = { # Reuse covered up clothes as common clothes
-			factor = 0.01
-			OR = {
-				culture_group = iranian
-				culture_group = iberian
-				culture_group = indo_aryan_group
-				culture = greek
-				culture = turkish
-				culture = cuman
-			}
-			NOR = {
-				culture = occitan
-				culture = andalusian_arabic
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				culture_group = iranian
-				culture_group = iberian
-				culture_group = indo_aryan_group
-				culture = greek
-				culture = turkish
-				culture = cuman
-			}
-			NOR = {
-				trait = humble
-				trait = peasant_leader
-				trait = heresiarch
-				employer = { government = order_government }
-				culture = occitan
-				culture = andalusian_arabic
-			}
-			OR = {
-				is_landed = yes
-				spouse = { higher_real_tier_than = count }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
-				blg_royalty = yes
-				is_or_was_offmap_power_ruler = yes
-			}
 		}
 	}
 
@@ -436,8 +377,10 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_job_title = job_marshal
 				death_reason = death_battle
 				#death_reason = death_duel
+				primary_title = { mercenary = yes }
 				government = order_government
 				has_landed_title = e_china_west_governor
 			}
@@ -505,8 +448,10 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_job_title = job_marshal
 				death_reason = death_battle
 				#death_reason = death_duel
+				primary_title = { mercenary = yes }
 				government = order_government
 				has_landed_title = e_china_west_governor
 			}
@@ -585,6 +530,7 @@
 						has_job_title = job_marshal
 						death_reason = death_battle
 						#death_reason = death_duel
+						primary_title = { mercenary = yes }
 						government = order_government
 						has_landed_title = e_china_west_governor
 					}

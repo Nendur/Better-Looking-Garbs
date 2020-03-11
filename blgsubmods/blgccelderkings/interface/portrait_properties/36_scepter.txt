@@ -25,7 +25,10 @@
 	4 = { # Mjolnir
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			any_artifact = {
 				has_artifact_flag = hammer
 				is_artifact_equipped = yes
@@ -163,7 +166,10 @@
 	13 = { # Lance
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
 			any_artifact = {
 				OR = {
@@ -178,7 +184,10 @@
 	14 = { # Lance
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
 			any_artifact = {
 				OR = {
@@ -193,7 +202,10 @@
 	15 = { # Trident
 		factor = 100
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
 			any_artifact = {
 				OR = {
@@ -207,7 +219,10 @@
 	16 = { # Mace
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
 			any_artifact = {
 				has_artifact_flag = mace
@@ -219,7 +234,10 @@
 	17 = { # Mace
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
 			any_artifact = {
 				has_artifact_flag = mace

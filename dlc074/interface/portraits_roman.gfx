@@ -346,13 +346,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_italian_male_headgear_mid"
-		texturefile = "gfx\\characters\\shared\\empty.dds"
-		noOfFrames = 1
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_roman_male_ear"
 		texturefile = "gfx\\characters\\roman_male\\roman_male_ear_1.dds"
 		noOfFrames = 4

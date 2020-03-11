@@ -60,7 +60,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_croatsouthslavic_male_clothes_behind"
 		texturefile = "gfx\\characters\\southslavic_male\\croat_southslavic_male_clothes_behind.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 
@@ -81,7 +81,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_croatsouthslavic_male_clothes"
 		texturefile = "gfx\\characters\\southslavic_male\\croat_southslavic_male_clothes.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 

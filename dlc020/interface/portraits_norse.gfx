@@ -350,7 +350,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_norse_male_clothes"
 		texturefile = "gfx\\characters\\norse_male\\norse_male_clothes.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 

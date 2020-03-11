@@ -37,7 +37,7 @@ if [ -z "$1" ] || [ "$1" != "-continue" ]; then
 	fi
 fi
 
-if [ -f "${MODS}Historical Immersion Project/SWMH_changelog.txt" -o -f "${MODS}blgccswmh.mod" ]; then
+if [ -f "${MODS}Historical Immersion Project/SWMH_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/SWMH_changelog.txt" -o -f "${MODS}blgccswmh.mod" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccswmh*" -d"$MODS"
 	fi
@@ -47,7 +47,7 @@ if [ -f "${MODS}Historical Immersion Project/SWMH_changelog.txt" -o -f "${MODS}b
 	fi
 	echo "HIP SWMH compatibility add-on installed."
 fi
-if [ -f "${MODS}Historical Immersion Project/EMF_changelog.txt" -o -f "${MODS}blgccemf.mod" ]; then
+if [ -f "${MODS}Historical Immersion Project/EMF_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/EMF_changelog.txt" -o -f "${MODS}blgccemf.mod" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccemf*" -d"$MODS"
 	fi

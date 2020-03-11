@@ -68,14 +68,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_byzantine_male_clothes_infront"
-		texturefile = "gfx\\characters\\shared\\empty.dds"
-		noOfFrames = 1
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
 		name = "GFX_byzantine_male_headgear_behind"
 		texturefile = "gfx\\characters\\byzantine_male\\byzantine_male_headgear_behind.dds"
 		noOfFrames = 14

@@ -634,7 +634,7 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_society_assassin_clothing_behind:c0"
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
 			"GFX_society_assassin_clothing_front:c2"
 			"GFX_empty:c3"
 			"GFX_society_assassin_headgear_front:c5"

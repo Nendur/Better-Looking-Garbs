@@ -42,7 +42,10 @@
 	4 = { # golden sword
 		factor = 5
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -57,7 +60,10 @@
 	5 = { # scimitar
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -76,7 +82,10 @@
 	6 = { # scimitar
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -95,7 +104,10 @@
 	7 = { # sword
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -115,7 +127,10 @@
 	8 = { # sword
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -135,7 +150,10 @@
 	9 = { # +2 Axe
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -155,7 +173,10 @@
 	10 = { # axe
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -171,7 +192,10 @@
 	11 = { # axe
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -186,7 +210,10 @@
 	12 = { # bow
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -201,7 +228,10 @@
 	13 = { # bow
 		factor = 25
 		trigger = {
-			in_command = yes
+			OR = {
+				in_command = yes
+				has_job_title = job_marshal
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }

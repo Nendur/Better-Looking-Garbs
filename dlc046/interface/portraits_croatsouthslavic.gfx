@@ -31,14 +31,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_croatsouthslavic_male_clothes_behind"
 		texturefile = "gfx\\characters\\western_male\\western_male_clothes_behind_early.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_croatsouthslavic_male_clothes"
 		texturefile = "gfx\\characters\\western_male\\western_male_clothes_early.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 

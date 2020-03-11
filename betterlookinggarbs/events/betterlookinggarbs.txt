@@ -762,7 +762,7 @@ character_event = {
 			7 = { add_trait = freckles }
 			7 = { add_trait = freckles_2 }
 			10 = { add_trait = freckles_3 }
-			5000 = {
+			4500 = {
 				modifier = {
 					factor = 0.01
 					graphical_culture = celticgfx

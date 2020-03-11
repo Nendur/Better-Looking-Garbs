@@ -264,13 +264,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_westafrican_male_headgear_mid"
-		texturefile = "gfx\\characters\\shared\\empty.dds"
-		noOfFrames = 1
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_westafrican_male_ear"
 		texturefile = "gfx\\characters\\westafrican_male\\african_male_ear_1.dds"
 		noOfFrames = 6
@@ -602,13 +595,6 @@ spriteTypes = {
 		name = "GFX_westafrican_female_clothes"
 		texturefile = "gfx\\characters\\westafrican_female\\african_female_clothes.dds"
 		noOfFrames = 12
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_westafrican_female_headgear_mid"
-		texturefile = "gfx\\characters\\shared\\empty.dds"
-		noOfFrames = 1
 		norefcount = yes
 	}
 

@@ -16,14 +16,6 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	#spriteType = {
-	#	name = "GFX_hungarian_male_clothes_infront"
-	#	texturefile = "gfx\\characters\\magyar_male\\hungarian_male_clothes_infront.dds"
-	#	noOfFrames = 14
-	#	norefcount = yes
-	#	can_be_lowres = yes
-	#}
-
 	spriteType = {
 		name = "GFX_hungarian_male_headgear_behind"
 		texturefile = "gfx\\characters\\magyar_male\\hungarian_male_headgear_behind.dds"

@@ -1412,7 +1412,6 @@
 						is_ruler = no
 					}
 				}
-				has_job_title = job_marshal
 				in_battle = yes
 				in_siege = yes
 				death_reason = death_battle
@@ -1471,11 +1470,12 @@
 		}
 		modifier = {
 			factor = 20
-			trait = shieldmaiden
-		}
-		modifier = {
-			factor = 100
-			employer = { government = order_government }
+			OR = {
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				has_portrait_property = { layer = 3 index = 14 }
+			}
 			in_command = no
 			NOT = { religion_group = muslim }
 		}
@@ -1688,7 +1688,6 @@
 				}
 				in_battle = yes
 				in_siege = yes
-				has_job_title = job_marshal
 				death_reason = death_battle
 				#death_reason = death_duel
 				has_landed_title = e_china_west_governor
@@ -1771,7 +1770,6 @@
 						}
 						in_battle = yes
 						in_siege = yes
-						has_job_title = job_marshal
 						death_reason = death_battle
 						#death_reason = death_duel
 						has_landed_title = e_china_west_governor
