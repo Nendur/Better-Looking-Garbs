@@ -49,7 +49,6 @@ spriteTypes = {
 			"GFX_merchant_male_clothes:c2"
 			"GFX_merchant_male_headgear:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_empty:c7"
 		}
 
@@ -77,7 +76,6 @@ spriteTypes = {
 			"GFX_merchant_female_clothes:c2"
 			"GFX_merchant_female_headgear:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_empty:c7"
 		}
 
@@ -105,7 +103,6 @@ spriteTypes = {
 			"GFX_byzmerchant_male_clothes:c2"
 			"GFX_merchant_male_headgear:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_empty:c7"
 		}
 	}
@@ -131,7 +128,6 @@ spriteTypes = {
 			"GFX_romanmerchant_female_clothes:c2"
 			"GFX_merchant_female_headgear:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_empty:c7"
 		}
 	}

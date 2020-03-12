@@ -9,6 +9,10 @@
 		}
 		modifier = {
 			factor = 100
+			has_game_started = no
+		}
+		modifier = {
+			factor = 100
 			is_alive = no
 		}
 	}

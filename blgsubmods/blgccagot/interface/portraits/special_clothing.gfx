@@ -52,7 +52,6 @@ spriteTypes = {
 			"GFX_knight_headgear_behind:c1"
 			"GFX_knight_clothes:c2"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_knight_headgear:c5"
 			"GFX_empty:c7"
 		}
@@ -71,6 +70,9 @@ spriteTypes = {
 						portrait_has_trait = undead
 					}
 				}
+			}
+			39 = {
+				0 = { always = yes }
 			}
 		}
 
@@ -99,7 +101,6 @@ spriteTypes = {
 			"GFX_empty:c1"
 			"GFX_religious_male_clothes:c2"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_empty:c5"
 		}
 
@@ -145,7 +146,6 @@ spriteTypes = {
 			"GFX_religious_female_headgear_behind:c1"
 			"GFX_religious_female_clothes:c2"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_religious_female_headgear:c5"
 		}
 

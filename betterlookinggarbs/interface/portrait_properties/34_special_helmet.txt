@@ -13,6 +13,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
+		hide_layers = { 39 = { } }
 		trigger = {
 			OR = {
 				has_landed_title = d_knights_templar
@@ -35,6 +36,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
+		hide_layers = { 39 = { } }
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_crusader_king
@@ -68,6 +70,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
+		hide_layers = { 39 = { } }
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_crusader_king
@@ -101,6 +104,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
+		hide_layers = { 39 = { } }
 		trigger = {
 			OR = {
 				has_landed_title = d_knights_hospitaler
@@ -123,6 +127,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
+		hide_layers = { 39 = { } }
 		trigger = {
 			OR = {
 				has_landed_title = d_teutonic_order
@@ -146,6 +151,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
+		hide_layers = { 39 = { } }
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_winged_helmet
@@ -178,6 +184,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
+		hide_layers = { 39 = { } }
 		trigger = {
 			OR = {
 				has_landed_title = d_knights_santiago
@@ -201,6 +208,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
+		hide_layers = { 39 = { } }
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_wrapped_helmet
@@ -234,6 +242,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
+		hide_layers = { 39 = { } }
 		trigger = {
 			OR = {
 				has_landed_title = d_livonian_order

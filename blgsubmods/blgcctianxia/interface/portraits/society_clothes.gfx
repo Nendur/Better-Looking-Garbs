@@ -70,7 +70,6 @@ spriteTypes = {
 			"GFX_society_hermetic_male_headgear_behind:c1"
 			"GFX_society_hermetic_male_headgear_front:c5"
 			"GFX_society_hermetic_male_headgear_mid:c3"
-			"GFX_empty:c4"
 		}
 
 		# Appropriate clothing
@@ -357,7 +356,6 @@ spriteTypes = {
 			"GFX_society_hermetic_female_headgear_behind:c1"
 			"GFX_society_hermetic_female_headgear_front:c5"
 			"GFX_society_hermetic_female_headgear_mid:c3"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
@@ -639,13 +637,9 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_assassin_headgear_front:c5"
 			"GFX_society_assassin_headgear_behind:c1"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -733,7 +727,6 @@ spriteTypes = {
 			"GFX_society_satanist_male_headgear_mid:c3"
 			"GFX_society_satanist_male_headgear_front:c5"
 			"GFX_society_satanist_male_headgear_behind:c1"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -849,7 +842,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_satanist_female_headgear_front:c5"
 			"GFX_society_satanist_female_headgear_behind:c1"
-			"GFX_empty:c4"
 		}
 
 		# No hair, correct rank
@@ -968,9 +960,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_vodoun_male_headgear_front:c5"
 			"GFX_society_vodoun_male_headgear_behind:c1"
-			"GFX_empty:c6"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -1060,9 +1050,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_vodoun_male_headgear_front:c5"
 			"GFX_society_vodoun_male_headgear_behind:c1"
-			"GFX_empty:c6"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
@@ -1141,7 +1129,6 @@ spriteTypes = {
 			"GFX_society_satanist_female_headgear_behind:c1"
 			"GFX_society_warrior_lodge_norse_male_clothes:p3:c2"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_society_satanist_female_headgear_front:c5"
 		}
 
@@ -1237,7 +1224,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_satanist_male_headgear_front:c5"
 			"GFX_society_satanist_male_headgear_behind:c1"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -1328,7 +1314,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_satanist_female_headgear_front:c5"
 			"GFX_society_satanist_female_headgear_behind:c1"
-			"GFX_empty:c4"
 		}
 
 		# No hair, correct rank

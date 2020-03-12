@@ -6,6 +6,10 @@
 			factor = 100
 			has_game_rule = { name = blg_artifacts value = off }
 		}
+		modifier = {
+			factor = 100
+			has_game_started = no
+		}
 	}
 	1 = { # Bon Fylkir Scepter
 		factor = 0

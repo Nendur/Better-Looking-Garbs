@@ -66,13 +66,9 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_vaishnavite_male_headgear_front:c5"
 			"GFX_empty:c3"
 			"GFX_empty:c1"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -101,7 +97,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_hindu_vaishnavite_male_clothing_behind:c0"
 			"GFX_society_monastic_order_hindu_vaishnavite_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -163,13 +158,9 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_front:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			32 = {
 				0 = { always = yes }
 			}
@@ -250,13 +241,9 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_smarta_male_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_smarta_male_headgear_front:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -285,7 +272,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_hindu_smarta_male_clothing_behind:c0"
 			"GFX_society_monastic_order_hindu_smarta_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -359,13 +345,9 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_smarta_female_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_smarta_female_headgear_front:c5"
 			"GFX_society_monastic_order_hindu_smarta_female_headgear_mid:c3"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			32 = {
 				0 = { always = yes }
 			}
@@ -434,13 +416,9 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_empty:c5"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -467,7 +445,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_hindu_shakti_male_clothing_behind:c0"
 			"GFX_society_monastic_order_hindu_shakti_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -528,13 +505,9 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_empty:c5"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			32 = {
 				0 = { always = yes }
 			}
@@ -564,7 +537,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_hindu_shakti_female_clothing_behind:c0"
 			"GFX_society_monastic_order_hindu_shakti_female_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -627,13 +599,9 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_empty:c5"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -659,7 +627,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_hindu_shaivite_male_clothing_behind:c0"
 			"GFX_society_monastic_order_hindu_shaivite_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -721,13 +688,9 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_shaivite_female_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_shaivite_female_headgear_front:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -785,7 +748,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_dummy:c5"
-			"GFX_empty:c4"
 		}
 
 		# Hide hair, hide beards unless they're old.
@@ -794,9 +756,6 @@ spriteTypes = {
 				0 = {
 					portrait_age < oldage
 				}
-			}
-			19 = {
-				0 = { always = yes }
 			}
 			32 = {
 				0 = { always = yes }
@@ -837,7 +796,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_buddhist_vajrayana_male_clothing_behind:c0"
 			"GFX_society_monastic_order_buddhist_vajrayana_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -888,14 +846,10 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_dummy:c5"
-			"GFX_empty:c4"
 		}
 
 		# Hide hair
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			32 = {
 				0 = { always = yes }
 			}
@@ -935,7 +889,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_buddhist_vajrayana_female_clothing_behind:c0"
 			"GFX_society_monastic_order_buddhist_vajrayana_female_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -988,7 +941,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_dummy:c5"
-			"GFX_empty:c4"
 		}
 
 		# Hide hair, hide beards unless they're old.
@@ -997,9 +949,6 @@ spriteTypes = {
 				0 = {
 					portrait_age < oldage
 				}
-			}
-			19 = {
-				0 = { always = yes }
 			}
 			31 = {
 				0 = { always = yes }
@@ -1032,7 +981,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_buddhist_theravada_male_clothing_behind:c0"
 			"GFX_society_monastic_order_buddhist_theravada_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -1083,14 +1031,10 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_dummy:c5"
-			"GFX_empty:c4"
 		}
 
 		# Hide hair
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			32 = {
 				0 = { always = yes }
 			}
@@ -1125,7 +1069,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_buddhist_theravada_female_clothing_behind:c0"
 			"GFX_society_monastic_order_buddhist_theravada_female_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -1178,7 +1121,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_dummy:c5"
-			"GFX_empty:c4"
 		}
 
 		# Hide hair, hide beards unless they're old.
@@ -1187,9 +1129,6 @@ spriteTypes = {
 				0 = {
 					portrait_age < oldage
 				}
-			}
-			19 = {
-				0 = { always = yes }
 			}
 			31 = {
 				0 = { always = yes }
@@ -1222,7 +1161,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_buddhist_mahayana_male_clothing_behind:c0"
 			"GFX_society_monastic_order_buddhist_mahayana_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -1273,14 +1211,10 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_dummy:c5"
-			"GFX_empty:c4"
 		}
 
 		# Hide hair
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			32 = {
 				0 = { always = yes }
 			}
@@ -1315,7 +1249,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_buddhist_mahayana_female_clothing_behind:c0"
 			"GFX_society_monastic_order_buddhist_mahayana_female_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -1364,15 +1297,11 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_dummy:c5"
-			"GFX_empty:c4"
 		}
 
 		# Hide hair, beard
 		allow_property_values = {
 			4 = {
-				0 = { always = yes }
-			}
-			19 = {
 				0 = { always = yes }
 			}
 			31 = {
@@ -1435,14 +1364,10 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_monastic_order_jain_digambara_female_headgear_behind:c1"
 			"GFX_society_monastic_order_jain_digambara_female_headgear_front:c5"
-			"GFX_empty:c4"
 		}
 
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			32 = {
 				0 = { always = yes }
 			}
@@ -1517,13 +1442,9 @@ spriteTypes = {
 			"GFX_society_monastic_order_jain_svetambara_male_headgear_front:c5"
 			"GFX_society_monastic_order_jain_svetambara_male_headgear_mid:c3"
 			"GFX_empty:c1"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -1549,7 +1470,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_jain_svetambara_male_clothing_behind:c0"
 			"GFX_society_monastic_order_jain_svetambara_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -1617,16 +1537,12 @@ spriteTypes = {
 			"GFX_society_monastic_order_jain_svetambara_female_headgear_behind:c1"
 			"GFX_society_monastic_order_jain_svetambara_female_headgear_front:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
 			3 = {
 				0 = { always = yes }
 				1 = { always = yes }
-			}
-			19 = {
-				0 = { always = yes }
 			}
 			32 = {
 				0 = { always = yes }
@@ -1656,7 +1572,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_monastic_order_jain_svetambara_female_clothing_behind:c0"
 			"GFX_society_monastic_order_jain_svetambara_female_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 }

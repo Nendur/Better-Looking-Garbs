@@ -55,7 +55,6 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_norse_male_clothes:p3:c2"
 			"GFX_society_warrior_lodge_norse_male_headgear_mid:p5:c3"
 			"GFX_society_warrior_lodge_norse_male_headgear:p5:c5"
-			"GFX_empty:c6"
 			"GFX_empty:c7"
 		}
 
@@ -90,18 +89,13 @@ spriteTypes = {
 				}
 			}
 			19 = {
-				10 = {
-					always = yes
-				}
+				10 = { always = yes }
 			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
-
 
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_female_clothes_behind"
@@ -118,11 +112,6 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_norse_female_headgear_behind.dds"
 		noOfFrames = 4
 	}
-	#spriteType = {
-	#	name = "GFX_society_warrior_lodge_norse_female_hairlayer_behind"
-	#	textureFile = "gfx/characters/societies/wl_norse_female_hairlayer_behind.dds"
-	#	noOfFrames = 4
-	#}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_female_hairlayer_front"
 		textureFile = "gfx/characters/societies/wl_norse_female_hairlayer_front.dds"
@@ -168,7 +157,6 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_norse_female_headgear_mid:p5:c3"
 			"GFX_society_warrior_lodge_norse_female_hairlayer_front:p5:c7:h"
 			"GFX_society_warrior_lodge_norse_female_headgear:p5:c5"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -202,19 +190,16 @@ spriteTypes = {
 				}
 			}
 			19 = {
-				10 = {
-					always = yes
-				}
+				10 = { always = yes }
 			}
 			32 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
+			}
+			39 = {
+				0 = { always = yes }
 			}
 		}
 
@@ -273,7 +258,6 @@ spriteTypes = {
 		layer = { 
 			"GFX_society_warrior_lodge_zun_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_zun_male_clothes:p3:c2"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -345,7 +329,6 @@ spriteTypes = {
 		layer = { 
 			"GFX_society_warrior_lodge_zun_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_zun_female_clothes:p3:c2"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank

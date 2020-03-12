@@ -68,7 +68,6 @@ spriteTypes = {
 			"GFX_society_hermetic_male_headgear_front:c5"
 			"GFX_society_hermetic_male_headgear_mid:c3"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 		
 		# Appropriate clothing
@@ -290,7 +289,6 @@ spriteTypes = {
 			"GFX_society_hermetic_female_headgear_front:c5"
 			"GFX_society_hermetic_female_headgear_mid:c3"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 		
 		allow_property_values = {
@@ -523,7 +521,6 @@ spriteTypes = {
 			"GFX_society_satanist_male_headgear_front:c5"
 			"GFX_society_satanist_male_headgear_behind:c1"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 		
 		# Correct rank
@@ -562,6 +559,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 					NOT = { portrait_has_trait = i_used_to_be_a_player }
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 		}
 	}
@@ -633,7 +633,6 @@ spriteTypes = {
 			"GFX_society_satanist_female_headgear_front:c5"
 			"GFX_society_satanist_female_headgear_behind:c1"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 		
 		# No hair, correct rank
@@ -672,6 +671,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 					NOT = { portrait_has_trait = i_used_to_be_a_player }
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 		}
 
@@ -720,7 +722,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_satanist_male_headgear_front:c5"
 			"GFX_society_satanist_male_headgear_behind:c1"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -759,6 +760,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 					NOT = { portrait_has_trait = i_used_to_be_a_player }
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 		}
 	}
@@ -804,7 +808,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_satanist_female_headgear_front:c5"
 			"GFX_society_satanist_female_headgear_behind:c1"
-			"GFX_empty:c4"
 		}
 
 		# No hair, correct rank
@@ -843,6 +846,9 @@ spriteTypes = {
 					portrait_society_rank = 4
 					NOT = { portrait_has_trait = i_used_to_be_a_player }
 				}
+			}
+			19 = {
+				0 = { always = yes }
 			}
 		}
 

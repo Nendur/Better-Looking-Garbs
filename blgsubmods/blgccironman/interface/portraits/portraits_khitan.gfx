@@ -64,8 +64,8 @@ spriteTypes = {
 			"GFX_khitan_male_headgear_behind:c1"
 			"GFX_khitan_male_clothes:c2"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_khitan_male_headgear:c5"
+			"GFX_helmet_bodpa:c4"
 		}
 
 		headgear_that_hides_hair = {}
@@ -93,8 +93,8 @@ spriteTypes = {
 			"GFX_chinese_female_headgear_behind:c1"
 			"GFX_khitan_female_clothes:c2"
 			"GFX_chinese_female_headgear_mid:c3"
-			"GFX_empty:c4"
 			"GFX_chinese_female_headgear:c5"
+			"GFX_helmet_bodpa:c4"
 		}
 
 		headgear_that_hides_hair = {}

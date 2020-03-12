@@ -22,8 +22,8 @@ spriteTypes = {
 			"GFX_westernslavic_male_headgear_behind_early:c1"
 			"GFX_hungarian_male_clothes:c2"
 			"GFX_westernslavic_male_headgear_mid_early:c3"
-			"GFX_empty:c4"
 			"GFX_westernslavic_male_headgear_early:c5"
+			"GFX_helmet_altaic:c4"
 		}
 
 		headgear_that_hides_hair = { 10 12 13 14 }
@@ -51,8 +51,8 @@ spriteTypes = {
 			"GFX_westernslavic_female_headgear_behind_early:c1"
 			"GFX_cuman_female_clothes:c2"
 			"GFX_westernslavic_female_headgear_mid_early:c3"
-			"GFX_empty:c4"
 			"GFX_westernslavic_female_headgear_early:c5"
+			"GFX_helmet_altaic:c4"
 		}
 
 		headgear_that_hides_hair = {}

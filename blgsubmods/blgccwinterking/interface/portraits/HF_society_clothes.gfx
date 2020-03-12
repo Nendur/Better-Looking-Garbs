@@ -62,7 +62,6 @@ spriteTypes = {
 			"GFX_society_monastic_order_stoics_male_headgear_front:c5"
 			"GFX_society_monastic_order_stoics_male_headgear_behind:c1"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -149,7 +148,6 @@ spriteTypes = {
 			"GFX_society_monastic_order_stoics_male_headgear_front:c5"
 			"GFX_society_monastic_order_stoics_male_headgear_behind:c1"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank

@@ -35,8 +35,8 @@ spriteTypes = {
 			"GFX_baltic_male_headgear_behind:c1"
 			"GFX_saxon_male_clothes_early:c2"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_baltic_male_headgear:c5"
+			"GFX_helmet_northern:c4"
 		}
 
 		headgear_that_hides_hair = {}
@@ -77,8 +77,8 @@ spriteTypes = {
 			"GFX_baltic_female_headgear_behind:c1"
 			"GFX_saxon_female_clothes_early:c2"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_baltic_female_headgear:c5"
+			"GFX_helmet_northern:c4"
 		}
 
 		headgear_that_hides_hair = {}

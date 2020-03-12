@@ -62,7 +62,6 @@ spriteTypes = {
 			"GFX_muslim_male_headgear_behind_early:c1"
 			#"GFX_andalusian_male_clothes:c2"
 			"GFX_muslim_male_headgear_mid_early:c3"
-			#"GFX_empty:c4"
 			"GFX_muslim_male_headgear_early:c5"
 		}
 
@@ -130,7 +129,6 @@ spriteTypes = {
 			#"GFX_andalusian_female_clothes:c2"
 			"GFX_muslim_female_headgear_behind_early:c1"
 			"GFX_muslim_female_headgear_mid_early:c3"
-			#"GFX_empty:c4"
 			"GFX_muslim_female_headgear_early:c5"
 		}
 
@@ -166,7 +164,6 @@ spriteTypes = {
 			"GFX_westafrican_male_headgear_behind:c1"
 			#"GFX_westafrican_male_clothes:c2"
 			"GFX_empty:c3"
-			#"GFX_empty:c4"
 			"GFX_westafrican_male_headgear:c5"
 		}
 
@@ -201,7 +198,6 @@ spriteTypes = {
 			"GFX_westafrican_female_headgear_behind:c1"
 			#"GFX_westafrican_female_clothes:c2"
 			"GFX_empty:c3"
-			#"GFX_empty:c4"
 			"GFX_westafrican_female_headgear:c5"
 		}
 
@@ -250,7 +246,6 @@ spriteTypes = {
 			"GFX_hungarian_male_headgear_behind:c1"
 			#"GFX_hungarian_male_clothes:c2"
 			"GFX_empty:c3"
-			#"GFX_hungarian_male_clothes_infront:c4"
 			"GFX_hungarian_male_headgear:c5"
 		}
 
@@ -298,7 +293,6 @@ spriteTypes = {
 			"GFX_pecheneg_female_headgear_behind:c1"
 			#"GFX_pecheneg_female_clothes:c2"
 			"GFX_empty:c3"
-			#"GFX_empty:c4"
 			"GFX_pecheneg_female_headgear:c5"
 		}
 
@@ -352,7 +346,6 @@ spriteTypes = {
 			"GFX_african_male_headgear_behind:c1"
 			#"GFX_muslim_male_clothes_early:c2"
 			"GFX_empty:c3"
-			#"GFX_empty:c4"
 			"GFX_african_male_headgear:c5"
 		}
 
@@ -405,7 +398,6 @@ spriteTypes = {
 			"GFX_african_female_headgear_behind:c1"
 			#"GFX_muslim_female_clothes_early:c2"
 			"GFX_african_female_headgear_mid:c3"
-			#"GFX_empty:c4"
 			"GFX_african_female_headgear:c5"
 		}
 

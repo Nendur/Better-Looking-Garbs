@@ -59,7 +59,6 @@ spriteTypes = {
 			"GFX_society_monastic_order_stoics_male_headgear_front:c5"
 			"GFX_society_monastic_order_stoics_male_headgear_behind:c1"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -143,7 +142,6 @@ spriteTypes = {
 			"GFX_society_monastic_order_stoics_male_headgear_front:c5"
 			"GFX_society_monastic_order_stoics_male_headgear_behind:c1"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -245,7 +243,6 @@ spriteTypes = {
 			"GFX_society_bacchant_male_headgear_front:c5"
 			"GFX_society_bacchant_male_headgear_behind:c1"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -314,7 +311,6 @@ spriteTypes = {
 		layer = { 
 			"GFX_society_bacchant_male_clothing_behind:c0"
 			"GFX_society_bacchant_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank

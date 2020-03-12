@@ -30,7 +30,6 @@ spriteTypes = {
 			"GFX_society_bacchant_male_headgear_front:c5"
 			"GFX_society_bacchant_male_headgear_behind:c1"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -95,7 +94,6 @@ spriteTypes = {
 		layer = { 
 			"GFX_society_vodoun_male_clothing_behind:c0"
 			"GFX_society_vodoun_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -143,7 +141,8 @@ spriteTypes = {
 			"GFX_society_bacchant_male_clothing_front:p3:c2"
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_african_male_headgear:p5:c5"
-			"GFX_empty:c4"
+			"GFX_society_warrior_lodge_african_female_clothes_infront:c4"
+			"GFX_empty:c7"
 		}
 
 		# Correct rank
@@ -176,9 +175,6 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
 			}
@@ -190,6 +186,20 @@ spriteTypes = {
 			}
 			36 = { # Spear overlap
 				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
 			}
 		}
 	}

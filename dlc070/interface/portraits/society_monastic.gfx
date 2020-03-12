@@ -55,12 +55,12 @@ spriteTypes = {
 
 		layer = {
 			"GFX_society_benedictine_male_clothing_behind:c0"
-			"GFX_society_benedictine_male_clothing_front:c2"
-			"GFX_society_benedictine_male_headgear_front:c5"
-			"GFX_clothing_monk_male_hair:c7"
-			"GFX_empty:c3"
 			"GFX_empty:c1"
-			"GFX_empty:c4"
+			"GFX_society_benedictine_male_clothing_front:c2"
+			"GFX_empty:c3"
+			"GFX_society_benedictine_male_headgear_front:c4"
+			"GFX_empty:c5"
+			"GFX_clothing_monk_male_hair:c7"
 		}
 
 		# Tonsure hairstyle, no beard
@@ -76,6 +76,12 @@ spriteTypes = {
 			}
 			36 = { # Staff overlap
 				0 = { always = yes }
+			}
+			39 = {
+				0 = { always = no }
+				1 = { always = no }
+				2 = { always = yes }
+				3 = { always = yes }
 			}
 		}
 
@@ -107,7 +113,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_benedictine_male_clothing_behind:c0"
 			"GFX_society_benedictine_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 	}
 
@@ -177,7 +182,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_benedictine_female_headgear_behind:c1"
 			"GFX_society_benedictine_female_headgear_front:c5"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
@@ -265,7 +269,6 @@ spriteTypes = {
 			"GFX_society_dominican_male_headgear_front:c5"
 			"GFX_society_dominican_male_headgear_mid:c3"
 			"GFX_clothing_monk_male_hair:c7"
-			"GFX_empty:c4"
 		}
 
 		# Tonsure hairstyle, no beard
@@ -312,7 +315,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_dominican_male_clothing_behind:c0"
 			"GFX_society_dominican_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
@@ -376,7 +378,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_dominican_female_headgear_behind:c1"
 			"GFX_society_dominican_female_headgear_front:c5"
-			"GFX_empty:c4"
 		}
 
 		allow_property_values = {
@@ -462,7 +463,6 @@ spriteTypes = {
 			"GFX_society_orthodox_monk_male_headgear_behind:c1"
 			"GFX_society_orthodox_monk_male_headgear_front:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 		}
 
 		# Ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.
@@ -536,7 +536,6 @@ spriteTypes = {
 		layer = {
 			"GFX_society_orthodox_monk_male_clothing_behind:c0"
 			"GFX_society_orthodox_monk_male_clothing_front:c2"
-			"GFX_empty:c4"
 		}
 
 		# Ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.
@@ -602,11 +601,11 @@ spriteTypes = {
 
 		layer = {
 			"GFX_society_orthodox_monk_male_clothing_behind:c0"
-			"GFX_society_orthodox_monk_male_clothing_front:c2"
 			"GFX_empty:c1"
-			"GFX_society_benedictine_male_headgear_front:c5"
+			"GFX_society_orthodox_monk_male_clothing_front:c2"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
+			"GFX_society_benedictine_male_headgear_front:c4"
+			"GFX_empty:c5"
 		}
 
 		# Ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.
@@ -638,6 +637,12 @@ spriteTypes = {
 			}
 			36 = { # Staff overlap
 				0 = { always = yes }
+			}
+			39 = {
+				0 = { always = no }
+				1 = { always = no }
+				2 = { always = yes }
+				3 = { always = yes }
 			}
 		}
 	}
@@ -700,7 +705,6 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_orthodox_monk_female_headgear_behind:c1"
 			"GFX_society_orthodox_monk_female_headgear_front:c5"
-			"GFX_empty:c4"
 		}
 
 		# Hide hair, ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.

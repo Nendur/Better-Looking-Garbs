@@ -55,7 +55,6 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_norse_male_clothes:p3:c2"
 			"GFX_society_warrior_lodge_norse_male_headgear_mid:p5:c3"
 			"GFX_society_warrior_lodge_norse_male_headgear:p5:c5"
-			"GFX_empty:c6"
 			"GFX_empty:c7"
 		}
 
@@ -89,13 +88,8 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 		}
 	}
@@ -163,10 +157,8 @@ spriteTypes = {
 		#	"GFX_society_warrior_lodge_norse_female_hairlayer_behind:p5:c6:h"
 			"GFX_society_warrior_lodge_norse_female_clothes:p3:c2"
 			"GFX_society_warrior_lodge_norse_female_headgear_mid:p5:c3"
-			#TODO test hair
 			"GFX_society_warrior_lodge_norse_female_hairlayer_front:p5:c7:h"
 			"GFX_society_warrior_lodge_norse_female_headgear:p5:c5"
-			"GFX_empty:c4"
 		}
 
 		# Correct rank
@@ -199,18 +191,14 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
+			32 = {
 				0 = { always = yes }
 			}
-			32 = {
-				0 = {
-					always = yes
-				}
-			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
+			}
+			39 = {
+				0 = { always = yes }
 			}
 		}
 
@@ -242,8 +230,9 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_slavic_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_baltic_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_baltic_male_clothes:p3:c2"
-			"GFX_society_warrior_lodge_slavic_male_clothes_infront:p5:c3"
-			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c5"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_slavic_male_clothes_infront:p5:c5"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
 		}
 
 		# Correct rank
@@ -276,11 +265,22 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
-				0 = { always = yes }
-			}
 			31 = {
 				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
 			}
 		}
 	}
@@ -310,8 +310,9 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_slavic_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_baltic_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_baltic_female_clothes:p3:c2"
-			"GFX_society_warrior_lodge_slavic_male_clothes_infront:p5:c3"
-			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c5"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_slavic_male_clothes_infront:p5:c5"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
 		}
 
 		# Correct rank
@@ -344,14 +345,25 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
-				0 = { always = yes }
-			}
 			32 = {
 				0 = { always = yes }
 			}
 			33 = {
 				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
 			}
 		}
 	}
@@ -421,8 +433,7 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_slavic_female_clothes:p3:c2"
 			"GFX_society_warrior_lodge_baltic_male_headgear:p5:c5"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
-			"GFX_society_warrior_lodge_baltic_male_clothes_infront:p5:c7"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
 		}
 
 		# Correct rank
@@ -455,17 +466,24 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
+			31 = {
 				0 = { always = yes }
 			}
-			31 = {
-				0 = {
-					always = yes
-				}
-			}
 			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+			39 = {
 				0 = {
-					always = yes
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
 				}
 			}
 		}
@@ -535,7 +553,7 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_baltic_female_headgear:p5:c5"
 			"GFX_empty:c3"
 			"GFX_empty:c7"
-			"GFX_empty:c4"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
 		}
 
 		# Correct rank
@@ -568,22 +586,27 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
+			32 = {
 				0 = { always = yes }
 			}
-			32 = {
-				0 = {
-					always = yes
-				}
-			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+			39 = {
 				0 = {
-					always = yes
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
 				}
 			}
 		}
@@ -696,8 +719,7 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_hellenic_male_clothes:p3:c2"
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_hellenic_male_headgear:p5:c5"
-			"GFX_empty:c4"
-			"GFX_society_warrior_lodge_hellenic_male_clothes_infront:p5:c7"
+			"GFX_society_warrior_lodge_hellenic_male_clothes_infront:c4"
 		}
 
 		# Correct rank
@@ -730,17 +752,24 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
+			31 = {
 				0 = { always = yes }
 			}
-			31 = {
-				0 = {
-					always = yes
-				}
-			}
 			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+			39 = {
 				0 = {
-					always = yes
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
 				}
 			}
 		}
@@ -794,8 +823,7 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_hellenic_female_clothes:p3:c2"
 			"GFX_empty:c3"
 			"GFX_empty:c5"
-			"GFX_empty:c4"
-			"GFX_society_warrior_lodge_hellenic_female_clothes_infront:p3:c7"
+			"GFX_society_warrior_lodge_hellenic_female_clothes_infront:c4"
 		}
 
 		# Correct rank
@@ -828,27 +856,31 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
+			32 = {
 				0 = { always = yes }
 			}
-			32 = {
-				0 = {
-					always = yes
-				}
-			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
 			}
 			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+			39 = {
 				0 = {
-					always = yes
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
 				}
 			}
 		}
 	}
-
 	# Warrior Lodges - TENGRI
 
 	spriteType = {
@@ -912,7 +944,6 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_tengri_male_clothes:p3:c2"
 			"GFX_society_warrior_lodge_tengri_male_headgear_mid:p5:c3"
 			"GFX_society_warrior_lodge_tengri_male_headgear:p5:c5"
-			"GFX_empty:c4"
 			"GFX_society_warrior_lodge_tengri_male_clothes_infront:c7"
 		}
 
@@ -946,13 +977,11 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
+			31 = {
 				0 = { always = yes }
 			}
-			31 = {
-				0 = {
-					always = yes
-				}
+			39 = {
+				0 = { always = yes }
 			}
 		}
 
@@ -1012,7 +1041,6 @@ spriteTypes = {
 		layer = { 
 			"GFX_society_warrior_lodge_tengri_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_tengri_female_clothes_behind:p3:c0"
-			"GFX_empty:c4"
 			"GFX_society_warrior_lodge_tengri_female_clothes:p3:c2"
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_tengri_female_headgear:p5:c5"
@@ -1049,18 +1077,14 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			19 = {
+			32 = {
 				0 = { always = yes }
 			}
-			32 = {
-				0 = {
-					always = yes
-				}
-			}
 			33 = {
-				0 = {
-					always = yes
-				}
+				0 = { always = yes }
+			}
+			39 = {
+				0 = { always = yes }
 			}
 		}
 

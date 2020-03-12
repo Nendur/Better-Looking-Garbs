@@ -1,0 +1,30 @@
+# p39 Carried Helmet
+39 = {
+	0 = { # blank
+		factor = 1
+	}
+	1 = { # Helmet
+		factor = 100
+		trigger = {
+			OR = {
+				AND = {
+					in_command = yes
+					OR = {
+						war = yes
+						liege = { war = yes }
+						is_ruler = no
+					}
+				}
+				blg_soldier = yes
+				has_job_title = job_marshal
+				in_battle = yes
+				in_siege = yes
+				death_reason = death_battle
+				death_reason = death_duel
+				primary_title = { holy_order = yes }
+				primary_title = { mercenary = yes }
+				trait = shieldmaiden
+			}
+		}
+	}
+}

@@ -19,8 +19,8 @@ spriteTypes = {
 			"GFX_croatsouthslavic_male_headgear_behind:c1"
 			"GFX_croatsouthslavic_male_clothes:c2"
 			"GFX_croatsouthslavic_male_headgear_mid:c3"
-			"GFX_empty:c4"
 			"GFX_croatsouthslavic_male_headgear:c5"
+			"GFX_helmet_eastern:c4"
 		}
 
 		headgear_that_hides_hair = { 10 12 13 }
@@ -45,8 +45,8 @@ spriteTypes = {
 			"GFX_croatsouthslavic_female_headgear_behind:c1"
 			"GFX_croatsouthslavic_female_clothes:c2"
 			"GFX_croatsouthslavic_female_headgear_mid:c3"
-			"GFX_empty:c4"
 			"GFX_croatsouthslavic_female_headgear:c5"
+			"GFX_helmet_eastern:c4"
 		}
 
 		headgear_that_hides_hair = { 10 12 13 }

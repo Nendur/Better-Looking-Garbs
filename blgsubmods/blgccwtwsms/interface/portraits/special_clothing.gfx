@@ -92,7 +92,6 @@ spriteTypes = {
 			"GFX_clothing_monk_headgear_behind:c1"
 			"GFX_clothing_monk_clothes:c2"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_clothing_monk_headgear:c5"
 			"GFX_clothing_monk_male_hair:c7"
 		}
@@ -231,7 +230,6 @@ spriteTypes = {
 			"GFX_clothing_nun_headgear_behind:c1"
 			"GFX_clothing_monk_clothes:c2"
 			"GFX_empty:c3"
-			"GFX_empty:c4"
 			"GFX_clothing_nun_headgear:c5"
 		}
 

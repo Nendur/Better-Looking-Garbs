@@ -1380,6 +1380,7 @@
 
 	10 = { # Martial headgear
 		factor = 100
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			OR = {
@@ -1402,10 +1403,7 @@
 			factor = 0
 			NOR = {
 				AND = {
-					OR = {
-						in_command = yes
-						blg_soldier = yes
-					}
+					in_command = yes
 					OR = {
 						war = yes
 						liege = { war = yes }
@@ -1414,9 +1412,10 @@
 				}
 				in_battle = yes
 				in_siege = yes
-				death_reason = death_battle
+				#death_reason = death_battle
 				#death_reason = death_duel
-				primary_title = { mercenary = yes }
+				#primary_title = { mercenary = yes }
+				blg_soldier = yes
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
 		}
@@ -1528,6 +1527,7 @@
 
 	12 = { # royal war helm
 		factor = 100
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -1540,7 +1540,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
-				death_reason = death_battle
+				#death_reason = death_battle
 				#death_reason = death_duel
 				has_landed_title = e_china_west_governor
 			}
@@ -1675,6 +1675,7 @@
 
 	13 = { # ducal war helm
 		factor = 100
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -1688,7 +1689,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
-				death_reason = death_battle
+				#death_reason = death_battle
 				#death_reason = death_duel
 				has_landed_title = e_china_west_governor
 			}
@@ -1748,6 +1749,7 @@
 
 	14 = { # Chinese war gear
 		factor = 99
+		hide_layers = { 39 = { } }
 		trigger = {
 			OR = {
 				AND = {
@@ -1770,7 +1772,7 @@
 						}
 						in_battle = yes
 						in_siege = yes
-						death_reason = death_battle
+						#death_reason = death_battle
 						#death_reason = death_duel
 						has_landed_title = e_china_west_governor
 					}

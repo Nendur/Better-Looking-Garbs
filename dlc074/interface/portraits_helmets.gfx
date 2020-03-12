@@ -1,0 +1,78 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_helmet_western"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_western.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_helmet_eastern"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_eastern.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_helmet_southern"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_southern.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_helmet_northern"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_northern.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_helmet_byzantine"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_byzantine.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_helmet_roman"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_roman.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_helmet_muslim"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_muslim.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_helmet_african"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_african.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_helmet_altaic"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_altaic.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_helmet_indian"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_indian.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_helmet_bodpa"
+		texturefile = "gfx\\characters\\shared\\helmets\\helmet_bodpa.dds"
+		noOfFrames = 2
+		norefcount = yes
+	}
+}
