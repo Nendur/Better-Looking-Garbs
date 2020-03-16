@@ -34,6 +34,7 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
+				has_dlc = "Mystics"
 				portrait_society = moth_priests_tamriel
 				OR = {
 					NOT = { portrait_tier = duke }
@@ -131,6 +132,7 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
+				has_dlc = "Mystics"
 				portrait_society = moth_priests_tamriel
 				OR = {
 					NOT = { portrait_tier = duke }
@@ -247,8 +249,8 @@ spriteTypes = {
 			additive_modifier = {
 				value = 10000
 				portrait_age > child
-				portrait_is_female = no
 				portrait_clothing = yes
+				has_dlc = "Mystics"
 				portrait_society = greybeards_tamriel
 				OR = {
 					NOT = { portrait_tier = duke }
@@ -273,7 +275,7 @@ spriteTypes = {
 		layer = {
 			"GFX_society_benedictine_male_clothing_behind:c0"
 			"GFX_society_benedictine_male_clothing_front:c2"
-			"GFX_society_satanist_male_headgear_mid:c3"
+			"GFX_empty:c3"
 			"GFX_society_satanist_male_headgear_front:c5"
 			"GFX_society_satanist_male_headgear_behind:c1"
 		}
@@ -314,10 +316,20 @@ spriteTypes = {
 			31 = {
 				0 = { always = yes }
 			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
 		}
 	}
 
-	# Female
+	spriteType = {
+		name = "GFX_society_satanist_male_clothing_front"
+		textureFile = "gfx/characters/societies/mom_satanist_male_clothing_front.dds"
+		noOfFrames = 4
+	}
 
 	spriteType = {
 		name = "GFX_society_satanist_female_headgear_front"
@@ -332,16 +344,16 @@ spriteTypes = {
 	}
 
 	portraitType = {
-		name = "PORTRAIT_society_greybeards_clothing_female"
+		name = "PORTRAIT_society_dark_brotherhood_clothing"
 		effectFile = "gfx/FX/portrait.lua"
 
 		weight = {
 			additive_modifier = {
 				value = 10000
 				portrait_age > child
-				portrait_is_female = yes
 				portrait_clothing = yes
-				portrait_society = greybeards_tamriel
+				has_dlc = "Mystics"
+				portrait_society = dark_brotherhood_tamriel
 				OR = {
 					NOT = { portrait_tier = duke }
 					AND = {
@@ -363,8 +375,8 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_society_benedictine_male_clothing_behind:c0"
-			"GFX_society_benedictine_male_clothing_front:c2"
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
+			"GFX_society_satanist_male_clothing_front:c2"
 			"GFX_empty:c3"
 			"GFX_society_satanist_female_headgear_front:c5"
 			"GFX_society_satanist_female_headgear_behind:c1"
@@ -394,14 +406,17 @@ spriteTypes = {
 					portrait_society_rank = 2
 				}
 				2 = {
-					OR = {
-						portrait_society_rank = 3
-						portrait_society_rank = 4
-					}
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
 				}
 			}
 			19 = {
 				10 = { always = yes }
+			}
+			31 = {
+				0 = { always = yes }
 			}
 			32 = {
 				0 = { always = yes }

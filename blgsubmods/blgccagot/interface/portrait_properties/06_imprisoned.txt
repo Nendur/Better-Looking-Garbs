@@ -15,6 +15,7 @@
 		hide_layers = { 19 = { } } #Hide layers with special crowns.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			OR = {
@@ -31,6 +32,7 @@
 		hide_layers = { 19 = { } } #Hide layers with special crowns.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -44,6 +46,7 @@
 		hide_layers = { 19 = { } } #Hide layers with special crowns.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			NOT = { has_character_modifier = the_oubliette }

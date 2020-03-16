@@ -1,14 +1,16 @@
 Changelog:
 
   Added armour to clothing sets that didn't have it.
-  Moved maille coifs from clothes to headgear to get proper hair covering.
-  Turned carried helmets from arrior lodges into general layers. (requires Holy Fury)
+  Moved mail coifs from clothes to headgear to get proper hair covering.
+  Turned carried helmets from warrior lodges into general layers. (requires Holy Fury)
   Marshalls and others will now wear military clothes with carried helmets.
   Applied Orrie's workshop dependencies fix.
   Reduce chance of random headgear changes.
   New combination for Miaphysite and Nestorian monastic clothing.
   New combinations for Assassins, Followers of Hel and Otzo society clothing.
   Add more Stoic society clothes.
+  Custom society clothing for various modded societies.
+  Added dlc checks to some society clothes.
   Remove headgear from priests of modded early Christian branches.
   Logging the mixed children events for debugging data.
   Always replace noculture ethnicities.

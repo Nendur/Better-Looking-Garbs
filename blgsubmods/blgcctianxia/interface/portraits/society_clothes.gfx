@@ -692,15 +692,11 @@ spriteTypes = {
 
 		weight = {
 			additive_modifier = {
-				value = 10000
+				value = 11000
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
-				OR = {
-					portrait_society = the_satanists
-					portrait_society = the_ghost_gatherers
-					portrait_society = the_underworld_triad
-				}
+				portrait_society = the_satanists
 				OR = {
 					NOT = { portrait_tier = duke }
 					AND = {
@@ -811,11 +807,7 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
-				OR = {
-					portrait_society = the_satanists
-					portrait_society = the_ghost_gatherers
-					portrait_society = the_underworld_triad
-				}
+				portrait_society = the_satanists
 				OR = {
 					NOT = { portrait_tier = duke }
 					AND = {
@@ -1103,7 +1095,10 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
-				portrait_society = the_trollcrafters
+				OR = {
+					portrait_society = the_trollcrafters
+					portrait_society = the_ghost_gatherers
+				}
 				OR = {
 					NOT = { portrait_tier = duke }
 					AND = {
@@ -1287,6 +1282,7 @@ spriteTypes = {
 					portrait_society = the_cold_ones
 					portrait_society = the_plaguebringers
 					portrait_society = the_procession_of_pox
+					portrait_society = the_ghost_gatherers
 				}
 				OR = {
 					NOT = { portrait_tier = duke }
@@ -1365,5 +1361,59 @@ spriteTypes = {
 		}
 
 		headgear_that_hides_hair = { 0 1 2 3 }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_triads_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 11000
+				portrait_age > child
+				portrait_clothing = yes
+				portrait_society = the_underworld_triad
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
+			"GFX_society_satanist_male_clothing_front:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
 	}
 }

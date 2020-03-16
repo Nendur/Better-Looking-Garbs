@@ -1,0 +1,48 @@
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_clothing_ashlander_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_culture = ashlander
+			}
+		}
+
+		layer = {
+			"GFX_ugric_male_clothes_behind:c0"
+			"GFX_easternslavic_male_headgear_behind:c1"
+			"GFX_ugric_male_clothes:c2"
+			"GFX_easternslavic_male_headgear_mid:c3"
+			"GFX_easternslavic_male_headgear:c5"
+			"GFX_helmet_eastern:c4"
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_ashlander_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_culture = ashlander
+			}
+		}
+
+		layer = {
+			"GFX_ugric_female_clothes_behind:c0"
+			"GFX_easternslavic_female_headgear_behind:c1"
+			"GFX_ugric_female_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_easternslavic_female_headgear:c5"
+			"GFX_helmet_eastern:c4"
+		}
+	}
+}

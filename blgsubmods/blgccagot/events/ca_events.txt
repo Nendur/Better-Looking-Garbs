@@ -339,8 +339,8 @@ character_event = {
 					AND = {
 						check_variable = { which = ca_clothes value = 5 }
 						OR= {
-							is_ruler = yes
-							spouse = { is_ruler = yes }
+							is_landed = yes
+							spouse = { is_landed = yes }
 						}
 					}
 					check_variable = { which = ca_clothes value = 8 }

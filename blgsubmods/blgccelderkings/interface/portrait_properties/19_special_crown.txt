@@ -66,15 +66,11 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
-						is_ruler = no
-						primary_title = { mercenary = yes }
-						government = order_government
+						is_landed = no
 					}
 				}
 				in_battle = yes
 				in_siege = yes
-				has_job_title = job_marshal
-				death_reason = death_battle
 			}
 		}
 		hide_layers = { 1 = { } }
@@ -82,6 +78,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
+		hide_layers = { 39 = { } }
 	}
 	13 = { # Armour B
 		factor = 99
@@ -98,15 +95,11 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
-						is_ruler = no
-						primary_title = { mercenary = yes }
-						government = order_government
+						is_landed = no
 					}
 				}
 				in_battle = yes
 				in_siege = yes
-				has_job_title = job_marshal
-				death_reason = death_battle
 			}
 		}
 		hide_layers = { 1 = { } }
@@ -114,6 +107,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
+		hide_layers = { 39 = { } }
 	}
 	14 = { # Armour C
 		factor = 99
@@ -129,15 +123,11 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
-						is_ruler = no
-						primary_title = { mercenary = yes }
-						government = order_government
+						is_landed = no
 					}
 				}
 				in_battle = yes
 				in_siege = yes
-				has_job_title = job_marshal
-				death_reason = death_battle
 			}
 		}
 		hide_layers = { 1 = { } }
@@ -145,6 +135,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
+		hide_layers = { 39 = { } }
 	}
 	15 = { # Sneak A
 		factor = 0
@@ -157,6 +148,7 @@
 		trigger = {
 			OR = {
 				society_member_of = mages_guild_tamriel
+				society_member_of = mages_guild_akavir
 				has_job_title = job_spiritual
 				has_minor_title = title_court_mage
 			}
@@ -175,12 +167,14 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
+		hide_layers = { 39 = { } }
 	}
 	18 = { # Mage B
 		factor = 99
 		trigger = {
 			OR = {
 				society_member_of = mages_guild_tamriel
+				society_member_of = mages_guild_akavir
 				has_job_title = job_spiritual
 				has_minor_title = title_court_mage
 			}
@@ -199,6 +193,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
+		hide_layers = { 39 = { } }
 	}
 	19 = { # Monk
 		factor = 50
@@ -271,12 +266,13 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
+		hide_layers = { 39 = { } }
 	}
 	21 = { # Priest Auriel
 		factor = 100
 		trigger = {
 			OR = {
-				religion = auri-el
+				religion = auriel
 				religion_group = tribunal
 			}
 			is_priest = yes
@@ -306,6 +302,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
+		hide_layers = { 39 = { } }
 	}
 	22 = { # Priest Daedric
 		factor = 100
@@ -337,6 +334,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
+		hide_layers = { 39 = { } }
 	}
 	23 = { # Priest Dragons
 		factor = 100
@@ -344,5 +342,6 @@
 			religion = dragon_cult
 			is_priest = yes
 		}
+		hide_layers = { 39 = { } }
 	}
 }

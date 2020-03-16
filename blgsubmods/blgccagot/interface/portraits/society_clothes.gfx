@@ -493,6 +493,7 @@ spriteTypes = {
 				OR = {
 					portrait_society = the_satanists
 					portrait_society = the_trollcrafters
+					portrait_society = the_plaguebringers
 				}
 				OR = {
 					NOT = { portrait_tier = duke }
@@ -517,9 +518,9 @@ spriteTypes = {
 		layer = { 
 			"GFX_society_satanist_male_clothing_behind:c0"
 			"GFX_society_satanist_male_clothing_front:c2"
-			"GFX_society_satanist_male_headgear_mid:c3"
-			"GFX_society_satanist_male_headgear_front:c5"
-			"GFX_society_satanist_male_headgear_behind:c1"
+			"GFX_empty:c3"
+			"GFX_society_satanist_female_headgear_front:c5"
+			"GFX_society_satanist_female_headgear_behind:c1"
 			"GFX_empty:c7"
 		}
 		
@@ -564,6 +565,7 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 		}
+		headgear_that_hides_hair = { 0 1 2 3 }
 	}
 	
 	# Female
@@ -605,6 +607,7 @@ spriteTypes = {
 				OR = {
 					portrait_society = the_satanists
 					portrait_society = the_trollcrafters
+					portrait_society = the_plaguebringers
 				}
 				OR = {
 					NOT = { portrait_tier = duke }
@@ -679,8 +682,19 @@ spriteTypes = {
 
 		headgear_that_hides_hair = { 0 1 2 3 }
 	}
-	
-	
+
+	spriteType = {
+		name = "GFX_society_vodoun_male_clothing_behind"
+		textureFile = "gfx/characters/societies/mom_vodoun_male_clothing_behind.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_society_vodoun_male_clothing_front"
+		textureFile = "gfx/characters/societies/mom_vodoun_male_clothing_front.dds"
+		noOfFrames = 4
+	}
+
 	portraitType = {
 		name = "PORTRAIT_society_evilpagan_clothing_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -694,7 +708,6 @@ spriteTypes = {
 				OR = {
 					portrait_society = the_cult_of_kali
 					portrait_society = the_cold_ones
-					portrait_society = the_plaguebringers
 				}
 				OR = {
 					NOT = { portrait_tier = duke }
@@ -780,7 +793,6 @@ spriteTypes = {
 				OR = {
 					portrait_society = the_cult_of_kali
 					portrait_society = the_cold_ones
-					portrait_society = the_plaguebringers
 				}
 				OR = {
 					NOT = { portrait_tier = duke }

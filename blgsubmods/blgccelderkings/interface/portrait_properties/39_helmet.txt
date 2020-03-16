@@ -21,9 +21,8 @@
 				death_reason = death_battle
 				death_reason = death_duel
 				holy_order = yes
-				mercenary = yes
+				#mercenary = yes
 				trait = shieldmaiden
-				blg_soldier = yes
 			}
 		}
 	}

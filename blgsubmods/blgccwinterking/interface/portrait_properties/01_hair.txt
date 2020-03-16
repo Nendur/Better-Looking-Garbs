@@ -349,7 +349,7 @@
 			factor = 20
 			is_female = no
 			NOT = { trait = detached_priest }
-			is_ruler = no
+			is_landed = no
 			OR = {
 				graphical_culture = westerngfx
 				graphical_culture = englishgfx
@@ -922,7 +922,7 @@
 			graphical_culture = chinesegfx
 			OR = {
 				is_married = yes
-				is_ruler = yes
+				is_landed = yes
 			}
 		}
 		modifier = {
@@ -998,7 +998,7 @@
 			graphical_culture = chinesegfx
 			OR = {
 				is_married = yes
-				is_ruler = yes
+				is_landed = yes
 			}
 		}
 		modifier = {

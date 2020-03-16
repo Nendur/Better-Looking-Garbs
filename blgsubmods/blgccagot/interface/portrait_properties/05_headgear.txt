@@ -159,6 +159,8 @@
 				has_minor_title = title_queen_mother
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -197,6 +199,8 @@
 				has_minor_title = title_queen_mother
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -235,6 +239,8 @@
 				has_minor_title = title_queen_mother
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -269,6 +275,8 @@
 				has_minor_title = title_queen_mother
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -301,6 +309,8 @@
 				any_spouse = { higher_tier_than = DUKE }
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -338,6 +348,7 @@
 	# Martial headgear
 	10 = {
 		factor = 90
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			may_wear_martial_headgear_trigger = no
@@ -395,6 +406,7 @@
 	# Kingsguard
 	12 = {
 		factor = 100
+		hide_layers = { 39 = { } }
 		trigger = {
 			trait = kingsguard
 			may_wear_martial_headgear_trigger = yes
@@ -404,6 +416,7 @@
 	# City Watch/Unsullied
 	13 = {
 		factor = 1000
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			NAND = {
@@ -425,6 +438,7 @@
 	# Knight
 	14 = {
 		factor = 90
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			NOT = { trait = knight }
@@ -441,6 +455,7 @@
 	# Great House Helm 1
 	15 = {
 		factor = 100
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			may_wear_martial_headgear_trigger = no
@@ -558,6 +573,7 @@
 	# Great House Helm 2
 	16 = {
 		factor = 100
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			may_wear_martial_headgear_trigger = no

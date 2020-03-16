@@ -26,6 +26,8 @@
 				in_siege = yes
 				death_reason = death_battle
 				is_tributary = yes
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = peasant_leader
 				trait = heresiarch
 				trait = leper
@@ -49,14 +51,14 @@
 					population = 10000
 				}
 			}
-			is_ruler = yes
+			is_landed = yes
 			lower_tier_than = EMPEROR
 		}
 		modifier = {
 			factor = 0
 			spouse = { is_republic = yes } #Dead wives of Patricians are nogovernment, thus they would wear crowns for being married to a King-tier.
 			is_alive = no
-			is_ruler = no
+			is_landed = no
 		}
 	}
 
@@ -75,6 +77,8 @@
 		modifier = {
 			factor = 0
 			OR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -96,7 +100,7 @@
 					population = 5000
 				}
 			}
-			is_ruler = yes
+			is_landed = yes
 			lower_tier_than = KING
 		}
 		modifier = {
@@ -129,6 +133,8 @@
 		modifier = {
 			factor = 0
 			OR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -150,7 +156,7 @@
 					population = 5000
 				}
 			}
-			is_ruler = yes
+			is_landed = yes
 			lower_tier_than = KING
 		}
 		modifier = {
@@ -197,6 +203,8 @@
 		modifier = {
 			factor = 0
 			OR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -218,7 +226,7 @@
 					population = 5000
 				}
 			}
-			is_ruler = yes
+			is_landed = yes
 			lower_tier_than = KING
 		}
 		modifier = {
@@ -251,6 +259,8 @@
 			factor = 0
 			OR = {
 				has_minor_title = title_despot
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -293,6 +303,8 @@
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -308,6 +320,8 @@
 				has_minor_title = title_prince
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -335,8 +349,8 @@
 			is_female = yes
 			culture = breton
 			OR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				is_landed = yes
+				spouse = { is_landed = yes }
 			}
 			OR = {
 				is_married = no
@@ -373,6 +387,8 @@
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -387,6 +403,8 @@
 				has_minor_title = title_prince
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -412,8 +430,8 @@
 			is_female = yes
 			culture = breton
 			OR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				is_landed = yes
+				spouse = { is_landed = yes }
 			}
 			OR = {
 				is_married = no
@@ -450,6 +468,8 @@
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -464,6 +484,8 @@
 				has_minor_title = title_prince
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -489,8 +511,8 @@
 			is_female = yes
 			culture = breton
 			OR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				is_landed = yes
+				spouse = { is_landed = yes }
 			}
 			OR = {
 				is_married = no
@@ -527,6 +549,8 @@
 				is_or_was_offmap_power_ruler = yes
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -541,6 +565,8 @@
 				has_minor_title = title_prince
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -578,8 +604,8 @@
 			is_female = yes
 			culture = breton
 			OR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				is_landed = yes
+				spouse = { is_landed = yes }
 			}
 			OR = {
 				is_married = no
@@ -614,6 +640,8 @@
 				spouse = { higher_real_tier_than = duke }
 			}
 			NOR = {
+				employer = { mercenary = yes }
+				employer = { government = order_government }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -642,6 +670,7 @@
 
 	10 = { # Martial headgear
 		factor = 99
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			OR = {
@@ -662,15 +691,12 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
-						is_ruler = no
-						primary_title = { mercenary = yes }
+						is_landed = no
 					}
 				}
 				in_battle = yes
 				in_siege = yes
-				death_reason = death_battle
-				#death_reason = death_duel
-				
+
 				AND = {
 					is_warrior = yes
 					is_away = yes
@@ -707,6 +733,8 @@
 			}
 			NOR = {
 				prisoner = yes
+				employer = { government = order_government }
+				employer = { mercenary = yes }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
@@ -723,15 +751,27 @@
 				has_minor_title = title_prince
 			}
 			NOR = {
+				employer = { government = order_government }
+				employer = { mercenary = yes }
 				trait = in_hiding
 				trait = peasant_leader
 				trait = heresiarch
-				employer = { government = order_government }
 				culture_group = yokudan_group
 				culture_group = aldmeris
 				culture_group = chimeris
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 12 } }
+		}
+		modifier = {
+			factor = 20
+			OR = {
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				has_portrait_property = { layer = 3 index = 14 }
+				has_portrait_property = { layer = 3 index = 15 }
+			}
+			in_command = no
 		}
 		modifier = {
 			factor = 3
@@ -761,6 +801,7 @@
 
 	12 = { # royal war helm / Noble 2
 		factor = 100
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -773,7 +814,6 @@
 				}
 				in_battle = yes
 				in_siege = yes
-				death_reason = death_battle
 				AND = {
 					is_warrior = yes
 					is_away = yes
@@ -889,6 +929,7 @@
 
 	13 = { # ducal war helm / Noble 3
 		factor = 100
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -901,12 +942,6 @@
 				}
 				in_battle = yes
 				in_siege = yes
-				death_reason = death_battle
-				#death_reason = death_duel
-				AND = {
-					government = order_government
-					in_command = yes
-				}
 				AND = {
 					is_warrior = yes
 					is_away = yes
@@ -1010,6 +1045,7 @@
 
 	14 = { # Chinese war gear / Shady 2
 		factor = 99
+		hide_layers = { 39 = { } }
 		trigger = {
 			OR = {
 				AND = {
@@ -1028,12 +1064,6 @@
 						}
 						in_battle = yes
 						in_siege = yes
-						death_reason = death_battle
-						#death_reason = death_duel
-						AND = {
-							government = order_government
-							in_command = yes
-						}
 						AND = {
 							is_warrior = yes
 							is_away = yes
@@ -1089,6 +1119,7 @@
 	#Martial 2
 	15 = {
 		factor = 99
+		hide_layers = { 39 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -1101,11 +1132,6 @@
 				}
 				in_battle = yes
 				in_siege = yes
-				death_reason = death_battle
-				AND = {
-					government = order_government
-					in_command = yes
-				}
 				AND = {
 					is_warrior = yes
 					is_away = yes

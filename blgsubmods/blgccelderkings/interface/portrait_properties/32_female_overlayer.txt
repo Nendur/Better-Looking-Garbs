@@ -201,8 +201,8 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						is_landed = yes
+						spouse = { is_landed = yes }
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -226,8 +226,8 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						is_landed = yes
+						spouse = { is_landed = yes }
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -251,8 +251,8 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						is_landed = yes
+						spouse = { is_landed = yes }
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -276,8 +276,8 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						is_landed = yes
+						spouse = { is_landed = yes }
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -302,8 +302,8 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						is_landed = yes
+						spouse = { is_landed = yes }
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -329,8 +329,8 @@
 			OR = {
 				AND = {
 					OR = {
-						is_ruler = yes
-						spouse = { is_ruler = yes }
+						is_landed = yes
+						spouse = { is_landed = yes }
 						has_minor_title = title_prince
 						has_minor_title = title_queen_mother
 					}
@@ -355,8 +355,8 @@
 		trigger = {
 			OR = {
 				AND = {
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -383,8 +383,8 @@
 		trigger = {
 			OR = {
 				AND = {
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -411,8 +411,8 @@
 		trigger = {
 			OR = {
 				AND = {
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -439,8 +439,8 @@
 		trigger = {
 			OR = {
 				AND = {
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -466,8 +466,8 @@
 		trigger = {
 			OR = {
 				AND = {
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -492,8 +492,8 @@
 		trigger = {
 			OR = {
 				AND = {
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -518,8 +518,8 @@
 		trigger = {
 			OR = {
 				AND = {
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -546,8 +546,8 @@
 		trigger = {
 			OR = {
 				AND = {
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }
@@ -574,8 +574,8 @@
 		trigger = {
 			OR = {
 				AND = {
-					is_ruler = no
-					spouse = { is_ruler = no }
+					is_landed = no
+					spouse = { is_landed = no }
 					OR = {
 						is_married = yes
 						any_spouse_even_if_dead = { is_alive = no }

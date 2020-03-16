@@ -82,6 +82,7 @@ blg_soldier = {
 		has_character_flag = rtp_temporary_mercenary
 		has_character_flag = rtp_temporary_crusader
 		has_minor_title = sellsword_mt
+		has_minor_title = holy_warrior_mt
 		AND = {
 			is_ruler = yes
 			OR = {

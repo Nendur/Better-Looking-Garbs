@@ -330,7 +330,7 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
-						is_ruler = no
+						is_landed = no
 					}
 				}
 				has_job_title = job_marshal
@@ -339,7 +339,7 @@
 				death_reason = death_battle
 				#death_reason = death_duel
 				employer = { government = order_government }
-				employer = { primary_title = { mercenary = yes } }
+				employer = { mercenary = yes }
 				trait = shieldmaiden
 				blg_soldier = yes
 			}
@@ -380,8 +380,8 @@
 				has_job_title = job_marshal
 				death_reason = death_battle
 				#death_reason = death_duel
-				primary_title = { mercenary = yes }
-				government = order_government
+				employer = { government = order_government }
+				employer = { mercenary = yes }
 				has_landed_title = e_china_west_governor
 			}
 			NAND = {
@@ -451,8 +451,8 @@
 				has_job_title = job_marshal
 				death_reason = death_battle
 				#death_reason = death_duel
-				primary_title = { mercenary = yes }
-				government = order_government
+				employer = { government = order_government }
+				employer = { mercenary = yes }
 				has_landed_title = e_china_west_governor
 			}
 			NAND = {
@@ -530,8 +530,8 @@
 						has_job_title = job_marshal
 						death_reason = death_battle
 						#death_reason = death_duel
-						primary_title = { mercenary = yes }
-						government = order_government
+						employer = { government = order_government }
+						employer = { mercenary = yes }
 						has_landed_title = e_china_west_governor
 					}
 				}

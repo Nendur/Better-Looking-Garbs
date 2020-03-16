@@ -1,7 +1,7 @@
 spriteTypes = {
-	
+
 	# Warrior Lodges - NORSE
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_norse_male_clothes_behind.dds"
@@ -38,10 +38,9 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
-				# portrait_society = warrior_lodge_norse
 				portrait_society = warrior_lodge_finnish
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -52,11 +51,12 @@ spriteTypes = {
 		
 		layer = { 
 			"GFX_society_warrior_lodge_norse_male_headgear_behind:p5:c1"
-			"GFX_society_warrior_lodge_norse_male_clothes_behind:p3:c0"
-			"GFX_society_warrior_lodge_norse_male_clothes:p3:c2"
+			"GFX_society_warrior_lodge_baltic_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_baltic_male_clothes:p3:c2"
 			"GFX_society_warrior_lodge_norse_male_headgear_mid:p5:c3"
 			"GFX_society_warrior_lodge_norse_male_headgear:p5:c5"
 			"GFX_empty:c7"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
 		}
 		
 		# Correct rank
@@ -76,6 +76,23 @@ spriteTypes = {
 				}
 			}
 			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+			39 = {
 				0 = {
 					portrait_society_rank = 1
 				}
@@ -107,11 +124,6 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_norse_female_headgear_behind.dds"
 		noOfFrames = 4
 	}
-	#spriteType = {
-	#	name = "GFX_society_warrior_lodge_norse_female_hairlayer_behind"
-	#	textureFile = "gfx/characters/societies/wl_norse_female_hairlayer_behind.dds"
-	#	noOfFrames = 4
-	#}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_female_hairlayer_front"
 		textureFile = "gfx/characters/societies/wl_norse_female_hairlayer_front.dds"
@@ -138,10 +150,9 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
-				# portrait_society = warrior_lodge_norse
 				portrait_society = warrior_lodge_finnish
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -149,17 +160,17 @@ spriteTypes = {
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
+
 		layer = { 
-			"GFX_society_warrior_lodge_norse_female_headgear_behind:p5:c1"
-			"GFX_society_warrior_lodge_norse_female_clothes_behind:p3:c0"
-		#	"GFX_society_warrior_lodge_norse_female_hairlayer_behind:p5:c6:h"
-			"GFX_society_warrior_lodge_norse_female_clothes:p3:c2"
-			"GFX_society_warrior_lodge_norse_female_headgear_mid:p5:c3"
+			"GFX_society_warrior_lodge_norse_male_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_baltic_female_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_baltic_female_clothes:p3:c2"
+			"GFX_society_warrior_lodge_norse_male_headgear_mid:p5:c3"
 			"GFX_society_warrior_lodge_norse_female_hairlayer_front:p5:c7:h"
-			"GFX_society_warrior_lodge_norse_female_headgear:p5:c5"
+			"GFX_society_warrior_lodge_norse_male_headgear:p5:c5"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
 		}
-		
+
 		# Correct rank
 		allow_property_values = {
 			3 = {
@@ -190,19 +201,30 @@ spriteTypes = {
 					portrait_society_rank = 4
 				}
 			}
-			39 = {
+			36 = { # Spear overlap
 				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
 			}
 		}
 
 		headgear_that_hides_hair = { 2 3 }
 	}
-}
 
-spriteTypes = {
-	
 	# Warrior Lodges - BALTIC
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_baltic_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_baltic_male_clothes_behind.dds"
@@ -223,22 +245,12 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_baltic_male_headgear_behind.dds"
 		noOfFrames = 4
 	}
-	#spriteType = {
-	#	name = "GFX_society_warrior_lodge_baltic_male_headgear"
-	#	textureFile = "gfx/characters/societies/wl_baltic_male_headgear.dds"
-	#	noOfFrames = 4
-	#}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_baltic_male_headgear"
 		textureFile = "gfx/characters/societies/wl_baltic_male_headgear_hairlayer.dds"
 		noOfFrames = 4
 	}
-	#spriteType = {
-	#	name = "GFX_society_warrior_lodge_baltic_male_headgear_hairlayer_behind"
-	#	textureFile = "gfx/characters/societies/wl_baltic_male_headgear_hairlayer_behind.dds"
-	#	noOfFrames = 4
-	#}
-	
+
 	portraitType = { #Portraits - Male
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_baltic_male_clothing"
@@ -250,9 +262,8 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_norse
-				#portrait_society = warrior_lodge_baltic
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -263,12 +274,12 @@ spriteTypes = {
 		
 		layer = { 
 			"GFX_society_warrior_lodge_baltic_male_headgear_behind:p5:c1"
-			"GFX_society_warrior_lodge_baltic_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_norse_male_clothes_behind:p3:c0"
 			#"GFX_society_warrior_lodge_baltic_male_headgear_hairlayer_behind:p5:c1"
-			"GFX_society_warrior_lodge_baltic_male_clothes:p3:c2"
+			"GFX_society_warrior_lodge_norse_male_clothes:p3:c2"
 			"GFX_society_warrior_lodge_baltic_male_headgear:p5:c5"
 			"GFX_empty:c3"
-			"GFX_society_warrior_lodge_baltic_male_clothes_infront:p5:c7"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
 		}
 		
 		# Correct rank
@@ -281,10 +292,10 @@ spriteTypes = {
 					portrait_society_rank = 2
 				}
 				2 = {
-					portrait_society_rank = 3
+					portrait_society_rank = 4
 				}
 				3 = {
-					portrait_society_rank = 4
+					portrait_society_rank = 3
 				}
 			}
 			5 = {
@@ -304,6 +315,20 @@ spriteTypes = {
 			36 = { # Spear overlap
 				0 = {
 					always = yes
+				}
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
 				}
 			}
 		}
@@ -319,31 +344,21 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_baltic_female_clothes.dds"
 		noOfFrames = 4
 	}
-	#spriteType = {
-	#	name = "GFX_society_warrior_lodge_baltic_female_clothes_infront"
-	#	textureFile = "gfx/characters/societies/wl_baltic_female_clothes_infront.dds"
-	#	noOfFrames = 4
-	#}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_baltic_female_clothes_infront"
+		textureFile = "gfx/characters/societies/wl_baltic_female_clothes_infront.dds"
+		noOfFrames = 4
+	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_baltic_female_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_baltic_female_headgear_behind.dds"
 		noOfFrames = 4
 	}
-	#spriteType = {
-	#	name = "GFX_society_warrior_lodge_baltic_female_hairlayer_behind"
-	#	textureFile = "gfx/characters/societies/wl_baltic_female_headgear_hairlayer_behind.dds"
-	#	noOfFrames = 4
-	#}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_baltic_female_headgear"
 		textureFile = "gfx/characters/societies/wl_baltic_female_headgear_hairlayer.dds"
 		noOfFrames = 4
 	}
-	#spriteType = {
-	#	name = "GFX_society_warrior_lodge_baltic_female_headgear"
-	#	textureFile = "gfx/characters/societies/wl_baltic_female_headgear.dds"
-	#	noOfFrames = 4
-	#}
 
 	portraitType = { #Portraits - Female
 		effectFile = "gfx/FX/portrait.lua"
@@ -356,9 +371,8 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_norse
-				#portrait_society = warrior_lodge_baltic
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -366,15 +380,15 @@ spriteTypes = {
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
+
 		layer = { 
 			"GFX_society_warrior_lodge_baltic_female_headgear_behind:p5:c1"
-			"GFX_society_warrior_lodge_baltic_female_clothes_behind:p3:c0"
-			#"GFX_society_warrior_lodge_baltic_female_hairlayer_behind:p5:c6"
-			"GFX_society_warrior_lodge_baltic_female_clothes:p3:c2"
+			"GFX_society_warrior_lodge_norse_female_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_norse_female_clothes:p3:c2"
 			"GFX_society_warrior_lodge_baltic_female_headgear:p5:c5"
 			"GFX_empty:c3"
 			"GFX_empty:c7"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
 		}
 		
 		# Correct rank
@@ -412,13 +426,25 @@ spriteTypes = {
 					always = yes
 				}
 			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
 		}
 	}
-}
-spriteTypes = {
-	
+
 	# Warrior Lodges - AFRICAN
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_african_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_african_male_clothes_behind.dds"
@@ -465,8 +491,8 @@ spriteTypes = {
 		
 		layer = { 
 			"GFX_society_warrior_lodge_african_male_headgear_behind:p5:c1"
-			"GFX_society_warrior_lodge_african_male_clothes_behind:p3:c0"
-			"GFX_society_warrior_lodge_african_male_clothes:p3:c2"
+			"GFX_society_warrior_lodge_bon_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_bon_male_clothes:p3:c2"
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_african_male_headgear:p5:c5"
 			"GFX_society_warrior_lodge_african_male_clothes_infront:p3:c7"
@@ -527,8 +553,8 @@ spriteTypes = {
 		
 		layer = { 
 			"GFX_society_warrior_lodge_african_female_headgear_behind:p5:c1"
-			"GFX_society_warrior_lodge_african_female_clothes_behind:p3:c0"
-			"GFX_society_warrior_lodge_african_female_clothes:p3:c2"
+			"GFX_society_warrior_lodge_bon_female_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_bon_female_clothes:p3:c2"
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_african_female_headgear:p5:c5"
 			"GFX_society_warrior_lodge_african_female_clothes_infront:p5:c7"
@@ -542,9 +568,6 @@ spriteTypes = {
 			}
 		}
 	}
-}
-
-spriteTypes = {
 	
 	# Warrior Lodges - SLAVIC
 	
@@ -578,71 +601,6 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_slavic_male_headgear.dds"
 		noOfFrames = 4
 	}
-	
-	portraitType = { #Portraits - Male
-		effectFile = "gfx/FX/portrait.lua"
-		name = "PORTRAIT_society_warrior_lodge_slavic_male_clothing"
-		
-		weight = {
-			additive_modifier = {
-				value = 10000
-				always = no
-				portrait_age > child
-				portrait_is_female = no
-				portrait_clothing = yes
-				# portrait_society = warrior_lodge_slavic
-				has_dlc = "Holy Fury"
-				portrait_has_trait = bearded_priest
-				OR = {
-					portrait_has_trait = skilled_tactician
-					portrait_has_trait = brilliant_strategist
-					portrait_has_trait = strategist
-				}
-				NOT = { portrait_has_trait = blgcaoff }
-			}
-		}
-		
-		layer = { 
-			"GFX_society_warrior_lodge_slavic_male_headgear_behind:p5:c1"
-			"GFX_society_warrior_lodge_slavic_male_clothes_behind:p3:c0"
-			"GFX_society_warrior_lodge_slavic_male_clothes:p3:c2"
-			"GFX_society_warrior_lodge_slavic_male_headgear_mid:p5:c3"
-			"GFX_society_warrior_lodge_slavic_male_headgear:p5:c5"
-			"GFX_society_warrior_lodge_slavic_male_clothes_infront:p3:c7"
-		}
-		
-		# Correct rank
-		allow_property_values = {
-			3 = {
-				0 = {
-					#portrait_society_rank = 1
-				}
-				1 = {
-					#portrait_society_rank = 2
-				}
-				2 = {
-					#portrait_society_rank = 3
-				}
-				3 = {
-					#portrait_society_rank = 4
-				}
-			}
-			5 = {
-				0 = {
-					#portrait_society_rank = 1
-				}
-				1 = {
-					#portrait_society_rank = 2
-				}
-				2 = {
-					#portrait_society_rank = 3
-				}
-				3 = {
-					#portrait_society_rank = 4
-				}
-			}
-		}
-	}
 
 	spriteType = {
 		name = "GFX_society_warrior_lodge_slavic_female_clothes_behind"
@@ -665,74 +623,6 @@ spriteTypes = {
 		noOfFrames = 4
 	}
 
-	portraitType = { #Portraits - Female
-		effectFile = "gfx/FX/portrait.lua"
-		name = "PORTRAIT_society_warrior_lodge_slavic_female_clothing"
-		
-		weight = {
-			additive_modifier = {
-				value = 10000
-				always = no
-				portrait_age > child
-				portrait_is_female = yes
-				portrait_clothing = yes
-				# portrait_society = warrior_lodge_slavic
-				has_dlc = "Holy Fury"
-				portrait_has_trait = bearded_priest
-				OR = {
-					portrait_has_trait = skilled_tactician
-					portrait_has_trait = brilliant_strategist
-					portrait_has_trait = strategist
-				}
-				NOT = { portrait_has_trait = blgcaoff }
-			}
-		}
-		
-		layer = { 
-			"GFX_society_warrior_lodge_slavic_female_headgear_behind:p5:c1"
-			"GFX_society_warrior_lodge_slavic_female_clothes_behind:p3:c0"
-			"GFX_society_warrior_lodge_slavic_female_clothes:p3:c2"
-			"GFX_empty:c3"
-			"GFX_empty:c5"
-			"GFX_society_warrior_lodge_slavic_female_clothes_infront:p5:c7"
-		}
-		
-		# Correct rank
-		allow_property_values = {
-			3 = {
-				0 = {
-					#portrait_society_rank = 1
-				}
-				1 = {
-					#portrait_society_rank = 2
-				}
-				2 = {
-					#portrait_society_rank = 3
-				}
-				3 = {
-					#portrait_society_rank = 4
-				}
-			}
-			5 = {
-				0 = {
-					#portrait_society_rank = 1
-				}
-				1 = {
-					#portrait_society_rank = 2
-				}
-				2 = {
-					#portrait_society_rank = 3
-				}
-				3 = {
-					#portrait_society_rank = 4
-				}
-			}
-		}
-	}
-}
-
-spriteTypes = {
-	
 	# Warrior Lodges - BON
 	
 	spriteType = {
@@ -760,76 +650,7 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_bon_male_headgear.dds"
 		noOfFrames = 4
 	}
-	
-	portraitType = { #Portraits - Male
-		effectFile = "gfx/FX/portrait.lua"
-		name = "PORTRAIT_society_warrior_lodge_bon_male_clothing"
-		
-		weight = {
-			additive_modifier = {
-				value = 10000
-				portrait_age > child
-				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = warrior_lodge_bon
-				OR = {
-					NOT = { portrait_tier = baron }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
-			}
-		}
-		
-		layer = { 
-			"GFX_society_warrior_lodge_bon_male_headgear_behind:p5:c1"
-			"GFX_society_warrior_lodge_bon_male_clothes_behind:p3:c0"
-			"GFX_society_warrior_lodge_bon_male_clothes:p3:c2"
-			"GFX_empty:c3"
-			"GFX_society_warrior_lodge_bon_male_headgear:p5:c5"
-			"GFX_society_warrior_lodge_bon_male_clothes_infront:p3:c7"
-		}
-		
-		# Correct rank
-		allow_property_values = {
-			3 = {
-				0 = {
-					portrait_society_rank = 1
-				}
-				1 = {
-					portrait_society_rank = 2
-				}
-				2 = {
-					portrait_society_rank = 3
-				}
-				3 = {
-					portrait_society_rank = 4
-				}
-			}
-			5 = {
-				0 = {
-					portrait_society_rank = 1
-				}
-				1 = {
-					portrait_society_rank = 2
-				}
-				2 = {
-					portrait_society_rank = 3
-				}
-				3 = {
-					portrait_society_rank = 4
-				}
-			}
-			36 = { # Spear overlap
-				0 = {
-					always = yes
-				}
-			}
-		}
-	}
-	
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_bon_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_bon_female_clothes_behind.dds"
@@ -864,11 +685,11 @@ spriteTypes = {
 			additive_modifier = {
 				value = 10000
 				portrait_age > child
-				portrait_is_female = yes
+				#portrait_is_female = yes
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_bon
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -879,13 +700,13 @@ spriteTypes = {
 		
 		layer = { 
 			"GFX_society_warrior_lodge_bon_female_headgear_behind:p5:c1"
-			"GFX_society_warrior_lodge_bon_female_clothes_behind:p3:c0"
-			"GFX_society_warrior_lodge_bon_female_clothes:p3:c2"
-			#"GFX_empty:c3"
+			"GFX_society_warrior_lodge_tengri_female_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_tengri_female_clothes:p3:c2"
+			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_bon_female_headgear:p5:c5"
-			"GFX_society_warrior_lodge_bon_female_clothes_infront:p3:c7"
+			"GFX_society_warrior_lodge_bon_female_clothes_infront:c4"
 		}
-		
+
 		# Correct rank
 		allow_property_values = {
 			3 = {
@@ -921,12 +742,23 @@ spriteTypes = {
 					always = yes
 				}
 			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
 		}
 	}
-}
 
-spriteTypes = {
-	
 	# Warrior Lodges - HELLENIC
 	
 	spriteType = {
@@ -965,7 +797,6 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
-				#portrait_society = warrior_lodge_hellenic
 				has_dlc = "Holy Fury"
 				portrait_culture_group = valyrian
 				OR = {
@@ -991,10 +822,9 @@ spriteTypes = {
 					portrait_has_trait = erudite
 				}
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1006,13 +836,41 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_hellenic_male_clothes:p3:c2"
 			#"GFX_empty:c3"
 			#"GFX_society_warrior_lodge_hellenic_male_headgear:p5:c5"
-			"GFX_society_warrior_lodge_hellenic_male_clothes_infront:p5:c7"
+			"GFX_society_warrior_lodge_hellenic_male_clothes_infront:c4"
 		}
 
 		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
 			36 = { # Spear overlap
 				0 = {
 					always = yes
+				}
+			}
+			39 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
 				}
 			}
 		}
@@ -1049,7 +907,6 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
-				# portrait_society = warrior_lodge_hellenic
 				has_dlc = "Holy Fury"
 				portrait_culture_group = valyrian
 				OR = {
@@ -1075,10 +932,9 @@ spriteTypes = {
 					portrait_has_trait = erudite
 				}
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1090,20 +946,45 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_hellenic_female_clothes:p3:c2"
 			#"GFX_empty:c3"
 			#"GFX_empty:c5"
-			"GFX_society_warrior_lodge_hellenic_female_clothes_infront:p3:c7"
+			"GFX_society_warrior_lodge_hellenic_female_clothes_infront:c4"
 		}
 
 		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
 			36 = { # Spear overlap
 				0 = {
 					always = yes
 				}
 			}
+			39 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
 		}
 	}
-}
-
-spriteTypes = {
 	
 	# Warrior Lodges - TENGRI
 	
@@ -1157,10 +1038,9 @@ spriteTypes = {
 					portrait_has_trait = strategist
 				}
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1172,7 +1052,42 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_tengri_male_clothes:p3:c2"
 			"GFX_society_warrior_lodge_tengri_male_headgear_mid:p5:c3"
 			"GFX_society_warrior_lodge_tengri_male_headgear:p5:c5"
-			"GFX_society_warrior_lodge_tengri_male_clothes_infront:c7"
+		}
+
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
+			5 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
+			39 = {
+				0 = {
+					always = yes
+				}
+			}
 		}
 
 		headgear_that_hides_hair = { 1 2 3 }
@@ -1224,10 +1139,9 @@ spriteTypes = {
 					portrait_has_trait = strategist
 				}
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1239,14 +1153,46 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_tengri_female_clothes:p3:c2"
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_tengri_female_headgear:p5:c5"
-			"GFX_society_warrior_lodge_tengri_female_clothes_infront:c7"
+		}
+
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
+			5 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
+			39 = {
+				0 = {
+					always = yes
+				}
+			}
 		}
 
 		headgear_that_hides_hair = { 1 2 3 }
 	}
-}
-
-spriteTypes = {
 	
 	# Warrior Lodges - ZUN
 	
@@ -1286,8 +1232,6 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
-				#portrait_society = warrior_lodge_zun
-				
 				has_dlc = "Holy Fury"
 				portrait_culture = rhoynar
 				OR = {
@@ -1296,10 +1240,9 @@ spriteTypes = {
 					portrait_has_trait = strategist
 				}
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1311,19 +1254,60 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_zun_male_clothes:p3:c2"
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_zun_male_headgear:p5:c5"
-			"GFX_society_warrior_lodge_zun_male_clothes_infront:p3:c7"
+			"GFX_society_warrior_lodge_zun_male_clothes_infront:c4"
 		}
 
 		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
+			5 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
 			36 = { # Spear overlap
 				0 = {
 					always = yes
 				}
 			}
+			39 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
 		}
 	}
-	
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_zun_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_zun_female_clothes_behind.dds"
@@ -1360,8 +1344,6 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
-				# portrait_society = warrior_lodge_zun
-				
 				has_dlc = "Holy Fury"
 				portrait_culture = rhoynar
 				OR = {
@@ -1370,10 +1352,9 @@ spriteTypes = {
 					portrait_has_trait = strategist
 				}
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1385,13 +1366,167 @@ spriteTypes = {
 			"GFX_society_warrior_lodge_zun_female_clothes:p3:c2"
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_zun_female_headgear:p5:c5"
-			"GFX_society_warrior_lodge_zun_female_clothes_infront:p3:c7"
+			"GFX_society_warrior_lodge_zun_female_clothes_infront:c4"
 		}
 
 		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
+			5 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
 			36 = { # Spear overlap
 				0 = {
 					always = yes
+				}
+			}
+			39 = {
+				0 = {
+					portrait_has_trait = misguided_warrior
+				}
+				1 = {
+					portrait_has_trait = tough_soldier
+				}
+				2 = {
+					portrait_has_trait = skilled_tactician
+				}
+				3 = {
+					portrait_has_trait = brilliant_strategist
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Male
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_dothraki_male_clothing"
+		
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_tengri
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+		
+		layer = { 
+			"GFX_empty:c1"
+			"GFX_society_warrior_lodge_african_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_african_male_clothes:p3:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+			"GFX_society_warrior_lodge_tengri_male_clothes_infront:c4"
+		}
+
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Female
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_dothraki_female_clothing"
+		
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_tengri
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_empty:c1"
+			"GFX_society_warrior_lodge_african_female_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_african_female_clothes:p3:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+			"GFX_society_warrior_lodge_tengri_female_clothes_infront:c4"
+		}
+
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
 				}
 			}
 		}

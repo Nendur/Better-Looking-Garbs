@@ -40,9 +40,9 @@
 			factor = 10
 			is_female = no
 			AND = {
-				is_ruler = no
+				is_landed = no
 				trait = septon
-			}	
+			}
 		}
 		modifier = {
 			factor = 2

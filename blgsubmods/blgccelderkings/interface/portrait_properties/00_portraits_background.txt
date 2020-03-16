@@ -224,11 +224,11 @@
 
 	6 = { # Military camp
 		factor = 5
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				#employer = { mercenary = yes }
 			}
 		}
 		modifier = {

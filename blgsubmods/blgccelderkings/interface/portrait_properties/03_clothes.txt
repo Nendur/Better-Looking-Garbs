@@ -107,8 +107,8 @@
 		modifier = {
 			factor = 0
 			NOR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				trait = proud
@@ -142,8 +142,8 @@
 		modifier = {
 			factor = 0
 			NOR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				trait = proud
@@ -177,8 +177,8 @@
 		modifier = {
 			factor = 0
 			NOR = {
-				is_ruler = yes
-				spouse = { is_ruler = yes }
+				is_landed = yes
+				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				trait = proud
@@ -212,7 +212,7 @@
 		modifier = {
 			factor = 0
 			OR = {
-				is_ruler = yes
+				is_landed = yes
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				spouse = { higher_real_tier_than = count }
@@ -236,7 +236,7 @@
 		modifier = {
 			factor = 0
 			OR = {
-				is_ruler = yes
+				is_landed = yes
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				spouse = { higher_real_tier_than = count }
@@ -261,7 +261,7 @@
 		modifier = {
 			factor = 0
 			OR = {
-				is_ruler = yes
+				is_landed = yes
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				spouse = { higher_real_tier_than = count }
@@ -316,9 +316,6 @@
 				higher_real_tier_than = count
 				spouse = { higher_real_tier_than = count }
 			}
-			NOR = {
-				primary_title = { mercenary = yes }
-			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 11 } }
 		}
 		modifier = {
@@ -329,8 +326,7 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
-						is_ruler = no
-						employer = { primary_title = { mercenary = yes } }
+						is_landed = no
 					}
 				}
 				has_job_title = job_marshal
@@ -338,6 +334,7 @@
 				in_siege = yes
 				death_reason = death_battle
 				#death_reason = death_duel
+				#employer = { mercenary = yes }
 				employer = { government = order_government }
 				
 				AND = {
@@ -384,7 +381,8 @@
 				has_job_title = job_marshal
 				death_reason = death_battle
 				#death_reason = death_duel
-				government = order_government
+				#employer = { mercenary = yes }
+				employer = { government = order_government }
 				AND = {
 					is_warrior = yes
 					is_away = yes
@@ -470,7 +468,8 @@
 				has_job_title = job_marshal
 				death_reason = death_battle
 				#death_reason = death_duel
-				government = order_government
+				#employer = { mercenary = yes }
+				employer = { government = order_government }
 				AND = {
 					is_warrior = yes
 					is_away = yes
@@ -578,7 +577,8 @@
 						in_siege = yes
 						has_job_title = job_marshal
 						death_reason = death_battle
-						government = order_government
+						#employer = { mercenary = yes }
+						employer = { government = order_government }
 						AND = {
 							is_warrior = yes
 							is_away = yes

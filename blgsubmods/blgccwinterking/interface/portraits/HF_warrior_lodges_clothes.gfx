@@ -40,7 +40,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_norse
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -142,7 +142,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_norse
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -217,7 +217,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_celtic
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -297,7 +297,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_celtic
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -418,7 +418,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_vasconic
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -537,7 +537,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_vasconic
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -704,7 +704,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_hellenic
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -808,7 +808,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_hellenic
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -929,7 +929,7 @@ spriteTypes = {
 					portrait_society = warrior_lodge_alan
 				}
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
@@ -1029,7 +1029,7 @@ spriteTypes = {
 					portrait_society = warrior_lodge_alan
 				}
 				OR = {
-					NOT = { portrait_tier = baron }
+					NOT = { portrait_tier = duke }
 					portrait_in_command = yes
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting

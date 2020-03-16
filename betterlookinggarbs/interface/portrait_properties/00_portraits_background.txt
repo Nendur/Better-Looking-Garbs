@@ -263,11 +263,11 @@
 
 	6 = { # Military camp
 		factor = 5
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				employer = { mercenary = yes }
 				blg_soldier = yes
 				has_minor_title = veteran_mt
 				has_minor_title = officer_mt
@@ -301,6 +301,7 @@
 			OR = {
 				is_priest = yes
 				blg_priest = yes
+				has_minor_title = preacher_mt
 			}
 			religion_group = pagan_group
 			has_secret_religion = no
@@ -366,6 +367,7 @@
 				blg_priest = yes
 				has_focus = focus_theology
 				has_pious_trait_trigger = yes
+				has_minor_title = preacher_mt
 			}
 		}
 		modifier = {
@@ -373,6 +375,7 @@
 			OR = {
 				is_priest = yes
 				blg_priest = yes
+				has_minor_title = preacher_mt
 				has_focus = focus_theology
 				trait = zealous
 			}
@@ -763,7 +766,10 @@
 		}
 		modifier = {
 			factor = 5
-			is_priest = yes
+			OR = {
+				is_priest = yes
+				has_minor_title = preacher_mt
+			}
 			religion_group = muslim
 			has_secret_religion = no
 		}
