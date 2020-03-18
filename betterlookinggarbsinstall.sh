@@ -37,7 +37,7 @@ if [ -z "$1" ] || [ "$1" != "-continue" ]; then
 	fi
 fi
 
-if [ -f "${MODS}Historical Immersion Project/SWMH_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/SWMH_changelog.txt" -o -f "${MODS}blgccswmh.mod" ]; then
+if [ -f "${MODS}Historical Immersion Project/SWMH_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/SWMH_changelog.txt" -o -f "${MODS}blgccswmh.mod" -a ! -f "${MODS}blgcchip.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccswmh*" -d"$MODS"
 	fi
@@ -47,7 +47,7 @@ if [ -f "${MODS}Historical Immersion Project/SWMH_changelog.txt" -o -f "${MODS}H
 	fi
 	echo "HIP SWMH compatibility add-on installed."
 fi
-if [ -f "${MODS}Historical Immersion Project/EMF_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/EMF_changelog.txt" -o -f "${MODS}blgccemf.mod" ]; then
+if [ -f "${MODS}Historical Immersion Project/EMF_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/EMF_changelog.txt" -o -f "${MODS}blgccemf.mod" -a ! -f "${MODS}blgcchip.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccemf*" -d"$MODS"
 	fi
@@ -57,7 +57,7 @@ if [ -f "${MODS}Historical Immersion Project/EMF_changelog.txt" -o -f "${MODS}Hi
 	fi
 	echo "HIP EMF compatibility add-on installed."
 fi
-if [ -d "${MODS}CK2Plus" -o -f "${MODS}ck2plus.zip" -o -f "${MODS}blgccck2+.mod" ]; then
+if [ -d "${MODS}CK2Plus" -o -f "${MODS}ck2plus.zip" -o -f "${MODS}blgccck2+.mod" -a ! -f "${MODS}blgccck2+.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccck2+*" -d"$MODS"
 	fi
@@ -67,7 +67,7 @@ if [ -d "${MODS}CK2Plus" -o -f "${MODS}ck2plus.zip" -o -f "${MODS}blgccck2+.mod"
 	fi
 	echo "CK2 Plus compatibility add-on installed."
 fi
-if [ -d "${MODS}A Game of Thrones" -o -f "${MODS}a game of thrones.zip" -o -f "${MODS}blgagot.mod" -o -f "${MODS}blgccagot.mod" ]; then
+if [ -d "${MODS}A Game of Thrones" -o -f "${MODS}a game of thrones.zip" -o -f "${MODS}blgccagot.mod" -a ! -f "${MODS}blgccagot.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccagot*" -d"$MODS"
 	fi
@@ -78,7 +78,7 @@ if [ -d "${MODS}A Game of Thrones" -o -f "${MODS}a game of thrones.zip" -o -f "$
 	fi
 	echo "A Game of Thrones compatibility add-on installed."
 fi
-if [ -d "${MODS}EK021" -o -d "${MODS}EKSVN" -o -f "${MODS}EK021.mod" -o -f "${MODS}ESM.mod" ]; then
+if [ -d "${MODS}EK021" -o -d "${MODS}EKSVN" -o -f "${MODS}EK021.mod" -o -f "${MODS}ESM.mod" -o -f "${MODS}blgccelderkings.mod" -a ! -f "${MODS}blgccelderkings.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccelderkings*" -d"$MODS"
 	fi
@@ -88,7 +88,7 @@ if [ -d "${MODS}EK021" -o -d "${MODS}EKSVN" -o -f "${MODS}EK021.mod" -o -f "${MO
 	fi
 	echo "Elder Kings compatibility add-on installed."
 fi
-if [ -d "${MODS}WTWSMS" -o -f "${MODS}wtwsms.zip" -o -f "${MODS}blgccwtwsms.mod" ]; then
+if [ -d "${MODS}WTWSMS" -o -f "${MODS}wtwsms.zip" -o -f "${MODS}blgccwtwsms.mod" -a ! -f "${MODS}blgccwtwsms.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccwtwsms*" -d"$MODS"
 	fi
@@ -98,7 +98,7 @@ if [ -d "${MODS}WTWSMS" -o -f "${MODS}wtwsms.zip" -o -f "${MODS}blgccwtwsms.mod"
 	fi
 	echo "WTWSMS compatibility add-on installed."
 fi
-if [ -d "${MODS}Britannia" -o -f "${MODS}britannia.zip" -o -f "${MODS}blgccwinterking.mod" ]; then
+if [ -d "${MODS}Britannia" -o -f "${MODS}britannia.zip" -o -f "${MODS}blgccwinterking.mod" -a ! -f "${MODS}blgccwinterking.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccwinterking*" -d"$MODS"
 	fi
@@ -108,7 +108,7 @@ if [ -d "${MODS}Britannia" -o -f "${MODS}britannia.zip" -o -f "${MODS}blgccwinte
 	fi
 	echo "The Winter King compatibility add-on installed."
 fi
-if [ -d "${MODS}Lux Invicta" -o -f "${MODS}Lux Invicta.mod" ]; then
+if [ -d "${MODS}Lux Invicta" -o -f "${MODS}Lux Invicta.mod" -o -f "${MODS}blgccluxinvicta.mod" -a ! -f "${MODS}blgccluxinvicta.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccluxinvicta*" -d"$MODS"
 	fi
@@ -118,7 +118,7 @@ if [ -d "${MODS}Lux Invicta" -o -f "${MODS}Lux Invicta.mod" ]; then
 	fi
 	echo "Lux Invicta compatibility add-on installed."
 fi
-if [ -d "${MODS}Tianxia" -o -f "${MODS}Tianxia.mod" ]; then
+if [ -d "${MODS}Tianxia" -o -f "${MODS}Tianxia.mod" -o -f "${MODS}blgcctianxia.mod" -a ! -f "${MODS}blgcctianxia.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgcctianxia*" -d"$MODS"
 	fi
@@ -128,7 +128,7 @@ if [ -d "${MODS}Tianxia" -o -f "${MODS}Tianxia.mod" ]; then
 	fi
 	echo "Tianxia compatibility add-on installed."
 fi
-if [ -d "${MODS}Mythos 2" -o -f "${MODS}Mythos2.mod" ]; then
+if [ -d "${MODS}Mythos 2" -o -f "${MODS}Mythos2.mod" -o -f "${MODS}blgccmythos.mod" -a ! -f "${MODS}blgccmythos.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccmythos*" -d"$MODS"
 	fi
@@ -138,7 +138,7 @@ if [ -d "${MODS}Mythos 2" -o -f "${MODS}Mythos2.mod" ]; then
 	fi
 	echo "Mythos compatibility add-on installed."
 fi
-if [ -f "${MODS}blgccironman.mod" -o -n "`grep ironman=yes \"${MODS}/../settings.txt\"`" ]; then
+if [ -f "${MODS}blgccironman.mod" -o -n "`grep ironman=yes \"${MODS}/../settings.txt\"`" -a ! -f "${MODS}blgccironman.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccironman*" -d"$MODS"
 	fi
@@ -147,6 +147,16 @@ if [ -f "${MODS}blgccironman.mod" -o -n "`grep ironman=yes \"${MODS}/../settings
 		mv "${ADDONS}"/blgccironman* "$MODS"
 	fi
 	echo "Ironman add-on installed."
+fi
+if [ -f "${MODS}blgccgeneric.mod" -a ! -f "${MODS}blgccgeneric.zip" ]; then
+	if [ -f "$BLGZIP" ]; then
+		unzip -uoq "$BLGZIP" "submods/blgccgeneric*" -d"$MODS"
+	fi
+	if [ -f "${ADDONS}/blgccgeneric.mod" ]; then
+		[ -d "${MODS}/blgccgeneric" ] && rm -r "${MODS}/blgccgeneric.mod" "${MODS}/blgccgeneric"
+		mv "${ADDONS}"/blgccgeneric* "$MODS"
+	fi
+	echo "Generic compatibility add-on installed."
 fi
 if [ -f "${MODS}blgnodisease.mod" ]; then
 	if [ -f "$BLGZIP" ]; then

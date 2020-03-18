@@ -1,0 +1,100 @@
+# p10 blinded
+10 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 100
+			OR = {
+				has_game_rule = { name = blg_traits value = nodisease }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+	1 = { # leper
+		factor = 100
+		trigger = {
+			OR = {
+				AND = {
+					trait = leper
+					OR = {
+						trait = disfigured
+						NOT = { has_dlc = "Reapers" }
+					}
+					is_alive = yes
+				}
+			trait = mummy
+		}
+	}
+	2 = { # syphilitic
+		factor = 100
+		trigger = {
+			OR = {
+				trait = syphilitic
+				trait = has_aztec_disease
+			}
+			is_alive = yes
+		}
+	}
+	3 = { # pnuemonia
+		factor = 100
+		trigger = {
+			trait = pneumonic
+			practical_age = 16
+			is_alive = yes
+		}
+	}
+	4 = { # fever
+		factor = 100
+		trigger = {
+			OR = {
+				trait = fever
+				trait = has_typhoid_fever
+			}
+			is_alive = yes
+		}
+	}
+	5 = { # ill
+		factor = 100
+		trigger = {
+			OR = {
+				trait = ill
+				trait = flu
+			}
+			is_alive = yes
+		}
+	}
+	6 = { # drunkard
+		factor = 100
+		trigger = {
+			trait = drunkard
+			OR = {
+				is_alive = yes
+				has_nickname = nick_the_drunkard
+			}
+			NOT = { has_game_rule = { name = blg_traits value = notraits } }
+		}
+	}
+	7 = { # vomit
+		factor = 0
+		trigger = {
+			OR = {
+				trait = vomiting
+				trait = food_poisoning
+			}
+			is_alive = yes
+		}
+	}
+	8 = { # imbecile
+		factor = 100
+		trigger = {
+			OR = {
+				AND = {
+					trait = imbecile
+					NOT = { has_game_rule = { name = blg_traits value = notraits } }
+				}
+				trait = rabies
+			}
+			is_alive = yes
+		}
+	}
+}

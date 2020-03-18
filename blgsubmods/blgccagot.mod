@@ -9,4 +9,4 @@ dependencies=
 	"Better Looking Garbs"
 	"Better Looking Garbs Full"
 }
-supported_checksums = { JHKC WTXH FDJN GPMN PNVA }
+supported_checksums = { KMZY DCOW USCR HTBJ OIGE VRME }

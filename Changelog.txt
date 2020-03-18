@@ -1,5 +1,6 @@
 Changelog:
 
+17-03-2020
   Added armour to clothing sets that didn't have it.
   Moved mail coifs from clothes to headgear to get proper hair covering.
   Turned carried helmets from warrior lodges into general layers. (requires Holy Fury)

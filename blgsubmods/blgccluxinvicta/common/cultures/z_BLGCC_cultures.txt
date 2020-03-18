@@ -55,7 +55,7 @@ latin = {
 		graphical_cultures = { gallicgfx romangfx occitangfx }
 	}
 	romanogothic = {
-		graphical_cultures = { visigothgfx }
+		graphical_cultures = { lombardgfx }
 	}
 	outremer = {
 		graphical_cultures = { outremergfx holygfx italiangfx levantinegfx southerngfx }
@@ -229,6 +229,9 @@ central_germanic = {
 }
 
 west_germanic = {
+	saxon = {
+		graphical_cultures = { saxongfx englishgfx }
+	}
 	frisian = {
 		graphical_cultures = { saxongfx englishgfx }
 	}
