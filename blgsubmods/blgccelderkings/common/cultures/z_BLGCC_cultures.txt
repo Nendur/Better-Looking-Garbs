@@ -32,7 +32,7 @@ nedic = {
 }
 
 yokudan_group = {
-	graphical_cultures = { muslimgfx }
+	graphical_cultures = { redguardgfx muslimgfx }
 
 	yokudan = {
 		graphical_cultures = { africangfx westafricangfx }

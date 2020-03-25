@@ -1,4 +1,4 @@
-name="BLG / CC for When the World Stopped Making Sense"
+name="BLG / CC for WTWSMS"
 path="mod/blgccwtwsms"
 dependencies=
 {

@@ -9,3 +9,5 @@ dependencies=
 	"Better Looking Garbs"
 	"Better Looking Garbs Full"
 }
+tags={ Graphics Portraits Units Britannia "Winter King" }
+picture="blgccwinterking.jpg"

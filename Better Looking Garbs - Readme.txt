@@ -37,10 +37,12 @@ Installation:
 1. Extract the downloaded mod or subscribe to the workshop version.
 
 2a. If using the modular workshop version, open Documents/Paradox Interactive/Crusader Kings II/mod/betterlookinggarbs.zip and extract betterlookinggarbsinstall.exe (Windows) or betterlookinggarbsinstall.sh (Linux/Mac)
+	Windows: Run betterlookinggarbsinstall.exe
+	Linux: Open a terminal and type cd "~/.paradoxinteractive/Crusader Kings II/mod" && bash betterlookinggarbsinstall.sh
+	MacOS: Open a terminal and type cd "~/Documents/Paradox Interactive/Crusader Kings II/mod" && bash betterlookinggarbsinstall.sh
+The installer will selectively add DLC dependent files and compatibility add-ons to the mod based on your installation.
 
 2b. If using the full workshop version, open Documents/Paradox Interactive/Crusader Kings II/mod/betterlookinggarbsfull.zip and extract betterlookinggarbsfull.mod.
-
-3. Run betterlookinggarbsinstall.exe (Windows) or "bash betterlookinggarbsinstall.sh" (Linux/Mac). The installer will selectively add DLC dependent files and compatibility add-ons to the mod based on your installation.
 
 4. Repeat the installation when the mod is updated to a newer version.
 

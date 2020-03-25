@@ -1,0 +1,10 @@
+--Unit Graphics weight = number of units * graphical factor * maintenance
+NDefines.NMilitary.LIGHT_INFANTRY_GRAPHICAL_FACTOR = 1.5	--1.5
+NDefines.NMilitary.HEAVY_INFANTRY_GRAPHICAL_FACTOR = 1		--2
+NDefines.NMilitary.PIKEMEN_GRAPHICAL_FACTOR = 1.25			--2.5
+NDefines.NMilitary.ARCHERS_GRAPHICAL_FACTOR = 1.4			--2.1
+NDefines.NMilitary.LIGHT_CAVALRY_GRAPHICAL_FACTOR = 1.25	--2.5
+NDefines.NMilitary.KNIGHTS_GRAPHICAL_FACTOR = 1.25			--5
+NDefines.NMilitary.SPECIAL_TROOPS_GRAPHICAL_FACTOR = 1.75	--3.5
+NDefines.NCharacter.PORTRAIT_ADULT_MALE_AGE_THRESHOLD = 0
+NDefines.NCharacter.PORTRAIT_ADULT_FEMALE_AGE_THRESHOLD = 0

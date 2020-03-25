@@ -974,7 +974,7 @@ character_event = {
 				}
 				if = {
 					limit = { trait = scarred_type_8 }
-					add_trait = scarred_type_9
+					add_trait = scarred_type_7
 				}
 				if = {
 					limit = { trait = scarred_type_9 }

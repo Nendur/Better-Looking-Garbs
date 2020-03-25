@@ -17,5 +17,5 @@ dependencies={
 	"A.D. 633: Rise of Islam"
 	"Cultural Cities Remix"
 }
-tags={ Graphics Portraits Units Councillors Shields HIP CK2Plus AGOT "Elder Kings" WTWSMS "Lux Invicta" Tianxia Mythos }
+tags={ Graphics Portraits Units Councillors Shields }
 picture="betterlookinggarbs.jpg"

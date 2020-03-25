@@ -1,23 +1,17 @@
 blg_italian = {
-	OR = {
-		culture_group = italian_group
-		culture_group = island_romance
-	}
+	culture_group = italian_group
 }
 
 blg_north_african = {
-	OR = {
-		culture_group = maghrebi
-		culture_group = amazigh
-	}
+	culture_group = north_african
 }
 
 blg_french = {
-	always = no
+	culture = arpitan
 }
 
 blg_uncrowned = {
-	trait = uncrowned
+	emf_common_coronation_requirements = yes
 }
 
 blg_desert_monk = {
@@ -28,39 +22,19 @@ blg_desert_monk = {
 }
 
 blg_petty_empire = {
-	primary_title = {
-		OR = {
-			title = e_great_britain
-			title = e_yugoslavia
-		}
-	}
-}
-
-blg_royalty = {
 	always = no
 }
 
+blg_royalty = {
+	has_minor_title = title_king_of_romans
+}
+
 blg_crowned = {
-	OR = {
-		trait = crowned
-		trait = strong_basileus
-		trait = weak_basileus
-		trait = crowned_by_relhead
-		trait = crowned_by_vip
-		trait = crowned_by_pope_stolen
-	}
+	emf_is_crowned = yes
 }
 
 blg_religion_chinese = {
 	always = no
-}
-
-religion_openly_in_celtic_subgroup_trigger = {
-	religion_openly_celtic_or_reformed_trigger = yes
-}
-
-religion_openly_egyptian_or_reformed_trigger = {
-	religion_group = egyptian_pagan_group
 }
 
 blg_chinese = {
@@ -72,7 +46,7 @@ blg_regular_helmet = {
 }
 
 blg_saint = {
-	always = no
+	trait = emf_saint
 }
 
 blg_polar_bear = {
@@ -111,7 +85,6 @@ blg_soldier = {
 		has_character_flag = rtp_temporary_mercenary
 		has_character_flag = rtp_temporary_crusader
 		has_minor_title = sellsword_mt
-		has_minor_title = holy_warrior_mt
 		AND = {
 			is_ruler = yes
 			OR = {
