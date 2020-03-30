@@ -735,6 +735,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_satanist_male_headgear_front:c5"
 			"GFX_society_satanist_male_headgear_behind:c1"
+			"GFX_empty:c7"
 		}
 
 		# Correct rank
@@ -820,6 +821,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_satanist_female_headgear_front:c5"
 			"GFX_society_satanist_female_headgear_behind:c1"
+			"GFX_empty:c7"
 		}
 
 		# No hair, correct rank

@@ -2,5 +2,5 @@ object = {
 	type = "Landmark_Domeoftherock"
 	position = { 1396.000 21.200 598.000 }
 	rotation = { 0.000 0.000 0.000 }
-	scale = 0.13
+	scale = 0.2
 }

@@ -66,6 +66,7 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_vaishnavite_male_headgear_front:c5"
 			"GFX_empty:c3"
 			"GFX_empty:c1"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -158,6 +159,7 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_vaishnavite_female_headgear_front:c5"
 			"GFX_empty:c3"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -241,6 +243,7 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_smarta_male_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_smarta_male_headgear_front:c5"
 			"GFX_empty:c3"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -345,6 +348,7 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_smarta_female_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_smarta_female_headgear_front:c5"
 			"GFX_society_monastic_order_hindu_smarta_female_headgear_mid:c3"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -416,6 +420,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_empty:c5"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -505,6 +510,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_empty:c5"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -599,6 +605,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_empty:c5"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -688,6 +695,7 @@ spriteTypes = {
 			"GFX_society_monastic_order_hindu_shaivite_female_headgear_behind:c1"
 			"GFX_society_monastic_order_hindu_shaivite_female_headgear_front:c5"
 			"GFX_empty:c3"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -742,6 +750,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_empty:c1"
 			"GFX_dummy:c5"
+			"GFX_empty:c7"
 		}
 
 		# Hide hair, beard
@@ -809,6 +818,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_monastic_order_jain_digambara_female_headgear_behind:c1"
 			"GFX_society_monastic_order_jain_digambara_female_headgear_front:c5"
+			"GFX_empty:c7"
 		}
 
 
@@ -887,6 +897,7 @@ spriteTypes = {
 			"GFX_society_monastic_order_jain_svetambara_male_headgear_front:c5"
 			"GFX_society_monastic_order_jain_svetambara_male_headgear_mid:c3"
 			"GFX_empty:c1"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -982,6 +993,7 @@ spriteTypes = {
 			"GFX_society_monastic_order_jain_svetambara_female_headgear_behind:c1"
 			"GFX_society_monastic_order_jain_svetambara_female_headgear_front:c5"
 			"GFX_empty:c3"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {

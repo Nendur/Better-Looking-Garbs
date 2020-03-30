@@ -184,6 +184,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_benedictine_female_headgear_behind:c1"
 			"GFX_society_benedictine_female_headgear_front:c5"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -380,6 +381,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_dominican_female_headgear_behind:c1"
 			"GFX_society_dominican_female_headgear_front:c5"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -469,6 +471,7 @@ spriteTypes = {
 			"GFX_society_orthodox_monk_male_headgear_behind:c1"
 			"GFX_society_orthodox_monk_male_headgear_front:c5"
 			"GFX_empty:c3"
+			"GFX_empty:c7"
 		}
 
 		# Ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.
@@ -613,6 +616,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_benedictine_male_headgear_front:c4"
 			"GFX_empty:c5"
+			"GFX_empty:c7"
 		}
 
 		# Ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.
@@ -714,6 +718,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_orthodox_monk_female_headgear_behind:c1"
 			"GFX_society_orthodox_monk_female_headgear_front:c5"
+			"GFX_empty:c7"
 		}
 
 		# Hide hair, ranks, slot 3 is for Greek orthodox, 4 for Russian orthodox.

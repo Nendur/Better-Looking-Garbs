@@ -119,7 +119,6 @@
 	10 = { # Necklace
 		factor = 50
 		trigger = {
-			in_command = no
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
@@ -131,12 +130,18 @@
 				quality >= 3
 				is_artifact_equipped = yes
 			}
+			NOR = {
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 11 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				has_portrait_property = { layer = 3 index = 14 }
+			}
 		}
 	}
 	11 = { # Necklace
 		factor = 50
 		trigger = {
-			in_command = no
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
@@ -148,12 +153,18 @@
 				quality == 2
 				is_artifact_equipped = yes
 			}
+			NOR = {
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 11 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				has_portrait_property = { layer = 3 index = 14 }
+			}
 		}
 	}
 	12 = { # Necklace
 		factor = 50
 		trigger = {
-			in_command = no
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
@@ -164,6 +175,13 @@
 				has_artifact_flag = necklace
 				quality < 2
 				is_artifact_equipped = yes
+			}
+			NOR = {
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 11 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				has_portrait_property = { layer = 3 index = 14 }
 			}
 		}
 	}

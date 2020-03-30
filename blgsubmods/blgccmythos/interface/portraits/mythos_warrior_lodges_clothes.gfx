@@ -27,6 +27,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_slavic_male_clothes_infront:p5:c5"
 			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
+			"GFX_empty:c7"
 		}
 
 		# Correct rank
@@ -107,6 +108,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_slavic_male_clothes_infront:p5:c5"
 			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
+			"GFX_empty:c7"
 		}
 
 		# Correct rank
@@ -190,6 +192,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_zun_male_headgear:p5:c5"
 			"GFX_society_warrior_lodge_zun_male_clothes_infront:c4"
+			"GFX_empty:c7"
 		}
 
 		# Correct rank
@@ -270,6 +273,7 @@ spriteTypes = {
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_zun_male_headgear:p5:c5"
 			"GFX_society_warrior_lodge_zun_female_clothes_infront:c4"
+			"GFX_empty:c7"
 		}
 
 		# Correct rank

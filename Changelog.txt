@@ -1,5 +1,9 @@
 Changelog:
 
+  Use the HRE eagle shield for Byzantine and Roman empires.
+  Improvements to African unit pack.
+  More transparent makeup for subtlety.
+
 17-03-2020
   Added armour to clothing sets that didn't have it.
   Moved mail coifs from clothes to headgear to get proper hair covering.

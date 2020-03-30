@@ -1,5 +1,32 @@
 objectTypes = {
 
+	EMFXActorType = {
+		name = "e_byzantium"
+		actorfile = "gfx\models\Shields\holy_roman.xac"
+		scale = 0.5f
+		use_animation = no
+		cull_distance = 550.0f
+		scale_on_cull_distance = no
+	}
+
+	EMFXActorType = {
+		name = "e_roman_empire"
+		actorfile = "gfx\models\Shields\holy_roman.xac"
+		scale = 0.5f
+		use_animation = no
+		cull_distance = 550.0f
+		scale_on_cull_distance = no
+	}
+
+	EMFXActorType = {
+		name = "e_hre_french"
+		actorfile = "gfx\models\Shields\holy_roman.xac"
+		scale = 0.5f
+		use_animation = no
+		cull_distance = 550.0f
+		scale_on_cull_distance = no
+	}
+
 ### Pagan shields ######################################################
 	EMFXActorType = {
 		name = "norsegfx_king_shield"

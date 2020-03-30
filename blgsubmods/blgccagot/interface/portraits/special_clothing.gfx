@@ -102,6 +102,7 @@ spriteTypes = {
 			"GFX_religious_male_clothes:c2"
 			"GFX_empty:c3"
 			"GFX_empty:c5"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {
@@ -147,6 +148,7 @@ spriteTypes = {
 			"GFX_religious_female_clothes:c2"
 			"GFX_empty:c3"
 			"GFX_religious_female_headgear:c5"
+			"GFX_empty:c7"
 		}
 
 		allow_property_values = {

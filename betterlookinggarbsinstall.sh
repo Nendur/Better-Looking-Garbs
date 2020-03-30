@@ -253,6 +253,10 @@ if [ -f "${DLC}002.dlc" ]; then
 	fi
 else echo Mongol Face Pack absent.; fi
 
+if [ -f "${DLC}008.dlc" ]; then
+	LIST="$LIST dlc008/*"
+fi
+
 if [ -f "${DLC}011.dlc" ]; then
 	echo Legacy of Rome present.
 	LIST="$LIST dlc011/*"
@@ -372,7 +376,6 @@ if [[ $charlemagne -eq 1 ]]; then
 	fi
 	[ -f "${DLC}040.dlc" ] && LIST="$LIST dlc045adlc040/*"
 	[ -f "${DLC}051.dlc" ] && LIST="$LIST dlc045adlc051/*"
-	[ -f "${DLC}008.dlc" ] || LIST="$LIST dlc008rdlc045/*"
 else echo Charlemagne absent.; fi
 
 if [ -f "${DLC}046.dlc" ]; then

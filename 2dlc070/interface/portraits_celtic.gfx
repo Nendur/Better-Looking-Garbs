@@ -99,7 +99,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_celtic_male_headgear_mid"
 		texturefile = "gfx\\characters\\english_male\\english_male_headgear_mid.dds"
-		noOfFrames = 14
+		noOfFrames = 12
 		norefcount = yes
 	}
 
