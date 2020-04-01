@@ -168,7 +168,19 @@ objectTypes = {
 		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
-	
+
+	EMFXActorType = {
+		name = "africangfx_LIGHT_INFANTRY_weapon"
+		actorfile = "gfx\models\Attachments\holy_order_dervish_sword.xac"
+		scale = 0.9f
+	}
+
+	EMFXActorType = {
+		name = "africangfx_HEAVY_INFANTRY_weapon"
+		actorfile = "gfx\models\Attachments\holy_order_dervish_sword.xac"
+		scale = 1.1f
+	}
+
 	EMFXActorType = {
 		name = "cumangfx_LIGHT_INFANTRY_weapon"
 		actorfile = "gfx\models\Attachments\holy_order_dervish_sword.xac"

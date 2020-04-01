@@ -14,10 +14,12 @@
 				trait = cancer
 				trait = has_tuberculosis
 			}
-			NOR = {
-				has_game_rule = { name = blg_traits value = nodisease }
-				has_game_rule = { name = blg_traits value = off }
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
 			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 }

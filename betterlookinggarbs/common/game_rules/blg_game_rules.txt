@@ -23,7 +23,7 @@ blg_child_birth = {
 	group = "BETTER_LOOKING_GARBS"
 	option = {
 		name = on
-		text = "RULE_OPTION_ON"
+		text = "RULE_OPTION_DEFAULT"
 		desc = "BLG_CHILD_BIRTH_ON_DESC"
 	}
 	option = {
@@ -32,34 +32,14 @@ blg_child_birth = {
 		desc = "BLG_CHILD_BIRTH_LIMITED_DESC"
 	}
 	option = {
+		name = primary
+		text = "RULE_OPTION_PRIMARY_PARENT"
+		desc = "BLG_CHILD_BIRTH_PRIMARY_DESC"
+	}
+	option = {
 		name = off
 		text = "RULE_OPTION_OFF"
 		desc = "BLG_CHILD_BIRTH_OFF_DESC"
-	}
-}
-
-blg_artifacts = {
-	name = "BLG_ARTIFACTS"
-	group = "BETTER_LOOKING_GARBS"
-	option = {
-		name = on
-		text = "RULE_OPTION_ON"
-		desc = "BLG_ARTIFACTS_ON_DESC"
-	}
-	option = {
-		name = weapons
-		text = "RULE_OPTION_WEAPONS"
-		desc = "BLG_ARTIFACTS_WEAPONS_DESC"
-	}
-	option = {
-		name = rare
-		text = "RULE_OPTION_RARE"
-		desc = "BLG_ARTIFACTS_RARE_DESC"
-	}
-	option = {
-		name = off
-		text = "RULE_OPTION_OFF"
-		desc = "BLG_ARTIFACTS_OFF_DESC"
 	}
 }
 
@@ -103,7 +83,7 @@ blg_traits = {
 	group = "BETTER_LOOKING_GARBS"
 	option = {
 		name = on
-		text = "RULE_OPTION_ON"
+		text = "RULE_OPTION_DEFAULT"
 		desc = "BLG_TRAITS_ON_DESC"
 	}
 	option = {
@@ -112,19 +92,39 @@ blg_traits = {
 		desc = "BLG_TRAITS_NOLUNATIC_DESC"
 	}
 	option = {
+		name = nofair
+		text = "RULE_OPTION_NOFAIR"
+		desc = "BLG_TRAITS_NOFAIR_DESC"
+	}
+	option = {
 		name = notraits
-		text = "RULE_OPTION_NOTRAITS"
+		text = "RULE_OPTION_LIMITED"
 		desc = "BLG_TRAITS_NOTRAITS_DESC"
 	}
 	option = {
-		name = nodisease
-		text = "RULE_OPTION_NODISEASE"
-		desc = "BLG_TRAITS_NODISEASE_DESC"
+		name = off
+		text = "RULE_OPTION_NONE"
+		desc = "BLG_TRAITS_OFF_DESC"
+	}
+}
+
+blg_disease = {
+	name = "BLG_DISEASE"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = on
+		text = "RULE_OPTION_DEFAULT"
+		desc = "BLG_DISEASE_ON_DESC"
+	}
+	option = {
+		name = postmortem
+		text = "RULE_OPTION_POSTMORTEM"
+		desc = "BLG_DISEASE_POSTMORTEM_DESC"
 	}
 	option = {
 		name = off
-		text = "RULE_OPTION_OFF"
-		desc = "BLG_TRAITS_OFF_DESC"
+		text = "RULE_OPTION_NONE"
+		desc = "BLG_DISEASE_OFF_DESC"
 	}
 }
 
@@ -133,8 +133,13 @@ blg_wounds = {
 	group = "BETTER_LOOKING_GARBS"
 	option = {
 		name = on
-		text = "RULE_OPTION_ON"
+		text = "RULE_OPTION_DEFAULT"
 		desc = "BLG_WOUNDS_ON_DESC"
+	}
+	option = {
+		name = postmortem
+		text = "RULE_OPTION_POSTMORTEM"
+		desc = "BLG_WOUNDS_POSTMORTEM_DESC"
 	}
 	option = {
 		name = nomasks
@@ -148,7 +153,32 @@ blg_wounds = {
 	}
 	option = {
 		name = off
-		text = "RULE_OPTION_OFF"
+		text = "RULE_OPTION_NONE"
 		desc = "BLG_WOUNDS_OFF_DESC"
+	}
+}
+
+blg_artifacts = {
+	name = "BLG_ARTIFACTS"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "BLG_ARTIFACTS_ON_DESC"
+	}
+	option = {
+		name = weapons
+		text = "RULE_OPTION_WEAPONS"
+		desc = "BLG_ARTIFACTS_WEAPONS_DESC"
+	}
+	option = {
+		name = rare
+		text = "RULE_OPTION_RARE"
+		desc = "BLG_ARTIFACTS_RARE_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "BLG_ARTIFACTS_OFF_DESC"
 	}
 }

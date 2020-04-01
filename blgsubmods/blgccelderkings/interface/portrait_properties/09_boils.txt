@@ -2,26 +2,29 @@
 9 = {
 	0 = { # blank
 		factor = 1
-		modifier = {
-			factor = 100
-			OR = {
-				has_game_rule = { name = blg_traits value = nodisease }
-				has_game_rule = { name = blg_traits value = off }
-			}
-		}
 	}
 	1 = { # bubonic plague
 		factor = 100
 		trigger = {
 			trait = has_bubonic_plague
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 	2 = { # boils
 		factor = 100
 		trigger = {
 			trait = has_small_pox
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 	3 = { # red dots
@@ -32,21 +35,34 @@
 				trait = has_knahaten_flu
 				trait = has_peryite_plague
 			}
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 	4 = { # ugly mole
 		factor = 99
 		trigger = {
 			trait = ugly
-			NOT = { has_game_rule = { name = blg_traits value = notraits } }
+
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = off }
+			}
 		}
 	}
 	5 = { # ugly monobrow
 		factor = 99
 		trigger = {
 			trait = ugly
-			NOT = { has_game_rule = { name = blg_traits value = notraits } }
+
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = off }
+			}
 		}
 	}
 }

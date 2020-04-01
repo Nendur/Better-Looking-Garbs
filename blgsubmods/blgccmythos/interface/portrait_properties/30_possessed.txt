@@ -6,18 +6,19 @@
 			factor = 100
 			OR = {
 				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = nodisease }
 				has_game_rule = { name = blg_traits value = off }
 			}
 		}
 	}
-	1 = { #Demon Child (fantasy only)
+	1 = { # Demon Child (fantasy only)
 		factor = 100
 		trigger = {
 			has_character_modifier = demon_horns
+
 			NOR = {
 				has_game_rule = { name = supernatural_events value = off }
-				has_game_rule = { name = blg_traits value = nolunatic } 
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
 			}
 		}
 	}
@@ -31,8 +32,15 @@
 		factor = 100
 		trigger = {
 			trait = possessed
-			is_alive = yes
-			NOT = { has_game_rule = { name = blg_traits value = nolunatic } }
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOR = {
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
 		}
 	}
 	4 = { # wolfblooded
@@ -46,7 +54,11 @@
 				has_character_flag = demon_child_fake
 				has_character_flag = demon_child_non_pagan
 			}
-			NOT = { has_game_rule = { name = blg_traits value = nolunatic } }
+
+			NOR = {
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
 		}
 	}
 	5 = { # incapable
@@ -56,29 +68,48 @@
 				trait = incapable
 				trait = sick_incapable
 			}
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
 		}
 	}
 	6 = { # lunatic
 		factor = 100
 		trigger = {
 			trait = lunatic
-			is_alive = yes
-			NOT = { has_game_rule = { name = blg_traits value = nolunatic } }
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOR = {
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
 		}
 	}
 	7 = { # depressed
 		factor = 100
 		trigger = {
 			trait = depressed
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
 		}
 	}
 	8 = { # stressed
 		factor = 100
 		trigger = {
 			trait = stressed
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
 		}
 	}
 }

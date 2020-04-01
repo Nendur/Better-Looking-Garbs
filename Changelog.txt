@@ -1,8 +1,14 @@
 Changelog:
 
+  Added game rules:
+  - Split traits and diseases.
+  - Primary parent always determines child ethnicity.
+  - Post mortem disease and wound effects.
+  - No makeup from traits.
   Use the HRE eagle shield for Byzantine and Roman empires.
+  Use a small empire shield for the Papal State.
   Improvements to African unit pack.
-  More transparent makeup for subtlety.
+  More transparent makeup for a subtler look.
 
 17-03-2020
   Added armour to clothing sets that didn't have it.

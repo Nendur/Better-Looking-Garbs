@@ -8,18 +8,24 @@
 		factor = 100
 		trigger = {
 			OR = {
-				trait = is_malnourished
-				trait = fatigue
-				trait = malaise
-				trait = cancer
-				trait = has_tuberculosis
+				AND = {
+					OR = {
+						trait = is_malnourished
+						trait = fatigue
+						trait = malaise
+						trait = cancer
+						trait = has_tuberculosis
+						trait = zombie_infection
+					}
+
+					OR = {
+						is_alive = yes
+						has_game_rule = { name = blg_disease value = postmortem }
+					}
+					NOT = { has_game_rule = { name = blg_disease value = off } }
+				}
 				trait = known_vampire
 				trait = mummy
-				trait = zombie_infection
-			}
-			NOR = {
-				has_game_rule = { name = blg_traits value = nodisease }
-				has_game_rule = { name = blg_traits value = off }
 			}
 		}
 	}

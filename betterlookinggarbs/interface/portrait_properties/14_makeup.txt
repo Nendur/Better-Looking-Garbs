@@ -10,8 +10,8 @@
 			factor = 0.01
 			trait = fair
 			NOR = {
+				has_game_rule = { name = blg_traits value = nofair }
 				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = nodisease }
 				has_game_rule = { name = blg_traits value = off }
 			}
 		}
@@ -19,8 +19,8 @@
 			factor = 0.02
 			trait = groomed
 			NOR = {
+				has_game_rule = { name = blg_traits value = nofair }
 				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = nodisease }
 				has_game_rule = { name = blg_traits value = off }
 			}
 		}
@@ -29,6 +29,7 @@
 	1 = { # white powder
 		factor = 1
 		trigger = {
+			is_female = yes
 			OR = {
 				culture = han
 				blg_chinese = yes
@@ -43,6 +44,7 @@
 	3 = { # white powder and rouge a
 		factor = 1
 		trigger = {
+			is_female = yes
 			OR = {
 				culture = han
 				blg_chinese = yes
@@ -57,6 +59,7 @@
 	5 = { # white powder and rouge b
 		factor = 1
 		trigger = {
+			is_female = yes
 			OR = {
 				culture = han
 				blg_chinese = yes

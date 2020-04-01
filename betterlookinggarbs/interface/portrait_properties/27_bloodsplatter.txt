@@ -40,7 +40,6 @@
 			trait = uncouth
 			NOR = {
 				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = nodisease }
 				has_game_rule = { name = blg_traits value = off }
 			}
 		}

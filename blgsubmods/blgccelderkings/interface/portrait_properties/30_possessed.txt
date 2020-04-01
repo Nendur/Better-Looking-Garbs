@@ -6,7 +6,6 @@
 			factor = 100
 			OR = {
 				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = nodisease }
 				has_game_rule = { name = blg_traits value = off }
 			}
 		}
@@ -30,8 +29,15 @@
 		factor = 100
 		trigger = {
 			trait = possessed
-			is_alive = yes
-			NOT = { has_game_rule = { name = blg_traits value = nolunatic } }
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOR = {
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
 		}
 	}
 	3 = { # wolfblooded
@@ -53,29 +59,48 @@
 				trait = incapable
 				trait = sick_incapable
 			}
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
 		}
 	}
 	5 = { # lunatic
 		factor = 100
 		trigger = {
 			trait = lunatic
-			is_alive = yes
-			NOT = { has_game_rule = { name = blg_traits value = nolunatic } }
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOR = {
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
 		}
 	}
 	6 = { # depressed
 		factor = 100
 		trigger = {
 			trait = depressed
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
 		}
 	}
 	7 = { # stressed
 		factor = 100
 		trigger = {
 			trait = stressed
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
 		}
 	}
 }

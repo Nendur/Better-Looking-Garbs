@@ -12,6 +12,8 @@ BLG_NEW_CHARACTERS_OFF_DESC;New character ethnicities will NOT be altered.;;;;;;
 BLG_CHILD_BIRTH;§ZBLG:§! Newborn Child Handling;;;;;;;;;;;;;x
 BLG_CHILD_BIRTH_ON_DESC;Newborn children can get a different ethnicity representing the midpoint between their parents. Similar ethnicities will be shifted to the child's culture.;;;;;;;;;;;;;x
 BLG_CHILD_BIRTH_LIMITED_DESC;Newborn children can get a different ethnicity representing the midpoint between their parents.;;;;;;;;;;;;;x
+RULE_OPTION_PRIMARY_PARENT;Primary Parent;;;;;;;;;;;;;x
+BLG_CHILD_BIRTH_PRIMARY_DESC;Newborn children will take after the primary parent in a marriage. The father in a regular marriage and vice versa. This setting takes player choice over realism.;;;;;;;;;;;;;x
 BLG_CHILD_BIRTH_OFF_DESC;Newborn children will NOT be altered.;;;;;;;;;;;;;x
 BLG_ARTIFACTS;§ZBLG:§! Artifacts;;;;;;;;;;;;;x
 RULE_OPTION_WEAPONS;Weapons;;;;;;;;;;;;;x
@@ -28,17 +30,23 @@ RULE_OPTION_BLG_CHILDREN_16_NOSCALING;Until age 16, No size scaling;;;;;;;;;;;;;
 RULE_OPTION_BLG_CHILDREN_15_NOSCALING;Until age 15, No size scaling;;;;;;;;;;;;;x
 RULE_OPTION_BLG_CHILDREN_14_NOSCALING;Until age 14, No size scaling;;;;;;;;;;;;;x
 BLG_CHILDREN_NOSCALING;Child portraits will show at full size until the switch to adult portraits.;;;;;;;;;;;;;x
-BLG_TRAITS;§ZBLG:§! Traits and Diseases;;;;;;;;;;;;;x
-BLG_TRAITS_ON_DESC;Effects for traits and diseases will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_TRAITS;§ZBLG:§! Traits;;;;;;;;;;;;;x
+BLG_TRAITS_ON_DESC;Effects for various traits will be shown in the character portrait.;;;;;;;;;;;;;x
 RULE_OPTION_NOLUNATIC;No Lunatic and Possessed;;;;;;;;;;;;;x
 BLG_TRAITS_NOLUNATIC_DESC;Effects for lunatic and possessed characters will be excluded from showing in the character portrait.;;;;;;;;;;;;;x
+RULE_OPTION_NOFAIR;No Makeup;;;;;;;;;;;;;x
+BLG_TRAITS_NOFAIR_DESC;Effects for attractive, groomed, lunatic and possessed characters will be excluded from showing in the character portrait.;;;;;;;;;;;;;x
 RULE_OPTION_NOTRAITS;No Traits;;;;;;;;;;;;;x
-BLG_TRAITS_NOTRAITS_DESC;Most effects from traits will be excluded from showing in the character portrait.;;;;;;;;;;;;;x
-RULE_OPTION_NODISEASE;No Traits and Diseases;;;;;;;;;;;;;x
-BLG_TRAITS_NODISEASE_DESC;Effects for traits and diseases will NOT be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_TRAITS_NOTRAITS_DESC;Custom effects from traits will be excluded from showing in the character portrait.;;;;;;;;;;;;;x
 BLG_TRAITS_OFF_DESC;Effects for traits and diseases will be NOT shown in the character portrait. Effects from overweight and harelipped characters will NOT be shown in addition.;;;;;;;;;;;;;x
+BLG_DISEASE;§ZBLG:§! Diseases;;;;;;;;;;;;;x
+BLG_DISEASE_ON_DESC;Effects for various diseases will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_DISEASE_POSTMORTEM_DESC;Effects for diseases will be shown in the character portrait. Diseases will persist after death.;;;;;;;;;;;;;x
+BLG_DISEASE_OFF_DESC;Effects for diseases will NOT be shown in the character portrait.;;;;;;;;;;;;;x
+RULE_OPTION_POSTMORTEM;Post Mortem;;;;;;;;;;;;;x
 BLG_WOUNDS;§ZBLG:§! Wounds and Scars;;;;;;;;;;;;;x
 BLG_WOUNDS_ON_DESC;Effects for wounded and scarred characters will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_WOUNDS_POSTMORTEM_DESC;Effects for wounded and scarred characters will be shown in the character portrait. Wounds will persist after death.;;;;;;;;;;;;;x
 RULE_OPTION_NOMASKS;No Disfigurement Masks;;;;;;;;;;;;;x
 BLG_WOUNDS_NOMASKS_DESC;Effects for wounded and scarred characters will be shown in the character portrait. Disfigured characters will NOT wear masks.;;;;;;;;;;;;;x
 RULE_OPTION_NOWOUNDS;No Wounds;;;;;;;;;;;;;x

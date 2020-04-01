@@ -857,13 +857,20 @@ character_event = {
 
 	option = { # Leave unchanged
 		ai_chance = { factor = 4 }
+
+		trigger = {
+			NOT = { has_game_rule = { name = blg_child_birth value = primary } }
+		}
 	}
 
 	option = { # Mixed
 		ai_chance = { factor = 6 }
 
 		trigger = { #Only handle known graphical cultures
-			NOT = { has_game_rule = { name = blg_child_birth value = off } }
+			OR = {
+				has_game_rule = { name = blg_child_birth value = on } 
+				has_game_rule = { name = blg_child_birth value = limited } 
+			}
 
 			trigger_if = {
 				limit = { is_father_real_father = yes }
@@ -2758,6 +2765,53 @@ character_event = {
 					}
 				}
 				set_graphical_culture = saxon
+			}
+		}
+	}
+
+	option = { # Primary parent game rule
+		trigger = {
+			has_game_rule = { name = blg_child_birth value = primary }
+		}
+
+		if = {
+			limit = { is_father_real_father = yes }
+			father_even_if_dead = { save_event_target_as = father }
+		}
+		else = {
+			real_father_even_if_dead = { save_event_target_as = father }
+		}
+
+		if = {
+			limit = {
+				mother_even_if_dead = {
+					OR = {
+						AND = {
+							is_married = event_target:father
+							is_married_matrilineally = yes
+						}
+						AND = {
+							is_consort = event_target:father
+							is_senior_consort_party = yes
+						}
+						AND = {
+							NOT = { is_married = event_target:father }
+							higher_tier_than = event_target:father
+						}
+					}
+				}
+			}
+			mother_even_if_dead = {
+				gfx_culture_scope = {
+					ROOT = { set_graphical_culture = PREV }
+				}
+			}
+		}
+		else = {
+			event_target:father = {
+				gfx_culture_scope = {
+					ROOT = { set_graphical_culture = PREV }
+				}
 			}
 		}
 	}

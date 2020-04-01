@@ -27,10 +27,7 @@
 				trait = has_greyscale
 				trait = has_grey_plague
 			}
-			NOR = {
-				has_game_rule = { name = blg_traits value = nodisease }
-				has_game_rule = { name = blg_traits value = off }
-			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 
@@ -38,10 +35,7 @@
 		factor = 100
 		trigger = {
 			trait = greyscale_scarred
-			NOR = {
-				has_game_rule = { name = blg_traits value = nodisease }
-				has_game_rule = { name = blg_traits value = off }
-			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 
@@ -52,11 +46,12 @@
 				trait = has_bubonic_plague
 				character = 4301
 			}
-			is_alive = yes
-			NOR = {
-				has_game_rule = { name = blg_traits value = nodisease }
-				has_game_rule = { name = blg_traits value = off }
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
 			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 
@@ -64,11 +59,12 @@
 		factor = 100
 		trigger = {
 			trait = has_small_pox
-			is_alive = yes
-			NOR = {
-				has_game_rule = { name = blg_traits value = nodisease }
-				has_game_rule = { name = blg_traits value = off }
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
 			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 
@@ -82,11 +78,12 @@
 				trait = has_red_death
 				trait = has_butterfly_fever
 			}
-			is_alive = yes
-			NOR = {
-				has_game_rule = { name = blg_traits value = nodisease }
-				has_game_rule = { name = blg_traits value = off }
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
 			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 
@@ -94,9 +91,9 @@
 		factor = 99
 		trigger = {
 			trait = ugly
+
 			NOR = {
 				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = nodisease }
 				has_game_rule = { name = blg_traits value = off }
 			}
 		}
@@ -106,9 +103,9 @@
 		factor = 99
 		trigger = {
 			trait = ugly
+
 			NOR = {
 				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = nodisease }
 				has_game_rule = { name = blg_traits value = off }
 			}
 		}

@@ -6,8 +6,8 @@
 			factor = 0.01
 			trait = fair
 			NOR = {
+				has_game_rule = { name = blg_traits value = nofair }
 				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = nodisease }
 				has_game_rule = { name = blg_traits value = off }
 			}
 		}
@@ -15,8 +15,8 @@
 			factor = 0.02
 			trait = groomed
 			NOR = {
+				has_game_rule = { name = blg_traits value = nofair }
 				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = nodisease }
 				has_game_rule = { name = blg_traits value = off }
 			}
 		}

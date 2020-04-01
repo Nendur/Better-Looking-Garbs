@@ -2,13 +2,6 @@
 10 = {
 	0 = { # blank
 		factor = 1
-		modifier = {
-			factor = 100
-			OR = {
-				has_game_rule = { name = blg_traits value = nodisease }
-				has_game_rule = { name = blg_traits value = off }
-			}
-		}
 	}
 	1 = { # leper
 		factor = 100
@@ -20,9 +13,15 @@
 						trait = disfigured
 						NOT = { has_dlc = "Reapers" }
 					}
-					is_alive = yes
+
+					OR = {
+						is_alive = yes
+						has_game_rule = { name = blg_disease value = postmortem }
+					}
 				}
-			trait = mummy
+				trait = mummy
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 	2 = { # syphilitic
@@ -32,7 +31,12 @@
 				trait = syphilitic
 				trait = has_aztec_disease
 			}
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 	3 = { # pnuemonia
@@ -40,7 +44,12 @@
 		trigger = {
 			trait = pneumonic
 			practical_age = 16
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 	4 = { # fever
@@ -50,7 +59,12 @@
 				trait = fever
 				trait = has_typhoid_fever
 			}
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 	5 = { # ill
@@ -60,7 +74,12 @@
 				trait = ill
 				trait = flu
 			}
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 	6 = { # drunkard
@@ -70,8 +89,12 @@
 			OR = {
 				is_alive = yes
 				has_nickname = nick_the_drunkard
+				has_game_rule = { name = blg_disease value = postmortem }
 			}
-			NOT = { has_game_rule = { name = blg_traits value = notraits } }
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = off }
+			}
 		}
 	}
 	7 = { # vomit
@@ -81,7 +104,12 @@
 				trait = vomiting
 				trait = food_poisoning
 			}
-			is_alive = yes
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 	8 = { # imbecile
@@ -90,11 +118,21 @@
 			OR = {
 				AND = {
 					trait = imbecile
-					NOT = { has_game_rule = { name = blg_traits value = notraits } }
+					NOR = {
+						has_game_rule = { name = blg_traits value = notraits }
+						has_game_rule = { name = blg_traits value = off }
+					}
 				}
-				trait = rabies
+
+				AND = {
+					trait = rabies
+					OR = {
+						is_alive = yes
+						has_game_rule = { name = blg_disease value = postmortem }
+					}
+					NOT = { has_game_rule = { name = blg_disease value = off } }
+				}
 			}
-			is_alive = yes
 		}
 	}
 }
