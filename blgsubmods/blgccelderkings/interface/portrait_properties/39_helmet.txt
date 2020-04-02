@@ -13,6 +13,7 @@
 						war = yes
 						liege = { war = yes }
 						is_landed = no
+						has_game_rule = { name = blg_helmet value = on }
 					}
 				}
 				has_job_title = job_marshal
@@ -24,6 +25,7 @@
 				#mercenary = yes
 				trait = shieldmaiden
 			}
+			NOT = { has_game_rule = { name = blg_helmet value = none } }
 		}
 	}
 }

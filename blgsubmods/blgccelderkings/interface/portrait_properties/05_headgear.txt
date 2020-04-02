@@ -15,19 +15,21 @@
 			factor = 0
 			OR = {
 				AND = {
-					has_game_rule = {
-						name = martial_headgear
-						value = on
+					OR = {
+						AND = { in_command = yes war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
-					in_command = yes
-					war = yes
+					NOR = {
+						has_game_rule = { name = martial_headgear value = off }
+						has_game_rule = { name = blg_helmet value = lowrank }
+						has_game_rule = { name = blg_helmet value = off }
+						has_game_rule = { name = blg_helmet value = none }
+					}
 				}
-				in_battle = yes
-				in_siege = yes
-				death_reason = death_battle
 				is_tributary = yes
-				employer = { mercenary = yes }
-				employer = { government = order_government }
+				mercenary = yes
+				government = order_government
 				trait = peasant_leader
 				trait = heresiarch
 				trait = leper
@@ -108,6 +110,7 @@
 			OR = { 
 				has_portrait_property = { layer = 5 index = 2 }
 				has_portrait_property = { layer = 5 index = 3 } 
+				has_portrait_property = { layer = 5 index = 4 } 
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 2 } }
 		}
@@ -164,6 +167,7 @@
 			OR = { 
 				has_portrait_property = { layer = 5 index = 1 }
 				has_portrait_property = { layer = 5 index = 3 } 
+				has_portrait_property = { layer = 5 index = 4 } 
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 3 } }
 		}
@@ -234,6 +238,7 @@
 			OR = { 
 				has_portrait_property = { layer = 5 index = 1 }
 				has_portrait_property = { layer = 5 index = 2 } 
+				has_portrait_property = { layer = 5 index = 4 } 
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 4 } }
 		}
@@ -280,6 +285,19 @@
 				culture = atmoran
 				culture_group = yokudan_group
 				culture = orsimer
+			}
+			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 5 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_portrait_property = { layer = 5 index = 1 }
+				has_portrait_property = { layer = 5 index = 2 }
+				has_portrait_property = { layer = 5 index = 3 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 5 } }
 		}
@@ -360,6 +378,7 @@
 		modifier = {
 			factor = 0
 			OR = { 
+				has_portrait_property = { layer = 5 index = 4 } 
 				has_portrait_property = { layer = 5 index = 6 }
 				has_portrait_property = { layer = 5 index = 7 } 
 				has_portrait_property = { layer = 5 index = 8 } 
@@ -441,6 +460,7 @@
 		modifier = {
 			factor = 0
 			OR = { 
+				has_portrait_property = { layer = 5 index = 4 } 
 				has_portrait_property = { layer = 5 index = 5 }
 				has_portrait_property = { layer = 5 index = 7 } 
 				has_portrait_property = { layer = 5 index = 8 } 
@@ -522,6 +542,7 @@
 		modifier = {
 			factor = 0
 			OR = { 
+				has_portrait_property = { layer = 5 index = 4 } 
 				has_portrait_property = { layer = 5 index = 5 }
 				has_portrait_property = { layer = 5 index = 6 } 
 				has_portrait_property = { layer = 5 index = 8 } 
@@ -615,6 +636,7 @@
 		modifier = {
 			factor = 0
 			OR = { 
+				has_portrait_property = { layer = 5 index = 4 } 
 				has_portrait_property = { layer = 5 index = 5 }
 				has_portrait_property = { layer = 5 index = 6 } 
 				has_portrait_property = { layer = 5 index = 7 } 
@@ -703,14 +725,29 @@
 					NOT = { has_job_title = job_spiritual }
 					NOT = { has_job_title = job_spymaster }
 				}
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						in_command = yes
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+					}
+				}
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
 		}
 		modifier = {
 			factor = 0
-			has_game_rule = {
-				name = martial_headgear
-				value = off
+			OR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 		}
 		modifier = {
@@ -815,6 +852,16 @@
 				in_battle = yes
 				in_siege = yes
 				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						in_command = yes
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+					}
+				}
+				AND = {
 					is_warrior = yes
 					is_away = yes
 					NOT = { has_job_title = job_spiritual }
@@ -864,9 +911,11 @@
 		}
 		modifier = {
 			factor = 0
-			has_game_rule = {
-				name = martial_headgear
-				value = off
+			OR = {
+				has_game_rule = { name = martial_headgear value = off }
+				has_game_rule = { name = blg_helmet value = lowrank }
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 		}
 		modifier = {
@@ -943,6 +992,16 @@
 				in_battle = yes
 				in_siege = yes
 				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						in_command = yes
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+					}
+				}
+				AND = {
 					is_warrior = yes
 					is_away = yes
 					NOT = { has_job_title = job_spiritual }
@@ -976,9 +1035,11 @@
 		}
 		modifier = {
 			factor = 0
-			has_game_rule = {
-				name = martial_headgear
-				value = off
+			OR = {
+				has_game_rule = { name = martial_headgear value = off }
+				has_game_rule = { name = blg_helmet value = lowrank }
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 		}
 		modifier = {
@@ -1065,15 +1126,27 @@
 						in_battle = yes
 						in_siege = yes
 						AND = {
+							has_game_rule = { name = blg_helmet value = on }
+							OR = {
+								in_command = yes
+								has_job_title = job_marshal
+								death_reason = death_battle
+								death_reason = death_duel
+								holy_order = yes
+							}
+						}
+						AND = {
 							is_warrior = yes
 							is_away = yes
 							NOT = { has_job_title = job_spiritual }
 							NOT = { has_job_title = job_spymaster }
 						}
 					}
-					has_game_rule = {
-						name = martial_headgear
-						value = on
+					NOR = {
+						has_game_rule = { name = martial_headgear value = off }
+						has_game_rule = { name = blg_helmet value = lowrank }
+						has_game_rule = { name = blg_helmet value = off }
+						has_game_rule = { name = blg_helmet value = none }
 					}
 				}
 				AND = {
@@ -1133,6 +1206,16 @@
 				in_battle = yes
 				in_siege = yes
 				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						in_command = yes
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+					}
+				}
+				AND = {
 					is_warrior = yes
 					is_away = yes
 					NOT = { has_job_title = job_spiritual }
@@ -1142,9 +1225,14 @@
 		}
 		modifier = {
 			factor = 0
-			has_game_rule = {
-				name = martial_headgear
-				value = off
+			OR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 		}
 		modifier = {

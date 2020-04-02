@@ -71,6 +71,31 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				AND = {
+					is_warrior = yes
+					is_away = yes
+					NOT = { has_job_title = job_spiritual }
+					NOT = { has_job_title = job_spymaster }
+				}
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						in_command = yes
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+					}
+				}
+			}
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 		}
 		hide_layers = { 1 = { } }
@@ -100,6 +125,31 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				AND = {
+					is_warrior = yes
+					is_away = yes
+					NOT = { has_job_title = job_spiritual }
+					NOT = { has_job_title = job_spymaster }
+				}
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						in_command = yes
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+					}
+				}
+			}
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 		}
 		hide_layers = { 1 = { } }
@@ -128,6 +178,31 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				AND = {
+					is_warrior = yes
+					is_away = yes
+					NOT = { has_job_title = job_spiritual }
+					NOT = { has_job_title = job_spymaster }
+				}
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						in_command = yes
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+					}
+				}
+			}
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 		}
 		hide_layers = { 1 = { } }

@@ -20,9 +20,17 @@
 				liege = { has_landed_title = d_knights_templar }
 			}
 			in_command = yes
-			has_game_rule = {
-				name = martial_headgear
-				value = on
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank } 
+					NOR = {
+						higher_real_tier_than = baron
+						spouse = { higher_real_tier_than = baron }
+					}
+				}
+				has_game_rule = { name = blg_helmet value = off } 
+				has_game_rule = { name = blg_helmet value = none } 
 			}
 		}
 	}
@@ -54,9 +62,17 @@
 				in_battle = yes
 				in_siege = yes
 			}
-			has_game_rule = {
-				name = martial_headgear
-				value = on
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank } 
+					NOR = {
+						higher_real_tier_than = baron
+						spouse = { higher_real_tier_than = baron }
+					}
+				}
+				has_game_rule = { name = blg_helmet value = off } 
+				has_game_rule = { name = blg_helmet value = none } 
 			}
 		}
 	}
@@ -88,9 +104,17 @@
 				in_battle = yes
 				in_siege = yes
 			}
-			has_game_rule = {
-				name = martial_headgear
-				value = on
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank } 
+					NOR = {
+						higher_real_tier_than = baron
+						spouse = { higher_real_tier_than = baron }
+					}
+				}
+				has_game_rule = { name = blg_helmet value = off } 
+				has_game_rule = { name = blg_helmet value = none } 
 			}
 		}
 	}
@@ -111,9 +135,17 @@
 				liege = { has_landed_title = d_knights_hospitaler }
 			}
 			in_command = yes
-			has_game_rule = {
-				name = martial_headgear
-				value = on
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank } 
+					NOR = {
+						higher_real_tier_than = baron
+						spouse = { higher_real_tier_than = baron }
+					}
+				}
+				has_game_rule = { name = blg_helmet value = off } 
+				has_game_rule = { name = blg_helmet value = none } 
 			}
 		}
 	}
@@ -136,9 +168,17 @@
 				liege = { has_landed_title = k_teutonic_state }
 			}
 			in_command = yes
-			has_game_rule = {
-				name = martial_headgear
-				value = on
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank } 
+					NOR = {
+						higher_real_tier_than = baron
+						spouse = { higher_real_tier_than = baron }
+					}
+				}
+				has_game_rule = { name = blg_helmet value = off } 
+				has_game_rule = { name = blg_helmet value = none } 
 			}
 		}
 	}
@@ -168,9 +208,17 @@
 				in_battle = yes
 				in_siege = yes
 			}
-			has_game_rule = {
-				name = martial_headgear
-				value = on
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank } 
+					NOR = {
+						higher_real_tier_than = baron
+						spouse = { higher_real_tier_than = baron }
+					}
+				}
+				has_game_rule = { name = blg_helmet value = off } 
+				has_game_rule = { name = blg_helmet value = none } 
 			}
 		}
 	}
@@ -193,9 +241,17 @@
 				liege = { has_landed_title = d_knights_calatrava }
 			}
 			in_command = yes
-			has_game_rule = {
-				name = martial_headgear
-				value = on
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank } 
+					NOR = {
+						higher_real_tier_than = baron
+						spouse = { higher_real_tier_than = baron }
+					}
+				}
+				has_game_rule = { name = blg_helmet value = off } 
+				has_game_rule = { name = blg_helmet value = none } 
 			}
 		}
 	}
@@ -226,9 +282,17 @@
 				in_battle = yes
 				in_siege = yes
 			}
-			has_game_rule = {
-				name = martial_headgear
-				value = on
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank } 
+					NOR = {
+						higher_real_tier_than = baron
+						spouse = { higher_real_tier_than = baron }
+					}
+				}
+				has_game_rule = { name = blg_helmet value = off } 
+				has_game_rule = { name = blg_helmet value = none } 
 			}
 		}
 	}
@@ -249,9 +313,17 @@
 				liege = { has_landed_title = d_livonian_order }
 			}
 			in_command = yes
-			has_game_rule = {
-				name = martial_headgear
-				value = on
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank } 
+					NOR = {
+						higher_real_tier_than = baron
+						spouse = { higher_real_tier_than = baron }
+					}
+				}
+				has_game_rule = { name = blg_helmet value = off } 
+				has_game_rule = { name = blg_helmet value = none } 
 			}
 		}
 	}

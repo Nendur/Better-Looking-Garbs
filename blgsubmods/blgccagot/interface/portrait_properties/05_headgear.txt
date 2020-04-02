@@ -349,16 +349,33 @@
 	10 = {
 		factor = 90
 		hide_layers = { 39 = { } }
-		modifier = {
-			factor = 0
-			may_wear_martial_headgear_trigger = no
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
+		trigger = {
+			OR = {
+				may_wear_martial_headgear_trigger = yes
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+						mercenary = yes
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
+			}
 		}
 		modifier = {
 			factor = 0
 			OR = {
 				trait = knight
 				does_not_wear_martial_headgear_trigger = yes
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
 		}
@@ -409,29 +426,71 @@
 		hide_layers = { 39 = { } }
 		trigger = {
 			trait = kingsguard
-			may_wear_martial_headgear_trigger = yes
-		}
-	}
-
-	# City Watch/Unsullied
-	13 = {
-		factor = 1000
-		hide_layers = { 39 = { } }
-		modifier = {
-			factor = 0
-			NAND = {
-				has_minor_title  =  title_commander_gold_cloaks
-				OR = {
-					culture_group = dornish
-					culture_group = andal
-					culture_group = first_men
-					culture_group = free_folk
+			OR = {
+				may_wear_martial_headgear_trigger = yes
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+						mercenary = yes
+					}
 				}
 			}
 		}
 		modifier = {
 			factor = 0
-			may_wear_martial_headgear_trigger = no
+			OR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
+			}
+		}
+	}
+
+	# City Watch/Unsullied
+	13 = {
+		factor = 100
+		hide_layers = { 39 = { } }
+		trigger = {
+			has_minor_title  =  title_commander_gold_cloaks
+			OR = {
+				culture_group = dornish
+				culture_group = andal
+				culture_group = first_men
+				culture_group = free_folk
+			}
+			OR = {
+				may_wear_martial_headgear_trigger = yes
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+						mercenary = yes
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
+			}
 		}
 	}
 
@@ -439,30 +498,66 @@
 	14 = {
 		factor = 90
 		hide_layers = { 39 = { } }
-		modifier = {
-			factor = 0
-			NOT = { trait = knight }
+		trigger = {
+			trait = knight
+			OR = {
+				may_wear_martial_headgear_trigger = yes
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+						mercenary = yes
+					}
+				}
+			}
 		}
 		modifier = {
 			factor = 0
-			may_wear_martial_headgear_trigger = no
-		}
-		modifier = {
-			factor = 0
-			does_not_wear_martial_headgear_trigger = yes
+			OR = {
+				does_not_wear_martial_headgear_trigger = yes
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
+			}
 		}
 	}
+
 	# Great House Helm 1
 	15 = {
 		factor = 100
 		hide_layers = { 39 = { } }
-		modifier = {
-			factor = 0
-			may_wear_martial_headgear_trigger = no
+		trigger = {
+			OR = {
+				may_wear_martial_headgear_trigger = yes
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+						mercenary = yes
+					}
+				}
+			}
 		}
 		modifier = {
 			factor = 0
-			does_not_wear_martial_headgear_trigger = yes
+			OR = {
+				does_not_wear_martial_headgear_trigger = yes
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
+			}
 		}
 		modifier = {
 			factor = 0
@@ -570,17 +665,38 @@
 			}
 		}
 	}
+
 	# Great House Helm 2
 	16 = {
 		factor = 100
 		hide_layers = { 39 = { } }
-		modifier = {
-			factor = 0
-			may_wear_martial_headgear_trigger = no
+		trigger = {
+			OR = {
+				may_wear_martial_headgear_trigger = yes
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+						mercenary = yes
+					}
+				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
+			}
 		}
 		modifier = {
 			factor = 0
-			does_not_wear_martial_headgear_trigger = yes
+			OR = {
+				does_not_wear_martial_headgear_trigger = yes
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
+			}
 		}
 		modifier = {
 			factor = 0

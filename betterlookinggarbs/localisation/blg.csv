@@ -15,12 +15,7 @@ BLG_CHILD_BIRTH_LIMITED_DESC;Newborn children can get a different ethnicity repr
 RULE_OPTION_PRIMARY_PARENT;Primary Parent;;;;;;;;;;;;;x
 BLG_CHILD_BIRTH_PRIMARY_DESC;Newborn children will take after the primary parent in a marriage. The father in a regular marriage and vice versa. This setting takes player choice over realism.;;;;;;;;;;;;;x
 BLG_CHILD_BIRTH_OFF_DESC;Newborn children will NOT be altered.;;;;;;;;;;;;;x
-BLG_ARTIFACTS;§ZBLG:§! Artifacts;;;;;;;;;;;;;x
-RULE_OPTION_WEAPONS;Weapons;;;;;;;;;;;;;x
-BLG_ARTIFACTS_ON_DESC;Equipped artifacts and pets can be shown in the character portrait.;;;;;;;;;;;;;x
-BLG_ARTIFACTS_WEAPONS_DESC;Only weapons and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
-BLG_ARTIFACTS_RARE_DESC;Only rare and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
-BLG_ARTIFACTS_OFF_DESC;No artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
+
 BLG_CHILDREN;§ZBLG:§! Child Portraits;;;;;;;;;;;;;x
 RULE_OPTION_BLG_CHILDREN_16_SCALING;Until age 16;;;;;;;;;;;;;x
 RULE_OPTION_BLG_CHILDREN_15_SCALING;Until age 15;;;;;;;;;;;;;x
@@ -52,6 +47,19 @@ BLG_WOUNDS_NOMASKS_DESC;Effects for wounded and scarred characters will be shown
 RULE_OPTION_NOWOUNDS;No Wounds;;;;;;;;;;;;;x
 BLG_WOUNDS_NOWOUNDS_DESC;Effects for wounded characters will NOT be shown in the character portrait. Scars will be shown. Disfigured characters will NOT wear masks.;;;;;;;;;;;;;x
 BLG_WOUNDS_OFF_DESC;Effects for wounded and scarred characters will NOT be shown in the character portrait. Characters will NOT wear masks or blindfolds.;;;;;;;;;;;;;x
+BLG_HELMETS;§ZBLG:§! Helmets;;;;;;;;;;;;;x
+BLG_HELMETS_DEFAULT_DESC;Commanders at war will wear helmets. Marshalls and captains will carry helmets.;;;;;;;;;;;;;x
+BLG_HELMETS_ON_DESC;Commanders, marshalls and captains will always wear helmets.;;;;;;;;;;;;;x
+RULE_OPTION_LOW_RANK;Low Ranks only;;;;;;;;;;;;;x
+BLG_HELMETS_LOW_RANK_DESC;Barons and lower rank commanders will wear helmets. Higher rank commanders will carry helmets.;;;;;;;;;;;;;x
+BLG_HELMETS_OFF_DESC;Commanders, marshalls and captains will NOT wear helmets, but carry them on their side.;;;;;;;;;;;;;x
+BLG_HELMETS_NONE_DESC;No helmets will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_ARTIFACTS;§ZBLG:§! Artifacts;;;;;;;;;;;;;x
+RULE_OPTION_WEAPONS;Weapons;;;;;;;;;;;;;x
+BLG_ARTIFACTS_ON_DESC;Equipped artifacts and pets can be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_ARTIFACTS_WEAPONS_DESC;Only weapons and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_ARTIFACTS_RARE_DESC;Only rare and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_ARTIFACTS_OFF_DESC;No artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
 ca_headgear;headgear;couvre-chef;Kopfbedeckung;;corona;;;;;;;;;x
 ca_clothes;clothes;habits;Kleidung;;ropajes;;;;;;;;;x
 ca_mask;mask;;;;;;;;;;;;;x

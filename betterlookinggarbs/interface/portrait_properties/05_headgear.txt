@@ -16,20 +16,22 @@
 			factor = 0
 			OR = {
 				AND = {
-					has_game_rule = {
-						name = martial_headgear
-						value = on
+					OR = {
+						AND = { in_command = yes war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
-					in_command = yes
-					war = yes
+					NOR = {
+						has_game_rule = { name = martial_headgear value = off }
+						has_game_rule = { name = blg_helmet value = lowrank }
+						has_game_rule = { name = blg_helmet value = off }
+						has_game_rule = { name = blg_helmet value = none }
+					}
 				}
-				in_battle = yes
-				in_siege = yes
-				death_reason = death_battle
 				is_tributary = yes
 				prisoner = yes
-				employer = { government = order_government }
-				employer = { mercenary = yes }
+				government = order_government
+				mercenary = yes
 				trait = peasant_leader
 				trait = heresiarch
 				trait = leper
@@ -183,12 +185,10 @@
 						AND = {
 							real_tier = duke
 							independent = yes
-							primary_title = { is_landless_type_title = no }
 						}
 						spouse = {
 							real_tier = duke
 							independent = yes
-							primary_title = { is_landless_type_title = no }
 						}
 					}
 					OR = {
@@ -207,9 +207,10 @@
 		}
 		modifier = {
 			factor = 0
-			OR = { 
+			OR = {
 				has_portrait_property = { layer = 5 index = 2 }
-				has_portrait_property = { layer = 5 index = 3 } 
+				has_portrait_property = { layer = 5 index = 3 }
+				has_portrait_property = { layer = 5 index = 4 }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 2 } }
 		}
@@ -362,12 +363,10 @@
 						AND = {
 							real_tier = duke
 							independent = yes
-							primary_title = { is_landless_type_title = no }
 						}
 						spouse = {
 							real_tier = duke
 							independent = yes
-							primary_title = { is_landless_type_title = no }
 						}
 					}
 					OR = {
@@ -386,9 +385,10 @@
 		}
 		modifier = {
 			factor = 0
-			OR = { 
+			OR = {
 				has_portrait_property = { layer = 5 index = 1 }
-				has_portrait_property = { layer = 5 index = 3 } 
+				has_portrait_property = { layer = 5 index = 3 }
+				has_portrait_property = { layer = 5 index = 4 }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 3 } }
 		}
@@ -541,12 +541,10 @@
 						AND = {
 							real_tier = duke
 							independent = yes
-							primary_title = { is_landless_type_title = no }
 						}
 						spouse = {
 							real_tier = duke
 							independent = yes
-							primary_title = { is_landless_type_title = no }
 						}
 					}
 					OR = {
@@ -564,9 +562,10 @@
 		}
 		modifier = {
 			factor = 0
-			OR = { 
+			OR = {
 				has_portrait_property = { layer = 5 index = 1 }
-				has_portrait_property = { layer = 5 index = 2 } 
+				has_portrait_property = { layer = 5 index = 2 }
+				has_portrait_property = { layer = 5 index = 4 }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 4 } }
 		}
@@ -814,12 +813,10 @@
 				AND = {
 					real_tier = duke
 					independent = yes
-					primary_title = { is_landless_type_title = no }
 				}
 				spouse = {
 					real_tier = duke
 					independent = yes
-					primary_title = { is_landless_type_title = no }
 				}
 			}
 			OR = {
@@ -829,6 +826,19 @@
 				culture = saxon
 			}
 			is_republic = no
+			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 5 } }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_portrait_property = { layer = 5 index = 1 }
+				has_portrait_property = { layer = 5 index = 2 }
+				has_portrait_property = { layer = 5 index = 3 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 5 } }
 		}
 		modifier = {
@@ -848,12 +858,10 @@
 				AND = {
 					real_tier = duke
 					independent = yes
-					primary_title = { is_landless_type_title = no }
 				}
 				spouse = {
 					real_tier = duke
 					independent = yes
-					primary_title = { is_landless_type_title = no }
 				}
 				has_minor_title = title_queen_mother
 				has_minor_title = title_despot
@@ -909,10 +917,11 @@
 		}
 		modifier = {
 			factor = 0
-			OR = { 
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
 				has_portrait_property = { layer = 5 index = 6 }
-				has_portrait_property = { layer = 5 index = 7 } 
-				has_portrait_property = { layer = 5 index = 8 } 
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 6 } }
 		}
@@ -982,12 +991,10 @@
 				AND = {
 					real_tier = duke
 					independent = yes
-					primary_title = { is_landless_type_title = no }
 				}
 				spouse = {
 					real_tier = duke
 					independent = yes
-					primary_title = { is_landless_type_title = no }
 				}
 				has_minor_title = title_queen_mother
 				has_minor_title = title_despot
@@ -1036,10 +1043,11 @@
 		}
 		modifier = {
 			factor = 0
-			OR = { 
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
 				has_portrait_property = { layer = 5 index = 5 }
-				has_portrait_property = { layer = 5 index = 7 } 
-				has_portrait_property = { layer = 5 index = 8 } 
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 7 } }
 		}
@@ -1126,12 +1134,10 @@
 				AND = {
 					real_tier = duke
 					independent = yes
-					primary_title = { is_landless_type_title = no }
 				}
 				spouse = {
 					real_tier = duke
 					independent = yes
-					primary_title = { is_landless_type_title = no }
 				}
 				has_minor_title = title_queen_mother
 				has_minor_title = title_despot
@@ -1180,10 +1186,11 @@
 		}
 		modifier = {
 			factor = 0
-			OR = { 
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
 				has_portrait_property = { layer = 5 index = 5 }
-				has_portrait_property = { layer = 5 index = 6 } 
-				has_portrait_property = { layer = 5 index = 8 } 
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 8 }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 8 } }
 		}
@@ -1231,12 +1238,10 @@
 				AND = {
 					real_tier = duke
 					independent = yes
-					primary_title = { is_landless_type_title = no }
 				}
 				spouse = {
 					real_tier = duke
 					independent = yes
-					primary_title = { is_landless_type_title = no }
 				}
 				has_minor_title = title_queen_mother
 				has_minor_title = title_despot
@@ -1285,10 +1290,11 @@
 		}
 		modifier = {
 			factor = 0
-			OR = { 
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
 				has_portrait_property = { layer = 5 index = 5 }
-				has_portrait_property = { layer = 5 index = 6 } 
-				has_portrait_property = { layer = 5 index = 7 } 
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 8 } }
 		}
@@ -1443,14 +1449,30 @@
 				has_character_flag = rtp_temporary_soldier
 				has_character_flag = rtp_temporary_mercenary
 				has_character_flag = rtp_temporary_crusader
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						in_command = yes
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+						mercenary = yes
+					}
+				}
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
 		}
 		modifier = {
 			factor = 0
-			has_game_rule = {
-				name = martial_headgear
-				value = off
+			OR = {
+				has_game_rule = { name = martial_headgear value = off }
+				AND = {
+					has_game_rule = { name = blg_helmet value = lowrank }
+					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
+				}
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 		}
 		modifier = {
@@ -1555,9 +1577,8 @@
 	12 = { # royal war helm
 		factor = 100
 		hide_layers = { 39 = { } }
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				AND = {
 					in_command = yes
 					OR = {
@@ -1568,20 +1589,37 @@
 				in_battle = yes
 				in_siege = yes
 				has_landed_title = e_china_west_governor
-			}
-			NAND = {
-				is_merchant_republic = yes
-				in_command = no
-				OR = {
-					likes_latino_iberians = yes
-					likes_celts = yes
-					culture_group = central_germanic
-					culture_group = west_germanic
-					culture_group = east_slavic
-					culture_group = west_slavic
-					culture_group = south_slavic
-					culture_group = magyar
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						in_command = yes
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+						mercenary = yes
+					}
 				}
+				AND = {
+					is_merchant_republic = yes
+					in_command = no
+					OR = {
+						likes_latino_iberians = yes
+						likes_celts = yes
+						culture_group = central_germanic
+						culture_group = west_germanic
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+						culture_group = magyar
+					}
+				}
+			}
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				has_game_rule = { name = blg_helmet value = lowrank }
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 13 } }
 		}
@@ -1668,13 +1706,6 @@
 			}
 		}
 		modifier = {
-			factor = 0
-			has_game_rule = {
-				name = martial_headgear
-				value = off
-			}
-		}
-		modifier = {
 			factor = 0.99
 			OR = {
 				culture = han
@@ -1701,9 +1732,8 @@
 	13 = { # ducal war helm
 		factor = 100
 		hide_layers = { 39 = { } }
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				AND = {
 					in_command = yes
 					OR = {
@@ -1714,20 +1744,37 @@
 				in_battle = yes
 				in_siege = yes
 				has_landed_title = e_china_west_governor
-			}
-			NAND = {
-				is_merchant_republic = yes
-				in_command = no
-				OR = {
-					likes_latino_iberians = yes
-					likes_celts = yes
-					culture_group = central_germanic
-					culture_group = west_germanic
-					culture_group = east_slavic
-					culture_group = west_slavic
-					culture_group = south_slavic
-					culture_group = magyar
+				AND = {
+					has_game_rule = { name = blg_helmet value = on }
+					OR = {
+						in_command = yes
+						has_job_title = job_marshal
+						death_reason = death_battle
+						death_reason = death_duel
+						holy_order = yes
+						mercenary = yes
+					}
 				}
+				AND = {
+					is_merchant_republic = yes
+					in_command = no
+					OR = {
+						likes_latino_iberians = yes
+						likes_celts = yes
+						culture_group = central_germanic
+						culture_group = west_germanic
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+						culture_group = magyar
+					}
+				}
+			}
+			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
+				has_game_rule = { name = blg_helmet value = lowrank }
+				has_game_rule = { name = blg_helmet value = off }
+				has_game_rule = { name = blg_helmet value = none }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 14 } }
 		}
@@ -1736,13 +1783,6 @@
 			NOR = {
 				higher_real_tier_than = count
 				spouse = { higher_real_tier_than = count }
-			}
-		}
-		modifier = {
-			factor = 0
-			has_game_rule = {
-				name = martial_headgear
-				value = off
 			}
 		}
 		modifier = {
@@ -1794,10 +1834,23 @@
 						in_battle = yes
 						in_siege = yes
 						has_landed_title = e_china_west_governor
+						AND = {
+							has_game_rule = { name = blg_helmet value = on }
+							OR = {
+								in_command = yes
+								has_job_title = job_marshal
+								death_reason = death_battle
+								death_reason = death_duel
+								holy_order = yes
+								mercenary = yes
+							}
+						}
 					}
-					has_game_rule = {
-						name = martial_headgear
-						value = on
+					NOR = {
+						has_game_rule = { name = martial_headgear value = off }
+						has_game_rule = { name = blg_helmet value = lowrank }
+						has_game_rule = { name = blg_helmet value = off }
+						has_game_rule = { name = blg_helmet value = none }
 					}
 				}
 				AND = {
