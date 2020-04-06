@@ -48,11 +48,11 @@ RULE_OPTION_NOWOUNDS;No Wounds;;;;;;;;;;;;;x
 BLG_WOUNDS_NOWOUNDS_DESC;Effects for wounded characters will NOT be shown in the character portrait. Scars will be shown. Disfigured characters will NOT wear masks.;;;;;;;;;;;;;x
 BLG_WOUNDS_OFF_DESC;Effects for wounded and scarred characters will NOT be shown in the character portrait. Characters will NOT wear masks or blindfolds.;;;;;;;;;;;;;x
 BLG_HELMETS;§ZBLG:§! Helmets;;;;;;;;;;;;;x
-BLG_HELMETS_DEFAULT_DESC;Commanders at war will wear helmets. Marshalls and captains will carry helmets.;;;;;;;;;;;;;x
-BLG_HELMETS_ON_DESC;Commanders, marshalls and captains will always wear helmets.;;;;;;;;;;;;;x
+BLG_HELMETS_DEFAULT_DESC;Commanders at war will wear helmets. Marshals and captains will carry helmets.;;;;;;;;;;;;;x
+BLG_HELMETS_ON_DESC;Commanders, marshals and captains will always wear helmets.;;;;;;;;;;;;;x
 RULE_OPTION_LOW_RANK;Low Ranks only;;;;;;;;;;;;;x
 BLG_HELMETS_LOW_RANK_DESC;Barons and lower rank commanders will wear helmets. Higher rank commanders will carry helmets.;;;;;;;;;;;;;x
-BLG_HELMETS_OFF_DESC;Commanders, marshalls and captains will NOT wear helmets, but carry them on their side.;;;;;;;;;;;;;x
+BLG_HELMETS_OFF_DESC;Commanders, marshals and captains will NOT wear helmets, but carry them on their side.;;;;;;;;;;;;;x
 BLG_HELMETS_NONE_DESC;No helmets will be shown in the character portrait.;;;;;;;;;;;;;x
 BLG_ARTIFACTS;§ZBLG:§! Artifacts;;;;;;;;;;;;;x
 RULE_OPTION_WEAPONS;Weapons;;;;;;;;;;;;;x

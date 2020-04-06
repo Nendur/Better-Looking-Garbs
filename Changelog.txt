@@ -16,7 +16,7 @@ Changelog:
   Added armour to clothing sets that didn't have it.
   Moved mail coifs from clothes to headgear to get proper hair covering.
   Turned carried helmets from warrior lodges into general layers. (requires Holy Fury)
-  Marshalls and others will now wear military clothes with carried helmets.
+  Marshals and others will now wear military clothes with carried helmets.
   Applied Orrie's workshop dependencies fix.
   Reduce chance of random headgear changes.
   New combination for Miaphysite and Nestorian monastic clothing.

@@ -171,7 +171,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "africangfx_LIGHT_INFANTRY_weapon"
-		actorfile = "gfx\models\Attachments\holy_order_dervish_sword.xac"
+		actorfile = "gfx\models\Attachments\holy_order_hashshashin_sword.xac"
 		scale = 0.9f
 	}
 

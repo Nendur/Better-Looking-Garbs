@@ -71,7 +71,7 @@ objectTypes = {
 ####Unsullied
 	EMFXActorType = {
 		name = "westerngfx_unsullied"
-		actorfile = "gfx\models\Muslim_pikeman.xac"
+		actorfile = "gfx\models\Mapindicators\Muslim_Marshal.xac"
 
 		idle   = "gfx\models\Spear_and_Shield_Idle.xsm"
 		move   = "gfx\models\Spear_and_Shield_Moving.xsm"

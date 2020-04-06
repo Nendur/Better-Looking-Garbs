@@ -30,7 +30,7 @@ Features:
 * Vanilla unit models are replaced with early unit packs when available.
 * Added missing holy order cavalry model combinations.
 * Councillor avatar model packs are recombined for additional cultures and religions.
-* Holy order units are also serve as marshall avatars.
+* Holy order units are also serve as marshal avatars.
 
 Installation:
 
