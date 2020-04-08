@@ -732,17 +732,17 @@ spriteTypes = {
 		# Correct rank
 		allow_property_values = {
 			3 = {
-				0 = {
+				1 = {
 					portrait_society_rank = 1
 				}
-				1 = {
+				2 = {
 					portrait_society_rank = 2
 				}
-				2 = {
-					portrait_society_rank = 3
-				}
 				3 = {
-					portrait_society_rank = 4
+					OR = {
+						portrait_society_rank = 3
+						portrait_society_rank = 4
+					}
 				}
 			}
 			5 = {
@@ -844,17 +844,17 @@ spriteTypes = {
 		# No hair, correct rank
 		allow_property_values = {
 			3 = {
-				0 = {
+				1 = {
 					portrait_society_rank = 1
 				}
-				1 = {
+				2 = {
 					portrait_society_rank = 2
 				}
-				2 = {
-					portrait_society_rank = 3
-				}
 				3 = {
-					portrait_society_rank = 4
+					OR = {
+						portrait_society_rank = 3
+						portrait_society_rank = 4
+					}
 				}
 			}
 			5 = {
@@ -890,6 +890,229 @@ spriteTypes = {
 		}
 
 		headgear_that_hides_hair = { 0 1 2 3 }
+	}
+
+	# the_satanists, muslim version
+
+	spriteType = {
+		name = "GFX_society_shaytanist_male_headgear_front"
+		textureFile = "gfx/characters/societies/shaytanist_male_headgear_front.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_society_shaytanist_male_headgear_behind"
+		textureFile = "gfx/characters/societies/shaytanist_male_headgear_behind.dds"
+		noOfFrames = 4
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_shaytanist_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 11000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = the_satanists
+				OR = {
+					portrait_religion = sunni
+					portrait_religion = zikri
+					portrait_religion = yazidi
+					portrait_religion = ibadi
+					portrait_religion = kharijite
+					portrait_religion = shiite
+					portrait_religion = druze
+					portrait_religion = hurufi
+					portrait_religion = qarmatian
+					portrait_religion = zoroastrian
+					portrait_religion = mazdaki
+					portrait_religion = manichean
+					portrait_religion = khurmazta
+					portrait_religion = zun_pagan
+					portrait_religion = zun_pagan_reformed
+				}
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_satanist_male_clothing_behind:c0"
+			"GFX_society_satanist_male_clothing_front:c2"
+			"GFX_empty:c3"
+			"GFX_society_shaytanist_male_headgear_front:c5"
+			"GFX_society_shaytanist_male_headgear_behind:c1"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				1 = {
+					portrait_society_rank = 1
+				}
+				2 = {
+					portrait_society_rank = 2
+				}
+				3 = {
+					OR = {
+						portrait_society_rank = 3
+						portrait_society_rank = 4
+					}
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+		}
+	}
+
+	# Female
+
+	spriteType = {
+		name = "GFX_society_shaytanist_female_headgear_front"
+		textureFile = "gfx/characters/societies/shaytanist_female_headgear_front.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_society_shaytanist_female_headgear_behind"
+		textureFile = "gfx/characters/societies/shaytanist_female_headgear_behind.dds"
+		noOfFrames = 4
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_shaytanist_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 11000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = the_satanists
+				OR = {
+					portrait_religion = sunni
+					portrait_religion = zikri
+					portrait_religion = yazidi
+					portrait_religion = ibadi
+					portrait_religion = kharijite
+					portrait_religion = shiite
+					portrait_religion = druze
+					portrait_religion = hurufi
+					portrait_religion = qarmatian
+					portrait_religion = zoroastrian
+					portrait_religion = mazdaki
+					portrait_religion = manichean
+					portrait_religion = khurmazta
+					portrait_religion = zun_pagan
+					portrait_religion = zun_pagan_reformed
+				}
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_satanist_female_clothing_behind:c0"
+			"GFX_society_satanist_female_clothing_front:c2"
+			"GFX_empty:c3"
+			"GFX_society_shaytanist_female_headgear_front:c5"
+			"GFX_society_shaytanist_female_headgear_behind:c1"
+			"GFX_empty:c7"
+		}
+
+		# No hair, correct rank
+		allow_property_values = {
+			3 = {
+				1 = {
+					portrait_society_rank = 1
+				}
+				2 = {
+					portrait_society_rank = 2
+				}
+				3 = {
+					OR = {
+						portrait_society_rank = 3
+						portrait_society_rank = 4
+					}
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+		}
 	}
 
 	# the_voudons

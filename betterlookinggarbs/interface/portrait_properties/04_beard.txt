@@ -8,8 +8,8 @@
 			NOT = { trait = eunuch }
 			NAND = { is_alive = yes is_variable_equal = { which = ca_beard value = 1 } }
 			NAND = {
-				likes_buddhists = yes
 				is_priest = yes
+				likes_buddhists = yes
 			}
 		}
 		modifier = {
@@ -26,6 +26,7 @@
 		factor = 1
 		modifier = {
 			factor = 0
+			is_priest = yes
 			OR = {
 				true_religion_group = christian
 				true_religion_group = muslim
@@ -40,7 +41,6 @@
 					graphical_culture = hellenicgfx
 				}
 			}
-			is_priest = yes
 		}
 		modifier = {
 			factor = 0
@@ -56,11 +56,11 @@
 		factor = 1
 		modifier = {
 			factor = 0
+			is_priest = yes
 			OR = {
 				true_religion_group = muslim
 				likes_buddhists = yes
 			}
-			is_priest = yes
 		}
 		modifier = {
 			factor = 0
@@ -91,8 +91,8 @@
 		factor = 1
 		modifier = {
 			factor = 0
-			likes_buddhists = yes
 			is_priest = yes
+			likes_buddhists = yes
 		}
 		modifier = {
 			factor = 0
@@ -108,6 +108,7 @@
 		factor = 1
 		modifier = {
 			factor = 0
+			is_priest = yes
 			OR = {
 				true_religion_group = christian
 				true_religion_group = muslim
@@ -122,7 +123,6 @@
 					graphical_culture = hellenicgfx
 				}
 			}
-			is_priest = yes
 		}
 		modifier = {
 			factor = 0
@@ -138,6 +138,7 @@
 		factor = 1
 		modifier = {
 			factor = 0
+			is_priest = yes
 			OR = {
 				true_religion_group = christian
 				true_religion_group = muslim
@@ -152,7 +153,6 @@
 					graphical_culture = hellenicgfx
 				}
 			}
-			is_priest = yes
 		}
 		modifier = {
 			factor = 0
@@ -168,8 +168,8 @@
 		factor = 1
 		modifier = {
 			factor = 0
-			likes_buddhists = yes
 			is_priest = yes
+			likes_buddhists = yes
 		}
 		modifier = {
 			factor = 0
@@ -185,6 +185,7 @@
 		factor = 1
 		modifier = {
 			factor = 0
+			is_priest = yes
 			OR = {
 				true_religion_group = christian
 				likes_buddhists = yes
@@ -194,7 +195,6 @@
 				is_heresy_of = catholic
 				is_parent_religion = catholic
 			}
-			is_priest = yes
 		}
 		modifier = {
 			factor = 0
@@ -225,8 +225,8 @@
 		factor = 1
 		modifier = {
 			factor = 0
-			likes_buddhists = yes
 			is_priest = yes
+			likes_buddhists = yes
 		}
 		modifier = {
 			factor = 0
@@ -242,8 +242,8 @@
 		factor = 1
 		modifier = {
 			factor = 0
-			likes_buddhists = yes
 			is_priest = yes
+			likes_buddhists = yes
 		}
 		modifier = {
 			factor = 0
@@ -259,6 +259,7 @@
 		factor = 1
 		modifier = {
 			factor = 0
+			is_priest = yes
 			OR = {
 				true_religion_group = christian
 				likes_buddhists = yes
@@ -268,7 +269,6 @@
 				is_heresy_of = catholic
 				is_parent_religion = catholic
 			}
-			is_priest = yes
 		}
 		modifier = {
 			factor = 0
@@ -303,8 +303,8 @@
 		}
 		modifier = {
 			factor = 0
-			likes_buddhists = yes
 			is_priest = yes
+			likes_buddhists = yes
 		}
 		modifier = {
 			factor = 0
@@ -339,6 +339,7 @@
 		}
 		modifier = {
 			factor = 0
+			is_priest = yes
 			OR = {
 				true_religion_group = christian
 				likes_buddhists = yes
@@ -348,7 +349,6 @@
 				is_heresy_of = catholic
 				is_parent_religion = catholic
 			}
-			is_priest = yes
 		}
 		modifier = {
 			factor = 0
@@ -389,8 +389,8 @@
 		}
 		modifier = {
 			factor = 0
-			likes_buddhists = yes
 			is_priest = yes
+			likes_buddhists = yes
 		}
 		modifier = {
 			factor = 0
@@ -430,8 +430,8 @@
 		}
 		modifier = {
 			factor = 0
-			likes_buddhists = yes
 			is_priest = yes
+			likes_buddhists = yes
 		}
 		modifier = {
 			factor = 0
@@ -447,7 +447,11 @@
 		factor = 4
 		modifier = {
 			factor = 0.1
-			true_religion_group = muslim
+			OR = {
+				true_religion_group = muslim
+				true_religion_group = jewish_group
+				true_religion = taoist
+			}
 		}
 		modifier = {
 			factor = 0
@@ -468,6 +472,7 @@
 			OR = {
 				true_religion = catholic
 				is_heresy_of = catholic
+				is_parent_religion = catholic
 				religion_openly_hellenic_or_reformed_trigger = yes
 			}
 			OR = {
