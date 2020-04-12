@@ -23,6 +23,7 @@
 		}
 		hide_layers = { 18 = {} } # Adult: Hide child face
 	}
+
 	1 = { #Cell or sickbed
 		factor = 100
 		trigger = {
@@ -49,6 +50,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	2 = { #Haughty
 		factor = 1
 		trigger = {
@@ -98,6 +100,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	3 = { #Affectionate
 		factor = 5
 		trigger = {
@@ -139,6 +142,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	4 = { #Timid
 		factor = 5
 		modifier = {
@@ -177,6 +181,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	5 = { #Rowdy
 		factor = 1
 		trigger = {
@@ -232,6 +237,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	6 = { #Willful
 		factor = 1
 		trigger = {
@@ -284,6 +290,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	7 = { #Brooding
 		factor = 50
 		trigger = {
@@ -318,6 +325,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	8 = { #Indolent
 		factor = 5
 		modifier = {
@@ -354,6 +362,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	9 = { #Playful
 		factor = 5
 		modifier = {
@@ -394,6 +403,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	10 = { #Conscientious
 		factor = 2
 		trigger = {
@@ -442,6 +452,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	11 = { #Fussy
 		factor = 2
 		modifier = {
@@ -473,6 +484,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	12 = { #Curious
 		factor = 1
 		trigger = {
@@ -524,6 +536,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	13 = { #Idolizer
 		factor = 1
 		trigger = {

@@ -3,6 +3,7 @@
 	0 = { # blank
 		factor = 1
 	}
+
 	1 = { #Templar special headgear.
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
@@ -34,6 +35,7 @@
 			}
 		}
 	}
+
 	2 = {  #Crusader King helmet - Male.
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
@@ -76,6 +78,7 @@
 			}
 		}
 	}
+
 	3 = { #Crusader King helmet - Female.
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
@@ -118,6 +121,7 @@
 			}
 		}
 	}
+
 	4 = { #Hospitaler special headgear.
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
@@ -149,6 +153,7 @@
 			}
 		}
 	}
+
 	5 = {  #Teuton special headgear.
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
@@ -182,6 +187,7 @@
 			}
 		}
 	}
+
 	6 = { #Wearable Winged Helmet
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
@@ -222,6 +228,7 @@
 			}
 		}
 	}
+
 	7 = {  #Calatrava/Santiago special headgear.
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
@@ -255,6 +262,7 @@
 			}
 		}
 	}
+
 	8 = { #Wearable Wrapped Helmet
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
@@ -296,6 +304,7 @@
 			}
 		}
 	}
+
 	9 = { #Livonian special headgear.
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
@@ -327,6 +336,7 @@
 			}
 		}
 	}
+
 	10 = { #Unicorn headgear.
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
@@ -337,6 +347,7 @@
 			}
 		}
 	}
+
 	11 = { #Miaphysite priest
 		factor = 100
 		trigger = {
@@ -356,6 +367,7 @@
 			}
 		}
 	}
+
 	12 = { #Zunist Crown
 		factor = 100
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.
@@ -380,6 +392,7 @@
 			}
 		}
 	}
+
 	13 = { #Early Christian priest
 		factor = 100
 		hide_layers = { 5 = { }  } #Hide layer 5 (headgear) when this frame is picked.

@@ -16,6 +16,7 @@
 			}
 		}
 	}
+
 	1 = { 
 		factor = 100
 		modifier = {
@@ -27,6 +28,7 @@
 			practical_age = 30
 		}
 	}
+
 	2 = { 
 		factor = 100
 		modifier = {
@@ -42,6 +44,7 @@
 			practical_age = 50
 		}
 	}
+
 	3 = { 
 		factor = 100
 		modifier = {
@@ -53,6 +56,7 @@
 			NOT = { practical_age = 50 }
 		}
 	}
+
 	4 = { 
 		factor = 100
 		trigger = {
@@ -63,6 +67,7 @@
 			practical_age = 30
 		}
 	}
+
 	5 = { 
 		factor = 100
 		trigger = {
@@ -77,6 +82,7 @@
 			practical_age = 50
 		}
 	}
+
 	6 = { 
 		factor = 100
 		trigger = {

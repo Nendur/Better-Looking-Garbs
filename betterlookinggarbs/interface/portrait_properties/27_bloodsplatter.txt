@@ -10,30 +10,35 @@
 			}
 		}
 	}
+
 	1 = { #Some.
 		factor = 100
 		trigger = {
 			has_character_modifier = blood_splatter_1
 		}
 	}
+
 	2 = { #A lot.
 		factor = 100
 		trigger = {
 			has_character_modifier = blood_splatter_2
 		}
 	}
+
 	3 = { #Bathory.
 		factor = 100
 		trigger = {
 			has_character_modifier = blood_splatter_3
 		}
 	}
+
 	4 = { #Mud splatter.
 		factor = 100
 		trigger = {
 			has_character_modifier = mud_splatter
 		}
 	}
+
 	5 = { #Grime.
 		factor = 100
 		trigger = {

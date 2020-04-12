@@ -28,6 +28,7 @@
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_african_mask_1
@@ -35,10 +36,12 @@
 			}
 		}
 	}
+
 	2 = {
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_african_mask_2
@@ -46,44 +49,51 @@
 			}
 		}
 	}
+
 	3 = {
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_african_mask_3
 				is_artifact_equipped = yes
 			}
 		}
-
 	}
+
 	4 = {
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_african_mask_4
 				is_artifact_equipped = yes
 			}
 		}
-
 	}
+
 	5 = {
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_african_mask_5
 				is_artifact_equipped = yes
 			}
 		}
-
 	}
+
 	6 = {
 		factor = 100
+		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
+		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_african_mask_6
@@ -91,10 +101,12 @@
 			}
 		}
 	}
+
 	7 = {
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_african_mask_7
@@ -102,10 +114,12 @@
 			}
 		}
 	}
+
 	8 = {
 		factor = 100
 		hide_layers = { 12 = { } } #Hide layer 12 (disfigured masks) when this frame is picked.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_african_mask_8

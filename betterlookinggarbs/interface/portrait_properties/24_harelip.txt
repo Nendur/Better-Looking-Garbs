@@ -9,6 +9,7 @@
 			}
 		}
 	}
+
 	1 = { #harelip
 		factor = 100
 		hide_layers = { 15 = {}} #Hide lipstick

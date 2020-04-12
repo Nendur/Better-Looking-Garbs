@@ -3,6 +3,7 @@
 	0 = { # blank
 		factor = 1
 	}
+
 	1 = { # leper
 		factor = 100
 		trigger = {
@@ -19,6 +20,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	2 = { # syphilitic
 		factor = 100
 		trigger = {
@@ -34,6 +36,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	3 = { # pnuemonia
 		factor = 100
 		trigger = {
@@ -47,6 +50,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	4 = { # fever
 		factor = 100
 		trigger = {
@@ -62,6 +66,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	5 = { # ill
 		factor = 100
 		trigger = {
@@ -77,6 +82,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	6 = { # drunkard
 		factor = 100
 		trigger = {
@@ -92,6 +98,7 @@
 			}
 		}
 	}
+
 	7 = { # vomit
 		factor = 0
 		trigger = {
@@ -107,6 +114,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	8 = { # imbecile
 		factor = 100
 		trigger = {

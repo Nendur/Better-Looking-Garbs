@@ -10,6 +10,9 @@ character_event = {
 
 	option = {
 		name = ca.110.opt
+
+		trigger = { FROM = { is_priest = no } }
+
 		repeat_event = { id = blg.110 }
 	}
 

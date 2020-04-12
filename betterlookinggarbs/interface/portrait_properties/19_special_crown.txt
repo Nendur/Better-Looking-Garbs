@@ -22,6 +22,7 @@
 			check_variable = { which = ca_headgear value = 1 }
 		}
 	}
+
 	1 = { #HRE crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -46,6 +47,7 @@
 			}
 		}
 	}
+
 	2 = { #Byzantine Crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -74,6 +76,7 @@
 			culture = greek
 		}
 	}
+
 	3 = { #Cursed Diamond Crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -98,6 +101,7 @@
 			}
 		}
 	}
+
 	4 = { #Iron Crown of Lombardy
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -122,6 +126,7 @@
 			}
 		}
 	}
+
 	5 = { #Imperial Laurels
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -138,6 +143,7 @@
 			}
 		}
 	}
+
 	6 = { #Pahlavi Crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -162,6 +168,7 @@
 			}
 		}
 	}
+
 	7 = { #Fylkir Crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -187,6 +194,7 @@
 			}
 		}
 	}
+
 	8 = { #Tengri Crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -207,6 +215,7 @@
 			}
 		}
 	}
+
 	9 = { #Finnish Crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -232,6 +241,7 @@
 			}
 		}
 	}
+
 	10 = { #West-African Crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -257,6 +267,7 @@
 			}
 		}
 	}
+
 	11 = { #Slavic Crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -282,6 +293,7 @@
 			}
 		}
 	}
+
 	12 = { #Baltic Crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -307,6 +319,7 @@
 			}
 		}
 	}
+
 	13 = { #Aztec Crown
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -327,6 +340,7 @@
 			}
 		}
 	}
+
 	14 = { #Cardinal
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -340,6 +354,7 @@
 			}
 		}
 	}
+
 	15 = { #Cardinal
 		factor = 100
 		hide_layers = { 3 = {}}
@@ -355,6 +370,7 @@
 			}
 		}
 	}
+
 	16 = { #Venetian Doge
 		factor = 100
 		hide_layers = {1 = {}}
@@ -379,6 +395,7 @@
 			is_merchant_republic = yes
 		}
 	}
+
 	17 = { #Court Jester
 		factor = 100
 		hide_layers = {3 = {}}
@@ -398,6 +415,7 @@
 			}
 		}
 	}
+
 	18 = { #Orthodox Patriarch
 		factor = 100
 		hide_layers = { 5 = {}}
@@ -418,6 +436,7 @@
 			}
 		}
 	}
+
 	19 = { #Protestant Priest
 		factor = 100
 		hide_layers = { 3 = {}}
@@ -438,6 +457,7 @@
 			}
 		}
 	}
+
 	20 = { #Slavic Priest
 		factor = 100
 		hide_layers = { 3 = {}}
@@ -453,6 +473,7 @@
 			religion_openly_slavic_or_reformed_trigger = yes
 		}
 	}
+
 	21 = { #Finnish Priest
 		factor = 100
 		hide_layers = { 3 = {}}
@@ -468,6 +489,7 @@
 			religion_openly_finnish_or_reformed_trigger = yes
 		}
 	}
+
 	22 = { #Aztec Priest
 		factor = 100
 		hide_layers = { 3 = {}}
@@ -483,6 +505,7 @@
 			religion_openly_aztec_or_reformed_trigger = yes
 		}
 	}
+
 	23 = { #Taoist Priest
 		factor = 100
 		hide_layers = { 3 = {}}
@@ -501,6 +524,7 @@
 			}
 		}
 	}
+
 	24 = { #Zun Priest
 		factor = 100
 		hide_layers = { 3 = {}}
@@ -519,6 +543,7 @@
 			}
 		}
 	}
+
 	25 = { #Celtic Priest
 		factor = 100
 		hide_layers = { 3 = {}}

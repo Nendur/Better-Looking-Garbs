@@ -11,6 +11,7 @@
 			}
 		}
 	}
+
 	1 = {
 		factor = 100
 		modifier = {
@@ -18,6 +19,7 @@
 			practical_age < 12
 		}
 	}
+
 	2 = {
 		factor = 100
 		modifier = {
@@ -32,6 +34,7 @@
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
 	}
+
 	3 = {
 		factor = 100
 		modifier = {
@@ -46,6 +49,7 @@
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
 	}
+
 	4 = {
 		factor = 100
 		modifier = {
@@ -60,6 +64,7 @@
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
 	}
+
 	5 = {
 		factor = 100
 		modifier = {
@@ -74,6 +79,7 @@
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
 	}
+
 	6 = { #Baby
 		factor = 100
 		hide_layers = { 7 = {} }

@@ -11,12 +11,14 @@
 			has_game_started = no
 		}
 	}
+
 	1 = {
 		factor = 100
 		trigger = {
 			any_player = { ROOT = { is_plot_target_of = PREV } }
 		}
 	}
+
 	2 = {
 		factor = 100
 		trigger = {
@@ -26,30 +28,35 @@
 			}
 		}
 	}
+
 	3 = {
 		factor = 100
 		trigger = {
 			any_player = { is_rival = PREV }
 		}
 	}
+
 	4 = {
 		factor = 100
 		trigger = {
 			any_player = { is_lover = PREV }
 		}
 	}
+
 	5 = {
 		factor = 100
 		trigger = {
 			any_player = { is_friend = PREV }
 		}
 	}
+
 	6 = {
 		factor = 100
 		trigger = {
 			any_player = { is_foe = PREV }
 		}
 	}
+
 	7 = {
 		factor = 100
 		trigger = {

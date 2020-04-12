@@ -10,6 +10,7 @@
 			}
 		}
 	}
+
 	1 = { # prisoner
 		factor = 100
 		hide_layers = { 19 = { } } #Hide layers with special crowns.
@@ -28,6 +29,7 @@
 			NOT = { death_reason = death_dungeon }
 		}
 	}
+
 	2 = { # clean prison
 		factor = 100
 		hide_layers = { 19 = { } } #Hide layers with special crowns.
@@ -43,6 +45,7 @@
 			}
 		}
 	}
+
 	3 = { # iron collar
 		factor = 100
 		hide_layers = { 19 = { } } #Hide layers with special crowns.

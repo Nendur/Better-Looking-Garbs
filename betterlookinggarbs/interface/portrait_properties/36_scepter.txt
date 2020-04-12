@@ -7,6 +7,7 @@
 			has_game_rule = { name = blg_artifacts value = off }
 		}
 	}
+
 	1 = { # Bon Fylkir Scepter
 		factor = 100
 		trigger = {
@@ -25,6 +26,7 @@
 			}
 		}
 	}
+
 	2 = { # Hellenic Fylkir Scepter
 		factor = 100
 		trigger = {
@@ -43,6 +45,7 @@
 			}
 		}
 	}
+
 	3 = { # Holy Grail
 		factor = 100
 		trigger = {
@@ -55,6 +58,7 @@
 			}
 		}
 	}
+
 	4 = { # Mjolnir
 		factor = 100
 		trigger = {
@@ -64,6 +68,7 @@
 			}
 		}
 	}
+
 	5 = { # Tablet
 		factor = 75
 		trigger = {
@@ -77,6 +82,7 @@
 			}
 		}
 	}
+
 	6 = { # African Scepter
 		factor = 100
 		trigger = {
@@ -90,6 +96,7 @@
 			}
 		}
 	}
+
 	7 = { # Scepter
 		factor = 25
 		trigger = {
@@ -109,6 +116,7 @@
 			}
 		}
 	}
+
 	8 = { # Scepter
 		factor = 25
 		trigger = {
@@ -127,6 +135,7 @@
 			}
 		}
 	}
+
 	9 = { # Scepter
 		factor = 25
 		trigger = {
@@ -145,6 +154,7 @@
 			}
 		}
 	}
+
 	10 = { # Necklace
 		factor = 50
 		trigger = {
@@ -168,6 +178,7 @@
 			}
 		}
 	}
+
 	11 = { # Necklace
 		factor = 50
 		trigger = {
@@ -191,6 +202,7 @@
 			}
 		}
 	}
+
 	12 = { # Necklace
 		factor = 50
 		trigger = {
@@ -214,6 +226,7 @@
 			}
 		}
 	}
+
 	13 = { # Lance
 		factor = 25
 		trigger = {
@@ -232,6 +245,7 @@
 			}
 		}
 	}
+
 	14 = { # Lance
 		factor = 25
 		trigger = {
@@ -250,6 +264,7 @@
 			}
 		}
 	}
+
 	15 = { # Trident
 		factor = 100
 		trigger = {
@@ -267,6 +282,7 @@
 			}
 		}
 	}
+
 	16 = { # Mace
 		factor = 25
 		trigger = {
@@ -282,6 +298,7 @@
 			}
 		}
 	}
+
 	17 = { # Mace
 		factor = 25
 		trigger = {
@@ -297,6 +314,7 @@
 			}
 		}
 	}
+
 	18 = { # Dagger
 		factor = 25
 		trigger = {
@@ -309,6 +327,7 @@
 			}
 		}
 	}
+
 	19 = { # Dagger
 		factor = 10
 		trigger = {
@@ -321,6 +340,7 @@
 			}
 		}
 	}
+
 	20 = { # Book
 		factor = 10
 		trigger = {
@@ -335,6 +355,7 @@
 			}
 		}
 	}
+
 	21 = { # Ingredients
 		factor = 1
 		trigger = {

@@ -11,6 +11,7 @@
 			}
 		}
 	}
+
 	1 = { # saint
 		factor = 100
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
@@ -25,6 +26,7 @@
 			}
 		}
 	}
+
 	2 = { # Holy Banner of Mohammad
 		factor = 100
 		trigger = {
@@ -32,6 +34,7 @@
 			any_artifact = { artifact_type = holy_banner_of_mohammad is_artifact_active = yes }
 		}
 	}
+
 	3 = { # Derafsh Kaviani
 		factor = 100
 		trigger = {
@@ -39,6 +42,7 @@
 			any_artifact = { artifact_type = derafsh_kaviani is_artifact_active = yes }
 		}
 	}
+
 	4 = { # golden sword
 		factor = 5
 		trigger = {
@@ -57,6 +61,7 @@
 			}
 		}
 	}
+
 	5 = { # scimitar
 		factor = 25
 		trigger = {
@@ -79,6 +84,7 @@
 			}
 		}
 	}
+
 	6 = { # scimitar
 		factor = 25
 		trigger = {
@@ -101,6 +107,7 @@
 			}
 		}
 	}
+
 	7 = { # sword
 		factor = 25
 		trigger = {
@@ -124,6 +131,7 @@
 			}
 		}
 	}
+
 	8 = { # sword
 		factor = 25
 		trigger = {
@@ -147,6 +155,7 @@
 			}
 		}
 	}
+
 	9 = { # +2 Axe
 		factor = 25
 		trigger = {
@@ -170,6 +179,7 @@
 			}
 		}
 	}
+
 	10 = { # axe
 		factor = 25
 		trigger = {
@@ -189,6 +199,7 @@
 			}
 		}
 	}
+
 	11 = { # axe
 		factor = 25
 		trigger = {
@@ -207,6 +218,7 @@
 			}
 		}
 	}
+
 	12 = { # bow
 		factor = 25
 		trigger = {
@@ -225,6 +237,7 @@
 			}
 		}
 	}
+
 	13 = { # bow
 		factor = 25
 		trigger = {
@@ -243,6 +256,7 @@
 			}
 		}
 	}
+
 	14 = { # dog
 		factor = 50
 		trigger = {
@@ -259,6 +273,7 @@
 			}
 		}
 	}
+
 	15 = { # cat
 		factor = 50
 		trigger = {
@@ -271,6 +286,7 @@
 			has_character_modifier = pet_cat
 		}
 	}
+
 	16 = { # owl
 		factor = 50
 		trigger = {
@@ -283,6 +299,7 @@
 			has_character_modifier = pet_owl
 		}
 	}
+
 	17 = { # horse
 		factor = 50
 		trigger = {
@@ -292,9 +309,16 @@
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
-			has_character_modifier = nomad_warhorse
+			OR = {
+				has_character_modifier = nomad_warhorse
+				any_artifact = {
+					has_artifact_flag = horse
+					is_artifact_equipped = yes
+				}
+			}
 		}
 	}
+
 	18 = { # parrot
 		factor = 50
 		trigger = {
@@ -307,6 +331,7 @@
 			has_character_modifier = pet_parrot
 		}
 	}
+
 	19 = { # rat
 		factor = 50
 		trigger = {

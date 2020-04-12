@@ -3,6 +3,7 @@
 	0 = { # blank
 		factor = 1
 	}
+
 	1 = { # bubonic plague
 		factor = 100
 		trigger = {
@@ -15,6 +16,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	2 = { # boils
 		factor = 100
 		trigger = {
@@ -27,6 +29,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	3 = { # red dots
 		factor = 100
 		trigger = {
@@ -43,6 +46,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	4 = { # ugly mole
 		factor = 99
 		trigger = {
@@ -54,6 +58,7 @@
 			}
 		}
 	}
+
 	5 = { # ugly monobrow
 		factor = 99
 		trigger = {

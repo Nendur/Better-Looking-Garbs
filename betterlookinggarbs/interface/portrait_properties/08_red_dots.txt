@@ -17,6 +17,7 @@
 			}
 		}
 	}
+
 	1 = {
 		factor = 5
 		trigger = {
@@ -28,6 +29,7 @@
 			}
 		}
 	}
+
 	2 = {
 		factor = 5
 		trigger = {
@@ -39,6 +41,7 @@
 			}
 		}
 	}
+
 	3 = {
 		factor = 5
 		trigger = {
@@ -50,6 +53,7 @@
 			}
 		}
 	}
+
 	4 = {
 		factor = 5
 		trigger = {
@@ -61,6 +65,7 @@
 			}
 		}
 	}
+
 	5 = {
 		factor = 5
 		trigger = {
@@ -72,54 +77,63 @@
 			}
 		}
 	}
+
 	6 = {
 		factor = 1
 		trigger = {
 			OR = { trait = shaivist_hindu trait = smartist_hindu }
 		}
 	}
+
 	7 = {
 		factor = 1
 		trigger = {
 			trait = vaishnavist_hindu
 		}
 	}
+
 	8 = {
 		factor = 1
 		trigger = {
 			OR = { trait = shaktist_hindu trait = smartist_hindu }
 		}
 	}
+
 	9 = {
 		factor = 1
 		trigger = {
 			OR = { trait = vaishnavist_hindu trait = smartist_hindu }
 		}
 	}
+
 	10 = {
 		factor = 1
 		trigger = {
 			OR = { trait = shaktist_hindu trait = smartist_hindu }
 		}
 	}
+
 	11 = {
 		factor = 1
 		trigger = {
 			OR = { trait = shaivist_hindu trait = smartist_hindu }
 		}
 	}
+
 	12 = {
 		factor = 1
 		trigger = {
 			OR = { trait = vaishnavist_hindu trait = smartist_hindu }
 		}
 	}
+
 	13 = {
 		factor = 1
 		trigger = {
 			OR = { trait = shaktist_hindu trait = smartist_hindu }
 		}
 	}
+
 	14 = {
 		factor = 1
 		trigger = {
@@ -132,48 +146,56 @@
 			OR = { trait = shaivist_hindu trait = smartist_hindu }
 		}
 	}
+
 	16 = {
 		factor = 1
 		trigger = {
 			OR = { trait = shaivist_hindu trait = smartist_hindu }
 		}
 	}
+
 	17 = {
 		factor = 1
 		trigger = {
 			OR = { trait = shaivist_hindu trait = smartist_hindu }
 		}
 	}
+
 	18 = {
 		factor = 1
 		trigger = {
 			OR = { trait = shaktist_hindu trait = smartist_hindu }
 		}
 	}
+
 	19 = {
 		factor = 1
 		trigger = {
 			OR = { trait = shaktist_hindu trait = smartist_hindu }
 		}
 	}
+
 	20 = {
 		factor = 1
 		trigger = {
 			trait = smartist_hindu
 		}
 	}
+
 	21 = {
 		factor = 1
 		trigger = {
 			trait = smartist_hindu
 		}
 	}
+
 	22 = {
 		factor = 1
 		trigger = {
 			trait = vaishnavist_hindu
 		}
 	}
+
 	23 = {
 		factor = 1
 		trigger = {

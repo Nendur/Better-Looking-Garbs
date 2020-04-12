@@ -10,6 +10,7 @@
 			}
 		}
 	}
+
 	1 = { # Demon Child (fantasy only)
 		factor = 100
 		trigger = {
@@ -22,6 +23,7 @@
 			}
 		}
 	}
+
 	2 = { # possessed
 		factor = 100
 		trigger = {
@@ -37,6 +39,7 @@
 			}
 		}
 	}
+
 	3 = { # wolfblooded
 		factor = 100
 		trigger = {
@@ -54,6 +57,7 @@
 			}
 		}
 	}
+
 	4 = { # incapable
 		factor = 100
 		trigger = {
@@ -68,6 +72,7 @@
 			}
 		}
 	}
+
 	5 = { # lunatic
 		factor = 100
 		trigger = {
@@ -83,6 +88,7 @@
 			}
 		}
 	}
+
 	6 = { # depressed
 		factor = 100
 		trigger = {
@@ -94,6 +100,7 @@
 			}
 		}
 	}
+
 	7 = { # stressed
 		factor = 100
 		trigger = {

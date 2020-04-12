@@ -10,6 +10,7 @@
 			}
 		}
 	}
+
 	1 = { # scar 1 - TIER II
 		factor = 100
 		trigger = {
@@ -17,6 +18,7 @@
 			trait = scarred_type_1
 		}
 	}
+
 	2 = { # scar 2 - TIER II
 		factor = 100
 		trigger = {
@@ -24,6 +26,7 @@
 			trait = scarred_type_2
 		}
 	}
+
 	3 = { # scar 3 - TIER II
 		factor = 100
 		trigger = {
@@ -31,6 +34,7 @@
 			trait = scarred_type_3
 		}
 	}
+
 	4 = { # scar 4 - TIER II
 		factor = 100
 		trigger = {
@@ -38,6 +42,7 @@
 			trait = scarred_type_4
 		}
 	}
+
 	5 = { # scar 5 - TIER II
 		factor = 100
 		trigger = {
@@ -45,6 +50,7 @@
 			trait = scarred_type_5
 		}
 	}
+
 	6 = { # scar 6 - TIER II
 		factor = 100
 		trigger = {
@@ -52,6 +58,7 @@
 			trait = scarred_type_6
 		}
 	}
+
 	7 = { # scar 7 - TIER II
 		factor = 100
 		trigger = {
@@ -59,6 +66,7 @@
 			trait = scarred_type_7
 		}
 	}
+
 	8 = { # scar 8 - TIER II
 		factor = 100
 		trigger = {
@@ -66,6 +74,7 @@
 			trait = scarred_type_8
 		}
 	}
+
 	9 = { # scar 9 - TIER II
 		factor = 100
 		trigger = {
@@ -73,6 +82,7 @@
 			trait = scarred_type_9
 		}
 	}
+
 	10 = { # scar 10 - TIER II
 		factor = 100
 		trigger = {

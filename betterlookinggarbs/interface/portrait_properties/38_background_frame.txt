@@ -23,12 +23,14 @@
 			}
 		}
 	}
+
 	1 = { # Wooden window
 		factor = 2
 		trigger = {
 			is_nomadic = no
 		}
 	}
+
 	2 = { # Stone window
 		factor = 2
 		trigger = {
@@ -42,6 +44,7 @@
 			}
 		}
 	}
+
 	3 = { # Stone window
 		factor = 2
 		trigger = {
@@ -55,6 +58,7 @@
 			}
 		}
 	}
+
 	4 = { # Nomad window
 		factor = 2
 		trigger = {
@@ -69,6 +73,7 @@
 			}
 		}
 	}
+
 	5 = { # Stone window
 		factor = 2
 		trigger = {
@@ -82,6 +87,7 @@
 			}
 		}
 	}
+
 	6 = { # Glass window
 		factor = 1
 		trigger = {
@@ -99,6 +105,7 @@
 			}
 		}
 	}
+
 	7 = { # Grated window
 		factor = 1
 		trigger = {

@@ -13,6 +13,7 @@
 			immortal = yes
 		}
 	}
+
 	1 = { # Full face pearls and earrings
 		factor = 1
 		modifier = {
@@ -21,9 +22,11 @@
 			immortal = yes
 		}
 	}
+
 	2 = { # pearl earrings only
 		factor = 1
 	}
+
 	3 = { # full face pearls and earrings 2
 		factor = 1
 	}

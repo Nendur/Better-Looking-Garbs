@@ -10,6 +10,11 @@ character_event = {
 
 	option = {
 		name = ca.110.opt
+
+		trigger = {
+			FROM = { NOR = { is_priest = yes blg_priest = yes } }
+		}
+
 		repeat_event = { id = blg.110 }
 	}
 
@@ -36,7 +41,7 @@ character_event = {
 							artifact_type = crown_african_mask_7
 							artifact_type = crown_african_mask_8
 						}
-						is_artifact_equipped = yes 
+						is_artifact_equipped = yes
 					}
 				}
 				NOT = { society_member_of = secret_religious_cult }
@@ -452,7 +457,7 @@ character_event = {
 			FROM = {
 				add_trait = blgcaoff
 				remove_trait = blgquesting
-			} 
+			}
 		}
 		repeat_event = { id = blg.113 }
 	}
@@ -473,7 +478,7 @@ character_event = {
 						artifact_type = crown_african_mask_7
 						artifact_type = crown_african_mask_8
 					}
-					is_artifact_equipped = yes 
+					is_artifact_equipped = yes
 				}
 			}
 		}
@@ -497,7 +502,7 @@ character_event = {
 						artifact_type = crown_african_mask_7
 						artifact_type = crown_african_mask_8
 					}
-					is_artifact_equipped = yes 
+					is_artifact_equipped = yes
 				}
 			}
 		}
