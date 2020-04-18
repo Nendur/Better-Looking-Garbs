@@ -48,14 +48,14 @@ spriteTypes = {
 
 	# Eastern
 	spriteType = {
-		name = "GFX_settlement_temple_byzantinegfx_romangfx"
+		name = "GFX_settlement_temple_byzantinegfx_hellenicgfx"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_byzantine_other_groman.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_settlement_temple_byzantinegfx_romangfx_looted"
+		name = "GFX_settlement_temple_byzantinegfx_hellenicgfx_looted"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_byzantine_other_groman_looted.tga"
 		noOfFrames = 1
 		norefcount = yes
@@ -194,14 +194,14 @@ spriteTypes = {
 
 	# latin
 	spriteType = {
-		name = "GFX_settlement_temple_romangfx_romangfx"
+		name = "GFX_settlement_temple_romangfx_hellenicgfx"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_hellen.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_settlement_temple_romangfx_romangfx_looted"
+		name = "GFX_settlement_temple_romangfx_hellenicgfx_looted"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_hellen_looted.tga"
 		noOfFrames = 1
 		norefcount = yes
@@ -209,14 +209,14 @@ spriteTypes = {
 
 	# latin
 	spriteType = {
-		name = "GFX_settlement_temple_westerngfx_romangfx"
+		name = "GFX_settlement_temple_westerngfx_hellenicgfx"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_pagan_roman.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_settlement_temple_westerngfx_romangfx_looted"
+		name = "GFX_settlement_temple_westerngfx_hellenicgfx_looted"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_pagan_roman_looted.tga"
 		noOfFrames = 1
 		norefcount = yes
@@ -224,14 +224,14 @@ spriteTypes = {
 
 	# Indian
 	spriteType = {
-		name = "GFX_settlement_temple_indiangfx_romangfx"
+		name = "GFX_settlement_temple_indiangfx_hellenicgfx"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_pagan_roman.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_settlement_temple_indiangfx_romangfx_looted"
+		name = "GFX_settlement_temple_indiangfx_hellenicgfx_looted"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_pagan_roman_looted.tga"
 		noOfFrames = 1
 		norefcount = yes
@@ -239,14 +239,14 @@ spriteTypes = {
 
 	# Muslim
 	spriteType = {
-		name = "GFX_settlement_temple_muslimgfx_romangfx"
+		name = "GFX_settlement_temple_muslimgfx_hellenicgfx"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_byzantine_other_groman.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_settlement_temple_muslimgfx_romangfx_looted"
+		name = "GFX_settlement_temple_muslimgfx_hellenicgfx_looted"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_byzantine_other_groman_looted.tga"
 		noOfFrames = 1
 		norefcount = yes
@@ -254,14 +254,14 @@ spriteTypes = {
 
 	# Mesoamerican
 	spriteType = {
-		name = "GFX_settlement_temple_mesoamericangfx_romangfx"
+		name = "GFX_settlement_temple_mesoamericangfx_hellenicgfx"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_hellen.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
-		name = "GFX_settlement_temple_mesoamericangfx_romangfx_looted"
+		name = "GFX_settlement_temple_mesoamericangfx_hellenicgfx_looted"
 		texturefile = "gfx\\interface\\LI\\placeholder_temple_hellen_looted.tga"
 		noOfFrames = 1
 		norefcount = yes

@@ -31,7 +31,7 @@ blg_crowned = {
 }
 
 blg_religion_chinese = {
-	always = no
+	religion_group = chinese_group
 }
 
 blg_chinese = {

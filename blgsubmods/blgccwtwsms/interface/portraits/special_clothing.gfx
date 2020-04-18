@@ -36,7 +36,10 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
-				portrait_has_trait = monk
+				OR = {
+					portrait_has_trait = monk
+					portrait_society = monastic_order_insular
+				}
 				OR = {
 					portrait_religion = catholic
 					portrait_religion = cathar
@@ -107,6 +110,13 @@ spriteTypes = {
 						portrait_religion = waldensian
 						portrait_religion = lollard
 						portrait_religion = arian
+						portrait_religion = insular
+						portrait_religion = pelagianism
+						portrait_religion = aquileian
+						portrait_religion = total_depravity
+						portrait_religion = eutychian
+						portrait_religion = donatism
+						portrait_religion = priscillianism
 					}
 				}
 				1 = {
@@ -117,6 +127,13 @@ spriteTypes = {
 						portrait_religion = waldensian
 						portrait_religion = lollard
 						portrait_religion = arian
+						portrait_religion = insular
+						portrait_religion = pelagianism
+						portrait_religion = aquileian
+						portrait_religion = total_depravity
+						portrait_religion = eutychian
+						portrait_religion = donatism
+						portrait_religion = priscillianism
 					}
 				}
 			}
@@ -129,6 +146,13 @@ spriteTypes = {
 						portrait_religion = waldensian
 						portrait_religion = lollard
 						portrait_religion = arian
+						portrait_religion = insular
+						portrait_religion = pelagianism
+						portrait_religion = aquileian
+						portrait_religion = total_depravity
+						portrait_religion = eutychian
+						portrait_religion = donatism
+						portrait_religion = priscillianism
 					}
 				}
 				1 = {
@@ -139,6 +163,13 @@ spriteTypes = {
 						portrait_religion = waldensian
 						portrait_religion = lollard
 						portrait_religion = arian
+						portrait_religion = insular
+						portrait_religion = pelagianism
+						portrait_religion = aquileian
+						portrait_religion = total_depravity
+						portrait_religion = eutychian
+						portrait_religion = donatism
+						portrait_religion = priscillianism
 					}
 				}
 			}
@@ -174,7 +205,10 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
-				portrait_has_trait = nun
+				OR = {
+					portrait_has_trait = monk
+					portrait_society = monastic_order_insular
+				}
 				OR = {
 					portrait_religion = catholic
 					portrait_religion = cathar

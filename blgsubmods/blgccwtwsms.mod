@@ -7,3 +7,4 @@ dependencies=
 	"Better Looking Garbs"
 	"Better Looking Garbs Full"
 }
+picture="blgccwtwsms.jpg"

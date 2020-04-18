@@ -23,9 +23,7 @@ spriteTypes = {
 					portrait_religion = qadariyya
 					portrait_religion = khawariji
 					portrait_religion = haruriyyah
-					portrait_religion = wahhabi
 					portrait_religion = mahdi
-					portrait_religion = salafi
 					portrait_religion = shiite
 					portrait_religion = druze
 					portrait_religion = hurufi
@@ -90,9 +88,7 @@ spriteTypes = {
 					portrait_religion = qadariyya
 					portrait_religion = khawariji
 					portrait_religion = haruriyyah
-					portrait_religion = wahhabi
 					portrait_religion = mahdi
-					portrait_religion = salafi
 					portrait_religion = shiite
 					portrait_religion = druze
 					portrait_religion = hurufi
@@ -153,6 +149,7 @@ spriteTypes = {
 					portrait_religion = msoura_pagan
 					portrait_religion = mandulis_pagan
 					portrait_religion = east_african_pagan
+					portrait_religion = east_african_pagan_reformed
 					portrait_religion = central_african_pagan
 					portrait_religion = central_african_pagan_reformed
 				}
@@ -165,6 +162,7 @@ spriteTypes = {
 			#"GFX_westafrican_male_clothes:c2"
 			"GFX_empty:c3"
 			"GFX_westafrican_male_headgear:c5"
+			"GFX_empty:c7"
 		}
 
 		headgear_that_hides_hair = {12 13}
@@ -187,6 +185,7 @@ spriteTypes = {
 					portrait_religion = msoura_pagan
 					portrait_religion = mandulis_pagan
 					portrait_religion = east_african_pagan
+					portrait_religion = east_african_pagan_reformed
 					portrait_religion = central_african_pagan
 					portrait_religion = central_african_pagan_reformed
 				}
@@ -199,6 +198,7 @@ spriteTypes = {
 			#"GFX_westafrican_female_clothes:c2"
 			"GFX_empty:c3"
 			"GFX_westafrican_female_headgear:c5"
+			"GFX_empty:c7"
 		}
 
 		headgear_that_hides_hair = {12 13}

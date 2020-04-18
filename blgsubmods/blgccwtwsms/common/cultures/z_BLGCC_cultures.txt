@@ -1,7 +1,3 @@
-north_germanic = {
-	graphical_cultures = { norsegfx westerngfx }
-}
-
 central_germanic = {
 	graphical_cultures = { westerngfx }
 
@@ -9,16 +5,16 @@ central_germanic = {
 		graphical_cultures = { ashkenazigfx }
 	}
 	old_saxon = { # Saxon
-		graphical_cultures = { saxongfx germangfx }
+		graphical_cultures = { saxongfx }
 	}
 	anglo = {
-		graphical_cultures = { saxongfx germangfx }
-	}
-	lombard = {
-		graphical_cultures = { lombardgfx germangfx }
+		graphical_cultures = { saxongfx }
 	}
 	low_german = {
 		graphical_cultures = { westerngfx }
+	}
+	warnic = {
+		graphical_cultures = { saxongfx }
 	}
 	berber_germanic = {
 		graphical_cultures = { visigothgfx southerngfx germangfx }
@@ -35,8 +31,13 @@ east_germanic = {
 		graphical_cultures = { lombardgfx frankishgfx }
 	}
 	vidivarii = {
-		graphical_cultures = { balticgfx norsegfx }
-		secondary_event_pictures = norse
+		graphical_cultures = { saxongfx }
+	}
+	rygir = {
+		graphical_cultures = { saxongfx }
+	}
+	heruli = {
+		graphical_cultures = { saxongfx }
 	}
 	skirian = {
 		graphical_cultures = { crimeangfx germangfx }
@@ -50,6 +51,9 @@ east_germanic = {
 	visigothic = {
 		graphical_cultures = { visigothgfx germangfx }
 	}
+	gepid = {
+		graphical_cultures = { saxongfx }
+	}
 }
 
 west_germanic = {
@@ -61,6 +65,9 @@ west_germanic = {
 		graphical_cultures = { oldfrankishgfx germangfx }
 		unit_graphical_cultures = { oldfrankishgfx frankishgfx }
 	}
+	suebi = {
+		graphical_cultures = { visigothgfx germangfx }
+	}
 	cheruscii = {
 		graphical_cultures = { oldfrankishgfx germangfx }
 		unit_graphical_cultures = { oldfrankishgfx frankishgfx }
@@ -70,8 +77,7 @@ west_germanic = {
 		unit_graphical_cultures = { oldfrankishgfx frankishgfx }
 	}
 	buri = {
-		graphical_cultures = { oldfrankishgfx germangfx }
-		unit_graphical_cultures = { oldfrankishgfx frankishgfx }
+		graphical_cultures = { visigothgfx germangfx }
 	}
 	dutch = {
 		graphical_cultures = { dutchgfx }
@@ -82,6 +88,9 @@ west_germanic = {
 	anglo_frisian = {
 		graphical_cultures = { saxongfx }
 	}
+	old_frisian = {
+		graphical_cultures = { saxongfx }
+	}
 }
 
 latin = {
@@ -89,7 +98,7 @@ latin = {
 		graphical_cultures = { gallicgfx romangfx occitangfx }
 	}
 	gallo_romance = {
-		graphical_cultures = { gallicgfx romangfx }
+		graphical_cultures = { trueoccitangfx occitangfx }
 	}
 	african_romance = {
 		graphical_cultures = { siciliangfx berbergfx muslimgfx }
@@ -116,7 +125,7 @@ latin = {
 		graphical_cultures = { romanobritishgfx gallicgfx romangfx }
 	}
 	romansh = {
-		graphical_cultures = { lombardgfx occitangfx italiangfx southerngfx }
+		graphical_cultures = { trueoccitangfx occitangfx italiangfx southerngfx }
 	}
 	sicilian = {
 		graphical_cultures = { siciliangfx italiangfx southerngfx mediterraneangfx }
@@ -128,7 +137,7 @@ latin = {
 		graphical_cultures = { dalmatiangfx italiangfx southerngfx }
 	}
 	maltanesse = {
-		graphical_cultures = { romangfx byzantinegfx }
+		graphical_cultures = { siciliangfx italiangfx southerngfx mediterraneangfx }
 	}
 	occitan = {
 		graphical_cultures = { trueoccitangfx occitangfx frankishgfx }
@@ -137,7 +146,7 @@ latin = {
 		graphical_cultures = { romangfx italiangfx southerngfx }
 	}
 	romano_vandalic = {
-		graphical_cultures = { crimeangfx occitangfx }
+		graphical_cultures = { visigothgfx germangfx }
 	}
 	latin = {
 		graphical_cultures = { romangfx italiangfx southerngfx }
@@ -163,6 +172,12 @@ latin = {
 	romano_gothic = {
 		graphical_cultures = { crimeangfx germangfx }
 	}
+	romanian = {
+		graphical_cultures = { vlachgfx serbsouthslavicgfx }
+	}
+	outremer = {
+		graphical_cultures = { outremergfx holygfx italiangfx levantinegfx southerngfx }
+	}
 }
 
 torrean_group = {
@@ -181,7 +196,7 @@ vasconic = {
 		secondary_event_pictures = catalan
 	}
 	aquitani = {
-		graphical_cultures = { trueoccitangfx }
+		graphical_cultures = { basquegfx }
 		secondary_event_pictures = occitan
 	}
 	vasconian = {
@@ -189,7 +204,7 @@ vasconic = {
 		secondary_event_pictures = catalan
 	}
 	paleo_iberian = {
-		graphical_cultures = { southerngfx }
+		graphical_cultures = { basquegfx }
 		secondary_event_pictures = catalan
 	}
 }
@@ -210,10 +225,10 @@ caucasian = {
 		graphical_cultures = { georgiangfx }
 	}
 	abaza = {
-		graphical_cultures = { serbsouthslavicgfx }
+		graphical_cultures = { vlachgfx serbsouthslavicgfx }
 	}
 	adyghes = {
-		graphical_cultures = { serbsouthslavicgfx }
+		graphical_cultures = { vlachgfx serbsouthslavicgfx }
 	}
 	georgian = {
 		graphical_cultures = { georgiangfx }
@@ -230,7 +245,7 @@ byzantine = {
 	graphical_cultures = { byzantinegfx easterngfx }
 
 	aeolian = {
-		graphical_cultures = { byzantinegfx }
+		graphical_cultures = { hellenicgfx }
 	}
 	helleno_aramean = {
 		graphical_cultures = { semitegfx byzantinegfx muslimgfx }
@@ -240,9 +255,6 @@ byzantine = {
 	}
 	greek_gothic = {
 		graphical_cultures = { crimeangfx }
-	}
-	greek_persian = {
-		graphical_cultures = { byzantinegfx }
 	}
 	isaurian_persian = {
 		graphical_cultures = { byzantinegfx }
@@ -255,16 +267,16 @@ byzantine = {
 		graphical_cultures = { byzantinegfx }
 	}
 	pontic = {
-		graphical_cultures = { byzantinegfx }
+		graphical_cultures = { hellenicgfx }
 	}
 	tsakonian = {
-		graphical_cultures = { byzantinegfx }
+		graphical_cultures = { hellenicgfx }
 	}
 	spartan = {
-		graphical_cultures = { byzantinegfx }
+		graphical_cultures = { hellenicgfx }
 	}
 	massalian = {
-		graphical_cultures = { byzantinegfx }
+		graphical_cultures = { hellenicgfx }
 	}
 	helleno_thracian = {
 		graphical_cultures = { byzantinegfx }
@@ -275,7 +287,7 @@ continental_celtic = {
 	graphical_cultures = { celticgfx westerngfx }
 
 	gallic = {
-		graphical_cultures = { celticgfx }
+		graphical_cultures = { bretongfx }
 		secondary_event_pictures = breton
 	}
 	astures = {
@@ -307,7 +319,7 @@ continental_celtic = {
 		secondary_event_pictures = breton
 	}
 	gaulish = {
-		graphical_cultures = { celticgfx }
+		graphical_cultures = { bretongfx }
 		secondary_event_pictures = breton
 	}
 }
@@ -316,6 +328,9 @@ celtic = {
 	graphical_cultures = { celticgfx westerngfx }
 
 	breton = {
+		graphical_cultures = { bretongfx }
+	}
+	welsh = {
 		graphical_cultures = { bretongfx }
 	}
 }
@@ -329,7 +344,7 @@ finno_ugric = {
 	khanty = {
 		graphical_cultures = { siberiangfx }
 	}
-	samoyed = { # AKA Nenets
+	samoyed = {
 		graphical_cultures = { siberiangfx }
 	}
 	mansi = {
@@ -361,8 +376,11 @@ baltic = {
 	}
 }
 
-east_anatolic = {
+tarim = {
 	tocharian = {
+		graphical_cultures = { tochariangfx sogdiangfx persiangfx }
+	}
+	gushi = {
 		graphical_cultures = { tochariangfx sogdiangfx persiangfx }
 	}
 }
@@ -374,9 +392,6 @@ altaic = {
 		graphical_cultures = { pecheneggfx cumangfx turkishgfx }
 	}
 	azeri = { #Azerbaijian
-		graphical_cultures = { sogdiangfx turkishgfx }
-	}
-	dahi_scythian = {
 		graphical_cultures = { sogdiangfx turkishgfx }
 	}
 	utigur = {
@@ -432,6 +447,14 @@ altaic = {
 sinic = {
 	jurchen = {
 		graphical_cultures = { khitangfx chinesegfx }
+	}
+}
+
+chinese_group = {
+	dummy = {
+		alternate_start = { always = no }
+		used_for_random = no
+		allow_in_ruler_designer = no
 	}
 }
 
@@ -530,7 +553,7 @@ east_semitic = {
 
 northwest_semitic = {
 	punic = {
-		graphical_cultures = { byzantinegfx }
+		graphical_cultures = { semitegfx byzantinegfx }
 		secondary_event_pictures = bedouin_arabic
 	}
 	nabatean = {
@@ -549,13 +572,16 @@ northwest_semitic = {
 
 central_semitic = {
 	maghreb_arabic = {
-		graphical_cultures = { berbergfx }
+		graphical_cultures = { egyptiangfx }
 	}
 	levantine_arabic = {
 		graphical_cultures = { levantinegfx arabicgfx }
 	}
 	egyptian_arabic = {
 		graphical_cultures = { egyptiangfx arabicgfx }
+	}
+	andalusian_arabic = {
+		graphical_cultures = { andalusiangfx berbergfx }
 	}
 }
 
@@ -569,7 +595,19 @@ west_slavic = {
 	pommeranian = {
 		graphical_cultures = { pomeraniangfx westernslavicgfx }
 	}
+	lechite = {
+		graphical_cultures = { pomeraniangfx westernslavicgfx }
+	}
+	geruly = {
+		graphical_cultures = { pomeraniangfx westernslavicgfx }
+	}
+	tyuringii = {
+		graphical_cultures = { pomeraniangfx westernslavicgfx }
+	}
 	bohemian = {
+		graphical_cultures = { bohemiangfx westernslavicgfx }
+	}
+	galliya = {
 		graphical_cultures = { bohemiangfx westernslavicgfx }
 	}
 }
@@ -590,22 +628,22 @@ south_slavic = {
 	arberian = {
 		graphical_cultures = { vlachgfx serbsouthslavicgfx }
 	}
-	bosnjani = {
+	bosnian = {
 		graphical_cultures = { croatsouthslavicgfx }
 	}
-	karantanci = {
+	carantanian = {
 		graphical_cultures = { bohemiangfx westernslavicgfx }
 	}
 	serbian = {
-		graphical_cultures = { serbsouthslavicgfx }
-	}
-	romanian = {
 		graphical_cultures = { serbsouthslavicgfx }
 	}
 	bulgarian = {
 		graphical_cultures = { serbsouthslavicgfx easternslavicgfx }
 	}
 	alzzecio = {
+		graphical_cultures = { dalmatiangfx }
+	}
+	afriki = {
 		graphical_cultures = { serbsouthslavicgfx }
 	}
 }
@@ -652,17 +690,11 @@ east_iranian = {
 		graphical_cultures = { sogdiangfx persiangfx }
 		secondary_event_pictures = turkish
 	}
-}
-
-iranian = {
-	kushanshas = {
-		graphical_cultures = { afghangfx persiangfx }
+	dahi_scythian = {
+		graphical_cultures = { sogdiangfx turkishgfx }
 	}
-	kalash = {
-		graphical_cultures = { indusgfx persiangfx }
-	}
-	indo_parthian = {
-		graphical_cultures = { afghangfx persiangfx }
+	amardian = {
+		graphical_cultures = { alangfx persiangfx }
 	}
 	sarmatian = {
 		graphical_cultures = { alangfx persiangfx }
@@ -670,18 +702,27 @@ iranian = {
 	iazyges = {
 		graphical_cultures = { alangfx persiangfx }
 	}
-	kurdish = {
-		graphical_cultures = { kurdishgfx persiangfx }
-	}
 	afghan = { # a.k.a. Pashtun
-		graphical_cultures = { afghangfx persiangfx }
-	}
-	baloch = {
 		graphical_cultures = { afghangfx persiangfx }
 	}
 	saka = {
 		graphical_cultures = { sogdiangfx persiangfx }
 		secondary_event_pictures = turkish
+	}
+}
+
+iranian = {
+	kushanshas = {
+		graphical_cultures = { afghangfx persiangfx }
+	}
+	indo_parthian = {
+		graphical_cultures = { afghangfx persiangfx }
+	}
+	kurdish = {
+		graphical_cultures = { kurdishgfx persiangfx }
+	}
+	baloch = {
+		graphical_cultures = { afghangfx persiangfx }
 	}
 }
 
@@ -694,6 +735,9 @@ cushitic = {
 	}
 	beja = {
 		graphical_cultures = { somaligfx africangfx westafricangfx }
+	}
+	afar = {
+		graphical_cultures = { africangfx westafricangfx }
 	}
 }
 
@@ -708,9 +752,6 @@ east_african = {
 	egyptian_coptic = {
 		graphical_cultures = { copticgfx egyptiangfx muslimgfx }
 		secondary_event_pictures = bedouin_arabic
-	}
-	afar = {
-		graphical_cultures = { somaligfx africangfx westafricangfx }
 	}
 	old_nubian = {
 		graphical_cultures = { nubiangfx africangfx westafricangfx }
@@ -756,7 +797,7 @@ siberian_group = {
 	graphical_cultures = { mongolgfx muslimgfx }
 
 	yeniseian = {
-		graphical_cultures = { siberiangfx }
+		graphical_cultures = { siberiangfx ugricgfx }
 		secondary_event_pictures = mongol
 	}
 }
@@ -772,6 +813,9 @@ indo_aryan_group = {
 	}
 	old_kamrupan = {
 		graphical_cultures = { indiangfx }
+	}
+	kalash = {
+		graphical_cultures = { indusgfx persiangfx }
 	}
 	assamese = {
 		graphical_cultures = { assamesegfx }
@@ -812,7 +856,7 @@ albanian_group = {
 	graphical_cultures = { easterngfx }
 
 	albanian = {
-		graphical_cultures = { serbsouthslavicgfx byzantinegfx }
+		graphical_cultures = { vlachgfx serbsouthslavicgfx byzantinegfx }
 	}
 }
 

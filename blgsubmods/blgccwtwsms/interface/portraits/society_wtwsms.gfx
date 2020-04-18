@@ -1,0 +1,1277 @@
+spriteTypes = {
+	portraitType = {
+		name = "PORTRAIT_society_sand_snakes_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = the_sand_snakes
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_bacchant_male_clothing_behind:c0"
+			"GFX_society_bacchant_male_clothing_front:c2"
+			"GFX_empty:c3"
+			"GFX_society_shaytanist_male_headgear_front:c5"
+			"GFX_society_shaytanist_male_headgear_behind:c1"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_sand_snakes_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = the_sand_snakes
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_bacchant_male_clothing_behind:c0"
+			"GFX_society_bacchant_male_clothing_front:c2"
+			"GFX_empty:c3"
+			"GFX_society_shaytanist_female_headgear_front:c5"
+			"GFX_society_shaytanist_female_headgear_behind:c1"
+			"GFX_empty:c7"
+		}
+
+		# No hair, correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_dionysus_clothing_male"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_clothing = yes
+				portrait_society = mysteries_dionysus
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_bacchant_male_clothing_behind:c0"
+			"GFX_society_bacchant_male_clothing_front:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_celtic_male_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_celtic
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_slavic_female_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_baltic_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_baltic_male_clothes:p3:c2"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_slavic_male_clothes_infront:p5:c5"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_celtic_female_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_celtic
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_slavic_female_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_baltic_female_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_baltic_female_clothes:p3:c2"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_slavic_male_clothes_infront:p5:c5"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_egyptian_male_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_egyptian
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_zun_male_headgear_behind:p5:c1"
+			"GFX_empty:p3:c0"
+			"GFX_society_warrior_lodge_african_male_clothes:p3:c2"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_zun_male_headgear:p5:c5"
+			"GFX_society_warrior_lodge_zun_male_clothes_infront:c4"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_egyptian_female_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_egyptian
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_zun_female_headgear_behind:p5:c1"
+			"GFX_empty:p3:c0"
+			"GFX_society_warrior_lodge_african_female_clothes:p3:c2"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_zun_male_headgear:p5:c5"
+			"GFX_society_warrior_lodge_zun_female_clothes_infront:c4"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_isis_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				#portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = monastic_order_isis
+				OR = {
+					portrait_government = theocracy_government
+					portrait_government = order_government
+					NOT = { portrait_tier = duke }
+					AND = {
+						OR = {
+							portrait_society_rank = 3
+							portrait_society_rank = 4
+						}
+						NOT = { portrait_tier = king }
+					}
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				OR = {
+					portrait_in_command = no
+					portrait_government = theocracy_government
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = {
+			"GFX_society_monastic_order_jain_svetambara_male_clothing_behind:c0"
+			"GFX_society_monastic_order_jain_svetambara_male_clothing_front:c2"
+			"GFX_society_monastic_order_jain_svetambara_female_headgear_front:c5"
+			"GFX_society_monastic_order_jain_svetambara_female_headgear_mid:c3"
+			"GFX_empty:c1"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			5 = {
+				0 = { always = yes }
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_berber_male_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				#portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_berber
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
+			"GFX_society_warrior_lodge_tengri_female_clothes:c2"
+			"GFX_empty:c1"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_african_female_headgear:p5:c5"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				3 = {
+					OR = {
+						portrait_society_rank = 3
+						portrait_society_rank = 4
+					}
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_semitic_male_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				#portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_semitic
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
+			"GFX_society_warrior_lodge_tengri_female_clothes:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				3 = {
+					OR = {
+						portrait_society_rank = 3
+						portrait_society_rank = 4
+					}
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_balkan_male_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				#portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_society = warrior_lodge_balkan
+					portrait_society = warrior_lodge_vasconic
+					portrait_society = warrior_lodge_georgian
+				}
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_slavic_female_clothes_behind:c0"
+			"GFX_society_warrior_lodge_slavic_female_clothes:c2"
+			"GFX_society_warrior_lodge_baltic_male_clothes_infront:c4"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				3 = {
+					OR = {
+						portrait_society_rank = 3
+						portrait_society_rank = 4
+					}
+				}
+			}
+			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Male
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_east_african_male_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_east_african
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_african_male_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_bon_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_bon_male_clothes:p3:c2"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_african_male_headgear:p5:c5"
+			"GFX_society_warrior_lodge_african_male_clothes_infront:c4"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Female
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_east_african_female_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_east_african
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_african_female_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_bon_female_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_bon_female_clothes:p3:c2"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_african_female_headgear:p5:c5"
+			"GFX_society_warrior_lodge_african_female_clothes_infront:c4"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Male
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_root_west_male_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_society = warrior_lodge_root_west
+					portrait_society = warrior_lodge_sanamahi
+				}
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_zun_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_zun_male_clothes:p3:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Female
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_root_west_female_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_society = warrior_lodge_root_west
+					portrait_society = warrior_lodge_sanamahi
+				}
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_zun_female_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_zun_female_clothes:p3:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Male
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_dravidian_male_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_dravidian
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_empty:p3:c0"
+			"GFX_society_warrior_lodge_african_male_clothes:p3:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Female
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_dravidian_female_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_dravidian
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_empty:p3:c0"
+			"GFX_society_warrior_lodge_african_female_clothes:p3:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Male
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_assyrian_male_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_assyrian
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_zun_male_headgear_behind:p5:c1"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_zun_male_headgear:p5:c5"
+			"GFX_society_warrior_lodge_zun_male_clothes_infront:c4"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Female
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_assyrian_female_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_assyrian
+				OR = {
+					NOT = { portrait_tier = duke }
+					portrait_in_command = yes
+					portrait_has_trait = blgcaon
+					portrait_has_trait = blgquesting
+				}
+				NOT = { portrait_has_trait = blgcaoff }
+			}
+		}
+
+		layer = { 
+			"GFX_society_warrior_lodge_zun_female_headgear_behind:p5:c1"
+			"GFX_empty:c3"
+			"GFX_society_warrior_lodge_zun_female_headgear:p5:c5"
+			"GFX_society_warrior_lodge_zun_female_clothes_infront:c4"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+			36 = { # Spear overlap
+				0 = { always = yes }
+			}
+			39 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+}
