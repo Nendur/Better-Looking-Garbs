@@ -1,4 +1,4 @@
-name="BLG/CC for A Game of Thrones"
+name="BLG / CC for A Game of Thrones"
 path="mod/blgccagot"
 dependencies=
 {

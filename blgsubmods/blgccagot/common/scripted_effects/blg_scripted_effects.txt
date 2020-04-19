@@ -1,0 +1,4 @@
+set_dueling_weapon_effect = { # Refresh portrait trick.
+	set_character_flag = add_duel_xp
+	remove_trait = blgspawn
+}

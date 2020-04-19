@@ -1,7 +1,7 @@
 spriteTypes = {
 
 	portraitType = {
-		name = "PORTRAIT_hightowergfx_male"
+		name = "PORTRAIT_ballgfx_male"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_character_background:p0"
@@ -63,14 +63,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 115 110 100 } { 255 250 220 } { 255 255 255 } 
-			{ 115 110 100 } { 255 250 220 } { 255 255 255 } 
-			{ 20 19 10 } { 213 209 88 } { 255 255 255 }
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 244 213 30 } { 255 255 255 } 
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -83,12 +76,12 @@ spriteTypes = {
 			{ 34 103 36 }
 			{ 34 103 36 }
 		}
-
+		
 		headgear_that_hides_hair = { 10 12 13 14 15 }
 	}
 
 	portraitType = {
-		name = "PORTRAIT_hightowergfx_male1"
+		name = "PORTRAIT_ballgfx_male1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_character_background:p0"
@@ -146,14 +139,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 115 110 100 } { 255 250 220 } { 255 255 255 } 
-			{ 115 110 100 } { 255 250 220 } { 255 255 255 } 
-			{ 20 19 10 } { 213 209 88 } { 255 255 255 }
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 244 213 30 } { 255 255 255 } 
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -166,12 +152,12 @@ spriteTypes = {
 			{ 34 103 36 }
 			{ 34 103 36 }
 		}
-
+		
 		headgear_that_hides_hair = { 10 12 13 14 15 }
 	}
 
 	portraitType = {
-		name = "PORTRAIT_hightowergfx_male2"
+		name = "PORTRAIT_ballgfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_character_background:p0"
@@ -229,14 +215,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -249,12 +228,12 @@ spriteTypes = {
 			{ 34 103 36 }
 			{ 34 103 36 }
 		}
-
+		
 		headgear_that_hides_hair = { 10 12 13 14 15 }
 	}
 
 	portraitType = {
-		name = "PORTRAIT_hightowergfx_female"
+		name = "PORTRAIT_ballgfx_female"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_character_background:p0"
@@ -315,14 +294,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 115 110 100 } { 255 250 220 } { 255 255 255 } 
-			{ 115 110 100 } { 255 250 220 } { 255 255 255 } 
-			{ 20 19 10 } { 213 209 88 } { 255 255 255 }
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 244 213 30 } { 255 255 255 } 
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -335,12 +307,12 @@ spriteTypes = {
 			{ 34 103 36 }
 			{ 34 103 36 }
 		}
-
+		
 		headgear_that_hides_hair = { 10 12 13 14 15 }
 	}
 
 	portraitType = {
-		name = "PORTRAIT_hightowergfx_female1"
+		name = "PORTRAIT_ballgfx_female1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_character_background:p0"
@@ -397,14 +369,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 115 110 100 } { 255 250 220 } { 255 255 255 } 
-			{ 115 110 100 } { 255 250 220 } { 255 255 255 } 
-			{ 20 19 10 } { 213 209 88 } { 255 255 255 }
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 206 207 154 } { 255 255 255 } 
-			{ 115 110 100 } { 244 213 30 } { 255 255 255 } 
+			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -417,12 +382,12 @@ spriteTypes = {
 			{ 34 103 36 }
 			{ 34 103 36 }
 		}
-
+		
 		headgear_that_hides_hair = { 10 12 13 14 15 }
 	}
 
 	portraitType = {
-		name = "PORTRAIT_hightowergfx_female2"
+		name = "PORTRAIT_ballgfx_female2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_character_background:p0"
@@ -479,14 +444,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -499,7 +457,7 @@ spriteTypes = {
 			{ 34 103 36 }
 			{ 34 103 36 }
 		}
-
+		
 		headgear_that_hides_hair = { 10 12 13 14 15 }
 	}
 }
