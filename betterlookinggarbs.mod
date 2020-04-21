@@ -17,5 +17,5 @@ dependencies={
 	"A.D. 633: Rise of Islam"
 	"Cultural Cities Remix"
 }
-tags={ Graphics Portraits Units Councillors Shields }
+tags={ Graphics Portraits Units Councillors }
 picture="betterlookinggarbs.jpg"

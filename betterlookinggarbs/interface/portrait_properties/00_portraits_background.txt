@@ -1009,6 +1009,10 @@
 				trait = kow_tow_travels
 			}
 		}
+		modifier = {
+			factor = 100
+			has_character_flag = add_duel_xp
+		}
 		hide_layers = { 38 = {} }
 	}
 

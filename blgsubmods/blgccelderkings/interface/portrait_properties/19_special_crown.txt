@@ -33,6 +33,7 @@
 	10 = { # # blank
 		factor = 1
 	}
+
 	11 = { # Jester
 		factor = 50
 		trigger = {
@@ -52,6 +53,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	12 = { # Armour A
 		factor = 99
 		trigger = {
@@ -71,6 +73,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 				AND = {
 					is_warrior = yes
 					is_away = yes
@@ -105,6 +108,7 @@
 		hide_layers = { 33 = {} }
 		hide_layers = { 39 = { } }
 	}
+
 	13 = { # Armour B
 		factor = 99
 		trigger = {
@@ -125,6 +129,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 				AND = {
 					is_warrior = yes
 					is_away = yes
@@ -159,6 +164,7 @@
 		hide_layers = { 33 = {} }
 		hide_layers = { 39 = { } }
 	}
+
 	14 = { # Armour C
 		factor = 99
 		trigger = {
@@ -178,6 +184,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 				AND = {
 					is_warrior = yes
 					is_away = yes
@@ -212,12 +219,15 @@
 		hide_layers = { 33 = {} }
 		hide_layers = { 39 = { } }
 	}
+
 	15 = { # Sneak A
 		factor = 0
 	}
+
 	16 = { # Sneak B
 		factor = 0
 	}
+
 	17 = { # Mage A
 		factor = 99
 		trigger = {
@@ -244,6 +254,7 @@
 		hide_layers = { 33 = {} }
 		hide_layers = { 39 = { } }
 	}
+
 	18 = { # Mage B
 		factor = 99
 		trigger = {
@@ -270,6 +281,7 @@
 		hide_layers = { 33 = {} }
 		hide_layers = { 39 = { } }
 	}
+
 	19 = { # Monk
 		factor = 50
 		trigger = {
@@ -288,7 +300,6 @@
 				in_battle = yes
 				in_siege = yes
 				has_job_title = job_marshal
-				death_reason = death_battle
 				AND = {
 					government = order_government
 					in_command = yes
@@ -309,6 +320,7 @@
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
 	}
+
 	20 = { # Priest Divines
 		factor = 100
 		trigger = {
@@ -343,6 +355,7 @@
 		hide_layers = { 33 = {} }
 		hide_layers = { 39 = { } }
 	}
+
 	21 = { # Priest Auriel
 		factor = 100
 		trigger = {
@@ -379,6 +392,7 @@
 		hide_layers = { 33 = {} }
 		hide_layers = { 39 = { } }
 	}
+
 	22 = { # Priest Daedric
 		factor = 100
 		trigger = {
@@ -411,6 +425,7 @@
 		hide_layers = { 33 = {} }
 		hide_layers = { 39 = { } }
 	}
+
 	23 = { # Priest Dragons
 		factor = 100
 		trigger = {

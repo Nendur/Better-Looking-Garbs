@@ -28,6 +28,7 @@
 			}
 			OR = {
 				is_married = yes
+				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age  = 40
 				trait = chaste

@@ -86,7 +86,7 @@
 	6 = { # African Scepter
 		factor = 100
 		trigger = {
-			#in_command = no
+			in_command = no
 			any_artifact = {
 				OR = {
 					has_artifact_flag = totem
@@ -228,18 +228,23 @@
 	}
 
 	13 = { # Lance
-		factor = 25
+		factor = 99
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
-			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
+			}
 			any_artifact = {
 				OR = {
 					has_artifact_flag = lance
 					has_artifact_flag = spear
 				}
+				has_artifact_flag = combat_weapon
 				quality >= 3
 				is_artifact_equipped = yes
 			}
@@ -247,20 +252,28 @@
 	}
 
 	14 = { # Lance
-		factor = 25
+		factor = 99
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
-			any_artifact = {
-				OR = {
-					has_artifact_flag = lance
-					has_artifact_flag = spear
+			OR = {
+				has_character_flag = weapon_is_spear
+				AND = {
+					any_artifact = {
+						OR = {
+							has_artifact_flag = lance
+							has_artifact_flag = spear
+						}
+						has_artifact_flag = combat_weapon
+						quality < 3
+						is_artifact_equipped = yes
+					}
+					NOT = { has_character_flag = mock_duel }
 				}
-				quality < 3
-				is_artifact_equipped = yes
 			}
 		}
 	}
@@ -271,8 +284,12 @@
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
-			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
+			}
 			any_artifact = {
 				OR = {
 					artifact_type = lance_tier_3_trident
@@ -284,15 +301,20 @@
 	}
 
 	16 = { # Mace
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
-			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
+			}
 			any_artifact = {
 				has_artifact_flag = mace
+				has_artifact_flag = combat_weapon
 				quality >= 3
 				is_artifact_equipped = yes
 			}
@@ -300,18 +322,30 @@
 	}
 
 	17 = { # Mace
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
-			any_artifact = {
-				has_artifact_flag = mace
-				quality < 3
-				is_artifact_equipped = yes
+			OR = {
+				has_character_flag = weapon_is_mace
+				AND = {
+					any_artifact = {
+						has_artifact_flag = mace
+						has_artifact_flag = combat_weapon
+						quality < 3
+						is_artifact_equipped = yes
+					}
+					NOT = { has_character_flag = mock_duel }
+				}
 			}
+		}
+		modifier = {
+			factor = 0.9
+			has_character_flag = weapon_is_mace
 		}
 	}
 

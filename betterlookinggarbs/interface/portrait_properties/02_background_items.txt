@@ -49,10 +49,12 @@
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				has_artifact_flag = sword
@@ -63,15 +65,17 @@
 	}
 
 	5 = { # scimitar
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			OR = {
 				religion_group = muslim
@@ -79,6 +83,7 @@
 			}
 			any_artifact = {
 				has_artifact_flag = sword
+				has_artifact_flag = combat_weapon
 				quality >= 3
 				is_artifact_equipped = yes
 			}
@@ -86,38 +91,52 @@
 	}
 
 	6 = { # scimitar
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
 			}
 			OR = {
-				religion_group = muslim
-				has_dharmic_religion_trigger = yes
+				has_character_flag = weapon_is_scimitar
+				AND = {
+					OR = {
+						religion_group = muslim
+						has_dharmic_religion_trigger = yes
+					}
+					any_artifact = {
+						has_artifact_flag = sword
+						has_artifact_flag = combat_weapon
+						quality < 3
+						is_artifact_equipped = yes
+					}
+					NOT = { has_character_flag = mock_duel }
+				}
 			}
-			any_artifact = {
-				has_artifact_flag = sword
-				quality < 3
-				is_artifact_equipped = yes
-			}
+		}
+		modifier = {
+			factor = 0.9
+			has_character_flag = weapon_is_scimitar
 		}
 	}
 
 	7 = { # sword
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			NOR = {
 				religion_group = muslim
@@ -125,6 +144,7 @@
 			}
 			any_artifact = {
 				has_artifact_flag = sword
+				has_artifact_flag = combat_weapon
 				NOT = { has_artifact_flag = jewelry }
 				quality >= 3
 				is_artifact_equipped = yes
@@ -133,45 +153,59 @@
 	}
 
 	8 = { # sword
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
 			}
-			NOR = {
-				religion_group = muslim
-				has_dharmic_religion_trigger = yes
+			OR = {
+				has_character_flag = weapon_is_sword
+				AND = {
+					NOR = {
+						religion_group = muslim
+						has_dharmic_religion_trigger = yes
+					}
+					any_artifact = {
+						has_artifact_flag = sword
+						has_artifact_flag = combat_weapon
+						quality < 3
+						is_artifact_equipped = yes
+					}
+					NOT = { has_character_flag = mock_duel }
+				}
 			}
-			any_artifact = {
-				has_artifact_flag = sword
-				NOT = { has_artifact_flag = jewelry }
-				quality < 3
-				is_artifact_equipped = yes
-			}
+		}
+		modifier = {
+			factor = 0.9
+			has_character_flag = weapon_is_sword
 		}
 	}
 
 	9 = { # +2 Axe
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				OR = {
 					artifact_type = loot_axe
 					AND = {
 						has_artifact_flag = axe
+						has_artifact_flag = combat_weapon
 						quality >= 5
 					}
 				}
@@ -181,18 +215,21 @@
 	}
 
 	10 = { # axe
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				has_artifact_flag = axe
+				has_artifact_flag = combat_weapon
 				quality < 5
 				quality >= 3
 				is_artifact_equipped = yes
@@ -201,37 +238,52 @@
 	}
 
 	11 = { # axe
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
 			}
-			any_artifact = {
-				has_artifact_flag = axe
-				quality < 3
-				is_artifact_equipped = yes
+			OR = {
+				has_character_flag = weapon_is_axe
+				AND = {
+					any_artifact = {
+						has_artifact_flag = axe
+						has_artifact_flag = combat_weapon
+						quality < 3
+						is_artifact_equipped = yes
+					}
+					NOT = { has_character_flag = mock_duel }
+				}
 			}
+		}
+		modifier = {
+			factor = 0.9
+			has_character_flag = weapon_is_axe
 		}
 	}
 
 	12 = { # bow
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				has_artifact_flag = bow
+				has_artifact_flag = combat_weapon
 				quality >= 3
 				is_artifact_equipped = yes
 			}
@@ -239,18 +291,21 @@
 	}
 
 	13 = { # bow
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				has_artifact_flag = bow
+				has_artifact_flag = combat_weapon
 				quality < 3
 				is_artifact_equipped = yes
 			}

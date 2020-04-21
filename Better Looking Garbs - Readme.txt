@@ -36,13 +36,12 @@ Installation:
 
 1. Extract the downloaded mod or subscribe to the workshop version.
 
-2a. If using the modular workshop version, open Documents/Paradox Interactive/Crusader Kings II/mod/betterlookinggarbs.zip and extract betterlookinggarbsinstall.exe (Windows) or betterlookinggarbsinstall.sh (Linux/Mac)
-	Windows: Run betterlookinggarbsinstall.exe
-	Linux: Open a terminal and type cd "~/.paradoxinteractive/Crusader Kings II/mod" && bash betterlookinggarbsinstall.sh
-	MacOS: Open a terminal and type cd "~/Documents/Paradox Interactive/Crusader Kings II/mod" && bash betterlookinggarbsinstall.sh
-The installer will selectively add DLC dependent files and compatibility add-ons to the mod based on your installation.
+2. If using the modular workshop version, open Documents/Paradox Interactive/Crusader Kings II/mod/betterlookinggarbs.zip and extract betterlookinggarbsinstall.exe (Windows) or betterlookinggarbsinstall.sh (Linux/Mac)
 
-2b. If using the full workshop version, open Documents/Paradox Interactive/Crusader Kings II/mod/betterlookinggarbsfull.zip and extract betterlookinggarbsfull.mod.
+3. Windows: Run betterlookinggarbsinstall.exe
+   Linux: Open a terminal and type cd "~/.paradoxinteractive/Crusader Kings II/mod" && bash betterlookinggarbsinstall.sh
+   MacOS: Open a terminal and type cd "~/Documents/Paradox Interactive/Crusader Kings II/mod" && bash betterlookinggarbsinstall.sh
+The installer will selectively add DLC dependent files and compatibility add-ons to the mod based on your installation.
 
 4. Repeat the installation when the mod is updated to a newer version.
 
@@ -79,7 +78,7 @@ Pnutmaster - Better Looking Garbs originator
 Shaytana - Better Looking Characters
 Cybrxkhan - many Cultures and Portraits Revamp inclusions
 Crackdtoothgrins - Steppe and religious portraits
-A Game of Thrones Team - Western clothing and beards
+A Game of Thrones Team - Various clothing and beards
 Velorian - Modified Mediterranean GFX
 Euroland - Scarred mod
 AnaxXiphos - Alternate Portraits for Mongol Children

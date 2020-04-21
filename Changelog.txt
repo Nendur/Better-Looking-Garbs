@@ -1,17 +1,18 @@
 Changelog:
 
+  The CoA map frames have been split off into a new mod 'Frames for All' for feature creep management.
   Added game rules:
   - Added rule about wearing helmets.
   - Split traits and diseases.
   - Primary parent always determines child ethnicity option.
   - Post mortem disease and wound effects option.
   - No makeup from traits option.
-  Use the HRE eagle shield for Byzantine and Roman empires.
-  Use a small empire shield for the Papal State.
   Improvements to African unit pack.
-  More transparent makeup for a subtler look.
+  Transparent makeup for a subtler look.
   Added blush to attractive men.
   New Muslim satanist society clothing.
+  Equip weapons and armour during duels.
+  Support for non-artifact weapons.
 
 17-03-2020
   Added armour to clothing sets that didn't have it.

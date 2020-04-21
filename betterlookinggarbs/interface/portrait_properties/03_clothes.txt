@@ -337,10 +337,11 @@
 				in_battle = yes
 				in_siege = yes
 				death_reason = death_battle
-				#death_reason = death_duel
+				death_reason = death_duel
 				employer = { government = order_government }
 				employer = { mercenary = yes }
 				trait = shieldmaiden
+				has_character_flag = add_duel_xp
 				blg_soldier = yes
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 11 } }
@@ -379,10 +380,11 @@
 				in_siege = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
-				#death_reason = death_duel
+				death_reason = death_duel
 				employer = { government = order_government }
 				employer = { mercenary = yes }
 				has_landed_title = e_china_west_governor
+				has_character_flag = add_duel_xp
 			}
 			NAND = {
 				is_merchant_republic = yes
@@ -450,10 +452,11 @@
 				in_siege = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
-				#death_reason = death_duel
+				death_reason = death_duel
 				employer = { government = order_government }
 				employer = { mercenary = yes }
 				has_landed_title = e_china_west_governor
+				has_character_flag = add_duel_xp
 			}
 			NAND = {
 				is_merchant_republic = yes
@@ -529,10 +532,11 @@
 						in_siege = yes
 						has_job_title = job_marshal
 						death_reason = death_battle
-						#death_reason = death_duel
+						death_reason = death_duel
 						employer = { government = order_government }
 						employer = { mercenary = yes }
 						has_landed_title = e_china_west_governor
+						has_character_flag = add_duel_xp
 					}
 				}
 				AND = {

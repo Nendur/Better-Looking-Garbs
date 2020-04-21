@@ -718,6 +718,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 
 				AND = {
 					is_warrior = yes
@@ -851,6 +852,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -991,6 +993,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -1125,6 +1128,7 @@
 						}
 						in_battle = yes
 						in_siege = yes
+						has_character_flag = add_duel_xp
 						AND = {
 							has_game_rule = { name = blg_helmet value = on }
 							OR = {
@@ -1205,6 +1209,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {

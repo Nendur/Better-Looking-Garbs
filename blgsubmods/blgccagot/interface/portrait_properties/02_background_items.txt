@@ -16,6 +16,7 @@
 			is_alive = no
 		}
 	}
+
 	1 = { # Iron Throne
 		factor = 1
 		trigger = {
@@ -27,6 +28,7 @@
 		}
 		hide_layers = { 38 = {} }
 	}
+
 	2 = { # The Wall
 		factor = 5
 		trigger = {
@@ -37,6 +39,7 @@
 			trait = nightswatch
 		}
 	}
+
 	3 = { # Godswood
 		factor = 0.1
 		trigger = {
@@ -55,6 +58,7 @@
 			}
 		}
 	}
+
 	4 = { # golden sword
 		factor = 100
 		#modifier = {
@@ -69,60 +73,70 @@
 			}
 		}
 	}
+
 	5 = { # scimitar
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
-			#culture = dothraki
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
-				#OR = {
-				#	has_artifact_flag = sword
 				has_artifact_flag = arakh
-				#}
 				quality >= 3
 				is_artifact_equipped = yes
 			}
 		}
 	}
+
 	6 = { # scimitar
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
-			#culture = dothraki
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
 			}
-			any_artifact = {
-				#OR = {
-				#	has_artifact_flag = sword
-				has_artifact_flag = arakh
-				#}
-				quality < 3
-				is_artifact_equipped = yes
+			OR = {
+				has_character_flag = weapon_is_scimitar
+				AND = {
+					any_artifact = {
+						has_artifact_flag = arakh
+						quality < 3
+						is_artifact_equipped = yes
+					}
+					NOT = { has_character_flag = mock_duel }
+				}
 			}
 		}
+		modifier = {
+			factor = 0.9
+			has_character_flag = weapon_is_scimitar
+		}
 	}
+
 	7 = { # valyrian sword
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				has_artifact_flag = valyrian_steel
@@ -131,41 +145,56 @@
 			}
 		}
 	}
+
 	8 = { # sword
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
-			#NOT = { culture = dothraki }
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
 			}
-			any_artifact = {
-				has_artifact_flag = sword
-				NOT = { has_artifact_flag = valyrian_steel }
-				is_artifact_equipped = yes
+			OR = {
+				has_character_flag = weapon_is_sword
+				AND = {
+					any_artifact = {
+						has_artifact_flag = sword
+						has_artifact_flag = combat_weapon
+						is_artifact_equipped = yes
+					}
+					NOT = { has_character_flag = mock_duel }
+				}
 			}
 		}
+		modifier = {
+			factor = 0.9
+			has_character_flag = weapon_is_sword
+		}
 	}
+
 	9 = { # +2 Axe
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				OR = {
 					artifact_type = loot_axe
 					AND = {
 						has_artifact_flag = axe
+						has_artifact_flag = combat_weapon
 						quality >= 5
 					}
 				}
@@ -173,79 +202,105 @@
 			}
 		}
 	}
+
 	10 = { # axe
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				has_artifact_flag = axe
+				has_artifact_flag = combat_weapon
 				quality < 5
 				quality >= 3
 				is_artifact_equipped = yes
 			}
 		}
 	}
+
 	11 = { # axe
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
 			}
-			any_artifact = {
-				has_artifact_flag = axe
-				quality < 3
-				is_artifact_equipped = yes
+			OR = {
+				has_character_flag = weapon_is_axe
+				AND = {
+					any_artifact = {
+						has_artifact_flag = axe
+						has_artifact_flag = combat_weapon
+						quality < 3
+						is_artifact_equipped = yes
+					}
+					NOT = { has_character_flag = mock_duel }
+				}
 			}
 		}
+		modifier = {
+			factor = 0.9
+			has_character_flag = weapon_is_axe
+		}
 	}
+
 	12 = { # bow
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				has_artifact_flag = bow
+				has_artifact_flag = combat_weapon
 				quality >= 3
 				is_artifact_equipped = yes
 			}
 		}
 	}
+
 	13 = { # bow
-		factor = 25
+		factor = 100
 		trigger = {
 			OR = {
 				in_command = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				has_artifact_flag = bow
+				has_artifact_flag = combat_weapon
 				quality < 3
 				is_artifact_equipped = yes
 			}
 		}
 	}
+
 	14 = { # dog
 		factor = 50
 		trigger = {
@@ -258,6 +313,7 @@
 			has_character_modifier = pet_hunting_dog
 		}
 	}
+
 	15 = { # cat
 		factor = 50
 		trigger = {
@@ -270,6 +326,7 @@
 			has_character_modifier = pet_cat
 		}
 	}
+
 	16 = { # owl
 		factor = 50
 		trigger = {
@@ -282,6 +339,7 @@
 			has_character_modifier = pet_owl
 		}
 	}
+
 	17 = { # horse
 		factor = 50
 		trigger = {
@@ -294,6 +352,7 @@
 			has_character_modifier = nomad_warhorse
 		}
 	}
+
 	18 = { # parrot
 		factor = 50
 		trigger = {
@@ -306,6 +365,7 @@
 			has_character_modifier = pet_parrot
 		}
 	}
+
 	19 = { # rat
 		factor = 50
 		trigger = {

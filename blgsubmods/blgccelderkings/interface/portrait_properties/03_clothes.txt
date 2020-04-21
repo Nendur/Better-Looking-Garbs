@@ -332,8 +332,9 @@
 				has_job_title = job_marshal
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 				death_reason = death_battle
-				#death_reason = death_duel
+				death_reason = death_duel
 				#employer = { mercenary = yes }
 				employer = { government = order_government }
 				
@@ -379,8 +380,9 @@
 				in_battle = yes
 				in_siege = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 				death_reason = death_battle
-				#death_reason = death_duel
+				death_reason = death_duel
 				#employer = { mercenary = yes }
 				employer = { government = order_government }
 				AND = {
@@ -466,8 +468,9 @@
 				in_battle = yes
 				in_siege = yes
 				has_job_title = job_marshal
+				has_character_flag = add_duel_xp
 				death_reason = death_battle
-				#death_reason = death_duel
+				death_reason = death_duel
 				#employer = { mercenary = yes }
 				employer = { government = order_government }
 				AND = {
@@ -576,7 +579,9 @@
 						in_battle = yes
 						in_siege = yes
 						has_job_title = job_marshal
+						has_character_flag = add_duel_xp
 						death_reason = death_battle
+						death_reason = death_duel
 						#employer = { mercenary = yes }
 						employer = { government = order_government }
 						AND = {

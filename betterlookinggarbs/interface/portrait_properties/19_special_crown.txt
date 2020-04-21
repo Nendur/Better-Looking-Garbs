@@ -5,8 +5,10 @@
 		modifier = {
 			factor = 100
 			in_command = yes
-			is_priest = no
-			NOT = { blg_priest = yes }
+			NOR = {
+				is_priest = yes
+				blg_priest = yes
+			}
 			OR = {
 				war = yes
 				liege = { war = yes }

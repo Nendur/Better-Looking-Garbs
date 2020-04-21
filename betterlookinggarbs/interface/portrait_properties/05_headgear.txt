@@ -940,6 +940,7 @@
 			factor = 2
 			is_female = yes
 			is_married = no
+			is_consort = no
 			OR = {
 				culture_group = west_slavic
 				culture_group = south_slavic
@@ -967,9 +968,10 @@
 				culture = occitan
 				blg_french = yes
 			}
-			OR = {
-				is_married = no
-				NOT = { age = 40 }
+			NOR = {
+				is_married = yes
+				is_consort = yes
+				age = 40
 				#has_portrait_property = { layer = 32 index = 0 }
 			}
 		}
@@ -1110,9 +1112,10 @@
 				culture = occitan
 				blg_french = yes
 			}
-			OR = {
-				is_married = no
-				NOT = { age = 40 }
+			NOR = {
+				is_married = yes
+				is_consort = yes
+				age = 40
 				#has_portrait_property = { layer = 32 index = 0 }
 			}
 		}
@@ -1214,9 +1217,10 @@
 				culture = occitan
 				blg_french = yes
 			}
-			OR = {
-				is_married = no
-				NOT = { age = 40 }
+			NOR = {
+				is_married = yes
+				is_consort = yes
+				age = 40
 				#has_portrait_property = { layer = 32 index = 0 }
 			}
 		}
@@ -1301,7 +1305,10 @@
 		modifier = {
 			factor = 0
 			is_female = yes
-			is_married = yes
+			OR = {
+				is_married = yes
+				is_consort = yes
+			}
 			OR = {
 				culture_group = west_slavic
 				culture_group = south_slavic
@@ -1312,6 +1319,7 @@
 			factor = 2
 			is_female = yes
 			is_married = no
+			is_consort = no
 			OR = {
 				culture_group = west_slavic
 				culture_group = south_slavic
@@ -1338,10 +1346,10 @@
 				culture = occitan
 				blg_french = yes
 			}
-			OR = {
-				is_married = no
-				NOT = { age = 40 }
-				#has_portrait_property = { layer = 32 index = 0 }
+			NOR = {
+				is_married = yes
+				is_consort = yes
+				age = 40
 			}
 		}
 		modifier = {
@@ -1446,6 +1454,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 				has_character_flag = rtp_temporary_soldier
 				has_character_flag = rtp_temporary_mercenary
 				has_character_flag = rtp_temporary_crusader
@@ -1541,6 +1550,7 @@
 			is_female = yes
 			OR = {
 				is_married = yes
+				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age = 40
 				trait = chaste
@@ -1588,6 +1598,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 				has_landed_title = e_china_west_governor
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
@@ -1743,6 +1754,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				has_character_flag = add_duel_xp
 				has_landed_title = e_china_west_governor
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
@@ -1833,6 +1845,7 @@
 						}
 						in_battle = yes
 						in_siege = yes
+						has_character_flag = add_duel_xp
 						has_landed_title = e_china_west_governor
 						AND = {
 							has_game_rule = { name = blg_helmet value = on }

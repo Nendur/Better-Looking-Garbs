@@ -834,6 +834,10 @@
 			factor = 0
 			is_away = yes
 		}
+		modifier = {
+			factor = 100
+			has_character_flag = add_duel_xp
+		}
 		hide_layers = { 38 = {} }
 	}
 
