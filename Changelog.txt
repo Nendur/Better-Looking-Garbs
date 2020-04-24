@@ -1,5 +1,6 @@
 Changelog:
 
+24-04-2020
   The CoA map frames have been split off into a new mod 'Frames for All' for feature creep management.
   Added game rules:
   - Added rule about wearing helmets.

@@ -922,10 +922,10 @@ spriteTypes = {
 					portrait_society_rank = 2
 				}
 				2 = {
-					portrait_society_rank = 3
+					portrait_society_rank = 4
 				}
 				3 = {
-					portrait_society_rank = 4
+					portrait_society_rank = 3
 				}
 			}
 			5 = {
@@ -1006,10 +1006,10 @@ spriteTypes = {
 					portrait_society_rank = 2
 				}
 				2 = {
-					portrait_society_rank = 3
+					portrait_society_rank = 4
 				}
 				3 = {
-					portrait_society_rank = 4
+					portrait_society_rank = 3
 				}
 			}
 			5 = {
