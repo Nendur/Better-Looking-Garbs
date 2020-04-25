@@ -87,3 +87,4 @@ rein005 - Chinese Portraits
 Huanglukuzhu, xyq661973 & zerosakikamisiki - Horse Lords Remake+New Mongolian/Khitan/Han Portraits
 Silfae - Roman clothing
 Norse hair and beards - Proper Northmen
+Real Gjermundbu and Coppergate Helmets - Erilaz

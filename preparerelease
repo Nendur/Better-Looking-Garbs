@@ -18,4 +18,4 @@ cp Changelog.txt ../betterlookinggarbs
 cp betterlookinggarbsinstall.exe ../betterlookinggarbs
 cp betterlookinggarbsinstall.sh ../betterlookinggarbs
 
-cp -f workshop/* ..
+cp -fr workshop/* ..

@@ -92,7 +92,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 }
 	}
 
 	portraitType = {
@@ -181,7 +181,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 }
 	}
 
 	portraitType = {
@@ -270,7 +270,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 }
 	}
 
 ### Saxon female ####
@@ -367,7 +367,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = { }
+		headgear_that_hides_hair = { 10 }
 	}
 
 	portraitType = {
@@ -458,7 +458,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = { }
+		headgear_that_hides_hair = { 10 }
 	}
 
 	portraitType = {
@@ -549,7 +549,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = { }
+		headgear_that_hides_hair = { 10 }
 	}
 
 ### Saxon male ####
@@ -644,7 +644,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 }
 	}
 
 	portraitType = {
@@ -733,7 +733,7 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 }
 	}
 
 	portraitType = {
@@ -822,6 +822,6 @@ spriteTypes = {
 			{ 45 100 37 } #Green
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 }
 	}
 }

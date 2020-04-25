@@ -27,7 +27,7 @@ spriteTypes = {
 			"GFX_helmet_northern:c4"
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 }
 	}
 
 	portraitType = {
@@ -57,6 +57,6 @@ spriteTypes = {
 			"GFX_helmet_northern:c4"
 		}
 
-		headgear_that_hides_hair = {}
+		headgear_that_hides_hair = { 10 }
 	}
 }
