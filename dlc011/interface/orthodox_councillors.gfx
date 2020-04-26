@@ -1,7 +1,5 @@
-objectTypes = {
-
 # Add councillor models from Legacy of Rome to all Eastern cultures.
-# Remove this file if lacking the DLC.
+objectTypes = {
 
 # Byzantine
 	EMFXActorType = {
@@ -9,7 +7,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Eastern_Chancellor.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Chancellor.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -17,7 +15,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Eastern_Steward.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Steward.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -25,7 +23,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Eastern_Spymaster.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Spymaster.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -33,14 +31,15 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Eastern_Marshal.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Marshal.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
+
 	EMFXActorType = {
 		name = "orthodox_dlc_job_spiritual"
 		actorfile = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 # Eastern European
@@ -49,7 +48,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Eastern_Chancellor.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Chancellor.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -57,7 +56,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Eastern_Steward.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Steward.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -65,16 +64,16 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
-# Western core
+# Western
 	EMFXActorType = {
 		name = "westerngfx_job_marshal"
 		actorfile = "gfx\models\Mapindicators\Eastern_Marshal.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Marshal.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -82,7 +81,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Eastern_Marshal.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Marshal.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -90,6 +89,6 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Eastern_Spymaster.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Spymaster.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 }

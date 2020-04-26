@@ -6,7 +6,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Muslim_Chancellor.xac"
 
 		idle   = "gfx\models\Mapindicators\Western_Chancellor_Idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -14,7 +14,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Muslim_Steward.xac"
 
 		idle   = "gfx\models\Mapindicators\Western_treasurer_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -22,7 +22,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Muslim_Spymaster.xac"
 
 		idle   = "gfx\models\Mapindicators\Muslim_Spymaster_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -30,7 +30,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Muslim_Mullah.xac"
 
 		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -38,7 +38,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Muslim_Marshal.xac"
 
 		idle   = "gfx\models\Mapindicators\Western_Marshal_Idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -46,6 +46,6 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\Muslim_Spymaster.xac"
 
 		idle   = "gfx\models\Mapindicators\Muslim_Spymaster_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 }

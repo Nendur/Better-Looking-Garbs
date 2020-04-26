@@ -4,62 +4,62 @@ objectTypes = {
 		name = "norsegfx_job_spiritual"
 		actorfile = "gfx\models\holy_order_jomsviking.xac"
 		idle   = "gfx\models\Mapindicators\Western_Chancellor_Idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "pagangfx_job_spiritual"
 		actorfile = "gfx\models\holy_order_jomsviking.xac"
 		idle   = "gfx\models\Mapindicators\Western_Chancellor_Idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "mongolgfx_job_spiritual"
 		actorfile = "gfx\models\holy_order_jomsviking.xac"
 		idle   = "gfx\models\Mapindicators\Western_Chancellor_Idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "norsegfx_job_spiritual_female"
 		actorfile = "gfx\models\Mapindicators\Norse_LordSpiritual.xac"
 		idle   = "gfx\models\Mapindicators\Norse_LordSpiritual_Idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "pagangfx_job_spiritual_female"
 		actorfile = "gfx\models\Mapindicators\Norse_LordSpiritual.xac"
 		idle   = "gfx\models\Mapindicators\Norse_LordSpiritual_Idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "mongolgfx_job_spiritual_female"
 		actorfile = "gfx\models\Mapindicators\Norse_LordSpiritual.xac"
 		idle   = "gfx\models\Mapindicators\Norse_LordSpiritual_Idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "easterngfx_job_spymaster"
 		actorfile = "gfx\models\Mapindicators\Norse_Spymaster.xac"
 		idle   = "gfx\models\Mapindicators\Norse_Spymaster_Idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "persiangfx_job_spiritual"
 		actorfile = "gfx\models\Mapindicators\misc_priest.xac"
 		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "hellenicgfx_job_spiritual"
 		actorfile = "gfx\models\Mapindicators\misc_priest.xac"
 		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 }

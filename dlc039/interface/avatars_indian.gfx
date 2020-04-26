@@ -7,15 +7,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\indian_chancellor.xac"
 
 		idle   = "gfx\models\Mapindicators\indian_chancellor_idle.xsm"
-		scale = 1.0f
-	}
-
-	EMFXActorType = {
-		name = "hindugfx_job_spiritual"
-		actorfile = "gfx\models\Mapindicators\priest_hindu.xac"
-
-		idle   = "gfx\models\Mapindicators\indian_chancellor_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -23,7 +15,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\indian_steward.xac"
 
 		idle   = "gfx\models\Mapindicators\indian_steward_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -31,23 +23,7 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\indian_spymaster.xac"
 
 		idle   = "gfx\models\Mapindicators\indian_spymaster_idle.xsm"
-		scale = 1.0f
-	}
-
-	EMFXActorType = {
-		name = "jaingfx_job_spiritual"
-		actorfile = "gfx\models\Mapindicators\priest_jain.xac"
-
-		idle   = "gfx\models\Mapindicators\priest_jain_idle.xsm"
-		scale = 1.0f
-	}
-
-	EMFXActorType = {
-		name = "buddhistgfx_job_spiritual"
-		actorfile = "gfx\models\Mapindicators\priest_buddhist.xac"
-
-		idle   = "gfx\models\Mapindicators\priest_buddhist_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
@@ -55,7 +31,31 @@ objectTypes = {
 		actorfile = "gfx\models\Mapindicators\indian_marshal.xac"
 
 		idle   = "gfx\models\Mapindicators\indian_marshal_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
+		name = "hindugfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\priest_hindu.xac"
+
+		idle   = "gfx\models\Mapindicators\indian_chancellor_idle.xsm"
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
+		name = "jaingfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\priest_jain.xac"
+
+		idle   = "gfx\models\Mapindicators\priest_jain_idle.xsm"
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
+		name = "buddhistgfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\priest_buddhist.xac"
+
+		idle   = "gfx\models\Mapindicators\priest_buddhist_idle.xsm"
+		scale = 0.8f
 	}
 
 # Councillor additions
@@ -64,35 +64,35 @@ objectTypes = {
 		name = "chinesegfx_job_spiritual"
 		actorfile = "gfx\models\Mapindicators\priest_buddhist.xac"
 		idle   = "gfx\models\Mapindicators\priest_buddhist_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "egyptiangfx_job_spiritual"
 		actorfile = "gfx\models\Mapindicators\priest_jain.xac"
 		idle   = "gfx\models\Mapindicators\priest_jain_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "mesoamericangfx_job_chancellor"
 		actorfile = "gfx\models\Mapindicators\indian_chancellor.xac"
 		idle   = "gfx\models\Mapindicators\indian_chancellor_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "mesoamericangfx_job_spymaster"
 		actorfile = "gfx\models\Mapindicators\indian_spymaster.xac"
 		idle   = "gfx\models\Mapindicators\indian_spymaster_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "rhllorgfx_job_spiritual"
 		actorfile = "gfx\models\Mapindicators\priest_buddhist.xac"
 		idle   = "gfx\models\Mapindicators\priest_buddhist_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 # ARCHER

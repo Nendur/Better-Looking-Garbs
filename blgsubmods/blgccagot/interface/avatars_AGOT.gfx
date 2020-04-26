@@ -5,14 +5,14 @@ objectTypes = {
 		name = "westerngfx_job_castellan"
 		actorfile = "gfx\models\Mapindicators\Western_Chancellor.xac"
 		idle   = "gfx\models\Mapindicators\Western_Chancellor_Idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {
 		name = "westerngfx_job_physician"
-		actorfile = "gfx\models\Mapindicators\Western_lord_spiritual.xac"
+		actorfile = "gfx\models\Mapindicators\misc_priest.xac"
 		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
-		scale = 1.0f
+		scale = 0.8f
 	}
 
 	EMFXActorType = {

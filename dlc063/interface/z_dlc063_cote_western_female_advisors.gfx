@@ -5,35 +5,35 @@ objectTypes = {
 		name = "westerngfx_job_chancellor_female"
 		file = "gfx/models/Mapindicators/cote_western_female_chancellor.mesh"
 		animation = { id = "idle"		type = "cote_western_female_chancellor_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 
 	pdxmesh = {
 		name = "westerngfx_job_treasurer_female"
 		file = "gfx/models/Mapindicators/cote_western_female_stewardess.mesh"
 		animation = { id = "idle"		type = "cote_western_female_stewardess_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 
 	pdxmesh = {
 		name = "westerngfx_job_spymaster_female"
 		file = "gfx/models/Mapindicators/cote_western_female_spymaster.mesh"
 		animation = { id = "idle"		type = "cote_western_female_spymaster_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 
 	pdxmesh = {
 		name = "westerngfx_job_marshal_female"
 		file = "gfx/models/Mapindicators/cote_western_female_marshal.mesh"
 		animation = { id = "idle"		type = "cote_western_female_marshal_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 
 	pdxmesh = {
 		name = "westerngfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/cote_western_female_spiritual.mesh"
 		animation = { id = "idle"		type = "cote_western_female_spiritual_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 
 # Misc
@@ -42,41 +42,41 @@ objectTypes = {
 		name = "southerngfx_job_marshal_female"
 		file = "gfx/models/Mapindicators/cote_western_female_marshal.mesh"
 		animation = { id = "idle"		type = "cote_western_female_marshal_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 
 	pdxmesh = {
 		name = "italiangfx_job_marshal_female"
 		file = "gfx/models/Mapindicators/cote_western_female_marshal.mesh"
 		animation = { id = "idle"		type = "cote_western_female_marshal_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 
 	pdxmesh = {
 		name = "celticgfx_job_chancellor_female"
 		file = "gfx/models/Mapindicators/cote_western_female_chancellor.mesh"
 		animation = { id = "idle"		type = "cote_western_female_chancellor_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 
 	pdxmesh = {
 		name = "celticgfx_job_treasurer_female"
 		file = "gfx/models/Mapindicators/cote_western_female_stewardess.mesh"
 		animation = { id = "idle"		type = "cote_western_female_stewardess_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 
 	pdxmesh = {
 		name = "celticgfx_job_spymaster_female"
 		file = "gfx/models/Mapindicators/cote_western_female_spymaster.mesh"
 		animation = { id = "idle"		type = "cote_western_female_spymaster_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 
 	pdxmesh = {
 		name = "chinesegfx_job_treasurer"
 		file = "gfx/models/Mapindicators/cote_mongol_steward.mesh"
 		animation = { id = "idle"		type = "cote_mongol_steward_idle_animation" }
-		scale = 1.0
+		scale = 0.8
 	}
 }

@@ -1,5 +1,6 @@
 Changelog:
 
+  Reduced councillor sizes.
   Added Erilaz' Gjermundbu and Coppergate helmets.
 
 24-04-2020
