@@ -2,6 +2,8 @@ Changelog:
 
   Reduced councillor sizes.
   Added Erilaz' Gjermundbu and Coppergate helmets.
+  Adjust French helmet selection over time.
+  Remove mercenary clothing from fleet captains.
 
 24-04-2020
   The CoA map frames have been split off into a new mod 'Frames for All' for feature creep management.

@@ -328,13 +328,30 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				death_reason = death_battle
 				death_reason = death_duel
 				has_job_title = job_marshal
-				employer = { mercenary = yes }
 				employer = { government = order_government }
 				employer = { government = military_command_government }
+				employer = {
+					mercenary = yes
+					primary_title = {
+						NOR = {
+							title = d_merc_fleet_1
+							title = d_merc_fleet_2
+							title = d_merc_fleet_3
+							title = d_merc_fleet_4
+							title = d_merc_fleet_5
+							title = d_merc_fleet_6
+							title = d_merc_fleet_7
+							title = d_merc_fleet_8
+							title = d_merc_fleet_9
+							title = d_merc_fleet_10
+						}
+					}
+				}
 				AND = {
 					trait = undead
 					combat_rating = 10
@@ -421,6 +438,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				death_reason = death_battle
 				death_reason = death_duel
@@ -451,6 +469,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				death_reason = death_battle
 				death_reason = death_duel
@@ -600,6 +619,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				death_reason = death_battle
 				death_reason = death_duel

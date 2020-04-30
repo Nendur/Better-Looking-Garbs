@@ -19,6 +19,7 @@
 						AND = { in_command = yes war = yes }
 						in_battle = yes
 						in_siege = yes
+						is_looting = yes
 					}
 					NOR = {
 						has_game_rule = { name = martial_headgear value = off }
@@ -718,6 +719,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 
 				AND = {
@@ -852,6 +854,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
@@ -993,6 +996,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
@@ -1128,6 +1132,7 @@
 						}
 						in_battle = yes
 						in_siege = yes
+						is_looting = yes
 						has_character_flag = add_duel_xp
 						AND = {
 							has_game_rule = { name = blg_helmet value = on }
@@ -1209,6 +1214,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }

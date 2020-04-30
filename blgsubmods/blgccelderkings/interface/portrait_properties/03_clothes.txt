@@ -332,6 +332,7 @@
 				has_job_title = job_marshal
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				death_reason = death_battle
 				death_reason = death_duel
@@ -379,6 +380,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_job_title = job_marshal
 				has_character_flag = add_duel_xp
 				death_reason = death_battle
@@ -467,6 +469,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_job_title = job_marshal
 				has_character_flag = add_duel_xp
 				death_reason = death_battle
@@ -578,6 +581,7 @@
 						}
 						in_battle = yes
 						in_siege = yes
+						is_looting = yes
 						has_job_title = job_marshal
 						has_character_flag = add_duel_xp
 						death_reason = death_battle

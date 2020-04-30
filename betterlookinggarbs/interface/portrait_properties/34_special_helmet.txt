@@ -63,6 +63,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 			}
 			NOR = {
 				has_game_rule = { name = martial_headgear value = off }
@@ -106,6 +107,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 			}
 			NOR = {
 				has_game_rule = { name = martial_headgear value = off }
@@ -213,6 +215,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 			}
 			NOR = {
 				has_game_rule = { name = martial_headgear value = off }
@@ -289,6 +292,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 			}
 			NOR = {
 				has_game_rule = { name = martial_headgear value = off }

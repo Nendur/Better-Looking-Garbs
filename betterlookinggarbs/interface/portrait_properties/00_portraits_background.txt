@@ -275,6 +275,7 @@
 		}
 		modifier = {
 			factor = 20
+			in_command = yes
 			OR = {
 				war = yes
 				liege = { war = yes }
@@ -470,6 +471,21 @@
 				is_patrician = yes
 				location = { has_trade_post = yes port = yes }
 				this_is_sea_raider_trigger = yes
+				employer = {
+					mercenary = yes
+					primary_title = {
+						OR = {
+							title = d_venetian_navy
+							title = d_genoese_navy
+							title = d_hanseatic_navy
+							title = d_frisian_navy
+							title = d_maghreb_corsairs
+							title = d_han_junks
+							title = d_jurchen_corsairs
+							title = d_treasure_fleet
+						}
+					}
+				}
 			}
 		}
 		modifier = {
@@ -478,6 +494,21 @@
 				is_at_sea = yes
 				trait = seaking
 				trait = sea_queen
+				employer = {
+					mercenary = yes
+					primary_title = {
+						OR = {
+							title = d_venetian_navy
+							title = d_genoese_navy
+							title = d_hanseatic_navy
+							title = d_frisian_navy
+							title = d_maghreb_corsairs
+							title = d_han_junks
+							title = d_jurchen_corsairs
+							title = d_treasure_fleet
+						}
+					}
+				}
 			}
 		}
 		modifier = {

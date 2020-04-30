@@ -32,6 +32,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 			}
 			has_game_rule = {
 				name = martial_headgear
@@ -65,6 +66,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 			}
 			has_game_rule = {
 				name = martial_headgear
@@ -102,6 +104,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 			}
 			has_game_rule = {
 				name = martial_headgear
@@ -137,6 +140,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 			}
 			has_game_rule = {
 				name = martial_headgear

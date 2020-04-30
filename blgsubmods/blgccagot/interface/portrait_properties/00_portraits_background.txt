@@ -236,6 +236,7 @@
 		}
 		modifier = {
 			factor = 20
+			in_command = yes
 			OR = {
 				war = yes
 				liege = { war = yes }
@@ -396,6 +397,23 @@
 				location = { has_trade_post = yes port = yes }
 				trait = seaking
 				trait = sea_queen
+				employer = {
+					mercenary = yes
+					primary_title = {
+						OR = {
+							title = d_merc_fleet_1
+							title = d_merc_fleet_2
+							title = d_merc_fleet_3
+							title = d_merc_fleet_4
+							title = d_merc_fleet_5
+							title = d_merc_fleet_6
+							title = d_merc_fleet_7
+							title = d_merc_fleet_8
+							title = d_merc_fleet_9
+							title = d_merc_fleet_10
+						}
+					}
+				}
 			}
 		}
 		modifier = {
@@ -404,6 +422,23 @@
 				is_at_sea = yes
 				trait = seaking
 				trait = sea_queen
+				employer = {
+					mercenary = yes
+					primary_title = {
+						OR = {
+							title = d_merc_fleet_1
+							title = d_merc_fleet_2
+							title = d_merc_fleet_3
+							title = d_merc_fleet_4
+							title = d_merc_fleet_5
+							title = d_merc_fleet_6
+							title = d_merc_fleet_7
+							title = d_merc_fleet_8
+							title = d_merc_fleet_9
+							title = d_merc_fleet_10
+						}
+					}
+				}
 			}
 		}
 		modifier = {

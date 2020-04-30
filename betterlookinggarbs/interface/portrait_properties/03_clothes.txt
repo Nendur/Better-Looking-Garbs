@@ -336,10 +336,25 @@
 				has_job_title = job_marshal
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				death_reason = death_battle
 				death_reason = death_duel
 				employer = { government = order_government }
-				employer = { mercenary = yes }
+				employer = {
+					mercenary = yes
+					primary_title = {
+						NOR = {
+							title = d_venetian_navy
+							title = d_genoese_navy
+							title = d_hanseatic_navy
+							title = d_frisian_navy
+							title = d_maghreb_corsairs
+							title = d_han_junks
+							title = d_jurchen_corsairs
+							title = d_treasure_fleet
+						}
+					}
+				}
 				trait = shieldmaiden
 				has_character_flag = add_duel_xp
 				blg_soldier = yes
@@ -378,11 +393,11 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
 				death_reason = death_duel
 				employer = { government = order_government }
-				employer = { mercenary = yes }
 				has_landed_title = e_china_west_governor
 				has_character_flag = add_duel_xp
 			}
@@ -450,11 +465,26 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
 				death_reason = death_duel
 				employer = { government = order_government }
-				employer = { mercenary = yes }
+				employer = {
+					mercenary = yes
+					primary_title = {
+						NOR = {
+							title = d_venetian_navy
+							title = d_genoese_navy
+							title = d_hanseatic_navy
+							title = d_frisian_navy
+							title = d_maghreb_corsairs
+							title = d_han_junks
+							title = d_jurchen_corsairs
+							title = d_treasure_fleet
+						}
+					}
+				}
 				has_landed_title = e_china_west_governor
 				has_character_flag = add_duel_xp
 			}
@@ -530,11 +560,26 @@
 						}
 						in_battle = yes
 						in_siege = yes
+						is_looting = yes
 						has_job_title = job_marshal
 						death_reason = death_battle
 						death_reason = death_duel
 						employer = { government = order_government }
-						employer = { mercenary = yes }
+						employer = {
+							mercenary = yes
+							primary_title = {
+								NOR = {
+									title = d_venetian_navy
+									title = d_genoese_navy
+									title = d_hanseatic_navy
+									title = d_frisian_navy
+									title = d_maghreb_corsairs
+									title = d_han_junks
+									title = d_jurchen_corsairs
+									title = d_treasure_fleet
+								}
+							}
+						}
 						has_landed_title = e_china_west_governor
 						has_character_flag = add_duel_xp
 					}

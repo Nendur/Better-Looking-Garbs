@@ -25,7 +25,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "muslimgfx_HEAVY_INFANTRY_helmet_early"
-		file = "gfx\models\Attachments\muslimgfx_early_helmet_turkish_infantry.mesh"
+		file = "gfx\models\Attachments\muslimgfx_early_helmet_heavy_infantry.mesh"
 		scale = 1.0f
 	}
 
@@ -90,7 +90,7 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "muslimgfx_HEAVY_INFANTRY_helmet_early"
+		name = "levantinegfx_HEAVY_INFANTRY_helmet_early"
 		file = "gfx\models\Attachments\muslimgfx_early_helmet_heavy_infantry.mesh"
 		scale = 1.0f
 	}

@@ -73,6 +73,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					is_warrior = yes
@@ -129,6 +130,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					is_warrior = yes
@@ -184,6 +186,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					is_warrior = yes
@@ -299,6 +302,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_job_title = job_marshal
 				AND = {
 					government = order_government
@@ -340,6 +344,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
 				AND = {
@@ -377,6 +382,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
 				AND = {
@@ -411,6 +417,7 @@
 				}
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
 				AND = {

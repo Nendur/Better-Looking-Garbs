@@ -51,6 +51,7 @@
 	1 = { # Military Helm 01
 		factor = 100
 		trigger = {
+			year_of_birth = 1160
 			OR = {
 				AND = {
 					has_portrait_property = { layer = 5 index = 10 }
@@ -71,9 +72,14 @@
 	2 = { # Military Helm 02
 		factor = 99
 		trigger = {
+			year_of_birth < 1250
 			OR = {
 				AND = {
-					has_portrait_property = { layer = 5 index = 13 }
+					OR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 5 index = 12 }
+						has_portrait_property = { layer = 5 index = 13 }
+					}
 					OR = {
 						culture = frankish
 						culture = occitan
@@ -96,9 +102,14 @@
 	3 = { # Military Helm 03
 		factor = 99
 		trigger = {
+			year_of_birth < 1250
 			OR = {
 				AND = {
-					has_portrait_property = { layer = 5 index = 13 }
+					OR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 5 index = 12 }
+						has_portrait_property = { layer = 5 index = 13 }
+					}
 					OR = {
 						culture = frankish
 						culture = occitan
@@ -121,6 +132,7 @@
 	4 = { # Military Helm 04
 		factor = 99
 		trigger = {
+			year_of_birth = 1160
 			OR = {
 				AND = {
 					OR = {
@@ -199,6 +211,7 @@
 						blg_french = yes
 					}
 				}
+				has_portrait_property = { layer = 5 index = 12 }
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
 			}
 		}
@@ -211,6 +224,10 @@
 				has_portrait_property = { layer = 32 index = 9 } 
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
+		}
+		modifier = {
+			factor = 100
+			has_portrait_property = { layer = 5 index = 12 }
 		}
 		modifier = {
 			factor = 100
@@ -266,6 +283,7 @@
 						spouse = { real_tier = DUKE }
 					}
 				}
+				has_portrait_property = { layer = 5 index = 12 }
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
 			}
 		}
@@ -278,6 +296,10 @@
 				has_portrait_property = { layer = 32 index = 9 } 
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
+		}
+		modifier = {
+			factor = 100
+			has_portrait_property = { layer = 5 index = 12 }
 		}
 		modifier = {
 			factor = 100

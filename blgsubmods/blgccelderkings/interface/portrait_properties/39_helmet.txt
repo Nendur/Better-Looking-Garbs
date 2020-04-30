@@ -19,6 +19,7 @@
 				has_job_title = job_marshal
 				in_battle = yes
 				in_siege = yes
+				is_looting = yes
 				death_reason = death_battle
 				death_reason = death_duel
 				holy_order = yes

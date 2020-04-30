@@ -44,6 +44,7 @@
 	1 = { # Military Helm 01
 		factor = 100
 		trigger = {
+			year_of_birth = 1160
 			OR = {
 				AND = {
 					has_portrait_property = { layer = 5 index = 10 }
@@ -59,9 +60,14 @@
 	2 = { # Military Helm 02
 		factor = 99
 		trigger = {
+			year_of_birth < 1250
 			OR = {
 				AND = {
-					has_portrait_property = { layer = 5 index = 13 }
+					OR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 5 index = 12 }
+						has_portrait_property = { layer = 5 index = 13 }
+					}
 					NOR = { 
 						has_portrait_property = { layer = 31 index = 3 } 
 						has_portrait_property = { layer = 31 index = 4 } 
@@ -79,9 +85,14 @@
 	3 = { # Military Helm 03
 		factor = 99
 		trigger = {
+			year_of_birth < 1250
 			OR = {
 				AND = {
-					has_portrait_property = { layer = 5 index = 13 }
+					OR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 5 index = 12 }
+						has_portrait_property = { layer = 5 index = 13 }
+					}
 					NOR = { 
 						has_portrait_property = { layer = 31 index = 2 } 
 						has_portrait_property = { layer = 31 index = 4 } 
@@ -99,6 +110,7 @@
 	4 = { # Military Helm 04
 		factor = 99
 		trigger = {
+			year_of_birth = 1160
 			OR = {
 				AND = {
 					OR = {
@@ -110,7 +122,6 @@
 						has_portrait_property = { layer = 31 index = 3 } 
 					}
 				}
-				has_portrait_property = { layer = 5 index = 13 }
 				is_variable_equal = { which = ca_overlayer value = 5 } 
 			}
 		}
@@ -333,16 +344,17 @@
 		factor = 1
 		modifier = {
 			factor = 0
-			NOT = {
+			NOR = {
 				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 12 }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 12 } }
 		}
 		modifier = {
 			factor = 0
 			NOR = {
-				real_tier = DUKE
-				spouse = { real_tier = DUKE }
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 12 } }
 		}
@@ -355,6 +367,10 @@
 				has_portrait_property = { layer = 31 index = 14 } 
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 12 } }
+		}
+		modifier = {
+			factor = 100
+			has_portrait_property = { layer = 5 index = 12 }
 		}
 		modifier = {
 			factor = 100
