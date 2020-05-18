@@ -16,11 +16,11 @@
 			factor = 0
 			OR = {
 				AND = {
+					in_command = yes
 					OR = {
-						AND = { in_command = yes war = yes }
+						war = yes
 						in_battle = yes
 						in_siege = yes
-						is_looting = yes
 					}
 					NOR = {
 						has_game_rule = { name = martial_headgear value = off }
@@ -1423,7 +1423,7 @@
 
 	10 = { # Martial headgear
 		factor = 100
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		modifier = {
 			factor = 0
 			OR = {
@@ -1451,11 +1451,10 @@
 						war = yes
 						liege = { war = yes }
 						is_landed = no
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_character_flag = add_duel_xp
 				has_character_flag = rtp_temporary_soldier
 				has_character_flag = rtp_temporary_mercenary
@@ -1588,7 +1587,7 @@
 
 	12 = { # royal war helm
 		factor = 100
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				AND = {
@@ -1596,11 +1595,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_character_flag = add_duel_xp
 				has_landed_title = e_china_west_governor
 				AND = {
@@ -1745,7 +1743,7 @@
 
 	13 = { # ducal war helm
 		factor = 100
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				AND = {
@@ -1753,11 +1751,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_character_flag = add_duel_xp
 				has_landed_title = e_china_west_governor
 				AND = {
@@ -1827,7 +1824,7 @@
 
 	14 = { # Chinese war gear
 		factor = 99
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				AND = {
@@ -1845,11 +1842,10 @@
 							OR = {
 								war = yes
 								liege = { war = yes }
+								in_battle = yes
+								in_siege = yes
 							}
 						}
-						in_battle = yes
-						in_siege = yes
-						is_looting = yes
 						has_character_flag = add_duel_xp
 						has_landed_title = e_china_west_governor
 						AND = {

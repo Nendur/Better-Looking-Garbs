@@ -15,11 +15,11 @@
 			factor = 0
 			OR = {
 				AND = {
+					in_command = yes
 					OR = {
-						AND = { in_command = yes war = yes }
+						war = yes
 						in_battle = yes
 						in_siege = yes
-						is_looting = yes
 					}
 					NOR = {
 						has_game_rule = { name = martial_headgear value = off }
@@ -693,7 +693,7 @@
 
 	10 = { # Martial headgear
 		factor = 99
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		modifier = {
 			factor = 0
 			OR = {
@@ -715,11 +715,10 @@
 						war = yes
 						liege = { war = yes }
 						is_landed = no
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_character_flag = add_duel_xp
 
 				AND = {
@@ -841,7 +840,7 @@
 
 	12 = { # royal war helm / Noble 2
 		factor = 100
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -850,11 +849,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
@@ -983,7 +981,7 @@
 
 	13 = { # ducal war helm / Noble 3
 		factor = 100
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -992,11 +990,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
@@ -1113,7 +1110,7 @@
 
 	14 = { # Chinese war gear / Shady 2
 		factor = 99
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				AND = {
@@ -1128,11 +1125,10 @@
 							OR = {
 								war = yes
 								liege = { war = yes }
+								in_battle = yes
+								in_siege = yes
 							}
 						}
-						in_battle = yes
-						in_siege = yes
-						is_looting = yes
 						has_character_flag = add_duel_xp
 						AND = {
 							has_game_rule = { name = blg_helmet value = on }
@@ -1201,7 +1197,7 @@
 	#Martial 2
 	15 = {
 		factor = 99
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -1210,11 +1206,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }

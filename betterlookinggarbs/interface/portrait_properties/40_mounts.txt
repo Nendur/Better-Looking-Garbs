@@ -1,0 +1,41 @@
+# p40 Mounts
+40 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 100
+			is_at_sea = no
+			NOR = {
+				trait = travelling
+				trait = on_pilgrimage
+				trait = on_hajj
+				trait = on_indian_pilgrimage
+				trait = kow_tow_travels
+				AND = {
+					in_command = yes
+					OR = {
+						war = yes
+						liege = { war = yes }
+						is_landed = no
+						in_battle = yes
+						is_looting = yes
+					}
+				}
+			}
+		}
+	}
+
+	1 = { # Horse
+		factor = 100
+		trigger = {
+			OR = {
+				has_character_modifier = nomad_warhorse
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = horse
+					has_artifact_flag = mount
+				}
+			}
+		}
+	}
+}

@@ -198,17 +198,17 @@
 		factor = 10
 		trigger = {
 			OR = {
+				culture = frankish
+				culture = occitan
+				blg_french = yes
+			}
+			OR = {
 				AND = {
 					NOT = { year_of_birth = 1160 }
 					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = DUKE
 						spouse = { real_tier = DUKE }
-					}
-					OR = {
-						culture = frankish
-						culture = occitan
-						blg_french = yes
 					}
 				}
 				has_portrait_property = { layer = 5 index = 12 }
@@ -283,7 +283,14 @@
 						spouse = { real_tier = DUKE }
 					}
 				}
-				has_portrait_property = { layer = 5 index = 12 }
+				AND = {
+					has_portrait_property = { layer = 5 index = 12 }
+					OR = {
+						culture = frankish
+						culture = occitan
+						blg_french = yes
+					}
+				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
 			}
 		}

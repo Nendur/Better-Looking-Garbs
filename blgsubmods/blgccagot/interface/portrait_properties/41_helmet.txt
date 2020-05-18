@@ -1,5 +1,5 @@
-# p39 Carried Helmet
-39 = {
+# p41 Carried Helmet
+41 = {
 	0 = { # blank
 		factor = 1
 	}
@@ -13,13 +13,12 @@
 						war = yes
 						liege = { war = yes }
 						is_landed = no
+						in_battle = yes
+						in_siege = yes
 						has_game_rule = { name = blg_helmet value = on }
 					}
 				}
 				has_job_title = job_marshal
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				death_reason = death_battle
 				death_reason = death_duel
 				holy_order = yes
@@ -27,19 +26,19 @@
 					mercenary = yes
 					primary_title = {
 						NOR = {
-							title = d_venetian_navy
-							title = d_genoese_navy
-							title = d_hanseatic_navy
-							title = d_frisian_navy
-							title = d_maghreb_corsairs
-							title = d_han_junks
-							title = d_jurchen_corsairs
-							title = d_treasure_fleet
+							title = d_merc_fleet_1
+							title = d_merc_fleet_2
+							title = d_merc_fleet_3
+							title = d_merc_fleet_4
+							title = d_merc_fleet_5
+							title = d_merc_fleet_6
+							title = d_merc_fleet_7
+							title = d_merc_fleet_8
+							title = d_merc_fleet_9
+							title = d_merc_fleet_10
 						}
 					}
 				}
-				trait = shieldmaiden
-				blg_soldier = yes
 			}
 			NOT = { has_game_rule = { name = blg_helmet value = none } }
 		}

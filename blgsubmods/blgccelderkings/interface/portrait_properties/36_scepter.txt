@@ -8,7 +8,19 @@
 		}
 		modifier = {
 			factor = 100
-			has_game_started = no
+			OR = {
+				AND = {
+					in_command = yes
+					OR = {
+						war = yes
+						liege = { war = yes }
+						is_landed = no
+						in_battle = yes
+						in_siege = yes
+					}
+				}
+				has_character_flag = add_duel_xp
+			}
 		}
 	}
 
@@ -31,23 +43,7 @@
 	}
 
 	4 = { # Mjolnir
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			any_artifact = {
-				has_artifact_flag = hammer
-				has_artifact_flag = combat_weapon
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	5 = { # Tablet
@@ -205,125 +201,23 @@
 	}
 
 	13 = { # Lance
-		factor = 99
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			any_artifact = {
-				OR = {
-					has_artifact_flag = lance
-					has_artifact_flag = spear
-				}
-				has_artifact_flag = combat_weapon
-				quality >= 3
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	14 = { # Lance
-		factor = 99
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
-			OR = {
-				has_character_flag = weapon_is_spear
-				AND = {
-					any_artifact = {
-						OR = {
-							has_artifact_flag = lance
-							has_artifact_flag = spear
-						}
-						has_artifact_flag = combat_weapon
-						quality < 3
-						is_artifact_equipped = yes
-					}
-					NOT = { has_character_flag = mock_duel }
-				}
-			}
-		}
+		factor = 0
 	}
 
 	15 = { # Trident
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			any_artifact = {
-				OR = {
-					artifact_type = lance_tier_3_trident
-					artifact_type = lance_tier_4_trident
-				}
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	16 = { # Mace
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			any_artifact = {
-				has_artifact_flag = mace
-				has_artifact_flag = combat_weapon
-				quality >= 3
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	17 = { # Mace
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
-			OR = {
-				has_character_flag = weapon_is_mace
-				AND = {
-					any_artifact = {
-						has_artifact_flag = mace
-						has_artifact_flag = combat_weapon
-						quality < 3
-						is_artifact_equipped = yes
-					}
-					NOT = { has_character_flag = mock_duel }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.9
-			has_character_flag = weapon_is_mace
-		}
+		factor = 0
 	}
 
 	18 = { # Dagger

@@ -81,7 +81,7 @@ spriteTypes = {
 			36 = { # Staff overlap
 				0 = { always = yes }
 			}
-			39 = {
+			41 = {
 				0 = { always = no }
 				1 = { always = no }
 				2 = { always = yes }

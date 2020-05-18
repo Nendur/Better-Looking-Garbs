@@ -18,7 +18,7 @@
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		modifier = {
 			factor = 0
 			OR = {
@@ -46,7 +46,7 @@
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -71,7 +71,7 @@
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		modifier = {
 			factor = 0
 			NOT = { has_character_modifier = the_oubliette }
@@ -93,7 +93,7 @@
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				trait = thuum_1

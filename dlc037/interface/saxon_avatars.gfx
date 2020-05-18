@@ -116,21 +116,21 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
-		name = "saxongfx_LIGHT_CAVALRY_rider"
-		actorfile = "gfx\models\saxon_light_cavalry.xac"
-		idle   = "gfx\models\saxon_light_cavalry_2_idle.xsm"
-		move   = "gfx\models\saxon_light_cavalry_2_moving.xsm"
-		attack = "gfx\models\saxon_light_cavalry_2_attack.xsm"
-		scale = 1.0f
-	}
-
-	EMFXActorType = {
 		name = "saxongfx_LIGHT_CAVALRY"
 		actorfile = "gfx\models\saxon_light_horse.xac"
 		idle   = "gfx\models\saxon_horse_2_idle.xsm"
 		move   = "gfx\models\saxon_horse_2_moving.xsm"
 		attack = "gfx\models\saxon_horse_2_attack.xsm"
 		scale = 0.9f
+	}
+
+	EMFXActorType = {
+		name = "saxongfx_LIGHT_CAVALRY_rider"
+		actorfile = "gfx\models\saxon_light_cavalry.xac"
+		idle   = "gfx\models\saxon_light_cavalry_2_idle.xsm"
+		move   = "gfx\models\saxon_light_cavalry_2_moving.xsm"
+		attack = "gfx\models\saxon_light_cavalry_2_attack.xsm"
+		scale = 1.0f
 	}
 
 	EMFXActorType = {
@@ -142,6 +142,15 @@ objectTypes = {
 	EMFXActorType = {
 		name = "saxongfx_LIGHT_CAVALRY_weapon"
 		actorfile = "gfx\models\Attachments\Spear_01.xac"
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "norsegfx_LIGHT_CAVALRY_rider"
+		actorfile = "gfx\models\saxon_light_cavalry.xac"
+		idle   = "gfx\models\saxon_light_cavalry_2_idle.xsm"
+		move   = "gfx\models\saxon_light_cavalry_2_moving.xsm"
+		attack = "gfx\models\saxon_light_cavalry_2_attack.xsm"
 		scale = 1.0f
 	}
 

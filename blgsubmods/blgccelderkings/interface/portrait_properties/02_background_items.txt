@@ -35,263 +35,43 @@
 	}
 
 	4 = { # golden sword
-		factor = 5
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			any_artifact = {
-				has_artifact_flag = sword
-				has_artifact_flag = jewelry
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	5 = { # scimitar
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			culture_group = yokudan_group
-			any_artifact = {
-				has_artifact_flag = sword
-				has_artifact_flag = combat_weapon
-				quality >= 3
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	6 = { # scimitar
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-			}
-			OR = {
-				has_character_flag = weapon_is_scimitar
-				AND = {
-					culture_group = yokudan_group
-					any_artifact = {
-						has_artifact_flag = sword
-						has_artifact_flag = combat_weapon
-						quality < 3
-						is_artifact_equipped = yes
-					}
-					NOT = { has_character_flag = mock_duel }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.9
-			has_character_flag = weapon_is_scimitar
-		}
+		factor = 0
 	}
 
 	7 = { # sword
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			NOT = {
-				culture_group = yokudan_group
-			}
-			any_artifact = {
-				has_artifact_flag = sword
-				has_artifact_flag = combat_weapon
-				quality >= 3
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	8 = { # sword
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-			}
-			OR = {
-				has_character_flag = weapon_is_sword
-				AND = {
-					NOT = {
-						culture_group = yokudan_group
-					}
-					any_artifact = {
-						has_artifact_flag = sword
-						has_artifact_flag = combat_weapon
-						quality < 3
-						is_artifact_equipped = yes
-					}
-					NOT = { has_character_flag = mock_duel }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.9
-			has_character_flag = weapon_is_sword
-		}
+		factor = 0
 	}
 
 	9 = { # +2 Axe
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			any_artifact = {
-				OR = {
-					artifact_type = loot_axe
-					AND = {
-						has_artifact_flag = axe
-						has_artifact_flag = combat_weapon
-						quality >= 5
-					}
-				}
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	10 = { # axe
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			any_artifact = {
-				has_artifact_flag = axe
-				has_artifact_flag = combat_weapon
-				quality < 5
-				quality >= 3
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	11 = { # axe
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-			}
-			OR = {
-				has_character_flag = weapon_is_axe
-				AND = {
-					any_artifact = {
-						has_artifact_flag = axe
-						has_artifact_flag = combat_weapon
-						quality < 3
-						is_artifact_equipped = yes
-					}
-					NOT = { has_character_flag = mock_duel }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.9
-			has_character_flag = weapon_is_axe
-		}
+		factor = 0
 	}
 
 	12 = { # bow
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			any_artifact = {
-				has_artifact_flag = bow
-				has_artifact_flag = combat_weapon
-				quality >= 3
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	13 = { # bow
-		factor = 100
-		trigger = {
-			OR = {
-				in_command = yes
-				has_job_title = job_marshal
-				has_character_flag = add_duel_xp
-			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_character_flag = mock_duel
-			}
-			any_artifact = {
-				has_artifact_flag = bow
-				has_artifact_flag = combat_weapon
-				quality < 3
-				is_artifact_equipped = yes
-			}
-		}
+		factor = 0
 	}
 
 	14 = { # dog
@@ -346,22 +126,7 @@
 	}
 
 	17 = { # horse
-		factor = 50
-		trigger = {
-			in_command = yes
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
-			OR = {
-				has_character_modifier = nomad_warhorse
-				any_artifact = {
-					has_artifact_flag = horse
-					is_artifact_equipped = yes
-				}
-			}
-		}
+		factor = 0
 	}
 
 	18 = { # parrot

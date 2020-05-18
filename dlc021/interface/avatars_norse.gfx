@@ -9,7 +9,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "norsegfx_camel_cavalry_rider"
-		actorfile = "gfx\models\Norse_Pikeman.xac"
+		actorfile = "gfx\models\Norse_Light_Cavalry.xac"
 		idle   = "gfx\models\arab_camel_rider_idle.xsm"
 		move   = "gfx\models\arab_camel_rider_moving.xsm"
 		attack = "gfx\models\arab_camel_rider_attack.xsm"

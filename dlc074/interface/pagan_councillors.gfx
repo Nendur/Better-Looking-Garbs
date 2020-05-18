@@ -37,6 +37,13 @@ objectTypes = {
 		scale = 0.8f
 	}
 
+	pdxmesh = {
+		name = "reformedpagangfx_job_spiritual"
+		file = "gfx\models\Mapindicators\hf_pagan_priest_male.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_male_idle_animation" }
+		scale = 0.8f
+	}
+
 ############################# FEMALE ###############################
 	pdxmesh = {
 		name = "pagangfx_job_chancellor_female"
@@ -53,13 +60,6 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "pagangfx_job_spiritual_female"
-		file = "gfx\models\Mapindicators\hf_pagan_priest_female.mesh"
-		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
-		scale = 0.8f
-	}
-
-	pdxmesh = {
 		name = "pagangfx_job_spymaster_female"
 		file = "gfx\models\Mapindicators\hf_pagan_spymaster_female.mesh"
 		animation = { id = "idle"		type = "hf_pagan_spymaster_female_idle_animation" }
@@ -70,6 +70,20 @@ objectTypes = {
 		name = "pagangfx_job_treasurer_female"
 		file = "gfx\models\Mapindicators\hf_pagan_steward_female.mesh"
 		animation = { id = "idle"		type = "hf_pagan_steward_female_idle_animation" }
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "pagangfx_job_spiritual_female"
+		file = "gfx\models\Mapindicators\hf_pagan_priest_female.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "reformedpagangfx_job_spiritual_female"
+		file = "gfx\models\Mapindicators\hf_pagan_priest_female.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
 		scale = 0.8f
 	}
 
@@ -112,6 +126,13 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "hellenicgfx_job_spiritual"
+		file = "gfx\models\Mapindicators\hf_roman_chancellor_male.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "reformedhellenicgfx_job_spiritual"
 		file = "gfx\models\Mapindicators\hf_roman_chancellor_male.mesh"
 		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
 		scale = 0.8f

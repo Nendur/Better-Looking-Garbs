@@ -331,12 +331,11 @@
 						war = yes
 						liege = { war = yes }
 						is_landed = no
+						in_battle = yes
+						in_siege = yes
 					}
 				}
 				has_job_title = job_marshal
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				death_reason = death_battle
 				death_reason = death_duel
 				employer = { government = order_government }
@@ -389,11 +388,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
 				death_reason = death_duel
@@ -461,11 +459,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
 				death_reason = death_duel
@@ -556,11 +553,10 @@
 							OR = {
 								war = yes
 								liege = { war = yes }
+								in_battle = yes
+								in_siege = yes
 							}
 						}
-						in_battle = yes
-						in_siege = yes
-						is_looting = yes
 						has_job_title = job_marshal
 						death_reason = death_battle
 						death_reason = death_duel

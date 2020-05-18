@@ -69,11 +69,10 @@
 						war = yes
 						liege = { war = yes }
 						is_landed = no
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					is_warrior = yes
@@ -107,7 +106,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 	}
 
 	13 = { # Armour B
@@ -126,11 +125,10 @@
 						war = yes
 						liege = { war = yes }
 						is_landed = no
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					is_warrior = yes
@@ -164,7 +162,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 	}
 
 	14 = { # Armour C
@@ -182,11 +180,10 @@
 						war = yes
 						liege = { war = yes }
 						is_landed = no
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_character_flag = add_duel_xp
 				AND = {
 					is_warrior = yes
@@ -220,7 +217,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 	}
 
 	15 = { # Sneak A
@@ -255,7 +252,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 	}
 
 	18 = { # Mage B
@@ -282,7 +279,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 	}
 
 	19 = { # Monk
@@ -298,11 +295,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_job_title = job_marshal
 				AND = {
 					government = order_government
@@ -340,11 +336,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
 				AND = {
@@ -358,10 +353,10 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 	}
 
-	21 = { # Priest Auriel
+	21 = { # Priest Auri-El
 		factor = 100
 		trigger = {
 			OR = {
@@ -378,11 +373,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
 				AND = {
@@ -396,7 +390,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 	}
 
 	22 = { # Priest Daedric
@@ -413,11 +407,10 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
 					}
 				}
-				in_battle = yes
-				in_siege = yes
-				is_looting = yes
 				has_job_title = job_marshal
 				death_reason = death_battle
 				AND = {
@@ -430,7 +423,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 	}
 
 	23 = { # Priest Dragons
@@ -439,6 +432,6 @@
 			religion = dragon_cult
 			is_priest = yes
 		}
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 	}
 }

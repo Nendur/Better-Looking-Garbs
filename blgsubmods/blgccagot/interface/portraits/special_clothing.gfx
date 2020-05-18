@@ -71,7 +71,7 @@ spriteTypes = {
 					}
 				}
 			}
-			39 = {
+			41 = {
 				0 = { always = yes }
 			}
 		}

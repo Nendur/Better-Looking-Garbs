@@ -22,17 +22,12 @@
 				is_artifact_equipped = yes
 			}
 			is_female = no
+			in_command = yes
 			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-					}
-				}
+				war = yes
+				liege = { war = yes }
 				in_battle = yes
 				in_siege = yes
-				is_looting = yes
 			}
 			has_game_rule = {
 				name = martial_headgear
@@ -56,17 +51,12 @@
 				is_artifact_equipped = yes
 			}
 			is_female = yes
+			in_command = yes
 			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-					}
-				}
+				war = yes
+				liege = { war = yes }
 				in_battle = yes
 				in_siege = yes
-				is_looting = yes
 			}
 			has_game_rule = {
 				name = martial_headgear
@@ -94,17 +84,12 @@
 				artifact_type = crown_winged_helmet
 				is_artifact_equipped = yes
 			}
+			in_command = yes
 			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-					}
-				}
+				war = yes
+				liege = { war = yes }
 				in_battle = yes
 				in_siege = yes
-				is_looting = yes
 			}
 			has_game_rule = {
 				name = martial_headgear
@@ -130,17 +115,12 @@
 				is_artifact_equipped = yes
 			}
 			is_female = no
+			in_command = yes
 			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-					}
-				}
+				war = yes
+				liege = { war = yes }
 				in_battle = yes
 				in_siege = yes
-				is_looting = yes
 			}
 			has_game_rule = {
 				name = martial_headgear

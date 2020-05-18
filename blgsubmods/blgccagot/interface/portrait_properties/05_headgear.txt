@@ -348,7 +348,7 @@
 	# Martial headgear
 	10 = {
 		factor = 90
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				may_wear_martial_headgear_trigger = yes
@@ -424,7 +424,7 @@
 	# Kingsguard
 	12 = {
 		factor = 100
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			trait = kingsguard
 			OR = {
@@ -459,7 +459,7 @@
 	# City Watch/Unsullied
 	13 = {
 		factor = 100
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			has_minor_title  =  title_commander_gold_cloaks
 			OR = {
@@ -500,7 +500,7 @@
 	# Knight
 	14 = {
 		factor = 90
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			trait = knight
 			OR = {
@@ -535,7 +535,7 @@
 	# Great House Helm 1
 	15 = {
 		factor = 100
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				may_wear_martial_headgear_trigger = yes
@@ -674,7 +674,7 @@
 	# Great House Helm 2
 	16 = {
 		factor = 100
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				may_wear_martial_headgear_trigger = yes

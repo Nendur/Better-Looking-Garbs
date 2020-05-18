@@ -14,7 +14,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				has_landed_title = d_knights_templar
@@ -46,24 +46,19 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_crusader_king
 				is_artifact_equipped = yes
 			}
 			is_female = no
+			in_command = yes
 			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-					}
-				}
+				war = yes
+				liege = { war = yes }
 				in_battle = yes
 				in_siege = yes
-				is_looting = yes
 			}
 			NOR = {
 				has_game_rule = { name = martial_headgear value = off }
@@ -90,24 +85,19 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_crusader_king
 				is_artifact_equipped = yes
 			}
 			is_female = yes
+			in_command = yes
 			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-					}
-				}
+				war = yes
+				liege = { war = yes }
 				in_battle = yes
 				in_siege = yes
-				is_looting = yes
 			}
 			NOR = {
 				has_game_rule = { name = martial_headgear value = off }
@@ -134,7 +124,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				has_landed_title = d_knights_hospitaler
@@ -166,7 +156,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				has_landed_title = d_teutonic_order
@@ -199,23 +189,18 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_winged_helmet
 				is_artifact_equipped = yes
 			}
+			in_command = yes
 			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-					}
-				}
+				war = yes
+				liege = { war = yes }
 				in_battle = yes
 				in_siege = yes
-				is_looting = yes
 			}
 			NOR = {
 				has_game_rule = { name = martial_headgear value = off }
@@ -242,7 +227,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				has_landed_title = d_knights_santiago
@@ -275,24 +260,19 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			any_artifact = {
 				artifact_type = crown_wrapped_helmet
 				is_artifact_equipped = yes
 			}
 			is_female = no
+			in_command = yes
 			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-					}
-				}
+				war = yes
+				liege = { war = yes }
 				in_battle = yes
 				in_siege = yes
-				is_looting = yes
 			}
 			NOR = {
 				has_game_rule = { name = martial_headgear value = off }
@@ -319,7 +299,7 @@
 		hide_layers = { 31 = { } } #Veil overload.
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
-		hide_layers = { 39 = { } }
+		hide_layers = { 41 = { } }
 		trigger = {
 			OR = {
 				has_landed_title = d_livonian_order

@@ -259,6 +259,38 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_weapons_western"
+		texturefile = "gfx\\characters\\shared\\weapons_western.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_weapons_muslim"
+		texturefile = "gfx\\characters\\shared\\weapons_muslim.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_weapons_eastern"
+		texturefile = "gfx\\characters\\shared\\weapons_eastern.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_mounts"
+		texturefile = "gfx\\characters\\shared\\mounts.dds"
+		noOfFrames = 2
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_clothing_monk_male_hair"
 		textureFile = "gfx/characters/clothing/monk_male_hair.dds"
 		noOfFrames = 7

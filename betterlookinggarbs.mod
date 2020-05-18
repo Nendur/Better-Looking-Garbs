@@ -8,7 +8,7 @@ dependencies={
 	"Elder Kings"
 	"Elder Kings Dev"
 	"HIP - Historical Immersion Project"
-	"Lux Invicta v0.6K16"
+	"Lux Invicta (May20)"
 	"Mythos 2 - Historical Fantasy"
 	"Tianxia: Silk Road Expansion"
 	"The Winter King"
