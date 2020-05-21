@@ -106,7 +106,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 	}
 
 	13 = { # Armour B
@@ -162,7 +162,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 	}
 
 	14 = { # Armour C
@@ -217,7 +217,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 	}
 
 	15 = { # Sneak A
@@ -252,7 +252,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 	}
 
 	18 = { # Mage B
@@ -279,7 +279,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 	}
 
 	19 = { # Monk
@@ -353,7 +353,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 	}
 
 	21 = { # Priest Auri-El
@@ -390,7 +390,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 	}
 
 	22 = { # Priest Daedric
@@ -423,7 +423,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 	}
 
 	23 = { # Priest Dragons
@@ -432,6 +432,6 @@
 			religion = dragon_cult
 			is_priest = yes
 		}
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 	}
 }

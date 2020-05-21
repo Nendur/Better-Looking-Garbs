@@ -21,7 +21,10 @@
 		modifier = {
 			factor = 100
 			has_character_flag = mock_duel
-			has_character_flag = weapon_is_hand
+			OR = {
+				has_character_flag = weapon_is_hand
+				trait = lefthanded
+			}
 		}
 		modifier = {
 			factor = 100
@@ -35,6 +38,7 @@
 	1 = { # Staff
 		factor = 50
 		trigger = {
+			NOT = { trait = lefthanded }
 			OR = {
 				has_character_flag = weapon_is_staff
 				any_artifact = {
@@ -53,10 +57,16 @@
 	2 = { # Polearm
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
+			NOR = {
+				trait = lefthanded
+				has_character_flag = mock_duel
+			}
 			any_artifact = {
 				is_artifact_equipped = yes
-				has_artifact_flag = polearm
+				#OR = {
+					has_artifact_flag = polearm
+				#	artifact_type = chinese_ji
+				#}
 			}
 		}
 	}
@@ -64,12 +74,16 @@
 	3 = { # Trident
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
+			NOR = {
+				trait = lefthanded
+				has_character_flag = mock_duel
+			}
 			any_artifact = {
 				is_artifact_equipped = yes
 				OR = {
 					has_artifact_flag = trident
 					artifact_type = lance_tier_3_trident
+					#artifact_type = lance_tier_4_trident
 					artifact_type = frog_spear
 					artifact_type = manderly_trident
 				}
@@ -80,18 +94,33 @@
 	4 = { # Spear
 		factor = 100
 		trigger = {
-			OR = {
-				has_character_flag = weapon_is_spear
-				AND = {
-					NOT = { has_character_flag = mock_duel }
-					any_artifact = {
-						is_artifact_equipped = yes
-						quality == 1
-						OR = {
-							has_artifact_flag = lance
-							has_artifact_flag = spear
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 1
+					has_artifact_flag = spear
+					has_artifact_flag = offhand
+				}
+			}
+			trigger_else = {
+				OR = {
+					has_character_flag = weapon_is_spear
+					AND = {
+						NOT = { has_character_flag = mock_duel }
+						any_artifact = {
+							is_artifact_equipped = yes
+							quality == 1
+							OR = {
+								has_artifact_flag = lance
+								has_artifact_flag = spear
+							}
+							OR = {
+								has_artifact_flag = combat_weapon
+								has_artifact_flag = mainhand
+								has_artifact_flag = twohand
+							}
 						}
-						has_artifact_flag = combat_weapon
 					}
 				}
 			}
@@ -106,15 +135,30 @@
 	5 = { # Spear
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
-			any_artifact = {
-				is_artifact_equipped = yes
-				quality == 2
-				OR = {
-					has_artifact_flag = lance
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 2
 					has_artifact_flag = spear
+					has_artifact_flag = offhand
 				}
-				has_artifact_flag = combat_weapon
+			}
+			trigger_else = {
+				NOT = { has_character_flag = mock_duel }
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 2
+					OR = {
+						has_artifact_flag = lance
+						has_artifact_flag = spear
+					}
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+						has_artifact_flag = twohand
+					}
+				}
 			}
 		}
 	}
@@ -122,14 +166,28 @@
 	6 = { # Spear
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
-			any_artifact = {
-				is_artifact_equipped = yes
-				OR = {
-					has_artifact_flag = lance
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
 					has_artifact_flag = spear
+					has_artifact_flag = offhand
 				}
-				has_artifact_flag = combat_weapon
+			}
+			trigger_else = {
+				NOT = { has_character_flag = mock_duel }
+				any_artifact = {
+					is_artifact_equipped = yes
+					OR = {
+						has_artifact_flag = lance
+						has_artifact_flag = spear
+					}
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+						has_artifact_flag = twohand
+					}
+				}
 			}
 		}
 	}
@@ -137,19 +195,33 @@
 	7 = { # Scimitar
 		factor = 100
 		trigger = {
-			OR = {
-				has_character_flag = weapon_is_scimitar
-				AND = {
-					NOT = { has_character_flag = mock_duel }
-					any_artifact = {
-						is_artifact_equipped = yes
-						quality < 3
-						OR = {
-							has_artifact_flag = arakh
-							artifact_type = scimitar_tier_1
-							artifact_type = scimitar_tier_2
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality < 3
+					has_artifact_flag = offhand
+					has_artifact_flag = arakh
+				}
+			}
+			trigger_else = {
+				OR = {
+					has_character_flag = weapon_is_scimitar
+					AND = {
+						NOT = { has_character_flag = mock_duel }
+						any_artifact = {
+							is_artifact_equipped = yes
+							quality < 3
+							OR = {
+								has_artifact_flag = arakh
+								artifact_type = scimitar_tier_1
+								artifact_type = scimitar_tier_2
+							}
+							OR = {
+								has_artifact_flag = combat_weapon
+								has_artifact_flag = mainhand
+							}
 						}
-						has_artifact_flag = combat_weapon
 					}
 				}
 			}
@@ -163,17 +235,32 @@
 	8 = { # Scimitar
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
-			any_artifact = {
-				is_artifact_equipped = yes
-				OR = {
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = offhand
 					has_artifact_flag = arakh
-					artifact_type = seafoam
-					artifact_type = scimitar_tier_3_golden
-					artifact_type = scimitar_tier_3_fortune
-					artifact_type = scimitar_tier_3_conquest
 				}
-				has_artifact_flag = combat_weapon
+			}
+			trigger_else = {
+				NOT = { has_character_flag = mock_duel }
+				any_artifact = {
+					is_artifact_equipped = yes
+					OR = {
+						has_artifact_flag = arakh
+						artifact_type = scimitar_tier_3_golden
+						artifact_type = scimitar_tier_3_fortune
+						artifact_type = scimitar_tier_3_conquest
+						#artifact_type = scimitar_tier_4_golden
+						#artifact_type = scimitar_tier_4_fortune
+						#artifact_type = scimitar_tier_4_conquest
+					}
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+					}
+				}
 			}
 		}
 	}
@@ -181,7 +268,10 @@
 	9 = { # Zweihander
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
+			NOR = {
+				trait = lefthanded
+				has_character_flag = mock_duel
+			}
 			any_artifact = {
 				is_artifact_equipped = yes
 				OR = {
@@ -196,15 +286,30 @@
 	10 = { # Sword
 		factor = 100
 		trigger = {
-			OR = {
-				has_character_flag = weapon_is_sword
-				AND = {
-					NOT = { has_character_flag = mock_duel }
-					any_artifact = {
-						is_artifact_equipped = yes
-						quality == 1
-						has_artifact_flag = sword
-						has_artifact_flag = combat_weapon
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 1
+					has_artifact_flag = offhand
+					has_artifact_flag = sword
+				}
+			}
+			trigger_else = {
+				OR = {
+					has_character_flag = weapon_is_sword
+					AND = {
+						NOT = { has_character_flag = mock_duel }
+						any_artifact = {
+							is_artifact_equipped = yes
+							quality == 1
+							has_artifact_flag = sword
+							OR = {
+								has_artifact_flag = combat_weapon
+								has_artifact_flag = mainhand
+								has_artifact_flag = twohand
+							}
+						}
 					}
 				}
 			}
@@ -219,12 +324,27 @@
 	11 = { # Sword
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
-			any_artifact = {
-				is_artifact_equipped = yes
-				quality == 2
-				has_artifact_flag = sword
-				has_artifact_flag = combat_weapon
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 2
+					has_artifact_flag = offhand
+					has_artifact_flag = sword
+				}
+			}
+			trigger_else = {
+				NOT = { has_character_flag = mock_duel }
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 2
+					has_artifact_flag = sword
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+						has_artifact_flag = twohand
+					}
+				}
 			}
 		}
 	}
@@ -232,11 +352,25 @@
 	12 = { # Sword
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = sword
-				has_artifact_flag = combat_weapon
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = offhand
+					has_artifact_flag = sword
+				}
+			}
+			trigger_else = {
+				NOT = { has_character_flag = mock_duel }
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = sword
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+						has_artifact_flag = twohand
+					}
+				}
 			}
 		}
 	}
@@ -244,13 +378,28 @@
 	13 = { # Axe
 		factor = 100
 		trigger = {
-			OR = {
-				has_character_flag = weapon_is_axe
+			trigger_if = {
+				limit = { trait = lefthanded }
 				any_artifact = {
 					is_artifact_equipped = yes
 					quality == 1
+					has_artifact_flag = offhand
 					has_artifact_flag = axe
-					has_artifact_flag = combat_weapon
+				}
+			}
+			trigger_else = {
+				OR = {
+					has_character_flag = weapon_is_axe
+					any_artifact = {
+						is_artifact_equipped = yes
+						quality == 1
+						has_artifact_flag = axe
+						OR = {
+							has_artifact_flag = combat_weapon
+							has_artifact_flag = mainhand
+							has_artifact_flag = twohand
+						}
+					}
 				}
 			}
 		}
@@ -263,11 +412,29 @@
 	14 = { # Axe
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				quality == 2
-				has_artifact_flag = axe
-				has_artifact_flag = combat_weapon
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 2
+					has_artifact_flag = offhand
+					has_artifact_flag = axe
+				}
+			}
+			trigger_else = {
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 2
+					OR = {
+						has_artifact_flag = axe
+						artifact_type = loot_axe
+					}
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+						has_artifact_flag = twohand
+					}
+				}
 			}
 		}
 	}
@@ -275,10 +442,24 @@
 	15 = { # Axe
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = axe
-				has_artifact_flag = combat_weapon
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = offhand
+					has_artifact_flag = axe
+				}
+			}
+			trigger_else = {
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = axe
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+						has_artifact_flag = twohand
+					}
+				}
 			}
 		}
 	}
@@ -286,13 +467,28 @@
 	16 = { # Hammer
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				OR = {
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = offhand
 					has_artifact_flag = hammer
-					artifact_type = mace_tier_3_foe_hammer
 				}
-				has_artifact_flag = combat_weapon
+			}
+			trigger_else = {
+				any_artifact = {
+					is_artifact_equipped = yes
+					OR = {
+						has_artifact_flag = hammer
+						artifact_type = mace_tier_3_foe_hammer
+						#artifact_type = mace_tier_4_foe_hammer
+					}
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+						has_artifact_flag = twohand
+					}
+				}
 			}
 		}
 	}
@@ -300,13 +496,28 @@
 	17 = { # Flail
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				OR = {
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = offhand
 					has_artifact_flag = flail
-					artifact_type = mace_tier_3_shatterer
 				}
-				has_artifact_flag = combat_weapon
+			}
+			trigger_else = {
+				any_artifact = {
+					is_artifact_equipped = yes
+					OR = {
+						has_artifact_flag = flail
+						artifact_type = mace_tier_3_shatterer
+						#artifact_type = mace_tier_4_shatterer
+					}
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+						has_artifact_flag = twohand
+					}
+				}
 			}
 		}
 	}
@@ -314,13 +525,28 @@
 	18 = { # Mace
 		factor = 100
 		trigger = {
-			OR = {
-				has_character_flag = weapon_is_mace
+			trigger_if = {
+				limit = { trait = lefthanded }
 				any_artifact = {
 					is_artifact_equipped = yes
 					quality == 1
+					has_artifact_flag = offhand
 					has_artifact_flag = mace
-					has_artifact_flag = combat_weapon
+				}
+			}
+			trigger_else = {
+				OR = {
+					has_character_flag = weapon_is_mace
+					any_artifact = {
+						is_artifact_equipped = yes
+						quality == 1
+						has_artifact_flag = mace
+						OR = {
+							has_artifact_flag = combat_weapon
+							has_artifact_flag = mainhand
+							has_artifact_flag = twohand
+						}
+					}
 				}
 			}
 		}
@@ -333,11 +559,26 @@
 	19 = { # Mace
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				quality == 2
-				has_artifact_flag = mace
-				has_artifact_flag = combat_weapon
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 2
+					has_artifact_flag = offhand
+					has_artifact_flag = mace
+				}
+			}
+			trigger_else = {
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 2
+					has_artifact_flag = mace
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+						has_artifact_flag = twohand
+					}
+				}
 			}
 		}
 	}
@@ -345,10 +586,24 @@
 	20 = { # Mace
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = mace
-				has_artifact_flag = combat_weapon
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = offhand
+					has_artifact_flag = mace
+				}
+			}
+			trigger_else = {
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = mace
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+						has_artifact_flag = twohand
+					}
+				}
 			}
 		}
 	}
@@ -356,7 +611,10 @@
 	21 = { # Bow
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = add_duel_xp }
+			NOR = {
+				trait = lefthanded
+				has_character_flag = add_duel_xp
+			}
 			any_artifact = {
 				is_artifact_equipped = yes
 				quality == 1
@@ -368,7 +626,10 @@
 	22 = { # Bow
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = add_duel_xp }
+			NOR = {
+				trait = lefthanded
+				has_character_flag = add_duel_xp
+			}
 			any_artifact = {
 				is_artifact_equipped = yes
 				quality == 2
@@ -380,7 +641,10 @@
 	23 = { # Bow
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = add_duel_xp }
+			NOR = {
+				trait = lefthanded
+				has_character_flag = add_duel_xp
+			}
 			any_artifact = {
 				is_artifact_equipped = yes
 				has_artifact_flag = bow
@@ -391,7 +655,10 @@
 	24 = { # Crossbow
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = add_duel_xp }
+			NOR = {
+				trait = lefthanded
+				has_character_flag = add_duel_xp
+			}
 			any_artifact = {
 				is_artifact_equipped = yes
 				has_artifact_flag = crossbow
@@ -402,6 +669,10 @@
 	25 = { # Handgun
 		factor = 100
 		trigger = {
+			NOR = {
+				trait = lefthanded
+				has_character_flag = mock_duel
+			}
 			any_artifact = {
 				is_artifact_equipped = yes
 				has_artifact_flag = gun
@@ -412,13 +683,29 @@
 	26 = { # Dagger
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				OR = {
-					has_artifact_flag = dagger
-					has_artifact_flag = stiletto
+			trigger_if = {
+				limit = { trait = lefthanded }
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = offhand
+					OR = {
+						has_artifact_flag = dagger
+						has_artifact_flag = stiletto
+					}
 				}
-				has_artifact_flag = combat_weapon
+			}
+			trigger_else = {
+				any_artifact = {
+					is_artifact_equipped = yes
+					OR = {
+						has_artifact_flag = dagger
+						has_artifact_flag = stiletto
+					}
+					OR = {
+						has_artifact_flag = combat_weapon
+						has_artifact_flag = mainhand
+					}
+				}
 			}
 		}
 	}

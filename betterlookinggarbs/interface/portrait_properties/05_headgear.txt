@@ -1423,7 +1423,7 @@
 
 	10 = { # Martial headgear
 		factor = 100
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0
 			OR = {
@@ -1456,9 +1456,6 @@
 					}
 				}
 				has_character_flag = add_duel_xp
-				has_character_flag = rtp_temporary_soldier
-				has_character_flag = rtp_temporary_mercenary
-				has_character_flag = rtp_temporary_crusader
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -1587,7 +1584,7 @@
 
 	12 = { # royal war helm
 		factor = 100
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 		trigger = {
 			OR = {
 				AND = {
@@ -1743,7 +1740,7 @@
 
 	13 = { # ducal war helm
 		factor = 100
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 		trigger = {
 			OR = {
 				AND = {
@@ -1824,7 +1821,7 @@
 
 	14 = { # Chinese war gear
 		factor = 99
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 		trigger = {
 			OR = {
 				AND = {

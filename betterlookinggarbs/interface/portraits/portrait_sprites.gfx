@@ -283,6 +283,30 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_weapons_western_left"
+		texturefile = "gfx\\characters\\shared\\weapons_western_left.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_weapons_muslim_left"
+		texturefile = "gfx\\characters\\shared\\weapons_muslim_left.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_weapons_eastern_left"
+		texturefile = "gfx\\characters\\shared\\weapons_eastern_left.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_mounts"
 		texturefile = "gfx\\characters\\shared\\mounts.dds"
 		noOfFrames = 2

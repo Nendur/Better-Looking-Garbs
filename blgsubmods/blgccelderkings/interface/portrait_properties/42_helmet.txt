@@ -1,5 +1,5 @@
-# p41 Carried Helmet
-41 = {
+# p42 Carried Helmet
+42 = {
 	0 = { # blank
 		factor = 1
 	}
@@ -22,23 +22,8 @@
 				death_reason = death_battle
 				death_reason = death_duel
 				holy_order = yes
-				AND = {
-					mercenary = yes
-					primary_title = {
-						NOR = {
-							title = d_merc_fleet_1
-							title = d_merc_fleet_2
-							title = d_merc_fleet_3
-							title = d_merc_fleet_4
-							title = d_merc_fleet_5
-							title = d_merc_fleet_6
-							title = d_merc_fleet_7
-							title = d_merc_fleet_8
-							title = d_merc_fleet_9
-							title = d_merc_fleet_10
-						}
-					}
-				}
+				#mercenary = yes
+				trait = shieldmaiden
 			}
 			NOT = { has_game_rule = { name = blg_helmet value = none } }
 		}

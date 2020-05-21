@@ -1,7 +1,8 @@
 Changelog:
 
-  78 new weapon sprites.
+  Weapon display overhaul with 78 new weapon sprites.
   Moved spears from warrior lodge clothing to weapons.
+  Mirrored version of weapons for lefties and dual wielding.
   Added horse riding graphic, to be expanded further.
   Added Erilaz' Gjermundbu and Coppergate helmets.
   Adjust French helmet selection over time.

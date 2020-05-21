@@ -693,7 +693,7 @@
 
 	10 = { # Martial headgear
 		factor = 99
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0
 			OR = {
@@ -840,7 +840,7 @@
 
 	12 = { # royal war helm / Noble 2
 		factor = 100
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -981,7 +981,7 @@
 
 	13 = { # ducal war helm / Noble 3
 		factor = 100
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0
 			NOR = {
@@ -1110,7 +1110,7 @@
 
 	14 = { # Chinese war gear / Shady 2
 		factor = 99
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 		trigger = {
 			OR = {
 				AND = {
@@ -1197,7 +1197,7 @@
 	#Martial 2
 	15 = {
 		factor = 99
-		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0
 			NOR = {

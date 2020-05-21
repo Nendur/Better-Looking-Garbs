@@ -1,5 +1,5 @@
-# p40 Mounts
-40 = {
+# p41 Mounts
+41 = {
 	0 = { # blank
 		factor = 1
 		modifier = {
@@ -21,6 +21,19 @@
 						is_looting = yes
 					}
 				}
+			}
+		}
+		modifier = {
+			factor = 100
+			OR = {
+				has_character_flag = hajj_arrived_in_mecca
+				has_character_flag = kow_tow_visited_temple
+				has_character_flag = kow_tow_played_go
+				has_character_flag = read_the_guanzi
+				has_character_flag = visited_market
+				has_character_flag = kow_tow_bad_outcome
+				has_character_flag = kow_tow_okay_outcome
+				has_character_flag = kow_tow_great_outcome
 			}
 		}
 	}

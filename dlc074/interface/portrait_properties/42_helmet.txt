@@ -1,5 +1,5 @@
-# p41 Carried Helmet
-41 = {
+# p42 Carried Helmet
+42 = {
 	0 = { # blank
 		factor = 1
 	}
