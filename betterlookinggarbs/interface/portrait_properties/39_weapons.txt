@@ -10,7 +10,6 @@
 					OR = {
 						war = yes
 						liege = { war = yes }
-						is_landed = no
 						in_battle = yes
 						in_siege = yes
 					}

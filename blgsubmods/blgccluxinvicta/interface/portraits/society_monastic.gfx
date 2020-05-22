@@ -18,12 +18,6 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	spriteType = {
-		name = "GFX_society_benedictine_male_headgear_front"
-		textureFile = "gfx/characters/societies/mom_benedictine_male_headgear_front.dds"
-		noOfFrames = 2
-	}
-
 	portraitType = {
 		name = "PORTRAIT_society_benedictine_clothing_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -58,8 +52,8 @@ spriteTypes = {
 			"GFX_empty:c1"
 			"GFX_society_benedictine_male_clothing_front:c2"
 			"GFX_empty:c3"
-			"GFX_society_benedictine_male_headgear_front:c4"
-			"GFX_empty:c5"
+			"GFX_empty:c4"
+			"GFX_dummy:c5"
 			"GFX_clothing_monk_male_hair:c7"
 		}
 
@@ -73,15 +67,6 @@ spriteTypes = {
 			}
 			31 = {
 				0 = { always = yes }
-			}
-			36 = { # Staff overlap
-				0 = { always = yes }
-			}
-			42 = {
-				0 = { always = no }
-				1 = { always = no }
-				2 = { always = yes }
-				3 = { always = yes }
 			}
 		}
 
@@ -623,7 +608,7 @@ spriteTypes = {
 			"GFX_empty:c1"
 			"GFX_society_orthodox_monk_male_clothing_front:c2"
 			"GFX_empty:c3"
-			"GFX_society_benedictine_male_headgear_front:c4"
+			"GFX_empty:c4"
 			"GFX_empty:c5"
 			"GFX_empty:c7"
 		}
@@ -654,15 +639,6 @@ spriteTypes = {
 			}
 			31 = {
 				0 = { always = yes }
-			}
-			36 = { # Staff overlap
-				0 = { always = yes }
-			}
-			42 = {
-				0 = { always = no }
-				1 = { always = no }
-				2 = { always = yes }
-				3 = { always = yes }
 			}
 		}
 	}

@@ -48,6 +48,13 @@
 					has_artifact_flag = horse
 					has_artifact_flag = mount
 				}
+				combat = {
+					OR = {
+						light_cavalry = 0.5
+						knights = 0.5
+						horse_archers = 0.5
+					}
+				}
 			}
 		}
 	}

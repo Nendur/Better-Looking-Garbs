@@ -1,7 +1,7 @@
 # p36 Special Scepters
 36 = {
 	0 = { # blank
-		factor = 1
+		factor = 3
 		modifier = {
 			factor = 100
 			has_game_rule = { name = blg_artifacts value = off }
@@ -30,10 +30,9 @@
 		}
 	}
 
-	1 = { # Bon Fylkir Scepter
+	1 = { # Bon Scepter
 		factor = 100
 		trigger = {
-			in_command = no
 			OR = {
 				any_artifact = {
 					artifact_type = scepter_bon_fylkir
@@ -49,13 +48,15 @@
 		}
 	}
 
-	2 = { # Hellenic Fylkir Scepter
+	2 = { # Hellenic Scepter
 		factor = 100
 		trigger = {
-			in_command = no
 			OR = {
 				any_artifact = {
-					artifact_type = scepter_hellenic_fylkir
+					OR = {
+						artifact_type = scepter_hellenic_fylkir
+						artifact_type = spear_of_destiny
+					}
 					is_artifact_equipped = yes
 				}
 				trait = dead_scepter_hellenic_fylkir
@@ -71,7 +72,6 @@
 	3 = { # Holy Grail
 		factor = 100
 		trigger = {
-			in_command = no
 			OR = {
 				has_artifact = holy_grail
 				has_artifact = holy_chalice
@@ -90,12 +90,12 @@
 			}
 		}
 		hide_layers = { 39 = { } }
+		hide_layers = { 40 = { } }
 	}
 
 	5 = { # Tablet
 		factor = 75
 		trigger = {
-			in_command = no
 			any_artifact = {
 				OR = {
 					has_artifact_flag = tablet
@@ -106,15 +106,11 @@
 		}
 	}
 
-	6 = { # African Scepter
-		factor = 100
+	6 = { # Horn
+		factor = 75
 		trigger = {
-			in_command = no
 			any_artifact = {
-				OR = {
-					has_artifact_flag = totem
-					artifact_type = staff_of_moses
-				}
+				has_artifact_flag = horn
 				is_artifact_equipped = yes
 			}
 		}
@@ -123,7 +119,6 @@
 	7 = { # Scepter
 		factor = 25
 		trigger = {
-			in_command = no
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
@@ -143,7 +138,6 @@
 	8 = { # Scepter
 		factor = 25
 		trigger = {
-			in_command = no
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
@@ -162,7 +156,6 @@
 	9 = { # Scepter
 		factor = 25
 		trigger = {
-			in_command = no
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
@@ -250,56 +243,101 @@
 		}
 	}
 
-	13 = { # Lance
-		factor = 0
+	13 = { # African Totem Scepter
+		factor = 100
+		trigger = {
+			any_artifact = {
+				has_artifact_flag = totem
+				is_artifact_equipped = yes
+			}
+		}
 	}
 
-	14 = { # Lance
-		factor = 0
+	14 = { # Sheperds Crook
+		factor = 1
+		trigger = {
+			OR = {
+				society_member_of = monastic_order_benedictine
+				society_member_of = monastic_order_monophysite
+			}
+		}
 	}
 
-	15 = { # Trident
-		factor = 0
+	15 = { # Indian Staff
+		factor = 1
+		trigger = {
+			OR = {
+				society_member_of = monastic_order_hindu
+				any_artifact = {
+					artifact_type = elaborate_danda
+					is_artifact_equipped = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = elaborate_danda
+				is_artifact_equipped = yes
+			}
+		}
 	}
 
-	16 = { # Mace
-		factor = 0
+	16 = { # Indian Staff
+		factor = 1
+		trigger = {
+			OR = {
+				society_member_of = monastic_order_hindu
+				any_artifact = {
+					artifact_type = staff_of_moses
+					is_artifact_equipped = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = staff_of_moses
+				is_artifact_equipped = yes
+			}
+		}
 	}
 
-	17 = { # Mace
-		factor = 0
-	}
-
-	18 = { # Dagger
+	17 = { # Dagger
 		factor = 25
 		trigger = {
-			in_command = no
-			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
 			any_artifact = {
 				has_artifact_flag = dagger
+				has_artifact_flag = jewelry
 				quality > 1
 				is_artifact_equipped = yes
 			}
 		}
 	}
 
-	19 = { # Dagger
+	18 = { # Dagger
 		factor = 10
 		trigger = {
-			in_command = no
-			NOT = { has_game_rule = { name = blg_artifacts value = rare } }
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
 			any_artifact = {
 				has_artifact_flag = dagger
+				has_artifact_flag = jewelry
 				quality <= 1
 				is_artifact_equipped = yes
 			}
 		}
 	}
 
-	20 = { # Book
-		factor = 10
+	19 = { # Book
+		factor = 1
 		trigger = {
-			in_command = no
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
@@ -314,10 +352,9 @@
 		}
 	}
 
-	21 = { # Ingredients
+	20 = { # Ingredients
 		factor = 1
 		trigger = {
-			in_command = no
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
@@ -326,6 +363,35 @@
 				has_artifact_flag = ingredient
 				is_artifact_active = yes
 			}
+		}
+	}
+
+	21 = { # Scroll
+		factor = 10
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			any_artifact = {
+				OR = {
+					artifact_type = letter_of_mohammad
+					artifact_type = cyrus_cylinder
+					artifact_type = chinese_calligraphy
+				}
+				is_artifact_active = yes
+			}
+		}
+	}
+
+	22 = { # Eagle
+		factor = 10
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			has_character_modifier = pet_hunting_eagle
 		}
 	}
 }

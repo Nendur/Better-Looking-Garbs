@@ -102,7 +102,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_special_scepters"
 		texturefile = "gfx\\characters\\shared\\special_scepters.dds"
-		noOfFrames = 22
+		noOfFrames = 23
 		norefcount = yes
 		can_be_lowres = yes
 	}

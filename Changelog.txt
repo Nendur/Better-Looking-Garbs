@@ -1,9 +1,12 @@
 Changelog:
 
+22-05-2020
   Weapon display overhaul with 78 new weapon sprites.
   Moved spears from warrior lodge clothing to weapons.
+  Moved society staffs to scepter layer.
   Mirrored version of weapons for lefties and dual wielding.
-  Added horse riding graphic, to be expanded further.
+  Removed weapons from clothing.
+  Added horse riding graphic, to be expanded later.
   Added Erilaz' Gjermundbu and Coppergate helmets.
   Adjust French helmet selection over time.
   Remove mercenary clothing from fleet captains.
