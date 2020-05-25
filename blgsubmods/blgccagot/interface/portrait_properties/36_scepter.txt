@@ -19,7 +19,8 @@
 						in_siege = yes
 					}
 				}
-				has_character_flag = add_duel_xp
+				has_character_flag = battle_event_in_progess
+				has_character_flag = chivalry_duel_ongoing
 			}
 		}
 	}

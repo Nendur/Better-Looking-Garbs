@@ -15,6 +15,7 @@
 					}
 				}
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 			}
 		}
 		modifier = {
@@ -35,7 +36,7 @@
 	}
 
 	1 = { # Staff
-		factor = 50
+		factor = 100
 		trigger = {
 			NOT = { trait = lefthanded }
 			OR = {
@@ -43,12 +44,16 @@
 				any_artifact = {
 					is_artifact_equipped = yes
 					has_artifact_flag = staff
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
+					}
 				}
 			}
 		}
 		modifier = {
-			factor = 100
-			has_character_flag = mock_duel
+			factor = 0.5
+			NOT = { has_character_flag = add_duel_xp }
 			has_character_flag = weapon_is_staff
 		}
 	}
@@ -112,10 +117,9 @@
 								has_artifact_flag = lance
 								has_artifact_flag = spear
 							}
-							OR = {
-								has_artifact_flag = combat_weapon
-								has_artifact_flag = mainhand
-								has_artifact_flag = twohand
+							NOR = {
+								has_artifact_flag = jewelry
+								has_artifact_flag = offhand
 							}
 						}
 					}
@@ -150,10 +154,9 @@
 						has_artifact_flag = lance
 						has_artifact_flag = spear
 					}
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
-						has_artifact_flag = twohand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -179,10 +182,9 @@
 						has_artifact_flag = lance
 						has_artifact_flag = spear
 					}
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
-						has_artifact_flag = twohand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -214,9 +216,9 @@
 								artifact_type = scimitar_tier_1_new
 								artifact_type = scimitar_tier_2_new
 							}
-							OR = {
-								has_artifact_flag = combat_weapon
-								has_artifact_flag = mainhand
+							NOR = {
+								has_artifact_flag = jewelry
+								has_artifact_flag = offhand
 							}
 						}
 					}
@@ -253,9 +255,9 @@
 						artifact_type = scimitar_tier_4_fortune
 						artifact_type = scimitar_tier_4_conquest
 					}
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -308,10 +310,9 @@
 							is_artifact_equipped = yes
 							quality == 1
 							has_artifact_flag = sword
-							OR = {
-								has_artifact_flag = combat_weapon
-								has_artifact_flag = mainhand
-								has_artifact_flag = twohand
+							NOR = {
+								has_artifact_flag = jewelry
+								has_artifact_flag = offhand
 							}
 						}
 					}
@@ -343,10 +344,9 @@
 					is_artifact_equipped = yes
 					quality == 2
 					has_artifact_flag = sword
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
-						has_artifact_flag = twohand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -369,10 +369,9 @@
 				any_artifact = {
 					is_artifact_equipped = yes
 					has_artifact_flag = sword
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
-						has_artifact_flag = twohand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -398,10 +397,9 @@
 						is_artifact_equipped = yes
 						quality == 1
 						has_artifact_flag = axe
-						OR = {
-							has_artifact_flag = combat_weapon
-							has_artifact_flag = mainhand
-							has_artifact_flag = twohand
+						NOR = {
+							has_artifact_flag = jewelry
+							has_artifact_flag = offhand
 						}
 					}
 				}
@@ -433,10 +431,9 @@
 						has_artifact_flag = axe
 						artifact_type = loot_axe
 					}
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
-						has_artifact_flag = twohand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -458,10 +455,9 @@
 				any_artifact = {
 					is_artifact_equipped = yes
 					has_artifact_flag = axe
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
-						has_artifact_flag = twohand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -487,10 +483,9 @@
 						artifact_type = mace_tier_3_foe_hammer
 						artifact_type = mace_tier_4_foe_hammer
 					}
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
-						has_artifact_flag = twohand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -516,10 +511,9 @@
 						artifact_type = mace_tier_3_shatterer
 						artifact_type = mace_tier_4_shatterer
 					}
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
-						has_artifact_flag = twohand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -545,10 +539,9 @@
 						is_artifact_equipped = yes
 						quality == 1
 						has_artifact_flag = mace
-						OR = {
-							has_artifact_flag = combat_weapon
-							has_artifact_flag = mainhand
-							has_artifact_flag = twohand
+						NOR = {
+							has_artifact_flag = jewelry
+							has_artifact_flag = offhand
 						}
 					}
 				}
@@ -577,10 +570,9 @@
 					is_artifact_equipped = yes
 					quality == 2
 					has_artifact_flag = mace
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
-						has_artifact_flag = twohand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -602,10 +594,9 @@
 				any_artifact = {
 					is_artifact_equipped = yes
 					has_artifact_flag = mace
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
-						has_artifact_flag = twohand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}
@@ -707,9 +698,9 @@
 						has_artifact_flag = stiletto
 						has_artifact_flag = cleaver
 					}
-					OR = {
-						has_artifact_flag = combat_weapon
-						has_artifact_flag = mainhand
+					NOR = {
+						has_artifact_flag = jewelry
+						has_artifact_flag = offhand
 					}
 				}
 			}

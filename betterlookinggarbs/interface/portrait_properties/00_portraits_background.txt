@@ -1042,7 +1042,10 @@
 		}
 		modifier = {
 			factor = 100
-			has_character_flag = add_duel_xp
+			OR = {
+				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
+			}
 		}
 		hide_layers = { 38 = {} }
 	}

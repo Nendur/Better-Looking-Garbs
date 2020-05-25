@@ -74,6 +74,7 @@
 					}
 				}
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					is_warrior = yes
 					is_away = yes
@@ -130,6 +131,7 @@
 					}
 				}
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					is_warrior = yes
 					is_away = yes
@@ -185,6 +187,7 @@
 					}
 				}
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					is_warrior = yes
 					is_away = yes

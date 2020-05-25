@@ -1456,6 +1456,7 @@
 					}
 				}
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -1596,8 +1597,9 @@
 						in_siege = yes
 					}
 				}
-				has_character_flag = add_duel_xp
 				has_landed_title = e_china_west_governor
+				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -1752,8 +1754,9 @@
 						in_siege = yes
 					}
 				}
-				has_character_flag = add_duel_xp
 				has_landed_title = e_china_west_governor
+				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -1843,8 +1846,9 @@
 								in_siege = yes
 							}
 						}
-						has_character_flag = add_duel_xp
 						has_landed_title = e_china_west_governor
+						has_character_flag = add_duel_xp
+						has_character_flag = chivalry_duel_ongoing
 						AND = {
 							has_game_rule = { name = blg_helmet value = on }
 							OR = {

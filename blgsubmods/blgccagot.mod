@@ -9,6 +9,6 @@ dependencies=
 	"Better Looking Garbs"
 	"Better Looking Garbs Full"
 }
-supported_checksums = { QHPX SXEK XHYX OWMR NPRJ IMQF }
+supported_checksums = { IIIA JWIO ALHA JVTG KHVG LVMI }
 tags={ Graphics Portraits Units AGOT "A Game of Thrones" }
 picture="blgccagot.jpg"

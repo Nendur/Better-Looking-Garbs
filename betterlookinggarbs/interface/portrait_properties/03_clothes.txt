@@ -356,6 +356,7 @@
 				}
 				trait = shieldmaiden
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 				blg_soldier = yes
 			}
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 11 } }
@@ -398,6 +399,7 @@
 				employer = { government = order_government }
 				has_landed_title = e_china_west_governor
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 			}
 			NAND = {
 				is_merchant_republic = yes
@@ -484,6 +486,7 @@
 				}
 				has_landed_title = e_china_west_governor
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 			}
 			NAND = {
 				is_merchant_republic = yes
@@ -578,6 +581,7 @@
 						}
 						has_landed_title = e_china_west_governor
 						has_character_flag = add_duel_xp
+						has_character_flag = chivalry_duel_ongoing
 					}
 				}
 				AND = {

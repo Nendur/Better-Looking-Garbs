@@ -720,6 +720,7 @@
 					}
 				}
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 
 				AND = {
 					is_warrior = yes
@@ -854,6 +855,7 @@
 					}
 				}
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -995,6 +997,7 @@
 					}
 				}
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -1130,6 +1133,7 @@
 							}
 						}
 						has_character_flag = add_duel_xp
+						has_character_flag = chivalry_duel_ongoing
 						AND = {
 							has_game_rule = { name = blg_helmet value = on }
 							OR = {
@@ -1211,6 +1215,7 @@
 					}
 				}
 				has_character_flag = add_duel_xp
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {

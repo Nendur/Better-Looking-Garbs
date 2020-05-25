@@ -48,11 +48,30 @@
 					has_artifact_flag = horse
 					has_artifact_flag = mount
 				}
-				combat = {
+				any_unit = {
 					OR = {
-						light_cavalry = 0.5
-						knights = 0.5
-						horse_archers = 0.5
+						light_cavalry = 0.4
+						knights = 0.4
+						horse_archers = 0.4
+					}
+					OR = {
+						left_flank_leader = { character = ROOT }
+						center_flank_leader = { character = ROOT }
+						right_flank_leader = { character = ROOT }
+					}
+				}
+				liege = {
+					any_unit = {
+						OR = {
+							light_cavalry = 0.4
+							knights = 0.4
+							horse_archers = 0.4
+						}
+						OR = {
+							left_flank_leader = { character = ROOT }
+							center_flank_leader = { character = ROOT }
+							right_flank_leader = { character = ROOT }
+						}
 					}
 				}
 			}

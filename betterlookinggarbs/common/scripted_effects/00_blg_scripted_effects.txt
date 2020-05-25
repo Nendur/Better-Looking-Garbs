@@ -1,0 +1,14 @@
+evaluate_duel_result_score_effect = { # Refresh portrait trick.
+	event_target:combatant_1 = {
+		remove_trait = blgspawn
+	}
+	event_target:combatant_2 = {
+		remove_trait = blgspawn
+	}
+}
+
+spawn_creature_champion_effect = { # Too messy with bear clothes.
+	new_character = {
+		set_graphical_culture = bear
+	}
+}

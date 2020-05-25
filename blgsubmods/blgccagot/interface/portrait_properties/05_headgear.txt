@@ -352,7 +352,8 @@
 		trigger = {
 			OR = {
 				may_wear_martial_headgear_trigger = yes
-				has_character_flag = add_duel_xp
+				has_character_flag = battle_event_in_progess
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -429,7 +430,8 @@
 			trait = kingsguard
 			OR = {
 				may_wear_martial_headgear_trigger = yes
-				has_character_flag = add_duel_xp
+				has_character_flag = battle_event_in_progess
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -470,7 +472,8 @@
 			}
 			OR = {
 				may_wear_martial_headgear_trigger = yes
-				has_character_flag = add_duel_xp
+				has_character_flag = battle_event_in_progess
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -505,7 +508,8 @@
 			trait = knight
 			OR = {
 				may_wear_martial_headgear_trigger = yes
-				has_character_flag = add_duel_xp
+				has_character_flag = battle_event_in_progess
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -539,7 +543,8 @@
 		trigger = {
 			OR = {
 				may_wear_martial_headgear_trigger = yes
-				has_character_flag = add_duel_xp
+				has_character_flag = battle_event_in_progess
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {
@@ -678,7 +683,8 @@
 		trigger = {
 			OR = {
 				may_wear_martial_headgear_trigger = yes
-				has_character_flag = add_duel_xp
+				has_character_flag = battle_event_in_progess
+				has_character_flag = chivalry_duel_ongoing
 				AND = {
 					has_game_rule = { name = blg_helmet value = on }
 					OR = {

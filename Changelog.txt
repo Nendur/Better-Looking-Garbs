@@ -1,5 +1,8 @@
 Changelog:
 
+  Late era Saxons changed to English clothes.
+  Late era Lombards changed to late Italian headgear.
+
 22-05-2020
   Weapon display overhaul with 78 new weapon sprites.
   Moved spears from warrior lodge clothing to weapons.

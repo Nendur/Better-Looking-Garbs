@@ -14,7 +14,8 @@
 						in_siege = yes
 					}
 				}
-				has_character_flag = add_duel_xp
+				has_character_flag = battle_event_in_progess
+				has_character_flag = chivalry_duel_ongoing
 			}
 		}
 		modifier = {
@@ -105,7 +106,7 @@
 		}
 		modifier = {
 			factor = 0.5
-			NOT = { has_character_flag = add_duel_xp }
+			NOT = { has_character_flag = battle_event_in_progess }
 			has_character_flag = weapon_is_spear
 		}
 	}
@@ -144,6 +145,7 @@
 		trigger = {
 				OR = {
 					has_character_flag = weapon_is_scimitar
+					has_character_flag = weapon_is_arakh
 					AND = {
 						NOT = { has_character_flag = mock_duel }
 						any_artifact = {
@@ -161,7 +163,10 @@
 		}
 		modifier = {
 			factor = 0.5
-			has_character_flag = weapon_is_scimitar
+			OR = {
+				has_character_flag = weapon_is_scimitar
+				has_character_flag = weapon_is_arakh
+			}
 		}
 	}
 
@@ -220,7 +225,7 @@
 		}
 		modifier = {
 			factor = 0.5
-			NOT = { has_character_flag = add_duel_xp }
+			NOT = { has_character_flag = battle_event_in_progess }
 			has_character_flag = weapon_is_sword
 		}
 	}
@@ -366,7 +371,7 @@
 		factor = 100
 		trigger = {
 			NOT = {
-				has_character_flag = add_duel_xp
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -380,7 +385,7 @@
 		factor = 100
 		trigger = {
 			NOT = {
-				has_character_flag = add_duel_xp
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -394,7 +399,7 @@
 		factor = 100
 		trigger = {
 			NOT = {
-				has_character_flag = add_duel_xp
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -407,7 +412,7 @@
 		factor = 100
 		trigger = {
 			NOT = {
-				has_character_flag = add_duel_xp
+				has_character_flag = mock_duel
 			}
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -432,6 +437,8 @@
 	26 = { # Dagger
 		factor = 100
 		trigger = {
+			OR = {
+				has_character_flag = weapon_is_stiletto
 				any_artifact = {
 					is_artifact_equipped = yes
 					OR = {
@@ -440,6 +447,7 @@
 					}
 					has_artifact_flag = combat_weapon
 				}
+			}
 		}
 	}
 }
