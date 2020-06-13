@@ -17,6 +17,7 @@
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = { 31 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 41 = { } }
 		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0
@@ -36,6 +37,7 @@
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = { 31 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 41 = { } }
 		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0
@@ -52,6 +54,7 @@
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
 		hide_layers = { 31 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 41 = { } }
 		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0

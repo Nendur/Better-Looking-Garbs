@@ -65,14 +65,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_italian_male_clothes_behind"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_clothes_behind.dds"
+		texturefile = "gfx\\fallbacks\\frankish_male\\frankish_male_clothes_behind.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_italian_male_clothes"
-		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_clothes.dds"
+		texturefile = "gfx\\fallbacks\\frankish_male\\frankish_male_clothes.dds"
 		noOfFrames = 14
 		norefcount = yes
 	}
@@ -455,14 +455,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_italian_female_clothes_behind"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_clothes_behind.dds"
+		texturefile = "gfx\\fallbacks\\frankish_female\\frankish_female_clothes_behind.dds"
 		noOfFrames = 12
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_italian_female_clothes"
-		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_clothes.dds"
+		texturefile = "gfx\\fallbacks\\frankish_female\\frankish_female_clothes.dds"
 		noOfFrames = 12
 		norefcount = yes
 	}

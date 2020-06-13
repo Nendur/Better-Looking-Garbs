@@ -236,9 +236,6 @@
 						culture = frankish
 						culture = occitan
 						blg_french = yes
-						likes_celts = yes
-						culture_group = east_slavic
-						culture_group = iberian
 					}
 				}
 				AND = { is_alive = yes is_variable_equal = { which = ca_underlayer value = 8 } }

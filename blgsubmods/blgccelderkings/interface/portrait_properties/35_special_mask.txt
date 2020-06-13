@@ -33,6 +33,10 @@
 			factor = 100
 			has_character_flag = hagraven_1
 		}
+		modifier = {
+			factor = 100
+			trait = hagraven_1
+		}
 	}
 	4 = {
 		factor = 99
@@ -43,6 +47,10 @@
 			factor = 100
 			has_character_flag = hagraven_2
 		}
+		modifier = {
+			factor = 100
+			trait = hagraven_2
+		}
 	}
 	5 = {
 		factor = 99
@@ -52,6 +60,10 @@
 		modifier = {
 			factor = 100
 			has_character_flag = hagraven_3
+		}
+		modifier = {
+			factor = 100
+			trait = hagraven_3
 		}
 	}
 	6 = {

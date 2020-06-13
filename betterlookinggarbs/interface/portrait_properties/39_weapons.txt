@@ -275,15 +275,7 @@
 				is_artifact_equipped = yes
 				OR = {
 					artifact_type = zweihander_sword
-					AND = {
-						has_artifact_flag = sword
-						has_artifact_flag = twohand
-						quality >= 3
-					}
-					AND = {
-						has_artifact_flag = cleaver
-						has_artifact_flag = twohand
-					}
+					has_artifact_flag = greatsword
 				}
 			}
 		}
@@ -368,7 +360,10 @@
 				NOT = { has_character_flag = mock_duel }
 				any_artifact = {
 					is_artifact_equipped = yes
-					has_artifact_flag = sword
+					OR = {
+						has_artifact_flag = sword
+						artifact_type = sword_from_heaven
+					}
 					NOR = {
 						has_artifact_flag = jewelry
 						has_artifact_flag = offhand

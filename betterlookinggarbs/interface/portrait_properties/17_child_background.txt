@@ -45,6 +45,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -95,6 +96,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -137,6 +139,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -176,6 +179,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -232,6 +236,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -285,6 +290,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -320,6 +326,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -357,6 +364,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -398,6 +406,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -447,6 +456,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -479,6 +489,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -531,6 +542,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
@@ -582,6 +594,7 @@
 		hide_layers = { 19 = {} }
 		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
 		hide_layers = { 30 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }

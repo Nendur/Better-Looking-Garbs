@@ -18,6 +18,7 @@
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 41 = { } }
 		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0
@@ -46,6 +47,7 @@
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 41 = { } }
 		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0
@@ -71,6 +73,7 @@
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 41 = { } }
 		hide_layers = { 42 = { } }
 		modifier = {
 			factor = 0
@@ -93,6 +96,7 @@
 		hide_layers = { 32 = { } }
 		hide_layers = { 33 = { } }
 		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 41 = { } }
 		hide_layers = { 42 = { } }
 		trigger = {
 			OR = {

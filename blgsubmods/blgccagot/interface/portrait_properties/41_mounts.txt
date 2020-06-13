@@ -7,9 +7,8 @@
 			NOR = {
 				trait = travelling
 				trait = on_pilgrimage
-				trait = on_hajj
-				trait = on_indian_pilgrimage
-				trait = kow_tow_travels
+				trait = wikid
+				trait = on_reaving
 				AND = {
 					in_command = yes
 					OR = {
@@ -24,28 +23,23 @@
 		}
 		modifier = {
 			factor = 100
-			OR = {
-				is_at_sea = yes
-				has_character_flag = hajj_arrived_in_mecca
-				has_character_flag = kow_tow_visited_temple
-				has_character_flag = kow_tow_played_go
-				has_character_flag = read_the_guanzi
-				has_character_flag = visited_market
-				has_character_flag = kow_tow_bad_outcome
-				has_character_flag = kow_tow_okay_outcome
-				has_character_flag = kow_tow_great_outcome
-			}
+			is_at_sea = yes
 		}
 	}
 
 	1 = { # Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = black
-				has_artifact_flag = mount
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				OR = {
+					has_portrait_property = { layer = 31 index = 0 }
+					has_portrait_property = { layer = 31 index = 1 }
+					has_portrait_property = { layer = 31 index = 17 }
+					has_portrait_property = { layer = 31 index = 18 }
+					has_portrait_property = { layer = 31 index = 23 }
+				}
 			}
 		}
 	}
@@ -53,11 +47,15 @@
 	2 = { # Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = red
-				has_artifact_flag = mount
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				OR = {
+					has_portrait_property = { layer = 31 index = 4 }
+					has_portrait_property = { layer = 31 index = 9 }
+					has_portrait_property = { layer = 31 index = 20 }
+					has_portrait_property = { layer = 31 index = 22 }
+				}
 			}
 		}
 	}
@@ -65,11 +63,13 @@
 	3 = { # Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = white
-				has_artifact_flag = mount
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				OR = {
+					has_portrait_property = { layer = 31 index = 3 }
+					has_portrait_property = { layer = 31 index = 14 }
+				}
 			}
 		}
 	}
@@ -77,11 +77,15 @@
 	4 = { # Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = green
-				has_artifact_flag = mount
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				OR = {
+					has_portrait_property = { layer = 31 index = 2 }
+					has_portrait_property = { layer = 31 index = 8 }
+					has_portrait_property = { layer = 31 index = 16 }
+					has_portrait_property = { layer = 31 index = 25 }
+				}
 			}
 		}
 	}
@@ -89,11 +93,14 @@
 	5 = { # Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = blue
-				has_artifact_flag = mount
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				OR = {
+					has_portrait_property = { layer = 31 index = 12 }
+					has_portrait_property = { layer = 31 index = 15 }
+					has_portrait_property = { layer = 31 index = 26 }
+				}
 			}
 		}
 	}
@@ -101,11 +108,13 @@
 	6 = { # Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = silver
-				has_artifact_flag = mount
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				OR = {
+					has_portrait_property = { layer = 31 index = 5 }
+					has_portrait_property = { layer = 31 index = 6 }
+				}
 			}
 		}
 	}
@@ -113,11 +122,15 @@
 	7 = { # Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = bronze
-				has_artifact_flag = mount
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				OR = {
+					has_portrait_property = { layer = 31 index = 7 }
+					has_portrait_property = { layer = 31 index = 13 }
+					has_portrait_property = { layer = 31 index = 19 }
+					has_portrait_property = { layer = 31 index = 24 }
+				}
 			}
 		}
 	}
@@ -125,11 +138,14 @@
 	8 = { # Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = gold
-				has_artifact_flag = mount
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				OR = {
+					has_portrait_property = { layer = 31 index = 10 }
+					has_portrait_property = { layer = 31 index = 11 }
+					has_portrait_property = { layer = 31 index = 21 }
+				}
 			}
 		}
 	}

@@ -729,7 +729,8 @@
 				trait = architect
 				trait = strategist
 				trait = gamer
-				#trait = erudite
+				trait = alchemist
+				trait = magician
 			}
 		}
 		modifier = {

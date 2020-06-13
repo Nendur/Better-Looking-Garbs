@@ -1,7 +1,9 @@
 Changelog:
 
+  Dragon riding added.
   Late era Saxons changed to English clothes.
   Late era Lombards changed to late Italian headgear.
+  Match twin ethnicities.
 
 22-05-2020
   Weapon display overhaul with 78 new weapon sprites.

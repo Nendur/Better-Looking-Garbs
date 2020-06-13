@@ -3735,7 +3735,18 @@ character_event = {
 			}
 		}
 
-		#Testing log
+		# Match twins
+		if = {
+			limit = { NOT = { has_game_rule = { name = blg_child_birth value = off } } }
+			any_sibling = {
+				limit = {
+					is_twin_of = ROOT
+				}
+				set_graphical_culture = ROOT
+			}
+		}
+
+		# Testing log
 		if = {
 			limit = { is_father_real_father = yes }
 			father_even_if_dead = { gfx_culture_scope = { save_event_target_as = gfxfather } }
