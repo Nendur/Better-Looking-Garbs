@@ -6,10 +6,13 @@
 			factor = 100
 			NOR = {
 				trait = travelling
+				trait = on_adventure
+				#trait = on_assassination
+				#trait = on_diplomatic
+				trait = on_tour
+				#trait = on_guild
+				trait = on_mission
 				trait = on_pilgrimage
-				trait = on_hajj
-				trait = on_indian_pilgrimage
-				trait = kow_tow_travels
 				AND = {
 					in_command = yes
 					OR = {
@@ -24,17 +27,7 @@
 		}
 		modifier = {
 			factor = 100
-			OR = {
-				is_at_sea = yes
-				has_character_flag = hajj_arrived_in_mecca
-				has_character_flag = kow_tow_visited_temple
-				has_character_flag = kow_tow_played_go
-				has_character_flag = read_the_guanzi
-				has_character_flag = visited_market
-				has_character_flag = kow_tow_bad_outcome
-				has_character_flag = kow_tow_okay_outcome
-				has_character_flag = kow_tow_great_outcome
-			}
+			is_at_sea = yes
 		}
 	}
 
@@ -139,52 +132,29 @@
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
-				has_artifact_flag = horse
-				has_artifact_flag = mount
 				OR = {
-					has_artifact_flag = black
-					AND = {
-						has_artifact_flag = unique
-						has_artifact_flag = greek
-					}
+					artifact_type = mount_horse_nightmare
+					artifact_type = mount_horse_shadowmere
 				}
 			}
 		}
 	}
 
-	10 = { # Unique Horse
+	10 = { # White Horse
 		factor = 100
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
-				has_artifact_flag = horse
-				has_artifact_flag = mount
 				OR = {
-					has_artifact_flag = white
-					has_artifact_flag = immortal
-					AND = {
-						has_artifact_flag = unique
-						has_artifact_flag = arabian
-					}
+					artifact_type = mount_horse_unicorn
+					artifact_type = mount_horse_jennet
 				}
 			}
 		}
 	}
 
 	11 = { # Horse Armor
-		factor = 100
-		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = horse
-				has_artifact_flag = mount
-			}
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = horse_armor
-				quality >= 3
-			}
-		}
+		factor = 0
 	}
 
 	12 = { # Horse Armor
@@ -192,59 +162,25 @@
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
-				has_artifact_flag = horse
-				has_artifact_flag = mount
-			}
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = horse_armor
-				quality == 2
+				artifact_type = mount_horse_skeletal
 			}
 		}
 	}
 
 	13 = { # Wolf
-		factor = 100
-		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = wolf
-				has_artifact_flag = mount
-			}
-		}
+		factor = 0
 	}
 
 	14 = { # Bear
-		factor = 100
-		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = bear
-				has_artifact_flag = mount
-			}
-		}
+		factor = 0
 	}
 
 	15 = { # Polar Bear
-		factor = 100
-		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = polarbear
-				has_artifact_flag = mount
-			}
-		}
+		factor = 0
 	}
 
 	16 = { # Reindeer
-		factor = 100
-		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = reindeer
-				has_artifact_flag = mount
-			}
-		}
+		factor = 0
 	}
 
 	17 = { # Tiger
@@ -252,7 +188,7 @@
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
-				has_artifact_flag = tiger
+				has_artifact_flag = pahmar
 				has_artifact_flag = mount
 			}
 		}
@@ -263,21 +199,14 @@
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
-				has_artifact_flag = lion
+				has_artifact_flag = senche
 				has_artifact_flag = mount
 			}
 		}
 	}
 
 	19 = { # Yak
-		factor = 100
-		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = yak
-				has_artifact_flag = mount
-			}
-		}
+		factor = 0
 	}
 
 	20 = { # Lizard
@@ -285,8 +214,11 @@
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
-				has_artifact_flag = lizard
 				has_artifact_flag = mount
+				OR = {
+					has_artifact_flag = guar
+					has_artifact_flag = shellback
+				}
 			}
 		}
 	}
@@ -296,7 +228,10 @@
 		trigger = {
 			OR = {
 				any_unit = {
-					war_elephants = 0.1
+					OR = {
+						war_elephants = 0.1
+						war_mammoths = 0.1
+					}
 					OR = {
 						left_flank_leader = { character = ROOT }
 						center_flank_leader = { character = ROOT }
@@ -305,7 +240,10 @@
 				}
 				liege = {
 					any_unit = {
-						war_elephants = 0.1
+						OR = {
+							war_elephants = 0.1
+							war_mammoths = 0.1
+						}
 						OR = {
 							left_flank_leader = { character = ROOT }
 							center_flank_leader = { character = ROOT }
@@ -375,17 +313,6 @@
 						}
 					}
 				}
-				AND = {
-					any_artifact = {
-						is_artifact_equipped = yes
-						has_artifact_flag = horse
-						has_artifact_flag = mount
-					}
-					any_artifact = {
-						is_artifact_equipped = yes
-						has_artifact_flag = horse_armor
-					}
-				}
 			}
 		}
 	}
@@ -397,7 +324,7 @@
 				is_artifact_equipped = yes
 				has_artifact_flag = horse
 				has_artifact_flag = mount
-				has_artifact_flag = charger
+				has_artifact_flag = theft_dr_extreme
 			}
 		}
 	}
@@ -409,11 +336,10 @@
 				has_character_modifier = nomad_warhorse
 				any_artifact = {
 					is_artifact_equipped = yes
-					has_artifact_flag = horse
-					has_artifact_flag = mount
 					OR = {
-						has_artifact_flag = destrier
-						quality = 5
+						artifact_type = mount_horse_mountain
+						artifact_type = mount_horse_hobbeye
+						artifact_type = mount_horse_mijako
 					}
 				}
 			}

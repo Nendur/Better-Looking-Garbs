@@ -1,9 +1,12 @@
 Changelog:
 
-  Dragon riding added.
+  More mount graphics with 8 horses, 8 dragons and 10 other animals.
+  Mount graphics triggered by lead cavalry flanks or mount artifacts.
+  Mount support for Crusader Mounts, AGOT and Elder Kings mods.
   Late era Saxons changed to English clothes.
   Late era Lombards changed to late Italian headgear.
   Match twin ethnicities.
+  Even out West-African skintone more.
 
 22-05-2020
   Weapon display overhaul with 78 new weapon sprites.

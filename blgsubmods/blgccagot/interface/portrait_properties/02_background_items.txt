@@ -108,7 +108,10 @@
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
-			has_character_modifier = pet_hunting_dog
+			OR = {
+				has_character_modifier = pet_hunting_dog
+				trait = dog
+			}
 		}
 	}
 
@@ -121,7 +124,10 @@
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
-			has_character_modifier = pet_cat
+			OR = {
+				has_character_modifier = pet_cat
+				trait = cata
+			}
 		}
 	}
 
