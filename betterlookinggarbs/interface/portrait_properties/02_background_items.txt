@@ -6,13 +6,13 @@
 			factor = 100
 			prisoner = yes
 			NOR = {
-				trait = saint
 				has_character_modifier = pet_rat_dungeon
+				has_character_modifier = rats_in_cell
 			}
 		}
 	}
 
-	1 = { # saint
+	1 = { # Saint
 		factor = 100
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
 		#hide_layers = { 19 = { } } #Hide layers with special crowns.
@@ -43,48 +43,327 @@
 		}
 	}
 
-	4 = { # golden sword
-		factor = 0
+	4 = { # Big Relic
+		factor = 100
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			OR = {
+				has_artifact = ark_of_the_covenant
+				has_artifact = shroud_of_jesus
+				has_artifact = bones_of_st_peter
+				has_artifact = blessed_mantle
+			}
+			OR = {
+				has_portrait_property = { layer = 0 index = 0 }
+				has_portrait_property = { layer = 0 index = 1 }
+				has_portrait_property = { layer = 0 index = 9 }
+				has_portrait_property = { layer = 0 index = 16 }
+				has_portrait_property = { layer = 0 index = 23 }
+				has_portrait_property = { layer = 0 index = 24 }
+			}
+		}
 	}
 
-	5 = { # scimitar
-		factor = 0
+	5 = { # Harp
+		factor = 100
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			any_artifact = { artifact_type = davids_harp is_artifact_active = yes }
+			OR = {
+				has_portrait_property = { layer = 0 index = 0 }
+				has_portrait_property = { layer = 0 index = 1 }
+				has_portrait_property = { layer = 0 index = 9 }
+				has_portrait_property = { layer = 0 index = 16 }
+				has_portrait_property = { layer = 0 index = 23 }
+				has_portrait_property = { layer = 0 index = 24 }
+			}
+		}
 	}
 
-	6 = { # scimitar
-		factor = 0
+	6 = { # Sampo
+		factor = 100
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			any_artifact = { artifact_type = sampo is_artifact_active = yes }
+			OR = {
+				has_portrait_property = { layer = 0 index = 0 }
+				has_portrait_property = { layer = 0 index = 1 }
+				has_portrait_property = { layer = 0 index = 9 }
+				has_portrait_property = { layer = 0 index = 16 }
+				has_portrait_property = { layer = 0 index = 23 }
+				has_portrait_property = { layer = 0 index = 24 }
+			}
+		}
 	}
 
-	7 = { # sword
-		factor = 0
+	7 = { # Small Relic
+		factor = 2
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			any_artifact = {
+				is_artifact_active = yes
+				OR = {
+					artifact_type = holy_foreskin
+					artifact_type = mohammads_beard
+					artifact_type = tooth_of_mohammad
+					artifact_type = buddhas_tooth
+					artifact_type = sariraka_actual_body_part
+					artifact_type = random_world_mythological_heart_1
+					artifact_type = random_world_mythological_blood
+					artifact_type = random_world_mythological_eye
+					has_character_flag = bodypart
+					has_character_flag = remains
+					has_character_flag = saint_item
+				}
+			}
+			OR = {
+				has_portrait_property = { layer = 0 index = 0 }
+				has_portrait_property = { layer = 0 index = 1 }
+				has_portrait_property = { layer = 0 index = 9 }
+				has_portrait_property = { layer = 0 index = 16 }
+				has_portrait_property = { layer = 0 index = 23 }
+				has_portrait_property = { layer = 0 index = 24 }
+			}
+		}
 	}
 
-	8 = { # sword
-		factor = 0
+	8 = { # Hunting Trophy
+		factor = 100
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_stag
+			OR = {
+				has_portrait_property = { layer = 0 index = 0 }
+				has_portrait_property = { layer = 0 index = 1 }
+				has_portrait_property = { layer = 0 index = 9 }
+				has_portrait_property = { layer = 0 index = 16 }
+				has_portrait_property = { layer = 0 index = 23 }
+				has_portrait_property = { layer = 0 index = 24 }
+			}
+		}
 	}
 
-	9 = { # +2 Axe
-		factor = 0
+	9 = { # Hunting Trophy
+		factor = 100
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_bear
+			OR = {
+				has_portrait_property = { layer = 0 index = 0 }
+				has_portrait_property = { layer = 0 index = 1 }
+				has_portrait_property = { layer = 0 index = 9 }
+				has_portrait_property = { layer = 0 index = 16 }
+				has_portrait_property = { layer = 0 index = 23 }
+				has_portrait_property = { layer = 0 index = 24 }
+			}
+		}
 	}
 
-	10 = { # axe
-		factor = 0
+	10 = { # Hunting Trophy
+		factor = 100
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_tiger
+			OR = {
+				has_portrait_property = { layer = 0 index = 0 }
+				has_portrait_property = { layer = 0 index = 1 }
+				has_portrait_property = { layer = 0 index = 9 }
+				has_portrait_property = { layer = 0 index = 16 }
+				has_portrait_property = { layer = 0 index = 23 }
+				has_portrait_property = { layer = 0 index = 24 }
+			}
+		}
 	}
 
-	11 = { # axe
-		factor = 0
+	11 = { # Hunting Trophy
+		factor = 100
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_lion
+			OR = {
+				has_portrait_property = { layer = 0 index = 0 }
+				has_portrait_property = { layer = 0 index = 1 }
+				has_portrait_property = { layer = 0 index = 9 }
+				has_portrait_property = { layer = 0 index = 16 }
+				has_portrait_property = { layer = 0 index = 23 }
+				has_portrait_property = { layer = 0 index = 24 }
+			}
+		}
 	}
 
-	12 = { # bow
-		factor = 0
+	12 = { # Cat
+		factor = 10
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 13 }
+				has_portrait_property = { layer = 2 index = 14 }
+			}
+			OR = {
+				has_character_modifier = pet_cat
+				has_character_modifier = child_cat
+				AND = {
+					has_character_modifier = cat_familiar
+					OR = {
+						AND = { ai = no multiplayer = no }
+						has_character_modifier = known_satanist
+					}
+				}
+			}
+		}
 	}
 
-	13 = { # bow
-		factor = 0
+	13 = { # Cat
+		factor = 10
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 12 }
+				has_portrait_property = { layer = 2 index = 14 }
+			}
+			OR = {
+				has_character_modifier = pet_cat
+				has_character_modifier = child_cat
+			}
+		}
 	}
 
-	14 = { # dog
-		factor = 50
+	14 = { # Cat
+		factor = 10
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 12 }
+				has_portrait_property = { layer = 2 index = 13 }
+			}
+			OR = {
+				has_character_modifier = pet_cat
+				has_character_modifier = child_cat
+			}
+		}
+	}
+
+	15 = { # Dog
+		factor = 10
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+				has_character_modifier = lost_dog
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 16 }
+				has_portrait_property = { layer = 2 index = 17 }
+				has_portrait_property = { layer = 2 index = 18 }
+			}
+			OR = {
+				has_character_modifier = pet_hunting_dog
+				has_character_modifier = guide_dog
+				has_character_modifier = pet_masterless_dog
+				has_character_modifier = pet_house_dog
+				has_character_modifier = child_dog
+			}
+		}
+	}
+
+	16 = { # Dog
+		factor = 10
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+				has_character_modifier = lost_dog
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 15 }
+				has_portrait_property = { layer = 2 index = 17 }
+				has_portrait_property = { layer = 2 index = 18 }
+			}
+			OR = {
+				has_character_modifier = pet_hunting_dog
+				has_character_modifier = guide_dog
+				has_character_modifier = pet_masterless_dog
+				has_character_modifier = pet_house_dog
+				has_character_modifier = child_dog
+			}
+		}
+	}
+
+	17 = { # Dog
+		factor = 10
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+				has_character_modifier = lost_dog
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 15 }
+				has_portrait_property = { layer = 2 index = 16 }
+				has_portrait_property = { layer = 2 index = 18 }
+			}
+			OR = {
+				has_character_modifier = pet_hunting_dog
+				has_character_modifier = guide_dog
+				has_character_modifier = pet_masterless_dog
+				has_character_modifier = pet_house_dog
+				has_character_modifier = child_dog
+			}
+		}
+	}
+
+	18 = { # Dog
+		factor = 10
+		trigger = {
+			in_command = no
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+				has_character_modifier = lost_dog
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 15 }
+				has_portrait_property = { layer = 2 index = 16 }
+				has_portrait_property = { layer = 2 index = 17 }
+			}
+			OR = {
+				has_character_modifier = pet_hunting_dog
+				has_character_modifier = guide_dog
+				has_character_modifier = pet_masterless_dog
+				has_character_modifier = pet_house_dog
+				has_character_modifier = child_dog
+			}
+		}
+	}
+
+	19 = { # Owl
+		factor = 10
 		trigger = {
 			in_command = no
 			NOR = {
@@ -93,15 +372,20 @@
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
 			OR = {
-				has_character_modifier = pet_hunting_dog
-				trait = masterless_dog
-				trait = house_dog
+				has_character_modifier = pet_owl
+				AND = {
+					has_character_modifier = owl_familiar
+					OR = {
+						AND = { ai = no multiplayer = no }
+						has_character_modifier = known_satanist
+					}
+				}
 			}
 		}
 	}
 
-	15 = { # cat
-		factor = 50
+	20 = { # Hedgehog
+		factor = 10
 		trigger = {
 			in_command = no
 			NOR = {
@@ -109,12 +393,12 @@
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
-			has_character_modifier = pet_cat
+			has_character_modifier = pet_hedgehog
 		}
 	}
 
-	16 = { # owl
-		factor = 50
+	21 = { # Otter
+		factor = 10
 		trigger = {
 			in_command = no
 			NOR = {
@@ -122,16 +406,12 @@
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
-			has_character_modifier = pet_owl
+			has_character_modifier = pet_otter
 		}
 	}
 
-	17 = { # horse
-		factor = 0
-	}
-
-	18 = { # parrot
-		factor = 50
+	22 = { # Parrot
+		factor = 10
 		trigger = {
 			in_command = no
 			NOR = {
@@ -143,8 +423,8 @@
 		}
 	}
 
-	19 = { # rat
-		factor = 50
+	23 = { # Rat
+		factor = 10
 		trigger = {
 			in_command = no
 			NOR = {
@@ -152,7 +432,26 @@
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
-			has_character_modifier = pet_rat_dungeon
+			OR = {
+				has_character_modifier = pet_rat_dungeon
+				has_character_modifier = rats_in_cell
+			}
+		}
+	}
+
+	24 = { # Wolf
+		factor = 10
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			has_character_modifier = wolf_familiar
+			OR = {
+				AND = { ai = no multiplayer = no }
+				has_character_modifier = known_satanist
+			}
 		}
 	}
 }

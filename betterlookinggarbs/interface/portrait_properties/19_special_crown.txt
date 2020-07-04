@@ -373,7 +373,19 @@
 		}
 	}
 
-	16 = { #Venetian Doge
+	16 = { #Babr-e Bayan
+		factor = 100
+		hide_layers = { 3 = {}}
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			any_artifact = {
+				is_artifact_active = yes
+				artifact_type = babr_e_bayan
+			}
+		}
+	}
+
+	17 = { #Venetian Doge
 		factor = 100
 		hide_layers = {1 = {}}
 		hide_layers = {5 = {}}
@@ -398,7 +410,7 @@
 		}
 	}
 
-	17 = { #Court Jester
+	18 = { #Court Jester
 		factor = 100
 		hide_layers = {3 = {}}
 		hide_layers = {5 = {}}
@@ -418,7 +430,7 @@
 		}
 	}
 
-	18 = { #Orthodox Patriarch
+	19 = { #Orthodox Patriarch
 		factor = 100
 		hide_layers = { 5 = {}}
 		hide_layers = {31 = {}}
@@ -439,7 +451,7 @@
 		}
 	}
 
-	19 = { #Protestant Priest
+	20 = { #Protestant Priest
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}
@@ -460,7 +472,7 @@
 		}
 	}
 
-	20 = { #Slavic Priest
+	21 = { #Slavic Priest
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}
@@ -476,7 +488,7 @@
 		}
 	}
 
-	21 = { #Finnish Priest
+	22 = { #Finnish Priest
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}
@@ -492,7 +504,7 @@
 		}
 	}
 
-	22 = { #Aztec Priest
+	23 = { #Aztec Priest
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}
@@ -508,7 +520,7 @@
 		}
 	}
 
-	23 = { #Taoist Priest
+	24 = { #Taoist Priest
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}
@@ -527,7 +539,7 @@
 		}
 	}
 
-	24 = { #Zun Priest
+	25 = { #Zun Priest
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}
@@ -546,7 +558,7 @@
 		}
 	}
 
-	25 = { #Celtic Priest
+	26 = { #Celtic Priest
 		factor = 100
 		hide_layers = { 3 = {}}
 		hide_layers = { 5 = {}}

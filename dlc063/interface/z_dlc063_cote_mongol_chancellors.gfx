@@ -44,6 +44,13 @@ objectTypes = {
 		scale = 0.8
 	}
 
+	pdxmesh = {
+		name = "arabicgfx_job_spiritual"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_idle_animation" }
+		scale = 0.8
+	}
+
 ###FEMALE###
 
 	pdxmesh = {
@@ -83,6 +90,13 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "reformedmongolgfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "arabicgfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
 		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
 		scale = 0.8

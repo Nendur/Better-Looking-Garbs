@@ -40,7 +40,7 @@ Installation:
 
 3. Windows: Run betterlookinggarbsinstall.exe
    Linux: Open a terminal and type cd "~/.paradoxinteractive/Crusader Kings II/mod" && bash betterlookinggarbsinstall.sh
-   MacOS: Open a terminal and type cd "~/Documents/Paradox Interactive/Crusader Kings II/mod" && bash betterlookinggarbsinstall.sh
+   MacOS: Open a terminal and type cd "Documents/Paradox Interactive/Crusader Kings II/mod" && bash betterlookinggarbsinstall.sh
 The installer will selectively add DLC dependent files and compatibility add-ons to the mod based on your installation.
 
 4. Repeat the installation when the mod is updated to a newer version.

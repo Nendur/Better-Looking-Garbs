@@ -81,6 +81,7 @@ blg_priest = {
 
 blg_soldier = {
 	OR = {
+		has_character_flag = is_imperial_guard
 		has_character_flag = rtp_temporary_soldier
 		has_character_flag = rtp_temporary_mercenary
 		has_character_flag = rtp_temporary_crusader

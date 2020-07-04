@@ -326,7 +326,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_chinese_male_eyes2"
 		texturefile = "gfx\\characters\\mongol_male\\mongol_male_eyes2.dds"
-		noOfFrames = 10
+		noOfFrames = 13
 		norefcount = yes
 	}
 
@@ -617,7 +617,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_chinese_female_eyes2"
 		texturefile = "gfx\\characters\\mongol_female\\mongol_female_eyes2.dds"
-		noOfFrames = 10
+		noOfFrames = 13
 		norefcount = yes
 	}
 

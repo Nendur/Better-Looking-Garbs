@@ -17,6 +17,7 @@
 						trait = has_tuberculosis
 						trait = has_swamp_rot
 						trait = has_measles
+						has_character_modifier = broken_spirit
 					}
 
 					OR = {
@@ -25,8 +26,12 @@
 					}
 					NOT = { has_game_rule = { name = blg_disease value = off } }
 				}
-				trait = vampire
-				trait = lich
+				is_known_undead = yes
+				AND = {
+					trait = vampire
+					ai = no
+					multiplayer = no
+				}
 			}
 		}
 	}

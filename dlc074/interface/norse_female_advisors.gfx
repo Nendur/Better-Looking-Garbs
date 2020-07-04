@@ -56,4 +56,18 @@ objectTypes = {
 		idle   = "gfx\models\Mapindicators\Norse_LordSpiritual_Idle.xsm"
 		scale = 0.8f
 	}
+
+	pdxmesh = {
+		name = "reformednorsegfx_job_spiritual"
+		file = "gfx/models/Mapindicators/nfc_norse_spiritual.mesh"
+		animation = { id = "idle"		type = "nfc_norse_spiritual_idle_animation" }
+		scale = 0.8
+	}
+
+	EMFXActorType = {
+		name = "reformednorsegfx_job_spiritual_female"
+		actorfile = "gfx\models\Mapindicators\Norse_LordSpiritual.xac"
+		idle   = "gfx\models\Mapindicators\Norse_LordSpiritual_Idle.xsm"
+		scale = 0.8f
+	}
 }

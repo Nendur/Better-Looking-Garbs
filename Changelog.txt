@@ -1,12 +1,18 @@
 Changelog:
 
   More mount graphics with 8 horses, 8 dragons and 10 other animals.
-  Mount graphics triggered by lead cavalry flanks or mount artifacts.
+  Mount graphics triggered by leading cavalry flanks or having mount artifacts.
   Mount support for Crusader Mounts, AGOT and Elder Kings mods.
   Late era Saxons changed to English clothes.
   Late era Lombards changed to late Italian headgear.
   Match twin ethnicities.
   Even out West-African skintone more.
+  Added basic mid-era Frankish helmets.
+  Added Coptic priest model variant.
+  Added apostate prison variant.
+  Added vampire and werewolf effects.
+  Added hunting thropies for the white stag and friends.
+  Added more artifacts, pets and familiars.
 
 22-05-2020
   Weapon display overhaul with 78 new weapon sprites.

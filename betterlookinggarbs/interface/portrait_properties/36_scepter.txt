@@ -344,7 +344,7 @@
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
 			any_artifact = {
-				is_artifact_active = yes
+				is_artifact_equipped = yes
 				OR = {
 					has_artifact_flag = book
 					has_artifact_flag = antiquity_book
@@ -393,6 +393,67 @@
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
 			has_character_modifier = pet_hunting_eagle
+		}
+	}
+
+	23 = { # Raven
+		factor = 10
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			OR = {
+				death_reason = death_murder_unknown_crows
+				AND = {
+					has_character_modifier = raven_familiar
+					OR = {
+						AND = { ai = no multiplayer = no }
+						has_character_modifier = known_satanist
+					}
+				}
+			}
+		}
+	}
+
+	24 = { # Falcon
+		factor = 10
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			trait = falconer
+			OR = {
+				has_character_modifier = holding_grand_hunt
+				has_portrait_property = { layer = 0 index = 3 }
+				has_portrait_property = { layer = 0 index = 10 }
+				has_portrait_property = { layer = 0 index = 11 }
+				has_portrait_property = { layer = 0 index = 13 }
+				has_portrait_property = { layer = 0 index = 14 }
+				has_portrait_property = { layer = 0 index = 15 }
+				has_portrait_property = { layer = 0 index = 25 }
+				has_portrait_property = { layer = 0 index = 26 }
+			}
+		}
+	}
+
+	25 = { # Snake
+		factor = 10
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			OR = {
+				death_reason = death_accident_snakes
+				death_reason = death_murder_snakes
+				death_reason = death_murder_unknown_snakes
+				death_reason = death_execution_snake_pit
+				has_character_modifier = pet_snake
+				has_character_modifier = friend_of_snakes
+				has_character_flag = diwali_snake_charmer
+			}
 		}
 	}
 }

@@ -9,6 +9,15 @@
 				trait = on_pilgrimage
 				trait = wikid
 				trait = on_reaving
+				death_reason = death_execution_horses
+				death_reason = death_accident_bear
+				death_reason = death_execution_bear
+				death_reason = death_execution_snowbear
+				death_reason = death_execution_brownbear
+				death_reason = death_accident_tiger
+				death_reason = death_execution_tiger
+				death_reason = death_execution_lion
+				death_reason = death_execution_direwolf
 				AND = {
 					in_command = yes
 					OR = {
@@ -172,14 +181,19 @@
 	13 = { # Wolf
 		factor = 100
 		trigger = {
-			trait = direwolf
+			death_reason = death_execution_direwolf
 		}
 	}
 
 	14 = { # Bear
 		factor = 100
 		trigger = {
-			trait = brownbear
+			OR = {
+				trait = brownbear
+				death_reason = death_accident_bear
+				death_reason = death_execution_bear
+				death_reason = death_execution_brownbear
+			}
 		}
 	}
 
@@ -189,6 +203,7 @@
 			OR = {
 				trait = snowbear
 				trait = panda
+				death_reason = death_execution_snowbear
 			}
 		}
 	}
@@ -201,7 +216,10 @@
 	}
 
 	17 = { # Tiger
-		factor = 0
+		factor = 100
+		trigger = {
+			death_reason = death_execution_tiger
+		}
 	}
 
 	18 = { # Lion
@@ -210,6 +228,7 @@
 			OR = {
 				trait = lion
 				trait = hrakkar
+				death_reason = death_execution_lion
 			}
 		}
 	}
@@ -327,6 +346,7 @@
 			OR = {
 				has_character_modifier = unicorn_rider
 				trait = unicorn_MBS
+				death_reason = death_execution_horses
 			}
 		}
 	}

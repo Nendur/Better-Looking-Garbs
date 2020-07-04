@@ -1,11 +1,4 @@
 spriteTypes = {
-	spriteType = {
-		name = "GFX_character_imprisoned"
-		texturefile = "gfx\\characters\\shared\\imprisoned.dds"
-		noOfFrames = 5
-		norefcount = yes
-		can_be_lowres = yes
-	}
 
 	spriteType = {
 		name = "GFX_character_special_masks" #NOTE: THIS IS NOW USED FOR OUR OVERLAYS (Chickens, Hagravens, Werewolves etc)

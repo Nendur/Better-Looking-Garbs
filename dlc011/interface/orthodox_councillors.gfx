@@ -34,14 +34,6 @@ objectTypes = {
 		scale = 0.8f
 	}
 
-	EMFXActorType = {
-		name = "orthodox_dlc_job_spiritual"
-		actorfile = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xac"
-
-		idle   = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xsm"
-		scale = 0.8f
-	}
-
 # Eastern European
 	EMFXActorType = {
 		name = "easterngfx_job_chancellor"
@@ -59,9 +51,35 @@ objectTypes = {
 		scale = 0.8f
 	}
 
+# Orthodox Religions
+
+	EMFXActorType = {
+		name = "orthodox_dlc_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xac"
+
+		idle   = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xsm"
+		scale = 0.8f
+	}
+
 	EMFXActorType = {
 		name = "easterngfx_job_spiritual"
 		actorfile = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xac"
+
+		idle   = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xsm"
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
+		name = "orthodoxholygfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xac"
+
+		idle   = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xsm"
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
+		name = "copticgfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\Eastern_Copt_Spritual.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xsm"
 		scale = 0.8f

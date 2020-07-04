@@ -1,7 +1,7 @@
 # p36 Special Scepters
 36 = {
 	0 = { # blank
-		factor = 1
+		factor = 3
 		modifier = {
 			factor = 100
 			has_game_rule = { name = blg_artifacts value = off }
@@ -278,7 +278,7 @@
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
 			any_artifact = {
-				is_artifact_active = yes
+				is_artifact_equipped = yes
 				OR = {
 					has_artifact_flag = book
 					has_artifact_flag = antiquity_book
@@ -310,19 +310,71 @@
 			}
 			any_artifact = {
 				has_artifact_flag = map
-				is_artifact_active = yes
+				is_artifact_equipped = yes
 			}
 		}
 	}
 
 	22 = { # Eagle
+		factor = 0
+	}
+
+	23 = { # Raven
 		factor = 10
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
-			has_character_modifier = pet_hunting_eagle
+			OR = {
+				death_reason = death_murder_unknown_crows
+				any_artifact = {
+					artifact_type = pet_raven
+					is_artifact_equipped = yes
+				}
+			}
+		}
+	}
+
+	24 = { # Falcon
+		factor = 10
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			trait = falconer
+			OR = {
+				has_character_modifier = holding_grand_hunt
+				has_portrait_property = { layer = 0 index = 3 }
+				has_portrait_property = { layer = 0 index = 10 }
+				has_portrait_property = { layer = 0 index = 11 }
+				has_portrait_property = { layer = 0 index = 13 }
+				has_portrait_property = { layer = 0 index = 14 }
+				has_portrait_property = { layer = 0 index = 15 }
+				has_portrait_property = { layer = 0 index = 25 }
+				has_portrait_property = { layer = 0 index = 26 }
+			}
+		}
+	}
+
+	25 = { # Snake
+		factor = 10
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+			OR = {
+				death_reason = death_accident_snakes
+				death_reason = death_murder_snakes
+				death_reason = death_murder_unknown_snakes
+				death_reason = death_execution_snake_pit
+				any_artifact = {
+					artifact_type = pet_snake
+					is_artifact_equipped = yes
+				}
+			}
 		}
 	}
 }

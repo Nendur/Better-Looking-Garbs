@@ -10,6 +10,12 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				death_reason = death_execution_horses
+				death_reason = death_accident_bear
+				death_reason = death_execution_bear
+				death_reason = death_accident_tiger
+				death_reason = death_execution_tiger
+				death_reason = death_execution_lion
 				AND = {
 					in_command = yes
 					OR = {
@@ -217,10 +223,14 @@
 	14 = { # Bear
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = bear
-				has_artifact_flag = mount
+			OR = {
+				death_reason = death_accident_bear
+				death_reason = death_execution_bear
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = bear
+					has_artifact_flag = mount
+				}
 			}
 		}
 	}
@@ -250,10 +260,14 @@
 	17 = { # Tiger
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = tiger
-				has_artifact_flag = mount
+			OR = {
+				death_reason = death_accident_tiger
+				death_reason = death_execution_tiger
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = tiger
+					has_artifact_flag = mount
+				}
 			}
 		}
 	}
@@ -261,10 +275,13 @@
 	18 = { # Lion
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = lion
-				has_artifact_flag = mount
+			OR = {
+				death_reason = death_execution_lion
+				any_artifact = {
+					is_artifact_equipped = yes
+					has_artifact_flag = lion
+					has_artifact_flag = mount
+				}
 			}
 		}
 	}
@@ -407,6 +424,7 @@
 		trigger = {
 			OR = {
 				has_character_modifier = nomad_warhorse
+				death_reason = death_execution_horses
 				any_artifact = {
 					is_artifact_equipped = yes
 					has_artifact_flag = horse

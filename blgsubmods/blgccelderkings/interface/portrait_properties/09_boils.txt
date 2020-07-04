@@ -3,6 +3,7 @@
 	0 = { # blank
 		factor = 1
 	}
+
 	1 = { # bubonic plague
 		factor = 100
 		trigger = {
@@ -15,6 +16,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	2 = { # boils
 		factor = 100
 		trigger = {
@@ -27,6 +29,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	3 = { # red dots
 		factor = 100
 		trigger = {
@@ -43,6 +46,7 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
 	4 = { # ugly mole
 		factor = 99
 		trigger = {
@@ -54,6 +58,7 @@
 			}
 		}
 	}
+
 	5 = { # ugly monobrow
 		factor = 99
 		trigger = {
@@ -62,6 +67,42 @@
 			NOR = {
 				has_game_rule = { name = blg_traits value = notraits }
 				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+
+	6 = { # Vampire
+		factor = 100
+		trigger = {
+			OR = {
+				trait = known_vampire
+				trait = known_vampire_benevolent
+				AND = {
+					trait = vampire
+					ai = no
+					multiplayer = no
+				}
+			}
+
+			NOT = {
+				has_game_rule = { name = blg_traits value = off }
+			}
+			OR = {
+				practical_age = 16
+				AND = {
+					practical_age = 15
+					OR = {
+						has_game_rule = { name = blg_children value = 15 }
+						has_game_rule = { name = blg_children value = 15noscale }
+					}
+				}
+				AND = {
+					practical_age = 14
+					OR = {
+						has_game_rule = { name = blg_children value = 14 }
+						has_game_rule = { name = blg_children value = 14noscale }
+					}
+				}
 			}
 		}
 	}

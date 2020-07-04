@@ -12,7 +12,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_imprisoned"
 		texturefile = "gfx\\characters\\shared\\imprisoned.dds"
-		noOfFrames = 4
+		noOfFrames = 5
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -28,7 +28,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_boils"
 		texturefile = "gfx\\characters\\shared\\boils.dds"
-		noOfFrames = 6
+		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -102,7 +102,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_special_scepters"
 		texturefile = "gfx\\characters\\shared\\special_scepters.dds"
-		noOfFrames = 23
+		noOfFrames = 26
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -118,7 +118,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_special_crowns"
 		texturefile = "gfx\\characters\\shared\\special_crowns.dds"
-		noOfFrames = 26
+		noOfFrames = 27
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -126,7 +126,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_special_crowns_mid"
 		texturefile = "gfx\\characters\\shared\\special_crowns_mid.dds"
-		noOfFrames = 26
+		noOfFrames = 27
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -134,7 +134,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_special_crowns_behind"
 		texturefile = "gfx\\characters\\shared\\special_crowns_behind.dds"
-		noOfFrames = 26
+		noOfFrames = 27
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -182,7 +182,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_eyepatch"
 		texturefile = "gfx\\characters\\shared\\maimed_eyepatch.dds"
-		noOfFrames = 21
+		noOfFrames = 22
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -214,7 +214,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_possessed"
 		texturefile = "gfx\\characters\\shared\\character_possessed.dds"
-		noOfFrames = 8
+		noOfFrames = 9
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -253,7 +253,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_background_items"
 		texturefile = "gfx\\characters\\shared\\background_items.dds"
-		noOfFrames = 20
+		noOfFrames = 25
 		norefcount = yes
 		can_be_lowres = yes
 	}

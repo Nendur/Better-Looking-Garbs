@@ -10,24 +10,26 @@
 			}
 		}
 	}
-	1 = { # Demon Child (fantasy only)
+
+	1 = { # Demon Child
 		factor = 100
 		trigger = {
 			has_character_modifier = demon_horns
 
 			NOR = {
-				has_game_rule = { name = supernatural_events value = off }
 				has_game_rule = { name = blg_traits value = nolunatic }
 				has_game_rule = { name = blg_traits value = nofair }
 			}
 		}
 	}
-	2 = { #God
+
+	2 = { # Gods
 		factor = 100
 		trigger = {
 			trait = god
 		}
 	}
+
 	3 = { # possessed
 		factor = 100
 		trigger = {
@@ -43,16 +45,20 @@
 			}
 		}
 	}
+
 	4 = { # wolfblooded
 		factor = 100
 		trigger = {
 			OR = {
-				trait = known_werewolf
-				trait = known_vampire
 				has_character_modifier = wolf_blood
-				has_character_flag = demon_child
-				has_character_flag = demon_child_fake
-				has_character_flag = demon_child_non_pagan
+				has_character_modifier = lycanthropy
+
+				trait = known_werewolf
+				AND = {
+					trait = werewolf
+					ai = no
+					multiplayer = no
+				}
 			}
 
 			NOR = {
@@ -61,6 +67,7 @@
 			}
 		}
 	}
+
 	5 = { # incapable
 		factor = 100
 		trigger = {
@@ -75,6 +82,7 @@
 			}
 		}
 	}
+
 	6 = { # lunatic
 		factor = 100
 		trigger = {
@@ -90,6 +98,7 @@
 			}
 		}
 	}
+
 	7 = { # depressed
 		factor = 100
 		trigger = {
@@ -101,6 +110,7 @@
 			}
 		}
 	}
+
 	8 = { # stressed
 		factor = 100
 		trigger = {

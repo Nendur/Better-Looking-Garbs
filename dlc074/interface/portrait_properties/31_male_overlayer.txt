@@ -44,9 +44,9 @@
 	1 = { # Military Helm 01
 		factor = 100
 		trigger = {
-			year_of_birth = 1160
 			OR = {
 				AND = {
+					year_of_birth = 1160
 					has_portrait_property = { layer = 5 index = 10 }
 					OR = {
 						is_alive = no
@@ -60,9 +60,9 @@
 	2 = { # Military Helm 02
 		factor = 99
 		trigger = {
-			year_of_birth < 1250
 			OR = {
 				AND = {
+					year_of_birth < 1250
 					OR = {
 						has_portrait_property = { layer = 5 index = 10 }
 						has_portrait_property = { layer = 5 index = 12 }
@@ -85,9 +85,9 @@
 	3 = { # Military Helm 03
 		factor = 99
 		trigger = {
-			year_of_birth < 1250
 			OR = {
 				AND = {
+					year_of_birth < 1250
 					OR = {
 						has_portrait_property = { layer = 5 index = 10 }
 						has_portrait_property = { layer = 5 index = 12 }
@@ -110,9 +110,9 @@
 	4 = { # Military Helm 04
 		factor = 99
 		trigger = {
-			year_of_birth = 1160
 			OR = {
 				AND = {
+					year_of_birth = 1160
 					OR = {
 						has_portrait_property = { layer = 5 index = 12 }
 						has_portrait_property = { layer = 5 index = 13 }

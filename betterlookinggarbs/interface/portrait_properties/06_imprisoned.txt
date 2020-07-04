@@ -2,16 +2,15 @@
 6 = {
 	0 = { # blank
 		factor = 100
-		modifier = {
-			factor = 0
-			OR = {
+		trigger = {
+			NOR = {
 				prisoner = yes
 				death_reason = death_dungeon
 			}
 		}
 	}
 
-	1 = { # prisoner
+	1 = { # Clean prison
 		factor = 100
 		hide_layers = { 19 = { } } #Hide layers with special crowns.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
@@ -19,19 +18,15 @@
 		hide_layers = { 36 = { } } #Hide scepters.
 		hide_layers = { 41 = { } }
 		hide_layers = { 42 = { } }
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				prisoner = no
-				practical_age < 16
 				has_character_modifier = house_arrest
-				has_character_modifier = the_oubliette
+				practical_age < 16
 			}
-			NOT = { death_reason = death_dungeon }
 		}
 	}
 
-	2 = { # clean prison
+	2 = { # Iron collar
 		factor = 100
 		hide_layers = { 19 = { } } #Hide layers with special crowns.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
@@ -39,16 +34,12 @@
 		hide_layers = { 36 = { } } #Hide scepters.
 		hide_layers = { 41 = { } }
 		hide_layers = { 42 = { } }
-		modifier = {
-			factor = 0
-			NOR = {
-				has_character_modifier = house_arrest
-				practical_age < 16
-			}
+		trigger = {
+			has_character_modifier = the_oubliette
 		}
 	}
 
-	3 = { # iron collar
+	3 = { # Gagged prisoner
 		factor = 100
 		hide_layers = { 19 = { } } #Hide layers with special crowns.
 		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
@@ -56,9 +47,23 @@
 		hide_layers = { 36 = { } } #Hide scepters.
 		hide_layers = { 41 = { } }
 		hide_layers = { 42 = { } }
-		modifier = {
-			factor = 0
-			NOT = { has_character_modifier = the_oubliette }
+		trigger = {
+			OR = {
+				has_character_modifier = accused_apostate
+				has_character_modifier = known_witch
+				has_character_modifier = suspected_witch
+				has_character_modifier = known_satanist
+			}
 		}
+	}
+
+	4 = { # Regular prison
+		factor = 100
+		hide_layers = { 19 = { } } #Hide layers with special crowns.
+		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = { 31 = { } }
+		hide_layers = { 36 = { } } #Hide scepters.
+		hide_layers = { 41 = { } }
+		hide_layers = { 42 = { } }
 	}
 }

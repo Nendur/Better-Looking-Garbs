@@ -58,16 +58,31 @@ objectTypes = {
 		scale = 0.8
 	}
 
-	##### Spritual	-------------------------------------------------------------------------
+##### Spiritual ####
 	pdxmesh = {
 		name = "easterngfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/efc_eastern_spiritual_female.mesh"
 		animation = { id = "idle"		type = "efc_eastern_spiritual_female_idle_animation" }
 		scale = 0.8
 	}
+
 	pdxmesh = {
 		name = "orthodox_dlc_job_spiritual_female"
 		file = "gfx/models/Mapindicators/efc_eastern_spiritual_female.mesh"
+		animation = { id = "idle"		type = "efc_eastern_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "orthodoxholygfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/efc_eastern_spiritual_female.mesh"
+		animation = { id = "idle"		type = "efc_eastern_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "copticgfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/afc_eastern_spiritual_female.mesh"
 		animation = { id = "idle"		type = "efc_eastern_spiritual_female_idle_animation" }
 		scale = 0.8
 	}

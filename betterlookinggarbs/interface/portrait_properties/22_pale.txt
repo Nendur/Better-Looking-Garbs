@@ -13,6 +13,7 @@
 				trait = malaise
 				trait = cancer
 				trait = has_tuberculosis
+				has_character_modifier = broken_spirit
 			}
 
 			OR = {

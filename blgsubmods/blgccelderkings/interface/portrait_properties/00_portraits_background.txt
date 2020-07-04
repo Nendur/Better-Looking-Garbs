@@ -135,6 +135,7 @@
 			OR = {
 				trait = hunter
 				trait = falconer
+				has_character_modifier = holding_grand_hunt
 			}
 		}
 	}
@@ -197,12 +198,13 @@
 		modifier = {
 			factor = 100
 			OR = {
-				death_reason = death_murder_poison
-				death_reason = death_murder_unknown_poison
+				has_character_flag = party_host
+				has_character_flag = party_guest
 				has_character_flag = host_feast_started
 				has_character_flag = guest_feast_started
 				has_character_flag = blot_feast
 				has_character_flag = blot_feast_vassal
+				has_character_flag = flag_holding_great_tribal_festival
 			}
 		}
 		modifier = {
@@ -371,10 +373,11 @@
 			NOT = { has_character_modifier = in_seclusion }
 		}
 		modifier = {
-			factor = 5
+			factor = 10
 			OR = {
 				trait = hunter
 				trait = falconer
+				has_character_modifier = holding_grand_hunt
 			}
 		}
 	}
@@ -501,10 +504,11 @@
 			NOT = { has_character_modifier = in_seclusion }
 		}
 		modifier = {
-			factor = 5
+			factor = 10
 			OR = {
 				trait = hunter
 				trait = falconer
+				has_character_modifier = holding_grand_hunt
 			}
 		}
 	}

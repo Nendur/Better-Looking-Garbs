@@ -37,6 +37,13 @@ objectTypes = {
 		scale = 0.8f
 	}
 
+	EMFXActorType = {
+		name = "reformedafricangfx_job_spiritual"
+		actorfile = "gfx\models\indian_pikemen.xac"
+		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
+		scale = 0.8f
+	}
+
 # Meso-American
 	EMFXActorType = {
 		name = "mesoamericangfx_job_treasurer"

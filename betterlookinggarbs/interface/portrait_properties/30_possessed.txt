@@ -24,7 +24,28 @@
 		}
 	}
 
-	2 = { # possessed
+	2 = { # Divine possessed
+		factor = 100
+		trigger = {
+			trait = possessed
+			OR = {
+				has_character_modifier = voice_of_jesus
+				has_character_modifier = military_jesus
+			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOR = {
+				has_game_rule = { name = supernatural_events value = off }
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
+		}
+	}
+
+	3 = { # possessed
 		factor = 100
 		trigger = {
 			trait = possessed
@@ -40,25 +61,24 @@
 		}
 	}
 
-	3 = { # wolfblooded
+	4 = { # wolfblooded
 		factor = 100
 		trigger = {
 			OR = {
 				culture_group = dragon_group
 				has_character_modifier = wolf_blood
-				has_character_flag = demon_child
-				has_character_flag = demon_child_fake
-				has_character_flag = demon_child_non_pagan
+				has_character_modifier = lycanthropy
 			}
 
 			NOR = {
+				has_game_rule = { name = supernatural_events value = off }
 				has_game_rule = { name = blg_traits value = nolunatic }
 				has_game_rule = { name = blg_traits value = nofair }
 			}
 		}
 	}
 
-	4 = { # incapable
+	5 = { # incapable
 		factor = 100
 		trigger = {
 			OR = {
@@ -73,7 +93,7 @@
 		}
 	}
 
-	5 = { # lunatic
+	6 = { # lunatic
 		factor = 100
 		trigger = {
 			trait = lunatic
@@ -89,7 +109,7 @@
 		}
 	}
 
-	6 = { # depressed
+	7 = { # depressed
 		factor = 100
 		trigger = {
 			trait = depressed
@@ -101,7 +121,7 @@
 		}
 	}
 
-	7 = { # stressed
+	8 = { # stressed
 		factor = 100
 		trigger = {
 			trait = stressed

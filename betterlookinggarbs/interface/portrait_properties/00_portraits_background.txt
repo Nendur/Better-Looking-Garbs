@@ -45,6 +45,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				has_character_modifier = enjoying_the_countryside
 			}
 		}
 		modifier = {
@@ -77,6 +78,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				has_character_modifier = enjoying_the_countryside
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -113,6 +115,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				has_character_modifier = enjoying_the_countryside
 			}
 			NOR = {
 				prisoner = yes
@@ -156,6 +159,8 @@
 			OR = {
 				trait = hunter
 				trait = falconer
+				has_character_modifier = holding_grand_hunt
+				has_character_flag = holding_tiger_hunt
 				has_minor_title = poacher_mt
 				has_minor_title = brigand_mt
 			}
@@ -200,6 +205,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				has_character_modifier = enjoying_the_countryside
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -227,8 +233,8 @@
 		modifier = {
 			factor = 100
 			OR = {
-				death_reason = death_murder_poison
-				death_reason = death_murder_unknown_poison
+				has_character_flag = party_host
+				has_character_flag = party_guest
 				has_character_flag = host_feast_started
 				has_character_flag = guest_feast_started
 				has_character_flag = blot_feast
@@ -241,6 +247,7 @@
 				has_character_flag = jarilo_feast_vassal
 				has_character_flag = diwali_feast_begun
 				has_character_flag = attending_diwali_feast
+				has_character_flag = flag_holding_great_tribal_festival
 				has_minor_title = server_mt
 			}
 		}
@@ -434,6 +441,7 @@
 			OR = {
 				trait = on_hajj
 				has_character_modifier = zun_judgement
+				has_character_modifier = holding_grand_hunt
 				blg_desert_monk = yes
 			}
 		}
@@ -453,10 +461,11 @@
 			NOT = { has_character_modifier = in_seclusion }
 		}
 		modifier = {
-			factor = 5
+			factor = 10
 			OR = {
 				trait = hunter
 				trait = falconer
+				has_character_modifier = holding_grand_hunt
 				has_minor_title = poacher_mt
 				has_minor_title = brigand_mt
 			}
@@ -612,10 +621,11 @@
 			NOT = { has_character_modifier = in_seclusion }
 		}
 		modifier = {
-			factor = 5
+			factor = 10
 			OR = {
 				trait = hunter
 				trait = falconer
+				has_character_modifier = holding_grand_hunt
 				has_minor_title = poacher_mt
 				has_minor_title = brigand_mt
 			}
@@ -660,6 +670,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				has_character_modifier = enjoying_the_countryside
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -925,6 +936,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				has_character_modifier = enjoying_the_countryside
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -945,6 +957,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				has_character_modifier = enjoying_the_countryside
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -997,6 +1010,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				has_character_modifier = enjoying_the_countryside
 			}
 		}
 		hide_layers = { 38 = {} }
@@ -1038,6 +1052,7 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				has_character_modifier = enjoying_the_countryside
 			}
 		}
 		modifier = {
@@ -1097,6 +1112,7 @@
 			OR = {
 				likes_africans = yes
 				culture_group = central_african
+				has_character_modifier = holding_grand_hunt
 			}
 		}
 	}

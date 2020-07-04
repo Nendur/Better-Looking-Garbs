@@ -117,6 +117,13 @@ objectTypes = {
 		scale = 0.8
 	}
 
+	pdxmesh = {
+		name = "reformedafricangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
 # Mesoamerican
 	pdxmesh = {
 		name = "mesoamericangfx_job_spiritual"

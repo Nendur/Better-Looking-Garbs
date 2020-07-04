@@ -10,22 +10,27 @@
 			}
 		}
 	}
-	1 = { #Demon Child (fantasy only)
+
+	1 = { # Demon Child
 		factor = 100
 		trigger = {
-			OR = {
-				trait = lich
-				#has_character_modifier = pureblood_vampire
-				has_character_flag = stage_4_vampire
-			}
-			OR = {
-				trait = lich
-				trait = known_vampire
-				trait = known_vampire_benevolent
+			has_character_flag = revealed_daedric_heritage
+
+			NOR = {
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
 			}
 		}
 	}
-	2 = { # possessed
+
+	2 = { # lich
+		factor = 100
+		trigger = {
+			trait = lich
+		}
+	}
+
+	3 = { # possessed
 		factor = 100
 		trigger = {
 			trait = possessed
@@ -40,19 +45,23 @@
 			}
 		}
 	}
-	3 = { # wolfblooded
+
+	4 = { # wolfblooded
 		factor = 100
 		trigger = {
 			OR = {
-				trait = known_vampire
-				trait = known_vampire_benevolent
-				has_character_flag = demon_child
-				has_character_flag = demon_child_fake
-				has_character_flag = demon_child_non_pagan
+				trait = known_lycan
+				trait = known_lycan_benevolent
+				AND = {
+					trait = lycan
+					ai = no
+					multiplayer = no
+				}
 			}
 		}
 	}
-	4 = { # incapable
+
+	5 = { # incapable
 		factor = 100
 		trigger = {
 			OR = {
@@ -66,7 +75,8 @@
 			}
 		}
 	}
-	5 = { # lunatic
+
+	6 = { # lunatic
 		factor = 100
 		trigger = {
 			trait = lunatic
@@ -81,7 +91,8 @@
 			}
 		}
 	}
-	6 = { # depressed
+
+	7 = { # depressed
 		factor = 100
 		trigger = {
 			trait = depressed
@@ -92,10 +103,14 @@
 			}
 		}
 	}
-	7 = { # stressed
+
+	8 = { # stressed
 		factor = 100
 		trigger = {
-			trait = stressed
+			OR = {
+				trait = stressed
+				has_character_flag = stage_4_vampire
+			}
 
 			OR = {
 				is_alive = yes
