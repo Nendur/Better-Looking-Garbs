@@ -1,0 +1,111 @@
+# p9 boils
+9 = {
+	0 = { # blank
+		factor = 1
+	}
+
+	1 = { # bubonic plague
+		factor = 100
+		trigger = {
+			trait = has_bubonic_plague
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
+		}
+	}
+
+	2 = { # boils
+		factor = 100
+		trigger = {
+			trait = has_small_pox
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
+		}
+	}
+
+	3 = { # red dots
+		factor = 100
+		trigger = {
+			OR = {
+				trait = has_measles
+				trait = has_typhus
+				trait = rash
+			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
+		}
+	}
+
+	4 = { # ugly mole
+		factor = 99
+		trigger = {
+			trait = ugly
+
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+
+	5 = { # ugly monobrow
+		factor = 99
+		trigger = {
+			trait = ugly
+
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+
+	6 = { # Vampire
+		factor = 100
+		trigger = {
+			OR = {
+				trait = rtp_feral_vampire_tr
+				trait = rtp_vampire_tr
+			}
+			any_player = {
+				OR = {
+					trait = rtp_feral_vampire_tr
+					trait = rtp_vampire_tr
+					has_opinion_modifier = {
+						modifier = rtp_abomination_om
+						who = ROOT
+					}
+				}
+			}
+			NOT = { has_game_rule = { name = blg_traits value = off } }
+			OR = {
+				practical_age = 16
+				AND = {
+					practical_age = 15
+					OR = {
+						has_game_rule = { name = blg_children value = 15 }
+						has_game_rule = { name = blg_children value = 15noscale }
+					}
+				}
+				AND = {
+					practical_age = 14
+					OR = {
+						has_game_rule = { name = blg_children value = 14 }
+						has_game_rule = { name = blg_children value = 14noscale }
+					}
+				}
+			}
+		}
+	}
+}

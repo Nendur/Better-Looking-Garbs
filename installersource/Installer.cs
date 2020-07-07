@@ -781,6 +781,14 @@ namespace BetterLookingGarbsInstall
                     log.Write("Mythos compatibility add-on installed.");
                     InstallAnAddon("blgccmythos");
                 }
+                if ((Directory.Exists(Path.Combine(mods, "Rise to Power")) ||
+                    File.Exists(Path.Combine(mods, "risetopower.zip")) ||
+                    File.Exists(Path.Combine(mods, "blgrisetopower.mod"))) &&
+                    !File.Exists(Path.Combine(mods, "blgrisetopower.zip")))
+                {
+                    log.Write("Rise to Power compatibility add-on installed.");
+                    InstallAnAddon("blgrisetopower");
+                }
                 if ((File.Exists(Path.Combine(mods, "blgccironman.mod")) ||
                     File.ReadAllText(Path.Combine(docs, "settings.txt")).Contains("ironman=yes")) &&
                     !File.Exists(Path.Combine(mods, "blgccironman.zip")))

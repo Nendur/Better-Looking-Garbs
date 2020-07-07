@@ -138,6 +138,16 @@ if [ -d "${MODS}Mythos 2" -o -f "${MODS}Mythos2.mod" -o -f "${MODS}blgccmythos.m
 	fi
 	echo "Mythos compatibility add-on installed."
 fi
+if [ -d "${MODS}Rise to Power" -o -f "${MODS}risetopower.zip" -o -f "${MODS}blgrisetopower.mod" -a ! -f "${MODS}blgrisetopower.zip" ]; then
+	if [ -f "$BLGZIP" ]; then
+		unzip -uoq "$BLGZIP" "submods/blgrisetopower*" -d"$MODS"
+	fi
+	if [ -f "${ADDONS}/blgrisetopower.mod" ]; then
+		[ -d "${MODS}/blgrisetopower" ] && rm -r "${MODS}/blgrisetopower.mod" "${MODS}/blgrisetopower"
+		mv "${ADDONS}"/blgrisetopower* "$MODS"
+	fi
+	echo "Rise to Power compatibility add-on installed."
+fi
 if [ -f "${MODS}blgccironman.mod" -o -n "`grep ironman=yes \"${MODS}/../settings.txt\"`" -a ! -f "${MODS}blgccironman.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccironman*" -d"$MODS"

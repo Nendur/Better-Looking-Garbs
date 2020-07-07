@@ -1,0 +1,64 @@
+#p22 malnourished
+22 = {
+	0 = { # blank
+		factor = 1
+	}
+
+	1 = { #pale
+		factor = 100
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						trait = is_malnourished
+						trait = fatigue
+						trait = malaise
+						trait = cancer
+						trait = has_tuberculosis
+						trait = rtp_sanguinare_vampiris_tr
+						has_character_modifier = broken_spirit
+					}
+
+					OR = {
+						is_alive = yes
+						has_game_rule = { name = blg_disease value = postmortem }
+					}
+					NOT = { has_game_rule = { name = blg_disease value = off } }
+				}
+
+				AND = {
+					OR = {
+						trait = rtp_feral_vampire_tr
+						trait = rtp_vampire_tr
+					}
+					any_player = {
+						OR = {
+							trait = rtp_feral_vampire_tr
+							trait = rtp_vampire_tr
+							has_opinion_modifier = {
+								modifier = rtp_abomination_om
+								who = ROOT
+							}
+						}
+					}
+					NOT = { has_game_rule = { name = blg_traits value = off } }
+				}
+
+				AND = {
+					trait = rtp_shapeshifter_tr
+					any_player = {
+						OR = {
+							trait = rtp_shapeshifter_tr
+							trait = rtp_druid_tr
+							has_opinion_modifier = {
+								modifier = rtp_abomination_om
+								who = ROOT
+							}
+						}
+					}
+					NOT = { has_game_rule = { name = blg_traits value = off } }
+				}
+			}
+		}
+	}
+}

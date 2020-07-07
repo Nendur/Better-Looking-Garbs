@@ -1,0 +1,96 @@
+blg_italian = {
+	always = no
+}
+
+blg_north_african = {
+	always = no
+}
+
+blg_french = {
+	always = no
+}
+
+blg_desert_monk = {
+	always = no
+}
+
+blg_petty_empire = {
+	always = no
+}
+
+blg_uncrowned = {
+	always = no
+}
+
+blg_royalty = {
+	always = no
+}
+
+blg_crowned = {
+	always = no
+}
+
+blg_religion_chinese = {
+	always = no
+}
+
+blg_chinese = {
+	always = no
+}
+
+blg_regular_helmet = {
+	always = no
+}
+
+blg_saint = {
+	always = no
+}
+
+blg_polar_bear = {
+	location = {
+		OR = {
+			region = world_europe_north
+			terrain = arctic
+		}
+		climate = severe_winter
+	}
+}
+
+blg_black_bear = {
+	location = {
+		OR = {
+			region = world_persia
+			region = world_india
+			region = world_steppe_tarim
+			region = world_himalayas
+		}
+	}
+}
+
+blg_priest = {
+	is_ruler = yes
+	OR = {
+		government = rtp_theocracy_g
+		government = rtp_baron_theocracy_g
+	}
+}
+
+blg_soldier = {
+	OR = {
+		has_character_flag = rtp_temporary_soldier
+		has_character_flag = rtp_temporary_mercenary
+		has_character_flag = rtp_temporary_crusader
+		has_minor_title = sellsword_mt
+		has_minor_title = holy_warrior_mt
+		AND = {
+			is_ruler = yes
+			OR = {
+				government = rtp_mercenary_g
+				government = rtp_baron_mercenary_g
+				government = rtp_landless_mercenary_g
+				government = rtp_landless_order_g
+				government = rtp_baron_order_g
+			}
+		}
+	}
+}

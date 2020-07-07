@@ -1,0 +1,190 @@
+#p30 eye effects
+30 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 100
+			OR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+
+	1 = { # Demon Child (fantasy only)
+		factor = 100
+		trigger = {
+			OR = {
+				has_character_modifier = demon_horns
+				AND = {
+					OR = {
+						trait = rtp_cursed_tr
+						trait = rtp_gifted_tr
+					}
+					any_player = {
+						OR = {
+							trait = rtp_cursed_tr
+							trait = rtp_gifted_tr
+							has_opinion_modifier = {
+								modifier = rtp_abomination_om
+								who = ROOT
+							}
+						}
+					}
+				}
+			}
+
+			NOR = {
+				has_game_rule = { name = supernatural_events value = off }
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
+		}
+	}
+
+	2 = { # Divine possessed
+		factor = 100
+		trigger = {
+			OR = {
+				AND = {
+					trait = possessed
+					OR = {
+						has_character_modifier = voice_of_jesus
+						has_character_modifier = military_jesus
+					}
+				}
+				AND = {
+					OR = {
+						trait = rtp_mage_tr
+						trait = rtp_sage_tr
+					}
+					any_player = {
+						OR = {
+							trait = rtp_mage_tr
+							trait = rtp_sage_tr
+							has_opinion_modifier = {
+								modifier = rtp_abomination_om
+								who = ROOT
+							}
+						}
+					}
+				}
+			}
+
+			NOR = {
+				has_game_rule = { name = supernatural_events value = off }
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
+		}
+	}
+
+	3 = { # possessed
+		factor = 100
+		trigger = {
+			trait = possessed
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOR = {
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
+		}
+	}
+
+	4 = { # wolfblooded
+		factor = 100
+		trigger = {
+			OR = {
+				culture_group = dragon_group
+				has_character_modifier = wolf_blood
+				has_character_modifier = lycanthropy
+				AND = {
+					OR = {
+						trait = rtp_feral_werewolf_tr
+						trait = rtp_werewolf_tr
+					}
+					any_player = {
+						OR = {
+							trait = rtp_feral_werewolf_tr
+							trait = rtp_werewolf_tr
+							has_opinion_modifier = {
+								modifier = rtp_abomination_om
+								who = ROOT
+							}
+						}
+					}
+				}
+			}
+
+			NOR = {
+				has_game_rule = { name = supernatural_events value = off }
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
+		}
+	}
+
+	5 = { # incapable
+		factor = 100
+		trigger = {
+			OR = {
+				trait = incapable
+				trait = sick_incapable
+			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+		}
+	}
+
+	6 = { # lunatic
+		factor = 100
+		trigger = {
+			trait = lunatic
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOR = {
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
+		}
+	}
+
+	7 = { # depressed
+		factor = 100
+		trigger = {
+			trait = depressed
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+		}
+	}
+
+	8 = { # stressed
+		factor = 100
+		trigger = {
+			OR = {
+				trait = stressed
+				trait = rtp_sanies_lupinus_tr
+				trait = rtp_corruption_tr
+				trait = rtp_mana_poisoning_tr
+			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+		}
+	}
+}
