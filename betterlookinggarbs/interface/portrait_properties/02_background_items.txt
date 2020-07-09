@@ -111,9 +111,9 @@
 					artifact_type = random_world_mythological_heart_1
 					artifact_type = random_world_mythological_blood
 					artifact_type = random_world_mythological_eye
-					has_character_flag = bodypart
-					has_character_flag = remains
-					has_character_flag = saint_item
+					has_artifact_flag = bodypart
+					has_artifact_flag = remains
+					has_artifact_flag = saint_item
 				}
 			}
 			OR = {
@@ -214,8 +214,14 @@
 				AND = {
 					has_character_modifier = cat_familiar
 					OR = {
-						AND = { ai = no multiplayer = no }
 						has_character_modifier = known_satanist
+						AND = {
+							multiplayer = no
+							OR = {
+								ai = no
+								any_player = { is_devil_worshiper_trigger = yes }
+							}
+						}
 					}
 				}
 			}
@@ -376,8 +382,14 @@
 				AND = {
 					has_character_modifier = owl_familiar
 					OR = {
-						AND = { ai = no multiplayer = no }
 						has_character_modifier = known_satanist
+						AND = {
+							multiplayer = no
+							OR = {
+								ai = no
+								any_player = { is_devil_worshiper_trigger = yes }
+							}
+						}
 					}
 				}
 			}
@@ -449,8 +461,14 @@
 			}
 			has_character_modifier = wolf_familiar
 			OR = {
-				AND = { ai = no multiplayer = no }
 				has_character_modifier = known_satanist
+				AND = {
+					multiplayer = no
+					OR = {
+						ai = no
+						any_player = { is_devil_worshiper_trigger = yes }
+					}
+				}
 			}
 		}
 	}

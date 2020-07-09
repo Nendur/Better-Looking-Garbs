@@ -53,6 +53,7 @@
 				has_character_modifier = known_witch
 				has_character_modifier = suspected_witch
 				has_character_modifier = known_satanist
+				has_character_modifier = suspected_demon_spawn
 			}
 		}
 	}

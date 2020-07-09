@@ -162,8 +162,14 @@
 				AND = {
 					has_character_modifier = cat_familiar
 					OR = {
-						AND = { ai = no multiplayer = no }
 						has_character_modifier = known_satanist
+						AND = {
+							multiplayer = no
+							OR = {
+								ai = no
+								any_player = { is_devil_worshiper_trigger = yes }
+							}
+						}
 					}
 				}
 			}
@@ -330,8 +336,14 @@
 				AND = {
 					has_character_modifier = owl_familiar
 					OR = {
-						AND = { ai = no multiplayer = no }
 						has_character_modifier = known_satanist
+						AND = {
+							multiplayer = no
+							OR = {
+								ai = no
+								any_player = { is_devil_worshiper_trigger = yes }
+							}
+						}
 					}
 				}
 			}
@@ -396,7 +408,6 @@
 	24 = { # Wolf
 		factor = 10
 		trigger = {
-			in_command = no
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -408,8 +419,14 @@
 				AND = {
 					has_character_modifier = wolf_familiar
 					OR = {
-						AND = { ai = no multiplayer = no }
 						has_character_modifier = known_satanist
+						AND = {
+							multiplayer = no
+							OR = {
+								ai = no
+								any_player = { is_devil_worshiper_trigger = yes }
+							}
+						}
 					}
 				}
 			}

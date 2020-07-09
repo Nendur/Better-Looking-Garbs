@@ -681,7 +681,6 @@
 					OR = {
 						has_artifact_flag = dagger
 						has_artifact_flag = stiletto
-						has_artifact_flag = cleaver
 					}
 				}
 			}
@@ -691,7 +690,6 @@
 					OR = {
 						has_artifact_flag = dagger
 						has_artifact_flag = stiletto
-						has_artifact_flag = cleaver
 					}
 					NOR = {
 						has_artifact_flag = jewelry

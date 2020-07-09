@@ -64,7 +64,6 @@
 				AND = {
 					year_of_birth < 1250
 					OR = {
-						has_portrait_property = { layer = 5 index = 10 }
 						has_portrait_property = { layer = 5 index = 12 }
 						has_portrait_property = { layer = 5 index = 13 }
 					}
@@ -89,7 +88,6 @@
 				AND = {
 					year_of_birth < 1250
 					OR = {
-						has_portrait_property = { layer = 5 index = 10 }
 						has_portrait_property = { layer = 5 index = 12 }
 						has_portrait_property = { layer = 5 index = 13 }
 					}

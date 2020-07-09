@@ -33,10 +33,6 @@
 				has_character_modifier = military_jesus
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
 			NOR = {
 				has_game_rule = { name = supernatural_events value = off }
 				has_game_rule = { name = blg_traits value = nolunatic }

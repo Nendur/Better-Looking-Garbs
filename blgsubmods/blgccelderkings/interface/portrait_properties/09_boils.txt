@@ -79,8 +79,14 @@
 				trait = known_vampire_benevolent
 				AND = {
 					trait = vampire
-					ai = no
 					multiplayer = no
+					OR = {
+						is_local_human_observer = yes
+						any_player = {
+							trait = vampire
+							at_location = ROOT
+						}
+					}
 				}
 			}
 

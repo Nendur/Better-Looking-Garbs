@@ -57,6 +57,7 @@ The installer will selectively add DLC dependent files and compatibility add-ons
       * If you use the Lux Invicta mod, play with both Better Looking Garbs and the BLG/CC for Lux Invicta mod.
       * If you use the Tianxia: Silk Road Expansion mod, play with both Better Looking Garbs and the BLG/CC for Tianxia mod. The Tianxia: Japanese, Korean & Ainu Portraits are required as well.
       * If you use the Mythos 2 mod, play with both Better Looking Garbs and the BLG/CC for Mythos mod.
+      * If you use the Rise to Power mod, play with both Better Looking Garbs and the BLG for Rise to Power mod.
       * If you use a different mod with non-standard cultures, you can try with both Better Looking Garbs and the BLG/CC generic compatibility mod.
       * If you want to play for achievements, play with both Better Looking Garbs and the BLG/CC with ironman achievements mod. This disables several portraits. Not needed for modded ironman.
       * If you dislike the wounding and disease graphics, play with both Better Looking Garbs and the no disease mod.

@@ -56,8 +56,11 @@
 				trait = known_werewolf
 				AND = {
 					trait = werewolf
-					ai = no
 					multiplayer = no
+					OR = {
+						ai = no
+						is_local_human_observer = yes
+					}
 				}
 			}
 

@@ -78,8 +78,11 @@
 				trait = known_vampire
 				AND = {
 					trait = vampire
-					ai = no
 					multiplayer = no
+					OR = {
+						ai = no
+						is_local_human_observer = yes
+					}
 				}
 			}
 

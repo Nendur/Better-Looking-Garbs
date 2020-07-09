@@ -77,7 +77,6 @@
 				trait = severely_injured
 				trait = maimed
 				trait = disfigured
-				trait = burned
 			}
 		}
 	}
@@ -116,6 +115,10 @@
 				trait = disfigured
 				trait = burned
 			}
+		}
+		modifier = {
+			factor = 100
+			trait = burned
 		}
 	}
 	10 = { #disfigured

@@ -20,6 +20,9 @@
 				government = outlaw_government
 				government = winter_government
 				culture = lhazareen
+				has_character_modifier = enjoying_the_countryside
+				has_character_modifier = holding_grand_hunt
+				has_character_flag = holding_tiger_hunt
 			}
 		}
 	}

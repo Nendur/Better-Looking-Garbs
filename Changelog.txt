@@ -1,5 +1,6 @@
 Changelog:
 
+08-07-2020
   More mount graphics with 8 horses, 8 dragons and 10 other animals.
   Mount graphics triggered by leading cavalry flanks or having mount artifacts.
   Mount support for Crusader Mounts, AGOT and Elder Kings mods.
@@ -13,6 +14,7 @@ Changelog:
   Added vampire and werewolf effects.
   Added hunting thropies for the white stag and friends.
   Added more artifacts, pets and familiars.
+  Split off Rise to Power submod to add supernatural creature support.
 
 22-05-2020
   Weapon display overhaul with 78 new weapon sprites.

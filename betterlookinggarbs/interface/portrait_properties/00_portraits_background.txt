@@ -31,10 +31,7 @@
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				has_job_title = job_chancellor
-				has_minor_title = guard_mt
-			}
+			has_job_title = job_chancellor
 		}
 		modifier = {
 			factor = 0
@@ -161,8 +158,6 @@
 				trait = falconer
 				has_character_modifier = holding_grand_hunt
 				has_character_flag = holding_tiger_hunt
-				has_minor_title = poacher_mt
-				has_minor_title = brigand_mt
 			}
 		}
 	}
@@ -248,7 +243,6 @@
 				has_character_flag = diwali_feast_begun
 				has_character_flag = attending_diwali_feast
 				has_character_flag = flag_holding_great_tribal_festival
-				has_minor_title = server_mt
 			}
 		}
 		modifier = {
@@ -276,8 +270,6 @@
 				has_job_title = job_marshal
 				employer = { mercenary = yes }
 				blg_soldier = yes
-				has_minor_title = veteran_mt
-				has_minor_title = officer_mt
 			}
 		}
 		modifier = {
@@ -309,7 +301,6 @@
 			OR = {
 				is_priest = yes
 				blg_priest = yes
-				has_minor_title = preacher_mt
 			}
 			religion_group = pagan_group
 			has_secret_religion = no
@@ -375,7 +366,6 @@
 				blg_priest = yes
 				has_focus = focus_theology
 				has_pious_trait_trigger = yes
-				has_minor_title = preacher_mt
 			}
 		}
 		modifier = {
@@ -383,7 +373,6 @@
 			OR = {
 				is_priest = yes
 				blg_priest = yes
-				has_minor_title = preacher_mt
 				has_focus = focus_theology
 				trait = zealous
 			}
@@ -466,8 +455,6 @@
 				trait = hunter
 				trait = falconer
 				has_character_modifier = holding_grand_hunt
-				has_minor_title = poacher_mt
-				has_minor_title = brigand_mt
 			}
 		}
 	}
@@ -626,8 +613,6 @@
 				trait = hunter
 				trait = falconer
 				has_character_modifier = holding_grand_hunt
-				has_minor_title = poacher_mt
-				has_minor_title = brigand_mt
 			}
 		}
 	}
@@ -752,10 +737,7 @@
 		}
 		modifier = {
 			factor = 10
-			OR = {
-				has_job_title = job_chancellor
-				has_minor_title = guard_mt
-			}
+			has_job_title = job_chancellor
 		}
 		modifier = {
 			factor = 10
@@ -808,10 +790,7 @@
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				is_priest = yes
-				has_minor_title = preacher_mt
-			}
+			is_priest = yes
 			religion_group = muslim
 			has_secret_religion = no
 		}
@@ -884,12 +863,7 @@
 		}
 		modifier = {
 			factor = 100
-			OR = {
-				death_reason = death_rabble
-				has_minor_title = pickpocket_mt
-				has_minor_title = town_crier_mt
-				has_minor_title = peddler_mt
-			}
+			death_reason = death_rabble
 		}
 	}
 
@@ -908,10 +882,7 @@
 				trait = architect
 				trait = strategist
 				trait = gamer
-				#trait = erudite
 				trait = physician
-				has_minor_title = scribe_mt
-				has_minor_title = librarian_mt
 			}
 		}
 		modifier = {

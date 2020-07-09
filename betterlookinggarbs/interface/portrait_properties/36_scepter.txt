@@ -408,8 +408,14 @@
 				AND = {
 					has_character_modifier = raven_familiar
 					OR = {
-						AND = { ai = no multiplayer = no }
 						has_character_modifier = known_satanist
+						AND = {
+							multiplayer = no
+							OR = {
+								ai = no
+								any_player = { is_devil_worshiper_trigger = yes }
+							}
+						}
 					}
 				}
 			}

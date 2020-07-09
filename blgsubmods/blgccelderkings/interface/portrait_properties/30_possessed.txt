@@ -54,8 +54,14 @@
 				trait = known_lycan_benevolent
 				AND = {
 					trait = lycan
-					ai = no
 					multiplayer = no
+					OR = {
+						is_local_human_observer = yes
+						any_player = {
+							trait = lycan
+							at_location = ROOT
+						}
+					}
 				}
 			}
 		}

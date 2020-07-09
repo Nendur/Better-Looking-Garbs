@@ -72,29 +72,9 @@ blg_black_bear = {
 
 blg_priest = {
 	is_ruler = yes
-	OR = {
-		government = rtp_theocracy_g
-		government = rtp_baron_theocracy_g
-		government = playable_theocracy_government
-	}
+	government = playable_theocracy_government
 }
 
 blg_soldier = {
-	OR = {
-		has_character_flag = is_imperial_guard
-		has_character_flag = rtp_temporary_soldier
-		has_character_flag = rtp_temporary_mercenary
-		has_character_flag = rtp_temporary_crusader
-		has_minor_title = sellsword_mt
-		AND = {
-			is_ruler = yes
-			OR = {
-				government = rtp_mercenary_g
-				government = rtp_baron_mercenary_g
-				government = rtp_landless_mercenary_g
-				government = rtp_landless_order_g
-				government = rtp_baron_order_g
-			}
-		}
-	}
+	has_character_flag = is_imperial_guard
 }

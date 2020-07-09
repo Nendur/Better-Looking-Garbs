@@ -20,6 +20,9 @@
 				trait = on_hajj
 				trait = on_indian_pilgrimage
 				trait = kow_tow_travels
+				has_character_modifier = enjoying_the_countryside
+				has_character_modifier = holding_grand_hunt
+				has_character_flag = holding_tiger_hunt
 			}
 		}
 	}
