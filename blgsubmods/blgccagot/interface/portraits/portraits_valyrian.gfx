@@ -166,7 +166,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 	# Valyrian Male middle age
@@ -250,7 +250,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 	# Valyrian Male old age
@@ -334,7 +334,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 	portraitType = {
@@ -424,7 +424,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 	# West Valyrian Male middle age
@@ -511,7 +511,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 	# West Valyrian Male old age
@@ -599,7 +599,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 ### VALYRIAN FEMALE ####
@@ -721,7 +721,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 	# Valyrian Female midage
@@ -805,7 +805,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 	# Valyrian Female oldage
@@ -889,7 +889,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 	# West Valyrian Female
@@ -980,7 +980,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 	# West Valyrian Female midage
@@ -1067,7 +1067,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 
 	# West Valyrian Female oldage
@@ -1154,6 +1154,6 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 10 12 13 14 15 }
+		headgear_that_hides_hair = { 12 13 14 15 }
 	}
 }
