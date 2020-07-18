@@ -22,7 +22,8 @@
 				has_character_flag = add_duel_xp
 				has_character_flag = chivalry_duel_ongoing
 			}
-			NOT = {
+			NOR = {
+				has_character_modifier = pet_hunting_eagle
 				any_artifact = {
 					artifact_type = mjolnir
 					is_artifact_equipped = yes

@@ -1185,6 +1185,7 @@
 						}
 					}
 				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 15 } }
 			}
 		}
 		modifier = {

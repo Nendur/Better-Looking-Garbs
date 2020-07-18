@@ -318,6 +318,7 @@
 			OR = {
 				higher_real_tier_than = count
 				spouse = { higher_real_tier_than = count }
+				has_character_modifier = jd_strategist
 			}
 			#NOT = { primary_title = { mercenary = yes } }
 			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 11 } }
@@ -449,6 +450,11 @@
 				blg_north_african = yes
 			}
 		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 13 }
+		}
 	}
 
 	13 = { # Noble war gear
@@ -510,6 +516,7 @@
 			NOR = {
 				higher_real_tier_than = count
 				spouse = { higher_real_tier_than = count }
+				has_character_modifier = jd_strategist
 			}
 		}
 		modifier = {
@@ -535,6 +542,11 @@
 				blg_north_african = yes
 			}
 		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 14 }
+		}
 	}
 
 	14 = { # Chinese war gear
@@ -549,6 +561,7 @@
 					OR = {
 						higher_real_tier_than = count
 						spouse = { higher_real_tier_than = count }
+						has_character_modifier = jd_strategist
 					}
 					OR = {
 						AND = {
@@ -599,6 +612,7 @@
 						blg_north_african = yes
 					}
 				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 15 } }
 			}
 		}
 		modifier = {
@@ -616,6 +630,11 @@
 				culture_group = israelite
 				blg_north_african = yes
 			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_clothes value = 15 }
 		}
 	}
 }

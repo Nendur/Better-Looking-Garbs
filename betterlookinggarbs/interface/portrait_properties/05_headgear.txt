@@ -1434,6 +1434,7 @@
 					primary_title = { mercenary = no }
 					NOT = { blg_soldier = yes }
 				}
+				has_character_modifier = jd_strategist
 			}
 			NOR = {
 				likes_mesoamericans = yes
@@ -1625,6 +1626,7 @@
 						culture_group = magyar
 					}
 				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 13 } }
 			}
 			NOR = {
 				has_game_rule = { name = martial_headgear value = off }
@@ -1632,7 +1634,6 @@
 				has_game_rule = { name = blg_helmet value = off }
 				has_game_rule = { name = blg_helmet value = none }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 13 } }
 		}
 		modifier = {
 			factor = 0
@@ -1738,6 +1739,11 @@
 				culture_group = magyar
 			}
 		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 13 }
+		}
 	}
 
 	13 = { # ducal war helm
@@ -1782,6 +1788,7 @@
 						culture_group = magyar
 					}
 				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 14 } }
 			}
 			NOR = {
 				has_game_rule = { name = martial_headgear value = off }
@@ -1789,13 +1796,13 @@
 				has_game_rule = { name = blg_helmet value = off }
 				has_game_rule = { name = blg_helmet value = none }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 14 } }
 		}
 		modifier = {
 			factor = 0
 			NOR = {
 				higher_real_tier_than = count
 				spouse = { higher_real_tier_than = count }
+				has_character_modifier = jd_strategist
 			}
 		}
 		modifier = {
@@ -1820,6 +1827,11 @@
 				culture_group = magyar
 			}
 		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 14 }
+		}
 	}
 
 	14 = { # Chinese war gear
@@ -1835,6 +1847,7 @@
 					OR = {
 						higher_real_tier_than = count
 						spouse = { higher_real_tier_than = count }
+						has_character_modifier = jd_strategist
 					}
 					OR = {
 						AND = {
@@ -1882,6 +1895,7 @@
 						culture_group = magyar
 					}
 				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 15 } }
 			}
 		}
 		modifier = {
@@ -1898,6 +1912,11 @@
 				culture_group = south_slavic
 				culture_group = magyar
 			}
+		}
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 15 }
 		}
 	}
 }

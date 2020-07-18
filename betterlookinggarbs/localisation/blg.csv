@@ -5,6 +5,11 @@ sicilian;Sicilian;Sicilien;Sizilianisch;;Sicilian;;;;;;;;;x
 brown_bear;Bear;ours;Bär;;Oso;;;;;;;;;x
 black_bear;Bear;ours;Bär;;Oso;;;;;;;;;x
 polar_bear;Bear;ours;Bär;;Oso;;;;;;;;;x
+blgspawn;New character;;;;;;;;;;;;;x
+blgspawn_desc;This character has not yet been initialized;;;;;;;;;;;;;x
+blgquesting;On a quest;;;;;;;;;;;;;x
+blgquesting;This character has an active society quest;;;;;;;;;;;;;x
+
 BLG_NEW_CHARACTERS;§ZBLG:§! New Character Variation;;;;;;;;;;;;;x
 BLG_NEW_CHARACTERS_HISTORICAL_DESC;New character ethnicities will be varied based on the populations within or near the realm they come from. Both the current population and the historical inhabitants will be represented.;;;;;;;;;;;;;x
 BLG_NEW_CHARACTERS_LIMITED_DESC;New character ethnicities will be varied based on the populations within or near the realm they come from. No culture or region specific options will be used.;;;;;;;;;;;;;x
@@ -15,7 +20,6 @@ BLG_CHILD_BIRTH_LIMITED_DESC;Newborn children can get a different ethnicity repr
 RULE_OPTION_PRIMARY_PARENT;Primary Parent;;;;;;;;;;;;;x
 BLG_CHILD_BIRTH_PRIMARY_DESC;Newborn children will take after the primary parent in a marriage. The father in a regular marriage and vice versa. This setting takes player choice over realism.;;;;;;;;;;;;;x
 BLG_CHILD_BIRTH_OFF_DESC;Newborn children will NOT be altered.;;;;;;;;;;;;;x
-
 BLG_CHILDREN;§ZBLG:§! Child Portraits;;;;;;;;;;;;;x
 RULE_OPTION_BLG_CHILDREN_16_SCALING;Until age 16;;;;;;;;;;;;;x
 RULE_OPTION_BLG_CHILDREN_15_SCALING;Until age 15;;;;;;;;;;;;;x
@@ -60,42 +64,3 @@ BLG_ARTIFACTS_ON_DESC;Equipped artifacts and pets can be shown in the character 
 BLG_ARTIFACTS_WEAPONS_DESC;Only weapons and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
 BLG_ARTIFACTS_RARE_DESC;Only rare and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
 BLG_ARTIFACTS_OFF_DESC;No artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
-ca_headgear;headgear;couvre-chef;Kopfbedeckung;;corona;;;;;;;;;x
-ca_clothes;clothes;habits;Kleidung;;ropajes;;;;;;;;;x
-ca_mask;mask;;;;;;;;;;;;;x
-ca_eyepatch;blindfold;;;;;;;;;;;;;x
-ca_hair;hairstyle;;;;;;;;;;;;;x
-ca_beard;beardstyle;;;;;;;;;;;;;x
-ca_overlayer;overlayer;;;;;;;;;;;;;x
-ca_underlayer;underlayer;;;;;;;;;;;;;x
-customise_attire;Customise Appearence;Personnaliser la Tenue;Anpassen der Kleidung;;Personalizar el Atuendo;;;;;;;;;x
-customise_attire_desc;Customise the appearence of §Y[Root.GetTitledFirstName]§!, overriding the choises determining how their portrait is outfitted.;Personnaliser la tenue de §Y[Root.GetTitledFirstName]§!, en évitant le choix des vêtements et des coiffures.;Passen Sie die Kleidung von §Y[Root.GetTitledFirstName]§!, über die Auswahl der Kleidung und Kopfbedeckung.;;Personalizar el atuendo de §Y[Root.GetTitledFirstName]§!, anulando la elección de ropa y sombrerería.;;;;;;;;;x
-ca.100.desc;You can customise the way §Y[From.GetTitledFirstName]§! looks. This has no gameplay effects beyond appearence. Select which aspect you would like to change.;;;;;;;;;;;;;x
-ca.return;Return;Retour;Rückkehr;;Volver;;;;;;;;;x
-ca.110.opt;Tailor;Tailleur;Schneider;;Sastre;;;;;x
-ca.120.opt;Barber;Barbier;Barbier;;Peluquero;;;;;x
-ca.130.opt;Physician;Physicien;Arzt;;Médico;;;;;x
-ca.110.desc;You can customise the attire §Y[From.GetTitledFirstName]§! is wearing. Select which part of the outfit you would like to change.;;;;;;;;;;;;;x
-ca.111.desc;Select the headgear worn by §Y[From.GetTitledFirstName]§!.\nThe current selection is the §Y[From.ca_headgear.GetValue]§!th option.;;;;;;;;;x
-ca.112.desc;Select the clothes worn by §Y[From.GetTitledFirstName]§!.\nThe current selection is the §Y[From.ca_clothes.GetValue]§!th option.;;;;;;;;;x
-ca.113.desc;Set Society Clothing;;;;;;;;;x
-ca.113.WearSocietyGear;Wear Society Clothing;;;;;;;;;x
-ca.113.RemoveSocietyGear;Remove Society Clothing;;;;;;;;;x
-ca.113.ShowMask;Wear Mask;;;;;;;;;x
-ca.113.RemoveMask;Remove Mask;;;;;;;;;x
-ca.114.opt;Headgear Accessories;;;;;;;;;x
-ca.114.desc;You can pick the French headgear accessories that can be combined with the regular worn headgear for §Y[From.GetTitledFirstName]§!.;;;;;;;;;x
-ca.115.opt;Headgear Overlayer;;;;;;;;;x
-ca.115.desc;Select the headgear overlayer worn by §Y[From.GetTitledFirstName]§!.\nThe current selection is the §Y[From.ca_overlayer.GetValue]§!th option.;;;;;;;;;x
-ca.116.opt;Headgear Underlayer;;;;;;;;;x
-ca.116.desc;Select the headgear underlayer worn by §Y[From.GetTitledFirstName]§!.\nThe current selection is the §Y[From.ca_underlayer.GetValue]§!th option.;;;;;;;;;x
-ca.120.desc;You can customise the style §Y[From.GetTitledFirstName]§! is wearing their hair. Select which type of hair you would like to change.;;;;;;;;;;;;;x
-ca.121.desc;Select the hairstyle for §Y[From.GetTitledFirstName]§!.\nThe current selection is the §Y[From.ca_hair.GetValue]§!th option.;;;;;;;;;x
-ca.122.desc;Select the beardstyle for §Y[From.GetTitledFirstName]§!.\nThe current selection is the §Y[From.ca_beard.GetValue]§!th option.;;;;;;;;;x
-ca.130.desc;You can customise the injuries afflicting §Y[From.GetTitledFirstName]§!, or the coverings of them. Select which part of the face you would like to change.;;;;;;;;;;;;;x
-ca.131.opt;Scars;;;;;;;;;x
-ca.131.desc;Select the position of scars for §Y[From.GetTitledFirstName]§!.;;;;;;;;;x
-ca.132.opt;Masks;;;;;;;;;x
-ca.132.desc;Select the mask covering §Y[From.GetTitledFirstName]§!s face.\nThe current selection is the §Y[From.ca_mask.GetValue]§!th option.;;;;;;;;;x
-ca.133.opt;Blindfolds or Eyepatches;;;;;;;;;x
-ca.133.desc;Select the blindfold or eyepatch used by §Y[From.GetTitledFirstName]§!.\nThe current selection is the §Y[From.ca_eyepatch.GetValue]§!th option.;;;;;;;;;x

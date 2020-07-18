@@ -368,14 +368,14 @@
 					this_is_warrior_culture_trigger = yes
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 8 } }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 9 } }
 		}
 		modifier = {
 			factor = 0
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 8 }
+				is_variable_equal = { which = ca_mask value = 9 }
 			}
 		}
 	}
@@ -413,14 +413,14 @@
 					this_is_warrior_culture_trigger = yes
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 9 } }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 10 } }
 		}
 		modifier = {
 			factor = 0
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 9 }
+				is_variable_equal = { which = ca_mask value = 10 }
 			}
 		}
 	}
@@ -458,7 +458,7 @@
 				}
 			}
 			NOT = { has_character_modifier = golden_mask }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 10 } }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 11 } }
 		}
 		modifier = {
 			factor = 0
@@ -469,7 +469,7 @@
 				trait = envious
 			}
 			NOT = { has_character_modifier = golden_mask }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 10 } }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 11 } }
 		}
 		modifier = {
 			factor = 1000
@@ -509,14 +509,14 @@
 					this_is_warrior_culture_trigger = yes
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 11 } }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 12 } }
 		}
 		modifier = {
 			factor = 0
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 11 }
+				is_variable_equal = { which = ca_mask value = 12 }
 			}
 		}
 	}
@@ -547,14 +547,14 @@
 					this_is_warrior_culture_trigger = yes
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 12 } }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 13 } }
 		}
 		modifier = {
 			factor = 0
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 12 }
+				is_variable_equal = { which = ca_mask value = 13 }
 			}
 		}
 	}
@@ -577,7 +577,7 @@
 				trait = undead
 				combat_rating = 10
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 13 } }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 14 } }
 		}
 		modifier = {
 			factor = 0
@@ -609,14 +609,14 @@
 					}
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 13 } }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 14 } }
 		}
 		modifier = {
 			factor = 0
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 13 }
+				is_variable_equal = { which = ca_mask value = 14 }
 			}
 		}
 	}
@@ -639,14 +639,14 @@
 					is_member_of_any_warrior_lodge_trigger = yes
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 14 } }
+			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 15 } }
 		}
 		modifier = {
 			factor = 0
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 14 }
+				is_variable_equal = { which = ca_mask value = 15 }
 			}
 		}
 	}

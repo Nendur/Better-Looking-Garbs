@@ -145,7 +145,10 @@
 	12 = { # Cat
 		factor = 10
 		trigger = {
-			in_command = no
+			OR = {
+				in_command = no
+				has_character_flag = desc_cat
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -179,7 +182,10 @@
 	13 = { # Cat
 		factor = 10
 		trigger = {
-			in_command = no
+			OR = {
+				in_command = no
+				has_character_flag = desc_cat
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -200,7 +206,10 @@
 	14 = { # Cat
 		factor = 10
 		trigger = {
-			in_command = no
+			OR = {
+				in_command = no
+				has_character_flag = desc_cat
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -221,7 +230,10 @@
 	15 = { # Dog
 		factor = 10
 		trigger = {
-			in_command = no
+			OR = {
+				in_command = no
+				has_character_flag = desc_dog
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -247,7 +259,10 @@
 	16 = { # Dog
 		factor = 10
 		trigger = {
-			in_command = no
+			OR = {
+				in_command = no
+				has_character_flag = desc_dog
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -273,7 +288,10 @@
 	17 = { # Dog
 		factor = 10
 		trigger = {
-			in_command = no
+			OR = {
+				in_command = no
+				has_character_flag = desc_dog
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -299,7 +317,10 @@
 	18 = { # Dog
 		factor = 10
 		trigger = {
-			in_command = no
+			OR = {
+				in_command = no
+				has_character_flag = desc_dog
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }
@@ -325,7 +346,10 @@
 	19 = { # Owl
 		factor = 10
 		trigger = {
-			in_command = no
+			OR = {
+				in_command = no
+				has_character_flag = desc_owl
+			}
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				has_game_rule = { name = blg_artifacts value = rare }

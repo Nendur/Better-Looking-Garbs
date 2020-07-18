@@ -490,6 +490,7 @@
 				is_at_sea = yes
 				trait = seaking
 				trait = sea_queen
+				has_minor_title = title_high_admiral
 				employer = {
 					mercenary = yes
 					primary_title = {

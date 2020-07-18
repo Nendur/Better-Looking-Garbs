@@ -55,6 +55,7 @@
 				trait = thuum_2
 				trait = thuum_3
 				has_character_modifier = accused_apostate
+				has_character_modifier = highly_suspect
 				has_character_modifier = known_witch
 				has_character_modifier = suspected_witch
 				has_character_modifier = known_satanist

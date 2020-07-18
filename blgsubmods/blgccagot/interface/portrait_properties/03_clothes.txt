@@ -368,21 +368,22 @@
 	# Ragged prison clothes
 	11 = {
 		factor = 100
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				prisoner = no
-				has_character_modifier = house_arrest
-			}
-			NOT = { trait = slave }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 12 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				is_councillor = yes
-				is_voter = yes
-				has_minor_title = title_regent
+				AND = {
+					prisoner = yes
+					NOT = { has_character_modifier = house_arrest }
+				}
+				AND = {
+					trait = slave
+					NOR = {
+						is_councillor = yes
+						is_voter = yes
+						has_minor_title = title_regent
+					}
+				}
+				death_reason = death_slavery
+				AND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 12 } }
 			}
 		}
 	}
@@ -404,19 +405,14 @@
 
 	# Goldcloak/Unsullied clothes
 	15 = {
-		factor = 500
-		modifier = {
-			factor = 0
-			NOT = {  
-				AND = {
-					has_minor_title  =  title_commander_gold_cloaks
-					OR = {
-						culture_group = dornish
-						culture_group = andal
-						culture_group = first_men
-						culture_group = free_folk
-					}
-				}
+		factor = 100
+		trigger = {
+			has_minor_title  =  title_commander_gold_cloaks
+			OR = {
+				culture_group = dornish
+				culture_group = andal
+				culture_group = first_men
+				culture_group = free_folk
 			}
 		}
 	}

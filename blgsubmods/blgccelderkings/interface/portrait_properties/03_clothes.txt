@@ -604,6 +604,7 @@
 						culture_group = yokudan_group
 					}
 				}
+				AND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 15 } }
 			}
 		}
 		modifier = {

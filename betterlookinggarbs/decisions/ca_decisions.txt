@@ -1,6 +1,6 @@
 targetted_decisions = {
 
-	customise_attire = {
+	customize_appearance = {
 		ai = no
 		filter = all_including_me
 		ai_target_filter = none
@@ -36,6 +36,12 @@ targetted_decisions = {
 				graphical_culture = beargfx
 				graphical_culture = polarbeargfx
 				graphical_culture = blackbeargfx
+				graphical_culture = hipculturegfx
+				graphical_culture = ruingfx
+				graphical_culture = giantgfx
+				graphical_culture = cotfgfx
+				graphical_culture = islandergfx
+				graphical_culture = sloadgfx
 			}
 		}
 		allow = {

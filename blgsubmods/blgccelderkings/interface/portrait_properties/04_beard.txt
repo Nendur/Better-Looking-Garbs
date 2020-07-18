@@ -220,7 +220,7 @@
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 1 }
+				is_variable_equal = { which = ca_beard value = 16 }
 			}
 		}
 	}
@@ -252,7 +252,7 @@
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 16 }
+				is_variable_equal = { which = ca_beard value = 17 }
 			}
 		}
 	}
@@ -284,7 +284,7 @@
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 17 }
+				is_variable_equal = { which = ca_beard value = 18 }
 			}
 		}
 	}
@@ -316,7 +316,7 @@
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 18 }
+				is_variable_equal = { which = ca_beard value = 19 }
 			}
 		}
 	}
@@ -348,7 +348,7 @@
 			is_alive = yes
 			NOR = {
 				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 19 }
+				is_variable_equal = { which = ca_beard value = 20 }
 			}
 		}
 	}
