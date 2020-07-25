@@ -521,7 +521,7 @@ character_event = {
 	}
 
 	option = {
-		name = CANCEL
+		name = FE_EXIT
 	}
 }
 

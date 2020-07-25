@@ -128,7 +128,10 @@
 				}
 
 				AND = {
-					trait = rabies
+					OR = {
+						trait = infirm
+						trait = rabies
+					}
 					OR = {
 						is_alive = yes
 						has_game_rule = { name = blg_disease value = postmortem }

@@ -39,5 +39,5 @@ ca_overlayer;overlayer;;;;;;;;;;;;;x
 ca_underlayer;underlayer;;;;;;;;;;;;;x
 blgcaon;Society clothing on;;;;;;;;;;;;;x
 blgcaon_desc;Society clothing was chosen to be worn;;;;;;;;;;;;;x
-blgcaon;Society clothing off;;;;;;;;;;;;;x
-blgcaon_desc;Society clothing was chosen to be left off;;;;;;;;;;;;;x
+blgcaoff;Society clothing off;;;;;;;;;;;;;x
+blgcaoff_desc;Society clothing was chosen to be left off;;;;;;;;;;;;;x

@@ -58,7 +58,10 @@
 	6 = { # boils
 		factor = 100
 		trigger = {
-			trait = has_small_pox
+			OR = {
+				trait = has_small_pox
+				trait = has_red_death
+			}
 
 			OR = {
 				is_alive = yes
@@ -75,7 +78,6 @@
 				trait = has_measles
 				trait = has_typhus
 				trait = rash
-				trait = has_red_death
 				trait = has_butterfly_fever
 			}
 

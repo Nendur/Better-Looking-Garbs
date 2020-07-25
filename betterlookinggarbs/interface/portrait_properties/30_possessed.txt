@@ -41,23 +41,7 @@
 		}
 	}
 
-	3 = { # possessed
-		factor = 100
-		trigger = {
-			trait = possessed
-
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOR = {
-				has_game_rule = { name = blg_traits value = nolunatic }
-				has_game_rule = { name = blg_traits value = nofair }
-			}
-		}
-	}
-
-	4 = { # wolfblooded
+	3 = { # wolfblooded
 		factor = 100
 		trigger = {
 			OR = {
@@ -68,6 +52,22 @@
 
 			NOR = {
 				has_game_rule = { name = supernatural_events value = off }
+				has_game_rule = { name = blg_traits value = nolunatic }
+				has_game_rule = { name = blg_traits value = nofair }
+			}
+		}
+	}
+
+	4 = { # possessed
+		factor = 100
+		trigger = {
+			trait = possessed
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_disease value = postmortem }
+			}
+			NOR = {
 				has_game_rule = { name = blg_traits value = nolunatic }
 				has_game_rule = { name = blg_traits value = nofair }
 			}

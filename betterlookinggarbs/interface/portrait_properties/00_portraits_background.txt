@@ -158,6 +158,7 @@
 				trait = falconer
 				has_character_modifier = holding_grand_hunt
 				has_character_flag = holding_tiger_hunt
+				has_nickname = nick_of_the_wilds
 			}
 		}
 	}
@@ -455,6 +456,7 @@
 				trait = hunter
 				trait = falconer
 				has_character_modifier = holding_grand_hunt
+				has_nickname = nick_of_the_wilds
 			}
 		}
 	}
@@ -614,6 +616,7 @@
 				trait = hunter
 				trait = falconer
 				has_character_modifier = holding_grand_hunt
+				has_nickname = nick_of_the_wilds
 			}
 		}
 	}
@@ -1085,6 +1088,7 @@
 				likes_africans = yes
 				culture_group = central_african
 				has_character_modifier = holding_grand_hunt
+				has_nickname = nick_of_the_wilds
 			}
 		}
 	}
