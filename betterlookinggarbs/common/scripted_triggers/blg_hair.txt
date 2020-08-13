@@ -1,0 +1,512 @@
+### Hair rules:
+
+# Balding further at high age.
+blg_hair_balding = {
+	is_female = no
+	practical_age >= 70
+}
+
+# Has a shaved head.
+blg_shaved = {
+	OR = {
+		likes_buddhists = yes
+		trait = digambara_jain
+	}
+	OR = {
+		blg_priest = yes
+		is_ascetic_trigger = yes
+		employer = { blg_holy_order = yes }
+	}
+}
+
+# Tonsured hair rules.
+blg_tonsure = {
+	is_female = no
+	likes_christians = yes
+	OR = {
+		blg_priest = yes
+		is_ascetic_trigger = yes
+	}
+}
+
+# Not allowed to cut hair.
+blg_hair_uncut = {
+	is_female = no
+	OR = {
+		likes_jews = yes
+		blg_religion_chinese = yes
+		trait = muni
+	}
+}
+
+# Tidy hair for rulers and married people.
+blg_hair_chinese_tidy = {
+	blg_hair_chinese = yes
+	prisoner = no
+	OR = {
+		is_married = yes
+		is_consort = yes
+		is_landed = yes
+	}
+}
+
+# Tidy hair for married women and high rulers.
+blg_hair_southernslavic_tidy = {
+	is_female = yes
+	OR = {
+		is_married = yes
+		higher_tier_than = duke
+	}
+}
+
+# Early Germanic kings wearing long hair.
+blg_hair_germanic_ruler = {
+	is_female = no
+	year_of_birth < 740
+	
+	likes_germanics = yes
+	OR = {
+		higher_real_tier_than = duke
+		blg_petty_king = yes
+		has_minor_title = title_prince
+	}
+}
+
+blg_hair_germanic_noruler = {
+	is_female = no
+	year_of_birth < 740
+	
+	likes_germanics = yes
+	NOR = {
+		higher_real_tier_than = duke
+		blg_petty_king = yes
+		has_minor_title = title_prince
+	}
+}
+
+# Tidy hair for married women and high rulers.
+blg_hair_westernslavic_tidy = {
+	is_female = yes
+	OR = {
+		is_married = yes
+		higher_tier_than = count
+	}
+}
+
+### Beard rules:
+
+# Has a long beard.
+blg_beard_long = {
+	OR = {
+		likes_muslims = yes
+		blg_religion_orthodox = yes
+	}
+	OR = {
+		blg_priest = yes
+		is_ascetic_trigger = yes
+		has_minor_title = title_chief_qadi
+	}
+}
+
+# Has a shaved face.
+blg_beard_shaved = {
+	OR = {
+		blg_religion_catholic = yes
+		likes_buddhists = yes
+		trait = digambara_jain
+		religion_openly_hellenic_or_reformed_trigger = yes
+	}
+	OR = {
+		blg_priest = yes
+		is_ascetic_trigger = yes
+		employer = { blg_holy_order = yes }
+	}
+}
+
+# Cultures with uncommon growing of beards.
+blg_beard_uncommon = {
+	OR = {
+		culture = norman
+		culture = pecheneg
+		blg_culture_italian = yes
+		likes_mesoamericans = yes
+		blg_beard_shaved = yes
+		trait = eunuch
+	}
+}
+
+### Portrait groups with matching hair.
+
+blg_hair_african = {
+	OR = {
+		graphical_culture = africangfx
+		graphical_culture = westafricangfx
+		graphical_culture = centralafricangfx
+		graphical_culture = nubiangfx
+		graphical_culture = somaligfx
+	}
+}
+
+blg_hair_bodpa = {
+	OR = {
+		graphical_culture = bodpagfx
+		graphical_culture = tangutgfx
+		graphical_culture = tochariangfx
+	}
+}
+
+blg_hair_byzantine = {
+	OR = {
+		graphical_culture = byzantinegfx
+		graphical_culture = hellenicgfx
+	}
+}
+
+blg_hair_celtic = {
+	OR = {
+		graphical_culture = celticgfx
+		graphical_culture = saxongfx
+		graphical_culture = balticgfx
+		graphical_culture = celtiberiangfx
+	}
+}
+
+blg_hair_chinese = {
+	OR = {
+		graphical_culture = chinesegfx
+		graphical_culture = khitangfx
+	}
+}
+
+blg_hair_cuman = {
+	OR = {
+		graphical_culture = cumangfx
+		graphical_culture = mongolgfx
+		graphical_culture = pecheneggfx
+		graphical_culture = centralasiangfx
+	}
+}
+
+blg_hair_easternslavic = {
+	OR = {
+		graphical_culture = easternslavicgfx
+		graphical_culture = khitangfx
+		graphical_culture = avargfx
+	}
+}
+
+blg_hair_egyptian = {
+	OR = {
+		graphical_culture = egyptiangfx
+		graphical_culture = berbergfx
+		graphical_culture = copticgfx
+	}
+}
+
+blg_hair_english = {
+	OR = {
+		graphical_culture = englishgfx
+		graphical_culture = normangfx
+		graphical_culture = romanobritishgfx
+	}
+}
+
+blg_hair_frankish = {
+	OR = {
+		graphical_culture = frankishgfx
+		graphical_culture = trueoccitangfx
+		graphical_culture = bretongfx
+		graphical_culture = oldfrankishgfx
+		graphical_culture = gallicgfx
+	}
+}
+
+blg_hair_german = {
+	OR = {
+		graphical_culture = germangfx
+		graphical_culture = westerngfx
+		graphical_culture = dutchgfx
+	}
+}
+
+blg_hair_indian = {
+	OR = {
+		graphical_culture = indiangfx
+		graphical_culture = centralindiangfx
+	}
+}
+
+blg_hair_italian = {
+	OR = {
+		graphical_culture = italiangfx
+		graphical_culture = outremergfx
+		graphical_culture = siciliangfx
+		graphical_culture = romangfx
+	}
+}
+
+blg_hair_muslim = {
+	OR = {
+		graphical_culture = muslimgfx
+		graphical_culture = arabicgfx
+		graphical_culture = levantinegfx
+		graphical_culture = semitegfx
+		graphical_culture = ashkenazigfx
+	}
+}
+
+blg_hair_norse = {
+	OR = {
+		graphical_culture = norsegfx
+		graphical_culture = norsegaelgfx
+		graphical_culture = siberiangfx
+	}
+}
+
+blg_hair_southern = {
+	OR = {
+		graphical_culture = southerngfx
+		graphical_culture = andalusiangfx
+		graphical_culture = basquegfx
+		graphical_culture = lombardgfx
+		graphical_culture = visigothgfx
+	}
+}
+
+blg_hair_southindian = {
+	OR = {
+		graphical_culture = southindiangfx
+		graphical_culture = assamesegfx
+		graphical_culture = khmergfx
+	}
+}
+
+blg_hair_southernslavic = {
+	OR = {
+		graphical_culture = bohemiangfx
+		graphical_culture = serbsouthslavicgfx
+		graphical_culture = vlachgfx
+		graphical_culture = dalmatiangfx
+		graphical_culture = romanobalkangfx
+	}
+}
+
+blg_hair_turkish = {
+	OR = {
+		graphical_culture = turkishgfx
+		graphical_culture = steppegfx
+		graphical_culture = sogdiangfx
+	}
+}
+
+blg_hair_ugric = {
+	OR = {
+		graphical_culture = ugricgfx
+		graphical_culture = magyargfx
+	}
+}
+
+blg_hair_westafrican = {
+	graphical_culture = westafricangfx
+}
+
+blg_hair_westernslavic = {
+	OR = {
+		graphical_culture = westernslavicgfx
+		graphical_culture = pomeraniangfx
+		graphical_culture = croatsouthslavicgfx
+		graphical_culture = crimeangfx
+	}
+}
+
+### Portrait groups with matching beards.
+
+blg_beard_african = {
+	OR = {
+		graphical_culture = africangfx
+		graphical_culture = westafricangfx
+		graphical_culture = nubiangfx
+	}
+}
+
+blg_beard_bodpa = {
+	OR = {
+		graphical_culture = bodpagfx
+		graphical_culture = sogdiangfx
+		graphical_culture = tochariangfx
+	}
+}
+
+blg_beard_byzantine = {
+	OR = {
+		graphical_culture = byzantinegfx
+		graphical_culture = andalusiangfx
+		graphical_culture = lombardgfx
+		graphical_culture = semitegfx
+		graphical_culture = copticgfx
+		graphical_culture = visigothgfx
+		graphical_culture = hellenicgfx
+	}
+}
+
+blg_beard_celtic = {
+	OR = {
+		graphical_culture = celticgfx
+		graphical_culture = saxongfx
+		graphical_culture = crimeangfx
+		graphical_culture = norsegaelgfx
+		graphical_culture = celtiberiangfx
+	}
+}
+
+blg_beard_chinese = {
+	OR = {
+		graphical_culture = chinesegfx
+		graphical_culture = khitangfx
+		graphical_culture = tangutgfx
+	}
+}
+
+blg_beard_cuman = {
+	OR = {
+		graphical_culture = cumangfx
+		graphical_culture = magyargfx
+		graphical_culture = mongolgfx
+		graphical_culture = pecheneggfx
+		graphical_culture = hunnicgfx
+	}
+}
+
+blg_beard_easternslavic = {
+	OR = {
+		graphical_culture = balticgfx
+		graphical_culture = avargfx
+	}
+}
+
+blg_beard_egyptian = {
+	OR = {
+		graphical_culture = egyptiangfx
+		graphical_culture = italiangfx
+	}
+}
+
+blg_beard_english = {
+	graphical_culture = englishgfx
+}
+
+blg_beard_frankish = {
+	OR = {
+		graphical_culture = frankishgfx
+		graphical_culture = trueoccitangfx
+		graphical_culture = normangfx
+		graphical_culture = romangfx
+		graphical_culture = dutchgfx
+		graphical_culture = westerngfx
+	}
+}
+
+blg_beard_german = {
+	OR = {
+		graphical_culture = germangfx
+		graphical_culture = bohemiangfx
+	}
+}
+
+blg_beard_indian = {
+	OR = {
+		graphical_culture = indiangfx
+		graphical_culture = centralindiangfx
+		graphical_culture = afghangfx
+		graphical_culture = assamesegfx
+	}
+}
+
+blg_beard_mongol = {
+	OR = {
+		graphical_culture = siberiangfx
+		graphical_culture = mesoamericangfx
+	}
+}
+
+blg_beard_muslim = {
+	OR = {
+		graphical_culture = muslimgfx
+		graphical_culture = arabicgfx
+		graphical_culture = berbergfx
+		graphical_culture = levantinegfx
+		graphical_culture = centralafricangfx
+		graphical_culture = kurdishgfx
+		graphical_culture = somaligfx
+	}
+}
+
+blg_beard_norse = {
+	graphical_culture = norsegfx
+}
+
+blg_beard_persian = {
+	OR = {
+		graphical_culture = persiangfx
+		graphical_culture = indusgfx
+		graphical_culture = georgiangfx
+	}
+}
+
+blg_beard_roman = {
+	OR = {
+		graphical_culture = ashkenazigfx
+		graphical_culture = dalmatiangfx
+		graphical_culture = outremergfx
+		graphical_culture = siciliangfx
+	}
+}
+
+blg_beard_southern = {
+	OR = {
+		graphical_culture = southerngfx
+		graphical_culture = basquegfx
+	}
+}
+
+blg_beard_southindian = {
+	OR = {
+		graphical_culture = southindiangfx
+		graphical_culture = khmergfx
+	}
+}
+
+blg_beard_southslavic = {
+	OR = {
+		graphical_culture = serbsouthslavicgfx
+		graphical_culture = vlachgfx
+		graphical_culture = bretongfx
+		graphical_culture = gallicgfx
+		graphical_culture = romanobalkangfx
+		graphical_culture = romanobritishgfx
+	}
+}
+
+blg_beard_turkish = {
+	OR = {
+		graphical_culture = turkishgfx
+		graphical_culture = steppegfx
+		graphical_culture = centralasiangfx
+		graphical_culture = alangfx
+	}
+}
+
+blg_beard_ugric = {
+	OR = {
+		graphical_culture = ugricgfx
+		graphical_culture = easternslavicgfx
+	}
+}
+
+blg_beard_westernslavic = {
+	OR = {
+		graphical_culture = westernslavicgfx
+		graphical_culture = pomeraniangfx
+		graphical_culture = croatsouthslavicgfx
+	}
+}

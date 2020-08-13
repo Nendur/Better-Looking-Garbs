@@ -605,10 +605,7 @@ character_event = {
 	option = { # North African mixed areas
 		ai_chance = { factor = 4 }
 		trigger = {
-			OR = {
-				culture = maghreb_arabic
-				blg_north_african = yes
-			}
+			blg_culture_berber = yes
 			OR = {
 				dynasty = none
 				num_of_dynasty_members <= 1
@@ -641,7 +638,7 @@ character_event = {
 	option = { # East African mixed areas
 		ai_chance = { factor = 4 }
 		trigger = {
-			culture_group = east_african
+			blg_culture_east_african = yes
 			OR = {
 				dynasty = none
 				num_of_dynasty_members <= 1
@@ -723,11 +720,11 @@ character_event = {
 		}
 
 		if = {
-			limit = { blg_polar_bear = yes }
+			limit = { location = { blg_region_polar = yes } }
 			set_graphical_culture = polar_bear
 		}
 		else_if = {
-			limit = { blg_black_bear = yes }
+			limit = { location = { blg_region_asia = yes } }
 			set_graphical_culture = black_bear
 		}
 		else = {
@@ -735,11 +732,11 @@ character_event = {
 		}
 	}
 
-	# Add freckles to new characters.
+	### Post Processing.
 	after = {
 		remove_trait = blgspawn
 
-		# Fix noculture
+		# Fix noculture generated characters.
 		if = {
 			limit= {
 				NOT = { gfx_culture_scope = { always = yes } }
@@ -756,6 +753,7 @@ character_event = {
 			set_graphical_culture = uyghur
 		}
 
+		# Add freckles to new characters.
 		random_list = {
 			2 = { add_trait = freckles_5 }
 			6 = { add_trait = freckles_4 }
@@ -2849,9 +2847,7 @@ character_event = {
 						OR = {
 							culture = english
 							culture_group = iberian
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_iranians = yes
+							blg_culture_middleeast = yes
 							culture_group = israelite
 						}
 					}
@@ -2953,11 +2949,9 @@ character_event = {
 							culture = lombard
 							culture_group = iberian
 							likes_byzantines = yes
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_iranians = yes
+							blg_culture_middleeast = yes
 							likes_altaics = yes
-							likes_africans = yes
+							blg_culture_african = yes
 						}
 						NOR = {
 							graphical_culture = lombardgfx
@@ -3017,15 +3011,11 @@ character_event = {
 				else_if = {
 					limit = {
 						OR = {
-							culture = italian
-							culture = roman
-							blg_italian = yes
+							blg_culture_italian = yes
 							likes_byzantines = yes
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_iranians = yes
+							blg_culture_middleeast = yes
 							likes_altaics = yes
-							likes_africans = yes
+							blg_culture_african = yes
 							culture_group = israelite
 						}
 						NOT = { graphical_culture = outremergfx }
@@ -3048,9 +3038,7 @@ character_event = {
 							culture_group = west_slavic
 							culture_group = south_slavic
 							culture_group = east_slavic
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_iranians = yes
+							blg_culture_middleeast = yes
 							culture_group = israelite
 							culture_group = chinese_group
 							likes_indians = yes
@@ -3107,10 +3095,8 @@ character_event = {
 				else_if = {
 					limit = {
 						OR = {
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_africans = yes
-							likes_iranians = yes
+							blg_culture_middleeast = yes
+							blg_culture_african = yes
 							likes_indians = yes
 							likes_dravidians = yes
 							likes_tibetans = yes
@@ -3149,7 +3135,7 @@ character_event = {
 						graphical_culture = siciliangfx
 						OR = {
 							likes_byzantines = yes
-							likes_africans = yes
+							blg_culture_african = yes
 							likes_iranians = yes
 						}
 					}
@@ -3179,9 +3165,7 @@ character_event = {
 							culture = turkish
 							culture = khazar
 							culture = bolghar
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_iranians = yes
+							blg_culture_middleeast = yes
 							likes_indians = yes
 							likes_dravidians = yes
 							likes_tibetans = yes
@@ -3228,15 +3212,13 @@ character_event = {
 				if = {
 					limit = {
 						OR = {
+							blg_culture_middleeast = yes
 							likes_byzantines = yes
 							likes_germanics = yes
 							likes_latino_iberians = yes
 							likes_balto_slavics = yes
 							likes_finno_ugrics = yes
 							likes_celts = yes
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_iranians = yes
 							likes_indians = yes
 							likes_dravidians = yes
 						}
@@ -3271,18 +3253,16 @@ character_event = {
 				else_if = {
 					limit = {
 						OR = {
+							blg_culture_middleeast = yes
+							blg_culture_chinese = yes
 							likes_byzantines = yes
 							likes_germanics = yes
 							likes_latino_iberians = yes
 							likes_balto_slavics = yes
 							likes_finno_ugrics = yes
 							likes_celts = yes
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_iranians = yes
 							likes_indians = yes
 							likes_dravidians = yes
-							culture_group = chinese_group
 							culture_group = israelite
 						}
 						NOT = { graphical_culture = khitangfx }
@@ -3307,7 +3287,6 @@ character_event = {
 							likes_balto_slavics = yes
 							likes_finno_ugrics = yes
 							likes_celts = yes
-							blg_north_african = yes
 							likes_indians = yes
 							likes_dravidians = yes
 							culture_group = chinese_group
@@ -3340,15 +3319,13 @@ character_event = {
 				if = {
 					limit = {
 						OR = {
+							blg_culture_middleeast = yes
 							likes_germanics = yes
 							likes_latino_iberians = yes
 							likes_balto_slavics = yes
 							likes_finno_ugrics = yes
 							likes_celts = yes
-							likes_arabs = yes
 							likes_altaics = yes
-							likes_iranians = yes
-							blg_north_african = yes
 							likes_indians = yes
 							likes_dravidians = yes
 							culture_group = chinese_group
@@ -3361,7 +3338,7 @@ character_event = {
 					limit = {
 						OR = {
 							likes_byzantines = yes
-							likes_africans = yes
+							blg_culture_african = yes
 							culture_group = israelite
 						}
 						NOT = { graphical_culture = copticgfx }
@@ -3388,9 +3365,7 @@ character_event = {
 							culture_group = baltic
 							culture_group = north_germanic
 							likes_celts = yes
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_iranians = yes
+							blg_culture_middleeast = yes
 							likes_altaics = yes
 						}
 						NOR = {
@@ -3457,10 +3432,8 @@ character_event = {
 							culture = carantanian
 							likes_byzantines = yes
 							likes_latino_iberians = yes
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_iranians = yes
-							likes_africans = yes
+							blg_culture_middleeast = yes
+							blg_culture_african = yes
 						}
 						NOT = { graphical_culture = serbsouthslavicgfx }
 					}
@@ -3493,8 +3466,7 @@ character_event = {
 						OR = {
 							culture = persian
 							likes_arabs = yes
-							blg_north_african = yes
-							likes_africans = yes
+							blg_culture_african = yes
 							likes_altaics = yes
 							likes_byzantines = yes
 							likes_germanics = yes
@@ -3537,8 +3509,7 @@ character_event = {
 						OR = {
 							culture = persian
 							likes_arabs = yes
-							blg_north_african = yes
-							likes_africans = yes
+							blg_culture_african = yes
 							likes_byzantines = yes
 							likes_germanics = yes
 							likes_latino_iberians = yes
@@ -3661,7 +3632,7 @@ character_event = {
 							likes_dravidians = yes
 							likes_tibetans = yes
 							likes_altaics = yes
-							likes_africans = yes
+							blg_culture_african = yes
 						}
 						NOT = { graphical_culture = southindiangfx }
 					}
@@ -3697,7 +3668,7 @@ character_event = {
 						OR = {
 							likes_tibetans = yes
 							likes_altaics = yes
-							likes_africans = yes
+							blg_culture_african = yes
 						}
 						NOR = {
 							graphical_culture = bodpagfx 
@@ -3709,11 +3680,9 @@ character_event = {
 				else_if = {
 					limit = {
 						OR = {
+							blg_culture_middleeast = yes
 							likes_indians = yes
 							likes_dravidians = yes
-							likes_arabs = yes
-							blg_north_african = yes
-							likes_iranians = yes
 							likes_latino_iberians = yes
 							likes_germanics = yes
 							likes_celts = yes
@@ -4417,11 +4386,11 @@ long_character_event = {
 			clr_character_flag = secret_bear
 
 			if = {
-				limit = { blg_polar_bear = yes }
+				limit = { location = { blg_region_polar = yes } }
 				set_graphical_culture = polar_bear
 			}
 			else_if = {
-				limit = { blg_black_bear = yes }
+				limit = { location = { blg_region_asia = yes } }
 				set_graphical_culture = black_bear
 			}
 			else = {

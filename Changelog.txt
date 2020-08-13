@@ -1,5 +1,14 @@
 Changelog:
 
+  Portrait properties fully rewritten:
+  - Modern code style.
+  - Repeated and variable parts moved to scripted triggers.
+  - Easier to change and maintain for different mods.
+  - More detail added.
+  Update some disease and wound graphics.
+  Replacement for parrot to old-world parakeet.
+  Meso-American headgear finally updated with tiered wargear.
+
 08-07-2020
   More mount graphics with 8 horses, 8 dragons and 10 other animals.
   Mount graphics triggered by leading cavalry flanks or having mount artifacts.

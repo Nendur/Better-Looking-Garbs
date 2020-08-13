@@ -1,11 +1,15 @@
-# p8 red dots - Tilaka
+# p8 Red dots - Tilaka
 8 = {
 	0 = { # blank
 		factor = 20
 		modifier = {
+			factor = 100
+			likes_hindus = no
+		}
+
+		modifier = {
 			factor = 0.01
 			OR = {
-				is_priest = yes
 				blg_priest = yes
 				is_ascetic_trigger = yes
 				trait = zealous

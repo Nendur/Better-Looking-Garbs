@@ -1,0 +1,82 @@
+# Religion triggers.
+
+### Christian branches:
+
+# Catholic religions.
+blg_religion_catholic = {
+	OR = {
+		religion = catholic
+		is_heresy_of = catholic
+		is_parent_religion = catholic
+	}
+}
+
+# Early Christian religions.
+blg_religion_early = {
+	always = no
+}
+
+# Oriental Christian religions.
+blg_religion_oriental = {
+	OR = {
+		religion = miaphysite
+		is_heresy_of = miaphysite
+		is_parent_religion = miaphysite
+		religion = nestorian
+		is_heresy_of = nestorian
+		is_parent_religion = nestorian
+	}
+}
+
+# Eastern Christian religions.
+blg_religion_orthodox = {
+	religion_group = christian
+	blg_religion_catholic = no
+}
+
+# Early-Protestant Christian religions.
+blg_religion_protestant = {
+	OR = {
+		religion = cathar
+		religion = waldensian
+		religion = lollard
+		religion = bogomilist
+	}
+}
+
+### Other Religions:
+
+# Chinese religions.
+blg_religion_chinese = {
+	religion = taoist
+}
+
+# Far Eastern religions.
+blg_religion_eastern = {
+	religion_group = indian_group
+}
+
+### Pagan religions:
+
+# Pagan religions.
+blg_religion_pagan = {
+	religion_group = pagan_group
+}
+
+# Aztec religions.
+blg_religion_aztec = {
+	religion_openly_aztec_or_reformed_trigger = yes
+}
+
+# Celtic pagan religions.
+blg_religion_celtic = {
+	religion_openly_in_celtic_subgroup_trigger = yes
+}
+
+# Far Eastern pagan religions.
+blg_religion_eastern_pagan = {
+	OR = {
+		religion_openly_zun_or_reformed_trigger = yes
+		religion_openly_bon_or_reformed_trigger = yes
+	}
+}

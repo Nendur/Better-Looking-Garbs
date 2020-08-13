@@ -1,191 +1,145 @@
-# p36 Special Scepters
+# p36 Special scepters and items, front layer.
 36 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 3
 		modifier = {
 			factor = 100
 			has_game_rule = { name = blg_artifacts value = off }
 		}
+
 		modifier = {
 			factor = 100
-			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						is_landed = no
-						in_battle = yes
-						in_siege = yes
-					}
-				}
-				has_character_flag = add_duel_xp
-				has_character_flag = chivalry_duel_ongoing
-			}
-			NOR = {
-				has_character_modifier = pet_hunting_eagle
-				any_artifact = {
-					artifact_type = mjolnir
-					is_artifact_equipped = yes
-				}
-			}
+			blg_fighting = yes
+			blg_combat_artifacts = no
 		}
 	}
 
-	1 = { # Bon Scepter
+	1 = { # a - Bon Scepter
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			blg_artifact_scepter_bon = yes
+		}
+	}
+
+	2 = { # b - Hellenic Scepter
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			blg_artifact_scepter_hellenic = yes
+		}
+	}
+
+	3 = { # c - Holy Grail
 		factor = 100
 		trigger = {
-			OR = {
-				any_artifact = {
-					artifact_type = scepter_bon_fylkir
-					is_artifact_equipped = yes
-				}
-				trait = dead_scepter_bon_fylkir
-				AND = {
-					is_priest = yes
-					rightful_religious_head = ROOT
-					religion_openly_bon_or_reformed_trigger = yes
-				}
-			}
+			blg_artifact_grail = yes
 		}
 	}
 
-	2 = { # Hellenic Scepter
+	4 = { # d - Mjolnir
 		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
 		trigger = {
-			OR = {
-				any_artifact = {
-					OR = {
-						artifact_type = scepter_hellenic_fylkir
-						artifact_type = spear_of_destiny
-					}
-					is_artifact_equipped = yes
-				}
-				trait = dead_scepter_hellenic_fylkir
-				AND = {
-					is_priest = yes
-					rightful_religious_head = ROOT
-					religion_openly_hellenic_or_reformed_trigger = yes
-				}
-			}
+			blg_artifact_mjolnir = yes
 		}
 	}
 
-	3 = { # Holy Grail
-		factor = 100
-		trigger = {
-			OR = {
-				has_artifact = holy_grail
-				has_artifact = holy_chalice
-				#has_artifact = water_of_blessed_mantle
-				has_artifact = cup_of_jamshid
-			}
-		}
-	}
-
-	4 = { # Mjolnir
-		factor = 100
-		trigger = {
-			any_artifact = {
-				artifact_type = mjolnir
-				is_artifact_equipped = yes
-			}
-		}
-		hide_layers = { 39 = { } }
-		hide_layers = { 40 = { } }
-	}
-
-	5 = { # Tablet
+	5 = { # e - Tablet
 		factor = 75
 		trigger = {
-			any_artifact = {
-				OR = {
-					has_artifact_flag = tablet
-					artifact_type = yada_tashy
-				}
-				is_artifact_active = yes
-			}
+			blg_artifact_tablet = yes
 		}
 	}
 
-	6 = { # Horn
+	6 = { # f - Horn
 		factor = 75
 		trigger = {
-			any_artifact = {
-				has_artifact_flag = horn
-				is_artifact_equipped = yes
-			}
+			blg_artifact_horn = yes
 		}
 	}
 
-	7 = { # Scepter
+	7 = { # g - Scepter
 		factor = 25
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
+
 			any_artifact = {
-				OR = {
-					has_artifact_flag = scepter
-					has_artifact_flag = staff
-					artifact_type = elaborate_danda
-				}
+				is_artifact_equipped = yes
 				quality >= 3
-				is_artifact_equipped = yes
+				has_artifact_flag = scepter
 			}
 		}
 	}
 
-	8 = { # Scepter
+	8 = { # h - Scepter
 		factor = 25
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
-			any_artifact = {
-				OR = {
+
+			OR = {
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 2
 					has_artifact_flag = scepter
-					has_artifact_flag = staff
 				}
-				quality == 2
-				is_artifact_equipped = yes
+				blg_artifact_scepter_ruby = yes
 			}
+		}
+
+		modifier = {
+			factor = 100
+			blg_artifact_scepter_ruby = yes
 		}
 	}
 
-	9 = { # Scepter
+	9 = { # i - Scepter
 		factor = 25
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
+
 			any_artifact = {
+				is_artifact_equipped = yes
 				OR = {
-					has_artifact_flag = scepter
+					AND = {
+						quality == 1
+						has_artifact_flag = scepter
+					}
 					has_artifact_flag = staff
 				}
-				quality <= 1
-				is_artifact_equipped = yes
 			}
 		}
 	}
 
-	10 = { # Necklace
+	10 = { # j - Necklace
 		factor = 50
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
+
 			is_female = yes
-			practical_age = 16
+			practical_age >= 16
 			any_artifact = {
-				has_artifact_flag = necklace
+				is_artifact_equipped = yes
 				quality >= 3
-				is_artifact_equipped = yes
+				has_artifact_flag = necklace
 			}
 			NOR = {
 				has_portrait_property = { layer = 3 index = 10 }
@@ -197,19 +151,20 @@
 		}
 	}
 
-	11 = { # Necklace
+	11 = { # k - Necklace
 		factor = 50
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
+
 			is_female = yes
-			practical_age = 16
+			practical_age >= 16
 			any_artifact = {
-				has_artifact_flag = necklace
+				is_artifact_equipped = yes
 				quality == 2
-				is_artifact_equipped = yes
+				has_artifact_flag = necklace
 			}
 			NOR = {
 				has_portrait_property = { layer = 3 index = 10 }
@@ -221,19 +176,20 @@
 		}
 	}
 
-	12 = { # Necklace
+	12 = { # l - Necklace
 		factor = 50
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
+
 			is_female = yes
-			practical_age = 16
+			practical_age >= 16
 			any_artifact = {
-				has_artifact_flag = necklace
-				quality < 2
 				is_artifact_equipped = yes
+				quality == 1
+				has_artifact_flag = necklace
 			}
 			NOR = {
 				has_portrait_property = { layer = 3 index = 10 }
@@ -245,105 +201,104 @@
 		}
 	}
 
-	13 = { # African Totem Scepter
+	13 = { # m - African Totem Scepter
 		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
 		trigger = {
-			any_artifact = {
-				has_artifact_flag = totem
-				is_artifact_equipped = yes
-			}
+			blg_artifact_totem = yes
 		}
 	}
 
-	14 = { # Sheperds Crook
+	14 = { # n - Shepherds Crook
 		factor = 1
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
 		trigger = {
-			OR = {
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_monophysite
-			}
+			blg_artifact_staff_crook = yes
 		}
 	}
 
-	15 = { # Indian Staff
-		factor = 1
+	15 = { # o - Indian Staff
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
 		trigger = {
 			OR = {
-				society_member_of = monastic_order_hindu
-				any_artifact = {
-					artifact_type = elaborate_danda
-					is_artifact_equipped = yes
-				}
+				blg_artifact_staff = yes
+				blg_artifact_staff_danda = yes
 			}
 		}
+
 		modifier = {
-			factor = 100
-			any_artifact = {
-				artifact_type = elaborate_danda
-				is_artifact_equipped = yes
-			}
+			factor = 0.01
+			blg_artifact_staff = yes
 		}
 	}
 
-	16 = { # Indian Staff
-		factor = 1
+	16 = { # p - Indian Staff
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
 		trigger = {
 			OR = {
-				society_member_of = monastic_order_hindu
-				any_artifact = {
-					artifact_type = staff_of_moses
-					is_artifact_equipped = yes
-				}
+				blg_artifact_staff = yes
+				blg_artifact_staff_of_moses = yes
 			}
 		}
+
 		modifier = {
-			factor = 100
-			any_artifact = {
-				artifact_type = staff_of_moses
-				is_artifact_equipped = yes
-			}
+			factor = 0.01
+			blg_artifact_staff = yes
 		}
 	}
 
-	17 = { # Dagger
+	17 = { # q - Dagger
 		factor = 25
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
+
 			any_artifact = {
+				is_artifact_equipped = yes
+				quality > 1
 				has_artifact_flag = dagger
 				has_artifact_flag = jewelry
-				quality > 1
-				is_artifact_equipped = yes
 			}
 		}
 	}
 
-	18 = { # Dagger
+	18 = { # r - Dagger
 		factor = 10
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
+
 			any_artifact = {
+				is_artifact_equipped = yes
+				quality == 1
 				has_artifact_flag = dagger
 				has_artifact_flag = jewelry
-				quality <= 1
-				is_artifact_equipped = yes
 			}
 		}
 	}
 
-	19 = { # Book
+	19 = { # s - Book
 		factor = 1
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
+
 			any_artifact = {
 				is_artifact_equipped = yes
 				OR = {
@@ -354,83 +309,70 @@
 		}
 	}
 
-	20 = { # Ingredients
+	20 = { # t - Ingredients
 		factor = 1
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
-			any_artifact = {
-				has_artifact_flag = ingredient
-				is_artifact_active = yes
-			}
-		}
-	}
 
-	21 = { # Scroll
-		factor = 10
-		trigger = {
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
 			any_artifact = {
+				is_artifact_active = yes
 				OR = {
-					artifact_type = letter_of_mohammad
-					artifact_type = cyrus_cylinder
-					artifact_type = chinese_calligraphy
-				}
-				is_artifact_active = yes
-			}
-		}
-	}
-
-	22 = { # Eagle
-		factor = 10
-		trigger = {
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
-			has_character_modifier = pet_hunting_eagle
-		}
-	}
-
-	23 = { # Raven
-		factor = 10
-		trigger = {
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
-			OR = {
-				death_reason = death_murder_unknown_crows
-				AND = {
-					has_character_modifier = raven_familiar
-					OR = {
-						has_character_modifier = known_satanist
-						AND = {
-							multiplayer = no
-							OR = {
-								ai = no
-								any_player = { is_devil_worshiper_trigger = yes }
-							}
-						}
-					}
+					has_artifact_flag = ingredient
+					has_artifact_flag = herb
 				}
 			}
 		}
 	}
 
-	24 = { # Falcon
+	21 = { # u - Scroll
 		factor = 10
 		trigger = {
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
 			}
+
+			blg_artifact_scroll = yes
+		}
+	}
+
+	22 = { # v - Eagle
+		factor = 10
+		trigger = {
+			blg_animal_eagle = yes
+
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+		}
+	}
+
+	23 = { # w - Raven
+		factor = 10
+		trigger = {
+			blg_animal_raven = yes
+
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+		}
+	}
+
+	24 = { # x - Falcon
+		factor = 10
+		trigger = {
 			trait = falconer
+
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = rare }
+				has_game_rule = { name = blg_artifacts value = weapons }
+			}
+
 			OR = {
 				has_character_modifier = holding_grand_hunt
 				has_portrait_property = { layer = 0 index = 3 }
@@ -445,21 +387,14 @@
 		}
 	}
 
-	25 = { # Snake
+	25 = { # y - Snake
 		factor = 10
 		trigger = {
+			blg_animal_snake = yes
+
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
-			}
-			OR = {
-				death_reason = death_accident_snakes
-				death_reason = death_murder_snakes
-				death_reason = death_murder_unknown_snakes
-				death_reason = death_execution_snake_pit
-				has_character_modifier = pet_snake
-				has_character_modifier = friend_of_snakes
-				has_character_flag = diwali_snake_charmer
 			}
 		}
 	}

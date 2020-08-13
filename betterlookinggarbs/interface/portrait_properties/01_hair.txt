@@ -1,964 +1,886 @@
 # p1 hair  --- WARNING! Property 1 MUST be Hair, otherwise the hair hiding helmets wont work ---
 1 = {
-	0 = { # Completely bald
+	0 = { # 0 - Completely bald
 		factor = 1
 		modifier = {
 			factor = 0.1
 			is_female = no
 			practical_age < 40
 
-			NOR = {
-				graphical_culture = saxongfx
-				graphical_culture = celticgfx
-				graphical_culture = balticgfx
-				graphical_culture = celtiberiangfx
-				graphical_culture = mesoamericangfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
-			}
+			blg_hair_celtic = no
+			blg_hair_cuman = no
 		}
+
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_celtic = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 1 } }
+		}
+
 		modifier = {
 			factor = 0
 			is_female = no
-			practical_age >= 70
+			blg_shaved = yes
+
 			OR = {
-				graphical_culture = saxongfx
-				graphical_culture = celticgfx
-				graphical_culture = balticgfx
-				graphical_culture = celtiberiangfx
-				graphical_culture = mesoamericangfx
+				blg_hair_celtic = yes
+				blg_hair_cuman = yes
 			}
 		}
+
 		modifier = {
-			factor = 0
-			is_female = no
-			follows_filial_piety_trigger = yes
-			NOT = { likes_buddhists = yes }
+			factor = 0.1
+			blg_hair_uncut = yes
 		}
+
 		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+			factor = 0.1
+			is_female = no
+			blg_hair_celtic = yes
+			has_tribal_or_nomadic_government_trigger = no
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 1 }
 			}
 		}
 	}
 
-	1 = { # Black Adder
+	1 = { # a - Black Adder
 		factor = 1
 		modifier = {
 			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_african = no
+			blg_hair_easternslavic = no
+			blg_hair_cuman = no
+			NOT = { is_variable_equal = { which = ca_hair value = 2 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_italian = no
+			blg_hair_southern = no
+			blg_hair_byzantine = no
+			blg_hair_norse = no
+			blg_hair_ugric = no
+		}
+
+		modifier = {
+			factor = 0
 			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = easternslavicgfx
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = centralafricangfx
-				graphical_culture = nubiangfx
-				graphical_culture = somaligfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
-				graphical_culture = alangfx
-				graphical_culture = mesoamericangfx
-			}
+			blg_shaved = yes
 		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 2 }
 			}
 		}
 	}
 
-	2 = { # Page
+	2 = { # b - Page
 		factor = 1
 		modifier = {
 			factor = 0
-			is_female = yes
-			OR = {
-				is_married = yes
-				higher_tier_than = count
-			}
-			OR = {
-				graphical_culture = westernslavicgfx
-				graphical_culture = pomeraniangfx
-				graphical_culture = croatsouthslavicgfx
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 3 } }
+			blg_hair_balding = yes
+
+			blg_hair_turkish = no
+			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_female = yes
-			OR = {
-				is_married = yes
-				higher_tier_than = duke
-			}
-			OR = {
-				graphical_culture = bohemiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = vlachgfx
-				graphical_culture = dalmatiangfx
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 3 } }
+			blg_hair_westernslavic_tidy = yes
+			blg_hair_westernslavic = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
 		}
+
+		modifier = {
+			factor = 0
+			blg_hair_southernslavic_tidy = yes
+			OR = {
+				blg_hair_southernslavic = yes
+				blg_hair_frankish = yes
+				blg_hair_italian = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
 		modifier = {
 			factor = 0
 			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = turkishgfx
-				graphical_culture = steppegfx
-				graphical_culture = sogdiangfx
-			}
+			blg_shaved = yes
 		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 3 }
 			}
 		}
 	}
 
-	3 = { # Synth
+	3 = { # c - Synth
 		factor = 1
 		modifier = {
 			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_frankish = no
+			blg_hair_southern = no
+			blg_hair_muslim = no
+			blg_hair_cuman = no
+			blg_hair_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_hair value = 4 } }
+		}
+
+		modifier = {
+			factor = 0.01
 			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = easternslavicgfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
-			}
+			blg_hair_celtic = yes
+			has_tribal_or_nomadic_government_trigger = no
 		}
+
 		modifier = {
 			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
+			blg_tonsure = yes
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			is_female = no
+			blg_shaved = yes
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 4 }
 			}
 		}
 	}
 
-	4 = { # Long Straight
+	4 = { # d - Long Straight
 		factor = 1
 		modifier = {
 			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_celtic = no
+			blg_hair_cuman = no
+			blg_hair_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_westernslavic_tidy = yes
+			OR = {
+				blg_hair_westernslavic = yes
+				blg_hair_frankish = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_southernslavic_tidy = yes
+			OR = {
+				blg_hair_southernslavic = yes
+				blg_hair_italian = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
+		modifier = {
+			factor = 0
 			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = saxongfx
-				graphical_culture = bretongfx
-				graphical_culture = celticgfx
-				graphical_culture = balticgfx
-				graphical_culture = celtiberiangfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
+			blg_shaved = yes
+			blg_hair_cuman = no
+		}
+
+		modifier = {
+			factor = 10
+			blg_hair_germanic_ruler = yes
+			OR = {
+				blg_hair_frankish = yes
+				blg_hair_german = yes
 			}
 		}
+
 		modifier = {
 			factor = 0
-			is_female = yes
-			OR = {
-				is_married = yes
-				higher_tier_than = count
-			}
-			OR = {
-				graphical_culture = westernslavicgfx
-				graphical_culture = pomeraniangfx
-				graphical_culture = croatsouthslavicgfx
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 5 } }
+			blg_hair_germanic_noruler = yes
 		}
-		modifier = {
-			factor = 0
-			is_female = yes
+
+		trigger = {
 			OR = {
-				is_married = yes
-				higher_tier_than = duke
-			}
-			OR = {
-				graphical_culture = bohemiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = vlachgfx
-				graphical_culture = dalmatiangfx
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 5 } }
-		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 5 }
 			}
 		}
 	}
 
-	5 = { # Long Curly
+	5 = { # e - Long Curly
 		factor = 1
 		modifier = {
 			factor = 0
-			is_female = yes
-			OR = {
-				is_married = yes
-				higher_tier_than = count
-			}
-			OR = {
-				graphical_culture = westernslavicgfx
-				graphical_culture = pomeraniangfx
-				graphical_culture = croatsouthslavicgfx
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 6 } }
+			blg_hair_balding = yes
+
+			blg_hair_byzantine = no
+			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_female = yes
+			blg_hair_westernslavic_tidy = yes
 			OR = {
-				is_married = yes
-				higher_tier_than = duke
+				blg_hair_westernslavic = yes
+				blg_hair_frankish = yes
+				blg_hair_italian = yes
+				blg_hair_celtic = yes
 			}
-			OR = {
-				graphical_culture = bohemiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = vlachgfx
-				graphical_culture = dalmatiangfx
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 6 } }
+			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
 		}
+
 		modifier = {
 			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
+			blg_hair_southernslavic_tidy = yes
+			blg_hair_southernslavic = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_tonsure = yes
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			blg_shaved = yes
+		}
+
+		modifier = {
+			factor = 10
+			blg_hair_germanic_ruler = yes
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_germanic_noruler = yes
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 6 }
 			}
 		}
 	}
 
-	6 = {  # Tonsure
+	6 = { # f - Tonsure
 		factor = 1
 		modifier = {
 			factor = 0
-			is_female = no
+			blg_tonsure = no
+
 			OR = {
-				graphical_culture = westerngfx
-				graphical_culture = englishgfx
-				graphical_culture = germangfx
-				graphical_culture = dutchgfx
-				graphical_culture = normangfx
-				graphical_culture = frankishgfx
-				graphical_culture = oldfrankishgfx
-				graphical_culture = occitangfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = pomeraniangfx
-				graphical_culture = bohemiangfx
-				graphical_culture = croatsouthslavicgfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = vlachgfx
-				graphical_culture = muslimgfx
-				graphical_culture = egyptiangfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = copticgfx
-				graphical_culture = levantinegfx
-				graphical_culture = semitegfx
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_frankish = yes
+				blg_hair_southernslavic = yes
+				blg_hair_westernslavic = yes
+				blg_hair_muslim = yes
+				blg_hair_egyptian = yes
 			}
-			OR = {
-				NOT = { religion_group = christian }
-				NOR = {
-					is_priest = yes
-					blg_priest = yes
-					has_education_learning_trigger = yes
-					is_ascetic_trigger = yes
-					is_christian_monastic_member_trigger = yes
-				}
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 7 } }
+			NOT = { is_variable_equal = { which = ca_hair value = 7 } }
 		}
+
 		modifier = {
-			factor = 20
-			is_female = no
-			NOT = { trait = detached_priest }
-			is_landed = no
-			OR = {
-				graphical_culture = westerngfx
-				graphical_culture = englishgfx
-				graphical_culture = germangfx
-				graphical_culture = dutchgfx
-				graphical_culture = normangfx
-				graphical_culture = frankishgfx
-				graphical_culture = oldfrankishgfx
-				graphical_culture = occitangfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = pomeraniangfx
-				graphical_culture = bohemiangfx
-				graphical_culture = croatsouthslavicgfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = vlachgfx
-				graphical_culture = muslimgfx
-				graphical_culture = egyptiangfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = copticgfx
-				graphical_culture = levantinegfx
-				graphical_culture = semitegfx
-			}
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_celtic = no
+			blg_hair_english = no
+			blg_hair_german = no
+			blg_hair_frankish = no
+			blg_hair_southernslavic = no
+			blg_hair_westernslavic = no
+			blg_hair_muslim = no
+			blg_hair_egyptian = no
+			blg_hair_cuman = no
 		}
+
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_african = no
+			blg_hair_celtic = no
+			blg_hair_english = no
+			blg_hair_frankish = no
+			blg_hair_muslim = no
+			blg_hair_egyptian = no
+			NOT = { is_variable_equal = { which = ca_hair value = 7 } }
+		}
+
 		modifier = {
 			factor = 0
 			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = saxongfx
-				graphical_culture = bretongfx
-				graphical_culture = celticgfx
-				graphical_culture = balticgfx
-				graphical_culture = celtiberiangfx
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = centralafricangfx
-				graphical_culture = nubiangfx
-				graphical_culture = somaligfx
-				graphical_culture = muslimgfx
-				graphical_culture = arabicgfx
-				graphical_culture = levantinegfx
-				graphical_culture = berbergfx
-				graphical_culture = egyptiangfx
-				graphical_culture = copticgfx
-				graphical_culture = semitegfx
-			}
+			blg_shaved = yes
+			blg_hair_celtic = no
 		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 7 }
 			}
 		}
 	}
 
-	7 = {  # Short
+	7 = { # g - Short
 		factor = 1
 		modifier = {
 			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_frankish = no
+			blg_hair_norse = no
+			blg_hair_westernslavic = no
+			blg_hair_muslim = no
+			blg_hair_african = no
+			blg_hair_cuman = no
+			blg_hair_bodpa = no
+			blg_hair_southindian = no
+			NOT = { is_variable_equal = { which = ca_hair value = 8 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
+		modifier = {
+			factor = 0
 			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = centralafricangfx
-				graphical_culture = nubiangfx
-				graphical_culture = somaligfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
-				graphical_culture = southindiangfx
-				graphical_culture = assamesegfx
-				graphical_culture = bodpagfx
-				graphical_culture = muslimgfx
-				graphical_culture = arabicgfx
-				graphical_culture = levantinegfx
-				graphical_culture = semitegfx
-				graphical_culture = norsegfx
-				graphical_culture = siberiangfx
-				graphical_culture = norsegaelgfx
-			}
+			blg_shaved = yes
 		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 8 }
 			}
 		}
 	}
 
-	8 = { # Short Curly
+	8 = { # h - Short Curly
 		factor = 1
 		modifier = {
 			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_muslim = no
+			blg_hair_african = no
+			blg_hair_cuman = no
+			blg_hair_english = no
+			NOT = { is_variable_equal = { which = ca_hair value = 9 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
+		modifier = {
+			factor = 0
 			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = centralafricangfx
-				graphical_culture = nubiangfx
-				graphical_culture = somaligfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
-				graphical_culture = mesoamericangfx
-			}
+			blg_shaved = yes
 		}
+
+		modifier = {
+			factor = 10
+			blg_hair_germanic_ruler = yes
+			blg_hair_frankish = yes
+		}
+
 		modifier = {
 			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
+			blg_hair_germanic_noruler = yes
+			blg_hair_frankish = yes
 		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 9 }
 			}
 		}
 	}
 
-	9 = {  # Short Uncouth
+	9 = { # i - Short Uncouth
 		factor = 1
 		modifier = {
 			factor = 0
-			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = englishgfx
-				graphical_culture = normangfx
-				graphical_culture = saxongfx
-				graphical_culture = bretongfx
-				graphical_culture = easternslavicgfx
-			}
+			blg_hair_balding = yes
+
+			blg_hair_easternslavic = no
+			blg_hair_english = no
+			NOT = { is_variable_equal = { which = ca_hair value = 10 } }
 		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			blg_shaved = yes
+		}
+
 		modifier = {
 			factor = 0
 			is_female = yes
 			follows_filial_piety_trigger = yes
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 10 } }
+			NOT = { is_variable_equal = { which = ca_hair value = 10 } }
 		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 10 }
 			}
 		}
 	}
 
-	10 = {  # Long Uncouth
+	10 = { # j - Long Uncouth
 		factor = 1
-		modifier = {
+		modifier = { # Limited hair range
 			factor = 0
-			OR = {
-				graphical_culture = bretongfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
-			}
+			blg_hair_cuman = yes
 		}
-		modifier = {
+
+		modifier = { # Limited hair range
 			factor = 0
 			is_female = yes
 			OR = {
-				graphical_culture = byzantinegfx
-				graphical_culture = southerngfx
-				graphical_culture = andalusiangfx
-				graphical_culture = lombardgfx
-				graphical_culture = ugricgfx
-				graphical_culture = magyargfx
-				graphical_culture = westafricangfx
-				graphical_culture = norsegfx
-				graphical_culture = siberiangfx
-				graphical_culture = hellenicgfx
+				blg_hair_byzantine = yes
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_norse = yes
+				blg_hair_southern = yes
+				blg_hair_ugric = yes
+				blg_hair_westafrican = yes
 			}
 		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			blg_hair_indian = yes
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_english = no
+			blg_hair_norse = no
+			blg_hair_southernslavic = no
+			blg_hair_easternslavic = no
+			blg_hair_ugric = no
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_westernslavic_tidy = yes
+			blg_hair_westernslavic = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_southernslavic_tidy = yes
+			blg_hair_southernslavic = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
+		}
+
+		modifier = {
+			factor = 0.1
+			is_female = no
+			blg_hair_celtic = yes
+			has_tribal_or_nomadic_government_trigger = no
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
 		modifier = {
 			factor = 0
 			is_female = no
+			blg_shaved = yes
+		}
+
+		modifier = {
+			factor = 10
+			blg_hair_germanic_ruler = yes
 			OR = {
-				graphical_culture = indiangfx
-				graphical_culture = centralindiangfx
+				blg_hair_frankish = yes
+				blg_hair_german = yes
 			}
 		}
+
 		modifier = {
 			factor = 0
-			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = norsegfx
-				graphical_culture = siberiangfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = ugricgfx
-				graphical_culture = magyargfx
-				graphical_culture = bohemiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = vlachgfx
-				graphical_culture = alangfx
-				graphical_culture = mesoamericangfx
+			blg_hair_germanic_noruler = yes
+			OR = {
+				blg_hair_frankish = yes
+				blg_hair_german = yes
 			}
 		}
+
 		modifier = {
 			factor = 0
 			follows_filial_piety_trigger = yes
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 11 } }
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
 		}
-		modifier = {
-			factor = 0
-			is_female = yes
+
+		trigger = {
 			OR = {
-				is_married = yes
-				higher_tier_than = count
-			}
-			OR = {
-				graphical_culture = westernslavicgfx
-				graphical_culture = pomeraniangfx
-				graphical_culture = croatsouthslavicgfx
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 11 } }
-		}
-		modifier = {
-			factor = 0
-			is_female = yes
-			OR = {
-				is_married = yes
-				higher_tier_than = duke
-			}
-			OR = {
-				graphical_culture = bohemiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = vlachgfx
-				graphical_culture = dalmatiangfx
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 11 } }
-		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 11 }
 			}
 		}
 	}
 
-	11 = { # Balding
+	11 = { # k - Balding
 		factor = 1
-		modifier = {
+		modifier = { # Limited hair range
 			factor = 0
-			OR = {
-				graphical_culture = bretongfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
-			}
+			blg_hair_cuman = yes
 		}
-		modifier = {
+
+		modifier = { # Limited hair range
 			factor = 0
 			is_female = yes
 			OR = {
-				graphical_culture = byzantinegfx
-				graphical_culture = southerngfx
-				graphical_culture = andalusiangfx
-				graphical_culture = lombardgfx
-				graphical_culture = magyargfx
-				graphical_culture = ugricgfx
-				graphical_culture = khitangfx
-				graphical_culture = westafricangfx
-				graphical_culture = norsegfx
-				graphical_culture = siberiangfx
-				graphical_culture = hellenicgfx
+				blg_hair_byzantine = yes
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_norse = yes
+				blg_hair_southern = yes
+				blg_hair_ugric = yes
+				blg_hair_westafrican = yes
 			}
 		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			blg_hair_indian = yes
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+
+			OR = { # Reverse of others
+				blg_hair_celtic = yes
+				blg_hair_norse = yes
+				blg_hair_easternslavic = yes
+				blg_hair_ugric = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_westernslavic_tidy = yes
+			OR = {
+				blg_hair_westernslavic = yes
+				blg_hair_celtic = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_southernslavic_tidy = yes
+			OR = {
+				blg_hair_southernslavic = yes
+				blg_hair_frankish = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
+		}
+
+		modifier = {
+			factor = 0.1
+			is_female = no
+			blg_hair_celtic = yes
+			has_tribal_or_nomadic_government_trigger = no
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
 		modifier = {
 			factor = 0
 			is_female = no
-			OR = {
-				graphical_culture = indiangfx
-				graphical_culture = centralindiangfx
-			}
+			blg_shaved = yes
 		}
-		modifier = { # OR not NOR!
-			factor = 0
-			is_female = no
-			practical_age >= 70
+
+		trigger = {
 			OR = {
-				graphical_culture = norsegfx
-				graphical_culture = siberiangfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = celticgfx
-				graphical_culture = balticgfx
-				graphical_culture = celtiberiangfx
-				graphical_culture = easternslavicgfx
-				graphical_culture = ugricgfx
-				graphical_culture = magyargfx
-				graphical_culture = khitangfx
-			}
-		}
-		modifier = {
-			factor = 0
-			is_female = yes
-			follows_filial_piety_trigger = yes
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 12 } }
-		}
-		modifier = {
-			factor = 0
-			is_female = yes
-			OR = {
-				is_married = yes
-				higher_tier_than = count
-			}
-			OR = {
-				graphical_culture = westernslavicgfx
-				graphical_culture = pomeraniangfx
-				graphical_culture = croatsouthslavicgfx
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 12 } }
-		}
-		modifier = {
-			factor = 0
-			is_female = yes
-			OR = {
-				is_married = yes
-				higher_tier_than = duke
-			}
-			OR = {
-				graphical_culture = bohemiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = vlachgfx
-				graphical_culture = dalmatiangfx
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 12 } }
-		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 12 }
 			}
 		}
 	}
 
-	12 = { # Marine
+	12 = { # l - Marine
 		factor = 1
-		modifier = {
+		modifier = { # Limited hair range
 			factor = 0
-			OR = {
-				graphical_culture = bretongfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
-			}
+			blg_hair_cuman = yes
 		}
-		modifier = {
+
+		modifier = { # Limited hair range
 			factor = 0
 			is_female = yes
 			OR = {
-				graphical_culture = byzantinegfx
-				graphical_culture = southerngfx
-				graphical_culture = andalusiangfx
-				graphical_culture = lombardgfx
-				graphical_culture = magyargfx
-				graphical_culture = ugricgfx
-				graphical_culture = westafricangfx
-				graphical_culture = norsegfx
-				graphical_culture = siberiangfx
-				graphical_culture = hellenicgfx
+				blg_hair_byzantine = yes
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_norse = yes
+				blg_hair_southern = yes
+				blg_hair_ugric = yes
+				blg_hair_westafrican = yes
 			}
 		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			blg_hair_indian = yes
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_muslim = no
+			blg_hair_egyptian = no
+			blg_hair_westernslavic = no
+			blg_hair_southernslavic = no
+			blg_hair_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_hair value = 13 } }
+		}
+
 		modifier = {
 			factor = 0
 			is_female = no
-			OR = {
-				graphical_culture = indiangfx
-				graphical_culture = centralindiangfx
-			}
+			blg_shaved = yes
 		}
+
 		modifier = {
 			factor = 0
-			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = easternslavicgfx
-				graphical_culture = khitangfx
-				graphical_culture = bohemiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = vlachgfx
-				graphical_culture = egyptiangfx
-				graphical_culture = copticgfx
-				graphical_culture = berbergfx
-			}
+			blg_tonsure = yes
 		}
+
 		modifier = {
 			factor = 0
-			follows_filial_piety_trigger = yes
-			OR = {
-				filial_piety_maiden_trigger = no
-				is_consort = yes
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 13 } }
+			blg_hair_chinese_tidy = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 13 } }
 		}
+
 		modifier = {
-			factor = 2
+			factor = 4
 			filial_piety_maiden_trigger = yes
 		}
-		modifier = {
-			factor = 0
-			graphical_culture = chinesegfx
+
+		trigger = {
 			OR = {
-				is_married = yes
-				is_ruler = yes
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 13 } }
-		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 13 }
 			}
 		}
 	}
 
-	13 = { # Mohawk
+	13 = { # m - Mohawk
 		factor = 1
-		modifier = {
+		modifier = { # Limited hair range
 			factor = 0
 			OR = {
-				graphical_culture = norsegfx
-				graphical_culture = siberiangfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = bretongfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
-				graphical_culture = ugricgfx
-				graphical_culture = magyargfx
-				graphical_culture = alangfx
+				blg_hair_cuman = yes
+				blg_hair_norse = yes
+				blg_hair_ugric = yes
 			}
 		}
-		modifier = {
+
+		modifier = { # Limited hair range
 			factor = 0
 			is_female = yes
 			OR = {
-				graphical_culture = byzantinegfx
-				graphical_culture = southerngfx
-				graphical_culture = andalusiangfx
-				graphical_culture = lombardgfx
-				graphical_culture = khitangfx
-				graphical_culture = westafricangfx
-				graphical_culture = hellenicgfx
+				blg_hair_byzantine = yes
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_southern = yes
+				blg_hair_westafrican = yes
 			}
 		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			blg_hair_indian = yes
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_african = no
+			blg_hair_easternslavic = no
+			blg_hair_turkish = no
+			NOT = { is_variable_equal = { which = ca_hair value = 14 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_easternslavic = no
+		}
+
 		modifier = {
 			factor = 0
 			is_female = no
-			OR = {
-				graphical_culture = indiangfx
-				graphical_culture = centralindiangfx
-			}
+			blg_shaved = yes
 		}
+
 		modifier = {
 			factor = 0
-			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = turkishgfx
-				graphical_culture = steppegfx
-				graphical_culture = sogdiangfx
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = centralafricangfx
-				graphical_culture = nubiangfx
-				graphical_culture = somaligfx
-			}
+			blg_hair_chinese_tidy = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 14 } }
 		}
+
 		modifier = {
-			factor = 0
-			follows_filial_piety_trigger = yes
-			OR = {
-				filial_piety_maiden_trigger = no
-				is_consort = yes
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 14 } }
-		}
-		modifier = {
-			factor = 2
+			factor = 4
 			filial_piety_maiden_trigger = yes
 		}
-		modifier = {
-			factor = 0
-			graphical_culture = chinesegfx
+
+		trigger = {
 			OR = {
-				is_married = yes
-				is_landed = yes
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 14 } }
-		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 14 }
 			}
 		}
 	}
 
-	14 = { #DLC hair
+	14 = { # n - hair
 		factor = 1
-		modifier = {
+		modifier = { # Limited hair range
 			factor = 0
 			OR = {
-				graphical_culture = norsegfx
-				graphical_culture = siberiangfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = bretongfx
-				graphical_culture = mongolgfx
-				graphical_culture = cumangfx
-				graphical_culture = pecheneggfx
-				graphical_culture = centralasiangfx
-				graphical_culture = ugricgfx
-				graphical_culture = magyargfx
-				graphical_culture = alangfx
+				blg_hair_cuman = yes
+				blg_hair_norse = yes
+				blg_hair_ugric = yes
 			}
 		}
-		modifier = {
+
+		modifier = { # Limited hair range
 			factor = 0
 			is_female = yes
 			OR = {
-				graphical_culture = byzantinegfx
-				graphical_culture = southerngfx
-				graphical_culture = andalusiangfx
-				graphical_culture = lombardgfx
-				graphical_culture = khitangfx
-				graphical_culture = westafricangfx
-				graphical_culture = hellenicgfx
+				blg_hair_byzantine = yes
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_southern = yes
+				blg_hair_westafrican = yes
 			}
 		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_byzantine = no
+			blg_hair_celtic = no
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 15 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
 		modifier = {
 			factor = 0
 			is_female = no
-			practical_age >= 70
-			NOR = {
-				graphical_culture = celticgfx
-				graphical_culture = balticgfx
-				graphical_culture = celtiberiangfx
+			blg_shaved = yes
+		}
+
+		modifier = {
+			factor = 10
+			blg_hair_germanic_ruler = yes
+			OR = {
+				blg_hair_frankish = yes
+				blg_hair_german = yes
 			}
 		}
+
 		modifier = {
 			factor = 0
-			follows_filial_piety_trigger = yes
+			blg_hair_germanic_noruler = yes
 			OR = {
-				filial_piety_maiden_trigger = no
-				is_consort = yes
+				blg_hair_frankish = yes
+				blg_hair_german = yes
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 15 } }
 		}
+
 		modifier = {
-			factor = 2
+			factor = 0
+			blg_hair_chinese_tidy = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 15 } }
+		}
+
+		modifier = {
+			factor = 4
 			filial_piety_maiden_trigger = yes
 		}
-		modifier = {
-			factor = 0
-			graphical_culture = chinesegfx
+
+		trigger = {
 			OR = {
-				is_married = yes
-				is_landed = yes
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_hair value = 15 } }
-		}
-		modifier = {
-			factor = 0
-			likes_buddhists = yes
-			is_priest = yes
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 15 }
 			}

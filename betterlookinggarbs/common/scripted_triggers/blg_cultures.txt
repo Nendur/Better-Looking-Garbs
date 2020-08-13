@@ -1,0 +1,191 @@
+# Culture triggers.
+
+### Clothing sets for cultures:
+
+# Block ducal crown in some circumstances.
+# Restrict Song futou headgear.
+blg_blocked_duke = {
+	is_female = no
+	blg_headgear_chinese = yes
+	NOT = { offmap_china = { offmap_ruler = { dynasty = 1051151 } } }
+}
+
+# Wears Chinese clothing.
+blg_clothes_chinese = {
+	blg_culture_chinese = yes
+}
+
+# Wears Chinese headgear.
+blg_headgear_chinese = {
+	blg_culture_chinese = yes
+}
+
+# These cultures use commmon headgear in addition for dukes.
+blg_common_ducal_headgear = {
+	NOR = {
+		higher_real_tier_than = duke
+		independent = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_real_tier_than = duke
+				independent = yes
+			}
+		}
+	}
+	OR = {
+		blg_culture_middleeast = yes
+		blg_culture_african = yes
+		likes_altaics = yes
+		likes_indians = yes
+		likes_dravidians = yes
+		likes_tibetans = yes
+		likes_mesoamericans = yes
+		blg_blocked_duke = yes
+	}
+}
+
+# Custom cultures limited to default property set.
+blg_default_clothing = {
+	always = no
+}
+
+# Uses Merchant clothing set.
+blg_merchant_clothes = {
+	is_merchant_republic = yes
+	in_command = no
+	OR = {
+		likes_latino_iberians = yes
+		likes_byzantines = yes
+		likes_altaics = yes
+		likes_mesoamericans = yes
+		culture_group = israelite
+		blg_culture_middleeast = yes
+		blg_culture_african = yes
+	}
+}
+
+# Uses Merchant headgear set.
+blg_merchant_headgear = {
+	is_merchant_republic = yes
+	in_command = no
+	OR = {
+		likes_latino_iberians = yes
+		likes_celts = yes
+		culture_group = central_germanic
+		culture_group = west_germanic
+		culture_group = east_slavic
+		blg_culture_west_slavic = yes
+	}
+}
+
+# These cultures use higher tier headgear for independent dukes.
+blg_petty_king = {
+	OR = {
+		AND = {
+			real_tier = duke
+			independent = yes
+		}
+		spouse_even_if_dead = {
+			real_tier = duke
+			independent = yes
+		}
+	}
+
+	OR = {
+		culture_group = north_germanic
+		culture_group = finno_ugric
+		culture_group = celtic
+		culture = saxon
+		blg_culture_middleeast = yes
+		blg_culture_east_african = yes
+		likes_tibetans = yes
+	}
+}
+
+# These crowns can be combined with French veils.
+blg_veiled_crown = {
+	OR = {
+		blg_culture_french = yes
+		blg_culture_iberian = yes
+		likes_celts = yes
+		culture_group = east_slavic
+		culture = outremer
+	}
+}
+
+### Culture groupings:
+
+blg_culture_african = {
+	OR = {
+		likes_africans = yes
+		culture_group = central_african
+	}
+}
+
+blg_culture_berber = {
+	culture = maghreb_arabic
+}
+
+blg_culture_chinese = {
+	OR = {
+		culture = han
+		culture = tangut
+	}
+}
+
+blg_culture_east_african = {
+	culture_group = east_african
+}
+
+# Uses French veils.
+blg_culture_european = {
+	OR = {
+		likes_latino_iberians = yes
+		AND = {
+			likes_christians = yes
+			OR = {
+				likes_germanics = yes
+				likes_celts = yes
+				likes_balto_slavics = yes
+				likes_finno_ugrics = yes
+			}
+		}
+	}
+}
+
+# Uses French headgear accessories.
+blg_culture_french = {
+	OR = {
+		culture = frankish
+		culture = occitan
+	}
+}
+
+blg_culture_iberian = {
+	culture_group = iberian
+}
+
+blg_culture_italian = {
+	OR = {
+		culture = italian
+		culture = sardinian
+		culture = roman
+	}
+}
+
+# Muslim style headgear.
+blg_culture_middleeast = {
+	OR = {
+		likes_arabs = yes
+		likes_iranians = yes
+	}
+}
+
+# Uses West/South-Slavic headgear rules.
+blg_culture_west_slavic = {
+	OR = {
+		culture_group = west_slavic
+		culture_group = south_slavic
+		culture_group = magyar
+	}
+}

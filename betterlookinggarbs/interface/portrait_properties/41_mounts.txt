@@ -1,328 +1,198 @@
 # p41 Mounts
 41 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 1
 		modifier = {
 			factor = 100
 			NOR = {
-				trait = travelling
-				trait = on_pilgrimage
-				trait = on_hajj
-				trait = on_indian_pilgrimage
-				trait = kow_tow_travels
+				blg_in_combat = yes
+				blg_travelling = yes
 				death_reason = death_execution_horses
 				death_reason = death_accident_bear
 				death_reason = death_execution_bear
 				death_reason = death_accident_tiger
 				death_reason = death_execution_tiger
 				death_reason = death_execution_lion
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						is_landed = no
-						in_battle = yes
-						is_looting = yes
-					}
-				}
 			}
 		}
+
 		modifier = {
 			factor = 100
 			OR = {
 				is_at_sea = yes
-				has_character_flag = hajj_arrived_in_mecca
-				has_character_flag = kow_tow_visited_temple
-				has_character_flag = kow_tow_played_go
-				has_character_flag = read_the_guanzi
-				has_character_flag = visited_market
-				has_character_flag = kow_tow_bad_outcome
-				has_character_flag = kow_tow_okay_outcome
-				has_character_flag = kow_tow_great_outcome
+				siege = { is_attacker = no }
+				blg_travelling_arrived = yes
 			}
 		}
 	}
 
-	1 = { # Dragon
+	1 = { # a - Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = black
-				has_artifact_flag = mount
-			}
+			blg_mount_dragon_black = yes
 		}
 	}
 
-	2 = { # Dragon
+	2 = { # b - Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = red
-				has_artifact_flag = mount
-			}
+			blg_mount_dragon_red = yes
 		}
 	}
 
-	3 = { # Dragon
+	3 = { # c - Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = white
-				has_artifact_flag = mount
-			}
+			blg_mount_dragon_white = yes
 		}
 	}
 
-	4 = { # Dragon
+	4 = { # d - Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = green
-				has_artifact_flag = mount
-			}
+			blg_mount_dragon_green = yes
 		}
 	}
 
-	5 = { # Dragon
+	5 = { # e - Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = blue
-				has_artifact_flag = mount
-			}
+			blg_mount_dragon_blue = yes
 		}
 	}
 
-	6 = { # Dragon
+	6 = { # f - Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = silver
-				has_artifact_flag = mount
-			}
+			blg_mount_dragon_silver = yes
 		}
 	}
 
-	7 = { # Dragon
+	7 = { # g - Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = bronze
-				has_artifact_flag = mount
-			}
+			blg_mount_dragon_bronze = yes
 		}
 	}
 
-	8 = { # Dragon
+	8 = { # h - Dragon
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = dragon
-				has_artifact_flag = gold
-				has_artifact_flag = mount
-			}
+			blg_mount_dragon_gold = yes
 		}
 	}
 
-	9 = { # Unique Horse
+	9 = { # i - Unique Horse
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = horse
-				has_artifact_flag = mount
-				OR = {
-					has_artifact_flag = black
-					AND = {
-						has_artifact_flag = unique
-						has_artifact_flag = greek
-					}
-				}
-			}
+			blg_mount_horse_black = yes
 		}
 	}
 
-	10 = { # Unique Horse
+	10 = { # j - Unique Horse
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = horse
-				has_artifact_flag = mount
-				OR = {
-					has_artifact_flag = white
-					has_artifact_flag = immortal
-					AND = {
-						has_artifact_flag = unique
-						has_artifact_flag = arabian
-					}
-				}
-			}
+			blg_mount_horse_white = yes
 		}
 	}
 
-	11 = { # Horse Armor
+	11 = { # k - Horse Armor
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = horse
-				has_artifact_flag = mount
-			}
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = horse_armor
-				quality >= 3
-			}
+			blg_mount_horse_armor_3 = yes
 		}
 	}
 
-	12 = { # Horse Armor
+	12 = { # l - Horse Armor
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = horse
-				has_artifact_flag = mount
-			}
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = horse_armor
-				quality == 2
-			}
+			blg_mount_horse_armor_2 = yes
 		}
 	}
 
-	13 = { # Wolf
+	13 = { # m - Wolf
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = wolf
-				has_artifact_flag = mount
-			}
+			blg_mount_wolf = yes
 		}
 	}
 
-	14 = { # Bear
+	14 = { # n - Bear
 		factor = 100
 		trigger = {
 			OR = {
 				death_reason = death_accident_bear
 				death_reason = death_execution_bear
-				any_artifact = {
-					is_artifact_equipped = yes
-					has_artifact_flag = bear
-					has_artifact_flag = mount
-				}
+				blg_mount_bear = yes
 			}
 		}
 	}
 
-	15 = { # Polar Bear
+	15 = { # o - Polar Bear
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = polarbear
-				has_artifact_flag = mount
-			}
+			blg_mount_polarbear = yes
 		}
 	}
 
-	16 = { # Reindeer
+	16 = { # p - Reindeer
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = reindeer
-				has_artifact_flag = mount
-			}
+			blg_mount_reindeer = yes
 		}
 	}
 
-	17 = { # Tiger
+	17 = { # q - Tiger
 		factor = 100
 		trigger = {
 			OR = {
 				death_reason = death_accident_tiger
 				death_reason = death_execution_tiger
-				any_artifact = {
-					is_artifact_equipped = yes
-					has_artifact_flag = tiger
-					has_artifact_flag = mount
-				}
+				blg_mount_tiger = yes
 			}
 		}
 	}
 
-	18 = { # Lion
+	18 = { # r - Lion
 		factor = 100
 		trigger = {
 			OR = {
 				death_reason = death_execution_lion
-				any_artifact = {
-					is_artifact_equipped = yes
-					has_artifact_flag = lion
-					has_artifact_flag = mount
-				}
+				blg_mount_lion = yes
 			}
 		}
 	}
 
-	19 = { # Yak
+	19 = { # s - Yak
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = yak
-				has_artifact_flag = mount
-			}
+			blg_mount_yak = yes
 		}
 	}
 
-	20 = { # Lizard
+	20 = { # t - Lizard
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = lizard
-				has_artifact_flag = mount
-			}
+			blg_mount_lizard = yes
 		}
 	}
 
-	21 = { # Elephant
+	21 = { # u - Elephant
 		factor = 100
 		trigger = {
 			OR = {
 				any_unit = {
-					war_elephants = 0.1
+					blg_unit_elephants = yes
 					OR = {
 						left_flank_leader = { character = ROOT }
 						center_flank_leader = { character = ROOT }
 						right_flank_leader = { character = ROOT }
 					}
 				}
+
 				liege = {
 					any_unit = {
-						war_elephants = 0.1
+						blg_unit_elephants = yes
 						OR = {
 							left_flank_leader = { character = ROOT }
 							center_flank_leader = { character = ROOT }
@@ -330,30 +200,28 @@
 						}
 					}
 				}
-				any_artifact = {
-					is_artifact_equipped = yes
-					has_artifact_flag = elephant
-					has_artifact_flag = mount
-				}
+
+				blg_mount_elephant = yes
 			}
 		}
 	}
 
-	22 = { # Camel
+	22 = { # v - Camel
 		factor = 100
 		trigger = {
 			OR = {
 				any_unit = {
-					camel_cavalry = 0.3
+					blg_unit_camel = yes
 					OR = {
 						left_flank_leader = { character = ROOT }
 						center_flank_leader = { character = ROOT }
 						right_flank_leader = { character = ROOT }
 					}
 				}
+
 				liege = {
 					any_unit = {
-						camel_cavalry = 0.3
+						blg_unit_camel = yes
 						OR = {
 							left_flank_leader = { character = ROOT }
 							center_flank_leader = { character = ROOT }
@@ -361,30 +229,28 @@
 						}
 					}
 				}
-				any_artifact = {
-					is_artifact_equipped = yes
-					has_artifact_flag = camel
-					has_artifact_flag = mount
-				}
+
+				blg_mount_camel = yes
 			}
 		}
 	}
 
-	23 = { # Horse Armor
+	23 = { # w - Horse Armor
 		factor = 100
 		trigger = {
 			OR = {
 				any_unit = {
-					knights = 0.3
+					blg_unit_knights = yes
 					OR = {
 						left_flank_leader = { character = ROOT }
 						center_flank_leader = { character = ROOT }
 						right_flank_leader = { character = ROOT }
 					}
 				}
+
 				liege = {
 					any_unit = {
-						knights = 0.3
+						blg_unit_knights = yes
 						OR = {
 							left_flank_leader = { character = ROOT }
 							center_flank_leader = { character = ROOT }
@@ -392,78 +258,42 @@
 						}
 					}
 				}
-				AND = {
-					any_artifact = {
-						is_artifact_equipped = yes
-						has_artifact_flag = horse
-						has_artifact_flag = mount
-					}
-					any_artifact = {
-						is_artifact_equipped = yes
-						has_artifact_flag = horse_armor
-					}
-				}
+
+				blg_mount_horse_armor_1 = yes
 			}
 		}
 	}
 
-	24 = { # Horse
+	24 = { # x - Horse
 		factor = 100
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				has_artifact_flag = horse
-				has_artifact_flag = mount
-				has_artifact_flag = charger
-			}
+			blg_mount_horse_charger = yes
 		}
 	}
 
-	25 = { # Horse
+	25 = { # y - Horse
+		factor = 100
+		trigger = {
+			blg_mount_horse_destrier = yes
+		}
+	}
+
+	26 = { # z - Horse
 		factor = 100
 		trigger = {
 			OR = {
-				has_character_modifier = nomad_warhorse
-				death_reason = death_execution_horses
-				any_artifact = {
-					is_artifact_equipped = yes
-					has_artifact_flag = horse
-					has_artifact_flag = mount
-					OR = {
-						has_artifact_flag = destrier
-						quality = 5
-					}
-				}
-			}
-		}
-	}
-
-	26 = { # Horse
-		factor = 100
-		trigger = {
-			OR = {
-				any_artifact = {
-					is_artifact_equipped = yes
-					has_artifact_flag = horse
-					has_artifact_flag = mount
-				}
 				any_unit = {
-					OR = {
-						light_cavalry = 0.3
-						horse_archers = 0.3
-					}
+					blg_unit_horse = yes
 					OR = {
 						left_flank_leader = { character = ROOT }
 						center_flank_leader = { character = ROOT }
 						right_flank_leader = { character = ROOT }
 					}
 				}
+
 				liege = {
 					any_unit = {
-						OR = {
-							light_cavalry = 0.3
-							horse_archers = 0.3
-						}
+						blg_unit_horse = yes
 						OR = {
 							left_flank_leader = { character = ROOT }
 							center_flank_leader = { character = ROOT }
@@ -471,6 +301,8 @@
 						}
 					}
 				}
+
+				blg_mount_horse = yes
 			}
 		}
 	}

@@ -1,560 +1,790 @@
 # p4 beard
 4 = {
-	0 = { #Beardless when young
+	0 = { # 0 - Beardless when young
 		factor = 40
-		modifier = {
-			factor = 0
-			practical_age > 21
-			NOT = { trait = eunuch }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_beard value = 1 } }
-			NAND = {
-				is_priest = yes
-				likes_buddhists = yes
-			}
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_beard value = 0 }
+		trigger = {
+			OR = {
+				practical_age < 22
+				trait = eunuch
+				AND = {
+					blg_beard_shaved = yes
+					age < 50
+				}
 				is_variable_equal = { which = ca_beard value = 1 }
 			}
 		}
 	}
 
-	1 = { #Light beard
+	1 = { # a - Light beard
 		factor = 1
 		modifier = {
 			factor = 0
-			is_priest = yes
-			OR = {
-				true_religion_group = christian
-				true_religion_group = muslim
-				likes_buddhists = yes
-			}
-			NOR = {
-				true_religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				OR = {
-					graphical_culture = byzantinegfx
-					graphical_culture = hellenicgfx
-				}
-			}
+			blg_beard_shaved = yes
+
+			blg_beard_african = no
+			blg_beard_bodpa = no
+			blg_beard_chinese = no
+			blg_beard_cuman = no
+			blg_beard_easternslavic = no
+			blg_beard_egyptian = no
+			blg_beard_frankish = no
+			blg_beard_indian = no
+			blg_beard_muslim = no
+			blg_beard_roman = no
+			blg_beard_southern = no
+			blg_beard_southindian = no
+			blg_beard_southslavic = no
+			blg_beard_turkish = no
+			blg_beard_ugric = no
+			blg_beard_westernslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 2 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_long = yes
+
+			blg_beard_byzantine = no
+			blg_beard_celtic = no
+			blg_beard_english = no
+			blg_beard_german = no
+			blg_beard_persian = no
+			blg_beard_ugric = no
+			blg_beard_mongol = no
+			NOT = { is_variable_equal = { which = ca_beard value = 2 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 2 }
 			}
 		}
 	}
 
-	2 = { #Beard
+	2 = { # b - Beard
 		factor = 1
 		modifier = {
 			factor = 0
-			is_priest = yes
-			OR = {
-				true_religion_group = muslim
-				likes_buddhists = yes
+			blg_beard_celtic = yes
+			NOR = {
+				blg_religion_pagan = yes
+				has_tribal_or_nomadic_government_trigger = yes
+				is_variable_equal = { which = ca_beard value = 3 }
 			}
 		}
+
 		modifier = {
 			factor = 0
-			OR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = crimeangfx
-				graphical_culture = celtiberiangfx
-			}
-			NOR = {
-				true_religion_group = pagan_group
-				is_tribal = yes
-				is_nomadic = yes
-			}
+			blg_beard_shaved = yes
+
+			blg_beard_african = no
+			blg_beard_norse = no
+			blg_beard_chinese = no
+			blg_beard_cuman = no
+			blg_beard_english = no
+			blg_beard_frankish = no
+			blg_beard_persian = no
+			blg_beard_westernslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 3 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_long = yes
+
+			blg_beard_byzantine = no
+			blg_beard_celtic = no
+			blg_beard_egyptian = no
+			blg_beard_german = no
+			blg_beard_indian = no
+			blg_beard_muslim = no
+			blg_beard_southern = no
+			blg_beard_southindian = no
+			blg_beard_turkish = no
+			blg_beard_ugric = no
+			blg_beard_westernslavic = no
+			blg_beard_easternslavic = no
+			blg_beard_mongol = no
+			NOT = { is_variable_equal = { which = ca_beard value = 3 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 3 }
 			}
 		}
 	}
 
-	3 = { #Beard
+	3 = { # c - Beard
 		factor = 1
 		modifier = {
 			factor = 0
-			is_priest = yes
-			likes_buddhists = yes
+			blg_beard_shaved = yes
+
+			blg_beard_african = no
+			blg_beard_bodpa = no
+			blg_beard_celtic = no
+			blg_beard_chinese = no
+			blg_beard_cuman = no
+			blg_beard_easternslavic = no
+			blg_beard_egyptian = no
+			blg_beard_frankish = no
+			blg_beard_indian = no
+			blg_beard_muslim = no
+			blg_beard_persian = no
+			blg_beard_roman = no
+			blg_beard_southindian = no
+			blg_beard_southslavic = no
+			blg_beard_westernslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 4 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_long = yes
+
+			blg_beard_byzantine = no
+			blg_beard_english = no
+			blg_beard_german = no
+			blg_beard_southern = no
+			blg_beard_turkish = no
+			blg_beard_ugric = no
+			NOT = { is_variable_equal = { which = ca_beard value = 4 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 4 }
 			}
 		}
 	}
 
-	4 = { #Small mustache and beard
+	4 = { # d - Small mustache and beard
 		factor = 1
 		modifier = {
 			factor = 0
-			is_priest = yes
-			OR = {
-				true_religion_group = christian
-				true_religion_group = muslim
-				likes_buddhists = yes
-			}
-			NOR = {
-				true_religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				OR = {
-					graphical_culture = byzantinegfx
-					graphical_culture = hellenicgfx
-				}
-			}
+			blg_beard_shaved = yes
+
+			blg_beard_african = no
+			blg_beard_bodpa = no
+			blg_beard_celtic = no
+			blg_beard_cuman = no
+			blg_beard_easternslavic = no
+			blg_beard_egyptian = no
+			blg_beard_frankish = no
+			blg_beard_german = no
+			blg_beard_muslim = no
+			blg_beard_roman = no
+			blg_beard_southindian = no
+			blg_beard_southslavic = no
+			blg_beard_turkish = no
+			NOT = { is_variable_equal = { which = ca_beard value = 5 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_long = yes
+
+			blg_beard_norse = no
+			blg_beard_chinese = no
+			blg_beard_english = no
+			blg_beard_persian = no
+			blg_beard_ugric = no
+			blg_beard_mongol = no
+			NOT = { is_variable_equal = { which = ca_beard value = 5 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 5 }
 			}
 		}
 	}
 
-	5 = { #Spanish mustache
+	5 = { # e - Spanish mustache
 		factor = 1
 		modifier = {
 			factor = 0
-			is_priest = yes
-			OR = {
-				true_religion_group = christian
-				true_religion_group = muslim
-				likes_buddhists = yes
-			}
-			NOR = {
-				true_religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				OR = {
-					graphical_culture = byzantinegfx
-					graphical_culture = hellenicgfx
-				}
-			}
+			blg_beard_shaved = yes
+
+			blg_beard_byzantine = no
+			blg_beard_norse = no
+			blg_beard_cuman = no
+			blg_beard_easternslavic = no
+			blg_beard_frankish = no
+			blg_beard_german = no
+			blg_beard_indian = no
+			blg_beard_persian = no
+			blg_beard_southslavic = no
+			blg_beard_turkish = no
+			NOT = { is_variable_equal = { which = ca_beard value = 6 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_long = yes
+
+			blg_beard_african = no
+			blg_beard_chinese = no
+			blg_beard_muslim = no
+			blg_beard_roman = no
+			blg_beard_southindian = no
+			blg_beard_ugric = no
+			blg_beard_mongol = no
+			NOT = { is_variable_equal = { which = ca_beard value = 6 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 6 }
 			}
 		}
 	}
 
-	6 = { #Beard no mustache
+	6 = { # f - Beard no mustache
 		factor = 1
 		modifier = {
 			factor = 0
-			is_priest = yes
-			likes_buddhists = yes
+			blg_beard_shaved = yes
+
+			blg_beard_bodpa = no
+			blg_beard_norse = no
+			blg_beard_frankish = no
+			blg_beard_german = no
+			blg_beard_southslavic = no
+			blg_beard_westernslavic = no
+			blg_beard_mongol = no
+			NOT = { is_variable_equal = { which = ca_beard value = 7 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_long = yes
+
+			blg_beard_african = no
+			blg_beard_byzantine = no
+			blg_beard_celtic = no
+			blg_beard_chinese = no
+			blg_beard_cuman = no
+			blg_beard_indian = no
+			blg_beard_norse = no
+			blg_beard_persian = no
+			blg_beard_southern = no
+			blg_beard_southindian = no
+			blg_beard_turkish = no
+			blg_beard_ugric = no
+			blg_beard_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 7 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 7 }
 			}
 		}
 	}
 
-	7 = { #Evil stache
+	7 = { # g - Evil stache
 		factor = 1
 		modifier = {
 			factor = 0
-			is_priest = yes
-			OR = {
-				true_religion_group = christian
-				likes_buddhists = yes
-			}
+			blg_beard_celtic = yes
 			NOR = {
-				true_religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
+				blg_religion_pagan = yes
+				has_tribal_or_nomadic_government_trigger = yes
+				is_variable_equal = { which = ca_beard value = 8 }
 			}
 		}
+
 		modifier = {
 			factor = 0
-			OR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = crimeangfx
-				graphical_culture = celtiberiangfx
-			}
-			NOR = {
-				true_religion_group = pagan_group
-				is_tribal = yes
-				is_nomadic = yes
-			}
+			blg_beard_shaved = yes
+
+			blg_beard_african = no
+			blg_beard_bodpa = no
+			blg_beard_byzantine = no
+			blg_beard_cuman = no
+			blg_beard_easternslavic = no
+			blg_beard_roman = no
+			blg_beard_southindian = no
+			blg_beard_turkish = no
+			blg_beard_ugric = no
+			NOT = { is_variable_equal = { which = ca_beard value = 8 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_long = yes
+
+			blg_beard_egyptian = no
+			blg_beard_celtic = no
+			blg_beard_chinese = no
+			blg_beard_english = no
+			blg_beard_muslim = no
+			blg_beard_persian = no
+			blg_beard_norse = no
+			blg_beard_southern = no
+			NOT = { is_variable_equal = { which = ca_beard value = 8 } }
+		}
+
+		modifier = {
+			factor = 10
+			blg_beard_mongol = yes
+			blg_beard_uncommon = yes
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 8 }
 			}
 		}
 	}
 
-	8 = { # DLC beards
+	8 = { # h - Beard
 		factor = 1
 		modifier = {
 			factor = 0
-			is_priest = yes
-			likes_buddhists = yes
+			blg_beard_mongol = yes
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_shaved = yes
+
+			blg_beard_muslim = no
+			blg_beard_bodpa = no
+			blg_beard_celtic = no
+			blg_beard_chinese = no
+			blg_beard_persian = no
+			blg_beard_southindian = no
+			blg_beard_turkish = no
+			blg_beard_ugric = no
+			NOT = { is_variable_equal = { which = ca_beard value = 9 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_beard_long = yes
+
+			blg_beard_african = no
+			blg_beard_byzantine = no
+			blg_beard_cuman = no
+			blg_beard_english = no
+			blg_beard_frankish = no
+			blg_beard_indian = no
+			blg_beard_norse = no
+			blg_beard_roman = no
+			blg_beard_southern = no
+			blg_beard_southslavic = no
+			blg_beard_turkish = no
+			blg_beard_westernslavic = no
+			blg_beard_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 9 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 9 }
 			}
 		}
 	}
 
-	9 = {
+	9 = { # i - Beard
 		factor = 1
 		modifier = {
 			factor = 0
-			is_priest = yes
-			likes_buddhists = yes
+			blg_beard_mongol = yes
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_shaved = yes
+
+			blg_beard_african = no
+			blg_beard_bodpa = no
+			blg_beard_celtic = no
+			blg_beard_chinese = no
+			blg_beard_indian = no
+			blg_beard_southern = no
+			blg_beard_southindian = no
+			NOT = { is_variable_equal = { which = ca_beard value = 10 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_beard_long = yes
+
+			blg_beard_egyptian = no
+			blg_beard_celtic = no
+			blg_beard_english = no
+			blg_beard_frankish = no
+			blg_beard_german = no
+			blg_beard_muslim = no
+			blg_beard_norse = no
+			blg_beard_roman = no
+			blg_beard_southslavic = no
+			blg_beard_ugric = no
+			blg_beard_westernslavic = no
+			blg_beard_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 10 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 10 }
 			}
 		}
 	}
 
-	10 = {
+	10 = { # j - Beard
 		factor = 1
 		modifier = {
 			factor = 0
-			is_priest = yes
-			OR = {
-				true_religion_group = christian
-				likes_buddhists = yes
-			}
-			NOR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-			}
+			blg_beard_mongol = yes
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_shaved = yes
+
+			blg_beard_celtic = no
+			blg_beard_byzantine = no
+			blg_beard_cuman = no
+			blg_beard_easternslavic = no
+			blg_beard_egyptian = no
+			blg_beard_indian = no
+			blg_beard_persian = no
+			blg_beard_roman = no
+			blg_beard_southern = no
+			blg_beard_southslavic = no
+			blg_beard_turkish = no
+			blg_beard_westernslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 11 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_beard_long = yes
+
+			blg_beard_african = no
+			blg_beard_chinese = no
+			blg_beard_english = no
+			blg_beard_frankish = no
+			blg_beard_norse = no
+			blg_beard_roman = no
+			blg_beard_southindian = no
+			NOT = { is_variable_equal = { which = ca_beard value = 11 } }
+		}
+
+		modifier = {
+			factor = 10
+			blg_beard_uncommon = yes
+			OR = {
+				blg_beard_celtic = yes
+				blg_beard_persian = yes
+				blg_beard_turkish = yes
+			}
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 11 }
 			}
 		}
 	}
 
-	11 = { # Last Indian beard
+	11 = { # k - Beard
 		factor = 1
 		modifier = {
 			factor = 0
 			OR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = celtiberiangfx
-				graphical_culture = crimeangfx
-				graphical_culture = turkishgfx
-				graphical_culture = steppegfx
-				graphical_culture = centralasiangfx
-				graphical_culture = alangfx
-				graphical_culture = sogdiangfx
-				graphical_culture = persiangfx
-				graphical_culture = georgiangfx
-				graphical_culture = indusgfx
-				graphical_culture = levantinegfx
+				blg_beard_celtic = yes
+				blg_beard_persian = yes
+				blg_beard_turkish = yes
+				blg_beard_mongol = yes
 			}
 		}
+
 		modifier = {
 			factor = 0
-			is_priest = yes
-			likes_buddhists = yes
+			blg_beard_shaved = yes
+
+			blg_beard_african = no
+			blg_beard_bodpa = no
+			blg_beard_norse = no
+			blg_beard_chinese = no
+			blg_beard_cuman = no
+			blg_beard_easternslavic = no
+			blg_beard_english = no
+			blg_beard_ugric = no
+			NOT = { is_variable_equal = { which = ca_beard value = 12 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_long = yes
+
+			blg_beard_byzantine = no
+			blg_beard_egyptian = no
+			blg_beard_frankish = no
+			blg_beard_german = no
+			blg_beard_indian = no
+			blg_beard_muslim = no
+			blg_beard_roman = no
+			blg_beard_southslavic = no
+			blg_beard_westernslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 12 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 12 }
 			}
 		}
 	}
 
-	12 = { # New Byzantine beard
+	12 = { # l - Beard
 		factor = 1
 		modifier = {
 			factor = 0
 			OR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = celtiberiangfx
-				graphical_culture = crimeangfx
-				graphical_culture = turkishgfx
-				graphical_culture = steppegfx
-				graphical_culture = centralasiangfx
-				graphical_culture = alangfx
-				graphical_culture = sogdiangfx
-				graphical_culture = persiangfx
-				graphical_culture = georgiangfx
-				graphical_culture = indusgfx
-				graphical_culture = levantinegfx
+				blg_beard_celtic = yes
+				blg_beard_persian = yes
+				blg_beard_turkish = yes
+				blg_beard_mongol = yes
 			}
 		}
+
 		modifier = {
 			factor = 0
-			is_priest = yes
+			blg_beard_shaved = yes
+
+			blg_beard_african = no
+			blg_beard_byzantine = no
+			blg_beard_cuman = no
+			blg_beard_easternslavic = no
+			blg_beard_egyptian = no
+			blg_beard_frankish = no
+			blg_beard_indian = no
+			blg_beard_roman = no
+			blg_beard_southern = no
+			blg_beard_southslavic = no
+			blg_beard_westernslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 13 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_beard_long = yes
+
+			blg_beard_byzantine = no
+			blg_beard_chinese = no
+			blg_beard_english = no
+			blg_beard_german = no
+			blg_beard_muslim = no
+			blg_beard_norse = no
+			blg_beard_southindian = no
+			blg_beard_ugric = no
+			blg_beard_bodpa = no
+			NOT = { is_variable_equal = { which = ca_beard value = 13 } }
+		}
+
+		modifier = {
+			factor = 10
+			blg_beard_uncommon = yes
+			blg_beard_indian = yes
+		}
+
+		trigger = {
 			OR = {
-				true_religion_group = christian
-				likes_buddhists = yes
-			}
-			NOR = {
-				true_religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-			}
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 13 }
 			}
 		}
 	}
 
-	13 = { # New Byzantine beard
+	13 = { # m - Beard
 		factor = 1
 		modifier = {
 			factor = 0
 			OR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = celtiberiangfx
-				graphical_culture = crimeangfx
-				graphical_culture = turkishgfx
-				graphical_culture = steppegfx
-				graphical_culture = centralasiangfx
-				graphical_culture = alangfx
-				graphical_culture = sogdiangfx
-				graphical_culture = siberiangfx
-				graphical_culture = khitangfx
-				graphical_culture = persiangfx
-				graphical_culture = georgiangfx
-				graphical_culture = indusgfx
-				graphical_culture = levantinegfx
-				graphical_culture = indiangfx
-				graphical_culture = centralindiangfx
-				graphical_culture = assamesegfx
-				graphical_culture = afghangfx
+				blg_beard_celtic = yes
+				blg_beard_persian = yes
+				blg_beard_turkish = yes
+				blg_beard_indian = yes
+				blg_beard_mongol = yes
 			}
 		}
+
 		modifier = {
 			factor = 0
-			is_priest = yes
-			likes_buddhists = yes
+			blg_beard_shaved = yes
+
+			blg_beard_african = no
+			blg_beard_norse = no
+			blg_beard_chinese = no
+			blg_beard_egyptian = no
+			blg_beard_english = no
+			blg_beard_german = no
+			blg_beard_muslim = no
+			blg_beard_southindian = no
+			blg_beard_ugric = no
+			NOT = { is_variable_equal = { which = ca_beard value = 14 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_long = yes
+
+			blg_beard_bodpa = no
+			blg_beard_cuman = no
+			blg_beard_frankish = no
+			blg_beard_roman = no
+			blg_beard_southern = no
+			blg_beard_southslavic = no
+			blg_beard_westernslavic = no
+			blg_beard_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 14 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 14 }
 			}
 		}
 	}
 
-	14 = { # New Byzantine beard
+	14 = { # n - Beard
 		factor = 1
 		modifier = {
 			factor = 0
 			OR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = celtiberiangfx
-				graphical_culture = crimeangfx
-				graphical_culture = turkishgfx
-				graphical_culture = steppegfx
-				graphical_culture = centralasiangfx
-				graphical_culture = alangfx
-				graphical_culture = sogdiangfx
-				graphical_culture = siberiangfx
-				graphical_culture = khitangfx
-				graphical_culture = persiangfx
-				graphical_culture = georgiangfx
-				graphical_culture = indusgfx
-				graphical_culture = indiangfx
-				graphical_culture = centralindiangfx
-				graphical_culture = assamesegfx
-				graphical_culture = afghangfx
+				blg_beard_celtic = yes
+				blg_beard_persian = yes
+				blg_beard_turkish = yes
+				blg_beard_indian = yes
+				blg_beard_mongol = yes
 			}
 		}
+
 		modifier = {
 			factor = 0
-			is_priest = yes
-			likes_buddhists = yes
+			blg_beard_shaved = yes
+
+			blg_beard_german = no
+			blg_beard_southslavic = no
+			blg_beard_westernslavic = no
+			blg_beard_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 15 } }
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_beard_long = yes
+
+			blg_beard_african = no
+			blg_beard_byzantine = no
+			blg_beard_english = no
+			blg_beard_muslim = no
+			blg_beard_norse = no
+			blg_beard_roman = no
+			blg_beard_southindian = no
+			blg_beard_ugric = no
+			blg_beard_bodpa = no
+			NOT = { is_variable_equal = { which = ca_beard value = 15 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 15 }
 			}
 		}
 	}
 
-	15 = { # Loopback to beardless
+	15 = { # o - Loopback to beardless
 		factor = 4
 		modifier = {
-			factor = 0.1
+			factor = 0
 			OR = {
-				true_religion_group = muslim
-				true_religion_group = jewish_group
-				true_religion = taoist
+				blg_beard_celtic = yes
+				blg_beard_persian = yes
+				blg_beard_turkish = yes
+				blg_beard_indian = yes
+				blg_beard_mongol = yes
 			}
 		}
+
+		modifier = {
+			factor = 0.05
+			true_religion_scope = {
+				OR = {
+					likes_muslims = yes
+					blg_hair_uncut = yes
+				}
+			}
+		}
+
 		modifier = {
 			factor = 0
-			true_religion_group = christian
-			NOR = {
-				true_religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-			}
-			OR = {
-				is_priest = yes
-				blg_priest = yes
-				is_ascetic_trigger = yes
-			}
+			blg_beard_long = yes
 		}
-		modifier = {
-			factor = 15
-			OR = {
-				true_religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				blg_priest = yes
-				is_ascetic_trigger = yes
-				is_christian_monastic_member_trigger = yes
-			}
-		}
+
 		modifier = {
 			factor = 10
-			OR = {
-				culture = italian
-				culture = sardinian
-				culture = norman
-				culture = roman
-				culture = pecheneg
-				blg_italian = yes
-				likes_mesoamericans = yes
-			}
+			blg_beard_uncommon = yes
 		}
+
+		modifier = {
+			factor = 2
+			blg_beard_shaved = yes
+		}
+
 		modifier = {
 			factor = 3
-			culture_group = iberian
+			blg_culture_iberian = yes
+			likes_christians = yes
 		}
-		#modifier = {
-		#	factor = 100 #No longer bearded Ottavian.
-		#	character = 145290
-		#}
-		modifier = { # frankish men less likely to wear beards after the 12th century
+
+		modifier = { # Catholic men less likely to wear beards after the 12th century.
 			factor = 2
-			year_of_birth = 1100
-			OR = {
-				true_religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-			}
+			year_of_birth >= 1100
+			blg_religion_catholic = yes
 		}
-		modifier = { # frankish men less likely to wear beards after the 12th century
+
+		modifier = { # Frankish men less likely to wear beards after the 12th century.
 			factor = 2
-			year_of_birth = 1150
-			culture = frankish
+			year_of_birth >= 1150
+			blg_culture_french = yes
 		}
-		modifier = { # frankish men less likely to wear beards after the 12th century
+
+		modifier = { # Frankish men less likely to wear beards after the 12th century.
 			factor = 2
-			year_of_birth = 1200
-			culture = frankish
+			year_of_birth >= 1200
+			blg_culture_french = yes
 		}
+
 		modifier = {
 			factor = 2
-			culture = roman
 			tier = emperor
 			year_of_birth < 770
+			blg_culture_italian = yes
 		}
-		modifier = {
-			factor = 0
+
+		trigger = {
 			OR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = norsegaelgfx
-				graphical_culture = celtiberiangfx
-				graphical_culture = crimeangfx
-				graphical_culture = turkishgfx
-				graphical_culture = steppegfx
-				graphical_culture = centralasiangfx
-				graphical_culture = alangfx
-				graphical_culture = sogdiangfx
-				graphical_culture = siberiangfx
-				graphical_culture = khitangfx
-				graphical_culture = persiangfx
-				graphical_culture = georgiangfx
-				graphical_culture = indusgfx
-				graphical_culture = indiangfx
-				graphical_culture = centralindiangfx
-				graphical_culture = assamesegfx
-				graphical_culture = afghangfx
-			}
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
 				is_variable_equal = { which = ca_beard value = 0 }
 				is_variable_equal = { which = ca_beard value = 1 }
 			}

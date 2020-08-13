@@ -8,7 +8,7 @@ polar_bear;Bear;ours;Bär;;Oso;;;;;;;;;x
 blgspawn;New character;;;;;;;;;;;;;x
 blgspawn_desc;This character has not yet been initialized;;;;;;;;;;;;;x
 blgquesting;On a quest;;;;;;;;;;;;;x
-blgquesting;This character has an active society quest;;;;;;;;;;;;;x
+blgquesting_desc;This character has an active society quest;;;;;;;;;;;;;x
 
 BLG_NEW_CHARACTERS;§ZBLG:§! New Character Variation;;;;;;;;;;;;;x
 BLG_NEW_CHARACTERS_HISTORICAL_DESC;New character ethnicities will be varied based on the populations within or near the realm they come from. Both the current population and the historical inhabitants will be represented.;;;;;;;;;;;;;x

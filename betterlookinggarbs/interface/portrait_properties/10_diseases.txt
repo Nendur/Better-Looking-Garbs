@@ -1,17 +1,31 @@
-# p10 blinded
+# p10 Diseases - blinded_eyes
 10 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 1
 	}
 
-	1 = { # leper
+	1 = { # a - Leper
 		factor = 100
 		trigger = {
-			trait = leper
 			OR = {
-				trait = disfigured
-				NOT = { has_dlc = "Reapers" }
+				AND = {
+					blg_leper = yes
+					OR = {
+						is_alive = yes
+						has_game_rule = { name = blg_disease value = postmortem }
+					}
+				}
+				blg_mummy = yes
 			}
+
+			NOT = { has_game_rule = { name = blg_disease value = off } }
+		}
+	}
+
+	2 = { # b - Syphilitic
+		factor = 100
+		trigger = {
+			blg_pox = yes
 
 			OR = {
 				is_alive = yes
@@ -21,13 +35,11 @@
 		}
 	}
 
-	2 = { # syphilitic
+	3 = { # c - Pnuemonia
 		factor = 100
 		trigger = {
-			OR = {
-				trait = syphilitic
-				trait = has_aztec_disease
-			}
+			blg_pneumonic = yes
+			blg_adult = yes
 
 			OR = {
 				is_alive = yes
@@ -37,11 +49,10 @@
 		}
 	}
 
-	3 = { # pnuemonia
+	4 = { # d - Fever
 		factor = 100
 		trigger = {
-			trait = pneumonic
-			practical_age = 16
+			blg_fever = yes
 
 			OR = {
 				is_alive = yes
@@ -51,13 +62,10 @@
 		}
 	}
 
-	4 = { # fever
+	5 = { # e - Flu
 		factor = 100
 		trigger = {
-			OR = {
-				trait = fever
-				trait = has_typhoid_fever
-			}
+			blg_flu = yes
 
 			OR = {
 				is_alive = yes
@@ -67,26 +75,11 @@
 		}
 	}
 
-	5 = { # ill
-		factor = 100
-		trigger = {
-			OR = {
-				trait = ill
-				trait = flu
-			}
-
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
-		}
-	}
-
-	6 = { # drunkard
+	6 = { # f - Drunkard
 		factor = 100
 		trigger = {
 			trait = drunkard
+
 			OR = {
 				is_alive = yes
 				has_nickname = nick_the_drunkard
@@ -99,13 +92,10 @@
 		}
 	}
 
-	7 = { # vomit
+	7 = { # g - Vomit
 		factor = 0
 		trigger = {
-			OR = {
-				trait = vomiting
-				trait = food_poisoning
-			}
+			blg_vomit = yes
 
 			OR = {
 				is_alive = yes
@@ -115,12 +105,13 @@
 		}
 	}
 
-	8 = { # imbecile
+	8 = { # h - Drooling
 		factor = 100
 		trigger = {
 			OR = {
 				AND = {
 					trait = imbecile
+
 					NOR = {
 						has_game_rule = { name = blg_traits value = notraits }
 						has_game_rule = { name = blg_traits value = off }
@@ -128,10 +119,8 @@
 				}
 
 				AND = {
-					OR = {
-						trait = infirm
-						trait = rabies
-					}
+					blg_drooling = yes
+
 					OR = {
 						is_alive = yes
 						has_game_rule = { name = blg_disease value = postmortem }

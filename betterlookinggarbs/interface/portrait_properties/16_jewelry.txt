@@ -1,4 +1,4 @@
-# p16 chinese empress jewelry + horse immortal
+# p16 Chinese empress jewelry + horse immortal.
 16 = {
 	0 = { # blank
 		factor = 100
@@ -7,6 +7,7 @@
 			chinese_empress_jewelry_trigger = yes
 			NOT = { graphical_culture = horsegfx }
 		}
+
 		modifier = {
 			factor = 0
 			graphical_culture = horsegfx

@@ -63,7 +63,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mesoamerican_male_headgear_behind"
 		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_headgear_behind.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 
@@ -294,7 +294,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mesoamerican_male_headgear"
 		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_headgear.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 
@@ -326,7 +326,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mesoamerican_female_headgear_behind"
 		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_headgear_behind.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 
@@ -559,7 +559,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mesoamerican_female_headgear"
 		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_headgear.dds"
-		noOfFrames = 12
+		noOfFrames = 14
 		norefcount = yes
 	}
 

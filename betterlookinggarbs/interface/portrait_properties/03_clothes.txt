@@ -1,639 +1,285 @@
-### Better Looking Garbs clothes and headgear by Pnutmaster
-# p3 clothes
+# p3 Clothes
 3 = {
-	0 = { # Royal clothes 1
-		factor = 1
+	0 = { # 0 - Royal clothes 1
+		factor = 10
+		trigger = {
+			blg_clothes_royal = yes
+		}
+
 		modifier = {
-			factor = 0
+			factor = 0.05
 			OR = {
 				trait = humble
-				trait = peasant_leader
-				trait = heresiarch
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 1 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
-				blg_royalty = yes
-				is_or_was_offmap_power_ruler = yes
+				blg_merchant_clothes = yes
 			}
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_clothes value = 1 }
 		}
 	}
 
-	1 = { # Royal clothes 2
-		factor = 1
+	1 = { # a - Royal clothes 2
+		factor = 10
+		trigger = {
+			blg_clothes_royal = yes
+		}
+
 		modifier = {
-			factor = 0
+			factor = 0.05
 			OR = {
 				trait = humble
-				trait = peasant_leader
-				trait = heresiarch
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 2 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
-				blg_royalty = yes
-				is_or_was_offmap_power_ruler = yes
+				blg_merchant_clothes = yes
 			}
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_clothes value = 2 }
 		}
 	}
 
-	2 = { # Royal clothes 3
-		factor = 1
+	2 = { # b - Royal clothes 3
+		factor = 10
+		trigger = {
+			blg_clothes_royal = yes
+		}
+
 		modifier = {
-			factor = 0
+			factor = 0.05
 			OR = {
 				trait = humble
-				trait = peasant_leader
-				trait = heresiarch
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 3 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
-				blg_royalty = yes
-				is_or_was_offmap_power_ruler = yes
+				blg_merchant_clothes = yes
 			}
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_clothes value = 3 }
 		}
 	}
 
-	3 = { # Noble clothes 1
-		factor = 1
+	3 = { # c - Noble clothes 1
+		factor = 2
 		trigger = {
-			OR = {
-				is_landed = yes
-				spouse = { is_landed = yes }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
-				trait = proud
-			}
+			blg_clothes_noble = yes
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				is_or_was_offmap_power_ruler = yes
-			}
-			NOT = { trait = humble }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 4 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				trait = peasant_leader
-				trait = heresiarch
-			}
-		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_clothes value = 4 }
 		}
 	}
 
-	4 = { # Noble clothes 2
-		factor = 1
+	4 = { # d - Noble clothes 2
+		factor = 2
 		trigger = {
-			OR = {
-				is_landed = yes
-				spouse = { is_landed = yes }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
-				trait = proud
-			}
+			blg_clothes_noble = yes
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				is_or_was_offmap_power_ruler = yes
-			}
-			NOT = { trait = humble }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 4 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				trait = peasant_leader
-				trait = heresiarch
-			}
-		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_clothes value = 5 }
 		}
 	}
 
-	5 = { # Noble clothes 3
-		factor = 1
+	5 = { # e - Noble clothes 3
+		factor = 2
 		trigger = {
-			OR = {
-				is_landed = yes
-				spouse = { is_landed = yes }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
-				trait = proud
-			}
+			blg_clothes_noble = yes
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				is_or_was_offmap_power_ruler = yes
-			}
-			NOT = { trait = humble }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 4 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				trait = peasant_leader
-				trait = heresiarch
-			}
-		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_clothes value = 6 }
 		}
 	}
 
-	6 = { # Modest clothes 1
+	6 = { # f - Modest clothes 1
 		factor = 1
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				is_landed = yes
-				spouse = { higher_real_tier_than = count }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
-				blg_royalty = yes
-				is_or_was_offmap_power_ruler = yes
+				blg_clothes_common = yes
+				is_variable_equal = { which = ca_clothes value = 7 }
 			}
-			NOR = {
-				trait = humble
-				trait = peasant_leader
-				trait = heresiarch
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 7 } }
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_clothes value = 7 }
 		}
 	}
 
-	7 = { # Modest clothes 2
+	7 = { # g - Modest clothes 2
 		factor = 1
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				is_landed = yes
-				spouse = { higher_real_tier_than = count }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
-				blg_royalty = yes
-				is_or_was_offmap_power_ruler = yes
+				blg_clothes_common = yes
+				is_variable_equal = { which = ca_clothes value = 8 }
 			}
-			NOR = {
-				trait = humble
-				trait = peasant_leader
-				trait = heresiarch
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 8 } }
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_clothes value = 8 }
 		}
 	}
 
-	8 = { # Modest clothes 3
+	8 = { # h - Modest clothes 3
 		factor = 1
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				is_landed = yes
-				spouse = { higher_real_tier_than = count }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
-				blg_royalty = yes
-				is_or_was_offmap_power_ruler = yes
+				blg_clothes_common = yes
+				is_variable_equal = { which = ca_clothes value = 9 }
 			}
-			NOR = {
-				trait = humble
-				trait = peasant_leader
-				trait = heresiarch
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 9 } }
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_clothes value = 9 }
 		}
 	}
 
-	9 = { # Shady clothes
+	9 = { # i - Shady clothes
 		factor = 3
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				is_or_was_offmap_power_ruler = yes
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 10 } }
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_job_title = job_spymaster }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 10 } }
-			OR = {
-				real_tier = duke
-				NOT = { intrigue = 10 }
+				has_job_title = job_spymaster
+				AND = {
+					intrigue = 12
+					lower_real_tier_than = duke
+				}
+				is_variable_equal = { which = ca_clothes value = 10 }
 			}
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_clothes value = 10 }
 		}
 	}
 
-	10 = { # Martial
+	10 = { # j - Martial
 		factor = 100
-		modifier = { # Better armour available
-			factor = 0
-			is_female = no
+		trigger = {
 			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
-				has_character_modifier = jd_strategist
-			}
-			#NOT = { primary_title = { mercenary = yes } }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 11 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
 				AND = {
-					in_command = yes
+					blg_clothes_military = yes
 					OR = {
-						war = yes
-						liege = { war = yes }
-						is_landed = no
-						in_battle = yes
-						in_siege = yes
+						is_female = yes
+						blg_elite_commander = no
 					}
 				}
-				has_job_title = job_marshal
-				death_reason = death_battle
-				death_reason = death_duel
-				employer = { government = order_government }
-				employer = {
-					mercenary = yes
-					primary_title = {
-						NOR = {
-							title = d_venetian_navy
-							title = d_genoese_navy
-							title = d_hanseatic_navy
-							title = d_frisian_navy
-							title = d_maghreb_corsairs
-							title = d_han_junks
-							title = d_jurchen_corsairs
-							title = d_treasure_fleet
-						}
-					}
-				}
-				trait = shieldmaiden
-				has_character_flag = add_duel_xp
-				has_character_flag = chivalry_duel_ongoing
-				blg_soldier = yes
+				is_variable_equal = { which = ca_clothes value = 11 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 11 } }
 		}
 	}
 
-	11 = { # Ragged clothes
+	11 = { # k - Ragged clothes
 		factor = 100
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				NOR = {
-					prisoner = yes
-					death_reason = death_dungeon
-					death_reason = death_slavery
-				}
-				has_character_modifier = house_arrest
+				blg_prisoner = yes
+				blg_slave = yes
+				blg_merchant_clothes = yes
+				is_variable_equal = { which = ca_clothes value = 12 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 12 } }
+			NOT = { has_character_modifier = house_arrest }
+		}
+
+		modifier = {
+			factor = 0.01
+			blg_merchant_clothes = yes
 		}
 	}
 
-	12 = { # Royal war gear
+	12 = { # l - Royal war gear
 		factor = 100
-		modifier = {
-			factor = 0
-			NOR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						in_battle = yes
-						in_siege = yes
-					}
-				}
-				has_job_title = job_marshal
-				death_reason = death_battle
-				death_reason = death_duel
-				employer = { government = order_government }
-				has_landed_title = e_china_west_governor
-				has_character_flag = add_duel_xp
-				has_character_flag = chivalry_duel_ongoing
-			}
-			NAND = {
-				is_merchant_republic = yes
-				in_command = no
-				OR = {
-					likes_latino_iberians = yes
-					likes_byzantines = yes
-					likes_altaics = yes
-					likes_arabs = yes
-					likes_iranians = yes
-					likes_africans = yes
-					likes_mesoamericans = yes
-					culture_group = israelite
-					blg_north_african = yes
-				}
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 13 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
+		trigger = {
+			OR = {
 				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
+				spouse_even_if_dead = { higher_real_tier_than = duke }
+			}
+
+			OR = {
+				blg_clothes_military = yes
+				blg_military_governor = yes
+				blg_merchant_clothes = yes
+				is_variable_equal = { which = ca_clothes value = 13 }
 			}
 		}
+
 		modifier = {
 			factor = 0
 			is_nomadic = yes
 			NOR = {
 				real_tier = emperor
-				spouse = { real_tier = emperor }
+				spouse_even_if_dead = { real_tier = emperor }
 			}
 		}
+
 		modifier = {
 			factor = 0.01
-			is_merchant_republic = yes
-			in_command = no
-			OR = {
-				likes_latino_iberians = yes
-				likes_byzantines = yes
-				likes_altaics = yes
-				likes_arabs = yes
-				likes_iranians = yes
-				likes_africans = yes
-				likes_mesoamericans = yes
-				culture_group = israelite
-				blg_north_african = yes
-			}
+			blg_merchant_clothes = yes
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_clothes value = 13 }
 		}
 	}
 
-	13 = { # Noble war gear
+	13 = { # m - Noble war gear
 		factor = 100
-		modifier = {
-			factor = 0
-			NOR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						in_battle = yes
-						in_siege = yes
-					}
-				}
-				has_job_title = job_marshal
-				death_reason = death_battle
-				death_reason = death_duel
-				employer = { government = order_government }
-				employer = {
-					mercenary = yes
-					primary_title = {
-						NOR = {
-							title = d_venetian_navy
-							title = d_genoese_navy
-							title = d_hanseatic_navy
-							title = d_frisian_navy
-							title = d_maghreb_corsairs
-							title = d_han_junks
-							title = d_jurchen_corsairs
-							title = d_treasure_fleet
-						}
-					}
-				}
-				has_landed_title = e_china_west_governor
-				has_character_flag = add_duel_xp
-				has_character_flag = chivalry_duel_ongoing
-			}
-			NAND = {
-				is_merchant_republic = yes
-				in_command = no
-				OR = {
-					likes_latino_iberians = yes
-					likes_byzantines = yes
-					likes_altaics = yes
-					likes_arabs = yes
-					likes_iranians = yes
-					likes_africans = yes
-					likes_mesoamericans = yes
-					culture_group = israelite
-					blg_north_african = yes
-				}
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 14 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
-				has_character_modifier = jd_strategist
-			}
-		}
-		modifier = {
-			factor = 0.99
+		trigger = {
+			blg_elite_commander = yes
+
 			OR = {
-				culture = han
-				blg_chinese = yes
+				blg_clothes_military = yes
+				blg_merchant_clothes = yes
+				is_variable_equal = { which = ca_clothes value = 14 }
 			}
 		}
+
 		modifier = {
 			factor = 0.01
-			is_merchant_republic = yes
-			in_command = no
-			OR = {
-				likes_latino_iberians = yes
-				likes_byzantines = yes
-				likes_altaics = yes
-				likes_arabs = yes
-				likes_iranians = yes
-				likes_africans = yes
-				likes_mesoamericans = yes
-				culture_group = israelite
-				blg_north_african = yes
-			}
+			blg_merchant_clothes = yes
 		}
+
+		modifier = {
+			factor = 0.99
+			blg_clothes_chinese = yes
+		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_clothes value = 14 }
 		}
 	}
 
-	14 = { # Chinese war gear
+	14 = { # n - Chinese war gear
 		factor = 99
 		trigger = {
+			blg_elite_commander = yes
+
 			OR = {
+				blg_merchant_clothes = yes
 				AND = {
-					OR = {
-						culture = han
-						blg_chinese = yes
-					}
-					OR = {
-						higher_real_tier_than = count
-						spouse = { higher_real_tier_than = count }
-						has_character_modifier = jd_strategist
-					}
-					OR = {
-						AND = {
-							in_command = yes
-							OR = {
-								war = yes
-								liege = { war = yes }
-								in_battle = yes
-								in_siege = yes
-							}
-						}
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						employer = { government = order_government }
-						employer = {
-							mercenary = yes
-							primary_title = {
-								NOR = {
-									title = d_venetian_navy
-									title = d_genoese_navy
-									title = d_hanseatic_navy
-									title = d_frisian_navy
-									title = d_maghreb_corsairs
-									title = d_han_junks
-									title = d_jurchen_corsairs
-									title = d_treasure_fleet
-								}
-							}
-						}
-						has_landed_title = e_china_west_governor
-						has_character_flag = add_duel_xp
-						has_character_flag = chivalry_duel_ongoing
-					}
+					blg_clothes_chinese = yes
+					blg_clothes_military = yes
 				}
-				AND = {
-					is_merchant_republic = yes
-					in_command = no
-					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_altaics = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
-						likes_mesoamericans = yes
-						culture_group = israelite
-						blg_north_african = yes
-					}
-				}
-				AND = { is_alive = yes is_variable_equal = { which = ca_clothes value = 15 } }
+				is_variable_equal = { which = ca_clothes value = 15 }
 			}
 		}
+
 		modifier = {
 			factor = 0.01
-			is_merchant_republic = yes
-			in_command = no
-			OR = {
-				likes_latino_iberians = yes
-				likes_byzantines = yes
-				likes_altaics = yes
-				likes_arabs = yes
-				likes_iranians = yes
-				likes_africans = yes
-				likes_mesoamericans = yes
-				culture_group = israelite
-				blg_north_african = yes
-			}
+			blg_merchant_clothes = yes
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_clothes value = 15 }
 		}
 	}

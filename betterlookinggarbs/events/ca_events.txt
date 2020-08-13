@@ -12,7 +12,7 @@ character_event = {
 		name = ca.110.opt
 
 		trigger = {
-			FROM = { NOR = { is_priest = yes blg_priest = yes } }
+			FROM = { NOT = { blg_priest = yes } }
 		}
 
 		repeat_event = { id = blg.110 }
@@ -25,33 +25,24 @@ character_event = {
 
 	option = {
 		name = TRIGGER_SOCIETY
+
 		trigger = {
 			FROM = {
 				OR = {
 					is_society_discovered = yes
 					same_society_as = ROOT
-					any_artifact = {
-						OR = {
-							artifact_type = crown_african_mask_1
-							artifact_type = crown_african_mask_2
-							artifact_type = crown_african_mask_3
-							artifact_type = crown_african_mask_4
-							artifact_type = crown_african_mask_5
-							artifact_type = crown_african_mask_6
-							artifact_type = crown_african_mask_7
-							artifact_type = crown_african_mask_8
-						}
-						is_artifact_equipped = yes
-					}
+					blg_artifact_mask_any = yes
 				}
 				NOT = { society_member_of = secret_religious_cult }
 			}
 		}
+
 		repeat_event = { id = blg.113 }
 	}
 
 	option = {
 		name = ca.130.opt
+
 		trigger = {
 			FROM = {
 				OR = {
@@ -63,6 +54,7 @@ character_event = {
 			}
 			NOT = { has_game_rule = { name = blg_wounds value = off } }
 		}
+
 		repeat_event = { id = blg.130 }
 	}
 
@@ -219,6 +211,7 @@ character_event = {
 		name = ca.114.opt
 
 		trigger = { has_dlc = "Holy Fury" }
+
 		repeat_event = { id = blg.114 }
 	}
 
@@ -237,21 +230,32 @@ character_event = {
 
 	option = {
 		name = LEDGER_NEXT
+
 		trigger = {
 			FROM = {
-				OR = {
-					NOT = { check_variable = { which = ca_headgear value = 12 } }
-					AND = {
-						NOT = { check_variable = { which = ca_headgear value = 15 } }
-						OR= {
-							higher_real_tier_than = count
-							spouse = { higher_real_tier_than = count }
+				trigger_if = {
+					limit = {
+						OR = {
+							blg_merchant_headgear = yes
+							AND = {
+								blg_headgear_chinese = yes
+								blg_elite_commander = yes
+							}
 						}
 					}
+					NOT = { check_variable = { which = ca_headgear value = 15 } }
+				}
+				trigger_if = {
+					limit = { blg_elite_commander = yes }
+					NOT = { check_variable = { which = ca_headgear value = 14 } }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_headgear value = 12 } }
 				}
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				change_variable = { which = ca_headgear value = 1 }
 				remove_trait = blgspawn
@@ -262,57 +266,33 @@ character_event = {
 
 	option = {
 		name = LEDGER_PREV
+
 		trigger = {
 			FROM = {
-				OR = {
-					AND = {
-						check_variable = { which = ca_headgear value = 2 }
-						OR= {
-							real_tier = emperor
-							spouse = { real_tier = emperor }
+				trigger_if = {
+					limit = {
+						OR = {
+							blg_headgear_emperor = yes
+							blg_merchant_headgear = yes
 						}
 					}
-					AND = {
-						check_variable = { which = ca_headgear value = 3 }
-						OR= {
-							higher_real_tier_than = duke
-							spouse = { higher_real_tier_than = duke }
-							has_minor_title = title_despot
-							has_minor_title = title_augusta
-							blg_royalty = yes
-							AND = {
-								OR = {
-									AND = { independent = yes real_tier = duke }
-									spouse = { independent = yes real_tier = duke }
-								}
-								OR = {
-									culture_group = north_germanic
-									culture_group = finno_ugric
-									culture_group = celtic
-									culture_group = east_african
-									culture = saxon
-									likes_arabs = yes
-									likes_iranians = yes
-									likes_tibetans = yes
-									blg_north_african = yes
-								}
-							}
-						}
-					}
-					AND = {
-						check_variable = { which = ca_headgear value = 6 }
-						OR= {
-							real_tier = duke
-							spouse = { real_tier = duke }
-							has_minor_title = title_prince
-							has_minor_title = title_queen_mother
-						}
-					}
+					check_variable = { which = ca_headgear value = 2 }
+				}
+				trigger_else_if = {
+					limit = { blg_headgear_king = yes }
+					check_variable = { which = ca_headgear value = 3 }
+				}
+				trigger_else_if = {
+					limit = { blg_headgear_duke = yes }
+					check_variable = { which = ca_headgear value = 6 }
+				}
+				trigger_else = {
 					check_variable = { which = ca_headgear value = 7 }
 				}
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				subtract_variable = { which = ca_headgear value = 1 }
 				remove_trait = blgspawn
@@ -323,12 +303,14 @@ character_event = {
 
 	option = {
 		name = DIPLOWINDOW_ACCEPT
+
 		repeat_event = { id = blg.110 }
 	}
 
 	option = {
 		name = RD_RESET
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				set_variable = { which = ca_headgear value = 0 }
 				remove_trait = blgspawn
@@ -348,22 +330,36 @@ character_event = {
 
 	option = {
 		name = LEDGER_NEXT
+
 		trigger = {
 			FROM = {
-				OR = {
-					NOT = { check_variable = { which = ca_clothes value = 12 } }
-					AND = {
-						NOT = { check_variable = { which = ca_clothes value = 15 } }
-						is_female = no
-						OR= {
-							higher_real_tier_than = count
-							spouse = { higher_real_tier_than = count }
+				trigger_if = {
+					limit = {
+						OR = {
+							blg_merchant_clothes = yes
+							AND = {
+								is_female = no
+								blg_clothes_chinese = yes
+								blg_elite_commander = yes
+							}
 						}
 					}
+					NOT = { check_variable = { which = ca_clothes value = 15 } }
+				}
+				trigger_if = {
+					limit = {
+						is_female = no
+						blg_elite_commander = yes
+					}
+					NOT = { check_variable = { which = ca_clothes value = 14 } }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_clothes value = 12 } }
 				}
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				change_variable = { which = ca_clothes value = 1 }
 				remove_trait = blgspawn
@@ -374,34 +370,24 @@ character_event = {
 
 	option = {
 		name = LEDGER_PREV
+
 		trigger = {
 			FROM = {
-				OR = {
-					AND = {
-						check_variable = { which = ca_clothes value = 2 }
-						OR= {
-							higher_real_tier_than = duke
-							spouse = { higher_real_tier_than = duke }
-							has_minor_title = title_prince
-							has_minor_title = title_queen_mother
-							has_minor_title = title_despot
-							has_minor_title = title_augusta
-							blg_royalty = yes
-						}
-					}
-					AND = {
-						check_variable = { which = ca_clothes value = 5 }
-						OR= {
-							is_landed = yes
-							spouse = { is_landed = yes }
-							trait = proud
-						}
-					}
+				trigger_if = {
+					limit = { blg_clothes_royal = yes }
+					check_variable = { which = ca_clothes value = 2 }
+				}
+				trigger_else_if = {
+					limit = { blg_clothes_noble = yes }
+					check_variable = { which = ca_clothes value = 5 }
+				}
+				trigger_else = {
 					check_variable = { which = ca_clothes value = 8 }
 				}
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				subtract_variable = { which = ca_clothes value = 1 }
 				remove_trait = blgspawn
@@ -412,12 +398,14 @@ character_event = {
 
 	option = {
 		name = DIPLOWINDOW_ACCEPT
+
 		repeat_event = { id = blg.110 }
 	}
 
 	option = {
 		name = RD_RESET
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				set_variable = { which = ca_clothes value = 0 }
 				remove_trait = blgspawn
@@ -437,23 +425,27 @@ character_event = {
 
 	option = {
 		name = ca.113.WearSocietyGear
+
 		trigger = {
 			FROM = {
 				NOT = { trait = blgcaon }
 			}
 		}
-		hidden_tooltip = { FROM = { add_trait = blgcaon } }
+
+		hidden_effect = { FROM = { add_trait = blgcaon } }
 		repeat_event = { id = blg.113 }
 	}
 
 	option = {
 		name = ca.113.RemoveSocietyGear
+
 		trigger = {
 			FROM = {
 				NOT = { trait = blgcaoff }
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				add_trait = blgcaoff
 				remove_trait = blgquesting
@@ -464,25 +456,15 @@ character_event = {
 
 	option = {
 		name = ca.113.ShowMask
+
 		trigger = {
 			FROM = {
 				has_character_flag = blgcamaskoff
-				any_artifact = {
-					OR = {
-						artifact_type = crown_african_mask_1
-						artifact_type = crown_african_mask_2
-						artifact_type = crown_african_mask_3
-						artifact_type = crown_african_mask_4
-						artifact_type = crown_african_mask_5
-						artifact_type = crown_african_mask_6
-						artifact_type = crown_african_mask_7
-						artifact_type = crown_african_mask_8
-					}
-					is_artifact_equipped = yes
-				}
+				blg_artifact_mask_any = yes
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				clr_character_flag = blgcamaskoff
 				remove_trait = blgspawn
@@ -493,25 +475,15 @@ character_event = {
 
 	option = {
 		name = ca.113.RemoveMask
+
 		trigger = {
 			FROM = {
 				NOT = { has_character_flag = blgcamaskoff }
-				any_artifact = {
-					OR = {
-						artifact_type = crown_african_mask_1
-						artifact_type = crown_african_mask_2
-						artifact_type = crown_african_mask_3
-						artifact_type = crown_african_mask_4
-						artifact_type = crown_african_mask_5
-						artifact_type = crown_african_mask_6
-						artifact_type = crown_african_mask_7
-						artifact_type = crown_african_mask_8
-					}
-					is_artifact_equipped = yes
-				}
+				blg_artifact_mask_any = yes
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				set_character_flag = blgcamaskoff
 				remove_trait = blgspawn
@@ -710,9 +682,9 @@ character_event = {
 		repeat_event = { id = blg.115 }
 	}
 
-
 	option = {
 		name = ca.116.opt
+
 		trigger = { FROM = { is_female = yes } }
 
 		FROM = {
@@ -814,18 +786,24 @@ character_event = {
 
 	option = {
 		name = LEDGER_NEXT
+
 		trigger = {
 			FROM = {
-				OR = {
+				trigger_if = {
+					limit = { is_female = yes }
+					NOT = { check_variable = { which = ca_overlayer value = 25 } }
+				}
+				trigger_else_if = {
+					limit = { blg_headgear_duke = yes }
 					NOT = { check_variable = { which = ca_overlayer value = 15 } }
-					AND = {
-						NOT = { check_variable = { which = ca_overlayer value = 25 } }
-						is_female = yes
-					}
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_overlayer value = 10 } }
 				}
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				change_variable = { which = ca_overlayer value = 1 }
 				remove_trait = blgspawn
@@ -836,10 +814,12 @@ character_event = {
 
 	option = {
 		name = LEDGER_PREV
+
 		trigger = {
 			FROM = { check_variable = { which = ca_overlayer value = 2 } }
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				subtract_variable = { which = ca_overlayer value = 1 }
 				remove_trait = blgspawn
@@ -850,12 +830,14 @@ character_event = {
 
 	option = {
 		name = DIPLOWINDOW_ACCEPT
+
 		repeat_event = { id = blg.110 }
 	}
 
 	option = {
 		name = RD_RESET
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				set_variable = { which = ca_overlayer value = 0 }
 				remove_trait = blgspawn
@@ -875,10 +857,12 @@ character_event = {
 
 	option = {
 		name = LEDGER_NEXT
+
 		trigger = {
 			FROM = { NOT = { check_variable = { which = ca_underlayer value = 20 } } }
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				change_variable = { which = ca_underlayer value = 1 }
 				remove_trait = blgspawn
@@ -889,10 +873,12 @@ character_event = {
 
 	option = {
 		name = LEDGER_PREV
+
 		trigger = {
 			FROM = { check_variable = { which = ca_underlayer value = 2 } }
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				subtract_variable = { which = ca_underlayer value = 1 }
 				remove_trait = blgspawn
@@ -903,12 +889,14 @@ character_event = {
 
 	option = {
 		name = DIPLOWINDOW_ACCEPT
+
 		repeat_event = { id = blg.110 }
 	}
 
 	option = {
 		name = RD_RESET
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				set_variable = { which = ca_underlayer value = 0 }
 				remove_trait = blgspawn
@@ -996,6 +984,7 @@ character_event = {
 
 	option = {
 		name = RD_BEARD
+
 		trigger = {
 			FROM = { is_female = no }
 		}
@@ -1084,12 +1073,49 @@ character_event = {
 
 	option = {
 		name = LEDGER_NEXT
+
 		trigger = {
 			FROM = {
-				NOT = { check_variable = { which = ca_hair value = 15 } }
+				trigger_if = {
+					limit = {
+						OR = {
+							blg_hair_cuman = yes
+							AND = {
+								is_female = yes
+								OR = {
+									blg_hair_byzantine = yes
+									blg_hair_english = yes
+									blg_hair_german = yes
+									blg_hair_norse = yes
+									blg_hair_southern = yes
+									blg_hair_ugric = yes
+									blg_hair_westafrican = yes
+								}
+							}
+							AND = {
+								is_female = no
+								blg_hair_indian = yes
+							}
+						}
+					}
+					NOT = { check_variable = { which = ca_hair value = 10 } }
+				}
+				trigger_else_if = {
+					limit = {
+						OR = {
+							blg_hair_norse = yes
+							blg_hair_ugric = yes
+						}
+					}
+					NOT = { check_variable = { which = ca_hair value = 13 } }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_hair value = 15 } }
+				}
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				change_variable = { which = ca_hair value = 1 }
 				remove_trait = blgspawn
@@ -1100,12 +1126,14 @@ character_event = {
 
 	option = {
 		name = LEDGER_PREV
+
 		trigger = {
 			FROM = {
 				check_variable = { which = ca_hair value = 2 }
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				subtract_variable = { which = ca_hair value = 1 }
 				remove_trait = blgspawn
@@ -1116,12 +1144,14 @@ character_event = {
 
 	option = {
 		name = DIPLOWINDOW_ACCEPT
+
 		repeat_event = { id = blg.120 }
 	}
 
 	option = {
 		name = RD_RESET
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				set_variable = { which = ca_hair value = 0 }
 				remove_trait = blgspawn
@@ -1141,12 +1171,38 @@ character_event = {
 
 	option = {
 		name = LEDGER_NEXT
+
 		trigger = {
 			FROM = {
-				NOT = { check_variable = { which = ca_beard value = 15 } }
+				trigger_if = {
+					limit = {
+						blg_beard_mongol = yes
+					}
+					NOT = { check_variable = { which = ca_beard value = 7 } }
+				}
+				trigger_else_if = {
+					limit = {
+						OR = {
+							blg_beard_celtic = yes
+							blg_beard_persian = yes
+							blg_beard_turkish = yes
+						}
+					}
+					NOT = { check_variable = { which = ca_beard value = 10 } }
+				}
+				trigger_else_if = {
+					limit = {
+						blg_beard_indian = yes
+					}
+					NOT = { check_variable = { which = ca_beard value = 13 } }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_beard value = 15 } }
+				}
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				change_variable = { which = ca_beard value = 1 }
 				remove_trait = blgspawn
@@ -1157,12 +1213,14 @@ character_event = {
 
 	option = {
 		name = LEDGER_PREV
+
 		trigger = {
 			FROM = {
 				check_variable = { which = ca_beard value = 2 }
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				subtract_variable = { which = ca_beard value = 1 }
 				remove_trait = blgspawn
@@ -1173,12 +1231,14 @@ character_event = {
 
 	option = {
 		name = DIPLOWINDOW_ACCEPT
+
 		repeat_event = { id = blg.120 }
 	}
 
 	option = {
 		name = RD_RESET
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				set_variable = { which = ca_beard value = 0 }
 				remove_trait = blgspawn
@@ -1198,6 +1258,7 @@ character_event = {
 
 	option = {
 		name = ca.131.opt
+
 		trigger = {
 			FROM = { has_scarred_trait_trigger = yes }
 		}
@@ -1207,6 +1268,7 @@ character_event = {
 
 	option = {
 		name = ca.132.opt
+
 		trigger = {
 			FROM = {
 				NAND = {
@@ -1275,6 +1337,7 @@ character_event = {
 
 	option = {
 		name = ca.133.opt
+
 		trigger = {
 			FROM = {
 				NAND = {
@@ -1287,83 +1350,86 @@ character_event = {
 		FROM = {
 			if = {
 				limit = { has_portrait_property = { layer = 13 index = 1 } }
-				set_variable = { which = ca_eyepatch value = 1 }
-			}
-			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 2 } }
 				set_variable = { which = ca_eyepatch value = 2 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 3 } }
+				limit = { has_portrait_property = { layer = 13 index = 2 } }
 				set_variable = { which = ca_eyepatch value = 3 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 4 } }
+				limit = { has_portrait_property = { layer = 13 index = 3 } }
 				set_variable = { which = ca_eyepatch value = 4 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 5 } }
+				limit = { has_portrait_property = { layer = 13 index = 4 } }
 				set_variable = { which = ca_eyepatch value = 5 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 6 } }
+				limit = { has_portrait_property = { layer = 13 index = 5 } }
 				set_variable = { which = ca_eyepatch value = 6 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 7 } }
+				limit = { has_portrait_property = { layer = 13 index = 6 } }
 				set_variable = { which = ca_eyepatch value = 7 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 8 } }
+				limit = { has_portrait_property = { layer = 13 index = 7 } }
 				set_variable = { which = ca_eyepatch value = 8 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 9 } }
+				limit = { has_portrait_property = { layer = 13 index = 8 } }
 				set_variable = { which = ca_eyepatch value = 9 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 10 } }
+				limit = { has_portrait_property = { layer = 13 index = 9 } }
 				set_variable = { which = ca_eyepatch value = 10 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 11 } }
+				limit = { has_portrait_property = { layer = 13 index = 10 } }
 				set_variable = { which = ca_eyepatch value = 11 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 12 } }
+				limit = { has_portrait_property = { layer = 13 index = 11 } }
 				set_variable = { which = ca_eyepatch value = 12 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 13 } }
+				limit = { has_portrait_property = { layer = 13 index = 12 } }
 				set_variable = { which = ca_eyepatch value = 13 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 14 } }
+				limit = { has_portrait_property = { layer = 13 index = 13 } }
 				set_variable = { which = ca_eyepatch value = 14 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 15 } }
+				limit = { has_portrait_property = { layer = 13 index = 14 } }
 				set_variable = { which = ca_eyepatch value = 15 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 16 } }
+				limit = { has_portrait_property = { layer = 13 index = 15 } }
 				set_variable = { which = ca_eyepatch value = 16 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 17 } }
+				limit = { has_portrait_property = { layer = 13 index = 16 } }
 				set_variable = { which = ca_eyepatch value = 17 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 18 } }
+				limit = { has_portrait_property = { layer = 13 index = 17 } }
 				set_variable = { which = ca_eyepatch value = 18 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 19 } }
+				limit = { has_portrait_property = { layer = 13 index = 18 } }
 				set_variable = { which = ca_eyepatch value = 19 }
 			}
 			else_if = {
-				limit = { has_portrait_property = { layer = 13 index = 20 } }
+				limit = { has_portrait_property = { layer = 13 index = 19 } }
 				set_variable = { which = ca_eyepatch value = 20 }
+			}
+			else_if = {
+				limit = { has_portrait_property = { layer = 13 index = 20 } }
+				set_variable = { which = ca_eyepatch value = 21 }
+			}
+			else = {
+				set_variable = { which = ca_eyepatch value = 1 }
 			}
 		}
 		repeat_event = { id = blg.133 }
@@ -1384,12 +1450,14 @@ character_event = {
 
 	option = {
 		name = LEDGER_NEXT
+
 		trigger = {
 			FROM = {
 				NOT = { trait = scarred_type_10 }
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				if = {
 					limit = { trait = scarred_type_9 }
@@ -1434,12 +1502,14 @@ character_event = {
 
 	option = {
 		name = LEDGER_PREV
+
 		trigger = {
 			FROM = {
 				NOT = { trait = scarred_type_1 }
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				if = {
 					limit = { trait = scarred_type_2 }
@@ -1484,6 +1554,7 @@ character_event = {
 
 	option = {
 		name = DIPLOWINDOW_ACCEPT
+
 		repeat_event = { id = blg.130 }
 	}
 }
@@ -1498,12 +1569,14 @@ character_event = {
 
 	option = {
 		name = LEDGER_NEXT
+
 		trigger = {
 			FROM = {
 				NOT = { check_variable = { which = ca_mask value = 14 } }
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				change_variable = { which = ca_mask value = 1 }
 				remove_trait = blgspawn
@@ -1514,12 +1587,14 @@ character_event = {
 
 	option = {
 		name = LEDGER_PREV
+
 		trigger = {
 			FROM = {
 				NOT = { is_variable_equal = { which = ca_mask value = 1 } }
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				subtract_variable = { which = ca_mask value = 1 }
 				remove_trait = blgspawn
@@ -1530,12 +1605,14 @@ character_event = {
 
 	option = {
 		name = DIPLOWINDOW_ACCEPT
+
 		repeat_event = { id = blg.130 }
 	}
 
 	option = {
 		name = RD_RESET
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				set_variable = { which = ca_mask value = 0 }
 				remove_trait = blgspawn
@@ -1555,16 +1632,20 @@ character_event = {
 
 	option = {
 		name = LEDGER_NEXT
+
 		trigger = {
 			FROM = {
-				NOT = { check_variable = { which = ca_eyepatch value = 21 } }
-				OR = {
-					trait = blinded
-					NOT = { check_variable = { which = ca_eyepatch value = 12 } }
+				trigger_if = {
+					limit = { trait = blinded }
+					NOT = { check_variable = { which = ca_eyepatch value = 22 } }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_eyepatch value = 13 } }
 				}
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				change_variable = { which = ca_eyepatch value = 1 }
 				remove_trait = blgspawn
@@ -1575,16 +1656,20 @@ character_event = {
 
 	option = {
 		name = LEDGER_PREV
+
 		trigger = {
 			FROM = {
-				NOT = { is_variable_equal = { which = ca_eyepatch value = 1 } }
-				NAND = {
-					trait = blinded
-					NOT = { check_variable = { which = ca_eyepatch value = 14 } }
+				trigger_if = {
+					limit = { trait = blinded }
+					NOT = { is_variable_equal = { which = ca_eyepatch value = 14 } }
+				}
+				trigger_else = {
+					NOT = { is_variable_equal = { which = ca_eyepatch value = 1 } }
 				}
 			}
 		}
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				subtract_variable = { which = ca_eyepatch value = 1 }
 				remove_trait = blgspawn
@@ -1595,12 +1680,14 @@ character_event = {
 
 	option = {
 		name = DIPLOWINDOW_ACCEPT
+
 		repeat_event = { id = blg.130 }
 	}
 
 	option = {
 		name = RD_RESET
-		hidden_tooltip = {
+
+		hidden_effect = {
 			FROM = {
 				set_variable = { which = ca_eyepatch value = 0 }
 				remove_trait = blgspawn

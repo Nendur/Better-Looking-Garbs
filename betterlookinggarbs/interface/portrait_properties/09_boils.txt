@@ -1,13 +1,13 @@
-# p9 boils
+# p9 Boils
 9 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 1
 	}
 
-	1 = { # bubonic plague
+	1 = { # a - Bubonic plague
 		factor = 100
 		trigger = {
-			trait = has_bubonic_plague
+			blg_bubonic = yes
 
 			OR = {
 				is_alive = yes
@@ -17,10 +17,10 @@
 		}
 	}
 
-	2 = { # boils
+	2 = { # b - Boils
 		factor = 100
 		trigger = {
-			trait = has_small_pox
+			blg_boils = yes
 
 			OR = {
 				is_alive = yes
@@ -30,14 +30,10 @@
 		}
 	}
 
-	3 = { # red dots
+	3 = { # c - Red dots
 		factor = 100
 		trigger = {
-			OR = {
-				trait = has_measles
-				trait = has_typhus
-				trait = rash
-			}
+			blg_rash = yes
 
 			OR = {
 				is_alive = yes
@@ -47,10 +43,11 @@
 		}
 	}
 
-	4 = { # ugly mole
+	4 = { # d - Ugly mole
 		factor = 99
 		trigger = {
 			trait = ugly
+			NOT = { has_portrait_property = { layer = 9 index = 5 } }
 
 			NOR = {
 				has_game_rule = { name = blg_traits value = notraits }
@@ -59,15 +56,23 @@
 		}
 	}
 
-	5 = { # ugly monobrow
+	5 = { # e - Ugly monobrow
 		factor = 99
 		trigger = {
 			trait = ugly
+			NOT = { has_portrait_property = { layer = 9 index = 4 } }
 
 			NOR = {
 				has_game_rule = { name = blg_traits value = notraits }
 				has_game_rule = { name = blg_traits value = off }
 			}
+		}
+	}
+
+	6 = { # f - Vampire
+		factor = 100
+		trigger = {
+			blg_vampire = yes
 		}
 	}
 }

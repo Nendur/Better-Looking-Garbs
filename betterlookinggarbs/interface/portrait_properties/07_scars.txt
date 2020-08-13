@@ -1,6 +1,6 @@
 # p7 scars - Tier I
 7 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 100
 		trigger = {
 			OR = {
@@ -12,7 +12,7 @@
 		}
 	}
 
-	1 = { # scar 1 - TIER I
+	1 = { # a - scar 1 - TIER I
 		factor = 100
 		trigger = {
 			trait = scarred
@@ -20,7 +20,7 @@
 		}
 	}
 
-	2 = { # scar 2 - TIER I
+	2 = { # b - scar 2 - TIER I
 		factor = 100
 		trigger = {
 			trait = scarred
@@ -28,7 +28,7 @@
 		}
 	}
 
-	3 = { # scar 3 - TIER I
+	3 = { # c - scar 3 - TIER I
 		factor = 100
 		trigger = {
 			trait = scarred
@@ -36,7 +36,7 @@
 		}
 	}
 
-	4 = { # scar 4 - TIER I
+	4 = { # d - scar 4 - TIER I
 		factor = 100
 		trigger = {
 			trait = scarred
@@ -44,7 +44,7 @@
 		}
 	}
 
-	5 = { # scar 5 - TIER I
+	5 = { # e - scar 5 - TIER I
 		factor = 100
 		trigger = {
 			trait = scarred
@@ -52,7 +52,7 @@
 		}
 	}
 
-	6 = { # scar 6 - TIER I
+	6 = { # f - scar 6 - TIER I
 		factor = 100
 		trigger = {
 			trait = scarred
@@ -60,7 +60,7 @@
 		}
 	}
 
-	7 = { # scar 7 - TIER I
+	7 = { # g - scar 7 - TIER I
 		factor = 100
 		trigger = {
 			trait = scarred
@@ -68,7 +68,7 @@
 		}
 	}
 
-	8 = { # scar 8 - TIER I
+	8 = { # h - scar 8 - TIER I
 		factor = 100
 		trigger = {
 			trait = scarred
@@ -76,7 +76,7 @@
 		}
 	}
 
-	9 = { # scar 9 - TIER I
+	9 = { # i - scar 9 - TIER I
 		factor = 100
 		trigger = {
 			trait = scarred
@@ -84,7 +84,7 @@
 		}
 	}
 
-	10 = { # scar 10 - TIER I
+	10 = { # j - scar 10 - TIER I
 		factor = 100
 		trigger = {
 			trait = scarred

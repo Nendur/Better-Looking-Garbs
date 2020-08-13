@@ -6,48 +6,39 @@
 #freckles_4
 #freckles_5
 20 = {
-	0 = { # blank
-		factor = 100
-		trigger = {
-			NOR = {
-				trait = freckles_3
-				trait = freckles_2
-				trait = freckles
-				trait = freckles_4
-				trait = freckles_5
-			}
-		}
+	0 = { # 0 - blank
+		factor = 1
 	}
 
-	1 = { # freckles
+	1 = { # a - freckles
 		factor = 100
 		trigger = {
 			trait = freckles
 		}
 	}
 
-	2 = { # freckles
+	2 = { # b - freckles
 		factor = 100
 		trigger = {
 			trait = freckles_2
 		}
 	}
 
-	3 = { # freckles
+	3 = { # c - freckles
 		factor = 100
 		trigger = {
 			trait = freckles_3
 		}
 	}
 
-	4 = { # freckles
+	4 = { # d - freckles
 		factor = 100
 		trigger = {
 			trait = freckles_4
 		}
 	}
 
-	5 = { # freckles
+	5 = { # e - freckles
 		factor = 100
 		trigger = {
 			trait = freckles_5

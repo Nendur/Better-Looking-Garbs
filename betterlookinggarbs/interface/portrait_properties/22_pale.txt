@@ -1,26 +1,26 @@
-#p22 malnourished
+#p22 Pale or Malnourished.
 22 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 1
 	}
 
-	1 = { #pale
+	1 = { # a - Pale
 		factor = 100
 		trigger = {
 			OR = {
-				trait = is_malnourished
-				trait = fatigue
-				trait = malaise
-				trait = cancer
-				trait = has_tuberculosis
-				has_character_modifier = broken_spirit
-			}
+				AND = {
+					blg_pale = yes
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
+					OR = {
+						is_alive = yes
+						has_game_rule = { name = blg_disease value = postmortem }
+					}
+					NOT = { has_game_rule = { name = blg_disease value = off } }
+				}
+
+				blg_vampire = yes
+				blg_mummy = yes
 			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 }

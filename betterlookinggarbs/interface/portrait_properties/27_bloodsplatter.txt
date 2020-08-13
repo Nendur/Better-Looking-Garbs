@@ -1,48 +1,53 @@
-#p27 Blood Splatter
+#p27 Blood and mud splatter.
 27 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 1
 		modifier = {
 			factor = 100
-			has_game_rule = {
-				name = blood_splatter_rule
-				value = off
-			}
+			has_game_rule = { name = blood_splatter_rule value = off }
 		}
 	}
 
-	1 = { #Some.
+	1 = { # a - Some blood
 		factor = 100
 		trigger = {
 			has_character_modifier = blood_splatter_1
 		}
 	}
 
-	2 = { #A lot.
+	2 = { # b - A lot of blood
 		factor = 100
 		trigger = {
 			has_character_modifier = blood_splatter_2
 		}
 	}
 
-	3 = { #Bathory.
+	3 = { # c - Bathory of blood
 		factor = 100
 		trigger = {
 			has_character_modifier = blood_splatter_3
 		}
 	}
 
-	4 = { #Mud splatter.
+	4 = { # d - Mud splatter
 		factor = 100
 		trigger = {
-			has_character_modifier = mud_splatter
+			OR = {
+				has_character_modifier = mud_splatter
+				has_character_modifier = fell_into_the_river
+				has_character_modifier = dung_collector
+			}
 		}
 	}
 
-	5 = { #Grime.
+	5 = { # e - Grime
 		factor = 100
 		trigger = {
-			trait = uncouth
+			OR = {
+				trait = uncouth
+				has_character_modifier = dirty_hands
+			}
+
 			NOR = {
 				has_game_rule = { name = blg_traits value = notraits }
 				has_game_rule = { name = blg_traits value = off }

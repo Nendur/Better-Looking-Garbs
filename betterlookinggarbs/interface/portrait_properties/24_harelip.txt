@@ -1,6 +1,6 @@
-#p24 harelip
+#p24 Harelip
 24 = {
-	0 = { #blank
+	0 = { # 0 - blank
 		factor = 100
 		trigger = {
 			OR = {
@@ -10,8 +10,8 @@
 		}
 	}
 
-	1 = { #harelip
+	1 = { # a - Harelip
 		factor = 100
-		hide_layers = { 15 = {}} #Hide lipstick
+		hide_layers = { 15 = {} } # Hide lipstick
 	}
 }

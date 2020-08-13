@@ -1,477 +1,389 @@
-#p31 frankish Culture Overlayer - Male
+#p31 Frankish Culture Overlayer - Male
 31 = {
-	0 = { # Blank
+	0 = { # 0 - blank
 		factor = 1
 		modifier = {
 			factor = 100
-			is_female = yes
-		}
-		#modifier = {
-		#	factor = 100
-		#	NOT = { has_dlc = "Holy Fury" }
-		#}
-		modifier = {
-			factor = 100
-			NOR = {
-				culture = frankish
-				culture = occitan
-				blg_french = yes
-				AND = { is_alive = yes check_variable = { which = ca_overlayer value = 2 } }
+			OR = {
+				is_female = yes
+				blg_priest = yes
+				blg_prisoner = yes
+				blg_saint = yes
 			}
 		}
+
 		modifier = {
 			factor = 100
 			OR = {
-				is_priest = yes
-				blg_priest = yes
+				blg_culture_french = no
+				has_portrait_property = { layer = 5 index = 9 }
 			}
+			NOT = { check_variable = { which = ca_overlayer value = 2 } }
 		}
+
 		modifier = {
 			factor = 100
-			is_merchant_republic = yes
-			in_command = no
-		}
-		modifier = {
-			factor = 100
-			has_portrait_property = { layer = 5 index = 9 }
-		}
-		modifier = {
-			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 1 }
 		}
 	}
-	1 = { # Military Helm 01
+
+	1 = { # a - Military Helm 01
 		factor = 100
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1160
+					blg_style_late = yes
 					has_portrait_property = { layer = 5 index = 10 }
-					OR = {
-						is_alive = no
-						is_variable_equal = { which = ca_overlayer value = 0 } 
-					}
+					is_variable_equal = { which = ca_overlayer value = 0 }
 				}
-				is_variable_equal = { which = ca_overlayer value = 2 } 
+				is_variable_equal = { which = ca_overlayer value = 2 }
 			}
 		}
 	}
-	2 = { # Military Helm 02
+
+	2 = { # b - Military Helm 02
 		factor = 99
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth < 1250
+					blg_style_mid = yes
 					OR = {
 						has_portrait_property = { layer = 5 index = 12 }
 						has_portrait_property = { layer = 5 index = 13 }
 					}
-					NOR = { 
-						has_portrait_property = { layer = 31 index = 3 } 
-						has_portrait_property = { layer = 31 index = 4 } 
+					NOR = {
+						has_portrait_property = { layer = 31 index = 3 }
+						has_portrait_property = { layer = 31 index = 4 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 3 } 
+				is_variable_equal = { which = ca_overlayer value = 3 }
 			}
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 3 }
 		}
 	}
-	3 = { # Military Helm 03
+
+	3 = { # c - Military Helm 03
 		factor = 99
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth < 1250
+					blg_style_mid = yes
 					OR = {
 						has_portrait_property = { layer = 5 index = 12 }
 						has_portrait_property = { layer = 5 index = 13 }
 					}
-					NOR = { 
-						has_portrait_property = { layer = 31 index = 2 } 
-						has_portrait_property = { layer = 31 index = 4 } 
+					NOR = {
+						has_portrait_property = { layer = 31 index = 2 }
+						has_portrait_property = { layer = 31 index = 4 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 4 } 
+				is_variable_equal = { which = ca_overlayer value = 4 }
 			}
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 4 }
 		}
 	}
-	4 = { # Military Helm 04
+
+	4 = { # d - Military Helm 04
 		factor = 99
 		trigger = {
 			OR = {
 				AND = {
-					year_of_birth = 1160
+					blg_style_late = yes
 					OR = {
 						has_portrait_property = { layer = 5 index = 12 }
 						has_portrait_property = { layer = 5 index = 13 }
 					}
-					NOR = { 
-						has_portrait_property = { layer = 31 index = 2 } 
-						has_portrait_property = { layer = 31 index = 3 } 
+					NOR = {
+						has_portrait_property = { layer = 31 index = 2 }
+						has_portrait_property = { layer = 31 index = 3 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 5 } 
+				is_variable_equal = { which = ca_overlayer value = 5 }
 			}
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 5 }
 		}
 	}
-	5 = { # Count Accessories
+
+	5 = { # e - Count Accessories
 		factor = 1
 		trigger = {
 			OR = {
-				is_landed = yes
-				spouse = { is_landed = yes }
-				has_minor_title = title_prince
-				spouse = { has_minor_title = title_prince }
-				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 6 } }
+				AND = {
+					blg_clothes_noble = yes
+					lower_real_tier_than = duke
+					spouse_even_if_dead = { lower_real_tier_than = duke }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 31 index = 6 }
+						has_portrait_property = { layer = 31 index = 7 }
+						has_portrait_property = { layer = 31 index = 8 }
+						has_portrait_property = { layer = 31 index = 9 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 6 }
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 6 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_portrait_property = { layer = 31 index = 6 } 
-				has_portrait_property = { layer = 31 index = 7 } 
-				has_portrait_property = { layer = 31 index = 8 } 
-				has_portrait_property = { layer = 31 index = 9 } 
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 6 } }
-		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 6 }
 		}
 	}
-	6 = { # Count Accessories
+
+	6 = { # f - Count Accessories
 		factor = 1
 		trigger = {
 			OR = {
-				is_landed = yes
-				spouse = { is_landed = yes }
-				has_minor_title = title_prince
-				spouse = { has_minor_title = title_prince }
-				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
+				AND = {
+					blg_clothes_noble = yes
+					lower_real_tier_than = duke
+					spouse_even_if_dead = { lower_real_tier_than = duke }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 31 index = 5 }
+						has_portrait_property = { layer = 31 index = 7 }
+						has_portrait_property = { layer = 31 index = 8 }
+						has_portrait_property = { layer = 31 index = 9 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 7 }
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_portrait_property = { layer = 31 index = 5 } 
-				has_portrait_property = { layer = 31 index = 7 } 
-				has_portrait_property = { layer = 31 index = 8 } 
-				has_portrait_property = { layer = 31 index = 9 } 
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 7 } }
-		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 7 }
 		}
 	}
-	7 = { # Count Accessories
+
+	7 = { # g - Count Accessories
 		factor = 1
 		trigger = {
 			OR = {
-				is_landed = yes
-				spouse = { is_landed = yes }
-				has_minor_title = title_prince
-				spouse = { has_minor_title = title_prince }
-				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 8 } }
+				AND = {
+					blg_clothes_noble = yes
+					lower_real_tier_than = duke
+					spouse_even_if_dead = { lower_real_tier_than = duke }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 31 index = 5 }
+						has_portrait_property = { layer = 31 index = 6 }
+						has_portrait_property = { layer = 31 index = 8 }
+						has_portrait_property = { layer = 31 index = 9 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 8 }
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 8 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_portrait_property = { layer = 31 index = 5 } 
-				has_portrait_property = { layer = 31 index = 6 } 
-				has_portrait_property = { layer = 31 index = 8 } 
-				has_portrait_property = { layer = 31 index = 9 } 
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 8 } }
-		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 8 }
 		}
 	}
-	8 = { # Count Accessories
+
+	8 = { # h - Count Accessories
 		factor = 1
-		hide_layers = { 1 = { } }
 		trigger = {
 			OR = {
-				is_landed = yes
-				spouse = { is_landed = yes }
-				has_minor_title = title_prince
-				spouse = { has_minor_title = title_prince }
-				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
+				AND = {
+					blg_clothes_noble = yes
+					lower_real_tier_than = duke
+					spouse_even_if_dead = { lower_real_tier_than = duke }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 31 index = 5 }
+						has_portrait_property = { layer = 31 index = 6 }
+						has_portrait_property = { layer = 31 index = 7 }
+						has_portrait_property = { layer = 31 index = 9 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 9 }
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_portrait_property = { layer = 31 index = 5 } 
-				has_portrait_property = { layer = 31 index = 6 } 
-				has_portrait_property = { layer = 31 index = 7 } 
-				has_portrait_property = { layer = 31 index = 9 } 
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 9 } }
-		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 9 }
 		}
+		hide_layers = { 1 = {} }
 	}
-	9 = { # Count Accessories
+
+	9 = { # i - Count Accessories
 		factor = 1
 		trigger = {
 			OR = {
-				is_landed = yes
-				spouse = { is_landed = yes }
-				has_minor_title = title_prince
-				spouse = { has_minor_title = title_prince }
-				AND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 10 } }
+				AND = {
+					blg_clothes_noble = yes
+					lower_real_tier_than = duke
+					spouse_even_if_dead = { lower_real_tier_than = duke }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 31 index = 5 }
+						has_portrait_property = { layer = 31 index = 6 }
+						has_portrait_property = { layer = 31 index = 7 }
+						has_portrait_property = { layer = 31 index = 8 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 10 }
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 10 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_portrait_property = { layer = 31 index = 5 } 
-				has_portrait_property = { layer = 31 index = 6 } 
-				has_portrait_property = { layer = 31 index = 7 } 
-				has_portrait_property = { layer = 31 index = 8 } 
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 10 } }
-		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 10 }
 		}
 	}
-	10 = { # Duke Accessories
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				has_portrait_property = { layer = 5 index = 4 }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 11 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				real_tier = DUKE
-				spouse = { real_tier = DUKE }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 11 } }
-		}
-		modifier = {
-			factor = 0
+
+	10 = { # j - Duke Accessories
+		factor = 2
+		trigger = {
 			OR = {
-				has_portrait_property = { layer = 31 index = 11 } 
-				has_portrait_property = { layer = 31 index = 12 } 
-				has_portrait_property = { layer = 31 index = 13 } 
-				has_portrait_property = { layer = 31 index = 14 } 
+				AND = {
+					has_portrait_property = { layer = 5 index = 4 }
+					OR = {
+						real_tier = duke
+						spouse_even_if_dead = { real_tier = duke }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 31 index = 11 }
+						has_portrait_property = { layer = 31 index = 12 }
+						has_portrait_property = { layer = 31 index = 13 }
+						has_portrait_property = { layer = 31 index = 14 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 11 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 11 } }
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 11 }
 		}
 	}
-	11 = { # Duke Accessories
-		factor = 1
-		modifier = {
-			factor = 0
-			NOR = {
-				has_portrait_property = { layer = 5 index = 4 }
-				has_portrait_property = { layer = 5 index = 12 }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 12 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 12 } }
-		}
-		modifier = {
-			factor = 0
+
+	11 = { # k - Duke Accessories
+		factor = 2
+		trigger = {
 			OR = {
-				has_portrait_property = { layer = 31 index = 10 } 
-				has_portrait_property = { layer = 31 index = 12 } 
-				has_portrait_property = { layer = 31 index = 13 } 
-				has_portrait_property = { layer = 31 index = 14 } 
+				AND = {
+					has_portrait_property = { layer = 5 index = 4 }
+					OR = {
+						real_tier = duke
+						spouse_even_if_dead = { real_tier = duke }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 31 index = 10 }
+						has_portrait_property = { layer = 31 index = 12 }
+						has_portrait_property = { layer = 31 index = 13 }
+						has_portrait_property = { layer = 31 index = 14 }
+					}
+				}
+				has_portrait_property = { layer = 5 index = 12 }
+				is_variable_equal = { which = ca_overlayer value = 12 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 12 } }
 		}
+
 		modifier = {
 			factor = 100
-			has_portrait_property = { layer = 5 index = 12 }
-		}
-		modifier = {
-			factor = 100
-			is_alive = yes
-			is_variable_equal = { which = ca_overlayer value = 12 }
+			OR = {
+				has_portrait_property = { layer = 5 index = 12 }
+				is_variable_equal = { which = ca_overlayer value = 12 }
+			}
 		}
 	}
-	12 = { # Duke Accessories
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				has_portrait_property = { layer = 5 index = 4 }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 13 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				real_tier = DUKE
-				spouse = { real_tier = DUKE }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 13 } }
-		}
-		modifier = {
-			factor = 0
+
+	12 = { # l - Duke Accessories
+		factor = 2
+		trigger = {
 			OR = {
-				has_portrait_property = { layer = 31 index = 10 } 
-				has_portrait_property = { layer = 31 index = 11 } 
-				has_portrait_property = { layer = 31 index = 13 } 
-				has_portrait_property = { layer = 31 index = 14 } 
+				AND = {
+					has_portrait_property = { layer = 5 index = 4 }
+					OR = {
+						real_tier = duke
+						spouse_even_if_dead = { real_tier = duke }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 31 index = 10 }
+						has_portrait_property = { layer = 31 index = 11 }
+						has_portrait_property = { layer = 31 index = 13 }
+						has_portrait_property = { layer = 31 index = 14 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 13 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 13 } }
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 13 }
 		}
 	}
-	13 = { # Duke Accessories
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				has_portrait_property = { layer = 5 index = 4 }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 14 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				real_tier = DUKE
-				spouse = { real_tier = DUKE }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 14 } }
-		}
-		modifier = {
-			factor = 0
+
+	13 = { # m - Duke Accessories
+		factor = 2
+		trigger = {
 			OR = {
-				has_portrait_property = { layer = 31 index = 10 } 
-				has_portrait_property = { layer = 31 index = 11 } 
-				has_portrait_property = { layer = 31 index = 12 } 
-				has_portrait_property = { layer = 31 index = 14 } 
+				AND = {
+					has_portrait_property = { layer = 5 index = 4 }
+
+					NOR = {
+						has_portrait_property = { layer = 31 index = 10 }
+						has_portrait_property = { layer = 31 index = 11 }
+						has_portrait_property = { layer = 31 index = 12 }
+						has_portrait_property = { layer = 31 index = 14 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 14 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 14 } }
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 14 }
 		}
 	}
-	14 = { # Duke Accessories
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = {
-				has_portrait_property = { layer = 5 index = 4 }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 15 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				real_tier = DUKE
-				spouse = { real_tier = DUKE }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 15 } }
-		}
-		modifier = {
-			factor = 0
+
+	14 = { # n - Duke Accessories
+		factor = 2
+		trigger = {
 			OR = {
-				has_portrait_property = { layer = 31 index = 10 } 
-				has_portrait_property = { layer = 31 index = 11 } 
-				has_portrait_property = { layer = 31 index = 12 } 
-				has_portrait_property = { layer = 31 index = 13 } 
+				AND = {
+					has_portrait_property = { layer = 5 index = 4 }
+
+					NOR = {
+						has_portrait_property = { layer = 31 index = 10 }
+						has_portrait_property = { layer = 31 index = 11 }
+						has_portrait_property = { layer = 31 index = 12 }
+						has_portrait_property = { layer = 31 index = 13 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 15 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_overlayer value = 15 } }
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_overlayer value = 15 }
 		}
 	}

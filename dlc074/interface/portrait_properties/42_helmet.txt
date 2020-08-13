@@ -1,45 +1,14 @@
-# p42 Carried Helmet
+# p42 Carried Helmet.
 42 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 1
 	}
-	1 = { # Helmet
+
+	1 = { # a - Helmet
 		factor = 100
 		trigger = {
-			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						is_landed = no
-						in_battle = yes
-						in_siege = yes
-						has_game_rule = { name = blg_helmet value = on }
-					}
-				}
-				has_job_title = job_marshal
-				death_reason = death_battle
-				death_reason = death_duel
-				holy_order = yes
-				AND = {
-					mercenary = yes
-					primary_title = {
-						NOR = {
-							title = d_venetian_navy
-							title = d_genoese_navy
-							title = d_hanseatic_navy
-							title = d_frisian_navy
-							title = d_maghreb_corsairs
-							title = d_han_junks
-							title = d_jurchen_corsairs
-							title = d_treasure_fleet
-						}
-					}
-				}
-				trait = shieldmaiden
-				blg_soldier = yes
-			}
+			blg_warrior = yes
+
 			NOT = { has_game_rule = { name = blg_helmet value = none } }
 		}
 	}

@@ -1,6 +1,6 @@
-# p38 Background frames
+# p38 Background window frames.
 38 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 5
 		modifier = {
 			factor = 100
@@ -9,32 +9,27 @@
 				spouse = { is_landed = yes }
 			}
 		}
+
 		modifier = {
 			factor = 100
 			OR = {
+				is_alive = no
 				NOT = { host = { at_location = ROOT } }
 				in_command = yes
 				trait = in_hiding
-				trait = travelling
-				trait = on_pilgrimage
-				trait = on_hajj
-				trait = on_indian_pilgrimage
-				trait = kow_tow_travels
-				has_character_modifier = enjoying_the_countryside
-				has_character_modifier = holding_grand_hunt
-				has_character_flag = holding_tiger_hunt
+				blg_travelling = yes
 			}
 		}
 	}
 
-	1 = { # Wooden window
+	1 = { # a - Wooden window
 		factor = 2
 		trigger = {
 			is_nomadic = no
 		}
 	}
 
-	2 = { # Stone window
+	2 = { # b - Stone window
 		factor = 2
 		trigger = {
 			capital_holding = {
@@ -48,7 +43,7 @@
 		}
 	}
 
-	3 = { # Stone window
+	3 = { # c - Stone window
 		factor = 2
 		trigger = {
 			capital_holding = {
@@ -62,22 +57,16 @@
 		}
 	}
 
-	4 = { # Nomad window
+	4 = { # d - Tent window
 		factor = 2
 		trigger = {
 			capital_scope = {
-				OR = {
-					region = world_africa
-					region = world_middle_east
-					region = world_persia
-					region = world_india
-					region = world_steppe
-				}
+				blg_region_europe = no
 			}
 		}
 	}
 
-	5 = { # Stone window
+	5 = { # e - Stone window
 		factor = 2
 		trigger = {
 			capital_holding = {
@@ -91,12 +80,11 @@
 		}
 	}
 
-	6 = { # Glass window
+	6 = { # f - Glass window
 		factor = 1
 		trigger = {
 			capital_holding = {
 				OR = {
-					holding_type = castle
 					holding_type = city
 					holding_type = temple
 					holding_type = family_palace
@@ -109,7 +97,7 @@
 		}
 	}
 
-	7 = { # Grated window
+	7 = { # g - Grated window
 		factor = 1
 		trigger = {
 			capital_holding = {
@@ -121,13 +109,7 @@
 				}
 			}
 			capital_scope = {
-				OR = {
-					region = world_africa
-					region = world_middle_east
-					region = world_persia
-					region = world_india
-					region = world_steppe
-				}
+				blg_region_muslim = yes
 			}
 			OR = {
 				higher_real_tier_than = count

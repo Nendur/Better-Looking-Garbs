@@ -6,24 +6,8 @@ targetted_decisions = {
 		ai_target_filter = none
 
 		from_potential = {}
+
 		potential = {
-			OR = {
-				practical_age = 16
-				AND = {
-					practical_age = 15
-					OR = {
-						has_game_rule = { name = blg_children value = 15 }
-						has_game_rule = { name = blg_children value = 15noscale }
-					}
-				}
-				AND = {
-					practical_age = 14
-					OR = {
-						has_game_rule = { name = blg_children value = 14 }
-						has_game_rule = { name = blg_children value = 14noscale }
-					}
-				}
-			}
 			NOR = {
 				graphical_culture = horsegfx
 				graphical_culture = catgfx
@@ -44,10 +28,14 @@ targetted_decisions = {
 				graphical_culture = sloadgfx
 			}
 		}
+
 		allow = {
-			OR = {	#Make multiplayer gamers well-behaved.
+			blg_adult = yes
+
+			OR = { # Make multiplayer gamers well-behaved.
 				character = FROM
-				AND = {
+				custom_tooltip = {
+					text = IS_AI_CONTROLLED
 					ai = yes
 					host = {
 						OR = {

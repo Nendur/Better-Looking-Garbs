@@ -1,0 +1,116 @@
+# Geographical regions and terrain type triggers.
+# Triggers run from a province scope.
+
+### Regions:
+
+# African terrain regions.
+blg_region_africa = {
+	region = world_africa
+}
+
+# Black bear regions.
+blg_region_asia = {
+	OR = {
+		region = world_persia
+		region = world_india
+		region = world_himalayas
+		region = world_steppe_tarim
+	}
+}
+
+# European inspired regions.
+blg_region_europe = {
+	OR = {
+		region = world_europe
+		region = world_asia_minor
+		AND = {
+			region = world_steppe_west
+			likes_christians = yes
+		}
+	}
+}
+
+# Mediterranean inspired regions.
+blg_region_mediterranean = {
+	OR = {
+		region = world_europe_south
+		region = world_asia_minor
+		region = world_europe_west_iberia
+		region = world_middle_east
+		region = world_persia
+		region = world_africa_north
+	}
+}
+
+# Middle-Eastern inspired regions.
+blg_region_muslim = {
+	OR = {
+		region = world_middle_east
+		region = world_africa
+		region = world_persia
+	}
+}
+
+# Polar bear regions.
+blg_region_polar = {
+	climate = severe_winter
+	OR = {
+		region = world_europe_north
+		terrain = arctic
+	}
+}
+
+### Terrain:
+
+# Desert terrain.
+blg_desert = {
+	OR = {
+		terrain = desert
+		region = world_africa
+		region = world_middle_east
+	}
+}
+
+# Green Farmland terrain.
+blg_farmlands = {
+	OR = {
+		terrain = farmlands
+		AND = {
+			terrain = plains
+			OR = {
+				region = world_europe_north
+				region = world_europe_east
+				region = world_europe_west_brittania
+				region = world_europe_west_germania
+				region = world_europe_west_francia
+				region = world_india
+			}
+		}
+	}
+}
+
+# Forested terrain.
+blg_forest = {
+	OR = {
+		terrain = forest
+		terrain = hills
+		terrain = jungle
+		terrain = arctic
+		terrain = marsh
+	}
+}
+
+# Steppe terrain.
+blg_steppe = {
+	terrain = steppe
+}
+
+# Snowy terrain.
+blg_winter = {
+	is_winter = yes
+}
+
+# More common snowy terrain.
+blg_severe_winter = {
+	climate = severe_winter
+}

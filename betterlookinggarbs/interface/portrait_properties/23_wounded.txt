@@ -1,120 +1,121 @@
 #p23 black eye
 23 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 100
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_wounds value = postmortem }
-			}
-			OR = {
-				has_injury_trigger = yes
-				trait = maimed
-				trait = disfigured
-				has_character_modifier = black_eye
-				has_character_modifier = concussion
-			}
-			NOR = {
+				NOR = {
+					is_alive = yes
+					has_game_rule = { name = blg_wounds value = postmortem }
+				}
+				NOR = {
+					has_injury_trigger = yes
+					trait = maimed
+					trait = disfigured
+					has_character_modifier = black_eye
+					has_character_modifier = concussion
+				}
 				has_game_rule = { name = blg_wounds value = nowounds }
 				has_game_rule = { name = blg_wounds value = off }
 			}
 		}
 	}
 
-	1 = { #Concussion AND Black eye.
+	1 = { # a - Concussion AND Black eye.
 		factor = 1
-		modifier = {
-			factor = 100
-			has_character_modifier = concussion
-			has_character_modifier = black_eye
-		}
-		trigger = {
-			NOT = { trait = disfigured }
-		}
-	}
-
-	2 = { #Concussion.
-		factor = 1
-		modifier = {
-			factor = 100
-			has_character_modifier = concussion
-		}
-		trigger = {
-			NOT = { trait = disfigured }
-		}
-	}
-
-	3 = { #black eye.
-		factor = 1
-		modifier = {
-			factor = 100
-			has_character_modifier = black_eye
-		}
 		trigger = {
 			OR = {
-				has_character_modifier = black_eye
-				NOR = {
-					trait = severely_injured
-					trait = maimed
-					trait = disfigured
+				trait = severely_injured
+				AND = {
+					has_character_modifier = black_eye
+					has_character_modifier = concussion
 				}
 			}
-		}
-	}
 
-	4 = { #cheek
-		factor = 1
-		trigger = {
-			NOR = {
-				trait = severely_injured
-				trait = maimed
-				trait = disfigured
-			}
-		}
-	}
-
-	5 = { #eye
-		factor = 1
-		trigger = {
-			OR = {
-				trait = severely_injured
-				trait = maimed
-				trait = disfigured
-			}
-		}
-	}
-
-	6 = { #bandage
-		factor = 1
-		trigger = {
 			NOT = { trait = disfigured }
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_wounds value = postmortem }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = concussion
+			has_character_modifier = black_eye
 		}
 	}
 
-	7 = { #chin
+	2 = { # b - Concussion.
 		factor = 1
 		trigger = {
+			has_injury_trigger = yes
+
+			NOR = {
+				trait = disfigured
+				has_character_modifier = black_eye
+			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_wounds value = postmortem }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = concussion
+		}
+	}
+
+	3 = { # c - Black eye.
+		factor = 1
+		trigger = {
+			OR = {
+				trait = wounded
+				has_character_modifier = black_eye
+			}
+
 			NOR = {
 				trait = severely_injured
 				trait = maimed
 				trait = disfigured
+				has_character_modifier = concussion
 			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_wounds value = postmortem }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = black_eye
 		}
 	}
 
-	8 = { #forehead
+	4 = { # d - Cheek
 		factor = 1
 		trigger = {
+			trait = wounded
+
 			NOR = {
 				trait = severely_injured
 				trait = maimed
 				trait = disfigured
+				has_character_modifier = concussion
+			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_wounds value = postmortem }
 			}
 		}
 	}
 
-	9 = { #eye
+	5 = { # e - Eye
 		factor = 1
 		trigger = {
 			OR = {
@@ -122,14 +123,105 @@
 				trait = maimed
 				trait = disfigured
 			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_wounds value = postmortem }
+			}
+		}
+
+		modifier = {
+			factor = 50
+			trait = one_eyed
 		}
 	}
 
-	10 = { #disfigured
+	6 = { # f - Bandaged head
 		factor = 1
-		modifier = {
-			factor = 0
+		trigger = {
+			OR = {
+				has_injury_trigger = yes
+				has_character_modifier = concussion
+			}
+
 			NOR = {
+				trait = disfigured
+				AND = {
+					has_character_modifier = black_eye
+					has_character_modifier = concussion
+				}
+			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_wounds value = postmortem }
+			}
+		}
+	}
+
+	7 = { # g - Chin
+		factor = 1
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+				has_character_modifier = concussion
+			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_wounds value = postmortem }
+			}
+		}
+	}
+
+	8 = { # h - Forehead
+		factor = 1
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+				has_character_modifier = concussion
+			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_wounds value = postmortem }
+			}
+		}
+	}
+
+	9 = { # i - Burned
+		factor = 1
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+			}
+
+			OR = {
+				is_alive = yes
+				has_game_rule = { name = blg_wounds value = postmortem }
+			}
+		}
+
+		modifier = {
+			factor = 50
+			trait = one_eyed
+		}
+	}
+
+	10 = { # j - Disfigured
+		factor = 1
+		trigger = {
+			OR = {
 				trait = maimed
 				trait = disfigured
 			}

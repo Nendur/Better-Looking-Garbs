@@ -1,0 +1,180 @@
+# Character triggers for traits and modifiers.
+
+### Characters:
+
+# Prisoner that is kept gagged.
+blg_dangerous_prisoner = {
+	OR = {
+		has_character_modifier = accused_apostate
+		has_character_modifier = highly_suspect
+		has_character_modifier = known_witch
+		has_character_modifier = suspected_witch
+		has_character_modifier = known_satanist
+		has_character_modifier = suspected_demon_spawn
+		has_character_modifier = voice_of_satan
+	}
+}
+
+# Character of a guard order.
+blg_guard = {
+	OR = {
+		trait = varangian
+		trait = shieldmaiden
+	}
+}
+
+# Very learned character.
+blg_learned = {
+	OR = {
+		trait = scholar
+		trait = hafiz
+		trait = administrator
+		trait = strategist
+		trait = theologian
+		trait = physician
+	}
+}
+
+# Character dressing modestly.
+blg_modest = {
+	OR = {
+		is_married = yes
+		is_consort = yes
+		any_spouse_even_if_dead = { is_alive = no }
+		age >= 40
+		trait = chaste
+		trait = celibate
+		trait = zealous
+		is_ascetic_trigger = yes
+	}
+}
+
+# Peasant leader.
+blg_peasant = {
+	OR = {
+		trait = peasant_leader
+		trait = heresiarch
+	}
+}
+
+# Declared a saint.
+blg_saint = {
+	OR = {
+		trait = saint
+		has_nickname = nick_the_saint
+	}
+}
+
+# Enslaved.
+blg_slave = {
+	death_reason = death_slavery
+}
+
+### Events:
+
+# A desert theme event.
+blg_desert_journey = {
+	OR = {
+		trait = on_hajj
+		has_character_modifier = zun_judgement
+	}
+}
+
+# Participating at an execution.
+blg_executioner = {
+	OR = {
+		has_character_flag = holding_blot
+		has_character_flag = attending_blot
+	}
+}
+
+# Participating in a feast.
+blg_feast = {
+	OR = {
+		has_character_flag = party_host
+		has_character_flag = party_guest
+		has_character_flag = host_feast_started
+		has_character_flag = guest_feast_started
+		has_character_flag = blot_feast
+		has_character_flag = blot_feast_vassal
+		has_character_flag = holding_ukon_juhla
+		has_character_flag = ukon_juhla_feast_vassal
+		has_character_flag = holding_uzgavenes
+		has_character_flag = uzgavenes_feast_vassal
+		has_character_flag = holding_jarilo
+		has_character_flag = holding_passover
+		has_character_flag = attending_passover
+		has_character_flag = jarilo_feast_vassal
+		has_character_flag = diwali_feast_begun
+		has_character_flag = attending_diwali_feast
+		has_character_flag = zun_feast_begun
+		has_character_flag = attending_zun_feast
+		has_character_flag = holding_sadah_feast
+		has_character_flag = attending_sadah
+		has_character_flag = holding_bema
+		has_character_flag = attending_bema
+		has_character_flag = flag_holding_great_tribal_festival
+		has_any_opinion_modifier = opinion_great_tribal_festival_guest
+	}
+}
+
+# Character likely to be outdoors in the wilds.
+blg_outdoors = {
+	OR = {
+		trait = hunter
+		trait = falconer
+		has_character_modifier = holding_grand_hunt
+		has_character_flag = hunting_tigers
+		has_character_flag = khagan_holding_nerge
+		has_character_flag = vassal_holding_nerge
+		has_character_flag = khagan_finishing_nerge
+		has_character_flag = vassal_finishing_nerge
+		has_character_modifier = enjoying_the_countryside
+		has_nickname = nick_of_the_wilds
+	}
+}
+
+# On a pilgrimage.
+blg_pilgrimage = {
+	OR = {
+		trait = on_pilgrimage
+		trait = on_indian_pilgrimage
+	}
+}
+
+# In a tournament.
+blg_tournament = {
+	OR = {
+		has_character_flag = attending_tournament
+		has_character_flag = attending_tournament_furusiyya
+		has_character_modifier = holding_nomad_wargames
+		has_character_flag = attending_nomad_tournament
+		has_character_flag = flag_preparing_blood_games
+	}
+}
+
+# Out on a longer journey.
+blg_travelling = {
+	OR = {
+		trait = travelling
+		blg_pilgrimage = yes
+		trait = on_hajj
+		trait = kow_tow_travels
+		has_character_modifier = holding_grand_hunt
+		has_character_flag = holding_tiger_hunt
+	}
+}
+
+# Arrived at the journey destination.
+blg_travelling_arrived = {
+	OR = {
+		has_character_flag = hajj_arrived_in_mecca
+		has_character_flag = kow_tow_visited_temple
+		has_character_flag = kow_tow_played_go
+		has_character_flag = read_the_guanzi
+		has_character_flag = visited_market
+		has_character_flag = kow_tow_bad_outcome
+		has_character_flag = kow_tow_okay_outcome
+		has_character_flag = kow_tow_great_outcome
+	}
+}

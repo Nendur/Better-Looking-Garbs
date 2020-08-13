@@ -1,71 +1,64 @@
-# p6 imprisoned
+# p6 Imprisoned
 6 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 100
 		trigger = {
-			NOR = {
-				prisoner = yes
-				death_reason = death_dungeon
-			}
+			blg_prisoner = no
 		}
 	}
 
-	1 = { # Clean prison
+	1 = { # a - Clean prison
 		factor = 100
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
-		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = { 31 = { } }
-		hide_layers = { 36 = { } } #Hide scepters.
-		hide_layers = { 41 = { } }
-		hide_layers = { 42 = { } }
+		hide_layers = {  5 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 36 = {} }
+		hide_layers = { 41 = {} }
+		hide_layers = { 42 = {} }
+
 		trigger = {
 			OR = {
 				has_character_modifier = house_arrest
-				practical_age < 16
+				blg_adult = no
 			}
 		}
 	}
 
-	2 = { # Iron collar
+	2 = { # b - Iron collar
 		factor = 100
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
-		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = { 31 = { } }
-		hide_layers = { 36 = { } } #Hide scepters.
-		hide_layers = { 41 = { } }
-		hide_layers = { 42 = { } }
+		hide_layers = {  5 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 36 = {} }
+		hide_layers = { 41 = {} }
+		hide_layers = { 42 = {} }
+
 		trigger = {
 			has_character_modifier = the_oubliette
 		}
 	}
 
-	3 = { # Gagged prisoner
+	3 = { # c - Gagged prisoner
 		factor = 100
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
-		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = { 31 = { } }
-		hide_layers = { 36 = { } } #Hide scepters.
-		hide_layers = { 41 = { } }
-		hide_layers = { 42 = { } }
+		hide_layers = {  5 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 36 = {} }
+		hide_layers = { 41 = {} }
+		hide_layers = { 42 = {} }
+
 		trigger = {
-			OR = {
-				has_character_modifier = accused_apostate
-				has_character_modifier = highly_suspect
-				has_character_modifier = known_witch
-				has_character_modifier = suspected_witch
-				has_character_modifier = known_satanist
-				has_character_modifier = suspected_demon_spawn
-			}
+			blg_dangerous_prisoner = yes
 		}
 	}
 
-	4 = { # Regular prison
+	4 = { # d - Regular prison
 		factor = 100
-		hide_layers = { 19 = { } } #Hide layers with special crowns.
-		hide_layers = { 5 = { } } #Hide layer 5 (headgear) when this frame is picked.
-		hide_layers = { 31 = { } }
-		hide_layers = { 36 = { } } #Hide scepters.
-		hide_layers = { 41 = { } }
-		hide_layers = { 42 = { } }
+		hide_layers = {  5 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 36 = {} }
+		hide_layers = { 41 = {} }
+		hide_layers = { 42 = {} }
 	}
 }

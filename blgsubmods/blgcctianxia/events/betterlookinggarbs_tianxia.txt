@@ -31,11 +31,11 @@ long_character_event = {
 			clr_character_flag = secret_bear
 
 			if = {
-				limit = { blg_polar_bear = yes }
+				limit = { location = { blg_region_polar = yes } }
 				set_graphical_culture = polar_bear
 			}
 			else_if = {
-				limit = { blg_black_bear = yes }
+				limit = { location = { blg_region_asia = yes } }
 				set_graphical_culture = black_bear
 			}
 			else = {

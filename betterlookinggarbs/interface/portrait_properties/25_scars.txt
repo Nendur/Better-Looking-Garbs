@@ -1,6 +1,6 @@
 # p25 mid scars - Tier II
 25 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 100
 		trigger = {
 			OR = {
@@ -11,7 +11,7 @@
 		}
 	}
 
-	1 = { # scar 1 - TIER II
+	1 = { # a - scar 1 - TIER II
 		factor = 100
 		trigger = {
 			trait = scarred_mid
@@ -19,7 +19,7 @@
 		}
 	}
 
-	2 = { # scar 2 - TIER II
+	2 = { # b - scar 2 - TIER II
 		factor = 100
 		trigger = {
 			trait = scarred_mid
@@ -27,7 +27,7 @@
 		}
 	}
 
-	3 = { # scar 3 - TIER II
+	3 = { # c - scar 3 - TIER II
 		factor = 100
 		trigger = {
 			trait = scarred_mid
@@ -35,7 +35,7 @@
 		}
 	}
 
-	4 = { # scar 4 - TIER II
+	4 = { # d - scar 4 - TIER II
 		factor = 100
 		trigger = {
 			trait = scarred_mid
@@ -43,7 +43,7 @@
 		}
 	}
 
-	5 = { # scar 5 - TIER II
+	5 = { # e - scar 5 - TIER II
 		factor = 100
 		trigger = {
 			trait = scarred_mid
@@ -51,7 +51,7 @@
 		}
 	}
 
-	6 = { # scar 6 - TIER II
+	6 = { # f - scar 6 - TIER II
 		factor = 100
 		trigger = {
 			trait = scarred_mid
@@ -59,7 +59,7 @@
 		}
 	}
 
-	7 = { # scar 7 - TIER II
+	7 = { # g - scar 7 - TIER II
 		factor = 100
 		trigger = {
 			trait = scarred_mid
@@ -67,7 +67,7 @@
 		}
 	}
 
-	8 = { # scar 8 - TIER II
+	8 = { # h - scar 8 - TIER II
 		factor = 100
 		trigger = {
 			trait = scarred_mid
@@ -75,7 +75,7 @@
 		}
 	}
 
-	9 = { # scar 9 - TIER II
+	9 = { # i - scar 9 - TIER II
 		factor = 100
 		trigger = {
 			trait = scarred_mid
@@ -83,7 +83,7 @@
 		}
 	}
 
-	10 = { # scar 10 - TIER II
+	10 = { # j - scar 10 - TIER II
 		factor = 100
 		trigger = {
 			trait = scarred_mid

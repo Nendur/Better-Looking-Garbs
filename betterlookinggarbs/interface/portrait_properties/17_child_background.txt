@@ -1,38 +1,16 @@
-# p17 Child portraits
+# p17 Child portraits - Background
 17 = {
-	0 = { #Adult
+	0 = { #0 - Adult
 		factor = 100
-		trigger = {
-			OR = {
-				practical_age = 16
-				AND = {
-					practical_age = 15
-					OR = {
-						has_game_rule = { name = blg_children value = 15 }
-						has_game_rule = { name = blg_children value = 15noscale }
-					}
-				}
-				AND = {
-					practical_age = 14
-					OR = {
-						has_game_rule = { name = blg_children value = 14 }
-						has_game_rule = { name = blg_children value = 14noscale }
-					}
-				}
-			}
-		}
 		hide_layers = { 18 = {} } # Adult: Hide child face
+
+		trigger = {
+			blg_adult = yes
+		}
 	}
 
-	1 = { #Cell or sickbed
+	1 = { # a - Cell or sickbed
 		factor = 100
-		trigger = {
-			OR = {
-				prisoner = yes
-				is_ill = yes
-				is_incapable = yes
-			}
-		}
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -50,10 +28,36 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
+
+		trigger = {
+			OR = {
+				blg_prisoner = yes
+				is_ill = yes
+				is_incapable = yes
+			}
+		}
 	}
 
-	2 = { #Haughty
+	2 = { # b - Haughty
 		factor = 1
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
 		trigger = {
 			OR = {
 				trait = haughty
@@ -62,6 +66,7 @@
 				has_focus = focus_ch_pride
 			}
 		}
+
 		modifier = {
 			factor = 50
 			OR = {
@@ -71,10 +76,12 @@
 				trait = born_in_the_purple
 			}
 		}
+
 		modifier = {
 			factor = 20
 			has_focus = focus_ch_pride
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -84,6 +91,10 @@
 				trait = temperate
 			}
 		}
+	}
+
+	3 = { # c - Affectionate
+		factor = 5
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -101,16 +112,14 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	3 = { #Affectionate
-		factor = 5
 		trigger = {
 			OR = {
 				father = { always = yes }
 				mother = { always = yes }
 			}
 		}
+
 		modifier = {
 			factor = 10
 			OR = {
@@ -119,6 +128,7 @@
 				trait = content
 			}
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -127,6 +137,10 @@
 				trait = cruel
 			}
 		}
+	}
+
+	4 = { # d - Timid
+		factor = 5
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -144,10 +158,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	4 = { #Timid
-		factor = 5
 		modifier = {
 			factor = 10
 			OR = {
@@ -156,10 +167,12 @@
 				trait = shy
 			}
 		}
+
 		modifier = {
 			factor = 4
 			has_focus = focus_ch_humility
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -167,6 +180,10 @@
 				trait = socializer
 			}
 		}
+	}
+
+	5 = { # e - Rowdy
+		factor = 1
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -184,12 +201,9 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	5 = { #Rowdy
-		factor = 1
 		trigger = {
-			age = 6
+			age >= 6
 			OR = {
 				trait = rowdy
 				trait = brave
@@ -200,6 +214,7 @@
 				has_focus = focus_ed_martial
 			}
 		}
+
 		modifier = {
 			factor = 50
 			OR = {
@@ -212,10 +227,12 @@
 				trait = gladiator
 			}
 		}
+
 		modifier = {
 			factor = 20
 			has_focus = focus_ed_martial
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -224,6 +241,10 @@
 				trait = craven
 			}
 		}
+	}
+
+	6 = { # f - Willful
+		factor = 1
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -241,10 +262,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	6 = { #Willful
-		factor = 1
 		trigger = {
 			OR = {
 				trait = willful
@@ -254,6 +272,7 @@
 				has_focus = focus_ed_diplomacy
 			}
 		}
+
 		modifier = {
 			factor = 50
 			OR = {
@@ -263,6 +282,7 @@
 				trait = envious
 			}
 		}
+
 		modifier = {
 			factor = 20
 			OR = {
@@ -270,6 +290,7 @@
 				has_focus = focus_ed_diplomacy
 			}
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -278,6 +299,10 @@
 				trait = trusting
 			}
 		}
+	}
+
+	7 = { # g - Brooding
+		factor = 50
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -295,10 +320,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	7 = { #Brooding
-		factor = 50
 		trigger = {
 			OR = {
 				trait = brooding
@@ -307,6 +329,7 @@
 				trait = lunatic
 			}
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -314,6 +337,10 @@
 				trait = socializer
 			}
 		}
+	}
+
+	8 = { # e - Indolent
+		factor = 5
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -331,10 +358,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	8 = { #Indolent
-		factor = 5
 		modifier = {
 			factor = 10
 			OR = {
@@ -345,6 +369,7 @@
 				trait = decadent
 			}
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -352,6 +377,10 @@
 				trait = diligent
 			}
 		}
+	}
+
+	9 = { # f - Playful
+		factor = 5
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -369,10 +398,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	9 = { #Playful
-		factor = 5
 		modifier = {
 			factor = 10
 			OR = {
@@ -381,10 +407,12 @@
 				trait = decadent
 			}
 		}
+
 		modifier = {
 			factor = 4
 			has_focus = focus_ch_struggle
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -394,6 +422,10 @@
 				trait = temperate
 			}
 		}
+	}
+
+	10 = { # g - Conscientious
+		factor = 2
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -411,13 +443,11 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	10 = { #Conscientious
-		factor = 2
 		trigger = {
-			age = 6
+			age >= 6
 		}
+
 		modifier = {
 			factor = 25
 			OR = {
@@ -428,6 +458,7 @@
 				trait = scholar
 			}
 		}
+
 		modifier = {
 			factor = 10
 			OR = {
@@ -436,6 +467,7 @@
 				has_focus = focus_ed_learning
 			}
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -444,6 +476,10 @@
 				trait = decadent
 			}
 		}
+	}
+
+	11 = { # h - Fussy
+		factor = 2
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -461,10 +497,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	11 = { #Fussy
-		factor = 2
 		modifier = {
 			factor = 25
 			OR = {
@@ -473,10 +506,15 @@
 				trait = greedy
 			}
 		}
+
 		modifier = {
 			factor = 10
 			has_focus = focus_ch_thrift
 		}
+	}
+
+	12 = { # i - Curious
+		factor = 1
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -494,10 +532,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	12 = { #Curious
-		factor = 1
 		trigger = {
 			OR = {
 				trait = curious
@@ -508,6 +543,7 @@
 				has_focus = focus_ed_intrigue
 			}
 		}
+
 		modifier = {
 			factor = 50
 			OR = {
@@ -518,10 +554,12 @@
 				trait = schemer
 			}
 		}
+
 		modifier = {
 			factor = 20
 			has_focus = focus_ed_intrigue
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -530,6 +568,10 @@
 				trait = trusting
 			}
 		}
+	}
+
+	13 = { # j - Idolizer
+		factor = 1
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
@@ -547,10 +589,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-	}
 
-	13 = { #Idolizer
-		factor = 1
 		trigger = {
 			OR = {
 				trait = idolizer
@@ -561,6 +600,7 @@
 				is_ascetic_trigger = yes
 			}
 		}
+
 		modifier = {
 			factor = 50
 			OR = {
@@ -571,10 +611,12 @@
 				is_ascetic_trigger = yes
 			}
 		}
+
 		modifier = {
 			factor = 20
 			has_focus = focus_ch_faith
 		}
+
 		modifier = {
 			factor = 0.1
 			OR = {
@@ -582,22 +624,5 @@
 				trait = decadent
 			}
 		}
-		hide_layers = { 1 = {} }
-		hide_layers = { 3 = {} }
-		hide_layers = { 4 = {} }
-		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
-		hide_layers = { 10 = {} }
-		hide_layers = { 14 = {} }
-		hide_layers = { 15 = {} }
-		hide_layers = { 16 = {} }
-		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
-		hide_layers = { 21 = {} }
-		hide_layers = { 22 = {} }
-		hide_layers = { 30 = {} }
-		hide_layers = { 31 = {} }
-		hide_layers = { 32 = {} }
-		hide_layers = { 33 = {} }
 	}
 }

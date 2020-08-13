@@ -1,10 +1,27 @@
 spriteTypes = {
 
 ### SHARED ####
+
 	spriteType = {
-		name = "GFX_player_overlay"
-		texturefile = "gfx\\characters\\shared\\player_overlay.dds"
-		noOfFrames = 2
+		name = "GFX_empty"
+		texturefile = "gfx\\characters\\shared\\empty.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dummy"
+		texturefile = "gfx\\characters\\shared\\empty.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_background_items"
+		texturefile = "gfx\\characters\\shared\\background_items.dds"
+		noOfFrames = 25
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -13,22 +30,6 @@ spriteTypes = {
 		name = "GFX_character_imprisoned"
 		texturefile = "gfx\\characters\\shared\\imprisoned.dds"
 		noOfFrames = 5
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_character_reddots"
-		texturefile = "gfx\\characters\\shared\\red_dots.dds"
-		noOfFrames = 24
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_character_boils"
-		texturefile = "gfx\\characters\\shared\\boils.dds"
-		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -100,49 +101,17 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_character_special_scepters"
-		texturefile = "gfx\\characters\\shared\\special_scepters.dds"
-		noOfFrames = 26
+		name = "GFX_character_reddots"
+		texturefile = "gfx\\characters\\shared\\red_dots.dds"
+		noOfFrames = 24
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
-		name = "GFX_character_special_masks"
-		texturefile = "gfx\\characters\\shared\\special_masks.dds"
-		noOfFrames = 9
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_character_special_crowns"
-		texturefile = "gfx\\characters\\shared\\special_crowns.dds"
-		noOfFrames = 27
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_character_special_crowns_mid"
-		texturefile = "gfx\\characters\\shared\\special_crowns_mid.dds"
-		noOfFrames = 27
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_character_special_crowns_behind"
-		texturefile = "gfx\\characters\\shared\\special_crowns_behind.dds"
-		noOfFrames = 27
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_character_special_helmets"
-		texturefile = "gfx\\characters\\shared\\special_helmets.dds"
-		noOfFrames = 14
+		name = "GFX_character_boils"
+		texturefile = "gfx\\characters\\shared\\boils.dds"
+		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -156,17 +125,9 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_empty"
-		texturefile = "gfx\\characters\\shared\\empty.dds"
-		noOfFrames = 1
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_dummy"
-		texturefile = "gfx\\characters\\shared\\empty.dds"
-		noOfFrames = 12
+		name = "GFX_player_overlay"
+		texturefile = "gfx\\characters\\shared\\player_overlay.dds"
+		noOfFrames = 2
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -188,16 +149,30 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_character_freckles"
-		texturefile = "gfx\\characters\\shared\\freckles.dds"
-		noOfFrames = 6
+		name = "GFX_character_special_crowns"
+		texturefile = "gfx\\characters\\shared\\special_crowns.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_character_special_crowns_mid"
+		texturefile = "gfx\\characters\\shared\\special_crowns_mid.dds"
+		noOfFrames = 27
+		norefcount = yes
+		can_be_lowres = yes
+	}
+	spriteType = {
+		name = "GFX_character_special_crowns_behind"
+		texturefile = "gfx\\characters\\shared\\special_crowns_behind.dds"
+		noOfFrames = 27
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
-		name = "GFX_character_blood_splatter"
-		texturefile = "gfx\\characters\\shared\\blood_splatter.dds"
+		name = "GFX_character_freckles"
+		texturefile = "gfx\\characters\\shared\\freckles.dds"
 		noOfFrames = 6
 		norefcount = yes
 		can_be_lowres = yes
@@ -212,9 +187,17 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_character_blood_splatter"
+		texturefile = "gfx\\characters\\shared\\blood_splatter.dds"
+		noOfFrames = 6
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_character_possessed"
 		texturefile = "gfx\\characters\\shared\\character_possessed.dds"
-		noOfFrames = 9
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -243,17 +226,33 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_lover_overlay"
-		texturefile = "gfx\\characters\\shared\\lover_overlay.dds"
-		noOfFrames = 8
+		name = "GFX_character_special_helmets"
+		texturefile = "gfx\\characters\\shared\\special_helmets.dds"
+		noOfFrames = 15
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 	spriteType = {
-		name = "GFX_background_items"
-		texturefile = "gfx\\characters\\shared\\background_items.dds"
-		noOfFrames = 25
+		name = "GFX_character_special_masks"
+		texturefile = "gfx\\characters\\shared\\special_masks.dds"
+		noOfFrames = 9
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_special_scepters"
+		texturefile = "gfx\\characters\\shared\\special_scepters.dds"
+		noOfFrames = 26
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_lover_overlay"
+		texturefile = "gfx\\characters\\shared\\lover_overlay.dds"
+		noOfFrames = 8
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -310,14 +309,6 @@ spriteTypes = {
 		name = "GFX_mounts"
 		texturefile = "gfx\\characters\\shared\\mounts.dds"
 		noOfFrames = 27
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
-		name = "GFX_clothing_monk_male_hair"
-		textureFile = "gfx/characters/clothing/monk_male_hair.dds"
-		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -418,6 +409,14 @@ spriteTypes = {
 		name = "GFX_religious_male_headgear_behind"
 		texturefile = "gfx\\characters\\religious_male_headgear_behind.dds"
 		noOfframes = 18
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_clothing_monk_male_hair"
+		textureFile = "gfx/characters/clothing/monk_male_hair.dds"
+		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
 	}
