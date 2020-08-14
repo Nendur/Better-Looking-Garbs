@@ -349,7 +349,7 @@
 
 	8 = { # h - Beard
 		factor = 1
-		modifier = {
+		modifier = { # Limited beard range
 			factor = 0
 			blg_beard_mongol = yes
 		}
@@ -399,7 +399,7 @@
 
 	9 = { # i - Beard
 		factor = 1
-		modifier = {
+		modifier = { # Limited beard range
 			factor = 0
 			blg_beard_mongol = yes
 		}
@@ -447,7 +447,7 @@
 
 	10 = { # j - Beard
 		factor = 1
-		modifier = {
+		modifier = { # Limited beard range
 			factor = 0
 			blg_beard_mongol = yes
 		}
@@ -505,7 +505,7 @@
 
 	11 = { # k - Beard
 		factor = 1
-		modifier = {
+		modifier = { # Limited beard range
 			factor = 0
 			OR = {
 				blg_beard_celtic = yes
@@ -556,7 +556,7 @@
 
 	12 = { # l - Beard
 		factor = 1
-		modifier = {
+		modifier = { # Limited beard range
 			factor = 0
 			OR = {
 				blg_beard_celtic = yes
@@ -616,7 +616,7 @@
 
 	13 = { # m - Beard
 		factor = 1
-		modifier = {
+		modifier = { # Limited beard range
 			factor = 0
 			OR = {
 				blg_beard_celtic = yes
@@ -668,7 +668,7 @@
 
 	14 = { # n - Beard
 		factor = 1
-		modifier = {
+		modifier = { # Limited beard range
 			factor = 0
 			OR = {
 				blg_beard_celtic = yes
@@ -716,7 +716,7 @@
 
 	15 = { # o - Loopback to beardless
 		factor = 4
-		modifier = {
+		modifier = { # Limited beard range
 			factor = 0
 			OR = {
 				blg_beard_celtic = yes

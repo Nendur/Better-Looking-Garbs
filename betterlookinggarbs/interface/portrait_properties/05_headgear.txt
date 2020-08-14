@@ -366,7 +366,7 @@
 
 	10 = { # j - Martial headgear
 		factor = 100
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			OR = {
@@ -463,7 +463,7 @@
 
 	12 = { # l - Royal helmet
 		factor = 100
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			OR = {
@@ -514,7 +514,7 @@
 
 	13 = { # m - Ducal helmet
 		factor = 100
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			OR = {
@@ -546,7 +546,7 @@
 
 	14 = { # n - Chinese war gear
 		factor = 99
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			OR = {

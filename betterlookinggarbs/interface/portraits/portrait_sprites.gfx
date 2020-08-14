@@ -21,7 +21,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_background_items"
 		texturefile = "gfx\\characters\\shared\\background_items.dds"
-		noOfFrames = 25
+		noOfFrames = 16
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -313,6 +313,14 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
+	spriteType = {
+		name = "GFX_background_furniture"
+		texturefile = "gfx\\characters\\shared\\background_furniture.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
 ### BACKGROUNDS ####
 
 	spriteType = {
@@ -366,7 +374,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_background_frames"
 		texturefile = "gfx\\characters\\shared\\background_frames.dds"
-		noOfFrames = 8
+		noOfFrames = 9
 		norefcount = yes
 		can_be_lowres = yes
 	}

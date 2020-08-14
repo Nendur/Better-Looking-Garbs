@@ -1,0 +1,77 @@
+# p42 Artifacts and items - indoor furniture layer.
+42 = {
+	0 = { # 0 - blank
+		factor = 1
+		modifier = {
+			factor = 100
+			has_game_rule = { name = blg_artifacts value = off }
+		}
+	}
+
+	1 = { # a - Big Relic
+		factor = 100
+		trigger = {
+			blg_artifact_relic_chest = yes
+		}
+	}
+
+	2 = { # b - Harp
+		factor = 100
+		trigger = {
+			blg_artifact_harp = yes
+		}
+	}
+
+	3 = { # c - Sampo
+		factor = 100
+		trigger = {
+			blg_artifact_sampo = yes
+		}
+	}
+
+	4 = { # d - Small Relic
+		factor = 2
+		trigger = {
+			blg_artifact_relic_case = yes
+		}
+	}
+
+	5 = { # e - Glass candle
+		factor = 10
+		trigger = {
+			blg_artifact_candle = yes
+		}
+	}
+
+	6 = { # f - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_stag
+		}
+	}
+
+	7 = { # g - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_bear
+		}
+	}
+
+	8 = { # h - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_tiger
+		}
+	}
+
+	9 = { # j - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_lion
+		}
+	}
+}

@@ -67,6 +67,7 @@
 	2 = { # b - Dungeon
 		factor = 4
 		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		trigger = {
 			OR = {
 				blg_prisoner = yes
@@ -95,6 +96,7 @@
 
 	3 = { # c - Forest
 		factor = 3
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -120,6 +122,7 @@
 	4 = { # d - Bed
 		factor = 1
 		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		trigger = {
 			OR = {
 				is_ill = yes
@@ -161,6 +164,7 @@
 	5 = { # e - Tavern
 		factor = 1
 		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		modifier = {
 			factor = 100
 			blg_feast = yes
@@ -204,6 +208,7 @@
 	6 = { # f - Military camp
 		factor = 5
 		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		trigger = {
 			OR = {
 				blg_warrior = yes
@@ -229,6 +234,7 @@
 	7 = { # g - Dolmen
 		factor = 1
 		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		trigger = {
 			OR = {
 				blg_religion_pagan = yes
@@ -273,6 +279,7 @@
 
 	8 = { # h - Gallows
 		factor = 2
+		hide_layers = { 42 = {} }
 		trigger = {
 			OR = {
 				trait = cruel
@@ -348,6 +355,7 @@
 
 	10 = { # j - Desert
 		factor = 1
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -387,6 +395,7 @@
 
 	11 = { # k - Steppe
 		factor = 5
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -411,6 +420,7 @@
 
 	12 = { # l - Ocean
 		factor = 2
+		hide_layers = { 42 = {} }
 		trigger = {
 			OR = {
 				is_at_sea = yes
@@ -441,6 +451,7 @@
 
 	13 = { # m - Farmlands
 		factor = 3
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -468,6 +479,7 @@
 
 	14 = { # n - Mediterranean Farmlands
 		factor = 3
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -497,6 +509,7 @@
 
 	15 = { # o - Mountains
 		factor = 3
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -554,6 +567,7 @@
 
 	17 = { # q - Tribal village
 		factor = 4
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
@@ -599,6 +613,7 @@
 	18 = { # r - European Castle
 		factor = 1
 		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
@@ -638,6 +653,7 @@
 	19 = { # s - Muslim Mosque
 		factor = 3
 		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
@@ -706,6 +722,7 @@
 
 	20 = { # t - Town
 		factor = 1
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
@@ -776,6 +793,7 @@
 	22 = { # v - Curtains
 		factor = 1
 		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		modifier = {
 			factor = 100
 			is_alive = no
@@ -874,6 +892,7 @@
 
 	25 = { # y - Snow
 		factor = 2
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -903,6 +922,7 @@
 
 	26 = { # z - African Savanna
 		factor = 2
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }

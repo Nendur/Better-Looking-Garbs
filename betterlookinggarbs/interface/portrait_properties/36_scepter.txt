@@ -9,6 +9,12 @@
 
 		modifier = {
 			factor = 100
+			prisoner = yes
+			blg_animal_rat = no
+		}
+
+		modifier = {
+			factor = 100
 			blg_fighting = yes
 			blg_combat_artifacts = no
 		}
@@ -363,26 +369,15 @@
 		}
 	}
 
-	24 = { # x - Falcon
+	24 = { # x - Rat
 		factor = 10
 		trigger = {
-			trait = falconer
+			blg_animal_rat = yes
 
+			in_command = no
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = rare }
 				has_game_rule = { name = blg_artifacts value = weapons }
-			}
-
-			OR = {
-				has_character_modifier = holding_grand_hunt
-				has_portrait_property = { layer = 0 index = 3 }
-				has_portrait_property = { layer = 0 index = 10 }
-				has_portrait_property = { layer = 0 index = 11 }
-				has_portrait_property = { layer = 0 index = 13 }
-				has_portrait_property = { layer = 0 index = 14 }
-				has_portrait_property = { layer = 0 index = 15 }
-				has_portrait_property = { layer = 0 index = 25 }
-				has_portrait_property = { layer = 0 index = 26 }
 			}
 		}
 	}

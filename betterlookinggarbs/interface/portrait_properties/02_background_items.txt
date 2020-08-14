@@ -5,7 +5,7 @@
 		modifier = {
 			factor = 100
 			prisoner = yes
-			blg_animal_rat = no
+			blg_saint = no
 		}
 
 		modifier = {
@@ -41,135 +41,7 @@
 		}
 	}
 
-	4 = { # d - Big Relic
-		factor = 100
-		trigger = {
-			blg_artifact_relic_chest = yes
-			OR = {
-				has_portrait_property = { layer = 0 index = 0 }
-				has_portrait_property = { layer = 0 index = 1 }
-				has_portrait_property = { layer = 0 index = 9 }
-				has_portrait_property = { layer = 0 index = 16 }
-				has_portrait_property = { layer = 0 index = 23 }
-				has_portrait_property = { layer = 0 index = 24 }
-			}
-		}
-	}
-
-	5 = { # e - Harp
-		factor = 100
-		trigger = {
-			blg_artifact_harp = yes
-			OR = {
-				has_portrait_property = { layer = 0 index = 0 }
-				has_portrait_property = { layer = 0 index = 1 }
-				has_portrait_property = { layer = 0 index = 9 }
-				has_portrait_property = { layer = 0 index = 16 }
-				has_portrait_property = { layer = 0 index = 23 }
-				has_portrait_property = { layer = 0 index = 24 }
-			}
-		}
-	}
-
-	6 = { # f - Sampo
-		factor = 100
-		trigger = {
-			blg_artifact_sampo = yes
-			OR = {
-				has_portrait_property = { layer = 0 index = 0 }
-				has_portrait_property = { layer = 0 index = 1 }
-				has_portrait_property = { layer = 0 index = 9 }
-				has_portrait_property = { layer = 0 index = 16 }
-				has_portrait_property = { layer = 0 index = 23 }
-				has_portrait_property = { layer = 0 index = 24 }
-			}
-		}
-	}
-
-	7 = { # g - Small Relic
-		factor = 2
-		trigger = {
-			blg_artifact_relic_case = yes
-			OR = {
-				has_portrait_property = { layer = 0 index = 0 }
-				has_portrait_property = { layer = 0 index = 1 }
-				has_portrait_property = { layer = 0 index = 9 }
-				has_portrait_property = { layer = 0 index = 16 }
-				has_portrait_property = { layer = 0 index = 23 }
-				has_portrait_property = { layer = 0 index = 24 }
-			}
-		}
-	}
-
-	8 = { # h - Hunting Trophy
-		factor = 100
-		trigger = {
-			has_character_flag = achievement_great_hunter
-			has_character_flag = white_stag
-
-			OR = {
-				has_portrait_property = { layer = 0 index = 0 }
-				has_portrait_property = { layer = 0 index = 1 }
-				has_portrait_property = { layer = 0 index = 9 }
-				has_portrait_property = { layer = 0 index = 16 }
-				has_portrait_property = { layer = 0 index = 23 }
-				has_portrait_property = { layer = 0 index = 24 }
-			}
-		}
-	}
-
-	9 = { # i - Hunting Trophy
-		factor = 100
-		trigger = {
-			has_character_flag = achievement_great_hunter
-			has_character_flag = white_bear
-
-			OR = {
-				has_portrait_property = { layer = 0 index = 0 }
-				has_portrait_property = { layer = 0 index = 1 }
-				has_portrait_property = { layer = 0 index = 9 }
-				has_portrait_property = { layer = 0 index = 16 }
-				has_portrait_property = { layer = 0 index = 23 }
-				has_portrait_property = { layer = 0 index = 24 }
-			}
-		}
-	}
-
-	10 = { # j - Hunting Trophy
-		factor = 100
-		trigger = {
-			has_character_flag = achievement_great_hunter
-			has_character_flag = white_tiger
-
-			OR = {
-				has_portrait_property = { layer = 0 index = 0 }
-				has_portrait_property = { layer = 0 index = 1 }
-				has_portrait_property = { layer = 0 index = 9 }
-				has_portrait_property = { layer = 0 index = 16 }
-				has_portrait_property = { layer = 0 index = 23 }
-				has_portrait_property = { layer = 0 index = 24 }
-			}
-		}
-	}
-
-	11 = { # k - Hunting Trophy
-		factor = 100
-		trigger = {
-			has_character_flag = achievement_great_hunter
-			has_character_flag = white_lion
-
-			OR = {
-				has_portrait_property = { layer = 0 index = 0 }
-				has_portrait_property = { layer = 0 index = 1 }
-				has_portrait_property = { layer = 0 index = 9 }
-				has_portrait_property = { layer = 0 index = 16 }
-				has_portrait_property = { layer = 0 index = 23 }
-				has_portrait_property = { layer = 0 index = 24 }
-			}
-		}
-	}
-
-	12 = { # l - Cat
+	4 = { # d - Cat
 		factor = 10
 		trigger = {
 			OR = {
@@ -192,7 +64,7 @@
 		}
 	}
 
-	13 = { # m - Cat
+	5 = { # e - Cat
 		factor = 10
 		trigger = {
 			blg_animal_cat = yes
@@ -212,7 +84,7 @@
 		}
 	}
 
-	14 = { # n - Cat
+	6 = { # f - Cat
 		factor = 10
 		trigger = {
 			blg_animal_cat = yes
@@ -232,7 +104,7 @@
 		}
 	}
 
-	15 = { # o - Dog
+	7 = { # g - Dog
 		factor = 10
 		trigger = {
 			blg_animal_dog = yes
@@ -254,7 +126,7 @@
 		}
 	}
 
-	16 = { # p - Dog
+	8 = { # h - Dog
 		factor = 10
 		trigger = {
 			blg_animal_dog = yes
@@ -276,7 +148,7 @@
 		}
 	}
 
-	17 = { # q - Dog
+	9 = { # i - Dog
 		factor = 10
 		trigger = {
 			blg_animal_dog = yes
@@ -298,7 +170,7 @@
 		}
 	}
 
-	18 = { # r - Dog
+	10 = { # j - Dog
 		factor = 10
 		trigger = {
 			blg_animal_dog = yes
@@ -320,7 +192,7 @@
 		}
 	}
 
-	19 = { # s - Owl
+	11 = { # k - Owl
 		factor = 10
 		trigger = {
 			blg_animal_owl = yes
@@ -336,7 +208,7 @@
 		}
 	}
 
-	20 = { # t - Hedgehog
+	12 = { # l - Hedgehog
 		factor = 10
 		trigger = {
 			blg_animal_hedgehog = yes
@@ -349,7 +221,7 @@
 		}
 	}
 
-	21 = { # u - Otter
+	13 = { # m - Otter
 		factor = 10
 		trigger = {
 			blg_animal_otter = yes
@@ -362,7 +234,7 @@
 		}
 	}
 
-	22 = { # v - Parrot
+	14 = { # n - Parrot
 		factor = 10
 		trigger = {
 			blg_animal_parrot = yes
@@ -375,20 +247,7 @@
 		}
 	}
 
-	23 = { # w - Rat
-		factor = 10
-		trigger = {
-			blg_animal_rat = yes
-
-			in_command = no
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
-		}
-	}
-
-	24 = { # x - Wolf
+	15 = { # o - Wolf
 		factor = 10
 		trigger = {
 			blg_animal_wolf = yes

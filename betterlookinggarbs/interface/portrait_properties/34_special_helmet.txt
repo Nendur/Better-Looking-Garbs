@@ -14,7 +14,7 @@
 		hide_layers = { 31 = {} } #Veil overload.
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			blg_knights_templar = yes
@@ -30,7 +30,7 @@
 		hide_layers = { 12 = {} } #Hide layer 12 (disfigured masks) when this frame is picked.
 		hide_layers = { 19 = {} } #Hide layers with special crowns.
 		hide_layers = { 31 = {} } #Veil overload.
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			is_female = no
@@ -48,7 +48,7 @@
 		hide_layers = { 19 = {} } #Hide layers with special crowns.
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			is_female = yes
@@ -67,7 +67,7 @@
 		hide_layers = { 31 = {} } #Veil overload.
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			blg_knights_hospitaler = yes
@@ -85,7 +85,7 @@
 		hide_layers = { 31 = {} } #Veil overload.
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			blg_knights_teutonic = yes
@@ -103,7 +103,7 @@
 		hide_layers = { 31 = {} } #Veil overload.
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			blg_helmet_winged = yes
@@ -121,7 +121,7 @@
 		hide_layers = { 31 = {} } #Veil overload.
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			blg_knights_calatrava = yes
@@ -139,7 +139,7 @@
 		hide_layers = { 31 = {} } #Veil overload.
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			blg_helmet_wrapped = yes
@@ -157,7 +157,7 @@
 		hide_layers = { 31 = {} } #Veil overload.
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = {} }
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			blg_knights_livonian = yes

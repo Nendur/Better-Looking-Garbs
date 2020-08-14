@@ -32,6 +32,11 @@ blg_artifact_derafsh_kaviani = {
 	}
 }
 
+# Glass candle.
+blg_artifact_candle = {
+	always = no
+}
+
 # Babr-e-Bayan leopard skin.
 blg_babr_e_bayan = {
 	any_artifact = {
