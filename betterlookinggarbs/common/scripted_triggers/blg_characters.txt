@@ -57,6 +57,16 @@ blg_peasant = {
 	}
 }
 
+# Portrait override for monks.
+blg_portrait_monk = {
+	portrait_has_trait = monk
+}
+
+# Portrait override for nuns.
+blg_portrait_nun = {
+	portrait_has_trait = nun
+}
+
 # Declared a saint.
 blg_saint = {
 	OR = {

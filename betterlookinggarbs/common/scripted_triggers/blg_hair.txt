@@ -119,6 +119,9 @@ blg_beard_shaved = {
 	OR = {
 		blg_priest = yes
 		is_ascetic_trigger = yes
+		society_member_of = monastic_order_benedictine
+		society_member_of = monastic_order_dominican
+		society_member_of = monastic_order_buddhist
 		employer = { blg_holy_order = yes }
 	}
 }

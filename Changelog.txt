@@ -5,6 +5,7 @@ Changelog:
   - Repeated and variable parts moved to scripted triggers.
   - Easier to change and maintain for different mods.
   - More detail added.
+  Societies and other portrait overrides moved to scripted trigger use too.
   Update some disease and wound graphics.
   Moved furniture artifacts to separate layer to only show on indoor backgrounds.
   Replacement for parrot to old-world parakeet.

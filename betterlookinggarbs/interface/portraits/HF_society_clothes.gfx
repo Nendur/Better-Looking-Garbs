@@ -33,20 +33,21 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
-				portrait_age > child
 				portrait_clothing = yes
+				portrait_age > child
 				portrait_is_female = no
-				portrait_society = monastic_order_stoics
+
+				blg_society_stoics = yes
 				OR = {
-					portrait_government = theocracy_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
 					portrait_society_rank = 4
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -116,20 +117,21 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
-				portrait_age > child
 				portrait_clothing = yes
+				portrait_age > child
 				portrait_is_female = yes
-				portrait_society = monastic_order_stoics
+
+				blg_society_stoics = yes
 				OR = {
-					portrait_government = theocracy_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
 					portrait_society_rank = 4
 					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -217,20 +219,17 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
-				portrait_age > child
-				#portrait_is_female = no
 				portrait_clothing = yes
+				portrait_age > child
+
+				blg_society_bacchants = yes
 				OR = {
-					portrait_society = the_bacchants
-					portrait_society = the_cult_of_kali
-				}
-				OR = {
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
 					portrait_society_rank = 4
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -297,12 +296,10 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
-				portrait_age > child
 				portrait_clothing = yes
-				OR = {
-					portrait_society = the_bacchants
-					portrait_society = the_cult_of_kali
-				}
+				portrait_age > child
+
+				blg_society_bacchants = yes
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}

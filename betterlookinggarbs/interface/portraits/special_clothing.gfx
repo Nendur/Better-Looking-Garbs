@@ -26,6 +26,14 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
+	spriteType = {
+		name = "GFX_clothing_monk_male_hair"
+		textureFile = "gfx/characters/clothing/monk_male_hair.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
 	portraitType = {
 		name = "PORTRAIT_clothing_monk"
 		effectFile = "gfx/FX/portrait.lua"
@@ -33,29 +41,15 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 5000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_has_trait = monk
-				OR = {
-					portrait_religion = catholic
-					portrait_religion = cathar
-					portrait_religion = fraticelli
-					portrait_religion = waldensian
-					portrait_religion = lollard
-					portrait_religion = orthodox
-					portrait_religion = miaphysite
-					portrait_religion = monophysite
-					portrait_religion = bogomilist
-					portrait_religion = monothelite
-					portrait_religion = iconoclast
-					portrait_religion = paulician
-					portrait_religion = nestorian
-					portrait_religion = messalian
-				}
+
+				blg_portrait_monk = yes
+				blg_portrait_christian = yes
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 			}
 		}
@@ -73,42 +67,18 @@ spriteTypes = {
 		allow_property_values = {
 			3 = {
 				0 = {
-					OR = {
-						portrait_religion = catholic
-						portrait_religion = cathar
-						portrait_religion = fraticelli
-						portrait_religion = waldensian
-						portrait_religion = lollard
-					}
+					blg_portrait_catholic = yes
 				}
 				1 = {
-					NOR = {
-						portrait_religion = catholic
-						portrait_religion = cathar
-						portrait_religion = fraticelli
-						portrait_religion = waldensian
-						portrait_religion = lollard
-					}
+					blg_portrait_catholic = no
 				}
 			}
 			5 = {
 				0 = {
-					OR = {
-						portrait_religion = catholic
-						portrait_religion = cathar
-						portrait_religion = fraticelli
-						portrait_religion = waldensian
-						portrait_religion = lollard
-					}
+					blg_portrait_catholic = yes
 				}
 				1 = {
-					NOR = {
-						portrait_religion = catholic
-						portrait_religion = cathar
-						portrait_religion = fraticelli
-						portrait_religion = waldensian
-						portrait_religion = lollard
-					}
+					blg_portrait_catholic = no
 				}
 			}
 			31 = {
@@ -140,29 +110,15 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 5000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_has_trait = nun
-				OR = {
-					portrait_religion = catholic
-					portrait_religion = cathar
-					portrait_religion = fraticelli
-					portrait_religion = waldensian
-					portrait_religion = lollard
-					portrait_religion = orthodox
-					portrait_religion = miaphysite
-					portrait_religion = monophysite
-					portrait_religion = bogomilist
-					portrait_religion = monothelite
-					portrait_religion = iconoclast
-					portrait_religion = paulician
-					portrait_religion = nestorian
-					portrait_religion = messalian
-				}
+
+				blg_portrait_nun = yes
+				blg_portrait_christian = yes
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 			}
 		}

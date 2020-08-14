@@ -421,14 +421,6 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
-	spriteType = {
-		name = "GFX_clothing_monk_male_hair"
-		textureFile = "gfx/characters/clothing/monk_male_hair.dds"
-		noOfFrames = 7
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
 ### RELIGIOUS FEMALE ####
 
 	spriteType = {

@@ -36,22 +36,22 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = vaishnavist_hindu
+
+				blg_society_hindu_vaishnavist = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -86,10 +86,10 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
-				portrait_age > child
 				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = vaishnavist_hindu
+				portrait_age > child
+
+				blg_society_hindu_vaishnavist = yes
 				portrait_in_command = no
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -128,15 +128,15 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = vaishnavist_hindu
+
+				blg_society_hindu_vaishnavist = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
@@ -144,7 +144,7 @@ spriteTypes = {
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -216,22 +216,22 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = smartist_hindu
+
+				blg_society_hindu_smartist = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -266,10 +266,10 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
-				portrait_age > child
 				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = smartist_hindu
+				portrait_age > child
+
+				blg_society_hindu_smartist = yes
 				portrait_in_command = no
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -320,15 +320,15 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = smartist_hindu
+
+				blg_society_hindu_smartist = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
@@ -336,7 +336,7 @@ spriteTypes = {
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -396,22 +396,22 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = shaktist_hindu
+
+				blg_society_hindu_shaktist = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -446,11 +446,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = shaktist_hindu
+
+				blg_society_hindu_shaktist = yes
 				portrait_in_command = no
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -489,22 +489,22 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = shaktist_hindu
+
+				blg_society_hindu_shaktist = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -542,11 +542,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = shaktist_hindu
+
+				blg_society_hindu_shaktist = yes
 				portrait_in_command = no
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -587,22 +587,22 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = shaivist_hindu
+
+				blg_society_hindu_shaivist = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -637,10 +637,10 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
-				portrait_age > child
 				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = shaivist_hindu
+				portrait_age > child
+
+				blg_society_hindu_shaivist = yes
 				portrait_in_command = no
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -679,15 +679,15 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_hindu
-				portrait_has_trait = shaivist_hindu
+
+				blg_society_hindu_shaivist = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
@@ -695,7 +695,7 @@ spriteTypes = {
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -748,21 +748,21 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = vajrayana_buddhist
+
+				blg_society_buddhist_vajrayana = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = bhikkhu
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -777,7 +777,6 @@ spriteTypes = {
 			"GFX_empty:c7"
 		}
 
-		# Hide hair, hide beards unless they're old.
 		allow_property_values = {
 			19 = {
 				0 = { always = yes }
@@ -797,11 +796,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = vajrayana_buddhist
+
+				blg_society_buddhist_vajrayana = yes
 				portrait_in_command = no
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -837,21 +836,21 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = vajrayana_buddhist
+
+				blg_society_buddhist_vajrayana = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = bhikkhuni
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -889,11 +888,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = vajrayana_buddhist
+
+				blg_society_buddhist_vajrayana = yes
 				portrait_in_command = no
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -931,21 +930,21 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = theravada_buddhist
+
+				blg_society_buddhist_theravada = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = bhikkhu
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -960,7 +959,6 @@ spriteTypes = {
 			"GFX_empty:c7"
 		}
 
-		# Hide hair, hide beards unless they're old.
 		allow_property_values = {
 			19 = {
 				0 = { always = yes }
@@ -980,11 +978,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = theravada_buddhist
+
+				blg_society_buddhist_theravada = yes
 				portrait_in_command = no
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -1020,21 +1018,21 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = theravada_buddhist
+
+				blg_society_buddhist_theravada = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = bhikkhuni
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1072,11 +1070,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = theravada_buddhist
+
+				blg_society_buddhist_theravada = yes
 				portrait_in_command = no
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -1114,21 +1112,21 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = mahayana_buddhist
+
+				blg_society_buddhist_mahayana = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = bhikkhu
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1143,7 +1141,6 @@ spriteTypes = {
 			"GFX_empty:c7"
 		}
 
-		# Hide hair, hide beards unless they're old.
 		allow_property_values = {
 			19 = {
 				0 = { always = yes }
@@ -1163,11 +1160,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = mahayana_buddhist
+
+				blg_society_buddhist_mahayana = yes
 				portrait_in_command = no
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -1203,21 +1200,21 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = mahayana_buddhist
+
+				blg_society_buddhist_mahayana = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = bhikkhuni
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1232,7 +1229,6 @@ spriteTypes = {
 			"GFX_empty:c7"
 		}
 
-		# Hide hair
 		allow_property_values = {
 			19 = {
 				0 = { always = yes }
@@ -1255,11 +1251,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_buddhist
-				portrait_has_trait = mahayana_buddhist
+
+				blg_society_buddhist_mahayana = yes
 				portrait_in_command = no
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -1293,21 +1289,19 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 11000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_jain
-				portrait_has_trait = digambara_jain
+
+				blg_society_jain_digambara = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_portrait_theocracy = yes
 					portrait_has_trait = muni
 					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1322,7 +1316,6 @@ spriteTypes = {
 			"GFX_empty:c7"
 		}
 
-		# Hide hair, beard
 		allow_property_values = {
 			19 = {
 				0 = { always = yes }
@@ -1356,15 +1349,15 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_jain
-				portrait_has_trait = digambara_jain
+
+				blg_society_jain_digambara = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = aryika
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
@@ -1372,7 +1365,7 @@ spriteTypes = {
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -1438,14 +1431,15 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_jain
+
+				blg_society_jain = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = muni
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
@@ -1453,7 +1447,7 @@ spriteTypes = {
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -1488,10 +1482,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				portrait_society = monastic_order_jain
+
+				blg_society_jain = yes
 				portrait_in_command = no
 				NOT = { portrait_has_trait = blgcaoff }
 			}
@@ -1536,15 +1531,15 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_jain
-				portrait_has_trait = svetambara_jain
+
+				blg_society_jain_theravada = yes
 				OR = {
-					portrait_government = theocracy_government
-					portrait_government = order_government
-					NOT = { portrait_tier = baron }
+					blg_society_landless = yes
+					blg_portrait_theocracy = yes
+					blg_portrait_holy_order = yes
 					portrait_has_trait = aryika
 					portrait_has_trait = on_indian_pilgrimage
 					portrait_has_trait = blgcaon
@@ -1552,7 +1547,7 @@ spriteTypes = {
 				}
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
 				OR = {
 					NOT = { portrait_has_trait = blgcaoff }
@@ -1594,10 +1589,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 9000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				portrait_society = monastic_order_jain
+
+				blg_society_jain = yes
 				portrait_in_command = no
 				NOT = { portrait_has_trait = blgcaoff }
 			}

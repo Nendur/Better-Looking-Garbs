@@ -56,11 +56,11 @@ blg_merchant_clothes = {
 	OR = {
 		likes_latino_iberians = yes
 		likes_byzantines = yes
+		blg_culture_middleeast = yes
+		blg_culture_african = yes
 		likes_altaics = yes
 		likes_mesoamericans = yes
 		culture_group = israelite
-		blg_culture_middleeast = yes
-		blg_culture_african = yes
 	}
 }
 
@@ -187,5 +187,108 @@ blg_culture_west_slavic = {
 		culture_group = west_slavic
 		culture_group = south_slavic
 		culture_group = magyar
+	}
+}
+
+### Portrait overrides:
+
+blg_portrait_african = {
+	OR = {
+		portrait_culture_group = west_african
+		portrait_culture_group = central_african
+		portrait_culture_group = east_african
+		portrait_culture = maghreb_arabic
+		portrait_culture_group = mesoamerican
+	}
+}
+
+blg_portrait_arabic = {
+	OR = {
+		portrait_culture_group = arabic
+		portrait_culture = coptic
+		portrait_culture = assyrian
+	}
+}
+
+blg_portrait_baltic = {
+	portrait_culture_group = baltic
+}
+
+blg_portrait_byzantine = {
+	portrait_culture_group = byzantine
+}
+
+blg_portrait_celtic = {
+	portrait_culture_group = celtic
+}
+
+blg_portrait_chinese = {
+	portrait_culture_group = chinese_group
+}
+
+blg_portrait_east_slavic = {
+	portrait_culture_group = east_slavic
+}
+
+blg_portrait_germanic = {
+	OR = {
+		portrait_culture_group = west_germanic
+		portrait_culture_group = central_germanic
+	}
+}
+
+blg_portrait_indian = {
+	OR = {
+		portrait_culture_group = indo_aryan_group
+		portrait_culture_group = dravidian_group
+		portrait_culture_group = tibetan_group
+	}
+}
+
+blg_portrait_magyar = {
+	portrait_culture_group = magyar
+}
+
+blg_portrait_middleeast = {
+	OR = {
+		blg_portrait_arabic = yes
+		portrait_culture_group = iranian
+		portrait_culture_group = east_african
+		portrait_culture_group = israelite
+	}
+}
+
+blg_portrait_nordic = {
+	OR = {
+		blg_portrait_germanic = yes
+		portrait_culture_group = north_germanic
+		portrait_culture_group = finno_ugric
+	}
+}
+
+blg_portrait_mediterranean = {
+	OR = {
+		portrait_culture_group = latin
+		portrait_culture_group = iberian
+		portrait_culture = andalusian_arabic
+	}
+}
+
+blg_portrait_roman = {
+	culture = roman
+}
+
+blg_portrait_slavic = {
+	OR = {
+		portrait_culture_group = east_slavic
+		portrait_culture_group = west_slavic
+		portrait_culture_group = south_slavic
+	}
+}
+
+blg_portrait_steppes = {
+	OR = {
+		portrait_culture_group = altaic
+		portrait_culture_group = chinese_group
 	}
 }

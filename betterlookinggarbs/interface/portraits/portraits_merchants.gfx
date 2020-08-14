@@ -49,14 +49,12 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 2500
-				portrait_is_patrician = yes
-				portrait_is_female = no
-				portrait_in_command = no
 				portrait_clothing = yes
-				OR = {
-					portrait_culture_group = latin
-					portrait_culture_group = iberian
-				}
+				portrait_is_female = no
+
+				portrait_is_patrician = yes
+				portrait_in_command = no
+				blg_portrait_mediterranean = yes
 			}
 		}
 
@@ -79,14 +77,12 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 2500
-				portrait_is_patrician = yes
-				portrait_is_female = yes
-				portrait_in_command = no
 				portrait_clothing = yes
-				OR = {
-					portrait_culture_group = latin
-					portrait_culture_group = iberian
-				}
+				portrait_is_female = yes
+
+				portrait_is_patrician = yes
+				portrait_in_command = no
+				blg_portrait_mediterranean = yes
 			}
 		}
 
@@ -109,18 +105,16 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 2500
-				portrait_is_patrician = yes
-				portrait_is_female = no
-				portrait_in_command = no
 				portrait_clothing = yes
+				portrait_is_female = no
+
+				portrait_is_patrician = yes
+				portrait_in_command = no
 				OR = {
-					portrait_culture_group = central_germanic
-					portrait_culture_group = west_germanic
-					portrait_culture_group = celtic
-					portrait_culture_group = east_slavic
-					portrait_culture_group = west_slavic
-					portrait_culture_group = south_slavic
-					portrait_culture_group = magyar
+					blg_portrait_germanic = yes
+					blg_portrait_celtic = yes
+					blg_portrait_slavic = yes
+					blg_portrait_magyar = yes
 				}
 			}
 		}
@@ -142,18 +136,16 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 2500
-				portrait_is_patrician = yes
-				portrait_is_female = yes
-				portrait_in_command = no
 				portrait_clothing = yes
+				portrait_is_female = yes
+
+				portrait_is_patrician = yes
+				portrait_in_command = no
 				OR = {
-					portrait_culture_group = central_germanic
-					portrait_culture_group = west_germanic
-					portrait_culture_group = celtic
-					portrait_culture_group = east_slavic
-					portrait_culture_group = west_slavic
-					portrait_culture_group = south_slavic
-					portrait_culture_group = magyar
+					blg_portrait_germanic = yes
+					blg_portrait_celtic = yes
+					blg_portrait_slavic = yes
+					blg_portrait_magyar = yes
 				}
 			}
 		}
@@ -175,19 +167,15 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 2500
+				portrait_clothing = yes
+
 				portrait_is_patrician = yes
 				portrait_in_command = no
-				portrait_clothing = yes
 				OR = {
-					portrait_culture_group = byzantine
-					portrait_culture_group = altaic
-					portrait_culture_group = arabic
-					portrait_culture_group = iranian
-					portrait_culture_group = east_african
-					portrait_culture_group = central_african
-					portrait_culture_group = west_african
-					portrait_culture_group = mesoamerican
-					portrait_culture_group = israelite
+					blg_portrait_middleeast = yes
+					blg_portrait_byzantine = yes
+					blg_portrait_african = yes
+					blg_portrait_steppes = yes
 				}
 			}
 		}
@@ -205,11 +193,12 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 2600
-				portrait_is_patrician = yes
-				portrait_is_female = no
-				portrait_in_command = no
 				portrait_clothing = yes
-				portrait_culture = roman
+				portrait_is_female = no
+
+				portrait_is_patrician = yes
+				portrait_in_command = no
+				blg_portrait_roman = yes
 			}
 		}
 
@@ -226,11 +215,12 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 2600
-				portrait_is_patrician = yes
-				portrait_is_female = yes
-				portrait_in_command = no
 				portrait_clothing = yes
-				portrait_culture = roman
+				portrait_is_female = yes
+
+				portrait_is_patrician = yes
+				portrait_in_command = no
+				blg_portrait_roman = yes
 			}
 		}
 

@@ -8,34 +8,18 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 1000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
+
+				blg_portrait_muslim = yes
 				OR = {
-					portrait_religion = sunni
-					portrait_religion = zikri
-					portrait_religion = yazidi
-					portrait_religion = ibadi
-					portrait_religion = kharijite
-					portrait_religion = shiite
-					portrait_religion = druze
-					portrait_religion = hurufi
-					portrait_religion = qarmatian
-				}
-				OR = {
-					portrait_culture = andalusian_arabic
-					portrait_culture_group = latin
-					portrait_culture_group = iberian
-					portrait_culture_group = celtic
-					portrait_culture_group = central_germanic
-					portrait_culture_group = north_germanic
-					portrait_culture_group = west_germanic
-					portrait_culture_group = west_slavic
-					portrait_culture_group = east_slavic
-					portrait_culture_group = south_slavic
-					portrait_culture_group = magyar
-					portrait_culture_group = finno_ugric
-					portrait_culture_group = baltic
+					blg_portrait_mediterranean = yes
+					blg_portrait_nordic = yes
+					blg_portrait_slavic = yes
+					blg_portrait_baltic = yes
+					blg_portrait_magyar = yes
+					blg_portrait_celtic = yes
 				}
 			}
 		}
@@ -58,34 +42,18 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 1000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
+
+				blg_portrait_muslim = yes
 				OR = {
-					portrait_religion = sunni
-					portrait_religion = zikri
-					portrait_religion = yazidi
-					portrait_religion = ibadi
-					portrait_religion = kharijite
-					portrait_religion = shiite
-					portrait_religion = druze
-					portrait_religion = hurufi
-					portrait_religion = qarmatian
-				}
-				OR = {
-					portrait_culture = andalusian_arabic
-					portrait_culture_group = latin
-					portrait_culture_group = iberian
-					portrait_culture_group = celtic
-					portrait_culture_group = central_germanic
-					portrait_culture_group = north_germanic
-					portrait_culture_group = west_germanic
-					portrait_culture_group = west_slavic
-					portrait_culture_group = east_slavic
-					portrait_culture_group = south_slavic
-					portrait_culture_group = magyar
-					portrait_culture_group = finno_ugric
-					portrait_culture_group = baltic
+					blg_portrait_mediterranean = yes
+					blg_portrait_nordic = yes
+					blg_portrait_slavic = yes
+					blg_portrait_baltic = yes
+					blg_portrait_magyar = yes
+					blg_portrait_celtic = yes
 				}
 			}
 		}
@@ -109,13 +77,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 1000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
-				OR = {
-					portrait_religion = west_african_pagan
-					portrait_religion = west_african_pagan_reformed
-				}
+
+				blg_portrait_african_pagan = yes
 			}
 		}
 
@@ -137,13 +103,11 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 1000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
-				OR = {
-					portrait_religion = west_african_pagan
-					portrait_religion = west_african_pagan_reformed
-				}
+
+				blg_portrait_african_pagan = yes
 			}
 		}
 
@@ -166,22 +130,17 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 1000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
+
+				blg_portrait_tengri = yes
 				OR = {
-					portrait_religion = tengri_pagan
-					portrait_religion = tengri_pagan_reformed
-				}
-				OR = {
-					portrait_culture_group = magyar
-					portrait_culture_group = latin
-					portrait_culture_group = iberian
-					portrait_culture_group = celtic
-					portrait_culture_group = central_germanic
-					portrait_culture_group = north_germanic
-					portrait_culture_group = west_germanic
-					portrait_culture_group = byzantine
+					blg_portrait_magyar = yes
+					blg_portrait_mediterranean = yes
+					blg_portrait_germanic = yes
+					blg_portrait_celtic = yes
+					blg_portrait_byzantine = yes
 				}
 			}
 		}
@@ -204,22 +163,17 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 1000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
+
+				blg_portrait_tengri = yes
 				OR = {
-					portrait_religion = tengri_pagan
-					portrait_religion = tengri_pagan_reformed
-				}
-				OR = {
-					portrait_culture_group = magyar
-					portrait_culture_group = latin
-					portrait_culture_group = iberian
-					portrait_culture_group = celtic
-					portrait_culture_group = central_germanic
-					portrait_culture_group = north_germanic
-					portrait_culture_group = west_germanic
-					portrait_culture_group = byzantine
+					blg_portrait_magyar = yes
+					blg_portrait_mediterranean = yes
+					blg_portrait_germanic = yes
+					blg_portrait_celtic = yes
+					blg_portrait_byzantine = yes
 				}
 			}
 		}
@@ -243,39 +197,24 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 1000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
+
 				OR = {
-					portrait_religion = orthodox
-					portrait_religion = miaphysite
-					portrait_religion = monophysite
-					portrait_religion = bogomilist
-					portrait_religion = monothelite
-					portrait_religion = iconoclast
-					portrait_religion = paulician
-					portrait_religion = nestorian
-					portrait_religion = messalian
-					portrait_religion = hellenic_pagan
-					portrait_religion = hellenic_pagan_reformed
-					portrait_religion = jewish
-					portrait_religion = samaritan
-					portrait_religion = karaite
+					blg_portrait_orthodox = yes
+					blg_portrait_jewish = yes
+					blg_portrait_hellenic = yes
 				}
 				OR = {
-					portrait_culture_group = arabic
-					portrait_culture_group = west_african
-					portrait_culture_group = east_african
-					portrait_culture_group = central_african
-					portrait_culture = coptic
+					blg_portrait_arabic = yes
+					blg_portrait_african = yes
 				}
 			}
 		}
 
 		layer = {
-			#"GFX_muslim_male_clothes_behind_early:c0"
 			"GFX_african_male_headgear_behind:c1"
-			#"GFX_muslim_male_clothes_early:c2"
 			"GFX_empty:c3"
 			"GFX_african_male_headgear:c5"
 		}
@@ -290,38 +229,24 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 1000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
+
 				OR = {
-					portrait_religion = orthodox
-					portrait_religion = miaphysite
-					portrait_religion = monophysite
-					portrait_religion = bogomilist
-					portrait_religion = monothelite
-					portrait_religion = iconoclast
-					portrait_religion = paulician
-					portrait_religion = nestorian
-					portrait_religion = messalian
-					portrait_religion = hellenic_pagan
-					portrait_religion = jewish
-					portrait_religion = samaritan
-					portrait_religion = karaite
+					blg_portrait_orthodox = yes
+					blg_portrait_jewish = yes
+					blg_portrait_hellenic = yes
 				}
 				OR = {
-					portrait_culture_group = arabic
-					portrait_culture_group = west_african
-					portrait_culture_group = east_african
-					portrait_culture_group = central_african
-					portrait_culture = coptic
+					blg_portrait_arabic = yes
+					blg_portrait_african = yes
 				}
 			}
 		}
 
 		layer = {
-			#"GFX_muslim_female_clothes_behind_early:c0"
 			"GFX_african_female_headgear_behind:c1"
-			#"GFX_muslim_female_clothes_early:c2"
 			"GFX_african_female_headgear_mid:c3"
 			"GFX_african_female_headgear:c5"
 		}

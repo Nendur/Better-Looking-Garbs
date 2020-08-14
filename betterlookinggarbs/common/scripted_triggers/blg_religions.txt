@@ -80,3 +80,117 @@ blg_religion_eastern_pagan = {
 		religion_openly_bon_or_reformed_trigger = yes
 	}
 }
+
+### Portrait override triggers:
+
+# African religion.
+blg_portrait_african_pagan = {
+	OR = {
+		portrait_religion = west_african_pagan
+		portrait_religion = west_african_pagan_reformed
+	}
+}
+
+# Catholic religion.
+blg_portrait_catholic = {
+	OR = {
+		portrait_religion = catholic
+		portrait_religion = cathar
+		portrait_religion = fraticelli
+		portrait_religion = waldensian
+		portrait_religion = lollard
+	}
+}
+
+# Christian religion.
+blg_portrait_christian = {
+	OR = {
+		portrait_religion = catholic
+		portrait_religion = cathar
+		portrait_religion = fraticelli
+		portrait_religion = waldensian
+		portrait_religion = lollard
+		portrait_religion = orthodox
+		portrait_religion = miaphysite
+		portrait_religion = monophysite
+		portrait_religion = bogomilist
+		portrait_religion = monothelite
+		portrait_religion = iconoclast
+		portrait_religion = paulician
+		portrait_religion = nestorian
+		portrait_religion = messalian
+	}
+}
+
+# Hellenic religion.
+blg_portrait_hellenic = {
+	OR = {
+		portrait_religion = hellenic_pagan
+		portrait_religion = hellenic_pagan_reformed
+	}
+}
+
+# Jewish religion.
+blg_portrait_jewish = {
+	OR = {
+		portrait_religion = jewish
+		portrait_religion = samaritan
+		portrait_religion = karaite
+	}
+}
+
+# Muslim religion.
+blg_portrait_muslim = {
+	OR = {
+		portrait_religion = sunni
+		portrait_religion = zikri
+		portrait_religion = yazidi
+		portrait_religion = ibadi
+		portrait_religion = kharijite
+		portrait_religion = shiite
+		portrait_religion = druze
+		portrait_religion = hurufi
+		portrait_religion = qarmatian
+	}
+}
+
+# Orthodox religions.
+blg_portrait_orthodox = {
+	OR = {
+		portrait_religion = orthodox
+		portrait_religion = miaphysite
+		portrait_religion = monophysite
+		portrait_religion = bogomilist
+		portrait_religion = monothelite
+		portrait_religion = iconoclast
+		portrait_religion = paulician
+		portrait_religion = nestorian
+		portrait_religion = messalian
+	}
+}
+
+# Tengri religion.
+blg_portrait_tengri = {
+	OR = {
+		portrait_religion = tengri_pagan
+		portrait_religion = tengri_pagan_reformed
+	}
+}
+
+# Zoroastrian group religions.
+blg_portrait_zoroastrian = {
+	OR = {
+		portrait_religion = zoroastrian
+		portrait_religion = mazdaki
+		portrait_religion = manichean
+		portrait_religion = khurmazta
+	}
+}
+
+# Zunist religion.
+blg_portrait_zun = {
+	OR = {
+		portrait_religion = zun_pagan
+		portrait_religion = zun_pagan_reformed
+	}
+}
