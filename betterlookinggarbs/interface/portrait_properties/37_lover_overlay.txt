@@ -20,7 +20,17 @@
 		}
 	}
 
-	2 = { # b - Society quest target
+	2 = { # b - Plotter
+		factor = 100
+		trigger = {
+			any_player = {
+				is_plot_target_of = ROOT
+				ROOT = { plot_is_known_by = PREV }
+			}
+		}
+	}
+
+	3 = { # c - Society quest target
 		factor = 100
 		trigger = {
 			any_player = {
@@ -30,35 +40,35 @@
 		}
 	}
 
-	3 = { # c - Rival
+	4 = { # d - Rival
 		factor = 100
 		trigger = {
 			any_player = { is_rival = PREV }
 		}
 	}
 
-	4 = { # d - Lover
+	5 = { # e - Lover
 		factor = 100
 		trigger = {
 			any_player = { is_lover = PREV }
 		}
 	}
 
-	5 = { # e - Friend
+	6 = { # f - Friend
 		factor = 100
 		trigger = {
 			any_player = { is_friend = PREV }
 		}
 	}
 
-	6 = { # f - Foe
+	7 = { # g - Foe
 		factor = 100
 		trigger = {
 			any_player = { is_foe = PREV }
 		}
 	}
 
-	7 = { # g - Ally
+	8 = { # h - Ally
 		factor = 100
 		trigger = {
 			any_player = { is_allied_with = PREV }

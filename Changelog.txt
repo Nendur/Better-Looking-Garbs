@@ -10,6 +10,8 @@ Changelog:
   Moved furniture artifacts to separate layer to only show on indoor backgrounds.
   Replacement for parrot to old-world parakeet.
   Meso-American headgear finally updated with tiered wargear.
+  Added overlay ring on known plotters against you. (black, your plot moved to dark purple)
+  Added Ihram clothing while on Hajj.
 
 08-07-2020
   More mount graphics with 8 horses, 8 dragons and 10 other animals.

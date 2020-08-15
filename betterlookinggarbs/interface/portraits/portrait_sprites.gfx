@@ -252,7 +252,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_lover_overlay"
 		texturefile = "gfx\\characters\\shared\\lover_overlay.dds"
-		noOfFrames = 8
+		noOfFrames = 9
 		norefcount = yes
 		can_be_lowres = yes
 	}
