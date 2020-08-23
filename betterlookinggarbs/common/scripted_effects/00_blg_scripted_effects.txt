@@ -1,4 +1,1719 @@
-evaluate_duel_result_score_effect = { # Refresh portrait trick.
+# Geographic region character diversity script.
+blg_regional_diversity = {
+	random_realm_province = {
+		limit = { NOT = { province = no } }
+
+		if = {
+			limit = { blg_region_england = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_english = no
+						blg_ethnicity_celtic = no
+						blg_ethnicity_norse = no
+					}
+					blg_set_ethnicity_english = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_brittania = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_celtic = no
+						NOT = { graphical_culture = norsegaelgfx }
+					}
+					blg_set_ethnicity_celtic = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_frisia = yes }
+			ROOT = {
+				blg_set_ethnicity_dutch = yes
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_germania = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_german = no
+						blg_ethnicity_dutch = no
+						blg_ethnicity_westslavic = no
+						NOT = { graphical_culture = saxongfx }
+					}
+					blg_set_ethnicity_german = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_francia = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_occitan = no
+						blg_ethnicity_dutch = no
+						NOR = {
+							graphical_culture = bretongfx
+							graphical_culture = basquegfx
+						}
+					}
+					random_list = {
+						80 = { blg_set_ethnicity_frankish = yes }
+						20 = { blg_set_ethnicity_occitan = yes }
+					}
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_iberia = yes }
+			ROOT = {
+				blg_set_ethnicity_iberian = yes
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_baltic = yes }
+			if = {
+				limit = { blg_region_scandinavia = yes }
+				ROOT = { blg_set_ethnicity_ugric = yes }
+			}
+			else = {
+				ROOT = { blg_set_ethnicity_baltic = yes }
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_scandinavia = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_ugric = no
+					}
+					blg_set_ethnicity_norse = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_russia = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_ugric = no
+					}
+					blg_set_ethnicity_eastslavic = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_italy = yes }
+			if = {
+				limit = {
+					blg_region_sicily = yes
+				}
+				ROOT = {
+					if = {
+						limit = {
+							blg_ethnicity_berber = no
+							NOT = { graphical_culture = andalusiangfx }
+						}
+						blg_set_ethnicity_sicilian = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						blg_ethnicity_lombard = no
+						NOR = {
+							graphical_culture = romangfx
+							graphical_culture = bohemiangfx 
+						}
+					}
+				}
+				ROOT = {
+					random_list = {
+						80 = { blg_set_ethnicity_italian = yes }
+						20 = { blg_set_ethnicity_lombard = yes }
+						10 = { blg_set_ethnicity_sicilian = yes }
+					}
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_balkan = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_southslavic = no
+						blg_ethnicity_byzantine = no
+						blg_ethnicity_romanobalkan = no
+						NOT = { graphical_culture = dalmatiangfx }
+					}
+					blg_set_ethnicity_southslavic = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_asia_minor = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_byzantine = no
+						blg_ethnicity_sogdian = no
+						NOR = {
+							graphical_culture = georgiangfx
+							graphical_culture = persiangfx
+							graphical_culture = kurdishgfx
+							graphical_culture = outremergfx
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								likes_muslims = yes
+								likes_mazdans = yes
+							}
+						}
+						blg_set_ethnicity_armenian = yes
+					}
+					else = {
+						blg_set_ethnicity_byzantine = yes
+					}
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_levant = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_levantine = no
+						NOR = {
+							graphical_culture = ashkenazigfx
+							graphical_culture = outremergfx
+						}
+					}
+					blg_set_ethnicity_levantine = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_arabia = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_levantine = no
+						blg_ethnicity_egyptian = no
+						NOR = {
+							graphical_culture = kurdishgfx
+							graphical_culture = outremergfx
+						}
+					}
+					blg_set_ethnicity_arabic = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_deccan = yes }
+			ROOT = {
+				blg_set_ethnicity_southindian = yes
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_india = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_indian = no
+						blg_ethnicity_southindian = no
+						NOT = { graphical_culture = assamesegfx }
+					}
+					blg_set_ethnicity_indian = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_persia = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_persian = no
+						blg_ethnicity_sogdian = no
+						NOR = {
+							graphical_culture = kurdishgfx
+							graphical_culture = georgiangfx
+						}
+					}
+					blg_set_ethnicity_persian = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_africa_north = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_egyptian = no
+						NOT = { graphical_culture = nubiangfx }
+					}
+					random_list = {
+						40 = { blg_set_ethnicity_berber = yes }
+						20 = { blg_set_ethnicity_egyptian = yes }
+						10 = { blg_set_ethnicity_arabic = yes }
+						10 = { blg_set_ethnicity_andalusian = yes }
+						20 = { blg_set_ethnicity_westafrican = yes }
+					}
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_africa_west = yes }
+			ROOT = {
+				blg_set_ethnicity_westafrican = yes
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_africa_central = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_african = no
+					}
+					blg_set_ethnicity_westafrican = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_africa_east = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_egyptian = no
+						blg_ethnicity_arabic = no
+						NOT = { graphical_culture = nubiangfx }
+					}
+					random_list = {
+						40 = { blg_set_ethnicity_east_african = yes }
+						10 = { blg_set_ethnicity_arabic = yes }
+						20 = { blg_set_ethnicity_nubian = yes }
+					}
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_steppe_west = yes }
+			ROOT = {
+				if = {
+					limit = {
+						NOR = {
+							graphical_culture = ugricgfx
+							graphical_culture = siberiangfx
+							graphical_culture = alangfx
+							graphical_culture = crimeangfx
+						}
+					}
+					random_list = {
+						30 = { blg_set_ethnicity_cuman = yes }
+						30 = { blg_set_ethnicity_steppe = yes }
+						20 = { blg_set_ethnicity_turkish = yes }
+						10 = { blg_set_ethnicity_sogdian = yes }
+					}
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_steppe_east = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_mongol = no
+						blg_ethnicity_chinese = no
+						NOT = { graphical_culture = siberiangfx }
+					}
+					blg_set_ethnicity_centralasian = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_tarim = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_centralasian = no
+						blg_ethnicity_chinese = no
+						NOR = {
+							graphical_culture = sogdiangfx
+							graphical_culture = tochariangfx
+						}
+					}
+					blg_set_ethnicity_sogdian = yes
+				}
+			}
+		}
+
+		else_if = {
+			limit = { blg_region_himalayas = yes }
+			ROOT = {
+				if = {
+					limit = {
+						blg_ethnicity_tibetan = no
+						blg_ethnicity_centralasian = no
+						NOT = { graphical_culture = sogdiangfx }
+					}
+					blg_set_ethnicity_tibetan = yes
+				}
+			}
+		}
+	}
+}
+
+# Spawned character processing.
+blg_character_processing = {
+	# Fix noculture generated characters.
+	if = {
+		limit= {
+			NOT = { gfx_culture_scope = { always = yes } }
+		}
+		set_graphical_culture = ROOT
+	}
+
+	# Hunnic headbinding for nobility only.
+	if = {
+		limit= {
+			blg_ethnicity_centralasian = yes
+		}
+		blg_set_ethnicity_centralasian = yes
+	}
+
+	# Add freckles to new characters.
+	random_list = {
+		2 = { add_trait = freckles_5 }
+		6 = { add_trait = freckles_4 }
+		7 = { add_trait = freckles }
+		7 = { add_trait = freckles_2 }
+		10 = { add_trait = freckles_3 }
+		4500 = {
+			modifier = {
+				factor = 0.01
+				blg_freckles_1 = yes
+			}
+			modifier = {
+				factor = 0.02
+				blg_freckles_2 = yes
+			}
+			modifier = {
+				factor = 0.04
+				blg_freckles_3 = yes
+			}
+			modifier = {
+				factor = 0.06
+				blg_freckles_4 = yes
+			}
+			modifier = {
+				factor = 0.08
+				blg_freckles_5 = yes
+			}
+			modifier = {
+				factor = 0.1
+				blg_freckles_6 = yes
+			}
+			modifier = {
+				factor = 0.2
+				blg_freckles_7 = yes
+			}
+			modifier = {
+				factor = 0.5
+				blg_freckles_8 = yes
+			}
+			modifier = {
+				factor = 0.75
+				blg_freckles_9 = yes
+			}
+		}
+	}
+}
+
+# Mixed children ethnicity selection.
+blg_child_mixed = {
+	#African
+	if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					OR = {
+						blg_ethnicity_westafrican = yes
+						blg_ethnicity_african = yes
+						graphical_culture = nubiangfx
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						blg_ethnicity_westafrican = yes
+						blg_ethnicity_african = yes
+						graphical_culture = nubiangfx
+					}
+				}
+			}
+		}
+		if = { #African-Eastern
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_arabic = yes
+							blg_ethnicity_egyptian = yes
+							blg_ethnicity_persian = yes
+							blg_ethnicity_sogdian = yes
+							graphical_culture = kurdishgfx
+							blg_ethnicity_levantine = yes
+							blg_ethnicity_byzantine = yes
+							graphical_culture = georgiangfx
+							blg_ethnicity_turkish = yes
+							blg_ethnicity_cuman = yes
+							blg_ethnicity_mongol = yes
+							blg_ethnicity_centralasian = yes
+							blg_ethnicity_chinese = yes
+							graphical_culture = tochariangfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_arabic = yes
+							blg_ethnicity_egyptian = yes
+							blg_ethnicity_persian = yes
+							blg_ethnicity_sogdian = yes
+							graphical_culture = kurdishgfx
+							blg_ethnicity_levantine = yes
+							blg_ethnicity_byzantine = yes
+							graphical_culture = georgiangfx
+							blg_ethnicity_turkish = yes
+							blg_ethnicity_cuman = yes
+							blg_ethnicity_mongol = yes
+							blg_ethnicity_centralasian = yes
+							blg_ethnicity_chinese = yes
+							graphical_culture = tochariangfx
+						}
+					}
+				}
+			}
+			if = { #West-African-Eastern
+				limit = {
+					OR = {
+						event_target:father = {
+							OR = {
+								blg_ethnicity_westafrican = yes
+								graphical_culture = nubiangfx
+							}
+						}
+						mother_even_if_dead = {
+							OR = {
+								blg_ethnicity_westafrican = yes
+								graphical_culture = nubiangfx
+							}
+						}
+					}
+				}
+				blg_set_ethnicity_east_african = yes
+			}
+			else_if = { #East-African-Eastern
+				limit = {
+					OR = {
+						event_target:father = {
+							blg_ethnicity_african = yes
+						}
+						mother_even_if_dead = {
+							blg_ethnicity_african = yes
+						}
+					}
+					OR = {
+						event_target:father = {
+							blg_ethnicity_african = no
+							blg_ethnicity_arabic = no
+							blg_ethnicity_egyptian = no
+						}
+						mother_even_if_dead = {
+							blg_ethnicity_african = no
+							blg_ethnicity_arabic = no
+							blg_ethnicity_egyptian = no
+						}
+					}
+				}
+				blg_set_ethnicity_egyptian = yes
+			}
+		}
+		else_if = { #African-Indian
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_indian = yes
+							blg_ethnicity_tibetan = yes
+							blg_ethnicity_mesoamerican = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_indian = yes
+							blg_ethnicity_tibetan = yes
+							blg_ethnicity_mesoamerican = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_southindian = yes
+		}
+		else_if = { #African-Iberian
+			limit = {
+				OR = {
+					event_target:father = {
+						blg_ethnicity_iberian = yes
+					}
+					mother_even_if_dead = {
+						blg_ethnicity_iberian = yes
+					}
+				}
+			}
+			blg_set_ethnicity_berber = yes
+		}
+		else_if = { #African-European
+			limit = {
+				OR = {
+					event_target:father = {
+						blg_ethnicity_african = no
+						blg_ethnicity_westafrican = no
+						blg_ethnicity_berber = no
+						blg_ethnicity_southindian = no
+						NOR = {
+							graphical_culture = nubiangfx
+							graphical_culture = khmergfx
+						}
+					}
+					mother_even_if_dead = {
+						blg_ethnicity_african = no
+						blg_ethnicity_westafrican = no
+						blg_ethnicity_berber = no
+						blg_ethnicity_southindian = no
+						NOR = {
+							graphical_culture = nubiangfx
+							graphical_culture = khmergfx
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_egyptian = yes
+		}
+	}
+
+	#South-Indian
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					blg_ethnicity_southindian = yes
+				}
+				mother_even_if_dead = {
+					blg_ethnicity_southindian = yes
+				}
+			}
+		}
+		if = { #South-Indian-Altaic
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_turkish = yes
+							blg_ethnicity_cuman = yes
+							blg_ethnicity_mongol = yes
+							blg_ethnicity_centralasian = yes
+							blg_ethnicity_chinese = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_turkish = yes
+							blg_ethnicity_cuman = yes
+							blg_ethnicity_mongol = yes
+							blg_ethnicity_centralasian = yes
+							blg_ethnicity_chinese = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_tibetan = yes
+		}
+		else_if = { #South-Indian-Other
+			limit = {
+				OR = {
+					event_target:father = {
+						blg_ethnicity_indian = no
+						blg_ethnicity_southindian = no
+						blg_ethnicity_tibetan = no
+						blg_ethnicity_arabic = no
+						blg_ethnicity_egyptian = no
+						blg_ethnicity_mesoamerican = no
+						NOT = { graphical_culture = khmergfx }
+					}
+					mother_even_if_dead = {
+						blg_ethnicity_indian = no
+						blg_ethnicity_southindian = no
+						blg_ethnicity_tibetan = no
+						blg_ethnicity_arabic = no
+						blg_ethnicity_egyptian = no
+						blg_ethnicity_mesoamerican = no
+						NOT = { graphical_culture = khmergfx }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						likes_indians = yes
+						likes_dravidians = yes
+						likes_tibetans = yes
+					}
+				}
+				blg_set_ethnicity_indian = yes
+			}
+			else = {
+				blg_set_ethnicity_indus = yes
+			}
+		}
+	}
+
+	#Indian
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					blg_ethnicity_indian = yes
+				}
+				mother_even_if_dead = {
+					blg_ethnicity_indian = yes
+				}
+			}
+		}
+		if = { #Indian-Mongolian
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_mongol = yes
+							blg_ethnicity_centralasian = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_mongol = yes
+							blg_ethnicity_centralasian = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_tibetan = yes
+		}
+		else_if = { #Indian-Turkic
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_turkish = yes
+							blg_ethnicity_cuman = yes
+							blg_ethnicity_chinese = yes
+							blg_ethnicity_ugric = yes
+							graphical_culture = magyargfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_turkish = yes
+							blg_ethnicity_cuman = yes
+							blg_ethnicity_chinese = yes
+							blg_ethnicity_ugric = yes
+							graphical_culture = magyargfx
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					blg_culture_chinese = yes
+				}
+				blg_set_ethnicity_mongol = yes
+			}
+			else = {
+				blg_set_ethnicity_centralasian = yes
+			}
+		}
+		else_if = { #Indian-Other
+			limit = {
+				OR = {
+					event_target:father = {
+						blg_ethnicity_indian = no
+						blg_ethnicity_persian = no
+						blg_ethnicity_tibetan = no
+						blg_ethnicity_arabic = no
+						blg_ethnicity_egyptian = no
+						blg_ethnicity_mesoamerican = no
+						NOT = { graphical_culture = khmergfx }
+					}
+					mother_even_if_dead = {
+						blg_ethnicity_indian = no
+						blg_ethnicity_persian = no
+						blg_ethnicity_tibetan = no
+						blg_ethnicity_arabic = no
+						blg_ethnicity_egyptian = no
+						blg_ethnicity_mesoamerican = no
+						NOT = { graphical_culture = khmergfx }
+					}
+				}
+			}
+			blg_set_ethnicity_persian = yes
+		}
+	}
+
+	#Tibetan
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					OR = {
+						blg_ethnicity_tibetan = yes
+						graphical_culture = khmergfx
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						blg_ethnicity_tibetan = yes
+						graphical_culture = khmergfx
+					}
+				}
+			}
+		}
+		if = { #Tibetan-Turkic
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_turkish = yes
+							blg_ethnicity_cuman = yes
+							blg_ethnicity_ugric = yes
+							graphical_culture = magyargfx
+							blg_ethnicity_chinese = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_turkish = yes
+							blg_ethnicity_cuman = yes
+							blg_ethnicity_ugric = yes
+							graphical_culture = magyargfx
+							blg_ethnicity_chinese = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_mongol = yes
+		}
+		else_if = { #Tibetan-European
+			limit = {
+				OR = {
+					event_target:father = {
+						blg_ethnicity_tibetan = no
+						blg_ethnicity_arabic = no
+						blg_ethnicity_egyptian = no
+						blg_ethnicity_persian = no
+						blg_ethnicity_sogdian = no
+						blg_ethnicity_mongol = no
+						blg_ethnicity_centralasian = no
+						blg_ethnicity_mesoamerican = no
+						NOR = {
+							graphical_culture = kurdishgfx
+							graphical_culture = khmergfx
+						}
+					}
+					mother_even_if_dead = {
+						blg_ethnicity_tibetan = no
+						blg_ethnicity_arabic = no
+						blg_ethnicity_egyptian = no
+						blg_ethnicity_persian = no
+						blg_ethnicity_sogdian = no
+						blg_ethnicity_mongol = no
+						blg_ethnicity_centralasian = no
+						blg_ethnicity_mesoamerican = no
+						NOR = {
+							graphical_culture = kurdishgfx
+							graphical_culture = khmergfx
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_persian = yes
+		}
+	}
+
+	#Arabic
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					OR = {
+						blg_ethnicity_arabic = yes
+						blg_ethnicity_egyptian = yes
+						blg_ethnicity_berber = yes
+						blg_ethnicity_mesoamerican = yes
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						blg_ethnicity_arabic = yes
+						blg_ethnicity_egyptian = yes
+						blg_ethnicity_berber = yes
+						blg_ethnicity_mesoamerican = yes
+					}
+				}
+			}
+		}
+		if = { #Arabic-Altaic
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_turkish = yes
+							blg_ethnicity_mongol = yes
+							blg_ethnicity_centralasian = yes
+							graphical_culture = cumangfx
+							graphical_culture = siberiangfx
+							blg_ethnicity_chinese = yes
+							graphical_culture = tochariangfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_turkish = yes
+							blg_ethnicity_mongol = yes
+							blg_ethnicity_centralasian = yes
+							graphical_culture = cumangfx
+							graphical_culture = siberiangfx
+							blg_ethnicity_chinese = yes
+							graphical_culture = tochariangfx
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_steppe = yes
+		}
+		else_if = { #Arabic-Eastern-European
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_byzantine = yes
+							graphical_culture = georgiangfx
+							blg_ethnicity_eastslavic = yes
+							blg_ethnicity_westslavic = yes
+							blg_ethnicity_southslavic = yes
+							blg_ethnicity_romanobalkan = yes
+							graphical_culture = magyargfx
+							blg_ethnicity_ugric = yes
+							graphical_culture = ashkenazigfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_byzantine = yes
+							graphical_culture = georgiangfx
+							blg_ethnicity_eastslavic = yes
+							blg_ethnicity_westslavic = yes
+							blg_ethnicity_southslavic = yes
+							blg_ethnicity_romanobalkan = yes
+							graphical_culture = magyargfx
+							blg_ethnicity_ugric = yes
+							graphical_culture = ashkenazigfx
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_levantine = yes
+		}
+		else_if = { #Arabic-European
+			limit = {
+				OR = {
+					event_target:father = {
+						blg_ethnicity_arabic = no
+						blg_ethnicity_egyptian = no
+						blg_ethnicity_levantine = no
+						blg_ethnicity_berber = no
+						blg_ethnicity_persian = no
+						blg_ethnicity_sogdian = no
+						blg_ethnicity_mesoamerican = no
+						NOT = {
+							graphical_culture = indusgfx
+							graphical_culture = kurdishgfx
+							graphical_culture = steppegfx
+						}
+					}
+					mother_even_if_dead = {
+						blg_ethnicity_arabic = no
+						blg_ethnicity_egyptian = no
+						blg_ethnicity_levantine = no
+						blg_ethnicity_berber = no
+						blg_ethnicity_persian = no
+						blg_ethnicity_sogdian = no
+						blg_ethnicity_mesoamerican = no
+						NOT = {
+							graphical_culture = indusgfx
+							graphical_culture = kurdishgfx
+							graphical_culture = steppegfx
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_andalusian = yes
+		}
+	}
+
+	#Steppes
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					OR = {
+						blg_ethnicity_cuman = yes
+						blg_ethnicity_mongol = yes
+						blg_ethnicity_centralasian = yes
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						blg_ethnicity_cuman = yes
+						blg_ethnicity_mongol = yes
+						blg_ethnicity_centralasian = yes
+					}
+				}
+			}
+		}
+		if = { #Mongol-Persian
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_persian = yes
+							graphical_culture = kurdishgfx
+							graphical_culture = tochariangfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_persian = yes
+							graphical_culture = kurdishgfx
+							graphical_culture = tochariangfx
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_sogdian = yes
+		}
+		else_if = { #Mongol-European
+			limit = {
+				OR = {
+					event_target:father = {
+						blg_ethnicity_turkish = no
+						blg_ethnicity_cuman = no
+						blg_ethnicity_mongol = no
+						blg_ethnicity_centralasian = no
+						blg_ethnicity_levantine = no
+						blg_ethnicity_sogdian = no
+						blg_ethnicity_chinese = no
+					}
+					mother_even_if_dead = {
+						blg_ethnicity_turkish = no
+						blg_ethnicity_cuman = no
+						blg_ethnicity_mongol = no
+						blg_ethnicity_centralasian = no
+						blg_ethnicity_levantine = no
+						blg_ethnicity_sogdian = no
+						blg_ethnicity_chinese = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						likes_indians = yes
+						likes_dravidians = yes
+						likes_tibetans = yes
+						blg_culture_chinese = yes
+					}
+				}
+				blg_set_ethnicity_tocharian = yes
+			}
+			else = {
+				blg_set_ethnicity_turkish = yes
+			}
+		}
+	}
+
+	#Levant/Persian
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					OR = {
+						blg_ethnicity_levantine = yes
+						blg_ethnicity_persian = yes
+						blg_ethnicity_sogdian = yes
+						graphical_culture = kurdishgfx
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						blg_ethnicity_levantine = yes
+						blg_ethnicity_persian = yes
+						blg_ethnicity_sogdian = yes
+						graphical_culture = kurdishgfx
+					}
+				}
+			}
+		}
+		if = { #Levant-Byzantine
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_byzantine = yes
+							blg_ethnicity_southslavic = yes
+							blg_ethnicity_romanobalkan = yes
+							graphical_culture = magyargfx
+							graphical_culture = celtiberiangfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_byzantine = yes
+							blg_ethnicity_southslavic = yes
+							blg_ethnicity_romanobalkan = yes
+							graphical_culture = magyargfx
+							graphical_culture = celtiberiangfx
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_armenian = yes
+		}
+		else_if = { #Levant-Southern
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_italian = yes
+							blg_ethnicity_iberian = yes
+							blg_ethnicity_occitan = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_italian = yes
+							blg_ethnicity_iberian = yes
+							blg_ethnicity_occitan = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_sicilian = yes
+		}
+		else_if = { #Levant-European
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_english = yes
+							blg_ethnicity_frankish = yes
+							blg_ethnicity_german = yes
+							blg_ethnicity_celtic = yes
+							blg_ethnicity_dutch = yes
+							blg_ethnicity_lombard = yes
+							blg_ethnicity_norse = yes
+							blg_ethnicity_eastslavic = yes
+							blg_ethnicity_westslavic = yes
+							blg_ethnicity_ugric = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_english = yes
+							blg_ethnicity_frankish = yes
+							blg_ethnicity_german = yes
+							blg_ethnicity_celtic = yes
+							blg_ethnicity_dutch = yes
+							blg_ethnicity_lombard = yes
+							blg_ethnicity_norse = yes
+							blg_ethnicity_eastslavic = yes
+							blg_ethnicity_westslavic = yes
+							blg_ethnicity_ugric = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_ashkenazi = yes
+		}
+	}
+
+	#Byzantine
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					OR = {
+						blg_ethnicity_byzantine = yes
+						graphical_culture = georgiangfx
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						blg_ethnicity_byzantine = yes
+						graphical_culture = georgiangfx
+					}
+				}
+			}
+		}
+		if = { #Byzantine-Eastern
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_eastslavic = yes
+							blg_ethnicity_westslavic = yes
+							blg_ethnicity_southslavic = yes
+							graphical_culture = dalmatiangfx
+							graphical_culture = magyargfx
+							graphical_culture = avargfx
+							blg_ethnicity_ugric = yes
+							blg_ethnicity_chinese = yes
+							graphical_culture = celtiberiangfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_eastslavic = yes
+							blg_ethnicity_westslavic = yes
+							blg_ethnicity_southslavic = yes
+							graphical_culture = dalmatiangfx
+							graphical_culture = magyargfx
+							graphical_culture = avargfx
+							blg_ethnicity_ugric = yes
+							blg_ethnicity_chinese = yes
+							graphical_culture = celtiberiangfx
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_romanobalkan = yes
+		}
+		else_if = { #Byzantine-Southern
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_italian = yes
+							blg_ethnicity_iberian = yes
+							blg_ethnicity_occitan = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_italian = yes
+							blg_ethnicity_iberian = yes
+							blg_ethnicity_occitan = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_basque = yes
+		}
+		else_if = { #Byzantine-European
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_english = yes
+							blg_ethnicity_frankish = yes
+							blg_ethnicity_german = yes
+							blg_ethnicity_celtic = yes
+							blg_ethnicity_dutch = yes
+							blg_ethnicity_lombard = yes
+							blg_ethnicity_norse = yes
+							graphical_culture = ashkenazigfx
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_english = yes
+							blg_ethnicity_frankish = yes
+							blg_ethnicity_german = yes
+							blg_ethnicity_celtic = yes
+							blg_ethnicity_dutch = yes
+							blg_ethnicity_lombard = yes
+							blg_ethnicity_norse = yes
+							graphical_culture = ashkenazigfx
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_italian = yes
+		}
+	}
+
+	#Western Steppe
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					OR = {
+						blg_ethnicity_turkish = yes
+						graphical_culture = tochariangfx
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						blg_ethnicity_turkish = yes
+						graphical_culture = tochariangfx
+					}
+				}
+			}
+		}
+		if = { #Steppe-Northern
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_westslavic = yes
+							blg_ethnicity_ugric = yes
+							blg_ethnicity_norse = yes
+							blg_ethnicity_english = yes
+							blg_ethnicity_dutch = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_westslavic = yes
+							blg_ethnicity_ugric = yes
+							blg_ethnicity_norse = yes
+							blg_ethnicity_english = yes
+							blg_ethnicity_dutch = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_eastslavic = yes
+		}
+		else_if = { #Steppe-Western
+			limit = {
+				OR = {
+					event_target:father = {
+						blg_ethnicity_turkish = no
+						blg_ethnicity_eastslavic = no
+						blg_ethnicity_chinese = no
+						NOR = {
+							graphical_culture = tochariangfx
+							graphical_culture = magyargfx
+						}
+					}
+					mother_even_if_dead = {
+						blg_ethnicity_turkish = no
+						blg_ethnicity_eastslavic = no
+						blg_ethnicity_chinese = no
+						NOR = {
+							graphical_culture = tochariangfx
+							graphical_culture = magyargfx
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_magyar = yes
+		}
+	}
+
+	#Southernslavic
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					OR = {
+						blg_ethnicity_southslavic = yes
+						blg_ethnicity_romanobalkan = yes
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						blg_ethnicity_southslavic = yes
+						blg_ethnicity_romanobalkan = yes
+					}
+				}
+			}
+		}
+		if = { #Southernslavic-Southern
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_iberian = yes
+							blg_ethnicity_occitan = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_iberian = yes
+							blg_ethnicity_occitan = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_italian = yes
+		}
+		else_if = { #Southernslavic-Western
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_norse = yes
+							blg_ethnicity_ugric = yes
+							blg_ethnicity_english = yes
+							blg_ethnicity_dutch = yes
+							blg_ethnicity_frankish = yes
+							blg_ethnicity_celtic = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_norse = yes
+							blg_ethnicity_ugric = yes
+							blg_ethnicity_english = yes
+							blg_ethnicity_dutch = yes
+							blg_ethnicity_frankish = yes
+							blg_ethnicity_celtic = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_westslavic = yes
+		}
+	}
+
+	#Southern
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					OR = {
+						blg_ethnicity_iberian = yes
+						blg_ethnicity_italian = yes
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						blg_ethnicity_iberian = yes
+						blg_ethnicity_italian = yes
+					}
+				}
+			}
+		}
+		if = { #Southern-Other
+			limit = {
+				OR = {
+					event_target:father = {
+						blg_ethnicity_iberian = no
+						blg_ethnicity_italian = no
+						blg_ethnicity_occitan = no
+						blg_ethnicity_lombard = no
+						blg_ethnicity_chinese = no
+					}
+					mother_even_if_dead = {
+						blg_ethnicity_iberian = no
+						blg_ethnicity_italian = no
+						blg_ethnicity_occitan = no
+						blg_ethnicity_lombard = no
+						blg_ethnicity_chinese = no
+					}
+				}
+			}
+			blg_set_ethnicity_occitan = yes
+		}
+	}
+
+	#Western
+	else_if = {
+		limit = {
+			OR = {
+				event_target:father = {
+					OR = {
+						blg_ethnicity_english = yes
+						blg_ethnicity_dutch = yes
+						blg_ethnicity_frankish = yes
+						blg_ethnicity_german = yes
+						blg_ethnicity_lombard = yes
+					}
+				}
+				mother_even_if_dead = {
+					OR = {
+						blg_ethnicity_english = yes
+						blg_ethnicity_dutch = yes
+						blg_ethnicity_frankish = yes
+						blg_ethnicity_german = yes
+						blg_ethnicity_lombard = yes
+					}
+				}
+			}
+		}
+		if = { #Western-Slavic/Ugric
+			limit = {
+				OR = {
+					event_target:father = {
+						OR = {
+							blg_ethnicity_eastslavic = yes
+							graphical_culture = magyargfx
+							blg_ethnicity_ugric = yes
+						}
+					}
+					mother_even_if_dead = {
+						OR = {
+							blg_ethnicity_eastslavic = yes
+							graphical_culture = magyargfx
+							blg_ethnicity_ugric = yes
+						}
+					}
+				}
+			}
+			blg_set_ethnicity_westslavic = yes
+		}
+		else_if = { #Western-Celtic
+			limit = {
+				OR = {
+					event_target:father = { graphical_culture = celticgfx }
+					mother_even_if_dead = { graphical_culture = celticgfx }
+				}
+			}
+			blg_set_ethnicity_celtic = yes
+		}
+		else_if = { #Western-Norse
+			limit = {
+				NOR = {
+					event_target:father = {
+						graphical_culture = normangfx
+					}
+					mother_even_if_dead = {
+						graphical_culture = normangfx
+					}
+				}
+				OR = {
+					event_target:father = {
+						blg_ethnicity_norse = yes
+					}
+					mother_even_if_dead = {
+						blg_ethnicity_norse = yes
+					}
+				}
+			}
+			blg_set_ethnicity_english = yes
+		}
+	}
+}
+
+# Child ethnicity changes from cultural upbringing.
+blg_child_upbringing = {
+	if = {
+		limit= {
+			blg_ethnicity_centralasian = yes
+		}
+		blg_set_ethnicity_centralasian = yes
+	}
+
+	if = {
+		limit = { has_game_rule = { name = blg_child_birth value = on } }
+
+		#Norse/English
+		if = {
+			limit = {
+				OR = {
+					blg_ethnicity_english = yes
+					blg_ethnicity_norse = yes
+					blg_ethnicity_dutch = yes
+				}
+			}
+			blg_set_ethnicity_western = yes
+		}
+
+		#Byzantine
+		else_if = {
+			limit = {
+				blg_ethnicity_byzantine = yes
+			}
+			blg_set_ethnicity_byzantine = yes
+		}
+
+		#Celtic
+		else_if = {
+			limit = {
+				blg_ethnicity_celtic = yes
+			}
+			blg_set_ethnicity_celtic = yes
+		}
+
+		#East African
+		else_if = {
+			limit = {
+				blg_ethnicity_african = yes
+			}
+			blg_set_ethnicity_east_african = yes
+		}
+
+		#Egyptian
+		else_if = {
+			limit = {
+				blg_ethnicity_egyptian = yes
+			}
+			blg_set_ethnicity_egyptian = yes
+		}
+
+		#Frankish
+		else_if = {
+			limit = {
+				blg_ethnicity_frankish = yes
+			}
+			blg_set_ethnicity_frankish = yes
+		}
+
+		#German
+		else_if = {
+			limit = {
+				blg_ethnicity_german = yes
+			}
+			blg_set_ethnicity_german = yes
+		}
+
+		#Indian
+		else_if = {
+			limit = {
+				blg_ethnicity_southindian = yes
+			}
+			blg_set_ethnicity_southindian = yes
+		}
+
+		#Italian
+		else_if = {
+			limit = {
+				blg_ethnicity_italian = yes
+			}
+			blg_set_ethnicity_italian = yes
+		}
+
+		#Levantine
+		else_if = {
+			limit = {
+				blg_ethnicity_levantine = yes
+			}
+			blg_set_ethnicity_levantine = yes
+		}
+
+		#Lombard
+		else_if = {
+			limit = {
+				blg_ethnicity_lombard = yes
+			}
+			blg_set_ethnicity_lombard = yes
+		}
+
+		#Mongol
+		else_if = {
+			limit = {
+				blg_ethnicity_mongol = yes
+			}
+			blg_set_ethnicity_mongol = yes
+		}
+
+		#Persian
+		else_if = {
+			limit = {
+				blg_ethnicity_persian = yes
+			}
+			blg_set_ethnicity_persian = yes
+		}
+
+		#Steppe Iranians
+		else_if = {
+			limit = {
+				blg_ethnicity_sogdian = yes
+			}
+			blg_set_ethnicity_sogdian = yes
+		}
+
+		#South-Slavic
+		else_if = {
+			limit = {
+				blg_ethnicity_southslavic = yes
+			}
+			blg_set_ethnicity_southslavic = yes
+		}
+
+		#Tibetan
+		else_if = {
+			limit = {
+				blg_ethnicity_tibetan = yes
+			}
+			blg_set_ethnicity_tibetan = yes
+		}
+
+		#Turkish
+		else_if = {
+			limit = {
+				blg_ethnicity_turkish = yes
+			}
+			blg_set_ethnicity_turkish = yes
+		}
+
+		#West African
+		else_if = {
+			limit = {
+				blg_ethnicity_westafrican = yes
+			}
+			blg_set_ethnicity_westafrican = yes
+		}
+
+		#West-Slavic
+		else_if = {
+			limit = {
+				blg_ethnicity_westslavic = yes
+			}
+			blg_set_ethnicity_westslavic = yes
+		}
+	}
+}
+
+# Append portrait refresh trick to duel events.
+evaluate_duel_result_score_effect = {
 	event_target:combatant_1 = {
 		remove_trait = blgspawn
 	}
@@ -7,6 +1722,7 @@ evaluate_duel_result_score_effect = { # Refresh portrait trick.
 	}
 }
 
+# Append bear setup to creature duel.
 spawn_creature_champion_effect = { # Too messy with bear clothes.
 	new_character = {
 		set_graphical_culture = bear

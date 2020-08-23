@@ -219,6 +219,17 @@ blg_headgear_military = {
 	}
 }
 
+# More common to cover hair.
+blg_headgear_covered = {
+	true_religion_scope = {
+		OR = {
+			likes_muslims = yes
+			likes_jews = yes
+			likes_mazdans = yes
+		}
+	}
+}
+
 ### Clothes:
 
 # Dress like royalty.

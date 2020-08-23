@@ -8,25 +8,7 @@ targetted_decisions = {
 		from_potential = {}
 
 		potential = {
-			NOR = {
-				graphical_culture = horsegfx
-				graphical_culture = catgfx
-				graphical_culture = hedgehoggfx
-				graphical_culture = duckgfx
-				graphical_culture = doggfx
-				graphical_culture = elephantgfx
-				graphical_culture = dragongfx
-				graphical_culture = redpandagfx
-				graphical_culture = beargfx
-				graphical_culture = polarbeargfx
-				graphical_culture = blackbeargfx
-				graphical_culture = hipculturegfx
-				graphical_culture = ruingfx
-				graphical_culture = giantgfx
-				graphical_culture = cotfgfx
-				graphical_culture = islandergfx
-				graphical_culture = sloadgfx
-			}
+			blg_ethnicity_static = no
 		}
 
 		allow = {

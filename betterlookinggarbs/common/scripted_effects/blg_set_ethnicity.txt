@@ -1,0 +1,904 @@
+### Set ethnicity to the specified culture.
+
+blg_set_ethnicity_andalusian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = andalusiangfx }
+		}
+		set_graphical_culture = andalusian_arabic
+	}
+}
+
+blg_set_ethnicity_arabic = {
+	if = {
+		limit = {
+			blg_ethnicity_arabic = no
+		}
+		set_graphical_culture = bedouin_arabic
+	}
+}
+
+blg_set_ethnicity_armenian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = georgiangfx }
+		}
+		set_graphical_culture = armenian
+	}
+}
+
+blg_set_ethnicity_ashkenazi = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = ashkenazigfx }
+		}
+		set_graphical_culture = ashkenazi
+	}
+}
+
+blg_set_ethnicity_baltic = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = balticgfx }
+		}
+		set_graphical_culture = lithuanian
+	}
+}
+
+blg_set_ethnicity_basque = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = basquegfx }
+		}
+		set_graphical_culture = basque
+	}
+}
+
+blg_set_ethnicity_bear = {
+	if = {
+		limit = { location = { blg_region_polar = yes } }
+		set_graphical_culture = polar_bear
+	}
+	else_if = {
+		limit = { location = { blg_region_asia = yes } }
+		set_graphical_culture = black_bear
+	}
+	else = {
+		set_graphical_culture = bear
+	}
+}
+
+blg_set_ethnicity_berber = {
+	if = {
+		limit = {
+			blg_ethnicity_berber = no
+		}
+		set_graphical_culture = maghreb_arabic # Change for SWMH
+	}
+}
+
+blg_set_ethnicity_byzantine = {
+	if = {
+		limit = {
+			OR = {
+				likes_latino_iberians = yes
+				blg_culture_middleeast = yes
+				blg_culture_israelite = yes
+			}
+		}
+		blg_set_ethnicity_sicilian = yes
+	}
+	if = {
+		limit = {
+			NOR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = hellenicgfx
+			}
+		}
+		set_graphical_culture = greek
+	}
+}
+
+blg_set_ethnicity_celtic = {
+	if = {
+		limit = {
+			culture = irish
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = celticgfx }
+			}
+			set_graphical_culture = irish
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				blg_culture_scottish = yes
+				blg_culture_saxon = yes
+				culture_group = north_germanic
+				culture_group = baltic
+				culture_group = finno_ugric
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = celticgfx }
+			}
+			set_graphical_culture = scottish
+		}
+	}
+	else_if = {
+		limit = {
+			NOR = {
+				graphical_culture = bretongfx
+				graphical_culture = romanobritishgfx
+			}
+		}
+		set_graphical_culture = welsh
+	}
+}
+
+blg_set_ethnicity_centralasian = {
+	if = {
+		limit = {
+			OR = {
+				blg_ethnicity_centralasian = no
+				AND = {
+					graphical_culture = hunnicgfx
+					is_lowborn = yes
+				}
+			}
+		}
+		set_graphical_culture = uyghur
+	}
+}
+
+blg_set_ethnicity_cuman = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = cumangfx }
+		}
+		set_graphical_culture = cuman
+	}
+}
+
+blg_set_ethnicity_dutch = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_saxon = yes
+				blg_religion_pagan = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = saxongfx }
+			}
+			set_graphical_culture = frisian
+		}
+	}
+	else_if = {
+		limit = { blg_ethnicity_dutch = no }
+		set_graphical_culture = dutch
+	}
+}
+
+blg_set_ethnicity_east_african = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_somali = yes
+				likes_muslims = yes
+				blg_culture_middleeast = yes
+				likes_altaics = yes
+				likes_indians = yes
+				likes_dravidians = yes
+				likes_tibetans = yes
+				blg_culture_chinese = yes
+				likes_latino_iberians = yes
+				likes_balto_slavics = yes
+				likes_finno_ugrics = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = somaligfx }
+			}
+			set_graphical_culture = somali
+		}
+	}
+	if = {
+		limit = {
+			NOT = { graphical_culture = africangfx }
+		}
+		set_graphical_culture = ethiopian
+	}
+}
+
+blg_set_ethnicity_eastslavic = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = easternslavicgfx }
+		}
+		set_graphical_culture = russian
+	}
+}
+
+blg_set_ethnicity_egyptian = {
+	if = {
+		limit = {
+			OR = {
+				likes_byzantines = yes
+				blg_culture_african = yes
+				blg_culture_israelite = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = copticgfx }
+			}
+			set_graphical_culture = coptic
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = egyptiangfx }
+		}
+		set_graphical_culture = egyptian_arabic
+	}
+}
+
+blg_set_ethnicity_english = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_saxon = yes
+				likes_celts = yes
+				blg_religion_pagan = yes
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					graphical_culture = saxongfx
+					graphical_culture = norsegaelgfx
+				}
+			}
+			set_graphical_culture = saxon
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = englishgfx }
+		}
+		set_graphical_culture = english
+	}
+}
+
+blg_set_ethnicity_frankish = {
+	if = {
+		limit = {
+			OR = {
+				culture = outremer
+				blg_culture_italian = yes
+				likes_byzantines = yes
+				blg_culture_middleeast = yes
+				likes_altaics = yes
+				blg_culture_african = yes
+				blg_culture_israelite = yes
+				likes_indians = yes
+				likes_dravidians = yes
+				blg_culture_chinese = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = outremergfx }
+			}
+			set_graphical_culture = outremer
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = frankishgfx }
+		}
+		set_graphical_culture = frankish
+	}
+}
+
+blg_set_ethnicity_german = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_france = yes
+				blg_culture_middleeast = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = oldfrankishgfx }
+			}
+			set_graphical_culture = old_frankish
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = germangfx }
+		}
+		set_graphical_culture = german
+	}
+}
+
+blg_set_ethnicity_gothic = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = crimeangfx }
+		}
+		set_graphical_culture = crimean_gothic
+	}
+}
+
+blg_set_ethnicity_iberian = {
+	if = {
+		limit = {
+			blg_ethnicity_iberian = no
+		}
+		if = {
+			limit = {
+				OR = {
+					likes_christians = yes
+					blg_culture_france = yes
+					blg_culture_italian = yes
+					likes_germanics = yes
+				}
+			}
+			set_graphical_culture = castillan
+		}
+		else = {
+			set_graphical_culture = andalusian_arabic
+		}
+	}
+}
+
+blg_set_ethnicity_indian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = indiangfx }
+		}
+		set_graphical_culture = hindustani
+	}
+}
+
+blg_set_ethnicity_indus = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = indusgfx }
+		}
+		set_graphical_culture = panjabi
+	}
+}
+
+blg_set_ethnicity_italian = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_roman = yes
+				blg_culture_france = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = romangfx }
+			}
+			set_graphical_culture = roman
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture = dalmatian
+				likes_balto_slavics = yes
+				likes_finno_ugrics = yes
+				likes_altaics = yes
+				likes_mesoamericans = yes
+				blg_culture_israelite = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = dalmatiangfx }
+			}
+			set_graphical_culture = dalmatian
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = italiangfx }
+		}
+		set_graphical_culture = italian
+	}
+}
+
+blg_set_ethnicity_levantine = {
+	if = {
+		limit = {
+			OR = {
+				likes_byzantines = yes
+				blg_culture_israelite = yes
+				blg_culture_african = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = semitegfx }
+			}
+			set_graphical_culture = assyrian
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = levantinegfx }
+		}
+		set_graphical_culture = levantine_arabic
+	}
+}
+
+blg_set_ethnicity_lombard = {
+	if = {
+		limit = {
+			OR = {
+				culture = lombard
+				blg_culture_italian = yes
+				likes_byzantines = yes
+				blg_culture_middleeast = yes
+				blg_culture_israelite = yes
+				blg_culture_african = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = lombardgfx }
+			}
+			set_graphical_culture = lombard
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = visigothgfx }
+		}
+		set_graphical_culture = suebi
+	}
+}
+
+blg_set_ethnicity_magyar = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = magyargfx }
+		}
+		set_graphical_culture = hungarian
+	}
+}
+
+blg_set_ethnicity_mongol = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_chinese = yes
+				blg_culture_middleeast = yes
+				likes_byzantines = yes
+				likes_germanics = yes
+				likes_latino_iberians = yes
+				likes_balto_slavics = yes
+				likes_finno_ugrics = yes
+				likes_celts = yes
+				likes_indians = yes
+				likes_dravidians = yes
+				blg_culture_israelite = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = khitangfx }
+			}
+			set_graphical_culture = khitan
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = mongolgfx }
+		}
+		set_graphical_culture = mongol
+	}
+}
+
+blg_set_ethnicity_norman = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = normangfx }
+		}
+		set_graphical_culture = norman
+	}
+}
+
+blg_set_ethnicity_norse = {
+	if = {
+		limit = {
+			NOR = {
+				graphical_culture = norsegfx
+				graphical_culture = norsegaelgfx
+			}
+		}
+		set_graphical_culture = norse
+	}
+}
+
+blg_set_ethnicity_nubian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = nubiangfx }
+		}
+		set_graphical_culture = nubian
+	}
+}
+
+blg_set_ethnicity_occitan = {
+	if = {
+		limit = {
+			blg_ethnicity_occitan = no
+		}
+		set_graphical_culture = occitan
+	}
+}
+
+blg_set_ethnicity_persian = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_afghan = yes
+				likes_indians = yes
+				likes_dravidians = yes
+				likes_tibetans = yes
+				blg_culture_chinese = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = afghangfx }
+			}
+			set_graphical_culture = afghan
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = persiangfx }
+		}
+		set_graphical_culture = persian
+	}
+}
+
+blg_set_ethnicity_romanobalkan = {
+	if = {
+		limit = {
+			blg_ethnicity_romanobalkan = no
+		}
+		set_graphical_culture = romanian
+	}
+}
+
+blg_set_ethnicity_sicilian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = siciliangfx }
+		}
+		set_graphical_culture = sicilian
+	}
+}
+
+blg_set_ethnicity_sogdian = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_sogdian = yes
+				likes_altaics = yes
+				likes_indians = yes
+				likes_dravidians = yes
+				likes_tibetans = yes
+				blg_culture_chinese = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = sogdiangfx }
+			}
+			set_graphical_culture = sogdian
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = alangfx }
+		}
+		set_graphical_culture = alan
+	}
+}
+
+blg_set_ethnicity_somali = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = somaligfx }
+		}
+		set_graphical_culture = somali
+	}
+}
+
+blg_set_ethnicity_southindian = {
+	if = {
+		limit = {
+			OR = {
+				likes_indians = yes
+				likes_latino_iberians = yes
+				likes_germanics = yes
+				likes_celts = yes
+				likes_balto_slavics = yes
+				likes_finno_ugrics = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = centralasiangfx }
+			}
+			set_graphical_culture = marathi
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = southindiangfx }
+		}
+		set_graphical_culture = telugu
+	}
+}
+
+blg_set_ethnicity_southslavic = {
+	if = {
+		limit = {
+			OR = {
+				culture = croatian
+				culture = bosnian
+				culture = polish
+				culture = pommeranian
+				culture_group = east_slavic
+				culture_group = baltic
+				likes_germanics = yes
+				likes_celts = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = croatsouthslavicgfx }
+			}
+			set_graphical_culture = croatian
+		}
+	}
+	else_if = {
+		limit = {
+			year >= 950
+			OR = {
+				likes_finno_ugrics = yes
+				likes_altaics = yes
+				blg_culture_chinese = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = magyargfx }
+			}
+			set_graphical_culture = hungarian
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = serbsouthslavicgfx }
+		}
+		set_graphical_culture = serbian
+	}
+}
+
+blg_set_ethnicity_steppe = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = steppegfx }
+		}
+		set_graphical_culture = khazar
+	}
+}
+
+blg_set_ethnicity_tibetan = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_middleeast = yes
+				likes_indians = yes
+				likes_dravidians = yes
+				likes_latino_iberians = yes
+				likes_germanics = yes
+				likes_celts = yes
+				likes_balto_slavics = yes
+				likes_finno_ugrics = yes
+				likes_byzantines = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = assamesegfx }
+			}
+			set_graphical_culture = assamese
+		}
+	}
+	else_if = {
+		limit = {
+			blg_culture_chinese = yes
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = tangutgfx }
+			}
+			set_graphical_culture = tangut
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = bodpagfx }
+		}
+		set_graphical_culture = bodpa
+	}
+}
+
+blg_set_ethnicity_tocharian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = tochariangfx }
+		}
+		set_graphical_culture = tocharian
+	}
+}
+
+blg_set_ethnicity_turkish = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_central_asian = yes
+				likes_mesoamericans = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = pecheneggfx }
+			}
+			set_graphical_culture = pecheneg
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				likes_byzantines = yes
+				likes_germanics = yes
+				likes_latino_iberians = yes
+				likes_balto_slavics = yes
+				likes_celts = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = avargfx }
+			}
+			set_graphical_culture = avar
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = turkishgfx }
+		}
+		set_graphical_culture = turkish
+	}
+}
+
+blg_set_ethnicity_ugric = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = ugricgfx }
+		}
+		set_graphical_culture = finnish
+	}
+}
+
+blg_set_ethnicity_westafrican = {
+	if = {
+		limit = {
+			culture_group = west_african
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = westafricangfx }
+			}
+			set_graphical_culture = manden
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = centralafricangfx }
+		}
+		set_graphical_culture = hausa
+	}
+}
+
+blg_set_ethnicity_western = {
+	if = {
+		limit = {
+			blg_culture_northern = yes
+		}
+		blg_set_ethnicity_norse = yes
+	}
+	else_if = {
+		limit = {
+			blg_culture_central_germanic = yes
+		}
+		blg_set_ethnicity_dutch = yes
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture_group = west_germanic
+				likes_celts = yes
+				blg_culture_iberian = yes
+				blg_culture_middleeast = yes
+				blg_culture_israelite = yes
+			}
+		}
+		blg_set_ethnicity_english = yes
+	}
+	else_if = {
+		limit = {
+			likes_latino_iberians = yes
+		}
+		blg_set_ethnicity_norman = yes
+	}
+	else_if = {
+		limit = {
+			OR = {
+				likes_byzantines = yes
+				likes_balto_slavics = yes
+				likes_altaics = yes
+				culture_group = magyar
+				blg_culture_chinese = yes
+			}
+		}
+		blg_set_ethnicity_gothic = yes
+	}
+}
+
+blg_set_ethnicity_westslavic = {
+	if = {
+		limit = {
+			OR = {
+				culture = bohemian
+				likes_byzantines = yes
+				likes_latino_iberians = yes
+				culture_group = west_germanic
+				culture_group = central_germanic
+				culture_group = south_slavic
+				culture_group = magyar
+			}
+			NOT = { graphical_culture = bohemiangfx }
+		}
+		set_graphical_culture = bohemian
+	}
+	else_if = {
+		limit = {
+			NOR = {
+				graphical_culture = westernslavicgfx
+				graphical_culture = pomeraniangfx
+			}
+		}
+		set_graphical_culture = polish
+	}
+}

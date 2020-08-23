@@ -8,6 +8,31 @@ blg_region_africa = {
 	region = world_africa
 }
 
+# African northern region.
+blg_region_africa_north = {
+	region = world_africa_north
+}
+
+# African western region.
+blg_region_africa_west = {
+	region = world_africa_west
+}
+
+# African central region.
+blg_region_africa_central = {
+	region = world_africa_central
+}
+
+# African eastern region.
+blg_region_africa_east = {
+	region = world_africa_east
+}
+
+# Arabia region.
+blg_region_arabia = {
+	region = world_middle_east_arabia
+}
+
 # Black bear regions.
 blg_region_asia = {
 	OR = {
@@ -16,6 +41,36 @@ blg_region_asia = {
 		region = world_himalayas
 		region = world_steppe_tarim
 	}
+}
+
+# Asia Minor region.
+blg_region_asia_minor = {
+	region = world_asia_minor
+}
+
+# Balkan region.
+blg_region_balkan = {
+	region = world_europe_south_east
+}
+
+# Baltic region.
+blg_region_baltic = {
+	region = custom_eastern_baltic
+}
+
+# Brittish Isles region.
+blg_region_brittania = {
+	region = world_europe_west_brittania
+}
+
+# Deccan region.
+blg_region_deccan = {
+	region = world_india_deccan
+}
+
+# England region.
+blg_region_england = {
+	region = custom_england
 }
 
 # European inspired regions.
@@ -28,6 +83,46 @@ blg_region_europe = {
 			likes_christians = yes
 		}
 	}
+}
+
+# Francia region.
+blg_region_francia = {
+	region = world_europe_west_francia
+}
+
+# Frisian region.
+blg_region_frisia = {
+	region = custom_frisia
+}
+
+# German region.
+blg_region_germania = {
+	region = world_europe_west_germania
+}
+
+# Himalayas region.
+blg_region_himalayas = {
+	region = world_himalayas
+}
+
+# Iberian region.
+blg_region_iberia = {
+	region = world_europe_west_iberia
+}
+
+# Indian region.
+blg_region_india = {
+	region = world_india
+}
+
+# Italian region.
+blg_region_italy = {
+	region = world_europe_south_italy
+}
+
+# Levant region.
+blg_region_levant = {
+	region = world_middle_east_jerusalem
 }
 
 # Mediterranean inspired regions.
@@ -51,13 +146,57 @@ blg_region_muslim = {
 	}
 }
 
+# Persian region.
+blg_region_persia = {
+	region = world_persia
+}
+
 # Polar bear regions.
 blg_region_polar = {
 	climate = severe_winter
 	OR = {
-		region = world_europe_north
+		blg_region_scandinavia = yes
 		terrain = arctic
 	}
+}
+
+# Russian region.
+blg_region_russia = {
+	region = custom_russia
+}
+
+# Scandinavia region.
+blg_region_scandinavia = {
+	region = world_europe_north
+}
+
+# Sicily region.
+blg_region_sicily = {
+	duchy = {
+		OR = {
+			title = d_sicily
+			title = d_benevento
+			title = d_capua
+			title = d_apulia
+			title = d_salerno
+			title = d_calabria
+		}
+	}
+}
+
+# Western steppes.
+blg_region_steppe_west = {
+	region = world_steppe_west
+}
+
+# Eastern steppes.
+blg_region_steppe_east = {
+	region = world_steppe_east
+}
+
+# Tarim Basin region.
+blg_region_tarim = {
+	region = world_steppe_tarim
 }
 
 ### Terrain:

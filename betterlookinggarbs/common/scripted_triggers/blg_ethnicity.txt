@@ -1,0 +1,386 @@
+### Etnicity groups:
+
+# Known ethnicities that can be handled.
+blg_ethnicity_known = {
+	OR = {
+		blg_ethnicity_norse = yes
+		blg_ethnicity_english = yes
+		blg_ethnicity_dutch = yes
+		blg_ethnicity_german = yes
+		blg_ethnicity_lombard = yes
+		blg_ethnicity_frankish = yes
+		blg_ethnicity_occitan = yes
+		blg_ethnicity_celtic = yes
+		blg_ethnicity_iberian = yes
+		blg_ethnicity_italian = yes
+		blg_ethnicity_ugric = yes
+		blg_ethnicity_eastslavic = yes
+		blg_ethnicity_westslavic = yes
+		blg_ethnicity_southslavic = yes
+		blg_ethnicity_romanobalkan = yes
+		blg_ethnicity_byzantine = yes
+		blg_ethnicity_arabic = yes
+		blg_ethnicity_egyptian = yes
+		blg_ethnicity_levantine = yes
+		blg_ethnicity_berber = yes
+		blg_ethnicity_westafrican = yes
+		blg_ethnicity_african = yes
+		blg_ethnicity_persian = yes
+		blg_ethnicity_sogdian = yes
+		blg_ethnicity_mongol = yes
+		blg_ethnicity_cuman = yes
+		blg_ethnicity_turkish = yes
+		blg_ethnicity_centralasian = yes
+		blg_ethnicity_indian = yes
+		blg_ethnicity_southindian = yes
+		blg_ethnicity_tibetan = yes
+		blg_ethnicity_chinese = yes
+		blg_ethnicity_mesoamerican = yes
+		graphical_culture = magyargfx
+		graphical_culture = georgiangfx
+		graphical_culture = ashkenazigfx
+		graphical_culture = nubiangfx
+		graphical_culture = kurdishgfx
+		graphical_culture = tochariangfx
+		graphical_culture = khmergfx
+	}
+}
+
+# Static image portraits.
+blg_ethnicity_static = {
+	OR = {
+		graphical_culture = horsegfx
+		graphical_culture = catgfx
+		graphical_culture = hedgehoggfx
+		graphical_culture = duckgfx
+		graphical_culture = doggfx
+		graphical_culture = elephantgfx
+		graphical_culture = dragongfx
+		graphical_culture = redpandagfx
+		graphical_culture = beargfx
+		graphical_culture = polarbeargfx
+		graphical_culture = blackbeargfx
+	}
+}
+
+blg_ethnicity_african = {
+	OR = {
+		graphical_culture = africangfx
+		graphical_culture = somaligfx
+	}
+}
+
+blg_ethnicity_arabic = {
+	OR = {
+		graphical_culture = arabicgfx
+		graphical_culture = muslimgfx
+	}
+}
+
+blg_ethnicity_berber = {
+	graphical_culture = berbergfx
+}
+
+blg_ethnicity_byzantine = {
+	OR = {
+		graphical_culture = byzantinegfx
+		graphical_culture = hellenicgfx
+		graphical_culture = siciliangfx
+	}
+}
+
+blg_ethnicity_celtic = {
+	OR = {
+		graphical_culture = celticgfx
+		graphical_culture = bretongfx
+		graphical_culture = romanobritishgfx
+	}
+}
+
+blg_ethnicity_centralasian = {
+	OR = {
+		graphical_culture = centralasiangfx
+		graphical_culture = hunnicgfx
+	}
+}
+
+blg_ethnicity_chinese = {
+	graphical_culture = chinesegfx
+}
+
+blg_ethnicity_cuman = {
+	OR = {
+		graphical_culture = cumangfx
+		graphical_culture = steppegfx
+		graphical_culture = siberiangfx
+	}
+}
+
+blg_ethnicity_dutch = {
+	OR = {
+		graphical_culture = dutchgfx
+		graphical_culture = westerngfx
+	}
+}
+
+blg_ethnicity_eastslavic = {
+	graphical_culture = easternslavicgfx
+}
+
+blg_ethnicity_english = {
+	OR = {
+		graphical_culture = englishgfx
+		graphical_culture = normangfx
+		graphical_culture = saxongfx
+	}
+}
+
+blg_ethnicity_egyptian = {
+	OR = {
+		graphical_culture = egyptiangfx
+		graphical_culture = copticgfx
+	}
+}
+
+blg_ethnicity_frankish = {
+	OR = {
+		graphical_culture = frankishgfx
+		graphical_culture = outremergfx
+	}
+}
+
+blg_ethnicity_german = {
+	OR = {
+		graphical_culture = germangfx
+		graphical_culture = oldfrankishgfx
+	}
+}
+
+blg_ethnicity_iberian = {
+	OR = {
+		graphical_culture = southerngfx
+		graphical_culture = basquegfx
+		graphical_culture = andalusiangfx
+		graphical_culture = celtiberiangfx
+	}
+}
+
+blg_ethnicity_indian = {
+	OR = {
+		graphical_culture = indiangfx
+		graphical_culture = indusgfx
+	}
+}
+
+blg_ethnicity_italian = {
+	OR = {
+		graphical_culture = italiangfx
+		graphical_culture = romangfx
+		graphical_culture = dalmatiangfx
+	}
+}
+
+blg_ethnicity_levantine = {
+	OR = {
+		graphical_culture = levantinegfx
+		graphical_culture = semitegfx
+	}
+}
+
+blg_ethnicity_lombard = {
+	OR = {
+		graphical_culture = lombardgfx
+		graphical_culture = visigothgfx
+	}
+}
+
+blg_ethnicity_mesoamerican = {
+	graphical_culture = mesoamericangfx
+}
+
+blg_ethnicity_mongol = {
+	OR = {
+		graphical_culture = mongolgfx
+		graphical_culture = khitangfx
+	}
+}
+
+blg_ethnicity_norse = {
+	OR = {
+		graphical_culture = norsegfx
+		graphical_culture = norsegaelgfx
+		graphical_culture = crimeangfx
+	}
+}
+
+blg_ethnicity_occitan = {
+	OR = {
+		graphical_culture = trueoccitangfx
+		graphical_culture = gallicgfx
+	}
+}
+
+blg_ethnicity_persian = {
+	OR = {
+		graphical_culture = persiangfx
+		graphical_culture = afghangfx
+	}
+}
+
+blg_ethnicity_romanobalkan = {
+	OR = {
+		graphical_culture = vlachgfx
+		graphical_culture = romanobalkangfx
+	}
+}
+
+blg_ethnicity_sogdian = {
+	OR = {
+		graphical_culture = alangfx
+		graphical_culture = sogdiangfx
+	}
+}
+
+blg_ethnicity_southindian = {
+	OR = {
+		graphical_culture = southindiangfx
+		graphical_culture = centralindiangfx
+	}
+}
+
+blg_ethnicity_southslavic = {
+	OR = {
+		graphical_culture = croatsouthslavicgfx
+		graphical_culture = serbsouthslavicgfx
+	}
+}
+
+blg_ethnicity_tibetan = {
+	OR = {
+		graphical_culture = bodpagfx
+		graphical_culture = assamesegfx
+		graphical_culture = tangutgfx
+	}
+}
+
+blg_ethnicity_turkish = {
+	OR = {
+		graphical_culture = turkishgfx
+		graphical_culture = pecheneggfx
+		graphical_culture = avargfx
+	}
+}
+
+blg_ethnicity_ugric = {
+	OR = {
+		graphical_culture = ugricgfx
+		graphical_culture = balticgfx
+	}
+}
+
+blg_ethnicity_westafrican = {
+	OR = {
+		graphical_culture = westafricangfx
+		graphical_culture = centralafricangfx
+	}
+}
+
+blg_ethnicity_westslavic = {
+	OR = {
+		graphical_culture = westernslavicgfx
+		graphical_culture = bohemiangfx
+		graphical_culture = pomeraniangfx
+	}
+}
+
+### Ethnicities with common freckles, in higher to lower chance order:
+
+blg_freckles_common = {
+	OR = {
+		blg_ethnicity_celtic = yes
+		blg_ethnicity_norse = yes
+		graphical_culture = saxongfx
+		graphical_culture = tochariangfx
+		AND = {
+			culture = uyghur
+			blg_ethnicity_centralasian = yes
+		}
+		AND = {
+			culture = komi #udmurt
+			graphical_culture = ugricgfx
+		}
+	}
+}
+
+blg_freckles_1 = {
+	graphical_culture = celticgfx
+}
+
+blg_freckles_2 = {
+	OR = {
+		graphical_culture = bretongfx
+		graphical_culture = romanobritishgfx
+		AND = {
+			culture = komi #udmurt
+			graphical_culture = ugricgfx
+		}
+	}
+}
+
+blg_freckles_3 = {
+	OR = {
+		graphical_culture = norsegaelgfx
+		graphical_culture = tochariangfx
+	}
+}
+
+blg_freckles_4 = {
+	OR = {
+		graphical_culture = norsegfx
+		graphical_culture = saxongfx
+	}
+}
+
+blg_freckles_5 = {
+	culture = uyghur
+	blg_ethnicity_centralasian = yes
+}
+
+blg_freckles_6 = {
+	OR = {
+		graphical_culture = englishgfx
+		graphical_culture = westerngfx
+		graphical_culture = dutchgfx
+		graphical_culture = normangfx
+	}
+}
+
+blg_freckles_7 = {
+	OR = {
+		blg_ethnicity_german = yes
+		graphical_culture = frankishgfx
+		graphical_culture = gallicgfx
+		graphical_culture = celtiberiangfx
+	}
+}
+
+blg_freckles_8 = {
+	OR = {
+		graphical_culture = sogdiangfx
+		graphical_culture = ashkenazigfx
+		graphical_culture = berbergfx
+		graphical_culture = vlachgfx
+		graphical_culture = romanobalkangfx
+		graphical_culture = lombardgfx
+	}
+}
+
+blg_freckles_9 = {
+	OR = {
+		graphical_culture = crimeangfx
+		graphical_culture = visigothgfx
+		graphical_culture = afghangfx
+		graphical_culture = siberiangfx
+		graphical_culture = bohemiangfx
+	}
+}
