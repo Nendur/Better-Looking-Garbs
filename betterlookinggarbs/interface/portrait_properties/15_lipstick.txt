@@ -9,7 +9,7 @@
 
 		modifier = {
 			factor = 0.01
-			trait = fair
+			blg_fair = yes
 			NOR = {
 				has_game_rule = { name = blg_traits value = nofair }
 				has_game_rule = { name = blg_traits value = notraits }

@@ -51,6 +51,7 @@ character_event = {
 				dynasty = none
 				num_of_dynasty_members <= 1
 			}
+			blg_ethnicity_known = yes
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
@@ -76,6 +77,7 @@ character_event = {
 				dynasty = none
 				num_of_dynasty_members <= 1
 			}
+			blg_ethnicity_known = yes
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
@@ -103,6 +105,7 @@ character_event = {
 				dynasty = none
 				num_of_dynasty_members <= 1
 			}
+			blg_ethnicity_known = yes
 			has_game_rule = { name = blg_new_characters value = historical }
 			OR = {
 				is_alternate_start = no

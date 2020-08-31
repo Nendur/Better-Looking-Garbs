@@ -40,13 +40,7 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_norse = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -143,13 +137,7 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_norse = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -255,13 +243,7 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_baltic = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -360,13 +342,7 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_baltic = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -460,13 +436,7 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_african = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -553,13 +523,7 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_african = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -656,13 +620,7 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_slavic = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -745,13 +703,7 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_slavic = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -815,13 +767,7 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_finnish = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -883,13 +829,7 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_finnish = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -982,13 +922,7 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_bon = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -1076,13 +1010,7 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_bon = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -1175,13 +1103,7 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_hellenic = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -1264,13 +1186,7 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_hellenic = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -1361,13 +1277,7 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_tengri = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -1457,13 +1367,7 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_tengri = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -1558,13 +1462,7 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_zun = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
@@ -1652,13 +1550,7 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_tengri = yes
-				OR = {
-					blg_society_lowrank = yes
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 

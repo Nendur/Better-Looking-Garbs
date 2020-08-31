@@ -3,6 +3,7 @@ path="mod/blgccmythos"
 dependencies=
 {
 	"\"Mythos 2 - Historical Fantasy\""
+	"\"Mythos 3 - Historical Fantasy\""
 	"\"Cultural Cities Remix\""
 	"\"Better Looking Garbs\""
 	"\"Better Looking Garbs Full\""

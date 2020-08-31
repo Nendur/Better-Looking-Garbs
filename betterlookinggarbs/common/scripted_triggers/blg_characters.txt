@@ -15,11 +15,25 @@ blg_dangerous_prisoner = {
 	}
 }
 
+# Character covered in dirt.
+blg_dirty = {
+	OR = {
+		trait = uncouth
+		has_character_modifier = dirty_hands
+	}
+}
+
+# Attractive character.
+blg_fair = {
+	trait = fair
+}
+
 # Character of a guard order.
 blg_guard = {
 	OR = {
 		trait = varangian
 		trait = shieldmaiden
+		trait = gladiator
 	}
 }
 
@@ -46,6 +60,15 @@ blg_modest = {
 		trait = celibate
 		trait = zealous
 		is_ascetic_trigger = yes
+	}
+}
+
+# Character covered in mud.
+blg_mudsplatter = {
+	OR = {
+		has_character_modifier = mud_splatter
+		has_character_modifier = fell_into_the_river
+		has_character_modifier = dung_collector
 	}
 }
 

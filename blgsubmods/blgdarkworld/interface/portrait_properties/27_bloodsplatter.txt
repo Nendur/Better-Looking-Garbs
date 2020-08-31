@@ -1,0 +1,78 @@
+#p27 Blood and mud splatter.
+27 = {
+	0 = { # 0 - blank
+		factor = 1
+		modifier = {
+			factor = 100
+			has_game_rule = { name = blood_splatter_rule value = off }
+		}
+	}
+
+	1 = { # a - Some blood
+		factor = 100
+		trigger = {
+			has_character_modifier = blood_splatter_1
+		}
+	}
+
+	2 = { # b - A lot of blood
+		factor = 100
+		trigger = {
+			has_character_modifier = blood_splatter_2
+		}
+	}
+
+	3 = { # c - Bathory of blood
+		factor = 100
+		trigger = {
+			has_character_modifier = blood_splatter_3
+		}
+	}
+
+	4 = { # d - Mud splatter
+		factor = 100
+		trigger = {
+			blg_mudsplatter = yes
+		}
+	}
+
+	5 = { # e - Grime
+		factor = 100
+		trigger = {
+			blg_dirty = yes
+
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+
+	6 = {
+		factor = 100
+		trigger = {
+			OR = {
+				AND = {
+					is_female = yes
+					OR = {
+						has_character_flag = dw_visit_recovery
+						has_character_modifier = lf_sex_recovery
+						has_character_modifier = lf_great_sex
+						has_character_modifier = lf_good_sex
+					}
+				}
+				has_character_modifier = tentacle_exhausted_from_sex
+				has_character_modifier = dwt_rape_trauma
+				has_character_modifier = dos_dog_sex
+				has_character_modifier = dos_stallion_sex
+				has_character_modifier = dos_stallion_sex_rough
+				has_character_modifier = dos_dog_sex_filthy
+			}
+
+			NOR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+}

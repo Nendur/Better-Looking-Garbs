@@ -1,0 +1,55 @@
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_portrait_kitsune"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100
+				portrait_clothing = yes
+				portrait_age > child
+
+				OR = {
+					portrait_has_trait = lf_kitsune
+					portrait_has_trait = fox_kin
+				}
+			}
+		}
+
+		layer = {
+			"GFX_red_panda_male_headgear_behind:c1"
+			"GFX_dummy:c3"
+			"GFX_dummy:c5"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_portrait_neko"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 50000
+				portrait_clothing = yes
+				portrait_age > child
+
+				OR = {
+					portrait_has_trait = lf_neko
+					portrait_has_trait = cat_kin
+				}
+			}
+		}
+
+		layer = {
+			"GFX_dummy:c1"
+			"GFX_dummy:c3"
+			"GFX_dummy:c5"
+			"GFX_cat_androgyn_hair:c7"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+}

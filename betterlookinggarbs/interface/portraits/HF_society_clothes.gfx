@@ -39,17 +39,13 @@ spriteTypes = {
 
 				blg_society_stoics = yes
 				OR = {
-					blg_society_landless = yes
+					blg_wear_society_clothing_minimal = yes
 					blg_portrait_theocracy = yes
-					portrait_society_rank = 4
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -123,17 +119,13 @@ spriteTypes = {
 
 				blg_society_stoics = yes
 				OR = {
-					blg_society_landless = yes
+					blg_wear_society_clothing_minimal = yes
 					blg_portrait_theocracy = yes
-					portrait_society_rank = 4
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -223,15 +215,11 @@ spriteTypes = {
 				portrait_age > child
 
 				blg_society_bacchants = yes
-				OR = {
-					blg_society_landless = yes
-					portrait_society_rank = 4
-				}
+				blg_wear_society_clothing_minimal = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -300,7 +288,7 @@ spriteTypes = {
 				portrait_age > child
 
 				blg_society_bacchants = yes
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing_off = no
 			}
 		}
 

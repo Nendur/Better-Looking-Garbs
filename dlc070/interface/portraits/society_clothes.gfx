@@ -45,17 +45,11 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_hermetics = yes
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -234,17 +228,11 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_hermetics = yes
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -422,13 +410,7 @@ spriteTypes = {
 				portrait_in_command = no
 
 				blg_society_assassins = yes
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing = yes
 			}
 		}
 
@@ -500,17 +482,11 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_satanists = yes
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -607,17 +583,11 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_satanists = yes
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -712,17 +682,11 @@ spriteTypes = {
 					blg_portrait_zoroastrian = yes
 					blg_portrait_zun = yes
 				}
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -805,17 +769,11 @@ spriteTypes = {
 					blg_portrait_zoroastrian = yes
 					blg_portrait_zun = yes
 				}
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -910,17 +868,11 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_vodoun = yes
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -1007,17 +959,11 @@ spriteTypes = {
 				portrait_is_female = yes
 
 				blg_society_vodoun = yes
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -1082,17 +1028,11 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_trollcrafters = yes
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -1168,17 +1108,11 @@ spriteTypes = {
 				portrait_is_female = no
 
 				blg_society_pagan_cult = yes
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -1251,17 +1185,11 @@ spriteTypes = {
 					blg_society_trollcrafters = yes
 					blg_society_pagan_cult = yes
 				}
-				OR = {
-					blg_society_lowrank = yes
-					blg_society_leaders = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 

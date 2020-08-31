@@ -208,6 +208,7 @@ blg_ethnicity_mongol = {
 blg_ethnicity_norse = {
 	OR = {
 		graphical_culture = norsegfx
+		graphical_culture = scandinaviangfx
 		graphical_culture = norsegaelgfx
 		graphical_culture = crimeangfx
 	}
@@ -275,6 +276,7 @@ blg_ethnicity_ugric = {
 	OR = {
 		graphical_culture = ugricgfx
 		graphical_culture = balticgfx
+		graphical_culture = finnishgfx
 	}
 }
 
@@ -337,6 +339,7 @@ blg_freckles_3 = {
 blg_freckles_4 = {
 	OR = {
 		graphical_culture = norsegfx
+		graphical_culture = scandinaviangfx
 		graphical_culture = saxongfx
 	}
 }

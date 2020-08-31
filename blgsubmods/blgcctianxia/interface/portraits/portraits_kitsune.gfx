@@ -1,0 +1,25 @@
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_portrait_kitsune"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 50000
+				portrait_clothing = yes
+				portrait_age > child
+
+				portrait_has_trait = kitsune
+			}
+		}
+
+		layer = {
+			"GFX_red_panda_male_headgear_behind:c1"
+			"GFX_dummy:c3"
+			"GFX_dummy:c5"
+		}
+
+		headgear_that_hides_hair = {}
+	}
+}

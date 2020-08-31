@@ -113,4 +113,28 @@ malayo_polynesian_group = {
 	minahasan = {
 		graphical_cultures = { khmergfx }
 	}
+	batak = {
+		graphical_cultures = { khmergfx }
+	}
+	samudran = {
+		graphical_cultures = { khmergfx }
+	}
+	sundanese = {
+		graphical_cultures = { khmergfx }
+	}
+	balinese = {
+		graphical_cultures = { khmergfx }
+	}
+	banjar = {
+		graphical_cultures = { khmergfx }
+	}
+	bugi = {
+		graphical_cultures = { khmergfx }
+	}
+	cebuan = {
+		graphical_cultures = { khmergfx }
+	}
+	papuan = {
+		graphical_cultures = { khmergfx }
+	}
 }

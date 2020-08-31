@@ -128,7 +128,7 @@ if [ -d "${MODS}Tianxia" -o -f "${MODS}Tianxia.mod" -o -f "${MODS}blgcctianxia.m
 	fi
 	echo "Tianxia compatibility add-on installed."
 fi
-if [ -d "${MODS}Mythos 2" -o -f "${MODS}Mythos2.mod" -o -f "${MODS}blgccmythos.mod" -a ! -f "${MODS}blgccmythos.zip" ]; then
+if [ -f "${MODS}mythos3.zip" -o -f "${MODS}mythos3.mod" -o -d "${MODS}Mythos 2" -o -f "${MODS}Mythos2.mod" -o -f "${MODS}blgccmythos.mod" -a ! -f "${MODS}blgccmythos.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccmythos*" -d"$MODS"
 	fi
@@ -147,6 +147,16 @@ if [ -d "${MODS}Rise to Power" -o -f "${MODS}risetopower.zip" -o -f "${MODS}blgr
 		mv "${ADDONS}"/blgrisetopower* "$MODS"
 	fi
 	echo "Rise to Power compatibility add-on installed."
+fi
+if [ -d "${MODS}Dark World Reborn" -o -f "${MODS}Dark World Reborn.mod" -o -d "${MODS}LuxuriaFantasia" -o -f "${MODS}LuxuriaFantasia.mod" -o -f "${MODS}blgdarkworld.mod" -a ! -f "${MODS}blgdarkworld.zip" ]; then
+	if [ -f "$BLGZIP" ]; then
+		unzip -uoq "$BLGZIP" "submods/blgdarkworld*" -d"$MODS"
+	fi
+	if [ -f "${ADDONS}/blgdarkworld.mod" ]; then
+		[ -d "${MODS}/blgdarkworld" ] && rm -r "${MODS}/blgdarkworld.mod" "${MODS}/blgdarkworld"
+		mv "${ADDONS}"/blgdarkworld* "$MODS"
+	fi
+	echo "Dark World compatibility add-on installed."
 fi
 if [ -f "${MODS}blgccironman.mod" -o -n "`grep ironman=yes \"${MODS}/../settings.txt\"`" -a ! -f "${MODS}blgccironman.zip" ]; then
 	if [ -f "$BLGZIP" ]; then

@@ -6,21 +6,16 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
+
 				portrait_society = warrior_lodge_druidic
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_slavic_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_baltic_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_baltic_male_clothes:p3:c2"
@@ -73,21 +68,16 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
+
 				portrait_society = warrior_lodge_druidic
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_slavic_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_baltic_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_baltic_female_clothes:p3:c2"
@@ -143,21 +133,16 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
+
 				portrait_society = warrior_lodge_kemetic
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_zun_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_african_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_african_male_clothes:p3:c2"
@@ -210,21 +195,16 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
+
 				portrait_society = warrior_lodge_kemetic
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_zun_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_african_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_african_female_clothes:p3:c2"
@@ -280,21 +260,16 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
+
 				portrait_society = warrior_lodge_jotnar
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_african_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_norse_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_norse_male_clothes:p3:c2"
@@ -346,21 +321,16 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
+
 				portrait_society = warrior_lodge_jotnar
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_african_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_norse_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_norse_female_clothes:p3:c2"
@@ -417,21 +387,16 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
+
 				portrait_society = warrior_lodge_draconic
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_baltic_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_slavic_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_slavic_male_clothes:p3:c2"
@@ -484,21 +449,16 @@ spriteTypes = {
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
+
 				portrait_society = warrior_lodge_draconic
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_baltic_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_slavic_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_slavic_female_clothes:p3:c2"

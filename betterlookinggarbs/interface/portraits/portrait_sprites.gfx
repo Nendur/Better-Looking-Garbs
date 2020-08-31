@@ -189,7 +189,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_blood_splatter"
 		texturefile = "gfx\\characters\\shared\\blood_splatter.dds"
-		noOfFrames = 6
+		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
 	}

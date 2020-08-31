@@ -1,0 +1,308 @@
+# Rules for picking clothing sets.
+
+# Royalty ranks.
+blg_royalty = {
+	OR = {
+		higher_real_tier_than = duke
+		is_or_was_offmap_power_ruler = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+		blg_royal_title = yes
+	}
+	blg_republic = no
+	blg_mercenary = no
+	blg_holy_order = no
+	blg_peasant = no
+}
+
+# Has been coronated if necessary.
+blg_crowned = {
+	OR = {
+		NOT = { has_dlc = "Holy Fury" }
+		lower_real_tier_than = king
+		NOR = {
+			religion = catholic
+			religion = fraticelli
+		}
+		trait = crowned_by_priest
+		trait = crowned_by_bishop
+		trait = crowned_by_pope
+		trait = crowned_by_myself
+		is_feudal = no
+		primary_title = { is_vice_royalty = yes }
+		NOR = {
+			is_alive = yes
+			trait = uncrowned
+		}
+		AND = {
+			has_game_started = no
+			is_save_game = no
+		}
+	}
+}
+
+# Prepared for battle.
+blg_warrior = {
+	OR = {
+		AND = {
+			in_command = yes
+			OR = {
+				war = yes
+				liege = { war = yes }
+				in_battle = yes
+				in_siege = yes
+				is_landed = no
+				employer = { mercenary = yes }
+				employer = { holy_order = yes }
+			}
+		}
+		has_job_title = job_marshal
+		death_reason = death_battle
+		death_reason = death_duel
+		AND = {
+			blg_mercenary = yes
+			blg_mercenary_fleet = no
+		}
+	}
+}
+
+# Commander with fancier armour.
+blg_elite_commander = {
+	OR = {
+		higher_real_tier_than = count
+		spouse_even_if_dead = { higher_real_tier_than = count }
+		has_character_modifier = jd_strategist
+	}
+	blg_peasant = no
+	blg_default_clothing = no
+}
+
+# Early era headgear designs.
+blg_style_early = {
+	year_of_birth < 1160
+}
+
+# Middle era headgear designs.
+blg_style_mid = {
+	year_of_birth < 1250
+}
+
+# Later era headgear designs.
+blg_style_late = {
+	year_of_birth >= 1160
+}
+
+### Headgear:
+
+# Emperors crown.
+blg_crown_emperor = {
+	OR = {
+		real_tier = emperor
+		is_or_was_offmap_power_ruler = yes
+	}
+	blg_crowned = yes
+
+	NOR = {
+		AND = {
+			is_nomadic = yes
+			population < 10000
+		}
+		is_tributary = yes
+		is_offmap_governor = yes
+		blg_republic = yes
+		blg_mercenary = yes
+		blg_holy_order = yes
+		blg_peasant = yes
+	}
+}
+
+# Kings crown.
+blg_crown_king = {
+	OR = {
+		AND = {
+			higher_real_tier_than = duke
+			blg_crowned = yes
+		}
+		is_or_was_offmap_power_ruler = yes
+		blg_royal_title = yes
+	}
+
+	NOR = {
+		AND = {
+			is_nomadic = yes
+			has_game_started = yes
+			population < 5000
+		}
+		AND = {
+			government = chinese_vassal_government
+			independent = no
+		}
+		blg_republic = yes
+		blg_mercenary = yes
+		blg_holy_order = yes
+		blg_peasant = yes
+	}
+}
+
+# Dress like an emperor.
+blg_headgear_emperor = {
+	OR = {
+		blg_crown_emperor = yes
+		spouse_even_if_dead = {
+			blg_crown_emperor = yes
+		}
+	}
+}
+
+# Dress like a king.
+blg_headgear_king = {
+	OR = {
+		blg_crown_king = yes
+		spouse_even_if_dead = {
+			blg_crown_king = yes
+		}
+		blg_petty_king = yes
+	}
+}
+
+# Dress like a duke.
+blg_headgear_duke = {
+	OR = {
+		higher_real_tier_than = count
+		spouse_even_if_dead = { higher_real_tier_than = count }
+		is_or_was_offmap_power_ruler = yes
+		has_minor_title = title_prince
+		has_minor_title = title_queen_mother
+		blg_royal_title = yes
+	}
+
+	blg_mercenary = no
+	blg_peasant = no
+}
+
+# Dress with common headgear.
+blg_headgear_common = {
+	OR = {
+		blg_headgear_duke = no
+		blg_common_ducal_headgear = yes
+
+		trait = in_hiding
+		trait = leper
+		blg_pilgrimage = yes
+		blg_peasant = yes
+	}
+}
+
+# Wears a helmet.
+blg_headgear_military = {
+	OR = {
+		blg_fighting = yes
+		blg_military_governor = yes
+
+		AND = {
+			has_game_rule = { name = blg_helmet value = on }
+			blg_warrior = yes
+		}
+	}
+
+	NOR = {
+		has_game_rule = { name = martial_headgear value = off }
+		has_game_rule = { name = blg_helmet value = off }
+		has_game_rule = { name = blg_helmet value = none }
+		AND = {
+			has_game_rule = { name = blg_helmet value = lowrank }
+			OR = {
+				higher_real_tier_than = baron
+				spouse = { higher_real_tier_than = baron }
+			}
+		}
+	}
+}
+
+# More common to cover hair.
+blg_headgear_covered = {
+	true_religion_scope = {
+		OR = {
+			likes_muslims = yes
+			likes_jews = yes
+			likes_mazdans = yes
+		}
+	}
+}
+
+### Clothes:
+
+# Dress like royalty.
+blg_clothes_royal = {
+	OR = {
+		blg_royalty = yes
+		has_minor_title = title_prince
+		has_minor_title = title_queen_mother
+		has_character_modifier = jd_prince
+		has_character_modifier = jd_princess
+		blg_merchant_clothes = yes
+	}
+}
+
+# Dress like nobility.
+blg_clothes_noble = {
+	OR = {
+		is_landed = yes
+		spouse_even_if_dead = { is_landed = yes }
+		has_minor_title = title_prince
+		has_minor_title = title_queen_mother
+		has_character_modifier = jd_prince
+		has_character_modifier = jd_princess
+		blg_royal_title = yes
+		trait = proud
+	}
+	blg_peasant = no
+}
+
+# Dress like a commoner.
+blg_clothes_common = {
+	OR = {
+		NOR = {
+			is_landed = yes
+			spouse_even_if_dead = { higher_real_tier_than = count }
+			is_or_was_offmap_power_ruler = yes
+			has_minor_title = title_prince
+			has_minor_title = title_queen_mother
+			has_character_modifier = jd_prince
+			has_character_modifier = jd_princess
+			blg_royal_title = yes
+		}
+		trait = humble
+		blg_peasant = yes
+	}
+}
+
+# Dress in armour.
+blg_clothes_military = {
+	OR = {
+		AND = {
+			in_command = yes
+			OR = {
+				war = yes
+				liege = { war = yes }
+				in_battle = yes
+				in_siege = yes
+				is_landed = no
+			}
+		}
+		blg_duelling = yes
+		blg_guard = yes
+		has_job_title = job_marshal
+		death_reason = death_battle
+		death_reason = death_duel
+		employer = {
+			blg_mercenary = yes 
+			blg_mercenary_fleet = no
+		}
+		employer = { blg_holy_order = yes }
+	}
+}

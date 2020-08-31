@@ -1,0 +1,86 @@
+# Geographic region character diversity script.
+blg_regional_diversity = {
+}
+
+# Spawned character processing.
+blg_character_processing = {
+	# Fix noculture generated characters.
+	if = {
+		limit= {
+			NOT = { gfx_culture_scope = { always = yes } }
+		}
+		set_graphical_culture = ROOT
+	}
+
+	# Add freckles to new characters.
+	random_list = {
+		2 = { add_trait = freckles_5 }
+		6 = { add_trait = freckles_4 }
+		7 = { add_trait = freckles }
+		7 = { add_trait = freckles_2 }
+		10 = { add_trait = freckles_3 }
+		4500 = {
+			modifier = {
+				factor = 0.01
+				blg_freckles_1 = yes
+			}
+			modifier = {
+				factor = 0.02
+				blg_freckles_2 = yes
+			}
+			modifier = {
+				factor = 0.04
+				blg_freckles_3 = yes
+			}
+			modifier = {
+				factor = 0.06
+				blg_freckles_4 = yes
+			}
+			modifier = {
+				factor = 0.08
+				blg_freckles_5 = yes
+			}
+			modifier = {
+				factor = 0.1
+				blg_freckles_6 = yes
+			}
+			modifier = {
+				factor = 0.2
+				blg_freckles_7 = yes
+			}
+			modifier = {
+				factor = 0.5
+				blg_freckles_8 = yes
+			}
+			modifier = {
+				factor = 0.75
+				blg_freckles_9 = yes
+			}
+		}
+	}
+}
+
+# Mixed children ethnicity selection.
+blg_child_mixed = {
+}
+
+# Child ethnicity changes from cultural upbringing.
+blg_child_upbringing = {
+}
+
+# Append portrait refresh trick to duel events.
+evaluate_duel_result_score_effect = {
+	event_target:combatant_1 = {
+		remove_trait = blgspawn
+	}
+	event_target:combatant_2 = {
+		remove_trait = blgspawn
+	}
+}
+
+# Append bear setup to creature duel.
+spawn_creature_champion_effect = { # Too messy with bear clothes.
+	new_character = {
+		set_graphical_culture = bear
+	}
+}

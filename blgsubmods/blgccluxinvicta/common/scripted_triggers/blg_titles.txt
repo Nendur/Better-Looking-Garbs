@@ -1,0 +1,85 @@
+# Title specific triggers.
+
+### Minor titles:
+
+# Cardinal title.
+blg_cardinal_early = {
+	year < 1245
+	OR = {
+		has_minor_title = title_cardinal
+		has_minor_title = title_fraticelli_cardinal
+	}
+}
+
+# Cardinal title.
+blg_cardinal_late = {
+	year >= 1245
+	OR = {
+		has_minor_title = title_cardinal
+		has_minor_title = title_fraticelli_cardinal
+	}
+}
+
+# Military Offmap Governor.
+blg_military_governor = {
+	has_landed_title = e_china_west_governor
+}
+
+# Extra titles of royal rank.
+blg_royal_title = {
+	OR = {
+		has_minor_title = title_despot
+		has_minor_title = title_augusta
+	}
+}
+
+### Landed titles:
+
+# Venetian Doge.
+blg_doge = {
+	is_merchant_republic = yes
+	primary_title = {
+		OR = {
+			title = k_venice
+			title = d_venice
+		}
+	}
+}
+
+# Holy Order - Knights Templar
+blg_knights_templar = {
+	always = no
+}
+
+# Holy Order - Knights Hospitaler
+blg_knights_hospitaler = {
+	always = no
+}
+
+# Holy Order - Teutonic Knights
+blg_knights_teutonic = {
+	always = no
+}
+
+# Holy Order - Knights of Calatrava/Santiago
+blg_knights_calatrava = {
+	always = no
+}
+
+# Holy Order - Livonian Order
+blg_knights_livonian = {
+	always = no
+}
+
+# Hirable navies.
+blg_mercenary_fleet = {
+	primary_title = {
+		OR = {
+			title = d_venetian_navy
+			title = d_genoese_navy
+			title = d_hanseatic_navy
+			title = d_frisian_navy
+			title = d_maghreb_corsairs
+		}
+	}
+}

@@ -202,15 +202,14 @@
 		}
 	}
 
-	2 = { # n - Early Christian priest
+	14 = { # n - Early Priest without headgear.
 		factor = 100
 		hide_layers = { 5 = {}} #Hide layer 5 (headgear) when this frame is picked.
 
 		trigger = {
-			is_female = no
-			is_in_society = no
 			blg_priest = yes
 			blg_religion_early = yes
+			is_in_society = no
 		}
 	}
 }

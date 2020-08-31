@@ -32,21 +32,14 @@
 	4 = { # d - Mud splatter
 		factor = 100
 		trigger = {
-			OR = {
-				has_character_modifier = mud_splatter
-				has_character_modifier = fell_into_the_river
-				has_character_modifier = dung_collector
-			}
+			blg_mudsplatter = yes
 		}
 	}
 
 	5 = { # e - Grime
 		factor = 100
 		trigger = {
-			OR = {
-				trait = uncouth
-				has_character_modifier = dirty_hands
-			}
+			blg_dirty = yes
 
 			NOR = {
 				has_game_rule = { name = blg_traits value = notraits }

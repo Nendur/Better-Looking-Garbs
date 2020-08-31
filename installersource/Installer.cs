@@ -773,7 +773,8 @@ namespace BetterLookingGarbsInstall
                     log.Write("Tianxia compatibility add-on installed.");
                     InstallAnAddon("blgcctianxia");
                 }
-                if ((Directory.Exists(Path.Combine(mods, "Mythos 2")) ||
+                if ((File.Exists(Path.Combine(mods, "mythos3.mod")) ||
+                    File.Exists(Path.Combine(mods, "mythos3.zip")) ||
                     File.Exists(Path.Combine(mods, "Mythos2.mod")) ||
                     File.Exists(Path.Combine(mods, "blgccmythos.mod"))) &&
                     !File.Exists(Path.Combine(mods, "blgccmythos.zip")))
@@ -788,6 +789,16 @@ namespace BetterLookingGarbsInstall
                 {
                     log.Write("Rise to Power compatibility add-on installed.");
                     InstallAnAddon("blgrisetopower");
+                }
+                if ((Directory.Exists(Path.Combine(mods, "Dark World Reborn")) ||
+                    File.Exists(Path.Combine(mods, "Dark World Reborn.mod")) ||
+                    Directory.Exists(Path.Combine(mods, "LuxuriaFantasia")) ||
+                    File.Exists(Path.Combine(mods, "LuxuriaFantasia.mod")) ||
+                    File.Exists(Path.Combine(mods, "blgdarkworld.mod"))) &&
+                    !File.Exists(Path.Combine(mods, "blgdarkworld.zip")))
+                {
+                    log.Write("Dark World compatibility add-on installed.");
+                    InstallAnAddon("blgdarkworld");
                 }
                 if ((File.Exists(Path.Combine(mods, "blgccironman.mod")) ||
                     File.ReadAllText(Path.Combine(docs, "settings.txt")).Contains("ironman=yes")) &&

@@ -1,0 +1,60 @@
+# p6 Imprisoned
+6 = {
+	0 = { # 0 - blank
+		factor = 100
+		trigger = {
+			blg_prisoner = no
+		}
+	}
+
+	1 = { # a - Clean prison
+		factor = 100
+		#hide_layers = {  5 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 41 = {} }
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			OR = {
+				has_character_modifier = house_arrest
+				blg_adult = no
+			}
+		}
+	}
+
+	2 = { # b - Iron collar
+		factor = 100
+		#hide_layers = {  5 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 41 = {} }
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			has_character_modifier = the_oubliette
+		}
+	}
+
+	3 = { # c - Gagged prisoner
+		factor = 100
+		#hide_layers = {  5 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 41 = {} }
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			blg_dangerous_prisoner = yes
+		}
+	}
+
+	4 = { # d - Regular prison
+		factor = 100
+		#hide_layers = {  5 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 41 = {} }
+		hide_layers = { 43 = {} }
+	}
+}

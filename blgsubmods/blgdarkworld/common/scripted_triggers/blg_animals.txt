@@ -1,0 +1,413 @@
+# Triggers for animal pets, mounts and familiars.
+
+### Pets:
+
+blg_animal_cat = {
+	OR = {
+		has_character_modifier = pet_cat
+		has_character_modifier = child_cat
+		has_character_modifier = dw_familiar_cat
+	}
+}
+
+blg_familiar_cat = {
+	has_character_modifier = cat_familiar
+	blg_visible_society = yes
+}
+
+blg_animal_dog = {
+	OR = {
+		has_character_modifier = pet_hunting_dog
+		has_character_modifier = pet_house_dog
+		has_character_modifier = pet_masterless_dog
+		has_character_modifier = guide_dog
+		has_character_modifier = child_dog
+		has_character_modifier = dw_war_dog
+		has_character_modifier = dw_familiar_dog
+		has_character_modifier = dw_pet_guard_dog
+	}
+}
+
+blg_animal_eagle = {
+	has_character_modifier = pet_hunting_eagle
+}
+
+blg_animal_hedgehog = {
+	OR = {
+		has_character_modifier = pet_hedgehog
+		has_character_modifier = dw_familiar_hedgehog
+	}
+}
+
+blg_animal_otter = {
+	OR = {
+		has_character_modifier = pet_otter
+		has_character_modifier = dw_familiar_otter
+	}
+}
+
+blg_animal_owl = {
+	OR = {
+		has_character_modifier = pet_owl
+		has_character_modifier = dw_familiar_owl
+		AND = {
+			has_character_modifier = owl_familiar
+			blg_visible_society = yes
+		}
+	}
+}
+
+blg_animal_parrot = {
+	OR = {
+		has_character_modifier = pet_parrot
+		has_character_modifier = dw_familiar_parrot
+	}
+}
+
+blg_animal_rat = {
+	OR = {
+		has_character_modifier = dw_familiar_rat
+		has_character_modifier = pet_rat_dungeon
+		has_character_modifier = rats_in_cell
+	}
+}
+
+blg_animal_raven = {
+	OR = {
+		death_reason = death_murder_unknown_crows
+		has_character_modifier = dw_familiar_raven
+		AND = {
+			has_character_modifier = raven_familiar
+			blg_visible_society = yes
+		}
+	}
+}
+
+blg_animal_snake = {
+	OR = {
+		death_reason = death_accident_snakes
+		death_reason = death_murder_snakes
+		death_reason = death_murder_unknown_snakes
+		death_reason = death_execution_snake_pit
+		has_character_modifier = pet_snake
+		has_character_modifier = friend_of_snakes
+		has_character_flag = diwali_snake_charmer
+	}
+}
+
+blg_animal_wolf = {
+	OR = {
+		AND = {
+			has_character_modifier = wolf_familiar
+			blg_visible_society = yes
+		}
+		has_character_modifier = dw_familiar_wolf
+	}
+}
+
+### Mounts:
+
+# Charger Horse.
+blg_mount_horse_charger = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+		has_artifact_flag = charger
+	}
+}
+
+# Destrier Horse.
+blg_mount_horse_destrier = {
+	OR = {
+		has_character_modifier = nomad_warhorse
+		death_reason = death_execution_horses
+		any_artifact = {
+			is_artifact_equipped = yes
+			has_artifact_flag = horse
+			has_artifact_flag = mount
+			OR = {
+				has_artifact_flag = destrier
+				quality >= 5
+			}
+		}
+	}
+}
+
+# Basic Horse.
+blg_mount_horse = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+	}
+}
+
+# Armoured horse tier 1.
+blg_mount_horse_armor_1 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+	}
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse_armor
+	}
+}
+
+# Armoured horse tier 2.
+blg_mount_horse_armor_2 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+	}
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse_armor
+		quality == 2
+	}
+}
+
+# Armoured horse tier 3.
+blg_mount_horse_armor_3 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+	}
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse_armor
+		quality >= 3
+	}
+}
+
+# Black fierce horse.
+blg_mount_horse_black = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+		OR = {
+			has_artifact_flag = black
+			AND = {
+				has_artifact_flag = unique
+				has_artifact_flag = greek
+			}
+		}
+	}
+}
+
+# White immortal horse.
+blg_mount_horse_white = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+		OR = {
+			has_artifact_flag = white
+			has_artifact_flag = immortal
+			AND = {
+				has_artifact_flag = unique
+				has_artifact_flag = arabian
+			}
+		}
+	}
+}
+
+# Bear mount.
+blg_mount_bear = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = bear
+		has_artifact_flag = mount
+	}
+}
+
+# Camel mount.
+blg_mount_camel = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = camel
+		has_artifact_flag = mount
+	}
+}
+
+blg_mount_dragon_black = {
+	always = no
+	#any_artifact = {
+	#	is_artifact_equipped = yes
+	#	has_artifact_flag = dragon
+	#	has_artifact_flag = black
+	#	has_artifact_flag = mount
+	#}
+}
+
+blg_mount_dragon_red = {
+	always = no
+	#any_artifact = {
+	#	is_artifact_equipped = yes
+	#	has_artifact_flag = dragon
+	#	has_artifact_flag = red
+	#	has_artifact_flag = mount
+	#}
+}
+
+blg_mount_dragon_white = {
+	always = no
+	#any_artifact = {
+	#	is_artifact_equipped = yes
+	#	has_artifact_flag = dragon
+	#	has_artifact_flag = white
+	#	has_artifact_flag = mount
+	#}
+}
+
+blg_mount_dragon_green = {
+	always = no
+	#any_artifact = {
+	#	is_artifact_equipped = yes
+	#	has_artifact_flag = dragon
+	#	has_artifact_flag = green
+	#	has_artifact_flag = mount
+	#}
+}
+
+blg_mount_dragon_blue = {
+	always = no
+	#any_artifact = {
+	#	is_artifact_equipped = yes
+	#	has_artifact_flag = dragon
+	#	has_artifact_flag = blue
+	#	has_artifact_flag = mount
+	#}
+}
+
+blg_mount_dragon_silver = {
+	always = no
+	#any_artifact = {
+	#	is_artifact_equipped = yes
+	#	has_artifact_flag = dragon
+	#	has_artifact_flag = silver
+	#	has_artifact_flag = mount
+	#}
+}
+
+blg_mount_dragon_bronze = {
+	always = no
+	#any_artifact = {
+	#	is_artifact_equipped = yes
+	#	has_artifact_flag = dragon
+	#	has_artifact_flag = bronze
+	#	has_artifact_flag = mount
+	#}
+}
+
+blg_mount_dragon_gold = {
+	always = no
+	#any_artifact = {
+	#	is_artifact_equipped = yes
+	#	has_artifact_flag = dragon
+	#	has_artifact_flag = gold
+	#	has_artifact_flag = mount
+	#}
+}
+
+# Elephant mount.
+blg_mount_elephant = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = elephant
+		has_artifact_flag = mount
+	}
+}
+
+# Lion mount.
+blg_mount_lion = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = lion
+		has_artifact_flag = mount
+	}
+}
+
+# Lizard mount.
+blg_mount_lizard = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = lizard
+		has_artifact_flag = mount
+	}
+}
+
+# Polar Bear mount.
+blg_mount_polarbear = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = polarbear
+		has_artifact_flag = mount
+	}
+}
+
+# Reindeer mount.
+blg_mount_reindeer = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = reindeer
+		has_artifact_flag = mount
+	}
+}
+
+# Tiger mount.
+blg_mount_tiger = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = tiger
+		has_artifact_flag = mount
+	}
+}
+
+# Yak mount.
+blg_mount_yak = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = yak
+		has_artifact_flag = mount
+	}
+}
+
+# Wolf mount.
+blg_mount_wolf = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = wolf
+		has_artifact_flag = mount
+	}
+}
+
+### Unit types:
+
+# Horse mounted units.
+blg_unit_horse = {
+	OR = {
+		light_cavalry = 0.3
+		horse_archers = 0.3
+	}
+}
+
+# Heavy horse mounted units.
+blg_unit_knights = {
+	knights = 0.3
+}
+
+# Camel mounted units.
+blg_unit_camel = {
+	camel_cavalry = 0.3
+}
+
+# Elephant mounted units.
+blg_unit_elephants = {
+	war_elephants = 0.1
+}

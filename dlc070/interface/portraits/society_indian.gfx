@@ -42,20 +42,13 @@ spriteTypes = {
 
 				blg_society_hindu_vaishnavist = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -91,7 +84,7 @@ spriteTypes = {
 
 				blg_society_hindu_vaishnavist = yes
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing_off = no
 			}
 		}
 
@@ -134,21 +127,14 @@ spriteTypes = {
 
 				blg_society_hindu_vaishnavist = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -222,20 +208,13 @@ spriteTypes = {
 
 				blg_society_hindu_smartist = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -271,7 +250,7 @@ spriteTypes = {
 
 				blg_society_hindu_smartist = yes
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing_off = no
 			}
 		}
 
@@ -326,21 +305,14 @@ spriteTypes = {
 
 				blg_society_hindu_smartist = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -402,20 +374,13 @@ spriteTypes = {
 
 				blg_society_hindu_shaktist = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -452,7 +417,7 @@ spriteTypes = {
 
 				blg_society_hindu_shaktist = yes
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing_off = no
 			}
 		}
 
@@ -495,20 +460,13 @@ spriteTypes = {
 
 				blg_society_hindu_shaktist = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -548,7 +506,7 @@ spriteTypes = {
 
 				blg_society_hindu_shaktist = yes
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing_off = no
 			}
 		}
 
@@ -593,20 +551,13 @@ spriteTypes = {
 
 				blg_society_hindu_shaivist = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -642,7 +593,7 @@ spriteTypes = {
 
 				blg_society_hindu_shaivist = yes
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing_off = no
 			}
 		}
 
@@ -685,21 +636,14 @@ spriteTypes = {
 
 				blg_society_hindu_shaivist = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -754,17 +698,13 @@ spriteTypes = {
 
 				blg_society_buddhist_vajrayana = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = bhikkhu
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -803,7 +743,7 @@ spriteTypes = {
 				blg_society_buddhist_vajrayana = yes
 				portrait_in_command = no
 				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
+					blg_wear_society_clothing_off = no
 					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
@@ -842,17 +782,13 @@ spriteTypes = {
 
 				blg_society_buddhist_vajrayana = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = bhikkhuni
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -895,7 +831,7 @@ spriteTypes = {
 				blg_society_buddhist_vajrayana = yes
 				portrait_in_command = no
 				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
+					blg_wear_society_clothing_off = no
 					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
@@ -936,17 +872,13 @@ spriteTypes = {
 
 				blg_society_buddhist_theravada = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = bhikkhu
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -985,7 +917,7 @@ spriteTypes = {
 				blg_society_buddhist_theravada = yes
 				portrait_in_command = no
 				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
+					blg_wear_society_clothing_off = no
 					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
@@ -1024,17 +956,13 @@ spriteTypes = {
 
 				blg_society_buddhist_theravada = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = bhikkhuni
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -1077,7 +1005,7 @@ spriteTypes = {
 				blg_society_buddhist_theravada = yes
 				portrait_in_command = no
 				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
+					blg_wear_society_clothing_off = no
 					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
@@ -1118,17 +1046,13 @@ spriteTypes = {
 
 				blg_society_buddhist_mahayana = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = bhikkhu
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -1167,7 +1091,7 @@ spriteTypes = {
 				blg_society_buddhist_mahayana = yes
 				portrait_in_command = no
 				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
+					blg_wear_society_clothing_off = no
 					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
@@ -1206,17 +1130,13 @@ spriteTypes = {
 
 				blg_society_buddhist_mahayana = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = bhikkhuni
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -1258,7 +1178,7 @@ spriteTypes = {
 				blg_society_buddhist_mahayana = yes
 				portrait_in_command = no
 				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
+					blg_wear_society_clothing_off = no
 					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
@@ -1295,15 +1215,13 @@ spriteTypes = {
 
 				blg_society_jain_digambara = yes
 				OR = {
-					blg_portrait_theocracy = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = muni
-					portrait_has_trait = blgcaon
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -1355,21 +1273,14 @@ spriteTypes = {
 
 				blg_society_jain_digambara = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = aryika
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -1437,21 +1348,14 @@ spriteTypes = {
 
 				blg_society_jain = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = muni
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -1488,7 +1392,7 @@ spriteTypes = {
 
 				blg_society_jain = yes
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing_off = no
 			}
 		}
 
@@ -1537,21 +1441,14 @@ spriteTypes = {
 
 				blg_society_jain_theravada = yes
 				OR = {
-					blg_society_landless = yes
-					blg_portrait_theocracy = yes
-					blg_portrait_holy_order = yes
+					blg_wear_monastic_clothing = yes
 					portrait_has_trait = aryika
 					portrait_has_trait = on_indian_pilgrimage
-					portrait_has_trait = blgcaon
 					portrait_has_trait = blgquesting
 				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes
-				}
-				OR = {
-					NOT = { portrait_has_trait = blgcaoff }
-					portrait_has_trait = on_indian_pilgrimage
 				}
 			}
 		}
@@ -1595,7 +1492,7 @@ spriteTypes = {
 
 				blg_society_jain = yes
 				portrait_in_command = no
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing_off = no
 			}
 		}
 

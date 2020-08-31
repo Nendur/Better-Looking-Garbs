@@ -141,7 +141,7 @@ altaic = {
 
 arabic = {
 	maghreb_arabic = {
-		graphical_cultures = { berbergfx }
+		graphical_cultures = { egyptiangfx berbergfx }
 	}
 	egyptian_arabic = {
 		graphical_cultures = { egyptiangfx arabicgfx }

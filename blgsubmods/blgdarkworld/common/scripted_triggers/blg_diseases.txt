@@ -1,0 +1,252 @@
+# Diseases and related effects.
+
+### Diseases:
+
+# Blind, natural or maimed.
+blg_blind = {
+	trait = blinded
+}
+
+# Pox boils.
+blg_boils = {
+	trait = has_small_pox
+}
+
+# Bubonic boils.
+blg_bubonic = {
+	trait = has_bubonic_plague
+}
+
+# Drooling spit.
+blg_drooling = {
+	OR = {
+		trait = infirm
+		trait = rabies
+		has_character_modifier = dw_corruption_major
+		has_character_modifier = dw_corruption_severe
+	}
+}
+
+# Fat or sturdy.
+blg_fat = {
+	OR = {
+		trait = is_fat
+		trait = sturdy
+		AND = {
+			trait = dwarf
+			NOT = { trait = fair }
+		}
+	}
+}
+
+# Feverish.
+blg_fever = {
+	OR = {
+		trait = fever
+		trait = has_typhoid_fever
+	}
+}
+
+# Nose cold.
+blg_flu = {
+	OR = {
+		trait = ill
+		trait = flu
+	}
+}
+
+# Bandaged sick skin.
+blg_leper = {
+	trait = leper
+	OR = {
+		trait = disfigured
+		NOT = { has_dlc = "Reapers" }
+	}
+}
+
+# Pale and gaunt.
+blg_pale = {
+	OR = {
+		trait = is_malnourished
+		trait = fatigue
+		trait = malaise
+		trait = cancer
+		trait = has_tuberculosis
+		trait = undead
+		trait = lf_bad_genetics
+		has_character_modifier = broken_spirit
+		has_character_modifier = dw_mental_suppression
+		has_character_modifier = dw_vampire_cattle
+		has_character_modifier = lf_vampire_drained_big
+		AND = {
+			has_character_modifier = corrupting_magic_major
+			blg_visible_society = yes
+		}
+	}
+}
+
+# Oxygen deprived.
+blg_pneumonic = {
+	trait = pneumonic
+}
+
+# Syphilitic pox.
+blg_pox = {
+	OR = {
+		trait = syphilitic
+		trait = has_aztec_disease
+	}
+}
+
+# Skin rash.
+blg_rash = {
+	OR = {
+		trait = has_measles
+		trait = has_typhus
+		trait = rash
+	}
+}
+
+# Baggy eyes.
+blg_stressed = {
+	OR = {
+		trait = stressed
+		has_character_modifier = dw_mental_suppression
+	}
+}
+
+# Remaining food drips.
+blg_vomit = {
+	OR = {
+		trait = vomiting
+		trait = food_poisoning
+	}
+}
+
+### Supernatural effects:
+
+# Demon eyes and horns.
+blg_demon = {
+	OR = {
+		has_character_modifier = demon_horns
+		trait = lf_demon
+		AND = {
+			trait = demon_kin
+			OR = {
+				has_character_modifier = dw_out_of_the_abyss
+				has_character_modifier = dw_enemy_of_mankind
+				has_character_modifier = dw_openly_accepted
+				AND = {
+					multiplayer = no
+					OR = {
+						is_local_human_observer = yes
+						any_player = {
+							OR = {
+								trait = demon_kin
+								trait = angel_kin
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Glowing eyes.
+blg_glowing = {
+	trait = possessed
+	OR = {
+		has_character_modifier = voice_of_jesus
+		has_character_modifier = military_jesus
+		trait = lf_angel
+		AND = {
+			trait = angel_kin
+			OR = {
+				has_character_modifier = dw_out_of_the_sky
+				has_character_modifier = dw_enemy_of_mankind
+				has_character_modifier = dw_openly_accepted
+				AND = {
+					multiplayer = no
+					OR = {
+						is_local_human_observer = yes
+						any_player = {
+							OR = {
+								trait = demon_kin
+								trait = angel_kin
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Bandaged and pale.
+blg_mummy = {
+	always = no
+}
+
+# Vampire fangs.
+blg_vampire = {
+	trait = vampire
+	OR = {
+		has_character_modifier = dw_day_walker
+		has_character_modifier = dw_enemy_of_mankind
+		has_character_modifier = dw_openly_accepted
+		AND = {
+			multiplayer = no
+			OR = {
+				is_local_human_observer = yes
+				any_player = { trait = vampire }
+			}
+		}
+	}
+
+	blg_adult = yes
+	NOT = { has_game_rule = { name = blg_traits value = off } }
+}
+
+# Wolf eyes.
+blg_werewolf = {
+	OR = {
+		has_character_modifier = wolf_blood
+		has_character_modifier = lycanthropy
+		trait = dwse_lizard
+		trait = dwse_dragon_adult
+		trait = lf_werewolf
+		AND = {
+			trait = wolf_kin
+			OR = {
+				has_character_modifier = dw_out_of_their_skin
+				has_character_modifier = dw_enemy_of_mankind
+				has_character_modifier = dw_openly_accepted
+				has_character_modifier = dw_dominant_species
+				AND = {
+					multiplayer = no
+					OR = {
+						is_local_human_observer = yes
+						any_player = { trait = wolf_kin }
+					}
+				}
+			}
+		}
+		AND = {
+			trait = dragon_kin
+			OR = {
+				has_character_modifier = dw_out_of_their_skin
+				has_character_modifier = dw_enemy_of_mankind
+				has_character_modifier = dw_openly_accepted
+				has_character_modifier = dw_dominant_species
+				AND = {
+					multiplayer = no
+					OR = {
+						is_local_human_observer = yes
+						any_player = { trait = dragon_kin }
+					}
+				}
+			}
+		}
+	}
+}

@@ -295,8 +295,7 @@
 						trait = proud
 						trait = ambitious
 						trait = envious
-						blg_culture_african = yes
-						blg_culture_berber = yes
+						blg_culture_west_african = yes
 					}
 				}
 				has_character_modifier = golden_mask
