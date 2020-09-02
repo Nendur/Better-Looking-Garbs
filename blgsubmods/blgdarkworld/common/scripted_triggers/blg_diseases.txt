@@ -215,7 +215,6 @@ blg_werewolf = {
 		has_character_modifier = lycanthropy
 		trait = dwse_lizard
 		trait = dwse_dragon_adult
-		trait = lf_werewolf
 		AND = {
 			trait = wolf_kin
 			OR = {

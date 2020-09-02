@@ -15,9 +15,17 @@ blg_assimilating_culture = {
 blg_blocked_duke = {
 	is_female = no
 	blg_headgear_chinese = yes
-	e_china = {
-		ruler = {
-			NOR = {
+	NOR = {
+		e_china = {
+			owner = {
+				OR = {
+					dynasty = 1051151
+					any_owned_bloodline = { has_bloodline_flag = song_china }
+				}
+			}
+		}
+		top_liege = {
+			OR = {
 				dynasty = 1051151
 				any_owned_bloodline = { has_bloodline_flag = song_china }
 			}

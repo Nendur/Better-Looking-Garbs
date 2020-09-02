@@ -669,7 +669,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_persian_female_physique"
 		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_physique.dds"
-		noOfFrames = 7
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}

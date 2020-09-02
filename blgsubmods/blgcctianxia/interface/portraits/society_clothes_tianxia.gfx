@@ -203,14 +203,13 @@ spriteTypes = {
 
 	portraitType = {
 		effectFile = "gfx/FX/portrait.lua"
-		name = "PORTRAIT_society_monastic_order_kami_clothing_male"
+		name = "PORTRAIT_society_monastic_order_kami_clothing"
 
 		weight = {
 			additive_modifier = {
-				value = 10000
+				value = 8000
 				portrait_clothing = yes
 				portrait_age > child
-				portrait_is_female = no
 
 				portrait_society = monastic_order_japanese
 				blg_wear_monastic_clothing = yes
@@ -222,40 +221,22 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_society_monastic_order_stoics_male_clothing_behind:c0"
-			"GFX_society_monastic_order_stoics_male_clothing_front:c2"
+			"GFX_clothing_ihram_clothes_behind:c0"
+			"GFX_clothing_ihram_clothes:c2"
 			"GFX_empty:c3"
 			"GFX_empty:c5"
 			"GFX_empty:c1"
 			"GFX_empty:c7"
 		}
-
-		# Correct rank
-		allow_property_values = {
-			3 = {
-				0 = {
-					portrait_society_rank = 1
-				}
-				1 = {
-					portrait_society_rank = 2
-				}
-				2 = {
-					portrait_society_rank = 3
-				}
-				3 = {
-					portrait_society_rank = 4
-				}
-			}
-		}
 	}
 
 	portraitType = {
 		effectFile = "gfx/FX/portrait.lua"
-		name = "PORTRAIT_society_monastic_order_kami_clothing_male_lay"
+		name = "PORTRAIT_society_monastic_order_kami_clothing_lay"
 
 		weight = {
 			additive_modifier = {
-				value = 9000
+				value = 7000
 				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
@@ -267,65 +248,8 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_society_monastic_order_stoics_male_clothing_behind:c0"
-			"GFX_society_monastic_order_stoics_male_clothing_front:c2"
-		}
-
-		# Correct rank
-		allow_property_values = {
-			3 = {
-				0 = {
-					portrait_society_rank = 1
-				}
-				1 = {
-					portrait_society_rank = 2
-				}
-				2 = {
-					portrait_society_rank = 3
-				}
-				3 = {
-					portrait_society_rank = 4
-				}
-			}
-		}
-	}
-
-	portraitType = {
-		effectFile = "gfx/FX/portrait.lua"
-		name = "PORTRAIT_society_monastic_order_kami_clothing_female"
-
-		weight = {
-			additive_modifier = {
-				value = 10000
-				portrait_clothing = yes
-				portrait_age > child
-				portrait_is_female = yes
-
-				portrait_society = monastic_order_japanese
-				blg_wear_monastic_clothing = yes
-				OR = {
-					portrait_in_command = no
-					blg_portrait_theocracy = yes
-				}
-			}
-		}
-
-		layer = {
-			"GFX_society_monastic_order_jain_svetambara_female_clothing_behind:c0"
-			"GFX_society_monastic_order_jain_svetambara_female_clothing_front:c2"
-			"GFX_society_monastic_order_jain_svetambara_female_headgear_behind:c1"
-			"GFX_empty:c3"
-			"GFX_society_monastic_order_jain_svetambara_female_headgear_front:c5"
-			"GFX_empty:c7"
-		}
-
-		# Correct rank
-		allow_property_values = {
-			5 = {
-				0 = {
-					always = yes
-				}
-			}
+			"GFX_clothing_ihram_clothes_behind:c0"
+			"GFX_clothing_ihram_clothes:c2"
 		}
 	}
 }

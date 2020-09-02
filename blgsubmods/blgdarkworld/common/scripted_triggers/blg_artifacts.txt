@@ -419,7 +419,7 @@ blg_crown_zunist = {
 			blg_priest = yes
 			OR = {
 				religion_openly_zun_or_reformed_trigger = yes
-				religion_openly_egyptian_or_reformed_trigger = yes
+				blg_religion_egyptian = yes
 			}
 		}
 	}

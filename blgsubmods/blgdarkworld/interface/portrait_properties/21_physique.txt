@@ -1,0 +1,113 @@
+# p21 Physique
+21 = {
+	0 = { # 0 - blank
+		factor = 1
+		modifier = {
+			factor = 100
+			has_game_rule = { name = blg_traits value = off }
+		}
+	}
+
+	1 = { # a - Sturdy young
+		factor = 100
+		trigger = {
+			blg_fat = yes
+			practical_age < 30
+			NOT = { trait = is_fat }
+		}
+	}
+
+	2 = { # b - Sturdy mid aged
+		factor = 100
+		trigger = {
+			blg_fat = yes
+			practical_age >= 30
+			practical_age < 50
+			NOT = { trait = is_fat }
+		}
+	}
+
+	3 = { # c - Sturdy old
+		factor = 100
+		trigger = {
+			blg_fat = yes
+			practical_age >= 50
+			NOT = { trait = is_fat }
+		}
+	}
+
+	4 = { # d - Fat young
+		factor = 100
+		trigger = {
+			trait = is_fat
+			practical_age < 30
+		}
+	}
+
+	5 = { # e - Fat mid aged
+		factor = 100
+		trigger = {
+			trait = is_fat
+			practical_age >= 30
+			practical_age < 50
+		}
+	}
+
+	6 = { # f - Fat old
+		factor = 100
+		trigger = {
+			trait = is_fat
+			practical_age >= 50
+		}
+	}
+
+	7 = {
+		factor = 100
+		trigger = {
+			OR = {
+				trait = ala_regular_tits
+				trait = dw_regular_tits
+			}
+		}
+	}
+
+	8 = {
+		factor = 100
+		trigger = {
+			OR = {
+				trait = ala_big_tits
+				trait = dw_big_tits
+			}
+		}
+	}
+
+	9 = {
+		factor = 100
+		trigger = {
+			OR = {
+				trait = ala_huge_tits
+				trait = dw_huge_tits
+			}
+		}
+	}
+
+	10 = {
+		factor = 100
+		trigger = {
+			OR = {
+				trait = ala_enormous_tits
+				trait = dw_enormous_tits
+			}
+		}
+	}
+
+	11 = {
+		factor = 100
+		trigger = {
+			OR = {
+				trait = ala_gigantic_tits
+				trait = dw_gigantic_tits
+			}
+		}
+	}
+}

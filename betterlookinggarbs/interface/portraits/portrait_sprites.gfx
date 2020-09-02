@@ -852,7 +852,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_italian_female_physique"
 		texturefile = "gfx\\characters\\shared\\physique\\italian_female_physique.dds"
-		noOfFrames = 7
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}

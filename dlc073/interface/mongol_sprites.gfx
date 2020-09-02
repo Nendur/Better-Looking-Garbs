@@ -670,7 +670,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_mongol_female_physique"
 		texturefile = "gfx\\characters\\shared\\physique\\mongol_female_physique.dds"
-		noOfFrames = 7
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -878,7 +878,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_bodpa_female_physique"
 		texturefile = "gfx\\characters\\shared\\physique\\bodpa_female_physique.dds"
-		noOfFrames = 7
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}

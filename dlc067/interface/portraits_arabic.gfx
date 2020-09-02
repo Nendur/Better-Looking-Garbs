@@ -198,7 +198,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_arabic_male_physique"
-		texturefile = "gfx\\characters\\arabic_male\\muslim_male_physique.dds"
+		texturefile = "gfx\\characters\\shared\\physique\\arabic_male_physique.dds"
 		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
@@ -391,8 +391,8 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_arabic_female_physique"
-		texturefile = "gfx\\characters\\arabic_female\\muslim_female_physique.dds"
-		noOfFrames = 7
+		texturefile = "gfx\\characters\\shared\\physique\\arabic_female_physique.dds"
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}

@@ -120,19 +120,28 @@ blg_society_bon = {
 
 # Buddhist Vajrayana order.
 blg_society_buddhist_vajrayana = {
-	portrait_society = monastic_order_buddhist
+	OR = {
+		portrait_society = monastic_order_buddhist
+		portrait_society = monastic_order_japanese
+	}
 	portrait_has_trait = vajrayana_buddhist
 }
 
 # Buddhist Theravada order.
 blg_society_buddhist_theravada = {
-	portrait_society = monastic_order_buddhist
+	OR = {
+		portrait_society = monastic_order_buddhist
+		portrait_society = monastic_order_japanese
+	}
 	portrait_has_trait = theravada_buddhist
 }
 
 # Buddhist Mahayana order.
 blg_society_buddhist_mahayana = {
-	portrait_society = monastic_order_buddhist
+	OR = {
+		portrait_society = monastic_order_buddhist
+		portrait_society = monastic_order_japanese
+	}
 	portrait_has_trait = mahayana_buddhist
 }
 
