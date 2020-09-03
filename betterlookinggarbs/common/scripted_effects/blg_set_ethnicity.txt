@@ -116,9 +116,8 @@ blg_set_ethnicity_celtic = {
 			OR = {
 				blg_culture_scottish = yes
 				blg_culture_saxon = yes
-				culture_group = north_germanic
+				blg_culture_northern = yes
 				culture_group = baltic
-				culture_group = finno_ugric
 			}
 		}
 		if = {
@@ -636,7 +635,7 @@ blg_set_ethnicity_southindian = {
 		}
 		if = {
 			limit = {
-				NOT = { graphical_culture = centralasiangfx }
+				NOT = { graphical_culture = centralindiangfx }
 			}
 			set_graphical_culture = marathi
 		}

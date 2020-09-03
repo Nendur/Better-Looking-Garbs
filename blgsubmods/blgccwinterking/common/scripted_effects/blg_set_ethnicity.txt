@@ -1,0 +1,382 @@
+### Set ethnicity to the specified culture.
+
+blg_set_ethnicity_andalusian = {
+}
+
+blg_set_ethnicity_arabic = {
+	if = {
+		limit = {
+			blg_ethnicity_arabic = no
+		}
+		set_graphical_culture = bedouin_arabic
+	}
+}
+
+blg_set_ethnicity_armenian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = georgiangfx }
+		}
+		set_graphical_culture = armenian
+	}
+}
+
+blg_set_ethnicity_ashkenazi = {
+}
+
+blg_set_ethnicity_baltic = {
+}
+
+blg_set_ethnicity_basque = {
+}
+
+blg_set_ethnicity_bear = {
+	if = {
+		limit = { location = { blg_region_polar = yes } }
+		set_graphical_culture = polar_bear
+	}
+	else = {
+		set_graphical_culture = bear
+	}
+}
+
+blg_set_ethnicity_berber = {
+	if = {
+		limit = {
+			blg_ethnicity_berber = no
+		}
+		set_graphical_culture = numidian
+	}
+}
+
+blg_set_ethnicity_byzantine = {
+	if = {
+		limit = {
+			NOR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = hellenicgfx
+			}
+		}
+		set_graphical_culture = greek
+	}
+}
+
+blg_set_ethnicity_celtic = {
+	if = {
+		limit = {
+			culture = oldirish
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = celticgfx }
+			}
+			set_graphical_culture = oldirish
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				blg_culture_scottish = yes
+				blg_culture_saxon = yes
+				blg_culture_northern = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = celticgfx }
+			}
+			set_graphical_culture = gaelic
+		}
+	}
+	else_if = {
+		limit = {
+			NOR = {
+				graphical_culture = bretongfx
+				graphical_culture = romanobritishgfx
+			}
+		}
+		set_graphical_culture = breton
+	}
+}
+
+blg_set_ethnicity_centralasian = {
+	set_graphical_culture = hunnic
+}
+
+blg_set_ethnicity_cuman = {
+}
+
+blg_set_ethnicity_dutch = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_saxon = yes
+				blg_religion_pagan = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = saxongfx }
+			}
+			set_graphical_culture = frisian
+		}
+	}
+	else_if = {
+		limit = { blg_ethnicity_dutch = no }
+		set_graphical_culture = dutch
+	}
+}
+
+blg_set_ethnicity_east_african = {
+}
+
+blg_set_ethnicity_eastslavic = {
+}
+
+blg_set_ethnicity_egyptian = {
+	if = {
+		limit = {
+			NOR = {
+				graphical_culture = copticgfx
+				graphical_culture = egyptiangfx
+			}
+		}
+		set_graphical_culture = romanoegyptian
+	}
+}
+
+blg_set_ethnicity_english = {
+	if = {
+		limit = {
+			NOR = {
+				graphical_culture = saxongfx
+				graphical_culture = norsegaelgfx
+			}
+		}
+		set_graphical_culture = anglosaxon
+	}
+}
+
+blg_set_ethnicity_frankish = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = frankishgfx }
+		}
+		set_graphical_culture = french
+	}
+}
+
+blg_set_ethnicity_german = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_france = yes
+				blg_culture_middleeast = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = oldfrankishgfx }
+			}
+			set_graphical_culture = oldfrankish
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = germangfx }
+		}
+		set_graphical_culture = alemannic
+	}
+}
+
+blg_set_ethnicity_gothic = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = crimeangfx }
+		}
+		set_graphical_culture = ostrogoth
+	}
+}
+
+blg_set_ethnicity_iberian = {
+	if = {
+		limit = {
+			blg_ethnicity_iberian = no
+		}
+		set_graphical_culture = vasconian
+	}
+}
+
+blg_set_ethnicity_indian = {
+}
+
+blg_set_ethnicity_indus = {
+}
+
+blg_set_ethnicity_italian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = romangfx }
+		}
+		set_graphical_culture = roman
+	}
+}
+
+blg_set_ethnicity_levantine = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = semitegfx }
+		}
+		set_graphical_culture = romanosyrian
+	}
+}
+
+blg_set_ethnicity_lombard = {
+	if = {
+		limit = {
+			OR = {
+				culture = burgundian
+				blg_culture_italian = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = lombardgfx }
+			}
+			set_graphical_culture = burgundian
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = visigothgfx }
+		}
+		set_graphical_culture = visigoth
+	}
+}
+
+blg_set_ethnicity_magyar = {
+}
+
+blg_set_ethnicity_mongol = {
+	set_graphical_culture = hunnic
+}
+
+blg_set_ethnicity_norman = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = normangfx }
+		}
+		set_graphical_culture = norman
+	}
+}
+
+blg_set_ethnicity_norse = {
+	if = {
+		limit = {
+			NOR = {
+				graphical_culture = norsegfx
+				graphical_culture = scandinaviangfx
+				graphical_culture = norsegaelgfx
+			}
+		}
+		set_graphical_culture = proto_norse
+	}
+}
+
+blg_set_ethnicity_nubian = {
+}
+
+blg_set_ethnicity_occitan = {
+	if = {
+		limit = {
+			blg_ethnicity_occitan = no
+		}
+		set_graphical_culture = occitan
+	}
+}
+
+blg_set_ethnicity_persian = {
+}
+
+blg_set_ethnicity_romanobalkan = {
+	if = {
+		limit = {
+			blg_ethnicity_romanobalkan = no
+		}
+		set_graphical_culture = romanoillyrian
+	}
+}
+
+blg_set_ethnicity_sicilian = {
+}
+
+blg_set_ethnicity_sogdian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = alangfx }
+		}
+		set_graphical_culture = alan
+	}
+}
+
+blg_set_ethnicity_southindian = {
+}
+
+blg_set_ethnicity_southslavic = {
+}
+
+blg_set_ethnicity_steppe = {
+}
+
+blg_set_ethnicity_tibetan = {
+}
+
+blg_set_ethnicity_tocharian = {
+}
+
+blg_set_ethnicity_turkish = {
+}
+
+blg_set_ethnicity_ugric = {
+}
+
+blg_set_ethnicity_westafrican = {
+}
+
+blg_set_ethnicity_western = {
+	if = {
+		limit = {
+			blg_culture_northern = yes
+		}
+		blg_set_ethnicity_norse = yes
+	}
+	else_if = {
+		limit = {
+			blg_culture_central_germanic = yes
+		}
+		blg_set_ethnicity_dutch = yes
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture_group = celtic
+				blg_culture_iberian = yes
+				blg_culture_middleeast = yes
+				blg_culture_israelite = yes
+			}
+		}
+		blg_set_ethnicity_english = yes
+	}
+	else_if = {
+		limit = {
+			blg_culture_france = yes
+		}
+		blg_set_ethnicity_norman = yes
+	}
+	else = {
+		blg_set_ethnicity_gothic = yes
+	}
+}
+
+blg_set_ethnicity_westslavic = {
+}

@@ -1,0 +1,294 @@
+### Culture triggers:
+
+# Cultures with a lot of assimilating locals.
+blg_assimilating_culture = {
+	always = no
+}
+
+### Clothing sets for cultures:
+
+# Block ducal crown in some circumstances.
+# Restrict Song futou headgear.
+blg_blocked_duke = {
+	always = no
+}
+
+# Wears Chinese clothing.
+blg_clothes_chinese = {
+	always = no
+}
+
+# Wears Chinese headgear.
+blg_headgear_chinese = {
+	always = no
+}
+
+# These cultures use commmon headgear in addition for dukes.
+blg_common_ducal_headgear = {
+	always = no
+}
+
+# Custom cultures limited to default property set.
+blg_default_clothing = {
+	always = no
+}
+
+# Uses Merchant clothing set.
+blg_merchant_clothes = {
+	is_merchant_republic = yes
+	in_command = no
+}
+
+# Uses Merchant headgear set.
+blg_merchant_headgear = {
+	always = no
+}
+
+# These cultures use higher tier headgear for independent dukes.
+blg_petty_king = {
+	OR = {
+		AND = {
+			real_tier = duke
+			independent = yes
+		}
+		spouse_even_if_dead = {
+			real_tier = duke
+			independent = yes
+		}
+	}
+
+	OR = {
+		culture = romanobritish
+		culture = briton
+		culture = cumbrian
+		culture = oldirish
+		culture = gaelic
+		culture = pictish
+		blg_culture_saxon = yes
+		culture = oldfrankish
+		culture = frankish
+		culture = franconian
+		culture = ostrogoth
+		culture = oldthuringian
+		culture = thuringian
+		culture = burgundian
+		culture = dane
+		culture = proto_norse
+		culture = norse_gael
+		culture = oldalemannic
+		culture = alemannic
+		culture = oldbavarian
+		culture = bavarian
+	}
+}
+
+# These crowns can be combined with French veils.
+blg_veiled_crown = {
+	OR = {
+		blg_culture_french = yes
+		culture_group = celtic
+	}
+}
+
+### Culture groupings:
+
+# Uses afghan portraits.
+blg_culture_afghan = {
+	always = no
+}
+
+blg_culture_african = {
+	culture_group = african
+}
+
+# Uses Cuman hairstyles.
+blg_culture_central_asian = {
+	culture = hunnic
+}
+
+# Uses German and Dutch portraits.
+blg_culture_central_germanic = {
+	culture_group = germanic
+}
+
+# Chinese adjacent cultures.
+blg_culture_chinese = {
+	always = no
+}
+
+# Uses French veils.
+blg_culture_european = {
+	OR = {
+		culture_group = imperiale
+		culture_group = romance
+		AND = {
+			religion_group = christian
+			OR = {
+				culture_group = germanic
+				culture_group = celtic
+			}
+		}
+	}
+}
+
+blg_culture_france = {
+	culture_group = romance
+}
+
+# Uses French headgear accessories.
+blg_culture_french = {
+	OR = {
+		culture = french
+		culture = occitan
+		culture = arpitan
+	}
+}
+
+# Uses Byzantine crowns.
+blg_culture_greek = {
+	culture = greek
+}
+
+blg_culture_iberian = {
+	culture_group = basque
+}
+
+blg_culture_israelite = {
+	culture_group = israelite
+}
+
+blg_culture_italian = {
+	culture_group = imperiale
+}
+
+# Muslim style headgear.
+blg_culture_middleeast = {
+	culture_group = arabic
+}
+
+# Uses Norse-like portraits.
+blg_culture_northern = {
+	OR = {
+		culture = dane
+		culture = proto_norse
+	}
+}
+
+blg_culture_roman = {
+	culture = roman
+}
+
+# Uses Saxon portraits.
+blg_culture_saxon = {
+	OR = {
+		culture = anglosaxon
+		culture = oldfrisian
+		culture = frisian
+		culture = saxon
+		culture = oldsaxon
+		culture = jute
+		culture = angle
+	}
+}
+
+blg_culture_scottish = {
+	OR = {
+		culture = pictish
+		culture = gaelic
+	}
+}
+
+# Uses Sogdian portraits.
+blg_culture_sogdian = {
+	always = no
+}
+
+# Uses Somali portraits.
+blg_culture_somali = {
+	always = no
+}
+
+# West-African gold route cultures.
+blg_culture_west_african = {
+	always = no
+}
+
+# Uses West/South-Slavic headgear rules.
+blg_culture_west_slavic = {
+	always = no
+}
+
+### Portrait overrides:
+
+blg_portrait_african = {
+	portrait_culture_group = african
+}
+
+blg_portrait_arabic = {
+	portrait_culture_group = arabic
+}
+
+blg_portrait_baltic = {
+	always = no
+}
+
+blg_portrait_byzantine = {
+	portrait_culture_group = imperiale
+}
+
+blg_portrait_celtic = {
+	portrait_culture_group = celtic
+}
+
+blg_portrait_chinese = {
+	always = no
+}
+
+blg_portrait_east_slavic = {
+	always = no
+}
+
+blg_portrait_germanic = {
+	portrait_culture_group = germanic
+}
+
+blg_portrait_indian = {
+	always = no
+}
+
+blg_portrait_magyar = {
+	always = no
+}
+
+blg_portrait_middleeast = {
+	OR = {
+		blg_portrait_arabic = yes
+		portrait_culture = romanosyrian
+		portrait_culture = romanonumidian
+		portrait_culture = romanoafrican
+		portrait_culture = romanoegyptian
+	}
+}
+
+blg_portrait_nordic = {
+	blg_portrait_germanic = yes
+}
+
+blg_portrait_mediterranean = {
+	portrait_culture_group = romance
+}
+
+blg_portrait_roman = {
+	culture = roman
+}
+
+blg_portrait_slavic = {
+	always = no
+}
+
+blg_portrait_steppes = {
+	OR = {
+		portrait_culture_group = altaic
+		portrait_culture_group = sarmatian
+	}
+}

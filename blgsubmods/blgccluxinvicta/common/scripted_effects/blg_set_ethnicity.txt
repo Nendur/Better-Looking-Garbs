@@ -552,7 +552,7 @@ blg_set_ethnicity_southindian = {
 		}
 		if = {
 			limit = {
-				NOT = { graphical_culture = centralasiangfx }
+				NOT = { graphical_culture = centralindiangfx }
 			}
 			set_graphical_culture = marathi
 		}

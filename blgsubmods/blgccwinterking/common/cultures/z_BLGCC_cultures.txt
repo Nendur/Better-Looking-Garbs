@@ -104,10 +104,10 @@ imperiale = {
 		graphical_cultures = { lombardgfx germangfx }
 	}
 	romanonumidian = {
-		graphical_cultures = { copticgfx berbergfx muslimgfx }
+		graphical_cultures = { berbergfx muslimgfx }
 	}
 	romanoafrican = {
-		graphical_cultures = { copticgfx berbergfx muslimgfx }
+		graphical_cultures = { berbergfx muslimgfx }
 	}
 	romanohispanic = {
 		graphical_cultures = { southerngfx occitangfx }

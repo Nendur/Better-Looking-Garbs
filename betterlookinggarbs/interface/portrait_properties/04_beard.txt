@@ -15,7 +15,7 @@
 		}
 
 		modifier = {
-			factor = 2.25
+			factor = 3
 			blg_beard_short = yes
 		}
 	}

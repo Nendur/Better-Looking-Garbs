@@ -1,0 +1,165 @@
+# Religion triggers.
+
+religion_openly_west_african_or_reformed_trigger = {
+	always = no
+}
+
+religion_openly_slavic_or_reformed_trigger = {
+	always = no
+}
+
+religion_openly_finnish_or_reformed_trigger = {
+	always = no
+}
+
+### Christian branches:
+
+# Catholic religions.
+blg_religion_catholic = {
+	religion_group = christian
+}
+
+# Early religions, modified clothing without headgear.
+blg_religion_early = {
+	religion_group = christian
+}
+
+# Oriental Christian religions.
+blg_religion_oriental = {
+	OR = {
+		religion = nestorian
+		religion = gnostic
+	}
+}
+
+# Eastern Christian religions.
+blg_religion_orthodox = {
+	religion_group = christian
+}
+
+# Early-Protestant Christian religions.
+blg_religion_protestant = {
+	always = no
+}
+
+### Other Religions:
+
+# Chinese religions.
+blg_religion_chinese = {
+	always = no
+}
+
+# Far Eastern religions.
+blg_religion_eastern = {
+	always = no
+}
+
+### Pagan religions:
+
+# Pagan religions.
+blg_religion_pagan = {
+	religion_group = pagan_group
+}
+
+# Aztec religions.
+blg_religion_aztec = {
+	always = no
+}
+
+# Celtic pagan religions.
+blg_religion_celtic = {
+	is_celtic_pagan_trigger = yes
+}
+
+# Far Eastern pagan religions.
+blg_religion_eastern_pagan = {
+	always = no
+}
+
+# Egyptian pagan religions.
+blg_religion_egyptian = {
+	always = no
+}
+
+### Portrait override triggers:
+
+# African religion.
+blg_portrait_african_pagan = {
+	always = no
+}
+
+# Catholic religion.
+blg_portrait_catholic = {
+	OR = {
+		portrait_religion = catholic
+		portrait_religion = pelagian
+		portrait_religion = priscillian
+		portrait_religion = arian
+	}
+}
+
+# Christian religion.
+blg_portrait_christian = {
+	OR = {
+		portrait_religion = catholic
+		portrait_religion = pelagian
+		portrait_religion = nestorian
+		portrait_religion = priscillian
+		portrait_religion = arian
+		portrait_religion = gnostic
+	}
+}
+
+# Hellenic religion.
+blg_portrait_hellenic = {
+	OR = {
+		portrait_religion = roman_pagan
+		portrait_religion = roman_pagan_reformed
+		portrait_religion = titan_pagan
+		portrait_religion = promethean_pagan
+	}
+}
+
+# Jewish religion.
+blg_portrait_jewish = {
+	portrait_religion = jewish
+}
+
+# Muslim religion.
+blg_portrait_muslim = {
+	OR = {
+		portrait_religion = sunni
+		portrait_religion = ibadi
+		portrait_religion = shiite
+	}
+}
+
+# Orthodox religions.
+blg_portrait_orthodox = {
+	OR = {
+		portrait_religion = catholic
+		portrait_religion = pelagian
+		portrait_religion = nestorian
+		portrait_religion = priscillian
+		portrait_religion = arian
+		portrait_religion = gnostic
+	}
+}
+
+# Tengri religion.
+blg_portrait_tengri = {
+	OR = {
+		portrait_religion = tengri_pagan
+		portrait_religion = tengri_pagan_reformed
+	}
+}
+
+# Zoroastrian group religions.
+blg_portrait_zoroastrian = {
+	portrait_religion = manichean
+}
+
+# Zunist religion.
+blg_portrait_zun = {
+	always = no
+}

@@ -1,0 +1,211 @@
+# Geographical regions and terrain type triggers.
+# Triggers run from a province scope.
+
+### Regions:
+
+# African terrain regions.
+blg_region_africa = {
+	always = no
+}
+
+# African northern region.
+blg_region_africa_north = {
+	always = no
+}
+
+# African western region.
+blg_region_africa_west = {
+	always = no
+}
+
+# African central region.
+blg_region_africa_central = {
+	always = no
+}
+
+# African eastern region.
+blg_region_africa_east = {
+	always = no
+}
+
+# Arabia region.
+blg_region_arabia = {
+	always = no
+}
+
+# Black bear regions.
+blg_region_asia = {
+	always = no
+}
+
+# Asia Minor region.
+blg_region_asia_minor = {
+	always = no
+}
+
+# Balkan region.
+blg_region_balkan = {
+	always = no
+}
+
+# Baltic region.
+blg_region_baltic = {
+	always = no
+}
+
+# Brittish Isles region.
+blg_region_brittania = {
+	OR = {
+		region = world_britannia
+		region = world_caledonia
+		region = world_ireland
+		region = world_gaul_lugdunensis_armorica
+	}
+}
+
+# Deccan region.
+blg_region_deccan = {
+	always = no
+}
+
+# England region.
+blg_region_england = {
+	region = world_britannia_lloegyr
+}
+
+# European inspired regions.
+blg_region_europe = {
+	always = yes
+}
+
+# Francia region.
+blg_region_francia = {
+	region = world_gaul_lugdunensis
+}
+
+# Frisian region.
+blg_region_frisia = {
+	region = custom_frisia
+}
+
+# German region.
+blg_region_germania = {
+	region = world_germania
+}
+
+# Himalayas region.
+blg_region_himalayas = {
+	always = no
+}
+
+# Iberian region.
+blg_region_iberia = {
+	region = custom_southaquitania
+}
+
+# Indian region.
+blg_region_india = {
+	always = no
+}
+
+# Italian region.
+blg_region_italy = {
+	always = no
+}
+
+# Levant region.
+blg_region_levant = {
+	always = no
+}
+
+# Mediterranean inspired regions.
+blg_region_mediterranean = {
+	region = world_gaul_narbonensis
+}
+
+# Middle-Eastern inspired regions.
+blg_region_muslim = {
+	always = no
+}
+
+# Persian region.
+blg_region_persia = {
+	always = no
+}
+
+# Polar bear regions.
+blg_region_polar = {
+	climate = severe_winter
+	region = custom_scandinavia
+}
+
+# Russian region.
+blg_region_russia = {
+	always = no
+}
+
+# Scandinavia region.
+blg_region_scandinavia = {
+	region = custom_scandinavia
+}
+
+# Sicily region.
+blg_region_sicily = {
+	always = no
+}
+
+# Western steppes.
+blg_region_steppe_west = {
+	always = no
+}
+
+# Eastern steppes.
+blg_region_steppe_east = {
+	always = no
+}
+
+# Tarim Basin region.
+blg_region_tarim = {
+	always = no
+}
+
+### Terrain:
+
+# Desert terrain.
+blg_desert = {
+	terrain = desert
+}
+
+# Green Farmland terrain.
+blg_farmlands = {
+	OR = {
+		terrain = farmlands
+		terrain = plains
+	}
+}
+
+# Forested terrain.
+blg_forest = {
+	OR = {
+		terrain = forest
+		terrain = hills
+		terrain = jungle
+		terrain = arctic
+		terrain = marsh
+	}
+}
+
+# Steppe terrain.
+blg_steppe = {
+	terrain = steppe
+}
+
+# Snowy terrain.
+blg_winter = {
+	is_winter = yes
+}
+
+# More common snowy terrain.
+blg_severe_winter = {
+	climate = severe_winter
+}
