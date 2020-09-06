@@ -468,7 +468,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 255 255 255 } { 110 110 110 } { 255 255 255 }
+			{ 10 10 10 } {  110 110 110 } { 255 255 255 }
 		}
 
 		eye_color_index = 9

@@ -11,6 +11,7 @@ Changelog:
   Update some disease and wound graphics.
   Moved furniture artifacts to separate layer to only show on indoor backgrounds.
   Replacement for parrot to old-world parakeet.
+  New Meso-American portraits.
   Meso-American headgear finally updated with tiered wargear.
   Added overlay ring on known plotters against you. (black, your plot moved to dark purple)
   Added Ihram clothing while on Hajj.

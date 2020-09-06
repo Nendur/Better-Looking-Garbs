@@ -245,21 +245,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mesoamerican_male_ear"
 		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_ear_1.dds"
-		noOfFrames = 6
+		noOfFrames = 4
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_mesoamerican_male_ear_midage"
 		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_ear_2.dds"
-		noOfFrames = 6
+		noOfFrames = 4
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_mesoamerican_male_ear_oldage"
 		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_ear_3.dds"
-		noOfFrames = 6
+		noOfFrames = 4
 		norefcount = yes
 	}
 
@@ -308,7 +308,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_mesoamerican_male_pale"
-		texturefile = "gfx\\characters\\shared\\pale\\mesoamerican_male_pale.dds"
+		texturefile = "gfx\\characters\\shared\\pale\\southindian_male_pale.dds"
 		noOfFrames = 2
 		norefcount = yes
 		can_be_lowres = yes
@@ -510,21 +510,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mesoamerican_female_ear"
 		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_ear_1.dds"
-		noOfFrames = 5
+		noOfFrames = 4
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_mesoamerican_female_ear_midage"
 		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_ear_2.dds"
-		noOfFrames = 5
+		noOfFrames = 4
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_mesoamerican_female_ear_oldage"
 		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_ear_3.dds"
-		noOfFrames = 5
+		noOfFrames = 4
 		norefcount = yes
 	}
 
@@ -573,7 +573,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_mesoamerican_female_pale"
-		texturefile = "gfx\\characters\\shared\\pale\\mesoamerican_female_pale.dds"
+		texturefile = "gfx\\characters\\shared\\pale\\southindian_female_pale.dds"
 		noOfFrames = 2
 		norefcount = yes
 		can_be_lowres = yes
