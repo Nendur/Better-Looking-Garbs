@@ -1,0 +1,51 @@
+spriteTypes = {
+	portraitType = {
+		name = "PORTRAIT_prostitute_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 20000
+				portrait_clothing = yes
+				portrait_is_female = no
+
+				portrait_has_trait = prostitute
+				NOT = { portrait_culture_group = tentacle_culture_group }
+				portrait_in_command = no
+			}
+		}
+
+		layer = {
+			"GFX_romanmerchant_male_clothes_behind:c0"
+			"GFX_romanmerchant_male_clothes:c2"
+			"GFX_empty:c1"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_prostitute_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 20000
+				portrait_clothing = yes
+				portrait_is_female = yes
+
+				portrait_has_trait = prostitute
+				NOT = { portrait_culture_group = tentacle_culture_group }
+				portrait_in_command = no
+			}
+		}
+
+		layer = {
+			"GFX_romanmerchant_female_clothes_behind:c0"
+			"GFX_romanmerchant_female_clothes:c2"
+			"GFX_empty:c1"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+		}
+	}
+}

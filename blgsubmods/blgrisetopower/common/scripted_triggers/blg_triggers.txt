@@ -1,0 +1,165 @@
+# Core functionality triggers.
+
+# Has an adult portrait.
+blg_adult = {
+	custom_tooltip = {
+		text = IS_ADULT
+		OR = {
+			practical_age >= 16
+			AND = {
+				practical_age >= 15
+				OR = {
+					has_game_rule = { name = blg_children value = 15 }
+					has_game_rule = { name = blg_children value = 15noscale }
+				}
+			}
+			AND = {
+				practical_age >= 14
+				OR = {
+					has_game_rule = { name = blg_children value = 14 }
+					has_game_rule = { name = blg_children value = 14noscale }
+				}
+			}
+		}
+	}
+}
+
+# Engaged in a duel.
+blg_duelling = {
+	OR = {
+		has_character_flag = add_duel_xp
+		has_character_flag = chivalry_duel_ongoing
+	}
+}
+
+# Engaged in any fight.
+blg_fighting = {
+	OR = {
+		blg_in_combat = yes
+		blg_duelling = yes
+	}
+}
+
+# Holy Order government.
+blg_holy_order = {
+	OR = {
+		holy_order = yes
+		government = rtp_baron_order_g
+		government = rtp_landless_order_g
+	}
+}
+
+# Engaged in war.
+blg_in_combat = {
+	in_command = yes
+	OR = {
+		war = yes
+		liege = { war = yes }
+		in_battle = yes
+		in_siege = yes
+		employer = { mercenary = yes }
+		employer = { holy_order = yes }
+	}
+}
+
+# Left-handed weapon user.
+blg_lefthanded = {
+	OR = {
+		trait = lefthanded
+		trait = one_handed
+	}
+	NAND = {
+		trait = lefthanded
+		trait = one_handed
+	}
+}
+
+# Mercenary government.
+blg_mercenary = {
+	OR = {
+		mercenary = yes
+		government = rtp_mercenary_g
+		government = rtp_baron_mercenary_g
+		government = rtp_landless_mercenary_g
+		government = rtp_landless_adventurer_g
+	}
+}
+
+# Portrait override for theocracies.
+blg_portrait_theocracy = {
+	OR = {
+		portrait_government = theocracy_government
+		portrait_government = rtp_theocracy_g
+		portrait_government = rtp_baron_theocracy_g
+		portrait_government = rtp_landless_theocracy_g
+	}
+}
+
+# Portrait override for holy orders.
+blg_portrait_holy_order = {
+	OR = {
+		portrait_government = order_government
+		portrait_government = rtp_baron_order_g
+		portrait_government = rtp_landless_order_g
+	}
+}
+
+# A priest in the council or a theocracy.
+blg_priest = {
+	OR = {
+		is_priest = yes
+		AND = {
+			is_ruler = yes
+			OR = {
+				government = rtp_theocracy_g
+				government = rtp_baron_theocracy_g
+				government = rtp_landless_theocracy_g
+			}
+		}
+	}
+}
+
+# In prison.
+blg_prisoner = {
+	OR = {
+		prisoner = yes
+		death_reason = death_dungeon
+	}
+}
+
+# Republic government.
+blg_republic = {
+	OR = {
+		is_republic = yes
+		government = rtp_republic_g
+		government = rtp_baron_republic_g
+	}
+	NOT = { government = confucian_bureaucracy }
+}
+
+# Right-handed weapon user.
+blg_righthanded = {
+	OR = {
+		NOR = {
+			trait = lefthanded
+			trait = one_handed
+		}
+		AND = {
+			trait = lefthanded
+			trait = one_handed
+		}
+	}
+}
+
+# Visible member of a secret society.
+blg_visible_society = {
+	OR = {
+		is_society_discovered = yes
+		has_character_modifier = known_satanist
+		has_character_modifier = known_secret_society_member
+		AND = {
+			multiplayer = no
+			any_player = { same_society_as = ROOT }
+		}
+	}
+}

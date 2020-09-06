@@ -34,7 +34,6 @@ blg_guard = {
 		trait = varangian
 		trait = shieldmaiden
 		trait = gladiator
-		trait = monster_hunter
 	}
 }
 
@@ -47,8 +46,6 @@ blg_learned = {
 		trait = strategist
 		trait = theologian
 		trait = physician
-		trait = arcane_master
-		trait = veteran_wizard
 	}
 }
 
@@ -88,15 +85,15 @@ blg_peasant = {
 blg_portrait_monk = {
 	OR = {
 		portrait_has_trait = monk
-		portrait_has_trait = ascetic
+		portrait_society = monastic_order_insular
 	}
 }
 
 # Portrait override for nuns.
 blg_portrait_nun = {
 	OR = {
-		portrait_has_trait = nun
-		portrait_has_trait = ascetic
+		portrait_has_trait = monk
+		portrait_society = monastic_order_insular
 	}
 }
 
@@ -128,6 +125,7 @@ blg_executioner = {
 	OR = {
 		has_character_flag = holding_blot
 		has_character_flag = attending_blot
+		trait = torturer
 	}
 }
 
@@ -166,6 +164,7 @@ blg_outdoors = {
 	OR = {
 		trait = hunter
 		trait = falconer
+		trait = scout
 		has_character_modifier = holding_grand_hunt
 		has_character_flag = hunting_tigers
 		has_character_flag = khagan_holding_nerge
@@ -200,7 +199,7 @@ blg_tournament = {
 blg_travelling = {
 	OR = {
 		trait = travelling
-		trait = on_journey
+		trait = traveling
 		blg_pilgrimage = yes
 		trait = on_hajj
 		trait = kow_tow_travels

@@ -61,6 +61,7 @@ blg_modest = {
 		trait = zealous
 		is_ascetic_trigger = yes
 	}
+	NOT = { trait = lustful }
 }
 
 # Character covered in mud.

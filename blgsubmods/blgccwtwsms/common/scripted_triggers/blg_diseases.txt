@@ -1,0 +1,152 @@
+# Diseases and related effects.
+
+### Diseases:
+
+# Blind, natural or maimed.
+blg_blind = {
+	trait = blinded
+}
+
+# Pox boils.
+blg_boils = {
+	trait = has_small_pox
+}
+
+# Bubonic boils.
+blg_bubonic = {
+	OR = {
+		trait = has_bubonic_plague
+		trait = has_justinian_plague
+	}
+}
+
+# Drooling spit.
+blg_drooling = {
+	OR = {
+		trait = infirm
+		trait = rabies
+	}
+}
+
+# Fat or sturdy.
+blg_fat = {
+	OR = {
+		trait = is_fat
+		trait = sturdy
+		AND = {
+			trait = dwarf
+			NOT = { trait = fair }
+		}
+	}
+}
+
+# Feverish.
+blg_fever = {
+	OR = {
+		trait = fever
+		trait = has_typhoid_fever
+	}
+}
+
+# Nose cold.
+blg_flu = {
+	OR = {
+		trait = ill
+		trait = flu
+	}
+}
+
+# Bandaged sick skin.
+blg_leper = {
+	trait = leper
+	OR = {
+		trait = disfigured
+		NOT = { has_dlc = "Reapers" }
+	}
+}
+
+# Pale and gaunt.
+blg_pale = {
+	OR = {
+		trait = is_malnourished
+		trait = fatigue
+		trait = malaise
+		trait = cancer
+		trait = has_tuberculosis
+		has_character_modifier = broken_spirit
+		AND = {
+			has_character_modifier = corrupting_magic_major
+			blg_visible_society = yes
+		}
+	}
+}
+
+# Oxygen deprived.
+blg_pneumonic = {
+	trait = pneumonic
+}
+
+# Syphilitic pox.
+blg_pox = {
+	OR = {
+		trait = syphilitic
+		trait = has_aztec_disease
+	}
+}
+
+# Skin rash.
+blg_rash = {
+	OR = {
+		trait = has_measles
+		trait = has_typhus
+		trait = rash
+	}
+}
+
+# Baggy eyes.
+blg_stressed = {
+	trait = stressed
+}
+
+# Remaining food drips.
+blg_vomit = {
+	OR = {
+		trait = vomiting
+		trait = food_poisoning
+	}
+}
+
+### Supernatural effects:
+
+# Demon eyes and horns.
+blg_demon = {
+	has_character_modifier = demon_horns
+}
+
+# Glowing eyes.
+blg_glowing = {
+	trait = possessed
+	OR = {
+		has_character_modifier = voice_of_jesus
+		has_character_modifier = military_jesus
+	}
+}
+
+# Bandaged and pale.
+blg_mummy = {
+	always = no
+}
+
+# Vampire fangs.
+blg_vampire = {
+	always = no
+}
+
+# Wolf eyes.
+blg_werewolf = {
+	OR = {
+		has_character_modifier = wolf_blood
+		has_character_modifier = lycanthropy
+		culture_group = dragon_group
+	}
+}

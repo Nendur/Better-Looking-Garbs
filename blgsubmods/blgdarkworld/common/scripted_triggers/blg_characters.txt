@@ -5,6 +5,8 @@
 # Prisoner that is kept gagged.
 blg_dangerous_prisoner = {
 	OR = {
+		trait = mage
+		trait = lf_mage
 		has_character_modifier = accused_apostate
 		has_character_modifier = highly_suspect
 		has_character_modifier = known_witch
@@ -59,13 +61,8 @@ blg_learned = {
 # Character dressing modestly.
 blg_modest = {
 	OR = {
-		is_married = yes
-		is_consort = yes
-		any_spouse_even_if_dead = { is_alive = no }
-		age >= 40
 		trait = chaste
 		trait = celibate
-		trait = zealous
 		is_ascetic_trigger = yes
 	}
 }
@@ -118,6 +115,7 @@ blg_slave = {
 		trait = aoh_slave_born
 		death_reason = death_slavery
 		death_reason = death_enslaved
+		death_reason = dwt_death_rape_prisoner
 	}
 }
 

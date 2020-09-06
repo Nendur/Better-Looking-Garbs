@@ -5,7 +5,7 @@ spriteTypes = {
 
 		weight = {
 			additive_modifier = {
-				value = 1000
+				value = 30000
 				portrait_age > child
 				portrait_clothing = yes
 				portrait_religion = lf_adamite

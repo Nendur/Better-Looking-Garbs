@@ -32,7 +32,7 @@ spriteTypes = {
 
 		weight = {
 			additive_modifier = {
-				value = 50000
+				value = 100
 				portrait_clothing = yes
 				portrait_age > child
 

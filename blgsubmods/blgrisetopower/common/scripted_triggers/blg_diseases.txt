@@ -1,0 +1,238 @@
+# Diseases and related effects.
+
+### Diseases:
+
+# Blind, natural or maimed.
+blg_blind = {
+	trait = blinded
+}
+
+# Pox boils.
+blg_boils = {
+	trait = has_small_pox
+}
+
+# Bubonic boils.
+blg_bubonic = {
+	trait = has_bubonic_plague
+}
+
+# Drooling spit.
+blg_drooling = {
+	OR = {
+		trait = infirm
+		trait = rabies
+	}
+}
+
+# Fat or sturdy.
+blg_fat = {
+	OR = {
+		trait = is_fat
+		trait = sturdy
+		AND = {
+			trait = dwarf
+			NOT = { trait = fair }
+		}
+	}
+}
+
+# Feverish.
+blg_fever = {
+	OR = {
+		trait = fever
+		trait = has_typhoid_fever
+	}
+}
+
+# Nose cold.
+blg_flu = {
+	OR = {
+		trait = ill
+		trait = flu
+	}
+}
+
+# Bandaged sick skin.
+blg_leper = {
+	trait = leper
+	OR = {
+		trait = disfigured
+		NOT = { has_dlc = "Reapers" }
+	}
+}
+
+# Pale and gaunt.
+blg_pale = {
+	OR = {
+		trait = is_malnourished
+		trait = fatigue
+		trait = malaise
+		trait = cancer
+		trait = has_tuberculosis
+		trait = rtp_sanguinare_vampiris_tr
+		has_character_modifier = broken_spirit
+		AND = {
+			has_character_modifier = corrupting_magic_major
+			blg_visible_society = yes
+		}
+		AND = {
+			trait = rtp_shapeshifter_tr
+			any_player = {
+				OR = {
+					trait = rtp_shapeshifter_tr
+					trait = rtp_druid_tr
+					has_opinion_modifier = {
+						modifier = rtp_abomination_om
+						who = ROOT
+					}
+				}
+			}
+			NOT = { has_game_rule = { name = blg_traits value = off } }
+		}
+	}
+}
+
+# Oxygen deprived.
+blg_pneumonic = {
+	trait = pneumonic
+}
+
+# Syphilitic pox.
+blg_pox = {
+	OR = {
+		trait = syphilitic
+		trait = has_aztec_disease
+	}
+}
+
+# Skin rash.
+blg_rash = {
+	OR = {
+		trait = has_measles
+		trait = has_typhus
+		trait = rash
+	}
+}
+
+# Baggy eyes.
+blg_stressed = {
+	OR = {
+		trait = stressed
+		trait = rtp_sanies_lupinus_tr
+		trait = rtp_corruption_tr
+		trait = rtp_mana_poisoning_tr
+	}
+}
+
+# Remaining food drips.
+blg_vomit = {
+	OR = {
+		trait = vomiting
+		trait = food_poisoning
+	}
+}
+
+### Supernatural effects:
+
+# Demon eyes and horns.
+blg_demon = {
+	OR = {
+		has_character_modifier = demon_horns
+		AND = {
+			OR = {
+				trait = rtp_cursed_tr
+				trait = rtp_gifted_tr
+			}
+			any_player = {
+				OR = {
+					trait = rtp_cursed_tr
+					trait = rtp_gifted_tr
+					has_opinion_modifier = {
+						modifier = rtp_abomination_om
+						who = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+# Glowing eyes.
+blg_glowing = {
+	OR = {
+		AND = {
+			trait = possessed
+			OR = {
+				has_character_modifier = voice_of_jesus
+				has_character_modifier = military_jesus
+			}
+		}
+		AND = {
+			OR = {
+				trait = rtp_mage_tr
+				trait = rtp_sage_tr
+			}
+			any_player = {
+				OR = {
+					trait = rtp_mage_tr
+					trait = rtp_sage_tr
+					has_opinion_modifier = {
+						modifier = rtp_abomination_om
+						who = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+# Bandaged and pale.
+blg_mummy = {
+	always = no
+}
+
+# Vampire fangs.
+blg_vampire = {
+	OR = {
+		trait = rtp_feral_vampire_tr
+		trait = rtp_vampire_tr
+	}
+	any_player = {
+		OR = {
+			trait = rtp_feral_vampire_tr
+			trait = rtp_vampire_tr
+			has_opinion_modifier = {
+				modifier = rtp_abomination_om
+				who = ROOT
+			}
+		}
+	}
+	blg_adult = yes
+	NOT = { has_game_rule = { name = blg_traits value = off } }
+}
+
+# Wolf eyes.
+blg_werewolf = {
+	OR = {
+		culture_group = dragon_group
+		has_character_modifier = wolf_blood
+		has_character_modifier = lycanthropy
+		AND = {
+			OR = {
+				trait = rtp_feral_werewolf_tr
+				trait = rtp_werewolf_tr
+			}
+			any_player = {
+				OR = {
+					trait = rtp_feral_werewolf_tr
+					trait = rtp_werewolf_tr
+					has_opinion_modifier = {
+						modifier = rtp_abomination_om
+						who = ROOT
+					}
+				}
+			}
+		}
+	}
+}

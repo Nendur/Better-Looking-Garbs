@@ -83,7 +83,7 @@ west_germanic = {
 		graphical_cultures = { dutchgfx }
 	}
 	frisian = {
-		graphical_cultures = { dutchgfx }
+		graphical_cultures = { saxongfx }
 	}
 	anglo_frisian = {
 		graphical_cultures = { saxongfx }
@@ -257,7 +257,7 @@ byzantine = {
 		graphical_cultures = { crimeangfx }
 	}
 	isaurian_persian = {
-		graphical_cultures = { byzantinegfx }
+		graphical_cultures = { georgiangfx }
 	}
 	grecco_axumite = {
 		graphical_cultures = { africangfx westafricangfx }
@@ -447,14 +447,6 @@ altaic = {
 sinic = {
 	jurchen = {
 		graphical_cultures = { khitangfx chinesegfx }
-	}
-}
-
-chinese_group = {
-	dummy = {
-		alternate_start = { always = no }
-		used_for_random = no
-		allow_in_ruler_designer = no
 	}
 }
 

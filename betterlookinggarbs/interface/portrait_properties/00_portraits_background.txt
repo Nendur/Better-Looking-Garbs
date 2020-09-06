@@ -85,7 +85,8 @@
 
 		modifier = {
 			factor = 10000
-			death_reason = death_slavery
+			is_alive = no
+			blg_slave = yes
 		}
 
 		modifier = {
@@ -769,8 +770,6 @@
 		trigger = {
 			OR = {
 				has_focus = focus_scholarship
-				has_focus = focus_business
-				has_focus = focus_theology
 				has_lifestyle_learning_trigger = yes
 				blg_learned = yes
 				trait = poet

@@ -448,7 +448,7 @@ blg_portrait_mediterranean = {
 }
 
 blg_portrait_roman = {
-	culture = roman
+	portrait_culture = roman
 }
 
 blg_portrait_slavic = {

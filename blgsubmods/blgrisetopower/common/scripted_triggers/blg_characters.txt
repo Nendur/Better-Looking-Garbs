@@ -34,7 +34,15 @@ blg_guard = {
 		trait = varangian
 		trait = shieldmaiden
 		trait = gladiator
-		trait = monster_hunter
+		has_character_flag = rtp_temporary_soldier
+		has_character_flag = rtp_temporary_mercenary
+		has_character_flag = rtp_temporary_crusader
+		has_minor_title = sellsword_mt
+		has_minor_title = holy_warrior_mt
+		has_minor_title = guard_mt
+		has_minor_title = veteran_mt
+		has_minor_title = bailif_mt
+		has_minor_title = officer_mt
 	}
 }
 
@@ -47,8 +55,7 @@ blg_learned = {
 		trait = strategist
 		trait = theologian
 		trait = physician
-		trait = arcane_master
-		trait = veteran_wizard
+		has_minor_title = librarian_mt
 	}
 }
 
@@ -86,18 +93,12 @@ blg_peasant = {
 
 # Portrait override for monks.
 blg_portrait_monk = {
-	OR = {
-		portrait_has_trait = monk
-		portrait_has_trait = ascetic
-	}
+	portrait_has_trait = monk
 }
 
 # Portrait override for nuns.
 blg_portrait_nun = {
-	OR = {
-		portrait_has_trait = nun
-		portrait_has_trait = ascetic
-	}
+	portrait_has_trait = nun
 }
 
 # Declared a saint.
@@ -134,6 +135,8 @@ blg_executioner = {
 # Participating in a feast.
 blg_feast = {
 	OR = {
+		has_minor_title = server_mt
+		has_minor_title = minstrel_mt
 		has_character_flag = party_host
 		has_character_flag = party_guest
 		has_character_flag = host_feast_started
@@ -166,6 +169,9 @@ blg_outdoors = {
 	OR = {
 		trait = hunter
 		trait = falconer
+		has_minor_title = poacher_mt
+		has_minor_title = brigand_mt
+		has_minor_title = bandit_mt
 		has_character_modifier = holding_grand_hunt
 		has_character_flag = hunting_tigers
 		has_character_flag = khagan_holding_nerge
@@ -188,6 +194,8 @@ blg_pilgrimage = {
 # In a tournament.
 blg_tournament = {
 	OR = {
+		has_minor_title = veteran_mt
+		has_minor_title = officer_mt
 		has_character_flag = attending_tournament
 		has_character_flag = attending_tournament_furusiyya
 		has_character_modifier = holding_nomad_wargames
@@ -200,7 +208,6 @@ blg_tournament = {
 blg_travelling = {
 	OR = {
 		trait = travelling
-		trait = on_journey
 		blg_pilgrimage = yes
 		trait = on_hajj
 		trait = kow_tow_travels

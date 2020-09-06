@@ -41,7 +41,6 @@
 				has_portrait_property = { layer = 5 index = 3 }
 				has_portrait_property = { layer = 5 index = 4 }
 			}
-			NOT = { is_variable_equal = { which = ca_headgear value = 2 }  }
 		}
 
 		modifier = {
@@ -71,7 +70,6 @@
 				has_portrait_property = { layer = 5 index = 3 }
 				has_portrait_property = { layer = 5 index = 4 }
 			}
-			NOT = { is_variable_equal = { which = ca_headgear value = 3 } }
 		}
 
 		modifier = {
@@ -101,7 +99,6 @@
 				has_portrait_property = { layer = 5 index = 2 }
 				has_portrait_property = { layer = 5 index = 4 }
 			}
-			NOT = { is_variable_equal = { which = ca_headgear value = 4 } }
 		}
 
 		modifier = {
@@ -155,7 +152,6 @@
 				has_portrait_property = { layer = 5 index = 7 }
 				has_portrait_property = { layer = 5 index = 8 }
 			}
-			NOT = { is_variable_equal = { which = ca_headgear value = 5 } }
 		}
 
 		modifier = {
@@ -186,12 +182,12 @@
 				has_portrait_property = { layer = 5 index = 6 }
 				has_portrait_property = { layer = 5 index = 7 }
 				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 11 }
 				NAND = {
 					year < 950
 					has_portrait_property = { layer = 31 index = 0 }
 				}
 			}
-			NOT = { is_variable_equal = { which = ca_headgear value = 6 } }
 		}
 
 		modifier = {
@@ -244,9 +240,9 @@
 				has_portrait_property = { layer = 5 index = 5 }
 				has_portrait_property = { layer = 5 index = 7 }
 				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 11 }
 				NOT = { has_portrait_property = { layer = 31 index = 0 } }
 			}
-			NOT = { is_variable_equal = { which = ca_headgear value = 7 } }
 		}
 
 		modifier = {
@@ -273,9 +269,9 @@
 				has_portrait_property = { layer = 5 index = 5 }
 				has_portrait_property = { layer = 5 index = 6 }
 				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 11 }
 				NOT = { has_portrait_property = { layer = 31 index = 0 } }
 			}
-			NOT = { is_variable_equal = { which = ca_headgear value = 8 } }
 		}
 
 		modifier = {
@@ -302,9 +298,9 @@
 				has_portrait_property = { layer = 5 index = 5 }
 				has_portrait_property = { layer = 5 index = 6 }
 				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 11 }
 				NOT = { has_portrait_property = { layer = 31 index = 0 } }
 			}
-			NOT = { is_variable_equal = { which = ca_headgear value = 8 } }
 		}
 
 		modifier = {
@@ -426,6 +422,17 @@
 				has_portrait_property = { layer = 3 index = 14 }
 			}
 			likes_muslims = no
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+			}
 		}
 
 		modifier = {

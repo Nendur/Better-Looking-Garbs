@@ -1,0 +1,501 @@
+# Triggers for artifacts, items and weapons.
+
+# Artifacts that can be used in combat.
+blg_combat_artifacts = {
+	OR = {
+		blg_animal_eagle = yes
+		any_artifact = {
+			is_artifact_equipped = yes
+			OR = {
+				artifact_type = spear_of_destiny
+				#artifact_type = mjolnir
+			}
+		}
+	}
+}
+
+### Artifacts:
+
+# Banner of Mohammed.
+blg_artifact_banner_mohammad = {
+	always = no
+}
+
+# Derafsh Kaviani banner. 
+blg_artifact_derafsh_kaviani = {
+	always = no
+}
+
+# Glass candle.
+blg_artifact_candle = {
+	always = no
+}
+
+# Babr-e-Bayan leopard skin.
+blg_babr_e_bayan = {
+	always = no
+}
+
+# Eye glasses.
+blg_artifact_glasses = {
+	always = no
+}
+
+# Holy Grail.
+blg_artifact_grail = {
+	always = no
+}
+
+# Harp.
+blg_artifact_harp = {
+	always = no
+}
+
+# Horn.
+blg_artifact_horn = {
+	any_artifact = {
+		is_artifact_active = yes
+		has_artifact_flag = horn
+	}
+}
+
+# Mjolnir hammer.
+blg_artifact_mjolnir = {
+	always = no
+}
+
+# Large relic chest.
+blg_artifact_relic_chest = {
+	OR = {
+		has_artifact = ark_of_the_covenant
+		has_artifact = shroud_of_jesus
+		has_artifact = bones_of_st_peter
+		has_artifact = blessed_mantle
+	}
+}
+
+# Small relic case.
+blg_artifact_relic_case = {
+	any_artifact = {
+		is_artifact_active = yes
+		OR = {
+			artifact_type = holy_foreskin
+			#artifact_type = mohammads_beard
+			#artifact_type = tooth_of_mohammad
+			#artifact_type = buddhas_tooth
+			#artifact_type = sariraka_actual_body_part
+			#artifact_type = random_world_mythological_heart_1
+			#artifact_type = random_world_mythological_blood
+			#artifact_type = random_world_mythological_eye
+			has_artifact_flag = bodypart
+			has_artifact_flag = remains
+			has_artifact_flag = saint_item
+		}
+	}
+}
+
+# Finnish Sampo.
+blg_artifact_sampo = {
+	always = no
+}
+
+# Scepter for Bön head.
+blg_artifact_scepter_bon = {
+	OR = {
+		AND = {
+			blg_priest = yes
+			rightful_religious_head = ROOT
+			religion_openly_bon_or_reformed_trigger = yes
+		}
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = scepter_bon_fylkir
+		}
+		trait = dead_scepter_bon_fylkir
+	}
+}
+
+# Scepter for Hellenic head.
+blg_artifact_scepter_hellenic = {
+	OR = {
+		AND = {
+			blg_priest = yes
+			rightful_religious_head = ROOT
+			religion_openly_hellenic_or_reformed_trigger = yes
+		}
+		any_artifact = {
+			is_artifact_equipped = yes
+			OR = {
+				artifact_type = scepter_hellenic_fylkir
+				artifact_type = spear_of_destiny
+			}
+		}
+		trait = dead_scepter_hellenic_fylkir
+	}
+}
+
+# Override for the ruby scepter variant.
+blg_artifact_scepter_ruby = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		quality >= 3
+		has_artifact_flag = staff
+		has_artifact_flag = jewelry
+	}
+}
+
+# Scroll.
+blg_artifact_scroll = {
+	any_artifact = {
+		is_artifact_active = yes
+		OR = {
+			#artifact_type = letter_of_mohammad
+			#artifact_type = cyrus_cylinder
+			artifact_type = chinese_calligraphy
+			has_artifact_flag = scroll
+		}
+	}
+}
+
+# Indian staffs.
+blg_artifact_staff = {
+	always = no
+}
+
+# Sheperds crook.
+blg_artifact_staff_crook = {
+	always = no
+}
+
+# Indian danda staff.
+blg_artifact_staff_danda = {
+	always = no
+}
+
+# Humble staff.
+blg_artifact_staff_of_moses = {
+	always = no
+}
+
+# Stone tablet.
+blg_artifact_tablet = {
+	always = no
+}
+
+# African totem staff.
+blg_artifact_totem = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = totem
+	}
+}
+
+### Artifact headgear:
+
+# HRE crown.
+blg_crown_hre = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_hre
+		}
+		trait = dead_crown_hre
+	}
+}
+
+# Byzantine crown.
+blg_crown_byzantine = {
+	blg_culture_greek = no
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_byzantine
+		}
+		trait = dead_crown_byzantine
+	}
+}
+
+# Diamond Crown.
+blg_crown_diamond = {
+	always = no
+}
+
+# Iron Crown.
+blg_crown_lombardy = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = iron_crown_of_lombardy
+		}
+		trait = dead_iron_crown_lombardy
+	}
+}
+
+# Imperial Laurels.
+blg_crown_laurels = {
+	trait = augustus
+}
+
+# Pahlavi crown.
+blg_crown_pahlavi = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_pahlavi
+		}
+		trait = dead_crown_pahlavi
+	}
+}
+
+# Germanic Fylkir crown.
+blg_crown_fylkir = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_fylkir
+		}
+		trait = dead_crown_fylkir
+		AND = {
+			rightful_religious_head = ROOT
+			blg_priest = yes
+			religion_openly_norse_or_reformed_trigger = yes
+		}
+	}
+}
+
+# Tengri religious crown.
+blg_crown_tengri = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_tengri_fylkir
+		}
+		trait = dead_crown_tengri_fylkir
+	}
+}
+
+# Finnish religious crown.
+blg_crown_finnish = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_finnish_fylkir
+		}
+		trait = dead_crown_finnish_fylkir
+		AND = {
+			rightful_religious_head = ROOT
+			blg_priest = yes
+			religion_openly_finnish_or_reformed_trigger = yes
+		}
+	}
+}
+
+# African religious crown.
+blg_crown_african = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_west_african_fylkir
+		}
+		trait = dead_crown_west_african_fylkir
+		AND = {
+			rightful_religious_head = ROOT
+			blg_priest = yes
+			religion_openly_aztec_or_reformed_trigger = yes
+		}
+	}
+}
+
+# Slavic religious crown.
+blg_crown_slavic = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_slavic_fylkir
+		}
+		trait = dead_crown_slavic_fylkir
+		AND = {
+			rightful_religious_head = ROOT
+			blg_priest = yes
+			religion_openly_slavic_or_reformed_trigger = yes
+		}
+	}
+}
+
+# Baltic religious crown.
+blg_crown_baltic = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_romuva_fylkir
+		}
+		trait = dead_crown_romuva_fylkir
+		AND = {
+			rightful_religious_head = ROOT
+			blg_priest = yes
+			religion_openly_baltic_or_reformed_trigger = yes
+		}
+	}
+}
+
+# Aztec religious crown.
+blg_crown_aztec = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_aztec_fylkir
+		}
+		trait = dead_crown_aztec_fylkir
+	}
+}
+
+# Zunist religious crown.
+blg_crown_zunist = {
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_zun_fylkir
+		}
+		trait = dead_crown_zun_fylkir
+		AND = {
+			rightful_religious_head = ROOT
+			blg_priest = yes
+			OR = {
+				religion_openly_zun_or_reformed_trigger = yes
+				blg_religion_egyptian = yes
+			}
+		}
+	}
+}
+
+# Crowned Crusader Helmet.
+blg_helmet_crusader = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = crown_crusader_king
+	}
+}
+
+# Winged Crusader Helmet.
+blg_helmet_winged = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = crown_winged_helmet
+	}
+}
+
+# Wrapped Crusader Helmet.
+blg_helmet_wrapped = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = crown_wrapped_helmet
+	}
+}
+
+# African warrior lodge masks.
+blg_artifact_mask_any = {
+	always = no
+}
+
+blg_artifact_mask_1 = {
+	always = no
+}
+
+blg_artifact_mask_2 = {
+	always = no
+}
+
+blg_artifact_mask_3 = {
+	always = no
+}
+
+blg_artifact_mask_4 = {
+	always = no
+}
+
+blg_artifact_mask_5 = {
+	always = no
+}
+
+blg_artifact_mask_6 = {
+	always = no
+}
+
+blg_artifact_mask_7 = {
+	always = no
+}
+
+blg_artifact_mask_8 = {
+	always = no
+}
+
+# Unicorn transformation for horses.
+blg_artifact_unicorn = {
+	always = no
+}
+
+### Weapon triggers, used from artifact scope:
+
+# Badly flagged axe tier 2 inclusion.
+blg_weapon_axe_2 = {
+	always = no
+}
+
+# Badly flagged sword tier 3 inclusion.
+blg_weapon_sword_3 = {
+	always = no
+}
+
+blg_weapon_flail = {
+	has_artifact_flag = flail
+}
+
+blg_weapon_greatsword = {
+	OR = {
+		has_artifact_flag = greatsword
+		artifact_type = rtp_greatsword_a
+		AND = { has_artifact_flag = cleaver has_artifact_flag = twohand }
+	}
+}
+
+blg_weapon_hammer = {
+	has_artifact_flag = hammer
+}
+
+blg_weapon_polearm = {
+	has_artifact_flag = polearm
+}
+
+# Scimitar tier 1/2
+blg_weapon_scimitar_1 = {
+	OR = {
+		has_artifact_flag = scimitar
+		artifact_type = rtp_scimitar_a
+		artifact_type = rtp_scimitar_off_a
+	}
+}
+
+# Scimitar tier 3/4
+blg_weapon_scimitar_2 = {
+	OR = {
+		has_artifact_flag = scimitar
+		artifact_type = rtp_falchion_a
+		artifact_type = rtp_falchion_off_a
+	}
+}
+
+blg_weapon_staff = {
+	OR = {
+		has_artifact_flag = staff
+		artifact_type = rtp_woodenstick_a
+		artifact_type = rtp_woodenstick_off_a
+	}
+}
+
+blg_weapon_trident = {
+	OR = {
+		has_artifact_flag = trident
+		artifact_type = rtp_warfork_a
+		artifact_type = rtp_spetum_a
+	}
+}

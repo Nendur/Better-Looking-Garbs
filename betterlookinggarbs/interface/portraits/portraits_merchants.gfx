@@ -204,7 +204,11 @@ spriteTypes = {
 
 		layer = {
 			"GFX_romanmerchant_male_clothes_behind:c0"
+			"GFX_empty:c1"
 			"GFX_romanmerchant_male_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+			"GFX_empty:c7"
 		}
 	}
 
@@ -226,7 +230,11 @@ spriteTypes = {
 
 		layer = {
 			"GFX_romanmerchant_female_clothes_behind:c0"
+			"GFX_empty:c1"
 			"GFX_romanmerchant_female_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+			"GFX_empty:c7"
 		}
 	}
 }
