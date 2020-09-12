@@ -39,7 +39,7 @@ objectTypes = {
 		scale = 0.7f
 		use_animation = no
 	}
-	
+
 	EMFXActorType = {
 		name = "skeletongfx_house_1_3"
 		actorfile = "gfx/models/Settlements/Ruined/Ruined_house_1_03.xac"
@@ -61,7 +61,7 @@ objectTypes = {
 		use_animation = no
 		cull_distance = 550.0f
 	}
-	
+
 	EMFXActorType = {
 		name = "skeletongfx_temple_1"
 		actorfile = "gfx/models/Settlements/Ruined/Ruined_Church_01.xac"
@@ -69,7 +69,7 @@ objectTypes = {
 		use_animation = no
 		cull_distance = 550.0f
 	}
-	
+
 	EMFXActorType = {
 		name = "skeletongfx_city_1"
 		actorfile = "gfx/models/Settlements/Ruined/Ruined_City01.xac"

@@ -1,0 +1,72 @@
+# Title specific triggers.
+
+### Minor titles:
+
+# Cardinal title.
+blg_cardinal_early = {
+	always = no
+}
+
+# Cardinal title.
+blg_cardinal_late = {
+	always = no
+}
+
+# Military Offmap Governor.
+blg_military_governor = {
+	always = no
+}
+
+# Extra titles of royal rank.
+blg_royal_title = {
+	culture_group = sarnor_group
+	tier = DUKE
+}
+
+### Landed titles:
+
+# Venetian Doge.
+blg_doge = {
+	always = no
+}
+
+# Holy Order - Knights Templar
+blg_knights_templar = {
+	always = no
+}
+
+# Holy Order - Knights Hospitaler
+blg_knights_hospitaler = {
+	always = no
+}
+
+# Holy Order - Teutonic Knights
+blg_knights_teutonic = {
+	always = no
+}
+
+# Holy Order - Knights of Calatrava/Santiago
+blg_knights_calatrava = {
+	always = no
+}
+
+# Holy Order - Livonian Order
+blg_knights_livonian = {
+	always = no
+}
+
+# Hirable navies.
+blg_mercenary_fleet = {
+	OR = {
+		title = d_merc_fleet_1
+		title = d_merc_fleet_2
+		title = d_merc_fleet_3
+		title = d_merc_fleet_4
+		title = d_merc_fleet_5
+		title = d_merc_fleet_6
+		title = d_merc_fleet_7
+		title = d_merc_fleet_8
+		title = d_merc_fleet_9
+		title = d_merc_fleet_10
+	}
+}

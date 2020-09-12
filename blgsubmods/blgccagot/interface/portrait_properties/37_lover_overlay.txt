@@ -1,17 +1,36 @@
-# p37 Special Relations (lover/rival)
+# p37 Special Relations.
 37 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 1
 		modifier = {
 			factor = 100
 			multiplayer = yes
 		}
+
 		modifier = {
 			factor = 100
 			has_game_started = no
 		}
 	}
-	1 = {
+
+	1 = { # a - Plot target
+		factor = 100
+		trigger = {
+			any_player = { ROOT = { is_plot_target_of = PREV } }
+		}
+	}
+
+	2 = { # b - Plotter
+		factor = 100
+		trigger = {
+			any_player = {
+				is_plot_target_of = ROOT
+				ROOT = { plot_is_known_by = PREV }
+			}
+		}
+	}
+
+	3 = { # c - Society quest target
 		factor = 100
 		trigger = {
 			any_player = {
@@ -20,32 +39,30 @@
 			}
 		}
 	}
-	2 = {
-		factor = 100
-		trigger = {
-			any_player = { ROOT = { is_quest_target_of = PREV } }
-		}
-	}
-	3 = {
+
+	4 = { # d - Rival
 		factor = 100
 		trigger = {
 			any_player = { is_rival = PREV }
 		}
 	}
-	4 = {
+
+	5 = { # e - Lover
 		factor = 100
 		trigger = {
 			any_player = { is_lover = PREV }
 		}
 	}
-	5 = {
+
+	6 = { # f - Friend
 		factor = 100
 		trigger = {
 			any_player = { is_friend = PREV }
 			NOT = { trait = dragon }
 		}
 	}
-	6 = {
+
+	7 = { # g - Foe
 		factor = 100
 		trigger = {
 			any_player = {
@@ -56,12 +73,13 @@
 			}
 		}
 	}
-	7 = {
+
+	8 = { # h - Ally
 		factor = 100
 		trigger = {
 			any_player = {
 				OR = {
-					is_allied_with = PREV 
+					is_allied_with = PREV
 					is_friend = PREV
 				}
 			}

@@ -297,7 +297,7 @@ spriteTypes = {
 		headgear_that_hides_hair = {10 12 13 14}
 	}
 
-### GHISCARI FEMALE 
+### GHISCARI FEMALE
 
 	spriteType = {
 		name = "GFX_ghiscari_female_headgear_behind"
@@ -316,7 +316,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ghiscari_female_clothes_behind"
 		texturefile = "gfx\\characters\\ghiscari_female\\ghiscari_female_clothes_behind.dds"
-		noOfFrames = 17	
+		noOfFrames = 17
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -324,7 +324,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ghiscari_female_clothes"
 		texturefile = "gfx\\characters\\ghiscari_female\\ghiscari_female_clothes.dds"
-		noOfFrames = 17	
+		noOfFrames = 17
 		norefcount = yes
 		can_be_lowres = yes
 	}

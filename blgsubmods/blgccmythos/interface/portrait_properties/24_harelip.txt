@@ -5,8 +5,8 @@
 		trigger = {
 			OR = {
 				NOR = {
-					trait = harelip 
-					trait = cleft_lip 
+					trait = harelip
+					trait = cleft_lip
 				}
 				has_game_rule = { name = blg_traits value = off }
 			}

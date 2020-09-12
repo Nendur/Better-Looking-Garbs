@@ -239,6 +239,11 @@ blg_forest = {
 	}
 }
 
+# Mountain terrain.
+blg_mountain = {
+	terrain = mountain
+}
+
 # Steppe terrain.
 blg_steppe = {
 	terrain = steppe

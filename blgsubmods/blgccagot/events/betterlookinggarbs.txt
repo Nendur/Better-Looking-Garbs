@@ -19,10 +19,6 @@ character_event = {
 	trigger = {
 		trait = blgspawn
 	}
-	immediate = {
-		remove_trait = blgspawn
-		character_event = { id = blg.7 }
-	}
 
 	option = { # Leave unchanged / Ruler culture
 		trigger = { gfx_culture_scope = { always = yes } }
@@ -43,35 +39,17 @@ character_event = {
 				dynasty = none
 				num_of_dynasty_members <= 1
 			}
-			NOR = {
-				culture_group = winter_group
-				culture_group = unoccupied_group
-				culture_group = old_races
-				culture_group = islander_group
-				culture = high_valyrian
-				culture = dragon_culture
-				culture = brindlemen
-			}
+			blg_ethnicity_known = yes
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
 		random_realm_province = {
 			limit = {
-				NOR = {
-					province = no
-					culture_group = winter_group
-					culture_group = unoccupied_group
-					culture_group = old_races
-					culture_group = islander_group
-					culture = high_valyrian
-					culture = dragon_culture
-					culture = brindlemen
-				}
+				NOT = { province = no }
+				blg_culture_unmixed = no
 			}
 			ROOT = {
 				set_graphical_culture = PREV
-				# random = { chance = 25 culture = PREV }
-				# random = { chance = 25 religion = PREV }
 			}
 		}
 	}
@@ -88,15 +66,7 @@ character_event = {
 				dynasty = none
 				num_of_dynasty_members <= 1
 			}
-			NOR = {
-				culture_group = winter_group
-				culture_group = unoccupied_group
-				culture_group = old_races
-				culture_group = islander_group
-				culture = high_valyrian
-				culture = dragon_culture
-				culture = brindlemen
-			}
+			blg_ethnicity_known = yes
 			NOT = { has_game_rule = { name = blg_new_characters value = off } }
 		}
 
@@ -104,21 +74,11 @@ character_event = {
 			limit = { NOT = { province = no } }
 			random_neighbor_province = {
 				limit = {
-					NOR = {
-						province = no
-						culture_group = winter_group
-						culture_group = unoccupied_group
-						culture_group = old_races
-						culture_group = islander_group
-						culture = high_valyrian
-						culture = dragon_culture
-						culture = brindlemen
-					}
+					NOT = { province = no }
+					blg_culture_unmixed = no
 				}
 				ROOT = {
 					set_graphical_culture = PREV
-					# random = { chance = 25 culture = PREV }
-					# random = { chance = 25 religion = PREV }
 				}
 			}
 		}
@@ -134,139 +94,14 @@ character_event = {
 			}
 		}
 
-		if = {
-			limit = {
-				location = {
-					OR = {
-						region = world_north
-						region = world_shivering_sea
-					}
-					OR = {
-						terrain = arctic
-						has_province_modifier = asoiaf_normal_winter
-						has_province_modifier = asoiaf_harsh_winter
-					}
-				}
-			}
-			set_graphical_culture = polar_bear
-		}
-		else_if = {
-			limit = {
-				location = {
-					region = world_essos
-				}
-			}
-			set_graphical_culture = black_bear
-		}
-		else = {
-			set_graphical_culture = bear
-		}
+		blg_set_ethnicity_bear = yes
 	}
 
-	# Add freckles to new characters.
+	### Post Processing.
 	after = {
+		remove_trait = blgspawn
 
-		# Fix noculture
-		if = {
-			limit= {
-				NOT = { gfx_culture_scope = { always = yes } }
-			}
-			set_graphical_culture = ROOT
-		}
-
-		if = {
-			limit = {
-				NOR = {
-					graphical_culture = whitewalkergfx
-					graphical_culture = ruingfx
-					graphical_culture = islandergfx
-					graphical_culture = brindlegfx
-					graphical_culture = giantgfx
-					graphical_culture = cotfgfx
-					graphical_culture = dragongfx
-				}
-			}
-
-			random_list = {
-				2 = { add_trait = freckles_5 }
-				6 = { add_trait = freckles_4 }
-				7 = { add_trait = freckles }
-				7 = { add_trait = freckles_2 }
-				10 = { add_trait = freckles_3 }
-				4500 = {
-					modifier = {
-						factor = 0.025
-						OR = {
-							graphical_culture = riverlandergfx
-							graphical_culture = tullygfx
-						}
-					}
-					modifier = {
-						factor = 0.05
-						OR = {
-							graphical_culture = valemangfx
-							graphical_culture = arryngfx
-						}
-					}
-					modifier = {
-						factor = 0.075
-						OR = {
-							graphical_culture = westermangfx
-							graphical_culture = lannistergfx
-							graphical_culture = reynegfx
-							graphical_culture = sistermangfx
-						}
-					}
-					modifier = {
-						factor = 0.1
-						OR = {
-							graphical_culture = crownlandergfx
-							graphical_culture = stormlandergfx
-							graphical_culture = baratheongfx
-						}
-					}
-					modifier = {
-						factor = 0.25
-						OR = {
-							graphical_culture = reachmangfx
-							graphical_culture = tyrellgfx
-							graphical_culture = northmangfx
-							graphical_culture = starkgfx
-						}
-					}
-					modifier = {
-						factor = 0.5
-						OR = {
-							graphical_culture = ironborngfx
-							graphical_culture = hoaregfx
-							graphical_culture = greyjoygfx
-							graphical_culture = dornishgfx
-							graphical_culture = stonedornishgfx
-						}
-					}
-					modifier = {
-						factor = 0.6
-						OR = {
-							graphical_culture = pentosigfx
-							graphical_culture = braavosigfx
-							graphical_culture = norvosigfx
-							graphical_culture = myrmangfx
-							graphical_culture = ghiscarigfx
-						}
-					}
-					modifier = {
-						factor = 0.75
-						OR = {
-							graphical_culture = freefolkgfx
-							graphical_culture = firstmangfx
-							graphical_culture = saltdornishgfx
-							graphical_culture = sanddornishgfx
-							graphical_culture = martellgfx
-						}
-					}
-				}
-			}
-		}
+		blg_character_processing = yes
 	}
 }
 
@@ -316,10 +151,7 @@ character_event = {
 					trait = freckles_5
 				}
 				OR = {
-					graphical_culture = riverlandergfx
-					graphical_culture = tullygfx
-					graphical_culture = valemangfx
-					graphical_culture = arryngfx
+					blg_freckles_common = yes
 					mother_even_if_dead = {
 						OR = {
 							trait = freckles_3
@@ -345,10 +177,7 @@ character_event = {
 									trait = freckles_5
 								}
 							}
-							graphical_culture = riverlandergfx
-							graphical_culture = tullygfx
-							graphical_culture = valemangfx
-							graphical_culture = arryngfx
+							blg_freckles_common = yes
 						}
 					}
 					event_target:father = {
@@ -376,10 +205,7 @@ character_event = {
 									trait = freckles_5
 								}
 							}
-							graphical_culture = riverlandergfx
-							graphical_culture = tullygfx
-							graphical_culture = valemangfx
-							graphical_culture = arryngfx
+							blg_freckles_common = yes
 						}
 					}
 				}
@@ -806,92 +632,19 @@ character_event = {
 	}
 }
 
-# Add tattoos
-character_event = {
-	id = blg.7
-
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = { employer = { primary_title = { title = c_fiery_hand } } }
-			add_trait = african_tattoo_10
-		}
-		else_if = {
-			limit = {
-				OR = {
-					trait = slave
-					trait = former_slave
-				}
-				OR = {
-					culture = volantene
-					employer = { culture = volantene }
-					employer = { culture = eastern_valyrian }
-				}
-			}
-
-			if = {
-				limit = { trait = red_priest }
-				add_character_modifier = { name = zun_warpaint_1 duration = -1 }
-			}
-			else_if = {
-				limit = { has_minor_title = court_jester }
-				add_character_modifier = { name = aztec_warpaint_1 duration = -1 }
-			}
-			else_if = {
-				limit = {
-					OR = {
-						has_minor_title = title_commander
-						employer = { primary_title = { mercenary = yes } }
-					}
-				}
-				add_trait = african_tattoo_9
-			}
-			else = {
-				random_list = {
-					10 = { add_character_modifier = { name = finnish_warpaint_1 duration = -1 } }
-					10 = { add_character_modifier = { name = finnish_warpaint_2 duration = -1 } }
-					10 = { add_character_modifier = { name = zun_warpaint_2 duration = -1 } }
-					10 = { add_trait = african_tattoo_2 }
-					10 = { add_trait = african_tattoo_3 }
-				}
-			}
-		}
-		else_if = {
-			limit = { culture = shadowlander }
-
-			random_list = {
-				10 = { add_trait = norse_tattoo_1 }
-				10 = { add_trait = norse_tattoo_2 }
-				10 = { add_trait = norse_tattoo_3 }
-				10 = { add_trait = norse_tattoo_4 }
-				10 = { add_trait = norse_tattoo_5 }
-				10 = { add_trait = norse_tattoo_6 }
-				10 = { add_trait = slavic_tattoo_1 }
-				10 = { add_trait = slavic_tattoo_2 }
-				10 = { add_trait = slavic_tattoo_3 }
-				10 = { add_trait = slavic_tattoo_4 }
-				10 = { add_trait = slavic_tattoo_5 }
-				10 = { add_trait = slavic_tattoo_6 }
-			}
-		}
-	}
-}
-
 # Bearly Legal
 long_character_event = {
 	id = bear.6
-	
+
 	title = bear.6.title
 	desc = bear.6.desc
 	picture = GFX_evt_feast
-	
+
 	is_triggered_only = yes
-	
+
 	prisoner = no
 	only_capable = yes
-	
+
 	trigger = {
 		event_target:bear = {
 			prisoner = no
@@ -900,48 +653,22 @@ long_character_event = {
 			ai = yes
 		}
 	}
-	
+
 	fail_trigger_effect = {
 		clr_character_flag = secret_bear_chain
 	}
-	
+
 	immediate = {
 		event_target:bear = {
 			culture_scope = { save_event_target_as = original_culture }
 			gfx_culture_scope = { save_event_target_as = original_gfx_culture }
 			clr_character_flag = secret_bear
 
-			if = {
-				limit = {
-					location = {
-						OR = {
-							region = world_north
-							region = world_shivering_sea
-						}
-						OR = {
-							terrain = arctic
-							has_province_modifier = asoiaf_normal_winter
-							has_province_modifier = asoiaf_harsh_winter
-						}
-					}
-				}
-				set_graphical_culture = polar_bear
-			}
-			else_if = {
-				limit = {
-					location = {
-						region = world_essos
-					}
-				}
-				set_graphical_culture = black_bear
-			}
-			else = {
-				set_graphical_culture = bear
-			}
+			blg_set_ethnicity_bear = yes
 			culture = bear
 		}
 	}
-	
+
 	option = {
 		name = bear.6.a
 	}
@@ -1011,7 +738,7 @@ long_character_event = {
 		}
 		prestige = 100
 	}
-	
+
 	after = {
 		clr_character_flag = secret_bear_chain
 	}

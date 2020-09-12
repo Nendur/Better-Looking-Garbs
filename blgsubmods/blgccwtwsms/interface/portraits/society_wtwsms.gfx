@@ -239,7 +239,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_bacchant_male_clothing_behind:c0"
 			"GFX_society_bacchant_male_clothing_front:c2"
 		}
@@ -279,7 +279,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_slavic_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_baltic_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_baltic_male_clothes:p3:c2"
@@ -341,7 +341,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_slavic_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_baltic_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_baltic_female_clothes:p3:c2"
@@ -406,7 +406,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_zun_male_headgear_behind:p5:c1"
 			"GFX_empty:p3:c0"
 			"GFX_society_warrior_lodge_african_male_clothes:p3:c2"
@@ -468,7 +468,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_zun_female_headgear_behind:p5:c1"
 			"GFX_empty:p3:c0"
 			"GFX_society_warrior_lodge_african_female_clothes:p3:c2"
@@ -586,7 +586,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
 			"GFX_society_warrior_lodge_tengri_female_clothes:c2"
 			"GFX_empty:c1"
@@ -653,7 +653,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
 			"GFX_society_warrior_lodge_tengri_female_clothes:c2"
 		}
@@ -697,7 +697,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_slavic_female_clothes_behind:c0"
 			"GFX_society_warrior_lodge_slavic_female_clothes:c2"
 		}
@@ -737,7 +737,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_african_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_bon_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_bon_male_clothes:p3:c2"
@@ -798,7 +798,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_african_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_bon_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_bon_female_clothes:p3:c2"
@@ -865,7 +865,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_zun_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_zun_male_clothes:p3:c2"
 		}
@@ -908,7 +908,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_zun_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_zun_female_clothes:p3:c2"
 		}
@@ -948,7 +948,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_empty:p3:c0"
 			"GFX_society_warrior_lodge_african_male_clothes:p3:c2"
 		}
@@ -988,7 +988,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_empty:p3:c0"
 			"GFX_society_warrior_lodge_african_female_clothes:p3:c2"
 		}
@@ -1028,7 +1028,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_zun_male_headgear_behind:p5:c1"
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_zun_male_headgear:p5:c5"
@@ -1074,7 +1074,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_zun_female_headgear_behind:p5:c1"
 			"GFX_empty:c3"
 			"GFX_society_warrior_lodge_zun_female_headgear:p5:c5"

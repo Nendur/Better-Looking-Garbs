@@ -1,0 +1,84 @@
+# Spawned character processing.
+blg_character_processing = {
+	# Fix noculture generated characters.
+	if = {
+		limit= {
+			NOT = { gfx_culture_scope = { always = yes } }
+		}
+		set_graphical_culture = ROOT
+	}
+
+	# Add freckles to new characters.
+	if = {
+		limit = {
+			OR = {
+				is_human = yes
+				is_mer = yes
+			}
+			NOT = { trait = pure_altmer }
+		}
+		random_list = {
+			2 = { add_trait = freckles_5 }
+			6 = { add_trait = freckles_4 }
+			7 = { add_trait = freckles }
+			7 = { add_trait = freckles_2 }
+			10 = { add_trait = freckles_3 }
+			4500 = {
+				modifier = {
+					factor = 0.02
+					OR = {
+						graphical_culture = norsegfx
+						trait = nord
+					}
+				}
+				modifier = {
+					factor = 0.05
+					OR = {
+						graphical_culture = frankishgfx
+						graphical_culture = easternslavicgfx
+						trait = breton
+						trait = reachman
+					}
+				}
+				modifier = {
+					factor = 0.08
+					graphical_culture = bosmergfx
+				}
+				modifier = {
+					factor = 0.1
+					graphical_culture = westernslavicgfx
+				}
+				modifier = {
+					factor = 0.25
+					graphical_culture = southerngfx
+				}
+				modifier = {
+					factor = 0.5
+					OR = {
+						graphical_culture = byzantinegfx
+						graphical_culture = ayleidgfx
+					}
+				}
+				modifier = {
+					factor = 0.75
+					graphical_culture = westafricangfx
+				}
+			}
+		}
+	}
+}
+
+# Refresh portrait trick by removing harmless trait.
+refresh_portrait = {
+	remove_trait = blgspawn
+}
+
+# Append portrait refresh to duel events.
+evaluate_duel_result_score_effect = {
+	event_target:combatant_1 = {
+		refresh_portrait = yes
+	}
+	event_target:combatant_2 = {
+		refresh_portrait = yes
+	}
+}

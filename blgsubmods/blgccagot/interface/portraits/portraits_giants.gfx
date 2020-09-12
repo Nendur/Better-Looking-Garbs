@@ -17,9 +17,6 @@ spriteTypes = {
 		layer = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
-			"GFX_background_frames:p38"
-			"GFX_background_furniture:p42"
-			"GFX_background_items:p2"
 			"GFX_giant_background:p18"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_freckles:p20"
@@ -72,16 +69,13 @@ spriteTypes = {
 			{ 150 30 150 }
 		}
 	}
-	
+
 	portraitType = {
 		name = "PORTRAIT_giantgfx_male1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
-			"GFX_background_frames:p38"
-			"GFX_background_furniture:p42"
-			"GFX_background_items:p2"
 			"GFX_giant_background:p18"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_freckles:p20"
@@ -134,16 +128,13 @@ spriteTypes = {
 			{ 150 30 150 }
 		}
 	}
-	
+
 	portraitType = {
 		name = "PORTRAIT_giantgfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
-			"GFX_background_frames:p38"
-			"GFX_background_furniture:p42"
-			"GFX_background_items:p2"
 			"GFX_giant_background:p18"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_freckles:p20"
@@ -195,10 +186,10 @@ spriteTypes = {
 			{ 34 103 36 }
 			{ 150 30 150 }
 		}
-		
+
 		headgear_that_hides_hair = { 10 }
 	}
-	
+
 	### GIANT FEMALE ####
 
 	spriteType = {
@@ -215,9 +206,6 @@ spriteTypes = {
 		layer = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
-			"GFX_background_frames:p38"
-			"GFX_background_furniture:p42"
-			"GFX_background_items:p2"
 			"GFX_giant2_background:p18"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_chinese_female_makeup2:p15"
@@ -282,9 +270,6 @@ spriteTypes = {
 		layer = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
-			"GFX_background_frames:p38"
-			"GFX_background_furniture:p42"
-			"GFX_background_items:p2"
 			"GFX_giant2_background:p18"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_chinese_female_makeup2:p15"
@@ -322,7 +307,7 @@ spriteTypes = {
 			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
 			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
 			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
-			{ 40 22 18 } { 200 195 0 } { 255 255 255 } 
+			{ 40 22 18 } { 200 195 0 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -349,9 +334,6 @@ spriteTypes = {
 		layer = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
-			"GFX_background_frames:p38"
-			"GFX_background_furniture:p42"
-			"GFX_background_items:p2"
 			"GFX_giant2_background:p18"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_chinese_female_makeup2:p15"

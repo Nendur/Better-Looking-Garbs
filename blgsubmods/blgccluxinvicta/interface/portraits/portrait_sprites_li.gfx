@@ -7,7 +7,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_religious_male_clothes_behind"
 		texturefile = "gfx\\characters\\religious_male_clothes_behind.dds"
@@ -15,7 +15,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_religious_male_headgear"
 		texturefile = "gfx\\characters\\religious_male_headgear.dds"
@@ -23,7 +23,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_religious_male_headgear_behind"
 		texturefile = "gfx\\characters\\religious_male_headgear_behind.dds"
@@ -39,7 +39,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_religious_female_clothes_behind"
 		texturefile = "gfx\\characters\\religious_female_clothes_behind.dds"
@@ -47,7 +47,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_religious_female_headgear"
 		texturefile = "gfx\\characters\\religious_female_headgear.dds"
@@ -55,7 +55,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_religious_female_headgear_behind"
 		texturefile = "gfx\\characters\\religious_female_headgear_behind.dds"

@@ -1,5 +1,5 @@
 # Actual event that gives freckles, also called by emf_new_character
-character_event = { 
+character_event = {
 	id = HFP.30038
 	hide_window = yes
 	is_triggered_only = yes

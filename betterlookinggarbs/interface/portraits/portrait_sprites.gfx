@@ -143,7 +143,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_eyepatch"
 		texturefile = "gfx\\characters\\shared\\maimed_eyepatch.dds"
-		noOfFrames = 22
+		noOfFrames = 23
 		norefcount = yes
 		can_be_lowres = yes
 	}

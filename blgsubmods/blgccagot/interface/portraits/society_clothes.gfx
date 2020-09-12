@@ -5,63 +5,52 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_hermetic_male_clothing_behind.dds"
 		noOfFrames = 9
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_hermetic_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_hermetic_male_clothing_front.dds"
 		noOfFrames = 9
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_hermetic_male_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_hermetic_male_headgear_behind.dds"
 		noOfFrames = 9
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_hermetic_male_headgear_front"
 		textureFile = "gfx/characters/societies/mom_hermetic_male_headgear_front.dds"
 		noOfFrames = 9
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_hermetic_male_headgear_mid"
 		textureFile = "gfx/characters/societies/mom_hermetic_male_headgear_mid.dds"
 		noOfFrames = 9
 	}
-	
+
 	portraitType = {
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_hermetic_clothing_male"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
+
 				portrait_society = alchemists_guild
-				OR = {
-					NOT = { portrait_tier = duke }
-					AND = {
-						OR = {
-							portrait_society_rank = 3
-							portrait_society_rank = 4
-						}
-						NOT = { portrait_tier = king }
-					}
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_hermetic_male_clothing_behind:c0"
 			"GFX_society_hermetic_male_clothing_front:c2"
 			"GFX_society_hermetic_male_headgear_behind:c1"
@@ -69,7 +58,7 @@ spriteTypes = {
 			"GFX_society_hermetic_male_headgear_mid:c3"
 			"GFX_empty:c7"
 		}
-		
+
 		# Appropriate clothing
 		allow_property_values = {
 			3 = {
@@ -82,7 +71,7 @@ spriteTypes = {
 					}
 				}
 				1 = { # Hyrkooni
-					portrait_culture_group = hyrkoon_group				
+					portrait_culture_group = hyrkoon_group
 				}
 				2 = { # Sarnori
 					portrait_culture_group = sarnor_group
@@ -93,7 +82,7 @@ spriteTypes = {
 				4 = { # Summer Islander
 					OR = {
 						portrait_culture_group = summer_islands
-						portrait_culture = basilisk_islander	
+						portrait_culture = basilisk_islander
 						portrait_culture_group = naath_group
 					}
 				}
@@ -104,18 +93,18 @@ spriteTypes = {
 						portrait_culture = moon_clansman
 						portrait_culture = skagosi
 						portrait_culture = brindlemen
-					}	
+					}
 				}
 				6 = { # N'Ghai/Moraqi
 					OR = {
 						portrait_culture_group = moraqi_group
 						portrait_culture_group = nghai_group
-					}	
+					}
 				}
 				7 = { # Dothraki/Jogos/ibbenese
 					OR = {
 						portrait_culture_group = dothraki_group
-						portrait_culture_group = jogos_nhai_group	
+						portrait_culture_group = jogos_nhai_group
 						portrait_culture_group = ibbenese_group
 					}
 				}
@@ -129,7 +118,7 @@ spriteTypes = {
 						portrait_culture_group = sarnor_group
 						portrait_culture_group = ghiscari_group
 						portrait_culture_group = summer_islands
-						portrait_culture = basilisk_islander	
+						portrait_culture = basilisk_islander
 						portrait_culture_group = naath_group
 						portrait_culture_group = further_east
 						portrait_culture_group = free_folk
@@ -139,9 +128,9 @@ spriteTypes = {
 						portrait_culture_group = moraqi_group
 						portrait_culture_group = nghai_group
 						portrait_culture_group = dothraki_group
-						portrait_culture_group = jogos_nhai_group	
+						portrait_culture_group = jogos_nhai_group
 						portrait_culture_group = ibbenese_group
-					}	
+					}
 				}
 			}
 			5 = {
@@ -154,7 +143,7 @@ spriteTypes = {
 					}
 				}
 				1 = { # Hyrkooni
-					portrait_culture_group = hyrkoon_group				
+					portrait_culture_group = hyrkoon_group
 				}
 				2 = { # Sarnori
 					portrait_culture_group = sarnor_group
@@ -165,7 +154,7 @@ spriteTypes = {
 				4 = { # Summer Islander
 					OR = {
 						portrait_culture_group = summer_islands
-						portrait_culture = basilisk_islander	
+						portrait_culture = basilisk_islander
 						portrait_culture_group = naath_group
 					}
 				}
@@ -176,18 +165,18 @@ spriteTypes = {
 						portrait_culture = moon_clansman
 						portrait_culture = skagosi
 						portrait_culture = brindlemen
-					}	
+					}
 				}
 				6 = { # N'Ghai/Moraqi
 					OR = {
 						portrait_culture_group = moraqi_group
 						portrait_culture_group = nghai_group
-					}	
+					}
 				}
 				7 = { # Dothraki/Jogos/ibbenese
 					OR = {
 						portrait_culture_group = dothraki_group
-						portrait_culture_group = jogos_nhai_group	
+						portrait_culture_group = jogos_nhai_group
 						portrait_culture_group = ibbenese_group
 					}
 				}
@@ -201,7 +190,7 @@ spriteTypes = {
 						portrait_culture_group = sarnor_group
 						portrait_culture_group = ghiscari_group
 						portrait_culture_group = summer_islands
-						portrait_culture = basilisk_islander	
+						portrait_culture = basilisk_islander
 						portrait_culture_group = naath_group
 						portrait_culture_group = further_east
 						portrait_culture_group = free_folk
@@ -211,50 +200,50 @@ spriteTypes = {
 						portrait_culture_group = moraqi_group
 						portrait_culture_group = nghai_group
 						portrait_culture_group = dothraki_group
-						portrait_culture_group = jogos_nhai_group	
+						portrait_culture_group = jogos_nhai_group
 						portrait_culture_group = ibbenese_group
-					}	
+					}
 				}
 			}
 		}
 	}
-	
+
 	# female
-	
+
 	spriteType = {
 		name = "GFX_society_hermetic_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_hermetic_female_clothing_behind.dds"
 		noOfFrames = 9
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_hermetic_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_hermetic_female_clothing_front.dds"
 		noOfFrames = 9
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_hermetic_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_hermetic_female_headgear_behind.dds"
 		noOfFrames = 9
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_hermetic_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_hermetic_female_headgear_front.dds"
 		noOfFrames = 9
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_hermetic_female_headgear_mid"
 		textureFile = "gfx/characters/societies/mom_hermetic_female_headgear_mid.dds"
 		noOfFrames = 9
 	}
-	
+
 	portraitType = {
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_hermetic_clothing_female"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -262,27 +251,15 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_clothing = yes
 				portrait_society = alchemists_guild
-				OR = {
-					NOT = { portrait_tier = duke }
-					AND = {
-						OR = {
-							portrait_society_rank = 3
-							portrait_society_rank = 4
-						}
-						NOT = { portrait_tier = king }
-					}
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_hermetic_female_clothing_behind:c0"
 			"GFX_society_hermetic_female_clothing_front:c2"
 			"GFX_society_hermetic_female_headgear_behind:c1"
@@ -290,7 +267,7 @@ spriteTypes = {
 			"GFX_society_hermetic_female_headgear_mid:c3"
 			"GFX_empty:c7"
 		}
-		
+
 		allow_property_values = {
 			3 = {
 				0 = { # Far East
@@ -302,7 +279,7 @@ spriteTypes = {
 					}
 				}
 				1 = { # Hyrkooni
-					portrait_culture_group = hyrkoon_group				
+					portrait_culture_group = hyrkoon_group
 				}
 				2 = { # Sarnori
 					portrait_culture_group = sarnor_group
@@ -313,7 +290,7 @@ spriteTypes = {
 				4 = { # Summer Islander
 					OR = {
 						portrait_culture_group = summer_islands
-						portrait_culture = basilisk_islander	
+						portrait_culture = basilisk_islander
 						portrait_culture_group = naath_group
 					}
 				}
@@ -324,18 +301,18 @@ spriteTypes = {
 						portrait_culture = moon_clansman
 						portrait_culture = skagosi
 						portrait_culture = brindlemen
-					}	
+					}
 				}
 				6 = { # N'Ghai/Moraqi
 					OR = {
 						portrait_culture_group = moraqi_group
 						portrait_culture_group = nghai_group
-					}	
+					}
 				}
 				7 = { # Dothraki/Jogos/ibbenese
 					OR = {
 						portrait_culture_group = dothraki_group
-						portrait_culture_group = jogos_nhai_group	
+						portrait_culture_group = jogos_nhai_group
 						portrait_culture_group = ibbenese_group
 					}
 				}
@@ -349,7 +326,7 @@ spriteTypes = {
 						portrait_culture_group = sarnor_group
 						portrait_culture_group = ghiscari_group
 						portrait_culture_group = summer_islands
-						portrait_culture = basilisk_islander	
+						portrait_culture = basilisk_islander
 						portrait_culture_group = naath_group
 						portrait_culture_group = further_east
 						portrait_culture_group = free_folk
@@ -359,9 +336,9 @@ spriteTypes = {
 						portrait_culture_group = moraqi_group
 						portrait_culture_group = nghai_group
 						portrait_culture_group = dothraki_group
-						portrait_culture_group = jogos_nhai_group	
+						portrait_culture_group = jogos_nhai_group
 						portrait_culture_group = ibbenese_group
-					}	
+					}
 				}
 			}
 			5 = {
@@ -374,7 +351,7 @@ spriteTypes = {
 					}
 				}
 				1 = { # Hyrkooni
-					portrait_culture_group = hyrkoon_group				
+					portrait_culture_group = hyrkoon_group
 				}
 				2 = { # Sarnori
 					portrait_culture_group = sarnor_group
@@ -385,7 +362,7 @@ spriteTypes = {
 				4 = { # Summer Islander
 					OR = {
 						portrait_culture_group = summer_islands
-						portrait_culture = basilisk_islander	
+						portrait_culture = basilisk_islander
 						portrait_culture_group = naath_group
 					}
 				}
@@ -396,18 +373,18 @@ spriteTypes = {
 						portrait_culture = moon_clansman
 						portrait_culture = skagosi
 						portrait_culture = brindlemen
-					}	
+					}
 				}
 				6 = { # N'Ghai/Moraqi
 					OR = {
 						portrait_culture_group = moraqi_group
 						portrait_culture_group = nghai_group
-					}	
+					}
 				}
 				7 = { # Dothraki/Jogos/ibbenese
 					OR = {
 						portrait_culture_group = dothraki_group
-						portrait_culture_group = jogos_nhai_group	
+						portrait_culture_group = jogos_nhai_group
 						portrait_culture_group = ibbenese_group
 					}
 				}
@@ -421,7 +398,7 @@ spriteTypes = {
 						portrait_culture_group = sarnor_group
 						portrait_culture_group = ghiscari_group
 						portrait_culture_group = summer_islands
-						portrait_culture = basilisk_islander	
+						portrait_culture = basilisk_islander
 						portrait_culture_group = naath_group
 						portrait_culture_group = further_east
 						portrait_culture_group = free_folk
@@ -431,9 +408,9 @@ spriteTypes = {
 						portrait_culture_group = moraqi_group
 						portrait_culture_group = nghai_group
 						portrait_culture_group = dothraki_group
-						portrait_culture_group = jogos_nhai_group	
+						portrait_culture_group = jogos_nhai_group
 						portrait_culture_group = ibbenese_group
-					}	
+					}
 				}
 			}
 		}
@@ -447,27 +424,27 @@ spriteTypes = {
 	# the_cult_of_kali
 	# the_cold_ones
 	# the_plaguebringers
-	
+
 	# Male
-	
+
 	spriteType = {
 		name = "GFX_society_satanist_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_satanist_male_clothing_behind.dds"
 		noOfFrames = 4
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_satanist_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_satanist_male_clothing_front.dds"
 		noOfFrames = 4
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_satanist_male_headgear_mid"
 		textureFile = "gfx/characters/societies/mom_satanist_male_headgear_mid.dds"
 		noOfFrames = 4
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_satanist_male_headgear_front"
 		textureFile = "gfx/characters/societies/mom_satanist_male_headgear_front.dds"
@@ -479,42 +456,31 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_satanist_male_headgear_behind.dds"
 		noOfFrames = 4
 	}
-	
+
 	portraitType = {
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_satanist_clothing_male"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
-				portrait_clothing = yes
+
 				OR = {
 					portrait_society = the_satanists
 					portrait_society = the_plaguebringers
 				}
-				OR = {
-					NOT = { portrait_tier = duke }
-					AND = {
-						OR = {
-							portrait_society_rank = 3
-							portrait_society_rank = 4
-						}
-						NOT = { portrait_tier = king }
-					}
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_satanist_male_clothing_behind:c0"
 			"GFX_society_satanist_male_clothing_front:c2"
 			"GFX_empty:c3"
@@ -522,7 +488,7 @@ spriteTypes = {
 			"GFX_society_satanist_female_headgear_behind:c1"
 			"GFX_empty:c7"
 		}
-		
+
 		# Correct rank
 		allow_property_values = {
 			3 = {
@@ -566,21 +532,21 @@ spriteTypes = {
 		}
 		headgear_that_hides_hair = { 0 1 2 3 }
 	}
-	
+
 	# Female
-	
+
 	spriteType = {
 		name = "GFX_society_satanist_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_satanist_female_clothing_behind.dds"
 		noOfFrames = 4
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_satanist_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_satanist_female_clothing_front.dds"
 		noOfFrames = 4
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_satanist_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_satanist_female_headgear_front.dds"
@@ -592,42 +558,31 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/mom_satanist_female_headgear_behind.dds"
 		noOfFrames = 4
 	}
-	
+
 	portraitType = {
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_satanist_clothing_female"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
+				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
-				portrait_clothing = yes
+
 				OR = {
 					portrait_society = the_satanists
 					portrait_society = the_plaguebringers
 				}
-				OR = {
-					NOT = { portrait_tier = duke }
-					AND = {
-						OR = {
-							portrait_society_rank = 3
-							portrait_society_rank = 4
-						}
-						NOT = { portrait_tier = king }
-					}
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_satanist_female_clothing_behind:c0"
 			"GFX_society_satanist_female_clothing_front:c2"
 			"GFX_empty:c3"
@@ -635,7 +590,7 @@ spriteTypes = {
 			"GFX_society_satanist_female_headgear_behind:c1"
 			"GFX_empty:c7"
 		}
-		
+
 		# No hair, correct rank
 		allow_property_values = {
 			3 = {
@@ -705,24 +660,13 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
+
 				portrait_society = the_trollcrafters
-				OR = {
-					NOT = { portrait_tier = duke }
-					AND = {
-						OR = {
-							portrait_society_rank = 3
-							portrait_society_rank = 4
-						}
-						NOT = { portrait_tier = king }
-					}
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -798,24 +742,13 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
+
 				portrait_society = the_trollcrafters
-				OR = {
-					NOT = { portrait_tier = duke }
-					AND = {
-						OR = {
-							portrait_society_rank = 3
-							portrait_society_rank = 4
-						}
-						NOT = { portrait_tier = king }
-					}
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -892,27 +825,16 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
+
 				OR = {
 					portrait_society = the_cult_of_kali
 					portrait_society = the_cold_ones
 				}
-				OR = {
-					NOT = { portrait_tier = duke }
-					AND = {
-						OR = {
-							portrait_society_rank = 3
-							portrait_society_rank = 4
-						}
-						NOT = { portrait_tier = king }
-					}
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 
@@ -978,27 +900,16 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
+
 				OR = {
 					portrait_society = the_cult_of_kali
 					portrait_society = the_cold_ones
 				}
-				OR = {
-					NOT = { portrait_tier = duke }
-					AND = {
-						OR = {
-							portrait_society_rank = 3
-							portrait_society_rank = 4
-						}
-						NOT = { portrait_tier = king }
-					}
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
+				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
-					portrait_government = theocracy_government
+					blg_portrait_theocracy = yes
 				}
-				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
 

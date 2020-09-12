@@ -876,7 +876,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_vodoun_male_clothing_behind:c0"
 			"GFX_society_vodoun_male_clothing_front:c2"
 			"GFX_empty:c3"
@@ -967,7 +967,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_vodoun_female_clothing_behind:c0"
 			"GFX_society_vodoun_female_clothing_front:c2"
 			"GFX_empty:c3"

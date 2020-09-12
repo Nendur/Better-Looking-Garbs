@@ -1,5 +1,5 @@
 arabic = {
-	djinni = { 
+	djinni = {
 		graphical_cultures = { arabicgfx }
 	}
 }

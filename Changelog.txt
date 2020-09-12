@@ -162,7 +162,7 @@ Changelog:
   Moved the additional religious clothing to the special crown layer for compatibility.
   - The Religious Clothing submod has become obsolete.
   - Now works on ironman games.
-  - Autocephalous leaders are treated as religious heads. 
+  - Autocephalous leaders are treated as religious heads.
   Customise Appearence support for the French headgear accessories.
   Added more fallback portraits from Holy Fury portraits.
   Added a number of ironman clothing override conversions of non-ironman portraits.
@@ -194,7 +194,7 @@ Changelog:
   Another round of effect offset adjustments.
   Fixed religious head clothing that was rescaled.
   Reusing Aztec map shields for Zoroastrians.
-  Pick together a plain circle map shield set for Hellenics.  
+  Pick together a plain circle map shield set for Hellenics.
   Patched up more of the coronation implementation mess for viceroys and non-feudals.
   Expanded the selection options for merchant republic clothing.
   Updated the chin sets of the modern style portraits to the physique mechanic.

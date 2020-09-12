@@ -20,75 +20,11 @@ character_event = {
 		trait = blgspawn
 	}
 
-	# Add freckles to new characters.
+	### Post Processing.
 	after = {
 		remove_trait = blgspawn
 
-		# Fix noculture
-		if = {
-			limit= {
-				NOT = { gfx_culture_scope = { always = yes } }
-			}
-			set_graphical_culture = ROOT
-		}
-
-		if = {
-			limit = {
-				OR = {
-					is_human = yes
-					is_mer = yes
-				}
-				NOT = { trait = pure_altmer }
-			}
-			random_list = {
-				2 = { add_trait = freckles_5 }
-				6 = { add_trait = freckles_4 }
-				7 = { add_trait = freckles }
-				7 = { add_trait = freckles_2 }
-				10 = { add_trait = freckles_3 }
-				4500 = {
-					modifier = {
-						factor = 0.02
-						OR = {
-							graphical_culture = norsegfx
-							trait = nord
-						}
-					}
-					modifier = {
-						factor = 0.05
-						OR = {
-							graphical_culture = frankishgfx
-							graphical_culture = easternslavicgfx
-							trait = breton
-							trait = reachman
-						}
-					}
-					modifier = {
-						factor = 0.08
-						graphical_culture = bosmergfx
-					}
-					modifier = {
-						factor = 0.1
-						graphical_culture = westernslavicgfx
-					}
-					modifier = {
-						factor = 0.25
-						graphical_culture = southerngfx
-					}
-					modifier = {
-						factor = 0.5
-						OR = {
-							graphical_culture = byzantinegfx
-							graphical_culture = ayleidgfx
-						}
-					}
-					modifier = {
-						factor = 0.75
-						graphical_culture = westafricangfx
-					}
-				}
-			}
-		}
+		blg_character_processing = yes
 	}
 }
 
@@ -110,8 +46,8 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
+	is_in_society = yes
 	trigger = {
-		is_in_society = yes
 		NOT = { trait = blgcaoff }
 	}
 
@@ -133,9 +69,9 @@ character_event = {
 
 # Installatian check event.
 character_event = {
-	id    = blg.4
+	id = blg.4
 	title = BETTER_LOOKING_GARBS
-	desc  = blg.4.desc
+	desc = blg.4.desc
 
 	picture = GFX_evt_church_council
 	border = GFX_event_normal_frame_intrigue
@@ -182,7 +118,7 @@ character_event = {
 		}
 	}
 
-	immediate = {
+	option = {
 		any_character = { character_event = { id = blg.1 } }
 	}
 }
@@ -203,12 +139,7 @@ character_event = {
 			trait = freckles_5
 		}
 		OR = {
-			graphical_culture = norsegfx
-			graphical_culture = frankishgfx
-			graphical_culture = easternslavicgfx
-			trait = breton
-			trait = nord
-			trait = reachman
+			blg_freckles_common = yes
 			mother_even_if_dead = {
 				OR = {
 					trait = freckles_3
@@ -216,12 +147,6 @@ character_event = {
 					trait = freckles
 					trait = freckles_4
 					trait = freckles_5
-					graphical_culture = norsegfx
-					graphical_culture = frankishgfx
-					graphical_culture = easternslavicgfx
-					trait = breton
-					trait = nord
-					trait = reachman
 					mother_even_if_dead = {
 						OR = {
 							trait = freckles_3
@@ -240,23 +165,18 @@ character_event = {
 							trait = freckles_5
 						}
 					}
+					blg_freckles_common = yes
 				}
 			}
 			trigger_if = {
 				limit = { is_father_real_father = yes }
-				father_even_if_dead = { 
+				father_even_if_dead = {
 					OR = {
 						trait = freckles_3
 						trait = freckles_2
 						trait = freckles
 						trait = freckles_4
 						trait = freckles_5
-						graphical_culture = norsegfx
-						graphical_culture = frankishgfx
-						graphical_culture = easternslavicgfx
-						trait = breton
-						trait = nord
-						trait = reachman
 						mother_even_if_dead = {
 							OR = {
 								trait = freckles_3
@@ -275,23 +195,18 @@ character_event = {
 								trait = freckles_5
 							}
 						}
+						blg_freckles_common = yes
 					}
 				}
 			}
 			trigger_else = {
-				real_father_even_if_dead = { 
+				real_father_even_if_dead = {
 					OR = {
 						trait = freckles_3
 						trait = freckles_2
 						trait = freckles
 						trait = freckles_4
 						trait = freckles_5
-						graphical_culture = norsegfx
-						graphical_culture = frankishgfx
-						graphical_culture = easternslavicgfx
-						trait = breton
-						trait = nord
-						trait = reachman
 						mother_even_if_dead = {
 							OR = {
 								trait = freckles_3
@@ -310,6 +225,7 @@ character_event = {
 								trait = freckles_5
 							}
 						}
+						blg_freckles_common = yes
 					}
 				}
 			}

@@ -1,16 +1,16 @@
 # Bearly Legal
 long_character_event = {
 	id = bear.6
-	
+
 	title = bear.6.title
 	desc = bear.6.desc
 	picture = GFX_evt_feast
-	
+
 	is_triggered_only = yes
-	
+
 	prisoner = no
 	only_capable = yes
-	
+
 	trigger = {
 		event_target:bear_character = {
 			prisoner = no
@@ -19,11 +19,11 @@ long_character_event = {
 			ai = yes
 		}
 	}
-	
+
 	fail_trigger_effect = {
 		clr_character_flag = secret_bear_chain
 	}
-	
+
 	immediate = {
 		event_target:bear_character = {
 			culture_scope = { save_event_target_as = original_culture }
@@ -44,7 +44,7 @@ long_character_event = {
 			culture = bear
 		}
 	}
-	
+
 	option = {
 		name = bear.6.a
 	}
@@ -219,7 +219,7 @@ long_character_event = {
 		}
 		prestige = 100
 	}
-	
+
 	after = {
 		clr_character_flag = secret_bear_chain
 	}

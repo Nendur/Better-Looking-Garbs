@@ -1,0 +1,95 @@
+### Culture triggers:
+
+likes_celts = {
+	OR = {
+		culture_group = first_men
+		culture_group = free_folk
+	}
+}
+
+# Cultures with a lot of assimilating locals.
+blg_assimilating_culture = {
+	always = no
+}
+
+# Special cultures that don't mix with neighbours.
+blg_culture_unmixed = {
+	OR = {
+		culture_group = winter_group
+		culture_group = unoccupied_group
+		culture_group = old_races
+		culture_group = islander_group
+		culture = high_valyrian
+		culture = dragon_culture
+		culture = brindlemen
+	}
+}
+
+### Clothing sets for cultures:
+
+# Block ducal crown in some circumstances.
+# Restrict Song futou headgear.
+blg_blocked_duke = {
+	always = no
+}
+
+# Wears Chinese clothing.
+blg_clothes_chinese = {
+	culture = yi_ti
+}
+
+# Wears Chinese headgear.
+blg_headgear_chinese = {
+	culture = yi_ti
+}
+
+# These cultures use commmon headgear in addition for dukes.
+blg_common_ducal_headgear = {
+	always = no
+}
+
+# Custom cultures limited to default property set.
+blg_default_clothing = {
+	OR = {
+		culture_group = andal
+		culture_group = dornish
+		culture_group = first_men
+		culture_group = free_folk
+		culture_group = iron_isles_culture
+		culture_group = valyrian
+		culture_group = ghiscari_group
+		culture = dothraki
+		culture = brindlemen
+		culture_group = winter_group
+	}
+}
+
+# Uses Merchant clothing set.
+blg_merchant_clothes = {
+	OR = {
+		culture = pentosi
+		culture = lorathi
+	}
+}
+
+# Uses Merchant headgear set.
+blg_merchant_headgear = {
+	culture = lysene
+}
+
+# These cultures use higher tier headgear for independent dukes.
+blg_petty_king = {
+	always = no
+}
+
+# These crowns can be combined with French veils.
+blg_veiled_crown = {
+	always = no
+}
+
+### Culture groupings:
+
+# Chinese adjacent cultures.
+blg_culture_chinese = {
+	culture_group = yi_ti_group
+}

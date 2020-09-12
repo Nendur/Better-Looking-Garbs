@@ -137,11 +137,11 @@ objectTypes = {
 	EMFXActorType = {
 		name = "easterngfx_LIGHT_CAVALRY"
 		actorfile = "gfx\models\Russian_Light_Cavalry_Horse.xac"
-		
+
 		idle   = "gfx\models\Russian_Horse_2_Idle.xsm"
 		move   = "gfx\models\Russian_Horse_2_Moving.xsm"
 		attack = "gfx\models\Russian_Horse_2_Attack.xsm"
-		
+
 		scale = 0.9f
 	}
 

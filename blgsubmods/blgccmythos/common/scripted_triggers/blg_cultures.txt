@@ -8,6 +8,18 @@ blg_assimilating_culture = {
 	}
 }
 
+# Special cultures that don't mix with neighbours.
+blg_culture_unmixed = {
+	OR = {
+		culture = djinni
+		culture = jotunn
+		culture_group = dragon_culture_group
+		culture_group = monster_culture_group
+		culture_group = supernatural_culture_group
+		culture_group = undead_culture_group
+	}
+}
+
 ### Clothing sets for cultures:
 
 # Block ducal crown in some circumstances.

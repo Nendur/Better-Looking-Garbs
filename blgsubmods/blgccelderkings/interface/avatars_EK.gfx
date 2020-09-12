@@ -147,7 +147,7 @@ objectTypes = {
 	EMFXActorType = {
 		name = "westerngfx_battlemages"
 		actorfile = "gfx\models\Mapindicators\jewish_rabbi.xac"
-		
+
 		idle   = "gfx\models\Mapindicators\jewish_rabbi_idle.xsm"
 		move   = "gfx\models\Archer_Moving.xsm"
 		attack = "gfx\models\Archer_Attack.xsm"
@@ -158,7 +158,7 @@ objectTypes = {
 	EMFXActorType = {
 		name = "westerngfx_tongues"
 		actorfile = "gfx\models\Mapindicators\jewish_rabbi.xac"
-		
+
 		idle   = "gfx\models\Mapindicators\jewish_rabbi_idle.xsm"
 		move   = "gfx\models\Archer_Moving.xsm"
 		attack = "gfx\models\Archer_Attack.xsm"

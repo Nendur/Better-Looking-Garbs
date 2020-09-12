@@ -29,7 +29,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "persiangfx_ARCHERS_helmet"
-		actorfile = "gfx\models\no_object.xac"  
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 
@@ -56,7 +56,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "persiangfx_PIKEMEN_helmet"
-		actorfile = "gfx\models\no_object.xac"  
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 
@@ -83,7 +83,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "persiangfx_LIGHT_INFANTRY_helmet"
-		actorfile = "gfx\models\no_object.xac"  
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 
@@ -110,7 +110,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "persiangfx_HEAVY_INFANTRY_helmet"
-		actorfile = "gfx\models\no_object.xac"  
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 
@@ -179,11 +179,11 @@ objectTypes = {
 	EMFXActorType = {
 		name = "persiangfx_KNIGHTS_weapon"
 		actorfile = "gfx\models\Attachments\Banner_Saber.xac"
-		
+
 		idle   = "gfx\models\Attachments\Banner_Saber_Idle.xsm"
 		move   = "gfx\models\Attachments\Banner_Saber_Idle.xsm"
 		attack = "gfx\models\Attachments\Banner_Saber_Attack.xsm"
-		
+
 		scale = 1.0f
 	}
 

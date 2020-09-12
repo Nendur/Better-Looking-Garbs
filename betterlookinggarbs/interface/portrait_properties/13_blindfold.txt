@@ -12,7 +12,7 @@
 				has_character_modifier = glass_eye
 				has_game_rule = { name = blg_wounds value = off }
 				is_variable_equal = { which = ca_eyepatch value = 1 }
-				is_variable_equal = { which = ca_eyepatch value = 22 }
+				is_variable_equal = { which = ca_eyepatch value = 23 }
 			}
 		}
 	}
@@ -265,7 +265,23 @@
 		}
 	}
 
-	13 = { # m - Blinded gouged eyes
+	13 = { # m - Eyepatch 13 - left eyepatch
+		factor = 1
+		trigger = {
+			trait = one_eyed
+			NOR = {
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 14 }
+			}
+		}
+	}
+
+	14 = { # n - Blinded gouged eyes
 		factor = 4
 		trigger = {
 			trait = blinded
@@ -280,24 +296,12 @@
 					}
 					NOT = { trait = shy }
 				}
-				is_variable_equal = { which = ca_eyepatch value = 14 }
-			}
-		}
-	}
-
-	14 = { # n - Blinded - bandaged
-		factor = 1
-		trigger = {
-			trait = blinded
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 15 }
 			}
 		}
 	}
 
-	15 = { # o - Blinded - white rag
+	15 = { # o - Blinded - bandaged
 		factor = 1
 		trigger = {
 			trait = blinded
@@ -305,6 +309,18 @@
 			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 16 }
+			}
+		}
+	}
+
+	16 = { # p - Blinded - white rag
+		factor = 1
+		trigger = {
+			trait = blinded
+
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 17 }
 			}
 		}
 
@@ -318,24 +334,7 @@
 		}
 	}
 
-	16 = { # p - Blinded - blue rag
-		factor = 1
-		trigger = {
-			trait = blinded
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 17 }
-			}
-		}
-
-		modifier = {
-			factor = 2
-			religion_openly_tengri_or_reformed_trigger = yes
-		}
-	}
-
-	17 = { # q - Blinded - green rag
+	17 = { # q - Blinded - blue rag
 		factor = 1
 		trigger = {
 			trait = blinded
@@ -348,11 +347,11 @@
 
 		modifier = {
 			factor = 2
-			likes_muslims = yes
+			religion_openly_tengri_or_reformed_trigger = yes
 		}
 	}
 
-	18 = { # r - Blinded - red rag
+	18 = { # r - Blinded - green rag
 		factor = 1
 		trigger = {
 			trait = blinded
@@ -362,9 +361,26 @@
 				is_variable_equal = { which = ca_eyepatch value = 19 }
 			}
 		}
+
+		modifier = {
+			factor = 2
+			likes_muslims = yes
+		}
 	}
 
-	19 = { # s - Blinded - bloodied rag
+	19 = { # s - Blinded - red rag
+		factor = 1
+		trigger = {
+			trait = blinded
+
+			OR = {
+				is_variable_equal = { which = ca_eyepatch value = 0 }
+				is_variable_equal = { which = ca_eyepatch value = 20 }
+			}
+		}
+	}
+
+	20 = { # t - Blinded - bloodied rag
 		factor = 25
 		trigger = {
 			trait = blinded
@@ -374,12 +390,12 @@
 					is_variable_equal = { which = ca_eyepatch value = 0 }
 					has_injury_trigger = yes
 				}
-				is_variable_equal = { which = ca_eyepatch value = 20 }
+				is_variable_equal = { which = ca_eyepatch value = 21 }
 			}
 		}
 	}
 
-	20 = { # t - Blinded - tartan rag
+	21 = { # u - Blinded - tartan rag
 		factor = 3
 		trigger = {
 			trait = blinded
@@ -389,12 +405,12 @@
 					is_variable_equal = { which = ca_eyepatch value = 0 }
 					likes_celts = yes
 				}
-				is_variable_equal = { which = ca_eyepatch value = 21 }
+				is_variable_equal = { which = ca_eyepatch value = 22 }
 			}
 		}
 	}
 
-	21 = { # u - Hermetic Glasses
+	22 = { # v - Hermetic Glasses
 		factor = 100
 		trigger = {
 			NOT = { has_game_rule = { name = blg_artifacts value = off } }

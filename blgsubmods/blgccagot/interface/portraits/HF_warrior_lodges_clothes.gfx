@@ -27,11 +27,11 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_norse_male_headgear_mid.dds"
 		noOfFrames = 4
 	}
-	
+
 	portraitType = { #Portraits - Male
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_norse_male_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -39,17 +39,11 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_finnish
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_warrior_lodge_norse_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_baltic_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_baltic_male_clothes:p3:c2"
@@ -58,7 +52,7 @@ spriteTypes = {
 			"GFX_empty:c4"
 			"GFX_empty:c7"
 		}
-		
+
 		# Correct rank
 		allow_property_values = {
 			3 = {
@@ -91,7 +85,7 @@ spriteTypes = {
 			}
 		}
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_norse_female_clothes_behind.dds"
@@ -126,7 +120,7 @@ spriteTypes = {
 	portraitType = { #Portraits - Female
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_norse_female_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -134,17 +128,11 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_finnish
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_norse_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_baltic_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_baltic_female_clothes:p3:c2"
@@ -220,7 +208,7 @@ spriteTypes = {
 	portraitType = { #Portraits - Male
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_baltic_male_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -228,17 +216,11 @@ spriteTypes = {
 				portrait_is_female = no
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_norse
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_warrior_lodge_baltic_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_norse_male_clothes_behind:p3:c0"
 			#"GFX_society_warrior_lodge_baltic_male_headgear_hairlayer_behind:p5:c1"
@@ -248,7 +230,7 @@ spriteTypes = {
 			"GFX_empty:c4"
 			"GFX_empty:c7"
 		}
-		
+
 		# Correct rank
 		allow_property_values = {
 			3 = {
@@ -281,7 +263,7 @@ spriteTypes = {
 			}
 		}
 	}
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_baltic_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_baltic_female_clothes_behind.dds"
@@ -311,7 +293,7 @@ spriteTypes = {
 	portraitType = { #Portraits - Female
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_baltic_female_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -319,17 +301,11 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_norse
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_baltic_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_norse_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_norse_female_clothes:p3:c2"
@@ -338,7 +314,7 @@ spriteTypes = {
 			"GFX_empty:c4"
 			"GFX_empty:c7"
 		}
-		
+
 		# Correct rank
 		allow_property_values = {
 			3 = {
@@ -399,11 +375,11 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_african_male_headgear.dds"
 		noOfFrames = 4
 	}
-	
+
 	portraitType = { #Portraits - Male
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_african_male_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -417,8 +393,8 @@ spriteTypes = {
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_warrior_lodge_african_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_bon_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_bon_male_clothes:p3:c2"
@@ -457,7 +433,7 @@ spriteTypes = {
 	portraitType = { #Portraits - Female
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_african_female_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -471,8 +447,8 @@ spriteTypes = {
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_warrior_lodge_african_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_bon_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_bon_female_clothes:p3:c2"
@@ -481,9 +457,9 @@ spriteTypes = {
 			"GFX_empty:c7"
 		}
 	}
-	
+
 	# Warrior Lodges - SLAVIC
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_slavic_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_slavic_male_clothes_behind.dds"
@@ -537,7 +513,7 @@ spriteTypes = {
 	}
 
 	# Warrior Lodges - BON
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_bon_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_bon_male_clothes_behind.dds"
@@ -588,7 +564,7 @@ spriteTypes = {
 	portraitType = { #Portraits - Female
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_bon_female_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -596,17 +572,11 @@ spriteTypes = {
 				#portrait_is_female = yes
 				portrait_clothing = yes
 				portrait_society = warrior_lodge_bon
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_warrior_lodge_bon_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_tengri_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_tengri_female_clothes:p3:c2"
@@ -650,7 +620,7 @@ spriteTypes = {
 	}
 
 	# Warrior Lodges - HELLENIC
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_hellenic_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_hellenic_male_clothes_behind.dds"
@@ -676,11 +646,11 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_hellenic_male_headgear.dds"
 		noOfFrames = 4
 	}
-	
+
 	portraitType = { #Portraits - Male
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_hellenic_male_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -720,7 +690,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			#"GFX_society_warrior_lodge_hellenic_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_hellenic_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_hellenic_male_clothes:p3:c2"
@@ -770,7 +740,7 @@ spriteTypes = {
 	portraitType = { #Portraits - Female
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_hellenic_female_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -810,7 +780,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			#"GFX_society_warrior_lodge_hellenic_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_hellenic_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_hellenic_female_clothes:p3:c2"
@@ -835,9 +805,9 @@ spriteTypes = {
 			}
 		}
 	}
-	
+
 	# Warrior Lodges - TENGRI
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_tengri_male_clothes_behind.dds"
@@ -868,11 +838,11 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_tengri_male_headgear.dds"
 		noOfFrames = 4
 	}
-	
+
 	portraitType = { #Portraits - Male
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_tengri_male_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -895,8 +865,8 @@ spriteTypes = {
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_warrior_lodge_tengri_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_tengri_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_tengri_male_clothes:p3:c2"
@@ -939,8 +909,8 @@ spriteTypes = {
 
 		headgear_that_hides_hair = { 1 2 3 }
 	}
-	
-	
+
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_tengri_female_clothes_behind.dds"
@@ -970,7 +940,7 @@ spriteTypes = {
 	portraitType = { #Portraits - Female
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_tengri_female_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -993,8 +963,8 @@ spriteTypes = {
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_warrior_lodge_tengri_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_tengri_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_tengri_female_clothes:p3:c2"
@@ -1037,9 +1007,9 @@ spriteTypes = {
 
 		headgear_that_hides_hair = { 1 2 3 }
 	}
-	
+
 	# Warrior Lodges - ZUN
-	
+
 	spriteType = {
 		name = "GFX_society_warrior_lodge_zun_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_zun_male_clothes_behind.dds"
@@ -1065,11 +1035,11 @@ spriteTypes = {
 		textureFile = "gfx/characters/societies/wl_zun_male_headgear.dds"
 		noOfFrames = 4
 	}
-	
+
 	portraitType = { #Portraits - Male
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_zun_male_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -1091,8 +1061,8 @@ spriteTypes = {
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_warrior_lodge_zun_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_zun_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_zun_male_clothes:p3:c2"
@@ -1163,7 +1133,7 @@ spriteTypes = {
 	portraitType = { #Portraits - Female
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_zun_female_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -1185,8 +1155,8 @@ spriteTypes = {
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_society_warrior_lodge_zun_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_zun_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_zun_female_clothes:p3:c2"
@@ -1231,7 +1201,7 @@ spriteTypes = {
 	portraitType = { #Portraits - Male
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_dothraki_male_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -1242,8 +1212,8 @@ spriteTypes = {
 				NOT = { portrait_has_trait = blgcaoff }
 			}
 		}
-		
-		layer = { 
+
+		layer = {
 			"GFX_empty:c1"
 			"GFX_society_warrior_lodge_african_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_african_male_clothes:p3:c2"
@@ -1287,7 +1257,7 @@ spriteTypes = {
 	portraitType = { #Portraits - Female
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_dothraki_female_clothing"
-		
+
 		weight = {
 			additive_modifier = {
 				value = 10000
@@ -1299,7 +1269,7 @@ spriteTypes = {
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_empty:c1"
 			"GFX_society_warrior_lodge_african_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_african_female_clothes:p3:c2"

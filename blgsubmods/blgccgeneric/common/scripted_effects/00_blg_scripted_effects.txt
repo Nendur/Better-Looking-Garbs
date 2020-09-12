@@ -68,13 +68,18 @@ blg_child_mixed = {
 blg_child_upbringing = {
 }
 
-# Append portrait refresh trick to duel events.
+# Refresh portrait trick by removing harmless trait.
+refresh_portrait = {
+	remove_trait = blgspawn
+}
+
+# Append portrait refresh to duel events.
 evaluate_duel_result_score_effect = {
 	event_target:combatant_1 = {
-		remove_trait = blgspawn
+		refresh_portrait = yes
 	}
 	event_target:combatant_2 = {
-		remove_trait = blgspawn
+		refresh_portrait = yes
 	}
 }
 

@@ -1,0 +1,184 @@
+# Diseases and related effects.
+
+### Diseases:
+
+# Blind, natural or maimed.
+blg_blind = {
+	OR = {
+		trait = blinded
+		trait = blind
+		trait = blind_moth
+	}
+}
+
+# Pox boils.
+blg_boils = {
+	OR = {
+		trait = has_small_pox
+		trait = witches_pox
+		trait = has_peryite_plague
+	}
+}
+
+# Bubonic boils.
+blg_bubonic = {
+	trait = has_bubonic_plague
+}
+
+# Drooling spit.
+blg_drooling = {
+	OR = {
+		trait = infirm
+		trait = rabies
+		trait = greenspore
+	}
+}
+
+# Fat or sturdy.
+blg_fat = {
+	OR = {
+		trait = is_fat
+		trait = sturdy
+		AND = {
+			trait = dwarf
+			NOT = { trait = fair }
+		}
+	}
+}
+
+# Feverish.
+blg_fever = {
+	OR = {
+		trait = fever
+		trait = has_typhoid_fever
+	}
+}
+
+# Nose cold.
+blg_flu = {
+	OR = {
+		trait = ill
+		trait = flu
+	}
+}
+
+# Bandaged sick skin.
+blg_leper = {
+	trait = leper
+	OR = {
+		trait = disfigured
+		NOT = { has_dlc = "Reapers" }
+	}
+}
+
+# Pale and gaunt.
+blg_pale = {
+	OR = {
+		trait = is_malnourished
+		trait = fatigue
+		trait = malaise
+		trait = cancer
+		trait = has_tuberculosis
+		trait = has_swamp_rot
+		trait = chrondiasis
+		trait = undead
+		has_character_modifier = broken_spirit
+	}
+}
+
+# Oxygen deprived.
+blg_pneumonic = {
+	trait = pneumonic
+}
+
+# Syphilitic pox.
+blg_pox = {
+	OR = {
+		trait = syphilitic
+		trait = has_aztec_disease
+	}
+}
+
+# Skin rash.
+blg_rash = {
+	OR = {
+		trait = rash
+		trait = has_measles
+		trait = has_typhus
+		trait = has_knahaten_flu
+	}
+}
+
+# Baggy eyes.
+blg_stressed = {
+	OR = {
+		trait = stressed
+		has_character_flag = stage_4_vampire
+	}
+}
+
+# Remaining food drips.
+blg_vomit = {
+	OR = {
+		trait = vomiting
+		trait = food_poisoning
+		trait = cholera
+	}
+}
+
+### Supernatural effects:
+
+# Demon eyes and horns.
+blg_demon = {
+	has_character_flag = revealed_daedric_heritage
+}
+
+# Glowing eyes.
+blg_glowing = {
+	trait = lich
+}
+
+# Bandaged and pale.
+blg_mummy = {
+	always = no
+}
+
+# Vampire fangs.
+blg_vampire = {
+	OR = {
+		trait = known_vampire
+		trait = known_vampire_benevolent
+		AND = {
+			trait = vampire
+			multiplayer = no
+			OR = {
+				is_local_human_observer = yes
+				any_player = {
+					trait = vampire
+					at_location = ROOT
+				}
+			}
+		}
+	}
+	blg_adult = yes
+	NOT = { has_game_rule = { name = blg_traits value = off } }
+}
+
+# Wolf eyes.
+blg_werewolf = {
+	OR = {
+		trait = known_lycan
+		trait = known_lycan_benevolent
+		AND = {
+			trait = lycan
+			multiplayer = no
+			OR = {
+				is_local_human_observer = yes
+				any_player = {
+					trait = lycan
+					at_location = ROOT
+				}
+			}
+		}
+	}
+}

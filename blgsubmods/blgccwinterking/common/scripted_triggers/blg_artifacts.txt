@@ -24,7 +24,7 @@ blg_artifact_banner_mohammad = {
 	}
 }
 
-# Derafsh Kaviani banner. 
+# Derafsh Kaviani banner.
 blg_artifact_derafsh_kaviani = {
 	always = no
 }
@@ -267,23 +267,23 @@ blg_crown_fylkir = {
 	OR = {
 		any_artifact = {
 			artifact_type = crown_fylkir
-			is_artifact_equipped = yes 
+			is_artifact_equipped = yes
 		}
 		any_artifact = {
 			artifact_type = crown_germanic_fylkir
-			is_artifact_equipped = yes 
+			is_artifact_equipped = yes
 		}
 		any_artifact = {
 			artifact_type = crown_frankish_fylkir
-			is_artifact_equipped = yes 
+			is_artifact_equipped = yes
 		}
 		any_artifact = {
 			artifact_type = crown_suebic_fylkir
-			is_artifact_equipped = yes 
+			is_artifact_equipped = yes
 		}
 		any_artifact = {
 			artifact_type = crown_gothic_fylkir
-			is_artifact_equipped = yes 
+			is_artifact_equipped = yes
 		}
 		trait = dead_crown_fylkir
 		trait = dead_crown_germanic_fylkir
@@ -309,7 +309,7 @@ blg_crown_finnish = {
 	OR = {
 		any_artifact = {
 			artifact_type = crown_vasconic_fylkir
-			is_artifact_equipped = yes 
+			is_artifact_equipped = yes
 		}
 		trait = dead_crown_vasconic_fylkir
 	}
@@ -325,7 +325,7 @@ blg_crown_slavic = {
 	OR = {
 		any_artifact = {
 			artifact_type = crown_alan_fylkir
-			is_artifact_equipped = yes 
+			is_artifact_equipped = yes
 		}
 		trait = dead_crown_alan_fylkir
 	}
@@ -336,15 +336,15 @@ blg_crown_baltic = {
 	OR = {
 		any_artifact = {
 			artifact_type = crown_briton_fylkir
-			is_artifact_equipped = yes 
+			is_artifact_equipped = yes
 		}
 		any_artifact = {
 			artifact_type = crown_pict_fylkir
-			is_artifact_equipped = yes 
+			is_artifact_equipped = yes
 		}
 		any_artifact = {
 			artifact_type = crown_gael_fylkir
-			is_artifact_equipped = yes 
+			is_artifact_equipped = yes
 		}
 		trait = dead_crown_briton_fylkir
 		trait = dead_crown_pict_fylkir

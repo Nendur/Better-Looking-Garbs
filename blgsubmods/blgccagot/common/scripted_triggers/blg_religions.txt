@@ -1,0 +1,144 @@
+# Religion triggers.
+
+likes_christians = {
+	OR = {
+		religion = the_seven
+		religion_group = essos_group
+		religion_group = valyrian_rel_group
+	}
+}
+
+likes_muslims = {
+	religion_group = ghiscar_rel
+}
+
+religion_openly_tengri_or_reformed_trigger = {
+	always = no
+}
+
+### Christian branches:
+
+# Catholic religions.
+blg_religion_catholic = {
+	likes_christians = yes
+}
+
+# Early religions, modified clothing without headgear.
+blg_religion_early = {
+	always = no
+}
+
+# Oriental Christian religions.
+blg_religion_oriental = {
+	always = no
+}
+
+# Eastern Christian religions.
+blg_religion_orthodox = {
+	always = no
+}
+
+# Early-Protestant Christian religions.
+blg_religion_protestant = {
+	always = no
+}
+
+### Other Religions:
+
+# Chinese religions.
+blg_religion_chinese = {
+	always = no
+}
+
+# Far Eastern religions.
+blg_religion_eastern = {
+	religion_group = far_east_group
+}
+
+### Pagan religions:
+
+# Pagan religions.
+blg_religion_pagan = {
+	OR = {
+		religion_group = dothraki_rel_group
+		religion_group = jogos_rel_group
+		religion_group = lhazar_rel_group
+		religion_group = pagan_group
+		religion_group = summer_rel_group
+		religion_group = sothoryos_rel_group
+		religion_group = winter_religion
+		religion_group = islands_rel
+	}
+}
+
+# Aztec religions.
+blg_religion_aztec = {
+	always = no
+}
+
+# Celtic pagan religions.
+blg_religion_celtic = {
+	always = no
+}
+
+# Far Eastern pagan religions.
+blg_religion_eastern_pagan = {
+	always = no
+}
+
+# Egyptian pagan religions.
+blg_religion_egyptian = {
+	always = no
+}
+
+### Portrait override triggers:
+
+# African religion.
+blg_portrait_african_pagan = {
+	always = no
+}
+
+# Catholic religion.
+blg_portrait_catholic = {
+	always = no
+}
+
+# Christian religion.
+blg_portrait_christian = {
+	always = no
+}
+
+# Hellenic religion.
+blg_portrait_hellenic = {
+	always = no
+}
+
+# Jewish religion.
+blg_portrait_jewish = {
+	always = no
+}
+
+# Muslim religion.
+blg_portrait_muslim = {
+	always = no
+}
+
+# Orthodox religions.
+blg_portrait_orthodox = {
+	always = no
+}
+
+# Tengri religion.
+blg_portrait_tengri = {
+	always = no
+}
+
+# Zoroastrian group religions.
+blg_portrait_zoroastrian = {
+	always = no
+}
+
+# Zunist religion.
+blg_portrait_zun = {
+	always = no
+}

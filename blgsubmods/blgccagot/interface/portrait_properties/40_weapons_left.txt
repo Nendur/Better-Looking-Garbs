@@ -1,6 +1,0 @@
-# p40 Weapons - Lefthanded
-40 = {
-	0 = { # blank
-		factor = 100
-	}
-}

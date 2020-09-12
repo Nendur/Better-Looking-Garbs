@@ -263,7 +263,7 @@ spriteTypes = {
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_muslim_male_eyes2"
@@ -368,7 +368,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_muslim_male_headgear_mid"
 		texturefile = "gfx\\characters\\muslim_male\\muslim_male_headgear_mid.dds"
@@ -722,7 +722,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_muslim_female_headgear_mid"
 		texturefile = "gfx\\characters\\muslim_female\\muslim_female_headgear_mid.dds"

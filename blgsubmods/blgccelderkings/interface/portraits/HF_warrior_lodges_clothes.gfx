@@ -40,17 +40,11 @@ spriteTypes = {
 				portrait_clothing = yes
 				has_dlc = "Holy Fury"
 				portrait_society = companions_tamriel
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_norse_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_slavic_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_slavic_male_clothes:p3:c2"
@@ -126,17 +120,11 @@ spriteTypes = {
 				portrait_clothing = yes
 				has_dlc = "Holy Fury"
 				portrait_society = companions_tamriel
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_norse_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_slavic_female_clothes_behind:p3:c0"
 		#	"GFX_society_warrior_lodge_norse_female_hairlayer_behind:p5:c6:h"
@@ -213,17 +201,11 @@ spriteTypes = {
 				portrait_clothing = yes
 				has_dlc = "Holy Fury"
 				portrait_society = ansei_guild_tamriel
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_bon_male_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_bon_male_clothes:p3:c2"
 		}
@@ -270,17 +252,11 @@ spriteTypes = {
 				portrait_clothing = yes
 				has_dlc = "Holy Fury"
 				portrait_society = ansei_guild_tamriel
-				OR = {
-					NOT = { portrait_tier = duke }
-					portrait_in_command = yes
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_warrior_lodge_clothing = yes
 			}
 		}
 
-		layer = { 
+		layer = {
 			"GFX_society_warrior_lodge_bon_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_bon_female_clothes:p3:c2"
 		}
@@ -337,23 +313,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				has_dlc = "Holy Fury"
 				portrait_society = morag_tong_tamriel
-				OR = {
-					NOT = { portrait_tier = duke }
-					AND = {
-						OR = {
-							portrait_society_rank = 3
-							portrait_society_rank = 4
-						}
-						NOT = { portrait_tier = king }
-					}
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				OR = {
-					portrait_in_command = no
-					portrait_government = theocracy_government
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing = yes
 			}
 		}
 
@@ -395,23 +355,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				has_dlc = "Holy Fury"
 				portrait_society = morag_tong_tamriel
-				OR = {
-					NOT = { portrait_tier = duke }
-					AND = {
-						OR = {
-							portrait_society_rank = 3
-							portrait_society_rank = 4
-						}
-						NOT = { portrait_tier = king }
-					}
-					portrait_has_trait = blgcaon
-					portrait_has_trait = blgquesting
-				}
-				OR = {
-					portrait_in_command = no
-					portrait_government = theocracy_government
-				}
-				NOT = { portrait_has_trait = blgcaoff }
+				blg_wear_society_clothing = yes
 			}
 		}
 

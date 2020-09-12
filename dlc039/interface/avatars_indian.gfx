@@ -321,7 +321,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "indiangfx_PIKEMEN_helmet"
-		actorfile = "gfx\models\no_object.xac"  
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 

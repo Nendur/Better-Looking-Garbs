@@ -137,7 +137,7 @@ blg_regional_diversity = {
 						blg_ethnicity_lombard = no
 						NOR = {
 							graphical_culture = romangfx
-							graphical_culture = bohemiangfx 
+							graphical_culture = bohemiangfx
 						}
 					}
 				}
@@ -710,10 +710,16 @@ blg_child_mixed = {
 		limit = {
 			OR = {
 				event_target:father = {
-					blg_ethnicity_indian = yes
+					OR = {
+						blg_ethnicity_indian = yes
+						blg_ethnicity_mesoamerican = yes
+					}
 				}
 				mother_even_if_dead = {
-					blg_ethnicity_indian = yes
+					OR = {
+						blg_ethnicity_indian = yes
+						blg_ethnicity_mesoamerican = yes
+					}
 				}
 			}
 		}
@@ -850,7 +856,6 @@ blg_child_mixed = {
 						blg_ethnicity_sogdian = no
 						blg_ethnicity_mongol = no
 						blg_ethnicity_centralasian = no
-						blg_ethnicity_mesoamerican = no
 						NOR = {
 							graphical_culture = kurdishgfx
 							graphical_culture = khmergfx
@@ -864,7 +869,6 @@ blg_child_mixed = {
 						blg_ethnicity_sogdian = no
 						blg_ethnicity_mongol = no
 						blg_ethnicity_centralasian = no
-						blg_ethnicity_mesoamerican = no
 						NOR = {
 							graphical_culture = kurdishgfx
 							graphical_culture = khmergfx
@@ -885,7 +889,6 @@ blg_child_mixed = {
 						blg_ethnicity_arabic = yes
 						blg_ethnicity_egyptian = yes
 						blg_ethnicity_berber = yes
-						blg_ethnicity_mesoamerican = yes
 					}
 				}
 				mother_even_if_dead = {
@@ -893,7 +896,6 @@ blg_child_mixed = {
 						blg_ethnicity_arabic = yes
 						blg_ethnicity_egyptian = yes
 						blg_ethnicity_berber = yes
-						blg_ethnicity_mesoamerican = yes
 					}
 				}
 			}
@@ -970,7 +972,6 @@ blg_child_mixed = {
 						blg_ethnicity_berber = no
 						blg_ethnicity_persian = no
 						blg_ethnicity_sogdian = no
-						blg_ethnicity_mesoamerican = no
 						NOT = {
 							graphical_culture = indusgfx
 							graphical_culture = kurdishgfx
@@ -984,7 +985,6 @@ blg_child_mixed = {
 						blg_ethnicity_berber = no
 						blg_ethnicity_persian = no
 						blg_ethnicity_sogdian = no
-						blg_ethnicity_mesoamerican = no
 						NOT = {
 							graphical_culture = indusgfx
 							graphical_culture = kurdishgfx
@@ -1713,13 +1713,18 @@ blg_child_upbringing = {
 	}
 }
 
-# Append portrait refresh trick to duel events.
+# Refresh portrait trick by removing harmless trait.
+refresh_portrait = {
+	remove_trait = blgspawn
+}
+
+# Append portrait refresh to duel events.
 evaluate_duel_result_score_effect = {
 	event_target:combatant_1 = {
-		remove_trait = blgspawn
+		refresh_portrait = yes
 	}
 	event_target:combatant_2 = {
-		remove_trait = blgspawn
+		refresh_portrait = yes
 	}
 }
 

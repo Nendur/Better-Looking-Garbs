@@ -1,0 +1,5 @@
+on_adulthood = {
+	effect = {
+		blg_tattoos = yes
+	}
+}

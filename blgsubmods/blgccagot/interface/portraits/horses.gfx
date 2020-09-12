@@ -7,7 +7,7 @@ spriteTypes = {
 		noOfFrames = 1
 		norefcount = yes
 	}
-	
+
 	spriteType = {
 		name = "PORTRAIT_horsegfx_child_female"
 		texturefile = "gfx\\characters\\horse_filly.tga"

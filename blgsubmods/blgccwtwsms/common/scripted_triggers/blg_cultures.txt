@@ -8,6 +8,11 @@ blg_assimilating_culture = {
 	}
 }
 
+# Special cultures that don't mix with neighbours.
+blg_culture_unmixed = {
+	always = no
+}
+
 ### Clothing sets for cultures:
 
 # Block ducal crown in some circumstances.

@@ -515,12 +515,12 @@
 			trigger_if = {
 				limit = { location = { always = yes } }
 				location = {
-					terrain = mountain
+					blg_mountain = yes
 				}
 			}
 			trigger_else = {
 				capital_scope = {
-					terrain = mountain
+					blg_mountain = yes
 				}
 			}
 

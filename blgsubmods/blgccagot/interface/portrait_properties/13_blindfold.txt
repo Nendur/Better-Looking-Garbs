@@ -1,434 +1,411 @@
-# p13 eyepatch for one_eyed
+# p13 Eyepatches and blindfolds.
 13 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 100
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				trait = blinded
-				trait = one_eyed
-				any_artifact = { artifact_type = hermetic_glasses is_artifact_active = yes }
-			}
-			NOR = {
-				has_character_modifier = glass_eye 
+				NOR = {
+					trait = blinded
+					trait = one_eyed
+					character = 2107 #Euron
+					blg_artifact_glasses = yes
+				}
+				has_character_modifier = glass_eye
 				has_game_rule = { name = blg_wounds value = off }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_eyepatch value = 21 } }
-		}
-	}
-
-	1 = { # eyepatch 1
-		factor = 1
-		trigger = {
-			trait = one_eyed
-			NOT = { trait = blinded }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 1 }
+				is_variable_equal = { which = ca_eyepatch value = 23 }
 			}
 		}
 	}
 
-	2 = { # eyepatch 2 - red leather
+	1 = { # a - Eyepatch 1
 		factor = 1
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
 			NOR = {
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 2 }
 			}
 		}
 	}
 
-	3 = { # eyepatch 3 - painted eye
-		factor = 4
+	2 = { # b - Eyepatch 2 - red leather
+		factor = 1
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-			OR = {
-				trait = paranoid
-				trait = possessed
-				AND = { is_alive = yes is_variable_equal = { which = ca_eyepatch value = 3 } }
-			}
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
 			NOR = {
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 3 }
 			}
 		}
 	}
 
-	4 = { # eyepatch 4 - red
-		factor = 1
+	3 = { # c - Eyepatch 3 - painted eye
+		factor = 4
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
 			NOR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
+				AND = {
+					is_variable_equal = { which = ca_eyepatch value = 0 }
+					OR = {
+						trait = paranoid
+						trait = possessed
+						trait = lunatic
+					}
+				}
 				is_variable_equal = { which = ca_eyepatch value = 4 }
 			}
 		}
 	}
 
-	5 = { # eyepatch 5 - white rag
+	4 = { # d - Eyepatch 4 - red
 		factor = 1
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-			NOT = { has_character_flag = eye_patch }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
 			NOR = {
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 5 }
 			}
 		}
 	}
 
-	6 = { # eyepatch 6 - blue rag
+	5 = { # e - Eyepatch 5 - white rag
 		factor = 1
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-			NOT = { has_character_flag = eye_patch }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
 			NOR = {
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 6 }
 			}
 		}
+
+		modifier = {
+			factor = 5
+			blg_religion_catholic = yes
+			OR = {
+				blg_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
 	}
 
-	7 = { # eyepatch 7 - green rag
+	6 = { # f - Eyepatch 6 - blue rag
 		factor = 1
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-			NOT = { has_character_flag = eye_patch }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
 			NOR = {
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 7 }
 			}
 		}
 	}
 
-	8 = { # eyepatch 8 - red rag
+	7 = { # g - Eyepatch 7 - green rag
 		factor = 1
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-			NOT = { has_character_flag = eye_patch }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
 			NOR = {
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 8 }
 			}
 		}
 	}
 
-	9 = { # eyepatch 9 - bloodied rag
+	8 = { # h - Eyepatch 8 - red rag
 		factor = 1
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-			NOT = { has_character_flag = eye_patch }
+			NOR = {
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
 
 			OR = {
-				trait = severely_injured
-				trait = wroth
-				trait = cruel
-				has_minor_title = title_commander
-				AND = { is_alive = yes is_variable_equal = { which = ca_eyepatch value = 9 } }
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				trait = wroth
-				trait = cruel
-				has_minor_title = title_commander
-			}
-		}
-		modifier = {
-			factor = 2
-			martial = 12
-		}
-		modifier = {
-			factor = 2
-			trait = severely_injured
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 9 }
 			}
 		}
 	}
 
-	10 = { # eyepatch 10 - tartan rag
-		factor = 3
+	9 = { # i - Eyepatch 9 - bloodied rag
+		factor = 25
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-			NOT = { has_character_flag = eye_patch }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
 			NOR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
+				AND = {
+					is_variable_equal = { which = ca_eyepatch value = 0 }
+					has_injury_trigger = yes
+				}
 				is_variable_equal = { which = ca_eyepatch value = 10 }
 			}
 		}
 	}
 
-	11 = { # eyepatch 11 - scarred eye 1
-		factor = 1
+	10 = { # j - Eyepatch 10 - tartan rag
+		factor = 3
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-			NOT = { has_character_flag = eye_patch }
-		}
-		modifier = {
-			factor = 0
-			trait = shy
-			NAND = { is_alive = yes is_variable_equal = { which = ca_eyepatch value = 11 } }
-		}
-		modifier = {
-			factor = 4
-			OR = {
-				is_tribal = yes
-				is_nomadic = yes
-				trait = stubborn
-			}
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
 			NOR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
+				AND = {
+					is_variable_equal = { which = ca_eyepatch value = 0 }
+					likes_celts = yes
+				}
 				is_variable_equal = { which = ca_eyepatch value = 11 }
 			}
 		}
 	}
 
-	12 = { # eyepatch 12 - scarred eye 2
+	11 = { # k - Eyepatch 11 - scarred eye 1
 		factor = 1
 		trigger = {
 			trait = one_eyed
-			NOT = { trait = blinded }
-			NOT = { has_character_flag = eye_patch }
-		}
-		modifier = {
-			factor = 0
-			trait = shy
-			NAND = { is_alive = yes is_variable_equal = { which = ca_eyepatch value = 12 } }
-		}
-		modifier = {
-			factor = 4
-			OR = {
-				is_tribal = yes
-				is_nomadic = yes
-				trait = stubborn
-			}
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
 			NOR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
+				AND = {
+					is_variable_equal = { which = ca_eyepatch value = 0 }
+					NOT = { trait = shy }
+				}
 				is_variable_equal = { which = ca_eyepatch value = 12 }
 			}
 		}
+
+		modifier = {
+			factor = 4
+			OR = {
+				has_tribal_or_nomadic_government_trigger = yes
+				blg_religion_pagan = yes
+				trait = stubborn
+			}
+		}
 	}
 
-	13 = { # blinded gouged eyes
-		factor = 4
+	12 = { # l - Eyepatch 12 - scarred eye 2
+		factor = 1
 		trigger = {
-			trait = blinded
-		}
-		modifier = {
-			factor = 0
+			trait = one_eyed
 			NOR = {
-				is_tribal = yes
-				is_nomadic = yes
-				trait = severely_injured
-				trait = stubborn
-				trait = cruel
+				trait = blinded
+				has_character_modifier = glass_eye
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_eyepatch value = 13 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
+
+			OR = {
+				AND = {
+					is_variable_equal = { which = ca_eyepatch value = 0 }
+					NOT = { trait = shy }
+				}
 				is_variable_equal = { which = ca_eyepatch value = 13 }
 			}
 		}
+
+		modifier = {
+			factor = 4
+			OR = {
+				has_tribal_or_nomadic_government_trigger = yes
+				blg_religion_pagan = yes
+				trait = stubborn
+			}
+		}
 	}
 
-	14 = { # blinded - bandaged
+	13 = { # m - Eyepatch 13 - left eyepatch
 		factor = 1
 		trigger = {
-			trait = blinded
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
+			OR = {
+				trait = one_eyed
+				character = 2107 #Euron
+			}
 			NOR = {
+				trait = blinded
+				has_character_modifier = glass_eye
+			}
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 14 }
 			}
 		}
 	}
 
-	15 = { # blinded - white rag
-		factor = 1
+	14 = { # n - Blinded gouged eyes
+		factor = 4
 		trigger = {
 			trait = blinded
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
+
+			OR = {
+				AND = {
+					is_variable_equal = { which = ca_eyepatch value = 0 }
+					OR = {
+						has_tribal_or_nomadic_government_trigger = yes
+						blg_religion_pagan = yes
+						trait = stubborn
+					}
+					NOT = { trait = shy }
+				}
 				is_variable_equal = { which = ca_eyepatch value = 15 }
 			}
 		}
 	}
 
-	16 = { # blinded - blue rag
+	15 = { # o - Blinded - bandaged
 		factor = 1
 		trigger = {
 			trait = blinded
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 16 }
 			}
 		}
 	}
 
-	17 = { # blinded - green rag
+	16 = { # p - Blinded - white rag
 		factor = 1
 		trigger = {
 			trait = blinded
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 17 }
 			}
 		}
+
+		modifier = {
+			factor = 5
+			blg_religion_catholic = yes
+			OR = {
+				blg_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
 	}
 
-	18 = { # blinded - red rag
+	17 = { # q - Blinded - blue rag
 		factor = 1
 		trigger = {
 			trait = blinded
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 18 }
 			}
 		}
 	}
 
-	19 = { # blinded - bloodied rag
-		factor = 2
+	18 = { # r - Blinded - green rag
+		factor = 1
 		trigger = {
 			trait = blinded
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				trait = severely_injured
-				trait = wroth
-				trait = cruel
-				has_minor_title = title_commander
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_eyepatch value = 19 } }
-		}
-		modifier = {
-			factor = 2
-			trait = severely_injured
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 19 }
 			}
 		}
 	}
 
-	20 = { # blinded - tartan rag
-		factor = 3
+	19 = { # s - Blinded - red rag
+		factor = 1
 		trigger = {
 			trait = blinded
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+			OR = {
 				is_variable_equal = { which = ca_eyepatch value = 0 }
 				is_variable_equal = { which = ca_eyepatch value = 20 }
 			}
 		}
 	}
 
-	21 = { # Hermetic Glasses
+	20 = { # t - Blinded - bloodied rag
+		factor = 25
+		trigger = {
+			trait = blinded
+
+			OR = {
+				AND = {
+					is_variable_equal = { which = ca_eyepatch value = 0 }
+					has_injury_trigger = yes
+				}
+				is_variable_equal = { which = ca_eyepatch value = 21 }
+			}
+		}
+	}
+
+	21 = { # u - Blinded - tartan rag
+		factor = 3
+		trigger = {
+			trait = blinded
+
+			OR = {
+				AND = {
+					is_variable_equal = { which = ca_eyepatch value = 0 }
+					likes_celts = yes
+				}
+				is_variable_equal = { which = ca_eyepatch value = 22 }
+			}
+		}
+	}
+
+	22 = { # v - Hermetic Glasses
 		factor = 100
 		trigger = {
 			NOT = { has_game_rule = { name = blg_artifacts value = off } }
-			any_artifact = { artifact_type = hermetic_glasses is_artifact_active = yes }
+			blg_artifact_glasses = yes
 
 			OR = {
 				NOR = {
 					trait = blinded
 					trait = one_eyed
 				}
-				has_character_modifier = glass_eye 
+				has_character_modifier = glass_eye
 				has_game_rule = { name = blg_wounds value = off }
 			}
 		}

@@ -688,7 +688,7 @@ blg_set_ethnicity_ugric = {
 	if = {
 		limit = {
 			NOR = {
-				graphical_culture = ugricgfx 
+				graphical_culture = ugricgfx
 				graphical_culture = finnishgfx
 			}
 		}

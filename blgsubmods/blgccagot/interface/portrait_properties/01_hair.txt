@@ -1,58 +1,96 @@
 # p1 hair  --- WARNING! Property 1 MUST be Hair, otherwise the hair hiding helmets wont work ---
 1 = {
-	0 = { # Completely bald
+	0 = { # 0 - Completely bald
 		factor = 1
 		modifier = {
 			factor = 0.1
 			is_female = no
 			practical_age < 40
 
-			NOR = {
-				graphical_culture = northmangfx
-				graphical_culture = ironborngfx
-				graphical_culture = freefolkgfx
-				graphical_culture = siberiangfx
-				graphical_culture = thenngfx
-				graphical_culture = westafricangfx
-				graphical_culture = brindlegfx
-				graphical_culture = mesoamericangfx
-				graphical_culture = dothrakigfx
-				graphical_culture = lhazareengfx
-			}
+			blg_hair_celtic = no
+			blg_hair_cuman = no
 		}
+
 		modifier = {
 			factor = 0
-			trait = bearded_priest
+			blg_hair_balding = yes
+
+			blg_hair_celtic = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 1 } }
 		}
+
 		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+			factor = 0.1
+			is_female = no
+			blg_hair_celtic = yes
+			has_tribal_or_nomadic_government_trigger = no
+		}
+
+		modifier = {
+			factor = 0.1
+			blg_hair_uncut = yes
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 1 }
 			}
 		}
 	}
 
-	1 = { # Shorn/Black Adder
+	1 = { # a - Shorn
 		factor = 1
 		modifier = {
-			factor = 10
-			is_female = no
-			AND = {
-				is_landed = no
-				trait = septon
-			}
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_western = no
+			blg_hair_north = no
+			blg_hair_ironborn = no
+			blg_hair_dothraki = no
+			blg_hair_african = no
+			blg_hair_easternslavic = no
+			blg_hair_cuman = no
+			NOT = { is_variable_equal = { which = ca_hair value = 2 } }
 		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_western = no
+			blg_hair_north = no
+			blg_hair_ironborn = no
+			blg_hair_valyrian = no
+			blg_hair_dothraki = no
+			blg_hair_italian = no
+			blg_hair_southern = no
+			blg_hair_byzantine = no
+			blg_hair_norse = no
+			blg_hair_ugric = no
+		}
+
 		modifier = {
 			factor = 2
 			is_female = no
+			OR = {
+				blg_hair_western = yes
+				blg_hair_north = yes
+				blg_hair_ironborn = yes
+				blg_hair_valyrian = yes
+			}
 		}
+
 		modifier = {	#Female "Fancy" Hair
 			factor = 0
 			is_female = yes
 			dynasty = none
+			OR = {
+				blg_hair_western = yes
+				blg_hair_north = yes
+			}
 		}
+
 		modifier = {	#Lancel gets a haircut
 			factor = 100
 			AND = {
@@ -60,18 +98,48 @@
 				trait = zealous
 			}
 		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 2 }
 			}
 		}
 	}
-	
-	2 = { # Page
+
+	2 = { # b - Page
 		factor = 1
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_turkish = no
+			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_westernslavic_tidy = yes
+			blg_hair_westernslavic = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_southernslavic_tidy = yes
+			OR = {
+				blg_hair_southernslavic = yes
+				blg_hair_frankish = yes
+				blg_hair_italian = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
 		modifier = {	#Jaime gets a haircut
 			factor = 0
 			AND = {
@@ -79,42 +147,134 @@
 				trait = one_handed
 			}
 		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 3 }
 			}
 		}
 	}
 
-	3 = { # Synth
+	3 = { # c - Synth
 		factor = 1
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+
+			blg_hair_frankish = no
+			blg_hair_southern = no
+			blg_hair_muslim = no
+			blg_hair_cuman = no
+			blg_hair_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_hair value = 4 } }
+		}
+
+		modifier = {
+			factor = 0.01
+			is_female = no
+			blg_hair_celtic = yes
+			has_tribal_or_nomadic_government_trigger = no
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_western = no
+			blg_hair_north = no
+			blg_hair_ironborn = no
+			blg_hair_valyrian = no
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 4 }
 			}
 		}
 	}
 
-	4 = { # Long Straight
+	4 = { # d - Long Straight
 		factor = 1
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+
+			blg_hair_western = no
+			blg_hair_valyrian = no
+			blg_hair_celtic = no
+			blg_hair_cuman = no
+			blg_hair_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_westernslavic_tidy = yes
+			OR = {
+				blg_hair_westernslavic = yes
+				blg_hair_frankish = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_southernslavic_tidy = yes
+			OR = {
+				blg_hair_southernslavic = yes
+				blg_hair_italian = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 5 }
 			}
 		}
 	}
 
-	5 = { # Long Curly
+	5 = { # e - Long Curly
 		factor = 1
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_byzantine = no
+			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_westernslavic_tidy = yes
+			OR = {
+				blg_hair_westernslavic = yes
+				blg_hair_frankish = yes
+				blg_hair_italian = yes
+				blg_hair_celtic = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_southernslavic_tidy = yes
+			blg_hair_southernslavic = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
 		modifier = {	#Lancel gets a haircut
 			factor = 0
 			AND = {
@@ -122,58 +282,148 @@
 				trait = zealous
 			}
 		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 6 }
 			}
 		}
 	}
 
-	6 = {  # Tonsure
+	6 = { # f - Messy/Tonsure
 		factor = 1
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_tonsure = no
+
+			OR = {
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_frankish = yes
+				blg_hair_southernslavic = yes
+				blg_hair_westernslavic = yes
+				blg_hair_muslim = yes
+				blg_hair_egyptian = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 7 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_celtic = no
+			blg_hair_english = no
+			blg_hair_german = no
+			blg_hair_frankish = no
+			blg_hair_southernslavic = no
+			blg_hair_westernslavic = no
+			blg_hair_muslim = no
+			blg_hair_egyptian = no
+			blg_hair_cuman = no
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_african = no
+			blg_hair_celtic = no
+			blg_hair_english = no
+			blg_hair_frankish = no
+			blg_hair_muslim = no
+			blg_hair_egyptian = no
+			NOT = { is_variable_equal = { which = ca_hair value = 7 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 7 }
 			}
 		}
 	}
 
-	7 = {  # Short
+	7 = { # g - Short
 		factor = 1
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+
+			blg_hair_ironborn = no
+			blg_hair_frankish = no
+			blg_hair_norse = no
+			blg_hair_westernslavic = no
+			blg_hair_muslim = no
+			blg_hair_african = no
+			blg_hair_cuman = no
+			blg_hair_bodpa = no
+			blg_hair_southindian = no
+			NOT = { is_variable_equal = { which = ca_hair value = 8 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_ironborn = no
+			blg_hair_valyrian = no
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 8 }
 			}
 		}
 	}
 
-	8 = { # Short Curly
+	8 = { # h - Short Curly
 		factor = 1
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+
+			blg_hair_muslim = no
+			blg_hair_african = no
+			blg_hair_cuman = no
+			blg_hair_english = no
+			NOT = { is_variable_equal = { which = ca_hair value = 9 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_north = no
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 9 }
 			}
 		}
 	}
 
-	9 = {  # Short Uncouth
+	9 = { # i - Short Uncouth
 		factor = 1
 		modifier = {
-			factor = 5
-			religion_group = pagan_group
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_easternslavic = no
+			blg_hair_english = no
+			NOT = { is_variable_equal = { which = ca_hair value = 10 } }
 		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_western = no
+			blg_hair_north = no
+			blg_hair_ironborn = no
+			blg_hair_valyrian = no
+		}
+
 		modifier = {	#Jaime gets a haircut
 			factor = 100
 			AND = {
@@ -181,65 +431,272 @@
 				trait = one_handed
 			}
 		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 10 }
 			}
 		}
 	}
 
-	10 = {  # Long Uncouth
+	10 = { # j - Long Uncouth
 		factor = 1
-		modifier = {
-			factor = 5
-			religion_group = pagan_group
+		modifier = { # Limited hair range
+			factor = 0
+			blg_hair_cuman = yes
 		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = yes
+			OR = {
+				blg_hair_byzantine = yes
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_norse = yes
+				blg_hair_southern = yes
+				blg_hair_ugric = yes
+				blg_hair_westafrican = yes
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			blg_hair_indian = yes
+		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+
+			blg_hair_ironborn = no
+			blg_hair_english = no
+			blg_hair_norse = no
+			blg_hair_southernslavic = no
+			blg_hair_easternslavic = no
+			blg_hair_ugric = no
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_westernslavic_tidy = yes
+			blg_hair_westernslavic = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_southernslavic_tidy = yes
+			blg_hair_southernslavic = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
+		}
+
+		modifier = {
+			factor = 0.1
+			is_female = no
+			blg_hair_celtic = yes
+			has_tribal_or_nomadic_government_trigger = no
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 11 }
 			}
 		}
 	}
-	11 = { # Balding
+
+	11 = { # k - Balding
 		factor = 1
+		modifier = { # Limited hair range
+			factor = 0
+			blg_hair_cuman = yes
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = yes
+			OR = {
+				blg_hair_byzantine = yes
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_norse = yes
+				blg_hair_southern = yes
+				blg_hair_ugric = yes
+				blg_hair_westafrican = yes
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			blg_hair_indian = yes
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+
+			OR = { # Reverse of others
+				blg_hair_celtic = yes
+				blg_hair_norse = yes
+				blg_hair_easternslavic = yes
+				blg_hair_ugric = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_westernslavic_tidy = yes
+			OR = {
+				blg_hair_westernslavic = yes
+				blg_hair_celtic = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_southernslavic_tidy = yes
+			OR = {
+				blg_hair_southernslavic = yes
+				blg_hair_frankish = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
+		}
+
 		modifier = {
 			factor = 0.1
 			is_female = no
-			practical_age < 50
+			blg_hair_celtic = yes
+			has_tribal_or_nomadic_government_trigger = no
 		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_tonsure = yes
+			blg_hair_ironborn = no
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 12 }
 			}
 		}
 	}
 
-	12 = { # Marine
+	12 = { # l - Marine
 		factor = 1
+		modifier = { # Limited hair range
+			factor = 0
+			blg_hair_cuman = yes
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = yes
+			OR = {
+				blg_hair_byzantine = yes
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_norse = yes
+				blg_hair_southern = yes
+				blg_hair_ugric = yes
+				blg_hair_westafrican = yes
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			blg_hair_indian = yes
+		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+
+			blg_hair_western = no
+			blg_hair_north = no
+			blg_hair_valyrian = no
+			blg_hair_ironborn = no
+			blg_hair_muslim = no
+			blg_hair_egyptian = no
+			blg_hair_westernslavic = no
+			blg_hair_southernslavic = no
+			blg_hair_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_hair value = 13 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_western = no
+			blg_hair_north = no
+			blg_hair_ironborn = no
+			blg_hair_valyrian = no
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_chinese_tidy = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 13 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 13 }
 			}
 		}
 	}
 
-	13 = { # Mohawk
+	13 = { # m - Short 2
 		factor = 1
+		modifier = { # Limited hair range
+			factor = 0
+			OR = {
+				blg_hair_cuman = yes
+				blg_hair_norse = yes
+				blg_hair_ugric = yes
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = yes
+			OR = {
+				blg_hair_byzantine = yes
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_southern = yes
+				blg_hair_westafrican = yes
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			blg_hair_indian = yes
+		}
+
 		modifier = {	#Female Shorn Hair
 			factor = 10
 			is_female = yes
+			OR = {
+				blg_hair_western = yes
+				blg_hair_north = yes
+			}
 			OR = {
 				martial = 12
 				trait = celibate
@@ -247,91 +704,263 @@
 				has_character_modifier = publicly_shamed
 			}
 		}
+
+		modifier = {	#Female Shorn Hair
+			factor = 0
+			is_female = yes
+			OR = {
+				blg_hair_western = yes
+				blg_hair_north = yes
+			}
+			NOR = {
+				martial = 12
+				trait = celibate
+				trait = septa
+				has_character_modifier = publicly_shamed
+			}
+		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+
+			blg_hair_african = no
+			blg_hair_easternslavic = no
+			blg_hair_turkish = no
+			NOT = { is_variable_equal = { which = ca_hair value = 14 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+			blg_hair_north = no
+			blg_hair_valyrian = no
+			blg_hair_easternslavic = no
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_chinese_tidy = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 14 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 14 }
 			}
 		}
 	}
 
-	14 = { # Rhaegar's pretty hair
+	14 = { # n - Rhaegar's pretty hair
 		factor = 1
+		modifier = { # Limited hair range
+			factor = 0
+			OR = {
+				blg_hair_cuman = yes
+				blg_hair_norse = yes
+				blg_hair_ugric = yes
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = yes
+			OR = {
+				blg_hair_byzantine = yes
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_southern = yes
+				blg_hair_westafrican = yes
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			blg_hair_balding = yes
+
+			blg_hair_byzantine = no
+			blg_hair_celtic = no
+		}
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+			blg_hair_dothraki = no
+			NOT = { is_variable_equal = { which = ca_hair value = 15 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_chinese_tidy = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 15 } }
+		}
+
+		trigger = {
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 15 }
 			}
 		}
 	}
-	15 = { # Pony Tail
-		factor = 1
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
+
+	15 = { # o - Pony Tail
+		trigger = {
+			OR = {
+				blg_hair_western = yes
+				blg_hair_north = yes
+				blg_hair_ironborn = yes
+				blg_hair_valyrian = yes
+			}
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 16 }
 			}
 		}
-	}
-	16 = { # New Short
-		factor = 1
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 16 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+	}
+
+	16 = { # p - New Short
+		trigger = {
+			OR = {
+				blg_hair_western = yes
+				blg_hair_north = yes
+				blg_hair_ironborn = yes
+				blg_hair_valyrian = yes
+			}
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 17 }
 			}
 		}
-	}
-	17 = { # New Long
-		factor = 1
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+
+			blg_hair_ironborn = no
+			NOT = { is_variable_equal = { which = ca_hair value = 17 } }
+		}
+	}
+
+	17 = { # q - New Long
+		trigger = {
+			OR = {
+				blg_hair_western = yes
+				blg_hair_north = yes
+				blg_hair_ironborn = yes
+				blg_hair_valyrian = yes
+			}
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 18 }
 			}
 		}
-	}
-	18 = { # Short Mullet
-		factor = 1
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 18 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+	}
+
+	18 = { # r - Short Mullet
+		trigger = {
+			OR = {
+				blg_hair_western = yes
+				blg_hair_north = yes
+				blg_hair_ironborn = yes
+				blg_hair_valyrian = yes
+			}
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 19 }
 			}
 		}
-	}
-	19 = { # Longer Mullet
-		factor = 1
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 19 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+	}
+
+	19 = { # s - Longer Mullet
+		trigger = {
+			OR = {
+				blg_hair_western = yes
+				blg_hair_north = yes
+				blg_hair_ironborn = yes
+				blg_hair_valyrian = yes
+			}
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 20 }
 			}
 		}
-	}
-	20 = { # Long Curly
-		factor = 1
+
 		modifier = {
 			factor = 0
-			is_alive = yes
-			NOR = {
+			blg_hair_balding = yes
+
+			blg_hair_valyrian = no
+			NOT = { is_variable_equal = { which = ca_hair value = 20 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
+		}
+	}
+
+	20 = { # t - Long Curly
+		trigger = {
+			OR = {
+				blg_hair_western = yes
+				blg_hair_north = yes
+				blg_hair_ironborn = yes
+				blg_hair_valyrian = yes
+			}
+			OR = {
 				is_variable_equal = { which = ca_hair value = 0 }
 				is_variable_equal = { which = ca_hair value = 21 }
 			}
+		}
+
+		modifier = {
+			factor = 0
+			blg_hair_balding = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 21 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_tonsure = yes
 		}
 	}
 }

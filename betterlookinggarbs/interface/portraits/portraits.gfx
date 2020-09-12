@@ -499,7 +499,7 @@ spriteTypes = {
 			{ 24 21 16 } { 215 198 117 } { 250 240 190 } #Light blonde and turns white
 			{ 12 12 9 } { 223 208 134 } { 255 255 255 } #Light blonde and turns gray
 			{ 14 11 9 } { 175 92 53 } { 255 255 255 } #Red
-			
+
 		}
 
 		eye_color_index = 9

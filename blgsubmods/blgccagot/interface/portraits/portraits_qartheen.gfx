@@ -16,7 +16,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_qartheen_male_nose_oldage"
 		texturefile = "gfx\\characters\\qartheen_male\\qartheen_male_nose_3.dds"

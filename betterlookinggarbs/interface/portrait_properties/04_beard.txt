@@ -12,6 +12,10 @@
 				}
 				is_variable_equal = { which = ca_beard value = 1 }
 			}
+			OR = {
+				is_variable_equal = { which = ca_beard value = 0 }
+				is_variable_equal = { which = ca_beard value = 1 }
+			}
 		}
 
 		modifier = {

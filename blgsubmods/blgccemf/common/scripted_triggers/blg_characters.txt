@@ -195,10 +195,8 @@ blg_pilgrimage = {
 # In a tournament.
 blg_tournament = {
 	OR = {
-		has_character_flag = attending_tournament
-		has_character_flag = attending_tournament_furusiyya
-		has_character_modifier = holding_nomad_wargames
-		has_character_flag = attending_nomad_tournament
+		has_character_flag = emf_fighting_in_tournament
+		has_character_flag = emf_spectator_at_tournament
 		has_character_flag = flag_preparing_blood_games
 	}
 }

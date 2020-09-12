@@ -520,7 +520,7 @@ spriteTypes = {
 
 		headgear_that_hides_hair = { }
 	}
-	
+
 ### Norse mid era Pagan
 		portraitType = {
 		name = "PORTRAIT_norsegfx_male"

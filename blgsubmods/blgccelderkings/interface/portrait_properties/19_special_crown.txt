@@ -38,14 +38,7 @@
 		factor = 50
 		trigger = {
 			has_minor_title = title_court_jester
-			NOR = {
-				culture_group = tangmo_group
-				culture_group = tsaesci_group
-				culture_group = kamal_group
-				culture_group = khajiit
-				culture_group = argonian
-				culture_group = daedra
-			}
+			blg_ek_clothing = no
 		}
 		hide_layers = { 3 = { } }
 		hide_layers = { 5 = { } }
@@ -62,52 +55,14 @@
 				culture = draugr
 				culture = orsimer
 			}
-			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						is_landed = no
-						in_battle = yes
-						in_siege = yes
-					}
-				}
-				has_character_flag = add_duel_xp
-				has_character_flag = chivalry_duel_ongoing
-				AND = {
-					is_warrior = yes
-					is_away = yes
-					NOT = { has_job_title = job_spiritual }
-					NOT = { has_job_title = job_spymaster }
-				}
-				AND = {
-					has_game_rule = { name = blg_helmet value = on }
-					OR = {
-						in_command = yes
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						holy_order = yes
-					}
-				}
-			}
-			NOR = {
-				has_game_rule = { name = martial_headgear value = off }
-				AND = {
-					has_game_rule = { name = blg_helmet value = lowrank }
-					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
-				}
-				has_game_rule = { name = blg_helmet value = off }
-				has_game_rule = { name = blg_helmet value = none }
-			}
+			blg_headgear_military = yes
 		}
 		hide_layers = { 1 = { } }
 		hide_layers = { 5 = { } }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 	}
 
 	13 = { # Armour B
@@ -119,52 +74,14 @@
 				culture = atmoran
 				culture = draugr
 			}
-			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						is_landed = no
-						in_battle = yes
-						in_siege = yes
-					}
-				}
-				has_character_flag = add_duel_xp
-				has_character_flag = chivalry_duel_ongoing
-				AND = {
-					is_warrior = yes
-					is_away = yes
-					NOT = { has_job_title = job_spiritual }
-					NOT = { has_job_title = job_spymaster }
-				}
-				AND = {
-					has_game_rule = { name = blg_helmet value = on }
-					OR = {
-						in_command = yes
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						holy_order = yes
-					}
-				}
-			}
-			NOR = {
-				has_game_rule = { name = martial_headgear value = off }
-				AND = {
-					has_game_rule = { name = blg_helmet value = lowrank }
-					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
-				}
-				has_game_rule = { name = blg_helmet value = off }
-				has_game_rule = { name = blg_helmet value = none }
-			}
+			blg_headgear_military = yes
 		}
 		hide_layers = { 1 = { } }
 		hide_layers = { 5 = { } }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 	}
 
 	14 = { # Armour C
@@ -175,52 +92,14 @@
 				culture = draugr
 				culture = orsimer
 			}
-			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						is_landed = no
-						in_battle = yes
-						in_siege = yes
-					}
-				}
-				has_character_flag = add_duel_xp
-				has_character_flag = chivalry_duel_ongoing
-				AND = {
-					is_warrior = yes
-					is_away = yes
-					NOT = { has_job_title = job_spiritual }
-					NOT = { has_job_title = job_spymaster }
-				}
-				AND = {
-					has_game_rule = { name = blg_helmet value = on }
-					OR = {
-						in_command = yes
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						holy_order = yes
-					}
-				}
-			}
-			NOR = {
-				has_game_rule = { name = martial_headgear value = off }
-				AND = {
-					has_game_rule = { name = blg_helmet value = lowrank }
-					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
-				}
-				has_game_rule = { name = blg_helmet value = off }
-				has_game_rule = { name = blg_helmet value = none }
-			}
+			blg_headgear_military = yes
 		}
 		hide_layers = { 1 = { } }
 		hide_layers = { 5 = { } }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 	}
 
 	15 = { # Sneak A
@@ -234,20 +113,10 @@
 	17 = { # Mage A
 		factor = 99
 		trigger = {
-			OR = {
-				society_member_of = mages_guild_tamriel
-				society_member_of = mages_guild_akavir
-				has_job_title = job_spiritual
-				has_minor_title = title_court_mage
-			}
+			blg_clothes_mage = yes
 			lower_real_tier_than = duke
 			NOR = {
-				culture_group = tangmo_group
-				culture_group = tsaesci_group
-				culture_group = kamal_group
-				culture_group = khajiit
-				culture_group = argonian
-				culture_group = daedra
+				blg_ek_clothing = yes
 				trait = blgcaoff
 			}
 		}
@@ -255,26 +124,16 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 	}
 
 	18 = { # Mage B
 		factor = 99
 		trigger = {
-			OR = {
-				society_member_of = mages_guild_tamriel
-				society_member_of = mages_guild_akavir
-				has_job_title = job_spiritual
-				has_minor_title = title_court_mage
-			}
+			blg_clothes_mage = yes
 			lower_real_tier_than = duke
 			NOR = {
-				culture_group = tangmo_group
-				culture_group = tsaesci_group
-				culture_group = kamal_group
-				culture_group = khajiit
-				culture_group = argonian
-				culture_group = daedra
+				blg_ek_clothing = yes
 				trait = blgcaoff
 			}
 		}
@@ -282,7 +141,7 @@
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 	}
 
 	19 = { # Monk
@@ -290,32 +149,8 @@
 		trigger = {
 			trait = monk
 			lower_real_tier_than = duke
-		}
-		trigger = {
-			NOR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						in_battle = yes
-						in_siege = yes
-					}
-				}
-				has_job_title = job_marshal
-				AND = {
-					government = order_government
-					in_command = yes
-				}
-			}
-			NOR = {
-				culture_group = tangmo_group
-				culture_group = tsaesci_group
-				culture_group = kamal_group
-				culture_group = khajiit
-				culture_group = argonian
-				culture_group = daedra
-			}
+			blg_warrior = no
+			blg_ek_clothing = no
 		}
 		hide_layers = { 3 = { } }
 		hide_layers = { 5 = { } }
@@ -328,35 +163,15 @@
 		factor = 100
 		trigger = {
 			religion_group = human_pantheon
-			is_theocracy = yes
-			is_ruler = yes
-			lower_real_tier_than = duke
-		}
-		trigger = {
-			NOR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						in_battle = yes
-						in_siege = yes
-					}
-				}
-				has_job_title = job_marshal
-				death_reason = death_battle
-				AND = {
-					government = order_government
-					in_command = yes
-				}
-			}
+			blg_clothes_priest = yes
+			blg_warrior = no
 		}
 		hide_layers = { 1 = { } }
 		hide_layers = { 5 = { } }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 	}
 
 	21 = { # Priest Auri-El
@@ -366,75 +181,37 @@
 				religion = auriel
 				religion_group = tribunal
 			}
-			is_priest = yes
-			lower_real_tier_than = duke
-		}
-		trigger = {
-			NOR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						in_battle = yes
-						in_siege = yes
-					}
-				}
-				has_job_title = job_marshal
-				death_reason = death_battle
-				AND = {
-					government = order_government
-					in_command = yes
-				}
-			}
+			blg_clothes_priest = yes
+			blg_warrior = no
 		}
 		hide_layers = { 1 = { } }
 		hide_layers = { 5 = { } }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 	}
 
 	22 = { # Priest Daedric
 		factor = 100
 		trigger = {
 			religion_group = daedra
-			is_priest = yes
-			lower_real_tier_than = duke
-		}
-		trigger = {
-			NOR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						in_battle = yes
-						in_siege = yes
-					}
-				}
-				has_job_title = job_marshal
-				death_reason = death_battle
-				AND = {
-					government = order_government
-					in_command = yes
-				}
-			}
+			blg_clothes_priest = yes
+			blg_warrior = no
 		}
 		hide_layers = { 5 = { } }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
 		hide_layers = { 33 = {} }
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 	}
 
 	23 = { # Priest Dragons
 		factor = 100
 		trigger = {
 			religion = dragon_cult
-			is_priest = yes
+			blg_priest = yes
 		}
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 	}
 }

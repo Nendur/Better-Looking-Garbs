@@ -104,10 +104,10 @@ spriteTypes = {
 			{ 48 37 19 } #Brown 02
 			{ 34 103 36 } #Green
 		}
-		
+
 		headgear_that_hides_hair = {}
 	}
-	
+
 	portraitType = {
 		name = "PORTRAIT_frankishgfx_male_early1"
 		effectFile = "gfx/FX/portrait.lua"
@@ -174,7 +174,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-		
+
 			{ 36 35 29 } { 196 172 91 } { 255 255 255 } #Blonde
 			{ 10 10 10 } { 50 50 50 } { 255 255 255 } #Black
 			{ 15 8 0 } { 176 155 108 } { 255 255 255 } #Dark Blonde
@@ -191,10 +191,10 @@ spriteTypes = {
 			{ 48 37 19 } #Brown 02
 			{ 34 103 36 } #Green
 		}
-		
+
 		headgear_that_hides_hair = {}
 	}
-	
+
 	portraitType = {
 		name = "PORTRAIT_frankishgfx_male_early2"
 		effectFile = "gfx/FX/portrait.lua"
@@ -277,7 +277,7 @@ spriteTypes = {
 			{ 48 37 19 } #Brown 02
 			{ 34 103 36 } #Green
 		}
-		
+
 		headgear_that_hides_hair = {}
 	}
 
@@ -371,7 +371,7 @@ spriteTypes = {
 			{ 48 37 19 } #Brown 02
 			{ 34 103 36 } #Green
 		}
-		
+
 		headgear_that_hides_hair = {}
 	}
 
@@ -395,7 +395,7 @@ spriteTypes = {
 			"GFX_frankish_female_neck_midage:d0"
 			"GFX_frankish_female_cheeks_midage:d4"
 			"GFX_frankish_female_chin_midage:d1"
-			"GFX_character_frankish_female_physique:p21"  
+			"GFX_character_frankish_female_physique:p21"
 			"GFX_frankish_female_mouth_midage:d2"
 			"GFX_character_harelip_frankish:p24:o0x2"
 			"GFX_frankish_female_eyes_midage:d6"
@@ -459,7 +459,7 @@ spriteTypes = {
 			{ 48 37 19 } #Brown 02
 			{ 34 103 36 } #Green
 		}
-		
+
 		headgear_that_hides_hair = {}
 	}
 
@@ -483,7 +483,7 @@ spriteTypes = {
 			"GFX_frankish_female_neck_oldage:d0"
 			"GFX_frankish_female_cheeks_oldage:d4"
 			"GFX_frankish_female_chin_oldage:d1"
-			"GFX_character_frankish_female_physique:p21"  
+			"GFX_character_frankish_female_physique:p21"
 			"GFX_frankish_female_mouth_oldage:d2"
 			"GFX_character_harelip_frankish:p24:o0x2"
 			"GFX_frankish_female_eyes_oldage:d6"
@@ -506,7 +506,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_western_female_clothes_early:p3:c2"			
+			"GFX_western_female_clothes_early:p3:c2"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_female_hair_oldage:p1:h:y"
@@ -529,7 +529,7 @@ spriteTypes = {
 			"GFX_character_imprisoned:p6"
 		}
 
-		
+
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
 			{ 30 22 18 } { 180 170 151 } { 255 255 255 } #Was Blonde, now sandy grey
@@ -548,7 +548,7 @@ spriteTypes = {
 			{ 48 37 19 } #Brown 02
 			{ 34 103 36 } #Green
 		}
-		
+
 		headgear_that_hides_hair = {}
 	}
 

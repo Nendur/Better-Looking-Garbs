@@ -1,0 +1,194 @@
+### Etnicity groups:
+
+# Known ethnicities that can be handled.
+blg_ethnicity_known = {
+	OR = {
+		blg_ethnicity_norse = yes
+		blg_ethnicity_english = yes
+		blg_ethnicity_dutch = yes
+		blg_ethnicity_german = yes
+		blg_ethnicity_lombard = yes
+		blg_ethnicity_frankish = yes
+		blg_ethnicity_occitan = yes
+		blg_ethnicity_celtic = yes
+		blg_ethnicity_iberian = yes
+		blg_ethnicity_italian = yes
+		blg_ethnicity_ugric = yes
+		blg_ethnicity_eastslavic = yes
+		blg_ethnicity_westslavic = yes
+		blg_ethnicity_southslavic = yes
+		blg_ethnicity_romanobalkan = yes
+		blg_ethnicity_byzantine = yes
+		blg_ethnicity_arabic = yes
+		blg_ethnicity_egyptian = yes
+		blg_ethnicity_levantine = yes
+		blg_ethnicity_berber = yes
+		blg_ethnicity_westafrican = yes
+		blg_ethnicity_african = yes
+		blg_ethnicity_persian = yes
+		blg_ethnicity_sogdian = yes
+		blg_ethnicity_mongol = yes
+		blg_ethnicity_cuman = yes
+		blg_ethnicity_turkish = yes
+		blg_ethnicity_centralasian = yes
+		blg_ethnicity_indian = yes
+		blg_ethnicity_southindian = yes
+		blg_ethnicity_tibetan = yes
+		blg_ethnicity_chinese = yes
+		blg_ethnicity_mesoamerican = yes
+	}
+}
+
+# Static image portraits.
+blg_ethnicity_static = {
+	OR = {
+		is_unique_portrait = yes
+		graphical_culture = dovahgfx
+		graphical_culture = sloadgfx
+	}
+}
+
+blg_ethnicity_african = {
+	graphical_culture = africangfx
+}
+
+blg_ethnicity_arabic = {
+	always = no
+}
+
+blg_ethnicity_berber = {
+	always = no
+}
+
+blg_ethnicity_byzantine = {
+	always = no
+}
+
+blg_ethnicity_celtic = {
+	always = no
+}
+
+blg_ethnicity_centralasian = {
+	always = no
+}
+
+blg_ethnicity_chinese = {
+	graphical_culture = chinesegfx
+}
+
+blg_ethnicity_cuman = {
+	always = no
+}
+
+blg_ethnicity_dutch = {
+	always = no
+}
+
+blg_ethnicity_eastslavic = {
+	graphical_culture = easternslavicgfx
+}
+
+blg_ethnicity_english = {
+	always = no
+}
+
+blg_ethnicity_egyptian = {
+	graphical_culture = westafricangfx
+}
+
+blg_ethnicity_frankish = {
+	graphical_culture = frankishgfx
+}
+
+blg_ethnicity_german = {
+	always = no
+}
+
+blg_ethnicity_iberian = {
+	graphical_culture = westernslavicgfx
+}
+
+blg_ethnicity_indian = {
+	graphical_culture = indiangfx
+}
+
+blg_ethnicity_italian = {
+	always = no
+}
+
+blg_ethnicity_levantine = {
+	always = no
+}
+
+blg_ethnicity_lombard = {
+	always = no
+}
+
+blg_ethnicity_mesoamerican = {
+	always = no
+}
+
+blg_ethnicity_mongol = {
+	always = no
+}
+
+blg_ethnicity_norse = {
+	graphical_culture = norsegfx
+}
+
+blg_ethnicity_occitan = {
+	always = no
+}
+
+blg_ethnicity_persian = {
+	graphical_culture = byzantinegfx
+}
+
+blg_ethnicity_romanobalkan = {
+	graphical_culture = southerngfx
+}
+
+blg_ethnicity_sogdian = {
+	always = no
+}
+
+blg_ethnicity_southindian = {
+	always = no
+}
+
+blg_ethnicity_southslavic = {
+	always = no
+}
+
+blg_ethnicity_tibetan = {
+	always = no
+}
+
+blg_ethnicity_turkish = {
+	always = no
+}
+
+blg_ethnicity_ugric = {
+	always = no
+}
+
+blg_ethnicity_westafrican = {
+	always = no
+}
+
+blg_ethnicity_westslavic = {
+	graphical_culture = easternslavicgfx
+}
+
+### Ethnicities with common freckles, in higher to lower chance order:
+
+blg_freckles_common = {
+	OR = {
+		graphical_culture = norsegfx
+		graphical_culture = frankishgfx
+		graphical_culture = easternslavicgfx
+		trait = breton
+		trait = nord
+		trait = reachman
+	}
+}

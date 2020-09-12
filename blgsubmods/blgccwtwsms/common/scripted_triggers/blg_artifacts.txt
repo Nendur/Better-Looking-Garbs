@@ -24,7 +24,7 @@ blg_artifact_banner_mohammad = {
 	}
 }
 
-# Derafsh Kaviani banner. 
+# Derafsh Kaviani banner.
 blg_artifact_derafsh_kaviani = {
 	any_artifact = {
 		is_artifact_active = yes

@@ -36,27 +36,4 @@
 			trait = not_a_bear
 		}
 	}
-	
-	3 = { #Used to hide hair on Norvoshi characters
-		factor = 100
-		hide_layers = { 1 = { } } #Hides hair
-		trigger = {
-			OR = {
-				AND = { #Norvoshi slaves are shaved
-					trait = slave
-					NOT = { trait = bearded_priest }
-					liege = { culture = norvosi }
-				}
-				AND = { #Norvoshi women shave off all of their hair, though noblewomen don wigs
-					is_female = yes
-					dynasty = none
-					NOT = { trait = bearded_priest }
-					OR = {
-						culture = norvosi
-						liege = { culture = norvosi }
-					}
-				}
-			}
-		}
-	}
 }

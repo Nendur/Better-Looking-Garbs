@@ -56,7 +56,10 @@ character_event = {
 		}
 
 		random_realm_province = {
-			limit = { NOT = { province = no } }
+			limit = {
+				NOT = { province = no }
+				blg_culture_unmixed = no
+			}
 			ROOT = {
 				set_graphical_culture = PREV
 				# random = { chance = 25 culture = PREV }
@@ -84,7 +87,10 @@ character_event = {
 		random_realm_province = {
 			limit = { NOT = { province = no } }
 			random_neighbor_province = {
-				limit = { NOT = { province = no } }
+				limit = {
+					NOT = { province = no }
+					blg_culture_unmixed = no
+				}
 				ROOT = {
 					set_graphical_culture = PREV
 					# random = { chance = 25 culture = PREV }
@@ -125,7 +131,7 @@ character_event = {
 				}
 			}
 		}
-		
+
 		blg_regional_diversity = yes
 	}
 

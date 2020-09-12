@@ -47,7 +47,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "balticgfx_LIGHT_INFANTRY_helmet"
-		actorfile = "gfx\models\no_object.xac"  
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 
@@ -92,7 +92,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "balticgfx_ARCHERS_helmet"
-		actorfile = "gfx\models\no_object.xac"  
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 

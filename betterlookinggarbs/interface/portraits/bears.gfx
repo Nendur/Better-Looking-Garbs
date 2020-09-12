@@ -127,7 +127,7 @@ spriteTypes = {
 			"GFX_character_imprisoned:p6"
 		}
 	}
-	
+
 	portraitType = {
 		name = "PORTRAIT_beargfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
@@ -369,7 +369,7 @@ spriteTypes = {
 			"GFX_character_imprisoned:p6"
 		}
 	}
-	
+
 	portraitType = {
 		name = "PORTRAIT_polarbeargfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
@@ -615,7 +615,7 @@ spriteTypes = {
 			"GFX_character_imprisoned:p6"
 		}
 	}
-	
+
 	portraitType = {
 		name = "PORTRAIT_blackbeargfx_male2"
 		effectFile = "gfx/FX/portrait.lua"

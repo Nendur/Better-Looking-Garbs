@@ -26,7 +26,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_ironborn_male_hair"
 		texturefile = "gfx\\characters\\ironborn_male\\ironborn_male_hair_1.dds"
@@ -42,7 +42,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_ironborn_male_hair_oldage"
 		texturefile = "gfx\\characters\\ironborn_male\\ironborn_male_hair_3.dds"

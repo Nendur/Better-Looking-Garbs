@@ -3,31 +3,35 @@
 	# Big, elaborate crown
 	0 = {
 		factor = 2
-		modifier = {
-			factor = 0
-			NOT = { can_wear_a_crown_trigger = yes }
+		trigger = {
+			OR = {
+				blg_headgear_king = yes
+				blg_merchant_headgear = yes
+			}
 		}
+
 		modifier = {
 			factor = 5
 			trait = proud
 		}
+
 		modifier = {
 			factor = 0.05
 			trait = humble
 		}
+
 		modifier = {
-			factor = 0
-			OR = { 
+			factor = 0.1
+			OR = {
 				has_portrait_property = { layer = 5 index = 1 }
 				has_portrait_property = { layer = 5 index = 2 }
-				has_portrait_property = { layer = 5 index = 3 } 
+				has_portrait_property = { layer = 5 index = 3 }
 				has_portrait_property = { layer = 5 index = 4 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 1 } }
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 1 }
 		}
 	}
@@ -35,10 +39,13 @@
 	# Warrior-king's crown
 	1 = {
 		factor = 2
-		modifier = {
-			factor = 0
-			NOT = { can_wear_a_crown_trigger = yes }
+		trigger = {
+			OR = {
+				blg_headgear_king = yes
+				blg_merchant_headgear = yes
+			}
 		}
+
 		modifier = {
 			factor = 5
 			OR = {
@@ -46,19 +53,19 @@
 				trait = master_warrior
 			}
 		}
+
 		modifier = {
-			factor = 0
-			OR = { 
+			factor = 0.1
+			OR = {
 				has_portrait_property = { layer = 5 index = 0 }
 				has_portrait_property = { layer = 5 index = 2 }
-				has_portrait_property = { layer = 5 index = 3 } 
+				has_portrait_property = { layer = 5 index = 3 }
 				has_portrait_property = { layer = 5 index = 4 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 2 } }
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 2 }
 		}
 	}
@@ -66,27 +73,30 @@
 	# Diplomat-King's Crown
 	2 = {
 		factor = 2
-		modifier = {
-			factor = 0
-			NOT = { can_wear_a_crown_trigger = yes }
+		trigger = {
+			OR = {
+				blg_headgear_king = yes
+				blg_merchant_headgear = yes
+			}
 		}
+
 		modifier = {
 			factor = 5
 			diplomacy = 12
 		}
+
 		modifier = {
-			factor = 0
-			OR = { 
+			factor = 0.1
+			OR = {
 				has_portrait_property = { layer = 5 index = 0 }
 				has_portrait_property = { layer = 5 index = 1 }
-				has_portrait_property = { layer = 5 index = 3 } 
+				has_portrait_property = { layer = 5 index = 3 }
 				has_portrait_property = { layer = 5 index = 4 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 3 } }
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 3 }
 		}
 	}
@@ -94,23 +104,25 @@
 	# Non-Specific Crown
 	3 = {
 		factor = 2
-		modifier = {
-			factor = 0
-			NOT = { can_wear_a_crown_trigger = yes }
+		trigger = {
+			OR = {
+				blg_headgear_king = yes
+				blg_merchant_headgear = yes
+			}
 		}
+
 		modifier = {
-			factor = 0
-			OR = { 
+			factor = 0.1
+			OR = {
 				has_portrait_property = { layer = 5 index = 0 }
 				has_portrait_property = { layer = 5 index = 1 }
-				has_portrait_property = { layer = 5 index = 2 } 
+				has_portrait_property = { layer = 5 index = 2 }
 				has_portrait_property = { layer = 5 index = 4 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 4 } }
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 4 }
 		}
 	}
@@ -118,31 +130,35 @@
 	# Simple golden band
 	4 = {
 		factor = 2
-		modifier = {
-			factor = 0
-			NOT = { can_wear_a_crown_trigger = yes }
+		trigger = {
+			OR = {
+				blg_headgear_king = yes
+				blg_merchant_headgear = yes
+			}
 		}
+
 		modifier = {
 			factor = 0.05
 			trait = proud
 		}
+
 		modifier = {
 			factor = 5
 			trait = humble
 		}
+
 		modifier = {
-			factor = 0
-			OR = { 
+			factor = 0.1
+			OR = {
 				has_portrait_property = { layer = 5 index = 0 }
 				has_portrait_property = { layer = 5 index = 1 }
-				has_portrait_property = { layer = 5 index = 2 } 
+				has_portrait_property = { layer = 5 index = 2 }
 				has_portrait_property = { layer = 5 index = 3 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 5 } }
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 5 }
 		}
 	}
@@ -150,39 +166,30 @@
 	# Common headgear 1 - Hat (Common)
 	5 = {
 		factor = 1
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
+				blg_headgear_common = yes
+				is_variable_equal = { which = ca_headgear value = 6 }
 			}
-			NOR = {
-				employer = { mercenary = yes }
-				employer = { government = order_government }
-				trait = in_hiding
-				trait = peasant_leader
-				trait = heresiarch
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 6 } }
 		}
+
 		modifier = {
 			factor = 2
 			dynasty = none
 		}
+
 		modifier = {
-			factor = 0
-			OR = { 
+			factor = 0.1
+			OR = {
 				has_portrait_property = { layer = 5 index = 6 }
-				has_portrait_property = { layer = 5 index = 7 } 
-				has_portrait_property = { layer = 5 index = 8 } 
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 11 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 6 } }
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 6 }
 		}
 	}
@@ -190,39 +197,30 @@
 	# Common headgear 2 - Hat (Fancy)
 	6 = {
 		factor = 1
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
+				blg_headgear_common = yes
+				is_variable_equal = { which = ca_headgear value = 7 }
 			}
-			NOR = {
-				employer = { mercenary = yes }
-				employer = { government = order_government }
-				trait = in_hiding
-				trait = peasant_leader
-				trait = heresiarch
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 7 } }
 		}
+
 		modifier = {
 			factor = 2
 			NOT = { dynasty = none }
 		}
+
 		modifier = {
-			factor = 0
-			OR = { 
+			factor = 0.1
+			OR = {
 				has_portrait_property = { layer = 5 index = 5 }
-				has_portrait_property = { layer = 5 index = 7 } 
-				has_portrait_property = { layer = 5 index = 8 } 
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 11 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 7 } }
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 7 }
 		}
 	}
@@ -230,35 +228,25 @@
 	# Common headgear 3 - Coif
 	7 = {
 		factor = 1
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
+				blg_headgear_common = yes
+				is_variable_equal = { which = ca_headgear value = 8 }
 			}
-			NOR = {
-				employer = { mercenary = yes }
-				employer = { government = order_government }
-				trait = in_hiding
-				trait = peasant_leader
-				trait = heresiarch
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 8 } }
 		}
+
 		modifier = {
-			factor = 0
-			OR = { 
+			factor = 0.1
+			OR = {
 				has_portrait_property = { layer = 5 index = 5 }
-				has_portrait_property = { layer = 5 index = 6 } 
-				has_portrait_property = { layer = 5 index = 8 } 
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 11 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 8 } }
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 8 }
 		}
 	}
@@ -266,35 +254,25 @@
 	# Common headgear 4 - Hood
 	8 = {
 		factor = 1
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-				has_minor_title = title_prince
-				has_minor_title = title_queen_mother
+				blg_headgear_common = yes
+				is_variable_equal = { which = ca_headgear value = 9 }
 			}
-			NOR = {
-				employer = { mercenary = yes }
-				employer = { government = order_government }
-				trait = in_hiding
-				trait = peasant_leader
-				trait = heresiarch
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 9 } }
 		}
+
 		modifier = {
-			factor = 0
-			OR = { 
+			factor = 0.1
+			OR = {
 				has_portrait_property = { layer = 5 index = 5 }
-				has_portrait_property = { layer = 5 index = 6 } 
-				has_portrait_property = { layer = 5 index = 7 } 
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 11 }
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 8 } }
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 9 }
 		}
 	}
@@ -302,35 +280,22 @@
 	# Shady headgear
 	9 = {
 		factor = 3
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				higher_tier_than = DUKE
-				any_spouse = { higher_tier_than = DUKE }
-			}
-			NOR = {
-				employer = { mercenary = yes }
-				employer = { government = order_government }
-				trait = in_hiding
-				trait = peasant_leader
-				trait = heresiarch
-				trait = leper
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 10 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				has_job_title = job_spymaster
+				AND = {
+					has_job_title = job_spymaster
+					lower_real_tier_than = king
+				}
+				AND = {
+					intrigue >= 16
+					lower_real_tier_than = duke
+				}
 				trait = in_hiding
 				trait = leper
+				is_variable_equal = { which = ca_headgear value = 10 }
 			}
-			OR = {
-				real_tier = duke
-				NOT = { intrigue = 16 }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 10 } }
 		}
+
 		modifier = {
 			factor = 33
 			OR = {
@@ -338,9 +303,9 @@
 				trait = leper
 			}
 		}
+
 		modifier = {
 			factor = 100
-			is_alive = yes
 			is_variable_equal = { which = ca_headgear value = 10 }
 		}
 	}
@@ -348,42 +313,21 @@
 	# Martial headgear
 	10 = {
 		factor = 90
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 		trigger = {
 			OR = {
-				may_wear_martial_headgear_trigger = yes
-				has_character_flag = battle_event_in_progess
-				has_character_flag = chivalry_duel_ongoing
-				AND = {
-					has_game_rule = { name = blg_helmet value = on }
-					OR = {
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						holy_order = yes
-						mercenary = yes
-					}
-				}
-				AND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
+				blg_headgear_military = yes
+				is_variable_equal = { which = ca_headgear value = 11 }
 			}
 		}
+
 		modifier = {
-			factor = 0
-			OR = {
-				trait = knight
-				does_not_wear_martial_headgear_trigger = yes
-				AND = {
-					has_game_rule = { name = blg_helmet value = lowrank }
-					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
-				}
-				has_game_rule = { name = blg_helmet value = off }
-				has_game_rule = { name = blg_helmet value = none }
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
+			factor = 0.01
+			trait = knight
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 11 }
 		}
 	}
@@ -391,33 +335,41 @@
 	# Blank
 	11 = {
 		factor = 3
+		trigger = {
+			blg_headgear_common = yes
+		}
+
 		modifier = {
 			factor = 10
 			OR = {
 				trait = slave
 				trait = maester
 				trait = nightswatch
+				blg_clothes_military = yes
 			}
 		}
+
 		modifier = {
-			factor = 100	#Certain
+			factor = 1000	#Certain
 			OR = {
 				prisoner = yes
 				trait = archmaester
 				trait = not_a_bear
-				AND = {
-					in_command = no
-					OR =  {
-						trait = bearded_priest
-						has_job_title  = job_marshal
-						primary_title = { OR = { mercenary = yes holy_order = yes } }
-					}
-				}
 			}
 		}
+
 		modifier = {
-			factor = 100
-			is_alive = yes
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+			}
+		}
+
+		modifier = {
+			factor = 1000
 			is_variable_equal = { which = ca_headgear value = 12 }
 		}
 	}
@@ -425,154 +377,50 @@
 	# Kingsguard
 	12 = {
 		factor = 100
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 		trigger = {
 			trait = kingsguard
-			OR = {
-				may_wear_martial_headgear_trigger = yes
-				has_character_flag = battle_event_in_progess
-				has_character_flag = chivalry_duel_ongoing
-				AND = {
-					has_game_rule = { name = blg_helmet value = on }
-					OR = {
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						holy_order = yes
-						mercenary = yes
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_game_rule = { name = martial_headgear value = off }
-				AND = {
-					has_game_rule = { name = blg_helmet value = lowrank }
-					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
-				}
-				has_game_rule = { name = blg_helmet value = off }
-				has_game_rule = { name = blg_helmet value = none }
-			}
+			blg_headgear_military = yes
 		}
 	}
 
 	# City Watch/Unsullied
 	13 = {
 		factor = 100
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 		trigger = {
-			has_minor_title  =  title_commander_gold_cloaks
+			employer = { has_minor_title = title_commander_gold_cloaks }
 			OR = {
 				culture_group = dornish
 				culture_group = andal
 				culture_group = first_men
 				culture_group = free_folk
 			}
-			OR = {
-				may_wear_martial_headgear_trigger = yes
-				has_character_flag = battle_event_in_progess
-				has_character_flag = chivalry_duel_ongoing
-				AND = {
-					has_game_rule = { name = blg_helmet value = on }
-					OR = {
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						holy_order = yes
-						mercenary = yes
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_game_rule = { name = martial_headgear value = off }
-				AND = {
-					has_game_rule = { name = blg_helmet value = lowrank }
-					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
-				}
-				has_game_rule = { name = blg_helmet value = off }
-				has_game_rule = { name = blg_helmet value = none }
-			}
+			blg_headgear_military = yes
 		}
 	}
 
 	# Knight
 	14 = {
 		factor = 90
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 		trigger = {
 			trait = knight
-			OR = {
-				may_wear_martial_headgear_trigger = yes
-				has_character_flag = battle_event_in_progess
-				has_character_flag = chivalry_duel_ongoing
-				AND = {
-					has_game_rule = { name = blg_helmet value = on }
-					OR = {
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						holy_order = yes
-						mercenary = yes
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				does_not_wear_martial_headgear_trigger = yes
-				AND = {
-					has_game_rule = { name = blg_helmet value = lowrank }
-					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
-				}
-				has_game_rule = { name = blg_helmet value = off }
-				has_game_rule = { name = blg_helmet value = none }
-			}
+			blg_headgear_military = yes
 		}
 	}
 
 	# Great House Helm 1
 	15 = {
 		factor = 100
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 		trigger = {
-			OR = {
-				may_wear_martial_headgear_trigger = yes
-				has_character_flag = battle_event_in_progess
-				has_character_flag = chivalry_duel_ongoing
-				AND = {
-					has_game_rule = { name = blg_helmet value = on }
-					OR = {
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						holy_order = yes
-						mercenary = yes
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				does_not_wear_martial_headgear_trigger = yes
-				AND = {
-					has_game_rule = { name = blg_helmet value = lowrank }
-					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
-				}
-				has_game_rule = { name = blg_helmet value = off }
-				has_game_rule = { name = blg_helmet value = none }
-			}
+			blg_headgear_military = yes
 		}
 		modifier = {
 			factor = 0
 			NOR = {	#Only for these graphical cultures
-				culture = stormlander	
+				culture = stormlander
 				culture = reachman
 				culture = westerman
 				culture = riverlander
@@ -679,36 +527,9 @@
 	# Great House Helm 2
 	16 = {
 		factor = 100
-		hide_layers = { 42 = { } }
+		hide_layers = { 43 = { } }
 		trigger = {
-			OR = {
-				may_wear_martial_headgear_trigger = yes
-				has_character_flag = battle_event_in_progess
-				has_character_flag = chivalry_duel_ongoing
-				AND = {
-					has_game_rule = { name = blg_helmet value = on }
-					OR = {
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						holy_order = yes
-						mercenary = yes
-					}
-				}
-				AND = { is_alive = yes is_variable_equal = { which = ca_headgear value = 11 } }
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				does_not_wear_martial_headgear_trigger = yes
-				AND = {
-					has_game_rule = { name = blg_helmet value = lowrank }
-					OR = { higher_real_tier_than = baron spouse = { higher_real_tier_than = baron } }
-				}
-				has_game_rule = { name = blg_helmet value = off }
-				has_game_rule = { name = blg_helmet value = none }
-			}
+			blg_headgear_military = yes
 		}
 		modifier = {
 			factor = 0
@@ -718,7 +539,7 @@
 				culture_group = first_men
 				culture_group = dornish
 			}
-		}	
+		}
 		modifier = {
 			factor = 0
 			NOR = {

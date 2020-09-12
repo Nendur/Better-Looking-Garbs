@@ -19,7 +19,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_player_overlay"
 		texturefile = "gfx\\characters\\shared\\player_overlay.dds"
-		noOfFrames = 4
+		noOfFrames = 3
 		norefcount = yes
 		can_be_lowres = yes
 	}

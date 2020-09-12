@@ -117,6 +117,11 @@ blg_slave = {
 		death_reason = death_enslaved
 		death_reason = dwt_death_rape_prisoner
 	}
+	NOR = {
+		is_councillor = yes
+		is_voter = yes
+		has_minor_title = title_regent
+	}
 }
 
 ### Events:

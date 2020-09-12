@@ -63,7 +63,7 @@ blg_hair_southernslavic_tidy = {
 blg_hair_germanic_ruler = {
 	is_female = no
 	year_of_birth < 740
-	
+
 	likes_germanics = yes
 	OR = {
 		higher_real_tier_than = duke
@@ -75,7 +75,7 @@ blg_hair_germanic_ruler = {
 blg_hair_germanic_noruler = {
 	is_female = no
 	year_of_birth < 740
-	
+
 	likes_germanics = yes
 	NOR = {
 		higher_real_tier_than = duke

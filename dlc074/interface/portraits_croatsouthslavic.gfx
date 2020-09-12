@@ -56,7 +56,7 @@ spriteTypes = {
 	}
 
 ### CROAT SOUTHSLAVIC MALE ####
-	
+
 	spriteType = {
 		name = "GFX_croatsouthslavic_male_clothes_behind"
 		texturefile = "gfx\\characters\\southslavic_male\\croat_southslavic_male_clothes_behind.dds"

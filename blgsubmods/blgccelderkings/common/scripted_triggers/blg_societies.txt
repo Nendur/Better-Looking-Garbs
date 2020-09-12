@@ -1,0 +1,241 @@
+### Society rank limits:
+
+# Show society clothes on low ranks.
+blg_society_landless = {
+	NOT = { portrait_tier = baron }
+}
+
+# Show society clothes on low ranks.
+blg_society_lowrank = {
+	NOT = { portrait_tier = duke }
+}
+
+# Show society clothes on leader ranks.
+blg_society_leaders = {
+	OR = {
+		portrait_society_rank = 3
+		portrait_society_rank = 4
+	}
+	NOT = { portrait_tier = king }
+}
+
+# Common rules for wearing Christian monastic clothes.
+blg_wear_christian_monastic_clothing = {
+	OR = {
+		blg_society_landless = yes
+		AND = {
+			blg_portrait_theocracy = yes
+			NOT = { portrait_tier = king }
+		}
+		blg_portrait_holy_order = yes
+		portrait_has_trait = blgcaon
+	}
+	blg_wear_society_clothing_off = no
+}
+
+# Common rules for wearing monastic clothes.
+blg_wear_monastic_clothing = {
+	OR = {
+		blg_society_landless = yes
+		blg_portrait_theocracy = yes
+		blg_portrait_holy_order = yes
+		portrait_has_trait = blgcaon
+	}
+	blg_wear_society_clothing_off = no
+}
+
+# Common rules for wearing society clothes.
+blg_wear_society_clothing = {
+	OR = {
+		blg_society_lowrank = yes
+		blg_society_leaders = yes
+		portrait_has_trait = blgcaon
+		portrait_has_trait = blgquesting
+	}
+	blg_wear_society_clothing_off = no
+}
+
+# Common rules for wearing society clothes, less common.
+blg_wear_society_clothing_minimal = {
+	OR = {
+		blg_society_lowrank = yes
+		portrait_society_rank = 4
+		portrait_has_trait = blgcaon
+		portrait_has_trait = blgquesting
+	}
+	blg_wear_society_clothing_off = no
+}
+
+# Disabled society clothing.
+blg_wear_society_clothing_off = {
+	portrait_has_trait = blgcaoff
+}
+
+# Common rules for wearing warrior lodge clothes.
+blg_wear_warrior_lodge_clothing = {
+	OR = {
+		blg_society_lowrank = yes
+		portrait_in_command = yes
+		blg_portrait_holy_order = yes
+		portrait_has_trait = blgcaon
+		portrait_has_trait = blgquesting
+	}
+	blg_wear_society_clothing_off = no
+}
+
+### Society triggers:
+
+# African warrior lodge.
+blg_society_african = {
+	always = no
+}
+
+# Assassins society.
+blg_society_assassins = {
+	always = no
+}
+
+# Hellenic Bacchants.
+blg_society_bacchants = {
+	always = no
+}
+
+# Baltic warrior lodge.
+blg_society_baltic = {
+	always = no
+}
+
+# Benedictine order.
+blg_society_benedictine = {
+	always = no
+}
+
+# Bön warrior lodge.
+blg_society_bon = {
+	always = no
+}
+
+# Buddhist Vajrayana order.
+blg_society_buddhist_vajrayana = {
+	always = no
+}
+
+# Buddhist Theravada order.
+blg_society_buddhist_theravada = {
+	always = no
+}
+
+# Buddhist Mahayana order.
+blg_society_buddhist_mahayana = {
+	always = no
+}
+
+# Dominican order.
+blg_society_dominican = {
+	always = no
+}
+
+# Finnish warrior lodge.
+blg_society_finnish = {
+	always = no
+}
+
+# Hellenic warrior lodge.
+blg_society_hellenic = {
+	always = no
+}
+
+# Hermetic society.
+blg_society_hermetics = {
+	always = no
+}
+
+# Hindu Vaishnavist order.
+blg_society_hindu_vaishnavist = {
+	always = no
+}
+
+# Hindu Smartist order.
+blg_society_hindu_smartist = {
+	always = no
+}
+
+# Hindu Shaktist order.
+blg_society_hindu_shaktist = {
+	always = no
+}
+
+# Hindu Shaivist order.
+blg_society_hindu_shaivist = {
+	always = no
+}
+
+# Jain order.
+blg_society_jain = {
+	always = no
+}
+
+# Jain Digambara order.
+blg_society_jain_digambara = {
+	always = no
+}
+
+# Jain Svetambara order.
+blg_society_jain_theravada = {
+	always = no
+}
+
+# Oriental Orthodox orders.
+blg_society_monophysite = {
+	always = no
+}
+
+# Norse warrior lodge.
+blg_society_norse = {
+	always = no
+}
+
+# Orthodox order.
+blg_society_orthodox = {
+	always = no
+}
+
+# Pagan Satanists society.
+blg_society_pagan_cult = {
+	always = no
+}
+
+# Satanists society.
+blg_society_satanists = {
+	always = no
+}
+
+# Slavic warrior lodge.
+blg_society_slavic = {
+	always = no
+}
+
+# Hellenic Stoic order.
+blg_society_stoics = {
+	always = no
+}
+
+# Tengri warrior lodge.
+blg_society_tengri = {
+	always = no
+}
+
+# Norse Trollcrafters society.
+blg_society_trollcrafters = {
+	always = no
+}
+
+# Vodoun society.
+blg_society_vodoun = {
+	always = no
+}
+
+# Zunist warrior lodge.
+blg_society_zun = {
+	always = no
+}

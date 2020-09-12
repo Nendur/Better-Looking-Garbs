@@ -23,7 +23,7 @@ objectTypes = {
 		file = "gfx\models\Attachments\westerngfx_early_helmet_norman.mesh"
 		scale = 1.0f
 	}
-	
+
 	pdxmesh = {
 		name = "normangfx_LIGHT_INFANTRY_shield"
 		file = "gfx\models\Attachments\westerngfx_early_heavy_shield.mesh"

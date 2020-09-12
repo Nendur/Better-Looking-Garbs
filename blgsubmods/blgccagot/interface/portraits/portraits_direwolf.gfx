@@ -33,7 +33,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight, Golden
-			{ 115 110 100 } { 255 250 220 } { 255 255 255 } 
+			{ 115 110 100 } { 255 250 220 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -46,7 +46,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 	}
-	
+
 	portraitType = {
 		name = "PORTRAIT_direwolfgfx_male1"
 		effectFile = "gfx/FX/portrait.lua"
@@ -61,7 +61,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 135 130 120 } { 255 250 220 } { 255 255 255 }			
+			{ 135 130 120 } { 255 250 220 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -74,7 +74,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 	}
-	
+
 	portraitType = {
 		name = "PORTRAIT_direwolfgfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
@@ -89,7 +89,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 40 35 10 } { 250 250 235 } { 255 255 255 } 
+			{ 40 35 10 } { 250 250 235 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -102,7 +102,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 	}
-	
+
 	portraitType = {
 		name = "PORTRAIT_direwolfgfx_female"
 		effectFile = "gfx/FX/portrait.lua"
@@ -119,7 +119,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 135 130 120 } { 255 250 220 } { 255 255 255 } 
+			{ 135 130 120 } { 255 250 220 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -147,7 +147,7 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 135 130 120 } { 255 250 220 } { 255 255 255 } 
+			{ 135 130 120 } { 255 250 220 } { 255 255 255 }
 		}
 
 		eye_color_index = 9

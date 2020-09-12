@@ -7,7 +7,7 @@ altaic = {
 	}
 }
 
-tibetan_group = {  
+tibetan_group = {
 	bamar = {
 		graphical_cultures = { assamesegfx southindiangfx indiangfx muslimgfx }
 	}

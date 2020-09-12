@@ -343,11 +343,11 @@ objectTypes = {
 	pdxmesh = {
 		name = "frankishgfx_KNIGHTS"
 		file = "gfx\models\fraup_early_heavy_horse.mesh"
-	
+
 		animation = { id = "attack"		type = "fraup_horse_attack_animation" }
 		animation = { id = "idle"		type = "fraup_horse_idle_animation" }
 		animation = { id = "move"		type = "fraup_horse_moving_animation" }
-		
+
 		scale = 0.9
 	}
 

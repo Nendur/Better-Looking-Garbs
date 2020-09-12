@@ -350,7 +350,7 @@ spriteTypes = {
 		eye_color = {
 			{ 255 255 255 }
 		}
-		
+
 		headgear_that_hides_hair = {10}
 	}
 
@@ -432,7 +432,7 @@ spriteTypes = {
 		eye_color = {
 			{ 255 255 255 }
 		}
-		
+
 		headgear_that_hides_hair = {10}
 	}
 
@@ -843,7 +843,7 @@ spriteTypes = {
 		eye_color = {
 			{ 255 255 255 }
 		}
-		
+
 		headgear_that_hides_hair = { }
 	}
 
@@ -925,7 +925,7 @@ spriteTypes = {
 		eye_color = {
 			{ 255 255 255 }
 		}
-		
+
 		headgear_that_hides_hair = { }
 	}
 

@@ -143,7 +143,7 @@ north_germanic = {
 	varangian = {
 		graphical_cultures = { norsegfx }
 	}
-	norsegael = { 
+	norsegael = {
 		graphical_cultures = { norsegaelgfx celticgfx }
 	}
 	icelandic = {
@@ -292,7 +292,7 @@ nilo_saharan = {
 
 congo_nigerian = {
 	graphical_cultures = { muslimgfx }
-	
+
 	akan = {
 		graphical_cultures = { westafricangfx africangfx }
 	}
@@ -312,7 +312,7 @@ congo_nigerian = {
 
 ethiopic = {
 	graphical_cultures = { muslimgfx }
-	
+
 	ethiopian = {
 		graphical_cultures = { africangfx westafricangfx }
 	}
@@ -340,7 +340,7 @@ west_slavic = {
 	slovakian = {
 		graphical_cultures = { westernslavicgfx }
 	}
-	sorbian = { 
+	sorbian = {
 		graphical_cultures = { pomeraniangfx westernslavicgfx }
 	}
 	polabian = {

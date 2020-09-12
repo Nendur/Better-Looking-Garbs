@@ -5,7 +5,7 @@
 #####											  #####
 #######################################################
 #######################################################
- 
+
 objectTypes = {
 
 	EMFXActorType = {
@@ -27,7 +27,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "byzantinegfx_LIGHT_INFANTRY_helmet"
-		actorfile = "gfx\models\no_object.xac"  
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 
@@ -62,7 +62,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "byzantinegfx_PIKEMEN_helmet"
-		actorfile = "gfx\models\no_object.xac"  
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.00001f
 	}
 
@@ -107,7 +107,7 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "byzantinegfx_ARCHERS_helmet"
-		actorfile = "gfx\models\no_object.xac"  
+		actorfile = "gfx\models\no_object.xac"
 		scale = 0.000001f
 	}
 
