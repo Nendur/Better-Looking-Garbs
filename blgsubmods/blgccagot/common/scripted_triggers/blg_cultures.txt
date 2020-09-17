@@ -40,7 +40,7 @@ blg_clothes_chinese = {
 
 # Wears Chinese headgear.
 blg_headgear_chinese = {
-	culture = yi_ti
+	always = no
 }
 
 # These cultures use commmon headgear in addition for dukes.

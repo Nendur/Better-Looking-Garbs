@@ -71,7 +71,7 @@ blg_religion_aztec = {
 
 # Celtic pagan religions.
 blg_religion_celtic = {
-	religion_openly_in_celtic_subgroup_trigger = yes
+	always = no
 }
 
 # Far Eastern pagan religions.
@@ -81,7 +81,7 @@ blg_religion_eastern_pagan = {
 
 # Egyptian pagan religions.
 blg_religion_egyptian = {
-	religion_openly_egyptian_or_reformed_trigger = yes
+	always = no
 }
 
 ### Portrait override triggers:

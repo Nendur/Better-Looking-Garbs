@@ -776,6 +776,7 @@ blg_set_ethnicity_turkish = {
 				likes_germanics = yes
 				likes_latino_iberians = yes
 				likes_balto_slavics = yes
+				likes_finno_ugrics = yes
 				likes_celts = yes
 			}
 		}

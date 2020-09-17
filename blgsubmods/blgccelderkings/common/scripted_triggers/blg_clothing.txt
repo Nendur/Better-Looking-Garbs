@@ -205,8 +205,7 @@ blg_headgear_covered = {
 blg_clothes_royal = {
 	OR = {
 		blg_royalty = yes
-		has_minor_title = title_prince
-		has_minor_title = title_queen_mother
+		blg_prince_title = yes
 		blg_merchant_clothes = yes
 	}
 }
@@ -222,9 +221,8 @@ blg_clothes_noble = {
 				higher_real_tier_than = count
 			}
 		}
-		has_minor_title = title_prince
-		has_minor_title = title_queen_mother
 		blg_royal_title = yes
+		blg_prince_title = yes
 		trait = proud
 	}
 	blg_peasant = no
@@ -237,9 +235,8 @@ blg_clothes_common = {
 			is_landed = yes
 			spouse_even_if_dead = { higher_real_tier_than = count }
 			is_or_was_offmap_power_ruler = yes
-			has_minor_title = title_prince
-			has_minor_title = title_queen_mother
 			blg_royal_title = yes
+			blg_prince_title = yes
 		}
 		trait = humble
 		blg_peasant = yes

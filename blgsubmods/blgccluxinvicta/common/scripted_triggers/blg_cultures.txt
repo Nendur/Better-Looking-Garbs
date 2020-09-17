@@ -230,7 +230,6 @@ blg_culture_chinese = {
 	OR = {
 		culture = han
 		culture = zhao
-		culture = sinohellenic
 		culture = viethellenic
 	}
 }

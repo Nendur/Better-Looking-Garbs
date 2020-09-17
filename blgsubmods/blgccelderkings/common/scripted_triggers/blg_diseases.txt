@@ -82,6 +82,7 @@ blg_pale = {
 		trait = has_swamp_rot
 		trait = chrondiasis
 		trait = undead
+		trait = lich
 		has_character_modifier = broken_spirit
 	}
 }

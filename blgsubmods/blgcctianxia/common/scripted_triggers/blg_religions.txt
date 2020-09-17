@@ -84,6 +84,11 @@ blg_religion_eastern_pagan = {
 	}
 }
 
+# Egyptian pagan religions.
+blg_religion_egyptian = {
+	always = no
+}
+
 ### Portrait override triggers:
 
 # African religion.
