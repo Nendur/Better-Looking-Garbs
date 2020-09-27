@@ -1,0 +1,771 @@
+#p33 Frankish Culture Underlayer and Hair - Female
+33 = {
+	0 = { # 0 - blank
+		factor = 25
+		modifier = {
+			factor = 100
+			OR = {
+				NOT = { has_dlc = "Holy Fury" }
+				is_female = no
+				is_priest = yes
+				prisoner = yes
+				death_reason = death_dungeon
+			}
+		}
+
+		modifier = {
+			factor = 100
+			OR = {
+				has_portrait_property = { layer = 5 index = 9 }
+				has_portrait_property = { layer = 5 index = 10 }
+				has_portrait_property = { layer = 5 index = 12 }
+				has_portrait_property = { layer = 5 index = 13 }
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				NAND = {
+					OR = {
+						is_married = yes
+						is_consort = yes
+						any_spouse_even_if_dead = { is_alive = no }
+						age >= 40
+						trait = chaste
+						trait = celibate
+						trait = zealous
+						is_ascetic_trigger = yes
+					}
+					NOT = { trait = lustful }
+				}
+				NOR = {
+					likes_latino_iberians = yes
+					AND = {
+							likes_christians = yes
+							OR = {
+										likes_germanics = yes
+										likes_celts = yes
+										likes_balto_slavics = yes
+										likes_finno_ugrics = yes
+							}
+					}
+				}
+			}
+			NOT = { check_variable = { which = ca_underlayer value = 2 } }
+		}
+
+		modifier = {
+			factor = 0.5
+			calc_true_if = {
+				amount = 2
+
+				is_married = yes
+				is_consort = yes
+				any_spouse_even_if_dead = { is_alive = no }
+				age >= 40
+				trait = chaste
+				trait = celibate
+				trait = zealous
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 1 }
+		}
+	}
+
+	1 = { # a - Empress / Queen Pre-1180
+		factor = 5
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+						culture_group = iberian
+						likes_celts = yes
+						culture_group = east_slavic
+						culture = outremer
+					}
+					OR = {
+						higher_real_tier_than = duke
+						is_or_was_offmap_power_ruler = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											is_or_was_offmap_power_ruler = yes
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NAND = {
+						is_republic = yes
+						NOT = { government = confucian_bureaucracy }
+					}
+					NOT = { mercenary = yes }
+					NOT = { holy_order = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 2 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 2 }
+		}
+	}
+
+	2 = { # b - Empress / Queen Pre-1180
+		factor = 5
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+						culture_group = iberian
+						likes_celts = yes
+						culture_group = east_slavic
+						culture = outremer
+					}
+					OR = {
+						higher_real_tier_than = duke
+						is_or_was_offmap_power_ruler = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											is_or_was_offmap_power_ruler = yes
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NAND = {
+						is_republic = yes
+						NOT = { government = confucian_bureaucracy }
+					}
+					NOT = { mercenary = yes }
+					NOT = { holy_order = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 3 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 3 }
+		}
+	}
+
+	3 = { # c - Empress / Queen Pre-1180
+		factor = 5
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+						culture_group = iberian
+						likes_celts = yes
+						culture_group = east_slavic
+						culture = outremer
+					}
+					OR = {
+						higher_real_tier_than = duke
+						is_or_was_offmap_power_ruler = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											is_or_was_offmap_power_ruler = yes
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NAND = {
+						is_republic = yes
+						NOT = { government = confucian_bureaucracy }
+					}
+					NOT = { mercenary = yes }
+					NOT = { holy_order = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 4 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 4 }
+		}
+	}
+
+	4 = { # d - Empress / Queen Pre-1180
+		factor = 5
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+						culture_group = iberian
+						likes_celts = yes
+						culture_group = east_slavic
+						culture = outremer
+					}
+					OR = {
+						higher_real_tier_than = duke
+						is_or_was_offmap_power_ruler = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											is_or_was_offmap_power_ruler = yes
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NAND = {
+						is_republic = yes
+						NOT = { government = confucian_bureaucracy }
+					}
+					NOT = { mercenary = yes }
+					NOT = { holy_order = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 5 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 5 }
+		}
+	}
+
+	5 = { # e - Empress / Queen Post-1180
+		factor = 5
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+						culture_group = iberian
+						likes_celts = yes
+						culture_group = east_slavic
+						culture = outremer
+					}
+					OR = {
+						higher_real_tier_than = duke
+						is_or_was_offmap_power_ruler = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											is_or_was_offmap_power_ruler = yes
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NAND = {
+						is_republic = yes
+						NOT = { government = confucian_bureaucracy }
+					}
+					NOT = { mercenary = yes }
+					NOT = { holy_order = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 6 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 6 }
+		}
+	}
+
+	6 = { # f - Empress / Queen Post-1180
+		factor = 5
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+						culture_group = iberian
+						likes_celts = yes
+						culture_group = east_slavic
+						culture = outremer
+					}
+					OR = {
+						higher_real_tier_than = duke
+						is_or_was_offmap_power_ruler = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											is_or_was_offmap_power_ruler = yes
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NAND = {
+						is_republic = yes
+						NOT = { government = confucian_bureaucracy }
+					}
+					NOT = { mercenary = yes }
+					NOT = { holy_order = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 7 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 7 }
+		}
+	}
+
+	7 = { # g - Empress / Queen Post-1180
+		factor = 5
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+					OR = {
+						higher_real_tier_than = duke
+						is_or_was_offmap_power_ruler = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											is_or_was_offmap_power_ruler = yes
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NAND = {
+						is_republic = yes
+						NOT = { government = confucian_bureaucracy }
+					}
+					NOT = { mercenary = yes }
+					NOT = { holy_order = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 8 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 8 }
+		}
+	}
+
+	8 = { # h - Empress / Queen Post-1180
+		factor = 5
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+						culture_group = iberian
+						likes_celts = yes
+						culture_group = east_slavic
+						culture = outremer
+					}
+					OR = {
+						higher_real_tier_than = duke
+						is_or_was_offmap_power_ruler = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											is_or_was_offmap_power_ruler = yes
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NAND = {
+						is_republic = yes
+						NOT = { government = confucian_bureaucracy }
+					}
+					NOT = { mercenary = yes }
+					NOT = { holy_order = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 9 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 9 }
+		}
+	}
+
+	9 = { # i - Duchess Early
+		factor = 2
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 10 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 10 }
+		}
+	}
+
+	10 = { # j - Duchess Early
+		factor = 2
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						culture_group = iberian
+						likes_celts = yes
+						culture_group = east_slavic
+						culture = outremer
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 11 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 11 }
+		}
+	}
+
+	11 = { # k - Duchess Early
+		factor = 2
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						culture_group = iberian
+						likes_celts = yes
+						culture_group = east_slavic
+						culture = outremer
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 12 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 12 }
+		}
+	}
+
+	12 = { # l - Duchess Early
+		factor = 2
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+						culture_group = iberian
+						likes_celts = yes
+						culture_group = east_slavic
+						culture = outremer
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 13 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 13 }
+		}
+	}
+
+	13 = { # m - Duchess Post-1180
+		factor = 2
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 14 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 14 }
+		}
+	}
+
+	14 = { # n - Duchess Post-1180
+		factor = 2
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				is_variable_equal = { which = ca_underlayer value = 15 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 15 }
+		}
+	}
+
+	15 = { # o - Countess Early
+		factor = 1
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				year_of_birth < 1160
+				is_variable_equal = { which = ca_underlayer value = 16 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 16 }
+		}
+	}
+
+	16 = { # p - Countess Early
+		factor = 1
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				year_of_birth < 1160
+				is_variable_equal = { which = ca_underlayer value = 16 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 16 }
+		}
+	}
+
+	17 = { # q - Countess Early
+		factor = 1
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				year_of_birth < 1160
+				is_variable_equal = { which = ca_underlayer value = 16 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 16 }
+		}
+	}
+
+	18 = { # r - Countess Post-1180
+		factor = 1
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				year_of_birth >= 1160
+				is_variable_equal = { which = ca_underlayer value = 16 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 16 }
+		}
+	}
+
+	19 = { # s - Countess Post-1180
+		factor = 1
+		hide_layers = { 1 = {} }
+
+		trigger = {
+			OR = {
+				year_of_birth >= 1160
+				is_variable_equal = { which = ca_underlayer value = 16 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_underlayer value = 16 }
+		}
+	}
+}

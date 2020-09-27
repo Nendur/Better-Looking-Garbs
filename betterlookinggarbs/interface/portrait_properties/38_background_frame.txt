@@ -124,10 +124,7 @@
 		trigger = {
 			trait = falconer
 
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
+			blg_artifact_rule = yes
 		}
 	}
 }

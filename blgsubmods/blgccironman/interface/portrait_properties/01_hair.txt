@@ -1,0 +1,1760 @@
+# p1 hair  --- WARNING! Property 1 MUST be Hair, otherwise the hair hiding helmets wont work ---
+1 = {
+	0 = { # 0 - Completely bald
+		factor = 1
+		modifier = {
+			factor = 0.1
+			is_female = no
+			practical_age < 40
+
+			NOR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			NOR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 1 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			is_female = no
+			OR = {
+				true_religion_scope = {
+						OR = {
+									likes_jews = yes
+									religion = taoist
+						}
+				}
+				trait = muni
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			is_female = no
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			has_tribal_or_nomadic_government_trigger = no
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 1 }
+			}
+		}
+	}
+
+	1 = { # a - Black Adder
+		factor = 1
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOR = {
+				graphical_culture = africangfx
+				graphical_culture = westafricangfx
+			}
+			NOT = { graphical_culture = easternslavicgfx }
+			NOR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 2 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+			NOR = {
+				graphical_culture = italiangfx
+				graphical_culture = outremergfx
+				graphical_culture = romangfx
+			}
+			NOR = {
+				graphical_culture = southerngfx
+				graphical_culture = andalusiangfx
+			}
+			NOT = { graphical_culture = byzantinegfx }
+			NOT = { graphical_culture = norsegfx }
+			NOR = {
+				graphical_culture = ugricgfx
+				graphical_culture = magyargfx
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 2 }
+			}
+		}
+	}
+
+	2 = { # b - Page
+		factor = 1
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOT = { graphical_culture = turkishgfx }
+			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				higher_tier_than = count
+			}
+			OR = {
+				graphical_culture = westernslavicgfx
+				graphical_culture = croatsouthslavicgfx
+				graphical_culture = crimeangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				higher_tier_than = duke
+			}
+			OR = {
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = dalmatiangfx
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+				graphical_culture = italiangfx
+				graphical_culture = outremergfx
+				graphical_culture = romangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 3 }
+			}
+		}
+	}
+
+	3 = { # c - Synth
+		factor = 1
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+			}
+			NOR = {
+				graphical_culture = southerngfx
+				graphical_culture = andalusiangfx
+			}
+			NOR = {
+				graphical_culture = arabicgfx
+				graphical_culture = levantinegfx
+			}
+			NOR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+			NOT = { graphical_culture = easternslavicgfx }
+			NOT = { is_variable_equal = { which = ca_hair value = 4 } }
+		}
+
+		modifier = {
+			factor = 0.01
+			is_female = no
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			has_tribal_or_nomadic_government_trigger = no
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 4 }
+			}
+		}
+	}
+
+	4 = { # d - Long Straight
+		factor = 1
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			NOR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+			NOT = { graphical_culture = easternslavicgfx }
+			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				higher_tier_than = count
+			}
+			OR = {
+				graphical_culture = westernslavicgfx
+				graphical_culture = croatsouthslavicgfx
+				graphical_culture = crimeangfx
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				higher_tier_than = duke
+			}
+			OR = {
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = dalmatiangfx
+				graphical_culture = italiangfx
+				graphical_culture = outremergfx
+				graphical_culture = romangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+			NOR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+		}
+
+		modifier = {
+			factor = 10
+			is_female = no
+			year_of_birth < 740
+			likes_germanics = yes
+			OR = {
+				higher_real_tier_than = duke
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				has_minor_title = title_prince
+			}
+			OR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+				graphical_culture = germangfx
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			year_of_birth < 740
+			likes_germanics = yes
+			NOR = {
+				higher_real_tier_than = duke
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				has_minor_title = title_prince
+			}
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 5 }
+			}
+		}
+	}
+
+	5 = { # e - Long Curly
+		factor = 1
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOT = { graphical_culture = byzantinegfx }
+			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				higher_tier_than = count
+			}
+			OR = {
+				graphical_culture = westernslavicgfx
+				graphical_culture = croatsouthslavicgfx
+				graphical_culture = crimeangfx
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+				graphical_culture = italiangfx
+				graphical_culture = outremergfx
+				graphical_culture = romangfx
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				higher_tier_than = duke
+			}
+			OR = {
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = dalmatiangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 10
+			is_female = no
+			year_of_birth < 740
+			likes_germanics = yes
+			OR = {
+				higher_real_tier_than = duke
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				has_minor_title = title_prince
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			year_of_birth < 740
+			likes_germanics = yes
+			NOR = {
+				higher_real_tier_than = duke
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				has_minor_title = title_prince
+			}
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 6 }
+			}
+		}
+	}
+
+	6 = { # f - Tonsure
+		factor = 1
+		modifier = {
+			factor = 0
+			NAND = {
+				is_female = no
+				likes_christians = yes
+				OR = {
+					is_priest = yes
+					is_ascetic_trigger = yes
+				}
+			}
+
+			OR = {
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+				graphical_culture = germangfx
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = dalmatiangfx
+				graphical_culture = westernslavicgfx
+				graphical_culture = croatsouthslavicgfx
+				graphical_culture = crimeangfx
+				graphical_culture = arabicgfx
+				graphical_culture = levantinegfx
+				graphical_culture = egyptiangfx
+				graphical_culture = berbergfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 7 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+			NOR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			NOR = {
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+			}
+			NOT = { graphical_culture = germangfx }
+			NOR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+			}
+			NOR = {
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = dalmatiangfx
+			}
+			NOR = {
+				graphical_culture = westernslavicgfx
+				graphical_culture = croatsouthslavicgfx
+				graphical_culture = crimeangfx
+			}
+			NOR = {
+				graphical_culture = arabicgfx
+				graphical_culture = levantinegfx
+			}
+			NOR = {
+				graphical_culture = egyptiangfx
+				graphical_culture = berbergfx
+			}
+			NOR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOR = {
+				graphical_culture = africangfx
+				graphical_culture = westafricangfx
+			}
+			NOR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			NOR = {
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+			}
+			NOR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+			}
+			NOR = {
+				graphical_culture = arabicgfx
+				graphical_culture = levantinegfx
+			}
+			NOR = {
+				graphical_culture = egyptiangfx
+				graphical_culture = berbergfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 7 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+			NOR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 7 }
+			}
+		}
+	}
+
+	7 = { # g - Short
+		factor = 1
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+			}
+			NOT = { graphical_culture = norsegfx }
+			NOR = {
+				graphical_culture = westernslavicgfx
+				graphical_culture = croatsouthslavicgfx
+				graphical_culture = crimeangfx
+			}
+			NOR = {
+				graphical_culture = arabicgfx
+				graphical_culture = levantinegfx
+			}
+			NOR = {
+				graphical_culture = africangfx
+				graphical_culture = westafricangfx
+			}
+			NOR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+			NOT = { graphical_culture = bodpagfx }
+			NOR = {
+				graphical_culture = southindiangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 8 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 8 }
+			}
+		}
+	}
+
+	8 = { # h - Short Curly
+		factor = 1
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOR = {
+				graphical_culture = arabicgfx
+				graphical_culture = levantinegfx
+			}
+			NOR = {
+				graphical_culture = africangfx
+				graphical_culture = westafricangfx
+			}
+			NOR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+			NOR = {
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 9 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 10
+			is_female = no
+			year_of_birth < 740
+			likes_germanics = yes
+			OR = {
+				higher_real_tier_than = duke
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				has_minor_title = title_prince
+			}
+			OR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			year_of_birth < 740
+			likes_germanics = yes
+			NOR = {
+				higher_real_tier_than = duke
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				has_minor_title = title_prince
+			}
+			OR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+			}
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 9 }
+			}
+		}
+	}
+
+	9 = { # i - Short Uncouth
+		factor = 1
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOT = { graphical_culture = easternslavicgfx }
+			NOR = {
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 10 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			follows_filial_piety_trigger = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 10 } }
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 10 }
+			}
+		}
+	}
+
+	10 = { # j - Long Uncouth
+		factor = 1
+		modifier = { # Limited hair range
+			factor = 0
+			OR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = yes
+			OR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+				graphical_culture = germangfx
+				graphical_culture = norsegfx
+				graphical_culture = southerngfx
+				graphical_culture = andalusiangfx
+				graphical_culture = ugricgfx
+				graphical_culture = magyargfx
+				graphical_culture = westafricangfx
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			graphical_culture = indiangfx
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOR = {
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+			}
+			NOT = { graphical_culture = norsegfx }
+			NOR = {
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = dalmatiangfx
+			}
+			NOT = { graphical_culture = easternslavicgfx }
+			NOR = {
+				graphical_culture = ugricgfx
+				graphical_culture = magyargfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				higher_tier_than = count
+			}
+			OR = {
+				graphical_culture = westernslavicgfx
+				graphical_culture = croatsouthslavicgfx
+				graphical_culture = crimeangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				higher_tier_than = duke
+			}
+			OR = {
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = dalmatiangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
+		}
+
+		modifier = {
+			factor = 0.1
+			is_female = no
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			has_tribal_or_nomadic_government_trigger = no
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 10
+			is_female = no
+			year_of_birth < 740
+			likes_germanics = yes
+			OR = {
+				higher_real_tier_than = duke
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				has_minor_title = title_prince
+			}
+			OR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+				graphical_culture = germangfx
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			year_of_birth < 740
+			likes_germanics = yes
+			NOR = {
+				higher_real_tier_than = duke
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				has_minor_title = title_prince
+			}
+			OR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+				graphical_culture = germangfx
+			}
+		}
+
+		modifier = {
+			factor = 0
+			follows_filial_piety_trigger = yes
+			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 11 }
+			}
+		}
+	}
+
+	11 = { # k - Balding
+		factor = 1
+		modifier = { # Limited hair range
+			factor = 0
+			OR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = yes
+			OR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+				graphical_culture = germangfx
+				graphical_culture = norsegfx
+				graphical_culture = southerngfx
+				graphical_culture = andalusiangfx
+				graphical_culture = ugricgfx
+				graphical_culture = magyargfx
+				graphical_culture = westafricangfx
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			graphical_culture = indiangfx
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			OR = { # Reverse of others
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = norsegfx
+				graphical_culture = easternslavicgfx
+				graphical_culture = ugricgfx
+				graphical_culture = magyargfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				higher_tier_than = count
+			}
+			OR = {
+				graphical_culture = westernslavicgfx
+				graphical_culture = croatsouthslavicgfx
+				graphical_culture = crimeangfx
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				higher_tier_than = duke
+			}
+			OR = {
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = dalmatiangfx
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
+		}
+
+		modifier = {
+			factor = 0.1
+			is_female = no
+			OR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+			has_tribal_or_nomadic_government_trigger = no
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 12 }
+			}
+		}
+	}
+
+	12 = { # l - Marine
+		factor = 1
+		modifier = { # Limited hair range
+			factor = 0
+			OR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = yes
+			OR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+				graphical_culture = germangfx
+				graphical_culture = norsegfx
+				graphical_culture = southerngfx
+				graphical_culture = andalusiangfx
+				graphical_culture = ugricgfx
+				graphical_culture = magyargfx
+				graphical_culture = westafricangfx
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			graphical_culture = indiangfx
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOR = {
+				graphical_culture = arabicgfx
+				graphical_culture = levantinegfx
+			}
+			NOR = {
+				graphical_culture = egyptiangfx
+				graphical_culture = berbergfx
+			}
+			NOR = {
+				graphical_culture = westernslavicgfx
+				graphical_culture = croatsouthslavicgfx
+				graphical_culture = crimeangfx
+			}
+			NOR = {
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = dalmatiangfx
+			}
+			NOT = { graphical_culture = easternslavicgfx }
+			NOT = { is_variable_equal = { which = ca_hair value = 13 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			graphical_culture = chinesegfx
+			prisoner = no
+			OR = {
+				is_married = yes
+				is_consort = yes
+				is_landed = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 13 } }
+		}
+
+		modifier = {
+			factor = 4
+			filial_piety_maiden_trigger = yes
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 13 }
+			}
+		}
+	}
+
+	13 = { # m - Mohawk
+		factor = 1
+		modifier = { # Limited hair range
+			factor = 0
+			OR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+				graphical_culture = norsegfx
+				graphical_culture = ugricgfx
+				graphical_culture = magyargfx
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = yes
+			OR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+				graphical_culture = germangfx
+				graphical_culture = southerngfx
+				graphical_culture = andalusiangfx
+				graphical_culture = westafricangfx
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			graphical_culture = indiangfx
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOR = {
+				graphical_culture = africangfx
+				graphical_culture = westafricangfx
+			}
+			NOT = { graphical_culture = easternslavicgfx }
+			NOT = { graphical_culture = turkishgfx }
+			NOT = { is_variable_equal = { which = ca_hair value = 14 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+			NOT = { graphical_culture = easternslavicgfx }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0
+			graphical_culture = chinesegfx
+			prisoner = no
+			OR = {
+				is_married = yes
+				is_consort = yes
+				is_landed = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 14 } }
+		}
+
+		modifier = {
+			factor = 4
+			filial_piety_maiden_trigger = yes
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 14 }
+			}
+		}
+	}
+
+	14 = { # n - hair
+		factor = 1
+		modifier = { # Limited hair range
+			factor = 0
+			OR = {
+				graphical_culture = cumangfx
+				graphical_culture = mongolgfx
+				graphical_culture = norsegfx
+				graphical_culture = ugricgfx
+				graphical_culture = magyargfx
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = yes
+			OR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = englishgfx
+				graphical_culture = normangfx
+				graphical_culture = germangfx
+				graphical_culture = southerngfx
+				graphical_culture = andalusiangfx
+				graphical_culture = westafricangfx
+			}
+		}
+
+		modifier = { # Limited hair range
+			factor = 0
+			is_female = no
+			practical_age >= 70
+
+			NOT = { graphical_culture = byzantinegfx }
+			NOR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			practical_age >= 70
+			NOT = { is_variable_equal = { which = ca_hair value = 15 } }
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			likes_christians = yes
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			OR = {
+				likes_buddhists = yes
+				trait = digambara_jain
+			}
+			OR = {
+				is_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+						holy_order = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 10
+			is_female = no
+			year_of_birth < 740
+			likes_germanics = yes
+			OR = {
+				higher_real_tier_than = duke
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				has_minor_title = title_prince
+			}
+			OR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+				graphical_culture = germangfx
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = no
+			year_of_birth < 740
+			likes_germanics = yes
+			NOR = {
+				higher_real_tier_than = duke
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				has_minor_title = title_prince
+			}
+			OR = {
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+				graphical_culture = germangfx
+			}
+		}
+
+		modifier = {
+			factor = 0
+			graphical_culture = chinesegfx
+			prisoner = no
+			OR = {
+				is_married = yes
+				is_consort = yes
+				is_landed = yes
+			}
+			NOT = { is_variable_equal = { which = ca_hair value = 15 } }
+		}
+
+		modifier = {
+			factor = 4
+			filial_piety_maiden_trigger = yes
+		}
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_hair value = 0 }
+				is_variable_equal = { which = ca_hair value = 15 }
+			}
+		}
+	}
+
+	#15 = { # Unused
+	#}
+}

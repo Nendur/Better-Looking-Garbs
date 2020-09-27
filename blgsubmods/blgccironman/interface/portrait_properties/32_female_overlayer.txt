@@ -1,0 +1,1132 @@
+#p32 Frankish Culture Overlayer - Female
+32 = {
+	0 = { # 0 - blank
+		factor = 10
+		modifier = {
+			factor = 100
+			OR = {
+				NOT = { has_dlc = "Holy Fury" }
+				is_female = no
+				is_priest = yes
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+		}
+
+		modifier = {
+			factor = 100
+			OR = {
+				has_portrait_property = { layer = 5 index = 9 }
+				NOR = {
+					likes_latino_iberians = yes
+					AND = {
+							likes_christians = yes
+							OR = {
+										likes_germanics = yes
+										likes_celts = yes
+										likes_balto_slavics = yes
+										likes_finno_ugrics = yes
+							}
+					}
+				}
+			}
+			NOT = { check_variable = { which = ca_overlayer value = 2 } }
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				culture = frankish
+				culture = occitan
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 1 }
+		}
+	}
+
+	1 = { # a - Military Helm 01
+		factor = 100
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					has_portrait_property = { layer = 5 index = 10 }
+					is_variable_equal = { which = ca_overlayer value = 0 }
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 2 }
+			}
+		}
+	}
+
+	2 = { # b - Military Helm 02
+		factor = 99
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1250
+					OR = {
+						has_portrait_property = { layer = 5 index = 12 }
+						has_portrait_property = { layer = 5 index = 13 }
+					}
+					NOR = {
+						has_portrait_property = { layer = 31 index = 3 }
+						has_portrait_property = { layer = 31 index = 4 }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 3 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 3 }
+		}
+	}
+
+	3 = { # c - Military Helm 03
+		factor = 99
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1250
+					OR = {
+						has_portrait_property = { layer = 5 index = 12 }
+						has_portrait_property = { layer = 5 index = 13 }
+					}
+					NOR = {
+						has_portrait_property = { layer = 31 index = 2 }
+						has_portrait_property = { layer = 31 index = 4 }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 4 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 4 }
+		}
+	}
+
+	4 = { # d - Military Helm 04
+		factor = 99
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						has_portrait_property = { layer = 5 index = 12 }
+						has_portrait_property = { layer = 5 index = 13 }
+					}
+					NOR = {
+						has_portrait_property = { layer = 31 index = 2 }
+						has_portrait_property = { layer = 31 index = 3 }
+					}
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 5 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 5 }
+		}
+	}
+
+	5 = { # e - Duchess Accessories - Early
+		factor = 25
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+
+					has_portrait_property = { layer = 5 index = 4 }
+
+					NOR = {
+						has_portrait_property = { layer = 32 index = 6 }
+						has_portrait_property = { layer = 32 index = 7 }
+						has_portrait_property = { layer = 32 index = 8 }
+						has_portrait_property = { layer = 32 index = 9 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 6 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 6 }
+		}
+	}
+
+	6 = { # f - Duchess Accessories - Early
+		factor = 25
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+
+					OR = {
+						has_portrait_property = { layer = 5 index = 4 }
+						has_portrait_property = { layer = 5 index = 12 }
+					}
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 32 index = 5 }
+						has_portrait_property = { layer = 32 index = 7 }
+						has_portrait_property = { layer = 32 index = 8 }
+						has_portrait_property = { layer = 32 index = 9 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 7 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			OR = {
+				has_portrait_property = { layer = 5 index = 12 }
+				is_variable_equal = { which = ca_overlayer value = 7 }
+			}
+		}
+	}
+
+	7 = { # g - Duchess Accessories - Early
+		factor = 25
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+
+					has_portrait_property = { layer = 5 index = 4 }
+					OR = {
+						real_tier = duke
+						spouse_even_if_dead = { real_tier = duke }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 32 index = 5 }
+						has_portrait_property = { layer = 32 index = 6 }
+						has_portrait_property = { layer = 32 index = 8 }
+						has_portrait_property = { layer = 32 index = 9 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 8 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 8 }
+		}
+	}
+
+	8 = { # h - Duchess Accessories - Post-1180
+		factor = 25
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+
+					has_portrait_property = { layer = 5 index = 4 }
+					OR = {
+						real_tier = duke
+						spouse_even_if_dead = { real_tier = duke }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 32 index = 5 }
+						has_portrait_property = { layer = 32 index = 6 }
+						has_portrait_property = { layer = 32 index = 7 }
+						has_portrait_property = { layer = 32 index = 9 }
+					}
+				}
+				AND = {
+					has_portrait_property = { layer = 5 index = 12 }
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 9 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			OR = {
+				has_portrait_property = { layer = 5 index = 12 }
+				is_variable_equal = { which = ca_overlayer value = 9 }
+			}
+		}
+	}
+
+	9 = { # i - Duchess Accessories - Post-1180
+		factor = 25
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+
+					has_portrait_property = { layer = 5 index = 4 }
+					OR = {
+						real_tier = duke
+						spouse_even_if_dead = { real_tier = duke }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 32 index = 5 }
+						has_portrait_property = { layer = 32 index = 6 }
+						has_portrait_property = { layer = 32 index = 7 }
+						has_portrait_property = { layer = 32 index = 8 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 10 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 10 }
+		}
+	}
+
+	10 = { # j - Countess Accessories - Early
+		factor = 10
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+
+					OR = {
+						is_landed = yes
+						higher_real_tier_than = count
+						spouse_even_if_dead = {
+								OR = {
+											is_landed = yes
+											higher_real_tier_than = count
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_character_modifier = jd_prince
+						has_character_modifier = jd_princess
+						trait = proud
+					}
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					NOR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 32 index = 11 }
+						has_portrait_property = { layer = 32 index = 12 }
+						has_portrait_property = { layer = 32 index = 13 }
+						has_portrait_property = { layer = 32 index = 14 }
+						has_portrait_property = { layer = 32 index = 15 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 11 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 11 }
+		}
+	}
+
+	11 = { # k - Countess Accessories - Early
+		factor = 10
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+
+					OR = {
+						is_landed = yes
+						higher_real_tier_than = count
+						spouse_even_if_dead = {
+								OR = {
+											is_landed = yes
+											higher_real_tier_than = count
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_character_modifier = jd_prince
+						has_character_modifier = jd_princess
+						trait = proud
+					}
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					NOR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 32 index = 10 }
+						has_portrait_property = { layer = 32 index = 12 }
+						has_portrait_property = { layer = 32 index = 13 }
+						has_portrait_property = { layer = 32 index = 14 }
+						has_portrait_property = { layer = 32 index = 15 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 12 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 12 }
+		}
+	}
+
+	12 = { # l - Countess Accessories - Post-1180
+		factor = 10
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+
+					OR = {
+						is_landed = yes
+						higher_real_tier_than = count
+						spouse_even_if_dead = {
+								OR = {
+											is_landed = yes
+											higher_real_tier_than = count
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_character_modifier = jd_prince
+						has_character_modifier = jd_princess
+						trait = proud
+					}
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					NOR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 10 }
+						has_portrait_property = { layer = 32 index = 11 }
+						has_portrait_property = { layer = 32 index = 13 }
+						has_portrait_property = { layer = 32 index = 14 }
+						has_portrait_property = { layer = 32 index = 15 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 13 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 13 }
+		}
+	}
+
+	13 = { # m - Countess Accessories - Post-1180
+		factor = 10
+		hide_layers = { 33 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+
+					OR = {
+						is_landed = yes
+						higher_real_tier_than = count
+						spouse_even_if_dead = {
+								OR = {
+											is_landed = yes
+											higher_real_tier_than = count
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_character_modifier = jd_prince
+						has_character_modifier = jd_princess
+						trait = proud
+					}
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					NOR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 10 }
+						has_portrait_property = { layer = 32 index = 11 }
+						has_portrait_property = { layer = 32 index = 12 }
+						has_portrait_property = { layer = 32 index = 14 }
+						has_portrait_property = { layer = 32 index = 15 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 14 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 14 }
+		}
+	}
+
+	14 = { # n - Countess Accessories - Post-1180
+		factor = 10
+		hide_layers = { 33 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+
+					OR = {
+						is_landed = yes
+						higher_real_tier_than = count
+						spouse_even_if_dead = {
+								OR = {
+											is_landed = yes
+											higher_real_tier_than = count
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_character_modifier = jd_prince
+						has_character_modifier = jd_princess
+						trait = proud
+					}
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					NOR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 32 index = 10 }
+						has_portrait_property = { layer = 32 index = 11 }
+						has_portrait_property = { layer = 32 index = 12 }
+						has_portrait_property = { layer = 32 index = 13 }
+						has_portrait_property = { layer = 32 index = 15 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 15 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 15 }
+		}
+	}
+
+	15 = { # o - Countess Accessories - Post-1180
+		factor = 10
+		hide_layers = {  1 = {} }
+		hide_layers = { 33 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+
+					OR = {
+						is_landed = yes
+						higher_real_tier_than = count
+						spouse_even_if_dead = {
+								OR = {
+											is_landed = yes
+											higher_real_tier_than = count
+								}
+						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_character_modifier = jd_prince
+						has_character_modifier = jd_princess
+						trait = proud
+					}
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					NOR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+					}
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 10 }
+						has_portrait_property = { layer = 32 index = 11 }
+						has_portrait_property = { layer = 32 index = 12 }
+						has_portrait_property = { layer = 32 index = 13 }
+						has_portrait_property = { layer = 32 index = 14 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 16 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 16 }
+		}
+	}
+
+	16 = { # p - Non-noble Pre-1180
+		factor = 1
+		hide_layers = {  1 = {} }
+		hide_layers = {  5 = {} }
+		hide_layers = { 33 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					is_landed = no
+					spouse = { is_landed = no }
+					OR = {
+						is_married = yes
+						is_consort = yes
+						any_spouse_even_if_dead = { is_alive = no }
+						age >= 40
+						trait = chaste
+						trait = celibate
+						trait = zealous
+						is_ascetic_trigger = yes
+					}
+					NOT = { trait = lustful }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 17 }
+						has_portrait_property = { layer = 32 index = 18 }
+						has_portrait_property = { layer = 32 index = 19 }
+						has_portrait_property = { layer = 32 index = 20 }
+						has_portrait_property = { layer = 32 index = 21 }
+						has_portrait_property = { layer = 32 index = 22 }
+						has_portrait_property = { layer = 32 index = 23 }
+						has_portrait_property = { layer = 32 index = 24 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 17 }
+			}
+		}
+
+		modifier = {
+			factor = 5
+			OR = {
+				culture = frankish
+				culture = occitan
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 17 }
+		}
+	}
+
+	17 = { # q - Non-noble Pre-1180
+		factor = 1
+		hide_layers = {  1 = {} }
+		hide_layers = {  5 = {} }
+		hide_layers = { 33 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					is_landed = no
+					spouse = { is_landed = no }
+					OR = {
+						is_married = yes
+						is_consort = yes
+						any_spouse_even_if_dead = { is_alive = no }
+						age >= 40
+						trait = chaste
+						trait = celibate
+						trait = zealous
+						is_ascetic_trigger = yes
+					}
+					NOT = { trait = lustful }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 16 }
+						has_portrait_property = { layer = 32 index = 18 }
+						has_portrait_property = { layer = 32 index = 19 }
+						has_portrait_property = { layer = 32 index = 20 }
+						has_portrait_property = { layer = 32 index = 21 }
+						has_portrait_property = { layer = 32 index = 22 }
+						has_portrait_property = { layer = 32 index = 23 }
+						has_portrait_property = { layer = 32 index = 24 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 18 }
+			}
+		}
+
+		modifier = {
+			factor = 5
+			OR = {
+				culture = frankish
+				culture = occitan
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 18 }
+		}
+	}
+
+	18 = { # r - Non-noble Pre-1180
+		factor = 1
+		hide_layers = {  1 = {} }
+		hide_layers = {  5 = {} }
+		hide_layers = { 33 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					is_landed = no
+					spouse = { is_landed = no }
+					OR = {
+						is_married = yes
+						is_consort = yes
+						any_spouse_even_if_dead = { is_alive = no }
+						age >= 40
+						trait = chaste
+						trait = celibate
+						trait = zealous
+						is_ascetic_trigger = yes
+					}
+					NOT = { trait = lustful }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 16 }
+						has_portrait_property = { layer = 32 index = 17 }
+						has_portrait_property = { layer = 32 index = 19 }
+						has_portrait_property = { layer = 32 index = 20 }
+						has_portrait_property = { layer = 32 index = 21 }
+						has_portrait_property = { layer = 32 index = 22 }
+						has_portrait_property = { layer = 32 index = 23 }
+						has_portrait_property = { layer = 32 index = 24 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 19 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 19 }
+		}
+	}
+
+	19 = { # s - Non-noble Pre-1180
+		factor = 1
+		hide_layers = {  1 = {} }
+		hide_layers = {  5 = {} }
+		hide_layers = { 33 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth < 1160
+					is_landed = no
+					spouse = { is_landed = no }
+					OR = {
+						is_married = yes
+						is_consort = yes
+						any_spouse_even_if_dead = { is_alive = no }
+						age >= 40
+						trait = chaste
+						trait = celibate
+						trait = zealous
+						is_ascetic_trigger = yes
+					}
+					NOT = { trait = lustful }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 16 }
+						has_portrait_property = { layer = 32 index = 17 }
+						has_portrait_property = { layer = 32 index = 18 }
+						has_portrait_property = { layer = 32 index = 20 }
+						has_portrait_property = { layer = 32 index = 21 }
+						has_portrait_property = { layer = 32 index = 22 }
+						has_portrait_property = { layer = 32 index = 23 }
+						has_portrait_property = { layer = 32 index = 24 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 20 }
+			}
+		}
+
+		modifier = {
+			factor = 5
+			OR = {
+				culture = frankish
+				culture = occitan
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 20 }
+		}
+	}
+
+	20 = { # t - Non-noble Post-1180
+		factor = 5
+		hide_layers = { 33 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+					is_landed = no
+					spouse = { is_landed = no }
+					OR = {
+						is_married = yes
+						is_consort = yes
+						any_spouse_even_if_dead = { is_alive = no }
+						age >= 40
+						trait = chaste
+						trait = celibate
+						trait = zealous
+						is_ascetic_trigger = yes
+					}
+					NOT = { trait = lustful }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 16 }
+						has_portrait_property = { layer = 32 index = 17 }
+						has_portrait_property = { layer = 32 index = 18 }
+						has_portrait_property = { layer = 32 index = 19 }
+						has_portrait_property = { layer = 32 index = 21 }
+						has_portrait_property = { layer = 32 index = 22 }
+						has_portrait_property = { layer = 32 index = 23 }
+						has_portrait_property = { layer = 32 index = 24 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 21 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 21 }
+		}
+	}
+
+	21 = { # u - Non-noble Post-1180
+		factor = 5
+		hide_layers = {  5 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					OR = {
+						culture = frankish
+						culture = occitan
+					}
+					is_landed = no
+					spouse = { is_landed = no }
+					OR = {
+						is_married = yes
+						is_consort = yes
+						any_spouse_even_if_dead = { is_alive = no }
+						age >= 40
+						trait = chaste
+						trait = celibate
+						trait = zealous
+						is_ascetic_trigger = yes
+					}
+					NOT = { trait = lustful }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 16 }
+						has_portrait_property = { layer = 32 index = 17 }
+						has_portrait_property = { layer = 32 index = 18 }
+						has_portrait_property = { layer = 32 index = 19 }
+						has_portrait_property = { layer = 32 index = 20 }
+						has_portrait_property = { layer = 32 index = 22 }
+						has_portrait_property = { layer = 32 index = 23 }
+						has_portrait_property = { layer = 32 index = 24 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 22 }
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 22 }
+		}
+	}
+
+	22 = { # v - Non-noble Post-1180
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					is_landed = no
+					spouse = { is_landed = no }
+					OR = {
+						is_married = yes
+						is_consort = yes
+						any_spouse_even_if_dead = { is_alive = no }
+						age >= 40
+						trait = chaste
+						trait = celibate
+						trait = zealous
+						is_ascetic_trigger = yes
+					}
+					NOT = { trait = lustful }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 16 }
+						has_portrait_property = { layer = 32 index = 17 }
+						has_portrait_property = { layer = 32 index = 18 }
+						has_portrait_property = { layer = 32 index = 19 }
+						has_portrait_property = { layer = 32 index = 20 }
+						has_portrait_property = { layer = 32 index = 21 }
+						has_portrait_property = { layer = 32 index = 23 }
+						has_portrait_property = { layer = 32 index = 24 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 23 }
+			}
+		}
+
+		modifier = {
+			factor = 5
+			OR = {
+				culture = frankish
+				culture = occitan
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 23 }
+		}
+	}
+
+	23 = { # w - Non-noble Post-1180
+		factor = 1
+		hide_layers = {  1 = {} }
+		hide_layers = {  5 = {} }
+		hide_layers = { 33 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					is_landed = no
+					spouse = { is_landed = no }
+					OR = {
+						is_married = yes
+						is_consort = yes
+						any_spouse_even_if_dead = { is_alive = no }
+						age >= 40
+						trait = chaste
+						trait = celibate
+						trait = zealous
+						is_ascetic_trigger = yes
+					}
+					NOT = { trait = lustful }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 16 }
+						has_portrait_property = { layer = 32 index = 17 }
+						has_portrait_property = { layer = 32 index = 18 }
+						has_portrait_property = { layer = 32 index = 19 }
+						has_portrait_property = { layer = 32 index = 20 }
+						has_portrait_property = { layer = 32 index = 21 }
+						has_portrait_property = { layer = 32 index = 22 }
+						has_portrait_property = { layer = 32 index = 24 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 24 }
+			}
+		}
+
+		modifier = {
+			factor = 5
+			OR = {
+				culture = frankish
+				culture = occitan
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 24 }
+		}
+	}
+
+	24 = { # x - Non-noble Post-1180
+		factor = 1
+		hide_layers = {  1 = {} }
+		hide_layers = {  5 = {} }
+		hide_layers = { 33 = {} } #Veil overload.
+
+		trigger = {
+			OR = {
+				AND = {
+					year_of_birth >= 1160
+					is_landed = no
+					spouse = { is_landed = no }
+					OR = {
+						is_married = yes
+						is_consort = yes
+						any_spouse_even_if_dead = { is_alive = no }
+						age >= 40
+						trait = chaste
+						trait = celibate
+						trait = zealous
+						is_ascetic_trigger = yes
+					}
+					NOT = { trait = lustful }
+
+					NOR = {
+						has_portrait_property = { layer = 5 index = 10 }
+						has_portrait_property = { layer = 32 index = 16 }
+						has_portrait_property = { layer = 32 index = 17 }
+						has_portrait_property = { layer = 32 index = 18 }
+						has_portrait_property = { layer = 32 index = 19 }
+						has_portrait_property = { layer = 32 index = 20 }
+						has_portrait_property = { layer = 32 index = 21 }
+						has_portrait_property = { layer = 32 index = 22 }
+						has_portrait_property = { layer = 32 index = 23 }
+					}
+				}
+				is_variable_equal = { which = ca_overlayer value = 25 }
+			}
+		}
+
+		modifier = {
+			factor = 5
+			OR = {
+				culture = frankish
+				culture = occitan
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_overlayer value = 25 }
+		}
+	}
+}

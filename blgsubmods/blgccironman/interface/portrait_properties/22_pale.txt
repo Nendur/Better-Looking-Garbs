@@ -1,0 +1,33 @@
+#p22 Pale or Malnourished.
+22 = {
+	0 = { # 0 - blank
+		factor = 1
+	}
+
+	1 = { # a - Pale
+		factor = 100
+		trigger = {
+			OR = {
+				trait = is_malnourished
+				trait = fatigue
+				trait = malaise
+				trait = cancer
+				trait = has_tuberculosis
+				has_character_modifier = broken_spirit
+				AND = {
+						has_character_modifier = corrupting_magic_major
+						OR = {
+							is_society_discovered = yes
+							has_character_modifier = known_satanist
+							has_character_modifier = known_secret_society_member
+							AND = {
+									multiplayer = no
+									any_player = { same_society_as = ROOT }
+							}
+						}
+				}
+			}
+			is_alive = yes
+		}
+	}
+}

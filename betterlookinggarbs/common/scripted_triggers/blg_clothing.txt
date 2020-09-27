@@ -198,14 +198,21 @@ blg_headgear_military = {
 	OR = {
 		blg_fighting = yes
 		blg_military_governor = yes
-
-		AND = {
-			has_game_rule = { name = blg_helmet value = on }
-			blg_warrior = yes
-		}
+		blg_headgear_military_on_rule = yes
 	}
 
-	NOR = {
+	blg_headgear_military_off_rule = no
+}
+
+# Helmet game rules.
+blg_headgear_military_on_rule = {
+	has_game_rule = { name = blg_helmet value = on }
+	blg_warrior = yes
+}
+
+# Helmet game rules.
+blg_headgear_military_off_rule = {
+	OR = {
 		has_game_rule = { name = martial_headgear value = off }
 		has_game_rule = { name = blg_helmet value = off }
 		has_game_rule = { name = blg_helmet value = none }
@@ -293,9 +300,13 @@ blg_clothes_military = {
 		death_reason = death_battle
 		death_reason = death_duel
 		employer = {
-			blg_mercenary = yes
-			blg_mercenary_fleet = no
+			OR = {
+				AND = {
+					blg_mercenary = yes
+					blg_mercenary_fleet = no
+				}
+				blg_holy_order = yes
+			}
 		}
-		employer = { blg_holy_order = yes }
 	}
 }

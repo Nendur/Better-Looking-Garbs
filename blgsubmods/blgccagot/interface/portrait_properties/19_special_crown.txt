@@ -1,0 +1,588 @@
+# p19 Special crowns
+19 = {
+	0 = { # blank
+		factor = 100
+		modifier = {
+			factor = 0
+			any_artifact = {
+				has_artifact_flag = portrait_headgear
+				is_artifact_equipped = yes
+			}
+
+			blg_headgear_military = no
+			blg_prisoner = no
+			check_variable = { which = ca_headgear value = 0 }
+		}
+
+		modifier = {
+			factor = 0
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+			OR = {
+				trait = dead_aegon_IV_crown
+				trait = dead_aegons_crown
+				trait = dead_jaehaerys_crown
+				trait = dead_maekars_crown
+				trait = dead_aegon_III_crown
+				trait = dead_aenys_crown
+				trait = dead_baelors_crown
+				trait = dead_joffreys_crown
+				trait = dead_daenerys_crown
+				trait = dead_crown_of_winter
+				trait = dead_river_kings_crown
+				trait = dead_crown_of_shadows
+				trait = dead_ghiscar_crown
+				trait = dead_durrandon_crown
+				trait = dead_renlys_crown
+				trait = dead_stannis_crown
+				trait = dead_lannister_crown
+				trait = dead_gardener_crown
+				trait = dead_falcon_crown
+				trait = dead_martell_crown
+				trait = dead_driftwood_crown
+			}
+		}
+	}
+
+	1 = { #Aegon IV crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = aegon_IV_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_aegon_IV_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+
+	}
+
+	2 = { #Aegon I crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = aegons_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_aegons_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	3 = { #Jaehaerys I crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = jaehaerys_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_jaehaerys_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	4 = { #Maekar crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = maekars_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_maekars_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	5 = { #Aegon III crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = aegon_III_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_aegon_III_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	6 = { #Aenys crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = aenys_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_aenys_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	7 = { #Baelors crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = baelors_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_baelors_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	8 = { #Joffreys crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = joffreys_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = { # Specific kings who wore this crown
+			factor = 100
+			trait = dead_joffreys_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	9 = { #Daenerys' crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = daenerys_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_daenerys_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	10 = { #Crown of Winter
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				OR = {
+					artifact_type = crown_of_winter
+					artifact_type = crown_of_winter_mid
+				}
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_crown_of_winter
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	11 = { #River kings Crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = river_kings_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_river_kings_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	12 = { #Crown of shadows
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = crown_of_shadows
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_crown_of_shadows
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	13 = { #Crown of Ghis
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = ghiscar_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_ghiscar_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	14 = { #Durrandon crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = durrandon_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_durrandon_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	15 = { #Renly's crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = renlys_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_renlys_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	16 = { #Stannis' crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = stannis_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_stannis_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	17 = { #Lannister crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = lannister_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_lannister_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	18 = { #Gardener crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = gardener_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_gardener_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	19 = { #Falcon crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = falcon_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_falcon_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	20 = { #Martell crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = martell_crown
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_martell_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	21 = { #Driftwood crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				OR = {
+					artifact_type = driftwood_crown
+					artifact_type = driftwood_crown_mid
+				}
+				is_artifact_equipped = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			trait = dead_driftwood_crown
+			OR = {
+				has_game_started = no
+				is_alive = no
+			}
+		}
+	}
+
+	#Temporary disabled
+	22 = { #Stag crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = stag_crown
+				is_artifact_equipped = yes
+			}
+		}
+	}
+
+	23 = { #Baratheon crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = baratheon_crown
+				is_artifact_equipped = yes
+			}
+		}
+	}
+
+	24 = { #Reyne crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = reyne_crown
+				is_artifact_equipped = yes
+			}
+		}
+	}
+
+	25 = { #Tully crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = tully_crown
+				is_artifact_equipped = yes
+			}
+		}
+	}
+
+	26 = { #Lion crown
+		factor = 1
+		hide_layers = { # Remove headgear
+			5 = { always = yes }
+		}
+		modifier = {
+			factor = 100
+			any_artifact = {
+				artifact_type = lion_crown
+				is_artifact_equipped = yes
+			}
+		}
+	}
+}

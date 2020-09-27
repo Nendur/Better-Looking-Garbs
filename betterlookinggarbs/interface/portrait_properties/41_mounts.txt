@@ -274,7 +274,11 @@
 	25 = { # y - Horse
 		factor = 100
 		trigger = {
-			blg_mount_horse_destrier = yes
+			OR = {
+				has_character_modifier = nomad_warhorse
+				death_reason = death_execution_horses
+				blg_mount_horse_destrier = yes
+			}
 		}
 	}
 

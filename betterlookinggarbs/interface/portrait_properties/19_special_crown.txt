@@ -5,7 +5,7 @@
 		modifier = {
 			factor = 100
 			blg_headgear_military = yes
-			NOT = { blg_priest = yes }
+			blg_priest = no
 		}
 
 		modifier = {

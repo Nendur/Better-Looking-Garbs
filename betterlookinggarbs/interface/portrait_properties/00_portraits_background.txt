@@ -322,7 +322,9 @@
 			likes_christians = yes
 
 			OR = {
-				employer = { blg_priest = yes }
+				employer = {
+					blg_priest = yes
+				}
 				has_focus = focus_theology
 				has_pious_trait_trigger = yes
 				has_character_modifier = doing_penance
@@ -427,7 +429,9 @@
 				is_at_sea = yes
 				location = { has_trade_post = yes port = yes }
 				this_is_sea_raider_trigger = yes
-				employer = { blg_mercenary_fleet = yes }
+				employer = {
+					blg_mercenary_fleet = yes
+				}
 			}
 
 			NOT = { has_character_modifier = in_seclusion }
@@ -440,7 +444,9 @@
 				trait = seaking
 				trait = sea_queen
 				has_minor_title = title_high_admiral
-				employer = { blg_mercenary_fleet = yes }
+				employer = {
+					blg_mercenary_fleet = yes
+				}
 			}
 		}
 
@@ -625,7 +631,9 @@
 			}
 			trigger_else = {
 				capital_holding = { holding_type = castle }
-				capital_scope = { blg_region_europe = yes }
+				capital_scope = {
+					blg_region_europe = yes
+				}
 			}
 
 			NOR = {
@@ -915,7 +923,9 @@
 
 		modifier = {
 			factor = 2
-			location = { blg_severe_winter = yes }
+			location = {
+				blg_severe_winter = yes
+			}
 		}
 	}
 

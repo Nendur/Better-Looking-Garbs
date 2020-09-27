@@ -1,0 +1,99 @@
+# p42 Artifacts and items - indoor furniture layer.
+42 = {
+	0 = { # 0 - blank
+		factor = 1
+		modifier = {
+			factor = 100
+		}
+	}
+
+	1 = { # a - Big Relic
+		factor = 100
+		trigger = {
+			OR = {
+				has_artifact = ark_of_the_covenant
+				has_artifact = shroud_of_jesus
+				has_artifact = bones_of_st_peter
+				has_artifact = blessed_mantle
+			}
+		}
+	}
+
+	2 = { # b - Harp
+		factor = 100
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				artifact_type = davids_harp
+			}
+		}
+	}
+
+	3 = { # c - Sampo
+		factor = 100
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				artifact_type = sampo
+			}
+		}
+	}
+
+	4 = { # d - Small Relic
+		factor = 2
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				OR = {
+						artifact_type = holy_foreskin
+						artifact_type = mohammads_beard
+						artifact_type = tooth_of_mohammad
+						artifact_type = buddhas_tooth
+						artifact_type = sariraka_actual_body_part
+						artifact_type = random_world_mythological_heart_1
+						artifact_type = random_world_mythological_blood
+						artifact_type = random_world_mythological_eye
+						has_artifact_flag = bodypart
+						has_artifact_flag = remains
+						has_artifact_flag = saint_item
+				}
+			}
+		}
+	}
+
+	5 = { # e - Glass candle
+		factor = 0
+	}
+
+	6 = { # f - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_stag
+		}
+	}
+
+	7 = { # g - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_bear
+		}
+	}
+
+	8 = { # h - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_tiger
+		}
+	}
+
+	9 = { # j - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_lion
+		}
+	}
+}

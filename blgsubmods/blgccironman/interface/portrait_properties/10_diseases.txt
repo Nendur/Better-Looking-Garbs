@@ -1,0 +1,105 @@
+# p10 Diseases - blinded_eyes
+10 = {
+	0 = { # 0 - blank
+		factor = 1
+	}
+
+	1 = { # a - Leper
+		factor = 100
+		trigger = {
+			trait = leper
+			OR = {
+				trait = disfigured
+				NOT = { has_dlc = "Reapers" }
+			}
+			is_alive = yes
+		}
+	}
+
+	2 = { # b - Syphilitic
+		factor = 100
+		trigger = {
+			OR = {
+				trait = syphilitic
+				trait = has_aztec_disease
+			}
+
+			is_alive = yes
+		}
+	}
+
+	3 = { # c - Pnuemonia
+		factor = 100
+		trigger = {
+			trait = pneumonic
+			practical_age >= 16
+
+			is_alive = yes
+		}
+	}
+
+	4 = { # d - Fever
+		factor = 100
+		trigger = {
+			OR = {
+				trait = fever
+				trait = has_typhoid_fever
+			}
+
+			is_alive = yes
+		}
+	}
+
+	5 = { # e - Flu
+		factor = 100
+		trigger = {
+			OR = {
+				trait = ill
+				trait = flu
+			}
+
+			is_alive = yes
+		}
+	}
+
+	6 = { # f - Drunkard
+		factor = 100
+		trigger = {
+			trait = drunkard
+
+			OR = {
+				is_alive = yes
+				has_nickname = nick_the_drunkard
+			}
+		}
+	}
+
+	7 = { # g - Vomit
+		factor = 0
+		trigger = {
+			OR = {
+				trait = vomiting
+				trait = food_poisoning
+			}
+
+			is_alive = yes
+		}
+	}
+
+	8 = { # h - Drooling
+		factor = 100
+		trigger = {
+			OR = {
+				trait = imbecile
+
+				AND = {
+					OR = {
+						trait = infirm
+						trait = rabies
+					}
+					is_alive = yes
+				}
+			}
+		}
+	}
+}

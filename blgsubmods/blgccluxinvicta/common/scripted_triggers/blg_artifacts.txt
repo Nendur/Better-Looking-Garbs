@@ -509,6 +509,15 @@ blg_weapon_sword_3 = {
 	artifact_type = sword_from_heaven
 }
 
+# Dagger non-artifact
+blg_weapon_dagger_flag = {
+	always = no
+}
+
+blg_weapon_dagger = {
+	has_artifact_flag = dagger
+}
+
 blg_weapon_flail = {
 	OR = {
 		has_artifact_flag = flail
@@ -537,6 +546,11 @@ blg_weapon_polearm = {
 		has_artifact_flag = polearm
 		artifact_type = chinese_ji
 	}
+}
+
+# Scimitar non-artifact
+blg_weapon_scimitar_flag = {
+	has_character_flag = weapon_is_scimitar
 }
 
 # Scimitar tier 1/2

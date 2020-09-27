@@ -1,0 +1,583 @@
+# p19 Special crowns and clothing
+19 = {
+	0 = { # 0 - blank
+		factor = 1
+		modifier = {
+			factor = 100
+			OR = {
+				AND = {
+					in_command = yes
+					OR = {
+						war = yes
+						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
+						employer = { mercenary = yes }
+						employer = { holy_order = yes }
+					}
+				}
+				has_character_flag = add_duel_xp
+				has_landed_title = e_china_west_governor
+			}
+			NOT = { has_game_rule = { name = martial_headgear value = off } }
+			NOT = { is_priest = yes }
+		}
+
+		modifier = {
+			factor = 100
+			check_variable = { which = ca_headgear value = 1 }
+		}
+	}
+
+	1 = { # a - HRE crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = crown_hre
+				}
+				trait = dead_crown_hre
+			}
+		}
+	}
+
+	2 = { # b - Byzantine Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			NOT = { culture = greek }
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = crown_byzantine
+				}
+				trait = dead_crown_byzantine
+			}
+		}
+	}
+
+	3 = { # c - Cursed Diamond Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = cursed_diamond_crown
+				}
+				trait = dead_cursed_diamond_crown
+			}
+		}
+	}
+
+	4 = { # d - Iron Crown of Lombardy
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = iron_crown_of_lombardy
+				}
+				trait = dead_iron_crown_lombardy
+			}
+		}
+	}
+
+	5 = { # e - Imperial Laurels
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			trait = augustus
+		}
+	}
+
+	6 = { # f - Pahlavi Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = crown_pahlavi
+				}
+				trait = dead_crown_pahlavi
+			}
+		}
+	}
+
+	7 = { # g - Fylkir Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = crown_fylkir
+				}
+				trait = dead_crown_fylkir
+				AND = {
+						rightful_religious_head = ROOT
+						is_priest = yes
+						religion_openly_norse_or_reformed_trigger = yes
+				}
+			}
+		}
+	}
+
+	8 = { # h - Tengri Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = crown_tengri_fylkir
+				}
+				trait = dead_crown_tengri_fylkir
+			}
+		}
+	}
+
+	9 = { # i - Finnish Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = crown_finnish_fylkir
+				}
+				trait = dead_crown_finnish_fylkir
+				AND = {
+						rightful_religious_head = ROOT
+						is_priest = yes
+						religion_openly_finnish_or_reformed_trigger = yes
+				}
+			}
+		}
+	}
+
+	10 = { # j - West-African Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = crown_west_african_fylkir
+				}
+				trait = dead_crown_west_african_fylkir
+				AND = {
+						rightful_religious_head = ROOT
+						is_priest = yes
+						religion_openly_aztec_or_reformed_trigger = yes
+				}
+			}
+		}
+	}
+
+	11 = { # k - Slavic Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = crown_slavic_fylkir
+				}
+				trait = dead_crown_slavic_fylkir
+				AND = {
+						rightful_religious_head = ROOT
+						is_priest = yes
+						religion_openly_slavic_or_reformed_trigger = yes
+				}
+			}
+		}
+	}
+
+	12 = { # l - Baltic Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = crown_romuva_fylkir
+				}
+				trait = dead_crown_romuva_fylkir
+				AND = {
+						rightful_religious_head = ROOT
+						is_priest = yes
+						religion_openly_baltic_or_reformed_trigger = yes
+				}
+			}
+		}
+	}
+
+	13 = { # m - Aztec Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+			OR = {
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = crown_aztec_fylkir
+				}
+				trait = dead_crown_aztec_fylkir
+			}
+		}
+	}
+
+	14 = { # n - Cardinal
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			year < 1245
+			OR = {
+				has_minor_title = title_cardinal
+				has_minor_title = title_fraticelli_cardinal
+			}
+		}
+	}
+
+	15 = { # o - Cardinal
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			year >= 1245
+			OR = {
+				has_minor_title = title_cardinal
+				has_minor_title = title_fraticelli_cardinal
+			}
+		}
+	}
+
+	16 = { # p - Babr-e Bayan
+		factor = 100
+		hide_layers = { 3 = {}}
+
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				artifact_type = babr_e_bayan
+			}
+		}
+	}
+
+	17 = { # q - Venetian Doge
+		factor = 100
+		hide_layers = { 1 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			is_merchant_republic = yes
+			primary_title = {
+				OR = {
+						title = k_venice
+						title = d_venice
+				}
+			}
+
+			NOR = {
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = in_hiding
+				trait = leper
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+		}
+	}
+
+	18 = { # r - Court Jester
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			has_minor_title = title_court_jester
+
+			NOT = { trait = in_hiding }
+		}
+	}
+
+	19 = { # s - Orthodox Patriarch
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			rightful_religious_head = ROOT
+			is_priest = yes
+			religion_group = christian
+			NOR = {
+				religion = catholic
+				is_heresy_of = catholic
+				is_parent_religion = catholic
+			}
+		}
+	}
+
+	20 = { # t - Protestant Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			is_priest = yes
+			OR = {
+				religion = cathar
+				religion = waldensian
+				religion = lollard
+				religion = bogomilist
+			}
+		}
+	}
+
+	21 = { # u - Slavic Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			religion_openly_slavic_or_reformed_trigger = yes
+			is_priest = yes
+		}
+	}
+
+	22 = { # v - Finnish Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			is_priest = yes
+			religion_openly_finnish_or_reformed_trigger = yes
+		}
+	}
+
+	23 = { # w - Aztec Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			is_priest = yes
+			religion_openly_aztec_or_reformed_trigger = yes
+		}
+	}
+
+	24 = { # x - Taoist Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			is_priest = yes
+			religion = taoist
+		}
+	}
+
+	25 = { # y - Zun Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			is_priest = yes
+			religion_openly_zun_or_reformed_trigger = yes
+		}
+	}
+}

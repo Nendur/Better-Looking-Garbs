@@ -4,10 +4,7 @@
 		factor = 100
 		trigger = {
 			OR = {
-				NOR = {
-					is_alive = yes
-					has_game_rule = { name = blg_wounds value = postmortem }
-				}
+				blg_wounded_alive = no
 				NOR = {
 					has_injury_trigger = yes
 					trait = maimed
@@ -16,8 +13,7 @@
 					has_character_modifier = black_eye
 					has_character_modifier = concussion
 				}
-				has_game_rule = { name = blg_wounds value = nowounds }
-				has_game_rule = { name = blg_wounds value = off }
+				blg_wounded_off = yes
 			}
 		}
 	}
@@ -38,10 +34,7 @@
 				trait = burned
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_wounds value = postmortem }
-			}
+			blg_wounded_alive = yes
 		}
 
 		modifier = {
@@ -62,10 +55,7 @@
 				has_character_modifier = black_eye
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_wounds value = postmortem }
-			}
+			blg_wounded_alive = yes
 		}
 
 		modifier = {
@@ -90,10 +80,7 @@
 				has_character_modifier = concussion
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_wounds value = postmortem }
-			}
+			blg_wounded_alive = yes
 		}
 
 		modifier = {
@@ -115,10 +102,7 @@
 				has_character_modifier = concussion
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_wounds value = postmortem }
-			}
+			blg_wounded_alive = yes
 		}
 	}
 
@@ -132,10 +116,7 @@
 				trait = burned
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_wounds value = postmortem }
-			}
+			blg_wounded_alive = yes
 		}
 
 		modifier = {
@@ -161,10 +142,7 @@
 				}
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_wounds value = postmortem }
-			}
+			blg_wounded_alive = yes
 		}
 	}
 
@@ -181,10 +159,7 @@
 				has_character_modifier = concussion
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_wounds value = postmortem }
-			}
+			blg_wounded_alive = yes
 		}
 	}
 
@@ -201,10 +176,7 @@
 				has_character_modifier = concussion
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_wounds value = postmortem }
-			}
+			blg_wounded_alive = yes
 		}
 	}
 
@@ -218,10 +190,7 @@
 				trait = burned
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_wounds value = postmortem }
-			}
+			blg_wounded_alive = yes
 		}
 
 		modifier = {

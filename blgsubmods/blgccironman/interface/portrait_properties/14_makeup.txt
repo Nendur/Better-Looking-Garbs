@@ -1,0 +1,68 @@
+# p14 makeup
+14 = {
+	0 = { # 0 - blank
+		factor = 100
+		modifier = {
+			factor = 0
+			is_female = yes
+			chinese_makeup_trigger = yes
+		}
+
+		modifier = {
+			factor = 0.01
+			trait = fair
+		}
+
+		modifier = {
+			factor = 0.02
+			trait = groomed
+		}
+	}
+
+	1 = { # a - white powder
+		factor = 1
+		trigger = {
+			is_female = yes
+			OR = {
+				culture_group = chinese_group
+				culture = khitan
+				culture = jurchen
+				culture = tangut
+			}
+		}
+	}
+
+	2 = { # b - rouge a only
+		factor = 1
+	}
+
+	3 = { # c - white powder and rouge a
+		factor = 1
+		trigger = {
+			is_female = yes
+			OR = {
+				culture_group = chinese_group
+				culture = khitan
+				culture = jurchen
+				culture = tangut
+			}
+		}
+	}
+
+	4 = { # d - rouge b only
+		factor = 1
+	}
+
+	5 = { # e - white powder and rouge b
+		factor = 1
+		trigger = {
+			is_female = yes
+			OR = {
+				culture_group = chinese_group
+				culture = khitan
+				culture = jurchen
+				culture = tangut
+			}
+		}
+	}
+}

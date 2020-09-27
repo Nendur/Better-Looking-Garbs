@@ -1,0 +1,107 @@
+#p30 Eye effects.
+30 = {
+	0 = { # 0 - blank
+		factor = 1
+		modifier = {
+			factor = 100
+			OR = {
+			}
+		}
+	}
+
+	1 = { # a - Demon Child
+		factor = 100
+		trigger = {
+			has_character_modifier = demon_horns
+
+			NOR = {
+				has_game_rule = { name = supernatural_events value = off }
+			}
+		}
+	}
+
+	2 = { # b - Divine possessed
+		factor = 100
+		trigger = {
+			trait = possessed
+			OR = {
+				has_character_modifier = voice_of_jesus
+				has_character_modifier = military_jesus
+			}
+
+			NOR = {
+				has_game_rule = { name = supernatural_events value = off }
+			}
+		}
+	}
+
+	3 = { # c - Wolfblooded
+		factor = 100
+		trigger = {
+			OR = {
+				has_character_modifier = wolf_blood
+				has_character_modifier = lycanthropy
+				culture_group = dragon_group
+			}
+
+			NOR = {
+				has_game_rule = { name = supernatural_events value = off }
+			}
+		}
+	}
+
+	4 = { # d - Possessed
+		factor = 100
+		trigger = {
+			trait = possessed
+
+			is_alive = yes
+		}
+	}
+
+	5 = { # e - Incapable
+		factor = 100
+		trigger = {
+			OR = {
+				trait = incapable
+				trait = sick_incapable
+			}
+
+			is_alive = yes
+		}
+	}
+
+	6 = { # f - Lunatic
+		factor = 100
+		trigger = {
+			trait = lunatic
+
+			is_alive = yes
+		}
+	}
+
+	7 = { # g - Depressed
+		factor = 100
+		trigger = {
+			trait = depressed
+
+			is_alive = yes
+		}
+	}
+
+	8 = { # h - Stressed
+		factor = 100
+		trigger = {
+			trait = stressed
+
+			is_alive = yes
+		}
+	}
+
+	9 = { # i - Blind
+		factor = 100
+		trigger = {
+			trait = blinded
+		}
+	}
+}

@@ -1,29 +1,5 @@
 # Core functionality triggers.
 
-# Has an adult portrait.
-blg_adult = {
-	custom_tooltip = {
-		text = IS_ADULT
-		OR = {
-			practical_age >= 16
-			AND = {
-				practical_age >= 15
-				OR = {
-					has_game_rule = { name = blg_children value = 15 }
-					has_game_rule = { name = blg_children value = 15noscale }
-				}
-			}
-			AND = {
-				practical_age >= 14
-				OR = {
-					has_game_rule = { name = blg_children value = 14 }
-					has_game_rule = { name = blg_children value = 14noscale }
-				}
-			}
-		}
-	}
-}
-
 # Engaged in a duel.
 blg_duelling = {
 	OR = {

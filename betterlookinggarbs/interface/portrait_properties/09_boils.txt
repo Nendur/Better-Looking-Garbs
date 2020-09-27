@@ -9,11 +9,7 @@
 		trigger = {
 			blg_bubonic = yes
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -22,11 +18,7 @@
 		trigger = {
 			blg_boils = yes
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -35,11 +27,7 @@
 		trigger = {
 			blg_rash = yes
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -49,10 +37,7 @@
 			trait = ugly
 			NOT = { has_portrait_property = { layer = 9 index = 5 } }
 
-			NOR = {
-				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = off }
-			}
+			blg_traits_rule = yes
 		}
 	}
 
@@ -62,10 +47,7 @@
 			trait = ugly
 			NOT = { has_portrait_property = { layer = 9 index = 4 } }
 
-			NOR = {
-				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = off }
-			}
+			blg_traits_rule = yes
 		}
 	}
 

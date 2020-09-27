@@ -306,6 +306,18 @@ blg_weapon_sword_3 = {
 	always = no
 }
 
+# Dagger non-artifact
+blg_weapon_dagger_flag = {
+	has_character_flag = weapon_is_stiletto
+}
+
+blg_weapon_dagger = {
+	OR = {
+		has_artifact_flag = dagger
+		has_artifact_flag = stiletto
+	}
+}
+
 blg_weapon_flail = {
 	OR = {
 		has_artifact_flag = flail
@@ -330,6 +342,14 @@ blg_weapon_hammer = {
 
 blg_weapon_polearm = {
 	has_artifact_flag = polearm
+}
+
+# Scimitar non-artifact
+blg_weapon_scimitar_flag = {
+	OR = {
+		has_character_flag = weapon_is_scimitar
+		has_character_flag = weapon_is_arakh
+	}
 }
 
 # Scimitar tier 1/2

@@ -1,0 +1,655 @@
+# p17 Child portraits - Background
+17 = {
+	0 = { #0 - Adult
+		factor = 100
+		hide_layers = { 18 = {} } # Adult: Hide child face
+
+		trigger = {
+			practical_age >= 16
+		}
+	}
+
+	1 = { # a - Cell or sickbed
+		factor = 100
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			OR = {
+				prisoner = yes
+				death_reason = death_dungeon
+				is_ill = yes
+				is_incapable = yes
+			}
+		}
+	}
+
+	2 = { # b - Haughty
+		factor = 1
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			OR = {
+				trait = haughty
+				trait = proud
+				trait = ambitious
+				has_focus = focus_ch_pride
+			}
+		}
+
+		modifier = {
+			factor = 50
+			OR = {
+				trait = haughty
+				trait = proud
+				trait = ambitious
+				trait = born_in_the_purple
+			}
+		}
+
+		modifier = {
+			factor = 20
+			has_focus = focus_ch_pride
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = timid
+				trait = humble
+				trait = content
+				trait = temperate
+			}
+		}
+	}
+
+	3 = { # c - Affectionate
+		factor = 5
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			OR = {
+				father = { always = yes }
+				mother = { always = yes }
+			}
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				trait = affectionate
+				trait = kind
+				trait = content
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = rowdy
+				trait = wroth
+				trait = cruel
+			}
+		}
+	}
+
+	4 = { # d - Timid
+		factor = 5
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		modifier = {
+			factor = 10
+			OR = {
+				trait = timid
+				trait = humble
+				trait = shy
+			}
+		}
+
+		modifier = {
+			factor = 4
+			has_focus = focus_ch_humility
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = gregarious
+				trait = socializer
+			}
+		}
+	}
+
+	5 = { # e - Rowdy
+		factor = 1
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			age >= 6
+			OR = {
+				trait = rowdy
+				trait = brave
+				trait = wroth
+				trait = cruel
+				trait = duelist
+				trait = gladiator
+				has_focus = focus_ed_martial
+			}
+		}
+
+		modifier = {
+			factor = 50
+			OR = {
+				trait = rowdy
+				trait = brave
+				trait = gregarious
+				trait = wroth
+				trait = cruel
+				trait = duelist
+				trait = gladiator
+			}
+		}
+
+		modifier = {
+			factor = 20
+			has_focus = focus_ed_martial
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = timid
+				trait = shy
+				trait = craven
+			}
+		}
+	}
+
+	6 = { # f - Willful
+		factor = 1
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			OR = {
+				trait = willful
+				trait = ambitious
+				trait = stubborn
+				has_focus = focus_ch_etiquette
+				has_focus = focus_ed_diplomacy
+			}
+		}
+
+		modifier = {
+			factor = 50
+			OR = {
+				trait = willful
+				trait = ambitious
+				trait = stubborn
+				trait = envious
+			}
+		}
+
+		modifier = {
+			factor = 20
+			OR = {
+				has_focus = focus_ch_etiquette
+				has_focus = focus_ed_diplomacy
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = humble
+				trait = content
+				trait = trusting
+			}
+		}
+	}
+
+	7 = { # g - Brooding
+		factor = 50
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			OR = {
+				trait = brooding
+				trait = shy
+				trait = cynical
+				trait = lunatic
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = gregarious
+				trait = socializer
+			}
+		}
+	}
+
+	8 = { # e - Indolent
+		factor = 5
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		modifier = {
+			factor = 10
+			OR = {
+				trait = indolent
+				trait = slothful
+				trait = gluttonous
+				trait = content
+				trait = decadent
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = conscientious
+				trait = diligent
+			}
+		}
+	}
+
+	9 = { # f - Playful
+		factor = 5
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		modifier = {
+			factor = 10
+			OR = {
+				trait = playful
+				trait = gregarious
+				trait = decadent
+			}
+		}
+
+		modifier = {
+			factor = 4
+			has_focus = focus_ch_struggle
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = conscientious
+				trait = diligent
+				trait = depressed
+				trait = temperate
+			}
+		}
+	}
+
+	10 = { # g - Conscientious
+		factor = 2
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			age >= 6
+		}
+
+		modifier = {
+			factor = 25
+			OR = {
+				trait = conscientious
+				trait = diligent
+				trait = erudite
+				trait = administrator
+				trait = scholar
+			}
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				has_focus = focus_ch_duty
+				has_focus = focus_ed_stewardship
+				has_focus = focus_ed_learning
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = slothful
+				trait = hedonist
+				trait = decadent
+			}
+		}
+	}
+
+	11 = { # h - Fussy
+		factor = 2
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		modifier = {
+			factor = 25
+			OR = {
+				trait = fussy
+				trait = gregarious
+				trait = greedy
+			}
+		}
+
+		modifier = {
+			factor = 10
+			has_focus = focus_ch_thrift
+		}
+	}
+
+	12 = { # i - Curious
+		factor = 1
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			OR = {
+				trait = curious
+				trait = deceitful
+				trait = paranoid
+				trait = envious
+				trait = schemer
+				has_focus = focus_ed_intrigue
+			}
+		}
+
+		modifier = {
+			factor = 50
+			OR = {
+				trait = curious
+				trait = deceitful
+				trait = paranoid
+				trait = envious
+				trait = schemer
+			}
+		}
+
+		modifier = {
+			factor = 20
+			has_focus = focus_ed_intrigue
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = honest
+				trait = just
+				trait = trusting
+			}
+		}
+	}
+
+	13 = { # j - Idolizer
+		factor = 1
+		hide_layers = { 1 = {} }
+		hide_layers = { 3 = {} }
+		hide_layers = { 4 = {} }
+		hide_layers = { 5 = {} }
+		hide_layers = { 8 = {} }
+		hide_layers = { 10 = {} }
+		hide_layers = { 14 = {} }
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
+		hide_layers = { 19 = {} }
+		hide_layers = { 20 = {} }
+		hide_layers = { 21 = {} }
+		hide_layers = { 22 = {} }
+		hide_layers = { 28 = {} }
+		hide_layers = { 29 = {} }
+		hide_layers = { 30 = {} }
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			OR = {
+				trait = idolizer
+				trait = zealous
+				trait = humble
+				trait = theologian
+				has_focus = focus_ch_faith
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 50
+			OR = {
+				trait = idolizer
+				trait = zealous
+				trait = humble
+				trait = theologian
+				is_ascetic_trigger = yes
+			}
+		}
+
+		modifier = {
+			factor = 20
+			has_focus = focus_ch_faith
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = cynical
+				trait = decadent
+			}
+		}
+	}
+}

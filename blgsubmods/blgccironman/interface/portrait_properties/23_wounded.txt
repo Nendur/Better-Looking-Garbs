@@ -1,0 +1,198 @@
+#p23 black eye
+23 = {
+	0 = { # 0 - blank
+		factor = 100
+		trigger = {
+			OR = {
+				NOT = { is_alive = yes }
+				NOR = {
+					has_injury_trigger = yes
+					trait = maimed
+					trait = disfigured
+					has_character_modifier = black_eye
+					has_character_modifier = concussion
+				}
+			}
+		}
+	}
+
+	1 = { # a - Concussion AND Black eye.
+		factor = 1
+		trigger = {
+			OR = {
+				trait = severely_injured
+				AND = {
+					has_character_modifier = black_eye
+					has_character_modifier = concussion
+				}
+			}
+
+			NOT = { trait = disfigured }
+
+			is_alive = yes
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = concussion
+			has_character_modifier = black_eye
+		}
+	}
+
+	2 = { # b - Concussion.
+		factor = 1
+		trigger = {
+			has_injury_trigger = yes
+
+			NOR = {
+				trait = disfigured
+				has_character_modifier = black_eye
+			}
+
+			is_alive = yes
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = concussion
+		}
+	}
+
+	3 = { # c - Black eye.
+		factor = 1
+		trigger = {
+			OR = {
+				trait = wounded
+				has_character_modifier = black_eye
+			}
+
+			NOR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+				has_character_modifier = concussion
+			}
+
+			is_alive = yes
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = black_eye
+		}
+	}
+
+	4 = { # d - Cheek
+		factor = 1
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+				has_character_modifier = concussion
+			}
+
+			is_alive = yes
+		}
+	}
+
+	5 = { # e - Eye
+		factor = 1
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+			}
+
+			is_alive = yes
+		}
+
+		modifier = {
+			factor = 50
+			trait = one_eyed
+		}
+	}
+
+	6 = { # f - Bandaged head
+		factor = 1
+		trigger = {
+			OR = {
+				has_injury_trigger = yes
+				has_character_modifier = concussion
+			}
+
+			NOR = {
+				trait = disfigured
+				AND = {
+					has_character_modifier = black_eye
+					has_character_modifier = concussion
+				}
+			}
+
+			is_alive = yes
+		}
+	}
+
+	7 = { # g - Chin
+		factor = 1
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+				has_character_modifier = concussion
+			}
+
+			is_alive = yes
+		}
+	}
+
+	8 = { # h - Forehead
+		factor = 1
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+				has_character_modifier = concussion
+			}
+
+			is_alive = yes
+		}
+	}
+
+	9 = { # i - Burned
+		factor = 1
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = maimed
+				trait = disfigured
+			}
+
+			is_alive = yes
+		}
+
+		modifier = {
+			factor = 50
+			trait = one_eyed
+		}
+	}
+
+	10 = { # j - Disfigured
+		factor = 1
+		trigger = {
+			OR = {
+				trait = maimed
+				trait = disfigured
+			}
+		}
+	}
+}

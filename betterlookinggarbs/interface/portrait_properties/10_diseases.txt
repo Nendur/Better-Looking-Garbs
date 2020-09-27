@@ -10,15 +10,10 @@
 			OR = {
 				AND = {
 					blg_leper = yes
-					OR = {
-						is_alive = yes
-						has_game_rule = { name = blg_disease value = postmortem }
-					}
+					blg_disease_rule = yes
 				}
 				blg_mummy = yes
 			}
-
-			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
 
@@ -27,11 +22,7 @@
 		trigger = {
 			blg_pox = yes
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -41,11 +32,7 @@
 			blg_pneumonic = yes
 			blg_adult = yes
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -54,11 +41,7 @@
 		trigger = {
 			blg_fever = yes
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -67,11 +50,7 @@
 		trigger = {
 			blg_flu = yes
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -81,14 +60,10 @@
 			trait = drunkard
 
 			OR = {
-				is_alive = yes
+				blg_disease_alive = yes
 				has_nickname = nick_the_drunkard
-				has_game_rule = { name = blg_disease value = postmortem }
 			}
-			NOR = {
-				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = off }
-			}
+			blg_traits_rule = yes
 		}
 	}
 
@@ -97,11 +72,7 @@
 		trigger = {
 			blg_vomit = yes
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -111,21 +82,12 @@
 			OR = {
 				AND = {
 					trait = imbecile
-
-					NOR = {
-						has_game_rule = { name = blg_traits value = notraits }
-						has_game_rule = { name = blg_traits value = off }
-					}
+					blg_traits_rule = yes
 				}
 
 				AND = {
 					blg_drooling = yes
-
-					OR = {
-						is_alive = yes
-						has_game_rule = { name = blg_disease value = postmortem }
-					}
-					NOT = { has_game_rule = { name = blg_disease value = off } }
+					blg_disease_rule = yes
 				}
 			}
 		}

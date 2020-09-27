@@ -15,7 +15,9 @@ blg_shaved = {
 	OR = {
 		blg_priest = yes
 		is_ascetic_trigger = yes
-		employer = { blg_holy_order = yes }
+		employer = {
+			blg_holy_order = yes
+		}
 	}
 }
 
@@ -33,8 +35,12 @@ blg_tonsure = {
 blg_hair_uncut = {
 	is_female = no
 	OR = {
-		true_religion_scope = { likes_jews = yes }
-		true_religion_scope = { blg_religion_chinese = yes }
+		true_religion_scope = {
+			OR = {
+				likes_jews = yes
+				blg_religion_chinese = yes
+			}
+		}
 		trait = muni
 	}
 }
@@ -130,7 +136,9 @@ blg_beard_short = {
 		society_member_of = monastic_order_benedictine
 		society_member_of = monastic_order_dominican
 		society_member_of = monastic_order_buddhist
-		employer = { blg_holy_order = yes }
+		employer = {
+			blg_holy_order = yes
+		}
 	}
 }
 
@@ -141,6 +149,7 @@ blg_beard_uncommon = {
 		culture = pecheneg
 		blg_culture_italian = yes
 		likes_mesoamericans = yes
+		blg_ethnicity_mesoamerican = yes
 		blg_beard_short = yes
 		trait = eunuch
 	}

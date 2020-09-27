@@ -1,0 +1,91 @@
+# p26 high scars - Tier III
+26 = {
+	0 = { # 0 - blank
+		factor = 100
+		trigger = {
+			OR = {
+				NOT = { trait = scarred_high }
+			}
+		}
+	}
+
+	1 = { # a - scar 1 - TIER III
+		factor = 100
+		trigger = {
+			trait = scarred_high
+			trait = scarred_type_1
+		}
+	}
+
+	2 = { # b - scar 2 - TIER III
+		factor = 100
+		trigger = {
+			trait = scarred_high
+			trait = scarred_type_2
+		}
+	}
+
+	3 = { # c - scar 3 - TIER III
+		factor = 100
+		trigger = {
+			trait = scarred_high
+			trait = scarred_type_3
+		}
+	}
+
+	4 = { # d - scar 4 - TIER III
+		factor = 100
+		trigger = {
+			trait = scarred_high
+			trait = scarred_type_4
+		}
+	}
+
+	5 = { # e - scar 5 - TIER III
+		factor = 100
+		trigger = {
+			trait = scarred_high
+			trait = scarred_type_5
+		}
+	}
+
+	6 = { # f - scar 6 - TIER III
+		factor = 100
+		trigger = {
+			trait = scarred_high
+			trait = scarred_type_6
+		}
+	}
+
+	7 = { # g - scar 7 - TIER III
+		factor = 100
+		trigger = {
+			trait = scarred_high
+			trait = scarred_type_7
+		}
+	}
+
+	8 = { # h - scar 8 - TIER III
+		factor = 100
+		trigger = {
+			trait = scarred_high
+			trait = scarred_type_8
+		}
+	}
+
+	9 = { # i - scar 9 - TIER III
+		factor = 100
+		trigger = {
+			trait = scarred_high
+			trait = scarred_type_9
+		}
+	}
+
+	10 = { # j - scar 10 - TIER III
+		factor = 100
+		trigger = {
+			trait = scarred_high
+			trait = scarred_type_10
+		}
+	}
+}

@@ -1,0 +1,273 @@
+# p2 Artifacts, items and pets - back layer.
+2 = {
+	0 = { # 0 - blank
+		factor = 1
+		modifier = {
+			factor = 100
+			prisoner = yes
+			NOR = {
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+		}
+	}
+
+	1 = { # a - Saint
+		factor = 100
+		hide_layers = {  5 = {} } #Hide layer 5 (headgear) when this frame is picked.
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			OR = {
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+		}
+	}
+
+	2 = { # b - Holy Banner of Mohammad
+		factor = 100
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				artifact_type = holy_banner_of_mohammad
+			}
+		}
+	}
+
+	3 = { # c - Derafsh Kaviani
+		factor = 100
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				artifact_type = derafsh_kaviani
+			}
+		}
+	}
+
+	4 = { # d - Cat
+		factor = 10
+		trigger = {
+			OR = {
+				has_character_modifier = pet_cat
+				AND = {
+					has_character_modifier = cat_familiar
+					OR = {
+						is_society_discovered = yes
+						has_character_modifier = known_satanist
+						has_character_modifier = known_secret_society_member
+						AND = {
+								multiplayer = no
+								any_player = { same_society_as = ROOT }
+						}
+					}
+				}
+			}
+
+			OR = {
+				in_command = no
+				has_character_flag = desc_cat
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 13 }
+				has_portrait_property = { layer = 2 index = 14 }
+			}
+		}
+	}
+
+	5 = { # e - Cat
+		factor = 10
+		trigger = {
+			has_character_modifier = pet_cat
+
+			OR = {
+				in_command = no
+				has_character_flag = desc_cat
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 12 }
+				has_portrait_property = { layer = 2 index = 14 }
+			}
+		}
+	}
+
+	6 = { # f - Cat
+		factor = 10
+		trigger = {
+			has_character_modifier = pet_cat
+
+			OR = {
+				in_command = no
+				has_character_flag = desc_cat
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 12 }
+				has_portrait_property = { layer = 2 index = 13 }
+			}
+		}
+	}
+
+	7 = { # g - Dog
+		factor = 10
+		trigger = {
+			OR = {
+				has_character_modifier = pet_hunting_dog
+				has_character_modifier = pet_house_dog
+				has_character_modifier = pet_masterless_dog
+				has_character_modifier = guide_dog
+			}
+			NOT = { has_character_modifier = lost_dog }
+
+			OR = {
+				in_command = no
+				has_character_flag = desc_dog
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 16 }
+				has_portrait_property = { layer = 2 index = 17 }
+				has_portrait_property = { layer = 2 index = 18 }
+			}
+		}
+	}
+
+	8 = { # h - Dog
+		factor = 10
+		trigger = {
+			OR = {
+				has_character_modifier = pet_hunting_dog
+				has_character_modifier = pet_house_dog
+				has_character_modifier = pet_masterless_dog
+				has_character_modifier = guide_dog
+			}
+			NOT = { has_character_modifier = lost_dog }
+
+			OR = {
+				in_command = no
+				has_character_flag = desc_dog
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 15 }
+				has_portrait_property = { layer = 2 index = 17 }
+				has_portrait_property = { layer = 2 index = 18 }
+			}
+		}
+	}
+
+	9 = { # i - Dog
+		factor = 10
+		trigger = {
+			OR = {
+				has_character_modifier = pet_hunting_dog
+				has_character_modifier = pet_house_dog
+				has_character_modifier = pet_masterless_dog
+				has_character_modifier = guide_dog
+			}
+			NOT = { has_character_modifier = lost_dog }
+
+			OR = {
+				in_command = no
+				has_character_flag = desc_dog
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 15 }
+				has_portrait_property = { layer = 2 index = 16 }
+				has_portrait_property = { layer = 2 index = 18 }
+			}
+		}
+	}
+
+	10 = { # j - Dog
+		factor = 10
+		trigger = {
+			OR = {
+				has_character_modifier = pet_hunting_dog
+				has_character_modifier = pet_house_dog
+				has_character_modifier = pet_masterless_dog
+				has_character_modifier = guide_dog
+			}
+			NOT = { has_character_modifier = lost_dog }
+
+			OR = {
+				in_command = no
+				has_character_flag = desc_dog
+			}
+			NOR = {
+				has_portrait_property = { layer = 2 index = 15 }
+				has_portrait_property = { layer = 2 index = 16 }
+				has_portrait_property = { layer = 2 index = 17 }
+			}
+		}
+	}
+
+	11 = { # k - Owl
+		factor = 10
+		trigger = {
+			OR = {
+				has_character_modifier = pet_owl
+				AND = {
+						has_character_modifier = owl_familiar
+						OR = {
+							is_society_discovered = yes
+							has_character_modifier = known_satanist
+							has_character_modifier = known_secret_society_member
+							AND = {
+									multiplayer = no
+									any_player = { same_society_as = ROOT }
+							}
+						}
+				}
+			}
+
+			OR = {
+				in_command = no
+				has_character_flag = desc_owl
+			}
+		}
+	}
+
+	12 = { # l - Hedgehog
+		factor = 10
+		trigger = {
+			has_character_modifier = pet_hedgehog
+
+			in_command = no
+		}
+	}
+
+	13 = { # m - Otter
+		factor = 10
+		trigger = {
+			has_character_modifier = pet_otter
+
+			in_command = no
+		}
+	}
+
+	14 = { # n - Parrot
+		factor = 10
+		trigger = {
+			has_character_modifier = pet_parrot
+
+			in_command = no
+		}
+	}
+
+	15 = { # o - Wolf
+		factor = 10
+		trigger = {
+			has_character_modifier = wolf_familiar
+			OR = {
+				is_society_discovered = yes
+				has_character_modifier = known_satanist
+				has_character_modifier = known_secret_society_member
+				AND = {
+						multiplayer = no
+						any_player = { same_society_as = ROOT }
+				}
+			}
+
+		}
+	}
+}

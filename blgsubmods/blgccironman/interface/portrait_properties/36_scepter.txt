@@ -1,0 +1,454 @@
+# p36 Special scepters and items, front layer.
+36 = {
+	0 = { # 0 - blank
+		factor = 3
+		modifier = {
+			factor = 100
+		}
+
+		modifier = {
+			factor = 100
+			prisoner = yes
+			NOR = {
+				has_character_modifier = pet_rat_dungeon
+				has_character_modifier = rats_in_cell
+			}
+		}
+
+		modifier = {
+			factor = 100
+			OR = {
+				AND = {
+					in_command = yes
+					OR = {
+						war = yes
+						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
+						employer = { mercenary = yes }
+						employer = { holy_order = yes }
+					}
+				}
+				has_character_flag = add_duel_xp
+			}
+			NOR = {
+				has_character_modifier = pet_hunting_eagle
+				any_artifact = {
+						is_artifact_equipped = yes
+						OR = {
+									artifact_type = spear_of_destiny
+									artifact_type = mjolnir
+						}
+				}
+			}
+		}
+	}
+
+	1 = { # a - Bon Scepter
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+						is_priest = yes
+						rightful_religious_head = ROOT
+						religion_openly_bon_or_reformed_trigger = yes
+				}
+				any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = scepter_bon_fylkir
+				}
+				trait = dead_scepter_bon_fylkir
+			}
+		}
+	}
+
+	2 = { # b - Hellenic Scepter
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+						is_priest = yes
+						rightful_religious_head = ROOT
+						religion_openly_hellenic_or_reformed_trigger = yes
+				}
+				any_artifact = {
+						is_artifact_equipped = yes
+						OR = {
+									artifact_type = scepter_hellenic_fylkir
+									artifact_type = spear_of_destiny
+						}
+				}
+				trait = dead_scepter_hellenic_fylkir
+			}
+		}
+	}
+
+	3 = { # c - Holy Grail
+		factor = 100
+		trigger = {
+			OR = {
+				has_artifact = holy_grail
+				has_artifact = holy_chalice
+				has_artifact = cup_of_jamshid
+			}
+		}
+	}
+
+	4 = { # d - Mjolnir
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				artifact_type = mjolnir
+			}
+		}
+	}
+
+	5 = { # e - Tablet
+		factor = 75
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				OR = {
+						has_artifact_flag = tablet
+						artifact_type = yada_tashy
+				}
+			}
+		}
+	}
+
+	6 = { # f - Horn
+		factor = 75
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				has_artifact_flag = horn
+			}
+		}
+	}
+
+	7 = { # g - Scepter
+		factor = 25
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality >= 3
+				has_artifact_flag = scepter
+			}
+		}
+	}
+
+	8 = { # h - Scepter
+		factor = 25
+		trigger = {
+			OR = {
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 2
+					has_artifact_flag = scepter
+				}
+				AND = {
+					any_artifact = {
+						is_artifact_equipped = yes
+						quality >= 3
+						has_artifact_flag = staff
+						has_artifact_flag = jewelry
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 100
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality >= 3
+				has_artifact_flag = staff
+				has_artifact_flag = jewelry
+			}
+		}
+	}
+
+	9 = { # i - Scepter
+		factor = 25
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				OR = {
+					AND = {
+						quality == 1
+						has_artifact_flag = scepter
+					}
+					has_artifact_flag = staff
+				}
+			}
+		}
+	}
+
+	10 = { # j - Necklace
+		factor = 50
+		trigger = {
+			is_female = yes
+			practical_age >= 16
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality >= 3
+				has_artifact_flag = necklace
+			}
+
+			NOR = {
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 11 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				has_portrait_property = { layer = 3 index = 14 }
+			}
+		}
+	}
+
+	11 = { # k - Necklace
+		factor = 50
+		trigger = {
+			is_female = yes
+			practical_age >= 16
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality == 2
+				has_artifact_flag = necklace
+			}
+
+			NOR = {
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 11 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				has_portrait_property = { layer = 3 index = 14 }
+			}
+		}
+	}
+
+	12 = { # l - Necklace
+		factor = 50
+		trigger = {
+			is_female = yes
+			practical_age >= 16
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality == 1
+				has_artifact_flag = necklace
+			}
+
+			NOR = {
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 11 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				has_portrait_property = { layer = 3 index = 14 }
+			}
+		}
+	}
+
+	13 = { # m - African Totem Scepter
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				has_artifact_flag = totem
+			}
+		}
+	}
+
+	14 = { # n - Shepherds Crook
+		factor = 1
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			OR = {
+				society_member_of = monastic_order_benedictine
+				society_member_of = monastic_order_monophysite
+			}
+		}
+	}
+
+	15 = { # o - Indian Staff
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			OR = {
+				society_member_of = monastic_order_hindu
+				AND = {
+					any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = elaborate_danda
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			society_member_of = monastic_order_hindu
+		}
+	}
+
+	16 = { # p - Indian Staff
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			OR = {
+				society_member_of = monastic_order_hindu
+				AND = {
+					any_artifact = {
+						is_artifact_equipped = yes
+						artifact_type = staff_of_moses
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			society_member_of = monastic_order_hindu
+		}
+	}
+
+	17 = { # q - Dagger
+		factor = 25
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality > 1
+				has_artifact_flag = dagger
+				has_artifact_flag = jewelry
+			}
+		}
+	}
+
+	18 = { # r - Dagger
+		factor = 10
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality == 1
+				has_artifact_flag = dagger
+				has_artifact_flag = jewelry
+			}
+		}
+	}
+
+	19 = { # s - Book
+		factor = 1
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				OR = {
+					has_artifact_flag = book
+					has_artifact_flag = antiquity_book
+				}
+			}
+		}
+	}
+
+	20 = { # t - Ingredients
+		factor = 1
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				OR = {
+					has_artifact_flag = ingredient
+					has_artifact_flag = herb
+				}
+			}
+		}
+	}
+
+	21 = { # u - Scroll
+		factor = 10
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				OR = {
+						artifact_type = letter_of_mohammad
+						artifact_type = cyrus_cylinder
+						artifact_type = chinese_calligraphy
+				}
+			}
+
+		}
+	}
+
+	22 = { # v - Eagle
+		factor = 10
+		trigger = {
+			has_character_modifier = pet_hunting_eagle
+
+		}
+	}
+
+	23 = { # w - Raven
+		factor = 10
+		trigger = {
+			OR = {
+				death_reason = death_murder_unknown_crows
+				AND = {
+						has_character_modifier = raven_familiar
+						OR = {
+							is_society_discovered = yes
+							has_character_modifier = known_satanist
+							has_character_modifier = known_secret_society_member
+							AND = {
+									multiplayer = no
+									any_player = { same_society_as = ROOT }
+							}
+						}
+				}
+			}
+
+		}
+	}
+
+	24 = { # x - Rat
+		factor = 10
+		trigger = {
+			OR = {
+				has_character_modifier = pet_rat_dungeon
+				has_character_modifier = rats_in_cell
+			}
+
+			in_command = no
+		}
+	}
+
+	25 = { # y - Snake
+		factor = 10
+		trigger = {
+			OR = {
+				death_reason = death_accident_snakes
+				death_reason = death_murder_snakes
+				death_reason = death_murder_unknown_snakes
+				death_reason = death_execution_snake_pit
+				has_character_modifier = pet_snake
+				has_character_modifier = friend_of_snakes
+				has_character_flag = diwali_snake_charmer
+			}
+
+		}
+	}
+}

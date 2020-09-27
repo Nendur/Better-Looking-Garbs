@@ -10,12 +10,7 @@
 			OR = {
 				AND = {
 					blg_pale = yes
-
-					OR = {
-						is_alive = yes
-						has_game_rule = { name = blg_disease value = postmortem }
-					}
-					NOT = { has_game_rule = { name = blg_disease value = off } }
+					blg_disease_rule = yes
 				}
 
 				blg_vampire = yes

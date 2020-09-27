@@ -26,6 +26,7 @@ blg_animal_dog = {
 		has_character_modifier = dw_familiar_dog
 		has_character_modifier = dw_pet_guard_dog
 	}
+	NOT = { has_character_modifier = lost_dog }
 }
 
 blg_animal_eagle = {
@@ -119,17 +120,13 @@ blg_mount_horse_charger = {
 
 # Destrier Horse.
 blg_mount_horse_destrier = {
-	OR = {
-		has_character_modifier = nomad_warhorse
-		death_reason = death_execution_horses
-		any_artifact = {
-			is_artifact_equipped = yes
-			has_artifact_flag = horse
-			has_artifact_flag = mount
-			OR = {
-				has_artifact_flag = destrier
-				quality >= 5
-			}
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+		OR = {
+			has_artifact_flag = destrier
+			quality >= 5
 		}
 	}
 }

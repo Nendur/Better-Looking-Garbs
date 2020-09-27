@@ -77,7 +77,9 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				OR = {
 					has_character_flag = weapon_is_spear
 					AND = {
@@ -119,7 +121,9 @@
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					quality == 2
@@ -149,7 +153,9 @@
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					OR = {
@@ -176,10 +182,11 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				OR = {
-					has_character_flag = weapon_is_scimitar
-					has_character_flag = weapon_is_arakh
+					blg_weapon_scimitar_flag = yes
 					AND = {
 						NOT = { has_character_flag = mock_duel }
 						any_artifact = {
@@ -206,10 +213,7 @@
 
 		modifier = {
 			factor = 0.5
-			OR = {
-				has_character_flag = weapon_is_scimitar
-				has_character_flag = weapon_is_arakh
-			}
+			blg_weapon_scimitar_flag = yes
 		}
 	}
 
@@ -218,7 +222,9 @@
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					blg_weapon_scimitar_2 = yes
@@ -255,7 +261,9 @@
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				OR = {
 					has_character_flag = weapon_is_sword
 					any_artifact = {
@@ -291,7 +299,9 @@
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					quality == 2
@@ -318,7 +328,9 @@
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					OR = {
@@ -345,7 +357,9 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				OR = {
 					has_character_flag = weapon_is_axe
 					any_artifact = {
@@ -379,7 +393,9 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					quality == 2
@@ -408,7 +424,9 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					has_artifact_flag = axe
@@ -432,7 +450,9 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					blg_weapon_hammer = yes
@@ -456,7 +476,9 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					blg_weapon_flail = yes
@@ -480,7 +502,9 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				OR = {
 					has_character_flag = weapon_is_mace
 					any_artifact = {
@@ -514,7 +538,9 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					quality == 2
@@ -540,7 +566,9 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				any_artifact = {
 					is_artifact_equipped = yes
 					has_artifact_flag = mace
@@ -626,15 +654,14 @@
 		factor = 100
 		trigger = {
 			trigger_if = {
-				limit = { blg_righthanded = yes }
+				limit = {
+					blg_righthanded = yes
+				}
 				OR = {
-					has_character_flag = weapon_is_stiletto
+					blg_weapon_dagger_flag = yes
 					any_artifact = {
 						is_artifact_equipped = yes
-						OR = {
-							has_artifact_flag = dagger
-							has_artifact_flag = stiletto
-						}
+						blg_weapon_dagger = yes
 						NOR = {
 							has_artifact_flag = jewelry
 							has_artifact_flag = offhand
@@ -645,11 +672,8 @@
 			trigger_else = {
 				any_artifact = {
 					is_artifact_equipped = yes
+					blg_weapon_dagger = yes
 					has_artifact_flag = offhand
-					OR = {
-						has_artifact_flag = dagger
-						has_artifact_flag = stiletto
-					}
 				}
 			}
 		}

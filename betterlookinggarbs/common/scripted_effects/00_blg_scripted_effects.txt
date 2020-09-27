@@ -86,7 +86,7 @@ blg_regional_diversity = {
 				ROOT = { blg_set_ethnicity_ugric = yes }
 			}
 			else_if = {
-				limit = { blg_ethnicity_ugric = no }
+				limit = { ROOT = { blg_ethnicity_ugric = no } }
 				ROOT = { blg_set_ethnicity_baltic = yes }
 			}
 		}

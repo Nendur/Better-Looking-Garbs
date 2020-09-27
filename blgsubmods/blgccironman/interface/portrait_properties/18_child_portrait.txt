@@ -1,0 +1,86 @@
+# p18 Child portraits - Background
+18 = {
+	0 = { # 0 - Teen 14
+		factor = 100
+		trigger = {
+			practical_age >= 14
+		}
+	}
+
+	1 = { # a - Teen 12
+		factor = 100
+		trigger = {
+			practical_age >= 12
+		}
+	}
+
+	2 = { # b - Child 9
+		factor = 100
+		hide_layers = { 7 = {} }
+		hide_layers = { 12 = {} }
+		hide_layers = { 13 = {} }
+		hide_layers = { 23 = {} }
+		hide_layers = { 25 = {} }
+		hide_layers = { 26 = {} }
+
+		trigger = {
+			practical_age >= 9
+		}
+	}
+
+	3 = { # c - Child 6
+		factor = 100
+		hide_layers = { 7 = {} }
+		hide_layers = { 9 = {} }
+		hide_layers = { 12 = {} }
+		hide_layers = { 13 = {} }
+		hide_layers = { 23 = {} }
+		hide_layers = { 25 = {} }
+		hide_layers = { 26 = {} }
+
+		trigger = {
+			practical_age >= 6
+		}
+	}
+
+	4 = { # d - Child 3
+		factor = 100
+		hide_layers = { 7 = {} }
+		hide_layers = { 9 = {} }
+		hide_layers = { 12 = {} }
+		hide_layers = { 13 = {} }
+		hide_layers = { 23 = {} }
+		hide_layers = { 25 = {} }
+		hide_layers = { 26 = {} }
+
+		trigger = {
+			practical_age >= 3
+		}
+	}
+
+	5 = { # e - Toddler
+		factor = 100
+		hide_layers = { 7 = {} }
+		hide_layers = { 9 = {} }
+		hide_layers = { 12 = {} }
+		hide_layers = { 13 = {} }
+		hide_layers = { 23 = {} }
+		hide_layers = { 25 = {} }
+		hide_layers = { 26 = {} }
+
+		trigger = {
+			practical_age >= 1
+		}
+	}
+
+	6 = { # f - Baby
+		factor = 100
+		hide_layers = { 7 = {} }
+		hide_layers = { 9 = {} }
+		hide_layers = { 12 = {} }
+		hide_layers = { 13 = {} }
+		hide_layers = { 23 = {} }
+		hide_layers = { 25 = {} }
+		hide_layers = { 26 = {} }
+	}
+}

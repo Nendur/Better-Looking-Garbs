@@ -1,5 +1,6 @@
 Changelog:
 
+27-09-2020
   Portrait properties fully rewritten:
   - Modern code style.
   - Repeated and variable parts moved to scripted triggers.
@@ -10,10 +11,11 @@ Changelog:
   Culture specific courtier initialization moved into region specific options instead.
   Update some disease and wound graphics.
   Moved furniture artifacts to separate layer to only show on indoor backgrounds.
-  Replacement for parrot to old-world parakeet.
   New Meso-American portraits.
   Meso-American headgear finally updated with tiered wargear.
-  Added overlay ring on known plotters against you. (black, your plot moved to dark purple)
+  Added submod for Dark World family of mods.
+  Replacement for parrot to old-world parakeet.
+  Added overlay ring on known plotters against you. (red-black, your plot moved to dark purple)
   Added Ihram clothing while on Hajj.
 
 08-07-2020

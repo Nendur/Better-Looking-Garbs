@@ -1,0 +1,146 @@
+# p38 Background window frames.
+38 = {
+	0 = { # 0 - blank
+		factor = 5
+		modifier = {
+			factor = 100
+			NOR = {
+				is_landed = yes
+				spouse = { is_landed = yes }
+				trait = falconer
+			}
+		}
+
+		modifier = {
+			factor = 100
+			OR = {
+				is_alive = no
+				NOT = { host = { at_location = ROOT } }
+				in_command = yes
+				trait = in_hiding
+				trait = travelling
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = on_hajj
+				trait = kow_tow_travels
+				has_character_modifier = holding_grand_hunt
+				has_character_flag = holding_tiger_hunt
+			}
+		}
+	}
+
+	1 = { # a - Wooden window
+		factor = 2
+		trigger = {
+			is_nomadic = no
+		}
+	}
+
+	2 = { # b - Stone window
+		factor = 2
+		trigger = {
+			capital_holding = {
+				OR = {
+					holding_type = castle
+					holding_type = city
+					holding_type = temple
+					holding_type = family_palace
+				}
+			}
+		}
+	}
+
+	3 = { # c - Stone window
+		factor = 2
+		trigger = {
+			capital_holding = {
+				OR = {
+					holding_type = castle
+					holding_type = city
+					holding_type = temple
+					holding_type = family_palace
+				}
+			}
+		}
+	}
+
+	4 = { # d - Tent window
+		factor = 2
+		trigger = {
+			capital_scope = {
+				NOR = {
+					region = world_europe
+					region = world_asia_minor
+					AND = {
+							region = world_steppe_west
+							likes_christians = yes
+					}
+				}
+			}
+		}
+	}
+
+	5 = { # e - Stone window
+		factor = 2
+		trigger = {
+			capital_holding = {
+				OR = {
+					holding_type = castle
+					holding_type = city
+					holding_type = temple
+					holding_type = family_palace
+				}
+			}
+		}
+	}
+
+	6 = { # f - Glass window
+		factor = 1
+		trigger = {
+			capital_holding = {
+				OR = {
+					holding_type = city
+					holding_type = temple
+					holding_type = family_palace
+				}
+			}
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
+		}
+	}
+
+	7 = { # g - Grated window
+		factor = 1
+		trigger = {
+			capital_holding = {
+				OR = {
+					holding_type = castle
+					holding_type = city
+					holding_type = temple
+					holding_type = family_palace
+				}
+			}
+			capital_scope = {
+				OR = {
+					region = world_middle_east
+					region = world_africa
+					region = world_persia
+				}
+			}
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
+		}
+	}
+
+	8 = { # h - Falcon
+		factor = 10
+		trigger = {
+			trait = falconer
+
+		}
+	}
+}

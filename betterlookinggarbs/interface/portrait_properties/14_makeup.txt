@@ -11,21 +11,13 @@
 		modifier = {
 			factor = 0.01
 			blg_fair = yes
-			NOR = {
-				has_game_rule = { name = blg_traits value = nofair }
-				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = off }
-			}
+			blg_traits_fair_rule = yes
 		}
 
 		modifier = {
 			factor = 0.02
 			trait = groomed
-			NOR = {
-				has_game_rule = { name = blg_traits value = nofair }
-				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = off }
-			}
+			blg_traits_fair_rule = yes
 		}
 	}
 

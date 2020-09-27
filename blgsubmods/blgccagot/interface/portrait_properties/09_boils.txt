@@ -47,11 +47,7 @@
 				character = 4301
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -63,11 +59,7 @@
 				trait = has_red_death
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -81,11 +73,7 @@
 				trait = has_butterfly_fever
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOT = { has_game_rule = { name = blg_disease value = off } }
+			blg_disease_rule = yes
 		}
 	}
 
@@ -93,11 +81,8 @@
 		factor = 99
 		trigger = {
 			trait = ugly
-
-			NOR = {
-				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = off }
-			}
+			NOT = { has_portrait_property = { layer = 9 index = 9 } }
+			blg_traits_rule = yes
 		}
 	}
 
@@ -105,12 +90,10 @@
 		factor = 99
 		trigger = {
 			trait = ugly
-
-			NOR = {
-				has_game_rule = { name = blg_traits value = notraits }
-				has_game_rule = { name = blg_traits value = off }
-			}
+			NOT = { has_portrait_property = { layer = 9 index = 8 } }
+			blg_traits_rule = yes
 		}
+
 		modifier = {
 			factor = 100
 			culture = ibbenese

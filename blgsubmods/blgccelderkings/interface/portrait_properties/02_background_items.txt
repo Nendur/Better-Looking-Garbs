@@ -53,10 +53,7 @@
 				in_command = no
 				has_character_flag = desc_cat
 			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
+			blg_artifact_rule = yes
 			NOR = {
 				has_portrait_property = { layer = 2 index = 13 }
 				has_portrait_property = { layer = 2 index = 14 }
@@ -73,10 +70,7 @@
 				in_command = no
 				has_character_flag = desc_cat
 			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
+			blg_artifact_rule = yes
 			NOR = {
 				has_portrait_property = { layer = 2 index = 12 }
 				has_portrait_property = { layer = 2 index = 14 }
@@ -93,10 +87,7 @@
 				in_command = no
 				has_character_flag = desc_cat
 			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
+			blg_artifact_rule = yes
 			NOR = {
 				has_portrait_property = { layer = 2 index = 12 }
 				has_portrait_property = { layer = 2 index = 13 }
@@ -120,11 +111,7 @@
 				in_command = no
 				has_character_flag = desc_dog
 			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-				has_character_modifier = lost_dog
-			}
+			blg_artifact_rule = yes
 		}
 	}
 
@@ -143,11 +130,7 @@
 				in_command = no
 				has_character_flag = desc_dog
 			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-				has_character_modifier = lost_dog
-			}
+			blg_artifact_rule = yes
 		}
 	}
 
@@ -166,11 +149,7 @@
 				in_command = no
 				has_character_flag = desc_dog
 			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-				has_character_modifier = lost_dog
-			}
+			blg_artifact_rule = yes
 		}
 	}
 
@@ -189,11 +168,7 @@
 				in_command = no
 				has_character_flag = desc_dog
 			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-				has_character_modifier = lost_dog
-			}
+			blg_artifact_rule = yes
 		}
 	}
 
@@ -206,10 +181,7 @@
 				in_command = no
 				has_character_flag = desc_owl
 			}
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
+			blg_artifact_rule = yes
 		}
 	}
 
@@ -219,10 +191,7 @@
 			blg_animal_hedgehog = yes
 
 			in_command = no
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
+			blg_artifact_rule = yes
 		}
 	}
 
@@ -232,10 +201,7 @@
 			blg_animal_otter = yes
 
 			in_command = no
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
+			blg_artifact_rule = yes
 		}
 	}
 
@@ -245,10 +211,7 @@
 			blg_animal_parrot = yes
 
 			in_command = no
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
+			blg_artifact_rule = yes
 		}
 	}
 
@@ -257,10 +220,7 @@
 		trigger = {
 			blg_animal_wolf = yes
 
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = rare }
-				has_game_rule = { name = blg_artifacts value = weapons }
-			}
+			blg_artifact_rule = yes
 		}
 	}
 }

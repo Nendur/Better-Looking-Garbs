@@ -1,0 +1,1706 @@
+# p5 Headgear
+5 = {
+	0 = { # 0 - Imperial crown/Caliph turban
+		factor = 99
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						real_tier = emperor
+						is_or_was_offmap_power_ruler = yes
+					}
+					OR = {
+						NOT = { has_dlc = "Holy Fury" }
+						lower_real_tier_than = king
+						NOR = {
+								religion = catholic
+								religion = fraticelli
+						}
+						trait = crowned_by_priest
+						trait = crowned_by_bishop
+						trait = crowned_by_pope
+						trait = crowned_by_myself
+						is_feudal = no
+						primary_title = { is_vice_royalty = yes }
+						NOR = {
+								is_alive = yes
+								trait = uncrowned
+						}
+						AND = {
+								has_game_started = no
+								is_save_game = no
+						}
+					}
+					NOR = {
+						AND = {
+								is_nomadic = yes
+								population < 10000
+						}
+						is_tributary = yes
+						is_offmap_governor = yes
+						AND = {
+							is_republic = yes
+							NOT = { government = confucian_bureaucracy }
+						}
+						mercenary = yes
+						holy_order = yes
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				spouse_even_if_dead = {
+						OR = {
+							real_tier = emperor
+							is_or_was_offmap_power_ruler = yes
+						}
+						OR = {
+							NOT = { has_dlc = "Holy Fury" }
+							lower_real_tier_than = king
+							NOR = {
+									religion = catholic
+									religion = fraticelli
+							}
+							trait = crowned_by_priest
+							trait = crowned_by_bishop
+							trait = crowned_by_pope
+							trait = crowned_by_myself
+							is_feudal = no
+							primary_title = { is_vice_royalty = yes }
+							NOR = {
+									is_alive = yes
+									trait = uncrowned
+							}
+							AND = {
+									has_game_started = no
+									is_save_game = no
+							}
+						}
+						NOR = {
+							AND = {
+									is_nomadic = yes
+									population < 10000
+							}
+							is_tributary = yes
+							is_offmap_governor = yes
+							AND = {
+								is_republic = yes
+								NOT = { government = confucian_bureaucracy }
+							}
+							mercenary = yes
+							holy_order = yes
+							trait = peasant_leader
+							trait = heresiarch
+						}
+				}
+				AND = {
+					is_merchant_republic = yes
+					in_command = no
+					OR = {
+						likes_latino_iberians = yes
+						likes_celts = yes
+						culture_group = central_germanic
+						culture_group = west_germanic
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+						culture_group = magyar
+					}
+				}
+			}
+
+			NOR = {
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			is_merchant_republic = yes
+			in_command = no
+			OR = {
+				likes_latino_iberians = yes
+				likes_celts = yes
+				culture_group = central_germanic
+				culture_group = west_germanic
+				culture_group = east_slavic
+				culture_group = west_slavic
+				culture_group = south_slavic
+				culture_group = magyar
+			}
+		}
+	}
+
+	1 = { # a - Royal crown/turban 1
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						AND = {
+								higher_real_tier_than = duke
+								OR = {
+									NOT = { has_dlc = "Holy Fury" }
+									lower_real_tier_than = king
+									NOR = {
+											religion = catholic
+											religion = fraticelli
+									}
+									trait = crowned_by_priest
+									trait = crowned_by_bishop
+									trait = crowned_by_pope
+									trait = crowned_by_myself
+									is_feudal = no
+									primary_title = { is_vice_royalty = yes }
+									NOR = {
+											is_alive = yes
+											trait = uncrowned
+									}
+									AND = {
+											has_game_started = no
+											is_save_game = no
+									}
+								}
+						}
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOR = {
+						AND = {
+								is_nomadic = yes
+								has_game_started = yes
+								population < 5000
+						}
+						AND = {
+							is_republic = yes
+							NOT = { government = confucian_bureaucracy }
+						}
+						mercenary = yes
+						holy_order = yes
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				spouse_even_if_dead = {
+						OR = {
+							AND = {
+									higher_real_tier_than = duke
+									OR = {
+										NOT = { has_dlc = "Holy Fury" }
+										lower_real_tier_than = king
+										NOR = {
+												religion = catholic
+												religion = fraticelli
+										}
+										trait = crowned_by_priest
+										trait = crowned_by_bishop
+										trait = crowned_by_pope
+										trait = crowned_by_myself
+										is_feudal = no
+										primary_title = { is_vice_royalty = yes }
+										NOR = {
+												is_alive = yes
+												trait = uncrowned
+										}
+										AND = {
+												has_game_started = no
+												is_save_game = no
+										}
+									}
+							}
+							is_or_was_offmap_power_ruler = yes
+							has_minor_title = title_despot
+							has_minor_title = title_augusta
+						}
+						NOR = {
+							AND = {
+									is_nomadic = yes
+									has_game_started = yes
+									population < 5000
+							}
+							AND = {
+								is_republic = yes
+								NOT = { government = confucian_bureaucracy }
+							}
+							mercenary = yes
+							holy_order = yes
+							trait = peasant_leader
+							trait = heresiarch
+						}
+				}
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				AND = {
+					is_merchant_republic = yes
+					in_command = no
+					OR = {
+						likes_latino_iberians = yes
+						likes_celts = yes
+						culture_group = central_germanic
+						culture_group = west_germanic
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+						culture_group = magyar
+					}
+				}
+			}
+
+			NOR = {
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 2 }
+				has_portrait_property = { layer = 5 index = 3 }
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			is_variable_equal = { which = ca_headgear value = 2 }
+		}
+	}
+
+	2 = { # b - Royal crown/turban 2
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						AND = {
+								higher_real_tier_than = duke
+								OR = {
+									NOT = { has_dlc = "Holy Fury" }
+									lower_real_tier_than = king
+									NOR = {
+											religion = catholic
+											religion = fraticelli
+									}
+									trait = crowned_by_priest
+									trait = crowned_by_bishop
+									trait = crowned_by_pope
+									trait = crowned_by_myself
+									is_feudal = no
+									primary_title = { is_vice_royalty = yes }
+									NOR = {
+											is_alive = yes
+											trait = uncrowned
+									}
+									AND = {
+											has_game_started = no
+											is_save_game = no
+									}
+								}
+						}
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOR = {
+						AND = {
+								is_nomadic = yes
+								has_game_started = yes
+								population < 5000
+						}
+						AND = {
+							is_republic = yes
+							NOT = { government = confucian_bureaucracy }
+						}
+						mercenary = yes
+						holy_order = yes
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				spouse_even_if_dead = {
+						OR = {
+							AND = {
+									higher_real_tier_than = duke
+									OR = {
+										NOT = { has_dlc = "Holy Fury" }
+										lower_real_tier_than = king
+										NOR = {
+												religion = catholic
+												religion = fraticelli
+										}
+										trait = crowned_by_priest
+										trait = crowned_by_bishop
+										trait = crowned_by_pope
+										trait = crowned_by_myself
+										is_feudal = no
+										primary_title = { is_vice_royalty = yes }
+										NOR = {
+												is_alive = yes
+												trait = uncrowned
+										}
+										AND = {
+												has_game_started = no
+												is_save_game = no
+										}
+									}
+							}
+							is_or_was_offmap_power_ruler = yes
+							has_minor_title = title_despot
+							has_minor_title = title_augusta
+						}
+						NOR = {
+							AND = {
+									is_nomadic = yes
+									has_game_started = yes
+									population < 5000
+							}
+							AND = {
+								is_republic = yes
+								NOT = { government = confucian_bureaucracy }
+							}
+							mercenary = yes
+							holy_order = yes
+							trait = peasant_leader
+							trait = heresiarch
+						}
+				}
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				AND = {
+					is_merchant_republic = yes
+					in_command = no
+					OR = {
+						likes_latino_iberians = yes
+						likes_celts = yes
+						culture_group = central_germanic
+						culture_group = west_germanic
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+						culture_group = magyar
+					}
+				}
+			}
+
+			NOR = {
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 1 }
+				has_portrait_property = { layer = 5 index = 3 }
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			is_variable_equal = { which = ca_headgear value = 3 }
+		}
+	}
+
+	3 = { # c - Royal crown/turban 3
+		factor = 1
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						AND = {
+								higher_real_tier_than = duke
+								OR = {
+									NOT = { has_dlc = "Holy Fury" }
+									lower_real_tier_than = king
+									NOR = {
+											religion = catholic
+											religion = fraticelli
+									}
+									trait = crowned_by_priest
+									trait = crowned_by_bishop
+									trait = crowned_by_pope
+									trait = crowned_by_myself
+									is_feudal = no
+									primary_title = { is_vice_royalty = yes }
+									NOR = {
+											is_alive = yes
+											trait = uncrowned
+									}
+									AND = {
+											has_game_started = no
+											is_save_game = no
+									}
+								}
+						}
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOR = {
+						AND = {
+								is_nomadic = yes
+								has_game_started = yes
+								population < 5000
+						}
+						AND = {
+							is_republic = yes
+							NOT = { government = confucian_bureaucracy }
+						}
+						mercenary = yes
+						holy_order = yes
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				spouse_even_if_dead = {
+						OR = {
+							AND = {
+									higher_real_tier_than = duke
+									OR = {
+										NOT = { has_dlc = "Holy Fury" }
+										lower_real_tier_than = king
+										NOR = {
+												religion = catholic
+												religion = fraticelli
+										}
+										trait = crowned_by_priest
+										trait = crowned_by_bishop
+										trait = crowned_by_pope
+										trait = crowned_by_myself
+										is_feudal = no
+										primary_title = { is_vice_royalty = yes }
+										NOR = {
+												is_alive = yes
+												trait = uncrowned
+										}
+										AND = {
+												has_game_started = no
+												is_save_game = no
+										}
+									}
+							}
+							is_or_was_offmap_power_ruler = yes
+							has_minor_title = title_despot
+							has_minor_title = title_augusta
+						}
+						NOR = {
+							AND = {
+									is_nomadic = yes
+									has_game_started = yes
+									population < 5000
+							}
+							AND = {
+								is_republic = yes
+								NOT = { government = confucian_bureaucracy }
+							}
+							mercenary = yes
+							holy_order = yes
+							trait = peasant_leader
+							trait = heresiarch
+						}
+				}
+				AND = {
+					OR = {
+						AND = {
+								real_tier = duke
+								independent = yes
+						}
+						spouse_even_if_dead = {
+								real_tier = duke
+								independent = yes
+						}
+					}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
+					}
+				}
+				AND = {
+					is_merchant_republic = yes
+					in_command = no
+					OR = {
+						likes_latino_iberians = yes
+						likes_celts = yes
+						culture_group = central_germanic
+						culture_group = west_germanic
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+						culture_group = magyar
+					}
+				}
+			}
+
+			NOR = {
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 1 }
+				has_portrait_property = { layer = 5 index = 2 }
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			song_dynasty_futou_trigger = yes
+		}
+
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = chinese_group
+				culture = tangut
+			}
+			song_dynasty_futou_trigger = no
+		}
+
+		modifier = {
+			factor = 99
+			is_female = no
+			likes_iranians = yes
+			likes_mazdans = yes
+		}
+
+		modifier = {
+			factor = 1000
+			is_variable_equal = { which = ca_headgear value = 4 }
+		}
+	}
+
+	4 = { # d - Simple golden band/turban
+		factor = 5
+		trigger = {
+			OR = {
+				higher_real_tier_than = count
+				spouse_even_if_dead = { higher_real_tier_than = count }
+				is_or_was_offmap_power_ruler = yes
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NOT = { mercenary = yes }
+			NOR = {
+				trait = peasant_leader
+				trait = heresiarch
+			}
+
+			OR = {
+				NOR = {
+					AND = {
+						OR = {
+							AND = {
+									higher_real_tier_than = duke
+									OR = {
+										NOT = { has_dlc = "Holy Fury" }
+										lower_real_tier_than = king
+										NOR = {
+												religion = catholic
+												religion = fraticelli
+										}
+										trait = crowned_by_priest
+										trait = crowned_by_bishop
+										trait = crowned_by_pope
+										trait = crowned_by_myself
+										is_feudal = no
+										primary_title = { is_vice_royalty = yes }
+										NOR = {
+												is_alive = yes
+												trait = uncrowned
+										}
+										AND = {
+												has_game_started = no
+												is_save_game = no
+										}
+									}
+							}
+							is_or_was_offmap_power_ruler = yes
+							has_minor_title = title_despot
+							has_minor_title = title_augusta
+						}
+						NOR = {
+							AND = {
+									is_nomadic = yes
+									has_game_started = yes
+									population < 5000
+							}
+							AND = {
+								is_republic = yes
+								NOT = { government = confucian_bureaucracy }
+							}
+							mercenary = yes
+							holy_order = yes
+							trait = peasant_leader
+							trait = heresiarch
+						}
+					}
+					spouse_even_if_dead = {
+							OR = {
+								AND = {
+										higher_real_tier_than = duke
+										OR = {
+											NOT = { has_dlc = "Holy Fury" }
+											lower_real_tier_than = king
+											NOR = {
+													religion = catholic
+													religion = fraticelli
+											}
+											trait = crowned_by_priest
+											trait = crowned_by_bishop
+											trait = crowned_by_pope
+											trait = crowned_by_myself
+											is_feudal = no
+											primary_title = { is_vice_royalty = yes }
+											NOR = {
+													is_alive = yes
+													trait = uncrowned
+											}
+											AND = {
+													has_game_started = no
+													is_save_game = no
+											}
+										}
+								}
+								is_or_was_offmap_power_ruler = yes
+								has_minor_title = title_despot
+								has_minor_title = title_augusta
+							}
+							NOR = {
+								AND = {
+										is_nomadic = yes
+										has_game_started = yes
+										population < 5000
+								}
+								AND = {
+									is_republic = yes
+									NOT = { government = confucian_bureaucracy }
+								}
+								mercenary = yes
+								holy_order = yes
+								trait = peasant_leader
+								trait = heresiarch
+							}
+					}
+					AND = {
+						OR = {
+							AND = {
+									real_tier = duke
+									independent = yes
+							}
+							spouse_even_if_dead = {
+									real_tier = duke
+									independent = yes
+							}
+						}
+						OR = {
+							culture_group = north_germanic
+							culture_group = finno_ugric
+							culture_group = celtic
+							culture = saxon
+							culture = nepali
+							likes_arabs = yes
+							culture = sogdian
+							culture = saka
+							culture = tocharian
+							culture_group = east_african
+							likes_tibetans = yes
+						}
+					}
+				}
+				is_variable_equal = { which = ca_headgear value = 5 }
+			}
+
+			NOR = {
+				trait = in_hiding
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 1 }
+				has_portrait_property = { layer = 5 index = 2 }
+				has_portrait_property = { layer = 5 index = 3 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			is_female = no
+			OR = {
+				culture_group = chinese_group
+				culture = tangut
+			}
+			NOT = { offmap_china = { offmap_ruler = { dynasty = 1051151 } } }
+		}
+
+		modifier = {
+			factor = 10000
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 5 }
+		}
+	}
+
+	5 = { # e - Common headgear 1
+		factor = 1
+		trigger = {
+			OR = {
+				NAND = {
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				AND = {
+					NOR = {
+						higher_real_tier_than = duke
+						independent = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											independent = yes
+								}
+						}
+					}
+					OR = {
+						likes_arabs = yes
+						likes_iranians = yes
+						culture_group = west_african
+						culture_group = central_african
+						likes_altaics = yes
+						likes_indians = yes
+						likes_dravidians = yes
+						likes_tibetans = yes
+						likes_mesoamericans = yes
+						AND = {
+							is_female = no
+							OR = {
+								culture_group = chinese_group
+								culture = tangut
+							}
+							NOT = { offmap_china = { offmap_ruler = { dynasty = 1051151 } } }
+						}
+					}
+				}
+				trait = in_hiding
+				trait = leper
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = peasant_leader
+				trait = heresiarch
+				is_variable_equal = { which = ca_headgear value = 6 }
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 11 }
+				NAND = {
+					year < 950
+					has_portrait_property = { layer = 31 index = 0 }
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_landed = yes
+			is_female = no
+			likes_celts = yes
+			NOT = { is_variable_equal = { which = ca_headgear value = 6 } }
+		}
+
+		modifier = {
+			factor = 2
+			is_female = yes
+			is_married = no
+			OR = {
+				culture_group = west_slavic
+				culture_group = south_slavic
+				culture_group = magyar
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			trait = leper
+			OR = {
+				likes_arabs = yes
+				likes_iranians = yes
+				likes_africans = yes
+				culture_group = central_african
+				likes_altaics = yes
+				likes_finno_ugrics = yes
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			is_variable_equal = { which = ca_headgear value = 6 }
+		}
+	}
+
+	6 = { # f - Common headgear 2
+		factor = 1
+		hide_layers = { 31 = {} }
+
+		trigger = {
+			OR = {
+				NAND = {
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				AND = {
+					NOR = {
+						higher_real_tier_than = duke
+						independent = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											independent = yes
+								}
+						}
+					}
+					OR = {
+						likes_arabs = yes
+						likes_iranians = yes
+						culture_group = west_african
+						culture_group = central_african
+						likes_altaics = yes
+						likes_indians = yes
+						likes_dravidians = yes
+						likes_tibetans = yes
+						likes_mesoamericans = yes
+						AND = {
+							is_female = no
+							OR = {
+								culture_group = chinese_group
+								culture = tangut
+							}
+							NOT = { offmap_china = { offmap_ruler = { dynasty = 1051151 } } }
+						}
+					}
+				}
+				trait = in_hiding
+				trait = leper
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = peasant_leader
+				trait = heresiarch
+				is_variable_equal = { which = ca_headgear value = 7 }
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 11 }
+				NOT = { has_portrait_property = { layer = 31 index = 0 } }
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			is_variable_equal = { which = ca_headgear value = 7 }
+		}
+	}
+
+	7 = { # g - Common headgear 3
+		factor = 1
+		hide_layers = { 31 = {} }
+
+		trigger = {
+			OR = {
+				NAND = {
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				AND = {
+					NOR = {
+						higher_real_tier_than = duke
+						independent = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											independent = yes
+								}
+						}
+					}
+					OR = {
+						likes_arabs = yes
+						likes_iranians = yes
+						culture_group = west_african
+						culture_group = central_african
+						likes_altaics = yes
+						likes_indians = yes
+						likes_dravidians = yes
+						likes_tibetans = yes
+						likes_mesoamericans = yes
+						AND = {
+							is_female = no
+							OR = {
+								culture_group = chinese_group
+								culture = tangut
+							}
+							NOT = { offmap_china = { offmap_ruler = { dynasty = 1051151 } } }
+						}
+					}
+				}
+				trait = in_hiding
+				trait = leper
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = peasant_leader
+				trait = heresiarch
+				is_variable_equal = { which = ca_headgear value = 8 }
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 11 }
+				NOT = { has_portrait_property = { layer = 31 index = 0 } }
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			is_variable_equal = { which = ca_headgear value = 8 }
+		}
+	}
+
+	8 = { # h - Common headgear 4
+		factor = 1
+		hide_layers = { 31 = {} }
+
+		trigger = {
+			OR = {
+				NAND = {
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				AND = {
+					NOR = {
+						higher_real_tier_than = duke
+						independent = yes
+						spouse_even_if_dead = {
+								OR = {
+											higher_real_tier_than = duke
+											independent = yes
+								}
+						}
+					}
+					OR = {
+						likes_arabs = yes
+						likes_iranians = yes
+						culture_group = west_african
+						culture_group = central_african
+						likes_altaics = yes
+						likes_indians = yes
+						likes_dravidians = yes
+						likes_tibetans = yes
+						likes_mesoamericans = yes
+						AND = {
+							is_female = no
+							OR = {
+								culture_group = chinese_group
+								culture = tangut
+							}
+							NOT = { offmap_china = { offmap_ruler = { dynasty = 1051151 } } }
+						}
+					}
+				}
+				trait = in_hiding
+				trait = leper
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = peasant_leader
+				trait = heresiarch
+				is_variable_equal = { which = ca_headgear value = 9 }
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 11 }
+				NOT = { has_portrait_property = { layer = 31 index = 0 } }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			is_married = yes
+			OR = {
+				culture_group = west_slavic
+				culture_group = south_slavic
+				culture_group = magyar
+			}
+			NOT = { is_variable_equal = { which = ca_headgear value = 8 } }
+		}
+
+		modifier = {
+			factor = 2
+			is_female = yes
+			is_married = no
+			OR = {
+				culture_group = west_slavic
+				culture_group = south_slavic
+				culture_group = magyar
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			is_variable_equal = { which = ca_headgear value = 9 }
+		}
+	}
+
+	9 = { # i - Shady headgear
+		factor = 3
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					has_job_title = job_spymaster
+					lower_real_tier_than = king
+				}
+				AND = {
+					intrigue >= 16
+					lower_real_tier_than = duke
+				}
+				trait = in_hiding
+				trait = leper
+				is_variable_equal = { which = ca_headgear value = 10 }
+			}
+		}
+
+		modifier = {
+			factor = 33
+			OR = {
+				has_job_title = job_spymaster
+				trait = leper
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_headgear value = 10 }
+		}
+	}
+
+	10 = { # j - Martial headgear
+		factor = 100
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						AND = {
+							in_command = yes
+							OR = {
+								war = yes
+								liege = { war = yes }
+								in_battle = yes
+								in_siege = yes
+								employer = { mercenary = yes }
+								employer = { holy_order = yes }
+							}
+						}
+						has_character_flag = add_duel_xp
+						has_landed_title = e_china_west_governor
+					}
+					NOT = { has_game_rule = { name = martial_headgear value = off } }
+					OR = {
+						NAND = {
+							OR = {
+								higher_real_tier_than = count
+								spouse_even_if_dead = { higher_real_tier_than = count }
+								has_character_modifier = jd_strategist
+							}
+							NOR = {
+								trait = peasant_leader
+								trait = heresiarch
+							}
+							NOT = { always = no }
+						}
+						mercenary = yes
+					}
+				}
+				is_variable_equal = { which = ca_headgear value = 11 }
+			}
+
+			NOR = {
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = saint
+				has_nickname = nick_the_saint
+			}
+		}
+	}
+
+	11 = { # k - Blank
+		factor = 4
+		trigger = {
+			OR = {
+				NAND = {
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_prince
+						has_minor_title = title_queen_mother
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOT = { mercenary = yes }
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = saint
+				has_nickname = nick_the_saint
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = peasant_leader
+				trait = heresiarch
+				holy_order = yes
+				is_variable_equal = { which = ca_headgear value = 12 }
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			OR = {
+				is_variable_equal = { which = ca_headgear value = 12 }
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = saint
+				has_nickname = nick_the_saint
+				death_reason = death_slavery
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			true_religion_scope = {
+				OR = {
+						likes_muslims = yes
+						likes_jews = yes
+						likes_mazdans = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				has_portrait_property = { layer = 3 index = 14 }
+			}
+			likes_muslims = no
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_female = yes
+			OR = {
+				is_married = yes
+				is_consort = yes
+				any_spouse_even_if_dead = { is_alive = no }
+				age >= 40
+				trait = chaste
+				trait = celibate
+				trait = zealous
+				is_ascetic_trigger = yes
+			}
+			NOT = { trait = lustful }
+
+			NOR = {
+				prisoner = yes
+				death_reason = death_dungeon
+				trait = saint
+				has_nickname = nick_the_saint
+				death_reason = death_slavery
+				is_variable_equal = { which = ca_headgear value = 12 }
+			}
+		}
+
+		modifier = {
+			factor = 20
+			has_dlc = "Holy Fury"
+			is_female = yes
+			OR = {
+				culture = frankish
+				culture = occitan
+			}
+		}
+
+		modifier = {
+			factor = 0.25
+			is_merchant_republic = yes
+		}
+
+	}
+
+	12 = { # l - Royal helmet
+		factor = 100
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						AND = {
+							in_command = yes
+							OR = {
+								war = yes
+								liege = { war = yes }
+								in_battle = yes
+								in_siege = yes
+								employer = { mercenary = yes }
+								employer = { holy_order = yes }
+							}
+						}
+						has_character_flag = add_duel_xp
+						has_landed_title = e_china_west_governor
+					}
+					NOT = { has_game_rule = { name = martial_headgear value = off } }
+
+					OR = {
+						AND = {
+							higher_real_tier_than = duke
+							OR = {
+								NOT = { has_dlc = "Holy Fury" }
+								lower_real_tier_than = king
+								NOR = {
+										religion = catholic
+										religion = fraticelli
+								}
+								trait = crowned_by_priest
+								trait = crowned_by_bishop
+								trait = crowned_by_pope
+								trait = crowned_by_myself
+								is_feudal = no
+								primary_title = { is_vice_royalty = yes }
+								NOR = {
+										is_alive = yes
+										trait = uncrowned
+								}
+								AND = {
+										has_game_started = no
+										is_save_game = no
+								}
+							}
+						}
+						spouse_even_if_dead = {
+							higher_real_tier_than = duke
+							OR = {
+								NOT = { has_dlc = "Holy Fury" }
+								lower_real_tier_than = king
+								NOR = {
+										religion = catholic
+										religion = fraticelli
+								}
+								trait = crowned_by_priest
+								trait = crowned_by_bishop
+								trait = crowned_by_pope
+								trait = crowned_by_myself
+								is_feudal = no
+								primary_title = { is_vice_royalty = yes }
+								NOR = {
+										is_alive = yes
+										trait = uncrowned
+								}
+								AND = {
+										has_game_started = no
+										is_save_game = no
+								}
+							}
+						}
+					}
+
+					NOR = {
+						AND = {
+							is_nomadic = yes
+							population < 5000
+						}
+						AND = {
+							is_republic = yes
+							NOT = { government = confucian_bureaucracy }
+						}
+						holy_order = yes
+					}
+				}
+
+				AND = {
+					is_merchant_republic = yes
+					in_command = no
+					OR = {
+						likes_latino_iberians = yes
+						likes_celts = yes
+						culture_group = central_germanic
+						culture_group = west_germanic
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+						culture_group = magyar
+					}
+				}
+				is_variable_equal = { which = ca_headgear value = 13 }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			is_merchant_republic = yes
+			in_command = no
+			OR = {
+				likes_latino_iberians = yes
+				likes_celts = yes
+				culture_group = central_germanic
+				culture_group = west_germanic
+				culture_group = east_slavic
+				culture_group = west_slavic
+				culture_group = south_slavic
+				culture_group = magyar
+			}
+		}
+
+		modifier = {
+			factor = 0.99
+			OR = {
+				culture_group = chinese_group
+				culture = tangut
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_headgear value = 13 }
+		}
+	}
+
+	13 = { # m - Ducal helmet
+		factor = 100
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						AND = {
+							in_command = yes
+							OR = {
+								war = yes
+								liege = { war = yes }
+								in_battle = yes
+								in_siege = yes
+								employer = { mercenary = yes }
+								employer = { holy_order = yes }
+							}
+						}
+						has_character_flag = add_duel_xp
+						has_landed_title = e_china_west_governor
+					}
+					NOT = { has_game_rule = { name = martial_headgear value = off } }
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						has_character_modifier = jd_strategist
+					}
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					NOT = { always = no }
+				}
+				AND = {
+					is_merchant_republic = yes
+					in_command = no
+					OR = {
+						likes_latino_iberians = yes
+						likes_celts = yes
+						culture_group = central_germanic
+						culture_group = west_germanic
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+						culture_group = magyar
+					}
+				}
+				is_variable_equal = { which = ca_headgear value = 14 }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			is_merchant_republic = yes
+			in_command = no
+			OR = {
+				likes_latino_iberians = yes
+				likes_celts = yes
+				culture_group = central_germanic
+				culture_group = west_germanic
+				culture_group = east_slavic
+				culture_group = west_slavic
+				culture_group = south_slavic
+				culture_group = magyar
+			}
+		}
+
+		modifier = {
+			factor = 0.99
+			OR = {
+				culture_group = chinese_group
+				culture = tangut
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_alive = yes
+			is_variable_equal = { which = ca_headgear value = 14 }
+		}
+	}
+
+	14 = { # n - Chinese war gear
+		factor = 99
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						culture_group = chinese_group
+						culture = tangut
+					}
+					OR = {
+						AND = {
+							in_command = yes
+							OR = {
+								war = yes
+								liege = { war = yes }
+								in_battle = yes
+								in_siege = yes
+								employer = { mercenary = yes }
+								employer = { holy_order = yes }
+							}
+						}
+						has_character_flag = add_duel_xp
+						has_landed_title = e_china_west_governor
+					}
+					NOT = { has_game_rule = { name = martial_headgear value = off } }
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						has_character_modifier = jd_strategist
+					}
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+					NOT = { always = no }
+				}
+
+				AND = {
+					is_merchant_republic = yes
+					in_command = no
+					OR = {
+						likes_latino_iberians = yes
+						likes_celts = yes
+						culture_group = central_germanic
+						culture_group = west_germanic
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+						culture_group = magyar
+					}
+				}
+				is_variable_equal = { which = ca_headgear value = 15 }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			is_merchant_republic = yes
+			in_command = no
+			OR = {
+				likes_latino_iberians = yes
+				likes_celts = yes
+				culture_group = central_germanic
+				culture_group = west_germanic
+				culture_group = east_slavic
+				culture_group = west_slavic
+				culture_group = south_slavic
+				culture_group = magyar
+			}
+		}
+
+		modifier = {
+			factor = 100
+			is_variable_equal = { which = ca_headgear value = 15 }
+		}
+	}
+}

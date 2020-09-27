@@ -1,0 +1,129 @@
+# p35 Special African Masks.
+35 = {
+	0 = { # 0 - blank
+		factor = 100
+		trigger = {
+			OR = {
+				NAND = {
+					any_artifact = {
+						is_artifact_equipped = yes
+						OR = {
+								artifact_type = crown_african_mask_1
+								artifact_type = crown_african_mask_2
+								artifact_type = crown_african_mask_3
+								artifact_type = crown_african_mask_4
+								artifact_type = crown_african_mask_5
+								artifact_type = crown_african_mask_6
+								artifact_type = crown_african_mask_7
+								artifact_type = crown_african_mask_8
+						}
+					}
+				}
+			}
+		}
+	}
+
+	1 = { # a - Mask 1
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {12 = {}}
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				artifact_type = crown_african_mask_1
+			}
+		}
+	}
+
+	2 = { # b - Mask 2
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {12 = {}}
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				artifact_type = crown_african_mask_2
+			}
+		}
+	}
+
+	3 = { # c - Mask 3
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {12 = {}}
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				artifact_type = crown_african_mask_3
+			}
+		}
+	}
+
+	4 = { # d - Mask 4
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {12 = {}}
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				artifact_type = crown_african_mask_4
+			}
+		}
+	}
+
+	5 = { # e - Mask 5
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {12 = {}}
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				artifact_type = crown_african_mask_5
+			}
+		}
+	}
+
+	6 = { # f - Mask 6
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {12 = {}}
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				artifact_type = crown_african_mask_6
+			}
+		}
+	}
+
+	7 = { # g - Mask 7
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {12 = {}}
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				artifact_type = crown_african_mask_7
+			}
+		}
+	}
+
+	8 = { # h - Mask 8
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {12 = {}}
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				artifact_type = crown_african_mask_8
+			}
+		}
+	}
+}

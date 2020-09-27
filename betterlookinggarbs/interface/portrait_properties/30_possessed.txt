@@ -16,11 +16,8 @@
 		trigger = {
 			blg_demon = yes
 
-			NOR = {
-				has_game_rule = { name = supernatural_events value = off }
-				has_game_rule = { name = blg_traits value = nolunatic }
-				has_game_rule = { name = blg_traits value = nofair }
-			}
+			NOT = { has_game_rule = { name = supernatural_events value = off } }
+			blg_traits_lunatic_rule = yes
 		}
 	}
 
@@ -29,11 +26,8 @@
 		trigger = {
 			blg_glowing = yes
 
-			NOR = {
-				has_game_rule = { name = supernatural_events value = off }
-				has_game_rule = { name = blg_traits value = nolunatic }
-				has_game_rule = { name = blg_traits value = nofair }
-			}
+			NOT = { has_game_rule = { name = supernatural_events value = off } }
+			blg_traits_lunatic_rule = yes
 		}
 	}
 
@@ -42,11 +36,8 @@
 		trigger = {
 			blg_werewolf = yes
 
-			NOR = {
-				has_game_rule = { name = supernatural_events value = off }
-				has_game_rule = { name = blg_traits value = nolunatic }
-				has_game_rule = { name = blg_traits value = nofair }
-			}
+			NOT = { has_game_rule = { name = supernatural_events value = off } }
+			blg_traits_lunatic_rule = yes
 		}
 	}
 
@@ -55,14 +46,8 @@
 		trigger = {
 			trait = possessed
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOR = {
-				has_game_rule = { name = blg_traits value = nolunatic }
-				has_game_rule = { name = blg_traits value = nofair }
-			}
+			blg_disease_alive = yes
+			blg_traits_lunatic_rule = yes
 		}
 	}
 
@@ -74,10 +59,7 @@
 				trait = sick_incapable
 			}
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
+			blg_disease_alive = yes
 		}
 	}
 
@@ -86,14 +68,8 @@
 		trigger = {
 			trait = lunatic
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
-			NOR = {
-				has_game_rule = { name = blg_traits value = nolunatic }
-				has_game_rule = { name = blg_traits value = nofair }
-			}
+			blg_disease_alive = yes
+			blg_traits_lunatic_rule = yes
 		}
 	}
 
@@ -102,10 +78,7 @@
 		trigger = {
 			trait = depressed
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
+			blg_disease_alive = yes
 		}
 	}
 
@@ -114,10 +87,7 @@
 		trigger = {
  			blg_stressed = yes
 
-			OR = {
-				is_alive = yes
-				has_game_rule = { name = blg_disease value = postmortem }
-			}
+			blg_disease_alive = yes
 		}
 	}
 
