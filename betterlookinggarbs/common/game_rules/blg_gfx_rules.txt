@@ -132,3 +132,18 @@ blg_artifacts = {
 		desc = "BLG_ARTIFACTS_OFF_DESC"
 	}
 }
+
+blg_fadedead = {
+	name = "BLG_FADEDEAD"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "BLG_FADEDEAD_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "BLG_FADEDEAD_OFF_DESC"
+	}
+}

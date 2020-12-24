@@ -241,22 +241,22 @@ character_event = {
 	# Change hairstyles etc. to the childs cultural upbringing.
 	after = {
 		blg_child_upbringing = yes
+		gfx_culture_scope = { save_event_target_as = gfxchild }
 
 		# Match twins
 		if = {
-			limit = { NOT = { has_game_rule = { name = blg_child_birth value = off } } }
-			any_sibling = {
-				limit = {
-					is_twin_of = ROOT
-				}
-				set_graphical_culture = ROOT
+			limit = {
+				trait = twin
+				NOT = { has_game_rule = { name = blg_child_birth value = off } } 
+			}
+			twin = {
+				set_graphical_culture = event_target:gfxchild
 			}
 		}
 
 		# Testing log
 		event_target:father = { gfx_culture_scope = { save_event_target_as = gfxfather } }
 		mother_even_if_dead = { gfx_culture_scope = { save_event_target_as = gfxmother } }
-		gfx_culture_scope = { save_event_target_as = gfxchild }
 
 		if = {
 			limit = {

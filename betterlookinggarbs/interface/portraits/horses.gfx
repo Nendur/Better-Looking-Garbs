@@ -65,8 +65,8 @@ spriteTypes = {
 			"GFX_character_blood_splatter:p27"
 			"GFX_horse_immortal:p16"
 			"GFX_lover_overlay:p37"
-			"GFX_player_overlay:p11"
 			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
 		}
 
 		hair_color_index = 8
@@ -122,8 +122,8 @@ spriteTypes = {
 			"GFX_character_blood_splatter:p27"
 			"GFX_horse_immortal:p16"
 			"GFX_lover_overlay:p37"
-			"GFX_player_overlay:p11"
 			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
 		}
 
 		hair_color_index = 8
@@ -179,8 +179,8 @@ spriteTypes = {
 			"GFX_character_blood_splatter:p27"
 			"GFX_horse_immortal:p16"
 			"GFX_lover_overlay:p37"
-			"GFX_player_overlay:p11"
 			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
 		}
 
 		hair_color_index = 8
@@ -246,8 +246,8 @@ spriteTypes = {
 			"GFX_character_blood_splatter:p27"
 			"GFX_horse_immortal:p16"
 			"GFX_lover_overlay:p37"
-			"GFX_player_overlay:p11"
 			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
 		}
 
 		hair_color_index = 8
@@ -303,8 +303,8 @@ spriteTypes = {
 			"GFX_character_blood_splatter:p27"
 			"GFX_horse_immortal:p16"
 			"GFX_lover_overlay:p37"
-			"GFX_player_overlay:p11"
 			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
 		}
 
 		hair_color_index = 8
@@ -360,8 +360,8 @@ spriteTypes = {
 			"GFX_character_blood_splatter:p27"
 			"GFX_horse_immortal:p16"
 			"GFX_lover_overlay:p37"
-			"GFX_player_overlay:p11"
 			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
 		}
 
 		hair_color_index = 8

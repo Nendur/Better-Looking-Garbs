@@ -1,4 +1,7 @@
 Changelog:
+  Fade dead character portraits, with a game rule toggle.
+  Change necklaces to the characters view angle.
+  Fixed twin ethnicities.
 
 27-09-2020
   Portrait properties fully rewritten:

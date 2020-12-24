@@ -61,7 +61,7 @@ blg_artifact_horn = {
 
 # Mjolnir hammer.
 blg_artifact_mjolnir = {
-	always = no
+	has_artifact = amulet_of_kings
 }
 
 # Large relic chest.

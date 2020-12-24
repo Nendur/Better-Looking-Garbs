@@ -64,3 +64,6 @@ BLG_ARTIFACTS_ON_DESC;Equipped artifacts and pets can be shown in the character 
 BLG_ARTIFACTS_WEAPONS_DESC;Only weapons and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
 BLG_ARTIFACTS_RARE_DESC;Only rare and unique artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
 BLG_ARTIFACTS_OFF_DESC;No artifacts will be shown in the character portrait.;;;;;;;;;;;;;x
+BLG_FADEDEAD;§ZBLG:§! Fade dead characters;;;;;;;;;;;;;x
+BLG_FADEDEAD_ON_DESC;Dead characters will have a faded portrait.;;;;;;;;;;;;;x
+BLG_FADEDEAD_OFF_DESC;Dead characters will have a regular portrait.;;;;;;;;;;;;;x

@@ -7,17 +7,25 @@
 	1 = { # a - player
 		factor = 100
 		trigger = {
-			OR = {
-				AND = {
-					ai = no
-					multiplayer = yes
-				}
+			ai = no
+			multiplayer = yes
+		}
+	}
 
-				AND = {
-					is_alive = no
-					trait = i_used_to_be_a_player
-				}
-			}
+	2 = { # b - dead player
+		factor = 100
+		trigger = {
+			is_alive = no
+			trait = i_used_to_be_a_player
+			NOT = { has_game_rule = { name = blg_fadedead value = off } }
+		}
+	}
+
+	3 = { # c - dead ai
+		factor = 100
+		trigger = {
+			is_alive = no
+			NOT = { has_game_rule = { name = blg_fadedead value = off } }
 		}
 	}
 }

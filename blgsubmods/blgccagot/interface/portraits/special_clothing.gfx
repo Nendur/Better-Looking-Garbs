@@ -168,4 +168,32 @@ spriteTypes = {
 			}
 		}
 	}
+
+	spriteType = {
+		name = "GFX_not_a_bear"
+		textureFile = "gfx/characters/bear.dds"
+		noOfFrames = 1
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_bear"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 100000
+				portrait_clothing = yes
+				portrait_has_trait = not_a_bear
+			}
+		}
+
+		layer = {
+			"GFX_empty:c0"
+			"GFX_empty:c1"
+			"GFX_empty:c2"
+			"GFX_empty:c3"
+			"GFX_not_a_bear:c5"
+			"GFX_empty:c7"
+		}
+	}
 }

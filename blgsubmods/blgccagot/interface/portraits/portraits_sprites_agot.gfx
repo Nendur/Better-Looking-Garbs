@@ -17,14 +17,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_player_overlay"
-		texturefile = "gfx\\characters\\shared\\player_overlay.dds"
-		noOfFrames = 3
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
 		name = "GFX_character_mask"
 		texturefile = "gfx\\characters\\shared\\maimed_masks.dds"
 		noOfFrames = 16
