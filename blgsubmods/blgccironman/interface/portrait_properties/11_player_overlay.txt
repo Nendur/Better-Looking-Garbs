@@ -1,0 +1,25 @@
+# p11 Player overlay
+11 = {
+	0 = { # 0 - blank
+		factor = 1
+	}
+
+	1 = { # a - player
+		factor = 100
+		trigger = {
+			ai = no
+			multiplayer = yes
+		}
+	}
+
+	2 = { # b - dead player
+		factor = 0
+	}
+
+	3 = { # c - dead ai
+		factor = 100
+		trigger = {
+			is_alive = no
+		}
+	}
+}
