@@ -313,12 +313,4 @@ objectTypes = {
 
 		scale = 1.0f
 	}
-
-	EMFXActorType = {
-		name = "easterngfx_GALLEYS"
-		actorfile = "gfx\models\Cog.xac"
-
-		idle   = "gfx\models\Cog_Moving.xsm"
-		scale = 1.5f
-	}
 }

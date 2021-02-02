@@ -19,7 +19,7 @@ objectTypes = {
 		name = "reachmangfx_GALLEYS"
 		actorfile = "gfx\models\Cog.xac"
 		idle   = "gfx\models\Cog_Moving.xsm"
-		scale = 1.5f
+		scale = 2.1f
 	}
 
 ###Chariots

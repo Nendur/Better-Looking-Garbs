@@ -3,6 +3,7 @@
 
 zip -r "Better Looking Garbs `date +%d%m%Y`.zip" betterlookinggarbs.mod betterlookinggarbs blgsubmods "Better Looking Garbs - Readme.txt" Changelog.txt betterlookinggarbs.jpg betterlookinggarbsinstall.exe betterlookinggarbsinstall.sh
 
+rm -r ../betterlookinggarbsfull
 mv ../betterlookinggarbs ../betterlookinggarbsfull
 rm -rf ../betterlookinggarbsfull/gfx/fallbacks
 cp -r blgsubmods ../betterlookinggarbsfull/submods
