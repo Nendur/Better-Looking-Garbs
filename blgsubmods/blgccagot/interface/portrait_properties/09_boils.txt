@@ -39,7 +39,16 @@
 		}
 	}
 
-	5 = { # bubonic plague
+	5 = { # Red Death
+		factor = 100
+		trigger = {
+			trait = has_red_death
+
+			blg_disease_rule = yes
+		}
+	}
+
+	6 = { # bubonic plague
 		factor = 100
 		trigger = {
 			OR = {
@@ -51,19 +60,16 @@
 		}
 	}
 
-	6 = { # boils
+	7 = { # boils
 		factor = 100
 		trigger = {
-			OR = {
-				trait = has_small_pox
-				trait = has_red_death
-			}
+			trait = has_small_pox
 
 			blg_disease_rule = yes
 		}
 	}
 
-	7 = { # red dots
+	8 = { # red dots
 		factor = 100
 		trigger = {
 			OR = {
@@ -77,7 +83,7 @@
 		}
 	}
 
-	8 = { # ugly mole
+	9 = { # ugly mole
 		factor = 99
 		trigger = {
 			trait = ugly
@@ -86,7 +92,7 @@
 		}
 	}
 
-	9 = { # ugly monobrow
+	10 = { # ugly monobrow
 		factor = 99
 		trigger = {
 			trait = ugly

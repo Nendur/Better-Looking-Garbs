@@ -175,7 +175,7 @@ dothraki_group = {
 
 	dothraki = {
 		graphical_cultures = { dothrakigfx }
-		unit_graphical_cultures = { mesoamericangfx southindiangfx indiangfx muslimgfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx southindiangfx indiangfx muslimgfx }
 	}
 	lhazareen = {
 		graphical_cultures = { lhazareengfx mongolgfx muslimgfx }

@@ -140,3 +140,6 @@ visigothgfx = {
 vlachgfx = {
 	skin_tone = 1
 }
+nativeamericangfx = {
+	skin_tone = 2
+}
