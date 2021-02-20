@@ -526,7 +526,7 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_african_male_clothes_behind:p3:c0"
-			"GFX_westafrican_male_headgear_behind:p5:c1"
+			"GFX_berber_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_african_male_hair_behind:p1:h:y"

@@ -3,16 +3,16 @@
 	0 = { # 0 - blank
 		factor = 100
 		trigger = {
+			NOT = {
+				any_artifact = {
+					is_artifact_active = yes
+					artifact_type = hermetic_glasses
+				}
+			}
 			OR = {
 				NOR = {
 					trait = blinded
 					trait = one_eyed
-					AND = {
-						any_artifact = {
-							is_artifact_active = yes
-							artifact_type = hermetic_glasses
-						}
-					}
 				}
 				has_character_modifier = glass_eye
 				is_variable_equal = { which = ca_eyepatch value = 1 }

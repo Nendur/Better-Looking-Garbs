@@ -181,7 +181,7 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-				portrait_has_trait = on_hajj
+				blg_portrait_ihram = yes
 			}
 		}
 
@@ -214,7 +214,7 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-				portrait_has_trait = on_hajj
+				blg_portrait_ihram = yes
 			}
 		}
 

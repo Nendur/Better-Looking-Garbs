@@ -776,13 +776,13 @@
 		modifier = { # Frankish men less likely to wear beards after the 12th century.
 			factor = 2
 			year_of_birth >= 1150
-			blg_culture_french = yes
+			blg_culture_france = yes
 		}
 
 		modifier = { # Frankish men less likely to wear beards after the 12th century.
 			factor = 2
 			year_of_birth >= 1200
-			blg_culture_french = yes
+			blg_culture_france = yes
 		}
 
 		modifier = {

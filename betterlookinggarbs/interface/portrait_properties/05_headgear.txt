@@ -114,9 +114,7 @@
 
 		modifier = {
 			factor = 99
-			is_female = no
-			likes_iranians = yes
-			likes_mazdans = yes
+			blg_headgear_persian_crown = yes
 		}
 
 		modifier = {
@@ -208,12 +206,7 @@
 		modifier = {
 			factor = 1000
 			trait = leper
-			OR = {
-				blg_culture_middleeast = yes
-				blg_culture_african = yes
-				likes_altaics = yes
-				likes_finno_ugrics = yes
-			}
+			blg_headgear_alternate_leper = yes
 		}
 
 		modifier = {

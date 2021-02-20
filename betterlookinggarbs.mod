@@ -4,6 +4,7 @@ dependencies={
 	"A Game of Thrones"
 	"AGOT Congenital Overhaul"
 	"AGOT More Bloodlines Submod"
+	"After the End Fan Fork"
 	"CK2Plus"
 	"Elder Kings"
 	"Elder Kings Dev"

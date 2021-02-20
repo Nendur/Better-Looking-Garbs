@@ -1,6 +1,7 @@
 Changelog:
 
   Scale up ship models.
+  Added non-dlc carried helmets.
   Added North-American unit variant of Meso-American units.
 
 16-01-2021

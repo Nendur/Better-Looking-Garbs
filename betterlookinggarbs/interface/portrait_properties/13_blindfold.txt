@@ -3,11 +3,11 @@
 	0 = { # 0 - blank
 		factor = 100
 		trigger = {
+			blg_artifact_glasses = no
 			OR = {
 				NOR = {
 					trait = blinded
 					trait = one_eyed
-					blg_artifact_glasses = yes
 				}
 				has_character_modifier = glass_eye
 				has_game_rule = { name = blg_wounds value = off }
@@ -413,7 +413,6 @@
 	22 = { # v - Hermetic Glasses
 		factor = 100
 		trigger = {
-			NOT = { has_game_rule = { name = blg_artifacts value = off } }
 			blg_artifact_glasses = yes
 
 			OR = {

@@ -1206,10 +1206,10 @@ spriteTypes = {
 					portrait_society_rank = 1
 				}
 				1 = {
-					portrait_society_rank = 2
+					portrait_society_rank = 3
 				}
 				2 = {
-					portrait_society_rank = 3
+					portrait_society_rank = 2
 				}
 				3 = {
 					portrait_society_rank = 4

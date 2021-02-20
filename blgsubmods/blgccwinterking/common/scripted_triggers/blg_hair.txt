@@ -82,6 +82,7 @@ blg_beard_always = {
 		true_religion_scope = { religion_group = muslim }
 		blg_hair_uncut = yes
 	}
+	NOT = { trait = cynical }
 }
 
 # Has a long beard.
@@ -95,6 +96,7 @@ blg_beard_long = {
 		is_ascetic_trigger = yes
 		has_minor_title = title_chief_qadi
 	}
+	NOT = { trait = cynical }
 }
 
 # Has a shaved face.
@@ -108,6 +110,7 @@ blg_beard_short = {
 		is_ascetic_trigger = yes
 		employer = { blg_holy_order = yes }
 	}
+	NOT = { trait = cynical }
 }
 
 # Cultures with uncommon growing of beards.

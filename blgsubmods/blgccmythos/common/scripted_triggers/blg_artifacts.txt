@@ -47,6 +47,7 @@ blg_babr_e_bayan = {
 
 # Eye glasses.
 blg_artifact_glasses = {
+	NOT = { has_game_rule = { name = blg_artifacts value = off } }
 	any_artifact = {
 		is_artifact_active = yes
 		artifact_type = hermetic_glasses

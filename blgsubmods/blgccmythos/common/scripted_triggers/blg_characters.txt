@@ -38,6 +38,11 @@ blg_guard = {
 	}
 }
 
+# Portrait override for ihram clothes.
+blg_portrait_ihram = {
+	portrait_has_trait = on_hajj
+}
+
 # Very learned character.
 blg_learned = {
 	OR = {

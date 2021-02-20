@@ -4,7 +4,10 @@
 
 # Blind, natural or maimed.
 blg_blind = {
-	trait = blinded
+	OR = {
+		trait = blinded
+		has_character_modifier = glass_eye
+	}
 }
 
 # Pox boils.

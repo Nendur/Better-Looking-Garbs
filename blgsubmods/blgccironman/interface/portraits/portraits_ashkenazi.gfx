@@ -20,7 +20,7 @@ spriteTypes = {
 			"GFX_outremer_male_clothes:c2"
 			"GFX_byzantine_male_headgear_mid_late:c3"
 			"GFX_byzantine_male_headgear_late:c5"
-			"GFX_helmet_byzantine:c4"
+			"GFX_helmet_flattop:c4"
 		}
 
 		headgear_that_hides_hair = {10 12 13}
@@ -46,7 +46,7 @@ spriteTypes = {
 			"GFX_outremer_female_clothes:c2"
 			"GFX_byzantine_female_headgear_mid_late:c3"
 			"GFX_byzantine_female_headgear_late:c5"
-			"GFX_helmet_byzantine:c4"
+			"GFX_helmet_flattop:c4"
 		}
 
 		headgear_that_hides_hair = {10 12 13}

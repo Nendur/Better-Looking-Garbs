@@ -626,7 +626,7 @@
 		modifier = {
 			factor = 99
 			is_female = no
-			likes_iranians = yes
+			culture = persian
 			likes_mazdans = yes
 		}
 
@@ -919,7 +919,6 @@
 				likes_iranians = yes
 				likes_africans = yes
 				culture_group = central_african
-				likes_altaics = yes
 				likes_finno_ugrics = yes
 			}
 		}

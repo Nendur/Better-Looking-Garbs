@@ -3,7 +3,7 @@
 	0 = { # blank
 		factor = 20
 		modifier = {
-			factor = 100
+			factor = 10000
 			likes_hindus = no
 		}
 

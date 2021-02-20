@@ -424,6 +424,20 @@ spriteTypes = {
 		}
 
 		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
 			31 = {
 				0 = { always = yes }
 			}

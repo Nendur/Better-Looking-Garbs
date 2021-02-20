@@ -794,10 +794,10 @@ spriteTypes = {
 					portrait_has_trait = misguided_warrior
 				}
 				1 = {
-					portrait_has_trait = tough_soldier
+					portrait_has_trait = skilled_tactician
 				}
 				2 = {
-					portrait_has_trait = skilled_tactician
+					portrait_has_trait = tough_soldier
 				}
 				3 = {
 					portrait_has_trait = brilliant_strategist

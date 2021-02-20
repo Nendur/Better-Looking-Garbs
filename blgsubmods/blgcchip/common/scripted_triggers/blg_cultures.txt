@@ -15,6 +15,17 @@ blg_culture_unmixed = {
 
 ### Clothing sets for cultures:
 
+# Wears alternate headgear as leper instead of spy hood.
+blg_headgear_alternate_leper = {
+	OR = {
+		blg_culture_middleeast = yes
+		blg_culture_african = yes
+		blg_culture_roman = yes
+		likes_finno_ugrics = yes
+		likes_tibetans = yes
+	}
+}
+
 # Block ducal crown in some circumstances.
 # Restrict Song futou headgear.
 blg_blocked_duke = {
@@ -36,6 +47,19 @@ blg_headgear_chinese = {
 	OR = {
 		culture = han
 		culture = tangut
+	}
+}
+
+# Wears Persian crown.
+blg_headgear_persian_crown = {
+	is_female = no
+	likes_mazdans = yes
+	OR = {
+		culture = pahlavi
+		culture = persian
+		culture = tajik
+		culture = daylamite
+		culture = khorasani
 	}
 }
 
