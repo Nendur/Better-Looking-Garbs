@@ -1,0 +1,241 @@
+spriteTypes = {
+
+### Monks
+
+	spriteType = {
+		name = "GFX_clothing_monk_clothes"
+		textureFile = "gfx/characters/clothing/monk_clothes.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_clothing_monk_clothes_behind"
+		textureFile = "gfx/characters/clothing/monk_clothes_behind.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_clothing_monk_headgear"
+		textureFile = "gfx/characters/clothing/monk_headgear.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_clothing_monk_headgear_behind"
+		textureFile = "gfx/characters/clothing/monk_headgear_behind.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_clothing_monk_male_hair"
+		textureFile = "gfx/characters/clothing/monk_male_hair.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_monk"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 5000
+				portrait_clothing = yes
+				portrait_age > child
+				portrait_is_female = no
+
+				blg_portrait_monk = yes
+				blg_portrait_christian = yes
+				OR = {
+					portrait_in_command = no
+					blg_portrait_theocracy = yes
+				}
+			}
+		}
+
+		layer = {
+			"GFX_clothing_monk_clothes_behind:c0"
+			"GFX_clothing_monk_headgear_behind:c1"
+			"GFX_clothing_monk_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_clothing_monk_headgear:c5"
+			"GFX_clothing_monk_male_hair:c7"
+		}
+
+		# Tonsure hairstyle
+		allow_property_values = {
+			3 = {
+				0 = {
+					blg_portrait_catholic = yes
+				}
+				1 = {
+					blg_portrait_catholic = no
+				}
+			}
+			5 = {
+				0 = {
+					blg_portrait_catholic = yes
+				}
+				1 = {
+					blg_portrait_catholic = no
+				}
+			}
+			31 = {
+				0 = { always = yes }
+			}
+		}
+
+		headgear_that_hides_hair = { 0 }
+	}
+
+### Nun
+
+	spriteType = {
+		name = "GFX_clothing_nun_headgear"
+		textureFile = "gfx/characters/clothing/nun_headgear.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_clothing_nun_headgear_behind"
+		textureFile = "gfx/characters/clothing/nun_headgear_behind.dds"
+		noOfFrames = 1
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_nun"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 5000
+				portrait_clothing = yes
+				portrait_age > child
+				portrait_is_female = yes
+
+				blg_portrait_nun = yes
+				blg_portrait_christian = yes
+				OR = {
+					portrait_in_command = no
+					blg_portrait_theocracy = yes
+				}
+			}
+		}
+
+		layer = {
+			"GFX_clothing_monk_clothes_behind:c0"
+			"GFX_clothing_nun_headgear_behind:c1"
+			"GFX_clothing_monk_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_clothing_nun_headgear:c5"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+	}
+
+### Ihram clothing on Hajj
+
+	spriteType = {
+		name = "GFX_clothing_ihram_clothes"
+		textureFile = "gfx/characters/clothing/ihram_clothes.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_clothing_ihram_clothes_behind"
+		textureFile = "gfx/characters/clothing/ihram_clothes_behind.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_clothing_ihram_headgear"
+		textureFile = "gfx/characters/clothing/ihram_headgear.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_clothing_ihram_headgear_behind"
+		textureFile = "gfx/characters/clothing/ihram_headgear_behind.dds"
+		noOfFrames = 1
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_ihram_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 5000
+				portrait_clothing = yes
+				portrait_age > child
+				portrait_is_female = no
+
+				blg_portrait_ihram = yes
+			}
+		}
+
+		layer = {
+			"GFX_clothing_ihram_clothes_behind:c0"
+			"GFX_empty:c1"
+			"GFX_clothing_ihram_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			31 = {
+				0 = { always = yes }
+			}
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_ihram_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 5000
+				portrait_clothing = yes
+				portrait_age > child
+				portrait_is_female = yes
+
+				blg_portrait_ihram = yes
+			}
+		}
+
+		layer = {
+			"GFX_clothing_ihram_clothes_behind:c0"
+			"GFX_clothing_ihram_headgear_behind:c1"
+			"GFX_clothing_ihram_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_clothing_ihram_headgear:c5"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+		}
+
+		headgear_that_hides_hair = {}
+	}
+}

@@ -138,6 +138,16 @@ if [ -f "${MODS}mythos3.zip" -o -f "${MODS}mythos3.mod" -o -d "${MODS}Mythos 2" 
 	fi
 	echo "Mythos compatibility add-on installed."
 fi
+if [ -f "${MODS}aftertheendfanfork.zip" -o -f "${MODS}AfterTheEndFanFork.mod" -o -f "${MODS}blgccaftertheend.mod" -a ! -f "${MODS}blgccaftertheend.zip" ]; then
+	if [ -f "$BLGZIP" ]; then
+		unzip -uoq "$BLGZIP" "submods/blgccaftertheend*" -d"$MODS"
+	fi
+	if [ -f "${ADDONS}/blgccaftertheend.mod" ]; then
+		[ -d "${MODS}/blgccaftertheend" ] && rm -r "${MODS}/blgccaftertheend.mod" "${MODS}/blgccaftertheend"
+		mv "${ADDONS}"/blgccaftertheend* "$MODS"
+	fi
+	echo "After the End compatibility add-on installed."
+fi
 if [ -d "${MODS}Rise to Power" -o -f "${MODS}risetopower.zip" -o -f "${MODS}blgrisetopower.mod" -a ! -f "${MODS}blgrisetopower.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgrisetopower*" -d"$MODS"

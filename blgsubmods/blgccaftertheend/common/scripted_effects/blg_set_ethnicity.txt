@@ -1,0 +1,806 @@
+### Set ethnicity to the specified culture.
+
+blg_set_ethnicity_andalusian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = andalusiangfx }
+		}
+		set_graphical_culture = neoladino
+	}
+}
+
+blg_set_ethnicity_ashkenazi = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = ashkenazigfx }
+		}
+		set_graphical_culture = yiddish
+	}
+}
+
+blg_set_ethnicity_bear = {
+	if = {
+		limit = { location = { blg_region_polar = yes } }
+		set_graphical_culture = polar_bear
+	}
+	else_if = {
+		limit = { location = { blg_region_asia = yes } }
+		set_graphical_culture = black_bear
+	}
+	else = {
+		set_graphical_culture = bear
+	}
+}
+
+blg_set_ethnicity_berber = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_middleeast = yes
+				blg_culture_african = yes
+				likes_native_americans = yes
+				likes_mesoamericans = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = berbergfx }
+			}
+			set_graphical_culture = moroccan
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = llanerogfx }
+		}
+		set_graphical_culture = llanero
+	}
+}
+
+blg_set_ethnicity_byzantine = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = byzantinegfx }
+		}
+		set_graphical_culture = greek
+	}
+}
+
+blg_set_ethnicity_celtic = {
+	if = {
+		limit = {
+			OR = {
+				culture = newfie
+				blg_religion_pagan = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = celticgfx }
+			}
+			set_graphical_culture = newfie
+		}
+	}
+	else_if = {
+		limit = {
+			NOR = {
+				graphical_culture = maritimergfx
+				graphical_culture = bretongfx
+			}
+		}
+		set_graphical_culture = celtic
+	}
+}
+
+blg_set_ethnicity_chinese = {
+	if = {
+		limit = {
+			OR = {
+				culture_group = nihonjin
+				culture_group = canton
+				culture_group = viet
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = chinesegfx }
+			}
+			set_graphical_culture = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				blg_culture_cetic = yes
+				blg_culture_african = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = chinesepacificgfx }
+			}
+			set_graphical_culture = calaotian
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = chinogfx }
+		}
+		set_graphical_culture = chinese
+	}
+}
+
+blg_set_ethnicity_cuman = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = metisgfx }
+		}
+		set_graphical_culture = metis
+	}
+}
+
+blg_set_ethnicity_east_african = {
+	if = {
+		limit = {
+			OR = {
+				culture_group = ozzi
+				culture_group = polynesian
+				culture_group = malay
+				culture_group = filipino
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = blackpacificgfx }
+			}
+			set_graphical_culture = ozlander
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				religion_group = muslim
+				blg_culture_midlands = yes
+				blg_culture_middleeast = yes
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					graphical_culture = motownergfx
+					graphical_culture = blackpacificgfx
+				}
+			}
+			set_graphical_culture = motowner
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				blg_culture_african = yes
+				blg_religion_pagan = yes
+				religion_group = afro_syncretic
+				culture = gullah
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					graphical_culture = creolegfx
+					graphical_culture = blackpacificgfx
+				}
+			}
+			set_graphical_culture = creole
+		}
+	}
+	else_if = {
+		limit = {
+			NOR = {
+				graphical_culture = tuskegeangfx
+				graphical_culture = blackpacificgfx
+			}
+		}
+		set_graphical_culture = tuskegean
+	}
+}
+
+blg_set_ethnicity_eastslavic = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = easternslavicgfx }
+		}
+		set_graphical_culture = slavic
+	}
+}
+
+blg_set_ethnicity_egyptian = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_african = yes
+				blg_culture_middleeast = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = caribenogfx }
+			}
+			set_graphical_culture = quisqueyano
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture = norteno
+				culture = sonorense
+				culture = neomexicano
+				blg_culture_midlands = yes
+				blg_culture_eastcoast = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = vaquerogfx }
+			}
+			set_graphical_culture = norteno
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = mexicangfx }
+		}
+		set_graphical_culture = chilango
+	}
+}
+
+blg_set_ethnicity_english = {
+	if = {
+		limit = {
+			likes_canadians = yes
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = canadiangfx }
+			}
+			set_graphical_culture = ontarian
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture = alaskan
+				culture = yukoner
+				culture_group = rockland
+				culture_group = northwest_coast
+				culture_group = anishinaabe
+				culture_group = athabaskan
+				culture_group = subarctic
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = yukonergfx }
+			}
+			set_graphical_culture = yukoner
+		}
+	}
+	else_if = {
+		limit = {
+			blg_culture_cetic = yes
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = cascadiangfx }
+			}
+			set_graphical_culture = cascadian
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture = british
+				culture = new_english
+				culture_group = amerodeutsch
+				culture_group = west_anglo
+				religion = thelemic
+				religion = thelemic_reformed
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = romanobritishgfx }
+			}
+			set_graphical_culture = british
+		}
+	}
+	else_if = {
+		limit = {
+			blg_religion_pagan = yes
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = yankeegfx }
+			}
+			set_graphical_culture = yankee
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = normangfx }
+		}
+		set_graphical_culture = english
+	}
+}
+
+blg_set_ethnicity_frankish = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_european = yes
+				blg_culture_cetic = yes
+				blg_culture_african = yes
+				likes_mesoamericans = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = cajungfx }
+			}
+			set_graphical_culture = cajun
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = quebecoisgfx }
+		}
+		set_graphical_culture = quebecois
+	}
+}
+
+blg_set_ethnicity_german = {
+	if = {
+		limit = {
+			OR = {
+				culture = rostmann
+				culture = alaskan
+				culture = yukoner
+				culture_group = laurentian
+				culture_group = ameronordic
+				culture_group = rockland
+				culture_group = northwest_coast
+				culture_group = anishinaabe
+				culture_group = athabaskan
+				culture_group = subarctic
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = greatlakesgfx }
+			}
+			set_graphical_culture = rostmann
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = germangfx }
+		}
+		set_graphical_culture = german
+	}
+}
+
+blg_set_ethnicity_iberian = {
+	if = {
+		limit = {
+			blg_culture_middleeast = yes
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = andalusiangfx }
+			}
+			set_graphical_culture = neoladino
+		}
+	}
+	else_if = {
+		limit = {
+			blg_culture_african = yes
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = cubanogfx }
+			}
+			set_graphical_culture = cubano
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture_group = portuguese
+				culture_group = portunhol
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = brazilgfx }
+			}
+			set_graphical_culture = brazilian
+		}
+	}
+	else_if = {
+		limit = {
+			NOR = {
+				graphical_culture = southerngfx 
+				graphical_culture = basquegfx 
+			}
+		}
+		set_graphical_culture = chilango
+	}
+}
+
+blg_set_ethnicity_indian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = indiangfx }
+		}
+		set_graphical_culture = indian
+	}
+}
+
+blg_set_ethnicity_levantine = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_african = yes
+				blg_religion_pagan = yes
+				blg_religion_eastern = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = muslimgfx }
+			}
+			set_graphical_culture = brown
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				blg_culture_midlands = yes
+				blg_culture_eastcoast = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = chiraqigfx }
+			}
+			set_graphical_culture = chiraqi
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = anjalusigfx }
+		}
+		set_graphical_culture = anjalusi
+	}
+}
+
+blg_set_ethnicity_native = {
+	if = {
+		limit = {
+			culture_group = plains
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = nativeamericangfx }
+			}
+			set_graphical_culture = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			culture_group = eastern_woodlands
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = cherokeegfx }
+			}
+			set_graphical_culture = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture_group = northwest_coast
+				culture_group = anishinaabe
+				culture_group = athabaskan
+				culture_group = subarctic
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = northernnativegfx }
+			}
+			set_graphical_culture = algonquin
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				likes_mesoamericans = yes
+				likes_indigenous = yes
+				blg_culture_african = yes
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					graphical_culture = mesoamericangfx 
+					graphical_culture = andeangfx
+				}
+			}
+			set_graphical_culture = nahua
+		}
+	}
+	else_if = {
+		limit = {
+			blg_culture_european = yes
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = mesanglogfx }
+			}
+			set_graphical_culture = miskito
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = navajogfx }
+		}
+		set_graphical_culture = native
+	}
+}
+
+blg_set_ethnicity_norse = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = norsegfx }
+		}
+		set_graphical_culture = norse
+	}
+}
+
+blg_set_ethnicity_nubian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = nubiangfx }
+		}
+		set_graphical_culture = sheban
+	}
+}
+
+blg_set_ethnicity_persian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = persiangfx }
+		}
+		set_graphical_culture = persian
+	}
+}
+
+blg_set_ethnicity_southindian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = melungeongfx }
+		}
+		set_graphical_culture = melungeon
+	}
+}
+
+blg_set_ethnicity_southslavic = {
+	if = {
+		limit = {
+			OR = {
+				blg_culture_midlands = yes
+				blg_culture_eastcoast = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = croatsouthslavicgfx }
+			}
+			set_graphical_culture = prodnanici
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = brownpacificgfx }
+		}
+		set_graphical_culture = angeleno
+	}
+}
+
+blg_set_ethnicity_tibetan = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = haidagfx }
+		}
+		set_graphical_culture = haida
+	}
+}
+
+blg_set_ethnicity_westafrican = {
+	if = {
+		limit = {
+			culture_group = guinean
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = westafricangfx }
+			}
+			set_graphical_culture = nigerian
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				religion_group = muslim
+				religion_group = indian_group
+				blg_culture_middleeast = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = hinduafricangfx }
+			}
+			set_graphical_culture = guyanese
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				blg_culture_african = yes
+				blg_religion_pagan = yes
+				religion_group = afro_syncretic
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = africangfx }
+			}
+			set_graphical_culture = west_indian
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = centralafricangfx }
+		}
+		set_graphical_culture = black
+	}
+}
+
+blg_set_ethnicity_western = {
+	if = {
+		limit = {
+			OR = {
+				religion_group = muslim
+				blg_culture_middleeast = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = outremergfx }
+			}
+			set_graphical_culture = neomoor
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture_group = west_anglo
+				culture_group = texan_group
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = cowboygfx }
+			}
+			set_graphical_culture = texan
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				blg_culture_eastcoast = yes
+				culture_group = amerodeutsch
+				culture_group = ameronordic
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = englishgfx }
+			}
+			set_graphical_culture = gothamite
+		}
+	}
+	else_if = {
+		limit = {
+			culture_group = upland
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = bluegrassgfx }
+			}
+			set_graphical_culture = riverlander
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture_group = laurentian
+				culture = alaskan
+				culture = yukoner
+				culture_group = northwest_coast
+				culture_group = anishinaabe
+				culture_group = athabaskan
+				culture_group = subarctic
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = chicagoangfx }
+			}
+			set_graphical_culture = chicagoan
+		}
+	}
+	else_if = {
+		limit = {
+			blg_culture_cetic = yes
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = whitepacificgfx }
+			}
+			set_graphical_culture = bayfolk
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture_group = rockland
+				has_native_culture_trigger = yes
+				blg_culture_african = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = mountainergfx }
+			}
+			set_graphical_culture = mountainer
+		}
+	}
+	else_if = {
+		limit = {
+			blg_culture_european = yes
+		}
+		if = {
+			limit = {
+				NOT = { graphical_culture = dixiegfx }
+			}
+			set_graphical_culture = southron
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = westerngfx }
+		}
+		set_graphical_culture = white
+	}
+}
+
+blg_set_ethnicity_westslavic = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = westernslavicgfx }
+		}
+		set_graphical_culture = west_slavic
+	}
+}

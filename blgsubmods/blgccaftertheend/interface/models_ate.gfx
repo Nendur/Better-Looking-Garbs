@@ -1,0 +1,26 @@
+objectTypes = {
+	EMFXActorType = {
+		name = "bluegrassgfx_job_marshal"
+		actorfile = "gfx\models\Mapindicators\Western_Marshal.xac"
+
+		idle   = "gfx\models\Mapindicators\Western_Marshal_Idle.xsm"
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
+		name = "africangfx_GALLEYS"
+		actorfile = "gfx\models\Cog.xac"
+		
+		idle   = "gfx\models\Cog_Moving.xsm"
+		scale = 2.1f
+	}
+
+	EMFXActorType = {
+		name = "e_china_west_governor"
+		actorfile = "gfx\models\Shields\empire_shield.xac"
+		scale = 0.75f
+		use_animation = no
+		cull_distance = 550.0f
+		scale_on_cull_distance = no
+	}
+}

@@ -1,0 +1,87 @@
+spriteTypes = {
+	portraitType = {
+		name = "PORTRAIT_society_warrior_lodge_mictlantec_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_mictlantec
+				blg_wear_warrior_lodge_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_mesoamerican_male_clothes_behind:c0"
+			"GFX_mexican_male_headgear_behind:c1"
+			"GFX_mesoamerican_male_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_mexican_male_headgear:c5"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			3 = { 4 = { always = yes } }
+			5 = {
+				9 = {
+					OR = {
+						portrait_society_rank = 1
+						portrait_society_rank = 2
+					}
+				}
+				10 = {
+					OR = {
+						portrait_society_rank = 3
+						portrait_society_rank = 4
+					}
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_warrior_lodge_mictlantec_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_society = warrior_lodge_mictlantec
+				blg_wear_warrior_lodge_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_mesoamerican_female_clothes_behind:c0"
+			"GFX_mexican_male_headgear_behind:c1"
+			"GFX_mesoamerican_female_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_mexican_male_headgear:c5"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			3 = { 5 = { always = yes } }
+			5 = {
+				9 = {
+					OR = {
+						portrait_society_rank = 1
+						portrait_society_rank = 2
+					}
+				}
+				10 = {
+					OR = {
+						portrait_society_rank = 3
+						portrait_society_rank = 4
+					}
+				}
+			}
+		}
+	}
+}

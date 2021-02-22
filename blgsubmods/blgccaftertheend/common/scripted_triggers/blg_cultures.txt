@@ -1,0 +1,493 @@
+### Culture triggers:
+
+# Cultures with a lot of assimilating locals.
+blg_assimilating_culture = {
+	always = no
+}
+
+# Special cultures that don't mix with neighbours.
+blg_culture_unmixed = {
+	always = no
+}
+
+likes_celts = {
+	culture_group = north_atlantic
+}
+
+### Clothing sets for cultures:
+
+# Wears alternate headgear as leper instead of spy hood.
+blg_headgear_alternate_leper = {
+	OR = {
+		blg_culture_middleeast = yes
+		culture = prairielander
+		culture = metis
+		culture = alaskan
+		culture = yukoner
+	}
+}
+
+# Block ducal crown in some circumstances.
+# Restrict Song futou headgear.
+blg_blocked_duke = {
+	is_female = no
+	culture = edokko
+}
+
+# Wears Chinese clothing.
+blg_clothes_chinese = {
+	OR = {
+		culture = calaotian
+		culture = edokko
+		culture = hong_konger
+		culture = kinh
+	}
+}
+
+# Wears Chinese headgear.
+blg_headgear_chinese = {
+	OR = {
+		culture = edokko
+		culture = hong_konger
+		culture = kinh
+	}
+}
+
+# Wears Persian crown.
+blg_headgear_persian_crown = {
+	is_female = no
+	culture = tehrangeleno
+	OR = {
+		religion_group = christian
+		religion_group = cult_of_saints
+		religion_group = latter_day_saints
+		religion_group = oldworld
+	}
+}
+
+# These cultures use commmon headgear in addition for dukes.
+blg_common_ducal_headgear = {
+	always = no
+}
+
+# Custom cultures limited to default property set.
+blg_default_clothing = {
+	OR = {
+		culture_group = californian
+		culture_group = chicano
+		culture_group = mexicano
+		culture_group = plains
+		culture_group = plateau
+		culture_group = west_anglo
+		culture_group = texan_group
+		culture = rostmann
+		culture = dellsman
+		culture = mountainer
+		culture = coloradan
+		culture = filastino
+		culture = paiute
+		culture = motowner
+		culture = chiraqi
+	}
+}
+
+# Uses Merchant clothing set.
+blg_merchant_clothes = {
+	is_merchant_republic = yes
+	in_command = no
+	OR = {
+		culture_group = south_anglo
+		culture_group = californian
+		culture_group = mexicano
+		culture_group = chicano
+		culture_group = centrolatino
+		culture_group = costero
+		culture_group = caribeno
+		culture_group = andino
+		culture_group = louisianais
+		culture_group = orinocense
+		culture_group = mesoamerican
+		culture_group = mayan
+		culture_group = mesanglo
+		culture_group = andean
+		culture_group = arawak
+		culture_group = antillais
+		culture_group = caribbanglo
+		culture_group = northwest_coast
+		culture_group = anishinaabe
+		culture_group = athabaskan
+		culture_group = subarctic
+		culture_group = portuguese
+		culture_group = portunhol
+		culture_group = britannic
+		culture_group = maghreb
+		culture_group = guinean
+		culture_group = polynesian
+		culture_group = patagonian
+		culture_group = macaronesian
+	}
+}
+
+# Uses Merchant headgear set.
+blg_merchant_headgear = {
+	is_merchant_republic = yes
+	in_command = no
+	OR = {
+		culture_group = mid_atlantic
+		culture_group = gallomerican
+		culture_group = laurentian
+		culture_group = north_atlantic
+		culture_group = south_anglo
+		culture_group = californian
+		culture_group = west_anglo
+		culture_group = texan_group
+		culture_group = north_pacific
+		culture_group = rockland
+		culture_group = amerodeutsch
+		culture_group = upland
+		culture_group = mexicano
+		culture_group = chicano
+		culture_group = centrolatino
+		culture_group = costero
+		culture_group = caribeno
+		culture_group = andino
+		culture_group = louisianais
+		culture_group = orinocense
+		culture_group = plains
+		culture_group = eastern_woodlands
+		culture_group = plateau
+		culture_group = interior
+		culture_group = novorusskiy
+		culture_group = ozzi
+	}
+}
+
+# These cultures use higher tier headgear for independent dukes.
+blg_petty_king = {
+	OR = {
+		AND = {
+			real_tier = duke
+			independent = yes
+		}
+		spouse_even_if_dead = {
+			real_tier = duke
+			independent = yes
+		}
+	}
+
+	OR = {
+		culture = rostmann
+		culture = omedulac
+		culture = lacustrine
+		culture = motowner
+		culture = maritimer
+		culture = newfie
+		culture = inlander
+		culture = prairielander
+		culture = gwladfeg
+	}
+}
+
+# These crowns can be combined with French veils.
+blg_veiled_crown = {
+	OR = {
+		blg_culture_french = yes
+		culture = brazilian
+	}
+}
+
+### Culture groupings:
+
+blg_culture_plains_natives = {
+	OR = {
+		culture_group = plains
+		culture = paiute
+	}
+}
+
+# Uses afghan portraits.
+blg_culture_afghan = {
+	always = no
+}
+
+blg_culture_african = {
+	OR = {
+		culture_group = antillais
+		culture_group = caribbanglo
+		culture_group = caribeno
+		culture_group = mesanglo
+		culture_group = guinean
+		culture_group = macaronesian
+	}
+}
+
+blg_culture_cetic = {
+	OR = {
+		culture_group = californian
+		culture_group = chicano
+		culture_group = north_pacific
+		culture_group = polynesian
+		culture_group = ozzi
+		culture = edokko
+		culture = hong_konger
+		culture = kinh
+	}
+}
+
+# Chinese adjacent cultures.
+blg_culture_chinese = {
+	OR = {
+		culture = edokko
+		culture = hong_konger
+		culture = kinh
+	}
+}
+
+# Uses French veils.
+blg_culture_european = {
+	OR = {
+		culture_group = south_anglo
+		culture_group = texan_group
+		culture_group = mexicano
+		culture_group = chicano
+		culture_group = centrolatino
+		culture_group = costero
+		culture_group = louisianais
+		culture_group = andino
+		culture = brazilian
+	}
+}
+
+blg_culture_france = {
+	OR = {
+		culture_group = gallomerican
+		culture_group = louisianais
+	}
+}
+
+# Uses French headgear accessories.
+blg_culture_french = {
+	OR = {
+		culture = southron
+		culture = dixie
+		culture = gulfard
+		culture = tuskegean
+		culture = carpetbagger
+	}
+}
+
+# Uses Byzantine crowns.
+blg_culture_greek = {
+	always = no
+}
+
+blg_culture_iberian = {
+	always = no
+}
+
+blg_culture_israelite = {
+	always = no
+}
+
+blg_culture_italian = {
+	always = no
+}
+
+# Muslim style headgear.
+blg_culture_middleeast = {
+	OR = {
+		culture = anjalusi
+		culture = filastino
+		culture = chiraqi
+		culture = tehrangeleno
+		culture = prodnanici
+		culture = neoladino
+		culture = moroccan
+	}
+}
+
+blg_culture_midlands = {
+	OR = {
+		culture_group = amerodeutsch
+		culture_group = ameronordic
+		culture_group = west_anglo
+		culture_group = texan_group
+		culture_group = laurentian
+		culture_group = rockland
+		culture_group = upland
+	}
+}
+
+blg_culture_eastcoast = {
+	OR = {
+		culture_group = mid_atlantic
+		culture_group = north_atlantic
+		culture_group = gallomerican
+	}
+}
+
+blg_culture_roman = {
+	always = no
+}
+
+# Uses Saxon portraits.
+blg_culture_saxon = {
+	always = no
+}
+
+# Uses Sogdian portraits.
+blg_culture_sogdian = {
+	always = no
+}
+
+# Uses Somali portraits.
+blg_culture_somali = {
+	always = no
+}
+
+# West-African gold route cultures.
+blg_culture_west_african = {
+	always = no
+}
+
+# Uses West/South-Slavic headgear rules.
+blg_culture_west_slavic = {
+	OR = {
+		culture_group = antillais
+		culture_group = caribbanglo
+		culture_group = macaronesian
+		culture = maritimer
+		culture = quebecois
+		culture = acadien
+		culture = ontarois
+		culture = ontarian
+		culture = yankee
+	}
+}
+
+### Portrait overrides:
+
+blg_portrait_african = {
+	OR = {
+		portrait_culture_group = antillais
+		portrait_culture_group = caribbanglo
+		portrait_culture_group = macaronesian
+	}
+}
+
+blg_portrait_arabic = {
+	always = no
+}
+
+blg_portrait_baltic = {
+	always = no
+}
+
+blg_portrait_byzantine = {
+	OR = {
+		portrait_culture_group = portuguese
+		portrait_culture_group = portunhol
+		portrait_culture_group = patagonian
+	}
+}
+
+blg_portrait_celtic = {
+	portrait_culture_group = north_atlantic
+}
+
+blg_portrait_chinese = {
+	OR = {
+		portrait_culture_group = nihonjin
+		portrait_culture_group = canton
+	}
+}
+
+blg_portrait_east_slavic = {
+	OR = {
+		portrait_society = monastic_order_leibowitz
+		portrait_society = monastic_order_evangelical
+	}
+}
+
+blg_portrait_germanic = {
+	OR = {
+		portrait_culture_group = mid_atlantic
+		portrait_culture_group = gallomerican
+		portrait_culture_group = laurentian
+	}
+}
+
+blg_portrait_indian = {
+	OR = {
+		portrait_culture_group = malay
+		portrait_culture_group = viet
+		portrait_culture_group = filipino
+	}
+}
+
+blg_portrait_magyar = {
+	OR = {
+		portrait_culture_group = plains
+		portrait_culture_group = eastern_woodlands
+		portrait_culture_group = plateau
+		portrait_culture_group = interior
+		portrait_culture_group = ozzi
+	}
+}
+
+blg_portrait_middleeast = {
+	OR = {
+		portrait_culture_group = mesoamerican
+		portrait_culture_group = mayan
+		portrait_culture_group = mesanglo
+		portrait_culture_group = andean
+		portrait_culture_group = arawak
+		portrait_culture_group = maghreb
+		portrait_culture_group = guinean
+		portrait_culture_group = polynesian
+	}
+}
+
+blg_portrait_nordic = {
+	portrait_culture_group = ameronordic
+}
+
+blg_portrait_mediterranean = {
+	OR = {
+		portrait_culture_group = south_anglo
+		portrait_culture_group = californian
+		portrait_culture_group = mexicano
+		portrait_culture_group = chicano
+		portrait_culture_group = centrolatino
+		portrait_culture_group = costero
+		portrait_culture_group = caribeno
+		portrait_culture_group = andino
+		portrait_culture_group = louisianais
+		portrait_culture_group = orinocense
+	}
+}
+
+blg_portrait_roman = {
+	portrait_culture_group = britannic
+}
+
+blg_portrait_slavic = {
+	OR = {
+		portrait_culture_group = west_anglo
+		portrait_culture_group = texan_group
+		portrait_culture_group = north_pacific
+		portrait_culture_group = rockland
+		portrait_culture_group = amerodeutsch
+		portrait_culture_group = upland
+		portrait_culture_group = novorusskiy
+	}
+}
+
+blg_portrait_steppes = {
+	OR = {
+		portrait_culture_group = northwest_coast
+		portrait_culture_group = anishinaabe
+		portrait_culture_group = athabaskan
+		portrait_culture_group = subarctic
+	}
+}

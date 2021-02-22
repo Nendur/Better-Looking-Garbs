@@ -1,0 +1,150 @@
+# p8 Red dots - Tilaka
+8 = {
+	0 = { # blank
+		factor = 20
+		modifier = {
+			factor = 10000
+			NOT = { religion = hindu }
+		}
+
+		modifier = {
+			factor = 0.01
+			OR = {
+				blg_priest = yes
+				is_ascetic_trigger = yes
+				trait = zealous
+				has_minor_title = title_guru
+				society_member_of = monastic_order_hindu
+				trait = on_indian_pilgrimage
+				has_character_flag = diwali_feast_begun
+				has_character_flag = attending_diwali_feast
+			}
+		}
+	}
+
+	1 = {
+		factor = 5
+		trigger = {
+			OR = {
+				is_ascetic_trigger = yes
+				trait = zealous
+				society_member_of = monastic_order_hindu
+			}
+		}
+	}
+
+	2 = {
+		factor = 5
+		trigger = {
+			OR = {
+				is_ascetic_trigger = yes
+				trait = zealous
+				society_member_of = monastic_order_hindu
+			}
+		}
+	}
+
+	3 = {
+		factor = 5
+		trigger = {
+			OR = {
+				is_ascetic_trigger = yes
+				trait = zealous
+				society_member_of = monastic_order_hindu
+			}
+		}
+	}
+
+	4 = {
+		factor = 5
+		trigger = {
+			OR = {
+				is_ascetic_trigger = yes
+				trait = zealous
+				society_member_of = monastic_order_hindu
+			}
+		}
+	}
+
+	5 = {
+		factor = 5
+		trigger = {
+			OR = {
+				is_ascetic_trigger = yes
+				trait = zealous
+				society_member_of = monastic_order_hindu
+			}
+		}
+	}
+
+	6 = {
+		factor = 1
+	}
+
+	7 = {
+		factor = 1
+	}
+
+	8 = {
+		factor = 1
+	}
+
+	9 = {
+		factor = 1
+	}
+
+	10 = {
+		factor = 1
+	}
+
+	11 = {
+		factor = 1
+	}
+
+	12 = {
+		factor = 1
+	}
+
+	13 = {
+		factor = 1
+	}
+
+	14 = {
+		factor = 1
+	}
+	15 = {
+		factor = 1
+	}
+
+	16 = {
+		factor = 1
+	}
+
+	17 = {
+		factor = 1
+	}
+
+	18 = {
+		factor = 1
+	}
+
+	19 = {
+		factor = 1
+	}
+
+	20 = {
+		factor = 1
+	}
+
+	21 = {
+		factor = 1
+	}
+
+	22 = {
+		factor = 1
+	}
+
+	23 = {
+		factor = 1
+	}
+}

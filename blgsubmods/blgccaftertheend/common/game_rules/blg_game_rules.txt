@@ -1,0 +1,59 @@
+blg_child_birth = {
+	name = "BLG_CHILD_BIRTH"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = on
+		text = "RULE_OPTION_DEFAULT"
+		desc = "BLG_CHILD_BIRTH_ON_DESC"
+	}
+	option = {
+		name = limited
+		text = "RULE_OPTION_LIMITED"
+		desc = "BLG_CHILD_BIRTH_LIMITED_DESC"
+	}
+	option = {
+		name = primary
+		text = "RULE_OPTION_PRIMARY_PARENT"
+		desc = "BLG_CHILD_BIRTH_PRIMARY_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "BLG_CHILD_BIRTH_OFF_DESC"
+	}
+}
+
+blg_children = {
+	name = "BLG_CHILDREN"
+	group = "BETTER_LOOKING_GARBS"
+	option = {
+		name = 16
+		text = "RULE_OPTION_BLG_CHILDREN_16_SCALING"
+		desc = "BLG_CHILDREN_SCALING"
+	}
+	option = {
+		name = 15
+		text = "RULE_OPTION_BLG_CHILDREN_15_SCALING"
+		desc = "BLG_CHILDREN_SCALING"
+	}
+	option = {
+		name = 14
+		text = "RULE_OPTION_BLG_CHILDREN_14_SCALING"
+		desc = "BLG_CHILDREN_SCALING"
+	}
+	option = {
+		name = 16noscale
+		text = "RULE_OPTION_BLG_CHILDREN_16_NOSCALING"
+		desc = "BLG_CHILDREN_NOSCALING"
+	}
+	option = {
+		name = 15noscale
+		text = "RULE_OPTION_BLG_CHILDREN_15_NOSCALING"
+		desc = "BLG_CHILDREN_NOSCALING"
+	}
+	option = {
+		name = 14noscale
+		text = "RULE_OPTION_BLG_CHILDREN_14_NOSCALING"
+		desc = "BLG_CHILDREN_NOSCALING"
+	}
+}

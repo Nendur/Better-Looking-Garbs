@@ -1,0 +1,39 @@
+andeangfx = {
+	skin_tone = 2
+}
+hinduafricangfx = {
+	skin_tone = 3
+}
+cubanogfx = {
+	skin_tone = 1
+}
+metisgfx = {
+	skin_tone = 0
+}
+brazilgfx = {
+	skin_tone = 1
+}
+cajungfx = {
+	skin_tone = 1
+}
+creolegfx = {
+	skin_tone = 3
+}
+mesanglogfx = {
+	skin_tone = 2
+}
+yankeegfx = {
+	skin_tone = 0
+}
+maritimergfx = {
+	skin_tone = 0
+}
+cascadiangfx = {
+	skin_tone = 0
+}
+yukonergfx = {
+	skin_tone = 0
+}
+llanerogfx = {
+	skin_tone = 2
+}

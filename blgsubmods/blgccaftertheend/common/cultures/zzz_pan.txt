@@ -1,0 +1,83 @@
+britannic = {
+	british = {
+		graphical_cultures = { romanobritishgfx englishgfx }
+		unit_graphical_cultures = { romangfx englishgfx }
+	}
+}
+
+patagonian = {
+	gwladfeg = {
+		graphical_cultures = { bretongfx celticgfx }
+		unit_graphical_cultures = { celticgfx }
+	}
+	chileno = {
+		graphical_cultures = { brazilgfx byzantinegfx }
+	}
+}
+
+guinean = {
+	graphical_cultures = { muslimgfx }
+
+	nigerian = {
+		graphical_cultures = { westafricangfx africangfx }
+	}
+	liberian = {
+		graphical_cultures = { nubiangfx tuskegeangfx africangfx }
+	}
+}
+
+malay = {
+	graphical_cultures = { southindiangfx indiangfx muslimgfx }
+
+	singaporean = {
+		graphical_cultures = { khmergfx turkishgfx }
+	}
+}
+
+canton = {
+	graphical_cultures = { chinesegfx mongolgfx indiangfx muslimgfx }
+
+	hong_konger = {
+		graphical_cultures = { chinesegfx turkishgfx }
+	}
+}
+
+nihonjin = {
+	graphical_cultures = { chinesegfx mongolgfx indiangfx muslimgfx }
+
+	edokko = {
+		graphical_cultures = { chinesegfx turkishgfx }
+		unit_graphical_cultures = { }
+	}
+}
+
+novorusskiy = {
+	graphical_cultures = { byzantinegfx easterngfx }
+}
+
+viet = {
+	graphical_cultures = { chinesegfx mongolgfx indiangfx muslimgfx }
+
+	kinh = {
+		graphical_cultures = { chinesegfx turkishgfx }
+	}
+}
+
+filipino = {
+	graphical_cultures = { indiangfx muslimgfx }
+
+	tagalog = {
+		graphical_cultures = { khmergfx southindiangfx }
+	}
+}
+
+polynesian = {
+	graphical_cultures = { indiangfx muslimgfx }
+
+	hawaiian = {
+		graphical_cultures = { tangutgfx brownpacificgfx }
+	}
+	maori = {
+		graphical_cultures = { assamesegfx brownpacificgfx }
+	}
+}

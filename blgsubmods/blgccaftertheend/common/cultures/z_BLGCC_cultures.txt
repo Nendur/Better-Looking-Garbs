@@ -1,0 +1,542 @@
+reference_culture = {
+	white = {
+		graphical_cultures = { westerngfx }
+	}
+	black = {
+		graphical_cultures = { centralafricangfx africangfx muslimgfx }
+	}
+	brown = {
+		graphical_cultures = { muslimgfx }
+	}
+	native = {
+		graphical_cultures = { navajogfx mesoamericangfx muslimgfx }
+	}
+	chinese = {
+		graphical_cultures = { chinogfx chinesegfx }
+	}
+
+	english = {
+		graphical_cultures = { normangfx englishgfx }
+	}
+	french = {
+		graphical_cultures = { quebecoisgfx frankishgfx }
+	}
+	celtic = {
+		graphical_cultures = { maritimergfx celticgfx }
+	}
+}
+
+amerodeutsch = {
+	deitsch = {
+		graphical_cultures = { westerngfx }
+	}
+	rostmann = {
+		graphical_cultures = { greatlakesgfx }
+		unit_graphical_cultures = { }
+	}
+	plautdietsch = {
+		graphical_cultures = { westerngfx }
+	}
+	yiddish = {
+		graphical_cultures = { ashkenazigfx englishgfx germangfx }
+	}
+}
+
+andean = {
+	graphical_cultures = { persiangfx muslimgfx }
+
+	muisca = {
+		graphical_cultures = { andeangfx mesoamericangfx }
+	}
+	quechua = {
+		graphical_cultures = { andeangfx mesoamericangfx }
+	}
+}
+
+andino = {
+	graphical_cultures = { southerngfx westerngfx }
+
+	paisa = {
+		graphical_cultures = { basquegfx }
+	}
+	gocho = {
+		graphical_cultures = { basquegfx }
+	}
+	rolo = {
+		graphical_cultures = { basquegfx }
+	}
+	valluno = {
+		graphical_cultures = { basquegfx }
+	}
+}
+
+anishinaabe = {
+	graphical_cultures = { siberiangfx ugricgfx mongolgfx steppegfx muslimgfx }
+
+	ojibwe = {
+		graphical_cultures = { northernnativegfx }
+	}
+	saulteaux = {
+		graphical_cultures = { northernnativegfx }
+	}
+}
+
+arawak = {
+	wayuu = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	lokono = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+}
+
+athabaskan = {
+	graphical_cultures = { siberiangfx ugricgfx mongolgfx steppegfx muslimgfx }
+}
+
+californian = {
+	graphical_cultures = { chinesegfx westerngfx }
+
+	angeleno = {
+		graphical_cultures = { brownpacificgfx pagangfx }
+		unit_graphical_cultures = { chinesegfx arabicgfx muslimgfx }
+	}
+	bayfolk = {
+		graphical_cultures = { whitepacificgfx pagangfx }
+		unit_graphical_cultures = { chinesegfx arabicgfx muslimgfx }
+	}
+	valleyan = {
+		graphical_cultures = { whitepacificgfx pagangfx }
+		unit_graphical_cultures = { chinesegfx arabicgfx muslimgfx }
+	}
+	calaotian = {
+		graphical_cultures = { chinesepacificgfx chinesegfx mongolgfx }
+		unit_graphical_cultures = { chinesegfx arabicgfx muslimgfx }
+	}
+	anjalusi = {
+		graphical_cultures = { anjalusigfx andalusiangfx arabicgfx muslimgfx }
+		unit_graphical_cultures = { berbergfx arabicgfx muslimgfx }
+	}
+	tehrangeleno = {
+		graphical_cultures = { persiangfx andalusiangfx arabicgfx muslimgfx }
+		unit_graphical_cultures = { berbergfx arabicgfx muslimgfx }
+	}
+}
+
+caribbanglo = {
+	graphical_cultures = { southindiangfx westerngfx }
+
+	sheban = {
+		graphical_cultures = { nubiangfx africangfx }
+	}
+	guyanese = {
+		graphical_cultures = { hinduafricangfx africangfx }
+	}
+	sranan = {
+		graphical_cultures = { hinduafricangfx africangfx }
+	}
+}
+
+caribeno = {
+	graphical_cultures = { siciliangfx southerngfx indiangfx }
+
+	cubano = {
+		graphical_cultures = { cubanogfx }
+		unit_graphical_cultures = { indiangfx }
+	}
+	quisqueyano = {
+		graphical_cultures = { caribenogfx }
+		unit_graphical_cultures = { indiangfx }
+	}
+	boricua = {
+		graphical_cultures = { caribenogfx }
+		unit_graphical_cultures = { indiangfx }
+	}
+	nuyorican = {
+		graphical_cultures = { caribenogfx }
+		unit_graphical_cultures = { indiangfx }
+	}
+	yanquito = {
+		graphical_cultures = { caribenogfx }
+	}
+	papiamen = {
+		graphical_cultures = { caribenogfx }
+		unit_graphical_cultures = { indiangfx }
+	}
+}
+
+centrolatino = {
+	graphical_cultures = { southerngfx westerngfx }
+
+	filastino = {
+		graphical_cultures = { anjalusigfx levantinegfx muslimgfx }
+		unit_graphical_cultures = { berbergfx }
+	}
+}
+
+chicano = {
+	graphical_cultures = { mexicangfx serbsouthslavicgfx southerngfx }
+
+	neomexicano = {
+		graphical_cultures = { vaquerogfx cowboygfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+	californio = {
+		graphical_cultures = { brownpacificgfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+	chino = {
+		graphical_cultures = { chinogfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+}
+
+costero = {
+	graphical_cultures = { southerngfx westerngfx }
+}
+
+eastern_woodlands = {
+	graphical_cultures = { nativeamericangfx pagangfx easterngfx }
+
+	cherokee = {
+		graphical_cultures = { cherokeegfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	muscogee = {
+		graphical_cultures = { cherokeegfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	iroquois = {
+		graphical_cultures = { cherokeegfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	catawba = {
+		graphical_cultures = { cherokeegfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+}
+
+gallomerican = {
+	graphical_cultures = { canadiangfx magyargfx gallicgfx easterngfx }
+
+	metis = {
+		graphical_cultures = { metisgfx haidagfx canadiangfx mongolgfx celticgfx }
+	}
+	ontarois = {
+		unit_graphical_cultures = { }
+	}
+	omedulac = {
+		graphical_cultures = { gallicgfx greatlakesgfx }
+	}
+}
+
+interior = {
+	graphical_cultures = { nativeamericangfx mongolgfx steppegfx muslimgfx }
+
+	nez_perce = {
+		graphical_cultures = { northernnativegfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	ktunaxa = {
+		graphical_cultures = { northernnativegfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	paiute = {
+		graphical_cultures = { nativeamericangfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+}
+
+laurentian = {
+	graphical_cultures = { greatlakesgfx westerngfx }
+
+	lacustrine = {
+		graphical_cultures = { greatlakesgfx magyargfx gallicgfx easterngfx }
+		unit_graphical_cultures = { }
+	}
+	ontarian = {
+		graphical_cultures = { canadiangfx magyargfx gallicgfx easterngfx }
+		unit_graphical_cultures = { }
+	}
+	chicagoan = {
+		graphical_cultures = { chicagoangfx greatlakesgfx germangfx }
+		unit_graphical_cultures = { easterngfx }
+	}
+	motowner = {
+		graphical_cultures = { motownergfx germangfx }
+		unit_graphical_cultures = { easterngfx }
+	}
+	chiraqi = {
+		graphical_cultures = { chiraqigfx andalusiangfx muslimgfx }
+		unit_graphical_cultures = { levantinegfx }
+	}
+}
+
+louisianais = {
+	graphical_cultures = { occitangfx frankishgfx }
+
+	cajun = {
+		graphical_cultures = { cajungfx }
+	}
+	creole = {
+		graphical_cultures = { creolegfx }
+		unit_graphical_cultures = { }
+	}
+}
+
+mesanglo = {
+	graphical_cultures = { tuskegeangfx africangfx southindiangfx westerngfx }
+
+	miskito = {
+		graphical_cultures = { mesanglogfx mesoamericangfx mexicangfx muslimgfx }
+		unit_graphical_cultures = { southindiangfx indiangfx }
+	}
+	garinagu = {
+		graphical_cultures = { creolegfx africangfx }
+	}
+	kriol = {
+		graphical_cultures = { creolegfx africangfx }
+	}
+	raizal = {
+		graphical_cultures = { creolegfx africangfx }
+	}
+}
+
+mexicano = {
+	graphical_cultures = { mexicangfx serbsouthslavicgfx southerngfx }
+
+	norteno = {
+		graphical_cultures = { vaquerogfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+	tapatio = {
+		graphical_cultures = { mexicangfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+	jarocho = {
+		graphical_cultures = { mexicangfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+	sonorense = {
+		graphical_cultures = { vaquerogfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+	chilango = {
+		graphical_cultures = { mexicangfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+}
+
+mid_atlantic = {
+	graphical_cultures = { englishgfx germangfx }
+
+	beltway = {
+		graphical_cultures = { englishgfx }
+		unit_graphical_cultures = { }
+	}
+	gothamite = {
+		graphical_cultures = { englishgfx }
+		unit_graphical_cultures = { }
+	}
+	hudsonian = {
+		graphical_cultures = { normangfx }
+	}
+	delawarean = {
+		graphical_cultures = { englishgfx }
+	}
+}
+
+north_atlantic = {
+	graphical_cultures = { bretongfx westerngfx }
+
+	yankee = {
+		graphical_cultures = { yankeegfx pagangfx saxongfx }
+	}
+	maritimer = {
+		graphical_cultures = { maritimergfx canadiangfx gallicgfx easterngfx }
+	}
+	new_english = {
+		graphical_cultures = { romanobritishgfx englishgfx }
+		unit_graphical_cultures = { romangfx englishgfx }
+	}
+}
+
+north_pacific = {
+	graphical_cultures = { balticgfx easterngfx }
+
+	siskiyouan = {
+		graphical_cultures = { cascadiangfx pagangfx }
+		unit_graphical_cultures = { }
+	}
+	cascadian = {
+		graphical_cultures = { cascadiangfx pagangfx }
+		unit_graphical_cultures = { }
+	}
+	canuck = {
+		graphical_cultures = { cascadiangfx }
+		unit_graphical_cultures = { }
+	}
+	inlander = {
+		graphical_cultures = { cascadiangfx pagangfx }
+		unit_graphical_cultures = { }
+	}
+	alaskan = {
+		graphical_cultures = { yukonergfx canadiangfx }
+		unit_graphical_cultures = { }
+	}
+	yukoner = {
+		graphical_cultures = { yukonergfx canadiangfx }
+		unit_graphical_cultures = { }
+	}
+}
+
+northwest_coast = {
+	graphical_cultures = { northernnativegfx sogdiangfx mongolgfx muslimgfx }
+}
+
+orinocense = {
+	graphical_cultures = { andalusiangfx southerngfx }
+
+	bolivarense = {
+		graphical_cultures = { mesoamericangfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	llanero = {
+		graphical_cultures = { llanerogfx mexicangfx berbergfx }
+		unit_graphical_cultures = { levantinegfx muslimgfx }
+	}
+}
+
+plains = {
+	graphical_cultures = { nativeamericangfx cumangfx mongolgfx mesoamericangfx muslimgfx }
+
+	comanche = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	sioux = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	cree = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	blackfoot = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	crow = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	cheyenne = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+}
+
+plateau = {
+	graphical_cultures = { nativeamericangfx afghangfx cumangfx mongolgfx mesoamericangfx muslimgfx }
+
+	navajo = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	hopi = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	apache = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+}
+
+portuguese = {
+	graphical_cultures = { croatsouthslavicgfx southerngfx }
+
+	brazilian = {
+		graphical_cultures = { brazilgfx }
+		unit_graphical_cultures = { byzantinegfx }
+	}
+	ribeirinho = {
+		graphical_cultures = { mesoamericangfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+}
+
+portunhol = {
+	graphical_cultures = { southerngfx }
+
+	amazonense = {
+		graphical_cultures = { mesoamericangfx andalusiangfx }
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	gaucho = {
+		graphical_cultures = { dalmatiangfx }
+		unit_graphical_cultures = { byzantinegfx }
+	}
+}
+
+rockland = {
+	graphical_cultures = { saxongfx }
+
+	prairielander = {
+		graphical_cultures = { yukonergfx easterngfx }
+		unit_graphical_cultures = { saxongfx }
+	}
+	utahn = {
+		graphical_cultures = { germangfx }
+	}
+}
+
+south_anglo = {
+	graphical_cultures = { dixiegfx frankishgfx westerngfx }
+
+	southron = {
+		unit_graphical_cultures = { italiangfx }
+	}
+	dixie = {
+		unit_graphical_cultures = { italiangfx }
+	}
+	gulfard = {
+		unit_graphical_cultures = { italiangfx }
+	}
+	tuskegean = {
+		graphical_cultures = { tuskegeangfx siciliangfx africangfx }
+		unit_graphical_cultures = { italiangfx }
+	}
+	gullah = {
+		graphical_cultures = { creolegfx tuskegeangfx siciliangfx africangfx }
+	}
+	neomoor = {
+		graphical_cultures = { outremergfx siciliangfx andalusiangfx muslimgfx }
+		unit_graphical_cultures = { }
+	}
+	carpetbagger = {
+		unit_graphical_cultures = { easterngfx }
+	}
+}
+
+subarctic = {
+	graphical_cultures = { siberiangfx ugricgfx mongolgfx steppegfx muslimgfx }
+}
+
+texan_group = {
+	graphical_cultures = { cowboygfx germangfx westerngfx }
+
+	tejano = {
+		graphical_cultures = { vaquerogfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+}
+
+upland = {
+	graphical_cultures = { dutchgfx germangfx westerngfx }
+
+	appalachian = {
+		unit_graphical_cultures = { easterngfx }
+	}
+	melungeon = {
+		unit_graphical_cultures = { easterngfx }
+	}
+	riverlander = {
+		unit_graphical_cultures = { }
+	}
+}
+
+west_anglo = {
+	graphical_cultures = { dutchgfx germangfx westerngfx }
+}
