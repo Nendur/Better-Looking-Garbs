@@ -2,6 +2,14 @@
 
 ### Diseases:
 
+blg_bleeding = {
+	OR = {
+		has_character_modifier = tortured_prisoner
+		has_character_modifier = tortured_witch
+		has_character_modifier = struck_by_lightning
+	}
+}
+
 # Blind, natural or maimed.
 blg_blind = {
 	OR = {
@@ -23,6 +31,7 @@ blg_bubonic = {
 # Drooling spit.
 blg_drooling = {
 	OR = {
+		trait = incapable
 		trait = infirm
 		trait = rabies
 		has_character_modifier = dw_corruption_major

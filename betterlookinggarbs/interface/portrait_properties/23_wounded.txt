@@ -7,8 +7,8 @@
 				blg_wounded_alive = no
 				NOR = {
 					has_injury_trigger = yes
-					trait = maimed
 					trait = disfigured
+					trait = maimed
 					has_character_modifier = black_eye
 					has_character_modifier = concussion
 				}
@@ -69,8 +69,8 @@
 
 			NOR = {
 				trait = severely_injured
-				trait = maimed
 				trait = disfigured
+				trait = maimed
 				has_character_modifier = concussion
 			}
 
@@ -83,15 +83,15 @@
 		}
 	}
 
-	4 = { # d - Cheek
+	4 = { # d - Scrathes
 		factor = 1
 		trigger = {
 			trait = wounded
 
 			NOR = {
 				trait = severely_injured
-				trait = maimed
 				trait = disfigured
+				trait = maimed
 				has_character_modifier = concussion
 			}
 
@@ -99,25 +99,86 @@
 		}
 	}
 
-	5 = { # e - Eye
+	5 = { # e - Cheek
 		factor = 1
 		trigger = {
-			OR = {
+			trait = wounded
+
+			NOR = {
 				trait = severely_injured
-				trait = maimed
 				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
 			}
 
 			blg_wounded_alive = yes
 		}
+	}
 
-		modifier = {
-			factor = 50
-			trait = one_eyed
+	6 = { # f - Bloody nose
+		factor = 1
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
 		}
 	}
 
-	6 = { # f - Bandaged head
+	7 = { # g - Busted lip
+		factor = 1
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	8 = { # h - Forehead cut
+		factor = 1
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	9 = { # i - Jaw cut
+		factor = 1
+		trigger = {
+			has_injury_trigger = yes
+
+			NOR = {
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	10 = { # j - Bandaged head
 		factor = 1
 		trigger = {
 			OR = {
@@ -137,15 +198,14 @@
 		}
 	}
 
-	7 = { # g - Chin
+	11 = { # k - Cheek cut
 		factor = 1
 		trigger = {
-			trait = wounded
+			has_injury_trigger = yes
 
 			NOR = {
-				trait = severely_injured
-				trait = maimed
 				trait = disfigured
+				trait = maimed
 				has_character_modifier = concussion
 			}
 
@@ -153,29 +213,13 @@
 		}
 	}
 
-	8 = { # h - Forehead
-		factor = 1
-		trigger = {
-			trait = wounded
-
-			NOR = {
-				trait = severely_injured
-				trait = maimed
-				trait = disfigured
-				has_character_modifier = concussion
-			}
-
-			blg_wounded_alive = yes
-		}
-	}
-
-	9 = { # i - Burned
+	12 = { # l - Eye
 		factor = 1
 		trigger = {
 			OR = {
 				trait = severely_injured
-				trait = maimed
 				trait = disfigured
+				trait = maimed
 			}
 
 			blg_wounded_alive = yes
@@ -187,12 +231,86 @@
 		}
 	}
 
-	10 = { # j - Disfigured
+	13 = { # m - Burned
 		factor = 1
 		trigger = {
 			OR = {
-				trait = maimed
+				trait = severely_injured
 				trait = disfigured
+				trait = maimed
+			}
+
+			blg_wounded_alive = yes
+		}
+
+		modifier = {
+			factor = 50
+			trait = one_eyed
+		}
+	}
+
+	14 = { # n - Mangled jaw
+		factor = 1
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	15 = { # o - Mangled nose
+		factor = 1
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	16 = { # p - Disfigured nose
+		factor = 1
+		trigger = {
+			OR = {
+				trait = disfigured
+				trait = maimed
+			}
+		}
+	}
+
+	17 = { # q - Disfigured lip
+		factor = 1
+		trigger = {
+			OR = {
+				trait = disfigured
+				trait = maimed
+			}
+		}
+	}
+
+	18 = { # r - Disfigured ear
+		factor = 1
+		trigger = {
+			OR = {
+				trait = disfigured
+				trait = maimed
+			}
+		}
+	}
+
+	19 = { # s - Disfigured forehead
+		factor = 1
+		trigger = {
+			OR = {
+				trait = disfigured
+				trait = maimed
 			}
 		}
 	}

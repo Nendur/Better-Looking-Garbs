@@ -782,6 +782,14 @@ namespace BetterLookingGarbsInstall
                     log.Write("Mythos compatibility add-on installed.");
                     InstallAnAddon("blgccmythos");
                 }
+                if ((Directory.Exists(Path.Combine(mods, "After the End Fan Fork")) ||
+                    File.Exists(Path.Combine(mods, "aftertheendfanfork.zip")) ||
+                    File.Exists(Path.Combine(mods, "blgccaftertheend.mod"))) &&
+                    !File.Exists(Path.Combine(mods, "blgccaftertheend.zip")))
+                {
+                    log.Write("After the End compatibility add-on installed.");
+                    InstallAnAddon("blgccaftertheend");
+                }
                 if ((Directory.Exists(Path.Combine(mods, "Rise to Power")) ||
                     File.Exists(Path.Combine(mods, "risetopower.zip")) ||
                     File.Exists(Path.Combine(mods, "blgrisetopower.mod"))) &&

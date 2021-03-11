@@ -145,11 +145,7 @@
 		factor = 3
 		trigger = {
 			OR = {
-				has_job_title = job_spymaster
-				AND = {
-					intrigue = 12
-					lower_real_tier_than = duke
-				}
+				blg_clothes_intrigue = yes
 				is_variable_equal = { which = ca_clothes value = 10 }
 			}
 		}

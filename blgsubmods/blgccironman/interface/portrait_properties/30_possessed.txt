@@ -41,7 +41,6 @@
 			OR = {
 				has_character_modifier = wolf_blood
 				has_character_modifier = lycanthropy
-				culture_group = dragon_group
 			}
 
 			NOR = {

@@ -217,6 +217,20 @@ blg_headgear_military = {
 	}
 }
 
+# Dress shady.
+blg_headgear_intrigue = {
+	OR = {
+		AND = {
+			has_job_title = job_spymaster
+			lower_real_tier_than = king
+		}
+		AND = {
+			intrigue >= 16
+			lower_real_tier_than = duke
+		}
+	}
+}
+
 # More common to cover hair.
 blg_headgear_covered = {
 	true_religion_scope = {
@@ -295,5 +309,16 @@ blg_clothes_military = {
 			blg_mercenary_fleet = no
 		}
 		employer = { blg_holy_order = yes }
+	}
+}
+
+# Dress shady.
+blg_clothes_intrigue = {
+	OR = {
+		has_job_title = job_spymaster
+		AND = {
+			intrigue = 12
+			lower_real_tier_than = duke
+		}
 	}
 }

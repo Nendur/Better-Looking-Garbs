@@ -111,7 +111,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_boils"
 		texturefile = "gfx\\characters\\shared\\boils.dds"
-		noOfFrames = 7
+		noOfFrames = 9
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -181,7 +181,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_black_eye"
 		texturefile = "gfx\\characters\\shared\\black_eye.dds"
-		noOfFrames = 11
+		noOfFrames = 20
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -321,6 +321,80 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
+### CREATURE SHARED ####
+
+	spriteType = {
+		name = "GFX_creature_boils"
+		texturefile = "gfx\\characters\\creature\\creature_boils.dds"
+		noOfFrames = 8
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_creature_blinded_eyes"
+		texturefile = "gfx\\characters\\creature\\creature_blinded_eyes.dds"
+		noOfFrames = 9
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_creature_black_eye"
+		texturefile = "gfx\\characters\\creature\\creature_black_eye.dds"
+		noOfFrames = 20
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_creature_tattoos"
+		texturefile = "gfx\\characters\\creature\\creature_tattoos.dds"
+		noOfFrames = 25
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_creature_warpaint"
+		texturefile = "gfx\\characters\\creature\\creature_warpaint.dds"
+		noOfFrames = 9
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_creature_pale"
+		texturefile = "gfx\\characters\\creature\\creature_pale.dds"
+		noOfFrames = 2
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_creature_harelip"
+		texturefile = "gfx\\characters\\creature\\creature_harelip.dds"
+		noOfFrames = 2
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_creature_possessed"
+		texturefile = "gfx\\characters\\creature\\creature_possessed.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_one_eye_possessed"
+		texturefile = "gfx\\characters\\creature\\one_eye_possessed.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
 ### BACKGROUNDS ####
 
 	spriteType = {
@@ -391,7 +465,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_religious_male_clothes"
-		texturefile = "gfx\\characters\\religious_male_clothes.dds"
+		texturefile = "gfx\\characters\\religious\\religious_male_clothes.dds"
 		noOfframes = 18
 		norefcount = yes
 		can_be_lowres = yes
@@ -399,7 +473,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_religious_male_clothes_behind"
-		texturefile = "gfx\\characters\\religious_male_clothes_behind.dds"
+		texturefile = "gfx\\characters\\religious\\religious_male_clothes_behind.dds"
 		noOfframes = 18
 		norefcount = yes
 		can_be_lowres = yes
@@ -407,7 +481,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_religious_male_headgear"
-		texturefile = "gfx\\characters\\religious_male_headgear.dds"
+		texturefile = "gfx\\characters\\religious\\religious_male_headgear.dds"
 		noOfframes = 18
 		norefcount = yes
 		can_be_lowres = yes
@@ -415,7 +489,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_religious_male_headgear_behind"
-		texturefile = "gfx\\characters\\religious_male_headgear_behind.dds"
+		texturefile = "gfx\\characters\\religious\\religious_male_headgear_behind.dds"
 		noOfframes = 18
 		norefcount = yes
 		can_be_lowres = yes
@@ -425,7 +499,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_religious_female_clothes"
-		texturefile = "gfx\\characters\\religious_female_clothes.dds"
+		texturefile = "gfx\\characters\\religious\\religious_female_clothes.dds"
 		noOfframes = 18
 		norefcount = yes
 		can_be_lowres = yes
@@ -433,7 +507,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_religious_female_clothes_behind"
-		texturefile = "gfx\\characters\\religious_female_clothes_behind.dds"
+		texturefile = "gfx\\characters\\religious\\religious_female_clothes_behind.dds"
 		noOfframes = 18
 		norefcount = yes
 		can_be_lowres = yes
@@ -441,7 +515,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_religious_female_headgear"
-		texturefile = "gfx\\characters\\religious_female_headgear.dds"
+		texturefile = "gfx\\characters\\religious\\religious_female_headgear.dds"
 		noOfframes = 18
 		norefcount = yes
 		can_be_lowres = yes
@@ -449,7 +523,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_religious_female_headgear_behind"
-		texturefile = "gfx\\characters\\religious_female_headgear_behind.dds"
+		texturefile = "gfx\\characters\\religious\\religious_female_headgear_behind.dds"
 		noOfframes = 18
 		norefcount = yes
 		can_be_lowres = yes

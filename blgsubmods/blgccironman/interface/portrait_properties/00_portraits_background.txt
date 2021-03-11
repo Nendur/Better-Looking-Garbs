@@ -238,92 +238,45 @@
 		}
 	}
 
-	5 = { # e - Tavern
-		factor = 1
+	5 = { # e - Study
+		factor = 3
 		hide_layers = { 38 = {} }
-		hide_layers = { 42 = {} }
-		modifier = {
-			factor = 100
+		trigger = {
 			OR = {
-				has_character_flag = party_host
-				has_character_flag = party_guest
-				has_character_flag = host_feast_started
-				has_character_flag = guest_feast_started
-				has_character_flag = blot_feast
-				has_character_flag = blot_feast_vassal
-				has_character_flag = holding_ukon_juhla
-				has_character_flag = ukon_juhla_feast_vassal
-				has_character_flag = holding_uzgavenes
-				has_character_flag = uzgavenes_feast_vassal
-				has_character_flag = holding_jarilo
-				has_character_flag = holding_passover
-				has_character_flag = attending_passover
-				has_character_flag = jarilo_feast_vassal
-				has_character_flag = diwali_feast_begun
-				has_character_flag = attending_diwali_feast
-				has_character_flag = zun_feast_begun
-				has_character_flag = attending_zun_feast
-				has_character_flag = holding_sadah_feast
-				has_character_flag = attending_sadah
-				has_character_flag = holding_bema
-				has_character_flag = attending_bema
-				has_character_flag = flag_holding_great_tribal_festival
-				has_any_opinion_modifier = opinion_great_tribal_festival_guest
+				has_focus = focus_scholarship
+				has_lifestyle_learning_trigger = yes
+				trait = scholar
+				trait = hafiz
+				trait = administrator
+				trait = strategist
+				trait = theologian
+				trait = physician
+				trait = poet
+				trait = gamer
+				trait = architect
 			}
-		}
 
-		modifier = {
-			factor = 10
-			OR = {
-				has_focus = focus_carousing
-				trait = drunkard
-				trait = hedonist
-				trait = decadent
-			}
-		}
-
-		modifier = {
-			factor = 4
-			OR = {
-				trait = gluttonous
-				trait = lustful
-				trait = gregarious
-				trait = socializer
-			}
-		}
-
-		modifier = {
-			factor = 0.1
-			OR = {
-				trait = temperate
-				trait = shy
-				has_character_flag = ramadan
-			}
-		}
-
-		modifier = {
-			factor = 0.25
-			OR = {
-				higher_real_tier_than = duke
-				is_or_was_offmap_power_ruler = yes
-				spouse_even_if_dead = {
-						OR = {
-									higher_real_tier_than = duke
-									is_or_was_offmap_power_ruler = yes
-						}
-				}
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
-			}
-			NAND = {
-				is_republic = yes
-				NOT = { government = confucian_bureaucracy }
-			}
-			NOT = { mercenary = yes }
-			NOT = { holy_order = yes }
 			NOR = {
-				trait = peasant_leader
-				trait = heresiarch
+				trait = in_hiding
+				trait = travelling
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = on_hajj
+				trait = kow_tow_travels
+				has_character_modifier = holding_grand_hunt
+				has_character_flag = holding_tiger_hunt
+			}
+		}
+
+		modifier = {
+			factor = 5
+			OR = {
+				trait = scholar
+				trait = hafiz
+				trait = administrator
+				trait = strategist
+				trait = theologian
+				trait = physician
 			}
 		}
 	}
@@ -690,154 +643,181 @@
 		}
 	}
 
-	13 = { # m - Farmlands
-		factor = 3
-		hide_layers = { 42 = {} }
+	13 = { # m - Plain wall
+		factor = 1
+		hide_layers = { 38 = {} }
 		trigger = {
 			trigger_if = {
-				limit = { location = { always = yes } }
+				limit = { is_abroad = yes }
 				location = {
 					OR = {
-						terrain = farmlands
-						AND = {
-								terrain = plains
-								OR = {
-											region = world_europe_north
-											region = world_europe_east
-											region = world_europe_west_brittania
-											region = world_europe_west_germania
-											region = world_europe_west_francia
-											region = world_india
-								}
-						}
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
 					}
 				}
 			}
 			trigger_else = {
-				capital_scope = {
+				capital_holding = {
 					OR = {
-						terrain = farmlands
-						AND = {
-								terrain = plains
-								OR = {
-											region = world_europe_north
-											region = world_europe_east
-											region = world_europe_west_brittania
-											region = world_europe_west_germania
-											region = world_europe_west_francia
-											region = world_india
-								}
-						}
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
 					}
 				}
 			}
 
-			NOT = { has_character_modifier = in_seclusion }
+			NOR = {
+				trait = travelling
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = on_hajj
+				trait = kow_tow_travels
+				has_character_modifier = holding_grand_hunt
+				has_character_flag = holding_tiger_hunt
+			}
+		}
+
+		modifier = {
+			factor = 100
+			has_character_flag = add_duel_xp
+		}
+	}
+
+	14 = { # n - Tavern
+		factor = 1
+		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
+		modifier = {
+			factor = 100
+			OR = {
+				has_character_flag = party_host
+				has_character_flag = party_guest
+				has_character_flag = host_feast_started
+				has_character_flag = guest_feast_started
+				has_character_flag = blot_feast
+				has_character_flag = blot_feast_vassal
+				has_character_flag = holding_ukon_juhla
+				has_character_flag = ukon_juhla_feast_vassal
+				has_character_flag = holding_uzgavenes
+				has_character_flag = uzgavenes_feast_vassal
+				has_character_flag = holding_jarilo
+				has_character_flag = holding_passover
+				has_character_flag = attending_passover
+				has_character_flag = jarilo_feast_vassal
+				has_character_flag = diwali_feast_begun
+				has_character_flag = attending_diwali_feast
+				has_character_flag = zun_feast_begun
+				has_character_flag = attending_zun_feast
+				has_character_flag = holding_sadah_feast
+				has_character_flag = attending_sadah
+				has_character_flag = holding_bema
+				has_character_flag = attending_bema
+				has_character_flag = flag_holding_great_tribal_festival
+				has_any_opinion_modifier = opinion_great_tribal_festival_guest
+			}
 		}
 
 		modifier = {
 			factor = 10
 			OR = {
-				trait = gardener
-				trait = hunter
-				trait = falconer
-				has_character_modifier = holding_grand_hunt
-				has_character_flag = hunting_tigers
-				has_character_flag = khagan_holding_nerge
-				has_character_flag = vassal_holding_nerge
-				has_character_flag = khagan_finishing_nerge
-				has_character_flag = vassal_finishing_nerge
-				has_character_modifier = enjoying_the_countryside
-				has_nickname = nick_of_the_wilds
+				has_focus = focus_carousing
+				trait = drunkard
+				trait = hedonist
+				trait = decadent
+			}
+		}
+
+		modifier = {
+			factor = 4
+			OR = {
+				trait = gluttonous
+				trait = lustful
+				trait = gregarious
+				trait = socializer
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = temperate
+				trait = shy
+				has_character_flag = ramadan
+			}
+		}
+
+		modifier = {
+			factor = 0.25
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
+						OR = {
+									higher_real_tier_than = duke
+									is_or_was_offmap_power_ruler = yes
+						}
+				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NAND = {
+				is_republic = yes
+				NOT = { government = confucian_bureaucracy }
+			}
+			NOT = { mercenary = yes }
+			NOT = { holy_order = yes }
+			NOR = {
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
 
-	14 = { # n - Mediterranean Farmlands
+	15 = { # o - Fancy wall
 		factor = 3
-		hide_layers = { 42 = {} }
+		hide_layers = { 38 = {} }
 		trigger = {
 			trigger_if = {
-				limit = { location = { always = yes } }
+				limit = { is_abroad = yes }
 				location = {
-					terrain = plains
 					OR = {
-						region = world_europe_south
-						region = world_asia_minor
-						region = world_europe_west_iberia
-						region = world_middle_east
-						region = world_persia
-						region = world_africa_north
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
 					}
 				}
 			}
 			trigger_else = {
-				capital_scope = {
-					terrain = plains
+				capital_holding = {
 					OR = {
-						region = world_europe_south
-						region = world_asia_minor
-						region = world_europe_west_iberia
-						region = world_middle_east
-						region = world_persia
-						region = world_africa_north
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
 					}
 				}
 			}
 
-			NOT = { has_character_modifier = in_seclusion }
-		}
-
-		modifier = {
-			factor = 10
 			OR = {
-				trait = gardener
-				trait = hunter
-				trait = falconer
+				is_landed = yes
+				spouse = { is_landed = yes }
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+			}
+
+			NOR = {
+				trait = in_hiding
+				trait = travelling
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = on_hajj
+				trait = kow_tow_travels
 				has_character_modifier = holding_grand_hunt
-				has_character_flag = hunting_tigers
-				has_character_flag = khagan_holding_nerge
-				has_character_flag = vassal_holding_nerge
-				has_character_flag = khagan_finishing_nerge
-				has_character_flag = vassal_finishing_nerge
-				has_character_modifier = enjoying_the_countryside
-				has_nickname = nick_of_the_wilds
-			}
-		}
-	}
-
-	15 = { # o - Mountains
-		factor = 3
-		hide_layers = { 42 = {} }
-		trigger = {
-			trigger_if = {
-				limit = { location = { always = yes } }
-				location = {
-					terrain = mountain
-				}
-			}
-			trigger_else = {
-				capital_scope = {
-					terrain = mountain
-				}
-			}
-
-			NOT = { has_character_modifier = in_seclusion }
-		}
-
-		modifier = {
-			factor = 10
-			OR = {
-				trait = hunter
-				trait = falconer
-				has_character_modifier = holding_grand_hunt
-				has_character_flag = hunting_tigers
-				has_character_flag = khagan_holding_nerge
-				has_character_flag = vassal_holding_nerge
-				has_character_flag = khagan_finishing_nerge
-				has_character_flag = vassal_finishing_nerge
-				has_character_modifier = enjoying_the_countryside
-				has_nickname = nick_of_the_wilds
+				has_character_flag = holding_tiger_hunt
 			}
 		}
 	}
@@ -1097,45 +1077,38 @@
 		}
 	}
 
-	21 = { # u - Study
+	21 = { # u - Mountains
 		factor = 3
-		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		trigger = {
-			OR = {
-				has_focus = focus_scholarship
-				has_lifestyle_learning_trigger = yes
-				trait = scholar
-				trait = hafiz
-				trait = administrator
-				trait = strategist
-				trait = theologian
-				trait = physician
-				trait = poet
-				trait = gamer
-				trait = architect
+			trigger_if = {
+				limit = { location = { always = yes } }
+				location = {
+					terrain = mountain
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					terrain = mountain
+				}
 			}
 
-			NOR = {
-				trait = in_hiding
-				trait = travelling
-				trait = on_pilgrimage
-				trait = on_indian_pilgrimage
-				trait = on_hajj
-				trait = kow_tow_travels
-				has_character_modifier = holding_grand_hunt
-				has_character_flag = holding_tiger_hunt
-			}
+			NOT = { has_character_modifier = in_seclusion }
 		}
 
 		modifier = {
-			factor = 5
+			factor = 10
 			OR = {
-				trait = scholar
-				trait = hafiz
-				trait = administrator
-				trait = strategist
-				trait = theologian
-				trait = physician
+				trait = hunter
+				trait = falconer
+				has_character_modifier = holding_grand_hunt
+				has_character_flag = hunting_tigers
+				has_character_flag = khagan_holding_nerge
+				has_character_flag = vassal_holding_nerge
+				has_character_flag = khagan_finishing_nerge
+				has_character_flag = vassal_finishing_nerge
+				has_character_modifier = enjoying_the_countryside
+				has_nickname = nick_of_the_wilds
 			}
 		}
 	}
@@ -1165,98 +1138,119 @@
 		}
 	}
 
-	23 = { # w - Fancy wall
+	23 = { # w - Mediterranean Farmlands
 		factor = 3
-		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
-				limit = { is_abroad = yes }
+				limit = { location = { always = yes } }
 				location = {
+					terrain = plains
 					OR = {
-						holding_type = castle
-						holding_type = city
-						holding_type = temple
-						holding_type = family_palace
+						region = world_europe_south
+						region = world_asia_minor
+						region = world_europe_west_iberia
+						region = world_middle_east
+						region = world_persia
+						region = world_africa_north
 					}
 				}
 			}
 			trigger_else = {
-				capital_holding = {
+				capital_scope = {
+					terrain = plains
 					OR = {
-						holding_type = castle
-						holding_type = city
-						holding_type = temple
-						holding_type = family_palace
+						region = world_europe_south
+						region = world_asia_minor
+						region = world_europe_west_iberia
+						region = world_middle_east
+						region = world_persia
+						region = world_africa_north
 					}
 				}
 			}
 
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 10
 			OR = {
-				any_demesne_title = {
-					higher_tier_than = baron
-					is_landless_type_title = no
-				}
-				spouse = {
-					any_demesne_title = {
-						higher_tier_than = baron
-						is_landless_type_title = no
-					}
-				}
-			}
-
-			NOR = {
-				trait = in_hiding
-				trait = travelling
-				trait = on_pilgrimage
-				trait = on_indian_pilgrimage
-				trait = on_hajj
-				trait = kow_tow_travels
+				trait = gardener
+				trait = hunter
+				trait = falconer
 				has_character_modifier = holding_grand_hunt
-				has_character_flag = holding_tiger_hunt
+				has_character_flag = hunting_tigers
+				has_character_flag = khagan_holding_nerge
+				has_character_flag = vassal_holding_nerge
+				has_character_flag = khagan_finishing_nerge
+				has_character_flag = vassal_finishing_nerge
+				has_character_modifier = enjoying_the_countryside
+				has_nickname = nick_of_the_wilds
 			}
 		}
 	}
 
-	24 = { # x - Plain wall
-		factor = 1
-		hide_layers = { 38 = {} }
+	24 = { # x - Farmlands
+		factor = 3
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
-				limit = { is_abroad = yes }
+				limit = { location = { always = yes } }
 				location = {
 					OR = {
-						holding_type = castle
-						holding_type = city
-						holding_type = temple
-						holding_type = family_palace
+						terrain = farmlands
+						AND = {
+								terrain = plains
+								OR = {
+											region = world_europe_north
+											region = world_europe_east
+											region = world_europe_west_brittania
+											region = world_europe_west_germania
+											region = world_europe_west_francia
+											region = world_india
+								}
+						}
 					}
 				}
 			}
 			trigger_else = {
-				capital_holding = {
+				capital_scope = {
 					OR = {
-						holding_type = castle
-						holding_type = city
-						holding_type = temple
-						holding_type = family_palace
+						terrain = farmlands
+						AND = {
+								terrain = plains
+								OR = {
+											region = world_europe_north
+											region = world_europe_east
+											region = world_europe_west_brittania
+											region = world_europe_west_germania
+											region = world_europe_west_francia
+											region = world_india
+								}
+						}
 					}
 				}
 			}
 
-			NOR = {
-				trait = travelling
-				trait = on_pilgrimage
-				trait = on_indian_pilgrimage
-				trait = on_hajj
-				trait = kow_tow_travels
-				has_character_modifier = holding_grand_hunt
-				has_character_flag = holding_tiger_hunt
-			}
+			NOT = { has_character_modifier = in_seclusion }
 		}
 
 		modifier = {
-			factor = 100
-			has_character_flag = add_duel_xp
+			factor = 10
+			OR = {
+				trait = gardener
+				trait = hunter
+				trait = falconer
+				has_character_modifier = holding_grand_hunt
+				has_character_flag = hunting_tigers
+				has_character_flag = khagan_holding_nerge
+				has_character_flag = vassal_holding_nerge
+				has_character_flag = khagan_finishing_nerge
+				has_character_flag = vassal_finishing_nerge
+				has_character_modifier = enjoying_the_countryside
+				has_nickname = nick_of_the_wilds
+			}
 		}
 	}
 

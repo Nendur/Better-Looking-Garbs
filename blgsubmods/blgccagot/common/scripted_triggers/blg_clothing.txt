@@ -177,6 +177,20 @@ blg_headgear_military = {
 	}
 }
 
+# Dress shady.
+blg_headgear_intrigue = {
+	OR = {
+		AND = {
+			has_job_title = job_spymaster
+			lower_real_tier_than = king
+		}
+		AND = {
+			intrigue >= 16
+			lower_real_tier_than = duke
+		}
+	}
+}
+
 # More common to cover hair.
 blg_headgear_covered = {
 	always = no
@@ -252,6 +266,17 @@ blg_clothes_military = {
 		AND = {
 			trait = undead
 			combat_rating = 10
+		}
+	}
+}
+
+# Dress shady.
+blg_clothes_intrigue = {
+	OR = {
+		has_job_title = job_spymaster
+		AND = {
+			intrigue = 12
+			lower_real_tier_than = duke
 		}
 	}
 }

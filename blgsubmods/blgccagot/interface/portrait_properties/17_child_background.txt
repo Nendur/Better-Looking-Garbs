@@ -27,7 +27,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -79,7 +78,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -123,7 +121,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -164,7 +161,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -222,7 +218,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -277,7 +272,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -314,7 +308,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -353,7 +346,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -396,7 +388,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -447,7 +438,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -481,7 +471,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -535,7 +524,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }
@@ -588,7 +576,6 @@
 		hide_layers = { 3 = {} }
 		hide_layers = { 4 = {} }
 		hide_layers = { 5 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 10 = {} }
 		hide_layers = { 14 = {} }
 		hide_layers = { 15 = {} }

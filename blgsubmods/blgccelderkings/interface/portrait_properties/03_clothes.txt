@@ -145,7 +145,7 @@
 		factor = 99
 		trigger = {
 			OR = {
-				blg_clothes_agent = yes
+				blg_clothes_intrigue = yes
 				is_variable_equal = { which = ca_clothes value = 10 }
 			}
 		}
@@ -252,7 +252,7 @@
 
 				AND = {
 					blg_ek_clothing = yes
-					blg_clothes_agent = yes
+					blg_clothes_intrigue = yes
 				}
 
 				blg_merchant_clothes = yes

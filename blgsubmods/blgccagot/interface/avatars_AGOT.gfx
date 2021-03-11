@@ -101,13 +101,13 @@ objectTypes = {
 ###Mammoths
 	EMFXActorType = {
 		name = "westerngfx_mammoths"
-		actorfile = "gfx\models\indian_elephant.xac"
+		actorfile = "gfx\models\mammoth.xac"
 
 		idle   = "gfx\models\indian_elephant_idle.xsm"
 		move   = "gfx\models\indian_elephant_move.xsm"
 		attack = "gfx\models\indian_elephant_attack.xsm"
 
-		scale = 0.6f
+		scale = 0.7f
 	}
 
 	EMFXActorType = {

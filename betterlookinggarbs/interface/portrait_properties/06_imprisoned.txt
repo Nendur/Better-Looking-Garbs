@@ -9,9 +9,8 @@
 
 	1 = { # a - Clean prison
 		factor = 100
-		hide_layers = {  5 = {} }
-		hide_layers = { 31 = {} }
-		hide_layers = { 32 = {} }
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }
 		hide_layers = { 43 = {} }
 
@@ -19,6 +18,7 @@
 			OR = {
 				has_character_modifier = house_arrest
 				blg_adult = no
+				blg_ethnicity_static = yes
 			}
 		}
 	}
@@ -28,6 +28,8 @@
 		hide_layers = {  5 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }
 		hide_layers = { 43 = {} }
 
@@ -54,6 +56,8 @@
 		hide_layers = {  5 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }
 		hide_layers = { 43 = {} }
 	}

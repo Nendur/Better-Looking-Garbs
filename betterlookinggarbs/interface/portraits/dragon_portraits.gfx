@@ -16,6 +16,38 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_dragon_male_neck"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_male_skin.dds"
+		noOfFrames = 16
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dragon_female_neck"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_female_skin.dds"
+		noOfFrames = 16
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dragon_male_eye"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_male_eye.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_dragon_female_eye"
+		texturefile = "gfx\\characters\\dragon_portraits\\dragon_female_eye.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_dragon_male_headgear_behind"
 		texturefile = "gfx\\characters\\dragon_portraits\\dragon_male_headgear_behind.dds"
 		noOfFrames = 1
@@ -68,26 +100,33 @@ spriteTypes = {
 		name = "PORTRAIT_dragongfx_male"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_southern_background:p0"
+			"GFX_dragon_male_base:p0"
 			"GFX_dragon_male_headgear_behind:p3:c0"
-			"GFX_southern_background:p0"
+			"GFX_dragon_male_base:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_dragon_male_base:p2"
+			"GFX_dragon_male_neck:d0"
+			"GFX_dragon_male_eye:d6:e"
+			"GFX_creature_harelip:p24:o34x-26"
 			"GFX_child_back:p17"
 			"GFX_dragon_son_base:p18"
+			"GFX_creature_pale:p22"
+			"GFX_creature_tattoos:p28:o18x-16"
+			"GFX_creature_warpaint:p29:o6x-10"
+			"GFX_creature_boils:p9"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25:y"
 			"GFX_character_scars_high:p26:y"
 			"GFX_character_reddots:p8:o8x-18"
-			"GFX_character_black_eye:p23:o15x-15"
-			"GFX_character_blinded_eyes:p10"
+			"GFX_creature_black_eye:p23:o15x-15"
+			"GFX_creature_blinded_eyes:p10:o0x-5"
+			"GFX_one_eye_possessed:p30:o14x-18"
 			"GFX_character_eyepatch:p13:y:o42x50"
 			"GFX_character_mask:p12:y:o57x27"
 			"GFX_character_special_helmets:p34"
-			"GFX_character_special_masks:p35"
+			"GFX_character_special_masks:p35:o16x-17"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_bodpa:p43:c4"
 			"GFX_weapons_western:p39"
@@ -106,7 +145,19 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = { }
@@ -116,24 +167,31 @@ spriteTypes = {
 		name = "PORTRAIT_dragongfx_male1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_southern_background:p0"
+			"GFX_dragon_male_base:p0"
 			"GFX_dragon_male_headgear_behind:p3:c0"
-			"GFX_southern_background:p0"
+			"GFX_dragon_male_base:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_dragon_male_base:p2"
+			"GFX_dragon_male_neck:d0"
+			"GFX_dragon_male_eye:d6:e"
+			"GFX_creature_harelip:p24:o34x-26"
+			"GFX_creature_pale:p22"
+			"GFX_creature_tattoos:p28:o18x-16"
+			"GFX_creature_warpaint:p29:o6x-10"
+			"GFX_creature_boils:p9"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25:y"
 			"GFX_character_scars_high:p26:y"
 			"GFX_character_reddots:p8:o8x-18"
-			"GFX_character_black_eye:p23:o15x-15"
-			"GFX_character_blinded_eyes:p10"
+			"GFX_creature_black_eye:p23:o15x-15"
+			"GFX_creature_blinded_eyes:p10:o0x-5"
+			"GFX_one_eye_possessed:p30:o14x-18"
 			"GFX_character_eyepatch:p13:y:o42x50"
 			"GFX_character_mask:p12:y:o57x27"
 			"GFX_character_special_helmets:p34"
-			"GFX_character_special_masks:p35"
+			"GFX_character_special_masks:p35:o16x-17"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_bodpa:p43:c4"
 			"GFX_weapons_western:p39"
@@ -152,7 +210,19 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = { }
@@ -162,24 +232,31 @@ spriteTypes = {
 		name = "PORTRAIT_dragongfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_southern_background:p0"
+			"GFX_dragon_male_base:p0"
 			"GFX_dragon_male_headgear_behind:p3:c0"
-			"GFX_southern_background:p0"
+			"GFX_dragon_male_base:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_dragon_male_base:p2"
+			"GFX_dragon_male_neck:d0"
+			"GFX_dragon_male_eye:d6:e"
+			"GFX_creature_harelip:p24:o34x-26"
+			"GFX_creature_pale:p22"
+			"GFX_creature_tattoos:p28:o18x-16"
+			"GFX_creature_warpaint:p29:o6x-10"
+			"GFX_creature_boils:p9"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25:y"
 			"GFX_character_scars_high:p26:y"
 			"GFX_character_reddots:p8:o8x-18"
-			"GFX_character_black_eye:p23:o15x-15"
-			"GFX_character_blinded_eyes:p10"
+			"GFX_creature_black_eye:p23:o15x-15"
+			"GFX_creature_blinded_eyes:p10:o0x-5"
+			"GFX_one_eye_possessed:p30:o14x-18"
 			"GFX_character_eyepatch:p13:y:o42x50"
 			"GFX_character_mask:p12:y:o57x27"
 			"GFX_character_special_helmets:p34"
-			"GFX_character_special_masks:p35"
+			"GFX_character_special_masks:p35:o16x-17"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_bodpa:p43:c4"
 			"GFX_weapons_western:p39"
@@ -198,7 +275,19 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = { }
@@ -208,26 +297,33 @@ spriteTypes = {
 		name = "PORTRAIT_dragongfx_female"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_southern_background:p0"
+			"GFX_dragon_female_base:p0"
 			"GFX_dragon_female_headgear_behind:p3:c0"
-			"GFX_southern_background:p0"
+			"GFX_dragon_female_base:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_dragon_female_base:p2"
+			"GFX_dragon_female_neck:d0"
+			"GFX_dragon_female_eye:d6:e"
+			"GFX_creature_harelip:p24:o19x-20"
 			"GFX_child_back:p17"
 			"GFX_dragon_daughter_base:p18"
+			"GFX_creature_pale:p22"
+			"GFX_creature_tattoos:p28:o18x-16"
+			"GFX_creature_warpaint:p29:o6x-10"
+			"GFX_creature_boils:p9"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25:y"
 			"GFX_character_scars_high:p26:y"
 			"GFX_character_reddots:p8:o8x-18"
-			"GFX_character_black_eye:p23:o15x-15"
-			"GFX_character_blinded_eyes:p10"
+			"GFX_creature_black_eye:p23:o15x-15"
+			"GFX_creature_blinded_eyes:p10:o0x-5"
+			"GFX_one_eye_possessed:p30:o14x-18"
 			"GFX_character_eyepatch:p13:y:o42x50"
 			"GFX_character_mask:p12:y:o57x27"
 			"GFX_character_special_helmets:p34"
-			"GFX_character_special_masks:p35"
+			"GFX_character_special_masks:p35:o16x-17"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_bodpa:p43:c4"
 			"GFX_weapons_western:p39"
@@ -246,7 +342,19 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = { }
@@ -256,24 +364,31 @@ spriteTypes = {
 		name = "PORTRAIT_dragongfx_female1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_southern_background:p0"
+			"GFX_dragon_female_base:p0"
 			"GFX_dragon_female_headgear_behind:p3:c0"
-			"GFX_southern_background:p0"
+			"GFX_dragon_female_base:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_dragon_female_base:p2"
+			"GFX_dragon_female_neck:d0"
+			"GFX_dragon_female_eye:d6:e"
+			"GFX_creature_harelip:p24:o19x-20"
+			"GFX_creature_pale:p22"
+			"GFX_creature_tattoos:p28:o18x-16"
+			"GFX_creature_warpaint:p29:o6x-10"
+			"GFX_creature_boils:p9"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25:y"
 			"GFX_character_scars_high:p26:y"
 			"GFX_character_reddots:p8:o8x-18"
-			"GFX_character_black_eye:p23:o15x-15"
-			"GFX_character_blinded_eyes:p10"
+			"GFX_creature_black_eye:p23:o15x-15"
+			"GFX_creature_blinded_eyes:p10:o0x-5"
+			"GFX_one_eye_possessed:p30:o14x-18"
 			"GFX_character_eyepatch:p13:y:o42x50"
 			"GFX_character_mask:p12:y:o57x27"
 			"GFX_character_special_helmets:p34"
-			"GFX_character_special_masks:p35"
+			"GFX_character_special_masks:p35:o16x-17"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_bodpa:p43:c4"
 			"GFX_weapons_western:p39"
@@ -292,7 +407,19 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = { }
@@ -302,24 +429,31 @@ spriteTypes = {
 		name = "PORTRAIT_dragongfx_female2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_southern_background:p0"
+			"GFX_dragon_female_base:p0"
 			"GFX_dragon_female_headgear_behind:p3:c0"
-			"GFX_southern_background:p0"
+			"GFX_dragon_female_base:p0"
 			"GFX_empty:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_dragon_female_base:p2"
+			"GFX_dragon_female_neck:d0"
+			"GFX_dragon_female_eye:d6:e"
+			"GFX_creature_harelip:p24:o19x-20"
+			"GFX_creature_pale:p22"
+			"GFX_creature_tattoos:p28:o18x-16"
+			"GFX_creature_warpaint:p29:o6x-10"
+			"GFX_creature_boils:p9"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25:y"
 			"GFX_character_scars_high:p26:y"
 			"GFX_character_reddots:p8:o8x-18"
-			"GFX_character_black_eye:p23:o15x-15"
-			"GFX_character_blinded_eyes:p10"
+			"GFX_creature_black_eye:p23:o15x-15"
+			"GFX_creature_blinded_eyes:p10:o0x-5"
+			"GFX_one_eye_possessed:p30:o14x-18"
 			"GFX_character_eyepatch:p13:y:o42x50"
 			"GFX_character_mask:p12:y:o57x27"
 			"GFX_character_special_helmets:p34"
-			"GFX_character_special_masks:p35"
+			"GFX_character_special_masks:p35:o16x-17"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_bodpa:p43:c4"
 			"GFX_weapons_western:p39"
@@ -338,7 +472,19 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = { }

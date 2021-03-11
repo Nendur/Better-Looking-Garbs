@@ -1,9 +1,9 @@
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_character_boils"
-		texturefile = "gfx\\characters\\shared\\boils.dds"
-		noOfFrames = 11
+		name = "GFX_character_reddots"
+		texturefile = "gfx\\characters\\shared\\agot_boils.dds"
+		noOfFrames = 6
 		norefcount = yes
 		can_be_lowres = yes
 	}

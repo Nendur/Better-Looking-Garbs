@@ -194,6 +194,24 @@ blg_headgear_military = {
 	}
 }
 
+# Dress shady.
+blg_headgear_intrigue = {
+	OR = {
+		AND = {
+			has_job_title = job_spymaster
+			lower_real_tier_than = king
+		}
+		AND = {
+			is_agent = yes
+			is_away = yes
+		}
+		AND = {
+			intrigue >= 16
+			lower_real_tier_than = duke
+		}
+	}
+}
+
 # More common to cover hair.
 blg_headgear_covered = {
 	true_religion_group = yokudan_pantheon
@@ -271,7 +289,8 @@ blg_clothes_military = {
 	}
 }
 
-blg_clothes_agent = {
+# Dress shady.
+blg_clothes_intrigue = {
 	OR = {
 		has_job_title = job_spymaster
 		AND = {

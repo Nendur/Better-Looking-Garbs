@@ -64,6 +64,7 @@ spriteTypes = {
 			"GFX_dragon_male_base:p31:y"
 			"GFX_child_back:p17"
 			"GFX_dragon_son_base:p18"
+			"GFX_creature_pale:p22"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
@@ -90,6 +91,7 @@ spriteTypes = {
 		layer = {
 			"GFX_dragon_male_headgear_behind:p3:c0"
 			"GFX_dragon_male_base:p31:y"
+			"GFX_creature_pale:p22"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
@@ -116,6 +118,7 @@ spriteTypes = {
 		layer = {
 			"GFX_dragon_male_headgear_behind:p3:c0"
 			"GFX_dragon_male_base:p31:y"
+			"GFX_creature_pale:p22"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
@@ -144,6 +147,7 @@ spriteTypes = {
 			"GFX_dragon_male_base:p31:y"
 			"GFX_child_back:p17"
 			"GFX_dragon_daughter_base:p18"
+			"GFX_creature_pale:p22"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
@@ -170,6 +174,7 @@ spriteTypes = {
 		layer = {
 			"GFX_dragon_male_headgear_behind:p3:c0"
 			"GFX_dragon_male_base:p31:y"
+			"GFX_creature_pale:p22"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
@@ -196,6 +201,7 @@ spriteTypes = {
 		layer = {
 			"GFX_dragon_male_headgear_behind:p3:c0"
 			"GFX_dragon_male_base:p31:y"
+			"GFX_creature_pale:p22"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"

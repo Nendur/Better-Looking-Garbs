@@ -2,6 +2,15 @@
 
 ### Diseases:
 
+blg_bleeding = {
+	OR = {
+		trait = has_bubonic_plague
+		has_character_modifier = tortured_prisoner
+		has_character_modifier = tortured_witch
+		has_character_modifier = struck_by_lightning
+	}
+}
+
 # Blind, natural or maimed.
 blg_blind = {
 	trait = blinded
@@ -14,12 +23,13 @@ blg_boils = {
 
 # Bubonic boils.
 blg_bubonic = {
-	trait = has_bubonic_plague
+	always = no
 }
 
 # Drooling spit.
 blg_drooling = {
 	OR = {
+		trait = incapable
 		trait = infirm
 		trait = rabies
 		trait = zombi
@@ -147,6 +157,5 @@ blg_werewolf = {
 	OR = {
 		has_character_modifier = wolf_blood
 		has_character_modifier = lycanthropy
-		culture_group = dragon_group
 	}
 }

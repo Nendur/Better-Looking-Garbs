@@ -22,7 +22,16 @@
 		}
 	}
 
-	3 = { # c - Red dots
+	3 = { # c - Bleeding
+		factor = 100
+		trigger = {
+			blg_bleeding = yes
+
+			blg_disease_rule = yes
+		}
+	}
+
+	4 = { # d - Red dots
 		factor = 100
 		trigger = {
 			blg_rash = yes
@@ -31,27 +40,36 @@
 		}
 	}
 
-	4 = { # d - Ugly mole
+	5 = { # e - Early leprosy
+		factor = 100
+		trigger = {
+			trait = leper
+
+			blg_disease_rule = yes
+		}
+	}
+
+	6 = { # f - Ugly mole
 		factor = 99
 		trigger = {
-			trait = ugly
+			blg_ugly = yes
 			NOT = { has_portrait_property = { layer = 9 index = 5 } }
 
 			blg_traits_rule = yes
 		}
 	}
 
-	5 = { # e - Ugly monobrow
+	7 = { # g - Ugly monobrow
 		factor = 99
 		trigger = {
-			trait = ugly
+			blg_ugly = yes
 			NOT = { has_portrait_property = { layer = 9 index = 4 } }
 
 			blg_traits_rule = yes
 		}
 	}
 
-	6 = { # f - Vampire
+	8 = { # h - Vampire
 		factor = 100
 		trigger = {
 			blg_vampire = yes

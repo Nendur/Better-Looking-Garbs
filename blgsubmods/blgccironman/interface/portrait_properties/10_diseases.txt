@@ -94,6 +94,7 @@
 
 				AND = {
 					OR = {
+						trait = incapable
 						trait = infirm
 						trait = rabies
 					}

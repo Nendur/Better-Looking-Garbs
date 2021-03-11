@@ -264,18 +264,7 @@
 
 		trigger = {
 			OR = {
-				AND = {
-					has_job_title = job_spymaster
-					lower_real_tier_than = king
-				}
-				AND = {
-					is_agent = yes
-					is_away = yes
-				}
-				AND = {
-					intrigue >= 16
-					lower_real_tier_than = duke
-				}
+				blg_headgear_intrigue = yes
 				trait = in_hiding
 				trait = leper
 				is_variable_equal = { which = ca_headgear value = 10 }
@@ -285,7 +274,7 @@
 		modifier = {
 			factor = 33
 			OR = {
-				blg_clothes_agent = yes
+				blg_clothes_intrigue = yes
 				trait = leper
 			}
 		}
@@ -511,7 +500,7 @@
 
 				AND = {
 					blg_ek_clothing = yes
-					blg_clothes_agent = yes
+					blg_clothes_intrigue = yes
 				}
 
 				blg_merchant_headgear = yes

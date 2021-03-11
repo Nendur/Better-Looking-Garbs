@@ -162,47 +162,28 @@
 		}
 	}
 
-	5 = { # e - Tavern
-		factor = 1
+	5 = { # e - Study
+		factor = 3
 		hide_layers = { 38 = {} }
-		hide_layers = { 42 = {} }
-		modifier = {
-			factor = 100
-			blg_feast = yes
-		}
-
-		modifier = {
-			factor = 10
+		trigger = {
 			OR = {
-				has_focus = focus_carousing
-				trait = drunkard
-				trait = hedonist
-				trait = decadent
+				has_focus = focus_scholarship
+				has_lifestyle_learning_trigger = yes
+				blg_learned = yes
+				trait = poet
+				trait = gamer
+				trait = architect
+			}
+
+			NOR = {
+				trait = in_hiding
+				blg_travelling = yes
 			}
 		}
 
 		modifier = {
-			factor = 4
-			OR = {
-				trait = gluttonous
-				trait = lustful
-				trait = gregarious
-				trait = socializer
-			}
-		}
-
-		modifier = {
-			factor = 0.1
-			OR = {
-				trait = temperate
-				trait = shy
-				has_character_flag = ramadan
-			}
-		}
-
-		modifier = {
-			factor = 0.25
-			blg_royalty = yes
+			factor = 5
+			blg_learned = yes
 		}
 	}
 
@@ -456,86 +437,121 @@
 		}
 	}
 
-	13 = { # m - Farmlands
-		factor = 3
-		hide_layers = { 42 = {} }
+	13 = { # m - Plain wall
+		factor = 1
+		hide_layers = { 38 = {} }
 		trigger = {
 			trigger_if = {
-				limit = { location = { always = yes } }
+				limit = { is_abroad = yes }
 				location = {
-					blg_farmlands = yes
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
+					}
 				}
 			}
 			trigger_else = {
-				capital_scope = {
-					blg_farmlands = yes
+				capital_holding = {
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
+					}
 				}
 			}
 
-			NOT = { has_character_modifier = in_seclusion }
+			blg_travelling = no
+		}
+
+		modifier = {
+			factor = 100
+			blg_duelling = yes
+		}
+	}
+
+	14 = { # n - Tavern
+		factor = 1
+		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
+		modifier = {
+			factor = 100
+			blg_feast = yes
 		}
 
 		modifier = {
 			factor = 10
 			OR = {
-				trait = gardener
-				blg_outdoors = yes
+				has_focus = focus_carousing
+				trait = drunkard
+				trait = hedonist
+				trait = decadent
 			}
-		}
-	}
-
-	14 = { # n - Mediterranean Farmlands
-		factor = 3
-		hide_layers = { 42 = {} }
-		trigger = {
-			trigger_if = {
-				limit = { location = { always = yes } }
-				location = {
-					terrain = plains
-					blg_region_mediterranean = yes
-				}
-			}
-			trigger_else = {
-				capital_scope = {
-					terrain = plains
-					blg_region_mediterranean = yes
-				}
-			}
-
-			NOT = { has_character_modifier = in_seclusion }
 		}
 
 		modifier = {
-			factor = 10
+			factor = 4
 			OR = {
-				trait = gardener
-				blg_outdoors = yes
+				trait = gluttonous
+				trait = lustful
+				trait = gregarious
+				trait = socializer
 			}
-		}
-	}
-
-	15 = { # o - Mountains
-		factor = 3
-		hide_layers = { 42 = {} }
-		trigger = {
-			trigger_if = {
-				limit = { location = { always = yes } }
-				location = {
-					blg_mountain = yes
-				}
-			}
-			trigger_else = {
-				capital_scope = {
-					blg_mountain = yes
-				}
-			}
-
-			NOT = { has_character_modifier = in_seclusion }
 		}
 
 		modifier = {
-			factor = 10
-			blg_outdoors = yes
+			factor = 0.1
+			OR = {
+				trait = temperate
+				trait = shy
+				has_character_flag = ramadan
+			}
+		}
+
+		modifier = {
+			factor = 0.25
+			blg_royalty = yes
+		}
+	}
+
+	15 = { # o - Fancy wall
+		factor = 3
+		hide_layers = { 38 = {} }
+		trigger = {
+			trigger_if = {
+				limit = { is_abroad = yes }
+				location = {
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
+					}
+				}
+			}
+			trigger_else = {
+				capital_holding = {
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
+					}
+				}
+			}
+
+			OR = {
+				is_landed = yes
+				spouse = { is_landed = yes }
+				blg_prince_title = yes
+			}
+
+			NOR = {
+				trait = in_hiding
+				blg_travelling = yes
+			}
 		}
 	}
 
@@ -772,28 +788,28 @@
 		}
 	}
 
-	21 = { # u - Study
+	21 = { # u - Mountains
 		factor = 3
-		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		trigger = {
-			OR = {
-				has_focus = focus_scholarship
-				has_lifestyle_learning_trigger = yes
-				blg_learned = yes
-				trait = poet
-				trait = gamer
-				trait = architect
+			trigger_if = {
+				limit = { location = { always = yes } }
+				location = {
+					blg_mountain = yes
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					blg_mountain = yes
+				}
 			}
 
-			NOR = {
-				trait = in_hiding
-				blg_travelling = yes
-			}
+			NOT = { has_character_modifier = in_seclusion }
 		}
 
 		modifier = {
-			factor = 5
-			blg_learned = yes
+			factor = 10
+			blg_outdoors = yes
 		}
 	}
 
@@ -816,84 +832,61 @@
 		}
 	}
 
-	23 = { # w - Fancy wall
+	23 = { # w - Mediterranean Farmlands
 		factor = 3
-		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
-				limit = { is_abroad = yes }
+				limit = { location = { always = yes } }
 				location = {
-					OR = {
-						holding_type = castle
-						holding_type = city
-						holding_type = temple
-						holding_type = family_palace
-					}
+					terrain = plains
+					blg_region_mediterranean = yes
 				}
 			}
 			trigger_else = {
-				capital_holding = {
-					OR = {
-						holding_type = castle
-						holding_type = city
-						holding_type = temple
-						holding_type = family_palace
-					}
+				capital_scope = {
+					terrain = plains
+					blg_region_mediterranean = yes
 				}
 			}
 
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 10
 			OR = {
-				any_demesne_title = {
-					higher_tier_than = baron
-					is_landless_type_title = no
-				}
-				spouse = {
-					any_demesne_title = {
-						higher_tier_than = baron
-						is_landless_type_title = no
-					}
-				}
-			}
-
-			NOR = {
-				trait = in_hiding
-				blg_travelling = yes
+				trait = gardener
+				blg_outdoors = yes
 			}
 		}
 	}
 
-	24 = { # x - Plain wall
-		factor = 1
-		hide_layers = { 38 = {} }
+	24 = { # x - Farmlands
+		factor = 3
+		hide_layers = { 42 = {} }
 		trigger = {
 			trigger_if = {
-				limit = { is_abroad = yes }
+				limit = { location = { always = yes } }
 				location = {
-					OR = {
-						holding_type = castle
-						holding_type = city
-						holding_type = temple
-						holding_type = family_palace
-					}
+					blg_farmlands = yes
 				}
 			}
 			trigger_else = {
-				capital_holding = {
-					OR = {
-						holding_type = castle
-						holding_type = city
-						holding_type = temple
-						holding_type = family_palace
-					}
+				capital_scope = {
+					blg_farmlands = yes
 				}
 			}
 
-			blg_travelling = no
+			NOT = { has_character_modifier = in_seclusion }
 		}
 
 		modifier = {
-			factor = 100
-			blg_duelling = yes
+			factor = 10
+			OR = {
+				trait = gardener
+				blg_outdoors = yes
+			}
 		}
 	}
 

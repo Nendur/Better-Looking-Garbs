@@ -104,6 +104,11 @@ blg_slave = {
 	}
 }
 
+# Ugly face.
+blg_ugly = {
+	trait = ugly
+}
+
 ### Events:
 
 # A desert theme event.

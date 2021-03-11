@@ -1,6 +1,53 @@
-# p8 red dots - Tilaka
+# p8 AGOT effects
 8 = {
 	0 = { # blank
+		factor = 1
+	}
+
+	1 = { #Undead Male
 		factor = 100
+		trigger = {
+			trait = undead
+			is_female = no
+		}
+	}
+
+	2 = { #Undead Female
+		factor = 100
+		trigger = {
+			trait = undead
+			is_female = yes
+		}
+	}
+
+	3 = { # Gray Plague advanced
+		factor = 100
+		trigger = {
+			trait = disfigured
+			OR = {
+				trait = has_greyscale
+				trait = has_grey_plague
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
+		}
+	}
+
+	4 = { # Gray Plague
+		factor = 100
+		trigger = {
+			OR = {
+				trait = has_greyscale
+				trait = has_grey_plague
+			}
+			NOT = { has_game_rule = { name = blg_disease value = off } }
+		}
+	}
+
+	5 = { # Gray Scars
+		factor = 100
+		trigger = {
+			trait = greyscale_scarred
+			NOT = { has_game_rule = { name = blg_disease value = off } }
+		}
 	}
 }

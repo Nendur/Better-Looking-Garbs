@@ -22,7 +22,20 @@
 		}
 	}
 
-	3 = { # c - Red dots
+	3 = { # c - Bleeding
+		factor = 100
+		trigger = {
+			OR = {
+				has_character_modifier = tortured_prisoner
+				has_character_modifier = tortured_witch
+				has_character_modifier = struck_by_lightning
+			}
+
+			is_alive = yes
+		}
+	}
+
+	4 = { # d - Red dots
 		factor = 100
 		trigger = {
 			OR = {
@@ -35,7 +48,16 @@
 		}
 	}
 
-	4 = { # d - Ugly mole
+	5 = { # e - Early leprosy
+		factor = 100
+		trigger = {
+			trait = leper
+
+			is_alive = yes
+		}
+	}
+
+	6 = { # f - Ugly mole
 		factor = 99
 		trigger = {
 			trait = ugly
@@ -44,7 +66,7 @@
 		}
 	}
 
-	5 = { # e - Ugly monobrow
+	7 = { # g - Ugly monobrow
 		factor = 99
 		trigger = {
 			trait = ugly
