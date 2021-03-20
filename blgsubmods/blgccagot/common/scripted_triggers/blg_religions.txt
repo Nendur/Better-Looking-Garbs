@@ -20,7 +20,7 @@ religion_openly_tengri_or_reformed_trigger = {
 
 # Catholic religions.
 blg_religion_catholic = {
-	likes_christians = yes
+	religion = the_seven
 }
 
 # Early religions, modified clothing without headgear.
@@ -35,7 +35,10 @@ blg_religion_oriental = {
 
 # Eastern Christian religions.
 blg_religion_orthodox = {
-	always = no
+	OR = {
+		religion_group = essos_group
+		religion_group = valyrian_rel_group
+	}
 }
 
 # Early-Protestant Christian religions.

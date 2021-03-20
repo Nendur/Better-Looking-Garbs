@@ -19,12 +19,14 @@ blg_tonsure = {
 		blg_priest = yes
 		is_ascetic_trigger = yes
 	}
+	NOT = { trait = cynical }
 }
 
 # Not allowed to cut hair.
 blg_hair_uncut = {
 	is_female = no
 	true_religion_scope = { likes_jews = yes }
+	NOT = { trait = cynical }
 }
 
 # Tidy hair for rulers and married people.
@@ -35,7 +37,9 @@ blg_hair_chinese_tidy = {
 		is_married = yes
 		is_consort = yes
 		is_landed = yes
+		trait = groomed
 	}
+	NOT = { trait = uncouth }
 }
 
 # Tidy hair for married women and high rulers.
@@ -44,7 +48,9 @@ blg_hair_southernslavic_tidy = {
 	OR = {
 		is_married = yes
 		higher_tier_than = duke
+		trait = groomed
 	}
+	NOT = { trait = uncouth }
 }
 
 # Early Germanic kings wearing long hair.
@@ -62,7 +68,9 @@ blg_hair_westernslavic_tidy = {
 	OR = {
 		is_married = yes
 		higher_tier_than = count
+		trait = groomed
 	}
+	NOT = { trait = uncouth }
 }
 
 ### Beard rules:
@@ -91,10 +99,10 @@ blg_beard_long = {
 	}
 	OR = {
 		blg_priest = yes
-		trait = zealous
-		is_ascetic_trigger = yes
+		blg_devout = yes
 		has_minor_title = title_chief_qadi
 	}
+	NOT = { trait = cynical }
 }
 
 # Has a shaved face.
@@ -121,6 +129,7 @@ blg_beard_short = {
 			blg_holy_order = yes
 		}
 	}
+	NOT = { trait = cynical }
 }
 
 # Cultures with uncommon growing of beards.

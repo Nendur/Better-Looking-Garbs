@@ -1,12 +1,66 @@
 # Geographical regions and terrain type triggers.
 # Triggers run from a province scope.
 
-### Regions:
+### Regions for portraits:
 
 # African terrain regions.
 blg_region_africa = {
 	region = world_africa
 }
+
+# Black bear regions.
+blg_region_asia = {
+	OR = {
+		region = world_persia
+		region = world_india
+		region = world_himalayas
+		region = world_steppe_tarim
+	}
+}
+
+# European inspired regions.
+blg_region_europe = {
+	OR = {
+		region = world_europe
+		region = world_asia_minor
+		AND = {
+			region = world_steppe_west
+			likes_christians = yes
+		}
+	}
+}
+
+# Mediterranean inspired regions.
+blg_region_mediterranean = {
+	OR = {
+		region = world_europe_south
+		region = world_asia_minor
+		region = world_europe_west_iberia
+		region = world_middle_east
+		region = world_persia
+		region = world_africa_north
+	}
+}
+
+# Middle-Eastern inspired regions.
+blg_region_muslim = {
+	OR = {
+		region = world_middle_east
+		region = world_africa
+		region = world_persia
+	}
+}
+
+# Polar bear regions.
+blg_region_polar = {
+	climate = severe_winter
+	OR = {
+		blg_region_scandinavia = yes
+		terrain = arctic
+	}
+}
+
+### Regions for ethnicities:
 
 # African northern region.
 blg_region_africa_north = {
@@ -31,16 +85,6 @@ blg_region_africa_east = {
 # Arabia region.
 blg_region_arabia = {
 	region = world_middle_east_arabia
-}
-
-# Black bear regions.
-blg_region_asia = {
-	OR = {
-		region = world_persia
-		region = world_india
-		region = world_himalayas
-		region = world_steppe_tarim
-	}
 }
 
 # Asia Minor region.
@@ -71,18 +115,6 @@ blg_region_deccan = {
 # England region.
 blg_region_england = {
 	region = custom_england
-}
-
-# European inspired regions.
-blg_region_europe = {
-	OR = {
-		region = world_europe
-		region = world_asia_minor
-		AND = {
-			region = world_steppe_west
-			likes_christians = yes
-		}
-	}
 }
 
 # Francia region.
@@ -125,39 +157,9 @@ blg_region_levant = {
 	region = world_middle_east_jerusalem
 }
 
-# Mediterranean inspired regions.
-blg_region_mediterranean = {
-	OR = {
-		region = world_europe_south
-		region = world_asia_minor
-		region = world_europe_west_iberia
-		region = world_middle_east
-		region = world_persia
-		region = world_africa_north
-	}
-}
-
-# Middle-Eastern inspired regions.
-blg_region_muslim = {
-	OR = {
-		region = world_middle_east
-		region = world_africa
-		region = world_persia
-	}
-}
-
 # Persian region.
 blg_region_persia = {
 	region = world_persia
-}
-
-# Polar bear regions.
-blg_region_polar = {
-	climate = severe_winter
-	OR = {
-		blg_region_scandinavia = yes
-		terrain = arctic
-	}
 }
 
 # Russian region.

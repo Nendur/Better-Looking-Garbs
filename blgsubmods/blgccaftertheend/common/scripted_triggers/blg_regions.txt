@@ -9,26 +9,6 @@ blg_region_africa = {
 	terrain = plains
 }
 
-# African northern region.
-blg_region_africa_north = {
-	always = no
-}
-
-# African western region.
-blg_region_africa_west = {
-	always = no
-}
-
-# African central region.
-blg_region_africa_central = {
-	always = no
-}
-
-# African eastern region.
-blg_region_africa_east = {
-	always = no
-}
-
 # Arabia region.
 blg_region_arabia = {
 	always = no
@@ -59,17 +39,10 @@ blg_region_baltic = {
 
 # Brittish Isles region.
 blg_region_brittania = {
-	always = no
-}
-
-# Deccan region.
-blg_region_deccan = {
-	always = no
-}
-
-# England region.
-blg_region_england = {
-	always = no
+	OR = {
+		region = custom_usa
+		region = custom_canada
+	}
 }
 
 # European inspired regions.
@@ -82,14 +55,9 @@ blg_region_francia = {
 	always = no
 }
 
-# Frisian region.
-blg_region_frisia = {
-	always = no
-}
-
 # German region.
 blg_region_germania = {
-	always = no
+	region = world_rustlands
 }
 
 # Himalayas region.
@@ -99,7 +67,10 @@ blg_region_himalayas = {
 
 # Iberian region.
 blg_region_iberia = {
-	always = no
+	OR = {
+		region = world_south_america
+		region = world_caribbean
+	}
 }
 
 # Indian region.
@@ -152,7 +123,7 @@ blg_region_russia = {
 
 # Scandinavia region.
 blg_region_scandinavia = {
-	always = no
+	region = world_norselands
 }
 
 # Sicily region.

@@ -1,27 +1,14 @@
-# p16 Chinese empress jewelry + horse immortal.
+# p16 Chinese empress jewelry.
 16 = {
 	0 = { # blank
 		factor = 100
-		modifier = {
-			factor = 0
-			chinese_empress_jewelry_trigger = yes
-			NOT = { graphical_culture = horsegfx }
-		}
-
-		modifier = {
-			factor = 0
-			graphical_culture = horsegfx
-			immortal = yes
+		trigger = {
+			blg_face_jewelry = no
 		}
 	}
 
 	1 = { # Full face pearls and earrings
 		factor = 1
-		modifier = {
-			factor = 100
-			graphical_culture = horsegfx
-			immortal = yes
-		}
 	}
 
 	2 = { # pearl earrings only

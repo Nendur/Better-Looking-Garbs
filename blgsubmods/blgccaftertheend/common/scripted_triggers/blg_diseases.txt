@@ -26,6 +26,15 @@ blg_bubonic = {
 	always = no
 }
 
+# Crippled leg.
+blg_crippled = {
+	OR = {
+		trait = one_legged
+		trait = mangled
+		has_character_modifier = swollen_ankle
+	}
+}
+
 # Drooling spit.
 blg_drooling = {
 	OR = {
@@ -43,7 +52,7 @@ blg_fat = {
 		trait = sturdy
 		AND = {
 			trait = dwarf
-			NOT = { trait = fair }
+			blg_fair = no
 		}
 	}
 }

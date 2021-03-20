@@ -34,6 +34,7 @@
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
+		hide_layers = { 20 = {} }
 		hide_layers = { 23 = {} }
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
@@ -49,6 +50,7 @@
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
+		hide_layers = { 20 = {} }
 		hide_layers = { 23 = {} }
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
@@ -64,6 +66,7 @@
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
+		hide_layers = { 20 = {} }
 		hide_layers = { 23 = {} }
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
@@ -79,6 +82,7 @@
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
+		hide_layers = { 20 = {} }
 		hide_layers = { 23 = {} }
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }

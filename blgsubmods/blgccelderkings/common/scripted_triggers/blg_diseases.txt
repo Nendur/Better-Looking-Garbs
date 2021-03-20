@@ -16,7 +16,6 @@ blg_blind = {
 		trait = blinded
 		trait = blind
 		trait = blind_moth
-		has_character_modifier = glass_eye
 	}
 }
 
@@ -32,6 +31,15 @@ blg_boils = {
 # Bubonic boils.
 blg_bubonic = {
 	trait = has_bubonic_plague
+}
+
+# Crippled leg.
+blg_crippled = {
+	OR = {
+		trait = one_legged
+		trait = mangled
+		has_character_modifier = swollen_ankle
+	}
 }
 
 # Drooling spit.
@@ -52,7 +60,7 @@ blg_fat = {
 		trait = sturdy
 		AND = {
 			trait = dwarf
-			NOT = { trait = fair }
+			blg_fair = no
 		}
 	}
 }

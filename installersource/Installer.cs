@@ -13,7 +13,7 @@ namespace BetterLookingGarbsInstall
     static class Installer
     {
         [STAThread]
-        static void Main(string[] args)
+        static void Main()
         {
             try
             {
@@ -496,7 +496,7 @@ namespace BetterLookingGarbsInstall
                         ExtractDirectory(extrazip, "dlc074rdlc070");
                 }
 
-                MergeMod(extrazip);
+                MergeMod();
                 extrazip.Dispose();
                 log.Write("\nFinished extractions.");
 
@@ -655,7 +655,7 @@ namespace BetterLookingGarbsInstall
 
 
         // Extract and merge a files to the main mod.
-        static void MergeMod(ZipFile zip)
+        static void MergeMod()
         {
             foreach (KeyValuePair<string, ZipEntry> filepair in filestoextract)
             {
@@ -692,25 +692,36 @@ namespace BetterLookingGarbsInstall
         {
             try
             {
-                if ((File.Exists(Path.Combine(mods, "Historical_Immersion_Project\\SWMH_changelog.txt")) ||
-					File.Exists(Path.Combine(mods, "Historical Immersion Project\\SWMH_changelog.txt")) ||
-                    File.Exists(Path.Combine(mods, "blgccswmh.mod"))) &&
-                    !File.Exists(Path.Combine(mods, "blgcchip.zip")))
+                if (!File.Exists(Path.Combine(mods, "blgcchip.zip")))
                 {
-                    log.Write("HIP SWMH compatibility add-on installed.");
-                    InstallAnAddon("blgccswmh");
-                }
-                if ((File.Exists(Path.Combine(mods, "Historical_Immersion_Project\\EMF_changelog.txt")) ||
-					File.Exists(Path.Combine(mods, "Historical Immersion Project\\EMF_changelog.txt")) ||
-                    File.Exists(Path.Combine(mods, "blgccemf.mod"))) &&
-                    !File.Exists(Path.Combine(mods, "blgcchip.zip")))
-                {
-                    log.Write("HIP EMF compatibility add-on installed.");
-                    InstallAnAddon("blgccemf");
+                    bool combinedhip = false;
+                    if (File.Exists(Path.Combine(mods, "blgcchip.mod")) ||
+                        (File.Exists(Path.Combine(mods, "Historical_Immersion_Project\\SWMH_changelog.txt")) &&
+                        File.Exists(Path.Combine(mods, "Historical_Immersion_Project\\EMF_changelog.txt"))))
+                    {
+                        log.Write("HIP compatibility add-on installed.");
+                        InstallAnAddon("blgcchip");
+                        combinedhip = true;
+                    }
+                    if (File.Exists(Path.Combine(mods, "blgccswmh.mod")) ||
+                        (!combinedhip && (File.Exists(Path.Combine(mods, "Historical_Immersion_Project\\SWMH_changelog.txt")) ||
+                        File.Exists(Path.Combine(mods, "Historical Immersion Project\\SWMH_changelog.txt")))))
+                    {
+                        log.Write("HIP SWMH compatibility add-on installed.");
+                        InstallAnAddon("blgccswmh");
+                    }
+                    if (File.Exists(Path.Combine(mods, "blgccemf.mod")) ||
+                        (!combinedhip && (File.Exists(Path.Combine(mods, "Historical_Immersion_Project\\EMF_changelog.txt")) ||
+                        File.Exists(Path.Combine(mods, "Historical Immersion Project\\EMF_changelog.txt")))))
+                    {
+                        log.Write("HIP EMF compatibility add-on installed.");
+                        InstallAnAddon("blgccemf");
+                    }
                 }
                 if (File.Exists(Path.Combine(mods, "Historical_Immersion_Project\\CPRplus_attributions.txt")) ||
 					File.Exists(Path.Combine(mods, "Historical Immersion Project\\CPRplus_attributions.txt")))
                     log.Error("Note: Do not use Better Looking Garbs in combination with CPRplus.");
+
                 if ((Directory.Exists(Path.Combine(mods, "CK2Plus")) ||
                     File.Exists(Path.Combine(mods, "ck2plus.zip")) ||
                     File.Exists(Path.Combine(mods, "blgccck2+.mod"))) &&

@@ -15,6 +15,16 @@ blg_dangerous_prisoner = {
 	}
 }
 
+# Devout personality.
+blg_devout = {
+	OR = {
+		trait = zealous
+		has_focus = focus_theology
+		is_ascetic_trigger = yes
+		blg_pilgrimage = yes
+	}
+}
+
 # Character covered in dirt.
 blg_dirty = {
 	trait = uncouth
@@ -30,6 +40,11 @@ blg_guard = {
 	OR = {
 		trait = rainbowguard
 		trait = gladiator
+		has_minor_title = title_bodyguard
+		has_minor_title = title_bloodrider
+		has_minor_title = title_knight_of_the_greenhand
+		has_minor_title = title_captain_of_guard
+		has_minor_title = title_bravo
 	}
 }
 
@@ -49,13 +64,11 @@ blg_learned = {
 blg_modest = {
 	OR = {
 		is_married = yes
-		is_consort = yes
 		any_spouse_even_if_dead = { is_alive = no }
 		age >= 40
 		trait = chaste
 		trait = celibate
-		trait = zealous
-		is_ascetic_trigger = yes
+		blg_devout = yes
 	}
 	NOT = { trait = lustful }
 }
@@ -118,7 +131,10 @@ blg_desert_journey = {
 
 # Participating at an execution.
 blg_executioner = {
-	has_minor_title = title_justice_of_king
+	OR = {
+		has_minor_title = title_justice_of_king
+		has_minor_title = title_state_inquisitor
+	}
 }
 
 # Participating in a feast.

@@ -7,7 +7,7 @@
 			NOR = {
 				is_landed = yes
 				spouse = { is_landed = yes }
-				trait = falconer
+				blg_animal_falcon = yes
 			}
 		}
 
@@ -122,7 +122,7 @@
 	8 = { # h - Falcon
 		factor = 10
 		trigger = {
-			trait = falconer
+			blg_animal_falcon = yes
 
 			blg_artifact_rule = yes
 		}

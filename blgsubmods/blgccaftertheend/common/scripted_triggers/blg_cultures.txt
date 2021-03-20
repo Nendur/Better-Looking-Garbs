@@ -75,7 +75,6 @@ blg_default_clothing = {
 	OR = {
 		culture_group = californian
 		culture_group = chicano
-		culture_group = mexicano
 		culture_group = plains
 		culture_group = plateau
 		culture_group = west_anglo
@@ -84,6 +83,8 @@ blg_default_clothing = {
 		culture = dellsman
 		culture = mountainer
 		culture = coloradan
+		culture = norteno
+		culture = sonorense
 		culture = filastino
 		culture = paiute
 		culture = motowner
@@ -205,11 +206,6 @@ blg_culture_plains_natives = {
 	}
 }
 
-# Uses afghan portraits.
-blg_culture_afghan = {
-	always = no
-}
-
 blg_culture_african = {
 	OR = {
 		culture_group = antillais
@@ -241,6 +237,10 @@ blg_culture_chinese = {
 		culture = hong_konger
 		culture = kinh
 	}
+}
+
+blg_culture_central_germanic = {
+	culture_group = amerodeutsch
 }
 
 # Uses French veils.
@@ -282,11 +282,16 @@ blg_culture_greek = {
 }
 
 blg_culture_iberian = {
-	always = no
+	OR = {
+		culture_group = andino
+		culture_group = centrolatino
+		culture_group = costero
+		culture_group = portuguese
+	}
 }
 
 blg_culture_israelite = {
-	always = no
+	culture = yiddish
 }
 
 blg_culture_italian = {
@@ -318,31 +323,16 @@ blg_culture_midlands = {
 	}
 }
 
+blg_culture_northern = {
+	culture_group = ameronordic
+}
+
 blg_culture_eastcoast = {
 	OR = {
 		culture_group = mid_atlantic
 		culture_group = north_atlantic
 		culture_group = gallomerican
 	}
-}
-
-blg_culture_roman = {
-	always = no
-}
-
-# Uses Saxon portraits.
-blg_culture_saxon = {
-	always = no
-}
-
-# Uses Sogdian portraits.
-blg_culture_sogdian = {
-	always = no
-}
-
-# Uses Somali portraits.
-blg_culture_somali = {
-	always = no
 }
 
 # West-African gold route cultures.

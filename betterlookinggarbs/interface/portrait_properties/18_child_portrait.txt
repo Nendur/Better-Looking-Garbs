@@ -23,7 +23,6 @@
 	2 = { # b - Child 9
 		factor = 100
 		hide_layers = { 7 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
 		hide_layers = { 23 = {} }
@@ -38,10 +37,10 @@
 	3 = { # c - Child 6
 		factor = 100
 		hide_layers = { 7 = {} }
-		hide_layers = { 8 = {} }
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
+		hide_layers = { 20 = {} }
 		hide_layers = { 23 = {} }
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
@@ -58,6 +57,7 @@
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
+		hide_layers = { 20 = {} }
 		hide_layers = { 23 = {} }
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
@@ -74,6 +74,7 @@
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
+		hide_layers = { 20 = {} }
 		hide_layers = { 23 = {} }
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }
@@ -90,6 +91,7 @@
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
+		hide_layers = { 20 = {} }
 		hide_layers = { 23 = {} }
 		hide_layers = { 25 = {} }
 		hide_layers = { 26 = {} }

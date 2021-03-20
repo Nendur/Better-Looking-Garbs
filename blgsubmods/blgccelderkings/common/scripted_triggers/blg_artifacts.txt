@@ -59,6 +59,11 @@ blg_artifact_horn = {
 	always = no
 }
 
+# Chinese jade dragon.
+blg_artifact_jadedragon = {
+	always = no
+}
+
 # Mjolnir hammer.
 blg_artifact_mjolnir = {
 	has_artifact = amulet_of_kings
@@ -158,6 +163,11 @@ blg_artifact_totem = {
 			artifact_type = weapon_wabbajack
 		}
 	}
+}
+
+# Chinese water clock.
+blg_artifact_waterclock = {
+	always = no
 }
 
 ### Artifact headgear:

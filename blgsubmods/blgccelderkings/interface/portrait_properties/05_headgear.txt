@@ -393,24 +393,9 @@
 		trigger = {
 			OR = {
 				AND = {
-					blg_headgear_military = yes
-
-					OR = {
-						higher_real_tier_than = duke
-						spouse_even_if_dead = {
-							higher_real_tier_than = duke
-						}
-					}
-
-					NOR = {
-						AND = {
-							is_nomadic = yes
-							population < 5000
-						}
-						blg_republic = yes
-						blg_holy_order = yes
-					}
 					blg_ek_clothing = no
+					blg_headgear_military = yes
+					blg_headgear_king = yes
 				}
 
 				AND = {

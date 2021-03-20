@@ -24,6 +24,17 @@ blg_crowned = {
 	NOT = { trait = uncrowned }
 }
 
+# Use the Chinese face jewelry.
+blg_face_jewelry = {
+	OR = {
+		has_character_modifier = jd_princess
+		AND = {
+			blg_headgear_chinese = yes
+			blg_royalty = yes
+		}
+	}
+}
+
 # Prepared for battle.
 blg_warrior = {
 	OR = {
@@ -88,7 +99,7 @@ blg_crown_emperor = {
 	NOR = {
 		AND = {
 			is_nomadic = yes
-			population < 10000
+			population_and_manpower < 10000
 		}
 		primary_title = { title = e_great_britain }
 		primary_title = { title = e_yugoslavia }
@@ -116,7 +127,7 @@ blg_crown_king = {
 		AND = {
 			is_nomadic = yes
 			has_game_started = yes
-			population < 5000
+			population_and_manpower < 5000
 		}
 		blg_republic = yes
 		blg_mercenary = yes
@@ -129,8 +140,11 @@ blg_crown_king = {
 blg_headgear_emperor = {
 	OR = {
 		blg_crown_emperor = yes
-		spouse_even_if_dead = {
-			blg_crown_emperor = yes
+		AND = {
+			is_main_spouse = yes
+			spouse_even_if_dead = {
+				blg_crown_emperor = yes
+			}
 		}
 	}
 }

@@ -37,6 +37,16 @@ if [ -z "$1" ] || [ "$1" != "-continue" ]; then
 	fi
 fi
 
+if [ -f "${MODS}Historical_Immersion_Project/SWMH_changelog.txt" -a -f "${MODS}Historical_Immersion_Project/EMF_changelog.txt" -a ! -f "${MODS}blgcchip.zip" ]; then
+	if [ -f "$BLGZIP" ]; then
+		unzip -uoq "$BLGZIP" "submods/blgcchip*" -d"$MODS"
+	fi
+	if [ -f "${ADDONS}/blgcchip.mod" ]; then
+		[ -d "${MODS}/blgcchip" ] && rm -r "${MODS}/blgcchip.mod" "${MODS}/blgcchip"
+		mv "${ADDONS}"/blgcchip* "$MODS"
+	fi
+	echo "HIP compatibility add-on installed."
+fi
 if [ -f "${MODS}Historical Immersion Project/SWMH_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/SWMH_changelog.txt" -o -f "${MODS}blgccswmh.mod" -a ! -f "${MODS}blgcchip.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccswmh*" -d"$MODS"

@@ -29,6 +29,7 @@ blg_shaved = {
 blg_tonsure = {
 	is_ruler = no
 	trait = septon
+	NOT = { trait = cynical }
 }
 
 # Not allowed to cut hair.
@@ -44,7 +45,9 @@ blg_hair_chinese_tidy = {
 		is_married = yes
 		is_consort = yes
 		is_landed = yes
+		trait = groomed
 	}
+	NOT = { trait = uncouth }
 }
 
 # Tidy hair for married women and high rulers.
@@ -53,7 +56,9 @@ blg_hair_southernslavic_tidy = {
 	OR = {
 		is_married = yes
 		higher_tier_than = duke
+		trait = groomed
 	}
+	NOT = { trait = uncouth }
 }
 
 # Early Germanic kings wearing long hair.
@@ -71,7 +76,9 @@ blg_hair_westernslavic_tidy = {
 	OR = {
 		is_married = yes
 		higher_tier_than = count
+		trait = groomed
 	}
+	NOT = { trait = uncouth }
 }
 
 ### Beard rules:

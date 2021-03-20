@@ -25,7 +25,7 @@ spriteTypes = {
 			"GFX_child_back:p17"
 			"GFX_direwolf_son_base:p18"
 			"GFX_creature_pale:p22"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -54,7 +54,7 @@ spriteTypes = {
 		layer = {
 			"GFX_character_direwolfs:d2"
 			"GFX_creature_pale:p22"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -83,7 +83,7 @@ spriteTypes = {
 		layer = {
 			"GFX_character_direwolfs:d2"
 			"GFX_creature_pale:p22"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -114,7 +114,7 @@ spriteTypes = {
 			"GFX_child_back:p17"
 			"GFX_direwolf_son_base:p18"
 			"GFX_creature_pale:p22"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -143,7 +143,7 @@ spriteTypes = {
 		layer = {
 			"GFX_character_direwolfs:d2"
 			"GFX_creature_pale:p22"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -172,7 +172,7 @@ spriteTypes = {
 		layer = {
 			"GFX_character_direwolfs:d2"
 			"GFX_creature_pale:p22"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"

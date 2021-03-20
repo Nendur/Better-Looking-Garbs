@@ -11,11 +11,9 @@
 			factor = 0.01
 			OR = {
 				blg_priest = yes
-				is_ascetic_trigger = yes
-				trait = zealous
+				blg_devout = yes
 				has_minor_title = title_guru
 				society_member_of = monastic_order_hindu
-				trait = on_indian_pilgrimage
 				has_character_flag = diwali_feast_begun
 				has_character_flag = attending_diwali_feast
 			}
@@ -26,8 +24,7 @@
 		factor = 5
 		trigger = {
 			OR = {
-				is_ascetic_trigger = yes
-				trait = zealous
+				blg_devout = yes
 				society_member_of = monastic_order_hindu
 			}
 		}
@@ -37,8 +34,7 @@
 		factor = 5
 		trigger = {
 			OR = {
-				is_ascetic_trigger = yes
-				trait = zealous
+				blg_devout = yes
 				society_member_of = monastic_order_hindu
 			}
 		}
@@ -48,8 +44,7 @@
 		factor = 5
 		trigger = {
 			OR = {
-				is_ascetic_trigger = yes
-				trait = zealous
+				blg_devout = yes
 				society_member_of = monastic_order_hindu
 			}
 		}
@@ -59,8 +54,7 @@
 		factor = 5
 		trigger = {
 			OR = {
-				is_ascetic_trigger = yes
-				trait = zealous
+				blg_devout = yes
 				society_member_of = monastic_order_hindu
 			}
 		}
@@ -70,8 +64,7 @@
 		factor = 5
 		trigger = {
 			OR = {
-				is_ascetic_trigger = yes
-				trait = zealous
+				blg_devout = yes
 				society_member_of = monastic_order_hindu
 			}
 		}

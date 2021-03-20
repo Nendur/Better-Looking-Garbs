@@ -323,6 +323,12 @@
 
 			blg_wounded_alive = yes
 		}
+
+		modifier = {
+			factor = 100
+			character = 5190 #Tyrion
+		}
+
 	}
 
 	16 = { # p - Disfigured nose
@@ -338,11 +344,6 @@
 				}
 				trait = maimed
 			}
-		}
-
-		modifier = {
-			factor = 100
-			character = 5190 #Tyrion
 		}
 
 		modifier = {

@@ -32,7 +32,6 @@
 					}
 				}
 			}
-			NOT = { check_variable = { which = ca_overlayer value = 2 } }
 		}
 
 		modifier = {
@@ -41,11 +40,6 @@
 				culture = frankish
 				culture = occitan
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 1 }
 		}
 	}
 
@@ -56,13 +50,11 @@
 				AND = {
 					year_of_birth >= 1160
 					has_portrait_property = { layer = 5 index = 10 }
-					is_variable_equal = { which = ca_overlayer value = 0 }
 					OR = {
 						culture = frankish
 						culture = occitan
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 2 }
 			}
 		}
 	}
@@ -86,13 +78,7 @@
 						culture = occitan
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 3 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 3 }
 		}
 	}
 
@@ -115,13 +101,7 @@
 						culture = occitan
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 4 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 4 }
 		}
 	}
 
@@ -144,13 +124,7 @@
 						culture = occitan
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 5 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 5 }
 		}
 	}
 
@@ -174,13 +148,7 @@
 						has_portrait_property = { layer = 32 index = 9 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 6 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 6 }
 		}
 	}
 
@@ -211,16 +179,12 @@
 						has_portrait_property = { layer = 32 index = 9 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 7 }
 			}
 		}
 
 		modifier = {
 			factor = 100
-			OR = {
-				has_portrait_property = { layer = 5 index = 12 }
-				is_variable_equal = { which = ca_overlayer value = 7 }
-			}
+			has_portrait_property = { layer = 5 index = 12 }
 		}
 	}
 
@@ -248,13 +212,7 @@
 						has_portrait_property = { layer = 32 index = 9 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 8 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 8 }
 		}
 	}
 
@@ -285,16 +243,12 @@
 						culture = occitan
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 9 }
 			}
 		}
 
 		modifier = {
 			factor = 100
-			OR = {
-				has_portrait_property = { layer = 5 index = 12 }
-				is_variable_equal = { which = ca_overlayer value = 9 }
-			}
+			has_portrait_property = { layer = 5 index = 12 }
 		}
 	}
 
@@ -318,13 +272,7 @@
 						has_portrait_property = { layer = 32 index = 8 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 10 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 10 }
 		}
 	}
 
@@ -373,13 +321,7 @@
 						has_portrait_property = { layer = 32 index = 15 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 11 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 11 }
 		}
 	}
 
@@ -428,13 +370,7 @@
 						has_portrait_property = { layer = 32 index = 15 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 12 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 12 }
 		}
 	}
 
@@ -484,13 +420,7 @@
 						has_portrait_property = { layer = 32 index = 15 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 13 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 13 }
 		}
 	}
 
@@ -542,13 +472,7 @@
 						has_portrait_property = { layer = 32 index = 15 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 14 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 14 }
 		}
 	}
 
@@ -599,13 +523,7 @@
 						has_portrait_property = { layer = 32 index = 15 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 15 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 15 }
 		}
 	}
 
@@ -658,13 +576,7 @@
 						has_portrait_property = { layer = 32 index = 14 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 16 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 16 }
 		}
 	}
 
@@ -704,7 +616,6 @@
 						has_portrait_property = { layer = 32 index = 24 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 17 }
 			}
 		}
 
@@ -714,11 +625,6 @@
 				culture = frankish
 				culture = occitan
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 17 }
 		}
 	}
 
@@ -758,7 +664,6 @@
 						has_portrait_property = { layer = 32 index = 24 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 18 }
 			}
 		}
 
@@ -768,11 +673,6 @@
 				culture = frankish
 				culture = occitan
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 18 }
 		}
 	}
 
@@ -812,13 +712,7 @@
 						has_portrait_property = { layer = 32 index = 24 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 19 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 19 }
 		}
 	}
 
@@ -858,7 +752,6 @@
 						has_portrait_property = { layer = 32 index = 24 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 20 }
 			}
 		}
 
@@ -868,11 +761,6 @@
 				culture = frankish
 				culture = occitan
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 20 }
 		}
 	}
 
@@ -914,13 +802,7 @@
 						has_portrait_property = { layer = 32 index = 24 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 21 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 21 }
 		}
 	}
 
@@ -962,13 +844,7 @@
 						has_portrait_property = { layer = 32 index = 24 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 22 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 22 }
 		}
 	}
 
@@ -1004,7 +880,6 @@
 						has_portrait_property = { layer = 32 index = 24 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 23 }
 			}
 		}
 
@@ -1014,11 +889,6 @@
 				culture = frankish
 				culture = occitan
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 23 }
 		}
 	}
 
@@ -1058,7 +928,6 @@
 						has_portrait_property = { layer = 32 index = 24 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 24 }
 			}
 		}
 
@@ -1068,11 +937,6 @@
 				culture = frankish
 				culture = occitan
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 24 }
 		}
 	}
 
@@ -1112,7 +976,6 @@
 						has_portrait_property = { layer = 32 index = 23 }
 					}
 				}
-				is_variable_equal = { which = ca_overlayer value = 25 }
 			}
 		}
 
@@ -1122,11 +985,6 @@
 				culture = frankish
 				culture = occitan
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 25 }
 		}
 	}
 }

@@ -68,6 +68,13 @@
 			NOT = { is_variable_equal = { which = ca_beard value = 2 } }
 		}
 
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
+			NOT = { is_variable_equal = { which = ca_beard value = 2 } }
+		}
+
 		trigger = {
 			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
@@ -123,6 +130,13 @@
 			NOT = { is_variable_equal = { which = ca_beard value = 3 } }
 		}
 
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
+			NOT = { is_variable_equal = { which = ca_beard value = 3 } }
+		}
+
 		trigger = {
 			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
@@ -165,6 +179,13 @@
 			blg_beard_southern = no
 			blg_beard_turkish = no
 			blg_beard_ugric = no
+			NOT = { is_variable_equal = { which = ca_beard value = 4 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
 			NOT = { is_variable_equal = { which = ca_beard value = 4 } }
 		}
 
@@ -211,6 +232,13 @@
 			NOT = { is_variable_equal = { which = ca_beard value = 5 } }
 		}
 
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
+			NOT = { is_variable_equal = { which = ca_beard value = 5 } }
+		}
+
 		trigger = {
 			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
@@ -249,6 +277,13 @@
 			blg_beard_southindian = no
 			blg_beard_ugric = no
 			blg_beard_mongol = no
+			NOT = { is_variable_equal = { which = ca_beard value = 6 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
 			NOT = { is_variable_equal = { which = ca_beard value = 6 } }
 		}
 
@@ -293,6 +328,13 @@
 			blg_beard_turkish = no
 			blg_beard_ugric = no
 			blg_beard_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 7 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
 			NOT = { is_variable_equal = { which = ca_beard value = 7 } }
 		}
 
@@ -403,6 +445,13 @@
 			NOT = { is_variable_equal = { which = ca_beard value = 9 } }
 		}
 
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
+			NOT = { is_variable_equal = { which = ca_beard value = 9 } }
+		}
+
 		trigger = {
 			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
@@ -448,6 +497,13 @@
 			blg_beard_ugric = no
 			blg_beard_westernslavic = no
 			blg_beard_easternslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 10 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
 			NOT = { is_variable_equal = { which = ca_beard value = 10 } }
 		}
 
@@ -557,6 +613,13 @@
 			blg_beard_roman = no
 			blg_beard_southslavic = no
 			blg_beard_westernslavic = no
+			NOT = { is_variable_equal = { which = ca_beard value = 12 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
 			NOT = { is_variable_equal = { which = ca_beard value = 12 } }
 		}
 
@@ -672,6 +735,13 @@
 			NOT = { is_variable_equal = { which = ca_beard value = 14 } }
 		}
 
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
+			NOT = { is_variable_equal = { which = ca_beard value = 14 } }
+		}
+
 		trigger = {
 			OR = {
 				is_variable_equal = { which = ca_beard value = 0 }
@@ -717,6 +787,13 @@
 			blg_beard_southindian = no
 			blg_beard_ugric = no
 			blg_beard_bodpa = no
+			NOT = { is_variable_equal = { which = ca_beard value = 15 } }
+		}
+
+		modifier = {
+			factor = 0
+			blg_shaved = yes
+			age < 50
 			NOT = { is_variable_equal = { which = ca_beard value = 15 } }
 		}
 

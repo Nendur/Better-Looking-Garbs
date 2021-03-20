@@ -16,7 +16,7 @@
 	}
 
 	2 = { # b - Harp
-		factor = 100
+		factor = 10
 		trigger = {
 			blg_artifact_harp = yes
 		}
@@ -67,11 +67,25 @@
 		}
 	}
 
-	9 = { # j - Hunting Trophy
+	9 = { # i - Hunting Trophy
 		factor = 100
 		trigger = {
 			has_character_flag = achievement_great_hunter
 			has_character_flag = white_lion
+		}
+	}
+
+	10 = { # j - Jade Dragon
+		factor = 10
+		trigger = {
+			blg_artifact_jadedragon = yes
+		}
+	}
+
+	11 = { # k - Water clock
+		factor = 10
+		trigger = {
+			blg_artifact_waterclock = yes
 		}
 	}
 }

@@ -4,10 +4,6 @@
 		factor = 3
 		modifier = {
 			factor = 100
-		}
-
-		modifier = {
-			factor = 100
 			prisoner = yes
 			NOR = {
 				has_character_modifier = pet_rat_dungeon
@@ -329,7 +325,18 @@
 		}
 	}
 
-	17 = { # q - Dagger
+	17 = { # q - Crutch
+		factor = 50
+		trigger = {
+			OR = {
+				trait = one_legged
+				trait = mangled
+				has_character_modifier = swollen_ankle
+			}
+		}
+	}
+
+	18 = { # r - Dagger
 		factor = 25
 		trigger = {
 			any_artifact = {
@@ -341,7 +348,7 @@
 		}
 	}
 
-	18 = { # r - Dagger
+	19 = { # s - Dagger
 		factor = 10
 		trigger = {
 			any_artifact = {
@@ -353,7 +360,7 @@
 		}
 	}
 
-	19 = { # s - Book
+	20 = { # t - Book
 		factor = 1
 		trigger = {
 			any_artifact = {
@@ -366,7 +373,7 @@
 		}
 	}
 
-	20 = { # t - Ingredients
+	21 = { # u - Ingredients
 		factor = 1
 		trigger = {
 			any_artifact = {
@@ -379,7 +386,7 @@
 		}
 	}
 
-	21 = { # u - Scroll
+	22 = { # v - Scroll
 		factor = 10
 		trigger = {
 			any_artifact = {
@@ -390,19 +397,17 @@
 						artifact_type = chinese_calligraphy
 				}
 			}
-
 		}
 	}
 
-	22 = { # v - Eagle
+	23 = { # w - Eagle
 		factor = 10
 		trigger = {
 			has_character_modifier = pet_hunting_eagle
-
 		}
 	}
 
-	23 = { # w - Raven
+	24 = { # x - Raven
 		factor = 10
 		trigger = {
 			OR = {
@@ -420,11 +425,10 @@
 						}
 				}
 			}
-
 		}
 	}
 
-	24 = { # x - Rat
+	25 = { # y - Rat
 		factor = 10
 		trigger = {
 			OR = {
@@ -436,7 +440,7 @@
 		}
 	}
 
-	25 = { # y - Snake
+	26 = { # z - Snake
 		factor = 10
 		trigger = {
 			OR = {
@@ -448,7 +452,6 @@
 				has_character_modifier = friend_of_snakes
 				has_character_flag = diwali_snake_charmer
 			}
-
 		}
 	}
 }

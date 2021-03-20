@@ -153,40 +153,12 @@ blg_veiled_crown = {
 	}
 }
 
-### Culture groupings:
-
-# Uses afghan portraits.
-blg_culture_afghan = {
-	OR = {
-		culture = afghan
-		culture = baloch
-	}
-}
+### Culture groupings for portraits:
 
 blg_culture_african = {
 	OR = {
 		likes_africans = yes
 		culture_group = central_african
-	}
-}
-
-# Uses Cuman hairstyles.
-blg_culture_central_asian = {
-	OR = {
-		culture = pecheneg
-		culture = cuman
-		culture = mongol
-		culture = karluk
-		culture = kirghiz
-		culture = uyghur
-	}
-}
-
-# Uses German and Dutch portraits.
-blg_culture_central_germanic = {
-	OR = {
-		culture = dutch
-		culture_group = central_germanic
 	}
 }
 
@@ -242,10 +214,6 @@ blg_culture_iberian = {
 	culture_group = iberian
 }
 
-blg_culture_israelite = {
-	culture_group = israelite
-}
-
 blg_culture_italian = {
 	OR = {
 		culture = italian
@@ -260,6 +228,57 @@ blg_culture_middleeast = {
 		likes_arabs = yes
 		likes_iranians = yes
 	}
+}
+
+# West-African gold route cultures.
+blg_culture_west_african = {
+	OR = {
+		culture_group = west_african
+		culture = maghreb_arabic
+	}
+}
+
+# Uses West/South-Slavic headgear rules.
+blg_culture_west_slavic = {
+	OR = {
+		culture_group = west_slavic
+		culture_group = south_slavic
+		culture_group = magyar
+	}
+}
+
+### Culture groupings for ethnicities:
+
+# Uses afghan portraits.
+blg_culture_afghan = {
+	OR = {
+		culture = afghan
+		culture = baloch
+	}
+}
+
+# Uses Cuman hairstyles.
+blg_culture_central_asian = {
+	OR = {
+		culture = pecheneg
+		culture = cuman
+		culture = mongol
+		culture = karluk
+		culture = kirghiz
+		culture = uyghur
+	}
+}
+
+# Uses German and Dutch portraits.
+blg_culture_central_germanic = {
+	OR = {
+		culture = dutch
+		culture_group = central_germanic
+	}
+}
+
+blg_culture_israelite = {
+	culture_group = israelite
 }
 
 # Uses Norse-like portraits.
@@ -304,23 +323,6 @@ blg_culture_somali = {
 	OR = {
 		culture = somali
 		culture = daju
-	}
-}
-
-# West-African gold route cultures.
-blg_culture_west_african = {
-	OR = {
-		culture_group = west_african
-		culture = maghreb_arabic
-	}
-}
-
-# Uses West/South-Slavic headgear rules.
-blg_culture_west_slavic = {
-	OR = {
-		culture_group = west_slavic
-		culture_group = south_slavic
-		culture_group = magyar
 	}
 }
 

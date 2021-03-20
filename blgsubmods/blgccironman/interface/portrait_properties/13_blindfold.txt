@@ -15,8 +15,6 @@
 					trait = one_eyed
 				}
 				has_character_modifier = glass_eye
-				is_variable_equal = { which = ca_eyepatch value = 1 }
-				is_variable_equal = { which = ca_eyepatch value = 23 }
 			}
 		}
 	}
@@ -29,11 +27,6 @@
 				trait = blinded
 				has_character_modifier = glass_eye
 			}
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 2 }
-			}
 		}
 	}
 
@@ -44,11 +37,6 @@
 			NOR = {
 				trait = blinded
 				has_character_modifier = glass_eye
-			}
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 3 }
 			}
 		}
 	}
@@ -63,15 +51,9 @@
 			}
 
 			OR = {
-				AND = {
-					is_variable_equal = { which = ca_eyepatch value = 0 }
-					OR = {
-						trait = paranoid
-						trait = possessed
-						trait = lunatic
-					}
-				}
-				is_variable_equal = { which = ca_eyepatch value = 4 }
+				trait = paranoid
+				trait = possessed
+				trait = lunatic
 			}
 		}
 	}
@@ -84,11 +66,6 @@
 				trait = blinded
 				has_character_modifier = glass_eye
 			}
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 5 }
-			}
 		}
 	}
 
@@ -99,11 +76,6 @@
 			NOR = {
 				trait = blinded
 				has_character_modifier = glass_eye
-			}
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 6 }
 			}
 		}
 
@@ -129,11 +101,6 @@
 				trait = blinded
 				has_character_modifier = glass_eye
 			}
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 7 }
-			}
 		}
 
 		modifier = {
@@ -149,11 +116,6 @@
 			NOR = {
 				trait = blinded
 				has_character_modifier = glass_eye
-			}
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 8 }
 			}
 		}
 
@@ -171,11 +133,6 @@
 				trait = blinded
 				has_character_modifier = glass_eye
 			}
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 9 }
-			}
 		}
 	}
 
@@ -188,13 +145,7 @@
 				has_character_modifier = glass_eye
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_eyepatch value = 0 }
-					has_injury_trigger = yes
-				}
-				is_variable_equal = { which = ca_eyepatch value = 10 }
-			}
+			has_injury_trigger = yes
 		}
 	}
 
@@ -207,13 +158,7 @@
 				has_character_modifier = glass_eye
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_eyepatch value = 0 }
-					likes_celts = yes
-				}
-				is_variable_equal = { which = ca_eyepatch value = 11 }
-			}
+			likes_celts = yes
 		}
 	}
 
@@ -226,13 +171,7 @@
 				has_character_modifier = glass_eye
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_eyepatch value = 0 }
-					NOT = { trait = shy }
-				}
-				is_variable_equal = { which = ca_eyepatch value = 12 }
-			}
+			NOT = { trait = shy }
 		}
 
 		modifier = {
@@ -254,13 +193,7 @@
 				has_character_modifier = glass_eye
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_eyepatch value = 0 }
-					NOT = { trait = shy }
-				}
-				is_variable_equal = { which = ca_eyepatch value = 13 }
-			}
+			NOT = { trait = shy }
 		}
 
 		modifier = {
@@ -281,11 +214,6 @@
 				trait = blinded
 				has_character_modifier = glass_eye
 			}
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 14 }
-			}
 		}
 	}
 
@@ -295,17 +223,11 @@
 			trait = blinded
 
 			OR = {
-				AND = {
-					is_variable_equal = { which = ca_eyepatch value = 0 }
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						religion_group = pagan_group
-						trait = stubborn
-					}
-					NOT = { trait = shy }
-				}
-				is_variable_equal = { which = ca_eyepatch value = 15 }
+				has_tribal_or_nomadic_government_trigger = yes
+				religion_group = pagan_group
+				trait = stubborn
 			}
+			NOT = { trait = shy }
 		}
 	}
 
@@ -313,11 +235,6 @@
 		factor = 1
 		trigger = {
 			trait = blinded
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 16 }
-			}
 		}
 	}
 
@@ -325,11 +242,6 @@
 		factor = 1
 		trigger = {
 			trait = blinded
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 17 }
-			}
 		}
 
 		modifier = {
@@ -350,11 +262,6 @@
 		factor = 1
 		trigger = {
 			trait = blinded
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 18 }
-			}
 		}
 
 		modifier = {
@@ -367,11 +274,6 @@
 		factor = 1
 		trigger = {
 			trait = blinded
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 19 }
-			}
 		}
 
 		modifier = {
@@ -384,11 +286,6 @@
 		factor = 1
 		trigger = {
 			trait = blinded
-
-			OR = {
-				is_variable_equal = { which = ca_eyepatch value = 0 }
-				is_variable_equal = { which = ca_eyepatch value = 20 }
-			}
 		}
 	}
 
@@ -397,13 +294,7 @@
 		trigger = {
 			trait = blinded
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_eyepatch value = 0 }
-					has_injury_trigger = yes
-				}
-				is_variable_equal = { which = ca_eyepatch value = 21 }
-			}
+			has_injury_trigger = yes
 		}
 	}
 
@@ -412,13 +303,7 @@
 		trigger = {
 			trait = blinded
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_eyepatch value = 0 }
-					likes_celts = yes
-				}
-				is_variable_equal = { which = ca_eyepatch value = 22 }
-			}
+			likes_celts = yes
 		}
 	}
 

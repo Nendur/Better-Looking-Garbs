@@ -2,6 +2,21 @@
 
 ### Pets:
 
+blg_animal_ape = {
+	always = no
+}
+
+blg_animal_bat = {
+	always = no
+}
+
+blg_animal_boar = {
+	OR = {
+		death_reason = death_accident_boar
+		death_reason = death_execution_boar
+	}
+}
+
 blg_animal_cat = {
 	OR = {
 		has_character_modifier = pet_cat
@@ -33,11 +48,31 @@ blg_animal_eagle = {
 	has_character_modifier = pet_hunting_eagle
 }
 
+blg_animal_falcon = {
+	trait = falconer
+}
+
+blg_animal_fox = {
+	always = no
+}
+
+blg_animal_frog = {
+	always = no
+}
+
 blg_animal_hedgehog = {
 	OR = {
 		has_character_modifier = pet_hedgehog
 		has_character_modifier = dw_familiar_hedgehog
 	}
+}
+
+blg_animal_imp = {
+	has_character_modifier = dw_familiar_imp
+}
+
+blg_animal_monkey = {
+	always = no
 }
 
 blg_animal_otter = {
@@ -94,6 +129,10 @@ blg_animal_snake = {
 		has_character_modifier = friend_of_snakes
 		has_character_flag = diwali_snake_charmer
 	}
+}
+
+blg_animal_vulture = {
+	always = no
 }
 
 blg_animal_wolf = {

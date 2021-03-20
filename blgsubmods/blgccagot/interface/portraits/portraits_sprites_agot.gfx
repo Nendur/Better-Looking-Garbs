@@ -66,14 +66,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_character_special_masks"
-		texturefile = "gfx\\characters\\shared\\skinchanger.dds"
-		noOfFrames = 5
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
 		name = "GFX_religious_male_clothes"
 		texturefile = "gfx\\characters\\religious_male_clothes.dds"
 		noOfframes = 17

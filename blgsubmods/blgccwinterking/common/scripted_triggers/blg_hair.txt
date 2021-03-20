@@ -19,6 +19,7 @@ blg_tonsure = {
 		blg_priest = yes
 		is_ascetic_trigger = yes
 	}
+	NOT = { trait = cynical }
 }
 
 # Not allowed to cut hair.
@@ -37,7 +38,9 @@ blg_hair_southernslavic_tidy = {
 	OR = {
 		is_married = yes
 		higher_tier_than = duke
+		trait = groomed
 	}
+	NOT = { trait = uncouth }
 }
 
 # Early Germanic kings wearing long hair.
@@ -71,7 +74,9 @@ blg_hair_westernslavic_tidy = {
 	OR = {
 		is_married = yes
 		higher_tier_than = count
+		trait = groomed
 	}
+	NOT = { trait = uncouth }
 }
 
 ### Beard rules:

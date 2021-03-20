@@ -1,14 +1,21 @@
 Changelog:
 
+21-03-2021
   Scale up ship models.
   Added non-dlc carried helmets.
-  Separate some more scripted triggers.
+  Separated some more scripted triggers.
   Reordered backgrounds for better compatibility.
-  More wound graphics.
+  Moved religious clothing for better compatibility.
+  More wounded and disfigured graphics.
   Created versions of effect graphics fitted for animals and other creatures.
   Varied dragon portraits.
   Added North-American unit variant of Meso-American units.
   Added mammoth unit retexture.
+  Added crutch for crippled characters.
+  Randomize cleavages.
+  Added more artifacts, pets and familiars.
+  Reworked Chinese empress jewelry, actually supports offmap empires now.
+  Switched imperial secondary spouses to kings headgear for variety.
 
 16-01-2021
   Fade dead character portraits, with a game rule toggle.

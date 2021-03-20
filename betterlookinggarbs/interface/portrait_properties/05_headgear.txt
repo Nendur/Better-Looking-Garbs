@@ -456,26 +456,7 @@
 			OR = {
 				AND = {
 					blg_headgear_military = yes
-
-					OR = {
-						AND = {
-							higher_real_tier_than = duke
-							blg_crowned = yes
-						}
-						spouse_even_if_dead = {
-							higher_real_tier_than = duke
-							blg_crowned = yes
-						}
-					}
-
-					NOR = {
-						AND = {
-							is_nomadic = yes
-							population < 5000
-						}
-						blg_republic = yes
-						blg_holy_order = yes
-					}
+					blg_headgear_king = yes
 				}
 
 				blg_merchant_headgear = yes

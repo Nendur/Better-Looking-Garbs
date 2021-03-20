@@ -16,7 +16,6 @@ blg_blind = {
 	OR = {
 		trait = blinded
 		trait = blinded_age
-		has_character_modifier = glass_eye
 	}
 }
 
@@ -30,6 +29,16 @@ blg_bubonic = {
 	OR = {
 		trait = has_bubonic_plague
 		character = 4301
+	}
+}
+
+# Crippled leg.
+blg_crippled = {
+	OR = {
+		trait = one_legged
+		trait = mangled
+		trait = crippled
+		has_character_modifier = swollen_ankle
 	}
 }
 
@@ -49,7 +58,7 @@ blg_fat = {
 		trait = sturdy
 		AND = {
 			trait = dwarf
-			NOT = { trait = fair }
+			blg_fair = no
 		}
 	}
 }

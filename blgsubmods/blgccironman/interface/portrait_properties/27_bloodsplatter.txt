@@ -47,9 +47,6 @@
 				trait = uncouth
 				has_character_modifier = dirty_hands
 			}
-
-			NOR = {
-			}
 		}
 	}
 }

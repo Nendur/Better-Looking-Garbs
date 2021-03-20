@@ -15,6 +15,16 @@ blg_dangerous_prisoner = {
 	}
 }
 
+# Devout personality.
+blg_devout = {
+	OR = {
+		trait = zealous
+		has_focus = focus_theology
+		is_ascetic_trigger = yes
+		blg_pilgrimage = yes
+	}
+}
+
 # Character covered in dirt.
 blg_dirty = {
 	trait = uncouth
@@ -22,7 +32,10 @@ blg_dirty = {
 
 # Attractive character.
 blg_fair = {
-	trait = fair
+	OR = {
+		trait = fair
+		trait = vain
+	}
 }
 
 # Character of a guard order.
@@ -49,13 +62,11 @@ blg_learned = {
 blg_modest = {
 	OR = {
 		is_married = yes
-		is_consort = yes
 		any_spouse_even_if_dead = { is_alive = no }
-		practical_age >= 40
+		age >= 40
 		trait = chaste
 		trait = celibate
-		trait = zealous
-		is_ascetic_trigger = yes
+		blg_devout = yes
 	}
 	NOT = { trait = lustful }
 }
@@ -100,6 +111,7 @@ blg_slave = {
 		trait = slave
 		trait = rebel_slave
 		death_reason = death_slavery
+		death_reason = death_sold_in_slavery
 	}
 	NOR = {
 		is_councillor = yes
@@ -122,7 +134,7 @@ blg_desert_journey = {
 
 # Participating at an execution.
 blg_executioner = {
-	always = no
+	has_minor_title = title_state_inquisitor
 }
 
 # Participating in a feast.
@@ -143,6 +155,7 @@ blg_outdoors = {
 		trait = hunter
 		trait = falconer
 		trait = adventurer
+		has_minor_title = title_guide
 		has_character_modifier = holding_grand_hunt
 		has_character_modifier = enjoying_the_countryside
 		has_nickname = nick_of_the_wilds

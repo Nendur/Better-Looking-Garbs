@@ -240,7 +240,7 @@
 		modifier = {
 			factor = 10
 			OR = {
-				trait = zealous
+				blg_devout = yes
 				capital_holding = { holding_type = temple }
 			}
 			OR = {
@@ -321,9 +321,8 @@
 			factor = 10
 			OR = {
 				blg_priest = yes
+				blg_devout = yes
 				capital_holding = { holding_type = temple }
-				has_focus = focus_theology
-				trait = zealous
 			}
 		}
 
@@ -716,8 +715,8 @@
 		}
 
 		modifier = {
-			factor = 2
-			trait = zealous
+			factor = 10
+			blg_devout = yes
 			likes_muslims = yes
 		}
 
@@ -727,11 +726,6 @@
 				has_secret_religion = yes
 				trait = cynical
 			}
-		}
-
-		modifier = {
-			factor = 10
-			has_focus = focus_theology
 		}
 
 		modifier = {

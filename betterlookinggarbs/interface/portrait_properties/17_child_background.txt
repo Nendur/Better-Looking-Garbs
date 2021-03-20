@@ -21,7 +21,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -52,7 +51,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -109,7 +107,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -157,7 +154,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -202,7 +198,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -265,7 +260,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -325,7 +319,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -365,7 +358,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -407,7 +399,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -454,7 +445,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -510,7 +500,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -547,7 +536,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -606,7 +594,6 @@
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
 		hide_layers = { 19 = {} }
-		hide_layers = { 20 = {} }
 		hide_layers = { 21 = {} }
 		hide_layers = { 22 = {} }
 		hide_layers = { 28 = {} }
@@ -618,23 +605,21 @@
 
 		trigger = {
 			OR = {
+				blg_devout = yes
 				trait = idolizer
-				trait = zealous
 				trait = humble
 				trait = theologian
 				has_focus = focus_ch_faith
-				is_ascetic_trigger = yes
 			}
 		}
 
 		modifier = {
 			factor = 50
 			OR = {
+				blg_devout = yes
 				trait = idolizer
-				trait = zealous
 				trait = humble
 				trait = theologian
-				is_ascetic_trigger = yes
 			}
 		}
 

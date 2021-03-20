@@ -24,6 +24,15 @@ blg_crowned = {
 	always = yes
 }
 
+# Use the Chinese face jewelry.
+blg_face_jewelry = {
+	culture_group = tsaesci_group
+	OR = {
+		higher_real_tier_than = duke
+		spouse = { higher_real_tier_than = duke }
+	}
+}
+
 # Prepared for battle.
 blg_warrior = {
 	OR = {
@@ -88,7 +97,7 @@ blg_crown_emperor = {
 	NOR = {
 		AND = {
 			is_nomadic = yes
-			population < 10000
+			population_and_manpower < 10000
 		}
 		is_tributary = yes
 		is_offmap_governor = yes
@@ -111,7 +120,7 @@ blg_crown_king = {
 		AND = {
 			is_nomadic = yes
 			has_game_started = yes
-			population < 5000
+			population_and_manpower < 5000
 		}
 		blg_republic = yes
 		blg_mercenary = yes
@@ -124,8 +133,11 @@ blg_crown_king = {
 blg_headgear_emperor = {
 	OR = {
 		blg_crown_emperor = yes
-		spouse_even_if_dead = {
-			blg_crown_emperor = yes
+		AND = {
+			is_main_spouse = yes
+			spouse_even_if_dead = {
+				blg_crown_emperor = yes
+			}
 		}
 	}
 }

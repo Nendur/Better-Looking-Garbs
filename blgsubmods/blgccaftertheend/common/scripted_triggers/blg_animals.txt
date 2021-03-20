@@ -2,6 +2,21 @@
 
 ### Pets:
 
+blg_animal_ape = {
+	always = no
+}
+
+blg_animal_bat = {
+	always = no
+}
+
+blg_animal_boar = {
+	OR = {
+		death_reason = death_accident_boar
+		death_reason = death_execution_boar
+	}
+}
+
 blg_animal_cat = {
 	OR = {
 		has_character_modifier = pet_cat
@@ -29,8 +44,28 @@ blg_animal_eagle = {
 	has_character_modifier = pet_hunting_eagle
 }
 
+blg_animal_falcon = {
+	trait = falconer
+}
+
+blg_animal_fox = {
+	always = no
+}
+
+blg_animal_frog = {
+	always = no
+}
+
 blg_animal_hedgehog = {
 	has_character_modifier = pet_hedgehog
+}
+
+blg_animal_imp = {
+	always = no
+}
+
+blg_animal_monkey = {
+	has_character_modifier = monkey_pet
 }
 
 blg_animal_otter = {
@@ -78,6 +113,10 @@ blg_animal_snake = {
 		has_character_modifier = friend_of_snakes
 		has_character_flag = diwali_snake_charmer
 	}
+}
+
+blg_animal_vulture = {
+	always = no
 }
 
 blg_animal_wolf = {
@@ -324,11 +363,7 @@ blg_mount_lizard = {
 
 # Polar Bear mount.
 blg_mount_polarbear = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		has_artifact_flag = polarbear
-		has_artifact_flag = mount
-	}
+	death_reason = death_execution_polar_bear
 }
 
 # Reindeer mount.

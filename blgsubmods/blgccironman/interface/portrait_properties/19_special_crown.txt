@@ -22,11 +22,6 @@
 			NOT = { has_game_rule = { name = martial_headgear value = off } }
 			NOT = { is_priest = yes }
 		}
-
-		modifier = {
-			factor = 100
-			check_variable = { which = ca_headgear value = 1 }
-		}
 	}
 
 	1 = { # a - HRE crown

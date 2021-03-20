@@ -12,10 +12,7 @@ blg_bleeding = {
 
 # Blind, natural or maimed.
 blg_blind = {
-	OR = {
-		trait = blinded
-		has_character_modifier = glass_eye
-	}
+	trait = blinded
 }
 
 # Pox boils.
@@ -28,6 +25,15 @@ blg_bubonic = {
 	OR = {
 		trait = has_bubonic_plague
 		trait = has_justinian_plague
+	}
+}
+
+# Crippled leg.
+blg_crippled = {
+	OR = {
+		trait = one_legged
+		trait = mangled
+		has_character_modifier = swollen_ankle
 	}
 }
 
@@ -47,7 +53,7 @@ blg_fat = {
 		trait = sturdy
 		AND = {
 			trait = dwarf
-			NOT = { trait = fair }
+			blg_fair = no
 		}
 	}
 }

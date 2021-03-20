@@ -71,11 +71,6 @@
 				}
 			}
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_clothes value = 1 }
-		}
 	}
 
 	1 = { # a - Royal clothes 2
@@ -148,11 +143,6 @@
 					}
 				}
 			}
-		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_clothes value = 2 }
 		}
 	}
 
@@ -227,11 +217,6 @@
 				}
 			}
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_clothes value = 3 }
-		}
 	}
 
 	3 = { # c - Noble clothes 1
@@ -258,11 +243,6 @@
 				trait = peasant_leader
 				trait = heresiarch
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 4 }
 		}
 	}
 
@@ -291,11 +271,6 @@
 				trait = heresiarch
 			}
 		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 5 }
-		}
 	}
 
 	5 = { # e - Noble clothes 3
@@ -323,11 +298,6 @@
 				trait = heresiarch
 			}
 		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 6 }
-		}
 	}
 
 	6 = { # f - Modest clothes 1
@@ -348,13 +318,7 @@
 				trait = humble
 				trait = peasant_leader
 				trait = heresiarch
-				is_variable_equal = { which = ca_clothes value = 7 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 7 }
 		}
 	}
 
@@ -376,13 +340,7 @@
 				trait = humble
 				trait = peasant_leader
 				trait = heresiarch
-				is_variable_equal = { which = ca_clothes value = 8 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 8 }
 		}
 	}
 
@@ -404,13 +362,7 @@
 				trait = humble
 				trait = peasant_leader
 				trait = heresiarch
-				is_variable_equal = { which = ca_clothes value = 9 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 9 }
 		}
 	}
 
@@ -423,13 +375,7 @@
 					intrigue = 12
 					lower_real_tier_than = duke
 				}
-				is_variable_equal = { which = ca_clothes value = 10 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 10 }
 		}
 	}
 
@@ -495,7 +441,6 @@
 						}
 					}
 				}
-				is_variable_equal = { which = ca_clothes value = 11 }
 			}
 		}
 	}
@@ -522,7 +467,6 @@
 						culture_group = israelite
 					}
 				}
-				is_variable_equal = { which = ca_clothes value = 12 }
 			}
 			NOT = { has_character_modifier = house_arrest }
 		}
@@ -609,7 +553,6 @@
 						culture_group = israelite
 					}
 				}
-				is_variable_equal = { which = ca_clothes value = 13 }
 			}
 		}
 
@@ -637,11 +580,6 @@
 				likes_mesoamericans = yes
 				culture_group = israelite
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 13 }
 		}
 	}
 
@@ -714,7 +652,6 @@
 						culture_group = israelite
 					}
 				}
-				is_variable_equal = { which = ca_clothes value = 14 }
 			}
 		}
 
@@ -741,11 +678,6 @@
 				culture_group = chinese_group
 				culture = tangut
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 14 }
 		}
 	}
 
@@ -826,7 +758,6 @@
 						}
 					}
 				}
-				is_variable_equal = { which = ca_clothes value = 15 }
 			}
 		}
 
@@ -845,11 +776,6 @@
 				likes_mesoamericans = yes
 				culture_group = israelite
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 15 }
 		}
 	}
 }

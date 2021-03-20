@@ -27,11 +27,6 @@
 					}
 					age < 50
 				}
-				is_variable_equal = { which = ca_beard value = 1 }
-			}
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 1 }
 			}
 		}
 
@@ -160,7 +155,6 @@
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 2 } }
 		}
 
 		modifier = {
@@ -199,14 +193,6 @@
 				graphical_culture = easternslavicgfx
 			}
 			NOT = { graphical_culture = mesoamericangfx }
-			NOT = { is_variable_equal = { which = ca_beard value = 2 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 2 }
-			}
 		}
 	}
 
@@ -222,7 +208,6 @@
 			NOR = {
 				religion_group = pagan_group
 				has_tribal_or_nomadic_government_trigger = yes
-				is_variable_equal = { which = ca_beard value = 3 }
 			}
 		}
 
@@ -270,7 +255,6 @@
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 3 } }
 		}
 
 		modifier = {
@@ -326,14 +310,6 @@
 				graphical_culture = croatsouthslavicgfx
 			}
 			NOT = { graphical_culture = mesoamericangfx }
-			NOT = { is_variable_equal = { which = ca_beard value = 3 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 3 }
-			}
 		}
 	}
 
@@ -405,7 +381,6 @@
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 4 } }
 		}
 
 		modifier = {
@@ -438,14 +413,6 @@
 			NOR = {
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
-			}
-			NOT = { is_variable_equal = { which = ca_beard value = 4 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 4 }
 			}
 		}
 	}
@@ -513,7 +480,6 @@
 			}
 			NOT = { graphical_culture = serbsouthslavicgfx }
 			NOT = { graphical_culture = turkishgfx }
-			NOT = { is_variable_equal = { which = ca_beard value = 5 } }
 		}
 
 		modifier = {
@@ -544,14 +510,6 @@
 				graphical_culture = easternslavicgfx
 			}
 			NOT = { graphical_culture = mesoamericangfx }
-			NOT = { is_variable_equal = { which = ca_beard value = 5 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 5 }
-			}
 		}
 	}
 
@@ -599,7 +557,6 @@
 			NOT = { graphical_culture = persiangfx }
 			NOT = { graphical_culture = serbsouthslavicgfx }
 			NOT = { graphical_culture = turkishgfx }
-			NOT = { is_variable_equal = { which = ca_beard value = 6 } }
 		}
 
 		modifier = {
@@ -643,14 +600,6 @@
 				graphical_culture = easternslavicgfx
 			}
 			NOT = { graphical_culture = mesoamericangfx }
-			NOT = { is_variable_equal = { which = ca_beard value = 6 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 6 }
-			}
 		}
 	}
 
@@ -692,7 +641,6 @@
 				graphical_culture = croatsouthslavicgfx
 			}
 			NOT = { graphical_culture = mesoamericangfx }
-			NOT = { is_variable_equal = { which = ca_beard value = 7 } }
 		}
 
 		modifier = {
@@ -745,14 +693,6 @@
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 7 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 7 }
-			}
 		}
 	}
 
@@ -768,7 +708,6 @@
 			NOR = {
 				religion_group = pagan_group
 				has_tribal_or_nomadic_government_trigger = yes
-				is_variable_equal = { which = ca_beard value = 8 }
 			}
 		}
 
@@ -819,7 +758,6 @@
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 8 } }
 		}
 
 		modifier = {
@@ -860,7 +798,6 @@
 			NOT = { graphical_culture = persiangfx }
 			NOT = { graphical_culture = norsegfx }
 			NOT = { graphical_culture = southerngfx }
-			NOT = { is_variable_equal = { which = ca_beard value = 8 } }
 		}
 
 		modifier = {
@@ -895,13 +832,6 @@
 					}
 				}
 				trait = eunuch
-			}
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 8 }
 			}
 		}
 	}
@@ -955,7 +885,6 @@
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 9 } }
 		}
 
 		modifier = {
@@ -1010,14 +939,6 @@
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 9 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 9 }
-			}
 		}
 	}
 
@@ -1065,7 +986,6 @@
 			NOR = {
 				graphical_culture = southindiangfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 10 } }
 		}
 
 		modifier = {
@@ -1122,14 +1042,6 @@
 			NOR = {
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
-			}
-			NOT = { is_variable_equal = { which = ca_beard value = 10 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 10 }
 			}
 		}
 	}
@@ -1193,7 +1105,6 @@
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 11 } }
 		}
 
 		modifier = {
@@ -1235,7 +1146,6 @@
 			NOR = {
 				graphical_culture = southindiangfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 11 } }
 		}
 
 		modifier = {
@@ -1276,13 +1186,6 @@
 				graphical_culture = crimeangfx
 				graphical_culture = persiangfx
 				graphical_culture = turkishgfx
-			}
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 11 }
 			}
 		}
 	}
@@ -1339,7 +1242,6 @@
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 12 } }
 		}
 
 		modifier = {
@@ -1390,14 +1292,6 @@
 			NOR = {
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
-			}
-			NOT = { is_variable_equal = { which = ca_beard value = 12 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 12 }
 			}
 		}
 	}
@@ -1471,7 +1365,6 @@
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 13 } }
 		}
 
 		modifier = {
@@ -1514,7 +1407,6 @@
 				graphical_culture = easternslavicgfx
 			}
 			NOT = { graphical_culture = bodpagfx }
-			NOT = { is_variable_equal = { which = ca_beard value = 13 } }
 		}
 
 		modifier = {
@@ -1550,13 +1442,6 @@
 				trait = eunuch
 			}
 			graphical_culture = indiangfx
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 13 }
-			}
 		}
 	}
 
@@ -1620,7 +1505,6 @@
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 14 } }
 		}
 
 		modifier = {
@@ -1663,14 +1547,6 @@
 			NOR = {
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
-			}
-			NOT = { is_variable_equal = { which = ca_beard value = 14 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 14 }
 			}
 		}
 	}
@@ -1717,7 +1593,6 @@
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
-			NOT = { is_variable_equal = { which = ca_beard value = 15 } }
 		}
 
 		modifier = {
@@ -1766,14 +1641,6 @@
 				graphical_culture = easternslavicgfx
 			}
 			NOT = { graphical_culture = bodpagfx }
-			NOT = { is_variable_equal = { which = ca_beard value = 15 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 15 }
-			}
 		}
 	}
 
@@ -1929,13 +1796,6 @@
 				culture = italian
 				culture = sardinian
 				culture = roman
-			}
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 1 }
 			}
 		}
 	}

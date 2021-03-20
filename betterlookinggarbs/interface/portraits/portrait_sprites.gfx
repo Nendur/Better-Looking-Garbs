@@ -21,7 +21,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_background_items"
 		texturefile = "gfx\\characters\\shared\\background_items.dds"
-		noOfFrames = 16
+		noOfFrames = 24
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -244,7 +244,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_character_special_scepters"
 		texturefile = "gfx\\characters\\shared\\special_scepters.dds"
-		noOfFrames = 26
+		noOfFrames = 27
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -316,7 +316,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_background_furniture"
 		texturefile = "gfx\\characters\\shared\\background_furniture.dds"
-		noOfFrames = 10
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -372,6 +372,14 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_character_harelip"
+		texturefile = "gfx\\characters\\creature\\character_harelip.dds"
+		noOfFrames = 2
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_creature_harelip"
 		texturefile = "gfx\\characters\\creature\\creature_harelip.dds"
 		noOfFrames = 2
@@ -388,9 +396,25 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_one_eye_possessed"
-		texturefile = "gfx\\characters\\creature\\one_eye_possessed.dds"
+		name = "GFX_right_eye_possessed"
+		texturefile = "gfx\\characters\\creature\\right_eye_possessed.dds"
 		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_left_eye_possessed"
+		texturefile = "gfx\\characters\\creature\\left_eye_possessed.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_creature_blood_splatter"
+		texturefile = "gfx\\characters\\creature\\creature_blood_splatter.dds"
+		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
 	}

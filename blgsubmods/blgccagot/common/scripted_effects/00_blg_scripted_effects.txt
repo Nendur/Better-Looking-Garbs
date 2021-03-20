@@ -8,6 +8,7 @@ blg_character_processing = {
 	if = {
 		limit= {
 			NOT = { gfx_culture_scope = { always = yes } }
+			culture_scope = { always = yes }
 		}
 		set_graphical_culture = ROOT
 	}

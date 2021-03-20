@@ -39,8 +39,7 @@
 				age >= 40
 				trait = chaste
 				trait = celibate
-				trait = zealous
-				is_ascetic_trigger = yes
+				blg_devout = yes
 			}
 		}
 

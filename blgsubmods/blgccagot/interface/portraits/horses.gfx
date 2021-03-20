@@ -47,7 +47,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_male_base:p18"
-			"GFX_creature_harelip:p24:o7x-51"
+			"GFX_horse_immortal:p20"
+			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o0x-10"
 			"GFX_creature_warpaint:p29:o-8x-8"
@@ -57,7 +58,7 @@ spriteTypes = {
 			"GFX_character_scars_high:p26:o-7x-10"
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
-			"GFX_one_eye_possessed:p30:o-10x-7"
+			"GFX_right_eye_possessed:p30:o-10x-7"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -67,7 +68,7 @@ spriteTypes = {
 			"GFX_weapons_western:p39"
 			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -92,6 +93,17 @@ spriteTypes = {
 			{ 34 103 36 }
 		}
 
+		allow_property_values = {
+			20 = {
+				0 = {
+					NOT = { portrait_has_trait = immortal }
+				}
+				1 = {
+					portrait_has_trait = immortal
+				}
+			}
+		}
+
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
 	}
 
@@ -109,7 +121,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_male_base:p18"
-			"GFX_creature_harelip:p24:o7x-51"
+			"GFX_horse_immortal:p20"
+			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o0x-10"
 			"GFX_creature_warpaint:p29:o-8x-8"
@@ -119,7 +132,7 @@ spriteTypes = {
 			"GFX_character_scars_high:p26:o-7x-10"
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
-			"GFX_one_eye_possessed:p30:o-10x-7"
+			"GFX_right_eye_possessed:p30:o-10x-7"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -129,7 +142,7 @@ spriteTypes = {
 			"GFX_weapons_western:p39"
 			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -154,6 +167,17 @@ spriteTypes = {
 			{ 34 103 36 }
 		}
 
+		allow_property_values = {
+			20 = {
+				0 = {
+					NOT = { portrait_has_trait = immortal }
+				}
+				1 = {
+					portrait_has_trait = immortal
+				}
+			}
+		}
+
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
 	}
 
@@ -171,7 +195,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_male_base:p18"
-			"GFX_creature_harelip:p24:o7x-51"
+			"GFX_horse_immortal:p20"
+			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o0x-10"
 			"GFX_creature_warpaint:p29:o-8x-8"
@@ -181,7 +206,7 @@ spriteTypes = {
 			"GFX_character_scars_high:p26:o-7x-10"
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
-			"GFX_one_eye_possessed:p30:o-10x-7"
+			"GFX_right_eye_possessed:p30:o-10x-7"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -191,7 +216,7 @@ spriteTypes = {
 			"GFX_weapons_western:p39"
 			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -214,6 +239,17 @@ spriteTypes = {
 			{ 58 109 193}
 			{ 120 74 46 }
 			{ 34 103 36 }
+		}
+
+		allow_property_values = {
+			20 = {
+				0 = {
+					NOT = { portrait_has_trait = immortal }
+				}
+				1 = {
+					portrait_has_trait = immortal
+				}
+			}
 		}
 
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
@@ -243,7 +279,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_female_base:p18"
-			"GFX_creature_harelip:p24:o7x-51"
+			"GFX_horse_immortal:p20"
+			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o0x-10"
 			"GFX_creature_warpaint:p29:o-8x-8"
@@ -253,7 +290,7 @@ spriteTypes = {
 			"GFX_character_scars_high:p26:o-7x-10"
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
-			"GFX_one_eye_possessed:p30:o-10x-7"
+			"GFX_right_eye_possessed:p30:o-10x-7"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -263,7 +300,7 @@ spriteTypes = {
 			"GFX_weapons_western:p39"
 			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -286,6 +323,17 @@ spriteTypes = {
 			{ 58 109 193}
 			{ 120 74 46 }
 			{ 34 103 36 }
+		}
+
+		allow_property_values = {
+			20 = {
+				0 = {
+					NOT = { portrait_has_trait = immortal }
+				}
+				1 = {
+					portrait_has_trait = immortal
+				}
+			}
 		}
 
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
@@ -305,7 +353,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_female_base:p18"
-			"GFX_creature_harelip:p24:o7x-51"
+			"GFX_horse_immortal:p20"
+			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o0x-10"
 			"GFX_creature_warpaint:p29:o-8x-8"
@@ -315,7 +364,7 @@ spriteTypes = {
 			"GFX_character_scars_high:p26:o-7x-10"
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
-			"GFX_one_eye_possessed:p30:o-10x-7"
+			"GFX_right_eye_possessed:p30:o-10x-7"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -325,7 +374,7 @@ spriteTypes = {
 			"GFX_weapons_western:p39"
 			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -350,6 +399,17 @@ spriteTypes = {
 			{ 34 103 36 }
 		}
 
+		allow_property_values = {
+			20 = {
+				0 = {
+					NOT = { portrait_has_trait = immortal }
+				}
+				1 = {
+					portrait_has_trait = immortal
+				}
+			}
+		}
+
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
 	}
 
@@ -367,7 +427,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_female_base:p18"
-			"GFX_creature_harelip:p24:o7x-51"
+			"GFX_horse_immortal:p20"
+			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o0x-10"
 			"GFX_creature_warpaint:p29:o-8x-8"
@@ -377,7 +438,7 @@ spriteTypes = {
 			"GFX_character_scars_high:p26:o-7x-10"
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
-			"GFX_one_eye_possessed:p30:o-10x-7"
+			"GFX_right_eye_possessed:p30:o-10x-7"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -387,7 +448,7 @@ spriteTypes = {
 			"GFX_weapons_western:p39"
 			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
-			"GFX_character_blood_splatter:p27"
+			"GFX_creature_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
@@ -410,6 +471,17 @@ spriteTypes = {
 			{ 58 109 193}
 			{ 120 74 46 }
 			{ 34 103 36 }
+		}
+
+		allow_property_values = {
+			20 = {
+				0 = {
+					NOT = { portrait_has_trait = immortal }
+				}
+				1 = {
+					portrait_has_trait = immortal
+				}
+			}
 		}
 
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}

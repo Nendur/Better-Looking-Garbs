@@ -15,6 +15,16 @@ blg_dangerous_prisoner = {
 	}
 }
 
+# Devout personality.
+blg_devout = {
+	OR = {
+		trait = zealous
+		has_focus = focus_theology
+		is_ascetic_trigger = yes
+		blg_pilgrimage = yes
+	}
+}
+
 # Character covered in dirt.
 blg_dirty = {
 	OR = {
@@ -61,13 +71,11 @@ blg_learned = {
 blg_modest = {
 	OR = {
 		is_married = yes
-		is_consort = yes
 		any_spouse_even_if_dead = { is_alive = no }
 		age >= 40
 		trait = chaste
 		trait = celibate
-		trait = zealous
-		is_ascetic_trigger = yes
+		blg_devout = yes
 	}
 	NOT = { trait = lustful }
 }
@@ -138,6 +146,7 @@ blg_executioner = {
 	OR = {
 		has_character_flag = holding_blot
 		has_character_flag = attending_blot
+		has_minor_title = title_state_inquisitor
 	}
 }
 

@@ -242,7 +242,14 @@
 		}
 	}
 
-	17 = { # q - Dagger
+	17 = { # q - Crutch
+		factor = 50
+		trigger = {
+			blg_crippled = yes
+		}
+	}
+
+	18 = { # r - Dagger
 		factor = 25
 		trigger = {
 			any_artifact = {
@@ -255,7 +262,7 @@
 		}
 	}
 
-	18 = { # r - Dagger
+	19 = { # s - Dagger
 		factor = 10
 		trigger = {
 			any_artifact = {
@@ -268,7 +275,7 @@
 		}
 	}
 
-	19 = { # s - Book
+	20 = { # t - Book
 		factor = 1
 		trigger = {
 			any_artifact = {
@@ -282,7 +289,7 @@
 		}
 	}
 
-	20 = { # t - Ingredients
+	21 = { # u - Ingredients
 		factor = 1
 		trigger = {
 			any_artifact = {
@@ -296,7 +303,7 @@
 		}
 	}
 
-	21 = { # u - Scroll
+	22 = { # v - Scroll
 		factor = 10
 		trigger = {
 			blg_artifact_scroll = yes
@@ -305,7 +312,7 @@
 		}
 	}
 
-	22 = { # v - Eagle
+	23 = { # w - Eagle
 		factor = 10
 		trigger = {
 			blg_animal_eagle = yes
@@ -314,7 +321,7 @@
 		}
 	}
 
-	23 = { # w - Raven
+	24 = { # x - Raven
 		factor = 10
 		trigger = {
 			blg_animal_raven = yes
@@ -323,7 +330,7 @@
 		}
 	}
 
-	24 = { # x - Rat
+	25 = { # y - Rat
 		factor = 10
 		trigger = {
 			blg_animal_rat = yes
@@ -333,7 +340,7 @@
 		}
 	}
 
-	25 = { # y - Snake
+	26 = { # z - Snake
 		factor = 10
 		trigger = {
 			blg_animal_snake = yes

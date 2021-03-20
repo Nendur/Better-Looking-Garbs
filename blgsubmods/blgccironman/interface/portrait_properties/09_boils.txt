@@ -62,7 +62,6 @@
 		trigger = {
 			trait = ugly
 			NOT = { has_portrait_property = { layer = 9 index = 5 } }
-
 		}
 	}
 
@@ -71,7 +70,6 @@
 		trigger = {
 			trait = ugly
 			NOT = { has_portrait_property = { layer = 9 index = 4 } }
-
 		}
 	}
 }

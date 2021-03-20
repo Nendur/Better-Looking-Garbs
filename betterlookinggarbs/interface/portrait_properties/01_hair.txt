@@ -301,7 +301,14 @@
 		factor = 1
 		modifier = {
 			factor = 0
-			blg_tonsure = no
+			is_female = no
+			NOR = {
+				blg_tonsure = yes
+				AND = {
+					likes_christians = yes
+					blg_devout = yes
+				}
+			}
 
 			OR = {
 				blg_hair_english = yes

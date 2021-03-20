@@ -26,7 +26,6 @@
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 1 } }
 		}
 
 		modifier = {
@@ -75,13 +74,6 @@
 			}
 			has_tribal_or_nomadic_government_trigger = no
 		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 1 }
-			}
-		}
 	}
 
 	1 = { # a - Black Adder
@@ -100,7 +92,6 @@
 				graphical_culture = cumangfx
 				graphical_culture = mongolgfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 2 } }
 		}
 
 		modifier = {
@@ -143,13 +134,6 @@
 				}
 			}
 		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 2 }
-			}
-		}
 	}
 
 	2 = { # b - Page
@@ -160,7 +144,6 @@
 			practical_age >= 70
 
 			NOT = { graphical_culture = turkishgfx }
-			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
 		}
 
 		modifier = {
@@ -175,7 +158,6 @@
 				graphical_culture = croatsouthslavicgfx
 				graphical_culture = crimeangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
 		}
 
 		modifier = {
@@ -194,7 +176,6 @@
 				graphical_culture = outremergfx
 				graphical_culture = romangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
 		}
 
 		modifier = {
@@ -220,13 +201,6 @@
 				employer = {
 						holy_order = yes
 				}
-			}
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 3 }
 			}
 		}
 	}
@@ -255,7 +229,6 @@
 				graphical_culture = mongolgfx
 			}
 			NOT = { graphical_culture = easternslavicgfx }
-			NOT = { is_variable_equal = { which = ca_hair value = 4 } }
 		}
 
 		modifier = {
@@ -293,13 +266,6 @@
 				}
 			}
 		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 4 }
-			}
-		}
 	}
 
 	4 = { # d - Long Straight
@@ -318,7 +284,6 @@
 				graphical_culture = mongolgfx
 			}
 			NOT = { graphical_culture = easternslavicgfx }
-			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
 		}
 
 		modifier = {
@@ -335,7 +300,6 @@
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
 		}
 
 		modifier = {
@@ -352,7 +316,6 @@
 				graphical_culture = outremergfx
 				graphical_culture = romangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
 		}
 
 		modifier = {
@@ -461,13 +424,6 @@
 				has_minor_title = title_prince
 			}
 		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 5 }
-			}
-		}
 	}
 
 	5 = { # e - Long Curly
@@ -478,7 +434,6 @@
 			practical_age >= 70
 
 			NOT = { graphical_culture = byzantinegfx }
-			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
 		}
 
 		modifier = {
@@ -500,7 +455,6 @@
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
 		}
 
 		modifier = {
@@ -514,7 +468,6 @@
 				graphical_culture = serbsouthslavicgfx
 				graphical_culture = dalmatiangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
 		}
 
 		modifier = {
@@ -615,12 +568,6 @@
 			}
 		}
 
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 6 }
-			}
-		}
 	}
 
 	6 = { # f - Tonsure
@@ -652,7 +599,6 @@
 				graphical_culture = egyptiangfx
 				graphical_culture = berbergfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 7 } }
 		}
 
 		modifier = {
@@ -728,7 +674,6 @@
 				graphical_culture = egyptiangfx
 				graphical_culture = berbergfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 7 } }
 		}
 
 		modifier = {
@@ -748,13 +693,6 @@
 			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
-			}
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 7 }
 			}
 		}
 	}
@@ -792,7 +730,6 @@
 			NOR = {
 				graphical_culture = southindiangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 8 } }
 		}
 
 		modifier = {
@@ -820,13 +757,6 @@
 				}
 			}
 		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 8 }
-			}
-		}
 	}
 
 	8 = { # h - Short Curly
@@ -852,7 +782,6 @@
 				graphical_culture = englishgfx
 				graphical_culture = normangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 9 } }
 		}
 
 		modifier = {
@@ -960,13 +889,6 @@
 				graphical_culture = trueoccitangfx
 			}
 		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 9 }
-			}
-		}
 	}
 
 	9 = { # i - Short Uncouth
@@ -981,7 +903,6 @@
 				graphical_culture = englishgfx
 				graphical_culture = normangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 10 } }
 		}
 
 		modifier = {
@@ -1014,14 +935,6 @@
 			factor = 0
 			is_female = yes
 			follows_filial_piety_trigger = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 10 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 10 }
-			}
 		}
 	}
 
@@ -1077,7 +990,6 @@
 				graphical_culture = ugricgfx
 				graphical_culture = magyargfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
 		}
 
 		modifier = {
@@ -1092,7 +1004,6 @@
 				graphical_culture = croatsouthslavicgfx
 				graphical_culture = crimeangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
 		}
 
 		modifier = {
@@ -1106,7 +1017,6 @@
 				graphical_culture = serbsouthslavicgfx
 				graphical_culture = dalmatiangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
 		}
 
 		modifier = {
@@ -1230,14 +1140,6 @@
 		modifier = {
 			factor = 0
 			follows_filial_piety_trigger = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 11 }
-			}
 		}
 	}
 
@@ -1287,7 +1189,6 @@
 				graphical_culture = ugricgfx
 				graphical_culture = magyargfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
 		}
 
 		modifier = {
@@ -1304,7 +1205,6 @@
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
 		}
 
 		modifier = {
@@ -1320,7 +1220,6 @@
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
 		}
 
 		modifier = {
@@ -1356,13 +1255,6 @@
 				employer = {
 						holy_order = yes
 				}
-			}
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 12 }
 			}
 		}
 	}
@@ -1423,7 +1315,6 @@
 				graphical_culture = dalmatiangfx
 			}
 			NOT = { graphical_culture = easternslavicgfx }
-			NOT = { is_variable_equal = { which = ca_hair value = 13 } }
 		}
 
 		modifier = {
@@ -1461,19 +1352,11 @@
 				is_consort = yes
 				is_landed = yes
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 13 } }
 		}
 
 		modifier = {
 			factor = 4
 			filial_piety_maiden_trigger = yes
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 13 }
-			}
 		}
 	}
 
@@ -1521,7 +1404,6 @@
 			}
 			NOT = { graphical_culture = easternslavicgfx }
 			NOT = { graphical_culture = turkishgfx }
-			NOT = { is_variable_equal = { which = ca_hair value = 14 } }
 		}
 
 		modifier = {
@@ -1560,19 +1442,11 @@
 				is_consort = yes
 				is_landed = yes
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 14 } }
 		}
 
 		modifier = {
 			factor = 4
 			filial_piety_maiden_trigger = yes
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 14 }
-			}
 		}
 	}
 
@@ -1619,7 +1493,6 @@
 			factor = 0
 			is_female = no
 			practical_age >= 70
-			NOT = { is_variable_equal = { which = ca_hair value = 15 } }
 		}
 
 		modifier = {
@@ -1739,22 +1612,11 @@
 				is_consort = yes
 				is_landed = yes
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 15 } }
 		}
 
 		modifier = {
 			factor = 4
 			filial_piety_maiden_trigger = yes
 		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 15 }
-			}
-		}
 	}
-
-	#15 = { # Unused
-	#}
 }

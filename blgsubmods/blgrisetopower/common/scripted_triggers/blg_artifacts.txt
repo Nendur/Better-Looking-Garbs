@@ -59,6 +59,11 @@ blg_artifact_horn = {
 	}
 }
 
+# Chinese jade dragon.
+blg_artifact_jadedragon = {
+	has_artifact = jade_dragon
+}
+
 # Mjolnir hammer.
 blg_artifact_mjolnir = {
 	always = no
@@ -80,13 +85,6 @@ blg_artifact_relic_case = {
 		is_artifact_active = yes
 		OR = {
 			artifact_type = holy_foreskin
-			#artifact_type = mohammads_beard
-			#artifact_type = tooth_of_mohammad
-			#artifact_type = buddhas_tooth
-			#artifact_type = sariraka_actual_body_part
-			#artifact_type = random_world_mythological_heart_1
-			#artifact_type = random_world_mythological_blood
-			#artifact_type = random_world_mythological_eye
 			has_artifact_flag = bodypart
 			has_artifact_flag = remains
 			has_artifact_flag = saint_item
@@ -188,6 +186,11 @@ blg_artifact_totem = {
 		is_artifact_equipped = yes
 		has_artifact_flag = totem
 	}
+}
+
+# Chinese water clock.
+blg_artifact_waterclock = {
+	has_artifact = water_clock
 }
 
 ### Artifact headgear:

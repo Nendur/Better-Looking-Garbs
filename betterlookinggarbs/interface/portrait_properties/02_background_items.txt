@@ -218,4 +218,79 @@
 			blg_artifact_rule = yes
 		}
 	}
+
+	16 = { # p - Boar
+		factor = 10
+		trigger = {
+			blg_animal_boar = yes
+
+			blg_artifact_rule = yes
+		}
+	}
+
+	17 = { # q - Bat
+		factor = 10
+		trigger = {
+			blg_animal_bat = yes
+
+			blg_artifact_rule = yes
+		}
+	}
+
+	18 = { # r - Frog
+		factor = 10
+		trigger = {
+			blg_animal_frog = yes
+
+			in_command = no
+			blg_artifact_rule = yes
+		}
+	}
+
+	19 = { # s - Monkey
+		factor = 10
+		trigger = {
+			blg_animal_monkey = yes
+
+			in_command = no
+			blg_artifact_rule = yes
+		}
+	}
+
+	20 = { # t - Ape
+		factor = 10
+		trigger = {
+			blg_animal_ape = yes
+
+			blg_artifact_rule = yes
+		}
+	}
+
+	21 = { # u - Vulture
+		factor = 10
+		trigger = {
+			blg_animal_vulture = yes
+
+			blg_artifact_rule = yes
+		}
+	}
+
+	22 = { # v - Fox
+		factor = 10
+		trigger = {
+			blg_animal_fox = yes
+
+			in_command = no
+			blg_artifact_rule = yes
+		}
+	}
+
+	23 = { # w - Imp
+		factor = 10
+		trigger = {
+			blg_animal_imp = yes
+
+			blg_artifact_rule = yes
+		}
+	}
 }

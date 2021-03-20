@@ -413,6 +413,7 @@
 				death_sacrificed_trigger = yes
 				has_character_flag = holding_blot
 				has_character_flag = attending_blot
+				has_minor_title = title_state_inquisitor
 			}
 		}
 

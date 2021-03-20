@@ -34,7 +34,7 @@
 					NOR = {
 						AND = {
 								is_nomadic = yes
-								population < 10000
+								population_and_manpower < 10000
 						}
 						is_tributary = yes
 						is_offmap_governor = yes
@@ -48,49 +48,52 @@
 						trait = heresiarch
 					}
 				}
-				spouse_even_if_dead = {
-						OR = {
-							real_tier = emperor
-							is_or_was_offmap_power_ruler = yes
-						}
-						OR = {
-							NOT = { has_dlc = "Holy Fury" }
-							lower_real_tier_than = king
+				AND = {
+					is_main_spouse = yes
+					spouse_even_if_dead = {
+							OR = {
+								real_tier = emperor
+								is_or_was_offmap_power_ruler = yes
+							}
+							OR = {
+								NOT = { has_dlc = "Holy Fury" }
+								lower_real_tier_than = king
+								NOR = {
+										religion = catholic
+										religion = fraticelli
+								}
+								trait = crowned_by_priest
+								trait = crowned_by_bishop
+								trait = crowned_by_pope
+								trait = crowned_by_myself
+								is_feudal = no
+								primary_title = { is_vice_royalty = yes }
+								NOR = {
+										is_alive = yes
+										trait = uncrowned
+								}
+								AND = {
+										has_game_started = no
+										is_save_game = no
+								}
+							}
 							NOR = {
-									religion = catholic
-									religion = fraticelli
+								AND = {
+										is_nomadic = yes
+										population_and_manpower < 10000
+								}
+								is_tributary = yes
+								is_offmap_governor = yes
+								AND = {
+									is_republic = yes
+									NOT = { government = confucian_bureaucracy }
+								}
+								mercenary = yes
+								holy_order = yes
+								trait = peasant_leader
+								trait = heresiarch
 							}
-							trait = crowned_by_priest
-							trait = crowned_by_bishop
-							trait = crowned_by_pope
-							trait = crowned_by_myself
-							is_feudal = no
-							primary_title = { is_vice_royalty = yes }
-							NOR = {
-									is_alive = yes
-									trait = uncrowned
-							}
-							AND = {
-									has_game_started = no
-									is_save_game = no
-							}
-						}
-						NOR = {
-							AND = {
-									is_nomadic = yes
-									population < 10000
-							}
-							is_tributary = yes
-							is_offmap_governor = yes
-							AND = {
-								is_republic = yes
-								NOT = { government = confucian_bureaucracy }
-							}
-							mercenary = yes
-							holy_order = yes
-							trait = peasant_leader
-							trait = heresiarch
-						}
+					}
 				}
 				AND = {
 					is_merchant_republic = yes
@@ -171,7 +174,7 @@
 						AND = {
 								is_nomadic = yes
 								has_game_started = yes
-								population < 5000
+								population_and_manpower < 5000
 						}
 						AND = {
 							is_republic = yes
@@ -218,7 +221,7 @@
 							AND = {
 									is_nomadic = yes
 									has_game_started = yes
-									population < 5000
+									population_and_manpower < 5000
 							}
 							AND = {
 								is_republic = yes
@@ -286,11 +289,6 @@
 				has_portrait_property = { layer = 5 index = 4 }
 			}
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 2 }
-		}
 	}
 
 	2 = { # b - Royal crown/turban 2
@@ -332,7 +330,7 @@
 						AND = {
 								is_nomadic = yes
 								has_game_started = yes
-								population < 5000
+								population_and_manpower < 5000
 						}
 						AND = {
 							is_republic = yes
@@ -379,7 +377,7 @@
 							AND = {
 									is_nomadic = yes
 									has_game_started = yes
-									population < 5000
+									population_and_manpower < 5000
 							}
 							AND = {
 								is_republic = yes
@@ -447,11 +445,6 @@
 				has_portrait_property = { layer = 5 index = 4 }
 			}
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 3 }
-		}
 	}
 
 	3 = { # c - Royal crown/turban 3
@@ -493,7 +486,7 @@
 						AND = {
 								is_nomadic = yes
 								has_game_started = yes
-								population < 5000
+								population_and_manpower < 5000
 						}
 						AND = {
 							is_republic = yes
@@ -540,7 +533,7 @@
 							AND = {
 									is_nomadic = yes
 									has_game_started = yes
-									population < 5000
+									population_and_manpower < 5000
 							}
 							AND = {
 								is_republic = yes
@@ -629,11 +622,6 @@
 			culture = persian
 			likes_mazdans = yes
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 4 }
-		}
 	}
 
 	4 = { # d - Simple golden band/turban
@@ -691,7 +679,7 @@
 							AND = {
 									is_nomadic = yes
 									has_game_started = yes
-									population < 5000
+									population_and_manpower < 5000
 							}
 							AND = {
 								is_republic = yes
@@ -738,7 +726,7 @@
 								AND = {
 										is_nomadic = yes
 										has_game_started = yes
-										population < 5000
+										population_and_manpower < 5000
 								}
 								AND = {
 									is_republic = yes
@@ -776,7 +764,6 @@
 						}
 					}
 				}
-				is_variable_equal = { which = ca_headgear value = 5 }
 			}
 
 			NOR = {
@@ -807,12 +794,6 @@
 				culture = tangut
 			}
 			NOT = { offmap_china = { offmap_ruler = { dynasty = 1051151 } } }
-		}
-
-		modifier = {
-			factor = 10000
-			is_alive = yes
-			is_variable_equal = { which = ca_headgear value = 5 }
 		}
 	}
 
@@ -873,7 +854,6 @@
 				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
-				is_variable_equal = { which = ca_headgear value = 6 }
 			}
 		}
 
@@ -897,7 +877,6 @@
 			is_landed = yes
 			is_female = no
 			likes_celts = yes
-			NOT = { is_variable_equal = { which = ca_headgear value = 6 } }
 		}
 
 		modifier = {
@@ -921,11 +900,6 @@
 				culture_group = central_african
 				likes_finno_ugrics = yes
 			}
-		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 6 }
 		}
 	}
 
@@ -988,7 +962,6 @@
 				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
-				is_variable_equal = { which = ca_headgear value = 7 }
 			}
 		}
 
@@ -1002,11 +975,6 @@
 				has_portrait_property = { layer = 5 index = 11 }
 				NOT = { has_portrait_property = { layer = 31 index = 0 } }
 			}
-		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 7 }
 		}
 	}
 
@@ -1069,7 +1037,6 @@
 				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
-				is_variable_equal = { which = ca_headgear value = 8 }
 			}
 		}
 
@@ -1083,11 +1050,6 @@
 				has_portrait_property = { layer = 5 index = 11 }
 				NOT = { has_portrait_property = { layer = 31 index = 0 } }
 			}
-		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 8 }
 		}
 	}
 
@@ -1150,7 +1112,6 @@
 				trait = on_indian_pilgrimage
 				trait = peasant_leader
 				trait = heresiarch
-				is_variable_equal = { which = ca_headgear value = 9 }
 			}
 		}
 
@@ -1175,7 +1136,6 @@
 				culture_group = south_slavic
 				culture_group = magyar
 			}
-			NOT = { is_variable_equal = { which = ca_headgear value = 8 } }
 		}
 
 		modifier = {
@@ -1187,11 +1147,6 @@
 				culture_group = south_slavic
 				culture_group = magyar
 			}
-		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 9 }
 		}
 	}
 
@@ -1213,7 +1168,6 @@
 				}
 				trait = in_hiding
 				trait = leper
-				is_variable_equal = { which = ca_headgear value = 10 }
 			}
 		}
 
@@ -1223,11 +1177,6 @@
 				has_job_title = job_spymaster
 				trait = leper
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_headgear value = 10 }
 		}
 	}
 
@@ -1270,7 +1219,6 @@
 						mercenary = yes
 					}
 				}
-				is_variable_equal = { which = ca_headgear value = 11 }
 			}
 
 			NOR = {
@@ -1312,14 +1260,12 @@
 				trait = peasant_leader
 				trait = heresiarch
 				holy_order = yes
-				is_variable_equal = { which = ca_headgear value = 12 }
 			}
 		}
 
 		modifier = {
 			factor = 1000
 			OR = {
-				is_variable_equal = { which = ca_headgear value = 12 }
 				prisoner = yes
 				death_reason = death_dungeon
 				trait = saint
@@ -1382,7 +1328,6 @@
 				trait = saint
 				has_nickname = nick_the_saint
 				death_reason = death_slavery
-				is_variable_equal = { which = ca_headgear value = 12 }
 			}
 		}
 
@@ -1483,7 +1428,7 @@
 					NOR = {
 						AND = {
 							is_nomadic = yes
-							population < 5000
+							population_and_manpower < 5000
 						}
 						AND = {
 							is_republic = yes
@@ -1507,7 +1452,6 @@
 						culture_group = magyar
 					}
 				}
-				is_variable_equal = { which = ca_headgear value = 13 }
 			}
 		}
 
@@ -1533,11 +1477,6 @@
 				culture_group = chinese_group
 				culture = tangut
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_headgear value = 13 }
 		}
 	}
 
@@ -1589,7 +1528,6 @@
 						culture_group = magyar
 					}
 				}
-				is_variable_equal = { which = ca_headgear value = 14 }
 			}
 		}
 
@@ -1615,12 +1553,6 @@
 				culture_group = chinese_group
 				culture = tangut
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_alive = yes
-			is_variable_equal = { which = ca_headgear value = 14 }
 		}
 	}
 
@@ -1677,7 +1609,6 @@
 						culture_group = magyar
 					}
 				}
-				is_variable_equal = { which = ca_headgear value = 15 }
 			}
 		}
 
@@ -1695,11 +1626,6 @@
 				culture_group = south_slavic
 				culture_group = magyar
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_headgear value = 15 }
 		}
 	}
 }

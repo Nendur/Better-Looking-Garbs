@@ -2,6 +2,25 @@
 
 ### Pets:
 
+blg_animal_ape = {
+	trait = great_ape
+}
+
+blg_animal_bat = {
+	OR = {
+		trait = bat
+		trait = great_bat
+	}
+}
+
+blg_animal_boar = {
+	OR = {
+		trait = boar
+		death_reason = death_accident_boar
+		death_reason = death_execution_boar
+	}
+}
+
 blg_animal_cat = {
 	OR = {
 		trait = cata
@@ -11,8 +30,13 @@ blg_animal_cat = {
 }
 
 blg_familiar_cat = {
-	has_character_modifier = cat_familiar
-	blg_visible_society = yes
+	OR = {
+		trait = shadowcat
+		AND = {
+			has_character_modifier = cat_familiar
+			blg_visible_society = yes
+		}
+	}
 }
 
 blg_animal_dog = {
@@ -28,11 +52,34 @@ blg_animal_dog = {
 }
 
 blg_animal_eagle = {
-	has_character_modifier = pet_hunting_eagle
+	OR = {
+		trait = eagle
+		has_character_modifier = pet_hunting_eagle
+	}
+}
+
+blg_animal_falcon = {
+	trait = falconer
+}
+
+blg_animal_fox = {
+	trait = fox_mbs
+}
+
+blg_animal_frog = {
+	always = no
 }
 
 blg_animal_hedgehog = {
 	has_character_modifier = pet_hedgehog
+}
+
+blg_animal_imp = {
+	always = no
+}
+
+blg_animal_monkey = {
+	always = no
 }
 
 blg_animal_otter = {
@@ -62,6 +109,7 @@ blg_animal_rat = {
 
 blg_animal_raven = {
 	OR = {
+		trait = crow
 		death_reason = death_murder_unknown_crows
 		AND = {
 			has_character_modifier = raven_familiar
@@ -77,6 +125,10 @@ blg_animal_snake = {
 		death_reason = death_murder_unknown_snakes
 		death_reason = death_execution_snake_pit
 	}
+}
+
+blg_animal_vulture = {
+	trait = vulture
 }
 
 blg_animal_wolf = {
