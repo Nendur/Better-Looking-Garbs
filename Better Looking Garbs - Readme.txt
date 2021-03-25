@@ -52,6 +52,7 @@ The installer will selectively add DLC dependent files and compatibility add-ons
       * If you use the CK2Plus mod, play with both Better Looking Garbs and the BLG/CC for CK2Plus mod.
       * If you use the Game of Thrones mod, play with both Better Looking Garbs and the BLG/CC for A Game of Thrones mod.
       * If you use the Elder Kings mod, play with both Better Looking Garbs and the BLG/CC for Elder Kings mod.
+      * If you use the After the End mod, play with both Better Looking Garbs and the BLG/CC for After the End mod.
       * If you use the When The World Stopped Making Sense mod, play with both Better Looking Garbs and the BLG/CC for WTWSMS mod.
       * If you use the The Winter King mod, play with both Better Looking Garbs and the BLG/CC for The Winter King mod.
       * If you use the Lux Invicta mod, play with both Better Looking Garbs and the BLG/CC for Lux Invicta mod.

@@ -93,7 +93,7 @@
 	}
 
 	10 = { # j - Cleavage
-		factor = 2
+		factor = 4
 		trigger = {
 			is_female = yes
 			blg_fat = no
@@ -101,7 +101,7 @@
 	}
 
 	11 = { # k - Cleavage
-		factor = 1
+		factor = 2
 		trigger = {
 			is_female = yes
 			blg_fat = no

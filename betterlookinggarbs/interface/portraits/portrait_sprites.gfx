@@ -324,6 +324,22 @@ spriteTypes = {
 ### CREATURE SHARED ####
 
 	spriteType = {
+		name = "GFX_character_small_female_pale"
+		texturefile = "gfx\\characters\\creature\\small_female_pale.dds"
+		noOfFrames = 2
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_small_male_pale"
+		texturefile = "gfx\\characters\\creature\\small_male_pale.dds"
+		noOfFrames = 2
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_creature_boils"
 		texturefile = "gfx\\characters\\creature\\creature_boils.dds"
 		noOfFrames = 8

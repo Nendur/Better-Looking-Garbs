@@ -180,7 +180,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_character_chinese_male_physique"
+		name = "GFX_character_southasian_male_physique"
 		texturefile = "gfx\\characters\\shared\\physique\\mongol_male_physique.dds"
 		noOfFrames = 7
 		norefcount = yes
@@ -371,7 +371,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_character_chinese_female_physique"
+		name = "GFX_character_southasian_female_physique"
 		texturefile = "gfx\\characters\\shared\\physique\\mongol_female_physique.dds"
 		noOfFrames = 12
 		norefcount = yes

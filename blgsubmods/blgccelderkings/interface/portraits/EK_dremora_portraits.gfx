@@ -1,6 +1,22 @@
 ### DREMORA ###
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_character_dremora_male_physique"
+		texturefile = "gfx\\characters\\shared\\physique\\dremora_male_physique.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_dremora_female_physique"
+		texturefile = "gfx\\characters\\shared\\physique\\dremora_female_physique.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
 	portraitType = {
 		name = "PORTRAIT_dremoragfx_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -15,6 +31,7 @@ spriteTypes = {
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_dremora_male_hair_behind:p1:h:y"
 			"GFX_dremora_male_base:p2"
+			"GFX_character_dremora_male_physique:p21:y"
 			"GFX_dremora_male_neck:d0"
 			"GFX_dremora_male_cheeks:d4"
 			"GFX_dremora_male_chin:d1"
@@ -98,6 +115,7 @@ spriteTypes = {
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_dremora_male_hair_behind:p1:h:y"
 			"GFX_dremora_male_base:p2"
+			"GFX_character_dremora_male_physique:p21:y"
 			"GFX_dremora_male_neck:d0"
 			"GFX_dremora_male_cheeks:d4"
 			"GFX_dremora_male_chin:d1"
@@ -178,6 +196,7 @@ spriteTypes = {
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_dremora_male_hair_behind:p1:h:y"
 			"GFX_dremora_male_base:p2"
+			"GFX_character_dremora_male_physique:p21:y"
 			"GFX_dremora_male_neck:d0"
 			"GFX_dremora_male_cheeks:d4"
 			"GFX_dremora_male_chin:d1"
@@ -261,6 +280,7 @@ spriteTypes = {
 			"GFX_dremora_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_dremora_female_base:p2"
+			"GFX_character_dremora_female_physique:p21:y"
 			"GFX_dremora_female_neck:d0"
 			"GFX_dremora_female_cheeks:d4"
 			"GFX_dremora_female_chin:d1"
@@ -349,6 +369,7 @@ spriteTypes = {
 			"GFX_dremora_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_dremora_female_base:p2"
+			"GFX_character_dremora_female_physique:p21:y"
 			"GFX_dremora_female_neck:d0"
 			"GFX_dremora_female_cheeks:d4"
 			"GFX_dremora_female_chin:d1"
@@ -434,6 +455,7 @@ spriteTypes = {
 			"GFX_dremora_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_dremora_female_base:p2"
+			"GFX_character_dremora_female_physique:p21:y"
 			"GFX_dremora_female_neck:d0"
 			"GFX_dremora_female_cheeks:d4"
 			"GFX_dremora_female_chin:d1"

@@ -119,7 +119,7 @@
 	}
 
 	10 = { # j - Cleavage
-		factor = 2
+		factor = 4
 		trigger = {
 			is_female = yes
 			NOR = {
@@ -130,7 +130,7 @@
 	}
 
 	11 = { # k - Cleavage
-		factor = 1
+		factor = 2
 		trigger = {
 			is_female = yes
 			NOR = {

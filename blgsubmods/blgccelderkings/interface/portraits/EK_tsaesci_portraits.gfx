@@ -25,6 +25,22 @@ spriteTypes = {
 		noOfFrames = 7
 	}
 
+	spriteType = {
+		name = "GFX_character_tsaesci_male_physique"
+		texturefile = "gfx\\characters\\shared\\physique\\tsaesci_male_physique.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_tsaesci_female_physique"
+		texturefile = "gfx\\characters\\shared\\physique\\tsaesci_female_physique.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
 	portraitType = {
 		name = "PORTRAIT_tsaescigfx_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -38,6 +54,7 @@ spriteTypes = {
 			"GFX_tsaesci_male_hair_behind:p1:h:y"
 			"GFX_empty:p4:h:y"
 			"GFX_tsaesci_male_base:p2"
+			"GFX_character_tsaesci_male_physique:p21:y"
 			"GFX_tsaesci_male_neck:d0"
 			"GFX_tsaesci_male_cheeks:d4"
 			"GFX_tsaesci_male_chin:d1"
@@ -121,6 +138,7 @@ spriteTypes = {
 			"GFX_tsaesci_male_hair_behind:p1:h:y"
 			"GFX_empty:p4:h:y"
 			"GFX_tsaesci_male_base:p2"
+			"GFX_character_tsaesci_male_physique:p21:y"
 			"GFX_tsaesci_male_neck:d0"
 			"GFX_tsaesci_male_cheeks:d4"
 			"GFX_tsaesci_male_chin:d1"
@@ -201,6 +219,7 @@ spriteTypes = {
 			"GFX_tsaesci_male_hair_behind:p1:h:y"
 			"GFX_empty:p4:h:y"
 			"GFX_tsaesci_male_base:p2"
+			"GFX_character_tsaesci_male_physique:p21:y"
 			"GFX_tsaesci_male_neck:d0"
 			"GFX_tsaesci_male_cheeks:d4"
 			"GFX_tsaesci_male_chin:d1"
@@ -283,6 +302,7 @@ spriteTypes = {
 			"GFX_tsaesci_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_tsaesci_female_base:p2"
+			"GFX_character_tsaesci_female_physique:p21:y"
 			"GFX_tsaesci_female_neck:d0"
 			"GFX_tsaesci_female_cheeks:d4"
 			"GFX_tsaesci_female_chin:d1"
@@ -370,6 +390,7 @@ spriteTypes = {
 			"GFX_tsaesci_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_tsaesci_female_base:p2"
+			"GFX_character_tsaesci_female_physique:p21:y"
 			"GFX_tsaesci_female_neck:d0"
 			"GFX_tsaesci_female_cheeks:d4"
 			"GFX_tsaesci_female_chin:d1"
@@ -454,6 +475,7 @@ spriteTypes = {
 			"GFX_tsaesci_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_tsaesci_female_base:p2"
+			"GFX_character_tsaesci_female_physique:p21:y"
 			"GFX_tsaesci_female_neck:d0"
 			"GFX_tsaesci_female_cheeks:d4"
 			"GFX_tsaesci_female_chin:d1"
