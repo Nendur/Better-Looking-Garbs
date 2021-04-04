@@ -1,5 +1,8 @@
 Changelog:
 
+  Scale up maces and axes a bit.
+  Clean up remaining unchanged effect layers with incomplete transparency.
+
 21-03-2021
   Scale up ship models.
   Added non-dlc carried helmets.
