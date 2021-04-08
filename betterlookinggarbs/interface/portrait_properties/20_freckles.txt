@@ -8,12 +8,24 @@
 20 = {
 	0 = { # 0 - blank
 		factor = 1
+
+		modifier = {
+			factor = 100
+			graphical_culture = horsegfx
+			immortal = no
+		}
 	}
 
 	1 = { # a - freckles
 		factor = 100
 		trigger = {
-			trait = freckles
+			OR = {
+				trait = freckles
+				AND = {
+					graphical_culture = horsegfx
+					immortal = yes
+				}
+			}
 		}
 	}
 
