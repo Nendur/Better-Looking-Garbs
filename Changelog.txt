@@ -2,6 +2,7 @@ Changelog:
 
   Scale up maces and axes a bit.
   Clean up remaining unchanged effect layers with incomplete transparency.
+  Clean up of the properties code in the ironman submod.
 
 21-03-2021
   Scale up ship models.

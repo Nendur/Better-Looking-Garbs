@@ -4,7 +4,7 @@
 		factor = 100
 		trigger = {
 			OR = {
-				NOT = { is_alive = yes }
+				is_alive = no
 				NOR = {
 					has_injury_trigger = yes
 					trait = disfigured

@@ -354,8 +354,8 @@
 		hide_layers = {33 = {}}
 
 		trigger = {
-			religion_openly_slavic_or_reformed_trigger = yes
 			blg_priest = yes
+			religion_openly_slavic_or_reformed_trigger = yes
 		}
 	}
 

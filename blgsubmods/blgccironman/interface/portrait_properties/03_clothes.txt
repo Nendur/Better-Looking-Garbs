@@ -9,10 +9,10 @@
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
 						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
+							OR = {
+								higher_real_tier_than = duke
+								is_or_was_offmap_power_ruler = yes
+							}
 						}
 						has_minor_title = title_despot
 						has_minor_title = title_augusta
@@ -82,10 +82,10 @@
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
 						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
+							OR = {
+								higher_real_tier_than = duke
+								is_or_was_offmap_power_ruler = yes
+							}
 						}
 						has_minor_title = title_despot
 						has_minor_title = title_augusta
@@ -155,10 +155,10 @@
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
 						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
+							OR = {
+								higher_real_tier_than = duke
+								is_or_was_offmap_power_ruler = yes
+							}
 						}
 						has_minor_title = title_despot
 						has_minor_title = title_augusta
@@ -226,10 +226,10 @@
 				is_landed = yes
 				higher_real_tier_than = count
 				spouse_even_if_dead = {
-						OR = {
-									is_landed = yes
-									higher_real_tier_than = count
-						}
+					OR = {
+						is_landed = yes
+						higher_real_tier_than = count
+					}
 				}
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
@@ -253,10 +253,10 @@
 				is_landed = yes
 				higher_real_tier_than = count
 				spouse_even_if_dead = {
-						OR = {
-									is_landed = yes
-									higher_real_tier_than = count
-						}
+					OR = {
+						is_landed = yes
+						higher_real_tier_than = count
+					}
 				}
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
@@ -280,10 +280,10 @@
 				is_landed = yes
 				higher_real_tier_than = count
 				spouse_even_if_dead = {
-						OR = {
-									is_landed = yes
-									higher_real_tier_than = count
-						}
+					OR = {
+						is_landed = yes
+						higher_real_tier_than = count
+					}
 				}
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
@@ -305,15 +305,15 @@
 		trigger = {
 			OR = {
 				NOR = {
-						is_landed = yes
-						spouse_even_if_dead = { higher_real_tier_than = count }
-						is_or_was_offmap_power_ruler = yes
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-						has_minor_title = title_prince
-						has_minor_title = title_queen_mother
-						has_character_modifier = jd_prince
-						has_character_modifier = jd_princess
+					is_landed = yes
+					spouse_even_if_dead = { higher_real_tier_than = count }
+					is_or_was_offmap_power_ruler = yes
+					has_minor_title = title_despot
+					has_minor_title = title_augusta
+					has_minor_title = title_prince
+					has_minor_title = title_queen_mother
+					has_character_modifier = jd_prince
+					has_character_modifier = jd_princess
 				}
 				trait = humble
 				trait = peasant_leader
@@ -327,15 +327,15 @@
 		trigger = {
 			OR = {
 				NOR = {
-						is_landed = yes
-						spouse_even_if_dead = { higher_real_tier_than = count }
-						is_or_was_offmap_power_ruler = yes
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-						has_minor_title = title_prince
-						has_minor_title = title_queen_mother
-						has_character_modifier = jd_prince
-						has_character_modifier = jd_princess
+					is_landed = yes
+					spouse_even_if_dead = { higher_real_tier_than = count }
+					is_or_was_offmap_power_ruler = yes
+					has_minor_title = title_despot
+					has_minor_title = title_augusta
+					has_minor_title = title_prince
+					has_minor_title = title_queen_mother
+					has_character_modifier = jd_prince
+					has_character_modifier = jd_princess
 				}
 				trait = humble
 				trait = peasant_leader
@@ -349,15 +349,15 @@
 		trigger = {
 			OR = {
 				NOR = {
-						is_landed = yes
-						spouse_even_if_dead = { higher_real_tier_than = count }
-						is_or_was_offmap_power_ruler = yes
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-						has_minor_title = title_prince
-						has_minor_title = title_queen_mother
-						has_character_modifier = jd_prince
-						has_character_modifier = jd_princess
+					is_landed = yes
+					spouse_even_if_dead = { higher_real_tier_than = count }
+					is_or_was_offmap_power_ruler = yes
+					has_minor_title = title_despot
+					has_minor_title = title_augusta
+					has_minor_title = title_prince
+					has_minor_title = title_queen_mother
+					has_character_modifier = jd_prince
+					has_character_modifier = jd_princess
 				}
 				trait = humble
 				trait = peasant_leader
@@ -386,14 +386,14 @@
 				AND = {
 					OR = {
 						AND = {
-								in_command = yes
-								OR = {
-											war = yes
-											liege = { war = yes }
-											in_battle = yes
-											in_siege = yes
-											is_landed = no
-								}
+							in_command = yes
+							OR = {
+								war = yes
+								liege = { war = yes }
+								in_battle = yes
+								in_siege = yes
+								is_landed = no
+							}
 						}
 						has_character_flag = add_duel_xp
 						trait = varangian
@@ -403,26 +403,26 @@
 						death_reason = death_battle
 						death_reason = death_duel
 						employer = {
-								OR = {
-											AND = {
-															mercenary = yes
-															NAND = {
-																primary_title = {
-																	OR = {
-																			title = d_venetian_navy
-																			title = d_genoese_navy
-																			title = d_hanseatic_navy
-																			title = d_frisian_navy
-																			title = d_maghreb_corsairs
-																			title = d_han_junks
-																			title = d_jurchen_corsairs
-																			title = d_treasure_fleet
-																	}
-																}
-															}
+							OR = {
+								AND = {
+									mercenary = yes
+									NAND = {
+										primary_title = {
+											OR = {
+													title = d_venetian_navy
+													title = d_genoese_navy
+													title = d_hanseatic_navy
+													title = d_frisian_navy
+													title = d_maghreb_corsairs
+													title = d_han_junks
+													title = d_jurchen_corsairs
+													title = d_treasure_fleet
 											}
-											holy_order = yes
+										}
+									}
 								}
+								holy_order = yes
+							}
 						}
 					}
 					OR = {
@@ -437,7 +437,6 @@
 								trait = peasant_leader
 								trait = heresiarch
 							}
-							NOT = { always = no }
 						}
 					}
 				}
@@ -499,14 +498,14 @@
 
 			OR = {
 				AND = {
-						in_command = yes
-						OR = {
-									war = yes
-									liege = { war = yes }
-									in_battle = yes
-									in_siege = yes
-									is_landed = no
-						}
+					in_command = yes
+					OR = {
+						war = yes
+						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
+						is_landed = no
+					}
 				}
 				has_character_flag = add_duel_xp
 				trait = varangian
@@ -515,28 +514,6 @@
 				has_job_title = job_marshal
 				death_reason = death_battle
 				death_reason = death_duel
-				employer = {
-						OR = {
-									AND = {
-													mercenary = yes
-													NAND = {
-														primary_title = {
-															OR = {
-																	title = d_venetian_navy
-																	title = d_genoese_navy
-																	title = d_hanseatic_navy
-																	title = d_frisian_navy
-																	title = d_maghreb_corsairs
-																	title = d_han_junks
-																	title = d_jurchen_corsairs
-																	title = d_treasure_fleet
-															}
-														}
-													}
-									}
-									holy_order = yes
-						}
-				}
 				has_landed_title = e_china_west_governor
 				AND = {
 					is_merchant_republic = yes
@@ -595,18 +572,17 @@
 				trait = peasant_leader
 				trait = heresiarch
 			}
-			NOT = { always = no }
 
 			OR = {
 				AND = {
-						in_command = yes
-						OR = {
-									war = yes
-									liege = { war = yes }
-									in_battle = yes
-									in_siege = yes
-									is_landed = no
-						}
+					in_command = yes
+					OR = {
+						war = yes
+						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
+						is_landed = no
+					}
 				}
 				has_character_flag = add_duel_xp
 				trait = varangian
@@ -616,26 +592,26 @@
 				death_reason = death_battle
 				death_reason = death_duel
 				employer = {
-						OR = {
-									AND = {
-													mercenary = yes
-													NAND = {
-														primary_title = {
-															OR = {
-																	title = d_venetian_navy
-																	title = d_genoese_navy
-																	title = d_hanseatic_navy
-																	title = d_frisian_navy
-																	title = d_maghreb_corsairs
-																	title = d_han_junks
-																	title = d_jurchen_corsairs
-																	title = d_treasure_fleet
-															}
-														}
-													}
+					OR = {
+						AND = {
+							mercenary = yes
+							NAND = {
+								primary_title = {
+									OR = {
+										title = d_venetian_navy
+										title = d_genoese_navy
+										title = d_hanseatic_navy
+										title = d_frisian_navy
+										title = d_maghreb_corsairs
+										title = d_han_junks
+										title = d_jurchen_corsairs
+										title = d_treasure_fleet
 									}
-									holy_order = yes
+								}
+							}
 						}
+						holy_order = yes
+					}
 				}
 				AND = {
 					is_merchant_republic = yes
@@ -693,7 +669,6 @@
 				trait = peasant_leader
 				trait = heresiarch
 			}
-			NOT = { always = no }
 
 			OR = {
 				AND = {
@@ -718,14 +693,14 @@
 					}
 					OR = {
 						AND = {
-								in_command = yes
-								OR = {
-											war = yes
-											liege = { war = yes }
-											in_battle = yes
-											in_siege = yes
-											is_landed = no
-								}
+							in_command = yes
+							OR = {
+								war = yes
+								liege = { war = yes }
+								in_battle = yes
+								in_siege = yes
+								is_landed = no
+							}
 						}
 						has_character_flag = add_duel_xp
 						trait = varangian
@@ -735,26 +710,26 @@
 						death_reason = death_battle
 						death_reason = death_duel
 						employer = {
-								OR = {
-											AND = {
-															mercenary = yes
-															NAND = {
-																primary_title = {
-																	OR = {
-																			title = d_venetian_navy
-																			title = d_genoese_navy
-																			title = d_hanseatic_navy
-																			title = d_frisian_navy
-																			title = d_maghreb_corsairs
-																			title = d_han_junks
-																			title = d_jurchen_corsairs
-																			title = d_treasure_fleet
-																	}
-																}
-															}
+							OR = {
+								AND = {
+									mercenary = yes
+									NAND = {
+										primary_title = {
+											OR = {
+												title = d_venetian_navy
+												title = d_genoese_navy
+												title = d_hanseatic_navy
+												title = d_frisian_navy
+												title = d_maghreb_corsairs
+												title = d_han_junks
+												title = d_jurchen_corsairs
+												title = d_treasure_fleet
 											}
-											holy_order = yes
+										}
+									}
 								}
+								holy_order = yes
+							}
 						}
 					}
 				}

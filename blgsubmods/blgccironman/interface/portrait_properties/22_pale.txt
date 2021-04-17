@@ -15,16 +15,16 @@
 				trait = has_tuberculosis
 				has_character_modifier = broken_spirit
 				AND = {
-						has_character_modifier = corrupting_magic_major
-						OR = {
-							is_society_discovered = yes
-							has_character_modifier = known_satanist
-							has_character_modifier = known_secret_society_member
-							AND = {
-									multiplayer = no
-									any_player = { same_society_as = ROOT }
-							}
+					has_character_modifier = corrupting_magic_major
+					OR = {
+						is_society_discovered = yes
+						has_character_modifier = known_satanist
+						has_character_modifier = known_secret_society_member
+						AND = {
+							multiplayer = no
+							any_player = { same_society_as = ROOT }
 						}
+					}
 				}
 			}
 			is_alive = yes

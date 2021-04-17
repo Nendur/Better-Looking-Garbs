@@ -3,20 +3,18 @@
 	0 = { # 0 - blank
 		factor = 100
 		trigger = {
-			OR = {
-				NAND = {
-					any_artifact = {
-						is_artifact_equipped = yes
-						OR = {
-								artifact_type = crown_african_mask_1
-								artifact_type = crown_african_mask_2
-								artifact_type = crown_african_mask_3
-								artifact_type = crown_african_mask_4
-								artifact_type = crown_african_mask_5
-								artifact_type = crown_african_mask_6
-								artifact_type = crown_african_mask_7
-								artifact_type = crown_african_mask_8
-						}
+			NOT = {
+				any_artifact = {
+					is_artifact_equipped = yes
+					OR = {
+							artifact_type = crown_african_mask_1
+							artifact_type = crown_african_mask_2
+							artifact_type = crown_african_mask_3
+							artifact_type = crown_african_mask_4
+							artifact_type = crown_african_mask_5
+							artifact_type = crown_african_mask_6
+							artifact_type = crown_african_mask_7
+							artifact_type = crown_african_mask_8
 					}
 				}
 			}

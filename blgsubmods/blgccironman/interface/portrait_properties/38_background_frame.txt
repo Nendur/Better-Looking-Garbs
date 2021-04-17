@@ -72,8 +72,8 @@
 					region = world_europe
 					region = world_asia_minor
 					AND = {
-							region = world_steppe_west
-							likes_christians = yes
+						region = world_steppe_west
+						likes_christians = yes
 					}
 				}
 			}
@@ -140,7 +140,6 @@
 		factor = 10
 		trigger = {
 			trait = falconer
-
 		}
 	}
 }

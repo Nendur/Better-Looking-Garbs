@@ -44,12 +44,12 @@
 		trigger = {
 			OR = {
 				NOR = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 				AND = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 			}
 			OR = {
@@ -57,9 +57,7 @@
 				any_artifact = {
 					is_artifact_equipped = yes
 					has_artifact_flag = staff
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+					NOT = { has_artifact_flag = jewelry }
 				}
 			}
 		}
@@ -76,12 +74,12 @@
 		trigger = {
 			OR = {
 				NOR = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 				AND = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 			}
 			NOT = { has_character_flag = add_duel_xp }
@@ -97,12 +95,12 @@
 		trigger = {
 			OR = {
 				NOR = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 				AND = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 			}
 			NOT = { has_character_flag = add_duel_xp }
@@ -119,33 +117,31 @@
 	4 = { # d - Spear
 		factor = 100
 		trigger = {
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
+				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			OR = {
+				has_character_flag = weapon_is_spear
+				AND = {
+					NOT = { has_character_flag = mock_duel }
+					any_artifact = {
+						is_artifact_equipped = yes
+						quality == 1
+						OR = {
+							has_artifact_flag = lance
+							has_artifact_flag = spear
 						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				OR = {
-					has_character_flag = weapon_is_spear
-					AND = {
-						NOT = { has_character_flag = mock_duel }
-						any_artifact = {
-							is_artifact_equipped = yes
-							quality == 1
-							OR = {
-								has_artifact_flag = lance
-								has_artifact_flag = spear
-							}
-							NOR = {
-								has_artifact_flag = jewelry
-							}
-						}
+						NOT = { has_artifact_flag = jewelry }
 					}
 				}
+			}
 		}
 
 		modifier = {
@@ -159,27 +155,25 @@
 		factor = 100
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					quality == 2
-					OR = {
-						has_artifact_flag = lance
-						has_artifact_flag = spear
-					}
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality == 2
+				OR = {
+					has_artifact_flag = lance
+					has_artifact_flag = spear
+				}
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
@@ -187,59 +181,55 @@
 		factor = 100
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					OR = {
-						has_artifact_flag = lance
-						has_artifact_flag = spear
-					}
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				OR = {
+					has_artifact_flag = lance
+					has_artifact_flag = spear
+				}
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
 	7 = { # g - Scimitar
 		factor = 100
 		trigger = {
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
+				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			OR = {
+				has_character_flag = weapon_is_scimitar
+				AND = {
+					NOT = { has_character_flag = mock_duel }
+					any_artifact = {
+						is_artifact_equipped = yes
+						quality <= 2
+						OR = {
+							artifact_type = scimitar_tier_1_new
+							artifact_type = scimitar_tier_2_new
 						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				OR = {
-					has_character_flag = weapon_is_scimitar
-					AND = {
-						NOT = { has_character_flag = mock_duel }
-						any_artifact = {
-							is_artifact_equipped = yes
-							quality <= 2
-							OR = {
-								artifact_type = scimitar_tier_1_new
-								artifact_type = scimitar_tier_2_new
-							}
-							NOR = {
-								has_artifact_flag = jewelry
-							}
-						}
+						NOT = { has_artifact_flag = jewelry }
 					}
 				}
+			}
 		}
 
 		modifier = {
@@ -252,30 +242,28 @@
 		factor = 100
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					OR = {
-						artifact_type = scimitar_tier_3_golden
-						artifact_type = scimitar_tier_3_fortune
-						artifact_type = scimitar_tier_3_conquest
-						artifact_type = scimitar_tier_4_golden
-						artifact_type = scimitar_tier_4_fortune
-						artifact_type = scimitar_tier_4_conquest
-					}
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				OR = {
+					artifact_type = scimitar_tier_3_golden
+					artifact_type = scimitar_tier_3_fortune
+					artifact_type = scimitar_tier_3_conquest
+					artifact_type = scimitar_tier_4_golden
+					artifact_type = scimitar_tier_4_fortune
+					artifact_type = scimitar_tier_4_conquest
+				}
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
@@ -284,12 +272,12 @@
 		trigger = {
 			OR = {
 				NOR = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 				AND = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 			}
 			NOT = { has_character_flag = add_duel_xp }
@@ -304,27 +292,25 @@
 		factor = 100
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				OR = {
-					has_character_flag = weapon_is_sword
-					any_artifact = {
-						is_artifact_equipped = yes
-						quality == 1
-						has_artifact_flag = sword
-						NOR = {
-							has_artifact_flag = jewelry
-						}
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			OR = {
+				has_character_flag = weapon_is_sword
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 1
+					has_artifact_flag = sword
+					NOT = { has_artifact_flag = jewelry }
+				}
+			}
 		}
 
 		modifier = {
@@ -338,24 +324,22 @@
 		factor = 100
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					quality == 2
-					has_artifact_flag = sword
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality == 2
+				has_artifact_flag = sword
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
@@ -363,53 +347,49 @@
 		factor = 100
 		trigger = {
 			NOT = { has_character_flag = mock_duel }
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					OR = {
-						has_artifact_flag = sword
-						artifact_type = sword_from_heaven
-					}
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				OR = {
+					has_artifact_flag = sword
+					artifact_type = sword_from_heaven
+				}
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
 	13 = { # m - Axe
 		factor = 100
 		trigger = {
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				OR = {
-					has_character_flag = weapon_is_axe
-					any_artifact = {
-						is_artifact_equipped = yes
-						quality == 1
-						has_artifact_flag = axe
-						NOR = {
-							has_artifact_flag = jewelry
-						}
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			OR = {
+				has_character_flag = weapon_is_axe
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 1
+					has_artifact_flag = axe
+					NOT = { has_artifact_flag = jewelry }
+				}
+			}
 		}
 
 		modifier = {
@@ -421,129 +401,119 @@
 	14 = { # n - Axe
 		factor = 100
 		trigger = {
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					quality == 2
-					OR = {
-						has_artifact_flag = axe
-						artifact_type = loot_axe
-					}
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality == 2
+				OR = {
+					has_artifact_flag = axe
+					artifact_type = loot_axe
+				}
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
 	15 = { # o - Axe
 		factor = 100
 		trigger = {
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					has_artifact_flag = axe
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				has_artifact_flag = axe
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
 	16 = { # p - Hammer
 		factor = 100
 		trigger = {
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					OR = {
-						artifact_type = mace_tier_3_foe_hammer
-						artifact_type = mace_tier_4_foe_hammer
-					}
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				OR = {
+					artifact_type = mace_tier_3_foe_hammer
+					artifact_type = mace_tier_4_foe_hammer
+				}
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
 	17 = { # q - Flail
 		factor = 100
 		trigger = {
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					OR = {
-						artifact_type = mace_tier_3_shatterer
-						artifact_type = mace_tier_4_shatterer
-					}
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				OR = {
+					artifact_type = mace_tier_3_shatterer
+					artifact_type = mace_tier_4_shatterer
+				}
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
 	18 = { # r - Mace
 		factor = 100
 		trigger = {
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				OR = {
-					has_character_flag = weapon_is_mace
-					any_artifact = {
-						is_artifact_equipped = yes
-						quality == 1
-						has_artifact_flag = mace
-						NOR = {
-							has_artifact_flag = jewelry
-						}
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			OR = {
+				has_character_flag = weapon_is_mace
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality == 1
+					has_artifact_flag = mace
+					NOT = { has_artifact_flag = jewelry }
+				}
+			}
 		}
 
 		modifier = {
@@ -555,47 +525,43 @@
 	19 = { # s - Mace
 		factor = 100
 		trigger = {
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					quality == 2
-					has_artifact_flag = mace
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality == 2
+				has_artifact_flag = mace
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
 	20 = { # t - Mace
 		factor = 100
 		trigger = {
-					OR = {
-						NOR = {
-								trait = lefthanded
-								trait = one_handed
-						}
-						AND = {
-								trait = lefthanded
-								trait = one_handed
-						}
-					}
-				any_artifact = {
-					is_artifact_equipped = yes
-					has_artifact_flag = mace
-					NOR = {
-						has_artifact_flag = jewelry
-					}
+			OR = {
+				NOR = {
+					trait = lefthanded
+					trait = one_handed
 				}
+				AND = {
+					trait = lefthanded
+					trait = one_handed
+				}
+			}
+			any_artifact = {
+				is_artifact_equipped = yes
+				has_artifact_flag = mace
+				NOT = { has_artifact_flag = jewelry }
+			}
 		}
 	}
 
@@ -604,12 +570,12 @@
 		trigger = {
 			OR = {
 				NOR = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 				AND = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 			}
 			NOT = { has_character_flag = add_duel_xp }
@@ -626,12 +592,12 @@
 		trigger = {
 			OR = {
 				NOR = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 				AND = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 			}
 			NOT = { has_character_flag = add_duel_xp }
@@ -648,12 +614,12 @@
 		trigger = {
 			OR = {
 				NOR = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 				AND = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 			}
 			NOT = { has_character_flag = add_duel_xp }
@@ -669,12 +635,12 @@
 		trigger = {
 			OR = {
 				NOR = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 				AND = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 			}
 			NOT = { has_character_flag = add_duel_xp }
@@ -690,12 +656,12 @@
 		trigger = {
 			OR = {
 				NOR = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 				AND = {
-						trait = lefthanded
-						trait = one_handed
+					trait = lefthanded
+					trait = one_handed
 				}
 			}
 			NOT = { has_character_flag = add_duel_xp }

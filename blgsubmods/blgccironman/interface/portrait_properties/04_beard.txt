@@ -21,9 +21,7 @@
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
-						employer = {
-								holy_order = yes
-						}
+						employer = { holy_order = yes }
 					}
 					age < 50
 				}
@@ -55,9 +53,7 @@
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
-						employer = {
-								holy_order = yes
-						}
+						employer = { holy_order = yes }
 					}
 				}
 				trait = eunuch
@@ -80,9 +76,7 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 	}
@@ -105,53 +99,35 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = bodpagfx }
-			NOT = { graphical_culture = chinesegfx }
-			NOR = {
+				graphical_culture = bodpagfx
+				graphical_culture = chinesegfx
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = italiangfx
-			}
-			NOR = {
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOT = { graphical_culture = indiangfx }
-			NOR = {
+				graphical_culture = indiangfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOT = { graphical_culture = southerngfx }
-			NOR = {
+				graphical_culture = southerngfx
 				graphical_culture = southindiangfx
-			}
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOT = { graphical_culture = turkishgfx }
-			NOR = {
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = turkishgfx
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
-			}
-			NOR = {
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -179,20 +155,16 @@
 			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
-			}
-			NOT = { graphical_culture = englishgfx }
-			NOT = { graphical_culture = germangfx }
-			NOT = { graphical_culture = persiangfx }
-			NOR = {
+				graphical_culture = englishgfx
+				graphical_culture = germangfx
+				graphical_culture = persiangfx
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
+				graphical_culture = mesoamericangfx
 			}
-			NOT = { graphical_culture = mesoamericangfx }
 		}
 	}
 
@@ -227,31 +199,23 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = norsegfx }
-			NOT = { graphical_culture = chinesegfx }
-			NOR = {
+				graphical_culture = norsegfx
+				graphical_culture = chinesegfx
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOT = { graphical_culture = englishgfx }
-			NOR = {
+				graphical_culture = englishgfx
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOT = { graphical_culture = persiangfx }
-			NOR = {
+				graphical_culture = persiangfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -279,37 +243,25 @@
 			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
-			}
-			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = italiangfx
-			}
-			NOT = { graphical_culture = germangfx }
-			NOT = { graphical_culture = indiangfx }
-			NOR = {
+				graphical_culture = germangfx
+				graphical_culture = indiangfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOT = { graphical_culture = southerngfx }
-			NOR = {
+				graphical_culture = southerngfx
 				graphical_culture = southindiangfx
-			}
-			NOT = { graphical_culture = turkishgfx }
-			NOR = {
+				graphical_culture = turkishgfx
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
-			}
-			NOR = {
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
+				graphical_culture = mesoamericangfx
 			}
-			NOT = { graphical_culture = mesoamericangfx }
 		}
 	}
 
@@ -331,53 +283,35 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = bodpagfx }
-			NOR = {
+				graphical_culture = bodpagfx
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
-			}
-			NOT = { graphical_culture = chinesegfx }
-			NOR = {
+				graphical_culture = chinesegfx
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = italiangfx
-			}
-			NOR = {
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOT = { graphical_culture = indiangfx }
-			NOR = {
+				graphical_culture = indiangfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOT = { graphical_culture = persiangfx }
-			NOR = {
+				graphical_culture = persiangfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOR = {
 				graphical_culture = southindiangfx
-			}
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOR = {
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -405,12 +339,10 @@
 			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOT = { graphical_culture = englishgfx }
-			NOT = { graphical_culture = germangfx }
-			NOT = { graphical_culture = southerngfx }
-			NOT = { graphical_culture = turkishgfx }
-			NOR = {
+				graphical_culture = englishgfx
+				graphical_culture = germangfx
+				graphical_culture = southerngfx
+				graphical_culture = turkishgfx
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
@@ -435,51 +367,35 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = bodpagfx }
-			NOR = {
+				graphical_culture = bodpagfx
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = italiangfx
-			}
-			NOR = {
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOT = { graphical_culture = germangfx }
-			NOR = {
+				graphical_culture = germangfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOR = {
 				graphical_culture = southindiangfx
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = turkishgfx
 			}
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOT = { graphical_culture = turkishgfx }
 		}
 
 		modifier = {
@@ -501,15 +417,15 @@
 				has_minor_title = title_chief_qadi
 			}
 
-			NOT = { graphical_culture = norsegfx }
-			NOT = { graphical_culture = chinesegfx }
-			NOT = { graphical_culture = englishgfx }
-			NOT = { graphical_culture = persiangfx }
 			NOR = {
+				graphical_culture = norsegfx
+				graphical_culture = chinesegfx
+				graphical_culture = englishgfx
+				graphical_culture = persiangfx
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
+				graphical_culture = mesoamericangfx
 			}
-			NOT = { graphical_culture = mesoamericangfx }
 		}
 	}
 
@@ -531,32 +447,26 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOT = { graphical_culture = norsegfx }
-			NOR = {
+				graphical_culture = norsegfx
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOR = {
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
+				graphical_culture = germangfx
+				graphical_culture = indiangfx
+				graphical_culture = persiangfx
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = turkishgfx
 			}
-			NOT = { graphical_culture = germangfx }
-			NOT = { graphical_culture = indiangfx }
-			NOT = { graphical_culture = persiangfx }
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOT = { graphical_culture = turkishgfx }
 		}
 
 		modifier = {
@@ -581,25 +491,17 @@
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = chinesegfx }
-			NOR = {
+				graphical_culture = chinesegfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOR = {
 				graphical_culture = southindiangfx
-			}
-			NOR = {
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
+				graphical_culture = mesoamericangfx
 			}
-			NOT = { graphical_culture = mesoamericangfx }
 		}
 	}
 
@@ -621,26 +523,22 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
-			NOT = { graphical_culture = bodpagfx }
-			NOT = { graphical_culture = norsegfx }
 			NOR = {
+				graphical_culture = bodpagfx
+				graphical_culture = norsegfx
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOT = { graphical_culture = germangfx }
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOR = {
+				graphical_culture = germangfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
+				graphical_culture = mesoamericangfx
 			}
-			NOT = { graphical_culture = mesoamericangfx }
 		}
 
 		modifier = {
@@ -665,31 +563,21 @@
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
-			}
-			NOT = { graphical_culture = chinesegfx }
-			NOR = {
+				graphical_culture = chinesegfx
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOT = { graphical_culture = indiangfx }
-			NOT = { graphical_culture = norsegfx }
-			NOT = { graphical_culture = persiangfx }
-			NOT = { graphical_culture = southerngfx }
-			NOR = {
+				graphical_culture = indiangfx
+				graphical_culture = norsegfx
+				graphical_culture = persiangfx
+				graphical_culture = southerngfx
 				graphical_culture = southindiangfx
-			}
-			NOT = { graphical_culture = turkishgfx }
-			NOR = {
+				graphical_culture = turkishgfx
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
@@ -727,34 +615,22 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = bodpagfx }
-			NOR = {
+				graphical_culture = bodpagfx
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOR = {
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOR = {
 				graphical_culture = southindiangfx
-			}
-			NOT = { graphical_culture = turkishgfx }
-			NOR = {
+				graphical_culture = turkishgfx
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
@@ -782,22 +658,18 @@
 			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = italiangfx
-			}
-			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
-			}
-			NOT = { graphical_culture = chinesegfx }
-			NOT = { graphical_culture = englishgfx }
-			NOR = {
+				graphical_culture = chinesegfx
+				graphical_culture = englishgfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
+				graphical_culture = persiangfx
+				graphical_culture = norsegfx
+				graphical_culture = southerngfx
 			}
-			NOT = { graphical_culture = persiangfx }
-			NOT = { graphical_culture = norsegfx }
-			NOT = { graphical_culture = southerngfx }
 		}
 
 		modifier = {
@@ -826,9 +698,7 @@
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
-						employer = {
-								holy_order = yes
-						}
+						employer = { holy_order = yes }
 					}
 				}
 				trait = eunuch
@@ -859,29 +729,21 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOT = { graphical_culture = bodpagfx }
-			NOR = {
+				graphical_culture = bodpagfx
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
-			}
-			NOT = { graphical_culture = chinesegfx }
-			NOT = { graphical_culture = persiangfx }
-			NOR = {
+				graphical_culture = chinesegfx
+				graphical_culture = persiangfx
 				graphical_culture = southindiangfx
-			}
-			NOT = { graphical_culture = turkishgfx }
-			NOR = {
+				graphical_culture = turkishgfx
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
@@ -909,33 +771,23 @@
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOT = { graphical_culture = englishgfx }
-			NOR = {
+				graphical_culture = englishgfx
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOT = { graphical_culture = indiangfx }
-			NOT = { graphical_culture = norsegfx }
-			NOR = {
+				graphical_culture = indiangfx
+				graphical_culture = norsegfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOT = { graphical_culture = southerngfx }
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOT = { graphical_culture = turkishgfx }
-			NOR = {
+				graphical_culture = southerngfx
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = turkishgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -965,25 +817,19 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = bodpagfx }
-			NOR = {
+				graphical_culture = bodpagfx
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
-			}
-			NOT = { graphical_culture = chinesegfx }
-			NOT = { graphical_culture = indiangfx }
-			NOT = { graphical_culture = southerngfx }
-			NOR = {
+				graphical_culture = chinesegfx
+				graphical_culture = indiangfx
+				graphical_culture = southerngfx
 				graphical_culture = southindiangfx
 			}
 		}
@@ -1010,36 +856,24 @@
 			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = italiangfx
-			}
-			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
-			}
-			NOT = { graphical_culture = englishgfx }
-			NOR = {
+				graphical_culture = englishgfx
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOT = { graphical_culture = germangfx }
-			NOR = {
+				graphical_culture = germangfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOT = { graphical_culture = norsegfx }
-			NOR = {
+				graphical_culture = norsegfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOR = {
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
-			}
-			NOR = {
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -1069,39 +903,27 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
-			}
-			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = italiangfx
-			}
-			NOT = { graphical_culture = indiangfx }
-			NOT = { graphical_culture = persiangfx }
-			NOR = {
+				graphical_culture = indiangfx
+				graphical_culture = persiangfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOT = { graphical_culture = southerngfx }
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOT = { graphical_culture = turkishgfx }
-			NOR = {
+				graphical_culture = southerngfx
+				graphical_culture = serbsouthslavicgfx
+				graphical_culture = turkishgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -1129,21 +951,15 @@
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = chinesegfx }
-			NOT = { graphical_culture = englishgfx }
-			NOR = {
+				graphical_culture = chinesegfx
+				graphical_culture = englishgfx
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOT = { graphical_culture = norsegfx }
-			NOR = {
+				graphical_culture = norsegfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOR = {
 				graphical_culture = southindiangfx
 			}
 		}
@@ -1173,9 +989,7 @@
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
-						employer = {
-								holy_order = yes
-						}
+						employer = { holy_order = yes }
 					}
 				}
 				trait = eunuch
@@ -1220,25 +1034,19 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = bodpagfx }
-			NOT = { graphical_culture = norsegfx }
-			NOT = { graphical_culture = chinesegfx }
-			NOR = {
+				graphical_culture = bodpagfx
+				graphical_culture = norsegfx
+				graphical_culture = chinesegfx
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOT = { graphical_culture = englishgfx }
-			NOR = {
+				graphical_culture = englishgfx
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
@@ -1266,30 +1074,20 @@
 			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = italiangfx
-			}
-			NOR = {
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOT = { graphical_culture = germangfx }
-			NOT = { graphical_culture = indiangfx }
-			NOR = {
+				graphical_culture = germangfx
+				graphical_culture = indiangfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOR = {
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -1326,42 +1124,28 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = italiangfx
-			}
-			NOR = {
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOT = { graphical_culture = indiangfx }
-			NOR = {
+				graphical_culture = indiangfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOT = { graphical_culture = southerngfx }
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOR = {
+				graphical_culture = southerngfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -1389,24 +1173,18 @@
 			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOT = { graphical_culture = chinesegfx }
-			NOT = { graphical_culture = englishgfx }
-			NOT = { graphical_culture = germangfx }
-			NOR = {
+				graphical_culture = chinesegfx
+				graphical_culture = englishgfx
+				graphical_culture = germangfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOT = { graphical_culture = norsegfx }
-			NOR = {
+				graphical_culture = norsegfx
 				graphical_culture = southindiangfx
-			}
-			NOR = {
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
+				graphical_culture = bodpagfx
 			}
-			NOT = { graphical_culture = bodpagfx }
 		}
 
 		modifier = {
@@ -1434,9 +1212,7 @@
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
-						employer = {
-								holy_order = yes
-						}
+						employer = { holy_order = yes }
 					}
 				}
 				trait = eunuch
@@ -1476,32 +1252,22 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = norsegfx }
-			NOT = { graphical_culture = chinesegfx }
-			NOR = {
+				graphical_culture = norsegfx
+				graphical_culture = chinesegfx
 				graphical_culture = egyptiangfx
 				graphical_culture = italiangfx
-			}
-			NOT = { graphical_culture = englishgfx }
-			NOT = { graphical_culture = germangfx }
-			NOR = {
+				graphical_culture = englishgfx
+				graphical_culture = germangfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = southindiangfx
-			}
-			NOR = {
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
 			}
@@ -1526,25 +1292,19 @@
 				has_minor_title = title_chief_qadi
 			}
 
-			NOT = { graphical_culture = bodpagfx }
 			NOR = {
+				graphical_culture = bodpagfx
 				graphical_culture = cumangfx
 				graphical_culture = magyargfx
 				graphical_culture = mongolgfx
-			}
-			NOR = {
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-			}
-			NOR = {
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOT = { graphical_culture = southerngfx }
-			NOT = { graphical_culture = serbsouthslavicgfx }
-			NOR = {
+				graphical_culture = southerngfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -1582,14 +1342,12 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
-			NOT = { graphical_culture = germangfx }
-			NOT = { graphical_culture = serbsouthslavicgfx }
 			NOR = {
+				graphical_culture = germangfx
+				graphical_culture = serbsouthslavicgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -1617,30 +1375,20 @@
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-			}
-			NOT = { graphical_culture = englishgfx }
-			NOR = {
+				graphical_culture = englishgfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-			}
-			NOT = { graphical_culture = norsegfx }
-			NOR = {
+				graphical_culture = norsegfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-			}
-			NOR = {
 				graphical_culture = southindiangfx
-			}
-			NOR = {
 				graphical_culture = ugricgfx
 				graphical_culture = easternslavicgfx
+				graphical_culture = bodpagfx
 			}
-			NOT = { graphical_culture = bodpagfx }
 		}
 	}
 
@@ -1667,10 +1415,10 @@
 					is_female = no
 					OR = {
 						true_religion_scope = {
-								OR = {
-											likes_jews = yes
-											religion = taoist
-								}
+							OR = {
+								likes_jews = yes
+								religion = taoist
+							}
 						}
 						trait = muni
 					}
@@ -1723,9 +1471,7 @@
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
-						employer = {
-								holy_order = yes
-						}
+						employer = { holy_order = yes }
 					}
 				}
 				trait = eunuch
@@ -1748,9 +1494,7 @@
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 

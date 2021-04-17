@@ -59,8 +59,8 @@
 						has_character_modifier = known_satanist
 						has_character_modifier = known_secret_society_member
 						AND = {
-								multiplayer = no
-								any_player = { same_society_as = ROOT }
+							multiplayer = no
+							any_player = { same_society_as = ROOT }
 						}
 					}
 				}
@@ -207,16 +207,16 @@
 			OR = {
 				has_character_modifier = pet_owl
 				AND = {
-						has_character_modifier = owl_familiar
-						OR = {
-							is_society_discovered = yes
-							has_character_modifier = known_satanist
-							has_character_modifier = known_secret_society_member
-							AND = {
-									multiplayer = no
-									any_player = { same_society_as = ROOT }
-							}
+					has_character_modifier = owl_familiar
+					OR = {
+						is_society_discovered = yes
+						has_character_modifier = known_satanist
+						has_character_modifier = known_secret_society_member
+						AND = {
+							multiplayer = no
+							any_player = { same_society_as = ROOT }
 						}
+					}
 				}
 			}
 
@@ -263,11 +263,10 @@
 				has_character_modifier = known_satanist
 				has_character_modifier = known_secret_society_member
 				AND = {
-						multiplayer = no
-						any_player = { same_society_as = ROOT }
+					multiplayer = no
+					any_player = { same_society_as = ROOT }
 				}
 			}
-
 		}
 	}
 

@@ -30,11 +30,11 @@
 			NOR = {
 				has_character_modifier = pet_hunting_eagle
 				any_artifact = {
-						is_artifact_equipped = yes
-						OR = {
-									artifact_type = spear_of_destiny
-									artifact_type = mjolnir
-						}
+					is_artifact_equipped = yes
+					OR = {
+						artifact_type = spear_of_destiny
+						artifact_type = mjolnir
+					}
 				}
 			}
 		}
@@ -48,13 +48,13 @@
 		trigger = {
 			OR = {
 				AND = {
-						is_priest = yes
-						rightful_religious_head = ROOT
-						religion_openly_bon_or_reformed_trigger = yes
+					is_priest = yes
+					rightful_religious_head = ROOT
+					religion_openly_bon_or_reformed_trigger = yes
 				}
 				any_artifact = {
-						is_artifact_equipped = yes
-						artifact_type = scepter_bon_fylkir
+					is_artifact_equipped = yes
+					artifact_type = scepter_bon_fylkir
 				}
 				trait = dead_scepter_bon_fylkir
 			}
@@ -69,16 +69,16 @@
 		trigger = {
 			OR = {
 				AND = {
-						is_priest = yes
-						rightful_religious_head = ROOT
-						religion_openly_hellenic_or_reformed_trigger = yes
+					is_priest = yes
+					rightful_religious_head = ROOT
+					religion_openly_hellenic_or_reformed_trigger = yes
 				}
 				any_artifact = {
-						is_artifact_equipped = yes
-						OR = {
-									artifact_type = scepter_hellenic_fylkir
-									artifact_type = spear_of_destiny
-						}
+					is_artifact_equipped = yes
+					OR = {
+						artifact_type = scepter_hellenic_fylkir
+						artifact_type = spear_of_destiny
+					}
 				}
 				trait = dead_scepter_hellenic_fylkir
 			}
@@ -115,8 +115,8 @@
 			any_artifact = {
 				is_artifact_active = yes
 				OR = {
-						has_artifact_flag = tablet
-						artifact_type = yada_tashy
+					has_artifact_flag = tablet
+					artifact_type = yada_tashy
 				}
 			}
 		}
@@ -152,13 +152,11 @@
 					quality == 2
 					has_artifact_flag = scepter
 				}
-				AND = {
-					any_artifact = {
-						is_artifact_equipped = yes
-						quality >= 3
-						has_artifact_flag = staff
-						has_artifact_flag = jewelry
-					}
+				any_artifact = {
+					is_artifact_equipped = yes
+					quality >= 3
+					has_artifact_flag = staff
+					has_artifact_flag = jewelry
 				}
 			}
 		}
@@ -287,11 +285,9 @@
 		trigger = {
 			OR = {
 				society_member_of = monastic_order_hindu
-				AND = {
-					any_artifact = {
-						is_artifact_equipped = yes
-						artifact_type = elaborate_danda
-					}
+				any_artifact = {
+					is_artifact_equipped = yes
+					artifact_type = elaborate_danda
 				}
 			}
 		}
@@ -310,11 +306,9 @@
 		trigger = {
 			OR = {
 				society_member_of = monastic_order_hindu
-				AND = {
-					any_artifact = {
-						is_artifact_equipped = yes
-						artifact_type = staff_of_moses
-					}
+				any_artifact = {
+					is_artifact_equipped = yes
+					artifact_type = staff_of_moses
 				}
 			}
 		}
@@ -392,9 +386,9 @@
 			any_artifact = {
 				is_artifact_active = yes
 				OR = {
-						artifact_type = letter_of_mohammad
-						artifact_type = cyrus_cylinder
-						artifact_type = chinese_calligraphy
+					artifact_type = letter_of_mohammad
+					artifact_type = cyrus_cylinder
+					artifact_type = chinese_calligraphy
 				}
 			}
 		}
@@ -413,16 +407,16 @@
 			OR = {
 				death_reason = death_murder_unknown_crows
 				AND = {
-						has_character_modifier = raven_familiar
-						OR = {
-							is_society_discovered = yes
-							has_character_modifier = known_satanist
-							has_character_modifier = known_secret_society_member
-							AND = {
-									multiplayer = no
-									any_player = { same_society_as = ROOT }
-							}
+					has_character_modifier = raven_familiar
+					OR = {
+						is_society_discovered = yes
+						has_character_modifier = known_satanist
+						has_character_modifier = known_secret_society_member
+						AND = {
+							multiplayer = no
+							any_player = { same_society_as = ROOT }
 						}
+					}
 				}
 			}
 		}

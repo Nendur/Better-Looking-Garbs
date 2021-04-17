@@ -58,13 +58,13 @@
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
 			}
-			NOT = { mercenary = yes }
 			NOR = {
+				mercenary = yes
 				trait = peasant_leader
 				trait = heresiarch
+				has_tribal_or_nomadic_government_trigger = yes
+				has_character_modifier = golden_mask
 			}
-			has_tribal_or_nomadic_government_trigger = no
-			NOT = { has_character_modifier = golden_mask }
 		}
 	}
 
@@ -94,9 +94,9 @@
 					is_republic = yes
 					NOT = { government = confucian_bureaucracy }
 				}
-				NOT = { mercenary = yes }
-				NOT = { holy_order = yes }
 				NOR = {
+					mercenary = yes
+					holy_order = yes
 					trait = peasant_leader
 					trait = heresiarch
 				}
@@ -272,14 +272,14 @@
 				is_republic = yes
 				NOT = { government = confucian_bureaucracy }
 			}
-			NOT = { mercenary = yes }
-			NOT = { holy_order = yes }
 			NOR = {
+				mercenary = yes
+				holy_order = yes
 				trait = peasant_leader
 				trait = heresiarch
+				has_tribal_or_nomadic_government_trigger = yes
+				has_character_modifier = golden_mask
 			}
-			has_tribal_or_nomadic_government_trigger = no
-			NOT = { has_character_modifier = golden_mask }
 		}
 	}
 
@@ -310,13 +310,13 @@
 						is_republic = yes
 						NOT = { government = confucian_bureaucracy }
 					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
 					NOR = {
+						mercenary = yes
+						holy_order = yes
 						trait = peasant_leader
 						trait = heresiarch
+						has_tribal_or_nomadic_government_trigger = yes
 					}
-					has_tribal_or_nomadic_government_trigger = no
 
 					OR = {
 						trait = greedy

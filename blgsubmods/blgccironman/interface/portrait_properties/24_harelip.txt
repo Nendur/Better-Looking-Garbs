@@ -3,9 +3,7 @@
 	0 = { # 0 - blank
 		factor = 100
 		trigger = {
-			OR = {
-				NOT = { trait = harelip }
-			}
+			NOT = { trait = harelip }
 		}
 	}
 

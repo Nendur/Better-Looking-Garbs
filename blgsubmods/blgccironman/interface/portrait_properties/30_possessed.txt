@@ -2,11 +2,6 @@
 30 = {
 	0 = { # 0 - blank
 		factor = 1
-		modifier = {
-			factor = 100
-			OR = {
-			}
-		}
 	}
 
 	1 = { # a - Demon Child
@@ -14,9 +9,7 @@
 		trigger = {
 			has_character_modifier = demon_horns
 
-			NOR = {
-				has_game_rule = { name = supernatural_events value = off }
-			}
+			NOT = { has_game_rule = { name = supernatural_events value = off } }
 		}
 	}
 
@@ -29,9 +22,7 @@
 				has_character_modifier = military_jesus
 			}
 
-			NOR = {
-				has_game_rule = { name = supernatural_events value = off }
-			}
+			NOT = { has_game_rule = { name = supernatural_events value = off } }
 		}
 	}
 
@@ -43,9 +34,7 @@
 				has_character_modifier = lycanthropy
 			}
 
-			NOR = {
-				has_game_rule = { name = supernatural_events value = off }
-			}
+			NOT = { has_game_rule = { name = supernatural_events value = off } }
 		}
 	}
 

@@ -132,9 +132,7 @@
 	18 = { # r - Lion
 		factor = 100
 		trigger = {
-			OR = {
-				death_reason = death_execution_lion
-			}
+			death_reason = death_execution_lion
 		}
 	}
 
@@ -225,7 +223,6 @@
 						}
 					}
 				}
-
 			}
 		}
 	}
@@ -273,7 +270,6 @@
 						}
 					}
 				}
-
 			}
 		}
 	}

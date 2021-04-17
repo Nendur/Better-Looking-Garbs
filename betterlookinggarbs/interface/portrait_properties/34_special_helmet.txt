@@ -18,7 +18,13 @@
 
 		trigger = {
 			blg_knights_templar = yes
-			blg_headgear_military = yes
+
+			OR = {
+				in_command = yes
+				blg_duelling = yes
+				blg_headgear_military_on_rule = yes
+			}
+			blg_headgear_military_off_rule = no
 		}
 	}
 
@@ -71,7 +77,13 @@
 
 		trigger = {
 			blg_knights_hospitaler = yes
-			blg_headgear_military = yes
+
+			OR = {
+				in_command = yes
+				blg_duelling = yes
+				blg_headgear_military_on_rule = yes
+			}
+			blg_headgear_military_off_rule = no
 		}
 	}
 
@@ -89,7 +101,13 @@
 
 		trigger = {
 			blg_knights_teutonic = yes
-			blg_headgear_military = yes
+
+			OR = {
+				in_command = yes
+				blg_duelling = yes
+				blg_headgear_military_on_rule = yes
+			}
+			blg_headgear_military_off_rule = no
 		}
 	}
 
@@ -125,7 +143,13 @@
 
 		trigger = {
 			blg_knights_calatrava = yes
-			blg_headgear_military = yes
+
+			OR = {
+				in_command = yes
+				blg_duelling = yes
+				blg_headgear_military_on_rule = yes
+			}
+			blg_headgear_military_off_rule = no
 		}
 	}
 
@@ -161,7 +185,13 @@
 
 		trigger = {
 			blg_knights_livonian = yes
-			blg_headgear_military = yes
+
+			OR = {
+				in_command = yes
+				blg_duelling = yes
+				blg_headgear_military_on_rule = yes
+			}
+			blg_headgear_military_off_rule = no
 		}
 	}
 

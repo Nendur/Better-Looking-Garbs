@@ -39,13 +39,13 @@
 				NOR = {
 					likes_latino_iberians = yes
 					AND = {
-							likes_christians = yes
-							OR = {
-										likes_germanics = yes
-										likes_celts = yes
-										likes_balto_slavics = yes
-										likes_finno_ugrics = yes
-							}
+						likes_christians = yes
+						OR = {
+							likes_germanics = yes
+							likes_celts = yes
+							likes_balto_slavics = yes
+							likes_finno_ugrics = yes
+						}
 					}
 				}
 			}
@@ -73,40 +73,36 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth < 1160
 			OR = {
-				AND = {
-					year_of_birth < 1160
-					OR = {
-						culture = frankish
-						culture = occitan
-						culture_group = iberian
-						likes_celts = yes
-						culture_group = east_slavic
-						culture = outremer
-					}
+				culture = frankish
+				culture = occitan
+				culture_group = iberian
+				likes_celts = yes
+				culture_group = east_slavic
+				culture = outremer
+			}
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NAND = {
+				is_republic = yes
+				NOT = { government = confucian_bureaucracy }
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -116,40 +112,36 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth < 1160
 			OR = {
-				AND = {
-					year_of_birth < 1160
-					OR = {
-						culture = frankish
-						culture = occitan
-						culture_group = iberian
-						likes_celts = yes
-						culture_group = east_slavic
-						culture = outremer
-					}
+				culture = frankish
+				culture = occitan
+				culture_group = iberian
+				likes_celts = yes
+				culture_group = east_slavic
+				culture = outremer
+			}
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NAND = {
+				is_republic = yes
+				NOT = { government = confucian_bureaucracy }
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -159,40 +151,36 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth < 1160
 			OR = {
-				AND = {
-					year_of_birth < 1160
-					OR = {
-						culture = frankish
-						culture = occitan
-						culture_group = iberian
-						likes_celts = yes
-						culture_group = east_slavic
-						culture = outremer
-					}
+				culture = frankish
+				culture = occitan
+				culture_group = iberian
+				likes_celts = yes
+				culture_group = east_slavic
+				culture = outremer
+			}
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NAND = {
+				is_republic = yes
+				NOT = { government = confucian_bureaucracy }
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -202,40 +190,36 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth < 1160
 			OR = {
-				AND = {
-					year_of_birth < 1160
-					OR = {
-						culture = frankish
-						culture = occitan
-						culture_group = iberian
-						likes_celts = yes
-						culture_group = east_slavic
-						culture = outremer
-					}
+				culture = frankish
+				culture = occitan
+				culture_group = iberian
+				likes_celts = yes
+				culture_group = east_slavic
+				culture = outremer
+			}
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NAND = {
+				is_republic = yes
+				NOT = { government = confucian_bureaucracy }
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -245,40 +229,36 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth >= 1160
 			OR = {
-				AND = {
-					year_of_birth >= 1160
-					OR = {
-						culture = frankish
-						culture = occitan
-						culture_group = iberian
-						likes_celts = yes
-						culture_group = east_slavic
-						culture = outremer
-					}
+				culture = frankish
+				culture = occitan
+				culture_group = iberian
+				likes_celts = yes
+				culture_group = east_slavic
+				culture = outremer
+			}
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NAND = {
+				is_republic = yes
+				NOT = { government = confucian_bureaucracy }
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -288,40 +268,36 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth >= 1160
 			OR = {
-				AND = {
-					year_of_birth >= 1160
-					OR = {
-						culture = frankish
-						culture = occitan
-						culture_group = iberian
-						likes_celts = yes
-						culture_group = east_slavic
-						culture = outremer
-					}
+				culture = frankish
+				culture = occitan
+				culture_group = iberian
+				likes_celts = yes
+				culture_group = east_slavic
+				culture = outremer
+			}
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NAND = {
+				is_republic = yes
+				NOT = { government = confucian_bureaucracy }
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -331,36 +307,32 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth >= 1160
 			OR = {
-				AND = {
-					year_of_birth >= 1160
-					OR = {
-						culture = frankish
-						culture = occitan
-					}
+				culture = frankish
+				culture = occitan
+			}
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NAND = {
+				is_republic = yes
+				NOT = { government = confucian_bureaucracy }
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -370,40 +342,36 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth >= 1160
 			OR = {
-				AND = {
-					year_of_birth >= 1160
-					OR = {
-						culture = frankish
-						culture = occitan
-						culture_group = iberian
-						likes_celts = yes
-						culture_group = east_slavic
-						culture = outremer
-					}
+				culture = frankish
+				culture = occitan
+				culture_group = iberian
+				likes_celts = yes
+				culture_group = east_slavic
+				culture = outremer
+			}
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NAND = {
+				is_republic = yes
+				NOT = { government = confucian_bureaucracy }
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -413,24 +381,20 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth < 1160
 			OR = {
-				AND = {
-					year_of_birth < 1160
-					OR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-						is_or_was_offmap_power_ruler = yes
-						has_minor_title = title_prince
-						has_minor_title = title_queen_mother
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NOT = { mercenary = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
-					}
-				}
+				higher_real_tier_than = count
+				spouse_even_if_dead = { higher_real_tier_than = count }
+				is_or_was_offmap_power_ruler = yes
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NOR = {
+				mercenary = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -440,32 +404,28 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth < 1160
 			OR = {
-				AND = {
-					year_of_birth < 1160
-					OR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-						is_or_was_offmap_power_ruler = yes
-						has_minor_title = title_prince
-						has_minor_title = title_queen_mother
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NOT = { mercenary = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
-					}
-					OR = {
-						culture = frankish
-						culture = occitan
-						culture_group = iberian
-						likes_celts = yes
-						culture_group = east_slavic
-						culture = outremer
-					}
-				}
+				higher_real_tier_than = count
+				spouse_even_if_dead = { higher_real_tier_than = count }
+				is_or_was_offmap_power_ruler = yes
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NOR = {
+				mercenary = yes
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture_group = iberian
+				likes_celts = yes
+				culture_group = east_slavic
+				culture = outremer
 			}
 		}
 	}
@@ -475,32 +435,28 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth < 1160
 			OR = {
-				AND = {
-					year_of_birth < 1160
-					OR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-						is_or_was_offmap_power_ruler = yes
-						has_minor_title = title_prince
-						has_minor_title = title_queen_mother
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NOT = { mercenary = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
-					}
-					OR = {
-						culture = frankish
-						culture = occitan
-						culture_group = iberian
-						likes_celts = yes
-						culture_group = east_slavic
-						culture = outremer
-					}
-				}
+				higher_real_tier_than = count
+				spouse_even_if_dead = { higher_real_tier_than = count }
+				is_or_was_offmap_power_ruler = yes
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NOR = {
+				mercenary = yes
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture_group = iberian
+				likes_celts = yes
+				culture_group = east_slavic
+				culture = outremer
 			}
 		}
 	}
@@ -510,32 +466,28 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth < 1160
 			OR = {
-				AND = {
-					year_of_birth < 1160
-					OR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-						is_or_was_offmap_power_ruler = yes
-						has_minor_title = title_prince
-						has_minor_title = title_queen_mother
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NOT = { mercenary = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
-					}
-					OR = {
-						culture = frankish
-						culture = occitan
-						culture_group = iberian
-						likes_celts = yes
-						culture_group = east_slavic
-						culture = outremer
-					}
-				}
+				higher_real_tier_than = count
+				spouse_even_if_dead = { higher_real_tier_than = count }
+				is_or_was_offmap_power_ruler = yes
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NOR = {
+				mercenary = yes
+				trait = peasant_leader
+				trait = heresiarch
+			}
+			OR = {
+				culture = frankish
+				culture = occitan
+				culture_group = iberian
+				likes_celts = yes
+				culture_group = east_slavic
+				culture = outremer
 			}
 		}
 	}
@@ -545,24 +497,20 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth >= 1160
 			OR = {
-				AND = {
-					year_of_birth >= 1160
-					OR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-						is_or_was_offmap_power_ruler = yes
-						has_minor_title = title_prince
-						has_minor_title = title_queen_mother
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NOT = { mercenary = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
-					}
-				}
+				higher_real_tier_than = count
+				spouse_even_if_dead = { higher_real_tier_than = count }
+				is_or_was_offmap_power_ruler = yes
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NOR = {
+				mercenary = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -572,24 +520,20 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
+			year_of_birth >= 1160
 			OR = {
-				AND = {
-					year_of_birth >= 1160
-					OR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-						is_or_was_offmap_power_ruler = yes
-						has_minor_title = title_prince
-						has_minor_title = title_queen_mother
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NOT = { mercenary = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
-					}
-				}
+				higher_real_tier_than = count
+				spouse_even_if_dead = { higher_real_tier_than = count }
+				is_or_was_offmap_power_ruler = yes
+				has_minor_title = title_prince
+				has_minor_title = title_queen_mother
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
+			}
+			NOR = {
+				mercenary = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}

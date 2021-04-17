@@ -10,8 +10,6 @@
 			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = mongolgfx
 			}
@@ -38,9 +36,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 
 			OR = {
@@ -56,10 +52,10 @@
 			is_female = no
 			OR = {
 				true_religion_scope = {
-						OR = {
-									likes_jews = yes
-									religion = taoist
-						}
+					OR = {
+						likes_jews = yes
+						religion = taoist
+					}
 				}
 				trait = muni
 			}
@@ -86,9 +82,7 @@
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOT = { graphical_culture = easternslavicgfx }
-			NOR = {
+				graphical_culture = easternslavicgfx
 				graphical_culture = cumangfx
 				graphical_culture = mongolgfx
 			}
@@ -106,14 +100,10 @@
 				graphical_culture = italiangfx
 				graphical_culture = outremergfx
 				graphical_culture = romangfx
-			}
-			NOR = {
 				graphical_culture = southerngfx
 				graphical_culture = andalusiangfx
-			}
-			NOT = { graphical_culture = byzantinegfx }
-			NOT = { graphical_culture = norsegfx }
-			NOR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = norsegfx
 				graphical_culture = ugricgfx
 				graphical_culture = magyargfx
 			}
@@ -129,9 +119,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 	}
@@ -198,9 +186,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 	}
@@ -215,20 +201,14 @@
 			NOR = {
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
-			}
-			NOR = {
 				graphical_culture = southerngfx
 				graphical_culture = andalusiangfx
-			}
-			NOR = {
 				graphical_culture = arabicgfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = mongolgfx
+				graphical_culture = easternslavicgfx
 			}
-			NOT = { graphical_culture = easternslavicgfx }
 		}
 
 		modifier = {
@@ -261,9 +241,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 	}
@@ -278,12 +256,10 @@
 			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = mongolgfx
+				graphical_culture = easternslavicgfx
 			}
-			NOT = { graphical_culture = easternslavicgfx }
 		}
 
 		modifier = {
@@ -338,9 +314,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 			NOR = {
 				graphical_culture = cumangfx
@@ -358,12 +332,12 @@
 				AND = {
 					OR = {
 						AND = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 						spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 					}
 					OR = {
@@ -399,12 +373,12 @@
 				AND = {
 					OR = {
 						AND = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 						spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 					}
 					OR = {
@@ -490,9 +464,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 
@@ -506,12 +478,12 @@
 				AND = {
 					OR = {
 						AND = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 						spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 					}
 					OR = {
@@ -542,12 +514,12 @@
 				AND = {
 					OR = {
 						AND = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 						spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 					}
 					OR = {
@@ -612,34 +584,20 @@
 			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
-			}
-			NOR = {
 				graphical_culture = englishgfx
 				graphical_culture = normangfx
-			}
-			NOT = { graphical_culture = germangfx }
-			NOR = {
+				graphical_culture = germangfx
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
-			}
-			NOR = {
 				graphical_culture = serbsouthslavicgfx
 				graphical_culture = dalmatiangfx
-			}
-			NOR = {
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 				graphical_culture = crimeangfx
-			}
-			NOR = {
 				graphical_culture = arabicgfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = berbergfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = mongolgfx
 			}
@@ -653,24 +611,14 @@
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
-			}
-			NOR = {
 				graphical_culture = englishgfx
 				graphical_culture = normangfx
-			}
-			NOR = {
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
-			}
-			NOR = {
 				graphical_culture = arabicgfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = berbergfx
 			}
@@ -686,9 +634,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 			NOR = {
 				graphical_culture = celticgfx
@@ -707,27 +653,17 @@
 			NOR = {
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
-			}
-			NOT = { graphical_culture = norsegfx }
-			NOR = {
+				graphical_culture = norsegfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 				graphical_culture = crimeangfx
-			}
-			NOR = {
 				graphical_culture = arabicgfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = mongolgfx
-			}
-			NOT = { graphical_culture = bodpagfx }
-			NOR = {
+				graphical_culture = bodpagfx
 				graphical_culture = southindiangfx
 			}
 		}
@@ -752,9 +688,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 	}
@@ -769,16 +703,10 @@
 			NOR = {
 				graphical_culture = arabicgfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
-			}
-			NOR = {
 				graphical_culture = cumangfx
 				graphical_culture = mongolgfx
-			}
-			NOR = {
 				graphical_culture = englishgfx
 				graphical_culture = normangfx
 			}
@@ -804,9 +732,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 
@@ -820,12 +746,12 @@
 				AND = {
 					OR = {
 						AND = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 						spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 					}
 					OR = {
@@ -860,12 +786,12 @@
 				AND = {
 					OR = {
 						AND = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 						spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 					}
 					OR = {
@@ -898,8 +824,8 @@
 			is_female = no
 			practical_age >= 70
 
-			NOT = { graphical_culture = easternslavicgfx }
 			NOR = {
+				graphical_culture = easternslavicgfx
 				graphical_culture = englishgfx
 				graphical_culture = normangfx
 			}
@@ -925,9 +851,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 
@@ -979,14 +903,10 @@
 			NOR = {
 				graphical_culture = englishgfx
 				graphical_culture = normangfx
-			}
-			NOT = { graphical_culture = norsegfx }
-			NOR = {
+				graphical_culture = norsegfx
 				graphical_culture = serbsouthslavicgfx
 				graphical_culture = dalmatiangfx
-			}
-			NOT = { graphical_culture = easternslavicgfx }
-			NOR = {
+				graphical_culture = easternslavicgfx
 				graphical_culture = ugricgfx
 				graphical_culture = magyargfx
 			}
@@ -1049,9 +969,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 
@@ -1065,12 +983,12 @@
 				AND = {
 					OR = {
 						AND = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 						spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 					}
 					OR = {
@@ -1106,12 +1024,12 @@
 				AND = {
 					OR = {
 						AND = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 						spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 					}
 					OR = {
@@ -1252,9 +1170,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 	}
@@ -1300,21 +1216,15 @@
 			NOR = {
 				graphical_culture = arabicgfx
 				graphical_culture = levantinegfx
-			}
-			NOR = {
 				graphical_culture = egyptiangfx
 				graphical_culture = berbergfx
-			}
-			NOR = {
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 				graphical_culture = crimeangfx
-			}
-			NOR = {
 				graphical_culture = serbsouthslavicgfx
 				graphical_culture = dalmatiangfx
+				graphical_culture = easternslavicgfx
 			}
-			NOT = { graphical_culture = easternslavicgfx }
 		}
 
 		modifier = {
@@ -1327,9 +1237,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 
@@ -1401,9 +1309,9 @@
 			NOR = {
 				graphical_culture = africangfx
 				graphical_culture = westafricangfx
+				graphical_culture = easternslavicgfx
+				graphical_culture = turkishgfx
 			}
-			NOT = { graphical_culture = easternslavicgfx }
-			NOT = { graphical_culture = turkishgfx }
 		}
 
 		modifier = {
@@ -1427,9 +1335,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 
@@ -1482,8 +1388,8 @@
 			is_female = no
 			practical_age >= 70
 
-			NOT = { graphical_culture = byzantinegfx }
 			NOR = {
+				graphical_culture = byzantinegfx
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 			}
@@ -1515,9 +1421,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
-				employer = {
-						holy_order = yes
-				}
+				employer = { holy_order = yes }
 			}
 		}
 
@@ -1531,12 +1435,12 @@
 				AND = {
 					OR = {
 						AND = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 						spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 					}
 					OR = {
@@ -1572,12 +1476,12 @@
 				AND = {
 					OR = {
 						AND = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 						spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
+							real_tier = duke
+							independent = yes
 						}
 					}
 					OR = {
