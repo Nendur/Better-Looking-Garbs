@@ -4,18 +4,21 @@ spriteTypes = {
 		name = "GFX_bear_male_headgear"
 		textureFile = "gfx/characters/bear_male/bear_male_headgear.dds"
 		noOfFrames = 1
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_bear_male_hair"
 		textureFile = "gfx/characters/bear_male/bear_male_hair.dds"
 		noOfFrames = 1
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_bear_male_clothes"
 		textureFile = "gfx/characters/bear_male/bear_male_clothes.dds"
 		noOfFrames = 1
+		norefcount = yes
 	}
 
 ### BROWN BEAR ####
@@ -40,12 +43,14 @@ spriteTypes = {
 		name = "GFX_brown_bear_son"
 		textureFile = "gfx/characters/bear_male/brown_bear_son.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_brown_bear_daughter"
 		textureFile = "gfx/characters/bear_female/brown_bear_daughter.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -334,12 +339,14 @@ spriteTypes = {
 		name = "GFX_polar_bear_son"
 		textureFile = "gfx/characters/bear_male/polar_bear_son.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_polar_bear_daughter"
 		textureFile = "gfx/characters/bear_female/polar_bear_daughter.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -609,12 +616,14 @@ spriteTypes = {
 		name = "GFX_black_bear_son"
 		textureFile = "gfx/characters/bear_male/black_bear_son.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_black_bear_daughter"
 		textureFile = "gfx/characters/bear_female/black_bear_daughter.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	portraitType = {

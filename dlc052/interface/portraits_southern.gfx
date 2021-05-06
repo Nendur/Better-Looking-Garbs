@@ -34,36 +34,42 @@ spriteTypes = {
 		name = "GFX_southern_son_base"
 		textureFile = "gfx/characters/southern_male/southern_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_sonhair"
 		textureFile = "gfx/characters/southern_male/southern_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_son_eyes"
 		textureFile = "gfx/characters/southern_male/southern_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_daughter_base"
 		textureFile = "gfx/characters/southern_female/southern_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_daughterhair"
 		textureFile = "gfx/characters/southern_female/southern_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_daughter_eyes"
 		textureFile = "gfx/characters/southern_female/southern_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ########## SOUTHERN MALES ##########

@@ -33,36 +33,42 @@ spriteTypes = {
 		name = "GFX_norse_son_base"
 		textureFile = "gfx/characters/norse_male/norse_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_sonhair"
 		textureFile = "gfx/characters/norse_male/norse_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_son_eyes"
 		textureFile = "gfx/characters/norse_male/norse_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_daughter_base"
 		textureFile = "gfx/characters/norse_female/norse_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_daughterhair"
 		textureFile = "gfx/characters/norse_female/norse_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_norse_daughter_eyes"
 		textureFile = "gfx/characters/norse_female/norse_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### NORSE MALE ####

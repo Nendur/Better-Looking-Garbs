@@ -6,24 +6,28 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_stoics_male_clothing_behind"
 		textureFile = "gfx/characters/societies/hf_stoic_male_clothing_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_stoics_male_clothing_front"
 		textureFile = "gfx/characters/societies/hf_stoic_male_clothing_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_stoics_male_headgear_front"
 		textureFile = "gfx/characters/societies/hf_stoic_male_headgear_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_stoics_male_headgear_behind"
 		textureFile = "gfx/characters/societies/hf_stoic_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -98,12 +102,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_stoics_female_clothing_behind"
 		textureFile = "gfx/characters/societies/hf_stoic_female_clothing_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_stoics_female_clothing_front"
 		textureFile = "gfx/characters/societies/hf_stoic_female_clothing_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -184,24 +190,28 @@ spriteTypes = {
 		name = "GFX_society_bacchant_male_clothing_behind"
 		textureFile = "gfx/characters/societies/hf_bacchant_male_clothing_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_bacchant_male_clothing_front"
 		textureFile = "gfx/characters/societies/hf_bacchant_male_clothing_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_bacchant_male_headgear_front"
 		textureFile = "gfx/characters/societies/hf_bacchant_male_headgear_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_bacchant_male_headgear_behind"
 		textureFile = "gfx/characters/societies/hf_bacchant_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = {

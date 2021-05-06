@@ -23,54 +23,63 @@ spriteTypes = {
 		name = "GFX_egyptian_son_base"
 		textureFile = "gfx/characters/egyptian_male/egyptian_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_egyptian_sonhair"
 		textureFile = "gfx/characters/egyptian_male/egyptian_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_egyptian_son_eyes"
 		textureFile = "gfx/characters/egyptian_male/egyptian_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_egyptian_daughter_base"
 		textureFile = "gfx/characters/egyptian_female/egyptian_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_egyptian_daughterhair"
 		textureFile = "gfx/characters/egyptian_female/egyptian_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_egyptian_daughter_eyes"
 		textureFile = "gfx/characters/egyptian_female/egyptian_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_coptic_son_base"
 		textureFile = "gfx/characters/egyptian_male/coptic_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_coptic_daughter_base"
 		textureFile = "gfx/characters/egyptian_female/coptic_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_coptic_daughterhair"
 		textureFile = "gfx/characters/egyptian_female/coptic_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### EGYPTIAN MALE ####

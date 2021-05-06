@@ -97,19 +97,16 @@ character_event = {
 		if = {
 			limit = {
 				mother_even_if_dead = {
-					OR = {
-						AND = {
-							is_married = event_target:father
-							is_married_matrilineally = yes
-						}
-						AND = {
-							is_consort = event_target:father
-							is_senior_consort_party = yes
-						}
-						AND = {
-							NOT = { is_married = event_target:father }
-							higher_tier_than = event_target:father
-						}
+					trigger_if = {
+						limit = { is_married = event_target:father }
+						is_married_matrilineally = yes
+					}
+					trigger_else_if = {
+						limit = { is_consort = event_target:father }
+						is_senior_consort_party = yes
+					}
+					trigger_else = {
+						higher_tier_than = event_target:father
 					}
 				}
 			}

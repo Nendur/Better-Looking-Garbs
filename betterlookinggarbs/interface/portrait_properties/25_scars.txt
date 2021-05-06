@@ -5,7 +5,6 @@
 		trigger = {
 			OR = {
 				NOT = { trait = scarred_mid }
-				trait = scarred_high
 				has_game_rule = { name = blg_wounds value = off }
 			}
 		}

@@ -5,6 +5,7 @@ spriteTypes = {
 		name = "GFX_centralindian_son_base"
 		textureFile = "gfx/characters/indian_male/centralindian_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	portraitType = {

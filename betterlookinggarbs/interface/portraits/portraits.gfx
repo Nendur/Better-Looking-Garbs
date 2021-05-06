@@ -22,36 +22,42 @@ spriteTypes = {
 		name = "GFX_western_son_base"
 		textureFile = "gfx/characters/western_male/western_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_western_sonhair"
 		textureFile = "gfx/characters/western_male/western_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_western_son_eyes"
 		textureFile = "gfx/characters/western_male/western_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_western_daughter_base"
 		textureFile = "gfx/characters/western_female/western_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_western_daughterhair"
 		textureFile = "gfx/characters/western_female/western_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_western_daughter_eyes"
 		textureFile = "gfx/characters/western_female/western_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### WESTERN MALE ####

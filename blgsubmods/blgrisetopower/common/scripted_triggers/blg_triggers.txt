@@ -106,11 +106,11 @@ blg_prisoner = {
 # Republic government.
 blg_republic = {
 	OR = {
-		is_republic = yes
+		government = republic_government
+		government = merchant_republic_government
 		government = rtp_republic_g
 		government = rtp_baron_republic_g
 	}
-	NOT = { government = confucian_bureaucracy }
 }
 
 # Right-handed weapon user.

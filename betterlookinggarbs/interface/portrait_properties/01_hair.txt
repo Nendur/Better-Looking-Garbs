@@ -1,7 +1,59 @@
-# p1 hair  --- WARNING! Property 1 MUST be Hair, otherwise the hair hiding helmets wont work ---
+# p1 Hair  --- WARNING! Property 1 MUST be Hair, otherwise the hair hiding helmets wont work ---
 1 = {
 	0 = { # 0 - Completely bald
 		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_celtic = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						blg_hair_celtic = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_shaved = yes
+						}
+						blg_hair_celtic = no
+						blg_hair_cuman = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_celtic = no
+					}
+				}
+				trigger_else = {
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_byzantine = no
+						blg_hair_turkish = no
+						blg_hair_bodpa = no
+						blg_hair_westafrican = no
+					}
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_hair value = 1 }
+			}
+		}
+
 		modifier = {
 			factor = 0.1
 			is_female = no
@@ -12,884 +64,1745 @@
 		}
 
 		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_celtic = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 1 } }
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-
-			OR = {
-				blg_hair_celtic = yes
-				blg_hair_cuman = yes
-			}
-		}
-
-		modifier = {
 			factor = 0.1
 			blg_hair_uncut = yes
 		}
 
-		modifier = {
-			factor = 0.1
-			is_female = no
-			blg_hair_celtic = yes
-			has_tribal_or_nomadic_government_trigger = no
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			OR = {
+				blg_hair_byzantine = yes
+				blg_hair_turkish = yes
+				blg_hair_bodpa = yes
+			}
 		}
 
-		trigger = {
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			is_female = yes
 			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 1 }
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_hair_celtic = yes
+				blg_hair_turkish = yes
+			}
+		}
+
+		modifier = { # Warrior maiden hairstyle
+			factor = 10
+			is_female = yes
+			OR = {
+				blg_guard = yes
+				this_is_sea_raider_trigger = yes
+			}
+			OR = {
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_norse = yes
+				blg_hair_ugric = yes
+				blg_hair_african = yes
+				blg_hair_southindian = yes
 			}
 		}
 	}
 
 	1 = { # a - Black Adder
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_african = no
-			blg_hair_easternslavic = no
-			blg_hair_cuman = no
-			NOT = { is_variable_equal = { which = ca_hair value = 2 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-			blg_hair_italian = no
-			blg_hair_southern = no
-			blg_hair_byzantine = no
-			blg_hair_norse = no
-			blg_hair_ugric = no
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_turkish = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_easternslavic = yes
+							blg_hair_african = yes
+							blg_hair_cuman = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_cuman = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_tonsure = yes
+						}
+						OR = {
+							blg_hair_byzantine = yes
+							blg_hair_italian = yes
+							blg_hair_southern = yes
+							blg_hair_norse = yes
+							blg_hair_ugric = yes
+						}
+					}
+
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_byzantine = no
+						blg_hair_german = no
+						blg_hair_celtic = no
+						blg_hair_ugric = no
+						blg_hair_italian = no
+						blg_hair_southern = no
+						blg_hair_easternslavic = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_muslim = no
+						blg_hair_egyptian = no
+						blg_hair_indian = no
+						blg_hair_southindian = no
+						blg_hair_chinese = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_english = no
+						blg_hair_norse = no
+						blg_hair_turkish = no
+					}
+				}
+				trigger_else = {
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_southern = no
+						blg_hair_westafrican = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 2 }
+			}
+		}
+
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			OR = {
+				blg_hair_southern = yes
+				blg_hair_turkish = yes
+			}
+		}
+
+		modifier = { # Warrior maiden hairstyle
+			factor = 10
+			is_female = yes
+			OR = {
+				blg_guard = yes
+				this_is_sea_raider_trigger = yes
+			}
+			OR = {
+				blg_hair_african = yes
+				blg_hair_italian = yes
+				blg_hair_southernslavic = yes
+				blg_hair_cuman = yes
 			}
 		}
 	}
 
 	2 = { # b - Page
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_turkish = no
-			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_westernslavic_tidy = yes
-			blg_hair_westernslavic = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_southernslavic_tidy = yes
-			OR = {
-				blg_hair_southernslavic = yes
-				blg_hair_frankish = yes
-				blg_hair_italian = yes
-			}
-			NOT = { is_variable_equal = { which = ca_hair value = 3 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_cuman = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						blg_hair_turkish = yes
+					}
+
+					blg_tonsure = no
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_muslim = no
+						blg_hair_egyptian = no
+						blg_hair_turkish = no
+						blg_hair_chinese = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_english = no
+						blg_hair_norse = no
+						blg_hair_ugric = no
+						blg_hair_italian = no
+						blg_hair_southern = no
+						blg_hair_southernslavic = no
+						blg_hair_indian = no
+					}
+				}
+				trigger_else = {
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_english = no
+						blg_hair_frankish = no
+						blg_hair_italian = no
+						blg_hair_norse = no
+						blg_hair_westernslavic = no
+						blg_hair_southernslavic = no
+						blg_hair_african = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 3 }
+			}
+		}
+
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			OR = {
+				blg_hair_english = yes
+				blg_hair_italian = yes
+				blg_hair_norse = yes
+				blg_hair_southernslavic = yes
+				blg_hair_cuman = yes
 			}
 		}
 	}
 
 	3 = { # c - Synth
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_frankish = no
-			blg_hair_southern = no
-			blg_hair_muslim = no
-			blg_hair_cuman = no
-			blg_hair_easternslavic = no
-			NOT = { is_variable_equal = { which = ca_hair value = 4 } }
-		}
-
-		modifier = {
-			factor = 0.01
-			is_female = no
-			blg_hair_celtic = yes
-			has_tribal_or_nomadic_government_trigger = no
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_cuman = no
+					blg_hair_easternslavic = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_frankish = yes
+							blg_hair_southern = yes
+							blg_hair_easternslavic = yes
+							blg_hair_muslim = yes
+							blg_hair_cuman = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_all = yes
+						}
+						blg_hair_celtic = no
+					}
+
+					blg_tonsure = no
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_frankish = no
+						blg_hair_byzantine = no
+						blg_hair_italian = no
+						blg_hair_southern = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_muslim = no
+						blg_hair_southindian = no
+						blg_hair_chinese = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_english = no
+						blg_hair_german = no
+						blg_hair_norse = no
+						blg_hair_celtic = no
+						blg_hair_easternslavic = no
+						blg_hair_egyptian = no
+						blg_hair_indian = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 4 }
 			}
 		}
+
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			blg_hair_egyptian = yes
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			is_female = yes
+			OR = {
+				blg_hair_english = yes
+				blg_hair_german = yes
+				blg_hair_norse = yes
+			}
+		}
 	}
 
-	4 = { # d - Long Straight
+	4 = { # d - Long straight
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_celtic = no
-			blg_hair_cuman = no
-			blg_hair_easternslavic = no
-			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_westernslavic_tidy = yes
-			OR = {
-				blg_hair_westernslavic = yes
-				blg_hair_frankish = yes
-			}
-			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_southernslavic_tidy = yes
-			OR = {
-				blg_hair_southernslavic = yes
-				blg_hair_italian = yes
-			}
-			NOT = { is_variable_equal = { which = ca_hair value = 5 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-			blg_hair_cuman = no
-		}
-
-		modifier = {
-			factor = 10
-			blg_hair_germanic_ruler = yes
-			OR = {
-				blg_hair_frankish = yes
-				blg_hair_german = yes
-			}
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_germanic_noruler = yes
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_italian = no
+					blg_hair_norse = no
+					blg_hair_easternslavic = no
+					blg_hair_southernslavic = no
+					blg_hair_westernslavic = no
+					blg_hair_egyptian = no
+					blg_hair_southindian = no
+					blg_hair_turkish = no
+					blg_hair_bodpa = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_easternslavic = yes
+							blg_hair_celtic = yes
+							blg_hair_cuman = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_african = no
+						blg_hair_ugric = no
+					}
+
+					blg_tonsure = no
+
+					trigger_if = {
+						limit = {
+							blg_shaved = yes
+						}
+						blg_hair_cuman = yes
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_celtic = no
+						blg_hair_indian = no
+						blg_hair_chinese = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_english = no
+						blg_hair_german = no
+						blg_hair_frankish = no
+						blg_hair_norse = no
+						blg_hair_ugric = no
+						blg_hair_byzantine = no
+						blg_hair_italian = no
+						blg_hair_southern = no
+						blg_hair_easternslavic = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_muslim = no
+						blg_hair_egyptian = no
+						blg_hair_african = no
+						blg_hair_southindian = no
+						blg_hair_turkish = no
+						blg_hair_bodpa = no
+					}
+				}
+				trigger_else = {
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_byzantine = no
+						blg_hair_frankish = no
+						blg_hair_muslim = no
+						blg_hair_indian = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 5 }
 			}
 		}
-	}
 
-	5 = { # e - Long Curly
-		factor = 1
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_byzantine = no
-			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_westernslavic_tidy = yes
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
 			OR = {
-				blg_hair_westernslavic = yes
+				blg_hair_byzantine = yes
 				blg_hair_frankish = yes
 				blg_hair_italian = yes
-				blg_hair_celtic = yes
+				blg_hair_norse = yes
+				blg_hair_easternslavic = yes
+				blg_hair_southernslavic = yes
+				blg_hair_westernslavic = yes
+				blg_hair_muslim = yes
+				blg_hair_egyptian = yes
+				blg_hair_indian = yes
+				blg_hair_southindian = yes
+				blg_hair_turkish = yes
+				blg_hair_bodpa = yes
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
 		}
 
-		modifier = {
-			factor = 0
-			blg_hair_southernslavic_tidy = yes
-			blg_hair_southernslavic = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 6 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
 			is_female = no
-			blg_shaved = yes
+			OR = {
+				blg_hair_italian = yes
+				blg_hair_egyptian = yes
+				blg_hair_southindian = yes
+				blg_hair_ugric = yes
+			}
 		}
+	}
 
-		modifier = {
-			factor = 10
-			blg_hair_germanic_ruler = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_germanic_noruler = yes
-		}
+	5 = { # e - Long curly
+		factor = 1
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_english = no
+					blg_hair_frankish = no
+					blg_hair_easternslavic = no
+					blg_hair_muslim = no
+					blg_hair_turkish = no
+					blg_hair_celtic = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						blg_hair_byzantine = yes
+					}
+
+					blg_tonsure = no
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_english = no
+						blg_hair_byzantine = no
+						blg_hair_italian = no
+						blg_hair_indian = no
+						blg_hair_chinese = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_german = no
+						blg_hair_frankish = no
+						blg_hair_celtic = no
+						blg_hair_ugric = no
+						blg_hair_easternslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_muslim = no
+						blg_hair_egyptian = no
+						blg_hair_turkish = no
+					}
+				}
+				trigger_else = {
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_german = no
+						blg_hair_italian = no
+						blg_hair_norse = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_egyptian = no
+						blg_hair_indian = no
+						blg_hair_cuman = no
+						blg_hair_ugric = no
+						blg_hair_westafrican = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 6 }
+			}
+		}
+
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			OR = {
+				blg_hair_english = yes
+				blg_hair_frankish = yes
+				blg_hair_german = yes
+				blg_hair_italian = yes
+				blg_hair_norse = yes
+				blg_hair_easternslavic = yes
+				blg_hair_southernslavic = yes
+				blg_hair_westernslavic = yes
+				blg_hair_muslim = yes
+				blg_hair_egyptian = yes
+				blg_hair_indian = yes
+				blg_hair_turkish = yes
+				blg_hair_ugric = yes
+				blg_hair_celtic = yes
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			is_female = no
+			OR = {
+				blg_hair_english = yes
+				blg_hair_frankish = yes
+				blg_hair_muslim = yes
+				blg_hair_indian = yes
+				blg_hair_cuman = yes
 			}
 		}
 	}
 
 	6 = { # f - Tonsure
 		factor = 1
-		modifier = {
-			factor = 0
-			is_female = no
-			NOR = {
-				blg_tonsure = yes
-				AND = {
-					likes_christians = yes
-					blg_devout = yes
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_ugric = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_english = yes
+							blg_hair_frankish = yes
+							blg_hair_muslim = yes
+							blg_hair_egyptian = yes
+							blg_hair_african = yes
+							blg_hair_celtic = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							OR = {
+								blg_hair_english = yes
+								blg_hair_german = yes
+								blg_hair_frankish = yes
+								blg_hair_southernslavic = yes
+								blg_hair_westernslavic = yes
+								blg_hair_muslim = yes
+								blg_hair_egyptian = yes
+							}
+						}
+						OR = {
+							blg_tonsure = yes
+							AND = {
+								likes_christians = yes
+								blg_devout = yes
+							}
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_tonsure = yes
+						}
+						OR = {
+							blg_hair_english = yes
+							blg_hair_frankish = yes
+							blg_hair_german = yes
+							blg_hair_southernslavic = yes
+							blg_hair_westernslavic = yes
+							blg_hair_muslim = yes
+							blg_hair_egyptian = yes
+							blg_hair_celtic = yes
+							blg_hair_cuman = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_shaved = yes
+						}
+						blg_hair_celtic = yes
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_english = no
+						blg_hair_frankish = no
+						blg_hair_german = no
+						blg_hair_celtic = no
+						blg_hair_italian = no
+						blg_hair_southern = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_muslim = no
+						blg_hair_egyptian = no
+						blg_hair_turkish = no
+						blg_hair_bodpa = no
+						blg_hair_chinese = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_norse = no
+						blg_hair_ugric = no
+						blg_hair_easternslavic = no
+						blg_hair_byzantine = no
+						blg_hair_indian = no
+					}
+				}
+				trigger_else = {
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_english = no
+						blg_hair_german = no
+						blg_hair_italian = no
+						blg_hair_southern = no
+						blg_hair_african = no
+						blg_hair_cuman = no
+						blg_hair_westafrican = no
+					}
 				}
 			}
+			trigger_else = {
+				is_variable_equal = { which = ca_hair value = 7 }
+			}
+		}
 
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
 			OR = {
 				blg_hair_english = yes
 				blg_hair_german = yes
-				blg_hair_frankish = yes
-				blg_hair_southernslavic = yes
-				blg_hair_westernslavic = yes
-				blg_hair_muslim = yes
-				blg_hair_egyptian = yes
+				blg_hair_italian = yes
+				blg_hair_southern = yes
+				blg_hair_african = yes
+				blg_hair_cuman = yes
+				blg_hair_ugric = yes
 			}
-			NOT = { is_variable_equal = { which = ca_hair value = 7 } }
 		}
 
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-			blg_hair_celtic = no
-			blg_hair_english = no
-			blg_hair_german = no
-			blg_hair_frankish = no
-			blg_hair_southernslavic = no
-			blg_hair_westernslavic = no
-			blg_hair_muslim = no
-			blg_hair_egyptian = no
-			blg_hair_cuman = no
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_african = no
-			blg_hair_celtic = no
-			blg_hair_english = no
-			blg_hair_frankish = no
-			blg_hair_muslim = no
-			blg_hair_egyptian = no
-			NOT = { is_variable_equal = { which = ca_hair value = 7 } }
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-			blg_hair_celtic = no
-		}
-
-		trigger = {
+		modifier = { # Warrior maiden hairstyle
+			factor = 10
+			is_female = yes
 			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 7 }
+				blg_guard = yes
+				this_is_sea_raider_trigger = yes
+			}
+			OR = {
+				blg_hair_byzantine = yes
+				blg_hair_westernslavic = yes
+				blg_hair_easternslavic = yes
 			}
 		}
 	}
 
 	7 = { # g - Short
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_frankish = no
-			blg_hair_norse = no
-			blg_hair_westernslavic = no
-			blg_hair_muslim = no
-			blg_hair_african = no
-			blg_hair_cuman = no
-			blg_hair_bodpa = no
-			blg_hair_southindian = no
-			NOT = { is_variable_equal = { which = ca_hair value = 8 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+				trigger_if = {
+					limit = { is_female = no }
+
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_frankish = yes
+							blg_hair_norse = yes
+							blg_hair_westernslavic = yes
+							blg_hair_muslim = yes
+							blg_hair_african = yes
+							blg_hair_cuman = yes
+							blg_hair_bodpa = yes
+							blg_hair_southindian = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_italian = no
+						blg_hair_easternslavic = no
+						blg_hair_cuman = no
+						blg_hair_celtic = no
+					}
+
+					blg_tonsure = no
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_frankish = no
+						blg_hair_german = no
+						blg_hair_norse = no
+						blg_hair_southern = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_muslim = no
+						blg_hair_egyptian = no
+						blg_hair_southindian = no
+						blg_hair_bodpa = no
+						blg_hair_chinese = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_celtic = no
+						blg_hair_easternslavic = no
+						blg_hair_indian = no
+						blg_hair_turkish = no
+					}
+				}
+				trigger_else = {
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_southindian = no
+						blg_hair_westafrican = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 8 }
 			}
 		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			is_female = no
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_hair_italian = yes
+				blg_hair_celtic = yes
+				blg_hair_turkish = yes
+			}
+		}
+
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			OR = {
+				blg_hair_egyptian = yes
+				blg_hair_southindian = yes
+			}
+		}
+
+		modifier = { # Warrior maiden hairstyle
+			factor = 10
+			is_female = yes
+			OR = {
+				blg_guard = yes
+				this_is_sea_raider_trigger = yes
+			}
+			OR = {
+				blg_hair_frankish = yes
+				blg_hair_german = yes
+				blg_hair_easternslavic = yes
+				blg_hair_southernslavic = yes
+				blg_hair_cuman = yes
+				blg_hair_celtic = yes
+				blg_hair_ugric = yes
+			}
+		}
 	}
 
-	8 = { # h - Short Curly
+	8 = { # h - Short curly
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_muslim = no
-			blg_hair_african = no
-			blg_hair_cuman = no
-			blg_hair_english = no
-			NOT = { is_variable_equal = { which = ca_hair value = 9 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
-
-		modifier = {
-			factor = 10
-			blg_hair_germanic_ruler = yes
-			blg_hair_frankish = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_germanic_noruler = yes
-			blg_hair_frankish = yes
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+				trigger_if = {
+					limit = { is_female = no }
+
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_english = yes
+							blg_hair_muslim = yes
+							blg_hair_african = yes
+							blg_hair_cuman = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_cuman = no
+					}
+
+					blg_tonsure = no
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_english = no
+						blg_hair_german = no
+						blg_hair_norse = no
+						blg_hair_easternslavic = no
+						blg_hair_celtic = no
+						blg_hair_ugric = no
+						blg_hair_muslim = no
+						blg_hair_egyptian = no
+						blg_hair_chinese = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_frankish = no
+						blg_hair_southernslavic = no
+					}
+				}
+				trigger_else = {
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_muslim = no
+						blg_hair_egyptian = no
+						blg_hair_southindian = no
+						blg_hair_westafrican = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 9 }
 			}
 		}
+
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			OR = {
+				blg_hair_muslim = yes
+				blg_hair_southindian = yes
+			}
+		}
+
+		modifier = { # Warrior maiden hairstyle
+			factor = 10
+			is_female = yes
+			OR = {
+				blg_guard = yes
+				this_is_sea_raider_trigger = yes
+			}
+			OR = {
+				blg_hair_frankish = yes
+				blg_hair_norse = yes
+				blg_hair_cuman = yes
+				blg_hair_italian = yes
+			}
+		}
 	}
 
-	9 = { # i - Short Uncouth
+	9 = { # i - Short uncouth
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_easternslavic = no
-			blg_hair_english = no
-			NOT = { is_variable_equal = { which = ca_hair value = 10 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
-
-		modifier = {
-			factor = 0
-			is_female = yes
-			follows_filial_piety_trigger = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 10 } }
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_italian = no
+					blg_hair_southern = no
+					blg_hair_turkish = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_english = yes
+							blg_hair_easternslavic = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_westernslavic = no
+						blg_hair_indian = no
+						blg_hair_celtic = no
+					}
+
+					blg_tonsure = no
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_english = no
+						blg_hair_frankish = no
+						blg_hair_german = no
+						blg_hair_easternslavic = no
+						blg_hair_byzantine = no
+						blg_hair_egyptian = no
+						blg_hair_bodpa = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_norse = no
+						blg_hair_celtic = no
+						blg_hair_ugric = no
+						blg_hair_italian = no
+						blg_hair_southern = no
+						blg_hair_indian = no
+						blg_hair_turkish = no
+						blg_hair_chinese = no
+					}
+				}
+				trigger_else = {
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_all = yes
+						}
+						blg_hair_norse = no
+						blg_hair_african = no
+						blg_hair_cuman = no
+						blg_hair_southindian = no
+						blg_hair_chinese = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 10 }
 			}
 		}
-	}
 
-	10 = { # j - Long Uncouth
-		factor = 1
-		modifier = { # Limited hair range
-			factor = 0
-			blg_hair_cuman = yes
-		}
-
-		modifier = { # Limited hair range
-			factor = 0
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
 			is_female = yes
 			OR = {
-				blg_hair_byzantine = yes
-				blg_hair_english = yes
-				blg_hair_german = yes
+				blg_hair_italian = yes
 				blg_hair_norse = yes
 				blg_hair_southern = yes
-				blg_hair_ugric = yes
-				blg_hair_westafrican = yes
+				blg_hair_turkish = yes
+				blg_hair_cuman = yes
+				blg_hair_southindian = yes
 			}
 		}
 
-		modifier = { # Limited hair range
-			factor = 0
-			is_female = no
-			blg_hair_indian = yes
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_hair_italian = yes
+				trigger_if = {
+					limit = { is_female = no }
+					OR = {
+						blg_hair_indian = no
+						blg_hair_celtic = yes
+					}
+				}
+				trigger_else = {
+					OR = {
+						blg_hair_english = yes
+						blg_hair_egyptian = yes
+						blg_hair_chinese = yes
+					}
+				}
+			}
 		}
 
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_english = no
-			blg_hair_norse = no
-			blg_hair_southernslavic = no
-			blg_hair_easternslavic = no
-			blg_hair_ugric = no
-			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_westernslavic_tidy = yes
-			blg_hair_westernslavic = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_southernslavic_tidy = yes
-			blg_hair_southernslavic = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
-		}
-
-		modifier = {
-			factor = 0.1
-			is_female = no
-			blg_hair_celtic = yes
-			has_tribal_or_nomadic_government_trigger = no
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
-
-		modifier = {
+		modifier = { # Warrior maiden hairstyle
 			factor = 10
-			blg_hair_germanic_ruler = yes
+			is_female = yes
 			OR = {
-				blg_hair_frankish = yes
-				blg_hair_german = yes
+				blg_guard = yes
+				this_is_sea_raider_trigger = yes
 			}
+			blg_hair_celtic = yes
 		}
+	}
 
-		modifier = {
-			factor = 0
-			blg_hair_germanic_noruler = yes
-			OR = {
-				blg_hair_frankish = yes
-				blg_hair_german = yes
-			}
-		}
-
-		modifier = {
-			factor = 0
-			follows_filial_piety_trigger = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 11 } }
-		}
+	10 = { # j - Long uncouth
+		factor = 1
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			blg_hair_cuman = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_westernslavic = no
+					blg_hair_muslim = no
+					blg_hair_chinese = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					blg_hair_indian = no
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_english = yes
+							blg_hair_norse = yes
+							blg_hair_easternslavic = yes
+							blg_hair_southernslavic = yes
+							blg_hair_ugric = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_english = no
+						blg_hair_german = no
+						blg_hair_byzantine = no
+						blg_hair_easternslavic = no
+						blg_hair_african = no
+						blg_hair_celtic = no
+					}
+
+					blg_tonsure = no
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_southernslavic = no
+						blg_hair_ugric = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_english = no
+						blg_hair_frankish = no
+						blg_hair_german = no
+						blg_hair_celtic = no
+						blg_hair_byzantine = no
+						blg_hair_italian = no
+						blg_hair_southern = no
+						blg_hair_easternslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_african = no
+						blg_hair_egyptian = no
+						blg_hair_turkish = no
+						blg_hair_southindian = no
+						blg_hair_chinese = no
+					}
+				}
+				trigger_else = {
+					# Limited hair range
+					blg_hair_byzantine = no
+					blg_hair_english = no
+					blg_hair_german = no
+					blg_hair_norse = no
+					blg_hair_southern = no
+					blg_hair_ugric = no
+					blg_hair_westafrican = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_frankish = no
+						blg_hair_southernslavic = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 11 }
+			}
+		}
+
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			OR = {
+				blg_hair_frankish = yes
+				blg_hair_westernslavic = yes
+				blg_hair_southernslavic = yes
+				blg_hair_muslim = yes
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				AND = {
+					is_female = no
+					OR = {
+						blg_hair_german = yes
+						blg_hair_celtic = yes
+						blg_hair_turkish = yes
+					}
+				}
+				blg_hair_chinese = yes
 			}
 		}
 	}
 
 	11 = { # k - Balding
 		factor = 1
-		modifier = { # Limited hair range
-			factor = 0
-			blg_hair_cuman = yes
-		}
-
-		modifier = { # Limited hair range
-			factor = 0
-			is_female = yes
-			OR = {
-				blg_hair_byzantine = yes
-				blg_hair_english = yes
-				blg_hair_german = yes
-				blg_hair_norse = yes
-				blg_hair_southern = yes
-				blg_hair_ugric = yes
-				blg_hair_westafrican = yes
-			}
-		}
-
-		modifier = { # Limited hair range
-			factor = 0
-			is_female = no
-			blg_hair_indian = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			OR = { # Reverse of others
-				blg_hair_celtic = yes
-				blg_hair_norse = yes
-				blg_hair_easternslavic = yes
-				blg_hair_ugric = yes
-			}
-			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_westernslavic_tidy = yes
-			OR = {
-				blg_hair_westernslavic = yes
-				blg_hair_celtic = yes
-			}
-			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_southernslavic_tidy = yes
-			OR = {
-				blg_hair_southernslavic = yes
-				blg_hair_frankish = yes
-			}
-			NOT = { is_variable_equal = { which = ca_hair value = 12 } }
-		}
-
-		modifier = {
-			factor = 0.1
-			is_female = no
-			blg_hair_celtic = yes
-			has_tribal_or_nomadic_government_trigger = no
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			blg_hair_cuman = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_easternslavic = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					blg_hair_indian = no
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						# Reverse of others
+						blg_hair_norse = no
+						blg_hair_easternslavic = no
+						blg_hair_ugric = no
+						blg_hair_celtic = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_celtic = no
+					}
+
+					blg_tonsure = no
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						# Reverse of others
+						OR = {
+							practical_age >= 70
+							blg_hair_english = yes
+							blg_hair_norse = yes
+							blg_hair_easternslavic = yes
+							blg_hair_ugric = yes
+							blg_hair_celtic = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_easternslavic = no
+						blg_hair_ugric = no
+						blg_hair_celtic = no
+					}
+				}
+				trigger_else = {
+					# Limited hair range
+					blg_hair_byzantine = no
+					blg_hair_english = no
+					blg_hair_german = no
+					blg_hair_norse = no
+					blg_hair_southern = no
+					blg_hair_ugric = no
+					blg_hair_westafrican = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_frankish = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_african = no
+						blg_hair_turkish = no
+						blg_hair_indian = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 12 }
 			}
+		}
+
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			OR = {
+				blg_hair_frankish = yes
+				blg_hair_easternslavic = yes
+				blg_hair_southernslavic = yes
+				blg_hair_westernslavic = yes
+				blg_hair_turkish = yes
+				blg_hair_indian = yes
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			trigger_if = {
+				limit = { is_female = no }
+				blg_hair_celtic = yes
+			}
+			trigger_else = {
+				OR = {
+					blg_hair_frankish = yes
+					blg_hair_westernslavic = yes
+					blg_hair_indian = yes
+				}
+			}
+		}
+
+		modifier = { # Warrior maiden hairstyle
+			factor = 10
+			is_female = yes
+			OR = {
+				blg_guard = yes
+				this_is_sea_raider_trigger = yes
+			}
+			blg_hair_celtic = yes
 		}
 	}
 
 	12 = { # l - Marine
 		factor = 1
-		modifier = { # Limited hair range
-			factor = 0
-			blg_hair_cuman = yes
-		}
 
-		modifier = { # Limited hair range
-			factor = 0
-			is_female = yes
-			OR = {
-				blg_hair_byzantine = yes
-				blg_hair_english = yes
-				blg_hair_german = yes
-				blg_hair_norse = yes
-				blg_hair_southern = yes
-				blg_hair_ugric = yes
-				blg_hair_westafrican = yes
+		trigger = {
+			blg_hair_cuman = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_bodpa = no
+					blg_hair_chinese = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					blg_hair_indian = no
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_easternslavic = yes
+							blg_hair_westernslavic = yes
+							blg_hair_southernslavic = yes
+							blg_hair_muslim = yes
+							blg_hair_egyptian = yes
+						}
+					}
+
+					blg_tonsure = no
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_frankish = no
+						blg_hair_german = no
+						blg_hair_italian = no
+						blg_hair_easternslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_egyptian = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_southern = no
+						blg_hair_muslim = no
+						blg_hair_turkish = no
+						blg_hair_bodpa = no
+						blg_hair_chinese = no
+					}
+				}
+				trigger_else = {
+					# Limited hair range
+					blg_hair_byzantine = no
+					blg_hair_english = no
+					blg_hair_german = no
+					blg_hair_norse = no
+					blg_hair_southern = no
+					blg_hair_ugric = no
+					blg_hair_westafrican = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_african = no
+						blg_hair_indian = no
+						blg_hair_celtic = no
+					}
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_hair value = 13 }
 			}
 		}
 
-		modifier = { # Limited hair range
-			factor = 0
-			is_female = no
-			blg_hair_indian = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_muslim = no
-			blg_hair_egyptian = no
-			blg_hair_westernslavic = no
-			blg_hair_southernslavic = no
-			blg_hair_easternslavic = no
-			NOT = { is_variable_equal = { which = ca_hair value = 13 } }
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_chinese_tidy = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 13 } }
-		}
-
-		modifier = {
+		modifier = { # Maiden hairstyle
 			factor = 4
-			filial_piety_maiden_trigger = yes
+			age < 50
+			is_female = yes
+			OR = {
+				blg_hair_indian = yes
+				blg_hair_chinese = yes
+			}
 		}
 
-		trigger = {
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			is_female = yes
 			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
-				is_variable_equal = { which = ca_hair value = 13 }
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_hair_indian = yes
+				blg_hair_celtic = yes
+			}
+		}
+
+		modifier = { # Warrior maiden hairstyle
+			factor = 10
+			is_female = yes
+			OR = {
+				blg_guard = yes
+				this_is_sea_raider_trigger = yes
+			}
+			OR = {
+				blg_hair_italian = yes
+				blg_hair_southernslavic = yes
 			}
 		}
 	}
 
 	13 = { # m - Mohawk
 		factor = 1
-		modifier = { # Limited hair range
-			factor = 0
-			OR = {
-				blg_hair_cuman = yes
-				blg_hair_norse = yes
-				blg_hair_ugric = yes
-			}
-		}
-
-		modifier = { # Limited hair range
-			factor = 0
-			is_female = yes
-			OR = {
-				blg_hair_byzantine = yes
-				blg_hair_english = yes
-				blg_hair_german = yes
-				blg_hair_southern = yes
-				blg_hair_westafrican = yes
-			}
-		}
-
-		modifier = { # Limited hair range
-			factor = 0
-			is_female = no
-			blg_hair_indian = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_african = no
-			blg_hair_easternslavic = no
-			blg_hair_turkish = no
-			NOT = { is_variable_equal = { which = ca_hair value = 14 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-			blg_hair_easternslavic = no
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_chinese_tidy = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 14 } }
-		}
-
-		modifier = {
-			factor = 4
-			filial_piety_maiden_trigger = yes
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			# Limited hair range
+			blg_hair_norse = no
+			blg_hair_ugric = no
+			blg_hair_cuman = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_chinese = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					blg_hair_indian = no
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_easternslavic = yes
+							blg_hair_african = yes
+							blg_hair_turkish = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_byzantine = no
+						blg_hair_frankish = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_egyptian = no
+						blg_hair_turkish = no
+						blg_hair_bodpa = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_tonsure = yes
+						}
+						blg_hair_easternslavic = yes
+					}
+
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_frankish = no
+						blg_hair_german = no
+						blg_hair_celtic = no
+						blg_hair_easternslavic = no
+						blg_hair_italian = no
+						blg_hair_southern = no
+						blg_hair_southindian = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_byzantine = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_muslim = no
+						blg_hair_egyptian = no
+						blg_hair_turkish = no
+						blg_hair_bodpa = no
+						blg_hair_chinese = no
+					}
+				}
+				trigger_else = {
+					# Limited hair range
+					blg_hair_byzantine = no
+					blg_hair_english = no
+					blg_hair_german = no
+					blg_hair_southern = no
+					blg_hair_westafrican = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_ranking = yes
+						}
+						blg_hair_easternslavic = no
+						blg_hair_african = no
+						blg_hair_celtic = no
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 14 }
+			}
+		}
+
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			OR = {
+				blg_hair_easternslavic = yes
+				blg_hair_african = yes
+				blg_hair_celtic = yes
+				blg_hair_chinese = yes
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			trigger_if = {
+				limit = { is_female = no }
+				OR = {
+					blg_hair_english = yes
+					blg_hair_chinese = yes
+				}
+			}
+			trigger_else = {
+				blg_hair_muslim = yes
 			}
 		}
 	}
 
-	14 = { # n - hair
+	14 = { # n - Hair
 		factor = 1
-		modifier = { # Limited hair range
-			factor = 0
-			OR = {
-				blg_hair_cuman = yes
-				blg_hair_norse = yes
-				blg_hair_ugric = yes
-			}
-		}
-
-		modifier = { # Limited hair range
-			factor = 0
-			is_female = yes
-			OR = {
-				blg_hair_byzantine = yes
-				blg_hair_english = yes
-				blg_hair_german = yes
-				blg_hair_southern = yes
-				blg_hair_westafrican = yes
-			}
-		}
-
-		modifier = { # Limited hair range
-			factor = 0
-			blg_hair_balding = yes
-
-			blg_hair_byzantine = no
-			blg_hair_celtic = no
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_balding = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 15 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_tonsure = yes
-		}
-
-		modifier = {
-			factor = 0
-			is_female = no
-			blg_shaved = yes
-		}
-
-		modifier = {
-			factor = 10
-			blg_hair_germanic_ruler = yes
-			OR = {
-				blg_hair_frankish = yes
-				blg_hair_german = yes
-			}
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_germanic_noruler = yes
-			OR = {
-				blg_hair_frankish = yes
-				blg_hair_german = yes
-			}
-		}
-
-		modifier = {
-			factor = 0
-			blg_hair_chinese_tidy = yes
-			NOT = { is_variable_equal = { which = ca_hair value = 15 } }
-		}
-
-		modifier = {
-			factor = 4
-			filial_piety_maiden_trigger = yes
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_hair value = 0 }
+			# Limited hair range
+			blg_hair_norse = no
+			blg_hair_ugric = no
+			blg_hair_cuman = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_italian = no
+					blg_hair_easternslavic = no
+					blg_hair_chinese = no
+				}
+
+				trigger_if = {
+					limit = { is_female = no }
+
+					blg_hair_indian = no
+					trigger_if = {
+						limit = { practical_age >= 70 }
+						OR = {
+							blg_hair_byzantine = yes
+							blg_hair_celtic = yes
+						}
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_tidy_all = yes
+						}
+						blg_hair_frankish = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_turkish = no
+					}
+
+					blg_tonsure = no
+					blg_shaved = no
+
+					trigger_if = {
+						limit = {
+							blg_hair_long = yes
+						}
+						blg_hair_english = no
+						blg_hair_celtic = no
+						blg_hair_byzantine = no
+						blg_hair_southindian = no
+					}
+
+					trigger_if = {
+						limit = {
+							blg_hair_short = yes
+						}
+						blg_hair_frankish = no
+						blg_hair_german = no
+						blg_hair_italian = no
+						blg_hair_southern = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_muslim = no
+						blg_hair_turkish = no
+					}
+				}
+				trigger_else = {
+					# Limited hair range
+					blg_hair_byzantine = no
+					blg_hair_english = no
+					blg_hair_german = no
+					blg_hair_southern = no
+					blg_hair_westafrican = no
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_hair value = 15 }
+			}
+		}
+
+		modifier = { # Maiden hairstyle
+			factor = 4
+			age < 50
+			is_female = yes
+			blg_hair_chinese = yes
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_hair_frankish = yes
+				blg_hair_italian = yes
+				blg_hair_easternslavic = yes
+				blg_hair_southernslavic = yes
+				blg_hair_westernslavic = yes
+				blg_hair_egyptian = yes
+			}
+		}
+
+		modifier = { # Warrior maiden hairstyle
+			factor = 10
+			is_female = yes
+			OR = {
+				blg_guard = yes
+				this_is_sea_raider_trigger = yes
+			}
+			OR = {
+				blg_hair_italian = yes
+				blg_hair_westernslavic = yes
+				blg_hair_bodpa = yes
 			}
 		}
 	}

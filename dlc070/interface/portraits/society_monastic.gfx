@@ -9,12 +9,14 @@ spriteTypes = {
 		name = "GFX_society_benedictine_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_benedictine_male_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_benedictine_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_benedictine_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	#spriteType = {
@@ -104,24 +106,28 @@ spriteTypes = {
 		name = "GFX_society_benedictine_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_benedictine_female_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_benedictine_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_benedictine_female_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_benedictine_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_benedictine_female_headgear_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_benedictine_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_benedictine_female_headgear_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -181,30 +187,35 @@ spriteTypes = {
 		name = "GFX_society_dominican_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_dominican_male_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_dominican_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_dominican_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_dominican_male_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_dominican_male_headgear_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_dominican_male_headgear_front"
 		textureFile = "gfx/characters/societies/mom_dominican_male_headgear_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_dominican_male_headgear_mid"
 		textureFile = "gfx/characters/societies/mom_dominican_male_headgear_mid.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -296,12 +307,14 @@ spriteTypes = {
 		name = "GFX_society_dominican_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_dominican_female_headgear_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_dominican_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_dominican_female_headgear_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -361,24 +374,28 @@ spriteTypes = {
 		name = "GFX_society_orthodox_monk_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_orthodox_monk_male_clothing_back.dds"
 		noOfFrames = 5
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_orthodox_monk_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_orthodox_monk_male_clothing_front.dds"
 		noOfFrames = 5
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_orthodox_monk_male_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_orthodox_monk_male_headgear_behind.dds"
 		noOfFrames = 5
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_orthodox_monk_male_headgear_front"
 		textureFile = "gfx/characters/societies/mom_orthodox_monk_male_headgear_front.dds"
 		noOfFrames = 5
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -580,12 +597,14 @@ spriteTypes = {
 		name = "GFX_society_orthodox_monk_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_orthodox_monk_female_headgear_behind.dds"
 		noOfFrames = 5
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_orthodox_monk_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_orthodox_monk_female_headgear_front.dds"
 		noOfFrames = 5
+		norefcount = yes
 	}
 
 	portraitType = {

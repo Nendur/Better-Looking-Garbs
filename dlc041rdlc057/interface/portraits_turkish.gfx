@@ -19,36 +19,42 @@ spriteTypes = {
 		name = "GFX_turkish_son_base"
 		textureFile = "gfx/characters/cuman_male/cuman_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_turkish_sonhair"
 		textureFile = "gfx/characters/cuman_male/cuman_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_turkish_son_eyes"
 		textureFile = "gfx/characters/cuman_male/cuman_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_turkish_daughter_base"
 		textureFile = "gfx/characters/cuman_female/cuman_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_turkish_daughterhair"
 		textureFile = "gfx/characters/cuman_female/cuman_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_turkish_daughter_eyes"
 		textureFile = "gfx/characters/cuman_female/cuman_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### Turkish male ####

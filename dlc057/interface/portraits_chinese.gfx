@@ -23,36 +23,42 @@ spriteTypes = {
 		name = "GFX_chinese_son_base"
 		textureFile = "gfx/characters/cuman_male/cuman_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_sonhair"
 		textureFile = "gfx/characters/mongol_male/mongol_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_son_eyes"
 		textureFile = "gfx/characters/cuman_male/cuman_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_daughter_base"
 		textureFile = "gfx/characters/cuman_female/cuman_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_daughterhair"
 		textureFile = "gfx/characters/cuman_female/cuman_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_daughter_eyes"
 		textureFile = "gfx/characters/cuman_female/cuman_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### Cuman male ####

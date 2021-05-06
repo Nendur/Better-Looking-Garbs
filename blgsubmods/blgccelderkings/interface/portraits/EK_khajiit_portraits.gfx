@@ -5,24 +5,28 @@ spriteTypes = {
 		name = "GFX_khajiit_anequina_son"
 		textureFile = "gfx/characters/khajiit_anequina_son.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_khajiit_anequina_daughter"
 		textureFile = "gfx/characters/khajiit_anequina_daughter.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_khajiit_pellitine_son"
 		textureFile = "gfx/characters/khajiit_pellitine_son.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_khajiit_pellitine_daughter"
 		textureFile = "gfx/characters/khajiit_pellitine_daughter.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	portraitType = {

@@ -9,12 +9,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_hindu_vaishnavite_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_vaishnavite_monk_male_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_vaishnavite_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_vaishnavite_monk_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	#spriteType = {
@@ -103,12 +105,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_hindu_vaishnavite_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_vaishnavite_monk_female_headgear_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_vaishnavite_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_vaishnavite_monk_female_headgear_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	#spriteType = {
@@ -174,24 +178,28 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_hindu_smarta_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_smarta_monk_male_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_smarta_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_smarta_monk_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_smarta_male_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_smarta_monk_male_headgear_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_smarta_male_headgear_front"
 		textureFile = "gfx/characters/societies/mom_smarta_monk_male_headgear_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	#spriteType = {
@@ -274,30 +282,35 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_hindu_smarta_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_smarta_monk_female_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_smarta_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_smarta_monk_female_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_smarta_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_smarta_monk_female_headgear_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_smarta_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_smarta_monk_female_headgear_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_smarta_female_headgear_mid"
 		textureFile = "gfx/characters/societies/mom_smarta_monk_female_headgear_mid.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -357,12 +370,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_hindu_shakti_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_shakti_monk_male_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_shakti_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_shakti_monk_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	#spriteType = {
@@ -446,12 +461,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_hindu_shakti_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_shakti_monk_female_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_shakti_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_shakti_monk_female_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	#spriteType = {
@@ -540,12 +557,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_hindu_shaivite_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_shaivite_monk_male_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_shaivite_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_shaivite_monk_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	#spriteType = {
@@ -628,12 +647,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_hindu_shaivite_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_shaivite_monk_female_headgear_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_hindu_shaivite_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_shaivite_monk_female_headgear_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	#spriteType = {
@@ -698,12 +719,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_buddhist_vajrayana_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_buddhist_vajrayana_male_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_buddhist_vajrayana_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_buddhist_vajrayana_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -785,12 +808,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_buddhist_vajrayana_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_buddhist_vajrayana_female_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_buddhist_vajrayana_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_buddhist_vajrayana_female_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -878,12 +903,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_buddhist_theravada_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_buddhist_theravada_male_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_buddhist_theravada_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_buddhist_theravada_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -965,12 +992,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_buddhist_theravada_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_buddhist_theravada_female_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_buddhist_theravada_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_buddhist_theravada_female_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -1058,12 +1087,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_buddhist_mahayana_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_buddhist_mahayana_male_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_buddhist_mahayana_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_buddhist_mahayana_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -1145,12 +1176,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_buddhist_mahayana_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_buddhist_mahayana_female_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_buddhist_mahayana_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_buddhist_mahayana_female_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -1239,6 +1272,7 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_jain_digambara_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_jain_digambara_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -1294,12 +1328,14 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_jain_digambara_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_jain_digambara_female_headgear_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_jain_digambara_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_jain_digambara_female_headgear_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -1359,24 +1395,28 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_jain_svetambara_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_jain_svetambara_male_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_jain_svetambara_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_jain_svetambara_male_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_jain_svetambara_male_headgear_front"
 		textureFile = "gfx/characters/societies/mom_jain_svetambara_male_headgear_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_jain_svetambara_male_headgear_mid"
 		textureFile = "gfx/characters/societies/mom_jain_svetambara_male_headgear_mid.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -1452,24 +1492,28 @@ spriteTypes = {
 		name = "GFX_society_monastic_order_jain_svetambara_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_jain_svetambara_female_clothing_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_jain_svetambara_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_jain_svetambara_female_clothing_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_jain_svetambara_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_jain_svetambara_female_headgear_behind.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_monastic_order_jain_svetambara_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_jain_svetambara_female_headgear_front.dds"
 		noOfFrames = 2
+		norefcount = yes
 	}
 
 	portraitType = {

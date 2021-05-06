@@ -6,36 +6,42 @@ spriteTypes = {
 		name = "GFX_westafrican_son_base"
 		textureFile = "gfx\\fallbacks\\african_male\\eastafrican_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_westafrican_sonhair"
 		textureFile = "gfx\\characters\\muslim_male\\muslim_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_westafrican_son_eyes"
 		textureFile = "gfx\\characters\\muslim_male\\muslim_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_westafrican_daughter_base"
 		textureFile = "gfx\\fallbacks\\african_female\\eastafrican_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_westafrican_daughterhair"
 		textureFile = "gfx\\characters\\muslim_female\\muslim_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_westafrican_daughter_eyes"
 		textureFile = "gfx\\characters\\muslim_female\\muslim_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### AFRICAN MALE ####

@@ -5,12 +5,14 @@ spriteTypes = {
 		name = "GFX_tangmo_son"
 		textureFile = "gfx/characters/tangmo_son.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_tangmo_daughter"
 		textureFile = "gfx/characters/tangmo_daughter.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	portraitType = {

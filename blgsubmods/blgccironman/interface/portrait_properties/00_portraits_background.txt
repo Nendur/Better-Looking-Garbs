@@ -71,9 +71,9 @@
 				is_republic = yes
 				NOT = { government = confucian_bureaucracy }
 			}
-			NOT = { mercenary = yes }
-			NOT = { holy_order = yes }
 			NOR = {
+				mercenary = yes
+				holy_order = yes
 				trait = peasant_leader
 				trait = heresiarch
 			}
@@ -304,18 +304,16 @@
 				death_reason = death_duel
 				AND = {
 					mercenary = yes
-					NAND = {
-						primary_title = {
-							OR = {
-								title = d_venetian_navy
-								title = d_genoese_navy
-								title = d_hanseatic_navy
-								title = d_frisian_navy
-								title = d_maghreb_corsairs
-								title = d_han_junks
-								title = d_jurchen_corsairs
-								title = d_treasure_fleet
-							}
+					primary_title = {
+						NOR = {
+							title = d_venetian_navy
+							title = d_genoese_navy
+							title = d_hanseatic_navy
+							title = d_frisian_navy
+							title = d_maghreb_corsairs
+							title = d_han_junks
+							title = d_jurchen_corsairs
+							title = d_treasure_fleet
 						}
 					}
 				}
@@ -372,6 +370,10 @@
 		modifier = {
 			factor = 100
 			has_character_modifier = in_meditation
+			OR = {
+				religion_group = pagan_group
+				religion_group = indian_group
+			}
 		}
 
 		modifier = {
@@ -764,16 +766,6 @@
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
 			}
-			NAND = {
-				is_republic = yes
-				NOT = { government = confucian_bureaucracy }
-			}
-			NOT = { mercenary = yes }
-			NOT = { holy_order = yes }
-			NOR = {
-				trait = peasant_leader
-				trait = heresiarch
-			}
 		}
 	}
 
@@ -894,7 +886,6 @@
 		modifier = {
 			factor = 5
 			is_republic = yes
-			NOT = { government = confucian_bureaucracy }
 		}
 
 		modifier = {
@@ -1064,7 +1055,6 @@
 		modifier = {
 			factor = 5
 			is_republic = yes
-			NOT = { government = confucian_bureaucracy }
 		}
 
 		modifier = {

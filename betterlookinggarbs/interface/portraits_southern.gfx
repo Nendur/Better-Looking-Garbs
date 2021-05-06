@@ -32,36 +32,42 @@ spriteTypes = {
 		name = "GFX_southern_son_base"
 		textureFile = "gfx/fallbacks\\mediterranean_male/mediterranean_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_sonhair"
 		textureFile = "gfx/fallbacks\\mediterranean_male/mediterranean_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_son_eyes"
 		textureFile = "gfx/fallbacks\\mediterranean_male/mediterranean_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_daughter_base"
 		textureFile = "gfx/fallbacks\\mediterranean_female/mediterranean_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_daughterhair"
 		textureFile = "gfx/fallbacks\\mediterranean_female/mediterranean_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_daughter_eyes"
 		textureFile = "gfx/fallbacks\\mediterranean_female/mediterranean_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 #Southern Male

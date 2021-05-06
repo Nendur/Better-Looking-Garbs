@@ -5,12 +5,14 @@ spriteTypes = {
 		name = "GFX_argonia_son"
 		textureFile = "gfx/characters/argonia_son.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_argonia_daughter"
 		textureFile = "gfx/characters/argonia_daughter.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	portraitType = {

@@ -147,8 +147,8 @@
 								NOT = { has_dlc = "Holy Fury" }
 								lower_real_tier_than = king
 								NOR = {
-										religion = catholic
-										religion = fraticelli
+									religion = catholic
+									religion = fraticelli
 								}
 								trait = crowned_by_priest
 								trait = crowned_by_bishop
@@ -157,12 +157,12 @@
 								is_feudal = no
 								primary_title = { is_vice_royalty = yes }
 								NOR = {
-										is_alive = yes
-										trait = uncrowned
+									is_alive = yes
+									trait = uncrowned
 								}
 								AND = {
-										has_game_started = no
-										is_save_game = no
+									has_game_started = no
+									is_save_game = no
 								}
 							}
 						}
@@ -642,126 +642,124 @@
 				trait = heresiarch
 			}
 
-			OR = {
-				NOR = {
-					AND = {
-						OR = {
-							AND = {
-								higher_real_tier_than = duke
-								OR = {
-									NOT = { has_dlc = "Holy Fury" }
-									lower_real_tier_than = king
-									NOR = {
-										religion = catholic
-										religion = fraticelli
-									}
-									trait = crowned_by_priest
-									trait = crowned_by_bishop
-									trait = crowned_by_pope
-									trait = crowned_by_myself
-									is_feudal = no
-									primary_title = { is_vice_royalty = yes }
-									NOR = {
-										is_alive = yes
-										trait = uncrowned
-									}
-									AND = {
-										has_game_started = no
-										is_save_game = no
-									}
+			NOR = {
+				AND = {
+					OR = {
+						AND = {
+							higher_real_tier_than = duke
+							OR = {
+								NOT = { has_dlc = "Holy Fury" }
+								lower_real_tier_than = king
+								NOR = {
+									religion = catholic
+									religion = fraticelli
+								}
+								trait = crowned_by_priest
+								trait = crowned_by_bishop
+								trait = crowned_by_pope
+								trait = crowned_by_myself
+								is_feudal = no
+								primary_title = { is_vice_royalty = yes }
+								NOR = {
+									is_alive = yes
+									trait = uncrowned
+								}
+								AND = {
+									has_game_started = no
+									is_save_game = no
 								}
 							}
-							is_or_was_offmap_power_ruler = yes
-							has_minor_title = title_despot
-							has_minor_title = title_augusta
 						}
-						NOR = {
-							AND = {
-								is_nomadic = yes
-								has_game_started = yes
-								population_and_manpower < 5000
-							}
-							AND = {
-								is_republic = yes
-								NOT = { government = confucian_bureaucracy }
-							}
-							mercenary = yes
-							holy_order = yes
-							trait = peasant_leader
-							trait = heresiarch
-						}
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
 					}
-					spouse_even_if_dead = {
-						OR = {
-							AND = {
-								higher_real_tier_than = duke
-								OR = {
-									NOT = { has_dlc = "Holy Fury" }
-									lower_real_tier_than = king
-									NOR = {
-										religion = catholic
-										religion = fraticelli
-									}
-									trait = crowned_by_priest
-									trait = crowned_by_bishop
-									trait = crowned_by_pope
-									trait = crowned_by_myself
-									is_feudal = no
-									primary_title = { is_vice_royalty = yes }
-									NOR = {
-										is_alive = yes
-										trait = uncrowned
-									}
-									AND = {
-										has_game_started = no
-										is_save_game = no
-									}
+					NOR = {
+						AND = {
+							is_nomadic = yes
+							has_game_started = yes
+							population_and_manpower < 5000
+						}
+						AND = {
+							is_republic = yes
+							NOT = { government = confucian_bureaucracy }
+						}
+						mercenary = yes
+						holy_order = yes
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				spouse_even_if_dead = {
+					OR = {
+						AND = {
+							higher_real_tier_than = duke
+							OR = {
+								NOT = { has_dlc = "Holy Fury" }
+								lower_real_tier_than = king
+								NOR = {
+									religion = catholic
+									religion = fraticelli
+								}
+								trait = crowned_by_priest
+								trait = crowned_by_bishop
+								trait = crowned_by_pope
+								trait = crowned_by_myself
+								is_feudal = no
+								primary_title = { is_vice_royalty = yes }
+								NOR = {
+									is_alive = yes
+									trait = uncrowned
+								}
+								AND = {
+									has_game_started = no
+									is_save_game = no
 								}
 							}
-							is_or_was_offmap_power_ruler = yes
-							has_minor_title = title_despot
-							has_minor_title = title_augusta
 						}
-						NOR = {
-							AND = {
-								is_nomadic = yes
-								has_game_started = yes
-								population_and_manpower < 5000
-							}
-							AND = {
-								is_republic = yes
-								NOT = { government = confucian_bureaucracy }
-							}
-							mercenary = yes
-							holy_order = yes
-							trait = peasant_leader
-							trait = heresiarch
+						is_or_was_offmap_power_ruler = yes
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NOR = {
+						AND = {
+							is_nomadic = yes
+							has_game_started = yes
+							population_and_manpower < 5000
+						}
+						AND = {
+							is_republic = yes
+							NOT = { government = confucian_bureaucracy }
+						}
+						mercenary = yes
+						holy_order = yes
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				AND = {
+					OR = {
+						AND = {
+							real_tier = duke
+							independent = yes
+						}
+						spouse_even_if_dead = {
+							real_tier = duke
+							independent = yes
 						}
 					}
-					AND = {
-						OR = {
-							AND = {
-								real_tier = duke
-								independent = yes
-							}
-							spouse_even_if_dead = {
-								real_tier = duke
-								independent = yes
-							}
-						}
-						OR = {
-							culture_group = north_germanic
-							culture_group = finno_ugric
-							culture_group = celtic
-							culture = saxon
-							culture = nepali
-							likes_arabs = yes
-							culture = sogdian
-							culture = saka
-							culture = tocharian
-							culture_group = east_african
-							likes_tibetans = yes
-						}
+					OR = {
+						culture_group = north_germanic
+						culture_group = finno_ugric
+						culture_group = celtic
+						culture = saxon
+						culture = nepali
+						likes_arabs = yes
+						culture = sogdian
+						culture = saka
+						culture = tocharian
+						culture_group = east_african
+						likes_tibetans = yes
 					}
 				}
 			}
@@ -1187,40 +1185,36 @@
 		trigger = {
 			OR = {
 				AND = {
+					in_command = yes
 					OR = {
-						AND = {
-							in_command = yes
-							OR = {
-								war = yes
-								liege = { war = yes }
-								in_battle = yes
-								in_siege = yes
-								employer = { mercenary = yes }
-								employer = { holy_order = yes }
-							}
-						}
-						has_character_flag = add_duel_xp
-						has_landed_title = e_china_west_governor
-					}
-					NOT = { has_game_rule = { name = martial_headgear value = off } }
-					OR = {
-						NAND = {
-							OR = {
-								higher_real_tier_than = count
-								spouse_even_if_dead = { higher_real_tier_than = count }
-								has_character_modifier = jd_strategist
-							}
-							NOR = {
-								trait = peasant_leader
-								trait = heresiarch
-							}
-						}
-						mercenary = yes
+						war = yes
+						liege = { war = yes }
+						in_battle = yes
+						in_siege = yes
+						employer = { mercenary = yes }
+						employer = { holy_order = yes }
 					}
 				}
+				has_character_flag = add_duel_xp
+				has_landed_title = e_china_west_governor
+			}
+			OR = {
+				NAND = {
+					OR = {
+						higher_real_tier_than = count
+						spouse_even_if_dead = { higher_real_tier_than = count }
+						has_character_modifier = jd_strategist
+					}
+					NOR = {
+						trait = peasant_leader
+						trait = heresiarch
+					}
+				}
+				mercenary = yes
 			}
 
 			NOR = {
+				has_game_rule = { name = martial_headgear value = off }
 				prisoner = yes
 				death_reason = death_dungeon
 				trait = saint

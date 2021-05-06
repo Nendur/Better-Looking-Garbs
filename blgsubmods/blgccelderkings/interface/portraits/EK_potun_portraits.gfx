@@ -5,12 +5,14 @@ spriteTypes = {
 		name = "GFX_kapotun_son"
 		textureFile = "gfx/characters/kapotun_son.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_kapotun_daughter"
 		textureFile = "gfx/characters/kapotun_daughter.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	portraitType = {

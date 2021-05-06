@@ -32,36 +32,42 @@ spriteTypes = {
 		name = "GFX_southern_son_base"
 		textureFile = "gfx\\characters\\italian_male\\italian_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_sonhair"
 		textureFile = "gfx\\characters\\italian_male\\italian_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_son_eyes"
 		textureFile = "gfx\\characters\\roman_male\\roman_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_daughter_base"
 		textureFile = "gfx\\characters\\italian_female\\italian_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_daughterhair"
 		textureFile = "gfx\\characters\\italian_female\\italian_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southern_daughter_eyes"
 		textureFile = "gfx\\characters\\roman_female\\roman_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 #Southern Male

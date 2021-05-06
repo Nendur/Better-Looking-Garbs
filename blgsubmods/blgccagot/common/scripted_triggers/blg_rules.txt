@@ -59,7 +59,10 @@ blg_headgear_military_off_rule = {
 		has_game_rule = { name = blg_helmet value = off }
 		has_game_rule = { name = blg_helmet value = none }
 		AND = {
-			has_game_rule = { name = blg_helmet value = lowrank }
+			OR = {
+				has_game_rule = { name = blg_helmet value = lowrank }
+				has_game_rule = { name = martial_headgear value = no_rulers }
+			}
 			OR = {
 				higher_real_tier_than = baron
 				spouse = { higher_real_tier_than = baron }

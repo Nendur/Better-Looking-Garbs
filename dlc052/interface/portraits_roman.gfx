@@ -20,60 +20,70 @@ spriteTypes = {
 		name = "GFX_italian_son_base"
 		textureFile = "gfx/characters\\southern_male/southern_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_italian_sonhair"
 		textureFile = "gfx/characters\\southern_male/southern_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_italian_daughter_base"
 		textureFile = "gfx/characters\\southern_female/southern_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_italian_daughterhair"
 		textureFile = "gfx/characters\\southern_female/southern_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_roman_son_base"
 		textureFile = "gfx/characters\\southern_male/southern_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_roman_sonhair"
 		textureFile = "gfx/characters\\southern_male/southern_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_roman_son_eyes"
 		textureFile = "gfx/characters\\southern_male/southern_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_roman_daughter_base"
 		textureFile = "gfx/characters\\southern_female/southern_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_roman_daughterhair"
 		textureFile = "gfx/characters\\southern_female/southern_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_roman_daughter_eyes"
 		textureFile = "gfx/characters\\southern_female/southern_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 #Italian Male

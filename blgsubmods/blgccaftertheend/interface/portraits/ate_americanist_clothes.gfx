@@ -6,11 +6,13 @@ spriteTypes = {
 		name = "GFX_americanist_male_clothes"
 		textureFile = "gfx/characters/ate_religious/americanist_male_clothes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_americanist_male_headgear"
 		textureFile = "gfx/characters/ate_religious/americanist_male_headgear.dds"
 		noOfFrames = 6
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -170,11 +172,13 @@ spriteTypes = {
 		name = "GFX_americanist_female_headgear_behind"
 		textureFile = "gfx/characters/ate_religious/americanist_female_headgear_behind.dds"
 		noOfFrames = 6
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_americanist_female_headgear"
 		textureFile = "gfx/characters/ate_religious/americanist_female_headgear.dds"
 		noOfFrames = 6
+		norefcount = yes
 	}
 
 	portraitType = {

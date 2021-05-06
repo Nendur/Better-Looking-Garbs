@@ -4,11 +4,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_ranger_headgear_mid"
 		textureFile = "gfx/characters/societies/ranger_headgear_mid.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_ranger_headgear"
 		textureFile = "gfx/characters/societies/ranger_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Male
@@ -64,26 +66,31 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_norse_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_norse_male_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_male_clothes"
 		textureFile = "gfx/characters/societies/wl_norse_male_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_male_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_norse_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_male_headgear"
 		textureFile = "gfx/characters/societies/wl_norse_male_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_male_headgear_mid"
 		textureFile = "gfx/characters/societies/wl_norse_male_headgear_mid.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Male
@@ -151,16 +158,19 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_norse_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_norse_female_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_female_clothes"
 		textureFile = "gfx/characters/societies/wl_norse_female_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_female_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_norse_female_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_norse_female_hairlayer_behind"
@@ -171,16 +181,19 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_norse_female_hairlayer_front"
 		textureFile = "gfx/characters/societies/wl_norse_female_hairlayer_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_female_headgear"
 		textureFile = "gfx/characters/societies/wl_norse_female_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_norse_female_headgear_mid"
 		textureFile = "gfx/characters/societies/wl_norse_female_headgear_mid.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Female
@@ -257,11 +270,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_baltic_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_baltic_male_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_baltic_male_clothes"
 		textureFile = "gfx/characters/societies/wl_baltic_male_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_baltic_male_clothes_infront"
@@ -272,6 +287,7 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_baltic_male_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_baltic_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_baltic_male_headgear"
@@ -282,6 +298,7 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_baltic_male_headgear"
 		textureFile = "gfx/characters/societies/wl_baltic_male_headgear_hairlayer.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_baltic_male_headgear_hairlayer_behind"
@@ -356,11 +373,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_baltic_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_baltic_female_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_baltic_female_clothes"
 		textureFile = "gfx/characters/societies/wl_baltic_female_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_baltic_female_clothes_infront"
@@ -371,6 +390,7 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_baltic_female_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_baltic_female_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_baltic_female_hairlayer_behind"
@@ -381,6 +401,7 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_baltic_female_headgear"
 		textureFile = "gfx/characters/societies/wl_baltic_female_headgear_hairlayer.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_baltic_female_headgear"
@@ -587,11 +608,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_african_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_african_male_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_african_male_clothes"
 		textureFile = "gfx/characters/societies/wl_african_male_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_african_male_clothes_infront"
@@ -602,11 +625,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_african_male_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_african_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_african_male_headgear"
 		textureFile = "gfx/characters/societies/wl_african_male_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Male
@@ -660,11 +685,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_african_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_african_female_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_african_female_clothes"
 		textureFile = "gfx/characters/societies/wl_african_female_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_african_female_clothes_infront"
@@ -675,11 +702,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_african_female_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_african_female_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_african_female_headgear"
 		textureFile = "gfx/characters/societies/wl_african_female_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Female
@@ -738,31 +767,37 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_slavic_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_slavic_male_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_slavic_male_clothes"
 		textureFile = "gfx/characters/societies/wl_slavic_male_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_slavic_male_clothes_infront"
 		textureFile = "gfx/characters/societies/wl_slavic_male_clothes_infront.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_slavic_male_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_slavic_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_slavic_male_headgear_mid"
 		textureFile = "gfx/characters/societies/wl_slavic_male_headgear_mid.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_slavic_male_headgear"
 		textureFile = "gfx/characters/societies/wl_slavic_male_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Male
@@ -809,21 +844,25 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_slavic_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_slavic_female_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_slavic_female_clothes"
 		textureFile = "gfx/characters/societies/wl_slavic_female_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_slavic_female_clothes_infront"
 		textureFile = "gfx/characters/societies/wl_slavic_female_clothes_infront.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_slavic_female_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_slavic_female_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Female
@@ -1065,11 +1104,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_bon_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_bon_male_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_bon_male_clothes"
 		textureFile = "gfx/characters/societies/wl_bon_male_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_bon_male_clothes_infront"
@@ -1080,11 +1121,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_bon_male_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_bon_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_bon_male_headgear"
 		textureFile = "gfx/characters/societies/wl_bon_male_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Male
@@ -1153,11 +1196,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_bon_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_bon_female_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_bon_female_clothes"
 		textureFile = "gfx/characters/societies/wl_bon_female_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_bon_female_clothes_infront"
@@ -1168,11 +1213,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_bon_female_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_bon_female_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_bon_female_headgear"
 		textureFile = "gfx/characters/societies/wl_bon_female_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Female
@@ -1246,11 +1293,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_hellenic_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_hellenic_male_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_hellenic_male_clothes"
 		textureFile = "gfx/characters/societies/wl_hellenic_male_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_hellenic_male_clothes_infront"
@@ -1261,11 +1310,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_hellenic_male_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_hellenic_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_hellenic_male_headgear"
 		textureFile = "gfx/characters/societies/wl_hellenic_male_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Male
@@ -1330,11 +1381,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_hellenic_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_hellenic_female_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_hellenic_female_clothes"
 		textureFile = "gfx/characters/societies/wl_hellenic_female_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_hellenic_female_clothes_infront"
@@ -1345,6 +1398,7 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_hellenic_female_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_hellenic_female_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Female
@@ -1411,31 +1465,37 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_tengri_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_tengri_male_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_male_clothes"
 		textureFile = "gfx/characters/societies/wl_tengri_male_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_male_clothes_infront"
 		textureFile = "gfx/characters/societies/wl_tengri_male_clothes_infront.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_male_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_tengri_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_male_headgear_mid"
 		textureFile = "gfx/characters/societies/wl_tengri_male_headgear_mid.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_male_headgear"
 		textureFile = "gfx/characters/societies/wl_tengri_male_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Male
@@ -1506,26 +1566,31 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_tengri_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_tengri_female_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_female_clothes"
 		textureFile = "gfx/characters/societies/wl_tengri_female_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_female_clothes_infront"
 		textureFile = "gfx/characters/societies/wl_tengri_female_clothes_infront.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_female_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_tengri_female_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_tengri_female_headgear"
 		textureFile = "gfx/characters/societies/wl_tengri_female_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Female
@@ -1601,11 +1666,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_zun_male_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_zun_male_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_zun_male_clothes"
 		textureFile = "gfx/characters/societies/wl_zun_male_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_zun_male_clothes_infront"
@@ -1616,11 +1683,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_zun_male_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_zun_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_zun_male_headgear"
 		textureFile = "gfx/characters/societies/wl_zun_male_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Male
@@ -1667,11 +1736,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_zun_female_clothes_behind"
 		textureFile = "gfx/characters/societies/wl_zun_female_clothes_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_zun_female_clothes"
 		textureFile = "gfx/characters/societies/wl_zun_female_clothes.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	#spriteType = {
 	#	name = "GFX_society_warrior_lodge_zun_female_clothes_infront"
@@ -1682,11 +1753,13 @@ spriteTypes = {
 		name = "GFX_society_warrior_lodge_zun_female_headgear_behind"
 		textureFile = "gfx/characters/societies/wl_zun_female_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_society_warrior_lodge_zun_female_headgear"
 		textureFile = "gfx/characters/societies/wl_zun_female_headgear.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = { #Portraits - Female

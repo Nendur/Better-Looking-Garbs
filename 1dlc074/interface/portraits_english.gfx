@@ -21,36 +21,42 @@ spriteTypes = {
 		name = "GFX_english_son_base"
 		textureFile = "gfx\\characters\\frankish_male\\frankish_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_english_sonhair"
 		textureFile = "gfx\\characters\\frankish_male\\frankish_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_english_son_eyes"
 		textureFile = "gfx\\characters\\frankish_male\\frankish_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_english_daughter_base"
 		textureFile = "gfx\\characters\\frankish_female\\frankish_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_english_daughterhair"
 		textureFile = "gfx\\characters\\frankish_female\\frankish_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_english_daughter_eyes"
 		textureFile = "gfx\\characters\\frankish_female\\frankish_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### English male ####

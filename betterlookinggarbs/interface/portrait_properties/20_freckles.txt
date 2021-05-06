@@ -19,12 +19,12 @@
 	1 = { # a - freckles
 		factor = 100
 		trigger = {
-			OR = {
+			trigger_if = {
+				limit = { graphical_culture = horsegfx }
+				immortal = yes
+			}
+			trigger_else = {
 				trait = freckles
-				AND = {
-					graphical_culture = horsegfx
-					immortal = yes
-				}
 			}
 		}
 	}

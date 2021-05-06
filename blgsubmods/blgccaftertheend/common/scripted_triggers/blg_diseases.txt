@@ -76,9 +76,9 @@ blg_flu = {
 # Bandaged sick skin.
 blg_leper = {
 	trait = leper
-	OR = {
+	trigger_if = {
+		limit = { has_dlc = "Reapers" }
 		trait = disfigured
-		NOT = { has_dlc = "Reapers" }
 	}
 }
 

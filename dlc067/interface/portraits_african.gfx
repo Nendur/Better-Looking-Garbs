@@ -19,30 +19,35 @@ spriteTypes = {
 		name = "GFX_african_son_base"
 		textureFile = "gfx/characters/african_male/african_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_african_sonhair"
 		textureFile = "gfx/characters/african_male/african_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_african_son_eyes"
 		textureFile = "gfx/characters/african_male/african_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_african_daughter_base"
 		textureFile = "gfx/characters/african_female/african_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_african_daughter_eyes"
 		textureFile = "gfx/characters/african_female/african_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### African male ####

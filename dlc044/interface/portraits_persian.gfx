@@ -19,36 +19,42 @@ spriteTypes = {
 		name = "GFX_persian_son_base"
 		textureFile = "gfx/characters/persian_male/persian_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_persian_sonhair"
 		textureFile = "gfx/characters/persian_male/persian_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_persian_son_eyes"
 		textureFile = "gfx/characters/persian_male/persian_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_persian_daughter_base"
 		textureFile = "gfx/characters/persian_female/persian_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_persian_daughterhair"
 		textureFile = "gfx/characters/persian_female/persian_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_persian_daughter_eyes"
 		textureFile = "gfx/characters/persian_female/persian_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### Persian male ####

@@ -3,11 +3,7 @@
 	0 = { # 0 - blank
 		factor = 100
 		trigger = {
-			OR = {
-				NOT = { trait = scarred }
-				trait = scarred_mid
-				trait = scarred_high
-			}
+			NOT = { trait = scarred }
 		}
 	}
 

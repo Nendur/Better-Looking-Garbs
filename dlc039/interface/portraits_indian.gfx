@@ -19,36 +19,42 @@ spriteTypes = {
 		name = "GFX_indian_son_base"
 		textureFile = "gfx/characters/indian_male/indian_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_indian_sonhair"
 		textureFile = "gfx/characters/indian_male/indian_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_indian_son_eyes"
 		textureFile = "gfx/characters/indian_male/indian_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_indian_daughter_base"
 		textureFile = "gfx/characters/indian_female/indian_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_indian_daughterhair"
 		textureFile = "gfx/characters/indian_female/indian_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_indian_daughter_eyes"
 		textureFile = "gfx/characters/indian_female/indian_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### INDIAN MALE ####

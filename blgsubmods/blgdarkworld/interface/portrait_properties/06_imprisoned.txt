@@ -9,6 +9,8 @@
 
 	1 = { # a - Clean prison
 		factor = 100
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
 		hide_layers = { 39 = {} }
 		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }
@@ -25,6 +27,8 @@
 
 	2 = { # b - Iron collar
 		factor = 100
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
 		hide_layers = { 39 = {} }
 		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }
@@ -37,6 +41,8 @@
 
 	3 = { # c - Gagged prisoner
 		factor = 100
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
 		hide_layers = { 39 = {} }
 		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }
@@ -49,6 +55,8 @@
 
 	4 = { # d - Regular prison
 		factor = 100
+		hide_layers = { 15 = {} }
+		hide_layers = { 16 = {} }
 		hide_layers = { 39 = {} }
 		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }

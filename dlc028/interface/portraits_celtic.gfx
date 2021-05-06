@@ -19,36 +19,42 @@ spriteTypes = {
 		name = "GFX_celtic_son_base"
 		textureFile = "gfx/characters/celtic_male/celtic_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_celtic_sonhair"
 		textureFile = "gfx/characters/celtic_male/celtic_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_celtic_son_eyes"
 		textureFile = "gfx/characters/celtic_male/celtic_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_celtic_daughter_base"
 		textureFile = "gfx/characters/celtic_female/celtic_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_celtic_daughterhair"
 		textureFile = "gfx/characters/celtic_female/celtic_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_celtic_daughter_eyes"
 		textureFile = "gfx/characters/celtic_female/celtic_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### CELTIC MALE ####

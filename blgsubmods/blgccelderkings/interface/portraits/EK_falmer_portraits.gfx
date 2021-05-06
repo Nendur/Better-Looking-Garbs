@@ -5,24 +5,28 @@ spriteTypes = {
 		name = "GFX_falmer_son_base"
 		textureFile = "gfx/characters/falmer_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_falmer_sonhair"
 		textureFile = "gfx/characters/falmer_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_falmer_daughter_base"
 		textureFile = "gfx/characters/falmer_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_falmer_daughterhair"
 		textureFile = "gfx/characters/falmer_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {

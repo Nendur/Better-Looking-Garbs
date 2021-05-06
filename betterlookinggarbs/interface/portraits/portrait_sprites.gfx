@@ -211,12 +211,21 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_character_tattoos_norse_male"
+		texturefile = "gfx\\characters\\shared\\character_tattoos_norse_male.dds"
+		noOfFrames = 25
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_character_warpaint"
 		texturefile = "gfx\\characters\\shared\\character_warpaint.dds"
 		noOfFrames = 9
 		norefcount = yes
 		can_be_lowres = yes
 	}
+
 	spriteType = {
 		name = "GFX_character_warpaint_wide"
 		texturefile = "gfx\\characters\\shared\\character_warpaint_wide.dds"

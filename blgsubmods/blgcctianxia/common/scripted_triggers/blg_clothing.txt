@@ -21,26 +21,30 @@ blg_royalty = {
 
 # Has been coronated if necessary.
 blg_crowned = {
-	OR = {
-		NOT = { has_dlc = "Holy Fury" }
-		lower_real_tier_than = king
-		NOR = {
-			religion = catholic
-			religion = fraticelli
+	trigger_if = {
+		limit = { is_alive = no }
+		NOT = { trait = uncrowned }
+	}
+	trigger_else_if = {
+		limit = {
+			has_dlc = "Holy Fury"
+			is_feudal = yes
+			higher_real_tier_than = duke
+			primary_title = { is_vice_royalty = no }
+			OR = {
+				religion = catholic
+				religion = fraticelli
+			}
+			OR = {
+				has_game_started = yes
+				is_save_game = yes
+			}
 		}
-		trait = crowned_by_priest
-		trait = crowned_by_bishop
-		trait = crowned_by_pope
-		trait = crowned_by_myself
-		is_feudal = no
-		primary_title = { is_vice_royalty = yes }
-		NOR = {
-			is_alive = yes
-			trait = uncrowned
-		}
-		AND = {
-			has_game_started = no
-			is_save_game = no
+		OR = {
+			trait = crowned_by_priest
+			trait = crowned_by_bishop
+			trait = crowned_by_pope
+			trait = crowned_by_myself
 		}
 	}
 }
@@ -53,6 +57,24 @@ blg_face_jewelry = {
 			blg_headgear_chinese = yes
 			blg_royalty = yes
 		}
+	}
+}
+
+# Facial makeup expected for those under traditional Han filial piety rules.
+blg_chinese_makeup = {
+	culture_group = chinese_group
+	is_female = yes
+	prisoner = no
+	OR = {
+		higher_real_tier_than = baron
+		is_or_was_offmap_power_ruler = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_real_tier_than = baron
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+		has_character_modifier = jd_princess
 	}
 }
 
@@ -117,11 +139,11 @@ blg_crown_emperor = {
 	}
 	blg_crowned = yes
 
+	trigger_if = {
+		limit = { is_nomadic = yes }
+		population_and_manpower >= 10000
+	}
 	NOR = {
-		AND = {
-			is_nomadic = yes
-			population_and_manpower < 10000
-		}
 		is_tributary = yes
 		is_offmap_governor = yes
 		blg_republic = yes
@@ -142,16 +164,18 @@ blg_crown_king = {
 		blg_royal_title = yes
 	}
 
-	NOR = {
-		AND = {
+	trigger_if = {
+		limit = {
 			is_nomadic = yes
 			has_game_started = yes
-			population_and_manpower < 5000
 		}
-		AND = {
-			government = chinese_vassal_government
-			independent = no
-		}
+		population_and_manpower >= 5000
+	}
+	trigger_if = {
+		limit = { government = chinese_vassal_government }
+		independent = yes
+	}
+	NOR = {
 		blg_republic = yes
 		blg_mercenary = yes
 		blg_holy_order = yes
@@ -216,38 +240,21 @@ blg_headgear_military = {
 	OR = {
 		blg_fighting = yes
 		blg_military_governor = yes
-
-		AND = {
-			has_game_rule = { name = blg_helmet value = on }
-			blg_warrior = yes
-		}
+		blg_headgear_military_on_rule = yes
 	}
 
-	NOR = {
-		has_game_rule = { name = martial_headgear value = off }
-		has_game_rule = { name = blg_helmet value = off }
-		has_game_rule = { name = blg_helmet value = none }
-		AND = {
-			has_game_rule = { name = blg_helmet value = lowrank }
-			OR = {
-				higher_real_tier_than = baron
-				spouse = { higher_real_tier_than = baron }
-			}
-		}
-	}
+	blg_headgear_military_off_rule = no
 }
 
 # Dress shady.
 blg_headgear_intrigue = {
-	OR = {
-		AND = {
-			has_job_title = job_spymaster
-			lower_real_tier_than = king
-		}
-		AND = {
-			intrigue >= 16
-			lower_real_tier_than = duke
-		}
+	trigger_if = {
+		limit = { has_job_title = job_spymaster }
+		lower_real_tier_than = king
+	}
+	trigger_else = {
+		intrigue >= 16
+		lower_real_tier_than = duke
 	}
 }
 

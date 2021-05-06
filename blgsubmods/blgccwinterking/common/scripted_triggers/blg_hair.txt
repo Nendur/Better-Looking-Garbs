@@ -1,11 +1,5 @@
 ### Hair rules:
 
-# Balding further at high age.
-blg_hair_balding = {
-	is_female = no
-	practical_age >= 70
-}
-
 # Has a shaved head.
 blg_shaved = {
 	always = no
@@ -13,7 +7,6 @@ blg_shaved = {
 
 # Tonsured hair rules.
 blg_tonsure = {
-	is_female = no
 	religion_group = christian
 	OR = {
 		blg_priest = yes
@@ -22,32 +15,9 @@ blg_tonsure = {
 	NOT = { trait = cynical }
 }
 
-# Not allowed to cut hair.
-blg_hair_uncut = {
-	always = no
-}
-
-# Tidy hair for rulers and married people.
-blg_hair_chinese_tidy = {
-	always = no
-}
-
-# Tidy hair for married women and high rulers.
-blg_hair_southernslavic_tidy = {
-	is_female = yes
-	OR = {
-		is_married = yes
-		higher_tier_than = duke
-		trait = groomed
-	}
-	NOT = { trait = uncouth }
-}
-
-# Early Germanic kings wearing long hair.
-blg_hair_germanic_ruler = {
-	is_female = no
+# Has long hair.
+blg_hair_long = {
 	year_of_birth < 740
-
 	culture_group = germanic
 	OR = {
 		higher_real_tier_than = duke
@@ -56,10 +26,9 @@ blg_hair_germanic_ruler = {
 	}
 }
 
-blg_hair_germanic_noruler = {
-	is_female = no
+# Has short hair.
+blg_hair_short = {
 	year_of_birth < 740
-
 	culture_group = germanic
 	NOR = {
 		higher_real_tier_than = duke
@@ -68,15 +37,51 @@ blg_hair_germanic_noruler = {
 	}
 }
 
-# Tidy hair for married women and high rulers.
-blg_hair_westernslavic_tidy = {
-	is_female = yes
-	OR = {
-		is_married = yes
-		higher_tier_than = count
-		trait = groomed
+# Tidy hair for all rulers and married people.
+blg_hair_tidy_all = {
+	trigger_if = {
+		limit = { NOT = { trait = groomed } }
+		OR = {
+			is_married = yes
+			is_landed = yes
+			is_or_was_offmap_power_ruler = yes
+		}
+		NOR = {
+			trait = uncouth
+			trait = adventurer
+			trait = peasant_leader
+			blg_religion_pagan = yes
+			has_tribal_or_nomadic_government_trigger = yes
+			blg_mercenary = yes
+		}
 	}
-	NOT = { trait = uncouth }
+	blg_prisoner = no
+}
+
+# Tidy hair for higher ranking rulers and married people.
+blg_hair_tidy_ranking = {
+	trigger_if = {
+		limit = { NOT = { trait = groomed } }
+		OR = {
+			is_married = yes
+			higher_tier_than = count
+			is_or_was_offmap_power_ruler = yes
+		}
+		NOR = {
+			trait = uncouth
+			trait = adventurer
+			trait = peasant_leader
+			blg_religion_pagan = yes
+			has_tribal_or_nomadic_government_trigger = yes
+			blg_mercenary = yes
+		}
+	}
+	blg_prisoner = no
+}
+
+# Not allowed to cut hair.
+blg_hair_uncut = {
+	always = no
 }
 
 ### Beard rules:

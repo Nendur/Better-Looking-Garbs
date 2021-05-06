@@ -23,36 +23,42 @@ spriteTypes = {
 		name = "GFX_southindian_son_base"
 		textureFile = "gfx/characters/egyptian_male/egyptian_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southindian_sonhair"
 		textureFile = "gfx/characters/egyptian_male/egyptian_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southindian_son_eyes"
 		textureFile = "gfx/characters/egyptian_male/egyptian_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southindian_daughter_base"
 		textureFile = "gfx/characters/egyptian_female/coptic_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southindian_daughterhair"
 		textureFile = "gfx/characters/egyptian_female/coptic_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southindian_daughter_eyes"
 		textureFile = "gfx/characters/egyptian_female/egyptian_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### DRAVIDIAN MALE ####

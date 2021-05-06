@@ -33,6 +33,11 @@ blg_face_jewelry = {
 	}
 }
 
+# Facial makeup expected for those under traditional Han filial piety rules.
+blg_chinese_makeup = {
+	always = no
+}
+
 # Prepared for battle.
 blg_warrior = {
 	OR = {
@@ -94,11 +99,11 @@ blg_crown_emperor = {
 		is_or_was_offmap_power_ruler = yes
 	}
 
+	trigger_if = {
+		limit = { is_nomadic = yes }
+		population_and_manpower >= 10000
+	}
 	NOR = {
-		AND = {
-			is_nomadic = yes
-			population_and_manpower < 10000
-		}
 		is_tributary = yes
 		is_offmap_governor = yes
 		blg_republic = yes
@@ -116,12 +121,14 @@ blg_crown_king = {
 		blg_royal_title = yes
 	}
 
-	NOR = {
-		AND = {
+	trigger_if = {
+		limit = {
 			is_nomadic = yes
 			has_game_started = yes
-			population_and_manpower < 5000
 		}
+		population_and_manpower >= 5000
+	}
+	NOR = {
 		blg_republic = yes
 		blg_mercenary = yes
 		blg_holy_order = yes
@@ -185,25 +192,10 @@ blg_headgear_common = {
 blg_headgear_military = {
 	OR = {
 		blg_fighting = yes
-
-		AND = {
-			has_game_rule = { name = blg_helmet value = on }
-			blg_warrior = yes
-		}
+		blg_headgear_military_on_rule = yes
 	}
 
-	NOR = {
-		has_game_rule = { name = martial_headgear value = off }
-		has_game_rule = { name = blg_helmet value = off }
-		has_game_rule = { name = blg_helmet value = none }
-		AND = {
-			has_game_rule = { name = blg_helmet value = lowrank }
-			OR = {
-				higher_real_tier_than = baron
-				spouse = { higher_real_tier_than = baron }
-			}
-		}
-	}
+	blg_headgear_military_off_rule = no
 }
 
 # Dress shady.

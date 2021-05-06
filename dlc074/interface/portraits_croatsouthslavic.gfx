@@ -35,24 +35,28 @@ spriteTypes = {
 		name = "GFX_croatsouthslavic_son_base"
 		textureFile = "gfx/characters/southslavic_male/croat_southslavic_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_croatsouthslavic_sonhair"
 		textureFile = "gfx/characters/southslavic_male/croat_southslavic_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_croatsouthslavic_daughter_base"
 		textureFile = "gfx/characters/southslavic_female/croat_southslavic_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_croatsouthslavic_daughterhair"
 		textureFile = "gfx/characters/southslavic_female/croat_southslavic_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### CROAT SOUTHSLAVIC MALE ####

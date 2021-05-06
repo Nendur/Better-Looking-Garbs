@@ -3,12 +3,14 @@ spriteTypes = {
 		name = "GFX_southasian_son_base"
 		textureFile = "gfx/characters/egyptian_male/egyptian_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_southasian_daughter_base"
 		textureFile = "gfx/characters/egyptian_female/egyptian_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {

@@ -19,36 +19,42 @@ spriteTypes = {
 		name = "GFX_german_son_base"
 		textureFile = "gfx/characters/german_male/german_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_german_sonhair"
 		textureFile = "gfx/characters/german_male/german_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_german_son_eyes"
 		textureFile = "gfx/characters/german_male/german_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_german_daughter_base"
 		textureFile = "gfx/characters/german_female/german_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_german_daughterhair"
 		textureFile = "gfx/characters/german_female/german_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_german_daughter_eyes"
 		textureFile = "gfx/characters/german_female/german_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### German male ####

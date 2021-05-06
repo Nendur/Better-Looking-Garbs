@@ -37,36 +37,42 @@ spriteTypes = {
 		name = "GFX_muslim_son_base"
 		textureFile = "gfx\\characters\\muslim_male\\muslim_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_muslim_sonhair"
 		textureFile = "gfx\\characters\\muslim_male\\muslim_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_muslim_son_eyes"
 		textureFile = "gfx\\characters\\muslim_male\\muslim_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_muslim_daughter_base"
 		textureFile = "gfx\\characters\\muslim_female\\muslim_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_muslim_daughterhair"
 		textureFile = "gfx\\characters\\muslim_female\\muslim_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_muslim_daughter_eyes"
 		textureFile = "gfx\\characters\\muslim_female\\muslim_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
@@ -87,36 +93,42 @@ spriteTypes = {
 		name = "GFX_levantine_son_base"
 		textureFile = "gfx\\characters\\muslim_male\\levantine_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_levantine_sonhair"
 		textureFile = "gfx\\characters\\muslim_male\\levantine_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_levantine_son_eyes"
 		textureFile = "gfx\\characters\\muslim_male\\levantine_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_levantine_daughter_base"
 		textureFile = "gfx\\characters\\muslim_female\\levantine_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_levantine_daughterhair"
 		textureFile = "gfx\\characters\\muslim_female\\levantine_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_levantine_daughter_eyes"
 		textureFile = "gfx\\characters\\muslim_female\\levantine_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### MUSLIM MALE ####

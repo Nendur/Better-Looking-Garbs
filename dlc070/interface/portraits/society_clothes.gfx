@@ -7,30 +7,35 @@ spriteTypes = {
 		name = "GFX_society_hermetic_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_hermetic_male_clothing_behind.dds"
 		noOfFrames = 9
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_hermetic_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_hermetic_male_clothing_front.dds"
 		noOfFrames = 9
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_hermetic_male_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_hermetic_male_headgear_behind.dds"
 		noOfFrames = 9
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_hermetic_male_headgear_front"
 		textureFile = "gfx/characters/societies/mom_hermetic_male_headgear_front.dds"
 		noOfFrames = 9
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_hermetic_male_headgear_mid"
 		textureFile = "gfx/characters/societies/mom_hermetic_male_headgear_mid.dds"
 		noOfFrames = 9
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -190,30 +195,35 @@ spriteTypes = {
 		name = "GFX_society_hermetic_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_hermetic_female_clothing_behind.dds"
 		noOfFrames = 9
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_hermetic_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_hermetic_female_clothing_front.dds"
 		noOfFrames = 9
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_hermetic_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_hermetic_female_headgear_behind.dds"
 		noOfFrames = 9
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_hermetic_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_hermetic_female_headgear_front.dds"
 		noOfFrames = 9
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_hermetic_female_headgear_mid"
 		textureFile = "gfx/characters/societies/mom_hermetic_female_headgear_mid.dds"
 		noOfFrames = 9
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -378,24 +388,28 @@ spriteTypes = {
 		name = "GFX_society_assassin_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_assassin_clothing_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_assassin_clothing_front"
 		textureFile = "gfx/characters/societies/mom_assassin_clothing_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_assassin_headgear_front"
 		textureFile = "gfx/characters/societies/mom_assassin_headgear_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_assassin_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_assassin_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -458,30 +472,35 @@ spriteTypes = {
 		name = "GFX_society_satanist_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_satanist_male_clothing_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_satanist_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_satanist_male_clothing_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_satanist_male_headgear_mid"
 		textureFile = "gfx/characters/societies/mom_satanist_male_headgear_mid.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_satanist_male_headgear_front"
 		textureFile = "gfx/characters/societies/mom_satanist_male_headgear_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_satanist_male_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_satanist_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -565,24 +584,28 @@ spriteTypes = {
 		name = "GFX_society_satanist_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_satanist_female_clothing_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_satanist_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_satanist_female_clothing_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_satanist_female_headgear_front"
 		textureFile = "gfx/characters/societies/mom_satanist_female_headgear_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_satanist_female_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_satanist_female_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -671,12 +694,14 @@ spriteTypes = {
 		name = "GFX_society_shaytanist_male_headgear_front"
 		textureFile = "gfx/characters/societies/shaytanist_male_headgear_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_shaytanist_male_headgear_behind"
 		textureFile = "gfx/characters/societies/shaytanist_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -758,12 +783,14 @@ spriteTypes = {
 		name = "GFX_society_shaytanist_female_headgear_front"
 		textureFile = "gfx/characters/societies/shaytanist_female_headgear_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_shaytanist_female_headgear_behind"
 		textureFile = "gfx/characters/societies/shaytanist_female_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -850,24 +877,28 @@ spriteTypes = {
 		name = "GFX_society_vodoun_male_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_vodoun_male_clothing_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_vodoun_male_clothing_front"
 		textureFile = "gfx/characters/societies/mom_vodoun_male_clothing_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_vodoun_male_headgear_front"
 		textureFile = "gfx/characters/societies/mom_vodoun_male_headgear_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_vodoun_male_headgear_behind"
 		textureFile = "gfx/characters/societies/mom_vodoun_male_headgear_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	portraitType = {
@@ -941,12 +972,14 @@ spriteTypes = {
 		name = "GFX_society_vodoun_female_clothing_behind"
 		textureFile = "gfx/characters/societies/mom_vodoun_female_clothing_behind.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_society_vodoun_female_clothing_front"
 		textureFile = "gfx/characters/societies/mom_vodoun_female_clothing_front.dds"
 		noOfFrames = 4
+		norefcount = yes
 	}
 
 	#spriteType = {

@@ -19,12 +19,14 @@ spriteTypes = {
 		name = "GFX_brindle_son_base"
 		textureFile = "gfx/characters/brindle_male/brindle_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_brindle_daughter_base"
 		textureFile = "gfx/characters/brindle_female/brindle_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### BRINDLE MALE ####

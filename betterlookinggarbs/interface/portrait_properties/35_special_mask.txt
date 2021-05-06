@@ -15,6 +15,9 @@
 		factor = 100
 		hide_layers = { 5 = {}}
 		hide_layers = {12 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
 
 		trigger = {
 			blg_artifact_mask_1 = yes
@@ -25,6 +28,9 @@
 		factor = 100
 		hide_layers = { 5 = {}}
 		hide_layers = {12 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
 
 		trigger = {
 			blg_artifact_mask_2 = yes
@@ -35,6 +41,9 @@
 		factor = 100
 		hide_layers = { 5 = {}}
 		hide_layers = {12 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
 
 		trigger = {
 			blg_artifact_mask_3 = yes
@@ -45,6 +54,9 @@
 		factor = 100
 		hide_layers = { 5 = {}}
 		hide_layers = {12 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
 
 		trigger = {
 			blg_artifact_mask_4 = yes
@@ -55,6 +67,9 @@
 		factor = 100
 		hide_layers = { 5 = {}}
 		hide_layers = {12 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
 
 		trigger = {
 			blg_artifact_mask_5 = yes
@@ -65,6 +80,9 @@
 		factor = 100
 		hide_layers = { 5 = {}}
 		hide_layers = {12 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
 
 		trigger = {
 			blg_artifact_mask_6 = yes
@@ -75,6 +93,9 @@
 		factor = 100
 		hide_layers = { 5 = {}}
 		hide_layers = {12 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
 
 		trigger = {
 			blg_artifact_mask_7 = yes
@@ -85,6 +106,9 @@
 		factor = 100
 		hide_layers = { 5 = {}}
 		hide_layers = {12 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
 
 		trigger = {
 			blg_artifact_mask_8 = yes

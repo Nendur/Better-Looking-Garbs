@@ -19,36 +19,42 @@ spriteTypes = {
 		name = "GFX_ugric_son_base"
 		textureFile = "gfx\\characters\\ugric_male\\ugric_son_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_ugric_sonhair"
 		textureFile = "gfx\\characters\\ugric_male\\ugric_son_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_ugric_son_eyes"
 		textureFile = "gfx\\characters\\ugric_male\\ugric_son_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_ugric_daughter_base"
 		textureFile = "gfx\\characters\\ugric_female\\ugric_daughter_base.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_ugric_daughterhair"
 		textureFile = "gfx\\characters\\ugric_female\\ugric_daughter_hair.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_ugric_daughter_eyes"
 		textureFile = "gfx\\characters\\ugric_female\\ugric_daughter_eyes.dds"
 		noOfFrames = 7
+		norefcount = yes
 	}
 
 ### Ugric male ####

@@ -1,6 +1,6 @@
 # Rules for picking clothing sets.
 
-chinese_makeup_trigger = {
+blg_chinese_makeup = {
 	always = no
 }
 
@@ -87,11 +87,11 @@ blg_crown_emperor = {
 		is_or_was_offmap_power_ruler = yes
 	}
 
+	trigger_if = {
+		limit = { is_nomadic = yes }
+		population_and_manpower >= 10000
+	}
 	NOR = {
-		AND = {
-			is_nomadic = yes
-			population_and_manpower < 10000
-		}
 		is_tributary = yes
 		is_offmap_governor = yes
 		blg_republic = yes
@@ -146,51 +146,30 @@ blg_headgear_common = {
 
 # Wears a helmet.
 blg_headgear_military = {
-	OR = {
-		AND = {
-			OR = {
-				blg_fighting = yes
-
-				AND = {
-					has_game_rule = { name = blg_helmet value = on }
-					blg_warrior = yes
-				}
-			}
-
-			NOR = {
-				has_game_rule = { name = martial_headgear value = off }
-				has_game_rule = { name = blg_helmet value = off }
-				has_game_rule = { name = blg_helmet value = none }
-				AND = {
-					OR = {
-						has_game_rule = { name = blg_helmet value = lowrank }
-						has_game_rule = { name = martial_headgear value = no_rulers }
-					}
-					OR = {
-						higher_real_tier_than = baron
-						spouse = { higher_real_tier_than = baron }
-					}
-				}
+	trigger_if = {
+		limit = {
+			NAND = {
+				trait = undead
+				combat_rating = 10
 			}
 		}
-		AND = {
-			trait = undead
-			combat_rating = 10
+		OR = {
+			blg_fighting = yes
+			blg_headgear_military_on_rule = yes
 		}
+		blg_headgear_military_off_rule = no
 	}
 }
 
 # Dress shady.
 blg_headgear_intrigue = {
-	OR = {
-		AND = {
-			has_job_title = job_spymaster
-			lower_real_tier_than = king
-		}
-		AND = {
-			intrigue >= 16
-			lower_real_tier_than = duke
-		}
+	trigger_if = {
+		limit = { has_job_title = job_spymaster }
+		lower_real_tier_than = king
+	}
+	trigger_else = {
+		intrigue >= 16
+		lower_real_tier_than = duke
 	}
 }
 
