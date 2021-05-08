@@ -1,77 +1,7 @@
 ############## Mesoamerican ##########################
 spriteTypes = {
 
-	spriteType = {
-		name = "PORTRAIT_mesoamericangfx_child_male"
-		texturefile = "gfx\\characters\\default_son_mesoamerican.tga"
-		noOfFrames = 1
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "PORTRAIT_mesoamericangfx_child_female"
-		texturefile = "gfx\\characters\\default_daughter_mesoamerican.tga"
-		noOfFrames = 1
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_son_base"
-		textureFile = "gfx/characters/mesoamerican_male/mesoamerican_son_base.dds"
-		noOfFrames = 7
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_sonhair"
-		textureFile = "gfx/characters/mesoamerican_male/mesoamerican_son_hair.dds"
-		noOfFrames = 7
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_son_eyes"
-		textureFile = "gfx/characters/mesoamerican_male/mesoamerican_son_eyes.dds"
-		noOfFrames = 7
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_daughter_base"
-		textureFile = "gfx/characters/mesoamerican_female/mesoamerican_daughter_base.dds"
-		noOfFrames = 7
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_daughterhair"
-		textureFile = "gfx/characters/mesoamerican_female/mesoamerican_daughter_hair.dds"
-		noOfFrames = 7
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_daughter_eyes"
-		textureFile = "gfx/characters/mesoamerican_female/mesoamerican_daughter_eyes.dds"
-		noOfFrames = 7
-		norefcount = yes
-	}
-
 ### Mesoamerican male ####
-
-	spriteType = {
-		name = "GFX_mesoamerican_male_clothes_behind"
-		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_clothes_behind.dds"
-		noOfFrames = 12
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_male_headgear_behind"
-		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_headgear_behind.dds"
-		noOfFrames = 14
-		norefcount = yes
-	}
 
 	spriteType = {
 		name = "GFX_mesoamerican_male_base"
@@ -91,27 +21,6 @@ spriteTypes = {
 		name = "GFX_mesoamerican_male_base_oldage"
 		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_base_3.dds"
 		noOfFrames = 1
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_male_hair_behind"
-		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_hair_behind_1.dds"
-		noOfFrames = 11
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_male_hair_behind_midage"
-		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_hair_behind_2.dds"
-		noOfFrames = 11
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_male_hair_behind_oldage"
-		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_hair_behind_3.dds"
-		noOfFrames = 11
 		norefcount = yes
 	}
 
@@ -251,56 +160,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mesoamerican_male_ear"
 		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_ear_1.dds"
-		noOfFrames = 4
+		noOfFrames = 6
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_mesoamerican_male_ear_midage"
 		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_ear_2.dds"
-		noOfFrames = 4
+		noOfFrames = 6
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_mesoamerican_male_ear_oldage"
 		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_ear_3.dds"
-		noOfFrames = 4
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_male_hair"
-		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_hair_1.dds"
-		noOfFrames = 11
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_male_hair_midage"
-		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_hair_2.dds"
-		noOfFrames = 11
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_male_hair_oldage"
-		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_hair_3.dds"
-		noOfFrames = 11
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_male_clothes"
-		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_clothes.dds"
-		noOfFrames = 12
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_male_headgear"
-		texturefile = "gfx\\characters\\mesoamerican_male\\mesoamerican_male_headgear.dds"
-		noOfFrames = 14
+		noOfFrames = 6
 		norefcount = yes
 	}
 
@@ -314,48 +188,13 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_mesoamerican_male_pale"
-		texturefile = "gfx\\characters\\shared\\pale\\southindian_male_pale.dds"
+		texturefile = "gfx\\characters\\shared\\pale\\mesoamerican_male_pale.dds"
 		noOfFrames = 2
 		norefcount = yes
 		can_be_lowres = yes
 	}
 
 #### Mesoamerican female ####
-
-	spriteType = {
-		name = "GFX_mesoamerican_female_clothes_behind"
-		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_clothes_behind.dds"
-		noOfFrames = 12
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_female_headgear_behind"
-		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_headgear_behind.dds"
-		noOfFrames = 14
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_female_hair_behind"
-		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_hair_behind_1.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_female_hair_behind_midage"
-		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_hair_behind_2.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_female_hair_behind_oldage"
-		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_hair_behind_3.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
 
 	spriteType = {
 		name = "GFX_mesoamerican_female_base"
@@ -377,7 +216,6 @@ spriteTypes = {
 		noOfFrames = 1
 		norefcount = yes
 	}
-
 
 	spriteType = {
 		name = "GFX_mesoamerican_female_cheeks"
@@ -484,7 +322,6 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-
 	spriteType = {
 		name = "GFX_mesoamerican_female_eyes"
 		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_eyes_1.dds"
@@ -516,56 +353,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mesoamerican_female_ear"
 		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_ear_1.dds"
-		noOfFrames = 4
+		noOfFrames = 5
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_mesoamerican_female_ear_midage"
 		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_ear_2.dds"
-		noOfFrames = 4
+		noOfFrames = 5
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_mesoamerican_female_ear_oldage"
 		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_ear_3.dds"
-		noOfFrames = 4
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_female_clothes"
-		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_clothes.dds"
-		noOfFrames = 12
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_female_hair"
-		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_hair_1.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_female_hair_midage"
-		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_hair_2.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_female_hair_oldage"
-		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_hair_3.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_mesoamerican_female_headgear"
-		texturefile = "gfx\\characters\\mesoamerican_female\\mesoamerican_female_headgear.dds"
-		noOfFrames = 14
+		noOfFrames = 5
 		norefcount = yes
 	}
 
@@ -579,7 +381,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_mesoamerican_female_pale"
-		texturefile = "gfx\\characters\\shared\\pale\\southindian_female_pale.dds"
+		texturefile = "gfx\\characters\\shared\\pale\\mesoamerican_female_pale.dds"
 		noOfFrames = 2
 		norefcount = yes
 		can_be_lowres = yes
