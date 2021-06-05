@@ -90,6 +90,7 @@
 			is_female = yes
 			OR = {
 				blg_guard = yes
+				trait = knight
 				this_is_sea_raider_trigger = yes
 			}
 			OR = {
@@ -197,6 +198,7 @@
 			is_female = yes
 			OR = {
 				blg_guard = yes
+				trait = knight
 				this_is_sea_raider_trigger = yes
 			}
 			OR = {
@@ -207,11 +209,11 @@
 			}
 		}
 
-		modifier = { # Lancel gets a haircut
-			factor = 100
-			character = 8190
-			trait = zealous
-		}
+		#modifier = { # Lancel gets a haircut
+		#	factor = 100
+		#	character = 8190
+		#	trait = zealous
+		#}
 	}
 
 	2 = { # b - Page
@@ -239,10 +241,10 @@
 					blg_tonsure = no
 					blg_shaved = no
 
-					trigger_if = { # Jaime gets a haircut
-						limit = { character = 3190 }
-						NOT = { trait = one_handed }
-					}
+					#trigger_if = { # Jaime gets a haircut
+					#	limit = { character = 3190 }
+					#	NOT = { trait = one_handed }
+					#}
 				}
 				trigger_else = {
 					trigger_if = {
@@ -518,10 +520,10 @@
 					blg_tonsure = no
 					blg_shaved = no
 
-					trigger_if = { # Lancel gets a haircut
-						limit = { character = 8190 }
-						NOT = { trait = zealous }
-					}
+					#trigger_if = { # Lancel gets a haircut
+					#	limit = { character = 8190 }
+					#	NOT = { trait = zealous }
+					#}
 				}
 				trigger_else = {
 					trigger_if = {
@@ -710,6 +712,7 @@
 			is_female = yes
 			OR = {
 				blg_guard = yes
+				trait = knight
 				this_is_sea_raider_trigger = yes
 			}
 			OR = {
@@ -811,6 +814,7 @@
 			is_female = yes
 			OR = {
 				blg_guard = yes
+				trait = knight
 				this_is_sea_raider_trigger = yes
 			}
 			OR = {
@@ -897,6 +901,7 @@
 			is_female = yes
 			OR = {
 				blg_guard = yes
+				trait = knight
 				this_is_sea_raider_trigger = yes
 			}
 			OR = {
@@ -1021,16 +1026,17 @@
 			is_female = yes
 			OR = {
 				blg_guard = yes
+				trait = knight
 				this_is_sea_raider_trigger = yes
 			}
 			blg_hair_celtic = yes
 		}
 
-		modifier = { # Jaime gets a haircut
-			factor = 100
-			character = 3190
-			trait = one_handed
-		}
+		#modifier = { # Jaime gets a haircut
+		#	factor = 100
+		#	character = 3190
+		#	trait = one_handed
+		#}
 	}
 
 	10 = { # j - Long uncouth
@@ -1266,6 +1272,7 @@
 			is_female = yes
 			OR = {
 				blg_guard = yes
+				trait = knight
 				this_is_sea_raider_trigger = yes
 			}
 			blg_hair_celtic = yes
@@ -1375,6 +1382,7 @@
 			is_female = yes
 			OR = {
 				blg_guard = yes
+				trait = knight
 				this_is_sea_raider_trigger = yes
 			}
 			OR = {
@@ -1502,6 +1510,7 @@
 			is_female = yes
 			OR = {
 				blg_guard = yes
+				trait = knight
 				this_is_sea_raider_trigger = yes
 				trait = celibate
 				trait = septa
@@ -1613,6 +1622,7 @@
 			is_female = yes
 			OR = {
 				blg_guard = yes
+				trait = knight
 				this_is_sea_raider_trigger = yes
 			}
 			OR = {

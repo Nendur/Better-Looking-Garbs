@@ -2,15 +2,21 @@
 5 = {
 	0 = { # 0 - Imperial crown/Caliph turban
 		factor = 99
-		trigger = {
-			OR = {
-				blg_headgear_emperor = yes
-				blg_merchant_headgear = yes
-			}
 
-			NOR = {
-				trait = in_hiding
-				blg_pilgrimage = yes
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_emperor = yes
+					blg_merchant_headgear = yes
+				}
+				NOR = {
+					trait = in_hiding
+					blg_pilgrimage = yes
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 1 }
 			}
 		}
 
@@ -22,15 +28,21 @@
 
 	1 = { # a - Royal crown/turban 1
 		factor = 1
-		trigger = {
-			OR = {
-				blg_headgear_king = yes
-				blg_merchant_headgear = yes
-			}
 
-			NOR = {
-				trait = in_hiding
-				blg_pilgrimage = yes
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_king = yes
+					blg_merchant_headgear = yes
+				}
+				NOR = {
+					trait = in_hiding
+					blg_pilgrimage = yes
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 2 }
 			}
 		}
 
@@ -42,24 +54,25 @@
 				has_portrait_property = { layer = 5 index = 4 }
 			}
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 2 }
-		}
 	}
 
 	2 = { # b - Royal crown/turban 2
 		factor = 1
-		trigger = {
-			OR = {
-				blg_headgear_king = yes
-				blg_merchant_headgear = yes
-			}
 
-			NOR = {
-				trait = in_hiding
-				blg_pilgrimage = yes
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_king = yes
+					blg_merchant_headgear = yes
+				}
+				NOR = {
+					trait = in_hiding
+					blg_pilgrimage = yes
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 3 }
 			}
 		}
 
@@ -71,24 +84,31 @@
 				has_portrait_property = { layer = 5 index = 4 }
 			}
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 3 }
-		}
 	}
 
 	3 = { # c - Royal crown/turban 3
 		factor = 1
-		trigger = {
-			OR = {
-				blg_headgear_king = yes
-				blg_merchant_headgear = yes
-			}
 
-			NOR = {
-				trait = in_hiding
-				blg_pilgrimage = yes
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_king = yes
+					blg_merchant_headgear = yes
+				}
+				NOR = {
+					trait = in_hiding
+					blg_pilgrimage = yes
+				}
+				trigger_if = {
+					limit = {
+						blg_headgear_chinese = yes
+					}
+					song_dynasty_futou_trigger = yes
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 4 }
 			}
 		}
 
@@ -107,35 +127,26 @@
 		}
 
 		modifier = {
-			factor = 0
-			blg_headgear_chinese = yes
-			song_dynasty_futou_trigger = no
-		}
-
-		modifier = {
 			factor = 99
 			blg_headgear_persian_crown = yes
-		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 4 }
 		}
 	}
 
 	4 = { # d - Simple golden band/turban
 		factor = 5
+
 		trigger = {
-			blg_headgear_duke = yes
-
-			OR = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				blg_headgear_duke = yes
 				blg_headgear_king = no
-				is_variable_equal = { which = ca_headgear value = 5 }
+				NOR = {
+					trait = in_hiding
+					blg_pilgrimage = yes
+				}
 			}
-
-			NOR = {
-				trait = in_hiding
-				blg_pilgrimage = yes
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 5 }
 			}
 		}
 
@@ -156,19 +167,24 @@
 			factor = 0.01
 			blg_blocked_duke = yes
 		}
-
-		modifier = {
-			factor = 10000
-			is_alive = yes
-			is_variable_equal = { which = ca_headgear value = 5 }
-		}
 	}
 
 	5 = { # e - Common headgear 1
 		factor = 1
+
 		trigger = {
-			OR = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
 				blg_headgear_common = yes
+				trigger_if = {
+					limit = {
+						is_female = no
+						likes_celts = yes
+					}
+					is_landed = no
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_headgear value = 6 }
 			}
 		}
@@ -189,14 +205,6 @@
 		}
 
 		modifier = {
-			factor = 0
-			is_landed = yes
-			is_female = no
-			likes_celts = yes
-			NOT = { is_variable_equal = { which = ca_headgear value = 6 } }
-		}
-
-		modifier = {
 			factor = 2
 			is_female = yes
 			is_married = no
@@ -208,11 +216,6 @@
 			trait = leper
 			blg_headgear_alternate_leper = yes
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 6 }
-		}
 	}
 
 	6 = { # f - Common headgear 2
@@ -220,8 +223,11 @@
 		hide_layers = { 31 = {} }
 
 		trigger = {
-			OR = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
 				blg_headgear_common = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_headgear value = 7 }
 			}
 		}
@@ -237,11 +243,6 @@
 				NOT = { has_portrait_property = { layer = 31 index = 0 } }
 			}
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 7 }
-		}
 	}
 
 	7 = { # g - Common headgear 3
@@ -249,8 +250,11 @@
 		hide_layers = { 31 = {} }
 
 		trigger = {
-			OR = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
 				blg_headgear_common = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_headgear value = 8 }
 			}
 		}
@@ -266,11 +270,6 @@
 				NOT = { has_portrait_property = { layer = 31 index = 0 } }
 			}
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 8 }
-		}
 	}
 
 	8 = { # h - Common headgear 4
@@ -278,8 +277,18 @@
 		hide_layers = { 31 = {} }
 
 		trigger = {
-			OR = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
 				blg_headgear_common = yes
+				trigger_if = {
+					limit = {
+						is_female = yes
+						blg_culture_west_slavic = yes
+					}
+					is_married = no
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_headgear value = 9 }
 			}
 		}
@@ -297,23 +306,10 @@
 		}
 
 		modifier = {
-			factor = 0
-			is_female = yes
-			is_married = yes
-			blg_culture_west_slavic = yes
-			NOT = { is_variable_equal = { which = ca_headgear value = 8 } }
-		}
-
-		modifier = {
 			factor = 2
 			is_female = yes
 			is_married = no
 			blg_culture_west_slavic = yes
-		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_headgear value = 9 }
 		}
 	}
 
@@ -324,10 +320,15 @@
 		hide_layers = { 33 = {} }
 
 		trigger = {
-			OR = {
-				blg_headgear_intrigue = yes
-				trait = in_hiding
-				trait = leper
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_intrigue = yes
+					trait = in_hiding
+					trait = leper
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_headgear value = 10 }
 			}
 		}
@@ -339,11 +340,6 @@
 				trait = leper
 			}
 		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_headgear value = 10 }
-		}
 	}
 
 	10 = { # j - Martial headgear
@@ -351,35 +347,63 @@
 		hide_layers = { 43 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_headgear value = 11 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_headgear = yes
+					}
+					is_variable_equal = { which = ca_headgear value = 0 }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_headgear value = 13 } }
 					blg_headgear_military = yes
 					OR = {
 						blg_elite_commander = no
 						blg_mercenary = yes
 					}
+					NOR = {
+						blg_prisoner = yes
+						blg_saint = yes
+					}
 				}
-				is_variable_equal = { which = ca_headgear value = 11 }
 			}
+		}
 
-			NOR = {
-				blg_prisoner = yes
-				blg_saint = yes
-			}
+		modifier = {
+			factor = 0.01
+			blg_merchant_headgear = yes
 		}
 	}
 
 	11 = { # k - Blank
 		factor = 4
+
 		trigger = {
-			OR = {
-				blg_headgear_duke = no
-				trait = in_hiding
-				blg_prisoner = yes
-				blg_saint = yes
-				blg_pilgrimage = yes
-				blg_peasant = yes
-				blg_holy_order = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_duke = no
+					trait = in_hiding
+					blg_prisoner = yes
+					blg_saint = yes
+					blg_pilgrimage = yes
+					blg_peasant = yes
+					blg_holy_order = yes
+				}
+				trigger_if = {
+					limit = {
+						is_female = yes
+						blg_modest = yes
+					}
+					OR = {
+						blg_prisoner = yes
+						blg_saint = yes
+						blg_slave = yes
+					}
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_headgear value = 12 }
 			}
 		}
@@ -387,11 +411,14 @@
 		modifier = {
 			factor = 1000
 			OR = {
-				is_variable_equal = { which = ca_headgear value = 12 }
 				blg_prisoner = yes
 				blg_saint = yes
-				blg_slave = yes
 			}
+		}
+
+		modifier = {
+			factor = 10
+			blg_slave = yes
 		}
 
 		modifier = {
@@ -407,7 +434,7 @@
 				has_portrait_property = { layer = 3 index = 13 }
 				has_portrait_property = { layer = 3 index = 14 }
 			}
-			likes_muslims = no
+			blg_headgear_covered = no
 		}
 
 		modifier = {
@@ -422,19 +449,6 @@
 		}
 
 		modifier = {
-			factor = 0
-			is_female = yes
-			blg_modest = yes
-
-			NOR = {
-				blg_prisoner = yes
-				blg_saint = yes
-				blg_slave = yes
-				is_variable_equal = { which = ca_headgear value = 12 }
-			}
-		}
-
-		modifier = {
 			factor = 20
 			has_dlc = "Holy Fury"
 			is_female = yes
@@ -445,7 +459,6 @@
 			factor = 0.25
 			is_merchant_republic = yes
 		}
-
 	}
 
 	12 = { # l - Royal helmet
@@ -453,14 +466,19 @@
 		hide_layers = { 43 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_headgear value = 13 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_headgear = yes
+					}
+					is_variable_equal = { which = ca_headgear value = 0 }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_headgear value = 14 } }
 					blg_headgear_military = yes
 					blg_headgear_king = yes
 				}
-
-				blg_merchant_headgear = yes
-				is_variable_equal = { which = ca_headgear value = 13 }
 			}
 		}
 
@@ -472,11 +490,6 @@
 		modifier = {
 			factor = 0.99
 			blg_headgear_chinese = yes
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_headgear value = 13 }
 		}
 	}
 
@@ -485,13 +498,19 @@
 		hide_layers = { 43 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_headgear value = 14 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_headgear = yes
+					}
+					is_variable_equal = { which = ca_headgear value = 0 }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_headgear value = 15 } }
 					blg_headgear_military = yes
 					blg_elite_commander = yes
 				}
-				blg_merchant_headgear = yes
-				is_variable_equal = { which = ca_headgear value = 14 }
 			}
 		}
 
@@ -504,12 +523,6 @@
 			factor = 0.99
 			blg_headgear_chinese = yes
 		}
-
-		modifier = {
-			factor = 100
-			is_alive = yes
-			is_variable_equal = { which = ca_headgear value = 14 }
-		}
 	}
 
 	14 = { # n - Chinese war gear
@@ -517,26 +530,25 @@
 		hide_layers = { 43 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_headgear value = 15 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_headgear = yes
+					}
+					is_variable_equal = { which = ca_headgear value = 0 }
+				}
+				trigger_else = {
 					blg_headgear_chinese = yes
 					blg_headgear_military = yes
 					blg_elite_commander = yes
 				}
-
-				blg_merchant_headgear = yes
-				is_variable_equal = { which = ca_headgear value = 15 }
 			}
 		}
 
 		modifier = {
 			factor = 0.01
 			blg_merchant_headgear = yes
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_headgear value = 15 }
 		}
 	}
 }

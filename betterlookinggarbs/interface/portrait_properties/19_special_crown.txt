@@ -2,6 +2,7 @@
 19 = {
 	0 = { # 0 - blank
 		factor = 1
+
 		modifier = {
 			factor = 100
 			blg_headgear_military = yes
@@ -24,6 +25,7 @@
 			NOR = {
 				has_game_rule = { name = blg_artifacts value = off }
 				trait = in_hiding
+				blg_prisoner = yes
 				blg_pilgrimage = yes
 				blg_saint = yes
 			}
@@ -291,14 +293,13 @@
 		hide_layers = {33 = {}}
 
 		trigger = {
-			blg_doge = yes
-
 			NOR = {
 				blg_prisoner = yes
 				trait = in_hiding
 				trait = leper
 				blg_saint = yes
 			}
+			blg_doge = yes
 		}
 	}
 

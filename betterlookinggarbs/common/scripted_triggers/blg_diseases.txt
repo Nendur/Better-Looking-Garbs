@@ -147,11 +147,6 @@ blg_glowing = {
 	}
 }
 
-# Bandaged and pale.
-blg_mummy = {
-	always = no
-}
-
 # Vampire fangs.
 blg_vampire = {
 	always = no

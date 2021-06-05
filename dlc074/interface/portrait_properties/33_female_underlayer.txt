@@ -2,6 +2,14 @@
 33 = {
 	0 = { # 0 - blank
 		factor = 25
+
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_underlayer value = 0 }
+				is_variable_equal = { which = ca_underlayer value = 1 }
+			}
+		}
+
 		modifier = {
 			factor = 100
 			OR = {
@@ -42,11 +50,6 @@
 				blg_devout = yes
 			}
 		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 1 }
-		}
 	}
 
 	1 = { # a - Empress / Queen Pre-1180
@@ -54,19 +57,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_veiled_crown = yes
-					blg_royalty = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
+				blg_veiled_crown = yes
+				blg_royalty = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 2 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 2 }
 		}
 	}
 
@@ -75,19 +74,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_veiled_crown = yes
-					blg_royalty = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
+				blg_veiled_crown = yes
+				blg_royalty = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 3 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 3 }
 		}
 	}
 
@@ -96,19 +91,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_veiled_crown = yes
-					blg_royalty = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
+				blg_veiled_crown = yes
+				blg_royalty = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 4 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 4 }
 		}
 	}
 
@@ -117,19 +108,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_veiled_crown = yes
-					blg_royalty = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
+				blg_veiled_crown = yes
+				blg_royalty = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 5 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 5 }
 		}
 	}
 
@@ -138,19 +125,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_veiled_crown = yes
-					blg_royalty = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_late = yes
+				blg_veiled_crown = yes
+				blg_royalty = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 6 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 6 }
 		}
 	}
 
@@ -159,19 +142,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_veiled_crown = yes
-					blg_royalty = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_late = yes
+				blg_veiled_crown = yes
+				blg_royalty = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 7 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 7 }
 		}
 	}
 
@@ -180,19 +159,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_culture_french = yes
-					blg_royalty = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_late = yes
+				blg_culture_french = yes
+				blg_royalty = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 8 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 8 }
 		}
 	}
 
@@ -201,19 +176,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_veiled_crown = yes
-					blg_royalty = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_late = yes
+				blg_veiled_crown = yes
+				blg_royalty = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 9 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 9 }
 		}
 	}
 
@@ -222,18 +193,14 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_headgear_duke = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
+				blg_headgear_duke = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 10 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 10 }
 		}
 	}
 
@@ -242,19 +209,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_headgear_duke = yes
-					blg_veiled_crown = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
+				blg_headgear_duke = yes
+				blg_veiled_crown = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 11 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 11 }
 		}
 	}
 
@@ -263,19 +226,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_headgear_duke = yes
-					blg_veiled_crown = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
+				blg_headgear_duke = yes
+				blg_veiled_crown = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 12 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 12 }
 		}
 	}
 
@@ -284,19 +243,15 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_headgear_duke = yes
-					blg_veiled_crown = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
+				blg_headgear_duke = yes
+				blg_veiled_crown = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 13 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 13 }
 		}
 	}
 
@@ -305,18 +260,14 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_headgear_duke = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_late = yes
+				blg_headgear_duke = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 14 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 14 }
 		}
 	}
 
@@ -325,18 +276,14 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_headgear_duke = yes
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_late = yes
+				blg_headgear_duke = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 15 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 15 }
 		}
 	}
 
@@ -345,15 +292,12 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				blg_style_early = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }blg_style_early = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 16 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 16 }
 		}
 	}
 
@@ -362,15 +306,12 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				blg_style_early = yes
-				is_variable_equal = { which = ca_underlayer value = 16 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }blg_style_early = yes
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 16 }
+			trigger_else = {
+				is_variable_equal = { which = ca_underlayer value = 17 }
+			}
 		}
 	}
 
@@ -379,15 +320,12 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				blg_style_early = yes
-				is_variable_equal = { which = ca_underlayer value = 16 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }blg_style_early = yes
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 16 }
+			trigger_else = {
+				is_variable_equal = { which = ca_underlayer value = 18 }
+			}
 		}
 	}
 
@@ -396,15 +334,12 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				blg_style_late = yes
-				is_variable_equal = { which = ca_underlayer value = 16 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }blg_style_late = yes
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 16 }
+			trigger_else = {
+				is_variable_equal = { which = ca_underlayer value = 19 }
+			}
 		}
 	}
 
@@ -413,15 +348,12 @@
 		hide_layers = { 1 = {} }
 
 		trigger = {
-			OR = {
-				blg_style_late = yes
-				is_variable_equal = { which = ca_underlayer value = 16 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }blg_style_late = yes
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_underlayer value = 16 }
+			trigger_else = {
+				is_variable_equal = { which = ca_underlayer value = 20 }
+			}
 		}
 	}
 }

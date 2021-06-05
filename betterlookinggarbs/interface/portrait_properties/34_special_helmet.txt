@@ -197,6 +197,7 @@
 
 	10 = { # j - Unicorn headgear.
 		factor = 100
+
 		trigger = {
 			blg_artifact_unicorn = yes
 		}
@@ -204,6 +205,7 @@
 
 	11 = { # k - Miaphysite priest.
 		factor = 100
+
 		trigger = {
 			is_female = no
 			blg_priest = yes

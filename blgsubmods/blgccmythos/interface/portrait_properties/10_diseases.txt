@@ -7,8 +7,13 @@
 	1 = { # a - Leper
 		factor = 100
 		trigger = {
-			blg_leper = yes
-			blg_disease_rule = yes
+			OR = {
+				AND = {
+					blg_leper = yes
+					blg_disease_rule = yes
+				}
+				trait = mummy
+			}
 		}
 	}
 

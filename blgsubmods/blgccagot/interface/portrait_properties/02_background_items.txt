@@ -2,6 +2,7 @@
 2 = {
 	0 = { # 0 - blank
 		factor = 1
+
 		modifier = {
 			factor = 100
 			prisoner = yes
@@ -17,6 +18,7 @@
 
 	1 = { # Iron Throne
 		factor = 1
+
 		trigger = {
 			employer = { has_landed_title = e_iron_throne }
 		}
@@ -31,6 +33,7 @@
 	2 = { # The Wall
 		factor = 5
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			location = { region = world_the_wall }
 		}
@@ -44,6 +47,7 @@
 	3 = { # Godswood
 		factor = 1
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			OR = {
 				religion = old_gods
@@ -67,6 +71,7 @@
 
 	4 = { # d - Cat
 		factor = 10
+
 		trigger = {
 			OR = {
 				blg_animal_cat = yes
@@ -87,6 +92,7 @@
 
 	5 = { # e - Cat
 		factor = 10
+
 		trigger = {
 			blg_animal_cat = yes
 
@@ -104,6 +110,7 @@
 
 	6 = { # f - Cat
 		factor = 10
+
 		trigger = {
 			blg_animal_cat = yes
 
@@ -121,6 +128,7 @@
 
 	7 = { # g - Dog
 		factor = 10
+
 		trigger = {
 			blg_animal_dog = yes
 
@@ -139,6 +147,7 @@
 
 	8 = { # h - Dog
 		factor = 10
+
 		trigger = {
 			blg_animal_dog = yes
 
@@ -157,6 +166,7 @@
 
 	9 = { # i - Dog
 		factor = 10
+
 		trigger = {
 			blg_animal_dog = yes
 
@@ -175,6 +185,7 @@
 
 	10 = { # j - Dog
 		factor = 10
+
 		trigger = {
 			blg_animal_dog = yes
 
@@ -193,6 +204,7 @@
 
 	11 = { # k - Owl
 		factor = 10
+
 		trigger = {
 			blg_animal_owl = yes
 
@@ -206,6 +218,7 @@
 
 	12 = { # l - Hedgehog
 		factor = 10
+
 		trigger = {
 			blg_animal_hedgehog = yes
 
@@ -216,6 +229,7 @@
 
 	13 = { # m - Otter
 		factor = 10
+
 		trigger = {
 			blg_animal_otter = yes
 
@@ -226,6 +240,7 @@
 
 	14 = { # n - Parrot
 		factor = 10
+
 		trigger = {
 			blg_animal_parrot = yes
 
@@ -236,6 +251,7 @@
 
 	15 = { # o - Wolf
 		factor = 10
+
 		trigger = {
 			blg_animal_wolf = yes
 
@@ -246,6 +262,7 @@
 	
 	16 = { # p - Boar
 		factor = 10
+
 		trigger = {
 			blg_animal_boar = yes
 
@@ -255,6 +272,7 @@
 
 	17 = { # q - Bat
 		factor = 10
+
 		trigger = {
 			blg_animal_bat = yes
 
@@ -264,6 +282,7 @@
 
 	18 = { # r - Frog
 		factor = 10
+
 		trigger = {
 			blg_animal_frog = yes
 
@@ -274,6 +293,7 @@
 
 	19 = { # s - Monkey
 		factor = 10
+
 		trigger = {
 			blg_animal_monkey = yes
 
@@ -284,6 +304,7 @@
 
 	20 = { # t - Ape
 		factor = 10
+
 		trigger = {
 			blg_animal_ape = yes
 
@@ -293,6 +314,7 @@
 
 	21 = { # u - Vulture
 		factor = 10
+
 		trigger = {
 			blg_animal_vulture = yes
 
@@ -302,6 +324,7 @@
 
 	22 = { # v - Fox
 		factor = 10
+
 		trigger = {
 			blg_animal_fox = yes
 

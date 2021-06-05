@@ -2,6 +2,7 @@
 6 = {
 	0 = { # 0 - blank
 		factor = 100
+
 		trigger = {
 			blg_prisoner = no
 		}

@@ -1,9 +1,10 @@
 Changelog:
 
+  Clean up of the properties code.
   Combine the culture specific hairstyling rules into a unified system.
+  Let customized clothing choices be replaced with wargear.
   Scale up maces and axes a bit.
   Clean up remaining unchanged effect layers with incomplete transparency.
-  Clean up of the properties code in the ironman submod.
   Replaced Chinese makeup trigger, also didn't support offmap empires.
 
 21-03-2021

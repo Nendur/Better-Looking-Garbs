@@ -85,7 +85,7 @@
 	8 = { # h - Stressed
 		factor = 100
 		trigger = {
- 			blg_stressed = yes
+			blg_stressed = yes
 
 			blg_disease_alive = yes
 		}
@@ -94,7 +94,19 @@
 	9 = { # i - Blind
 		factor = 100
 		trigger = {
- 			blg_blind = yes
+			blg_blind = yes
+		}
+	}
+
+	10 = { # j - Blinded eye
+		factor = 100
+		trigger = {
+			trait = one_eyed
+			NOR = {
+				has_portrait_property = { layer = 13 index = 11 }
+				has_portrait_property = { layer = 13 index = 12 }
+				has_portrait_property = { layer = 13 index = 13 }
+			}
 		}
 	}
 }

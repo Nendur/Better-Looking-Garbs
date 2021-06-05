@@ -235,7 +235,7 @@ blg_culture_west_african = {
 
 # Uses West/South-Slavic headgear rules.
 blg_culture_west_slavic = {
-	always = no
+	culture = nord
 }
 
 ### Portrait overrides:

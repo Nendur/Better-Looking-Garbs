@@ -1,170 +1,139 @@
-# p12 mask for the disfigured
+# p12 Mask for the disfigured.
 12 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 100
-		modifier = {
-			factor = 0
-			OR = {
-				AND = {
-					trait = disfigured
-					NOR = {
-						has_game_rule = { name = blg_wounds value = nomasks }
-						has_game_rule = { name = blg_wounds value = nowounds }
-						has_game_rule = { name = blg_wounds value = off }
-					}
-				}
-				has_character_modifier = attending_masquerade
-				has_character_modifier = forced_mask
-				has_character_modifier = golden_mask
-				has_character_modifier = random_mask
-				wearing_asshai_mask_trigger = yes
-				wearing_shadowlander_mask_trigger = yes
-				trait = shadowbinder
-				AND = {
-					in_command = yes
-					has_character_modifier = battle_mask
-					is_member_of_any_warrior_lodge_trigger = yes
-				}
-			}
+
+		trigger = {
 			NAND = {
 				is_priest = yes
 				religion = shadowbinders
 			}
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_mask value = 15 } } }
+				NOR = {
+					has_character_modifier = random_mask
+					has_character_modifier = golden_mask
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+					wearing_asshai_mask_trigger = yes
+					wearing_shadowlander_mask_trigger = yes
+					trait = shadowbinder
+					AND = {
+						in_command = yes
+						has_character_modifier = battle_mask
+						is_member_of_any_warrior_lodge_trigger = yes
+					}
+				}
+			}
 		}
 	}
 
-	1 = { # mask 1 bone
+	1 = { # a - Mask 1 bone
 		factor = 1
-		modifier = {
-			factor = 0
+
+		trigger = {
 			OR = {
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				blg_clothes_common = yes
 				NOR = {
-					is_tribal = yes
-					is_nomadic = yes
-					culture = moon_clansman
-					culture = skagosi
-					culture = thenn
-					culture_group = free_folk
-					culture = brindlemen
-					culture = lhazareen
-					culture_group = further_east
-				}
-				has_character_modifier = golden_mask
-				wearing_asshai_mask_trigger = yes
-				trait = shadowbinder
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
+					has_character_modifier = golden_mask
+					wearing_asshai_mask_trigger = yes
+					trait = shadowbinder
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 1 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 1 }
 			}
 		}
 	}
 
-	2 = { # mask 2 silver
+	2 = { # b - Mask 2 silver
 		factor = 1
-		modifier = {
-			factor = 0
+
+		trigger = {
 			OR = {
-				AND = {
-					is_landed = no
-					is_married = no
-				}
-				AND = {
-					is_landed = yes
-					NOT = { higher_tier_than = DUKE }
-				}
-				AND = {
-					is_landed = no
-					is_married = yes
-					spouse = { NOT = { higher_tier_than = DUKE } }
-				}
-				is_tribal = yes
-				is_nomadic = yes
-				culture = moon_clansman
-				culture = skagosi
-				culture = thenn
-				culture_group = free_folk
-				culture = brindlemen
-				culture = lhazareen
-				culture_group = further_east
-				has_character_modifier = golden_mask
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
+				trait = shadowbinder
+				wearing_asshai_mask_trigger = yes
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				blg_headgear_duke = yes
+				has_tribal_or_nomadic_government_trigger = no
+				NOR = {
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
+					has_character_modifier = golden_mask
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 2 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 2 }
 			}
 		}
 	}
 
-	3 = { # mask 3 iron
+	3 = { # c - Mask 3 iron
 		factor = 1
-		modifier = {
-			factor = 0
+
+		trigger = {
 			OR = {
-				AND = {
-					is_landed = yes
-					higher_tier_than = DUKE
-				}
-				AND = {
-					is_landed = no
-					is_married = yes
-					spouse = { higher_tier_than = DUKE }
-				}
-				is_tribal = yes
-				is_nomadic = yes
-				culture = moon_clansman
-				culture = skagosi
-				culture = thenn
-				culture_group = free_folk
-				culture = brindlemen
-				culture = lhazareen
-				culture_group = further_east
-				has_character_modifier = golden_mask
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
+				trait = shadowbinder
+				wearing_asshai_mask_trigger = yes
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				blg_royalty = no
+				has_tribal_or_nomadic_government_trigger = no
+				NOR = {
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
+					has_character_modifier = golden_mask
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 3 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 3 }
 			}
 		}
 	}
 
-	4 = { # mask 4 bone - blue stripes
+	4 = { # d - Mask 4 bone - blue stripes
 		factor = 1
-		modifier = {
-			factor = 0
+
+		trigger = {
 			OR = {
-				NOR = {
-					is_tribal = yes
-					is_nomadic = yes
-					is_tribal = yes
-					is_nomadic = yes
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
+					trait = lunatic
+					trait = possessed
+					trait = mystic
 					culture = moon_clansman
 					culture = skagosi
 					culture = thenn
@@ -172,40 +141,40 @@
 					culture = brindlemen
 					culture = lhazareen
 					culture_group = further_east
-					trait = lunatic
-					trait = possessed
-					trait = mystic
 				}
-				has_character_modifier = golden_mask
-				wearing_asshai_mask_trigger = yes
-				trait = shadowbinder
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
+				NOR = {
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
+					wearing_asshai_mask_trigger = yes
+					trait = shadowbinder
+					has_character_modifier = golden_mask
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 4 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 4 }
 			}
 		}
 	}
 
-	5 = { # mask 5 bone - orange stripes
+	5 = { # e - Mask 5 bone - orange stripes
 		factor = 1
-		modifier = {
-			factor = 0
+
+		trigger = {
 			OR = {
-				NOR = {
-					is_tribal = yes
-					is_nomadic = yes
-					is_tribal = yes
-					is_nomadic = yes
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
+					trait = lunatic
+					trait = possessed
+					trait = mystic
 					culture = moon_clansman
 					culture = skagosi
 					culture = thenn
@@ -213,142 +182,40 @@
 					culture = brindlemen
 					culture = lhazareen
 					culture_group = further_east
-					trait = lunatic
-					trait = possessed
-					trait = mystic
 				}
-				has_character_modifier = golden_mask
-				wearing_asshai_mask_trigger = yes
-				trait = shadowbinder
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
+				NOR = {
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
+					wearing_asshai_mask_trigger = yes
+					trait = shadowbinder
+					has_character_modifier = golden_mask
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 5 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 5 }
 			}
 		}
 	}
 
-	6 = { # mask 6 bone - red dots
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				has_character_modifier = golden_mask
-				wearing_asshai_mask_trigger = yes
-				trait = shadowbinder
-			}
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				is_tribal = yes
-				is_nomadic = yes
-				culture = moon_clansman
-				culture = skagosi
-				culture = thenn
-				culture_group = free_folk
-				culture = brindlemen
-				culture = lhazareen
-				culture_group = further_east
-				trait = lunatic
-				trait = possessed
-				trait = mystic
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
-				}
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 6 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 6 }
-			}
-		}
-	}
+	6 = { # f - Mask 6 bone - red dots
+		factor = 2
 
-	7 = { # mask 7 bone - black stripes
-		factor = 1
-		modifier = {
-			factor = 0
+		trigger = {
 			OR = {
-				has_character_modifier = golden_mask
-				wearing_asshai_mask_trigger = yes
-				trait = shadowbinder
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
 			}
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				is_tribal = yes
-				is_nomadic = yes
-				culture = moon_clansman
-				culture = skagosi
-				culture = thenn
-				culture_group = free_folk
-				culture = brindlemen
-				culture = lhazareen
-				culture_group = further_east
-				trait = lunatic
-				trait = possessed
-				trait = mystic
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
-				}
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 7 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 7 }
-			}
-		}
-	}
 
-	8 = { # mask 8 bone - red stripes/eyes #AGOT- RED LACQUER MASK
-		factor = 1
-		modifier = {
-			factor = 0
-			NOR = {
-				wearing_shadowlander_mask_trigger = yes
-				wearing_asshai_mask_trigger = yes
-				trait = shadowbinder
-			}
-		}
-		modifier = {
-			factor = 0
-			has_character_modifier = golden_mask
-		}
-		modifier = {
-			factor = 100
-			wearing_shadowlander_mask_trigger = yes
-		}
-	}
-
-	9 = { # mask 9 bone - black eyes/lightning
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				NOR = {
-					is_tribal = yes
-					is_nomadic = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
+					trait = lunatic
+					trait = possessed
+					trait = mystic
 					culture = moon_clansman
 					culture = skagosi
 					culture = thenn
@@ -356,297 +223,257 @@
 					culture = brindlemen
 					culture = lhazareen
 					culture_group = further_east
+				}
+				NOR = {
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
+					wearing_asshai_mask_trigger = yes
+					trait = shadowbinder
+					has_character_modifier = golden_mask
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_mask value = 6 }
+			}
+		}
+	}
+
+	7 = { # g - Mask 7 bone - black stripes
+		factor = 2
+
+		trigger = {
+			OR = {
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
 					trait = lunatic
 					trait = possessed
 					trait = mystic
+					culture = moon_clansman
+					culture = skagosi
+					culture = thenn
+					culture_group = free_folk
+					culture = brindlemen
+					culture = lhazareen
+					culture_group = further_east
 				}
-				has_character_modifier = golden_mask
-				wearing_asshai_mask_trigger = yes
-				trait = shadowbinder
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
+				NOR = {
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
+					wearing_asshai_mask_trigger = yes
+					trait = shadowbinder
+					has_character_modifier = golden_mask
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 9 } }
+			trigger_else = {
+				is_variable_equal = { which = ca_mask value = 7 }
+			}
 		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+	}
+
+	8 = { # h - AGOT RED LACQUER MASK
+		factor = 100
+
+		trigger = {
+			wearing_shadowlander_mask_trigger = yes
+		}
+	}
+
+	9 = { # i - Mask 9 bone - black eyes/lightning
+		factor = 1
+
+		trigger = {
+			OR = {
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
+					trait = lunatic
+					trait = possessed
+					trait = mystic
+					culture = moon_clansman
+					culture = skagosi
+					culture = thenn
+					culture_group = free_folk
+					culture = brindlemen
+					culture = lhazareen
+					culture_group = further_east
+				}
+				NOR = {
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
+					wearing_asshai_mask_trigger = yes
+					trait = shadowbinder
+					has_character_modifier = golden_mask
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 9 }
 			}
 		}
 	}
 
-	10 = { # mask 10 - decorated silver
+	10 = { # j - Mask 10 - decorated silver
 		factor = 1
-		modifier = {
-			factor = 0
+
+		trigger = {
 			OR = {
-				AND = {
-					is_landed = no
-					is_married = no
-				}
-				AND = {
-					is_landed = yes
-					NOT = { higher_tier_than = DUKE }
-				}
-				AND = {
-					is_landed = no
-					is_married = yes
-					spouse = { NOT = { higher_tier_than = DUKE } }
-				}
-				is_tribal = yes
-				is_nomadic = yes
-				culture = moon_clansman
-				culture = skagosi
-				culture = thenn
-				culture_group = free_folk
-				culture = brindlemen
-				culture = lhazareen
-				culture_group = further_east
-				has_character_modifier = golden_mask
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
+				trait = shadowbinder
+				wearing_asshai_mask_trigger = yes
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				blg_royalty = yes
+				has_tribal_or_nomadic_government_trigger = no
+				NOR = {
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
+					has_character_modifier = golden_mask
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 10 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 10 }
 			}
 		}
 	}
 
-	11 = { # mask 11 - decorated gold
+	11 = { # k - Mask 11 - decorated gold
 		factor = 2
-		modifier = {
-			factor = 0
+
+		trigger = {
 			OR = {
-				AND = {
-					is_landed = no
-					is_married = no
-				}
-				AND = {
-					is_landed = yes
-					NOT = { higher_tier_than = DUKE }
-				}
-				AND = {
-					is_landed = no
-					is_married = yes
-					spouse = { NOT = { higher_tier_than = DUKE } }
-				}
-				is_tribal = yes
-				is_nomadic = yes
-				culture = moon_clansman
-				culture = skagosi
-				culture = thenn
-				culture_group = free_folk
-				culture = brindlemen
-				culture = lhazareen
-				culture_group = further_east
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
+				trait = shadowbinder
+				wearing_asshai_mask_trigger = yes
+				has_character_modifier = golden_mask
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					AND = {
+						blg_royalty = yes
+						has_tribal_or_nomadic_government_trigger = no
+
+						OR = {
+							trait = greedy
+							trait = proud
+							trait = ambitious
+							trait = envious
+						}
+					}
+					has_character_modifier = golden_mask
 				}
 			}
-			NOT = { has_character_modifier = golden_mask }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 11 } }
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				trait = greedy
-				trait = proud
-				trait = ambitious
-				trait = envious
+			trigger_else = {
+				is_variable_equal = { which = ca_mask value = 11 }
 			}
-			NOT = { has_character_modifier = golden_mask }
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 11 } }
 		}
+
 		modifier = {
-			factor = 1000
-			has_character_modifier = golden_mask
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 10 }
-			}
+			factor = 5
+			controls_religion = yes
 		}
 	}
 
-	12 = { # mask 12 - full mask 1 leather
+	12 = { # l - Mask 12 - full mask 1 leather
 		factor = 1
-		modifier = {
-			factor = 0
+
+		trigger = {
 			OR = {
-				AND = {
-					is_landed = no
-					is_married = no
-				}
-				AND = {
-					is_landed = yes
-					NOT = { higher_tier_than = DUKE }
-				}
-				AND = {
-					is_landed = no
-					is_married = yes
-					spouse = { NOT = { higher_tier_than = DUKE } }
-				}
-				has_character_modifier = golden_mask
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
+				trait = shadowbinder
+				wearing_asshai_mask_trigger = yes
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				has_tribal_or_nomadic_government_trigger = no
+				NOR = {
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
+					has_character_modifier = golden_mask
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 12 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 12 }
 			}
 		}
 	}
 
-	13 = { # mask 13 - full mask 2 bone
+	13 = { # m - Mask 13 - full mask 2 bone
 		factor = 1
-		modifier = {
-			factor = 0
+
+		trigger = {
 			OR = {
-				AND = {
-					is_landed = no
-					is_married = no
-				}
-				AND = {
-					is_landed = yes
-					NOT = { higher_tier_than = DUKE }
-				}
-				AND = {
-					is_landed = no
-					is_married = yes
-					spouse = { NOT = { higher_tier_than = DUKE } }
-				}
-				has_character_modifier = golden_mask
-				wearing_asshai_mask_trigger = yes
 				trait = shadowbinder
-				AND = {
-					trait = proud
-					this_is_warrior_culture_trigger = yes
+				wearing_asshai_mask_trigger = yes
+				has_character_modifier = random_mask
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+			}
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				has_tribal_or_nomadic_government_trigger = no
+				NOR = {
+					AND = {
+						trait = proud
+						this_is_warrior_culture_trigger = yes
+					}
+					has_character_modifier = golden_mask
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 13 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 13 }
 			}
 		}
 	}
 
-	14 = { # mask 14 - metal helm
+	14 = { # n - Mask 14 - metal helm
 		factor = 10
-		modifier = {
-			factor = 0
-			OR = {
-				has_character_modifier = golden_mask
-				wearing_asshai_mask_trigger = yes
-				trait = shadowbinder
-			}
-		}
-		modifier = {
-			factor = 0
-			in_command = no
-			NOT = { government = military_command_government }
-			NAND = {
-				trait = undead
-				combat_rating = 10
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 14 } }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				#is_female = yes
-				trait = knight		#Helm covers face
-				trait = kingsguard	#Helm covers face
-				trait = maester
-				trait = archmaester
-				AND = {
-					is_alive = no
-					NOT = { government = military_command_government }
-					NOT = { death_reason = death_battle }
-				}
-				higher_real_tier_than = DUKE
-				AND = {
-					tier = DUKE
-					demesne_size = 1
-					NOT = { government = military_command_government }
-					NOT = { trait = nightswatch }
-					NOT = { trait = kingsguard }
-					NOT = {
-						primary_title = {
-							OR = {
-								mercenary = yes
-								holy_order = yes
-							}
-						}
-					}
-				}
-			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 14 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 14 }
-			}
-		}
-	}
 
-	15 = { # mask 15 - no mask
-		factor = 60
-		modifier = {
-			factor = 0
-			OR = {
-				has_character_modifier = attending_masquerade
-				has_character_modifier = forced_mask
-				has_character_modifier = golden_mask
-				has_character_modifier = random_mask
-				wearing_asshai_mask_trigger = yes
-				wearing_shadowlander_mask_trigger = yes
-				trait = shadowbinder
-				AND = {
-					in_command = yes
-					has_character_modifier = battle_mask
-					is_member_of_any_warrior_lodge_trigger = yes
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				blg_clothes_military = yes
+				NOR = {
+					wearing_asshai_mask_trigger = yes
+					trait = shadowbinder
+					has_character_modifier = golden_mask
 				}
 			}
-			NAND = { is_alive = yes is_variable_equal = { which = ca_mask value = 15 } }
-		}
-		modifier = {
-			factor = 0
-			is_alive = yes
-			NOR = {
-				is_variable_equal = { which = ca_mask value = 0 }
-				is_variable_equal = { which = ca_mask value = 15 }
+			trigger_else = {
+				is_variable_equal = { which = ca_mask value = 14 }
 			}
 		}
 	}

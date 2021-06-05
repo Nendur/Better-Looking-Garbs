@@ -2,6 +2,7 @@
 2 = {
 	0 = { # 0 - blank
 		factor = 1
+
 		modifier = {
 			factor = 100
 			prisoner = yes
@@ -29,6 +30,7 @@
 
 	2 = { # b - Holy Banner of Mohammad
 		factor = 100
+
 		trigger = {
 			blg_artifact_banner_mohammad = yes
 		}
@@ -36,6 +38,7 @@
 
 	3 = { # c - Derafsh Kaviani
 		factor = 100
+
 		trigger = {
 			blg_artifact_derafsh_kaviani = yes
 		}
@@ -43,6 +46,7 @@
 
 	4 = { # d - Cat
 		factor = 10
+
 		trigger = {
 			OR = {
 				blg_animal_cat = yes
@@ -63,6 +67,7 @@
 
 	5 = { # e - Cat
 		factor = 10
+
 		trigger = {
 			blg_animal_cat = yes
 
@@ -80,6 +85,7 @@
 
 	6 = { # f - Cat
 		factor = 10
+
 		trigger = {
 			blg_animal_cat = yes
 
@@ -97,6 +103,7 @@
 
 	7 = { # g - Dog
 		factor = 10
+
 		trigger = {
 			OR = {
 				any_artifact = {
@@ -117,6 +124,7 @@
 
 	8 = { # h - Dog
 		factor = 10
+
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -136,6 +144,7 @@
 
 	9 = { # i - Dog
 		factor = 10
+
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -155,6 +164,7 @@
 
 	10 = { # j - Dog
 		factor = 10
+
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -174,6 +184,7 @@
 
 	11 = { # k - Owl
 		factor = 10
+
 		trigger = {
 			blg_animal_owl = yes
 
@@ -187,6 +198,7 @@
 
 	12 = { # l - Hedgehog
 		factor = 10
+
 		trigger = {
 			blg_animal_hedgehog = yes
 
@@ -197,6 +209,7 @@
 
 	13 = { # m - Otter
 		factor = 10
+
 		trigger = {
 			blg_animal_otter = yes
 
@@ -207,6 +220,7 @@
 
 	14 = { # n - Parrot
 		factor = 10
+
 		trigger = {
 			blg_animal_parrot = yes
 
@@ -217,6 +231,7 @@
 
 	15 = { # o - Wolf
 		factor = 10
+
 		trigger = {
 			blg_animal_wolf = yes
 
@@ -226,6 +241,7 @@
 
 	16 = { # p - Boar
 		factor = 10
+
 		trigger = {
 			blg_animal_boar = yes
 
@@ -235,6 +251,7 @@
 
 	17 = { # q - Bat
 		factor = 10
+
 		trigger = {
 			blg_animal_bat = yes
 
@@ -244,6 +261,7 @@
 
 	18 = { # r - Frog
 		factor = 10
+
 		trigger = {
 			blg_animal_frog = yes
 
@@ -254,6 +272,7 @@
 
 	19 = { # s - Monkey
 		factor = 10
+
 		trigger = {
 			blg_animal_monkey = yes
 
@@ -264,6 +283,7 @@
 
 	20 = { # t - Ape
 		factor = 10
+
 		trigger = {
 			blg_animal_ape = yes
 
@@ -273,6 +293,7 @@
 
 	21 = { # u - Vulture
 		factor = 10
+
 		trigger = {
 			blg_animal_vulture = yes
 
@@ -282,6 +303,7 @@
 
 	22 = { # v - Fox
 		factor = 10
+
 		trigger = {
 			blg_animal_fox = yes
 
@@ -292,6 +314,7 @@
 
 	23 = { # w - Imp
 		factor = 10
+
 		trigger = {
 			blg_animal_imp = yes
 

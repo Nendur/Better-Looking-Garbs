@@ -2,18 +2,20 @@
 4 = {
 	0 = { # 0 - Beardless when young
 		factor = 40
+
 		trigger = {
-			OR = {
-				practical_age < 22
-				trait = eunuch
-				AND = {
-					blg_beard_short = yes
-					age < 50
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				OR = {
+					practical_age < 22
+					trait = eunuch
+					AND = {
+						blg_beard_short = yes
+						age < 50
+					}
 				}
-				is_variable_equal = { which = ca_beard value = 1 }
 			}
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_beard value = 1 }
 			}
 		}
@@ -31,528 +33,703 @@
 
 	1 = { # a - Light beard
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_african = no
-			blg_beard_bodpa = no
-			blg_beard_chinese = no
-			blg_beard_cuman = no
-			blg_beard_easternslavic = no
-			blg_beard_egyptian = no
-			blg_beard_frankish = no
-			blg_beard_indian = no
-			blg_beard_muslim = no
-			blg_beard_roman = no
-			blg_beard_southern = no
-			blg_beard_southindian = no
-			blg_beard_southslavic = no
-			blg_beard_turkish = no
-			blg_beard_ugric = no
-			blg_beard_westernslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 2 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_byzantine = no
-			blg_beard_celtic = no
-			blg_beard_english = no
-			blg_beard_german = no
-			blg_beard_persian = no
-			blg_beard_ugric = no
-			blg_beard_mongol = no
-			NOT = { is_variable_equal = { which = ca_beard value = 2 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 2 } }
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_frankish = yes
+						blg_beard_southern = yes
+						blg_beard_southslavic = yes
+						blg_beard_westernslavic = yes
+						blg_beard_ugric = yes
+						blg_beard_muslim = yes
+						blg_beard_egyptian = yes
+						blg_beard_african = yes
+						blg_beard_cuman = yes
+						blg_beard_indian = yes
+						blg_beard_southindian = yes
+						blg_beard_turkish = yes
+						blg_beard_easternslavic = yes
+						blg_beard_roman = yes
+						blg_beard_bodpa = yes
+						blg_beard_chinese = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_byzantine = yes
+						blg_beard_english = yes
+						blg_beard_german = yes
+						blg_beard_celtic = yes
+						blg_beard_persian = yes
+						blg_beard_mongol = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_beard value = 2 }
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_norse = yes
+				blg_beard_celtic = yes
+				blg_beard_persian = yes
 			}
 		}
 	}
 
 	2 = { # b - Beard
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_beard_celtic = yes
-			NOR = {
-				blg_religion_pagan = yes
-				has_tribal_or_nomadic_government_trigger = yes
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_beard_celtic = no
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_english = yes
+						blg_beard_frankish = yes
+						blg_beard_norse = yes
+						blg_beard_westernslavic = yes
+						blg_beard_african = yes
+						blg_beard_cuman = yes
+						blg_beard_persian = yes
+						blg_beard_chinese = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_byzantine = yes
+						blg_beard_german = yes
+						blg_beard_southern = yes
+						blg_beard_ugric = yes
+						blg_beard_westernslavic = yes
+						blg_beard_easternslavic = yes
+						blg_beard_celtic = yes
+						blg_beard_muslim = yes
+						blg_beard_egyptian = yes
+						blg_beard_indian = yes
+						blg_beard_southindian = yes
+						blg_beard_turkish = yes
+						blg_beard_mongol = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_beard value = 3 }
 			}
 		}
 
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_african = no
-			blg_beard_norse = no
-			blg_beard_chinese = no
-			blg_beard_cuman = no
-			blg_beard_english = no
-			blg_beard_frankish = no
-			blg_beard_persian = no
-			blg_beard_westernslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 3 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_byzantine = no
-			blg_beard_celtic = no
-			blg_beard_egyptian = no
-			blg_beard_german = no
-			blg_beard_indian = no
-			blg_beard_muslim = no
-			blg_beard_southern = no
-			blg_beard_southindian = no
-			blg_beard_turkish = no
-			blg_beard_ugric = no
-			blg_beard_westernslavic = no
-			blg_beard_easternslavic = no
-			blg_beard_mongol = no
-			NOT = { is_variable_equal = { which = ca_beard value = 3 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 3 } }
-		}
-
-		trigger = {
+		modifier = { # Uncouth hairstyle
+			factor = 4
 			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 3 }
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_southern = yes
+				blg_beard_egyptian = yes
+				blg_beard_turkish = yes
+				blg_beard_easternslavic = yes
+				blg_beard_mongol = yes
 			}
 		}
 	}
 
 	3 = { # c - Beard
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_african = no
-			blg_beard_bodpa = no
-			blg_beard_celtic = no
-			blg_beard_chinese = no
-			blg_beard_cuman = no
-			blg_beard_easternslavic = no
-			blg_beard_egyptian = no
-			blg_beard_frankish = no
-			blg_beard_indian = no
-			blg_beard_muslim = no
-			blg_beard_persian = no
-			blg_beard_roman = no
-			blg_beard_southindian = no
-			blg_beard_southslavic = no
-			blg_beard_westernslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 4 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_byzantine = no
-			blg_beard_english = no
-			blg_beard_german = no
-			blg_beard_southern = no
-			blg_beard_turkish = no
-			blg_beard_ugric = no
-			NOT = { is_variable_equal = { which = ca_beard value = 4 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 4 } }
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_frankish = yes
+						blg_beard_southslavic = yes
+						blg_beard_westernslavic = yes
+						blg_beard_easternslavic = yes
+						blg_beard_celtic = yes
+						blg_beard_muslim = yes
+						blg_beard_egyptian = yes
+						blg_beard_african = yes
+						blg_beard_cuman = yes
+						blg_beard_persian = yes
+						blg_beard_indian = yes
+						blg_beard_southindian = yes
+						blg_beard_bodpa = yes
+						blg_beard_chinese = yes
+						blg_beard_roman = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_byzantine = yes
+						blg_beard_english = yes
+						blg_beard_german = yes
+						blg_beard_southern = yes
+						blg_beard_turkish = yes
+						blg_beard_ugric = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_beard value = 4 }
 			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			blg_beard_ugric = yes
 		}
 	}
 
 	4 = { # d - Small mustache and beard
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_african = no
-			blg_beard_bodpa = no
-			blg_beard_celtic = no
-			blg_beard_cuman = no
-			blg_beard_easternslavic = no
-			blg_beard_egyptian = no
-			blg_beard_frankish = no
-			blg_beard_german = no
-			blg_beard_muslim = no
-			blg_beard_roman = no
-			blg_beard_southindian = no
-			blg_beard_southslavic = no
-			blg_beard_turkish = no
-			NOT = { is_variable_equal = { which = ca_beard value = 5 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_norse = no
-			blg_beard_chinese = no
-			blg_beard_english = no
-			blg_beard_persian = no
-			blg_beard_ugric = no
-			blg_beard_mongol = no
-			NOT = { is_variable_equal = { which = ca_beard value = 5 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 5 } }
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_frankish = yes
+						blg_beard_german = yes
+						blg_beard_southslavic = yes
+						blg_beard_celtic = yes
+						blg_beard_easternslavic = yes
+						blg_beard_muslim = yes
+						blg_beard_egyptian = yes
+						blg_beard_african = yes
+						blg_beard_cuman = yes
+						blg_beard_turkish = yes
+						blg_beard_southindian = yes
+						blg_beard_bodpa = yes
+						blg_beard_roman = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_english = yes
+						blg_beard_norse = yes
+						blg_beard_persian = yes
+						blg_beard_ugric = yes
+						blg_beard_chinese = yes
+						blg_beard_mongol = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_beard value = 5 }
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_byzantine = yes
+				blg_beard_persian = yes
+				blg_beard_ugric = yes
+				blg_beard_chinese = yes
 			}
 		}
 	}
 
 	5 = { # e - Spanish mustache
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_byzantine = no
-			blg_beard_norse = no
-			blg_beard_cuman = no
-			blg_beard_easternslavic = no
-			blg_beard_frankish = no
-			blg_beard_german = no
-			blg_beard_indian = no
-			blg_beard_persian = no
-			blg_beard_southslavic = no
-			blg_beard_turkish = no
-			NOT = { is_variable_equal = { which = ca_beard value = 6 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_african = no
-			blg_beard_chinese = no
-			blg_beard_muslim = no
-			blg_beard_roman = no
-			blg_beard_southindian = no
-			blg_beard_ugric = no
-			blg_beard_mongol = no
-			NOT = { is_variable_equal = { which = ca_beard value = 6 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 6 } }
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_byzantine = yes
+						blg_beard_frankish = yes
+						blg_beard_german = yes
+						blg_beard_norse = yes
+						blg_beard_southslavic = yes
+						blg_beard_easternslavic = yes
+						blg_beard_indian = yes
+						blg_beard_persian = yes
+						blg_beard_turkish = yes
+						blg_beard_cuman = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_african = yes
+						blg_beard_muslim = yes
+						blg_beard_southindian = yes
+						blg_beard_ugric = yes
+						blg_beard_roman = yes
+						blg_beard_chinese = yes
+						blg_beard_mongol = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_beard value = 6 }
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_roman = yes
+				blg_beard_mongol = yes
 			}
 		}
 	}
 
 	6 = { # f - Beard no mustache
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_bodpa = no
-			blg_beard_norse = no
-			blg_beard_frankish = no
-			blg_beard_german = no
-			blg_beard_southslavic = no
-			blg_beard_westernslavic = no
-			blg_beard_mongol = no
-			NOT = { is_variable_equal = { which = ca_beard value = 7 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_african = no
-			blg_beard_byzantine = no
-			blg_beard_celtic = no
-			blg_beard_chinese = no
-			blg_beard_cuman = no
-			blg_beard_indian = no
-			blg_beard_norse = no
-			blg_beard_persian = no
-			blg_beard_southern = no
-			blg_beard_southindian = no
-			blg_beard_turkish = no
-			blg_beard_ugric = no
-			blg_beard_easternslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 7 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 7 } }
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_frankish = yes
+						blg_beard_german = yes
+						blg_beard_norse = yes
+						blg_beard_southslavic = yes
+						blg_beard_westernslavic = yes
+						blg_beard_bodpa = yes
+						blg_beard_mongol = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_african = yes
+						blg_beard_byzantine = yes
+						blg_beard_celtic = yes
+						blg_beard_cuman = yes
+						blg_beard_indian = yes
+						blg_beard_norse = yes
+						blg_beard_persian = yes
+						blg_beard_southern = yes
+						blg_beard_southindian = yes
+						blg_beard_turkish = yes
+						blg_beard_ugric = yes
+						blg_beard_easternslavic = yes
+						blg_beard_chinese = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_beard value = 7 }
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_byzantine = yes
+				blg_beard_southern = yes
+				blg_beard_norse = yes
+				blg_beard_celtic = yes
+				blg_beard_cuman = yes
+				blg_beard_turkish = yes
+				blg_beard_easternslavic = yes
+				blg_beard_southindian = yes
+				blg_beard_roman = yes
 			}
 		}
 	}
 
 	7 = { # g - Evil stache
 		factor = 1
-		modifier = {
-			factor = 0
-			blg_beard_celtic = yes
-			NOR = {
-				blg_religion_pagan = yes
-				has_tribal_or_nomadic_government_trigger = yes
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_beard_celtic = no
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_african = yes
+						blg_beard_byzantine = yes
+						blg_beard_cuman = yes
+						blg_beard_easternslavic = yes
+						blg_beard_southindian = yes
+						blg_beard_turkish = yes
+						blg_beard_ugric = yes
+						blg_beard_bodpa = yes
+						blg_beard_roman = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_english = yes
+						blg_beard_norse = yes
+						blg_beard_southern = yes
+						blg_beard_celtic = yes
+						blg_beard_muslim = yes
+						blg_beard_egyptian = yes
+						blg_beard_persian = yes
+						blg_beard_chinese = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_beard value = 8 }
 			}
 		}
 
 		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_african = no
-			blg_beard_bodpa = no
-			blg_beard_byzantine = no
-			blg_beard_cuman = no
-			blg_beard_easternslavic = no
-			blg_beard_roman = no
-			blg_beard_southindian = no
-			blg_beard_turkish = no
-			blg_beard_ugric = no
-			NOT = { is_variable_equal = { which = ca_beard value = 8 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_egyptian = no
-			blg_beard_celtic = no
-			blg_beard_chinese = no
-			blg_beard_english = no
-			blg_beard_muslim = no
-			blg_beard_persian = no
-			blg_beard_norse = no
-			blg_beard_southern = no
-			NOT = { is_variable_equal = { which = ca_beard value = 8 } }
-		}
-
-		modifier = {
 			factor = 50
-			blg_beard_mongol = yes
 			blg_beard_uncommon = yes
+			blg_beard_mongol = yes
 		}
 
-		trigger = {
+		modifier = { # Uncouth hairstyle
+			factor = 4
 			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 8 }
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_english = yes
+				blg_beard_frankish = yes
+				blg_beard_roman = yes
 			}
 		}
 	}
 
 	8 = { # h - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			blg_beard_mongol = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_muslim = no
-			blg_beard_bodpa = no
-			blg_beard_celtic = no
-			blg_beard_chinese = no
-			blg_beard_persian = no
-			blg_beard_southindian = no
-			blg_beard_turkish = no
-			blg_beard_ugric = no
-			NOT = { is_variable_equal = { which = ca_beard value = 9 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_african = no
-			blg_beard_byzantine = no
-			blg_beard_cuman = no
-			blg_beard_english = no
-			blg_beard_frankish = no
-			blg_beard_indian = no
-			blg_beard_norse = no
-			blg_beard_roman = no
-			blg_beard_southern = no
-			blg_beard_southslavic = no
-			blg_beard_turkish = no
-			blg_beard_westernslavic = no
-			blg_beard_easternslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 9 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 9 } }
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
+			blg_beard_mongol = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_muslim = yes
+						blg_beard_turkish = yes
+						blg_beard_ugric = yes
+						blg_beard_celtic = yes
+						blg_beard_persian = yes
+						blg_beard_southindian = yes
+						blg_beard_bodpa = yes
+						blg_beard_chinese = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_english = yes
+						blg_beard_frankish = yes
+						blg_beard_byzantine = yes
+						blg_beard_norse = yes
+						blg_beard_southern = yes
+						blg_beard_southslavic = yes
+						blg_beard_westernslavic = yes
+						blg_beard_easternslavic = yes
+						blg_beard_african = yes
+						blg_beard_cuman = yes
+						blg_beard_indian = yes
+						blg_beard_turkish = yes
+						blg_beard_roman = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_beard value = 9 }
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_english = yes
+				blg_beard_frankish = yes
+				blg_beard_norse = yes
+				blg_beard_egyptian = yes
+				blg_beard_ugric = yes
+				blg_beard_easternslavic = yes
+				blg_beard_indian = yes
+				blg_beard_turkish = yes
+				blg_beard_roman = yes
 			}
 		}
 	}
 
 	9 = { # i - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			blg_beard_mongol = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_african = no
-			blg_beard_bodpa = no
-			blg_beard_celtic = no
-			blg_beard_chinese = no
-			blg_beard_indian = no
-			blg_beard_southern = no
-			blg_beard_southindian = no
-			NOT = { is_variable_equal = { which = ca_beard value = 10 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_egyptian = no
-			blg_beard_celtic = no
-			blg_beard_english = no
-			blg_beard_frankish = no
-			blg_beard_german = no
-			blg_beard_muslim = no
-			blg_beard_norse = no
-			blg_beard_roman = no
-			blg_beard_southslavic = no
-			blg_beard_ugric = no
-			blg_beard_westernslavic = no
-			blg_beard_easternslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 10 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 10 } }
-		}
 
 		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
+			blg_beard_mongol = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_southern = yes
+						blg_beard_african = yes
+						blg_beard_celtic = yes
+						blg_beard_indian = yes
+						blg_beard_southindian = yes
+						blg_beard_bodpa = yes
+						blg_beard_chinese = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_english = yes
+						blg_beard_frankish = yes
+						blg_beard_german = yes
+						blg_beard_celtic = yes
+						blg_beard_norse = yes
+						blg_beard_southslavic = yes
+						blg_beard_ugric = yes
+						blg_beard_westernslavic = yes
+						blg_beard_easternslavic = yes
+						blg_beard_muslim = yes
+						blg_beard_egyptian = yes
+						blg_beard_roman = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_beard value = 10 }
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_german = yes
+				blg_beard_muslim = yes
+				blg_beard_egyptian = yes
+				blg_beard_southslavic = yes
+				blg_beard_easternslavic = yes
+				blg_beard_westernslavic = yes
 			}
 		}
 	}
 
 	10 = { # j - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			blg_beard_mongol = yes
-		}
 
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
+		trigger = {
+			blg_beard_mongol = no
 
-			blg_beard_celtic = no
-			blg_beard_byzantine = no
-			blg_beard_cuman = no
-			blg_beard_easternslavic = no
-			blg_beard_egyptian = no
-			blg_beard_indian = no
-			blg_beard_persian = no
-			blg_beard_roman = no
-			blg_beard_southern = no
-			blg_beard_southslavic = no
-			blg_beard_turkish = no
-			blg_beard_westernslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 11 } }
-		}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_byzantine = yes
+						blg_beard_southern = yes
+						blg_beard_celtic = yes
+						blg_beard_cuman = yes
+						blg_beard_easternslavic = yes
+						blg_beard_egyptian = yes
+						blg_beard_indian = yes
+						blg_beard_persian = yes
+						blg_beard_southslavic = yes
+						blg_beard_turkish = yes
+						blg_beard_westernslavic = yes
+						blg_beard_roman = yes
+					}
+				}
 
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_english = yes
+						blg_beard_frankish = yes
+						blg_beard_norse = yes
+						blg_beard_african = yes
+						blg_beard_southindian = yes
+						blg_beard_chinese = yes
+						blg_beard_roman = yes
+					}
+				}
 
-			blg_beard_african = no
-			blg_beard_chinese = no
-			blg_beard_english = no
-			blg_beard_frankish = no
-			blg_beard_norse = no
-			blg_beard_roman = no
-			blg_beard_southindian = no
-			NOT = { is_variable_equal = { which = ca_beard value = 11 } }
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_beard value = 11 }
+			}
 		}
 
 		modifier = {
@@ -565,116 +742,154 @@
 			}
 		}
 
-		trigger = {
+		modifier = { # Uncouth hairstyle
+			factor = 4
 			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 11 }
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_english = yes
+				blg_beard_german = yes
+				blg_beard_african = yes
+				blg_beard_southindian = yes
+				blg_beard_chinese = yes
 			}
 		}
 	}
 
 	11 = { # k - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			OR = {
-				blg_beard_celtic = yes
-				blg_beard_persian = yes
-				blg_beard_turkish = yes
-				blg_beard_mongol = yes
+
+		trigger = {
+			blg_beard_celtic = no
+			blg_beard_persian = no
+			blg_beard_turkish = no
+			blg_beard_mongol = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_english = yes
+						blg_beard_african = yes
+						blg_beard_norse = yes
+						blg_beard_cuman = yes
+						blg_beard_easternslavic = yes
+						blg_beard_ugric = yes
+						blg_beard_bodpa = yes
+						blg_beard_chinese = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_frankish = yes
+						blg_beard_german = yes
+						blg_beard_byzantine = yes
+						blg_beard_southslavic = yes
+						blg_beard_westernslavic = yes
+						blg_beard_muslim = yes
+						blg_beard_egyptian = yes
+						blg_beard_indian = yes
+						blg_beard_roman = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_beard value = 12 }
 			}
 		}
 
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_african = no
-			blg_beard_bodpa = no
-			blg_beard_norse = no
-			blg_beard_chinese = no
-			blg_beard_cuman = no
-			blg_beard_easternslavic = no
-			blg_beard_english = no
-			blg_beard_ugric = no
-			NOT = { is_variable_equal = { which = ca_beard value = 12 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_byzantine = no
-			blg_beard_egyptian = no
-			blg_beard_frankish = no
-			blg_beard_german = no
-			blg_beard_indian = no
-			blg_beard_muslim = no
-			blg_beard_roman = no
-			blg_beard_southslavic = no
-			blg_beard_westernslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 12 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 12 } }
-		}
-
-		trigger = {
+		modifier = { # Uncouth hairstyle
+			factor = 4
 			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 12 }
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_byzantine = yes
+				blg_beard_frankish = yes
+				blg_beard_german = yes
+				blg_beard_southslavic = yes
+				blg_beard_westernslavic = yes
+				blg_beard_muslim = yes
+				blg_beard_indian = yes
+				blg_beard_roman = yes
 			}
 		}
 	}
 
 	12 = { # l - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			OR = {
-				blg_beard_celtic = yes
-				blg_beard_persian = yes
-				blg_beard_turkish = yes
-				blg_beard_mongol = yes
+
+		trigger = {
+			blg_beard_celtic = no
+			blg_beard_persian = no
+			blg_beard_turkish = no
+			blg_beard_mongol = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_frankish = yes
+						blg_beard_byzantine = yes
+						blg_beard_southern = yes
+						blg_beard_southslavic = yes
+						blg_beard_westernslavic = yes
+						blg_beard_egyptian = yes
+						blg_beard_african = yes
+						blg_beard_cuman = yes
+						blg_beard_indian = yes
+						blg_beard_easternslavic = yes
+						blg_beard_roman = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_english = yes
+						blg_beard_german = yes
+						blg_beard_byzantine = yes
+						blg_beard_norse = yes
+						blg_beard_muslim = yes
+						blg_beard_southindian = yes
+						blg_beard_ugric = yes
+						blg_beard_bodpa = yes
+						blg_beard_chinese = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
 			}
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_african = no
-			blg_beard_byzantine = no
-			blg_beard_cuman = no
-			blg_beard_easternslavic = no
-			blg_beard_egyptian = no
-			blg_beard_frankish = no
-			blg_beard_indian = no
-			blg_beard_roman = no
-			blg_beard_southern = no
-			blg_beard_southslavic = no
-			blg_beard_westernslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 13 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_byzantine = no
-			blg_beard_chinese = no
-			blg_beard_english = no
-			blg_beard_german = no
-			blg_beard_muslim = no
-			blg_beard_norse = no
-			blg_beard_southindian = no
-			blg_beard_ugric = no
-			blg_beard_bodpa = no
-			NOT = { is_variable_equal = { which = ca_beard value = 13 } }
+			trigger_else = {
+				is_variable_equal = { which = ca_beard value = 13 }
+			}
 		}
 
 		modifier = {
@@ -683,149 +898,191 @@
 			blg_beard_indian = yes
 		}
 
-		trigger = {
+		modifier = { # Uncouth hairstyle
+			factor = 4
 			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 13 }
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_byzantine = yes
+				blg_beard_german = yes
+				blg_beard_ugric = yes
+				blg_beard_bodpa = yes
 			}
 		}
 	}
 
 	13 = { # m - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			OR = {
-				blg_beard_celtic = yes
-				blg_beard_persian = yes
-				blg_beard_turkish = yes
-				blg_beard_indian = yes
-				blg_beard_mongol = yes
+
+		trigger = {
+			blg_beard_celtic = no
+			blg_beard_persian = no
+			blg_beard_turkish = no
+			blg_beard_indian = no
+			blg_beard_mongol = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_beard_westernslavic = no
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_english = yes
+						blg_beard_german = yes
+						blg_beard_norse = yes
+						blg_beard_ugric = yes
+						blg_beard_muslim = yes
+						blg_beard_egyptian = yes
+						blg_beard_african = yes
+						blg_beard_southindian = yes
+						blg_beard_chinese = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_frankish = yes
+						blg_beard_southern = yes
+						blg_beard_southslavic = yes
+						blg_beard_westernslavic = yes
+						blg_beard_easternslavic = yes
+						blg_beard_cuman = yes
+						blg_beard_bodpa = yes
+						blg_beard_roman = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_beard value = 14 }
 			}
 		}
 
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_african = no
-			blg_beard_norse = no
-			blg_beard_chinese = no
-			blg_beard_egyptian = no
-			blg_beard_english = no
-			blg_beard_german = no
-			blg_beard_muslim = no
-			blg_beard_southindian = no
-			blg_beard_ugric = no
-			NOT = { is_variable_equal = { which = ca_beard value = 14 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_bodpa = no
-			blg_beard_cuman = no
-			blg_beard_frankish = no
-			blg_beard_roman = no
-			blg_beard_southern = no
-			blg_beard_southslavic = no
-			blg_beard_westernslavic = no
-			blg_beard_easternslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 14 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 14 } }
-		}
-
-		trigger = {
+		modifier = { # Uncouth hairstyle
+			factor = 4
 			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 14 }
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_southslavic = yes
+				blg_beard_westernslavic = yes
+				blg_beard_cuman = yes
+				blg_beard_bodpa = yes
 			}
 		}
 	}
 
 	14 = { # n - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			OR = {
-				blg_beard_celtic = yes
-				blg_beard_persian = yes
-				blg_beard_turkish = yes
-				blg_beard_indian = yes
-				blg_beard_mongol = yes
+
+		trigger = {
+			blg_beard_celtic = no
+			blg_beard_persian = no
+			blg_beard_turkish = no
+			blg_beard_indian = no
+			blg_beard_mongol = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				trigger_if = {
+					limit = {
+						blg_beard_short = yes
+					}
+					OR = {
+						blg_beard_german = yes
+						blg_beard_southslavic = yes
+						blg_beard_westernslavic = yes
+						blg_beard_easternslavic = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_beard_long = yes
+					}
+					OR = {
+						blg_beard_english = yes
+						blg_beard_byzantine = yes
+						blg_beard_muslim = yes
+						blg_beard_african = yes
+						blg_beard_norse = yes
+						blg_beard_southindian = yes
+						blg_beard_ugric = yes
+						blg_beard_bodpa = yes
+						blg_beard_roman = yes
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_shaved = yes
+					}
+					age >= 50
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_beard value = 15 }
 			}
 		}
 
-		modifier = {
-			factor = 0
-			blg_beard_short = yes
-
-			blg_beard_german = no
-			blg_beard_southslavic = no
-			blg_beard_westernslavic = no
-			blg_beard_easternslavic = no
-			NOT = { is_variable_equal = { which = ca_beard value = 15 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
-
-			blg_beard_african = no
-			blg_beard_byzantine = no
-			blg_beard_english = no
-			blg_beard_muslim = no
-			blg_beard_norse = no
-			blg_beard_roman = no
-			blg_beard_southindian = no
-			blg_beard_ugric = no
-			blg_beard_bodpa = no
-			NOT = { is_variable_equal = { which = ca_beard value = 15 } }
-		}
-
-		modifier = {
-			factor = 0
-			blg_shaved = yes
-			age < 50
-			NOT = { is_variable_equal = { which = ca_beard value = 15 } }
-		}
-
-		trigger = {
+		modifier = { # Uncouth hairstyle
+			factor = 4
 			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 15 }
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				blg_beard_english = yes
+				blg_beard_norse = yes
+				blg_beard_ugric = yes
+				blg_beard_african = yes
+				blg_beard_easternslavic = yes
 			}
 		}
 	}
 
 	15 = { # o - Loopback to beardless
 		factor = 4
-		modifier = { # Limited beard range
-			factor = 0
-			OR = {
-				blg_beard_celtic = yes
-				blg_beard_persian = yes
-				blg_beard_turkish = yes
-				blg_beard_indian = yes
-				blg_beard_mongol = yes
+
+		trigger = {
+			blg_beard_celtic = no
+			blg_beard_persian = no
+			blg_beard_turkish = no
+			blg_beard_indian = no
+			blg_beard_mongol = no
+
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_beard value = 0 } }
+				blg_beard_long = no
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_beard value = 1 }
 			}
 		}
 
 		modifier = {
 			factor = 0.05
 			blg_beard_always = yes
-		}
-
-		modifier = {
-			factor = 0
-			blg_beard_long = yes
 		}
 
 		modifier = {
@@ -867,13 +1124,6 @@
 			tier = emperor
 			year_of_birth < 770
 			blg_culture_italian = yes
-		}
-
-		trigger = {
-			OR = {
-				is_variable_equal = { which = ca_beard value = 0 }
-				is_variable_equal = { which = ca_beard value = 1 }
-			}
 		}
 	}
 }

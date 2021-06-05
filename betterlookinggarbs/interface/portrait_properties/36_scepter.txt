@@ -2,6 +2,7 @@
 36 = {
 	0 = { # 0 - blank
 		factor = 3
+
 		modifier = {
 			factor = 100
 			has_game_rule = { name = blg_artifacts value = off }
@@ -59,6 +60,7 @@
 
 	5 = { # e - Tablet
 		factor = 75
+
 		trigger = {
 			blg_artifact_tablet = yes
 		}
@@ -66,6 +68,7 @@
 
 	6 = { # f - Horn
 		factor = 75
+
 		trigger = {
 			blg_artifact_horn = yes
 		}
@@ -73,6 +76,7 @@
 
 	7 = { # g - Scepter
 		factor = 25
+
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -85,6 +89,7 @@
 
 	8 = { # h - Scepter
 		factor = 25
+
 		trigger = {
 			OR = {
 				any_artifact = {
@@ -105,6 +110,7 @@
 
 	9 = { # i - Scepter
 		factor = 25
+
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -122,6 +128,7 @@
 
 	10 = { # j - Necklace
 		factor = 50
+
 		trigger = {
 			is_female = yes
 			practical_age >= 16
@@ -144,6 +151,7 @@
 
 	11 = { # k - Necklace
 		factor = 50
+
 		trigger = {
 			is_female = yes
 			practical_age >= 16
@@ -166,6 +174,7 @@
 
 	12 = { # l - Necklace
 		factor = 50
+
 		trigger = {
 			is_female = yes
 			practical_age >= 16
@@ -244,6 +253,7 @@
 
 	17 = { # q - Crutch
 		factor = 50
+
 		trigger = {
 			blg_crippled = yes
 		}
@@ -251,6 +261,7 @@
 
 	18 = { # r - Dagger
 		factor = 25
+
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -264,6 +275,7 @@
 
 	19 = { # s - Dagger
 		factor = 10
+
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -277,6 +289,7 @@
 
 	20 = { # t - Book
 		factor = 1
+
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -291,6 +304,7 @@
 
 	21 = { # u - Ingredients
 		factor = 1
+
 		trigger = {
 			any_artifact = {
 				is_artifact_active = yes
@@ -305,6 +319,7 @@
 
 	22 = { # v - Scroll
 		factor = 10
+
 		trigger = {
 			blg_artifact_scroll = yes
 
@@ -314,6 +329,7 @@
 
 	23 = { # w - Eagle
 		factor = 10
+
 		trigger = {
 			blg_animal_eagle = yes
 
@@ -323,6 +339,7 @@
 
 	24 = { # x - Raven
 		factor = 10
+
 		trigger = {
 			blg_animal_raven = yes
 
@@ -332,6 +349,7 @@
 
 	25 = { # y - Rat
 		factor = 10
+
 		trigger = {
 			blg_animal_rat = yes
 
@@ -342,6 +360,7 @@
 
 	26 = { # z - Snake
 		factor = 10
+
 		trigger = {
 			blg_animal_snake = yes
 

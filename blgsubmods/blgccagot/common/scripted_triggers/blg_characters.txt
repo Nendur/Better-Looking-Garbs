@@ -38,7 +38,6 @@ blg_fair = {
 # Character of a guard order.
 blg_guard = {
 	OR = {
-		trait = knight
 		trait = rainbowguard
 		trait = gladiator
 		has_minor_title = title_bodyguard

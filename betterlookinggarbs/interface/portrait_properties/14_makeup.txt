@@ -23,6 +23,7 @@
 
 	1 = { # a - white powder
 		factor = 1
+
 		trigger = {
 			blg_chinese_makeup = yes
 		}
@@ -34,6 +35,7 @@
 
 	3 = { # c - white powder and rouge a
 		factor = 1
+
 		trigger = {
 			blg_chinese_makeup = yes
 		}
@@ -45,6 +47,7 @@
 
 	5 = { # e - white powder and rouge b
 		factor = 1
+
 		trigger = {
 			blg_chinese_makeup = yes
 		}

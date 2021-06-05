@@ -2,6 +2,7 @@
 32 = {
 	0 = { # 0 - blank
 		factor = 10
+
 		modifier = {
 			factor = 100
 			OR = {
@@ -35,14 +36,20 @@
 
 	1 = { # a - Military Helm 01
 		factor = 100
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					has_portrait_property = { layer = 5 index = 10 }
-					is_variable_equal = { which = ca_overlayer value = 0 }
-					blg_culture_french = yes
+			trigger_if = {
+				limit = {
+					OR = {
+						is_variable_equal = { which = ca_overlayer value = 0 }
+						check_variable = { which = ca_overlayer value = 6 }
+					}
 				}
+				blg_style_late = yes
+				has_portrait_property = { layer = 5 index = 10 }
+				blg_culture_french = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 2 }
 			}
 		}
@@ -50,185 +57,186 @@
 
 	2 = { # b - Military Helm 02
 		factor = 99
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_mid = yes
+			trigger_if = {
+				limit = {
 					OR = {
-						has_portrait_property = { layer = 5 index = 12 }
-						has_portrait_property = { layer = 5 index = 13 }
+						is_variable_equal = { which = ca_overlayer value = 0 }
+						check_variable = { which = ca_overlayer value = 6 }
 					}
-					NOR = {
-						has_portrait_property = { layer = 31 index = 3 }
-						has_portrait_property = { layer = 31 index = 4 }
-					}
-					blg_culture_french = yes
 				}
+				blg_style_mid = yes
+				OR = {
+					has_portrait_property = { layer = 5 index = 12 }
+					has_portrait_property = { layer = 5 index = 13 }
+				}
+				NOR = {
+					has_portrait_property = { layer = 31 index = 3 }
+					has_portrait_property = { layer = 31 index = 4 }
+				}
+				blg_culture_french = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 3 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 3 }
 		}
 	}
 
 	3 = { # c - Military Helm 03
 		factor = 99
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_mid = yes
+			trigger_if = {
+				limit = {
 					OR = {
-						has_portrait_property = { layer = 5 index = 12 }
-						has_portrait_property = { layer = 5 index = 13 }
+						is_variable_equal = { which = ca_overlayer value = 0 }
+						check_variable = { which = ca_overlayer value = 6 }
 					}
-					NOR = {
-						has_portrait_property = { layer = 31 index = 2 }
-						has_portrait_property = { layer = 31 index = 4 }
-					}
-					blg_culture_french = yes
 				}
+				blg_style_mid = yes
+				OR = {
+					has_portrait_property = { layer = 5 index = 12 }
+					has_portrait_property = { layer = 5 index = 13 }
+				}
+				NOR = {
+					has_portrait_property = { layer = 31 index = 2 }
+					has_portrait_property = { layer = 31 index = 4 }
+				}
+				blg_culture_french = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 4 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 4 }
 		}
 	}
 
 	4 = { # d - Military Helm 04
 		factor = 99
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
+			trigger_if = {
+				limit = {
 					OR = {
-						has_portrait_property = { layer = 5 index = 12 }
-						has_portrait_property = { layer = 5 index = 13 }
+						is_variable_equal = { which = ca_overlayer value = 0 }
+						check_variable = { which = ca_overlayer value = 6 }
 					}
-					NOR = {
-						has_portrait_property = { layer = 31 index = 2 }
-						has_portrait_property = { layer = 31 index = 3 }
-					}
-					blg_culture_french = yes
 				}
+				blg_style_late = yes
+				OR = {
+					has_portrait_property = { layer = 5 index = 12 }
+					has_portrait_property = { layer = 5 index = 13 }
+				}
+				NOR = {
+					has_portrait_property = { layer = 31 index = 2 }
+					has_portrait_property = { layer = 31 index = 3 }
+				}
+				blg_culture_french = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 5 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 5 }
 		}
 	}
 
 	5 = { # e - Duchess Accessories - Early
 		factor = 25
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_culture_french = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_early = yes
+				blg_culture_french = yes
 
-					has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 4 }
 
-					NOR = {
-						has_portrait_property = { layer = 32 index = 6 }
-						has_portrait_property = { layer = 32 index = 7 }
-						has_portrait_property = { layer = 32 index = 8 }
-						has_portrait_property = { layer = 32 index = 9 }
-					}
+				NOR = {
+					has_portrait_property = { layer = 32 index = 6 }
+					has_portrait_property = { layer = 32 index = 7 }
+					has_portrait_property = { layer = 32 index = 8 }
+					has_portrait_property = { layer = 32 index = 9 }
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 6 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 6 }
 		}
 	}
 
 	6 = { # f - Duchess Accessories - Early
 		factor = 25
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_culture_french = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_early = yes
+				blg_culture_french = yes
 
-					OR = {
-						has_portrait_property = { layer = 5 index = 4 }
-						has_portrait_property = { layer = 5 index = 12 }
-					}
-					OR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-					}
-
-					NOR = {
-						has_portrait_property = { layer = 32 index = 5 }
-						has_portrait_property = { layer = 32 index = 7 }
-						has_portrait_property = { layer = 32 index = 8 }
-						has_portrait_property = { layer = 32 index = 9 }
-					}
+				OR = {
+					has_portrait_property = { layer = 5 index = 4 }
+					has_portrait_property = { layer = 5 index = 12 }
 				}
+				OR = {
+					higher_real_tier_than = count
+					spouse_even_if_dead = { higher_real_tier_than = count }
+				}
+
+				NOR = {
+					has_portrait_property = { layer = 32 index = 5 }
+					has_portrait_property = { layer = 32 index = 7 }
+					has_portrait_property = { layer = 32 index = 8 }
+					has_portrait_property = { layer = 32 index = 9 }
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 7 }
 			}
 		}
 
 		modifier = {
 			factor = 100
-			OR = {
-				has_portrait_property = { layer = 5 index = 12 }
-				is_variable_equal = { which = ca_overlayer value = 7 }
-			}
+			has_portrait_property = { layer = 5 index = 12 }
 		}
 	}
 
 	7 = { # g - Duchess Accessories - Early
 		factor = 25
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_culture_french = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_early = yes
+				blg_culture_french = yes
 
-					has_portrait_property = { layer = 5 index = 4 }
-					OR = {
-						real_tier = duke
-						spouse_even_if_dead = { real_tier = duke }
-					}
-
-					NOR = {
-						has_portrait_property = { layer = 32 index = 5 }
-						has_portrait_property = { layer = 32 index = 6 }
-						has_portrait_property = { layer = 32 index = 8 }
-						has_portrait_property = { layer = 32 index = 9 }
-					}
+				has_portrait_property = { layer = 5 index = 4 }
+				OR = {
+					real_tier = duke
+					spouse_even_if_dead = { real_tier = duke }
 				}
+
+				NOR = {
+					has_portrait_property = { layer = 32 index = 5 }
+					has_portrait_property = { layer = 32 index = 6 }
+					has_portrait_property = { layer = 32 index = 8 }
+					has_portrait_property = { layer = 32 index = 9 }
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 8 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 8 }
 		}
 	}
 
 	8 = { # h - Duchess Accessories - Post-1180
 		factor = 25
+
 		trigger = {
-			OR = {
-				AND = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				trigger_if = {
+					limit = { has_portrait_property = { layer = 5 index = 4 } }
 					blg_style_late = yes
 
-					has_portrait_property = { layer = 5 index = 4 }
 					OR = {
 						real_tier = duke
 						spouse_even_if_dead = { real_tier = duke }
@@ -241,147 +249,134 @@
 						has_portrait_property = { layer = 32 index = 9 }
 					}
 				}
-				AND = {
+				trigger_else = {
 					has_portrait_property = { layer = 5 index = 12 }
 					blg_culture_french = yes
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 9 }
 			}
 		}
 
 		modifier = {
 			factor = 100
-			OR = {
-				has_portrait_property = { layer = 5 index = 12 }
-				is_variable_equal = { which = ca_overlayer value = 9 }
-			}
+			has_portrait_property = { layer = 5 index = 12 }
 		}
 	}
 
 	9 = { # i - Duchess Accessories - Post-1180
 		factor = 25
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_late = yes
 
-					has_portrait_property = { layer = 5 index = 4 }
-					OR = {
-						real_tier = duke
-						spouse_even_if_dead = { real_tier = duke }
-					}
-
-					NOR = {
-						has_portrait_property = { layer = 32 index = 5 }
-						has_portrait_property = { layer = 32 index = 6 }
-						has_portrait_property = { layer = 32 index = 7 }
-						has_portrait_property = { layer = 32 index = 8 }
-					}
+				has_portrait_property = { layer = 5 index = 4 }
+				OR = {
+					real_tier = duke
+					spouse_even_if_dead = { real_tier = duke }
 				}
+
+				NOR = {
+					has_portrait_property = { layer = 32 index = 5 }
+					has_portrait_property = { layer = 32 index = 6 }
+					has_portrait_property = { layer = 32 index = 7 }
+					has_portrait_property = { layer = 32 index = 8 }
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 10 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 10 }
 		}
 	}
 
 	10 = { # j - Countess Accessories - Early
 		factor = 10
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_culture_french = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_early = yes
+				blg_culture_french = yes
 
-					blg_clothes_noble = yes
-					NOR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-					}
-
-					NOR = {
-						has_portrait_property = { layer = 32 index = 11 }
-						has_portrait_property = { layer = 32 index = 12 }
-						has_portrait_property = { layer = 32 index = 13 }
-						has_portrait_property = { layer = 32 index = 14 }
-						has_portrait_property = { layer = 32 index = 15 }
-					}
+				blg_clothes_noble = yes
+				NOR = {
+					higher_real_tier_than = count
+					spouse_even_if_dead = { higher_real_tier_than = count }
 				}
+
+				NOR = {
+					has_portrait_property = { layer = 32 index = 11 }
+					has_portrait_property = { layer = 32 index = 12 }
+					has_portrait_property = { layer = 32 index = 13 }
+					has_portrait_property = { layer = 32 index = 14 }
+					has_portrait_property = { layer = 32 index = 15 }
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 11 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 11 }
 		}
 	}
 
 	11 = { # k - Countess Accessories - Early
 		factor = 10
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					blg_culture_french = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_early = yes
+				blg_culture_french = yes
 
-					blg_clothes_noble = yes
-					NOR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-					}
-
-					NOR = {
-						has_portrait_property = { layer = 32 index = 10 }
-						has_portrait_property = { layer = 32 index = 12 }
-						has_portrait_property = { layer = 32 index = 13 }
-						has_portrait_property = { layer = 32 index = 14 }
-						has_portrait_property = { layer = 32 index = 15 }
-					}
+				blg_clothes_noble = yes
+				NOR = {
+					higher_real_tier_than = count
+					spouse_even_if_dead = { higher_real_tier_than = count }
 				}
+
+				NOR = {
+					has_portrait_property = { layer = 32 index = 10 }
+					has_portrait_property = { layer = 32 index = 12 }
+					has_portrait_property = { layer = 32 index = 13 }
+					has_portrait_property = { layer = 32 index = 14 }
+					has_portrait_property = { layer = 32 index = 15 }
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 12 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 12 }
 		}
 	}
 
 	12 = { # l - Countess Accessories - Post-1180
 		factor = 10
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_culture_french = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_late = yes
+				blg_culture_french = yes
 
-					blg_clothes_noble = yes
-					NOR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-					}
-
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 10 }
-						has_portrait_property = { layer = 32 index = 11 }
-						has_portrait_property = { layer = 32 index = 13 }
-						has_portrait_property = { layer = 32 index = 14 }
-						has_portrait_property = { layer = 32 index = 15 }
-					}
+				blg_clothes_noble = yes
+				NOR = {
+					higher_real_tier_than = count
+					spouse_even_if_dead = { higher_real_tier_than = count }
 				}
+
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 10 }
+					has_portrait_property = { layer = 32 index = 11 }
+					has_portrait_property = { layer = 32 index = 13 }
+					has_portrait_property = { layer = 32 index = 14 }
+					has_portrait_property = { layer = 32 index = 15 }
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 13 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 13 }
 		}
 	}
 
@@ -390,33 +385,29 @@
 		hide_layers = { 33 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_culture_french = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_late = yes
+				blg_culture_french = yes
 
-					blg_clothes_noble = yes
-					NOR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-					}
-
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 10 }
-						has_portrait_property = { layer = 32 index = 11 }
-						has_portrait_property = { layer = 32 index = 12 }
-						has_portrait_property = { layer = 32 index = 14 }
-						has_portrait_property = { layer = 32 index = 15 }
-					}
+				blg_clothes_noble = yes
+				NOR = {
+					higher_real_tier_than = count
+					spouse_even_if_dead = { higher_real_tier_than = count }
 				}
+
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 10 }
+					has_portrait_property = { layer = 32 index = 11 }
+					has_portrait_property = { layer = 32 index = 12 }
+					has_portrait_property = { layer = 32 index = 14 }
+					has_portrait_property = { layer = 32 index = 15 }
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 14 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 14 }
 		}
 	}
 
@@ -425,32 +416,28 @@
 		hide_layers = { 33 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_culture_french = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_late = yes
+				blg_culture_french = yes
 
-					blg_clothes_noble = yes
-					NOR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-					}
-
-					NOR = {
-						has_portrait_property = { layer = 32 index = 10 }
-						has_portrait_property = { layer = 32 index = 11 }
-						has_portrait_property = { layer = 32 index = 12 }
-						has_portrait_property = { layer = 32 index = 13 }
-						has_portrait_property = { layer = 32 index = 15 }
-					}
+				blg_clothes_noble = yes
+				NOR = {
+					higher_real_tier_than = count
+					spouse_even_if_dead = { higher_real_tier_than = count }
 				}
+
+				NOR = {
+					has_portrait_property = { layer = 32 index = 10 }
+					has_portrait_property = { layer = 32 index = 11 }
+					has_portrait_property = { layer = 32 index = 12 }
+					has_portrait_property = { layer = 32 index = 13 }
+					has_portrait_property = { layer = 32 index = 15 }
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 15 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 15 }
 		}
 	}
 
@@ -460,33 +447,29 @@
 		hide_layers = { 33 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_culture_french = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_late = yes
+				blg_culture_french = yes
 
-					blg_clothes_noble = yes
-					NOR = {
-						higher_real_tier_than = count
-						spouse_even_if_dead = { higher_real_tier_than = count }
-					}
-
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 10 }
-						has_portrait_property = { layer = 32 index = 11 }
-						has_portrait_property = { layer = 32 index = 12 }
-						has_portrait_property = { layer = 32 index = 13 }
-						has_portrait_property = { layer = 32 index = 14 }
-					}
+				blg_clothes_noble = yes
+				NOR = {
+					higher_real_tier_than = count
+					spouse_even_if_dead = { higher_real_tier_than = count }
 				}
+
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 10 }
+					has_portrait_property = { layer = 32 index = 11 }
+					has_portrait_property = { layer = 32 index = 12 }
+					has_portrait_property = { layer = 32 index = 13 }
+					has_portrait_property = { layer = 32 index = 14 }
+				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 16 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 16 }
 		}
 	}
 
@@ -497,25 +480,26 @@
 		hide_layers = { 33 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					is_landed = no
-					spouse = { is_landed = no }
-					blg_modest = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_early = yes
+				is_landed = no
+				spouse = { is_landed = no }
+				blg_modest = yes
 
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 17 }
-						has_portrait_property = { layer = 32 index = 18 }
-						has_portrait_property = { layer = 32 index = 19 }
-						has_portrait_property = { layer = 32 index = 20 }
-						has_portrait_property = { layer = 32 index = 21 }
-						has_portrait_property = { layer = 32 index = 22 }
-						has_portrait_property = { layer = 32 index = 23 }
-						has_portrait_property = { layer = 32 index = 24 }
-					}
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 17 }
+					has_portrait_property = { layer = 32 index = 18 }
+					has_portrait_property = { layer = 32 index = 19 }
+					has_portrait_property = { layer = 32 index = 20 }
+					has_portrait_property = { layer = 32 index = 21 }
+					has_portrait_property = { layer = 32 index = 22 }
+					has_portrait_property = { layer = 32 index = 23 }
+					has_portrait_property = { layer = 32 index = 24 }
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 17 }
 			}
 		}
@@ -523,11 +507,6 @@
 		modifier = {
 			factor = 5
 			blg_culture_french = yes
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 17 }
 		}
 	}
 
@@ -538,25 +517,26 @@
 		hide_layers = { 33 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					is_landed = no
-					spouse = { is_landed = no }
-					blg_modest = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_early = yes
+				is_landed = no
+				spouse = { is_landed = no }
+				blg_modest = yes
 
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 16 }
-						has_portrait_property = { layer = 32 index = 18 }
-						has_portrait_property = { layer = 32 index = 19 }
-						has_portrait_property = { layer = 32 index = 20 }
-						has_portrait_property = { layer = 32 index = 21 }
-						has_portrait_property = { layer = 32 index = 22 }
-						has_portrait_property = { layer = 32 index = 23 }
-						has_portrait_property = { layer = 32 index = 24 }
-					}
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 16 }
+					has_portrait_property = { layer = 32 index = 18 }
+					has_portrait_property = { layer = 32 index = 19 }
+					has_portrait_property = { layer = 32 index = 20 }
+					has_portrait_property = { layer = 32 index = 21 }
+					has_portrait_property = { layer = 32 index = 22 }
+					has_portrait_property = { layer = 32 index = 23 }
+					has_portrait_property = { layer = 32 index = 24 }
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 18 }
 			}
 		}
@@ -564,11 +544,6 @@
 		modifier = {
 			factor = 5
 			blg_culture_french = yes
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 18 }
 		}
 	}
 
@@ -579,32 +554,28 @@
 		hide_layers = { 33 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					is_landed = no
-					spouse = { is_landed = no }
-					blg_modest = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_early = yes
+				is_landed = no
+				spouse = { is_landed = no }
+				blg_modest = yes
 
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 16 }
-						has_portrait_property = { layer = 32 index = 17 }
-						has_portrait_property = { layer = 32 index = 19 }
-						has_portrait_property = { layer = 32 index = 20 }
-						has_portrait_property = { layer = 32 index = 21 }
-						has_portrait_property = { layer = 32 index = 22 }
-						has_portrait_property = { layer = 32 index = 23 }
-						has_portrait_property = { layer = 32 index = 24 }
-					}
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 16 }
+					has_portrait_property = { layer = 32 index = 17 }
+					has_portrait_property = { layer = 32 index = 19 }
+					has_portrait_property = { layer = 32 index = 20 }
+					has_portrait_property = { layer = 32 index = 21 }
+					has_portrait_property = { layer = 32 index = 22 }
+					has_portrait_property = { layer = 32 index = 23 }
+					has_portrait_property = { layer = 32 index = 24 }
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 19 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 19 }
 		}
 	}
 
@@ -615,25 +586,26 @@
 		hide_layers = { 33 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_early = yes
-					is_landed = no
-					spouse = { is_landed = no }
-					blg_modest = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_early = yes
+				is_landed = no
+				spouse = { is_landed = no }
+				blg_modest = yes
 
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 16 }
-						has_portrait_property = { layer = 32 index = 17 }
-						has_portrait_property = { layer = 32 index = 18 }
-						has_portrait_property = { layer = 32 index = 20 }
-						has_portrait_property = { layer = 32 index = 21 }
-						has_portrait_property = { layer = 32 index = 22 }
-						has_portrait_property = { layer = 32 index = 23 }
-						has_portrait_property = { layer = 32 index = 24 }
-					}
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 16 }
+					has_portrait_property = { layer = 32 index = 17 }
+					has_portrait_property = { layer = 32 index = 18 }
+					has_portrait_property = { layer = 32 index = 20 }
+					has_portrait_property = { layer = 32 index = 21 }
+					has_portrait_property = { layer = 32 index = 22 }
+					has_portrait_property = { layer = 32 index = 23 }
+					has_portrait_property = { layer = 32 index = 24 }
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 20 }
 			}
 		}
@@ -642,11 +614,6 @@
 			factor = 5
 			blg_culture_french = yes
 		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 20 }
-		}
 	}
 
 	20 = { # t - Non-noble Post-1180
@@ -654,33 +621,29 @@
 		hide_layers = { 33 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_culture_french = yes
-					is_landed = no
-					spouse = { is_landed = no }
-					blg_modest = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_late = yes
+				blg_culture_french = yes
+				is_landed = no
+				spouse = { is_landed = no }
+				blg_modest = yes
 
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 16 }
-						has_portrait_property = { layer = 32 index = 17 }
-						has_portrait_property = { layer = 32 index = 18 }
-						has_portrait_property = { layer = 32 index = 19 }
-						has_portrait_property = { layer = 32 index = 21 }
-						has_portrait_property = { layer = 32 index = 22 }
-						has_portrait_property = { layer = 32 index = 23 }
-						has_portrait_property = { layer = 32 index = 24 }
-					}
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 16 }
+					has_portrait_property = { layer = 32 index = 17 }
+					has_portrait_property = { layer = 32 index = 18 }
+					has_portrait_property = { layer = 32 index = 19 }
+					has_portrait_property = { layer = 32 index = 21 }
+					has_portrait_property = { layer = 32 index = 22 }
+					has_portrait_property = { layer = 32 index = 23 }
+					has_portrait_property = { layer = 32 index = 24 }
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 21 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 21 }
 		}
 	}
 
@@ -689,58 +652,56 @@
 		hide_layers = {  5 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					blg_culture_french = yes
-					is_landed = no
-					spouse = { is_landed = no }
-					blg_modest = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_late = yes
+				blg_culture_french = yes
+				is_landed = no
+				spouse = { is_landed = no }
+				blg_modest = yes
 
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 16 }
-						has_portrait_property = { layer = 32 index = 17 }
-						has_portrait_property = { layer = 32 index = 18 }
-						has_portrait_property = { layer = 32 index = 19 }
-						has_portrait_property = { layer = 32 index = 20 }
-						has_portrait_property = { layer = 32 index = 22 }
-						has_portrait_property = { layer = 32 index = 23 }
-						has_portrait_property = { layer = 32 index = 24 }
-					}
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 16 }
+					has_portrait_property = { layer = 32 index = 17 }
+					has_portrait_property = { layer = 32 index = 18 }
+					has_portrait_property = { layer = 32 index = 19 }
+					has_portrait_property = { layer = 32 index = 20 }
+					has_portrait_property = { layer = 32 index = 22 }
+					has_portrait_property = { layer = 32 index = 23 }
+					has_portrait_property = { layer = 32 index = 24 }
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 22 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 22 }
 		}
 	}
 
 	22 = { # v - Non-noble Post-1180
 		factor = 1
-		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					is_landed = no
-					spouse = { is_landed = no }
-					blg_modest = yes
 
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 16 }
-						has_portrait_property = { layer = 32 index = 17 }
-						has_portrait_property = { layer = 32 index = 18 }
-						has_portrait_property = { layer = 32 index = 19 }
-						has_portrait_property = { layer = 32 index = 20 }
-						has_portrait_property = { layer = 32 index = 21 }
-						has_portrait_property = { layer = 32 index = 23 }
-						has_portrait_property = { layer = 32 index = 24 }
-					}
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_late = yes
+				is_landed = no
+				spouse = { is_landed = no }
+				blg_modest = yes
+
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 16 }
+					has_portrait_property = { layer = 32 index = 17 }
+					has_portrait_property = { layer = 32 index = 18 }
+					has_portrait_property = { layer = 32 index = 19 }
+					has_portrait_property = { layer = 32 index = 20 }
+					has_portrait_property = { layer = 32 index = 21 }
+					has_portrait_property = { layer = 32 index = 23 }
+					has_portrait_property = { layer = 32 index = 24 }
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 23 }
 			}
 		}
@@ -748,11 +709,6 @@
 		modifier = {
 			factor = 5
 			blg_culture_french = yes
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 23 }
 		}
 	}
 
@@ -763,25 +719,26 @@
 		hide_layers = { 33 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					is_landed = no
-					spouse = { is_landed = no }
-					blg_modest = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_late = yes
+				is_landed = no
+				spouse = { is_landed = no }
+				blg_modest = yes
 
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 16 }
-						has_portrait_property = { layer = 32 index = 17 }
-						has_portrait_property = { layer = 32 index = 18 }
-						has_portrait_property = { layer = 32 index = 19 }
-						has_portrait_property = { layer = 32 index = 20 }
-						has_portrait_property = { layer = 32 index = 21 }
-						has_portrait_property = { layer = 32 index = 22 }
-						has_portrait_property = { layer = 32 index = 24 }
-					}
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 16 }
+					has_portrait_property = { layer = 32 index = 17 }
+					has_portrait_property = { layer = 32 index = 18 }
+					has_portrait_property = { layer = 32 index = 19 }
+					has_portrait_property = { layer = 32 index = 20 }
+					has_portrait_property = { layer = 32 index = 21 }
+					has_portrait_property = { layer = 32 index = 22 }
+					has_portrait_property = { layer = 32 index = 24 }
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 24 }
 			}
 		}
@@ -789,11 +746,6 @@
 		modifier = {
 			factor = 5
 			blg_culture_french = yes
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 24 }
 		}
 	}
 
@@ -804,25 +756,26 @@
 		hide_layers = { 33 = {} } #Veil overload.
 
 		trigger = {
-			OR = {
-				AND = {
-					blg_style_late = yes
-					is_landed = no
-					spouse = { is_landed = no }
-					blg_modest = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
+				blg_style_late = yes
+				is_landed = no
+				spouse = { is_landed = no }
+				blg_modest = yes
 
-					NOR = {
-						has_portrait_property = { layer = 5 index = 10 }
-						has_portrait_property = { layer = 32 index = 16 }
-						has_portrait_property = { layer = 32 index = 17 }
-						has_portrait_property = { layer = 32 index = 18 }
-						has_portrait_property = { layer = 32 index = 19 }
-						has_portrait_property = { layer = 32 index = 20 }
-						has_portrait_property = { layer = 32 index = 21 }
-						has_portrait_property = { layer = 32 index = 22 }
-						has_portrait_property = { layer = 32 index = 23 }
-					}
+				NOR = {
+					has_portrait_property = { layer = 5 index = 10 }
+					has_portrait_property = { layer = 32 index = 16 }
+					has_portrait_property = { layer = 32 index = 17 }
+					has_portrait_property = { layer = 32 index = 18 }
+					has_portrait_property = { layer = 32 index = 19 }
+					has_portrait_property = { layer = 32 index = 20 }
+					has_portrait_property = { layer = 32 index = 21 }
+					has_portrait_property = { layer = 32 index = 22 }
+					has_portrait_property = { layer = 32 index = 23 }
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 25 }
 			}
 		}
@@ -830,11 +783,6 @@
 		modifier = {
 			factor = 5
 			blg_culture_french = yes
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 25 }
 		}
 	}
 }

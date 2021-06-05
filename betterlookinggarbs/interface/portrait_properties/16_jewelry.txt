@@ -2,6 +2,7 @@
 16 = {
 	0 = { # 0 - blank
 		factor = 100
+
 		trigger = {
 			blg_face_jewelry = no
 		}

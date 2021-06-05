@@ -119,10 +119,6 @@ blg_headgear_king = {
 	can_wear_a_crown_trigger = yes
 	blg_mercenary = no
 	blg_peasant = no
-	NOR = {
-		trait = in_hiding
-		trait = leper
-	}
 }
 
 # Dress like a duke.

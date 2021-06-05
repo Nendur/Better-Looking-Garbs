@@ -145,11 +145,6 @@ blg_glowing = {
 	trait = god
 }
 
-# Bandaged and pale.
-blg_mummy = {
-	trait = mummy
-}
-
 # Vampire fangs.
 blg_vampire = {
 	OR = {

@@ -2,6 +2,7 @@
 23 = {
 	0 = { # 0 - blank
 		factor = 100
+
 		trigger = {
 			OR = {
 				blg_wounded_alive = no
@@ -19,6 +20,7 @@
 
 	1 = { # a - Concussion AND Black eye.
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = severely_injured
@@ -42,6 +44,7 @@
 
 	2 = { # b - Concussion.
 		factor = 1
+
 		trigger = {
 			has_injury_trigger = yes
 
@@ -61,6 +64,7 @@
 
 	3 = { # c - Black eye.
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = wounded
@@ -85,6 +89,7 @@
 
 	4 = { # d - Scrathes
 		factor = 1
+
 		trigger = {
 			trait = wounded
 
@@ -101,6 +106,7 @@
 
 	5 = { # e - Cheek
 		factor = 1
+
 		trigger = {
 			trait = wounded
 
@@ -117,6 +123,7 @@
 
 	6 = { # f - Bloody nose
 		factor = 1
+
 		trigger = {
 			trait = wounded
 
@@ -133,6 +140,7 @@
 
 	7 = { # g - Busted lip
 		factor = 1
+
 		trigger = {
 			trait = wounded
 
@@ -149,6 +157,7 @@
 
 	8 = { # h - Forehead cut
 		factor = 1
+
 		trigger = {
 			trait = wounded
 
@@ -165,6 +174,7 @@
 
 	9 = { # i - Jaw cut
 		factor = 1
+
 		trigger = {
 			has_injury_trigger = yes
 
@@ -180,6 +190,7 @@
 
 	10 = { # j - Bandaged head
 		factor = 1
+
 		trigger = {
 			OR = {
 				has_injury_trigger = yes
@@ -200,6 +211,7 @@
 
 	11 = { # k - Cheek cut
 		factor = 1
+
 		trigger = {
 			has_injury_trigger = yes
 
@@ -215,6 +227,7 @@
 
 	12 = { # l - Eye
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = severely_injured
@@ -233,6 +246,7 @@
 
 	13 = { # m - Burned
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = severely_injured
@@ -251,6 +265,7 @@
 
 	14 = { # n - Mangled jaw
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = severely_injured
@@ -264,6 +279,7 @@
 
 	15 = { # o - Mangled nose
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = severely_injured
@@ -277,6 +293,7 @@
 
 	16 = { # p - Disfigured nose
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -287,6 +304,7 @@
 
 	17 = { # q - Disfigured lip
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -297,6 +315,7 @@
 
 	18 = { # r - Disfigured ear
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -307,6 +326,7 @@
 
 	19 = { # s - Disfigured forehead
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured

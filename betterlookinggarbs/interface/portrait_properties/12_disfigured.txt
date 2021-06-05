@@ -2,8 +2,10 @@
 12 = {
 	0 = { # 0 - blank
 		factor = 100
+
 		trigger = {
-			OR = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_mask value = 14 } } }
 				NOR = {
 					AND = {
 						trait = disfigured
@@ -16,13 +18,13 @@
 					has_character_modifier = attending_masquerade
 					has_character_modifier = forced_mask
 				}
-				is_variable_equal = { which = ca_mask value = 14 }
 			}
 		}
 	}
 
 	1 = { # a - Mask 1 bone
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -30,12 +32,12 @@
 				has_character_modifier = forced_mask
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_mask value = 0 }
-					blg_clothes_common = yes
-					NOT = { has_character_modifier = golden_mask }
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				blg_clothes_common = yes
+				NOT = { has_character_modifier = golden_mask }
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 1 }
 			}
 		}
@@ -43,6 +45,7 @@
 
 	2 = { # b - Mask 2 silver
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -50,13 +53,13 @@
 				has_character_modifier = forced_mask
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_mask value = 0 }
-					blg_headgear_duke = yes
-					has_tribal_or_nomadic_government_trigger = no
-					NOT = { has_character_modifier = golden_mask }
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				blg_headgear_duke = yes
+				has_tribal_or_nomadic_government_trigger = no
+				NOT = { has_character_modifier = golden_mask }
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 2 }
 			}
 		}
@@ -64,6 +67,7 @@
 
 	3 = { # c - Mask 3 iron
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -71,13 +75,13 @@
 				has_character_modifier = forced_mask
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_mask value = 0 }
-					blg_royalty = no
-					has_tribal_or_nomadic_government_trigger = no
-					NOT = { has_character_modifier = golden_mask }
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				blg_royalty = no
+				has_tribal_or_nomadic_government_trigger = no
+				NOT = { has_character_modifier = golden_mask }
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 3 }
 			}
 		}
@@ -85,26 +89,27 @@
 
 	4 = { # d - Mask 4 bone - blue stripes
 		factor = 1
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						blg_religion_pagan = yes
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-						is_variable_equal = { which = ca_mask value = 4 }
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
-			NOT = { has_character_modifier = golden_mask }
-			OR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
+					blg_religion_pagan = yes
+					trait = lunatic
+					trait = possessed
+					trait = mystic
+					has_character_modifier = attending_masquerade
+				}
+				NOT = { has_character_modifier = golden_mask }
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 4 }
 			}
 		}
@@ -112,26 +117,27 @@
 
 	5 = { # e - Mask 5 bone - orange stripes
 		factor = 1
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						blg_religion_pagan = yes
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-						is_variable_equal = { which = ca_mask value = 5 }
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
-			NOT = { has_character_modifier = golden_mask }
-			OR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
+					blg_religion_pagan = yes
+					trait = lunatic
+					trait = possessed
+					trait = mystic
+					has_character_modifier = attending_masquerade
+				}
+				NOT = { has_character_modifier = golden_mask }
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 5 }
 			}
 		}
@@ -139,31 +145,31 @@
 
 	6 = { # f - Mask 6 bone - red dots
 		factor = 2
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-						is_variable_equal = { which = ca_mask value = 6 }
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
-			OR = {
-				religion_openly_west_african_or_reformed_trigger = yes
-				blg_culture_african = yes
-				is_variable_equal = { which = ca_mask value = 6 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					religion_openly_west_african_or_reformed_trigger = yes
+					blg_culture_african = yes
+				}
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
+					blg_religion_pagan = yes
+					trait = lunatic
+					trait = possessed
+					trait = mystic
+					has_character_modifier = attending_masquerade
+				}
+				NOT = { has_character_modifier = golden_mask }
 			}
-
-			NOT = { has_character_modifier = golden_mask }
-			OR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 6 }
 			}
 		}
@@ -171,31 +177,31 @@
 
 	7 = { # g - Mask 7 bone - black stripes
 		factor = 2
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-						is_variable_equal = { which = ca_mask value = 7 }
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
-			OR = {
-				religion_openly_west_african_or_reformed_trigger = yes
-				blg_culture_african = yes
-				is_variable_equal = { which = ca_mask value = 7 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					religion_openly_west_african_or_reformed_trigger = yes
+					blg_culture_african = yes
+				}
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
+					blg_religion_pagan = yes
+					trait = lunatic
+					trait = possessed
+					trait = mystic
+					has_character_modifier = attending_masquerade
+				}
+				NOT = { has_character_modifier = golden_mask }
 			}
-
-			NOT = { has_character_modifier = golden_mask }
-			OR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 7 }
 			}
 		}
@@ -203,26 +209,27 @@
 
 	8 = { # h - Mask 8 bone - red stripes/eyes
 		factor = 1
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						blg_religion_pagan = yes
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-						is_variable_equal = { which = ca_mask value = 8 }
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
-			NOT = { has_character_modifier = golden_mask }
-			OR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
+					blg_religion_pagan = yes
+					trait = lunatic
+					trait = possessed
+					trait = mystic
+					has_character_modifier = attending_masquerade
+				}
+				NOT = { has_character_modifier = golden_mask }
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 8 }
 			}
 		}
@@ -230,25 +237,27 @@
 
 	9 = { # i - Mask 9 bone - black eyes/lightning
 		factor = 1
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						blg_religion_pagan = yes
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-						is_variable_equal = { which = ca_mask value = 9 }
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
-			NOT = { has_character_modifier = golden_mask }
-			OR = {
-				is_variable_equal = { which = ca_mask value = 0 }
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					has_tribal_or_nomadic_government_trigger = yes
+					blg_religion_pagan = yes
+					trait = lunatic
+					trait = possessed
+					trait = mystic
+					has_character_modifier = attending_masquerade
+				}
+				NOT = { has_character_modifier = golden_mask }
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 9 }
 			}
 		}
@@ -256,6 +265,7 @@
 
 	10 = { # j - Mask 10 - decorated silver
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -263,13 +273,13 @@
 				has_character_modifier = forced_mask
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_mask value = 0 }
-					blg_royalty = yes
-					has_tribal_or_nomadic_government_trigger = no
-					NOT = { has_character_modifier = golden_mask }
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				blg_royalty = yes
+				has_tribal_or_nomadic_government_trigger = no
+				NOT = { has_character_modifier = golden_mask }
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 10 }
 			}
 		}
@@ -277,6 +287,7 @@
 
 	11 = { # k - Mask 11 - decorated gold
 		factor = 2
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -284,21 +295,25 @@
 				has_character_modifier = forced_mask
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_mask value = 0 }
-					blg_royalty = yes
-					has_tribal_or_nomadic_government_trigger = no
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				OR = {
+					AND = {
+						blg_royalty = yes
+						has_tribal_or_nomadic_government_trigger = no
 
-					OR = {
-						trait = greedy
-						trait = proud
-						trait = ambitious
-						trait = envious
-						blg_culture_west_african = yes
+						OR = {
+							trait = greedy
+							trait = proud
+							trait = ambitious
+							trait = envious
+							blg_culture_west_african = yes
+						}
 					}
+					has_character_modifier = golden_mask
 				}
-				has_character_modifier = golden_mask
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 11 }
 			}
 		}
@@ -307,15 +322,11 @@
 			factor = 5
 			controls_religion = yes
 		}
-
-		modifier = {
-			factor = 100
-			has_character_modifier = golden_mask
-		}
 	}
 
 	12 = { # l - Mask 12 - full mask 1 leather
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -323,12 +334,12 @@
 				has_character_modifier = forced_mask
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_mask value = 0 }
-					has_tribal_or_nomadic_government_trigger = no
-					NOT = { has_character_modifier = golden_mask }
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				has_tribal_or_nomadic_government_trigger = no
+				NOT = { has_character_modifier = golden_mask }
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 12 }
 			}
 		}
@@ -336,6 +347,7 @@
 
 	13 = { # m - Mask 13 - full mask 2 bone
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -343,12 +355,12 @@
 				has_character_modifier = forced_mask
 			}
 
-			OR = {
-				AND = {
-					is_variable_equal = { which = ca_mask value = 0 }
-					has_tribal_or_nomadic_government_trigger = no
-					NOT = { has_character_modifier = golden_mask }
-				}
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_mask value = 0 } }
+				has_tribal_or_nomadic_government_trigger = no
+				NOT = { has_character_modifier = golden_mask }
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 13 }
 			}
 		}

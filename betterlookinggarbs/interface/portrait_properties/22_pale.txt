@@ -14,7 +14,6 @@
 				}
 
 				blg_vampire = yes
-				blg_mummy = yes
 			}
 		}
 	}

@@ -2,8 +2,15 @@
 3 = {
 	0 = { # 0 - Royal clothes 1
 		factor = 10
+
 		trigger = {
-			blg_clothes_royal = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
+				blg_clothes_royal = yes
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_clothes value = 1 }
+			}
 		}
 
 		modifier = {
@@ -12,18 +19,20 @@
 				trait = humble
 				blg_merchant_clothes = yes
 			}
-		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_clothes value = 1 }
 		}
 	}
 
 	1 = { # a - Royal clothes 2
 		factor = 10
+
 		trigger = {
-			blg_clothes_royal = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
+				blg_clothes_royal = yes
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_clothes value = 2 }
+			}
 		}
 
 		modifier = {
@@ -32,18 +41,20 @@
 				trait = humble
 				blg_merchant_clothes = yes
 			}
-		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_clothes value = 2 }
 		}
 	}
 
 	2 = { # b - Royal clothes 3
 		factor = 10
+
 		trigger = {
-			blg_clothes_royal = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
+				blg_clothes_royal = yes
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_clothes value = 3 }
+			}
 		}
 
 		modifier = {
@@ -53,135 +64,155 @@
 				blg_merchant_clothes = yes
 			}
 		}
-
-		modifier = {
-			factor = 1000
-			is_variable_equal = { which = ca_clothes value = 3 }
-		}
 	}
 
 	3 = { # c - Noble clothes 1
 		factor = 2
-		trigger = {
-			blg_clothes_noble = yes
-		}
 
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 4 }
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
+				blg_clothes_noble = yes
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_clothes value = 4 }
+			}
 		}
 	}
 
 	4 = { # d - Noble clothes 2
 		factor = 2
-		trigger = {
-			blg_clothes_noble = yes
-		}
 
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 5 }
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
+				blg_clothes_noble = yes
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_clothes value = 5 }
+			}
 		}
 	}
 
 	5 = { # e - Noble clothes 3
 		factor = 2
-		trigger = {
-			blg_clothes_noble = yes
-		}
 
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 6 }
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
+				blg_clothes_noble = yes
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_clothes value = 6 }
+			}
 		}
 	}
 
 	6 = { # f - Modest clothes 1
 		factor = 1
+
 		trigger = {
-			OR = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
 				blg_clothes_common = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_clothes value = 7 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 7 }
 		}
 	}
 
 	7 = { # g - Modest clothes 2
 		factor = 1
+
 		trigger = {
-			OR = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
 				blg_clothes_common = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_clothes value = 8 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 8 }
 		}
 	}
 
 	8 = { # h - Modest clothes 3
 		factor = 1
+
 		trigger = {
-			OR = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
 				blg_clothes_common = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_clothes value = 9 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 9 }
 		}
 	}
 
 	9 = { # i - Shady clothes
 		factor = 99
+
 		trigger = {
-			OR = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
 				blg_clothes_intrigue = yes
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_clothes value = 10 }
 			}
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 10 }
 		}
 	}
 
 	10 = { # j - Martial
 		factor = 100
+
 		trigger = {
-			OR = {
-				AND = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_clothes value = 11 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_clothes = yes
+					}
+					is_variable_equal = { which = ca_clothes value = 0 }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_clothes value = 13 } }
 					blg_clothes_military = yes
-					OR = {
-						is_female = yes
+					trigger_if = {
+						limit = { is_female = no }
 						blg_elite_commander = no
 					}
 				}
-				is_variable_equal = { which = ca_clothes value = 11 }
 			}
+		}
+
+		modifier = {
+			factor = 0.01
+			blg_merchant_clothes = yes
 		}
 	}
 
 	11 = { # k - Ragged clothes
 		factor = 100
+
 		trigger = {
-			OR = {
-				blg_prisoner = yes
-				blg_slave = yes
-				blg_merchant_clothes = yes
-				is_variable_equal = { which = ca_clothes value = 12 }
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_clothes value = 12 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_clothes = yes
+					}
+					is_variable_equal = { which = ca_clothes value = 0 }
+				}
+				trigger_else = {
+					OR = {
+						blg_prisoner = yes
+						blg_slave = yes
+					}
+					NOT = { has_character_modifier = house_arrest }
+				}
 			}
-			NOT = { has_character_modifier = house_arrest }
 		}
 
 		modifier = {
@@ -192,40 +223,46 @@
 
 	12 = { # l - Royal war gear / Emperor
 		factor = 100
+
 		trigger = {
-			OR = {
-				AND = {
-					OR = {
-						higher_real_tier_than = duke
-						spouse_even_if_dead = { higher_real_tier_than = duke }
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_clothes value = 13 } } }
+				trigger_if = {
+					limit = {
+						blg_ek_clothing = yes
 					}
-					blg_ek_clothing = no
-
-					OR = {
-						blg_clothes_military = yes
-						blg_military_governor = yes
-					}
-				}
-
-				AND = {
-					blg_ek_clothing = yes
 					OR = {
 						real_tier = emperor
 						spouse_even_if_dead = { real_tier = emperor }
 					}
+					is_variable_equal = { which = ca_clothes value = 0 }
 				}
-
-				blg_merchant_clothes = yes
-				is_variable_equal = { which = ca_clothes value = 13 }
-			}
-		}
-
-		modifier = {
-			factor = 0
-			is_nomadic = yes
-			NOR = {
-				real_tier = emperor
-				spouse_even_if_dead = { real_tier = emperor }
+				trigger_else_if = {
+					limit = {
+						blg_merchant_clothes = yes
+					}
+					is_variable_equal = { which = ca_clothes value = 0 }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_clothes value = 14 } }
+					OR = {
+						blg_clothes_military = yes
+						blg_military_governor = yes
+					}
+					trigger_if = {
+						limit = { is_nomadic = yes }
+						OR = {
+							real_tier = emperor
+							spouse_even_if_dead = { real_tier = emperor }
+						}
+					}
+					trigger_else = {
+						OR = {
+							higher_real_tier_than = duke
+							spouse_even_if_dead = { higher_real_tier_than = duke }
+						}
+					}
+				}
 			}
 		}
 
@@ -233,30 +270,32 @@
 			factor = 0.01
 			blg_merchant_clothes = yes
 		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 13 }
-		}
 	}
 
 	13 = { # m - Noble war gear / Agent 2
 		factor = 100
+
 		trigger = {
-			OR = {
-				AND = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_clothes value = 14 } } }
+				trigger_if = {
+					limit = {
+						blg_ek_clothing = yes
+					}
+					blg_clothes_intrigue = yes
+					is_variable_equal = { which = ca_clothes value = 0 }
+				}
+				trigger_else_if = {
+					limit = {
+						blg_merchant_clothes = yes
+					}
+					is_variable_equal = { which = ca_clothes value = 0 }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_clothes value = 15 } }
 					blg_elite_commander = yes
-					blg_ek_clothing = no
 					blg_clothes_military = yes
 				}
-
-				AND = {
-					blg_ek_clothing = yes
-					blg_clothes_intrigue = yes
-				}
-
-				blg_merchant_clothes = yes
-				is_variable_equal = { which = ca_clothes value = 14 }
 			}
 		}
 
@@ -272,28 +311,28 @@
 				blg_ek_clothing = yes
 			}
 		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 14 }
-		}
 	}
 
 	14 = { # n - Chinese war gear / Martial 2
 		factor = 99
-		trigger = {
-			blg_elite_commander = yes
 
-			OR = {
-				blg_merchant_clothes = yes
-				AND = {
-					blg_clothes_military = yes
+		trigger = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_clothes value = 15 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_clothes = yes
+					}
+					is_variable_equal = { which = ca_clothes value = 0 }
+				}
+				trigger_else = {
 					OR = {
 						blg_ek_clothing = yes
 						blg_clothes_chinese = yes
 					}
+					blg_elite_commander = yes
+					blg_clothes_military = yes
 				}
-				is_variable_equal = { which = ca_clothes value = 15 }
 			}
 		}
 
@@ -301,146 +340,89 @@
 			factor = 0.01
 			blg_merchant_clothes = yes
 		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 15 }
-		}
 	}
 
-	#Mage 1
-	15 = {
+	15 = { # Mage 1
 		factor = 50
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_clothes_mage = yes
-					blg_ek_clothing = yes
+			blg_ek_clothing = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
+				blg_clothes_mage = yes
+				NOR = {
+					higher_real_tier_than = duke
+					spouse = { higher_real_tier_than = duke }
+					has_job_title = job_marshal
+					has_job_title = job_spymaster
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_clothes value = 16 }
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-			}
-		}
-		modifier = {
-			factor = 0
-			has_job_title = job_marshal
-		}
-		modifier = {
-			factor = 0
-			has_job_title = job_spymaster
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 16 }
-		}
 	}
 
-	#Mage 2
-	16 = {
+	16 = { # Mage 2
 		factor = 50
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_clothes_mage = yes
-					blg_ek_clothing = yes
+			blg_ek_clothing = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
+				blg_clothes_mage = yes
+				NOR = {
+					higher_real_tier_than = duke
+					spouse = { higher_real_tier_than = duke }
+					has_job_title = job_marshal
+					has_job_title = job_spymaster
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_clothes value = 17 }
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-			}
-		}
-		modifier = {
-			factor = 0
-			has_job_title = job_marshal
-		}
-		modifier = {
-			factor = 0
-			has_job_title = job_spymaster
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 17 }
-		}
 	}
 
-	#Priest 1
-	17 = {
+	17 = { # Priest 1
 		factor = 99
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_clothes_priest = yes
-					blg_ek_clothing = yes
+			blg_ek_clothing = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
+				blg_clothes_priest = yes
+				NOR = {
+					higher_real_tier_than = duke
+					spouse = { higher_real_tier_than = duke }
+					has_job_title = job_marshal
+					has_job_title = job_spymaster
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_clothes value = 18 }
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-			}
-		}
-		modifier = {
-			factor = 0
-			has_job_title = job_marshal
-		}
-		modifier = {
-			factor = 0
-			has_job_title = job_spymaster
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 18 }
-		}
 	}
 
-	#Priest 2
-	18 = {
+	18 = { # Priest 2
 		factor = 99
+
 		trigger = {
-			OR = {
-				AND = {
-					blg_clothes_priest = yes
-					blg_ek_clothing = yes
+			blg_ek_clothing = yes
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_clothes value = 0 } }
+				blg_clothes_priest = yes
+				NOR = {
+					higher_real_tier_than = duke
+					spouse = { higher_real_tier_than = duke }
+					has_job_title = job_marshal
+					has_job_title = job_spymaster
 				}
+			}
+			trigger_else = {
 				is_variable_equal = { which = ca_clothes value = 19 }
 			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				higher_real_tier_than = duke
-				spouse = { higher_real_tier_than = duke }
-			}
-		}
-		modifier = {
-			factor = 0
-			has_job_title = job_marshal
-		}
-		modifier = {
-			factor = 0
-			has_job_title = job_spymaster
-		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_clothes value = 19 }
 		}
 	}
 }
