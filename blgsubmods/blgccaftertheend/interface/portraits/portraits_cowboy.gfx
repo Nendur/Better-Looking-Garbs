@@ -38,7 +38,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_cowboy_female_clothes_behind"
 		texturefile = "gfx\\characters\\cowboy_female\\cowboy_female_clothes_behind.dds"

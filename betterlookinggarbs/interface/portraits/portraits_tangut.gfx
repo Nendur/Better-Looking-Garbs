@@ -53,7 +53,7 @@ spriteTypes = {
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_chinese_male_beard:p4:h:y"
-		   	"GFX_bodpa_male_hair:p1:h:y"
+			"GFX_bodpa_male_hair:p1:h:y"
 			"GFX_bodpa_male_hair_ribbon_front:p1:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_chinese_male_headgear:p5:c5"

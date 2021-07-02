@@ -150,7 +150,7 @@ objectTypes = {
 		actorfile = "gfx\models\Russian_Light_Cavalry.xac"
 
 		 idle   = "gfx\models\Russian_Light_Cavalry_2_Idle.xsm"
-	 	 move   = "gfx\models\Russian_Light_Cavalry_2_Moving.xsm"
+		 move   = "gfx\models\Russian_Light_Cavalry_2_Moving.xsm"
 		 attack = "gfx\models\Russian_Light_Cavalry_2_Attack.xsm"
 
 		scale = 1.0f

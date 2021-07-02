@@ -158,7 +158,7 @@ objectTypes = {
 		scale = 0.8
 	}
 
- 	pdxmesh = {
+	pdxmesh = {
 		name = "africangfx_job_spymaster_female"
 		file = "gfx/models/Mapindicators/afc_african_spymaster_female.mesh"
 		animation = { id = "idle"		type = "afc_african_spymaster_female_idle_animation" }

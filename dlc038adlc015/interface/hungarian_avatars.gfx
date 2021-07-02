@@ -147,7 +147,7 @@ objectTypes = {
 		actorfile = "gfx\models\fu_light_cavalry.xac"
 
 		idle   = "gfx\models\fu_light_cavalry_2_idle.xsm"
-	 	move   = "gfx\models\fu_light_cavalry_2_moving.xsm"
+		move   = "gfx\models\fu_light_cavalry_2_moving.xsm"
 		attack = "gfx\models\fu_light_cavalry_2_attack.xsm"
 
 		scale = 0.95f
@@ -158,7 +158,7 @@ objectTypes = {
 		actorfile = "gfx\models\fu_heavy_cavalry.xac"
 
 		idle   = "gfx\models\fu_light_cavalry_2_idle.xsm"
-	 	move   = "gfx\models\fu_light_cavalry_2_moving.xsm"
+		move   = "gfx\models\fu_light_cavalry_2_moving.xsm"
 		attack = "gfx\models\fu_light_cavalry_2_attack.xsm"
 
 		scale = 0.95f

@@ -50,7 +50,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o0x1"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-		   	"GFX_western_male_hair:p1:h:y"
+			"GFX_western_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_saxon_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"

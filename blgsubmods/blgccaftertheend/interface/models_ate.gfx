@@ -10,7 +10,7 @@ objectTypes = {
 	EMFXActorType = {
 		name = "africangfx_GALLEYS"
 		actorfile = "gfx\models\Cog.xac"
-		
+
 		idle   = "gfx\models\Cog_Moving.xsm"
 		scale = 2.1f
 	}

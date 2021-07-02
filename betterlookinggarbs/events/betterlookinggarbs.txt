@@ -239,7 +239,7 @@ character_event = {
 		if = {
 			limit = {
 				trait = twin
-				NOT = { has_game_rule = { name = blg_child_birth value = off } } 
+				NOT = { has_game_rule = { name = blg_child_birth value = off } }
 			}
 			twin = {
 				set_graphical_culture = event_target:gfxchild

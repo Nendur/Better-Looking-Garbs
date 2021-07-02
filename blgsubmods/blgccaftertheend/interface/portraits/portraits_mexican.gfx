@@ -23,7 +23,7 @@ spriteTypes = {
 		norefcount = yes
 		can_be_lowres = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_mexican_female_headgear_behind"
 		texturefile = "gfx\\characters\\mexican_female\\mexican_female_headgear_behind.dds"

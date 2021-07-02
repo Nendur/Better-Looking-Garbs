@@ -175,7 +175,7 @@ objectTypes = {
 		actorfile = "gfx\models\Byzantine_Light_Cavalry.xac"
 
 		 idle   = "gfx\models\Light_Cavalry_2_Idle.xsm"
-	 	 move   = "gfx\models\Light_Cavalry_2_Moving.xsm"
+		 move   = "gfx\models\Light_Cavalry_2_Moving.xsm"
 		 attack = "gfx\models\Light_Cavalry_2_Attack.xsm"
 
 		scale = 1.0f

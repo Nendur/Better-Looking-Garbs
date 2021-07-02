@@ -428,8 +428,8 @@ blg_set_ethnicity_iberian = {
 	else_if = {
 		limit = {
 			NOR = {
-				graphical_culture = southerngfx 
-				graphical_culture = basquegfx 
+				graphical_culture = southerngfx
+				graphical_culture = basquegfx
 			}
 		}
 		set_graphical_culture = chilango
@@ -533,7 +533,7 @@ blg_set_ethnicity_native = {
 		if = {
 			limit = {
 				NOR = {
-					graphical_culture = mesoamericangfx 
+					graphical_culture = mesoamericangfx
 					graphical_culture = andeangfx
 				}
 			}
