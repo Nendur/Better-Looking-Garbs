@@ -510,7 +510,6 @@
 
 		modifier = {
 			factor = 50
-			blg_beard_uncommon = yes
 			blg_beard_mongol = yes
 		}
 
@@ -893,7 +892,7 @@
 		}
 
 		modifier = {
-			factor = 10
+			factor = 40
 			blg_beard_uncommon = yes
 			blg_beard_indian = yes
 		}

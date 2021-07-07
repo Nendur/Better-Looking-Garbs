@@ -181,7 +181,10 @@
 					blg_clothes_military = yes
 					trigger_if = {
 						limit = { is_female = no }
-						blg_elite_commander = no
+						OR = {
+							blg_elite_commander = no
+							blg_peasant = yes
+						}
 					}
 				}
 			}

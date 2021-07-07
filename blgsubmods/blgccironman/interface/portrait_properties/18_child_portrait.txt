@@ -47,6 +47,7 @@
 	4 = { # d - Child 3
 		factor = 100
 		hide_layers = { 7 = {} }
+		hide_layers = { 8 = {} }
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
@@ -63,6 +64,7 @@
 	5 = { # e - Toddler
 		factor = 100
 		hide_layers = { 7 = {} }
+		hide_layers = { 8 = {} }
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }
@@ -79,6 +81,7 @@
 	6 = { # f - Baby
 		factor = 100
 		hide_layers = { 7 = {} }
+		hide_layers = { 8 = {} }
 		hide_layers = { 9 = {} }
 		hide_layers = { 12 = {} }
 		hide_layers = { 13 = {} }

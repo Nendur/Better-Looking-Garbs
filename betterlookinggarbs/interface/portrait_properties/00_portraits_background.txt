@@ -530,7 +530,11 @@
 
 		modifier = {
 			factor = 0.25
-			blg_royalty = yes
+			OR = {
+				higher_real_tier_than = duke
+				spouse_even_if_dead = { higher_real_tier_than = duke }
+			}
+			blg_peasant = no
 		}
 	}
 

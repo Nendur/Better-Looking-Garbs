@@ -88,8 +88,6 @@ blg_elite_commander = {
 		spouse_even_if_dead = { higher_real_tier_than = count }
 		has_character_modifier = jd_strategist
 	}
-	blg_peasant = no
-	blg_default_clothing = no
 }
 
 # Early era headgear designs.
@@ -112,22 +110,23 @@ blg_style_late = {
 # Emperors crown.
 blg_crown_emperor = {
 	OR = {
-		real_tier = emperor
+		AND = {
+			real_tier = emperor
+			blg_crowned = yes
+			trigger_if = {
+				limit = { is_nomadic = yes }
+				population_and_manpower >= 10000
+			}
+			NOR = {
+				is_tributary = yes
+				is_offmap_governor = yes
+				blg_republic = yes
+				blg_mercenary = yes
+				blg_holy_order = yes
+				blg_peasant = yes
+			}
+		}
 		is_or_was_offmap_power_ruler = yes
-	}
-	blg_crowned = yes
-
-	trigger_if = {
-		limit = { is_nomadic = yes }
-		population_and_manpower >= 10000
-	}
-	NOR = {
-		is_tributary = yes
-		is_offmap_governor = yes
-		blg_republic = yes
-		blg_mercenary = yes
-		blg_holy_order = yes
-		blg_peasant = yes
 	}
 }
 
@@ -137,23 +136,22 @@ blg_crown_king = {
 		AND = {
 			higher_real_tier_than = duke
 			blg_crowned = yes
+			trigger_if = {
+				limit = {
+					is_nomadic = yes
+					has_game_started = yes
+				}
+				population_and_manpower >= 5000
+			}
+			NOR = {
+				blg_republic = yes
+				blg_mercenary = yes
+				blg_holy_order = yes
+				blg_peasant = yes
+			}
 		}
 		is_or_was_offmap_power_ruler = yes
 		blg_royal_title = yes
-	}
-
-	trigger_if = {
-		limit = {
-			is_nomadic = yes
-			has_game_started = yes
-		}
-		population_and_manpower >= 5000
-	}
-	NOR = {
-		blg_republic = yes
-		blg_mercenary = yes
-		blg_holy_order = yes
-		blg_peasant = yes
 	}
 }
 
@@ -205,7 +203,6 @@ blg_headgear_common = {
 		trait = in_hiding
 		trait = leper
 		blg_pilgrimage = yes
-		blg_peasant = yes
 	}
 }
 
@@ -248,10 +245,21 @@ blg_headgear_covered = {
 # Dress like royalty.
 blg_clothes_royal = {
 	OR = {
-		blg_royalty = yes
+		higher_real_tier_than = duke
+		is_or_was_offmap_power_ruler = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+		blg_royal_title = yes
 		blg_prince_title = yes
 		blg_merchant_clothes = yes
 	}
+	blg_mercenary = no
+	blg_holy_order = no
+	blg_peasant = no
 }
 
 # Dress like nobility.
@@ -301,7 +309,6 @@ blg_clothes_military = {
 			}
 		}
 		blg_duelling = yes
-		blg_guard = yes
 		has_job_title = job_marshal
 		death_reason = death_battle
 		death_reason = death_duel
@@ -310,6 +317,13 @@ blg_clothes_military = {
 			blg_mercenary_fleet = no
 		}
 		employer = { blg_holy_order = yes }
+		AND = {
+			blg_guard = yes
+			OR = {
+				is_landed = no
+				trait = travelling
+			}
+		}
 	}
 }
 

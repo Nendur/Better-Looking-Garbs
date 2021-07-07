@@ -5,13 +5,10 @@
 
 		modifier = {
 			factor = 100
-			prisoner = yes
-			blg_saint = no
-		}
-
-		modifier = {
-			factor = 100
-			has_game_rule = { name = blg_artifacts value = off }
+			OR = {
+				prisoner = yes
+				has_game_rule = { name = blg_artifacts value = off }
+			}
 			blg_saint = no
 		}
 	}
@@ -258,8 +255,7 @@
 			blg_artifact_rule = yes
 		}
 	}
-	
-	
+
 	16 = { # p - Boar
 		factor = 10
 

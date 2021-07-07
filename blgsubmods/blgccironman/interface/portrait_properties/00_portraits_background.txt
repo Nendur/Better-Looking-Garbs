@@ -3,6 +3,7 @@
 	0 = { # 0 - Castle interior
 		factor = 1
 		hide_layers = { 38 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { siege = { is_attacker = no } }
@@ -54,6 +55,7 @@
 	1 = { # a - Throne room
 		factor = 15
 		hide_layers = { 38 = {} }
+
 		trigger = {
 			OR = {
 				higher_real_tier_than = duke
@@ -101,6 +103,7 @@
 		factor = 4
 		hide_layers = { 38 = {} }
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			OR = {
 				prisoner = yes
@@ -143,6 +146,7 @@
 	3 = { # c - Forest
 		factor = 3
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -188,10 +192,11 @@
 		}
 	}
 
-	4 = { # d - Bed
+	4 = { # d - Bedroom
 		factor = 1
 		hide_layers = { 38 = {} }
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			OR = {
 				is_ill = yes
@@ -241,6 +246,7 @@
 	5 = { # e - Study
 		factor = 3
 		hide_layers = { 38 = {} }
+
 		trigger = {
 			OR = {
 				has_focus = focus_scholarship
@@ -285,6 +291,7 @@
 		factor = 5
 		hide_layers = { 38 = {} }
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			OR = {
 				AND = {
@@ -354,15 +361,16 @@
 		}
 	}
 
-	7 = { # g - Dolmen
+	7 = { # g - Dolmen / Shrine
 		factor = 1
 		hide_layers = { 38 = {} }
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			OR = {
 				religion_group = pagan_group
 				religion_group = indian_group
-				likes_celts = yes
+				culture_group = celtic
 				trait = mystic
 			}
 		}
@@ -386,6 +394,10 @@
 			factor = 10
 			OR = {
 				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				capital_holding = { holding_type = temple }
 			}
 			OR = {
@@ -407,6 +419,7 @@
 	8 = { # h - Gallows
 		factor = 2
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			OR = {
 				trait = cruel
@@ -431,6 +444,7 @@
 				death_sacrificed_trigger = yes
 				has_character_flag = holding_blot
 				has_character_flag = attending_blot
+				has_minor_title = title_state_inquisitor
 			}
 		}
 
@@ -453,13 +467,12 @@
 	9 = { # i - Church
 		factor = 2
 		hide_layers = { 38 = {} }
+
 		trigger = {
-			likes_christians = yes
+			religion_group = christian
 
 			OR = {
-				employer = {
-					is_priest = yes
-				}
+				employer = { is_priest = yes }
 				has_focus = focus_theology
 				has_pious_trait_trigger = yes
 				has_character_modifier = doing_penance
@@ -475,9 +488,12 @@
 			factor = 10
 			OR = {
 				is_priest = yes
-				capital_holding = { holding_type = temple }
-				has_focus = focus_theology
 				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				capital_holding = { holding_type = temple }
 			}
 		}
 
@@ -494,6 +510,7 @@
 	10 = { # j - Desert
 		factor = 1
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -556,6 +573,7 @@
 	11 = { # k - Steppe
 		factor = 5
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -592,6 +610,7 @@
 	12 = { # l - Ocean
 		factor = 2
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			OR = {
 				is_at_sea = yes
@@ -649,6 +668,7 @@
 	13 = { # m - Plain wall
 		factor = 1
 		hide_layers = { 38 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
@@ -693,8 +713,9 @@
 		factor = 1
 		hide_layers = { 38 = {} }
 		hide_layers = { 42 = {} }
+
 		modifier = {
-			factor = 100
+			factor = 1000
 			OR = {
 				has_character_flag = party_host
 				has_character_flag = party_guest
@@ -756,15 +777,11 @@
 			factor = 0.25
 			OR = {
 				higher_real_tier_than = duke
-				is_or_was_offmap_power_ruler = yes
-				spouse_even_if_dead = {
-						OR = {
-							higher_real_tier_than = duke
-							is_or_was_offmap_power_ruler = yes
-						}
-				}
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
+				spouse_even_if_dead = { higher_real_tier_than = duke }
+			}
+			NOR = {
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 	}
@@ -772,6 +789,7 @@
 	15 = { # o - Fancy wall
 		factor = 3
 		hide_layers = { 38 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
@@ -800,6 +818,8 @@
 				spouse = { is_landed = yes }
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
+				has_character_modifier = jd_prince
+				has_character_modifier = jd_princess
 			}
 
 			NOR = {
@@ -818,6 +838,7 @@
 	16 = { # p - Tribal interior
 		factor = 4
 		hide_layers = { 38 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
@@ -857,6 +878,7 @@
 	17 = { # q - Tribal village
 		factor = 4
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
@@ -899,10 +921,11 @@
 		}
 	}
 
-	18 = { # r - European Castle
+	18 = { # r - European castle
 		factor = 1
 		hide_layers = { 38 = {} }
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
@@ -913,7 +936,7 @@
 						region = world_asia_minor
 						AND = {
 							region = world_steppe_west
-							likes_christians = yes
+							religion_group = christian
 						}
 					}
 				}
@@ -926,7 +949,7 @@
 						region = world_asia_minor
 						AND = {
 							region = world_steppe_west
-							likes_christians = yes
+							religion_group = christian
 						}
 					}
 				}
@@ -955,15 +978,16 @@
 		}
 	}
 
-	19 = { # s - Muslim Mosque
+	19 = { # s - Muslim mosque
 		factor = 3
 		hide_layers = { 38 = {} }
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
 				location = {
-					likes_muslims = yes
+					religion_group = muslim
 					OR = {
 						holding_type = castle
 						holding_type = temple
@@ -971,7 +995,7 @@
 				}
 			}
 			trigger_else = {
-				capital_scope = { likes_muslims = yes }
+				capital_scope = { religion_group = muslim }
 				capital_holding = {
 					OR = {
 						holding_type = castle
@@ -992,13 +1016,19 @@
 				is_priest = yes
 				capital_holding = { holding_type = temple }
 			}
-			likes_muslims = yes
+			religion_group = muslim
 		}
 
 		modifier = {
-			factor = 2
-			trait = zealous
-			likes_muslims = yes
+			factor = 10
+			OR = {
+				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+			}
+			religion_group = muslim
 		}
 
 		modifier = {
@@ -1007,11 +1037,6 @@
 				has_secret_religion = yes
 				trait = cynical
 			}
-		}
-
-		modifier = {
-			factor = 10
-			has_focus = focus_theology
 		}
 
 		modifier = {
@@ -1028,6 +1053,7 @@
 	20 = { # t - Town
 		factor = 1
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { is_abroad = yes }
@@ -1071,6 +1097,7 @@
 	21 = { # u - Mountains
 		factor = 3
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -1108,6 +1135,7 @@
 		factor = 1
 		hide_layers = { 38 = {} }
 		hide_layers = { 42 = {} }
+
 		modifier = {
 			factor = 100
 			is_alive = no
@@ -1129,9 +1157,10 @@
 		}
 	}
 
-	23 = { # w - Mediterranean Farmlands
+	23 = { # w - Mediterranean farmlands
 		factor = 3
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -1185,6 +1214,7 @@
 	24 = { # x - Farmlands
 		factor = 3
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -1248,6 +1278,7 @@
 	25 = { # y - Snow
 		factor = 2
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }
@@ -1277,9 +1308,10 @@
 		}
 	}
 
-	26 = { # z - African Savanna
+	26 = { # z - African savanna
 		factor = 2
 		hide_layers = { 42 = {} }
+
 		trigger = {
 			trigger_if = {
 				limit = { location = { always = yes } }

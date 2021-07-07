@@ -33,7 +33,10 @@ blg_hair_long = {
 	likes_germanics = yes
 	OR = {
 		higher_real_tier_than = duke
-		blg_petty_king = yes
+		AND = {
+			real_tier = duke
+			independent = yes
+		}
 		has_minor_title = title_prince
 	}
 }
@@ -44,7 +47,10 @@ blg_hair_short = {
 	likes_germanics = yes
 	NOR = {
 		higher_real_tier_than = duke
-		blg_petty_king = yes
+		AND = {
+			real_tier = duke
+			independent = yes
+		}
 		has_minor_title = title_prince
 	}
 }

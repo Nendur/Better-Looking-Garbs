@@ -2,6 +2,7 @@
 13 = {
 	0 = { # 0 - blank
 		factor = 100
+
 		trigger = {
 			NOT = {
 				any_artifact = {
@@ -21,17 +22,24 @@
 
 	1 = { # a - Eyepatch 1
 		factor = 1
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
 				trait = blinded
 				has_character_modifier = glass_eye
 			}
+		}
+
+		modifier = {
+			factor = 5
+			this_is_sea_raider_trigger = yes
 		}
 	}
 
 	2 = { # b - Eyepatch 2 - red leather
 		factor = 1
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -39,10 +47,16 @@
 				has_character_modifier = glass_eye
 			}
 		}
+
+		modifier = {
+			factor = 5
+			this_is_sea_raider_trigger = yes
+		}
 	}
 
 	3 = { # c - Eyepatch 3 - painted eye
 		factor = 4
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -60,6 +74,7 @@
 
 	4 = { # d - Eyepatch 4 - red
 		factor = 1
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -67,10 +82,16 @@
 				has_character_modifier = glass_eye
 			}
 		}
+
+		modifier = {
+			factor = 5
+			this_is_sea_raider_trigger = yes
+		}
 	}
 
 	5 = { # e - Eyepatch 5 - white rag
 		factor = 1
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -95,6 +116,7 @@
 
 	6 = { # f - Eyepatch 6 - blue rag
 		factor = 1
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -111,6 +133,7 @@
 
 	7 = { # g - Eyepatch 7 - green rag
 		factor = 1
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -121,12 +144,13 @@
 
 		modifier = {
 			factor = 2
-			likes_muslims = yes
+			religion_group = muslim
 		}
 	}
 
 	8 = { # h - Eyepatch 8 - red rag
 		factor = 1
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -138,6 +162,7 @@
 
 	9 = { # i - Eyepatch 9 - bloodied rag
 		factor = 25
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -151,6 +176,7 @@
 
 	10 = { # j - Eyepatch 10 - tartan rag
 		factor = 3
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -158,12 +184,13 @@
 				has_character_modifier = glass_eye
 			}
 
-			likes_celts = yes
+			culture_group = celtic
 		}
 	}
 
 	11 = { # k - Eyepatch 11 - scarred eye 1
 		factor = 1
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -171,7 +198,10 @@
 				has_character_modifier = glass_eye
 			}
 
-			NOT = { trait = shy }
+			NOR = {
+				trait = shy
+				trait = groomed
+			}
 		}
 
 		modifier = {
@@ -186,6 +216,7 @@
 
 	12 = { # l - Eyepatch 12 - scarred eye 2
 		factor = 1
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -193,7 +224,10 @@
 				has_character_modifier = glass_eye
 			}
 
-			NOT = { trait = shy }
+			NOR = {
+				trait = shy
+				trait = groomed
+			}
 		}
 
 		modifier = {
@@ -208,6 +242,7 @@
 
 	13 = { # m - Eyepatch 13 - left eyepatch
 		factor = 1
+
 		trigger = {
 			trait = one_eyed
 			NOR = {
@@ -215,10 +250,16 @@
 				has_character_modifier = glass_eye
 			}
 		}
+
+		modifier = {
+			factor = 5
+			this_is_sea_raider_trigger = yes
+		}
 	}
 
 	14 = { # n - Blinded gouged eyes
 		factor = 4
+
 		trigger = {
 			trait = blinded
 
@@ -227,12 +268,16 @@
 				religion_group = pagan_group
 				trait = stubborn
 			}
-			NOT = { trait = shy }
+			NOR = {
+				trait = shy
+				trait = groomed
+			}
 		}
 	}
 
 	15 = { # o - Blinded - bandaged
 		factor = 1
+
 		trigger = {
 			trait = blinded
 		}
@@ -240,6 +285,7 @@
 
 	16 = { # p - Blinded - white rag
 		factor = 1
+
 		trigger = {
 			trait = blinded
 		}
@@ -260,6 +306,7 @@
 
 	17 = { # q - Blinded - blue rag
 		factor = 1
+
 		trigger = {
 			trait = blinded
 		}
@@ -272,18 +319,20 @@
 
 	18 = { # r - Blinded - green rag
 		factor = 1
+
 		trigger = {
 			trait = blinded
 		}
 
 		modifier = {
 			factor = 2
-			likes_muslims = yes
+			religion_group = muslim
 		}
 	}
 
 	19 = { # s - Blinded - red rag
 		factor = 1
+
 		trigger = {
 			trait = blinded
 		}
@@ -291,6 +340,7 @@
 
 	20 = { # t - Blinded - bloodied rag
 		factor = 25
+
 		trigger = {
 			trait = blinded
 
@@ -300,15 +350,17 @@
 
 	21 = { # u - Blinded - tartan rag
 		factor = 3
+
 		trigger = {
 			trait = blinded
 
-			likes_celts = yes
+			culture_group = celtic
 		}
 	}
 
 	22 = { # v - Hermetic Glasses
 		factor = 100
+
 		trigger = {
 			any_artifact = {
 				is_artifact_active = yes

@@ -119,7 +119,7 @@ spriteTypes = {
 				}
 				3 = { # Muslim
 					OR = {
-						portrait_culture_group = arabic
+					portrait_culture_group = arabic
 						portrait_culture_group = iranian
 						portrait_culture_group = east_african
 						portrait_culture_group = israelite
@@ -154,7 +154,7 @@ spriteTypes = {
 				}
 				7 = { # East African
 					OR = {
-						portrait_culture_group = arabic
+					portrait_culture_group = arabic
 						portrait_culture_group = iranian
 						portrait_culture_group = east_african
 						portrait_culture_group = israelite
@@ -1287,20 +1287,20 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-						portrait_society = the_vodouns
+				portrait_society = the_vodouns
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
 						OR = {
-							NOT = { portrait_tier = duke }
-							AND = {
-								OR = {
-									portrait_society_rank = 3
-									portrait_society_rank = 4
-								}
-								NOT = { portrait_tier = king }
-							}
+							portrait_society_rank = 3
+							portrait_society_rank = 4
 						}
+						NOT = { portrait_tier = king }
+					}
+				}
 				OR = {
 					portrait_in_command = no
-							portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -1365,20 +1365,20 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-						portrait_society = the_trollcrafters
+				portrait_society = the_trollcrafters
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
 						OR = {
-							NOT = { portrait_tier = duke }
-							AND = {
-								OR = {
-									portrait_society_rank = 3
-									portrait_society_rank = 4
-								}
-								NOT = { portrait_tier = king }
-							}
+							portrait_society_rank = 3
+							portrait_society_rank = 4
 						}
+						NOT = { portrait_tier = king }
+					}
+				}
 				OR = {
 					portrait_in_command = no
-							portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -1454,23 +1454,23 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
+				OR = {
+					portrait_society = the_cold_ones
+					portrait_society = the_plaguebringers
+				}
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
 						OR = {
-							portrait_society = the_cold_ones
-							portrait_society = the_plaguebringers
+							portrait_society_rank = 3
+							portrait_society_rank = 4
 						}
-						OR = {
-							NOT = { portrait_tier = duke }
-							AND = {
-								OR = {
-									portrait_society_rank = 3
-									portrait_society_rank = 4
-								}
-								NOT = { portrait_tier = king }
-							}
-						}
+						NOT = { portrait_tier = king }
+					}
+				}
 				OR = {
 					portrait_in_command = no
-							portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -1541,23 +1541,23 @@ spriteTypes = {
 				portrait_is_female = yes
 				portrait_clothing = yes
 				OR = {
-							portrait_society = the_trollcrafters
-							portrait_society = the_cold_ones
-							portrait_society = the_plaguebringers
+					portrait_society = the_trollcrafters
+					portrait_society = the_cold_ones
+					portrait_society = the_plaguebringers
 				}
+				OR = {
+					NOT = { portrait_tier = duke }
+					AND = {
 						OR = {
-							NOT = { portrait_tier = duke }
-							AND = {
-								OR = {
-									portrait_society_rank = 3
-									portrait_society_rank = 4
-								}
-								NOT = { portrait_tier = king }
-							}
+							portrait_society_rank = 3
+							portrait_society_rank = 4
 						}
+						NOT = { portrait_tier = king }
+					}
+				}
 				OR = {
 					portrait_in_command = no
-							portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}

@@ -606,23 +606,29 @@
 
 		trigger = {
 			OR = {
-				trait = idolizer
 				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = idolizer
 				trait = humble
 				trait = theologian
 				has_focus = focus_ch_faith
-				is_ascetic_trigger = yes
 			}
 		}
 
 		modifier = {
 			factor = 50
 			OR = {
-				trait = idolizer
 				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
+				trait = idolizer
 				trait = humble
 				trait = theologian
-				is_ascetic_trigger = yes
 			}
 		}
 

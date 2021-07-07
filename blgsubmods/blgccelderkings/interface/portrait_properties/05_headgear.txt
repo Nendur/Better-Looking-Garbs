@@ -329,6 +329,7 @@
 					OR = {
 						blg_elite_commander = no
 						blg_mercenary = yes
+						blg_peasant = yes
 					}
 					NOR = {
 						blg_prisoner = yes

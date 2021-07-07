@@ -25,18 +25,16 @@
 				death_reason = death_duel
 				AND = {
 					mercenary = yes
-					NOT = {
-						primary_title = {
-							OR = {
-								title = d_venetian_navy
-								title = d_genoese_navy
-								title = d_hanseatic_navy
-								title = d_frisian_navy
-								title = d_maghreb_corsairs
-								title = d_han_junks
-								title = d_jurchen_corsairs
-								title = d_treasure_fleet
-							}
+					primary_title = {
+						NOR = {
+							title = d_venetian_navy
+							title = d_genoese_navy
+							title = d_hanseatic_navy
+							title = d_frisian_navy
+							title = d_maghreb_corsairs
+							title = d_han_junks
+							title = d_jurchen_corsairs
+							title = d_treasure_fleet
 						}
 					}
 				}

@@ -21,6 +21,7 @@
 				has_landed_title = d_knights_templar
 				liege = { has_landed_title = d_knights_templar }
 			}
+
 			OR = {
 				in_command = yes
 				has_character_flag = add_duel_xp
@@ -115,6 +116,7 @@
 				has_landed_title = d_knights_hospitaler
 				liege = { has_landed_title = d_knights_hospitaler }
 			}
+
 			OR = {
 				in_command = yes
 				has_character_flag = add_duel_xp
@@ -142,6 +144,7 @@
 				liege = { has_landed_title = d_teutonic_order }
 				liege = { has_landed_title = k_teutonic_state }
 			}
+
 			OR = {
 				in_command = yes
 				has_character_flag = add_duel_xp
@@ -204,6 +207,7 @@
 				liege = { has_landed_title = d_knights_santiago }
 				liege = { has_landed_title = d_knights_calatrava }
 			}
+
 			OR = {
 				in_command = yes
 				has_character_flag = add_duel_xp
@@ -264,6 +268,7 @@
 				has_landed_title = d_livonian_order
 				liege = { has_landed_title = d_livonian_order }
 			}
+
 			OR = {
 				in_command = yes
 				has_character_flag = add_duel_xp
@@ -274,6 +279,7 @@
 
 	10 = { # j - Unicorn headgear.
 		factor = 100
+
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
@@ -284,6 +290,7 @@
 
 	11 = { # k - Miaphysite priest.
 		factor = 100
+
 		trigger = {
 			is_female = no
 			is_priest = yes
@@ -307,8 +314,8 @@
 		trigger = {
 			OR = {
 				any_artifact = {
-					is_artifact_equipped = yes
-					artifact_type = crown_zun_fylkir
+						is_artifact_equipped = yes
+						artifact_type = crown_zun_fylkir
 				}
 				trait = dead_crown_zun_fylkir
 				AND = {
@@ -326,7 +333,7 @@
 
 		trigger = {
 			OR = {
-				likes_buddhists = yes
+				religion = buddhist
 				trait = digambara_jain
 			}
 			OR = {
@@ -334,6 +341,7 @@
 				is_ascetic_trigger = yes
 				employer = { holy_order = yes }
 			}
+			NOT = { trait = cynical }
 		}
 	}
 }

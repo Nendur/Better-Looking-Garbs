@@ -2,32 +2,19 @@
 3 = {
 	0 = { # 0 - Royal clothes 1
 		factor = 10
+
 		trigger = {
 			OR = {
-				AND = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-							OR = {
-								higher_real_tier_than = duke
-								is_or_was_offmap_power_ruler = yes
-							}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				has_character_modifier = jd_prince
@@ -36,17 +23,25 @@
 					is_merchant_republic = yes
 					in_command = no
 					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
+						culture_group = latin
+						culture_group = iberian
+						culture_group = byzantine
+						culture_group = arabic
+						culture_group = iranian
+						culture_group = west_african
+						culture_group = east_african
 						culture_group = central_african
-						likes_altaics = yes
-						likes_mesoamericans = yes
+						culture_group = altaic
+						culture_group = mesoamerican
 						culture_group = israelite
 					}
 				}
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 
@@ -58,14 +53,16 @@
 					is_merchant_republic = yes
 					in_command = no
 					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
+						culture_group = latin
+						culture_group = iberian
+						culture_group = byzantine
+						culture_group = arabic
+						culture_group = iranian
+						culture_group = west_african
+						culture_group = east_african
 						culture_group = central_african
-						likes_altaics = yes
-						likes_mesoamericans = yes
+						culture_group = altaic
+						culture_group = mesoamerican
 						culture_group = israelite
 					}
 				}
@@ -75,32 +72,19 @@
 
 	1 = { # a - Royal clothes 2
 		factor = 10
+
 		trigger = {
 			OR = {
-				AND = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-							OR = {
-								higher_real_tier_than = duke
-								is_or_was_offmap_power_ruler = yes
-							}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				has_character_modifier = jd_prince
@@ -109,17 +93,25 @@
 					is_merchant_republic = yes
 					in_command = no
 					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
+						culture_group = latin
+						culture_group = iberian
+						culture_group = byzantine
+						culture_group = arabic
+						culture_group = iranian
+						culture_group = west_african
+						culture_group = east_african
 						culture_group = central_african
-						likes_altaics = yes
-						likes_mesoamericans = yes
+						culture_group = altaic
+						culture_group = mesoamerican
 						culture_group = israelite
 					}
 				}
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 
@@ -131,14 +123,16 @@
 					is_merchant_republic = yes
 					in_command = no
 					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
+						culture_group = latin
+						culture_group = iberian
+						culture_group = byzantine
+						culture_group = arabic
+						culture_group = iranian
+						culture_group = west_african
+						culture_group = east_african
 						culture_group = central_african
-						likes_altaics = yes
-						likes_mesoamericans = yes
+						culture_group = altaic
+						culture_group = mesoamerican
 						culture_group = israelite
 					}
 				}
@@ -148,32 +142,19 @@
 
 	2 = { # b - Royal clothes 3
 		factor = 10
+
 		trigger = {
 			OR = {
-				AND = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
-						spouse_even_if_dead = {
-							OR = {
-								higher_real_tier_than = duke
-								is_or_was_offmap_power_ruler = yes
-							}
-						}
-						has_minor_title = title_despot
-						has_minor_title = title_augusta
-					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOT = { mercenary = yes }
-					NOT = { holy_order = yes }
-					NOR = {
-						trait = peasant_leader
-						trait = heresiarch
 					}
 				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
 				has_character_modifier = jd_prince
@@ -182,17 +163,25 @@
 					is_merchant_republic = yes
 					in_command = no
 					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
+						culture_group = latin
+						culture_group = iberian
+						culture_group = byzantine
+						culture_group = arabic
+						culture_group = iranian
+						culture_group = west_african
+						culture_group = east_african
 						culture_group = central_african
-						likes_altaics = yes
-						likes_mesoamericans = yes
+						culture_group = altaic
+						culture_group = mesoamerican
 						culture_group = israelite
 					}
 				}
+			}
+			NOR = {
+				mercenary = yes
+				holy_order = yes
+				trait = peasant_leader
+				trait = heresiarch
 			}
 		}
 
@@ -204,14 +193,16 @@
 					is_merchant_republic = yes
 					in_command = no
 					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
+						culture_group = latin
+						culture_group = iberian
+						culture_group = byzantine
+						culture_group = arabic
+						culture_group = iranian
+						culture_group = west_african
+						culture_group = east_african
 						culture_group = central_african
-						likes_altaics = yes
-						likes_mesoamericans = yes
+						culture_group = altaic
+						culture_group = mesoamerican
 						culture_group = israelite
 					}
 				}
@@ -221,6 +212,7 @@
 
 	3 = { # c - Noble clothes 1
 		factor = 2
+
 		trigger = {
 			OR = {
 				is_landed = yes
@@ -248,6 +240,7 @@
 
 	4 = { # d - Noble clothes 2
 		factor = 2
+
 		trigger = {
 			OR = {
 				is_landed = yes
@@ -275,6 +268,7 @@
 
 	5 = { # e - Noble clothes 3
 		factor = 2
+
 		trigger = {
 			OR = {
 				is_landed = yes
@@ -302,6 +296,7 @@
 
 	6 = { # f - Modest clothes 1
 		factor = 1
+
 		trigger = {
 			OR = {
 				NOR = {
@@ -324,6 +319,7 @@
 
 	7 = { # g - Modest clothes 2
 		factor = 1
+
 		trigger = {
 			OR = {
 				NOR = {
@@ -346,6 +342,7 @@
 
 	8 = { # h - Modest clothes 3
 		factor = 1
+
 		trigger = {
 			OR = {
 				NOR = {
@@ -368,11 +365,12 @@
 
 	9 = { # i - Shady clothes
 		factor = 3
+
 		trigger = {
 			OR = {
 				has_job_title = job_spymaster
 				AND = {
-					intrigue = 12
+					intrigue >= 12
 					lower_real_tier_than = duke
 				}
 			}
@@ -381,91 +379,90 @@
 
 	10 = { # j - Martial
 		factor = 100
-		trigger = {
-			OR = {
-				AND = {
-					OR = {
-						AND = {
-							in_command = yes
-							OR = {
-								war = yes
-								liege = { war = yes }
-								in_battle = yes
-								in_siege = yes
-								is_landed = no
-							}
-						}
-						has_character_flag = add_duel_xp
-						trait = varangian
-						trait = shieldmaiden
-						trait = gladiator
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						employer = {
-							OR = {
-								AND = {
-									mercenary = yes
-									primary_title = {
-										NOR = {
-											title = d_venetian_navy
-											title = d_genoese_navy
-											title = d_hanseatic_navy
-											title = d_frisian_navy
-											title = d_maghreb_corsairs
-											title = d_han_junks
-											title = d_jurchen_corsairs
-											title = d_treasure_fleet
-										}
-									}
-								}
-								holy_order = yes
-							}
-						}
-					}
-					OR = {
-						is_female = yes
-						NAND = {
-							OR = {
-								higher_real_tier_than = count
-								spouse_even_if_dead = { higher_real_tier_than = count }
-								has_character_modifier = jd_strategist
-							}
-							NOR = {
-								trait = peasant_leader
-								trait = heresiarch
-							}
-						}
-					}
-				}
-			}
-		}
-	}
 
-	11 = { # k - Ragged clothes
-		factor = 100
 		trigger = {
-			OR = {
-				prisoner = yes
-				death_reason = death_dungeon
-				death_reason = death_slavery
-				AND = {
+			trigger_if = {
+				limit = {
 					is_merchant_republic = yes
 					in_command = no
-					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
-						culture_group = central_african
-						likes_altaics = yes
-						likes_mesoamericans = yes
-						culture_group = israelite
+				}
+				OR = {
+					culture_group = latin
+					culture_group = iberian
+					culture_group = byzantine
+					culture_group = arabic
+					culture_group = iranian
+					culture_group = west_african
+					culture_group = east_african
+					culture_group = central_african
+					culture_group = altaic
+					culture_group = mesoamerican
+					culture_group = israelite
+				}
+			}
+			trigger_else = {
+				OR = {
+					AND = {
+						in_command = yes
+						OR = {
+							war = yes
+							liege = { war = yes }
+							in_battle = yes
+							in_siege = yes
+							is_landed = no
+						}
+					}
+					has_character_flag = add_duel_xp
+					has_job_title = job_marshal
+					death_reason = death_battle
+					death_reason = death_duel
+					employer = {
+						OR = {
+							AND = {
+								mercenary = yes
+								primary_title = {
+									NOR = {
+										title = d_venetian_navy
+										title = d_genoese_navy
+										title = d_hanseatic_navy
+										title = d_frisian_navy
+										title = d_maghreb_corsairs
+										title = d_han_junks
+										title = d_jurchen_corsairs
+										title = d_treasure_fleet
+									}
+								}
+							}
+							holy_order = yes
+						}
+					}
+					AND = {
+						OR = {
+							trait = varangian
+							trait = shieldmaiden
+							trait = gladiator
+						}
+						OR = {
+							is_landed = no
+							trait = travelling
+						}
+					}
+				}
+				trigger_if = {
+					limit = { is_female = no }
+					NAND = {
+						OR = {
+							higher_real_tier_than = count
+							spouse_even_if_dead = { higher_real_tier_than = count }
+							has_character_modifier = jd_strategist
+						}
+						NOR = {
+							trait = peasant_leader
+							trait = heresiarch
+						}
 					}
 				}
 			}
-			NOT = { has_character_modifier = house_arrest }
 		}
 
 		modifier = {
@@ -473,14 +470,69 @@
 			is_merchant_republic = yes
 			in_command = no
 			OR = {
-				likes_latino_iberians = yes
-				likes_byzantines = yes
-				likes_arabs = yes
-				likes_iranians = yes
-				likes_africans = yes
+				culture_group = latin
+				culture_group = iberian
+				culture_group = byzantine
+				culture_group = arabic
+				culture_group = iranian
+				culture_group = west_african
+				culture_group = east_african
 				culture_group = central_african
-				likes_altaics = yes
-				likes_mesoamericans = yes
+				culture_group = altaic
+				culture_group = mesoamerican
+				culture_group = israelite
+			}
+		}
+	}
+
+	11 = { # k - Ragged clothes
+		factor = 100
+
+		trigger = {
+			trigger_if = {
+				limit = {
+					is_merchant_republic = yes
+					in_command = no
+				}
+				OR = {
+					culture_group = latin
+					culture_group = iberian
+					culture_group = byzantine
+					culture_group = arabic
+					culture_group = iranian
+					culture_group = west_african
+					culture_group = east_african
+					culture_group = central_african
+					culture_group = altaic
+					culture_group = mesoamerican
+					culture_group = israelite
+				}
+			}
+			trigger_else = {
+				OR = {
+					prisoner = yes
+					death_reason = death_dungeon
+					death_reason = death_slavery
+				}
+				NOT = { has_character_modifier = house_arrest }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			is_merchant_republic = yes
+			in_command = no
+			OR = {
+				culture_group = latin
+				culture_group = iberian
+				culture_group = byzantine
+				culture_group = arabic
+				culture_group = iranian
+				culture_group = west_african
+				culture_group = east_african
+				culture_group = central_african
+				culture_group = altaic
+				culture_group = mesoamerican
 				culture_group = israelite
 			}
 		}
@@ -488,55 +540,89 @@
 
 	12 = { # l - Royal war gear
 		factor = 100
-		trigger = {
-			OR = {
-				higher_real_tier_than = duke
-				spouse_even_if_dead = { higher_real_tier_than = duke }
-			}
 
-			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						in_battle = yes
-						in_siege = yes
-						is_landed = no
-					}
-				}
-				has_character_flag = add_duel_xp
-				trait = varangian
-				trait = shieldmaiden
-				trait = gladiator
-				has_job_title = job_marshal
-				death_reason = death_battle
-				death_reason = death_duel
-				has_landed_title = e_china_west_governor
-				AND = {
+		trigger = {
+			trigger_if = {
+				limit = {
 					is_merchant_republic = yes
 					in_command = no
-					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
-						culture_group = central_african
-						likes_altaics = yes
-						likes_mesoamericans = yes
-						culture_group = israelite
-					}
+				}
+				OR = {
+					culture_group = latin
+					culture_group = iberian
+					culture_group = byzantine
+					culture_group = arabic
+					culture_group = iranian
+					culture_group = west_african
+					culture_group = east_african
+					culture_group = central_african
+					culture_group = altaic
+					culture_group = mesoamerican
+					culture_group = israelite
 				}
 			}
-		}
-
-		modifier = {
-			factor = 0
-			is_nomadic = yes
-			NOR = {
-				real_tier = emperor
-				spouse_even_if_dead = { real_tier = emperor }
+			trigger_else = {
+				OR = {
+					AND = {
+						in_command = yes
+						OR = {
+							war = yes
+							liege = { war = yes }
+							in_battle = yes
+							in_siege = yes
+							is_landed = no
+						}
+					}
+					has_character_flag = add_duel_xp
+					AND = {
+						OR = {
+							trait = varangian
+							trait = shieldmaiden
+							trait = gladiator
+						}
+						OR = {
+							is_landed = no
+							trait = travelling
+						}
+					}
+					has_job_title = job_marshal
+					death_reason = death_battle
+					death_reason = death_duel
+					employer = {
+						OR = {
+							AND = {
+								mercenary = yes
+								primary_title = {
+									NOR = {
+										title = d_venetian_navy
+										title = d_genoese_navy
+										title = d_hanseatic_navy
+										title = d_frisian_navy
+										title = d_maghreb_corsairs
+										title = d_han_junks
+										title = d_jurchen_corsairs
+										title = d_treasure_fleet
+									}
+								}
+							}
+							holy_order = yes
+						}
+					}
+					has_landed_title = e_china_west_governor
+				}
+				trigger_if = {
+					limit = { is_nomadic = yes }
+					OR = {
+						real_tier = emperor
+						spouse_even_if_dead = { real_tier = emperor }
+					}
+				}
+				trigger_else = {
+					OR = {
+						higher_real_tier_than = duke
+						spouse_even_if_dead = { higher_real_tier_than = duke }
+					}
+				}
 			}
 		}
 
@@ -545,14 +631,16 @@
 			is_merchant_republic = yes
 			in_command = no
 			OR = {
-				likes_latino_iberians = yes
-				likes_byzantines = yes
-				likes_arabs = yes
-				likes_iranians = yes
-				likes_africans = yes
+				culture_group = latin
+				culture_group = iberian
+				culture_group = byzantine
+				culture_group = arabic
+				culture_group = iranian
+				culture_group = west_african
+				culture_group = east_african
 				culture_group = central_african
-				likes_altaics = yes
-				likes_mesoamericans = yes
+				culture_group = altaic
+				culture_group = mesoamerican
 				culture_group = israelite
 			}
 		}
@@ -560,68 +648,78 @@
 
 	13 = { # m - Noble war gear
 		factor = 100
-		trigger = {
-			OR = {
-				higher_real_tier_than = count
-				spouse_even_if_dead = { higher_real_tier_than = count }
-				has_character_modifier = jd_strategist
-			}
-			NOR = {
-				trait = peasant_leader
-				trait = heresiarch
-			}
 
-			OR = {
-				AND = {
-					in_command = yes
-					OR = {
-						war = yes
-						liege = { war = yes }
-						in_battle = yes
-						in_siege = yes
-						is_landed = no
-					}
-				}
-				has_character_flag = add_duel_xp
-				trait = varangian
-				trait = shieldmaiden
-				trait = gladiator
-				has_job_title = job_marshal
-				death_reason = death_battle
-				death_reason = death_duel
-				employer = {
-					OR = {
-						AND = {
-							mercenary = yes
-							primary_title = {
-								NOR = {
-									title = d_venetian_navy
-									title = d_genoese_navy
-									title = d_hanseatic_navy
-									title = d_frisian_navy
-									title = d_maghreb_corsairs
-									title = d_han_junks
-									title = d_jurchen_corsairs
-									title = d_treasure_fleet
-								}
-							}
-						}
-						holy_order = yes
-					}
-				}
-				AND = {
+		trigger = {
+			trigger_if = {
+				limit = {
 					is_merchant_republic = yes
 					in_command = no
-					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
-						culture_group = central_african
-						likes_altaics = yes
-						likes_mesoamericans = yes
-						culture_group = israelite
+				}
+				OR = {
+					culture_group = latin
+					culture_group = iberian
+					culture_group = byzantine
+					culture_group = arabic
+					culture_group = iranian
+					culture_group = west_african
+					culture_group = east_african
+					culture_group = central_african
+					culture_group = altaic
+					culture_group = mesoamerican
+					culture_group = israelite
+				}
+			}
+			trigger_else = {
+				OR = {
+					higher_real_tier_than = count
+					spouse_even_if_dead = { higher_real_tier_than = count }
+					has_character_modifier = jd_strategist
+				}
+				OR = {
+					AND = {
+						in_command = yes
+						OR = {
+							war = yes
+							liege = { war = yes }
+							in_battle = yes
+							in_siege = yes
+							is_landed = no
+						}
+					}
+					has_character_flag = add_duel_xp
+					has_job_title = job_marshal
+					death_reason = death_battle
+					death_reason = death_duel
+					employer = {
+						OR = {
+							AND = {
+								mercenary = yes
+								primary_title = {
+									NOR = {
+										title = d_venetian_navy
+										title = d_genoese_navy
+										title = d_hanseatic_navy
+										title = d_frisian_navy
+										title = d_maghreb_corsairs
+										title = d_han_junks
+										title = d_jurchen_corsairs
+										title = d_treasure_fleet
+									}
+								}
+							}
+							holy_order = yes
+						}
+					}
+					AND = {
+						OR = {
+							trait = varangian
+							trait = shieldmaiden
+							trait = gladiator
+						}
+						OR = {
+							is_landed = no
+							trait = travelling
+						}
 					}
 				}
 			}
@@ -632,14 +730,16 @@
 			is_merchant_republic = yes
 			in_command = no
 			OR = {
-				likes_latino_iberians = yes
-				likes_byzantines = yes
-				likes_arabs = yes
-				likes_iranians = yes
-				likes_africans = yes
+				culture_group = latin
+				culture_group = iberian
+				culture_group = byzantine
+				culture_group = arabic
+				culture_group = iranian
+				culture_group = west_african
+				culture_group = east_african
 				culture_group = central_african
-				likes_altaics = yes
-				likes_mesoamericans = yes
+				culture_group = altaic
+				culture_group = mesoamerican
 				culture_group = israelite
 			}
 		}
@@ -655,75 +755,85 @@
 
 	14 = { # n - Chinese war gear
 		factor = 99
-		trigger = {
-			OR = {
-				higher_real_tier_than = count
-				spouse_even_if_dead = { higher_real_tier_than = count }
-				has_character_modifier = jd_strategist
-			}
-			NOR = {
-				trait = peasant_leader
-				trait = heresiarch
-			}
 
-			OR = {
-				AND = {
+		trigger = {
+			trigger_if = {
+				limit = {
 					is_merchant_republic = yes
 					in_command = no
-					OR = {
-						likes_latino_iberians = yes
-						likes_byzantines = yes
-						likes_arabs = yes
-						likes_iranians = yes
-						likes_africans = yes
-						culture_group = central_african
-						likes_altaics = yes
-						likes_mesoamericans = yes
-						culture_group = israelite
-					}
 				}
-				AND = {
-					OR = {
-						culture_group = chinese_group
-						culture = tangut
-					}
-					OR = {
-						AND = {
-							in_command = yes
-							OR = {
-								war = yes
-								liege = { war = yes }
-								in_battle = yes
-								in_siege = yes
-								is_landed = no
-							}
+				OR = {
+					culture_group = latin
+					culture_group = iberian
+					culture_group = byzantine
+					culture_group = arabic
+					culture_group = iranian
+					culture_group = west_african
+					culture_group = east_african
+					culture_group = central_african
+					culture_group = altaic
+					culture_group = mesoamerican
+					culture_group = israelite
+				}
+			}
+			trigger_else = {
+				OR = {
+					culture_group = chinese_group
+					culture = tangut
+				}
+				OR = {
+					higher_real_tier_than = count
+					spouse_even_if_dead = { higher_real_tier_than = count }
+					has_character_modifier = jd_strategist
+				}
+				NOR = {
+					trait = peasant_leader
+					trait = heresiarch
+				}
+				OR = {
+					AND = {
+						in_command = yes
+						OR = {
+							war = yes
+							liege = { war = yes }
+							in_battle = yes
+							in_siege = yes
+							is_landed = no
 						}
-						has_character_flag = add_duel_xp
-						trait = varangian
-						trait = shieldmaiden
-						trait = gladiator
-						has_job_title = job_marshal
-						death_reason = death_battle
-						death_reason = death_duel
-						employer = {
-							OR = {
-								AND = {
-									mercenary = yes
-									primary_title = {
-										NOR = {
-											title = d_venetian_navy
-											title = d_genoese_navy
-											title = d_hanseatic_navy
-											title = d_frisian_navy
-											title = d_maghreb_corsairs
-											title = d_han_junks
-											title = d_jurchen_corsairs
-											title = d_treasure_fleet
-										}
+					}
+					has_character_flag = add_duel_xp
+					has_job_title = job_marshal
+					death_reason = death_battle
+					death_reason = death_duel
+					employer = {
+						OR = {
+							AND = {
+								mercenary = yes
+								primary_title = {
+									NOR = {
+										title = d_venetian_navy
+										title = d_genoese_navy
+										title = d_hanseatic_navy
+										title = d_frisian_navy
+										title = d_maghreb_corsairs
+										title = d_han_junks
+										title = d_jurchen_corsairs
+										title = d_treasure_fleet
 									}
 								}
-								holy_order = yes
 							}
+							holy_order = yes
+						}
+					}
+					AND = {
+						OR = {
+							trait = varangian
+							trait = shieldmaiden
+							trait = gladiator
+						}
+						OR = {
+							is_landed = no
+							trait = travelling
 						}
 					}
 				}
@@ -735,14 +845,16 @@
 			is_merchant_republic = yes
 			in_command = no
 			OR = {
-				likes_latino_iberians = yes
-				likes_byzantines = yes
-				likes_arabs = yes
-				likes_iranians = yes
-				likes_africans = yes
+				culture_group = latin
+				culture_group = iberian
+				culture_group = byzantine
+				culture_group = arabic
+				culture_group = iranian
+				culture_group = west_african
+				culture_group = east_african
 				culture_group = central_african
-				likes_altaics = yes
-				likes_mesoamericans = yes
+				culture_group = altaic
+				culture_group = mesoamerican
 				culture_group = israelite
 			}
 		}

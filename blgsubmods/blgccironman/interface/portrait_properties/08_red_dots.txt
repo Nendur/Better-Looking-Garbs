@@ -3,19 +3,20 @@
 	0 = { # blank
 		factor = 20
 		modifier = {
-			factor = 10000
-			likes_hindus = no
+			factor = 100
+			NOT = { religion = hindu }
 		}
 
 		modifier = {
 			factor = 0.01
 			OR = {
 				is_priest = yes
-				is_ascetic_trigger = yes
 				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_indian_pilgrimage
 				has_minor_title = title_guru
 				society_member_of = monastic_order_hindu
-				trait = on_indian_pilgrimage
 				has_character_flag = diwali_feast_begun
 				has_character_flag = attending_diwali_feast
 			}
@@ -27,8 +28,10 @@
 		trigger = {
 			trait = shaivist_hindu
 			OR = {
-				is_ascetic_trigger = yes
 				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_indian_pilgrimage
 				society_member_of = monastic_order_hindu
 			}
 		}
@@ -39,8 +42,10 @@
 		trigger = {
 			trait = shaivist_hindu
 			OR = {
-				is_ascetic_trigger = yes
 				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_indian_pilgrimage
 				society_member_of = monastic_order_hindu
 			}
 		}
@@ -51,8 +56,10 @@
 		trigger = {
 			trait = shaktist_hindu
 			OR = {
-				is_ascetic_trigger = yes
 				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_indian_pilgrimage
 				society_member_of = monastic_order_hindu
 			}
 		}
@@ -63,8 +70,10 @@
 		trigger = {
 			trait = vaishnavist_hindu
 			OR = {
-				is_ascetic_trigger = yes
 				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_indian_pilgrimage
 				society_member_of = monastic_order_hindu
 			}
 		}
@@ -75,8 +84,10 @@
 		trigger = {
 			trait = vaishnavist_hindu
 			OR = {
-				is_ascetic_trigger = yes
 				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				trait = on_indian_pilgrimage
 				society_member_of = monastic_order_hindu
 			}
 		}

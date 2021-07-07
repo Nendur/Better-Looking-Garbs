@@ -2,6 +2,7 @@
 38 = {
 	0 = { # 0 - blank
 		factor = 5
+
 		modifier = {
 			factor = 100
 			NOR = {
@@ -73,7 +74,7 @@
 					region = world_asia_minor
 					AND = {
 						region = world_steppe_west
-						likes_christians = yes
+						religion_group = christian
 					}
 				}
 			}
@@ -97,6 +98,10 @@
 	6 = { # f - Glass window
 		factor = 1
 		trigger = {
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
 			capital_holding = {
 				OR = {
 					holding_type = city
@@ -104,16 +109,16 @@
 					holding_type = family_palace
 				}
 			}
-			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
-			}
 		}
 	}
 
 	7 = { # g - Grated window
 		factor = 1
 		trigger = {
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
 			capital_holding = {
 				OR = {
 					holding_type = castle
@@ -128,10 +133,6 @@
 					region = world_africa
 					region = world_persia
 				}
-			}
-			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
 			}
 		}
 	}

@@ -54,10 +54,6 @@ blg_guard = {
 		trait = monster_hunter
 		trait = houseirae_sword_dancer
 	}
-	OR = {
-		is_landed = no
-		blg_travelling = yes
-	}
 }
 
 # Portrait override for ihram clothes.

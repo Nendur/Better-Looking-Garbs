@@ -8,7 +8,6 @@
 		factor = 100
 		trigger = {
 			has_character_modifier = demon_horns
-
 			NOT = { has_game_rule = { name = supernatural_events value = off } }
 		}
 	}
@@ -21,75 +20,80 @@
 				has_character_modifier = voice_of_jesus
 				has_character_modifier = military_jesus
 			}
-
 			NOT = { has_game_rule = { name = supernatural_events value = off } }
 		}
 	}
 
-	3 = { # c - Wolfblooded
+	3 = { # c - Blind
+		factor = 100
+		trigger = {
+			trait = blinded
+		}
+	}
+
+	4 = { # d - Wolfblooded
 		factor = 100
 		trigger = {
 			OR = {
 				has_character_modifier = wolf_blood
 				has_character_modifier = lycanthropy
 			}
-
 			NOT = { has_game_rule = { name = supernatural_events value = off } }
 		}
 	}
 
-	4 = { # d - Possessed
+	5 = { # e - Possessed
 		factor = 100
 		trigger = {
 			trait = possessed
-
 			is_alive = yes
 		}
 	}
 
-	5 = { # e - Incapable
+	6 = { # f - Incapable
 		factor = 100
 		trigger = {
 			OR = {
 				trait = incapable
 				trait = sick_incapable
 			}
-
 			is_alive = yes
 		}
 	}
 
-	6 = { # f - Lunatic
+	7 = { # g - Lunatic
 		factor = 100
 		trigger = {
 			trait = lunatic
-
 			is_alive = yes
 		}
 	}
 
-	7 = { # g - Depressed
+	8 = { # h - Depressed
 		factor = 100
 		trigger = {
 			trait = depressed
-
 			is_alive = yes
 		}
 	}
 
-	8 = { # h - Stressed
+	9 = { # i - Stressed
 		factor = 100
 		trigger = {
 			trait = stressed
-
 			is_alive = yes
 		}
 	}
 
-	9 = { # i - Blind
+	10 = { # j - Blinded eye
 		factor = 100
 		trigger = {
-			trait = blinded
+			trait = one_eyed
+			NOR = {
+				has_portrait_property = { layer = 13 index = 11 }
+				has_portrait_property = { layer = 13 index = 12 }
+				has_portrait_property = { layer = 13 index = 13 }
+			}
 		}
 	}
 }

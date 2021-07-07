@@ -2,6 +2,7 @@
 12 = {
 	0 = { # 0 - blank
 		factor = 100
+
 		trigger = {
 			NOR = {
 				trait = disfigured
@@ -13,6 +14,7 @@
 
 	1 = { # a - Mask 1 bone
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -42,6 +44,7 @@
 
 	2 = { # b - Mask 2 silver
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -70,6 +73,7 @@
 
 	3 = { # c - Mask 3 iron
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -77,29 +81,17 @@
 				has_character_modifier = forced_mask
 			}
 
-			NAND = {
-				OR = {
-					higher_real_tier_than = duke
-					is_or_was_offmap_power_ruler = yes
-					spouse_even_if_dead = {
-							OR = {
-										higher_real_tier_than = duke
-										is_or_was_offmap_power_ruler = yes
-							}
+			NOR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
+					OR = {
+						higher_real_tier_than = duke
+						is_or_was_offmap_power_ruler = yes
 					}
-					has_minor_title = title_despot
-					has_minor_title = title_augusta
 				}
-				NAND = {
-					is_republic = yes
-					NOT = { government = confucian_bureaucracy }
-				}
-				NOR = {
-					mercenary = yes
-					holy_order = yes
-					trait = peasant_leader
-					trait = heresiarch
-				}
+				has_minor_title = title_despot
+				has_minor_title = title_augusta
 			}
 			has_tribal_or_nomadic_government_trigger = no
 			NOT = { has_character_modifier = golden_mask }
@@ -108,147 +100,151 @@
 
 	4 = { # d - Mask 4 bone - blue stripes
 		factor = 1
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						religion_group = pagan_group
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
+			OR = {
+				has_tribal_or_nomadic_government_trigger = yes
+				religion_group = pagan_group
+				trait = lunatic
+				trait = possessed
+				trait = mystic
+				has_character_modifier = attending_masquerade
+			}
 			NOT = { has_character_modifier = golden_mask }
 		}
 	}
 
 	5 = { # e - Mask 5 bone - orange stripes
 		factor = 1
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						religion_group = pagan_group
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
+			OR = {
+				has_tribal_or_nomadic_government_trigger = yes
+				religion_group = pagan_group
+				trait = lunatic
+				trait = possessed
+				trait = mystic
+				has_character_modifier = attending_masquerade
+			}
 			NOT = { has_character_modifier = golden_mask }
 		}
 	}
 
 	6 = { # f - Mask 6 bone - red dots
 		factor = 2
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
 			OR = {
 				religion_openly_west_african_or_reformed_trigger = yes
-				likes_africans = yes
+				culture_group = west_african
+				culture_group = east_african
 				culture_group = central_african
 			}
-
+			OR = {
+				has_tribal_or_nomadic_government_trigger = yes
+				religion_group = pagan_group
+				trait = lunatic
+				trait = possessed
+				trait = mystic
+				has_character_modifier = attending_masquerade
+			}
 			NOT = { has_character_modifier = golden_mask }
 		}
 	}
 
 	7 = { # g - Mask 7 bone - black stripes
 		factor = 2
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
 			OR = {
 				religion_openly_west_african_or_reformed_trigger = yes
-				likes_africans = yes
+				culture_group = west_african
+				culture_group = east_african
 				culture_group = central_african
 			}
-
+			OR = {
+				has_tribal_or_nomadic_government_trigger = yes
+				religion_group = pagan_group
+				trait = lunatic
+				trait = possessed
+				trait = mystic
+				has_character_modifier = attending_masquerade
+			}
 			NOT = { has_character_modifier = golden_mask }
 		}
 	}
 
 	8 = { # h - Mask 8 bone - red stripes/eyes
 		factor = 1
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						has_tribal_or_nomadic_government_trigger = yes
-						religion_group = pagan_group
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
+			OR = {
+				has_tribal_or_nomadic_government_trigger = yes
+				religion_group = pagan_group
+				trait = lunatic
+				trait = possessed
+				trait = mystic
+				has_character_modifier = attending_masquerade
+			}
 			NOT = { has_character_modifier = golden_mask }
 		}
 	}
 
 	9 = { # i - Mask 9 bone - black eyes/lightning
 		factor = 1
+
 		trigger = {
 			OR = {
-				AND = {
-					trait = disfigured
-					OR = {
-						religion_group = pagan_group
-						trait = lunatic
-						trait = possessed
-						trait = mystic
-					}
-				}
+				trait = disfigured
 				has_character_modifier = attending_masquerade
 				has_character_modifier = forced_mask
 			}
 
+			OR = {
+				has_tribal_or_nomadic_government_trigger = yes
+				religion_group = pagan_group
+				trait = lunatic
+				trait = possessed
+				trait = mystic
+				has_character_modifier = attending_masquerade
+			}
 			NOT = { has_character_modifier = golden_mask }
 		}
 	}
 
 	10 = { # j - Mask 10 - decorated silver
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -260,23 +256,15 @@
 				higher_real_tier_than = duke
 				is_or_was_offmap_power_ruler = yes
 				spouse_even_if_dead = {
-						OR = {
-									higher_real_tier_than = duke
-									is_or_was_offmap_power_ruler = yes
-						}
+					OR = {
+						higher_real_tier_than = duke
+						is_or_was_offmap_power_ruler = yes
+					}
 				}
 				has_minor_title = title_despot
 				has_minor_title = title_augusta
 			}
-			NAND = {
-				is_republic = yes
-				NOT = { government = confucian_bureaucracy }
-			}
 			NOR = {
-				mercenary = yes
-				holy_order = yes
-				trait = peasant_leader
-				trait = heresiarch
 				has_tribal_or_nomadic_government_trigger = yes
 				has_character_modifier = golden_mask
 			}
@@ -285,6 +273,7 @@
 
 	11 = { # k - Mask 11 - decorated gold
 		factor = 2
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -293,30 +282,21 @@
 			}
 
 			OR = {
+				has_character_modifier = golden_mask
 				AND = {
 					OR = {
 						higher_real_tier_than = duke
 						is_or_was_offmap_power_ruler = yes
 						spouse_even_if_dead = {
-								OR = {
-											higher_real_tier_than = duke
-											is_or_was_offmap_power_ruler = yes
-								}
+							OR = {
+								higher_real_tier_than = duke
+								is_or_was_offmap_power_ruler = yes
+							}
 						}
 						has_minor_title = title_despot
 						has_minor_title = title_augusta
 					}
-					NAND = {
-						is_republic = yes
-						NOT = { government = confucian_bureaucracy }
-					}
-					NOR = {
-						mercenary = yes
-						holy_order = yes
-						trait = peasant_leader
-						trait = heresiarch
-						has_tribal_or_nomadic_government_trigger = yes
-					}
+					has_tribal_or_nomadic_government_trigger = no
 
 					OR = {
 						trait = greedy
@@ -327,7 +307,6 @@
 						culture = maghreb_arabic
 					}
 				}
-				has_character_modifier = golden_mask
 			}
 		}
 
@@ -335,15 +314,11 @@
 			factor = 5
 			controls_religion = yes
 		}
-
-		modifier = {
-			factor = 100
-			has_character_modifier = golden_mask
-		}
 	}
 
 	12 = { # l - Mask 12 - full mask 1 leather
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured
@@ -358,6 +333,7 @@
 
 	13 = { # m - Mask 13 - full mask 2 bone
 		factor = 1
+
 		trigger = {
 			OR = {
 				trait = disfigured

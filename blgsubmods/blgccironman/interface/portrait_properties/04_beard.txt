@@ -2,6 +2,7 @@
 4 = {
 	0 = { # 0 - Beardless when young
 		factor = 40
+
 		trigger = {
 			OR = {
 				practical_age < 22
@@ -11,7 +12,7 @@
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
-						likes_buddhists = yes
+						religion = buddhist
 						trait = digambara_jain
 						religion_openly_hellenic_or_reformed_trigger = yes
 					}
@@ -23,6 +24,7 @@
 						society_member_of = monastic_order_buddhist
 						employer = { holy_order = yes }
 					}
+					NOT = { trait = cynical }
 					age < 50
 				}
 			}
@@ -36,14 +38,14 @@
 				culture = italian
 				culture = sardinian
 				culture = roman
-				likes_mesoamericans = yes
+				culture_group = mesoamerican
 				graphical_culture = mesoamericangfx
 				AND = {
 					OR = {
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
-						likes_buddhists = yes
+						religion = buddhist
 						trait = digambara_jain
 						religion_openly_hellenic_or_reformed_trigger = yes
 					}
@@ -55,6 +57,7 @@
 						society_member_of = monastic_order_buddhist
 						employer = { holy_order = yes }
 					}
+					NOT = { trait = cynical }
 				}
 				trait = eunuch
 			}
@@ -66,7 +69,7 @@
 				religion = catholic
 				is_heresy_of = catholic
 				is_parent_religion = catholic
-				likes_buddhists = yes
+				religion = buddhist
 				trait = digambara_jain
 				religion_openly_hellenic_or_reformed_trigger = yes
 			}
@@ -78,617 +81,21 @@
 				society_member_of = monastic_order_buddhist
 				employer = { holy_order = yes }
 			}
+			NOT = { trait = cynical }
 		}
 	}
 
 	1 = { # a - Light beard
 		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
 
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = bodpagfx
-				graphical_culture = chinesegfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = egyptiangfx
-				graphical_culture = italiangfx
-				graphical_culture = frankishgfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = normangfx
-				graphical_culture = romangfx
-				graphical_culture = indiangfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
-				graphical_culture = southerngfx
-				graphical_culture = southindiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = turkishgfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = croatsouthslavicgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
-						religion = catholic
-						is_heresy_of = catholic
-						is_parent_religion = catholic
-					}
-				}
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
-			}
-
-			NOR = {
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = englishgfx
-				graphical_culture = germangfx
-				graphical_culture = persiangfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-				graphical_culture = mesoamericangfx
-			}
-		}
-	}
-
-	2 = { # b - Beard
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-			}
-			NOR = {
-				religion_group = pagan_group
-				has_tribal_or_nomadic_government_trigger = yes
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
-
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = norsegfx
-				graphical_culture = chinesegfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = englishgfx
-				graphical_culture = frankishgfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = normangfx
-				graphical_culture = romangfx
-				graphical_culture = persiangfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = croatsouthslavicgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
-						religion = catholic
-						is_heresy_of = catholic
-						is_parent_religion = catholic
-					}
-				}
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
-			}
-
-			NOR = {
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = egyptiangfx
-				graphical_culture = italiangfx
-				graphical_culture = germangfx
-				graphical_culture = indiangfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = southerngfx
-				graphical_culture = southindiangfx
-				graphical_culture = turkishgfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = croatsouthslavicgfx
-				graphical_culture = mesoamericangfx
-			}
-		}
-	}
-
-	3 = { # c - Beard
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
-
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = bodpagfx
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = chinesegfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = egyptiangfx
-				graphical_culture = italiangfx
-				graphical_culture = frankishgfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = normangfx
-				graphical_culture = romangfx
-				graphical_culture = indiangfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = persiangfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
-				graphical_culture = southindiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = croatsouthslavicgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
-						religion = catholic
-						is_heresy_of = catholic
-						is_parent_religion = catholic
-					}
-				}
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
-			}
-
-			NOR = {
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = englishgfx
-				graphical_culture = germangfx
-				graphical_culture = southerngfx
-				graphical_culture = turkishgfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-			}
-		}
-	}
-
-	4 = { # d - Small mustache and beard
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
-
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = bodpagfx
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = egyptiangfx
-				graphical_culture = italiangfx
-				graphical_culture = frankishgfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = normangfx
-				graphical_culture = romangfx
-				graphical_culture = germangfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
-				graphical_culture = southindiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = turkishgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
-						religion = catholic
-						is_heresy_of = catholic
-						is_parent_religion = catholic
-					}
-				}
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
-			}
-
-			NOR = {
-				graphical_culture = norsegfx
-				graphical_culture = chinesegfx
-				graphical_culture = englishgfx
-				graphical_culture = persiangfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-				graphical_culture = mesoamericangfx
-			}
-		}
-	}
-
-	5 = { # e - Spanish mustache
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
-
-			NOR = {
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = norsegfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = frankishgfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = normangfx
-				graphical_culture = romangfx
-				graphical_culture = germangfx
-				graphical_culture = indiangfx
-				graphical_culture = persiangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = turkishgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
-						religion = catholic
-						is_heresy_of = catholic
-						is_parent_religion = catholic
-					}
-				}
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
-			}
-
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = chinesegfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
-				graphical_culture = southindiangfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-				graphical_culture = mesoamericangfx
-			}
-		}
-	}
-
-	6 = { # f - Beard no mustache
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
-
-			NOR = {
-				graphical_culture = bodpagfx
-				graphical_culture = norsegfx
-				graphical_culture = frankishgfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = normangfx
-				graphical_culture = romangfx
-				graphical_culture = germangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = croatsouthslavicgfx
-				graphical_culture = mesoamericangfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
-						religion = catholic
-						is_heresy_of = catholic
-						is_parent_religion = catholic
-					}
-				}
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
-			}
-
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = chinesegfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = indiangfx
-				graphical_culture = norsegfx
-				graphical_culture = persiangfx
-				graphical_culture = southerngfx
-				graphical_culture = southindiangfx
-				graphical_culture = turkishgfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-			}
-		}
-	}
-
-	7 = { # g - Evil stache
-		factor = 1
-		modifier = {
-			factor = 0
-			OR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-			}
-			NOR = {
-				religion_group = pagan_group
-				has_tribal_or_nomadic_government_trigger = yes
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
-
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = bodpagfx
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
-				graphical_culture = southindiangfx
-				graphical_culture = turkishgfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
-						religion = catholic
-						is_heresy_of = catholic
-						is_parent_religion = catholic
-					}
-				}
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
-			}
-
-			NOR = {
-				graphical_culture = egyptiangfx
-				graphical_culture = italiangfx
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = chinesegfx
-				graphical_culture = englishgfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = persiangfx
-				graphical_culture = norsegfx
-				graphical_culture = southerngfx
-			}
-		}
-
-		modifier = {
-			factor = 50
-			graphical_culture = mesoamericangfx
-			OR = {
-				culture = norman
-				culture = pecheneg
-				culture = italian
-				culture = sardinian
-				culture = roman
-				likes_mesoamericans = yes
-				graphical_culture = mesoamericangfx
-				AND = {
+		trigger = {
+			trigger_if = {
+				limit = {
 					OR = {
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
-						likes_buddhists = yes
+						religion = buddhist
 						trait = digambara_jain
 						religion_openly_hellenic_or_reformed_trigger = yes
 					}
@@ -700,180 +107,1119 @@
 						society_member_of = monastic_order_buddhist
 						employer = { holy_order = yes }
 					}
+					NOT = { trait = cynical }
 				}
-				trait = eunuch
+				OR = {
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = southerngfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = egyptiangfx
+					graphical_culture = italiangfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = indiangfx
+					graphical_culture = southindiangfx
+					graphical_culture = turkishgfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+					graphical_culture = bodpagfx
+					graphical_culture = chinesegfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = englishgfx
+					graphical_culture = germangfx
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+					graphical_culture = persiangfx
+					graphical_culture = mesoamericangfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				graphical_culture = norsegfx
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = crimeangfx
+				graphical_culture = persiangfx
+			}
+		}
+	}
+
+	2 = { # b - Beard
+		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = {
+					trigger_if = {
+						limit = { NOT = { trait = groomed } }
+						OR = {
+							is_married = yes
+							is_landed = yes
+							is_or_was_offmap_power_ruler = yes
+						}
+						NOR = {
+							trait = uncouth
+							trait = adventurer
+							trait = peasant_leader
+							religion_group = pagan_group
+							has_tribal_or_nomadic_government_trigger = yes
+							mercenary = yes
+						}
+					}
+					NOR = {
+						prisoner = yes
+						death_reason = death_dungeon
+					}
+				}
+				NOR = {
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = catholic
+						is_heresy_of = catholic
+						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = englishgfx
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = norsegfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = persiangfx
+					graphical_culture = chinesegfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = germangfx
+					graphical_culture = southerngfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = egyptiangfx
+					graphical_culture = italiangfx
+					graphical_culture = indiangfx
+					graphical_culture = southindiangfx
+					graphical_culture = turkishgfx
+					graphical_culture = mesoamericangfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				graphical_culture = southerngfx
+				graphical_culture = egyptiangfx
+				graphical_culture = italiangfx
+				graphical_culture = turkishgfx
+				graphical_culture = mesoamericangfx
+			}
+		}
+	}
+
+	3 = { # c - Beard
+		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = catholic
+						is_heresy_of = catholic
+						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = egyptiangfx
+					graphical_culture = italiangfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = persiangfx
+					graphical_culture = indiangfx
+					graphical_culture = southindiangfx
+					graphical_culture = bodpagfx
+					graphical_culture = chinesegfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = englishgfx
+					graphical_culture = germangfx
+					graphical_culture = southerngfx
+					graphical_culture = turkishgfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				graphical_culture = ugricgfx
+				graphical_culture = easternslavicgfx
+			}
+		}
+	}
+
+	4 = { # d - Small mustache and beard
+		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = catholic
+						is_heresy_of = catholic
+						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = germangfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = egyptiangfx
+					graphical_culture = italiangfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = turkishgfx
+					graphical_culture = southindiangfx
+					graphical_culture = bodpagfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = englishgfx
+					graphical_culture = norsegfx
+					graphical_culture = persiangfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = chinesegfx
+					graphical_culture = mesoamericangfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = andalusiangfx
+				graphical_culture = persiangfx
+				graphical_culture = ugricgfx
+				graphical_culture = easternslavicgfx
+				graphical_culture = chinesegfx
+			}
+		}
+	}
+
+	5 = { # e - Spanish mustache
+		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = catholic
+						is_heresy_of = catholic
+						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = germangfx
+					graphical_culture = norsegfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = indiangfx
+					graphical_culture = persiangfx
+					graphical_culture = turkishgfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = southindiangfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+					graphical_culture = chinesegfx
+					graphical_culture = mesoamericangfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				graphical_culture = dalmatiangfx
+				graphical_culture = outremergfx
+				graphical_culture = mesoamericangfx
+			}
+		}
+	}
+
+	6 = { # f - Beard no mustache
+		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = catholic
+						is_heresy_of = catholic
+						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = germangfx
+					graphical_culture = norsegfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = bodpagfx
+					graphical_culture = mesoamericangfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = indiangfx
+					graphical_culture = norsegfx
+					graphical_culture = persiangfx
+					graphical_culture = southerngfx
+					graphical_culture = southindiangfx
+					graphical_culture = turkishgfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = chinesegfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = andalusiangfx
+				graphical_culture = southerngfx
+				graphical_culture = norsegfx
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = crimeangfx
+				graphical_culture = cumangfx
+				graphical_culture = magyargfx
+				graphical_culture = mongolgfx
+				graphical_culture = turkishgfx
+				graphical_culture = southindiangfx
+				graphical_culture = dalmatiangfx
+				graphical_culture = outremergfx
+			}
+		}
+	}
+
+	7 = { # g - Evil stache
+		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = {
+					trigger_if = {
+						limit = { NOT = { trait = groomed } }
+						OR = {
+							is_married = yes
+							is_landed = yes
+							is_or_was_offmap_power_ruler = yes
+						}
+						NOR = {
+							trait = uncouth
+							trait = adventurer
+							trait = peasant_leader
+							religion_group = pagan_group
+							has_tribal_or_nomadic_government_trigger = yes
+							mercenary = yes
+						}
+					}
+					NOR = {
+						prisoner = yes
+						death_reason = death_dungeon
+					}
+				}
+				NOR = {
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = catholic
+						is_heresy_of = catholic
+						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = southindiangfx
+					graphical_culture = turkishgfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = bodpagfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = englishgfx
+					graphical_culture = norsegfx
+					graphical_culture = southerngfx
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = egyptiangfx
+					graphical_culture = italiangfx
+					graphical_culture = persiangfx
+					graphical_culture = chinesegfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = {
+			factor = 50
+			graphical_culture = mesoamericangfx
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				graphical_culture = englishgfx
+				graphical_culture = frankishgfx
+				graphical_culture = trueoccitangfx
+				graphical_culture = normangfx
+				graphical_culture = romangfx
+				graphical_culture = dalmatiangfx
+				graphical_culture = outremergfx
 			}
 		}
 	}
 
 	8 = { # h - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			graphical_culture = mesoamericangfx
-		}
 
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
+		trigger = {
+			NOT = { graphical_culture = mesoamericangfx }
 
-			NOR = {
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = bodpagfx
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = chinesegfx
-				graphical_culture = persiangfx
-				graphical_culture = southindiangfx
-				graphical_culture = turkishgfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
+			trigger_if = {
+				limit = {
+					OR = {
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
 					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = turkishgfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+					graphical_culture = persiangfx
+					graphical_culture = southindiangfx
+					graphical_culture = bodpagfx
+					graphical_culture = chinesegfx
 				}
 			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = englishgfx
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = norsegfx
+					graphical_culture = southerngfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = indiangfx
+					graphical_culture = turkishgfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+				}
 			}
 
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
 				graphical_culture = englishgfx
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
-				graphical_culture = indiangfx
 				graphical_culture = norsegfx
+				graphical_culture = egyptiangfx
+				graphical_culture = italiangfx
+				graphical_culture = ugricgfx
+				graphical_culture = easternslavicgfx
+				graphical_culture = indiangfx
+				graphical_culture = turkishgfx
 				graphical_culture = dalmatiangfx
 				graphical_culture = outremergfx
-				graphical_culture = southerngfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = turkishgfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = croatsouthslavicgfx
 			}
 		}
 	}
 
 	9 = { # i - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			graphical_culture = mesoamericangfx
-		}
 
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
+		trigger = {
+			NOT = { graphical_culture = mesoamericangfx }
 
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = bodpagfx
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = chinesegfx
-				graphical_culture = indiangfx
-				graphical_culture = southerngfx
-				graphical_culture = southindiangfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
+			trigger_if = {
+				limit = {
+					OR = {
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
 					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = southerngfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+					graphical_culture = indiangfx
+					graphical_culture = southindiangfx
+					graphical_culture = bodpagfx
+					graphical_culture = chinesegfx
 				}
 			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = englishgfx
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = germangfx
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+					graphical_culture = norsegfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = egyptiangfx
+					graphical_culture = italiangfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+				}
 			}
 
-			NOR = {
-				graphical_culture = egyptiangfx
-				graphical_culture = italiangfx
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = englishgfx
-				graphical_culture = frankishgfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = normangfx
-				graphical_culture = romangfx
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
 				graphical_culture = germangfx
 				graphical_culture = arabicgfx
 				graphical_culture = berbergfx
 				graphical_culture = levantinegfx
-				graphical_culture = norsegfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
+				graphical_culture = egyptiangfx
+				graphical_culture = italiangfx
 				graphical_culture = serbsouthslavicgfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
 			}
@@ -882,85 +1228,103 @@
 
 	10 = { # j - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			graphical_culture = mesoamericangfx
-		}
 
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
+		trigger = {
+			NOT = { graphical_culture = mesoamericangfx }
 
-			NOR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = egyptiangfx
-				graphical_culture = italiangfx
-				graphical_culture = indiangfx
-				graphical_culture = persiangfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
-				graphical_culture = southerngfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = turkishgfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = croatsouthslavicgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
+			trigger_if = {
+				limit = {
+					OR = {
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
 					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = southerngfx
+					graphical_culture = celticgfx
+					graphical_culture = saxongfx
+					graphical_culture = crimeangfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = egyptiangfx
+					graphical_culture = italiangfx
+					graphical_culture = indiangfx
+					graphical_culture = persiangfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = turkishgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
 				}
 			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = englishgfx
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = norsegfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = southindiangfx
+					graphical_culture = chinesegfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+				}
 			}
 
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = chinesegfx
-				graphical_culture = englishgfx
-				graphical_culture = frankishgfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = normangfx
-				graphical_culture = romangfx
-				graphical_culture = norsegfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
-				graphical_culture = southindiangfx
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
 			}
 		}
 
@@ -972,14 +1336,13 @@
 				culture = italian
 				culture = sardinian
 				culture = roman
-				likes_mesoamericans = yes
-				graphical_culture = mesoamericangfx
+				culture_group = mesoamerican
 				AND = {
 					OR = {
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
-						likes_buddhists = yes
+						religion = buddhist
 						trait = digambara_jain
 						religion_openly_hellenic_or_reformed_trigger = yes
 					}
@@ -991,6 +1354,7 @@
 						society_member_of = monastic_order_buddhist
 						employer = { holy_order = yes }
 					}
+					NOT = { trait = cynical }
 				}
 				trait = eunuch
 			}
@@ -1000,15 +1364,31 @@
 				graphical_culture = crimeangfx
 				graphical_culture = persiangfx
 				graphical_culture = turkishgfx
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				graphical_culture = englishgfx
+				graphical_culture = germangfx
+				graphical_culture = africangfx
+				graphical_culture = westafricangfx
+				graphical_culture = southindiangfx
+				graphical_culture = chinesegfx
 			}
 		}
 	}
 
 	11 = { # k - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			OR = {
+
+		trigger = {
+			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
@@ -1016,89 +1396,133 @@
 				graphical_culture = turkishgfx
 				graphical_culture = mesoamericangfx
 			}
-		}
 
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
-
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = bodpagfx
-				graphical_culture = norsegfx
-				graphical_culture = chinesegfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = englishgfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
+			trigger_if = {
+				limit = {
+					OR = {
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
 					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = englishgfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = norsegfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = bodpagfx
+					graphical_culture = chinesegfx
 				}
 			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = germangfx
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = egyptiangfx
+					graphical_culture = italiangfx
+					graphical_culture = indiangfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+				}
 			}
 
-			NOR = {
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
 				graphical_culture = byzantinegfx
 				graphical_culture = andalusiangfx
-				graphical_culture = egyptiangfx
-				graphical_culture = italiangfx
 				graphical_culture = frankishgfx
 				graphical_culture = trueoccitangfx
 				graphical_culture = normangfx
 				graphical_culture = romangfx
 				graphical_culture = germangfx
-				graphical_culture = indiangfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
 				graphical_culture = serbsouthslavicgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
+				graphical_culture = arabicgfx
+				graphical_culture = berbergfx
+				graphical_culture = levantinegfx
+				graphical_culture = indiangfx
+				graphical_culture = dalmatiangfx
+				graphical_culture = outremergfx
 			}
 		}
 	}
 
 	12 = { # l - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			OR = {
+
+		trigger = {
+			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
@@ -1106,103 +1530,14 @@
 				graphical_culture = turkishgfx
 				graphical_culture = mesoamericangfx
 			}
-		}
 
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
-
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = egyptiangfx
-				graphical_culture = italiangfx
-				graphical_culture = frankishgfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = normangfx
-				graphical_culture = romangfx
-				graphical_culture = indiangfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
-				graphical_culture = southerngfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = croatsouthslavicgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
-						religion = catholic
-						is_heresy_of = catholic
-						is_parent_religion = catholic
-					}
-				}
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
-			}
-
-			NOR = {
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = chinesegfx
-				graphical_culture = englishgfx
-				graphical_culture = germangfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = norsegfx
-				graphical_culture = southindiangfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-				graphical_culture = bodpagfx
-			}
-		}
-
-		modifier = {
-			factor = 10
-			OR = {
-				culture = norman
-				culture = pecheneg
-				culture = italian
-				culture = sardinian
-				culture = roman
-				likes_mesoamericans = yes
-				graphical_culture = mesoamericangfx
-				AND = {
+			trigger_if = {
+				limit = {
 					OR = {
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
-						likes_buddhists = yes
+						religion = buddhist
 						trait = digambara_jain
 						religion_openly_hellenic_or_reformed_trigger = yes
 					}
@@ -1214,18 +1549,141 @@
 						society_member_of = monastic_order_buddhist
 						employer = { holy_order = yes }
 					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = southerngfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = egyptiangfx
+					graphical_culture = italiangfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = indiangfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = englishgfx
+					graphical_culture = germangfx
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = norsegfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = southindiangfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = bodpagfx
+					graphical_culture = chinesegfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = {
+			factor = 40
+			OR = {
+				culture = norman
+				culture = pecheneg
+				culture = italian
+				culture = sardinian
+				culture = roman
+				culture_group = mesoamerican
+				AND = {
+					OR = {
+						religion = catholic
+						is_heresy_of = catholic
+						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
 				}
 				trait = eunuch
 			}
 			graphical_culture = indiangfx
 		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				graphical_culture = byzantinegfx
+				graphical_culture = andalusiangfx
+				graphical_culture = germangfx
+				graphical_culture = ugricgfx
+				graphical_culture = easternslavicgfx
+				graphical_culture = bodpagfx
+			}
+		}
 	}
 
 	13 = { # m - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			OR = {
+
+		trigger = {
+			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
@@ -1234,88 +1692,152 @@
 				graphical_culture = indiangfx
 				graphical_culture = mesoamericangfx
 			}
-		}
 
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
-
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = norsegfx
-				graphical_culture = chinesegfx
-				graphical_culture = egyptiangfx
-				graphical_culture = italiangfx
-				graphical_culture = englishgfx
-				graphical_culture = germangfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = southindiangfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
+			trigger_if = {
+				limit = {
+					trigger_if = {
+						limit = { NOT = { trait = groomed } }
+						OR = {
+							is_married = yes
+							is_landed = yes
+							is_or_was_offmap_power_ruler = yes
+						}
+						NOR = {
+							trait = uncouth
+							trait = adventurer
+							trait = peasant_leader
+							religion_group = pagan_group
+							has_tribal_or_nomadic_government_trigger = yes
+							mercenary = yes
+						}
+					}
 					NOR = {
+						prisoner = yes
+						death_reason = death_dungeon
+					}
+				}
+				NOR = {
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
 					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = englishgfx
+					graphical_culture = germangfx
+					graphical_culture = norsegfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = egyptiangfx
+					graphical_culture = italiangfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = southindiangfx
+					graphical_culture = chinesegfx
 				}
 			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = frankishgfx
+					graphical_culture = trueoccitangfx
+					graphical_culture = normangfx
+					graphical_culture = romangfx
+					graphical_culture = southerngfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+					graphical_culture = cumangfx
+					graphical_culture = magyargfx
+					graphical_culture = mongolgfx
+					graphical_culture = bodpagfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+				}
 			}
 
-			NOR = {
-				graphical_culture = bodpagfx
-				graphical_culture = cumangfx
-				graphical_culture = magyargfx
-				graphical_culture = mongolgfx
-				graphical_culture = frankishgfx
-				graphical_culture = trueoccitangfx
-				graphical_culture = normangfx
-				graphical_culture = romangfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
-				graphical_culture = southerngfx
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
 				graphical_culture = serbsouthslavicgfx
 				graphical_culture = westernslavicgfx
 				graphical_culture = croatsouthslavicgfx
+				graphical_culture = cumangfx
+				graphical_culture = magyargfx
+				graphical_culture = mongolgfx
+				graphical_culture = bodpagfx
 			}
 		}
 	}
 
 	14 = { # n - Beard
 		factor = 1
-		modifier = { # Limited beard range
-			factor = 0
-			OR = {
+
+		trigger = {
+			NOR = {
 				graphical_culture = celticgfx
 				graphical_culture = saxongfx
 				graphical_culture = crimeangfx
@@ -1324,144 +1846,14 @@
 				graphical_culture = indiangfx
 				graphical_culture = mesoamericangfx
 			}
-		}
 
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				is_heresy_of = catholic
-				is_parent_religion = catholic
-				likes_buddhists = yes
-				trait = digambara_jain
-				religion_openly_hellenic_or_reformed_trigger = yes
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				society_member_of = monastic_order_benedictine
-				society_member_of = monastic_order_dominican
-				society_member_of = monastic_order_buddhist
-				employer = { holy_order = yes }
-			}
-
-			NOR = {
-				graphical_culture = germangfx
-				graphical_culture = serbsouthslavicgfx
-				graphical_culture = westernslavicgfx
-				graphical_culture = croatsouthslavicgfx
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
-						religion = catholic
-						is_heresy_of = catholic
-						is_parent_religion = catholic
-					}
-				}
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
-			}
-
-			NOR = {
-				graphical_culture = africangfx
-				graphical_culture = westafricangfx
-				graphical_culture = byzantinegfx
-				graphical_culture = andalusiangfx
-				graphical_culture = englishgfx
-				graphical_culture = arabicgfx
-				graphical_culture = berbergfx
-				graphical_culture = levantinegfx
-				graphical_culture = norsegfx
-				graphical_culture = dalmatiangfx
-				graphical_culture = outremergfx
-				graphical_culture = southindiangfx
-				graphical_culture = ugricgfx
-				graphical_culture = easternslavicgfx
-				graphical_culture = bodpagfx
-			}
-		}
-	}
-
-	15 = { # o - Loopback to beardless
-		factor = 4
-		modifier = { # Limited beard range
-			factor = 0
-			OR = {
-				graphical_culture = celticgfx
-				graphical_culture = saxongfx
-				graphical_culture = crimeangfx
-				graphical_culture = persiangfx
-				graphical_culture = turkishgfx
-				graphical_culture = indiangfx
-				graphical_culture = mesoamericangfx
-			}
-		}
-
-		modifier = {
-			factor = 0.05
-			OR = {
-				true_religion_scope = { likes_muslims = yes }
-				AND = {
-					is_female = no
-					OR = {
-						true_religion_scope = {
-							OR = {
-								likes_jews = yes
-								religion = taoist
-							}
-						}
-						trait = muni
-					}
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				likes_muslims = yes
-				AND = {
-					religion_group = christian
-					NOR = {
-						religion = catholic
-						is_heresy_of = catholic
-						is_parent_religion = catholic
-					}
-				}
-			}
-			OR = {
-				is_priest = yes
-				is_ascetic_trigger = yes
-				has_minor_title = title_chief_qadi
-			}
-		}
-
-		modifier = {
-			factor = 10
-			OR = {
-				culture = norman
-				culture = pecheneg
-				culture = italian
-				culture = sardinian
-				culture = roman
-				likes_mesoamericans = yes
-				graphical_culture = mesoamericangfx
-				AND = {
+			trigger_if = {
+				limit = {
 					OR = {
 						religion = catholic
 						is_heresy_of = catholic
 						is_parent_religion = catholic
-						likes_buddhists = yes
+						religion = buddhist
 						trait = digambara_jain
 						religion_openly_hellenic_or_reformed_trigger = yes
 					}
@@ -1473,6 +1865,170 @@
 						society_member_of = monastic_order_buddhist
 						employer = { holy_order = yes }
 					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = germangfx
+					graphical_culture = serbsouthslavicgfx
+					graphical_culture = westernslavicgfx
+					graphical_culture = croatsouthslavicgfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion_group = muslim
+						AND = {
+							religion_group = christian
+							NOR = {
+								religion = catholic
+								is_heresy_of = catholic
+								is_parent_religion = catholic
+							}
+						}
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						has_minor_title = title_chief_qadi
+					}
+					NOT = { trait = cynical }
+				}
+				OR = {
+					graphical_culture = englishgfx
+					graphical_culture = byzantinegfx
+					graphical_culture = andalusiangfx
+					graphical_culture = arabicgfx
+					graphical_culture = berbergfx
+					graphical_culture = levantinegfx
+					graphical_culture = africangfx
+					graphical_culture = westafricangfx
+					graphical_culture = norsegfx
+					graphical_culture = southindiangfx
+					graphical_culture = ugricgfx
+					graphical_culture = easternslavicgfx
+					graphical_culture = bodpagfx
+					graphical_culture = dalmatiangfx
+					graphical_culture = outremergfx
+				}
+			}
+
+			trigger_if = {
+				limit = {
+					OR = {
+						religion = buddhist
+						trait = digambara_jain
+					}
+					OR = {
+						is_priest = yes
+						is_ascetic_trigger = yes
+						employer = { holy_order = yes }
+					}
+					NOT = { trait = cynical }
+				}
+				age >= 50
+			}
+		}
+
+		modifier = { # Uncouth hairstyle
+			factor = 4
+			OR = {
+				trait = uncouth
+				prisoner = yes
+			}
+			OR = {
+				graphical_culture = englishgfx
+				graphical_culture = norsegfx
+				graphical_culture = ugricgfx
+				graphical_culture = easternslavicgfx
+				graphical_culture = africangfx
+				graphical_culture = westafricangfx
+			}
+		}
+	}
+
+	15 = { # o - Loopback to beardless
+		factor = 4
+
+		trigger = {
+			NOR = {
+				graphical_culture = celticgfx
+				graphical_culture = saxongfx
+				graphical_culture = crimeangfx
+				graphical_culture = persiangfx
+				graphical_culture = turkishgfx
+				graphical_culture = indiangfx
+				graphical_culture = mesoamericangfx
+			}
+
+			NAND = {
+				OR = {
+					religion_group = muslim
+					AND = {
+						religion_group = christian
+						NOR = {
+							religion = catholic
+							is_heresy_of = catholic
+							is_parent_religion = catholic
+						}
+					}
+				}
+				OR = {
+					is_priest = yes
+					is_ascetic_trigger = yes
+					has_minor_title = title_chief_qadi
+				}
+				NOT = { trait = cynical }
+			}
+		}
+
+		modifier = {
+			factor = 0.05
+			OR = {
+				true_religion_scope = { religion_group = muslim }
+				OR = {
+					true_religion_scope = {
+						OR = {
+							religion_group = jewish_group
+							religion = taoist
+						}
+					}
+					trait = muni
+				}
+			}
+			NOT = { trait = cynical }
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				culture = norman
+				culture = pecheneg
+				culture = italian
+				culture = sardinian
+				culture = roman
+				culture_group = mesoamerican
+				AND = {
+					OR = {
+						religion = catholic
+						is_heresy_of = catholic
+						is_parent_religion = catholic
+						religion = buddhist
+						trait = digambara_jain
+						religion_openly_hellenic_or_reformed_trigger = yes
+					}
+					OR = {
+					is_priest = yes
+						is_ascetic_trigger = yes
+						society_member_of = monastic_order_benedictine
+						society_member_of = monastic_order_dominican
+						society_member_of = monastic_order_buddhist
+						employer = {
+						holy_order = yes
+						}
+					}
+					NOT = { trait = cynical }
 				}
 				trait = eunuch
 			}
@@ -1484,7 +2040,7 @@
 				religion = catholic
 				is_heresy_of = catholic
 				is_parent_religion = catholic
-				likes_buddhists = yes
+				religion = buddhist
 				trait = digambara_jain
 				religion_openly_hellenic_or_reformed_trigger = yes
 			}
@@ -1496,12 +2052,13 @@
 				society_member_of = monastic_order_buddhist
 				employer = { holy_order = yes }
 			}
+			NOT = { trait = cynical }
 		}
 
 		modifier = {
 			factor = 3
 			culture_group = iberian
-			likes_christians = yes
+			religion_group = christian
 		}
 
 		modifier = { # Catholic men less likely to wear beards after the 12th century.
@@ -1520,6 +2077,9 @@
 			OR = {
 				culture = frankish
 				culture = occitan
+				culture = old_frankish
+				culture = norman
+				culture = dutch
 			}
 		}
 
@@ -1529,6 +2089,9 @@
 			OR = {
 				culture = frankish
 				culture = occitan
+				culture = old_frankish
+				culture = norman
+				culture = dutch
 			}
 		}
 

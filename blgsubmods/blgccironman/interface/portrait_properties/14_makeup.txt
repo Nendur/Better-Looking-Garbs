@@ -1,7 +1,8 @@
-# p14 makeup
+# p14 Makeup - rouge and powder.
 14 = {
 	0 = { # 0 - blank
 		factor = 100
+
 		modifier = {
 			factor = 0
 			culture_group = chinese_group
@@ -33,13 +34,21 @@
 
 	1 = { # a - white powder
 		factor = 1
+
 		trigger = {
+			culture_group = chinese_group
 			is_female = yes
+			prisoner = no
 			OR = {
-				culture_group = chinese_group
-				culture = khitan
-				culture = jurchen
-				culture = tangut
+				higher_real_tier_than = baron
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
+					OR = {
+						higher_real_tier_than = baron
+						is_or_was_offmap_power_ruler = yes
+					}
+				}
+				has_character_modifier = jd_princess
 			}
 		}
 	}
@@ -50,13 +59,21 @@
 
 	3 = { # c - white powder and rouge a
 		factor = 1
+
 		trigger = {
+			culture_group = chinese_group
 			is_female = yes
+			prisoner = no
 			OR = {
-				culture_group = chinese_group
-				culture = khitan
-				culture = jurchen
-				culture = tangut
+				higher_real_tier_than = baron
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
+					OR = {
+						higher_real_tier_than = baron
+						is_or_was_offmap_power_ruler = yes
+					}
+				}
+				has_character_modifier = jd_princess
 			}
 		}
 	}
@@ -67,13 +84,21 @@
 
 	5 = { # e - white powder and rouge b
 		factor = 1
+
 		trigger = {
+			culture_group = chinese_group
 			is_female = yes
+			prisoner = no
 			OR = {
-				culture_group = chinese_group
-				culture = khitan
-				culture = jurchen
-				culture = tangut
+				higher_real_tier_than = baron
+				is_or_was_offmap_power_ruler = yes
+				spouse_even_if_dead = {
+					OR = {
+						higher_real_tier_than = baron
+						is_or_was_offmap_power_ruler = yes
+					}
+				}
+				has_character_modifier = jd_princess
 			}
 		}
 	}

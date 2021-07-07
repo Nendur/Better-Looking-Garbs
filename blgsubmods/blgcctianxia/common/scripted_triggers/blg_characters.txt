@@ -45,10 +45,6 @@ blg_guard = {
 		trait = shieldmaiden
 		trait = gladiator
 	}
-	OR = {
-		is_landed = no
-		blg_travelling = yes
-	}
 }
 
 # Portrait override for ihram clothes.

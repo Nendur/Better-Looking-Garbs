@@ -101,7 +101,16 @@
 
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_mask value = 0 } }
-				blg_royalty = no
+				NOR = {
+					higher_real_tier_than = duke
+					is_or_was_offmap_power_ruler = yes
+					spouse_even_if_dead = {
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+						}
+					}
+				}
 				has_tribal_or_nomadic_government_trigger = no
 				NOR = {
 					AND = {
@@ -344,7 +353,16 @@
 
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_mask value = 0 } }
-				blg_royalty = yes
+				OR = {
+					higher_real_tier_than = duke
+					is_or_was_offmap_power_ruler = yes
+					spouse_even_if_dead = {
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+						}
+					}
+				}
 				has_tribal_or_nomadic_government_trigger = no
 				NOR = {
 					AND = {
@@ -376,8 +394,18 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_mask value = 0 } }
 				OR = {
+					has_character_modifier = golden_mask
 					AND = {
-						blg_royalty = yes
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+							spouse_even_if_dead = {
+								OR = {
+									higher_real_tier_than = duke
+									is_or_was_offmap_power_ruler = yes
+								}
+							}
+						}
 						has_tribal_or_nomadic_government_trigger = no
 
 						OR = {
@@ -387,7 +415,6 @@
 							trait = envious
 						}
 					}
-					has_character_modifier = golden_mask
 				}
 			}
 			trigger_else = {

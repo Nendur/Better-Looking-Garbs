@@ -42,18 +42,18 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-						portrait_society = monastic_order_hindu
-						portrait_has_trait = vaishnavist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = vaishnavist_hindu
 				OR = {
-							NOT = { portrait_tier = baron }
-							portrait_government = theocracy_government
-							portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-							portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -87,8 +87,8 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_age > child
 
-						portrait_society = monastic_order_hindu
-						portrait_has_trait = vaishnavist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = vaishnavist_hindu
 				portrait_in_command = no
 			}
 		}
@@ -132,18 +132,18 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-							portrait_society = monastic_order_hindu
-							portrait_has_trait = vaishnavist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = vaishnavist_hindu
 				OR = {
-								NOT = { portrait_tier = baron }
-								portrait_government = theocracy_government
-								portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-								portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -219,18 +219,18 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-								portrait_society = monastic_order_hindu
-								portrait_has_trait = smartist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = smartist_hindu
 				OR = {
-									NOT = { portrait_tier = baron }
-									portrait_government = theocracy_government
-									portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-									portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -264,8 +264,8 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_age > child
 
-								portrait_society = monastic_order_hindu
-								portrait_has_trait = smartist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = smartist_hindu
 				portrait_in_command = no
 			}
 		}
@@ -324,18 +324,18 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-								portrait_society = monastic_order_hindu
-								portrait_has_trait = smartist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = smartist_hindu
 				OR = {
-									NOT = { portrait_tier = baron }
-									portrait_government = theocracy_government
-									portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-									portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -397,18 +397,18 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-									portrait_society = monastic_order_hindu
-									portrait_has_trait = shaktist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = shaktist_hindu
 				OR = {
-										NOT = { portrait_tier = baron }
-										portrait_government = theocracy_government
-										portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-										portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -443,8 +443,8 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-									portrait_society = monastic_order_hindu
-									portrait_has_trait = shaktist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = shaktist_hindu
 				portrait_in_command = no
 			}
 		}
@@ -488,18 +488,18 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-										portrait_society = monastic_order_hindu
-										portrait_has_trait = shaktist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = shaktist_hindu
 				OR = {
-											NOT = { portrait_tier = baron }
-											portrait_government = theocracy_government
-											portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-											portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -537,8 +537,8 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-										portrait_society = monastic_order_hindu
-										portrait_has_trait = shaktist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = shaktist_hindu
 				portrait_in_command = no
 			}
 		}
@@ -584,18 +584,18 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-											portrait_society = monastic_order_hindu
-											portrait_has_trait = shaivist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = shaivist_hindu
 				OR = {
-												NOT = { portrait_tier = baron }
-												portrait_government = theocracy_government
-												portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = sanyasi
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-												portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -629,8 +629,8 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_age > child
 
-											portrait_society = monastic_order_hindu
-											portrait_has_trait = shaivist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = shaivist_hindu
 				portrait_in_command = no
 			}
 		}
@@ -674,18 +674,18 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-												portrait_society = monastic_order_hindu
-												portrait_has_trait = shaivist_hindu
+				portrait_society = monastic_order_hindu
+				portrait_has_trait = shaivist_hindu
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = sanyasini
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -740,17 +740,17 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = vajrayana_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = vajrayana_buddhist
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = bhikkhu
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -787,12 +787,10 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = vajrayana_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = vajrayana_buddhist
 				portrait_in_command = no
-				OR = {
-					portrait_has_trait = on_indian_pilgrimage
-				}
+				portrait_has_trait = on_indian_pilgrimage
 			}
 		}
 
@@ -829,17 +827,17 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = vajrayana_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = vajrayana_buddhist
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = bhikkhuni
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -880,12 +878,10 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = vajrayana_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = vajrayana_buddhist
 				portrait_in_command = no
-				OR = {
-					portrait_has_trait = on_indian_pilgrimage
-				}
+				portrait_has_trait = on_indian_pilgrimage
 			}
 		}
 
@@ -924,17 +920,17 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = theravada_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = theravada_buddhist
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = bhikkhu
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -971,12 +967,10 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = theravada_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = theravada_buddhist
 				portrait_in_command = no
-				OR = {
-					portrait_has_trait = on_indian_pilgrimage
-				}
+				portrait_has_trait = on_indian_pilgrimage
 			}
 		}
 
@@ -1013,17 +1007,17 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = theravada_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = theravada_buddhist
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = bhikkhuni
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -1064,12 +1058,10 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = theravada_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = theravada_buddhist
 				portrait_in_command = no
-				OR = {
-					portrait_has_trait = on_indian_pilgrimage
-				}
+				portrait_has_trait = on_indian_pilgrimage
 			}
 		}
 
@@ -1108,17 +1100,17 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = mahayana_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = mahayana_buddhist
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = bhikkhu
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -1155,12 +1147,10 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = mahayana_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = mahayana_buddhist
 				portrait_in_command = no
-				OR = {
-					portrait_has_trait = on_indian_pilgrimage
-				}
+				portrait_has_trait = on_indian_pilgrimage
 			}
 		}
 
@@ -1197,17 +1187,17 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = mahayana_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = mahayana_buddhist
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = bhikkhuni
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -1247,12 +1237,10 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-												portrait_society = monastic_order_buddhist
-												portrait_has_trait = mahayana_buddhist
+				portrait_society = monastic_order_buddhist
+				portrait_has_trait = mahayana_buddhist
 				portrait_in_command = no
-				OR = {
-					portrait_has_trait = on_indian_pilgrimage
-				}
+				portrait_has_trait = on_indian_pilgrimage
 			}
 		}
 
@@ -1286,17 +1274,17 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-												portrait_society = monastic_order_jain
-												portrait_has_trait = digambara_jain
+				portrait_society = monastic_order_jain
+				portrait_has_trait = digambara_jain
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = muni
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -1349,18 +1337,18 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-												portrait_society = monastic_order_jain
-												portrait_has_trait = digambara_jain
+				portrait_society = monastic_order_jain
+				portrait_has_trait = digambara_jain
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = aryika
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -1430,17 +1418,17 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-												portrait_society = monastic_order_jain
+				portrait_society = monastic_order_jain
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = muni
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -1475,7 +1463,7 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = no
 
-												portrait_society = monastic_order_jain
+				portrait_society = monastic_order_jain
 				portrait_in_command = no
 			}
 		}
@@ -1527,18 +1515,18 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-												portrait_society = monastic_order_jain
-												portrait_has_trait = svetambara_jain
+				portrait_society = monastic_order_jain
+				portrait_has_trait = svetambara_jain
 				OR = {
-													NOT = { portrait_tier = baron }
-													portrait_government = theocracy_government
-													portrait_government = order_government
+					NOT = { portrait_tier = baron }
+					portrait_government = theocracy_government
+					portrait_government = order_government
 					portrait_has_trait = aryika
 					portrait_has_trait = on_indian_pilgrimage
 				}
 				OR = {
 					portrait_in_command = no
-													portrait_government = theocracy_government
+					portrait_government = theocracy_government
 				}
 			}
 		}
@@ -1580,7 +1568,7 @@ spriteTypes = {
 				portrait_age > child
 				portrait_is_female = yes
 
-												portrait_society = monastic_order_jain
+				portrait_society = monastic_order_jain
 				portrait_in_command = no
 			}
 		}

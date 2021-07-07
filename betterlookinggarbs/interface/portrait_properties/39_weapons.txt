@@ -53,7 +53,7 @@
 		factor = 100
 		trigger = {
 			blg_righthanded = yes
-			NOT = { has_character_flag = add_duel_xp }
+			NOT = { has_character_flag = mock_duel }
 			any_artifact = {
 				is_artifact_equipped = yes
 				blg_weapon_polearm = yes
@@ -65,7 +65,7 @@
 		factor = 100
 		trigger = {
 			blg_righthanded = yes
-			NOT = { has_character_flag = add_duel_xp }
+			NOT = { has_character_flag = mock_duel }
 			any_artifact = {
 				is_artifact_equipped = yes
 				blg_weapon_trident = yes
@@ -248,7 +248,7 @@
 		factor = 100
 		trigger = {
 			blg_righthanded = yes
-			NOT = { has_character_flag = add_duel_xp }
+			NOT = { has_character_flag = mock_duel }
 			any_artifact = {
 				is_artifact_equipped = yes
 				blg_weapon_greatsword = yes
@@ -259,7 +259,6 @@
 	10 = { # j - Sword
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
 			trigger_if = {
 				limit = {
 					blg_righthanded = yes
@@ -297,7 +296,6 @@
 	11 = { # k - Sword
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
 			trigger_if = {
 				limit = {
 					blg_righthanded = yes
@@ -326,7 +324,6 @@
 	12 = { # l - Sword
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
 			trigger_if = {
 				limit = {
 					blg_righthanded = yes

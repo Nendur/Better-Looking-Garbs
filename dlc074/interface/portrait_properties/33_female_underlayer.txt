@@ -47,7 +47,10 @@
 				age >= 40
 				trait = chaste
 				trait = celibate
-				blg_devout = yes
+				trait = zealous
+				has_focus = focus_theology
+				is_ascetic_trigger = yes
+				blg_pilgrimage = yes
 			}
 		}
 	}
@@ -61,7 +64,17 @@
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_early = yes
 				blg_veiled_crown = yes
-				blg_royalty = yes
+				OR = {
+					higher_real_tier_than = duke
+					is_or_was_offmap_power_ruler = yes
+					spouse_even_if_dead = {
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+						}
+					}
+					blg_royal_title = yes
+				}
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 2 }
@@ -78,7 +91,17 @@
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_early = yes
 				blg_veiled_crown = yes
-				blg_royalty = yes
+				OR = {
+					higher_real_tier_than = duke
+					is_or_was_offmap_power_ruler = yes
+					spouse_even_if_dead = {
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+						}
+					}
+					blg_royal_title = yes
+				}
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 3 }
@@ -95,7 +118,17 @@
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_early = yes
 				blg_veiled_crown = yes
-				blg_royalty = yes
+				OR = {
+					higher_real_tier_than = duke
+					is_or_was_offmap_power_ruler = yes
+					spouse_even_if_dead = {
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+						}
+					}
+					blg_royal_title = yes
+				}
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 4 }
@@ -112,7 +145,17 @@
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_early = yes
 				blg_veiled_crown = yes
-				blg_royalty = yes
+				OR = {
+					higher_real_tier_than = duke
+					is_or_was_offmap_power_ruler = yes
+					spouse_even_if_dead = {
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+						}
+					}
+					blg_royal_title = yes
+				}
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 5 }
@@ -129,7 +172,17 @@
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_late = yes
 				blg_veiled_crown = yes
-				blg_royalty = yes
+				OR = {
+					higher_real_tier_than = duke
+					is_or_was_offmap_power_ruler = yes
+					spouse_even_if_dead = {
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+						}
+					}
+					blg_royal_title = yes
+				}
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 6 }
@@ -146,7 +199,17 @@
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_late = yes
 				blg_veiled_crown = yes
-				blg_royalty = yes
+				OR = {
+					higher_real_tier_than = duke
+					is_or_was_offmap_power_ruler = yes
+					spouse_even_if_dead = {
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+						}
+					}
+					blg_royal_title = yes
+				}
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 7 }
@@ -163,7 +226,17 @@
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_late = yes
 				blg_culture_french = yes
-				blg_royalty = yes
+				OR = {
+					higher_real_tier_than = duke
+					is_or_was_offmap_power_ruler = yes
+					spouse_even_if_dead = {
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+						}
+					}
+					blg_royal_title = yes
+				}
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 8 }
@@ -180,7 +253,17 @@
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_late = yes
 				blg_veiled_crown = yes
-				blg_royalty = yes
+				OR = {
+					higher_real_tier_than = duke
+					is_or_was_offmap_power_ruler = yes
+					spouse_even_if_dead = {
+						OR = {
+							higher_real_tier_than = duke
+							is_or_was_offmap_power_ruler = yes
+						}
+					}
+					blg_royal_title = yes
+				}
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 9 }
@@ -212,8 +295,8 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_early = yes
-				blg_headgear_duke = yes
 				blg_veiled_crown = yes
+				blg_headgear_duke = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 11 }
@@ -229,8 +312,8 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_early = yes
-				blg_headgear_duke = yes
 				blg_veiled_crown = yes
+				blg_headgear_duke = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 12 }
@@ -246,8 +329,8 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_early = yes
-				blg_headgear_duke = yes
 				blg_veiled_crown = yes
+				blg_headgear_duke = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 13 }
@@ -293,7 +376,8 @@
 
 		trigger = {
 			trigger_if = {
-				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }blg_style_early = yes
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 16 }
@@ -307,7 +391,8 @@
 
 		trigger = {
 			trigger_if = {
-				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }blg_style_early = yes
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 17 }
@@ -321,7 +406,8 @@
 
 		trigger = {
 			trigger_if = {
-				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }blg_style_early = yes
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_early = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 18 }
@@ -335,7 +421,8 @@
 
 		trigger = {
 			trigger_if = {
-				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }blg_style_late = yes
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_late = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 19 }
@@ -349,7 +436,8 @@
 
 		trigger = {
 			trigger_if = {
-				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }blg_style_late = yes
+				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
+				blg_style_late = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_underlayer value = 20 }

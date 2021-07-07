@@ -142,7 +142,6 @@ blg_beard_uncommon = {
 		culture_group = interior
 		culture_group = plateau
 		culture_group = anishinaabe
-		blg_ethnicity_mesoamerican = yes
 		blg_beard_short = yes
 		trait = eunuch
 	}

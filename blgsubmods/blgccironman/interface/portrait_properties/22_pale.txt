@@ -7,6 +7,7 @@
 	1 = { # a - Pale
 		factor = 100
 		trigger = {
+			is_alive = yes
 			OR = {
 				trait = is_malnourished
 				trait = fatigue
@@ -27,7 +28,6 @@
 					}
 				}
 			}
-			is_alive = yes
 		}
 	}
 }

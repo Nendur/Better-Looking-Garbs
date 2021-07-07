@@ -2,6 +2,7 @@
 38 = {
 	0 = { # 0 - blank
 		factor = 5
+
 		modifier = {
 			factor = 100
 			NOR = {
@@ -84,6 +85,10 @@
 	6 = { # f - Glass window
 		factor = 1
 		trigger = {
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
 			capital_holding = {
 				OR = {
 					holding_type = city
@@ -91,16 +96,16 @@
 					holding_type = family_palace
 				}
 			}
-			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
-			}
 		}
 	}
 
 	7 = { # g - Grated window
 		factor = 1
 		trigger = {
+			OR = {
+				higher_real_tier_than = count
+				spouse = { higher_real_tier_than = count }
+			}
 			capital_holding = {
 				OR = {
 					holding_type = castle
@@ -111,10 +116,6 @@
 			}
 			capital_scope = {
 				blg_region_muslim = yes
-			}
-			OR = {
-				higher_real_tier_than = count
-				spouse = { higher_real_tier_than = count }
 			}
 		}
 	}

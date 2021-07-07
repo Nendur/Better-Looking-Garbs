@@ -46,10 +46,6 @@ blg_guard = {
 		has_minor_title = title_captain_of_guard
 		has_minor_title = title_bravo
 	}
-	OR = {
-		is_landed = no
-		blg_travelling = yes
-	}
 }
 
 # Very learned character.

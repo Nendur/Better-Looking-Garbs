@@ -99,7 +99,6 @@
 				trait = in_hiding
 				blg_prisoner = yes
 				blg_pilgrimage = yes
-				blg_saint = yes
 			}
 			blg_crown_laurels = yes
 		}
@@ -116,8 +115,6 @@
 				has_game_rule = { name = blg_artifacts value = off }
 				trait = in_hiding
 				blg_prisoner = yes
-				blg_pilgrimage = yes
-				blg_saint = yes
 			}
 			blg_crown_pahlavi = yes
 		}
@@ -134,8 +131,6 @@
 				has_game_rule = { name = blg_artifacts value = off }
 				trait = in_hiding
 				blg_prisoner = yes
-				blg_pilgrimage = yes
-				blg_saint = yes
 			}
 			blg_crown_fylkir = yes
 		}
@@ -152,8 +147,6 @@
 				has_game_rule = { name = blg_artifacts value = off }
 				trait = in_hiding
 				blg_prisoner = yes
-				blg_pilgrimage = yes
-				blg_saint = yes
 			}
 			blg_crown_tengri = yes
 		}
@@ -170,8 +163,6 @@
 				has_game_rule = { name = blg_artifacts value = off }
 				trait = in_hiding
 				blg_prisoner = yes
-				blg_pilgrimage = yes
-				blg_saint = yes
 			}
 			blg_crown_finnish = yes
 		}
@@ -188,8 +179,6 @@
 				has_game_rule = { name = blg_artifacts value = off }
 				trait = in_hiding
 				blg_prisoner = yes
-				blg_pilgrimage = yes
-				blg_saint = yes
 			}
 			blg_crown_african = yes
 		}
@@ -206,8 +195,6 @@
 				has_game_rule = { name = blg_artifacts value = off }
 				trait = in_hiding
 				blg_prisoner = yes
-				blg_pilgrimage = yes
-				blg_saint = yes
 			}
 			blg_crown_slavic = yes
 		}
@@ -224,8 +211,6 @@
 				has_game_rule = { name = blg_artifacts value = off }
 				trait = in_hiding
 				blg_prisoner = yes
-				blg_pilgrimage = yes
-				blg_saint = yes
 			}
 			blg_crown_baltic = yes
 		}
@@ -242,8 +227,6 @@
 				has_game_rule = { name = blg_artifacts value = off }
 				trait = in_hiding
 				blg_prisoner = yes
-				blg_pilgrimage = yes
-				blg_saint = yes
 			}
 			blg_crown_aztec = yes
 		}

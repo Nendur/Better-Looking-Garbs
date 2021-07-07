@@ -92,6 +92,10 @@
 			NOR = {
 				trait = is_fat
 				trait = sturdy
+				AND = {
+					trait = dwarf
+					NOT = { trait = fair }
+				}
 			}
 		}
 	}
@@ -103,6 +107,10 @@
 			NOR = {
 				trait = is_fat
 				trait = sturdy
+				AND = {
+					trait = dwarf
+					NOT = { trait = fair }
+				}
 			}
 		}
 	}
@@ -114,6 +122,10 @@
 			NOR = {
 				trait = is_fat
 				trait = sturdy
+				AND = {
+					trait = dwarf
+					NOT = { trait = fair }
+				}
 			}
 		}
 	}
@@ -125,6 +137,10 @@
 			NOR = {
 				trait = is_fat
 				trait = sturdy
+				AND = {
+					trait = dwarf
+					NOT = { trait = fair }
+				}
 			}
 		}
 	}
@@ -136,6 +152,10 @@
 			NOR = {
 				trait = is_fat
 				trait = sturdy
+				AND = {
+					trait = dwarf
+					NOT = { trait = fair }
+				}
 			}
 		}
 	}
@@ -148,6 +168,10 @@
 			NOR = {
 				trait = is_fat
 				trait = sturdy
+				AND = {
+					trait = dwarf
+					NOT = { trait = fair }
+				}
 			}
 		}
 	}

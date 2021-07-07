@@ -2,6 +2,7 @@
 2 = {
 	0 = { # 0 - blank
 		factor = 1
+
 		modifier = {
 			factor = 100
 			prisoner = yes
@@ -29,6 +30,7 @@
 
 	2 = { # b - Holy Banner of Mohammad
 		factor = 100
+
 		trigger = {
 			any_artifact = {
 				is_artifact_active = yes
@@ -39,6 +41,7 @@
 
 	3 = { # c - Derafsh Kaviani
 		factor = 100
+
 		trigger = {
 			any_artifact = {
 				is_artifact_active = yes
@@ -49,6 +52,7 @@
 
 	4 = { # d - Cat
 		factor = 10
+
 		trigger = {
 			OR = {
 				has_character_modifier = pet_cat
@@ -79,6 +83,7 @@
 
 	5 = { # e - Cat
 		factor = 10
+
 		trigger = {
 			has_character_modifier = pet_cat
 
@@ -95,6 +100,7 @@
 
 	6 = { # f - Cat
 		factor = 10
+
 		trigger = {
 			has_character_modifier = pet_cat
 
@@ -111,6 +117,7 @@
 
 	7 = { # g - Dog
 		factor = 10
+
 		trigger = {
 			OR = {
 				has_character_modifier = pet_hunting_dog
@@ -134,6 +141,7 @@
 
 	8 = { # h - Dog
 		factor = 10
+
 		trigger = {
 			OR = {
 				has_character_modifier = pet_hunting_dog
@@ -157,6 +165,7 @@
 
 	9 = { # i - Dog
 		factor = 10
+
 		trigger = {
 			OR = {
 				has_character_modifier = pet_hunting_dog
@@ -180,6 +189,7 @@
 
 	10 = { # j - Dog
 		factor = 10
+
 		trigger = {
 			OR = {
 				has_character_modifier = pet_hunting_dog
@@ -203,6 +213,7 @@
 
 	11 = { # k - Owl
 		factor = 10
+
 		trigger = {
 			OR = {
 				has_character_modifier = pet_owl
@@ -229,6 +240,7 @@
 
 	12 = { # l - Hedgehog
 		factor = 10
+
 		trigger = {
 			has_character_modifier = pet_hedgehog
 
@@ -238,6 +250,7 @@
 
 	13 = { # m - Otter
 		factor = 10
+
 		trigger = {
 			has_character_modifier = pet_otter
 
@@ -247,6 +260,7 @@
 
 	14 = { # n - Parrot
 		factor = 10
+
 		trigger = {
 			has_character_modifier = pet_parrot
 
@@ -256,6 +270,7 @@
 
 	15 = { # o - Wolf
 		factor = 10
+
 		trigger = {
 			has_character_modifier = wolf_familiar
 			OR = {
@@ -267,16 +282,7 @@
 					any_player = { same_society_as = ROOT }
 				}
 			}
-		}
-	}
 
-	16 = { # p - Boar
-		factor = 100
-		trigger = {
-			OR = {
-				death_reason = death_accident_boar
-				death_reason = death_execution_boar
-			}
 		}
 	}
 }

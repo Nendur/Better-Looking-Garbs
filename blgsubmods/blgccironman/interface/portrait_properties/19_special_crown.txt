@@ -2,6 +2,7 @@
 19 = {
 	0 = { # 0 - blank
 		factor = 1
+
 		modifier = {
 			factor = 100
 			OR = {
@@ -17,7 +18,6 @@
 					}
 				}
 				has_character_flag = add_duel_xp
-				has_landed_title = e_china_west_governor
 			}
 			NOT = { has_game_rule = { name = martial_headgear value = off } }
 			NOT = { is_priest = yes }
@@ -33,7 +33,10 @@
 		trigger = {
 			NOR = {
 				trait = in_hiding
+				prisoner = yes
+				death_reason = death_dungeon
 				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = saint
 				has_nickname = nick_the_saint
 			}
@@ -59,6 +62,7 @@
 				prisoner = yes
 				death_reason = death_dungeon
 				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = saint
 				has_nickname = nick_the_saint
 			}
@@ -85,6 +89,7 @@
 				prisoner = yes
 				death_reason = death_dungeon
 				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = saint
 				has_nickname = nick_the_saint
 			}
@@ -110,6 +115,7 @@
 				prisoner = yes
 				death_reason = death_dungeon
 				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 				trait = saint
 				has_nickname = nick_the_saint
 			}
@@ -135,8 +141,7 @@
 				prisoner = yes
 				death_reason = death_dungeon
 				trait = on_pilgrimage
-				trait = saint
-				has_nickname = nick_the_saint
+				trait = on_indian_pilgrimage
 			}
 			trait = augustus
 		}
@@ -153,9 +158,6 @@
 				trait = in_hiding
 				prisoner = yes
 				death_reason = death_dungeon
-				trait = on_pilgrimage
-				trait = saint
-				has_nickname = nick_the_saint
 			}
 			OR = {
 				any_artifact = {
@@ -178,9 +180,6 @@
 				trait = in_hiding
 				prisoner = yes
 				death_reason = death_dungeon
-				trait = on_pilgrimage
-				trait = saint
-				has_nickname = nick_the_saint
 			}
 			OR = {
 				any_artifact = {
@@ -208,9 +207,6 @@
 				trait = in_hiding
 				prisoner = yes
 				death_reason = death_dungeon
-				trait = on_pilgrimage
-				trait = saint
-				has_nickname = nick_the_saint
 			}
 			OR = {
 				any_artifact = {
@@ -233,9 +229,6 @@
 				trait = in_hiding
 				prisoner = yes
 				death_reason = death_dungeon
-				trait = on_pilgrimage
-				trait = saint
-				has_nickname = nick_the_saint
 			}
 			OR = {
 				any_artifact = {
@@ -263,9 +256,6 @@
 				trait = in_hiding
 				prisoner = yes
 				death_reason = death_dungeon
-				trait = on_pilgrimage
-				trait = saint
-				has_nickname = nick_the_saint
 			}
 			OR = {
 				any_artifact = {
@@ -293,9 +283,6 @@
 				trait = in_hiding
 				prisoner = yes
 				death_reason = death_dungeon
-				trait = on_pilgrimage
-				trait = saint
-				has_nickname = nick_the_saint
 			}
 			OR = {
 				any_artifact = {
@@ -323,9 +310,6 @@
 				trait = in_hiding
 				prisoner = yes
 				death_reason = death_dungeon
-				trait = on_pilgrimage
-				trait = saint
-				has_nickname = nick_the_saint
 			}
 			OR = {
 				any_artifact = {
@@ -353,9 +337,6 @@
 				trait = in_hiding
 				prisoner = yes
 				death_reason = death_dungeon
-				trait = on_pilgrimage
-				trait = saint
-				has_nickname = nick_the_saint
 			}
 			OR = {
 				any_artifact = {
@@ -421,14 +402,6 @@
 		hide_layers = {33 = {}}
 
 		trigger = {
-			is_merchant_republic = yes
-			primary_title = {
-				OR = {
-					title = k_venice
-					title = d_venice
-				}
-			}
-
 			NOR = {
 				prisoner = yes
 				death_reason = death_dungeon
@@ -436,6 +409,13 @@
 				trait = leper
 				trait = saint
 				has_nickname = nick_the_saint
+			}
+			is_merchant_republic = yes
+			primary_title = {
+				OR = {
+					title = k_venice
+					title = d_venice
+				}
 			}
 		}
 	}

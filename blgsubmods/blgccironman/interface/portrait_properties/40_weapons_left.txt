@@ -23,17 +23,7 @@
 		modifier = {
 			factor = 100
 			has_character_flag = mock_duel
-			OR = {
-				has_character_flag = weapon_is_hand
-				NOR = {
-					trait = lefthanded
-					trait = one_handed
-				}
-				AND = {
-					trait = lefthanded
-					trait = one_handed
-				}
-			}
+			has_character_flag = weapon_is_hand
 		}
 	}
 
@@ -76,7 +66,7 @@
 				trait = lefthanded
 				trait = one_handed
 			}
-			NOT = { has_character_flag = add_duel_xp }
+			NOT = { has_character_flag = mock_duel }
 			any_artifact = {
 				is_artifact_equipped = yes
 				artifact_type = chinese_ji
@@ -95,7 +85,7 @@
 				trait = lefthanded
 				trait = one_handed
 			}
-			NOT = { has_character_flag = add_duel_xp }
+			NOT = { has_character_flag = mock_duel }
 			any_artifact = {
 				is_artifact_equipped = yes
 				OR = {
@@ -205,12 +195,10 @@
 					NOT = { has_character_flag = mock_duel }
 					any_artifact = {
 						is_artifact_equipped = yes
-						quality <= 2
 						OR = {
 							artifact_type = scimitar_tier_1_new
 							artifact_type = scimitar_tier_2_new
 						}
-						NOT = { has_artifact_flag = jewelry }
 					}
 				}
 			}
@@ -244,7 +232,6 @@
 					artifact_type = scimitar_tier_4_fortune
 					artifact_type = scimitar_tier_4_conquest
 				}
-				NOT = { has_artifact_flag = jewelry }
 			}
 		}
 	}
@@ -260,7 +247,7 @@
 				trait = lefthanded
 				trait = one_handed
 			}
-			NOT = { has_character_flag = add_duel_xp }
+			NOT = { has_character_flag = mock_duel }
 			any_artifact = {
 				is_artifact_equipped = yes
 				artifact_type = zweihander_sword
@@ -271,7 +258,6 @@
 	10 = { # j - Sword
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
 			OR = {
 				trait = lefthanded
 				trait = one_handed
@@ -301,7 +287,6 @@
 	11 = { # k - Sword
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
 			OR = {
 				trait = lefthanded
 				trait = one_handed
@@ -322,7 +307,6 @@
 	12 = { # l - Sword
 		factor = 100
 		trigger = {
-			NOT = { has_character_flag = mock_duel }
 			OR = {
 				trait = lefthanded
 				trait = one_handed
@@ -429,7 +413,6 @@
 					artifact_type = mace_tier_3_foe_hammer
 					artifact_type = mace_tier_4_foe_hammer
 				}
-				NOT = { has_artifact_flag = jewelry }
 			}
 		}
 	}
@@ -451,7 +434,6 @@
 					artifact_type = mace_tier_3_shatterer
 					artifact_type = mace_tier_4_shatterer
 				}
-				NOT = { has_artifact_flag = jewelry }
 			}
 		}
 	}

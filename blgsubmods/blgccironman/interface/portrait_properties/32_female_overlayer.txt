@@ -2,35 +2,37 @@
 32 = {
 	0 = { # 0 - blank
 		factor = 10
+
 		modifier = {
 			factor = 100
 			OR = {
 				NOT = { has_dlc = "Holy Fury" }
 				is_female = no
+				NOR = {
+					culture_group = latin
+					culture_group = iberian
+					AND = {
+						religion_group = christian
+						OR = {
+							culture_group = north_germanic
+							culture_group = central_germanic
+							culture_group = west_germanic
+							culture_group = celtic
+							culture_group = baltic
+							culture_group = east_slavic
+							culture_group = west_slavic
+							culture_group = south_slavic
+							culture_group = finno_ugric
+							culture_group = magyar
+						}
+					}
+				}
 				is_priest = yes
 				prisoner = yes
 				death_reason = death_dungeon
 				trait = saint
 				has_nickname = nick_the_saint
-			}
-		}
-
-		modifier = {
-			factor = 100
-			OR = {
 				has_portrait_property = { layer = 5 index = 9 }
-				NOR = {
-					likes_latino_iberians = yes
-					AND = {
-						likes_christians = yes
-						OR = {
-							likes_germanics = yes
-							likes_celts = yes
-							likes_balto_slavics = yes
-							likes_finno_ugrics = yes
-						}
-					}
-				}
 			}
 		}
 
@@ -45,6 +47,8 @@
 
 	1 = { # a - Military Helm 01
 		factor = 100
+		hide_layers = { 43 = {} }
+
 		trigger = {
 			year_of_birth >= 1160
 			has_portrait_property = { layer = 5 index = 10 }
@@ -57,6 +61,8 @@
 
 	2 = { # b - Military Helm 02
 		factor = 99
+		hide_layers = { 43 = {} }
+
 		trigger = {
 			year_of_birth < 1250
 			OR = {
@@ -76,6 +82,8 @@
 
 	3 = { # c - Military Helm 03
 		factor = 99
+		hide_layers = { 43 = {} }
+
 		trigger = {
 			year_of_birth < 1250
 			OR = {
@@ -95,6 +103,8 @@
 
 	4 = { # d - Military Helm 04
 		factor = 99
+		hide_layers = { 43 = {} }
+
 		trigger = {
 			year_of_birth >= 1160
 			OR = {
@@ -114,6 +124,7 @@
 
 	5 = { # e - Duchess Accessories - Early
 		factor = 25
+
 		trigger = {
 			year_of_birth < 1160
 			OR = {
@@ -134,6 +145,7 @@
 
 	6 = { # f - Duchess Accessories - Early
 		factor = 25
+
 		trigger = {
 			year_of_birth < 1160
 			OR = {
@@ -166,6 +178,7 @@
 
 	7 = { # g - Duchess Accessories - Early
 		factor = 25
+
 		trigger = {
 			year_of_birth < 1160
 			OR = {
@@ -190,30 +203,29 @@
 
 	8 = { # h - Duchess Accessories - Post-1180
 		factor = 25
+
 		trigger = {
-			OR = {
-				AND = {
-					year_of_birth >= 1160
+			trigger_if = {
+				limit = { has_portrait_property = { layer = 5 index = 4 } }
+				year_of_birth >= 1160
 
-					has_portrait_property = { layer = 5 index = 4 }
-					OR = {
-						real_tier = duke
-						spouse_even_if_dead = { real_tier = duke }
-					}
-
-					NOR = {
-						has_portrait_property = { layer = 32 index = 5 }
-						has_portrait_property = { layer = 32 index = 6 }
-						has_portrait_property = { layer = 32 index = 7 }
-						has_portrait_property = { layer = 32 index = 9 }
-					}
+				OR = {
+					real_tier = duke
+					spouse_even_if_dead = { real_tier = duke }
 				}
-				AND = {
-					has_portrait_property = { layer = 5 index = 12 }
-					OR = {
-						culture = frankish
-						culture = occitan
-					}
+
+				NOR = {
+					has_portrait_property = { layer = 32 index = 5 }
+					has_portrait_property = { layer = 32 index = 6 }
+					has_portrait_property = { layer = 32 index = 7 }
+					has_portrait_property = { layer = 32 index = 9 }
+				}
+			}
+			trigger_else = {
+				has_portrait_property = { layer = 5 index = 12 }
+				OR = {
+					culture = frankish
+					culture = occitan
 				}
 			}
 		}
@@ -226,6 +238,7 @@
 
 	9 = { # i - Duchess Accessories - Post-1180
 		factor = 25
+
 		trigger = {
 			year_of_birth >= 1160
 
@@ -246,6 +259,7 @@
 
 	10 = { # j - Countess Accessories - Early
 		factor = 10
+
 		trigger = {
 			year_of_birth < 1160
 			OR = {
@@ -256,19 +270,15 @@
 			OR = {
 				is_landed = yes
 				spouse_even_if_dead = { is_landed = yes }
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				trait = proud
-			}
-			NOR = {
-				trait = peasant_leader
-				trait = heresiarch
+				has_minor_title = title_augusta
 			}
 			NOR = {
 				higher_real_tier_than = count
 				spouse_even_if_dead = { higher_real_tier_than = count }
+				trait = peasant_leader
+				trait = heresiarch
 			}
 
 			NOR = {
@@ -283,6 +293,7 @@
 
 	11 = { # k - Countess Accessories - Early
 		factor = 10
+
 		trigger = {
 			year_of_birth < 1160
 			OR = {
@@ -293,19 +304,15 @@
 			OR = {
 				is_landed = yes
 				spouse_even_if_dead = { is_landed = yes }
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				trait = proud
-			}
-			NOR = {
-				trait = peasant_leader
-				trait = heresiarch
+				has_minor_title = title_augusta
 			}
 			NOR = {
 				higher_real_tier_than = count
 				spouse_even_if_dead = { higher_real_tier_than = count }
+				trait = peasant_leader
+				trait = heresiarch
 			}
 
 			NOR = {
@@ -320,6 +327,7 @@
 
 	12 = { # l - Countess Accessories - Post-1180
 		factor = 10
+
 		trigger = {
 			year_of_birth >= 1160
 			OR = {
@@ -330,19 +338,15 @@
 			OR = {
 				is_landed = yes
 				spouse_even_if_dead = { is_landed = yes }
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				trait = proud
-			}
-			NOR = {
-				trait = peasant_leader
-				trait = heresiarch
+				has_minor_title = title_augusta
 			}
 			NOR = {
 				higher_real_tier_than = count
 				spouse_even_if_dead = { higher_real_tier_than = count }
+				trait = peasant_leader
+				trait = heresiarch
 			}
 
 			NOR = {
@@ -370,19 +374,15 @@
 			OR = {
 				is_landed = yes
 				spouse_even_if_dead = { is_landed = yes }
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				trait = proud
-			}
-			NOR = {
-				trait = peasant_leader
-				trait = heresiarch
+				has_minor_title = title_augusta
 			}
 			NOR = {
 				higher_real_tier_than = count
 				spouse_even_if_dead = { higher_real_tier_than = count }
+				trait = peasant_leader
+				trait = heresiarch
 			}
 
 			NOR = {
@@ -410,19 +410,15 @@
 			OR = {
 				is_landed = yes
 				spouse_even_if_dead = { is_landed = yes }
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				trait = proud
-			}
-			NOR = {
-				trait = peasant_leader
-				trait = heresiarch
+				has_minor_title = title_augusta
 			}
 			NOR = {
 				higher_real_tier_than = count
 				spouse_even_if_dead = { higher_real_tier_than = count }
+				trait = peasant_leader
+				trait = heresiarch
 			}
 
 			NOR = {
@@ -450,19 +446,15 @@
 			OR = {
 				is_landed = yes
 				spouse_even_if_dead = { is_landed = yes }
-				has_minor_title = title_despot
-				has_minor_title = title_augusta
 				has_minor_title = title_prince
 				has_minor_title = title_queen_mother
-				trait = proud
-			}
-			NOR = {
-				trait = peasant_leader
-				trait = heresiarch
+				has_minor_title = title_augusta
 			}
 			NOR = {
 				higher_real_tier_than = count
 				spouse_even_if_dead = { higher_real_tier_than = count }
+				trait = peasant_leader
+				trait = heresiarch
 			}
 
 			NOR = {
@@ -488,13 +480,15 @@
 			spouse = { is_landed = no }
 			OR = {
 				is_married = yes
-				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age >= 40
 				trait = chaste
 				trait = celibate
 				trait = zealous
+				has_focus = focus_theology
 				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 			}
 			NOT = { trait = lustful }
 
@@ -532,13 +526,15 @@
 			spouse = { is_landed = no }
 			OR = {
 				is_married = yes
-				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age >= 40
 				trait = chaste
 				trait = celibate
 				trait = zealous
+				has_focus = focus_theology
 				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 			}
 			NOT = { trait = lustful }
 
@@ -576,13 +572,15 @@
 			spouse = { is_landed = no }
 			OR = {
 				is_married = yes
-				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age >= 40
 				trait = chaste
 				trait = celibate
 				trait = zealous
+				has_focus = focus_theology
 				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 			}
 			NOT = { trait = lustful }
 
@@ -612,13 +610,15 @@
 			spouse = { is_landed = no }
 			OR = {
 				is_married = yes
-				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age >= 40
 				trait = chaste
 				trait = celibate
 				trait = zealous
+				has_focus = focus_theology
 				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 			}
 			NOT = { trait = lustful }
 
@@ -658,13 +658,15 @@
 			spouse = { is_landed = no }
 			OR = {
 				is_married = yes
-				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age >= 40
 				trait = chaste
 				trait = celibate
 				trait = zealous
+				has_focus = focus_theology
 				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 			}
 			NOT = { trait = lustful }
 
@@ -696,13 +698,15 @@
 			spouse = { is_landed = no }
 			OR = {
 				is_married = yes
-				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age >= 40
 				trait = chaste
 				trait = celibate
 				trait = zealous
+				has_focus = focus_theology
 				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 			}
 			NOT = { trait = lustful }
 
@@ -722,19 +726,22 @@
 
 	22 = { # v - Non-noble Post-1180
 		factor = 1
+
 		trigger = {
 			year_of_birth >= 1160
 			is_landed = no
 			spouse = { is_landed = no }
 			OR = {
 				is_married = yes
-				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age >= 40
 				trait = chaste
 				trait = celibate
 				trait = zealous
+				has_focus = focus_theology
 				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 			}
 			NOT = { trait = lustful }
 
@@ -772,13 +779,15 @@
 			spouse = { is_landed = no }
 			OR = {
 				is_married = yes
-				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age >= 40
 				trait = chaste
 				trait = celibate
 				trait = zealous
+				has_focus = focus_theology
 				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 			}
 			NOT = { trait = lustful }
 
@@ -816,13 +825,15 @@
 			spouse = { is_landed = no }
 			OR = {
 				is_married = yes
-				is_consort = yes
 				any_spouse_even_if_dead = { is_alive = no }
 				age >= 40
 				trait = chaste
 				trait = celibate
 				trait = zealous
+				has_focus = focus_theology
 				is_ascetic_trigger = yes
+				trait = on_pilgrimage
+				trait = on_indian_pilgrimage
 			}
 			NOT = { trait = lustful }
 

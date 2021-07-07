@@ -3,6 +3,16 @@
 	0 = { # 0 - blank
 		factor = 10
 
+		trigger = {
+			OR = {
+				is_variable_equal = { which = ca_overlayer value = 0 }
+				is_variable_equal = { which = ca_overlayer value = 1 }
+				has_portrait_property = { layer = 5 index = 10 }
+				has_portrait_property = { layer = 5 index = 12 }
+				has_portrait_property = { layer = 5 index = 13 }
+			}
+		}
+
 		modifier = {
 			factor = 100
 			OR = {
@@ -27,15 +37,11 @@
 			factor = 0.1
 			blg_culture_french = yes
 		}
-
-		modifier = {
-			factor = 100
-			is_variable_equal = { which = ca_overlayer value = 1 }
-		}
 	}
 
 	1 = { # a - Military Helm 01
 		factor = 100
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			trigger_if = {
@@ -57,6 +63,7 @@
 
 	2 = { # b - Military Helm 02
 		factor = 99
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			trigger_if = {
@@ -85,6 +92,7 @@
 
 	3 = { # c - Military Helm 03
 		factor = 99
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			trigger_if = {
@@ -113,6 +121,7 @@
 
 	4 = { # d - Military Helm 04
 		factor = 99
+		hide_layers = { 43 = {} }
 
 		trigger = {
 			trigger_if = {
@@ -301,10 +310,16 @@
 				blg_style_early = yes
 				blg_culture_french = yes
 
-				blg_clothes_noble = yes
+				OR = {
+					is_landed = yes
+					spouse_even_if_dead = { is_landed = yes }
+					blg_prince_title = yes
+					blg_royal_title = yes
+				}
 				NOR = {
 					higher_real_tier_than = count
 					spouse_even_if_dead = { higher_real_tier_than = count }
+					blg_peasant = yes
 				}
 
 				NOR = {
@@ -330,10 +345,16 @@
 				blg_style_early = yes
 				blg_culture_french = yes
 
-				blg_clothes_noble = yes
+				OR = {
+					is_landed = yes
+					spouse_even_if_dead = { is_landed = yes }
+					blg_prince_title = yes
+					blg_royal_title = yes
+				}
 				NOR = {
 					higher_real_tier_than = count
 					spouse_even_if_dead = { higher_real_tier_than = count }
+					blg_peasant = yes
 				}
 
 				NOR = {
@@ -359,10 +380,16 @@
 				blg_style_late = yes
 				blg_culture_french = yes
 
-				blg_clothes_noble = yes
+				OR = {
+					is_landed = yes
+					spouse_even_if_dead = { is_landed = yes }
+					blg_prince_title = yes
+					blg_royal_title = yes
+				}
 				NOR = {
 					higher_real_tier_than = count
 					spouse_even_if_dead = { higher_real_tier_than = count }
+					blg_peasant = yes
 				}
 
 				NOR = {
@@ -390,10 +417,16 @@
 				blg_style_late = yes
 				blg_culture_french = yes
 
-				blg_clothes_noble = yes
+				OR = {
+					is_landed = yes
+					spouse_even_if_dead = { is_landed = yes }
+					blg_prince_title = yes
+					blg_royal_title = yes
+				}
 				NOR = {
 					higher_real_tier_than = count
 					spouse_even_if_dead = { higher_real_tier_than = count }
+					blg_peasant = yes
 				}
 
 				NOR = {
@@ -421,10 +454,16 @@
 				blg_style_late = yes
 				blg_culture_french = yes
 
-				blg_clothes_noble = yes
+				OR = {
+					is_landed = yes
+					spouse_even_if_dead = { is_landed = yes }
+					blg_prince_title = yes
+					blg_royal_title = yes
+				}
 				NOR = {
 					higher_real_tier_than = count
 					spouse_even_if_dead = { higher_real_tier_than = count }
+					blg_peasant = yes
 				}
 
 				NOR = {
@@ -452,10 +491,16 @@
 				blg_style_late = yes
 				blg_culture_french = yes
 
-				blg_clothes_noble = yes
+				OR = {
+					is_landed = yes
+					spouse_even_if_dead = { is_landed = yes }
+					blg_prince_title = yes
+					blg_royal_title = yes
+				}
 				NOR = {
 					higher_real_tier_than = count
 					spouse_even_if_dead = { higher_real_tier_than = count }
+					blg_peasant = yes
 				}
 
 				NOR = {

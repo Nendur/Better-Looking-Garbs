@@ -54,10 +54,6 @@ blg_guard = {
 		has_minor_title = bailif_mt
 		has_minor_title = officer_mt
 	}
-	OR = {
-		is_landed = no
-		blg_travelling = yes
-	}
 }
 
 # Portrait override for ihram clothes.

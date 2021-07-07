@@ -135,7 +135,10 @@ blg_visible_society = {
 		has_character_modifier = known_secret_society_member
 		AND = {
 			multiplayer = no
-			any_player = { same_society_as = ROOT }
+			OR = {
+				any_player = { same_society_as = ROOT }
+				is_local_human_observer = yes
+			}
 		}
 	}
 }

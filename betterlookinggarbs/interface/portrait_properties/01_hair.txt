@@ -8,13 +8,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_all = yes
-					}
-					blg_hair_celtic = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					trigger_if = {
@@ -37,11 +30,14 @@
 						blg_hair_celtic = no
 					}
 				}
-				trigger_else = {
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_celtic = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = yes }
 						blg_hair_byzantine = no
 						blg_hair_turkish = no
 						blg_hair_bodpa = no
@@ -118,13 +114,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_ranking = yes
-					}
-					blg_hair_turkish = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					trigger_if = {
@@ -134,13 +123,6 @@
 							blg_hair_african = yes
 							blg_hair_cuman = yes
 						}
-					}
-
-					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
-						blg_hair_cuman = no
 					}
 
 					trigger_if = {
@@ -187,11 +169,17 @@
 						blg_hair_turkish = no
 					}
 				}
-				trigger_else = {
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_turkish = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = no }
+						blg_hair_cuman = no
+					}
+					trigger_else = {
 						blg_hair_southern = no
 						blg_hair_westafrican = no
 					}
@@ -236,13 +224,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_ranking = yes
-					}
-					blg_hair_cuman = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					trigger_if = {
@@ -276,11 +257,14 @@
 						blg_hair_indian = no
 					}
 				}
-				trigger_else = {
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_cuman = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = yes }
 						blg_hair_english = no
 						blg_hair_frankish = no
 						blg_hair_italian = no
@@ -318,14 +302,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_ranking = yes
-					}
-					blg_hair_cuman = no
-					blg_hair_easternslavic = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					trigger_if = {
@@ -337,13 +313,6 @@
 							blg_hair_muslim = yes
 							blg_hair_cuman = yes
 						}
-					}
-
-					trigger_if = {
-						limit = {
-							blg_hair_tidy_all = yes
-						}
-						blg_hair_celtic = no
 					}
 
 					blg_tonsure = no
@@ -375,6 +344,18 @@
 						blg_hair_easternslavic = no
 						blg_hair_egyptian = no
 						blg_hair_indian = no
+					}
+				}
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_cuman = no
+					blg_hair_easternslavic = no
+					trigger_if = {
+						limit = { is_female = no }
+						blg_hair_celtic = no
 					}
 				}
 			}
@@ -413,21 +394,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_ranking = yes
-					}
-					blg_hair_italian = no
-					blg_hair_norse = no
-					blg_hair_easternslavic = no
-					blg_hair_southernslavic = no
-					blg_hair_westernslavic = no
-					blg_hair_egyptian = no
-					blg_hair_southindian = no
-					blg_hair_turkish = no
-					blg_hair_bodpa = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					trigger_if = {
@@ -437,14 +403,6 @@
 							blg_hair_celtic = yes
 							blg_hair_cuman = yes
 						}
-					}
-
-					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
-						blg_hair_african = no
-						blg_hair_ugric = no
 					}
 
 					blg_tonsure = no
@@ -488,11 +446,26 @@
 						blg_hair_bodpa = no
 					}
 				}
-				trigger_else = {
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_italian = no
+					blg_hair_norse = no
+					blg_hair_easternslavic = no
+					blg_hair_southernslavic = no
+					blg_hair_westernslavic = no
+					blg_hair_egyptian = no
+					blg_hair_southindian = no
+					blg_hair_turkish = no
+					blg_hair_bodpa = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = no }
+						blg_hair_african = no
+						blg_hair_ugric = no
+					}
+					trigger_else = {
 						blg_hair_byzantine = no
 						blg_hair_frankish = no
 						blg_hair_muslim = no
@@ -550,18 +523,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_ranking = yes
-					}
-					blg_hair_english = no
-					blg_hair_frankish = no
-					blg_hair_easternslavic = no
-					blg_hair_muslim = no
-					blg_hair_turkish = no
-					blg_hair_celtic = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					trigger_if = {
@@ -598,11 +559,19 @@
 						blg_hair_turkish = no
 					}
 				}
-				trigger_else = {
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_english = no
+					blg_hair_frankish = no
+					blg_hair_easternslavic = no
+					blg_hair_muslim = no
+					blg_hair_turkish = no
+					blg_hair_celtic = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = yes }
 						blg_hair_german = no
 						blg_hair_italian = no
 						blg_hair_norse = no
@@ -665,13 +634,6 @@
 		trigger = {
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
-
-				trigger_if = {
-					limit = {
-						blg_hair_tidy_ranking = yes
-					}
-					blg_hair_ugric = no
-				}
 
 				trigger_if = {
 					limit = { is_female = no }
@@ -763,11 +725,14 @@
 						blg_hair_indian = no
 					}
 				}
-				trigger_else = {
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_ugric = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = yes }
 						blg_hair_english = no
 						blg_hair_german = no
 						blg_hair_italian = no
@@ -819,6 +784,7 @@
 		trigger = {
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
 				trigger_if = {
 					limit = { is_female = no }
 
@@ -834,16 +800,6 @@
 							blg_hair_bodpa = yes
 							blg_hair_southindian = yes
 						}
-					}
-
-					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
-						blg_hair_italian = no
-						blg_hair_easternslavic = no
-						blg_hair_cuman = no
-						blg_hair_celtic = no
 					}
 
 					blg_tonsure = no
@@ -876,11 +832,19 @@
 						blg_hair_turkish = no
 					}
 				}
-				trigger_else = {
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = no }
+						blg_hair_italian = no
+						blg_hair_easternslavic = no
+						blg_hair_cuman = no
+						blg_hair_celtic = no
+					}
+					trigger_else = {
 						blg_hair_southindian = no
 						blg_hair_westafrican = no
 					}
@@ -940,6 +904,7 @@
 		trigger = {
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
+
 				trigger_if = {
 					limit = { is_female = no }
 
@@ -951,13 +916,6 @@
 							blg_hair_african = yes
 							blg_hair_cuman = yes
 						}
-					}
-
-					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
-						blg_hair_cuman = no
 					}
 
 					blg_tonsure = no
@@ -986,11 +944,16 @@
 						blg_hair_southernslavic = no
 					}
 				}
-				trigger_else = {
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = no }
+						blg_hair_cuman = no
+					}
+					trigger_else = {
 						blg_hair_muslim = no
 						blg_hair_egyptian = no
 						blg_hair_southindian = no
@@ -1037,15 +1000,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_all = yes
-					}
-					blg_hair_italian = no
-					blg_hair_southern = no
-					blg_hair_turkish = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					trigger_if = {
@@ -1054,15 +1008,6 @@
 							blg_hair_english = yes
 							blg_hair_easternslavic = yes
 						}
-					}
-
-					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
-						blg_hair_westernslavic = no
-						blg_hair_indian = no
-						blg_hair_celtic = no
 					}
 
 					blg_tonsure = no
@@ -1095,11 +1040,21 @@
 						blg_hair_chinese = no
 					}
 				}
-				trigger_else = {
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_italian = no
+					blg_hair_southern = no
+					blg_hair_turkish = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_all = yes
-						}
+						limit = { is_female = no }
+						blg_hair_westernslavic = no
+						blg_hair_indian = no
+						blg_hair_celtic = no
+					}
+					trigger_else = {
 						blg_hair_norse = no
 						blg_hair_african = no
 						blg_hair_cuman = no
@@ -1138,7 +1093,7 @@
 				trigger_if = {
 					limit = { is_female = no }
 					OR = {
-						blg_hair_indian = no
+						blg_hair_indian = yes
 						blg_hair_celtic = yes
 					}
 				}
@@ -1173,15 +1128,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_all = yes
-					}
-					blg_hair_westernslavic = no
-					blg_hair_muslim = no
-					blg_hair_chinese = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					blg_hair_indian = no
@@ -1194,18 +1140,6 @@
 							blg_hair_southernslavic = yes
 							blg_hair_ugric = yes
 						}
-					}
-
-					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
-						blg_hair_english = no
-						blg_hair_german = no
-						blg_hair_byzantine = no
-						blg_hair_easternslavic = no
-						blg_hair_african = no
-						blg_hair_celtic = no
 					}
 
 					blg_tonsure = no
@@ -1248,11 +1182,25 @@
 					blg_hair_southern = no
 					blg_hair_ugric = no
 					blg_hair_westafrican = no
+				}
 
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_westernslavic = no
+					blg_hair_muslim = no
+					blg_hair_chinese = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = no }
+						blg_hair_english = no
+						blg_hair_german = no
+						blg_hair_byzantine = no
+						blg_hair_easternslavic = no
+						blg_hair_african = no
+						blg_hair_celtic = no
+					}
+					trigger_else = {
 						blg_hair_frankish = no
 						blg_hair_southernslavic = no
 					}
@@ -1305,13 +1253,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_ranking = yes
-					}
-					blg_hair_easternslavic = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					blg_hair_indian = no
@@ -1321,13 +1262,6 @@
 						blg_hair_norse = no
 						blg_hair_easternslavic = no
 						blg_hair_ugric = no
-						blg_hair_celtic = no
-					}
-
-					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
 						blg_hair_celtic = no
 					}
 
@@ -1367,11 +1301,18 @@
 					blg_hair_southern = no
 					blg_hair_ugric = no
 					blg_hair_westafrican = no
+				}
 
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_ranking = yes
+					}
+					blg_hair_easternslavic = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = no }
+						blg_hair_celtic = no
+					}
+					trigger_else = {
 						blg_hair_frankish = no
 						blg_hair_southernslavic = no
 						blg_hair_westernslavic = no
@@ -1440,14 +1381,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_all = yes
-					}
-					blg_hair_bodpa = no
-					blg_hair_chinese = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					blg_hair_indian = no
@@ -1497,11 +1430,16 @@
 					blg_hair_southern = no
 					blg_hair_ugric = no
 					blg_hair_westafrican = no
+				}
 
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_bodpa = no
+					blg_hair_chinese = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = yes }
 						blg_hair_african = no
 						blg_hair_indian = no
 						blg_hair_celtic = no
@@ -1563,13 +1501,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_all = yes
-					}
-					blg_hair_chinese = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					blg_hair_indian = no
@@ -1580,19 +1511,6 @@
 							blg_hair_african = yes
 							blg_hair_turkish = yes
 						}
-					}
-
-					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
-						blg_hair_byzantine = no
-						blg_hair_frankish = no
-						blg_hair_southernslavic = no
-						blg_hair_westernslavic = no
-						blg_hair_egyptian = no
-						blg_hair_turkish = no
-						blg_hair_bodpa = no
 					}
 
 					trigger_if = {
@@ -1638,11 +1556,24 @@
 					blg_hair_german = no
 					blg_hair_southern = no
 					blg_hair_westafrican = no
+				}
 
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_chinese = no
 					trigger_if = {
-						limit = {
-							blg_hair_tidy_ranking = yes
-						}
+						limit = { is_female = no }
+						blg_hair_byzantine = no
+						blg_hair_frankish = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_egyptian = no
+						blg_hair_turkish = no
+						blg_hair_bodpa = no
+					}
+					trigger_else = {
 						blg_hair_easternslavic = no
 						blg_hair_african = no
 						blg_hair_celtic = no
@@ -1698,15 +1629,6 @@
 				limit = { is_variable_equal = { which = ca_hair value = 0 } }
 
 				trigger_if = {
-					limit = {
-						blg_hair_tidy_all = yes
-					}
-					blg_hair_italian = no
-					blg_hair_easternslavic = no
-					blg_hair_chinese = no
-				}
-
-				trigger_if = {
 					limit = { is_female = no }
 
 					blg_hair_indian = no
@@ -1716,16 +1638,6 @@
 							blg_hair_byzantine = yes
 							blg_hair_celtic = yes
 						}
-					}
-
-					trigger_if = {
-						limit = {
-							blg_hair_tidy_all = yes
-						}
-						blg_hair_frankish = no
-						blg_hair_southernslavic = no
-						blg_hair_westernslavic = no
-						blg_hair_turkish = no
 					}
 
 					blg_tonsure = no
@@ -1762,6 +1674,22 @@
 					blg_hair_german = no
 					blg_hair_southern = no
 					blg_hair_westafrican = no
+				}
+
+				trigger_if = {
+					limit = {
+						blg_hair_tidy_all = yes
+					}
+					blg_hair_italian = no
+					blg_hair_easternslavic = no
+					blg_hair_chinese = no
+					trigger_if = {
+						limit = { is_female = no }
+						blg_hair_frankish = no
+						blg_hair_southernslavic = no
+						blg_hair_westernslavic = no
+						blg_hair_turkish = no
+					}
 				}
 			}
 			trigger_else = {

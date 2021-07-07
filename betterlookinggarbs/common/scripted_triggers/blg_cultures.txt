@@ -122,10 +122,22 @@ blg_petty_king = {
 		AND = {
 			real_tier = duke
 			independent = yes
+			NOR = {
+				blg_republic = yes
+				blg_mercenary = yes
+				blg_holy_order = yes
+				blg_peasant = yes
+			}
 		}
 		spouse_even_if_dead = {
 			real_tier = duke
 			independent = yes
+			NOR = {
+				blg_republic = yes
+				blg_mercenary = yes
+				blg_holy_order = yes
+				blg_peasant = yes
+			}
 		}
 	}
 

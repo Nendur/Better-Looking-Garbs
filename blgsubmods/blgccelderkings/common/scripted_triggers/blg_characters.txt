@@ -44,10 +44,6 @@ blg_guard = {
 		trait = shieldmaiden
 		trait = gladiator
 	}
-	OR = {
-		is_landed = no
-		blg_travelling = yes
-	}
 }
 
 # Very learned character.

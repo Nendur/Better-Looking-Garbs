@@ -2,6 +2,7 @@
 6 = {
 	0 = { # 0 - blank
 		factor = 100
+
 		trigger = {
 			NOR = {
 				prisoner = yes
@@ -12,18 +13,26 @@
 
 	1 = { # a - Clean prison
 		factor = 100
-		hide_layers = {  5 = {} }
 		hide_layers = { 15 = {} }
 		hide_layers = { 16 = {} }
-		hide_layers = { 31 = {} }
-		hide_layers = { 32 = {} }
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }
 		hide_layers = { 43 = {} }
 
 		trigger = {
 			OR = {
+				practical_age < 16
 				has_character_modifier = house_arrest
-				NOT = { practical_age >= 16 }
+				graphical_culture = horsegfx
+				graphical_culture = catgfx
+				graphical_culture = hedgehoggfx
+				graphical_culture = duckgfx
+				graphical_culture = doggfx
+				graphical_culture = elephantgfx
+				graphical_culture = dragongfx
+				graphical_culture = redpandagfx
+				graphical_culture = beargfx
 			}
 		}
 	}
@@ -35,6 +44,8 @@
 		hide_layers = { 16 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }
 		hide_layers = { 43 = {} }
 
@@ -73,6 +84,8 @@
 		hide_layers = { 16 = {} }
 		hide_layers = { 31 = {} }
 		hide_layers = { 32 = {} }
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }
 		hide_layers = { 43 = {} }
 	}

@@ -1,7 +1,8 @@
 # p16 Chinese empress jewelry.
 16 = {
-	0 = { # blank
+	0 = { # 0 - blank
 		factor = 100
+
 		trigger = {
 			NOR = {
 				has_character_modifier = jd_princess
@@ -19,21 +20,33 @@
 								is_or_was_offmap_power_ruler = yes
 							}
 						}
+						has_minor_title = title_despot
+						has_minor_title = title_augusta
+					}
+					NAND = {
+						is_republic = yes
+						NOT = { government = confucian_bureaucracy }
+					}
+					NOR = {
+						mercenary = yes
+						holy_order = yes
+						trait = peasant_leader
+						trait = heresiarch
 					}
 				}
 			}
 		}
 	}
 
-	1 = { # Full face pearls and earrings
+	1 = { # a - Full face pearls and earrings
 		factor = 1
 	}
 
-	2 = { # pearl earrings only
+	2 = { # b - Pearl earrings only
 		factor = 1
 	}
 
-	3 = { # full face pearls and earrings 2
+	3 = { # c - Full face pearls and earrings 2
 		factor = 1
 	}
 }

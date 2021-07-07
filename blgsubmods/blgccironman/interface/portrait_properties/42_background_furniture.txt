@@ -17,7 +17,7 @@
 	}
 
 	2 = { # b - Harp
-		factor = 100
+		factor = 10
 		trigger = {
 			any_artifact = {
 				is_artifact_active = yes
@@ -43,6 +43,7 @@
 				is_artifact_active = yes
 				OR = {
 					artifact_type = holy_foreskin
+					artifact_type = seal_of_mohammad
 					artifact_type = mohammads_beard
 					artifact_type = tooth_of_mohammad
 					artifact_type = buddhas_tooth
