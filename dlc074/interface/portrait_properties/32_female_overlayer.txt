@@ -35,7 +35,7 @@
 
 		modifier = {
 			factor = 0.1
-			blg_culture_french = yes
+			blg_headgear_overlayer = yes
 		}
 	}
 
@@ -53,7 +53,7 @@
 				}
 				blg_style_late = yes
 				has_portrait_property = { layer = 5 index = 10 }
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 2 }
@@ -82,7 +82,7 @@
 					has_portrait_property = { layer = 31 index = 3 }
 					has_portrait_property = { layer = 31 index = 4 }
 				}
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 3 }
@@ -111,7 +111,7 @@
 					has_portrait_property = { layer = 31 index = 2 }
 					has_portrait_property = { layer = 31 index = 4 }
 				}
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 4 }
@@ -140,7 +140,7 @@
 					has_portrait_property = { layer = 31 index = 2 }
 					has_portrait_property = { layer = 31 index = 3 }
 				}
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_overlayer value = 5 }
@@ -155,7 +155,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_early = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 
 				has_portrait_property = { layer = 5 index = 4 }
 
@@ -179,7 +179,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_early = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 
 				OR = {
 					has_portrait_property = { layer = 5 index = 4 }
@@ -215,7 +215,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_early = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 
 				has_portrait_property = { layer = 5 index = 4 }
 				OR = {
@@ -260,7 +260,7 @@
 				}
 				trigger_else = {
 					has_portrait_property = { layer = 5 index = 12 }
-					blg_culture_french = yes
+					blg_headgear_overlayer = yes
 				}
 			}
 			trigger_else = {
@@ -308,7 +308,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_early = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 
 				OR = {
 					is_landed = yes
@@ -343,7 +343,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_early = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 
 				OR = {
 					is_landed = yes
@@ -378,7 +378,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_late = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 
 				OR = {
 					is_landed = yes
@@ -415,7 +415,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_late = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 
 				OR = {
 					is_landed = yes
@@ -452,7 +452,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_late = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 
 				OR = {
 					is_landed = yes
@@ -489,7 +489,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_late = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 
 				OR = {
 					is_landed = yes
@@ -551,7 +551,7 @@
 
 		modifier = {
 			factor = 5
-			blg_culture_french = yes
+			blg_headgear_overlayer = yes
 		}
 	}
 
@@ -588,7 +588,7 @@
 
 		modifier = {
 			factor = 5
-			blg_culture_french = yes
+			blg_headgear_overlayer = yes
 		}
 	}
 
@@ -657,7 +657,7 @@
 
 		modifier = {
 			factor = 5
-			blg_culture_french = yes
+			blg_headgear_overlayer = yes
 		}
 	}
 
@@ -669,7 +669,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_late = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 				is_landed = no
 				spouse = { is_landed = no }
 				blg_modest = yes
@@ -700,7 +700,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_overlayer value = 0 } }
 				blg_style_late = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 				is_landed = no
 				spouse = { is_landed = no }
 				blg_modest = yes
@@ -753,7 +753,7 @@
 
 		modifier = {
 			factor = 5
-			blg_culture_french = yes
+			blg_headgear_overlayer = yes
 		}
 	}
 
@@ -790,7 +790,7 @@
 
 		modifier = {
 			factor = 5
-			blg_culture_french = yes
+			blg_headgear_overlayer = yes
 		}
 	}
 
@@ -827,7 +827,7 @@
 
 		modifier = {
 			factor = 5
-			blg_culture_french = yes
+			blg_headgear_overlayer = yes
 		}
 	}
 }

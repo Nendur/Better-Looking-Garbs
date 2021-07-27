@@ -426,6 +426,7 @@
 		modifier = {
 			factor = 0.1
 			blg_headgear_covered = yes
+			NOT = { trait = cynical }
 		}
 
 		modifier = {
@@ -454,7 +455,7 @@
 			factor = 20
 			has_dlc = "Holy Fury"
 			is_female = yes
-			blg_culture_french = yes
+			blg_headgear_overlayer = yes
 		}
 
 		modifier = {

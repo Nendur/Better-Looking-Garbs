@@ -225,7 +225,7 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_underlayer value = 0 } }
 				blg_style_late = yes
-				blg_culture_french = yes
+				blg_headgear_overlayer = yes
 				OR = {
 					higher_real_tier_than = duke
 					is_or_was_offmap_power_ruler = yes

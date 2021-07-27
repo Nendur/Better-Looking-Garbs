@@ -492,7 +492,6 @@
 				has_focus = focus_theology
 				is_ascetic_trigger = yes
 				trait = on_pilgrimage
-				trait = on_indian_pilgrimage
 				capital_holding = { holding_type = temple }
 			}
 		}
@@ -1024,9 +1023,6 @@
 			OR = {
 				trait = zealous
 				has_focus = focus_theology
-				is_ascetic_trigger = yes
-				trait = on_pilgrimage
-				trait = on_indian_pilgrimage
 			}
 			religion_group = muslim
 		}

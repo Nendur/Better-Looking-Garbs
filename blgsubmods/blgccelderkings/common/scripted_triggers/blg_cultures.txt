@@ -29,6 +29,15 @@ chinese_makeup_trigger = {
 
 ### Clothing sets for cultures:
 
+# Wears alternate headgear as leper instead of spy hood.
+blg_headgear_alternate_leper = {
+	OR = {
+		culture = altmer
+		culture = dunmer
+		culture = quey
+	}
+}
+
 # Block ducal crown in some circumstances.
 # Restrict Song futou headgear.
 blg_blocked_duke = {
@@ -131,7 +140,7 @@ blg_petty_king = {
 
 # These crowns can be combined with French veils.
 blg_veiled_crown = {
-	blg_culture_french = yes
+	blg_headgear_overlayer = yes
 }
 
 blg_ek_clothing = {
@@ -179,11 +188,11 @@ blg_culture_european = {
 }
 
 blg_culture_france = {
-	blg_culture_french = yes
+	blg_headgear_overlayer = yes
 }
 
 # Uses French headgear accessories.
-blg_culture_french = {
+blg_headgear_overlayer = {
 	culture = breton
 }
 

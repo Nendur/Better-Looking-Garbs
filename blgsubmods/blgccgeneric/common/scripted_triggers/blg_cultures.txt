@@ -108,7 +108,7 @@ blg_culture_france = {
 }
 
 # Uses French headgear accessories.
-blg_culture_french = {
+blg_headgear_overlayer = {
 	always = no
 }
 

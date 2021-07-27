@@ -142,7 +142,7 @@ blg_society_finnish = {
 
 # Hellenic warrior lodge.
 blg_society_hellenic = {
-	portrait_society = warrior_lodge_hellenic
+	always = no
 }
 
 # Hermetic society.

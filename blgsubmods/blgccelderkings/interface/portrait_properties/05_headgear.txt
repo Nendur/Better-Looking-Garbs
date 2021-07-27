@@ -421,7 +421,7 @@
 			factor = 20
 			has_dlc = "Holy Fury"
 			is_female = yes
-			blg_culture_french = yes
+			blg_headgear_overlayer = yes
 		}
 
 		modifier = {

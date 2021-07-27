@@ -87,7 +87,7 @@
 		}
 	}
 
-	4 = { # d - Scrathes
+	4 = { # d - Scratches
 		factor = 1
 
 		trigger = {

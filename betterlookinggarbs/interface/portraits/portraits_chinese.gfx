@@ -8,6 +8,9 @@ spriteTypes = {
 		layer = {
 			"GFX_indian_background:p0"
 			"GFX_indian_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
 			"GFX_chinese_male_clothes_behind:p3:c0"
 			"GFX_chinese_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
@@ -89,6 +92,9 @@ spriteTypes = {
 		layer = {
 			"GFX_indian_background:p0"
 			"GFX_indian_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
 			"GFX_chinese_male_clothes_behind:p3:c0"
 			"GFX_chinese_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
@@ -166,6 +172,9 @@ spriteTypes = {
 		layer = {
 			"GFX_indian_background:p0"
 			"GFX_indian_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
 			"GFX_chinese_male_clothes_behind:p3:c0"
 			"GFX_chinese_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
@@ -246,6 +255,9 @@ spriteTypes = {
 		layer = {
 			"GFX_indian_background:p0"
 			"GFX_indian_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
 			"GFX_chinese_female_clothes_behind:p3:c0"
 			"GFX_chinese_female_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
@@ -334,6 +346,9 @@ spriteTypes = {
 		layer = {
 			"GFX_indian_background:p0"
 			"GFX_indian_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
 			"GFX_chinese_female_clothes_behind:p3:c0"
 			"GFX_chinese_female_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
@@ -418,6 +433,9 @@ spriteTypes = {
 		layer = {
 			"GFX_indian_background:p0"
 			"GFX_indian_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
 			"GFX_chinese_female_clothes_behind:p3:c0"
 			"GFX_chinese_female_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"

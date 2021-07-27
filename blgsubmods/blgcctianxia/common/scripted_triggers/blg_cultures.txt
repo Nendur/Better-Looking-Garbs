@@ -195,7 +195,7 @@ blg_petty_king = {
 # These crowns can be combined with French veils.
 blg_veiled_crown = {
 	OR = {
-		blg_culture_french = yes
+		blg_headgear_overlayer = yes
 		blg_culture_iberian = yes
 		likes_celts = yes
 		culture_group = east_slavic
@@ -273,7 +273,7 @@ blg_culture_european = {
 
 blg_culture_france = {
 	OR = {
-		blg_culture_french = yes
+		blg_headgear_overlayer = yes
 		culture = old_frankish
 		culture = norman
 		culture = dutch
@@ -281,7 +281,7 @@ blg_culture_france = {
 }
 
 # Uses French headgear accessories.
-blg_culture_french = {
+blg_headgear_overlayer = {
 	OR = {
 		culture = frankish
 		culture = occitan

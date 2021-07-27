@@ -204,7 +204,7 @@ blg_petty_king = {
 # These crowns can be combined with French veils.
 blg_veiled_crown = {
 	OR = {
-		blg_culture_french = yes
+		blg_headgear_overlayer = yes
 		culture = brazilian
 	}
 }
@@ -278,7 +278,7 @@ blg_culture_france = {
 }
 
 # Uses French headgear accessories.
-blg_culture_french = {
+blg_headgear_overlayer = {
 	OR = {
 		culture = southron
 		culture = dixie

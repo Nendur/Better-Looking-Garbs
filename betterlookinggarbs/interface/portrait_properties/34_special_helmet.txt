@@ -241,6 +241,7 @@
 		trigger = {
 			blg_priest = yes
 			blg_religion_early = yes
+			NOT = { rightful_religious_head = ROOT }
 			is_in_society = no
 		}
 	}

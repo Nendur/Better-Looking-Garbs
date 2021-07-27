@@ -27,7 +27,7 @@
 		modifier = {
 			factor = 100
 			OR = {
-				blg_culture_french = no
+				blg_headgear_overlayer = no
 				has_portrait_property = { layer = 5 index = 9 }
 			}
 			NOT = { check_variable = { which = ca_overlayer value = 2 } }

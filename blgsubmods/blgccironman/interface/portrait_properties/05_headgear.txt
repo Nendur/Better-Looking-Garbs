@@ -1406,6 +1406,7 @@
 					religion_group = zoroastrian_group
 				}
 			}
+			NOT = { trait = cynical }
 		}
 
 		modifier = {
