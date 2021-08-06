@@ -88,7 +88,7 @@ if [ -d "${MODS}A Game of Thrones" -o -f "${MODS}a game of thrones.zip" -o -f "$
 	fi
 	echo "A Game of Thrones compatibility add-on installed."
 fi
-if [ -d "${MODS}EK021" -o -d "${MODS}EKSVN" -o -f "${MODS}EK021.mod" -o -f "${MODS}ESM.mod" -o -f "${MODS}blgccelderkings.mod" -a ! -f "${MODS}blgccelderkings.zip" ]; then
+if [ -d "${MODS}ElderKings" -o -f "${MODS}ek021.zip" -o -f "${MODS}blgccelderkings.mod" -a ! -f "${MODS}blgccelderkings.zip" ]; then
 	if [ -f "$BLGZIP" ]; then
 		unzip -uoq "$BLGZIP" "submods/blgccelderkings*" -d"$MODS"
 	fi
@@ -97,6 +97,16 @@ if [ -d "${MODS}EK021" -o -d "${MODS}EKSVN" -o -f "${MODS}EK021.mod" -o -f "${MO
 		mv "${ADDONS}"/blgccelderkings* "$MODS"
 	fi
 	echo "Elder Kings compatibility add-on installed."
+fi
+if [ -d "${MODS}Faerun" -o -f "${MODS}faerun.zip" -o -f "${MODS}blgccfaerun.mod" -a ! -f "${MODS}blgccfaerun.zip" ]; then
+	if [ -f "$BLGZIP" ]; then
+		unzip -uoq "$BLGZIP" "submods/blgccfaerun*" -d"$MODS"
+	fi
+	if [ -f "${ADDONS}/blgccfaerun.mod" ]; then
+		[ -d "${MODS}/blgccfaerun" ] && rm -r "${MODS}/blgccfaerun.mod" "${MODS}/blgccfaerun"
+		mv "${ADDONS}"/blgccfaerun* "$MODS"
+	fi
+	echo "Faerûn compatibility add-on installed."
 fi
 if [ -d "${MODS}WTWSMS" -o -f "${MODS}wtwsms.zip" -o -f "${MODS}blgccwtwsms.mod" -a ! -f "${MODS}blgccwtwsms.zip" ]; then
 	if [ -f "$BLGZIP" ]; then

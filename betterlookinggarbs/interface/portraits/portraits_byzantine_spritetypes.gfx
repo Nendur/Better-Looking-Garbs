@@ -198,7 +198,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_byzantine_male_mouth"
 		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_mouth_1.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -206,7 +206,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_byzantine_male_mouth_midage"
 		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_mouth_2.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -214,7 +214,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_byzantine_male_mouth_oldage"
 		texturefile = "gfx\\fallbacks\\mediterranean_male\\mediterranean_male_mouth_3.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -464,7 +464,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_byzantine_female_mouth"
 		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_mouth_1.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -472,7 +472,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_byzantine_female_mouth_midage"
 		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_mouth_2.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -480,7 +480,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_byzantine_female_mouth_oldage"
 		texturefile = "gfx\\fallbacks\\mediterranean_female\\mediterranean_female_mouth_3.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -682,7 +682,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_illyrian_male_mouth"
 		texturefile = "gfx\\characters\\italian_male\\italian_male_mouth_1.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -690,7 +690,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_illyrian_male_mouth_midage"
 		texturefile = "gfx\\characters\\italian_male\\italian_male_mouth_2.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -698,7 +698,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_illyrian_male_mouth_oldage"
 		texturefile = "gfx\\characters\\italian_male\\italian_male_mouth_3.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -884,7 +884,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_illyrian_female_mouth"
 		texturefile = "gfx\\characters\\italian_female\\italian_female_mouth_1.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -892,7 +892,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_illyrian_female_mouth_midage"
 		texturefile = "gfx\\characters\\italian_female\\italian_female_mouth_2.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -900,7 +900,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_illyrian_female_mouth_oldage"
 		texturefile = "gfx\\characters\\italian_female\\italian_female_mouth_3.dds"
-		noOfFrames = 12
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}

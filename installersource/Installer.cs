@@ -742,15 +742,21 @@ namespace BetterLookingGarbsInstall
                     if (File.Exists("blgagot.mod"))
                         File.Delete("blgagot.mod");
                 }
-                if ((Directory.Exists(Path.Combine(mods, "EK021")) ||
-                    Directory.Exists(Path.Combine(mods, "EKSVN")) ||
-                    File.Exists(Path.Combine(mods, "EK021.mod")) ||
-                    File.Exists(Path.Combine(mods, "ESM.mod")) ||
+                if ((Directory.Exists(Path.Combine(mods, "ElderKings")) ||
+                    File.Exists(Path.Combine(mods, "ek021.zip")) ||
                     File.Exists(Path.Combine(mods, "blgccelderkings.mod"))) &&
-                        !File.Exists(Path.Combine(mods, "blgccelderkings.zip")))
+                    !File.Exists(Path.Combine(mods, "blgccelderkings.zip")))
                 {
                     log.Write("Elder Kings compatibility add-on installed.");
                     InstallAnAddon("blgccelderkings");
+                }
+                if ((Directory.Exists(Path.Combine(mods, "Faerun")) ||
+                    File.Exists(Path.Combine(mods, "faerun.zip")) ||
+                    File.Exists(Path.Combine(mods, "blgccfaerun.mod"))) &&
+                    !File.Exists(Path.Combine(mods, "blgccfaerun.zip")))
+                {
+                    log.Write("Faerûn compatibility add-on installed.");
+                    InstallAnAddon("blgccfaerun");
                 }
                 if ((Directory.Exists(Path.Combine(mods, "WTWSMS")) ||
                     File.Exists(Path.Combine(mods, "wtwsms.zip")) ||

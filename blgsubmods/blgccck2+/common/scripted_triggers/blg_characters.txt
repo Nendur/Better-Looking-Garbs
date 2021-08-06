@@ -118,6 +118,7 @@ blg_portrait_nun = {
 
 # Declared a saint.
 blg_saint = {
+	is_alive = no
 	OR = {
 		trait = saint
 		has_nickname = nick_the_saint

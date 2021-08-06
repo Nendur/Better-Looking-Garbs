@@ -1,48 +1,6 @@
 ############## EASTERNSLAVIC ##########################
 spriteTypes = {
 
-	spriteType = {
-		name = "GFX_easternwesternslavic_male_eyes"
-		texturefile = "gfx\\characters\\westernslavic_male\\easternslavic_male_eyes_1.dds"
-		noOfFrames = 13
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_easternwesternslavic_male_eyes_midage"
-		texturefile = "gfx\\characters\\westernslavic_male\\easternslavic_male_eyes_2.dds"
-		noOfFrames = 13
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_easternwesternslavic_male_eyes_oldage"
-		texturefile = "gfx\\characters\\westernslavic_male\\easternslavic_male_eyes_3.dds"
-		noOfFrames = 13
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_easternwesternslavic_female_eyes"
-		texturefile = "gfx\\characters\\westernslavic_female\\easternslavic_female_eyes_1.dds"
-		noOfFrames = 13
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_easternwesternslavic_female_eyes_midage"
-		texturefile = "gfx\\characters\\westernslavic_female\\easternslavic_female_eyes_2.dds"
-		noOfFrames = 13
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_easternwesternslavic_female_eyes_oldage"
-		texturefile = "gfx\\characters\\westernslavic_female\\easternslavic_female_eyes_3.dds"
-		noOfFrames = 13
-		norefcount = yes
-	}
-
 #### CHRISTIAN EASTERNSLAVIC
 
 	portraitType = {
