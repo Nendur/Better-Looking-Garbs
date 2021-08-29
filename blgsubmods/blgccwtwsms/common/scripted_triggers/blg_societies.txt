@@ -239,6 +239,7 @@ blg_society_stoics = {
 		portrait_society = monastic_order_stoics
 		portrait_society = monastic_order_skeptics
 		portrait_society = monastic_order_epicureans
+		portrait_has_trait = vestalis
 	}
 }
 

@@ -251,7 +251,7 @@ blg_clothes_noble = {
 			}
 		}
 		blg_prince_title = yes
-		trait = proud
+		blg_fashionable = yes
 	}
 	blg_peasant = no
 }

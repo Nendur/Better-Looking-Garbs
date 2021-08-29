@@ -277,6 +277,17 @@
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
 				blg_headgear_common = yes
+				trigger_if = {
+					limit = {
+						is_female = no
+						OR = {
+							culture = crownlander
+							culture = dornish_andal
+							culture_group = valyrian
+						}
+					}
+					blg_clothes_noble = no
+				}
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_headgear value = 9 }

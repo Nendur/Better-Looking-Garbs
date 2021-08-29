@@ -18,6 +18,7 @@ blg_dangerous_prisoner = {
 # Devout personality.
 blg_devout = {
 	OR = {
+		is_priest_education = yes
 		trait = zealous
 		has_focus = focus_theology
 		is_ascetic_trigger = yes
@@ -38,9 +39,19 @@ blg_fair = {
 	}
 }
 
+# Characters prefers more than common clothing.
+blg_fashionable = {
+	OR = {
+		trait = proud
+		trait = vain
+	}
+}
+
 # Character of a guard order.
 blg_guard = {
 	OR = {
+		is_knight = yes
+		is_crusader = yes
 		trait = shieldmaiden
 		trait = gladiator
 	}
@@ -49,6 +60,7 @@ blg_guard = {
 # Very learned character.
 blg_learned = {
 	OR = {
+		is_sorcerer = yes
 		trait = scholar
 		trait = administrator
 		trait = strategist
@@ -82,8 +94,11 @@ blg_mudsplatter = {
 # Peasant leader.
 blg_peasant = {
 	OR = {
+		is_monk_education = yes
 		trait = peasant_leader
 		trait = heresiarch
+		trait = bandit_leader
+		trait = rebel_slave
 	}
 }
 
@@ -121,6 +136,25 @@ blg_slave = {
 	}
 }
 
+# Socializer personality.
+blg_socializer = {
+	OR = {
+		is_bard = yes
+		trait = gregarious
+		trait = socializer
+	}
+}
+
+# Urban town oriented.
+blg_townsfolk = {
+	OR = {
+		is_republic = yes
+		is_rogue = yes
+		is_wayfarer = yes
+		is_trader = yes
+	}
+}
+
 # Ugly face.
 blg_ugly = {
 	trait = ugly
@@ -153,6 +187,7 @@ blg_feast = {
 # Character likely to be outdoors in the wilds.
 blg_outdoors = {
 	OR = {
+		is_scout = yes
 		trait = hunter
 		trait = falconer
 		trait = adventurer

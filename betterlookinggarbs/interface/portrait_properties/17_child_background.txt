@@ -179,10 +179,7 @@
 
 		modifier = {
 			factor = 0.1
-			OR = {
-				trait = gregarious
-				trait = socializer
-			}
+			blg_socializer = yes
 		}
 	}
 
@@ -339,10 +336,7 @@
 
 		modifier = {
 			factor = 0.1
-			OR = {
-				trait = gregarious
-				trait = socializer
-			}
+			blg_socializer = yes
 		}
 	}
 
@@ -412,8 +406,8 @@
 			factor = 10
 			OR = {
 				trait = playful
-				trait = gregarious
 				trait = decadent
+				blg_socializer = yes
 			}
 		}
 
@@ -513,8 +507,8 @@
 			factor = 25
 			OR = {
 				trait = fussy
-				trait = gregarious
 				trait = greedy
+				blg_socializer = yes
 			}
 		}
 
@@ -618,7 +612,6 @@
 			OR = {
 				blg_devout = yes
 				trait = idolizer
-				trait = humble
 				trait = theologian
 			}
 		}

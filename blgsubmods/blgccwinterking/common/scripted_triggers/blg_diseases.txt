@@ -22,10 +22,7 @@ blg_boils = {
 
 # Bubonic boils.
 blg_bubonic = {
-	OR = {
-		trait = has_bubonic_plague
-		trait = has_justinian_plague
-	}
+	trait = has_bubonic_plague
 }
 
 # Crippled leg.

@@ -512,10 +512,9 @@
 		modifier = {
 			factor = 4
 			OR = {
+				blg_socializer = yes
 				trait = gluttonous
 				trait = lustful
-				trait = gregarious
-				trait = socializer
 			}
 		}
 
@@ -644,7 +643,7 @@
 
 		modifier = {
 			factor = 5
-			is_republic = yes
+			blg_townsfolk = yes
 		}
 
 		modifier = {
@@ -797,7 +796,7 @@
 
 		modifier = {
 			factor = 5
-			is_republic = yes
+			blg_townsfolk = yes
 		}
 
 		modifier = {

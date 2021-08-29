@@ -22,6 +22,7 @@ blg_devout = {
 		has_focus = focus_theology
 		is_ascetic_trigger = yes
 		blg_pilgrimage = yes
+		trait = doctores
 	}
 }
 
@@ -37,6 +38,14 @@ blg_dirty = {
 blg_fair = {
 	OR = {
 		trait = fair
+		trait = beauty
+	}
+}
+
+# Characters prefers more than common clothing.
+blg_fashionable = {
+	OR = {
+		trait = proud
 		trait = beauty
 	}
 }
@@ -65,6 +74,7 @@ blg_learned = {
 		trait = strategist
 		trait = theologian
 		trait = physician
+		trait = hurufi_mystic_c
 	}
 }
 
@@ -130,6 +140,19 @@ blg_saint = {
 # Enslaved.
 blg_slave = {
 	death_reason = death_slavery
+}
+
+# Socializer personality.
+blg_socializer = {
+	OR = {
+		trait = gregarious
+		trait = socializer
+	}
+}
+
+# Urban town oriented.
+blg_townsfolk = {
+	is_republic = yes
 }
 
 # Ugly face.

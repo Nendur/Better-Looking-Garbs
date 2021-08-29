@@ -95,8 +95,9 @@ blg_society_assassins = {
 }
 
 # Hellenic Bacchants.
-#blg_society_bacchants = {
-#}
+blg_society_bacchants = {
+	always = no
+}
 
 # Baltic warrior lodge.
 #blg_society_baltic = {
@@ -226,8 +227,9 @@ blg_society_satanists = {
 #}
 
 # Hellenic Stoic order.
-#blg_society_stoics = {
-#}
+blg_society_stoics = {
+	portrait_has_trait = vestalis
+}
 
 # Tengri warrior lodge.
 #blg_society_tengri = {

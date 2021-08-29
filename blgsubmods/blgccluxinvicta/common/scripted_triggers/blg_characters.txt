@@ -22,6 +22,8 @@ blg_devout = {
 		has_focus = focus_theology
 		is_ascetic_trigger = yes
 		blg_pilgrimage = yes
+		trait = druid
+		trait = learning_druidic_arts
 	}
 }
 
@@ -38,12 +40,21 @@ blg_fair = {
 	trait = fair
 }
 
+# Characters prefers more than common clothing.
+blg_fashionable = {
+	OR = {
+		trait = proud
+		trait = fashion
+	}
+}
+
 # Character of a guard order.
 blg_guard = {
 	OR = {
 		trait = varangian
 		trait = shieldmaiden
 		trait = gladiator
+		trait = celtic_knight
 	}
 }
 
@@ -120,6 +131,21 @@ blg_slave = {
 		trait = slave
 		death_reason = death_slavery
 	}
+}
+
+# Socializer personality.
+blg_socializer = {
+	OR = {
+		trait = gregarious
+		trait = socializer
+		trait = sociable
+		trait = friendly
+	}
+}
+
+# Urban town oriented.
+blg_townsfolk = {
+	is_republic = yes
 }
 
 # Ugly face.

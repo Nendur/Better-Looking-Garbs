@@ -270,7 +270,7 @@ blg_clothes_noble = {
 		}
 		blg_royal_title = yes
 		blg_prince_title = yes
-		trait = proud
+		blg_fashionable = yes
 	}
 	blg_peasant = no
 }
@@ -327,6 +327,7 @@ blg_clothes_military = {
 blg_clothes_intrigue = {
 	OR = {
 		has_job_title = job_spymaster
+		trait = schemer
 		AND = {
 			intrigue = 12
 			lower_real_tier_than = duke

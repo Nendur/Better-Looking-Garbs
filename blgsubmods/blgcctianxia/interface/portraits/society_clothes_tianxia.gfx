@@ -211,8 +211,13 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_age > child
 
-				portrait_society = monastic_order_japanese
-				blg_wear_monastic_clothing = yes
+				OR = {
+					AND = {
+						portrait_society = monastic_order_japanese
+						blg_wear_monastic_clothing = yes
+					}
+					portrait_has_trait = imperial_priestess
+				}
 				OR = {
 					portrait_in_command = no
 					blg_portrait_theocracy = yes

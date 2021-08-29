@@ -410,9 +410,9 @@
 
 						OR = {
 							trait = greedy
-							trait = proud
 							trait = ambitious
 							trait = envious
+							blg_fashionable = yes
 						}
 					}
 				}

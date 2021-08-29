@@ -22,6 +22,9 @@ blg_devout = {
 		has_focus = focus_theology
 		is_ascetic_trigger = yes
 		blg_pilgrimage = yes
+		trait = doctores
+		trait = druid
+		trait = learning_druidic_arts
 	}
 }
 
@@ -41,6 +44,14 @@ blg_fair = {
 	}
 }
 
+# Characters prefers more than common clothing.
+blg_fashionable = {
+	OR = {
+		trait = proud
+		trait = beauty
+	}
+}
+
 # Character of a guard order.
 blg_guard = {
 	OR = {
@@ -53,7 +64,10 @@ blg_guard = {
 
 # Portrait override for ihram clothes.
 blg_portrait_ihram = {
-	portrait_has_trait = on_hajj
+	OR = {
+		portrait_has_trait = on_hajj
+		portrait_has_trait = on_hajj_pagan
+	}
 }
 
 # Very learned character.
@@ -65,6 +79,8 @@ blg_learned = {
 		trait = strategist
 		trait = theologian
 		trait = physician
+		trait = loremaster
+		trait = hurufi_mystic_c
 	}
 }
 
@@ -128,6 +144,19 @@ blg_saint = {
 # Enslaved.
 blg_slave = {
 	death_reason = death_slavery
+}
+
+# Socializer personality.
+blg_socializer = {
+	OR = {
+		trait = gregarious
+		trait = socializer
+	}
+}
+
+# Urban town oriented.
+blg_townsfolk = {
+	is_republic = yes
 }
 
 # Ugly face.
@@ -228,6 +257,7 @@ blg_travelling = {
 		trait = travelling
 		blg_pilgrimage = yes
 		trait = on_hajj
+		trait = on_hajj_pagan
 		trait = kow_tow_travels
 		has_character_modifier = holding_grand_hunt
 		has_character_flag = holding_tiger_hunt

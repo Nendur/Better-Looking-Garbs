@@ -35,6 +35,14 @@ blg_fair = {
 	trait = fair
 }
 
+# Characters prefers more than common clothing.
+blg_fashionable = {
+	OR = {
+		trait = proud
+		trait = fashionable
+	}
+}
+
 # Character of a guard order.
 blg_guard = {
 	OR = {
@@ -51,6 +59,8 @@ blg_guard = {
 # Very learned character.
 blg_learned = {
 	OR = {
+		trait = maester
+		trait = archmaester
 		trait = scholar
 		trait = administrator
 		trait = strategist
@@ -115,6 +125,19 @@ blg_slave = {
 		is_voter = yes
 		has_minor_title = title_regent
 	}
+}
+
+# Socializer personality.
+blg_socializer = {
+	OR = {
+		trait = gregarious
+		trait = socializer
+	}
+}
+
+# Urban town oriented.
+blg_townsfolk = {
+	is_republic = yes
 }
 
 # Ugly face.

@@ -249,7 +249,10 @@ blg_society_slavic = {
 
 # Hellenic Stoic order.
 blg_society_stoics = {
-	portrait_society = monastic_order_stoics
+	OR = {
+		portrait_society = monastic_order_stoics
+		portrait_has_trait = vestalis
+	}
 }
 
 # Tengri warrior lodge.

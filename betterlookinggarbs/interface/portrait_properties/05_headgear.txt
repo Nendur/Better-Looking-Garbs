@@ -181,7 +181,7 @@
 						is_female = no
 						likes_celts = yes
 					}
-					is_landed = no
+					blg_clothes_noble = no
 				}
 			}
 			trigger_else = {

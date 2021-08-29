@@ -161,5 +161,6 @@ blg_werewolf = {
 	OR = {
 		has_character_modifier = wolf_blood
 		has_character_modifier = lycanthropy
+		trait = changeling
 	}
 }

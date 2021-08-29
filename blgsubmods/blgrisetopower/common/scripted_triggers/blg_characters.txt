@@ -22,6 +22,7 @@ blg_devout = {
 		has_focus = focus_theology
 		is_ascetic_trigger = yes
 		blg_pilgrimage = yes
+		has_minor_title = preacher_mt
 	}
 }
 
@@ -36,6 +37,11 @@ blg_dirty = {
 # Attractive character.
 blg_fair = {
 	trait = fair
+}
+
+# Characters prefers more than common clothing.
+blg_fashionable = {
+	trait = proud
 }
 
 # Character of a guard order.
@@ -70,6 +76,7 @@ blg_learned = {
 		trait = strategist
 		trait = theologian
 		trait = physician
+		has_minor_title = scribe_mt
 		has_minor_title = librarian_mt
 	}
 }
@@ -128,6 +135,34 @@ blg_slave = {
 	death_reason = death_slavery
 }
 
+# Socializer personality.
+blg_socializer = {
+	OR = {
+		trait = gregarious
+		trait = socializer
+		trait = rtp_chef_tr
+		has_minor_title = server_mt
+		has_minor_title = minstrel_mt
+	}
+}
+
+# Urban town oriented.
+blg_townsfolk = {
+	OR = {
+		is_republic = yes
+		government = rtp_republic_g
+		government = rtp_baron_republic_g
+		has_minor_title = barterer_mt
+		has_minor_title = beggar_mt
+		has_minor_title = shop_assistant_mt
+		has_minor_title = pickpocket_mt
+		has_minor_title = town_crier_mt
+		has_minor_title = peddler_mt
+		has_minor_title = diplomat_mt
+		has_minor_title = shop_keeper_mt
+	}
+}
+
 # Ugly face.
 blg_ugly = {
 	trait = ugly
@@ -155,8 +190,6 @@ blg_executioner = {
 # Participating in a feast.
 blg_feast = {
 	OR = {
-		has_minor_title = server_mt
-		has_minor_title = minstrel_mt
 		has_character_flag = party_host
 		has_character_flag = party_guest
 		has_character_flag = host_feast_started

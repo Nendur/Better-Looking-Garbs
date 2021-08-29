@@ -38,12 +38,18 @@ blg_fair = {
 	trait = fair
 }
 
+# Characters prefers more than common clothing.
+blg_fashionable = {
+	trait = proud
+}
+
 # Character of a guard order.
 blg_guard = {
 	OR = {
 		trait = varangian
 		trait = shieldmaiden
 		trait = gladiator
+		triat = hunting_dragons
 	}
 }
 
@@ -116,6 +122,19 @@ blg_saint = {
 # Enslaved.
 blg_slave = {
 	death_reason = death_slavery
+}
+
+# Socializer personality.
+blg_socializer = {
+	OR = {
+		trait = gregarious
+		trait = socializer
+	}
+}
+
+# Urban town oriented.
+blg_townsfolk = {
+	is_republic = yes
 }
 
 # Ugly face.
@@ -200,8 +219,6 @@ blg_pilgrimage = {
 	OR = {
 		trait = on_pilgrimage
 		trait = on_indian_pilgrimage
-		trait = treasure_fleet_voyage
-		trait = hunting_dragons
 	}
 }
 
@@ -225,6 +242,8 @@ blg_travelling = {
 		trait = kow_tow_travels
 		has_character_modifier = holding_grand_hunt
 		has_character_flag = holding_tiger_hunt
+		trait = treasure_fleet_voyage
+		triat = hunting_dragons
 	}
 }
 

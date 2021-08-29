@@ -149,10 +149,7 @@
 		}
 		modifier = {
 			factor = 0.1
-			OR = {
-				trait = gregarious
-				trait = socializer
-			}
+			blg_socializer = yes
 		}
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
@@ -293,10 +290,7 @@
 		}
 		modifier = {
 			factor = 0.1
-			OR = {
-				trait = gregarious
-				trait = socializer
-			}
+			blg_socializer = yes
 		}
 		hide_layers = { 1 = {} }
 		hide_layers = { 3 = {} }
@@ -359,8 +353,8 @@
 			factor = 10
 			OR = {
 				trait = playful
-				trait = gregarious
 				trait = decadent
+				blg_socializer = yes
 			}
 		}
 		modifier = {
@@ -449,8 +443,8 @@
 			factor = 25
 			OR = {
 				trait = fussy
-				trait = gregarious
 				trait = greedy
+				blg_socializer = yes
 			}
 		}
 		modifier = {
@@ -543,7 +537,6 @@
 			OR = {
 				blg_devout = yes
 				trait = idolizer
-				trait = humble
 				trait = theologian
 			}
 		}
