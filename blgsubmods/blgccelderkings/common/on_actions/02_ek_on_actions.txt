@@ -1,0 +1,27 @@
+# Reroll child ethnicity with better code.
+on_post_birth = {
+	effect = {
+		random_list = {
+			40 = { #Father's race
+				true_father_even_if_dead = {
+					gfx_culture_scope = {
+						ROOT = {
+							set_graphical_culture = PREV
+						}
+					}
+				}
+			}
+			60 = { #Mother's race
+				mother_even_if_dead = {
+					gfx_culture_scope = {
+						ROOT = {
+							set_graphical_culture = PREV
+						}
+					}
+				}
+			}
+		}
+
+		change_racial_trait = yes
+	}
+}

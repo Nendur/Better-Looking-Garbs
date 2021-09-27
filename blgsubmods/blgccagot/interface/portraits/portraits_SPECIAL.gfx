@@ -1,0 +1,276 @@
+spriteTypes = {
+
+	# Maesters
+
+	spriteType = {
+		name = "GFX_maester_clothes"
+		textureFile = "gfx/characters/shared/maester_clothes.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_maester_clothes_behind"
+		textureFile = "gfx/characters/shared/maester_clothes_behind.dds"
+		noOfFrames = 5
+	}
+
+	portraitType = { #
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_maester_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 50000
+				portrait_age > child
+				portrait_clothing = yes
+				OR = {
+					portrait_has_trait = maester
+					portrait_has_trait = archmaester
+				}
+			}
+		}
+
+		layer = { 
+			"GFX_maester_clothes_behind:p3:c0"
+			"GFX_maester_clothes:p3:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+				}
+				1 = {
+					NOT = { portrait_has_trait = nightswatch }
+				}
+				2 = {
+					NOT = { portrait_has_trait = nightswatch }
+				}
+				3 = {
+					NOT = { portrait_has_trait = nightswatch }
+				}
+				4 = {
+					NOT = { portrait_has_trait = nightswatch }
+				}
+			}
+		}
+	}
+
+	# Kingsguard
+
+	spriteType = {
+		name = "GFX_kingsguard_clothes"
+		textureFile = "gfx/characters/shared/kingsguard_clothes.dds"
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_kingsguard_clothes_behind"
+		textureFile = "gfx/characters/shared/kingsguard_clothes_behind.dds"
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_kingsguard_headgear"
+		textureFile = "gfx/characters/shared/kingsguard_headgear.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_kingsguard_headgear_behind"
+		textureFile = "gfx/characters/shared/kingsguard_headgear_behind.dds"
+		noOfFrames = 2
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_kingsguard"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1500
+				portrait_clothing = yes
+				portrait_has_trait = kingsguard
+			}
+		}
+
+		layer = {
+			"GFX_kingsguard_clothes_behind:c0"
+			"GFX_kingsguard_headgear_behind:c1"
+			"GFX_kingsguard_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_kingsguard_headgear:c5"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = { #Normal
+				}
+				1 = { #Normal
+				}
+				2 = { #Robust
+				}
+				3 = { #Golden
+					portrait_has_trait = proud
+					portrait_culture = westerman
+				}
+				4 = { #Baratheon-Themed
+					portrait_has_trait = proud
+					portrait_culture = stormlander
+				}
+				5 = { #Female
+					portrait_is_female = yes
+				}
+			}
+			5 = {
+				0 = {
+					NOR = {
+						portrait_in_command = yes
+						portrait_has_trait = undead
+					}
+				}
+				1 = {
+					OR = {
+						portrait_in_command = yes
+						portrait_has_trait = undead
+					}
+				}
+			}
+		}
+
+		headgear_that_hides_hair = { 1 }
+	}
+
+	#Night's Watch
+
+	spriteType = {
+		name = "GFX_nightswatch_clothes"
+		textureFile = "gfx/characters/shared/nightswatch.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_nightswatch_clothes_behind"
+		textureFile = "gfx/characters/shared/nightswatch_behind.dds"
+		noOfFrames = 1
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_nightswatch"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 2000
+				portrait_clothing = yes
+				portrait_has_trait = nightswatch
+			}
+		}
+
+		layer = {
+			"GFX_nightswatch_clothes_behind:c0"
+			"GFX_northman_male_headgear_behind:c1"
+			"GFX_nightswatch_clothes:c2"
+			"GFX_northman_male_headgear_mid:c3"
+			"GFX_empty:c4"
+			"GFX_northman_male_headgear:c5"
+		}
+	}
+
+	#Unsullied
+	spriteType = {
+		name = "GFX_unsullied_clothes"
+		textureFile = "gfx/characters/shared/unsullied_clothes.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unsullied_clothes_behind"
+		textureFile = "gfx/characters/shared/unsullied_clothes_behind.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_unsullied_headgear"
+		textureFile = "gfx/characters/shared/unsullied_headgear.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unsullied_headgear_behind"
+		textureFile = "gfx/characters/shared/unsullied_headgear_behind.dds"
+		noOfFrames = 2
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_unsullied"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1500
+				portrait_clothing = yes
+				portrait_has_trait = eunuch
+				portrait_religion = lady_of_spears
+			}
+		}
+
+		layer = {
+			"GFX_unsullied_clothes_behind:c0"
+			"GFX_unsullied_headgear_behind:c1"
+			"GFX_unsullied_clothes:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_unsullied_headgear:c5"
+		}
+
+		allow_property_values = {
+			5 = {
+				0 = {
+					NOR = {
+						portrait_in_command = yes
+						portrait_has_trait = undead
+					}
+				}
+				1 = {
+					OR = {
+						portrait_in_command = yes
+						portrait_has_trait = undead
+					}
+				}
+			}
+		}
+
+		headgear_that_hides_hair = { 1 }
+	}
+
+	### Silent Sister
+
+	spriteType = {
+		name = "GFX_clothing_silentsister_headgear"
+		textureFile = "gfx/characters/shared/silentsister.dds"
+		noOfFrames = 1
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_silentsister"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_has_trait = silent_sister
+			}
+		}
+
+		layer = {
+			"GFX_empty:c0"
+			"GFX_clothing_nun_headgear_behind:c1"
+			"GFX_empty:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c4"
+			"GFX_clothing_silentsister_headgear:c5"
+		}
+
+		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+	}
+}
+
