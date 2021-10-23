@@ -24,6 +24,9 @@ reference_culture = {
 	celtic = {
 		graphical_cultures = { maritimergfx celticgfx }
 	}
+	tibetan = {
+		graphical_cultures = { haidagfx bodpagfx }
+	}
 }
 
 amerodeutsch = {
@@ -67,6 +70,19 @@ andino = {
 	}
 	valluno = {
 		graphical_cultures = { basquegfx }
+	}
+}
+
+anglo_arctic = {
+	graphical_cultures = { canadiangfx balticgfx easterngfx }
+
+	alaskan = {
+		graphical_cultures = { yukonergfx }
+		unit_graphical_cultures = { }
+	}
+	yukoner = {
+		graphical_cultures = { yukonergfx }
+		unit_graphical_cultures = { }
 	}
 }
 
@@ -120,6 +136,10 @@ californian = {
 	tehrangeleno = {
 		graphical_cultures = { persiangfx andalusiangfx arabicgfx muslimgfx }
 		unit_graphical_cultures = { berbergfx arabicgfx muslimgfx }
+	}
+	californio = {
+		graphical_cultures = { brownpacificgfx pagangfx serbsouthslavicgfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
 	}
 }
 
@@ -175,19 +195,11 @@ centrolatino = {
 }
 
 chicano = {
-	graphical_cultures = { mexicangfx serbsouthslavicgfx southerngfx }
+	graphical_cultures = { serbsouthslavicgfx southerngfx }
 
 	neomexicano = {
-		graphical_cultures = { vaquerogfx cowboygfx }
-		unit_graphical_cultures = { persiangfx byzantinegfx }
-	}
-	californio = {
-		graphical_cultures = { brownpacificgfx }
-		unit_graphical_cultures = { persiangfx byzantinegfx }
-	}
-	chino = {
-		graphical_cultures = { chinogfx }
-		unit_graphical_cultures = { persiangfx byzantinegfx }
+		graphical_cultures = { serbsouthslavicgfx cowboygfx }
+		unit_graphical_cultures = { persiangfx }
 	}
 }
 
@@ -305,10 +317,6 @@ mesanglo = {
 mexicano = {
 	graphical_cultures = { mexicangfx serbsouthslavicgfx southerngfx }
 
-	norteno = {
-		graphical_cultures = { vaquerogfx }
-		unit_graphical_cultures = { persiangfx byzantinegfx }
-	}
 	tapatio = {
 		graphical_cultures = { mexicangfx }
 		unit_graphical_cultures = { persiangfx byzantinegfx }
@@ -317,11 +325,11 @@ mexicano = {
 		graphical_cultures = { mexicangfx }
 		unit_graphical_cultures = { persiangfx byzantinegfx }
 	}
-	sonorense = {
-		graphical_cultures = { vaquerogfx }
+	chilango = {
+		graphical_cultures = { mexicangfx }
 		unit_graphical_cultures = { persiangfx byzantinegfx }
 	}
-	chilango = {
+	abajeno = {
 		graphical_cultures = { mexicangfx }
 		unit_graphical_cultures = { persiangfx byzantinegfx }
 	}
@@ -343,6 +351,31 @@ mid_atlantic = {
 	}
 	delawarean = {
 		graphical_cultures = { englishgfx }
+	}
+}
+
+norteno = {
+	graphical_cultures = { mexicangfx serbsouthslavicgfx southerngfx }
+
+	bravo = {
+		graphical_cultures = { vaquerogfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+	altiplanense = {
+		graphical_cultures = { vaquerogfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+	choyero = {
+		graphical_cultures = { brownpacificgfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+	chino = {
+		graphical_cultures = { chinogfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+	sonorense = {
+		graphical_cultures = { vaquerogfx }
+		unit_graphical_cultures = { persiangfx byzantinegfx }
 	}
 }
 
@@ -380,11 +413,7 @@ north_pacific = {
 		graphical_cultures = { cascadiangfx pagangfx }
 		unit_graphical_cultures = { }
 	}
-	alaskan = {
-		graphical_cultures = { yukonergfx canadiangfx }
-		unit_graphical_cultures = { }
-	}
-	yukoner = {
+	snakelander = {
 		graphical_cultures = { yukonergfx canadiangfx }
 		unit_graphical_cultures = { }
 	}
@@ -512,14 +541,36 @@ south_anglo = {
 
 subarctic = {
 	graphical_cultures = { siberiangfx ugricgfx mongolgfx steppegfx muslimgfx }
+
+	mikmaq = {
+		graphical_cultures = { siberiangfx northernnativegfx }
+	}
+	inuit = {
+		graphical_cultures = { siberiangfx northernnativegfx }
+	}
+	innu = {
+		graphical_cultures = { siberiangfx northernnativegfx }
+	}
+	iyyu = {
+		graphical_cultures = { siberiangfx northernnativegfx }
+	}
 }
 
-texan_group = {
+starfolk = {
 	graphical_cultures = { cowboygfx germangfx westerngfx }
 
 	tejano = {
 		graphical_cultures = { vaquerogfx }
 		unit_graphical_cultures = { persiangfx byzantinegfx }
+	}
+}
+
+taracahita = {
+	raramuri = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
+	}
+	yaqui = {
+		unit_graphical_cultures = { nativeamericangfx mesoamericangfx }
 	}
 }
 

@@ -241,14 +241,26 @@ blg_crown_diamond = {
 	}
 }
 
-# Iron Crown.
+# Nico hat.
 blg_crown_lombardy = {
-	always = no
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = brazilian_beret
+		}
+		trait = dead_brazilian_beret
+	}
 }
 
 # Imperial Laurels.
 blg_crown_laurels = {
-	always = no
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = dogwood_crown
+		}
+		trait = dead_dogwood_crown
+	}
 }
 
 # Pahlavi crown.
@@ -278,19 +290,14 @@ blg_crown_fylkir = {
 	}
 }
 
-# Tengri religious crown.
+# Texan crown.
 blg_crown_tengri = {
 	OR = {
 		any_artifact = {
 			is_artifact_equipped = yes
-			artifact_type = crown_thelemic_fylkir
+			artifact_type = crown_texas
 		}
-		trait = dead_crown_thelemic_fylkir
-		AND = {
-			rightful_religious_head = ROOT
-			blg_priest = yes
-			religion = thelemic_reformed
-		}
+		trait = dead_crown_texas
 	}
 }
 
@@ -375,7 +382,13 @@ blg_crown_baltic = {
 
 # Aztec religious crown.
 blg_crown_aztec = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		OR = {
+			artifact_type = crown_mouse_ears
+			artifact_type = crown_minnie_ears
+		}
+	}
 }
 
 # Zunist religious crown.
@@ -550,6 +563,8 @@ blg_weapon_scimitar_1 = {
 		has_artifact_flag = scimitar
 		artifact_type = scimitar_tier_1_new
 		artifact_type = scimitar_tier_2_new
+		artifact_type = saber_tier_1_new
+		artifact_type = saber_tier_2_new
 	}
 }
 
@@ -567,6 +582,12 @@ blg_weapon_scimitar_2 = {
 		artifact_type = al_intisar
 		artifact_type = ate_juans_machete
 		artifact_type = ate_sword_of_st_peter
+		artifact_type = saber_tier_3_horse_sunder
+		artifact_type = saber_tier_3_throat_cutter
+		artifact_type = saber_tier_3_liberator
+		artifact_type = saber_tier_4_horse_sunder
+		artifact_type = saber_tier_4_throat_cutter
+		artifact_type = saber_tier_4_liberator
 	}
 }
 

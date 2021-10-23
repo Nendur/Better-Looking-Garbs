@@ -1130,6 +1130,17 @@ spriteTypes = {
 		norefcount = yes
 	}
 
+	spriteType = {
+		name = "GFX_society_warrior_lodge_haida_male_headgear_behind"
+		textureFile = "gfx/characters/societies/wl_haida_male_headgear_behind.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_haida_male_headgear"
+		textureFile = "gfx/characters/societies/wl_haida_male_headgear.dds"
+		noOfFrames = 4
+	}
+
 	portraitType = { #Portraits - Male
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_bon_male_clothing"
@@ -1147,11 +1158,11 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_society_warrior_lodge_bon_male_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_haida_male_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_norse_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_norse_female_clothes:p3:c2"
 			"GFX_empty:c3"
-			"GFX_society_warrior_lodge_bon_male_headgear:p5:c5"
+			"GFX_society_warrior_lodge_haida_male_headgear:p5:c5"
 			"GFX_empty:c4"
 			"GFX_empty:c7"
 		}
@@ -1222,6 +1233,17 @@ spriteTypes = {
 		norefcount = yes
 	}
 
+	spriteType = {
+		name = "GFX_society_warrior_lodge_haida_female_headgear_behind"
+		textureFile = "gfx/characters/societies/wl_haida_female_headgear_behind.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_haida_female_headgear"
+		textureFile = "gfx/characters/societies/wl_haida_female_headgear.dds"
+		noOfFrames = 4
+	}
+
 	portraitType = { #Portraits - Female
 		effectFile = "gfx/FX/portrait.lua"
 		name = "PORTRAIT_society_warrior_lodge_bon_female_clothing"
@@ -1239,11 +1261,11 @@ spriteTypes = {
 		}
 
 		layer = {
-			"GFX_society_warrior_lodge_bon_female_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_haida_female_headgear_behind:p5:c1"
 			"GFX_society_warrior_lodge_norse_female_clothes_behind:p3:c0"
 			"GFX_society_warrior_lodge_norse_female_clothes:p3:c2"
 			"GFX_empty:c3"
-			"GFX_society_warrior_lodge_bon_female_headgear:p5:c5"
+			"GFX_society_warrior_lodge_haida_female_headgear:p5:c5"
 			"GFX_empty:c4"
 			"GFX_empty:c7"
 		}

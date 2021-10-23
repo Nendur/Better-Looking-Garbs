@@ -83,7 +83,13 @@ blg_animal_owl = {
 }
 
 blg_animal_parrot = {
-	has_character_modifier = pet_parrot
+	OR = {
+		has_character_modifier = pet_parrot
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = pirate_parrot
+		}
+	}
 }
 
 blg_animal_rat = {
@@ -99,6 +105,10 @@ blg_animal_raven = {
 		AND = {
 			has_character_modifier = raven_familiar
 			blg_visible_society = yes
+		}
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = haunted_raven
 		}
 	}
 }

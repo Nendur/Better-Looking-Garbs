@@ -77,8 +77,7 @@ blg_religion_eastern_pagan = {
 	OR = {
 		religion = occultist
 		religion = occultist_reformed
-		religion = thelemic
-		religion = thelemic_reformed
+		religion = thelema
 	}
 }
 
@@ -146,6 +145,11 @@ blg_portrait_christian = {
 		portrait_religion = nonconformist
 		portrait_religion = apostolic
 		portrait_religion = celeste
+		portrait_religion = nazarene
+		portrait_religion = true_cross
+		portrait_religion = edenite
+		portrait_religion = cristo_rey
+		portrait_religion = reformista
 	}
 }
 

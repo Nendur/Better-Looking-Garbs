@@ -205,6 +205,7 @@ blg_hair_easternslavic = {
 	OR = {
 		graphical_culture = easternslavicgfx
 		graphical_culture = haidagfx
+		graphical_culture = siberiangfx
 	}
 }
 
@@ -293,6 +294,7 @@ blg_hair_southindian = {
 blg_hair_southernslavic = {
 	OR = {
 		graphical_culture = greatlakesgfx
+		graphical_culture = serbsouthslavicgfx
 		graphical_culture = dalmatiangfx
 	}
 }
@@ -421,6 +423,7 @@ blg_beard_mongol = {
 	OR = {
 		blg_ethnicity_mesoamerican = yes
 		graphical_culture = haidagfx
+		graphical_culture = siberiangfx
 		graphical_culture = metisgfx
 	}
 }
@@ -472,6 +475,7 @@ blg_beard_southslavic = {
 		graphical_culture = vaquerogfx
 		graphical_culture = cajungfx
 		graphical_culture = cubanogfx
+		graphical_culture = serbsouthslavicgfx
 		graphical_culture = bretongfx
 	}
 }

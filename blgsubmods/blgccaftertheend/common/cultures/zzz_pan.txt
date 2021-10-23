@@ -1,5 +1,9 @@
 britannic = {
-	british = {
+	anglish = {
+		graphical_cultures = { romanobritishgfx englishgfx }
+		unit_graphical_cultures = { romangfx englishgfx }
+	}
+	northumbrian = {
 		graphical_cultures = { romanobritishgfx englishgfx }
 		unit_graphical_cultures = { romangfx englishgfx }
 	}
@@ -23,6 +27,20 @@ guinean = {
 	}
 	liberian = {
 		graphical_cultures = { nubiangfx tuskegeangfx africangfx }
+	}
+}
+
+macaronesian = {
+	basque = { 
+		graphical_cultures = { basquegfx trueoccitangfx occitangfx southerngfx westerngfx }
+	}
+}
+
+levantine = {
+	graphical_cultures = { muslimgfx }
+
+	shami = {
+		graphical_cultures = { levantinegfx arabicgfx muslimgfx }
 	}
 }
 

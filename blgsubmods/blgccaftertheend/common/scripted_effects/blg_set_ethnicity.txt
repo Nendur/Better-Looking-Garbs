@@ -298,19 +298,19 @@ blg_set_ethnicity_english = {
 	else_if = {
 		limit = {
 			OR = {
-				culture = british
+				culture = anglish
+				culture = northumbrian
 				culture = new_english
 				culture_group = amerodeutsch
 				culture_group = west_anglo
-				religion = thelemic
-				religion = thelemic_reformed
+				religion = thelema
 			}
 		}
 		if = {
 			limit = {
 				NOT = { graphical_culture = romanobritishgfx }
 			}
-			set_graphical_culture = british
+			set_graphical_culture = anglish
 		}
 	}
 	else_if = {
@@ -612,16 +612,33 @@ blg_set_ethnicity_southslavic = {
 	}
 	else_if = {
 		limit = {
-			NOT = { graphical_culture = brownpacificgfx }
+			OR = {
+				blg_culture_cetic = yes
+				blg_culture_middleeast = yes
+			}
 		}
-		set_graphical_culture = angeleno
+		if = {
+			limit = {
+				NOT = { graphical_culture = brownpacificgfx }
+			}
+			set_graphical_culture = angeleno
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { graphical_culture = serbsouthslavicgfx }
+		}
+		set_graphical_culture = neomexicano
 	}
 }
 
 blg_set_ethnicity_tibetan = {
 	if = {
 		limit = {
-			NOT = { graphical_culture = haidagfx }
+			NOR = {
+				graphical_culture = haidagfx 
+				graphical_culture = siberiangfx 
+			}
 		}
 		set_graphical_culture = haida
 	}
@@ -696,7 +713,7 @@ blg_set_ethnicity_western = {
 		limit = {
 			OR = {
 				culture_group = west_anglo
-				culture_group = texan_group
+				culture_group = starfolk
 			}
 		}
 		if = {

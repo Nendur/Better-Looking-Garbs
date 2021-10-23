@@ -19,6 +19,7 @@ blg_dangerous_prisoner = {
 blg_devout = {
 	OR = {
 		trait = zealous
+		trait = devout
 		has_focus = focus_theology
 		is_ascetic_trigger = yes
 		blg_pilgrimage = yes
@@ -200,6 +201,7 @@ blg_outdoors = {
 	OR = {
 		trait = hunter
 		trait = falconer
+		trait = on_hike
 		has_character_modifier = holding_grand_hunt
 		has_character_modifier = enjoying_the_countryside
 		has_nickname = nick_of_the_wilds
@@ -233,6 +235,7 @@ blg_travelling = {
 		trait = on_hajj
 		trait = on_ziyara
 		trait = kow_tow_travels
+		trait = on_hike
 		has_character_modifier = holding_grand_hunt
 	}
 }
