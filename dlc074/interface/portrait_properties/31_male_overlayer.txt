@@ -28,6 +28,7 @@
 			factor = 100
 			OR = {
 				blg_headgear_overlayer = no
+				blg_merchant_headgear = yes
 				has_portrait_property = { layer = 5 index = 9 }
 			}
 			NOT = { check_variable = { which = ca_overlayer value = 2 } }

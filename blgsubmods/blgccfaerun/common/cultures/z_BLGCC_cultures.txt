@@ -1,0 +1,181 @@
+imaskari_group = {
+	imaskari = {
+		graphical_cultures = { indusgfx }
+	}
+}
+
+chondathan_group = {
+	graphical_cultures = { germangfx occitangfx }
+
+	cormyrian = {
+		graphical_cultures = { dutchgfx }
+	}
+}
+
+ulutiun_group = {
+	angulutiun = {
+		unit_graphical_cultures = { siberiangfx }
+	}
+	iulutiun = {
+		unit_graphical_cultures = { siberiangfx }
+	}
+	nakulutiun = {
+		unit_graphical_cultures = { siberiangfx }
+	}
+	eraka = {
+		unit_graphical_cultures = { siberiangfx }
+	}
+	ice_hunter = {
+		unit_graphical_cultures = { siberiangfx }
+	}
+}
+
+maztican_group = {
+	azuposi = {
+		graphical_cultures = { nativeamericangfx }
+	}
+	payit = {
+		graphical_cultures = { nativeamericangfx }
+	}
+}
+
+mulan_group = {
+	chessentan = {
+		graphical_cultures = { georgiangfx byzantinegfx }
+		unit_graphical_cultures = { romangfx byzantinegfx }
+	}
+}
+
+raum_group = {
+	raumviran = {
+		graphical_cultures = { raumgfx serbsouthslavicgfx }
+		unit_graphical_cultures = { magyargfx }
+	}
+	gur = {
+		graphical_cultures = { raumgfx serbsouthslavicgfx }
+		unit_graphical_cultures = { magyargfx }
+	}
+	rashemi = {
+		graphical_cultures = { raumgfx serbsouthslavicgfx }
+		unit_graphical_cultures = { magyargfx }
+	}
+	nar = {
+		unit_graphical_cultures = { magyargfx }
+	}
+}
+
+lapal_group = {
+	shaaran = {
+		unit_graphical_cultures = { cumangfx turkishgfx }
+	}
+}
+
+tethyrian_group = {
+	ffolk = {
+		graphical_cultures = { bretongfx celticgfx westerngfx }
+	}
+	highcoaster = {
+		graphical_cultures = { frankishgfx westerngfx }
+	}
+}
+
+zakharan_group = {
+	semphari = {
+		graphical_cultures = { kurdishgfx persiangfx }
+	}
+	noga = {
+		graphical_cultures = { nubiangfx berbergfx }
+	}
+	affa = {
+		graphical_cultures = { nubiangfx berbergfx }
+	}
+}
+
+gnome_group = {
+	graphical_cultures = { basquegfx southerngfx byzantinegfx easterngfx }
+
+	gnome = {
+		unit_graphical_cultures = { balticgfx }
+	}
+	svirfneblin = {
+		unit_graphical_cultures = { balticgfx }
+	}
+}
+
+dwarf_group = {
+	graphical_cultures = { byzantinegfx easterngfx }
+
+	arctic_dwarf = {
+		graphical_cultures = { norsedwarfgfx dwarfgfx siberiangfx ugricgfx }
+	}
+	derro = {
+		graphical_cultures = { norsedwarfgfx dwarfgfx siciliangfx }
+	}
+	duergar = {
+		graphical_cultures = { duergargfx dwarfgfx siciliangfx }
+	}
+	gold_dwarf = {
+		graphical_cultures = { golddwarfgfx dwarfgfx siciliangfx }
+	}
+	shield_dwarf = {
+		graphical_cultures = { dwarfgfx siciliangfx }
+	}
+	wild_dwarf = {
+		graphical_cultures = { wilddwarfgfx dwarfgfx southindiangfx indiangfx }
+	}
+}
+
+dark_elf_group = {
+	drow = {
+		unit_graphical_cultures = { cumangfx turkishgfx }
+	}
+	lorendrow = {
+		unit_graphical_cultures = { cumangfx turkishgfx }
+	}
+	aevendrow = {
+		unit_graphical_cultures = { cumangfx turkishgfx }
+	}
+	crinti = {
+		unit_graphical_cultures = { cumangfx turkishgfx }
+	}
+}
+
+elf_group = {
+	green_elf = {
+		graphical_cultures = { greenelfgfx pomeraniangfx bodpagfx mongolgfx }
+	}
+	eladrin = {
+		graphical_cultures = { eladringfx chinesegfx }
+	}
+}
+
+halfling_group = {
+	graphical_cultures = { bretongfx westerngfx }
+}
+
+beastfolk_group = {
+	graphical_cultures = { steppegfx mongolgfx pagangfx muslimgfx }
+}
+
+fish_group = {
+	graphical_cultures = { afghangfx persiangfx muslimgfx }
+}
+
+scaly_group = {
+	lizardfolk = {
+		graphical_cultures = { lizardmangfx indiangfx }
+	}
+	firenewt = {
+		graphical_cultures = { lizardmangfx indiangfx }
+	}
+	saurial = {
+		graphical_cultures = { saurialgfx lizardmangfx indiangfx }
+	}
+	pterafolk = {
+		graphical_cultures = { pterafolkgfx lizardmangfx indiangfx }
+	}
+}
+
+fiendish_group = {
+	graphical_cultures = { turkishgfx muslimgfx }
+}

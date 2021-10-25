@@ -1,0 +1,205 @@
+# YUAN-TI
+spriteTypes = {
+
+	spriteType = {
+		name = "PORTRAIT_yuantigfx_child_male"
+		texturefile = "gfx\\characters\\cathayan_son.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_yuantigfx_child_female"
+		texturefile = "gfx\\characters\\cathayan_daughter.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_hybridgfx_child_male"
+		texturefile = "gfx\\characters\\yuanti_son.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_hybridgfx_child_female"
+		texturefile = "gfx\\characters\\yuanti_daughter.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_son_base"
+		textureFile = "gfx/characters/yuanti_male/yuanti_son_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_daughter_base"
+		textureFile = "gfx/characters/yuanti_female/yuanti_daughter_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
+### YUAN-TI MALE ####
+
+	spriteType = {
+		name = "GFX_yuanti_male_clothes_behind"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_male_headgear_behind"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_headgear_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_male_base"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_base_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_male_neck"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_neck_1.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_male_cheeks"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_cheeks_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_male_chin"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_chin_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_male_mouth"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_mouth_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_male_nose"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_nose_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_male_eyes"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_eyes_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_male_clothes"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_male_headgear"
+		texturefile = "gfx\\characters\\yuanti_male\\yuanti_male_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_yuanti_male_physique"
+		texturefile = "gfx\\characters\\shared\\physique\\yuanti_male_physique.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+#### YUAN-TI FEMALE ####
+
+	spriteType = {
+		name = "GFX_yuanti_female_clothes_behind"
+		texturefile = "gfx\\characters\\yuanti_female\\yuanti_female_clothes_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_female_headgear_behind"
+		texturefile = "gfx\\characters\\yuanti_female\\yuanti_female_headgear_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_female_base"
+		texturefile = "gfx\\characters\\yuanti_female\\yuanti_female_base_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_female_chin"
+		texturefile = "gfx\\characters\\yuanti_female\\yuanti_female_chin_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_female_mouth"
+		texturefile = "gfx\\characters\\yuanti_female\\yuanti_female_mouth_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_female_nose"
+		texturefile = "gfx\\characters\\yuanti_female\\yuanti_female_nose_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_female_eyes"
+		texturefile = "gfx\\characters\\yuanti_female\\yuanti_female_eyes_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_female_clothes"
+		texturefile = "gfx\\characters\\yuanti_female\\yuanti_female_clothes.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_yuanti_female_headgear"
+		texturefile = "gfx\\characters\\yuanti_female\\yuanti_female_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_yuanti_female_physique"
+		texturefile = "gfx\\characters\\shared\\physique\\yuanti_female_physique.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+}

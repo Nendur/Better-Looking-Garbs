@@ -1,0 +1,13 @@
+blg_set_ethnicity_bear = {
+	if = {
+		limit = { location = { blg_region_polar = yes } }
+		set_graphical_culture = polar_bear
+	}
+	else_if = {
+		limit = { location = { blg_region_asia = yes } }
+		set_graphical_culture = black_bear
+	}
+	else = {
+		set_graphical_culture = bear
+	}
+}

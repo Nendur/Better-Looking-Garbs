@@ -1,0 +1,371 @@
+# Rules for picking clothing sets.
+
+# Royalty ranks.
+blg_royalty = {
+	OR = {
+		higher_real_tier_than = duke
+		is_or_was_offmap_power_ruler = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+	}
+	blg_republic = no
+	blg_mercenary = no
+	blg_holy_order = no
+	blg_peasant = no
+}
+
+# Has been coronated if necessary.
+blg_crowned = {
+	always = yes
+}
+
+# Use the Chinese face jewelry.
+blg_face_jewelry = {
+	OR = {
+		has_character_modifier = jd_princess
+		AND = {
+			culture_group = shou_group
+			blg_royalty = yes
+		}
+	}
+}
+
+# Facial makeup expected for those under traditional Han filial piety rules.
+blg_chinese_makeup = {
+	culture_group = shou_group
+	is_female = yes
+	prisoner = no
+	OR = {
+		higher_real_tier_than = baron
+		is_or_was_offmap_power_ruler = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_real_tier_than = baron
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+		has_character_modifier = jd_princess
+	}
+}
+
+# Prepared for battle.
+blg_warrior = {
+	OR = {
+		AND = {
+			in_command = yes
+			OR = {
+				war = yes
+				liege = { war = yes }
+				in_battle = yes
+				in_siege = yes
+				is_landed = no
+				employer = { mercenary = yes }
+				employer = { holy_order = yes }
+			}
+		}
+		has_job_title = job_marshal
+		death_reason = death_battle
+		death_reason = death_duel
+		AND = {
+			blg_mercenary = yes
+			blg_mercenary_fleet = no
+		}
+	}
+	OR = {
+		olrox_artifact_heavyarmor_requirement = yes
+		zz_class = no
+	}
+}
+
+# Commander with fancier armour.
+blg_elite_commander = {
+	OR = {
+		higher_real_tier_than = count
+		spouse_even_if_dead = { higher_real_tier_than = count }
+		has_character_modifier = jd_strategist
+	}
+}
+
+# Early era headgear designs.
+blg_style_early = {
+	always = yes
+}
+
+# Middle era headgear designs.
+blg_style_mid = {
+	always = yes
+}
+
+# Later era headgear designs.
+blg_style_late = {
+	always = yes
+}
+
+### Headgear:
+
+# Emperors crown.
+blg_crown_emperor = {
+	OR = {
+		AND = {
+			real_tier = emperor
+			trigger_if = {
+				limit = { is_nomadic = yes }
+				population_and_manpower >= 10000
+			}
+			NOR = {
+				is_tributary = yes
+				is_offmap_governor = yes
+				blg_republic = yes
+				blg_mercenary = yes
+				blg_holy_order = yes
+				blg_peasant = yes
+			}
+		}
+		is_or_was_offmap_power_ruler = yes
+	}
+}
+
+# Kings crown.
+blg_crown_king = {
+	OR = {
+		AND = {
+			higher_real_tier_than = duke
+			trigger_if = {
+				limit = {
+					is_nomadic = yes
+					has_game_started = yes
+				}
+				population_and_manpower >= 5000
+			}
+			NOR = {
+				blg_republic = yes
+				blg_mercenary = yes
+				blg_holy_order = yes
+				blg_peasant = yes
+			}
+		}
+		is_or_was_offmap_power_ruler = yes
+	}
+}
+
+# Dress like an emperor.
+blg_headgear_emperor = {
+	OR = {
+		blg_crown_emperor = yes
+		AND = {
+			is_main_spouse = yes
+			spouse_even_if_dead = {
+				blg_crown_emperor = yes
+			}
+		}
+	}
+}
+
+# Dress like a king.
+blg_headgear_king = {
+	OR = {
+		blg_crown_king = yes
+		spouse_even_if_dead = {
+			blg_crown_king = yes
+		}
+		blg_petty_king = yes
+	}
+}
+
+# Dress like a duke.
+blg_headgear_duke = {
+	OR = {
+		higher_real_tier_than = count
+		spouse_even_if_dead = { higher_real_tier_than = count }
+		is_or_was_offmap_power_ruler = yes
+		has_minor_title = title_prince
+		has_minor_title = title_queen_mother
+	}
+
+	blg_mercenary = no
+	blg_peasant = no
+}
+
+# Dress with common headgear.
+blg_headgear_common = {
+	OR = {
+		blg_headgear_duke = no
+		blg_common_ducal_headgear = yes
+
+		trait = in_hiding
+		trait = leper
+		blg_pilgrimage = yes
+	}
+}
+
+# Wears a helmet.
+blg_headgear_military = {
+	OR = {
+		blg_fighting = yes
+		blg_military_governor = yes
+		blg_headgear_military_on_rule = yes
+	}
+
+	blg_headgear_military_off_rule = no
+	OR = {
+		olrox_artifact_heavyarmor_requirement = yes
+		zz_class = no
+	}
+	trigger_if = {
+		limit = {
+			OR = {
+				culture_group = orc_group
+				culture = goblin
+				culture = dekanter
+				culture = batiri
+				culture = bakemono
+				culture = tasloi
+				culture = kuo_toa
+				culture = nelanthern
+				culture = reacher
+				culture_group = minotaur_group
+			}
+		}
+		blg_headgear_duke = no
+	}
+}
+
+# Dress shady.
+blg_headgear_intrigue = {
+	OR = {
+		has_job_title = job_spymaster
+		z_rogue = yes
+		z_shadow = yes
+	}
+	lower_real_tier_than = king
+}
+
+# More common to cover hair.
+blg_headgear_covered = {
+	OR = {
+		culture_group = netherese_group
+		culture_group = nafili_group
+		true_religion_scope = { likes_muslims = yes }
+	}
+}
+
+### Clothes:
+
+# Dress like royalty.
+blg_clothes_royal = {
+	OR = {
+		higher_real_tier_than = duke
+		is_or_was_offmap_power_ruler = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_real_tier_than = duke
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+		blg_prince_title = yes
+		blg_merchant_clothes = yes
+	}
+	blg_mercenary = no
+	blg_holy_order = no
+	blg_peasant = no
+}
+
+# Dress like nobility.
+blg_clothes_noble = {
+	OR = {
+		is_landed = yes
+		higher_real_tier_than = count
+		spouse_even_if_dead = {
+			OR = {
+				is_landed = yes
+				higher_real_tier_than = count
+			}
+		}
+		blg_prince_title = yes
+		blg_fashionable = yes
+	}
+	blg_peasant = no
+}
+
+# Dress like a commoner.
+blg_clothes_common = {
+	OR = {
+		NOR = {
+			is_landed = yes
+			spouse_even_if_dead = { higher_real_tier_than = count }
+			is_or_was_offmap_power_ruler = yes
+			blg_prince_title = yes
+		}
+		trait = humble
+		blg_peasant = yes
+	}
+}
+
+# Dress in armour.
+blg_clothes_military = {
+	OR = {
+		AND = {
+			in_command = yes
+			OR = {
+				war = yes
+				liege = { war = yes }
+				in_battle = yes
+				in_siege = yes
+				is_landed = no
+			}
+		}
+		blg_duelling = yes
+		has_job_title = job_marshal
+		death_reason = death_battle
+		death_reason = death_duel
+		employer = {
+			OR = {
+				AND = {
+					blg_mercenary = yes
+					blg_mercenary_fleet = no
+				}
+				blg_holy_order = yes
+			}
+		}
+		AND = {
+			blg_guard = yes
+			OR = {
+				is_landed = no
+				trait = travelling
+			}
+		}
+	}
+	OR = {
+		olrox_artifact_mediumarmor_requirement = yes
+		zz_class = no
+	}
+	trigger_if = {
+		limit = {
+			OR = {
+				culture_group = orc_group
+				culture = goblin
+				culture = dekanter
+				culture = batiri
+				culture = bakemono
+				culture = tasloi
+				culture = kuo_toa
+				culture_group = minotaur_group
+			}
+		}
+		blg_clothes_noble = no
+	}
+}
+
+# Dress shady.
+blg_clothes_intrigue = {
+	OR = {
+		has_job_title = job_spymaster
+		trait = schemer
+		z_rogue = yes
+		z_shadow = yes
+	}
+}

@@ -29,6 +29,7 @@
 			OR = {
 				has_portrait_property = { layer = 5 index = 9 }
 				blg_culture_european = no
+				blg_merchant_headgear = yes
 			}
 			NOT = { check_variable = { which = ca_overlayer value = 2 } }
 		}

@@ -1,0 +1,190 @@
+# Diseases and related effects.
+
+### Diseases:
+
+blg_bleeding = {
+	OR = {
+		has_character_modifier = tortured_prisoner
+		has_character_modifier = tortured_witch
+		has_character_modifier = struck_by_lightning
+	}
+}
+
+# Blind, natural or maimed.
+blg_blind = {
+	trait = blinded
+}
+
+# Pox boils.
+blg_boils = {
+	trait = has_small_pox
+}
+
+# Bubonic boils.
+blg_bubonic = {
+	trait = has_bubonic_plague
+}
+
+# Crippled leg.
+blg_crippled = {
+	OR = {
+		trait = one_legged
+		trait = mangled
+		has_character_modifier = swollen_ankle
+	}
+}
+
+# Drooling spit.
+blg_drooling = {
+	OR = {
+		trait = incapable
+		trait = infirm
+		trait = rabies
+	}
+}
+
+# Fat or sturdy.
+blg_fat = {
+	OR = {
+		trait = is_fat
+		trait = sturdy
+		AND = {
+			trait = dwarf
+			blg_fair = no
+		}
+	}
+}
+
+# Feverish.
+blg_fever = {
+	OR = {
+		trait = fever
+		trait = has_typhoid_fever
+	}
+}
+
+# Nose cold.
+blg_flu = {
+	OR = {
+		trait = ill
+		trait = flu
+	}
+}
+
+# Bandaged sick skin.
+blg_leper = {
+	trait = leper
+	trigger_if = {
+		limit = { has_dlc = "Reapers" }
+		trait = disfigured
+	}
+}
+
+# Pale and gaunt.
+blg_pale = {
+	OR = {
+		trait = is_malnourished
+		trait = fatigue
+		trait = malaise
+		trait = cancer
+		trait = has_tuberculosis
+		has_character_modifier = broken_spirit
+		has_character_modifier = disrupt_undead_mod
+		AND = {
+			has_character_modifier = corrupting_magic_major
+			blg_visible_society = yes
+		}
+	}
+}
+
+# Oxygen deprived.
+blg_pneumonic = {
+	trait = pneumonic
+}
+
+# Syphilitic pox.
+blg_pox = {
+	OR = {
+		trait = syphilitic
+		trait = has_aztec_disease
+	}
+}
+
+# Skin rash.
+blg_rash = {
+	OR = {
+		trait = has_measles
+		trait = has_typhus
+		trait = rash
+	}
+}
+
+# Baggy eyes.
+blg_stressed = {
+	trait = stressed
+}
+
+# Remaining food drips.
+blg_vomit = {
+	OR = {
+		trait = vomiting
+		trait = food_poisoning
+	}
+}
+
+### Supernatural effects:
+
+# Demon eyes and horns.
+blg_demon = {
+	has_character_modifier = demon_horns
+}
+
+# Glowing eyes.
+blg_glowing = {
+	OR = {
+		trait = avatar
+		evilcat_is_chosen = yes
+	}
+}
+
+# Vampire fangs.
+blg_vampire = {
+	trait = vampire
+	OR = {
+		has_character_modifier = known_vamp_modifier
+		AND = {
+			multiplayer = no
+			OR = {
+				any_player = {
+					OR = {
+						trait = vampire
+						trait = vampire_spawn
+					}
+				}
+				is_local_human_observer = yes
+			}
+		}
+	}
+}
+
+# Wolf eyes.
+blg_werewolf = {
+	OR = {
+		trait = half_dragon
+		has_character_modifier = wolf_blood
+		has_character_modifier = lycanthropy
+		AND = {
+			trait = werewolf
+			OR = {
+				has_character_modifier = known_lycan_modifier
+				AND = {
+					multiplayer = no
+					OR = {
+						any_player = { trait = werewolf }
+						is_local_human_observer = yes
+					}
+				}
+			}
+		}
+	}
+}

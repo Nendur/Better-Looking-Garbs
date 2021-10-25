@@ -1,0 +1,113 @@
+# Core functionality triggers.
+
+# Engaged in a duel.
+blg_duelling = {
+	OR = {
+		has_character_flag = add_duel_xp
+		has_character_flag = chivalry_duel_ongoing
+	}
+}
+
+# Engaged in any fight.
+blg_fighting = {
+	OR = {
+		blg_in_combat = yes
+		blg_duelling = yes
+	}
+}
+
+# Holy Order government.
+blg_holy_order = {
+	holy_order = yes
+}
+
+# Engaged in war.
+blg_in_combat = {
+	in_command = yes
+	OR = {
+		war = yes
+		liege = { war = yes }
+		in_battle = yes
+		in_siege = yes
+		employer = { mercenary = yes }
+		employer = { holy_order = yes }
+	}
+}
+
+# Left-handed weapon user.
+blg_lefthanded = {
+	OR = {
+		trait = lefthanded
+		trait = one_handed
+	}
+	NAND = {
+		trait = lefthanded
+		trait = one_handed
+	}
+}
+
+# Mercenary government.
+blg_mercenary = {
+	mercenary = yes
+}
+
+# Portrait override for theocracies.
+blg_portrait_theocracy = {
+	portrait_government = theocracy_government
+}
+
+# Portrait override for holy orders.
+blg_portrait_holy_order = {
+	portrait_government = order_government
+}
+
+# A priest in the council or a theocracy.
+blg_priest = {
+	is_priest = yes
+}
+
+# In prison.
+blg_prisoner = {
+	OR = {
+		prisoner = yes
+		death_reason = death_dungeon
+	}
+}
+
+# Republic government.
+blg_republic = {
+	OR = {
+		AND = {
+			is_republic = yes
+			NOT = { government = celestial_bureaucracy }
+		}
+		government = democratic_feudal_government
+	}
+}
+
+# Right-handed weapon user.
+blg_righthanded = {
+	OR = {
+		NOR = {
+			trait = lefthanded
+			trait = one_handed
+		}
+		AND = {
+			trait = lefthanded
+			trait = one_handed
+		}
+	}
+}
+
+# Visible member of a secret society.
+blg_visible_society = {
+	OR = {
+		is_society_discovered = yes
+		has_character_modifier = known_satanist
+		has_character_modifier = known_secret_society_member
+		AND = {
+			multiplayer = no
+			any_player = { same_society_as = ROOT }
+		}
+	}
+}

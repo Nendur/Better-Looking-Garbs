@@ -1,0 +1,417 @@
+# p19 Special crowns and clothing
+19 = {
+	0 = { # 0 - blank
+		factor = 1
+
+		modifier = {
+			factor = 100
+			blg_headgear_military = yes
+			blg_priest = no
+		}
+
+		modifier = {
+			factor = 100
+			check_variable = { which = ca_headgear value = 1 }
+		}
+
+		modifier = {
+			factor = 0
+			OR = {
+				trait = half_celestial
+				graphical_culture = angelgfx
+				graphical_culture = asuragfx
+				gfx_culture_scope = { culture = avariel }
+				trait = creature_fiend
+				trait = half_fiend
+			}
+			NOR = {
+				graphical_culture = khorneprincegfx
+				graphical_culture = tzeentchprincegfx
+				graphical_culture = nurgleprincegfx
+				graphical_culture = nycalothgfx
+				graphical_culture = daemonettegfx
+				graphical_culture = kdaaigfx
+			}
+		}
+	}
+
+	1 = { # a - Fiend wings
+		factor = 100
+
+		trigger = {
+			OR = {
+				trait = creature_fiend
+				trait = half_fiend
+			}
+			NOR = {
+				graphical_culture = khorneprincegfx
+				graphical_culture = tzeentchprincegfx
+				graphical_culture = nurgleprincegfx
+				graphical_culture = nycalothgfx
+				graphical_culture = daemonettegfx
+				graphical_culture = kdaaigfx
+			}
+		}
+	}
+
+	2 = { # b - Angel Wings
+		factor = 100
+
+		trigger = {
+			OR = {
+				trait = half_celestial
+				graphical_culture = angelgfx
+				graphical_culture = asuragfx
+				gfx_culture_scope = { culture = avariel }
+			}
+		}
+	}
+
+	3 = { # c - Cursed Diamond Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+				blg_pilgrimage = yes
+				blg_saint = yes
+			}
+			blg_crown_diamond = yes
+		}
+	}
+
+	4 = { # d - Iron Crown of Lombardy
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+				blg_pilgrimage = yes
+				blg_saint = yes
+			}
+			blg_crown_lombardy = yes
+		}
+	}
+
+	5 = { # e - Imperial Laurels
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+				blg_pilgrimage = yes
+			}
+			blg_crown_laurels = yes
+		}
+	}
+
+	6 = { # f - Pahlavi Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+			}
+			blg_crown_pahlavi = yes
+		}
+	}
+
+	7 = { # g - Fylkir Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+			}
+			blg_crown_fylkir = yes
+		}
+	}
+
+	8 = { # h - Tengri Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+			}
+			blg_crown_tengri = yes
+		}
+	}
+
+	9 = { # i - Finnish Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+			}
+			blg_crown_finnish = yes
+		}
+	}
+
+	10 = { # j - West-African Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+			}
+			blg_crown_african = yes
+		}
+	}
+
+	11 = { # k - Slavic Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+			}
+			blg_crown_slavic = yes
+		}
+	}
+
+	12 = { # l - Baltic Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+			}
+			blg_crown_baltic = yes
+		}
+	}
+
+	13 = { # m - Aztec Crown
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+
+		trigger = {
+			NOR = {
+				has_game_rule = { name = blg_artifacts value = off }
+				trait = in_hiding
+				blg_prisoner = yes
+			}
+			blg_crown_aztec = yes
+		}
+	}
+
+	14 = { # n - Cardinal
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			blg_cardinal_early = yes
+		}
+	}
+
+	15 = { # o - Cardinal
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			blg_cardinal_late = yes
+		}
+	}
+
+	16 = { # p - Babr-e Bayan
+		factor = 100
+		hide_layers = { 3 = {}}
+
+		trigger = {
+			NOT = { has_game_rule = { name = blg_artifacts value = off } }
+			blg_babr_e_bayan = yes
+		}
+	}
+
+	17 = { # q - Venetian Doge
+		factor = 100
+		hide_layers = { 1 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			NOR = {
+				blg_prisoner = yes
+				trait = in_hiding
+				trait = leper
+				blg_saint = yes
+			}
+			blg_doge = yes
+		}
+	}
+
+	18 = { # r - Court Jester
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			has_minor_title = title_court_jester
+
+			NOT = { trait = in_hiding }
+		}
+	}
+
+	19 = { # s - Orthodox Patriarch
+		factor = 100
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			rightful_religious_head = ROOT
+			blg_priest = yes
+			blg_religion_orthodox = yes
+		}
+	}
+
+	20 = { # t - Protestant Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			blg_priest = yes
+			blg_religion_protestant = yes
+		}
+	}
+
+	21 = { # u - Slavic Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			blg_priest = yes
+			religion_openly_slavic_or_reformed_trigger = yes
+		}
+	}
+
+	22 = { # v - Finnish Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			blg_priest = yes
+			religion_openly_finnish_or_reformed_trigger = yes
+		}
+	}
+
+	23 = { # w - Aztec Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			blg_priest = yes
+			blg_religion_aztec = yes
+		}
+	}
+
+	24 = { # x - Taoist Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			blg_priest = yes
+			blg_religion_chinese = yes
+		}
+	}
+
+	25 = { # y - Zun Priest
+		factor = 100
+		hide_layers = { 3 = {}}
+		hide_layers = { 5 = {}}
+		hide_layers = {31 = {}}
+		hide_layers = {32 = {}}
+		hide_layers = {33 = {}}
+
+		trigger = {
+			blg_priest = yes
+			blg_religion_eastern_pagan = yes
+		}
+	}
+}

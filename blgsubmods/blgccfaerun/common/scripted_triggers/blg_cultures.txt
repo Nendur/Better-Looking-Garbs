@@ -1,0 +1,414 @@
+### Culture triggers:
+
+# Cultures with a lot of assimilating locals.
+blg_assimilating_culture = {
+	always = no
+}
+
+# Special cultures that don't mix with neighbours.
+blg_culture_unmixed = {
+	always = no
+}
+
+likes_altaics = {
+	culture_group = taan_group
+}
+
+likes_balto_slavics = {
+	culture_group = damaran_group
+}
+
+likes_celts = {
+	culture = ffolk
+}
+
+likes_finno_ugrics = {
+	culture_group = ulutiun_group
+}
+
+likes_indians = {
+	OR = {
+		culture_group = imaskari_group
+		culture_group = malatran_group
+	}
+}
+
+likes_iranians = {
+	culture_group = lapal_group
+}
+
+likes_mesoamericans = {
+	culture_group = maztican_group
+}
+
+likes_tibetans = {
+	OR = {
+		blg_culture_chinese = yes
+		culture_group = katakoro_group
+	}
+}
+
+### Clothing sets for cultures:
+
+# Wears alternate headgear as leper instead of spy hood.
+blg_headgear_alternate_leper = {
+	OR = {
+		blg_culture_middleeast = yes
+		blg_culture_african = yes
+	}
+}
+
+# Block ducal crown in some circumstances.
+# Restrict Song futou headgear.
+blg_blocked_duke = {
+	always = no
+}
+
+# Wears Chinese clothing.
+blg_clothes_chinese = {
+	OR = {
+		culture = ching
+		culture = sheng
+		culture = hungtse
+		culture = hai
+	}
+}
+
+# Wears Chinese headgear.
+blg_headgear_chinese = {
+	OR = {
+		culture = chukien
+		culture = ching
+		culture = sheng
+		culture = hungtse
+		culture = hai
+	}
+}
+
+# Wears Persian crown.
+blg_headgear_persian_crown = {
+	always = no
+}
+
+# Uses French headgear accessories.
+blg_headgear_overlayer = {
+	OR = {
+		culture = amnian
+		culture = tethyrian
+		culture = borderer
+	}
+}
+
+# These cultures use commmon headgear in addition for dukes.
+blg_common_ducal_headgear = {
+	NOR = {
+		higher_real_tier_than = duke
+		independent = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_real_tier_than = duke
+				independent = yes
+			}
+		}
+	}
+	OR = {
+		culture_group = zakharan_group
+		culture_group = katashakan_group
+		culture_group = mulan_group
+		culture_group = imaskari_group
+		culture_group = taan_group
+		culture_group = maztican_group
+	}
+}
+
+# Custom cultures limited to default property set.
+blg_default_clothing = {
+	OR = {
+		culture = mulhorandi
+		culture = untheric
+		culture_group = dwarf_group
+		culture_group = elf_group
+		culture_group = dark_elf_group
+		culture_group = orc_group
+		culture_group = giant_group
+		culture_group = giantkin_group
+		culture_group = nafili_group
+		culture_group = mordrin_group
+		culture_group = goblinoid_group
+		culture_group = minotaur_group
+		culture_group = fish_group
+		culture_group = scaly_group
+		culture_group = centaur_group
+		culture_group = celestial_group
+		culture_group = fiendish_group
+		culture_group = gith_group
+		culture_group = fey_group
+		culture_group = planetouched_group
+		culture_group = genie_group
+		culture_group = celestial_sea_group
+		culture = wang
+		culture = kao
+		culture = tengu
+	}
+}
+
+# Uses Merchant clothing set.
+blg_merchant_clothes = {
+	OR = {
+		government = republic_government
+		government = merchant_republic_government
+		culture = highcoaster
+	}
+	in_command = no
+	OR = {
+		culture_group = tethyrian_group
+		culture_group = chondathan_group
+		culture_group = illuskan_group
+		culture_group = zakharan_group
+		culture_group = lapal_group
+		culture_group = katashakan_group
+		culture_group = mulan_group
+		culture_group = taan_group
+		culture_group = scaly_group
+		culture_group = orc_group
+		culture_group = gith_group
+		culture_group = gnome_group
+		culture_group = outworlder_group
+		culture_group = maztican_group
+		culture = borderer
+		culture = calishite
+		culture = arnadar
+		culture = aslanlar
+	}
+}
+
+# Uses Merchant headgear set.
+blg_merchant_headgear = {
+	OR = {
+		government = republic_government
+		government = merchant_republic_government
+		culture = highcoaster
+	}
+	in_command = no
+	OR = {
+		culture_group = tethyrian_group
+		culture_group = chondathan_group
+		culture_group = illuskan_group
+		culture_group = damaran_group
+		culture_group = raum_group
+		culture_group = imaskari_group
+		culture_group = netherese_group
+		culture_group = gnome_group
+		culture_group = outworlder_group
+		culture = borderer
+	}
+}
+
+# These cultures use higher tier headgear for independent dukes.
+blg_petty_king = {
+	OR = {
+		AND = {
+			real_tier = duke
+			independent = yes
+			NOR = {
+				blg_republic = yes
+				blg_mercenary = yes
+				blg_holy_order = yes
+				blg_peasant = yes
+			}
+		}
+		spouse_even_if_dead = {
+			real_tier = duke
+			independent = yes
+			NOR = {
+				blg_republic = yes
+				blg_mercenary = yes
+				blg_holy_order = yes
+				blg_peasant = yes
+			}
+		}
+	}
+
+	OR = {
+		culture_group = zakharan_group
+		culture_group = goblinoid_group
+		culture_group = ulutiun_group
+		culture = gnome
+		culture = gold_dwarf
+		culture = shield_dwarf
+		culture = troll
+		culture = northlander
+		culture = reacher
+		culture = ffolk
+		culture = talfir
+	}
+}
+
+# These crowns can be combined with French veils.
+blg_veiled_crown = {
+	culture_group = tethyrian_group
+}
+
+### Culture groupings:
+
+blg_culture_african = {
+	OR = {
+		culture_group = katashakan_group
+		culture_group = scaly_group
+		culture_group = nafili_group
+	}
+}
+
+blg_culture_central_germanic = {
+	culture_group = damaran_group
+}
+
+# Chinese adjacent cultures.
+blg_culture_chinese = {
+	OR = {
+		culture_group = shou_group
+		culture_group = celestial_sea_group
+		culture_group = amaese_group
+	}
+}
+
+# Uses French veils.
+blg_culture_european = {
+	OR = {
+		culture_group = tethyrian_group
+		culture_group = chondathan_group
+	}
+}
+
+blg_culture_france = {
+	culture_group = tethyrian_group
+}
+
+# Uses French headgear accessories.
+blg_culture_french = {
+	OR = {
+		culture = amnian
+		culture = tethyrian
+		culture = borderer
+	}
+}
+
+# Uses Byzantine crowns.
+blg_culture_greek = {
+	always = no
+}
+
+blg_culture_iberian = {
+	culture_group = calishite_group
+}
+
+blg_culture_israelite = {
+	culture_group = raum_group
+}
+
+blg_culture_italian = {
+	culture_group = chondathan_group
+}
+
+# Muslim style headgear.
+blg_culture_middleeast = {
+	OR = {
+		culture_group = zakharan_group
+		culture_group = calishite_group
+		culture_group = lapal_group
+	}
+}
+
+# Uses Norse-like portraits.
+blg_culture_northern = {
+	culture_group = illuskan_group
+}
+
+blg_culture_roman = {
+	culture_group = netherese_group
+}
+
+# Uses Saxon portraits.
+blg_culture_saxon = {
+	culture_group = illuskan_group
+}
+
+# West-African gold route cultures.
+blg_culture_west_african = {
+	culture_group = mulan_group
+}
+
+# Uses West/South-Slavic headgear rules.
+blg_culture_west_slavic = {
+	culture_group = damaran_group
+}
+
+### Portrait overrides:
+
+blg_portrait_african = {
+	portrait_culture_group = katashakan_group
+}
+
+blg_portrait_arabic = {
+	always = no
+}
+
+blg_portrait_baltic = {
+	always = no
+}
+
+blg_portrait_byzantine = {
+	portrait_culture_group = mulan_group
+}
+
+blg_portrait_celtic = {
+	always = no
+}
+
+blg_portrait_chinese = {
+	always = no
+}
+
+blg_portrait_east_slavic = {
+	always = no
+}
+
+blg_portrait_germanic = {
+	always = no
+}
+
+blg_portrait_indian = {
+	always = no
+}
+
+blg_portrait_magyar = {
+	always = no
+}
+
+blg_portrait_middleeast = {
+	OR = {
+		portrait_culture_group = zakharan_group
+		portrait_culture_group = calishite_group
+		portrait_culture_group = lapal_group
+	}
+}
+
+blg_portrait_nordic = {
+	portrait_culture_group = illuskan_group
+}
+
+blg_portrait_mediterranean = {
+	portrait_culture_group = tethyrian_group
+}
+
+blg_portrait_roman = {
+	always = no
+}
+
+blg_portrait_slavic = {
+	always = no
+}
+
+blg_portrait_steppes = {
+	always = no
+}

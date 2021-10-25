@@ -1,0 +1,37 @@
+# Geographic region character diversity script.
+blg_regional_diversity = {
+}
+
+# Spawned character processing.
+blg_character_processing = {
+}
+
+# Mixed children ethnicity selection.
+blg_child_mixed = {
+}
+
+# Child ethnicity changes from cultural upbringing.
+blg_child_upbringing = {
+}
+
+# Refresh portrait trick by removing harmless trait.
+refresh_portrait = {
+	remove_trait = blgspawn
+}
+
+# Append portrait refresh to duel events.
+evaluate_duel_result_score_effect = {
+	event_target:combatant_1 = {
+		refresh_portrait = yes
+	}
+	event_target:combatant_2 = {
+		refresh_portrait = yes
+	}
+}
+
+# Append bear setup to creature duel.
+spawn_creature_champion_effect = { # Too messy with bear clothes.
+	new_character = {
+		set_graphical_culture = bear
+	}
+}

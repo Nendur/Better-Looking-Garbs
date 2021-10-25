@@ -33,6 +33,21 @@
 				trait = saint
 				has_nickname = nick_the_saint
 				has_portrait_property = { layer = 5 index = 9 }
+				AND = {
+					is_merchant_republic = yes
+					in_command = no
+					OR = {
+						culture_group = latin
+						culture_group = iberian
+						culture_group = celtic
+						culture_group = central_germanic
+						culture_group = west_germanic
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+						culture_group = magyar
+					}
+				}
 			}
 		}
 

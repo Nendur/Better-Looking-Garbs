@@ -1,0 +1,26 @@
+#p24 Harelip
+24 = {
+	0 = { # 0 - blank
+		factor = 100
+		trigger = {
+			OR = {
+				NOR = {
+					trait = harelip
+					AND = {
+						graphical_culture = beholdergfx
+						OR = {
+							trait = blinded
+							trait = one_eyed
+						}
+					}
+				}
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+
+	1 = { # a - Harelip
+		factor = 100
+		hide_layers = { 15 = {} } # Hide lipstick
+	}
+}

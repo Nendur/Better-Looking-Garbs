@@ -1,0 +1,282 @@
+spriteTypes = {
+	 portraitType = {
+		name = "PORTRAIT_merchant_shoon_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				has_dlc = "Holy Fury"
+				portrait_culture = shoon
+				NOR = {
+					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_troll
+					portrait_has_trait = creature_goblin
+				}
+			}
+		}
+
+		layer = {
+			"GFX_roman_male_clothes_behind:p3:c0"
+			"GFX_roman_male_headgear_behind:p5:c1"
+			"GFX_roman_male_headgear_mid:p5:c3"
+			"GFX_roman_male_clothes:p3:c2"
+			"GFX_roman_male_headgear:p5:c5"
+			"GFX_empty:c7"
+		}
+
+		headgear_that_hides_hair = {10 12 13}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_merchant_shoon_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				has_dlc = "Holy Fury"
+				portrait_culture = shoon
+				NOR = {
+					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_troll
+					portrait_has_trait = creature_goblin
+				}
+			}
+		}
+
+		layer = {
+			"GFX_roman_female_clothes_behind:p3:c0"
+			"GFX_roman_female_headgear_behind:p5:c1"
+			"GFX_roman_female_clothes:p3:c2"
+			"GFX_empty:p5:c3"
+			"GFX_roman_female_headgear:p5:c5"
+			"GFX_roman_female_headgear_hairlayer:c7"
+		}
+
+		headgear_that_hides_hair = {0 10 12 13}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_merchant_mulhorandi_clothing_male" # Actually for non-merchants, but I'm keeping these overlays consistently named
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_culture_group = mulan_group
+				portrait_religion = mulhorandi_faith
+				NOT = { portrait_culture = murghomi }
+				NOR = {
+					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_troll
+					portrait_has_trait = creature_goblin
+				}
+			}
+		}
+
+		layer = {
+			"GFX_nehekharan_background:p0"
+			"GFX_mulhorandi_male_clothes_behind:p3:c0"
+			"GFX_mulhorandi_male_headgear_behind:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_mulhorandi_male_clothes:p3:c2"
+			"GFX_mulhorandi_male_headgear:p5:c5"
+			"GFX_nehekharan_background:c6"
+			"GFX_empty:c7"
+		}
+
+		headgear_that_hides_hair = { 10 }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_merchant_mulhorandi_clothing_female" # see note above
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_culture_group = mulan_group
+				portrait_religion = mulhorandi_faith
+				NOT = { portrait_culture = murghomi }
+				NOR = {
+					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_troll
+					portrait_has_trait = creature_goblin
+				}
+			}
+		}
+
+		layer = {
+			"GFX_nehekharan_background:p0"
+			"GFX_mulhorandi_female_clothes_behind:p3:c0"
+			"GFX_mulhorandi_female_headgear_behind:p5:c1"
+			"GFX_nehekharan_background:p5:c6"
+			"GFX_mulhorandi_female_clothes:p3:c2"
+			"GFX_empty:p5:c3"
+			"GFX_mulhorandi_female_headgear:p5:c5"
+			"GFX_empty:c7"
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_merchant_untheric_clothing_male" # Actually for non-merchants, but I'm keeping these overlays consistently named
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_culture_group = mulan_group
+				portrait_religion = untheric_faith
+				NOT = { portrait_culture = murghomi }
+				NOR = {
+					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_troll
+					portrait_has_trait = creature_goblin
+				}
+			}
+		}
+
+		layer = {
+			"GFX_nehekharan_background:p0"
+			"GFX_chaosdwarf_male_headgear_behind:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_chaosdwarf_male_headgear:p5:c5"
+			"GFX_nehekharan_background:c6"
+			"GFX_empty:c7"
+		}
+
+		headgear_that_hides_hair = { 10 }
+	}
+
+#	portraitType = {
+#		name = "PORTRAIT_merchant_untheric_clothing_female" # see note above
+#		effectFile = "gfx/FX/portrait.lua"
+
+#		weight = {
+#			additive_modifier = {
+#				value = 1000
+#				portrait_age > child
+#				portrait_is_female = yes
+#				portrait_clothing = yes
+#				portrait_culture_group = mulan_group
+#				portrait_religion = untheric_faith
+#				NOT = { portrait_culture = murghomi }
+#			}
+#		}
+
+#		layer = {
+#			"GFX_nehekharan_background:p0"
+#			"GFX_cophic_female_headgear_behind:p5:c1"
+#			"GFX_cophic_female_headgear_behind_mid:p5:c6"
+#			"GFX_cophic_female_headgear_mid:p5:c3"
+#			"GFX_cophic_female_headgear:p5:c5"
+#			"GFX_empty:c7"
+#		}
+
+#		headgear_that_hides_hair = { }
+#	}
+
+	portraitType = {
+		name = "PORTRAIT_merchant_pirate_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = no
+				portrait_clothing = yes
+				OR = {
+					portrait_culture = nelanthern
+					portrait_culture = reacher
+					AND = {
+						portrait_culture = illuskan
+						OR = {
+							portrait_government = merchant_republic_government
+							portrait_government = republic_government
+						}
+					}
+				}
+				NOR = {
+					portrait_government = baron_theocracy_government
+					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_troll
+					portrait_has_trait = creature_goblin
+				}
+			}
+		}
+
+		layer = {
+			"GFX_witchhunter_male_clothes_behind:p3:c0"
+			"GFX_witchhunter_male_headgear_behind:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_witchhunter_male_clothes:p3:c2"
+			"GFX_empty:p3:c4"
+			"GFX_witchhunter_male_headgear:p5:c5"
+			"GFX_empty:c7"
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	portraitType = {
+		name = "PORTRAIT_merchant_pirate_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_age > child
+				portrait_is_female = yes
+				portrait_clothing = yes
+				OR = {
+					portrait_culture = nelanthern
+					portrait_culture = reacher
+					AND = {
+						portrait_culture = illuskan
+						OR = {
+							portrait_government = merchant_republic_government
+							portrait_government = republic_government
+						}
+					}
+				}
+				NOR = {
+					portrait_government = baron_theocracy_government
+					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_troll
+					portrait_has_trait = creature_goblin
+				}
+			}
+		}
+
+		layer = {
+			"GFX_witchhunter_female_clothes_behind:p3:c0"
+			"GFX_witchhunter_female_headgear_behind:p5:c1"
+			"GFX_witchhunter_female_clothes:p3:c2"
+			"GFX_empty:p5:c3"
+			"GFX_empty:p3:c4"
+			"GFX_witchhunter_female_headgear:p5:c5"
+			"GFX_empty:c7"
+		}
+
+		headgear_that_hides_hair = { }
+	}
+}

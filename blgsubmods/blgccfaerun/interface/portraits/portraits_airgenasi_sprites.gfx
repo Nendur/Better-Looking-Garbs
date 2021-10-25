@@ -1,0 +1,135 @@
+# DJINNI
+spriteTypes = {
+
+	spriteType = {
+		name = "PORTRAIT_airgenasigfx_child_male"
+		texturefile = "gfx\\characters\\asur_son.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "PORTRAIT_airgenasigfx_child_female"
+		texturefile = "gfx\\characters\\asur_daughter.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+### DJINNI MALE ####
+
+	spriteType = {
+		name = "GFX_airgenasi_male_base"
+		texturefile = "gfx\\characters\\airgenasi_male\\airgenasi_male_base_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_male_neck"
+		texturefile = "gfx\\characters\\airgenasi_male\\airgenasi_male_neck_1.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_male_chin"
+		texturefile = "gfx\\characters\\airgenasi_male\\airgenasi_male_chin_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_male_mouth"
+		texturefile = "gfx\\characters\\airgenasi_male\\airgenasi_male_mouth_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_male_nose"
+		texturefile = "gfx\\characters\\airgenasi_male\\airgenasi_male_nose_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_male_eyes"
+		texturefile = "gfx\\characters\\airgenasi_male\\airgenasi_male_eyes_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_male_ear"
+		texturefile = "gfx\\characters\\airgenasi_male\\airgenasi_male_ear_1.dds"
+		noOfFrames = 5
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_airgenasi_male_physique"
+		texturefile = "gfx\\characters\\shared\\physique\\airgenasi_male_physique.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+#### DJINNI FEMALE ####
+
+	spriteType = {
+		name = "GFX_airgenasi_female_base"
+		texturefile = "gfx\\characters\\airgenasi_female\\airgenasi_female_base_1.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_female_neck"
+		texturefile = "gfx\\characters\\airgenasi_female\\airgenasi_female_neck_1.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_female_chin"
+		texturefile = "gfx\\characters\\airgenasi_female\\airgenasi_female_chin_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_female_mouth"
+		texturefile = "gfx\\characters\\airgenasi_female\\airgenasi_female_mouth_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_female_nose"
+		texturefile = "gfx\\characters\\airgenasi_female\\airgenasi_female_nose_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_female_eyes"
+		texturefile = "gfx\\characters\\airgenasi_female\\airgenasi_female_eyes_1.dds"
+		noOfFrames = 13
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_airgenasi_female_ear"
+		texturefile = "gfx\\characters\\airgenasi_female\\airgenasi_female_ear_1.dds"
+		noOfFrames = 5
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_character_airgenasi_female_physique"
+		texturefile = "gfx\\characters\\shared\\physique\\airgenasi_female_physique.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+}
