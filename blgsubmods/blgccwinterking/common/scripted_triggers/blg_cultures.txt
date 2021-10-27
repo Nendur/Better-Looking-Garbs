@@ -54,7 +54,7 @@ blg_default_clothing = {
 
 # Uses Merchant clothing set.
 blg_merchant_clothes = {
-	is_merchant_republic = yes
+	employer = { is_merchant_republic = yes }
 	in_command = no
 }
 

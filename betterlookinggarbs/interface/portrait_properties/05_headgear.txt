@@ -460,7 +460,7 @@
 
 		modifier = {
 			factor = 0.25
-			is_merchant_republic = yes
+			employer = { is_merchant_republic = yes }
 		}
 	}
 

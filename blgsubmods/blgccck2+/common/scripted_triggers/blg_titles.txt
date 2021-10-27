@@ -49,7 +49,7 @@ blg_prince_title = {
 
 # Venetian Doge.
 blg_doge = {
-	is_merchant_republic = yes
+	employer = { is_merchant_republic = yes }
 	primary_title = {
 		OR = {
 			title = k_venice

@@ -49,7 +49,7 @@ blg_guard = {
 		trait = varangian
 		trait = shieldmaiden
 		trait = gladiator
-		triat = hunting_dragons
+		trait = hunting_dragons
 	}
 }
 
@@ -243,7 +243,7 @@ blg_travelling = {
 		has_character_modifier = holding_grand_hunt
 		has_character_flag = holding_tiger_hunt
 		trait = treasure_fleet_voyage
-		triat = hunting_dragons
+		trait = hunting_dragons
 	}
 }
 

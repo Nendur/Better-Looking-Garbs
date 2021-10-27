@@ -14,6 +14,6 @@ dependencies=
 	"Better Looking Garbs"
 	"Better Looking Garbs Full"
 }
-supported_checksums = { DWUH }
+supported_checksums = { HMGJ }
 tags={ Graphics Portraits Units "After the End" }
 picture="blgccaftertheend.jpg"

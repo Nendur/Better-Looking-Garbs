@@ -20,7 +20,7 @@
 				has_character_modifier = jd_prince
 				has_character_modifier = jd_princess
 				AND = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -50,7 +50,7 @@
 			OR = {
 				trait = humble
 				AND = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -90,7 +90,7 @@
 				has_character_modifier = jd_prince
 				has_character_modifier = jd_princess
 				AND = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -120,7 +120,7 @@
 			OR = {
 				trait = humble
 				AND = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -160,7 +160,7 @@
 				has_character_modifier = jd_prince
 				has_character_modifier = jd_princess
 				AND = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -190,7 +190,7 @@
 			OR = {
 				trait = humble
 				AND = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -383,7 +383,7 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 				}
 				OR = {
@@ -467,7 +467,7 @@
 
 		modifier = {
 			factor = 0.01
-			is_merchant_republic = yes
+			employer = { is_merchant_republic = yes }
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -491,7 +491,7 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 				}
 				OR = {
@@ -520,7 +520,7 @@
 
 		modifier = {
 			factor = 0.01
-			is_merchant_republic = yes
+			employer = { is_merchant_republic = yes }
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -544,7 +544,7 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 				}
 				OR = {
@@ -628,7 +628,7 @@
 
 		modifier = {
 			factor = 0.01
-			is_merchant_republic = yes
+			employer = { is_merchant_republic = yes }
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -652,7 +652,7 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 				}
 				OR = {
@@ -727,7 +727,7 @@
 
 		modifier = {
 			factor = 0.01
-			is_merchant_republic = yes
+			employer = { is_merchant_republic = yes }
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -759,7 +759,7 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					is_merchant_republic = yes
+					employer = { is_merchant_republic = yes }
 					in_command = no
 				}
 				OR = {
@@ -842,7 +842,7 @@
 
 		modifier = {
 			factor = 0.01
-			is_merchant_republic = yes
+			employer = { is_merchant_republic = yes }
 			in_command = no
 			OR = {
 				culture_group = latin

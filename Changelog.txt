@@ -1,11 +1,14 @@
 Changelog:
 
-  Clean up of the properties code.
-  Combine the culture specific hairstyling rules into a unified system.
-  Let customized clothing choices be replaced with wargear.
-  Scale up maces and axes a bit.
+27-10-2021
+  Rewrite and clean up of the portrait properties code.
+  Combine various culture specific hairstyling rules into a unified system.
+  Let customized clothing choices be replaced with armour in battle.
+  For all the Egyptian derived portraits replaced the mouths to fix their resting bitch face.
+  Scale up mace and axe sprites a bit.
   Clean up remaining unchanged effect layers with incomplete transparency.
   Replaced Chinese makeup trigger, also didn't support offmap empires.
+  Included the Faerun compatibility submod.
 
 21-03-2021
   Scale up ship models.
