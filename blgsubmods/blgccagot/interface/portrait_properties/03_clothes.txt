@@ -272,6 +272,7 @@
 				trigger_else = {
 					NOT = { check_variable = { which = ca_clothes value = 15 } }
 					is_female = no
+					blg_default_clothing = no
 					blg_elite_commander = yes
 					blg_clothes_military = yes
 				}

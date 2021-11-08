@@ -16,6 +16,14 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_character_horns_small"
+		texturefile = "gfx\\characters\\shared\\small_horns.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_skaven_character_boils"
 		texturefile = "gfx\\characters\\shared\\skaven_boils.dds"
 		noOfFrames = 16

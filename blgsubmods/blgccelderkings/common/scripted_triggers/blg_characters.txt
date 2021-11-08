@@ -148,7 +148,7 @@ blg_socializer = {
 # Urban town oriented.
 blg_townsfolk = {
 	OR = {
-		is_republic = yes
+		employer = { is_republic = yes }
 		is_rogue = yes
 		is_wayfarer = yes
 		is_trader = yes

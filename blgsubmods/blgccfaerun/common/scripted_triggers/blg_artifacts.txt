@@ -255,7 +255,16 @@ blg_crown_pahlavi = {
 
 # Germanic Fylkir crown.
 blg_crown_fylkir = {
-	always = no
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			OR = {
+				artifact_type = twinned_crown_of_yarlith
+				artifact_type = twinned_crown_of_uthtower
+			}
+		}
+		trait = dead_crown_fylkir
+	}
 }
 
 # Tengri religious crown.

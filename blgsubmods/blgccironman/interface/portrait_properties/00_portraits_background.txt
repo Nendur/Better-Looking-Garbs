@@ -906,7 +906,7 @@
 
 		modifier = {
 			factor = 5
-			is_republic = yes
+			employer = { is_republic = yes }
 		}
 
 		modifier = {
@@ -1076,7 +1076,7 @@
 
 		modifier = {
 			factor = 5
-			is_republic = yes
+			employer = { is_republic = yes }
 		}
 
 		modifier = {

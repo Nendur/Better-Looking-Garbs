@@ -149,9 +149,13 @@ blg_socializer = {
 # Urban town oriented.
 blg_townsfolk = {
 	OR = {
-		is_republic = yes
-		government = rtp_republic_g
-		government = rtp_baron_republic_g
+		employer = {
+			OR = {
+				is_republic = yes
+				government = rtp_republic_g
+				government = rtp_baron_republic_g
+			}
+		}
 		has_minor_title = barterer_mt
 		has_minor_title = beggar_mt
 		has_minor_title = shop_assistant_mt

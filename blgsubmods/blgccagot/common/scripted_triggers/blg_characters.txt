@@ -137,7 +137,7 @@ blg_socializer = {
 
 # Urban town oriented.
 blg_townsfolk = {
-	is_republic = yes
+	employer = { is_republic = yes }
 }
 
 # Ugly face.
