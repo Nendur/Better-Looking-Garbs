@@ -51,6 +51,8 @@ blg_crowned = {
 # Use the Chinese face jewelry.
 blg_face_jewelry = {
 	OR = {
+		trait = dragon_bride_unmarried
+		trait = dragon_bride_married
 		has_character_modifier = jd_princess
 		AND = {
 			blg_headgear_chinese = yes
@@ -73,6 +75,8 @@ blg_chinese_makeup = {
 				is_or_was_offmap_power_ruler = yes
 			}
 		}
+		trait = dragon_bride_unmarried
+		trait = dragon_bride_married
 		has_character_modifier = jd_princess
 	}
 }
@@ -301,6 +305,7 @@ blg_clothes_noble = {
 		blg_royal_title = yes
 		blg_prince_title = yes
 		blg_fashionable = yes
+		has_minor_title = title_regent
 	}
 	blg_peasant = no
 }

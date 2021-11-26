@@ -422,7 +422,7 @@
 
 		modifier = {
 			factor = 0.25
-			employer = { is_merchant_republic = yes }
+			employer = { is_patrician = yes }
 		}
 	}
 

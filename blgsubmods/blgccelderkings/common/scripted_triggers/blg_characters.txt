@@ -20,9 +20,11 @@ blg_devout = {
 	OR = {
 		is_priest_education = yes
 		trait = zealous
+		trait = heresiarch
 		has_focus = focus_theology
 		is_ascetic_trigger = yes
-		blg_pilgrimage = yes
+		has_minor_title = title_chief_qadi
+		has_character_flag = guru
 	}
 }
 
@@ -54,6 +56,16 @@ blg_guard = {
 		is_crusader = yes
 		trait = shieldmaiden
 		trait = gladiator
+		has_minor_title = title_legate
+		has_minor_title = title_quaestor
+		has_minor_title = title_housecarl
+		has_minor_title = title_lawman
+		has_minor_title = title_master_bladesman
+		has_minor_title = title_sword_sibling
+		has_minor_title = title_clanslayer
+		has_minor_title = title_ansei
+		has_minor_title = title_hearth_guardian
+		has_minor_title = title_champion
 	}
 }
 
@@ -88,6 +100,17 @@ blg_mudsplatter = {
 	OR = {
 		has_character_modifier = mud_splatter
 		has_character_modifier = fell_into_the_river
+	}
+}
+
+# Character has a naval theme.
+blg_naval = {
+	OR = {
+		trait = seaking
+		trait = sea_queen
+		has_minor_title = title_high_admiral
+		has_minor_title = title_portmaster_senchal
+		has_minor_title = title_master_shipwright_jyl
 	}
 }
 

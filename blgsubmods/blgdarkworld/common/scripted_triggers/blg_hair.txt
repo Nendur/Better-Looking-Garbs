@@ -1,6 +1,5 @@
 ### Hair rules:
 
-
 # Has a shaved head.
 blg_shaved = {
 	OR = {
@@ -29,15 +28,21 @@ blg_tonsure = {
 
 # Has long hair.
 blg_hair_long = {
-	year_of_birth < 740
-	likes_germanics = yes
 	OR = {
-		higher_real_tier_than = duke
 		AND = {
-			real_tier = duke
-			independent = yes
+			year_of_birth < 740
+			likes_germanics = yes
+			OR = {
+				higher_real_tier_than = duke
+				AND = {
+					real_tier = duke
+					independent = yes
+				}
+				has_minor_title = title_prince
+			}
 		}
-		has_minor_title = title_prince
+		trait = feminine
+		trait = trap
 	}
 }
 
@@ -132,6 +137,7 @@ blg_beard_long = {
 	OR = {
 		blg_priest = yes
 		is_ascetic_trigger = yes
+		trait = heresiarch
 		has_minor_title = title_chief_qadi
 	}
 	NOT = { trait = cynical }
@@ -150,6 +156,7 @@ blg_beard_short = {
 			OR = {
 				blg_priest = yes
 				is_ascetic_trigger = yes
+				trait = heresiarch
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist

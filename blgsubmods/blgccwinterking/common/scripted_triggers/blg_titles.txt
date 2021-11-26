@@ -22,7 +22,8 @@ blg_military_governor = {
 # Extra titles of royal rank.
 blg_royal_title = {
 	OR = {
-		has_minor_title = title_despot
+		has_minor_title = title_caesar
+		has_minor_title = title_caesar_non_voter
 		has_minor_title = title_augusta
 	}
 }

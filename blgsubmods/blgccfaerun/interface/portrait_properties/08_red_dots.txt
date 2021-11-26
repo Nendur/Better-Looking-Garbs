@@ -48,6 +48,7 @@
 				graphical_culture = daemonettegfx
 				graphical_culture = nycalothgfx
 				graphical_culture = nurgleprincegfx
+				graphical_culture = draeglothgfx
 			}
 		}
 		modifier = {

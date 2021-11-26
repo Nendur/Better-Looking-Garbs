@@ -13,7 +13,7 @@
 			OR = {
 				blg_priest = yes
 				blg_devout = yes
-				has_minor_title = title_guru
+				blg_pilgrimage = yes
 				society_member_of = monastic_order_hindu
 				has_character_flag = diwali_feast_begun
 				has_character_flag = attending_diwali_feast

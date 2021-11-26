@@ -253,6 +253,7 @@
 			factor = 10
 			OR = {
 				blg_devout = yes
+				blg_pilgrimage = yes
 				capital_holding = { holding_type = temple }
 			}
 			OR = {
@@ -322,6 +323,7 @@
 				}
 				has_focus = focus_theology
 				has_pious_trait_trigger = yes
+				blg_pilgrimage = yes
 				has_character_modifier = doing_penance
 			}
 		}
@@ -336,6 +338,7 @@
 			OR = {
 				blg_priest = yes
 				blg_devout = yes
+				blg_pilgrimage = yes
 				capital_holding = { holding_type = temple }
 			}
 		}
@@ -438,9 +441,7 @@
 			factor = 100
 			OR = {
 				is_at_sea = yes
-				trait = seaking
-				trait = sea_queen
-				has_minor_title = title_high_admiral
+				blg_naval = yes
 				employer = {
 					blg_mercenary_fleet = yes
 				}
@@ -743,7 +744,10 @@
 
 		modifier = {
 			factor = 10
-			blg_devout = yes
+			OR = {
+				blg_devout = yes
+				blg_pilgrimage = yes
+			}
 			likes_muslims = yes
 		}
 

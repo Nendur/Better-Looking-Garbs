@@ -1,0 +1,116 @@
+# Game rule triggers.
+
+# Has an adult portrait.
+blg_adult = {
+	custom_tooltip = {
+		text = IS_ADULT
+		OR = {
+			practical_age >= 16
+			AND = {
+				practical_age >= 15
+				OR = {
+					has_game_rule = { name = blg_children value = 15 }
+					has_game_rule = { name = blg_children value = 15noscale }
+				}
+			}
+			AND = {
+				practical_age >= 14
+				OR = {
+					has_game_rule = { name = blg_children value = 14 }
+					has_game_rule = { name = blg_children value = 14noscale }
+				}
+			}
+		}
+	}
+}
+
+# Artifact game rule.
+blg_artifact_rule = {
+	NOR = {
+		has_game_rule = { name = blg_artifacts value = rare }
+		has_game_rule = { name = blg_artifacts value = weapons }
+	}
+}
+
+# Disease game rule.
+blg_disease_alive = {
+	OR = {
+		is_alive = yes
+		has_game_rule = { name = blg_disease value = postmortem }
+	}
+}
+
+# Disease game rule.
+blg_disease_rule = {
+	blg_disease_alive = yes
+	NOT = { has_game_rule = { name = blg_disease value = off } }
+}
+
+# Helmet game rules.
+blg_headgear_military_on_rule = {
+	has_game_rule = { name = blg_helmet value = on }
+	OR = {
+		blg_warrior = yes
+		AND = {
+			has_minor_title = title_party_member
+			liege = { has_character_modifier = sent_adventurers }
+		}
+	}
+}
+
+# Helmet game rules.
+blg_headgear_military_off_rule = {
+	OR = {
+		has_game_rule = { name = martial_headgear value = off }
+		has_game_rule = { name = blg_helmet value = off }
+		has_game_rule = { name = blg_helmet value = none }
+		AND = {
+			has_game_rule = { name = blg_helmet value = lowrank }
+			OR = {
+				higher_real_tier_than = baron
+				spouse = { higher_real_tier_than = baron }
+			}
+		}
+	}
+}
+
+# Traits game rule.
+blg_traits_rule = {
+	NOR = {
+		has_game_rule = { name = blg_traits value = notraits }
+		has_game_rule = { name = blg_traits value = off }
+	}
+}
+
+# Traits game rule for make-up.
+blg_traits_fair_rule = {
+	NOR = {
+		has_game_rule = { name = blg_traits value = nofair }
+		has_game_rule = { name = blg_traits value = notraits }
+		has_game_rule = { name = blg_traits value = off }
+	}
+}
+
+# Traits game rule for lunatics.
+blg_traits_lunatic_rule = {
+	NOR = {
+		has_game_rule = { name = blg_traits value = nolunatic }
+		has_game_rule = { name = blg_traits value = nofair }
+	}
+}
+
+# Wounds game rule.
+blg_wounded_alive = {
+	OR = {
+		is_alive = yes
+		has_game_rule = { name = blg_wounds value = postmortem }
+	}
+}
+
+# Wounds game rule.
+blg_wounded_off = {
+	OR = {
+		has_game_rule = { name = blg_wounds value = nowounds }
+		has_game_rule = { name = blg_wounds value = off }
+	}
+}

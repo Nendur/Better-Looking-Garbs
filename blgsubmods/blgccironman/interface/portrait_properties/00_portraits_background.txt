@@ -260,6 +260,8 @@
 				trait = poet
 				trait = gamer
 				trait = architect
+				has_minor_title = title_administrator
+				has_minor_title = title_master_engineer
 			}
 
 			NOR = {
@@ -641,6 +643,8 @@
 				trait = seaking
 				trait = sea_queen
 				has_minor_title = title_high_admiral
+				has_minor_title = title_lighthouse_custodian
+				has_minor_title = title_master_of_tides
 				employer = {
 					primary_title = {
 						OR = {

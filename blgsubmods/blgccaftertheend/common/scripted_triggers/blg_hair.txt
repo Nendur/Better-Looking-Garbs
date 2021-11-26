@@ -100,7 +100,6 @@ blg_beard_long = {
 	OR = {
 		blg_priest = yes
 		blg_devout = yes
-		has_minor_title = title_chief_qadi
 	}
 	NOT = { trait = cynical }
 }
@@ -119,6 +118,7 @@ blg_beard_short = {
 	OR = {
 		blg_priest = yes
 		is_ascetic_trigger = yes
+		trait = heresiarch
 		society_member_of = monastic_order_benedictine
 		society_member_of = monastic_order_dominican
 		society_member_of = monastic_order_leibowitz

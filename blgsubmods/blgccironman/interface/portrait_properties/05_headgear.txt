@@ -103,7 +103,7 @@
 					}
 				}
 				AND = {
-					employer = { is_merchant_republic = yes }
+					employer = { is_patrician = yes }
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -127,7 +127,7 @@
 
 		modifier = {
 			factor = 0.01
-			employer = { is_merchant_republic = yes }
+			employer = { is_patrician = yes }
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -294,7 +294,7 @@
 					}
 				}
 				AND = {
-					employer = { is_merchant_republic = yes }
+					employer = { is_patrician = yes }
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -477,7 +477,7 @@
 					}
 				}
 				AND = {
-					employer = { is_merchant_republic = yes }
+					employer = { is_patrician = yes }
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -660,7 +660,7 @@
 					}
 				}
 				AND = {
-					employer = { is_merchant_republic = yes }
+					employer = { is_patrician = yes }
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -1261,7 +1261,7 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					employer = { is_merchant_republic = yes }
+					employer = { is_patrician = yes }
 					in_command = no
 				}
 				OR = {
@@ -1313,7 +1313,7 @@
 
 		modifier = {
 			factor = 0.01
-			employer = { is_merchant_republic = yes }
+			employer = { is_patrician = yes }
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -1449,7 +1449,7 @@
 
 		modifier = {
 			factor = 0.25
-			employer = { is_merchant_republic = yes }
+			employer = { is_patrician = yes }
 		}
 	}
 
@@ -1460,7 +1460,7 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					employer = { is_merchant_republic = yes }
+					employer = { is_patrician = yes }
 					in_command = no
 				}
 				OR = {
@@ -1631,7 +1631,7 @@
 
 		modifier = {
 			factor = 0.01
-			employer = { is_merchant_republic = yes }
+			employer = { is_patrician = yes }
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -1662,7 +1662,7 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					employer = { is_merchant_republic = yes }
+					employer = { is_patrician = yes }
 					in_command = no
 				}
 				OR = {
@@ -1703,7 +1703,7 @@
 
 		modifier = {
 			factor = 0.01
-			employer = { is_merchant_republic = yes }
+			employer = { is_patrician = yes }
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -1734,7 +1734,7 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					employer = { is_merchant_republic = yes }
+					employer = { is_patrician = yes }
 					in_command = no
 				}
 				OR = {
@@ -1780,7 +1780,7 @@
 
 		modifier = {
 			factor = 0.01
-			employer = { is_merchant_republic = yes }
+			employer = { is_patrician = yes }
 			in_command = no
 			OR = {
 				culture_group = latin

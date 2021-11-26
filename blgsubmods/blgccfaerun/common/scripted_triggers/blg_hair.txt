@@ -193,7 +193,7 @@ blg_hair_byzantine = {
 
 blg_hair_celtic = {
 	OR = {
-		graphical_culture = celticgfx
+		graphical_culture = illuskangfx
 		graphical_culture = ulutiungfx
 	}
 }
@@ -234,24 +234,23 @@ blg_hair_egyptian = {
 
 blg_hair_english = {
 	OR = {
-		graphical_culture = englishgfx
-		graphical_culture = illuskangfx
+		graphical_culture = ffolkgfx
+		graphical_culture = dalesmengfx
 		graphical_culture = thariangfx
 	}
 }
 
 blg_hair_frankish = {
 	OR = {
-		graphical_culture = frankishgfx
+		graphical_culture = highcoastergfx
 		graphical_culture = tethyriangfx
 	}
 }
 
 blg_hair_german = {
 	OR = {
-		graphical_culture = germangfx
+		graphical_culture = cormyriangfx
 		graphical_culture = westerngfx
-		graphical_culture = dutchgfx
 		graphical_culture = stormgiantgfx
 	}
 }
@@ -284,7 +283,8 @@ blg_hair_muslim = {
 
 blg_hair_norse = {
 	OR = {
-		graphical_culture = norsegfx
+		graphical_culture = uthgardtgfx
+		graphical_culture = reghedgfx
 		graphical_culture = einheriargfx
 	}
 }
@@ -319,8 +319,8 @@ blg_hair_turkish = {
 
 blg_hair_ugric = {
 	OR = {
+		graphical_culture = northlandergfx
 		graphical_culture = sossrimgfx
-		graphical_culture = uthgardtgfx
 		graphical_culture = vaasangfx
 	}
 }
@@ -365,7 +365,7 @@ blg_beard_byzantine = {
 }
 
 blg_beard_celtic = {
-	graphical_culture = celticgfx
+	graphical_culture = ffolkgfx
 }
 
 blg_beard_chinese = {
@@ -401,20 +401,22 @@ blg_beard_egyptian = {
 
 blg_beard_english = {
 	OR = {
-		graphical_culture = englishgfx
+		graphical_culture = illuskangfx
 		graphical_culture = netheresegfx
 		graphical_culture = ulgariangfx
 	}
 }
 
 blg_beard_frankish = {
-	graphical_culture = chondathangfx
+	OR = {
+		graphical_culture = chondathangfx
+		graphical_culture = cormyriangfx
+	}
 }
 
 blg_beard_german = {
 	OR = {
-		graphical_culture = frankishgfx
-		graphical_culture = germangfx
+		graphical_culture = highcoastergfx
 		graphical_culture = thariangfx
 		graphical_culture = stormgiantgfx
 	}
@@ -443,7 +445,7 @@ blg_beard_muslim = {
 
 blg_beard_norse = {
 	OR = {
-		graphical_culture = norsegfx
+		graphical_culture = northlandergfx
 		graphical_culture = einheriargfx
 	}
 }
@@ -505,14 +507,15 @@ blg_beard_ugric = {
 	OR = {
 		graphical_culture = sossrimgfx
 		graphical_culture = uthgardtgfx
+		graphical_culture = reghedgfx
 	}
 }
 
 blg_beard_westernslavic = {
 	OR = {
 		graphical_culture = westernslavicgfx
-		graphical_culture = illuskangfx
 		graphical_culture = croatsouthslavicgfx
 		graphical_culture = nargfx
+		graphical_culture = dalesmengfx
 	}
 }

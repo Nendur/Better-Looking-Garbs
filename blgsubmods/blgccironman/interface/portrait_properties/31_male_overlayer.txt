@@ -19,7 +19,7 @@
 				has_nickname = nick_the_saint
 				has_portrait_property = { layer = 5 index = 9 }
 				AND = {
-					employer = { is_merchant_republic = yes }
+					employer = { is_patrician = yes }
 					in_command = no
 				}
 			}

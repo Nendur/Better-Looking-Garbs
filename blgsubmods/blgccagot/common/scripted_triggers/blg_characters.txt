@@ -19,9 +19,10 @@ blg_dangerous_prisoner = {
 blg_devout = {
 	OR = {
 		trait = zealous
+		trait = heresiarch
 		has_focus = focus_theology
 		is_ascetic_trigger = yes
-		blg_pilgrimage = yes
+		has_character_flag = guru
 	}
 }
 
@@ -48,6 +49,8 @@ blg_guard = {
 	OR = {
 		trait = rainbowguard
 		trait = gladiator
+		has_minor_title = title_champion
+		has_minor_title = title_paramount_knight
 		has_minor_title = title_bodyguard
 		has_minor_title = title_bloodrider
 		has_minor_title = title_knight_of_the_greenhand
@@ -88,6 +91,17 @@ blg_mudsplatter = {
 	OR = {
 		has_character_modifier = mud_splatter
 		has_character_modifier = fell_into_the_river
+	}
+}
+
+# Character has a naval theme.
+blg_naval = {
+	OR = {
+		trait = seaking
+		trait = sea_queen
+		has_minor_title = title_high_admiral
+		has_minor_title = title_high_admiral_B
+		has_minor_title = title_lord_of_the_tides
 	}
 }
 

@@ -7,8 +7,18 @@ imaskari_group = {
 chondathan_group = {
 	graphical_cultures = { germangfx occitangfx }
 
+	chondathan = {
+		unit_graphical_cultures = { frankishgfx }
+	}
 	cormyrian = {
-		graphical_cultures = { dutchgfx }
+		graphical_cultures = { cormyriangfx germangfx frankishgfx westerngfx }
+		unit_graphical_cultures = { frankishgfx }
+	}
+	dalesman = {
+		graphical_cultures = { dalesmengfx germangfx westerngfx }
+	}
+	sembite = {
+		graphical_cultures = { chondathangfx frankishgfx }
 	}
 }
 
@@ -72,10 +82,8 @@ lapal_group = {
 
 tethyrian_group = {
 	ffolk = {
-		graphical_cultures = { bretongfx celticgfx westerngfx }
-	}
-	highcoaster = {
-		graphical_cultures = { frankishgfx westerngfx }
+		graphical_cultures = { ffolkgfx saxongfx celticgfx westerngfx }
+		unit_graphical_cultures = { celticgfx }
 	}
 }
 
@@ -95,6 +103,9 @@ gnome_group = {
 	graphical_cultures = { basquegfx southerngfx byzantinegfx easterngfx }
 
 	gnome = {
+		unit_graphical_cultures = { balticgfx }
+	}
+	forest_gnome = {
 		unit_graphical_cultures = { balticgfx }
 	}
 	svirfneblin = {
@@ -163,9 +174,6 @@ fish_group = {
 
 scaly_group = {
 	lizardfolk = {
-		graphical_cultures = { lizardmangfx indiangfx }
-	}
-	firenewt = {
 		graphical_cultures = { lizardmangfx indiangfx }
 	}
 	saurial = {

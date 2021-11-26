@@ -1,9 +1,10 @@
 # p16 Chinese empress jewelry.
 16 = {
 	0 = { # 0 - blank
-		factor = 100
+		factor = 1
 
-		trigger = {
+		modifier = {
+			factor = 100
 			NOR = {
 				has_character_modifier = jd_princess
 				AND = {

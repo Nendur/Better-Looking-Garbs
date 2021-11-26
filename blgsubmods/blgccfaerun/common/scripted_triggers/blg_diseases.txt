@@ -88,6 +88,9 @@ blg_pale = {
 		trait = malaise
 		trait = cancer
 		trait = has_tuberculosis
+		has_character_modifier = adv_fatigue_4
+		has_character_modifier = adv_fatigue_5
+		has_character_modifier = adv_fatigue_6
 		has_character_modifier = broken_spirit
 		has_character_modifier = disrupt_undead_mod
 		AND = {
@@ -121,7 +124,11 @@ blg_rash = {
 
 # Baggy eyes.
 blg_stressed = {
-	trait = stressed
+	OR = {
+		trait = stressed
+		has_character_modifier = adv_fatigue_2
+		has_character_modifier = adv_fatigue_3
+	}
 }
 
 # Remaining food drips.
@@ -136,7 +143,10 @@ blg_vomit = {
 
 # Demon eyes and horns.
 blg_demon = {
-	has_character_modifier = demon_horns
+	OR = {
+		trait = chosen_asmodeus
+		has_character_modifier = demon_horns
+	}
 }
 
 # Glowing eyes.

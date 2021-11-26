@@ -300,6 +300,7 @@ blg_clothes_noble = {
 		blg_royal_title = yes
 		blg_prince_title = yes
 		blg_fashionable = yes
+		has_minor_title = title_regent
 	}
 	blg_peasant = no
 }

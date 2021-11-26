@@ -14,8 +14,8 @@ spriteTypes = {
 			"GFX_baltic_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_english_male_hair_behind:p1:h:y"
-			"GFX_westernslavic_male_beard_behind:p4:h:y:o0x-1"
+			"GFX_celtic_male_hair_behind:p1:h:y:o-2x2"
+			"GFX_english_male_beard_behind:p4:h:y"
 			"GFX_english_male_base:p2"
 			"GFX_english_male_neck:d0"
 			"GFX_english_male_chin:d1"
@@ -36,7 +36,7 @@ spriteTypes = {
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
-			"GFX_westernslavic_male_beard:p4:h:y:o0x-1"
+			"GFX_english_male_beard:p4:h:y"
 			"GFX_english_male_nose:d3"
 			"GFX_child_back:p17"
 			"GFX_norse_son_base:p18"
@@ -51,7 +51,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_english_male_hair:p1:h:y"
+			"GFX_celtic_male_hair:p1:h:y:o-2x2"
 			"GFX_empty:p5:c7:h"
 			"GFX_baltic_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
@@ -71,9 +71,12 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 } #Black and turns grayish
-			{ 10 10 10 } { 51 49 48 } { 255 255 255 } #Black but eventually turns white
-			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown but eventually turns white
+			{ 10 10 10 } { 90 90 90 } { 255 255 255 } #Light Black
+			{ 10 10 10 } { 70 70 70 } { 255 255 255 } #Black
+			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 90 54 29 } { 255 255 255 } #Dark Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
 		}
 
 		eye_color_index = 9
@@ -103,8 +106,8 @@ spriteTypes = {
 			"GFX_baltic_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_english_male_hair_behind_midage:p1:h:y"
-			"GFX_westernslavic_male_beard_behind_midage:p4:h:y:o0x-1"
+			"GFX_celtic_male_hair_behind_midage:p1:h:y:o-2x2"
+			"GFX_english_male_beard_behind_midage:p4:h:y"
 			"GFX_english_male_base_midage:p2"
 			"GFX_english_male_neck_midage:d0"
 			"GFX_english_male_chin_midage:d1"
@@ -125,7 +128,7 @@ spriteTypes = {
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
-			"GFX_westernslavic_male_beard_midage:p4:h:y:o0x-1"
+			"GFX_english_male_beard_midage:p4:h:y"
 			"GFX_english_male_nose_midage:d3"
 			"GFX_character_freckles:p20"
 			"GFX_character_scars_light:p7:y"
@@ -136,7 +139,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_english_male_hair_midage:p1:h:y"
+			"GFX_celtic_male_hair_midage:p1:h:y:o-2x2"
 			"GFX_empty:p5:c7:h"
 			"GFX_baltic_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
@@ -156,9 +159,12 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 } #Black and turns grayish
-			{ 10 10 10 } { 51 49 48 } { 255 255 255 } #Black but eventually turns white
-			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown but eventually turns white
+			{ 10 10 10 } { 90 90 90 } { 255 255 255 } #Light Black
+			{ 10 10 10 } { 70 70 70 } { 255 255 255 } #Black
+			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 90 54 29 } { 255 255 255 } #Dark Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
 		}
 
 		eye_color_index = 9
@@ -188,8 +194,8 @@ spriteTypes = {
 			"GFX_baltic_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_english_male_hair_behind_oldage:p1:h:y"
-			"GFX_westernslavic_male_beard_behind_oldage:p4:h:y:o0x-1"
+			"GFX_celtic_male_hair_behind_oldage:p1:h:y:o-2x2"
+			"GFX_english_male_beard_behind_oldage:p4:h:y"
 			"GFX_english_male_base_oldage:p2"
 			"GFX_english_male_neck_oldage:d0"
 			"GFX_english_male_chin_oldage:d1"
@@ -210,7 +216,7 @@ spriteTypes = {
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
-			"GFX_westernslavic_male_beard_oldage:p4:h:y:o0x-1"
+			"GFX_english_male_beard_oldage:p4:h:y"
 			"GFX_english_male_nose_oldage:d3"
 			"GFX_character_freckles:p20"
 			"GFX_character_scars_light:p7:y"
@@ -221,7 +227,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_english_male_hair_oldage:p1:h:y"
+			"GFX_celtic_male_hair_oldage:p1:h:y:o-2x2"
 			"GFX_empty:p5:c7:h"
 			"GFX_baltic_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
@@ -241,9 +247,12 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 81 81 81 } { 255 255 255 } #Was black, turned grayish
-			{ 10 10 10 } { 135 135 135 } { 255 255 255 } #Was black, turned white
-			{ 20 12 8 } { 115 115 115 } { 255 255 255 } #Dark Brown but turned white
+			{ 10 10 10 } { 148 148 148 } { 255 255 255 } #Light Black turned white
+			{ 10 10 10 } { 110 110 110 } { 255 255 255 } #Black turned white
+			{ 36 35 29 } { 154 144 128 } { 255 255 255 } #Chestnut turned white
+			{ 10 10 10 } { 124 110 100 } { 255 255 255 } #Light Brown turned white
+			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
+			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
 		}
 
 		eye_color_index = 9
@@ -275,8 +284,7 @@ spriteTypes = {
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_english_female_hair_behind:p1:h:y"
-			"GFX_english_female_hair_ties_behind:p1:y"
+			"GFX_celtic_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_english_female_base:p2"
 			"GFX_english_female_neck:d0"
@@ -313,8 +321,7 @@ spriteTypes = {
 			"GFX_norse_female_clothes_christian:p3:c2"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
-			"GFX_english_female_hair:p1:h:y"
-			"GFX_english_female_hair_ties_front:p1:y"
+			"GFX_celtic_female_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
@@ -336,9 +343,12 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 } #Black and turns grayish
-			{ 10 10 10 } { 51 49 48 } { 255 255 255 } #Black but eventually turns white
-			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown but eventually turns white
+			{ 10 10 10 } { 90 90 90 } { 255 255 255 } #Light Black
+			{ 10 10 10 } { 70 70 70 } { 255 255 255 } #Black
+			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 90 54 29 } { 255 255 255 } #Dark Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
 		}
 
 		eye_color_index = 9
@@ -370,8 +380,7 @@ spriteTypes = {
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_english_female_hair_behind_midage:p1:h:y"
-			"GFX_english_female_hair_ties_behind:p1:y"
+			"GFX_celtic_female_hair_behind_midage:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_english_female_base_midage:p2"
 			"GFX_english_female_neck_midage:d0"
@@ -404,8 +413,7 @@ spriteTypes = {
 			"GFX_norse_female_clothes_christian:p3:c2"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
-			"GFX_english_female_hair_midage:p1:h:y"
-			"GFX_english_female_hair_ties_front:p1:y"
+			"GFX_celtic_female_hair_midage:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
@@ -427,9 +435,12 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 } #Black and turns grayish
-			{ 10 10 10 } { 51 49 48 } { 255 255 255 } #Black but eventually turns white
-			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown but eventually turns white
+			{ 10 10 10 } { 90 90 90 } { 255 255 255 } #Light Black
+			{ 10 10 10 } { 70 70 70 } { 255 255 255 } #Black
+			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 90 54 29 } { 255 255 255 } #Dark Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
 		}
 
 		eye_color_index = 9
@@ -461,8 +472,7 @@ spriteTypes = {
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_english_female_hair_behind_oldage:p1:h:y"
-			"GFX_english_female_hair_ties_behind:p1:y"
+			"GFX_celtic_female_hair_behind_oldage:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_english_female_base_oldage:p2"
 			"GFX_english_female_neck_oldage:d0"
@@ -495,8 +505,7 @@ spriteTypes = {
 			"GFX_norse_female_clothes_christian:p3:c2"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
-			"GFX_english_female_hair_oldage:p1:h:y"
-			"GFX_english_female_hair_ties_front:p1:y"
+			"GFX_celtic_female_hair_oldage:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
@@ -518,9 +527,12 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 81 81 81 } { 255 255 255 } #Was black, turned grayish
-			{ 10 10 10 } { 135 135 135 } { 255 255 255 } #Was black, turned white
-			{ 20 12 8 } { 115 115 115 } { 255 255 255 } #Dark Brown but turned white
+			{ 10 10 10 } { 148 148 148 } { 255 255 255 } #Light Black turned white
+			{ 10 10 10 } { 110 110 110 } { 255 255 255 } #Black turned white
+			{ 36 35 29 } { 154 144 128 } { 255 255 255 } #Chestnut turned white
+			{ 10 10 10 } { 124 110 100 } { 255 255 255 } #Light Brown turned white
+			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
+			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
 		}
 
 		eye_color_index = 9

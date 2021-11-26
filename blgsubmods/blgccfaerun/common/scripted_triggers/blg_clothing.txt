@@ -92,17 +92,17 @@ blg_elite_commander = {
 
 # Early era headgear designs.
 blg_style_early = {
-	always = yes
+	culture_group = tethyrian_group
 }
 
 # Middle era headgear designs.
 blg_style_mid = {
-	always = yes
+	culture_group = tethyrian_group
 }
 
 # Later era headgear designs.
 blg_style_late = {
-	always = yes
+	culture_group = chondathan_group
 }
 
 ### Headgear:
@@ -287,6 +287,7 @@ blg_clothes_noble = {
 		}
 		blg_prince_title = yes
 		blg_fashionable = yes
+		has_minor_title = title_regent
 	}
 	blg_peasant = no
 }
@@ -320,6 +321,10 @@ blg_clothes_military = {
 		}
 		blg_duelling = yes
 		has_job_title = job_marshal
+		AND = {
+			has_minor_title = title_party_member
+			liege = { has_character_modifier = sent_adventurers }
+		}
 		death_reason = death_battle
 		death_reason = death_duel
 		employer = {
@@ -347,13 +352,10 @@ blg_clothes_military = {
 		limit = {
 			OR = {
 				culture_group = orc_group
-				culture = goblin
-				culture = dekanter
-				culture = batiri
-				culture = bakemono
-				culture = tasloi
-				culture = kuo_toa
 				culture_group = minotaur_group
+				graphical_culture = goblingfx
+				graphical_culture = forestgoblingfx
+				graphical_culture = slanngfx
 			}
 		}
 		blg_clothes_noble = no

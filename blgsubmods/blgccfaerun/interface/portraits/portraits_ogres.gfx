@@ -1,0 +1,451 @@
+# OGRE
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ogres_son_base"
+		textureFile = "gfx/characters/orc_male/ogre_son_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ogresgfx_male"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_greenskin_background:p0"
+			"GFX_greenskin_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
+			"GFX_empty:p3"
+			"GFX_ogres_male_headgear_behind:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_male_overlayer_behind:p31"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_ogres_male_hair_behind:p1:h:y"
+			"GFX_ogres_male_base:p2"
+			"GFX_ogres_male_mouth:d2"
+			"GFX_ogres_male_nose:d3"
+			"GFX_ogres_male_eyes:d6"
+			"GFX_ogres_male_eyes2:d6:e"
+			"GFX_ogres_male_ear:d7"
+			"GFX_chinese_female_makeup1:p14:o-7x-5"
+			"GFX_child_back:p17"
+			"GFX_ogres_son_base:p18"
+			"GFX_highorc_son_eyes:p18:e"
+			"GFX_character_freckles:p20:o-9x2"
+			"GFX_creature_harelip:p24:o-8x-12"
+			"GFX_character_small_male_pale:p22"
+			"GFX_creature_tattoos:p28:o-6x4"
+			"GFX_creature_warpaint_wide:p29:o-11x3"
+			"GFX_creature_boils:p9:o-6x0"
+			"GFX_goblin_character_boils:p8:o-5x16"
+			"GFX_character_scars:p7:y:o-7x-11"
+			"GFX_character_scars_mid:p25:y:o-7x-11"
+			"GFX_character_scars_high:p26:y:o-7x-11"
+			"GFX_ogres_male_clothes:p3"
+			"GFX_ogres_male_beard:p4:h:y"
+			"GFX_creature_black_eye:p23:y:o-7x0"
+			"GFX_creature_blinded_eyes:p10:o-8x9"
+			"GFX_creature_possessed:p30:o-6x8"
+			"GFX_character_eyepatch:p13:y:o24x70"
+			"GFX_character_mask:p12:y:o30x53"
+			"GFX_ogres_male_hair:p1:h:y"
+			"GFX_ogres_male_headgear:p5:c5"
+			"GFX_frankish_male_overlayer:p31"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35:o-8x0"
+			"GFX_character_special_scepters:p36"
+			"GFX_helmet_northern:p43:c4"
+			"GFX_weapons_eastern:p39"
+			"GFX_weapons_eastern_left:p40"
+			"GFX_mounts:p41"
+			"GFX_creature_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 225 105 14 } #Orange
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ogresgfx_male1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_greenskin_background:p0"
+			"GFX_greenskin_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
+			"GFX_empty:p3"
+			"GFX_ogres_male_headgear_behind:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_male_overlayer_behind:p31"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_ogres_male_hair_behind_midage:p1:h:y"
+			"GFX_ogres_male_base:p2"
+			"GFX_ogres_male_mouth:d2"
+			"GFX_ogres_male_nose:d3"
+			"GFX_ogres_male_eyes:d6"
+			"GFX_ogres_male_eyes2:d6:e"
+			"GFX_ogres_male_ear:d7"
+			"GFX_chinese_female_makeup1:p14:o-7x-5"
+			"GFX_character_freckles:p20:o-9x2"
+			"GFX_creature_harelip:p24:o-8x-12"
+			"GFX_character_small_male_pale:p22"
+			"GFX_creature_tattoos:p28:o-6x4"
+			"GFX_creature_warpaint_wide:p29:o-11x3"
+			"GFX_creature_boils:p9:o-6x0"
+			"GFX_goblin_character_boils:p8:o-5x16"
+			"GFX_character_scars:p7:y:o-7x-11"
+			"GFX_character_scars_mid:p25:y:o-7x-11"
+			"GFX_character_scars_high:p26:y:o-7x-11"
+			"GFX_ogres_male_clothes:p3"
+			"GFX_ogres_male_beard_midage:p4:h:y"
+			"GFX_creature_black_eye:p23:y:o-7x0"
+			"GFX_creature_blinded_eyes:p10:o-8x9"
+			"GFX_creature_possessed:p30:o-6x8"
+			"GFX_character_eyepatch:p13:y:o24x70"
+			"GFX_character_mask:p12:y:o30x53"
+			"GFX_ogres_male_hair_midage:p1:h:y"
+			"GFX_ogres_male_headgear:p5:c5"
+			"GFX_frankish_male_overlayer:p31"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35:o-8x0"
+			"GFX_character_special_scepters:p36"
+			"GFX_helmet_northern:p43:c4"
+			"GFX_weapons_eastern:p39"
+			"GFX_weapons_eastern_left:p40"
+			"GFX_mounts:p41"
+			"GFX_creature_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 225 105 14 } #Orange
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ogresgfx_male2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_greenskin_background:p0"
+			"GFX_greenskin_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
+			"GFX_empty:p3"
+			"GFX_ogres_male_headgear_behind:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_male_overlayer_behind:p31"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_ogres_male_hair_behind_oldage:p1:h:y"
+			"GFX_ogres_male_base:p2"
+			"GFX_ogres_male_mouth:d2"
+			"GFX_ogres_male_nose:d3"
+			"GFX_ogres_male_eyes:d6"
+			"GFX_ogres_male_eyes2:d6:e"
+			"GFX_ogres_male_ear:d7"
+			"GFX_chinese_female_makeup1:p14:o-7x-5"
+			"GFX_character_freckles:p20:o-9x2"
+			"GFX_creature_harelip:p24:o-8x-12"
+			"GFX_character_small_male_pale:p22"
+			"GFX_creature_tattoos:p28:o-6x4"
+			"GFX_creature_warpaint_wide:p29:o-11x3"
+			"GFX_creature_boils:p9:o-6x0"
+			"GFX_goblin_character_boils:p8:o-5x16"
+			"GFX_character_scars:p7:y:o-7x-11"
+			"GFX_character_scars_mid:p25:y:o-7x-11"
+			"GFX_character_scars_high:p26:y:o-7x-11"
+			"GFX_ogres_male_clothes:p3"
+			"GFX_ogres_male_beard_oldage:p4:h:y"
+			"GFX_creature_black_eye:p23:y:o-7x0"
+			"GFX_creature_blinded_eyes:p10:o-8x9"
+			"GFX_creature_possessed:p30:o-6x8"
+			"GFX_character_eyepatch:p13:y:o24x70"
+			"GFX_character_mask:p12:y:o30x53"
+			"GFX_ogres_male_hair_oldage:p1:h:y"
+			"GFX_ogres_male_headgear:p5:c5"
+			"GFX_frankish_male_overlayer:p31"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35:o-8x0"
+			"GFX_character_special_scepters:p36"
+			"GFX_helmet_northern:p43:c4"
+			"GFX_weapons_eastern:p39"
+			"GFX_weapons_eastern_left:p40"
+			"GFX_mounts:p41"
+			"GFX_creature_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
+			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 225 105 14 } #Orange
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+### OGRES FEMALE ####
+
+	portraitType = {
+		name = "PORTRAIT_ogresgfx_female"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_greenskin_background:p0"
+			"GFX_greenskin_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
+			"GFX_ogres_female_clothes_behind:p3"
+			"GFX_ogres_female_headgear_behind:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_female_undermain_behind:p33"
+			"GFX_frankish_female_overlayer_behind:p32"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_ogres_female_hair_behind:p1:h:y"
+			"GFX_chinese_female_jewelry_behind:p16:o-6x0"
+			"GFX_ogres_female_base:p2"
+			"GFX_ogres_female_mouth:d2"
+			"GFX_ogres_female_nose:d3"
+			"GFX_ogres_female_eyes:d6"
+			"GFX_ogres_female_eyes2:d6:e"
+			"GFX_ogres_female_ear:d7"
+			"GFX_chinese_female_makeup1:p14:o-5x-10"
+			"GFX_chinese_female_makeup2:p15:o-2x0"
+			"GFX_child_back:p17"
+			"GFX_ogres_son_base:p18"
+			"GFX_highorc_son_eyes:p18:e"
+			"GFX_character_freckles:p20:o-5x-9"
+			"GFX_creature_harelip:p24:o0x-2"
+			"GFX_character_small_female_pale:p22"
+			"GFX_creature_tattoos:p28:o-2x-6"
+			"GFX_creature_warpaint_wide:p29:o-9x-8"
+			"GFX_creature_boils:p9:o-4x-13"
+			"GFX_goblin_character_boils:p8:o-3x5"
+			"GFX_character_scars:p7:y:o-9x-11"
+			"GFX_character_scars_mid:p25:y:o-9x-11"
+			"GFX_character_scars_high:p26:y:o-9x-11"
+			"GFX_highorc_daughterhair:p18:h"
+			"GFX_chinese_female_jewelry_front:p16:o-6x0"
+			"GFX_creature_black_eye:p23:y:o-4x-9"
+			"GFX_creature_blinded_eyes:p10:o-2x0"
+			"GFX_creature_possessed:p30:o-3x-3"
+			"GFX_ogres_female_clothes:p3"
+			"GFX_character_eyepatch:p13:y:o27x60"
+			"GFX_character_mask:p12:y:o35x41"
+			"GFX_ogres_female_hair:p1:h:y"
+			"GFX_ogres_female_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35:o-7x-6"
+			"GFX_character_special_scepters:p36"
+			"GFX_helmet_northern:p43:c4"
+			"GFX_weapons_eastern:p39"
+			"GFX_weapons_eastern_left:p40"
+			"GFX_mounts:p41"
+			"GFX_creature_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 225 105 14 } #Orange
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ogresgfx_female1"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_greenskin_background:p0"
+			"GFX_greenskin_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
+			"GFX_ogres_female_clothes_behind:p3"
+			"GFX_ogres_female_headgear_behind:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_female_undermain_behind:p33"
+			"GFX_frankish_female_overlayer_behind:p32"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_ogres_female_hair_behind_midage:p1:h:y"
+			"GFX_chinese_female_jewelry_behind:p16:o-6x0"
+			"GFX_ogres_female_base:p2"
+			"GFX_ogres_female_mouth:d2"
+			"GFX_ogres_female_nose:d3"
+			"GFX_ogres_female_eyes:d6"
+			"GFX_ogres_female_eyes2:d6:e"
+			"GFX_ogres_female_ear:d7"
+			"GFX_chinese_female_makeup1:p14:o-5x-10"
+			"GFX_chinese_female_makeup2:p15:o-2x0"
+			"GFX_character_freckles:p20:o-5x-9"
+			"GFX_creature_harelip:p24:o0x-2"
+			"GFX_character_small_female_pale:p22"
+			"GFX_creature_tattoos:p28:o-2x-6"
+			"GFX_creature_warpaint_wide:p29:o-9x-8"
+			"GFX_creature_boils:p9:o-4x-13"
+			"GFX_goblin_character_boils:p8:o-3x5"
+			"GFX_character_scars:p7:y:o-9x-11"
+			"GFX_character_scars_mid:p25:y:o-9x-11"
+			"GFX_character_scars_high:p26:y:o-9x-11"
+			"GFX_chinese_female_jewelry_front:p16:o-6x0"
+			"GFX_creature_black_eye:p23:y:o-4x-9"
+			"GFX_creature_blinded_eyes:p10:o-2x0"
+			"GFX_creature_possessed:p30:o-3x-3"
+			"GFX_ogres_female_clothes:p3"
+			"GFX_character_eyepatch:p13:y:o27x60"
+			"GFX_character_mask:p12:y:o35x41"
+			"GFX_ogres_female_hair_midage:p1:h:y"
+			"GFX_ogres_female_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35:o-7x-6"
+			"GFX_character_special_scepters:p36"
+			"GFX_helmet_northern:p43:c4"
+			"GFX_weapons_eastern:p39"
+			"GFX_weapons_eastern_left:p40"
+			"GFX_mounts:p41"
+			"GFX_creature_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 225 105 14 } #Orange
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ogresgfx_female2"
+		effectFile = "gfx/FX/portrait.lua"
+		layer = {
+			"GFX_greenskin_background:p0"
+			"GFX_greenskin_background:p0:c6"
+			"GFX_background_frames:p38"
+			"GFX_background_furniture:p42"
+			"GFX_background_items:p2"
+			"GFX_ogres_female_clothes_behind:p3"
+			"GFX_ogres_female_headgear_behind:p5:c1"
+			"GFX_empty:p5:c3"
+			"GFX_frankish_female_undermain_behind:p33"
+			"GFX_frankish_female_overlayer_behind:p32"
+			"GFX_character_special_crowns_behind:p19"
+			"GFX_ogres_female_hair_behind_oldage:p1:h:y"
+			"GFX_chinese_female_jewelry_behind:p16:o-6x0"
+			"GFX_ogres_female_base:p2"
+			"GFX_ogres_female_mouth:d2"
+			"GFX_ogres_female_nose:d3"
+			"GFX_ogres_female_eyes:d6"
+			"GFX_ogres_female_eyes2:d6:e"
+			"GFX_ogres_female_ear:d7"
+			"GFX_chinese_female_makeup1:p14:o-5x-10"
+			"GFX_chinese_female_makeup2:p15:o-2x0"
+			"GFX_character_freckles:p20:o-5x-9"
+			"GFX_creature_harelip:p24:o0x-2"
+			"GFX_character_small_female_pale:p22"
+			"GFX_creature_tattoos:p28:o-2x-6"
+			"GFX_creature_warpaint_wide:p29:o-9x-8"
+			"GFX_creature_boils:p9:o-4x-13"
+			"GFX_goblin_character_boils:p8:o-3x5"
+			"GFX_character_scars:p7:y:o-9x-11"
+			"GFX_character_scars_mid:p25:y:o-9x-11"
+			"GFX_character_scars_high:p26:y:o-9x-11"
+			"GFX_chinese_female_jewelry_front:p16:o-6x0"
+			"GFX_creature_black_eye:p23:y:o-4x-9"
+			"GFX_creature_blinded_eyes:p10:o-2x0"
+			"GFX_creature_possessed:p30:o-3x-3"
+			"GFX_ogres_female_clothes:p3"
+			"GFX_character_eyepatch:p13:y:o27x60"
+			"GFX_character_mask:p12:y:o35x41"
+			"GFX_ogres_female_hair_oldage:p1:h:y"
+			"GFX_ogres_female_headgear:p5:c5"
+			"GFX_character_special_crowns:p19"
+			"GFX_character_special_helmets:p34"
+			"GFX_character_special_masks:p35:o-7x-6"
+			"GFX_character_special_scepters:p36"
+			"GFX_helmet_northern:p43:c4"
+			"GFX_weapons_eastern:p39"
+			"GFX_weapons_eastern_left:p40"
+			"GFX_mounts:p41"
+			"GFX_creature_blood_splatter:p27"
+			"GFX_lover_overlay:p37"
+			"GFX_character_imprisoned:p6"
+			"GFX_player_overlay:p11"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
+			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 225 105 14 } #Orange
+		}
+
+		headgear_that_hides_hair = {}
+	}
+}

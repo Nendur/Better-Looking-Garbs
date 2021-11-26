@@ -19,6 +19,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -52,6 +53,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -76,6 +78,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
+				trait = heresiarch
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist
@@ -102,6 +105,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -156,6 +160,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -253,6 +258,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -295,6 +301,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -373,6 +380,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -427,6 +435,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -490,6 +499,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -541,6 +551,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -607,6 +618,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -649,6 +661,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -717,6 +730,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -755,6 +769,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -871,6 +886,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -912,6 +928,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -992,6 +1009,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -1032,6 +1050,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -1122,6 +1141,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -1159,6 +1179,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -1245,6 +1266,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -1291,6 +1313,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -1349,6 +1372,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -1410,6 +1434,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -1448,6 +1473,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -1544,6 +1570,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -1591,6 +1618,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -1650,6 +1678,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -1735,6 +1764,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -1776,6 +1806,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -1807,6 +1838,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						employer = { holy_order = yes }
 					}
 					NOT = { trait = cynical }
@@ -1860,6 +1892,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -1891,6 +1924,7 @@
 					OR = {
 						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						has_minor_title = title_chief_qadi
 					}
 					NOT = { trait = cynical }
@@ -1977,6 +2011,7 @@
 				OR = {
 					is_priest = yes
 					is_ascetic_trigger = yes
+					trait = heresiarch
 					has_minor_title = title_chief_qadi
 				}
 				NOT = { trait = cynical }
@@ -2019,8 +2054,9 @@
 						religion_openly_hellenic_or_reformed_trigger = yes
 					}
 					OR = {
-					is_priest = yes
+						is_priest = yes
 						is_ascetic_trigger = yes
+						trait = heresiarch
 						society_member_of = monastic_order_benedictine
 						society_member_of = monastic_order_dominican
 						society_member_of = monastic_order_buddhist
@@ -2047,6 +2083,7 @@
 			OR = {
 				is_priest = yes
 				is_ascetic_trigger = yes
+				trait = heresiarch
 				society_member_of = monastic_order_benedictine
 				society_member_of = monastic_order_dominican
 				society_member_of = monastic_order_buddhist

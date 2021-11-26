@@ -19,11 +19,13 @@ blg_dangerous_prisoner = {
 blg_devout = {
 	OR = {
 		trait = zealous
+		trait = heresiarch
 		has_focus = focus_theology
 		z_cleric = yes
 		z_paladin = yes
 		is_ascetic_trigger = yes
-		blg_pilgrimage = yes
+		has_minor_title = title_chief_qadi
+		has_character_flag = guru
 	}
 }
 
@@ -31,6 +33,8 @@ blg_devout = {
 blg_dirty = {
 	OR = {
 		trait = uncouth
+		has_character_modifier = adv_fatigue_3
+		has_character_modifier = adv_fatigue_4
 		has_character_modifier = dirty_hands
 	}
 }
@@ -54,7 +58,12 @@ blg_guard = {
 	OR = {
 		z_fighter = yes
 		z_paladin = yes
-		trait = varangian
+		has_minor_title = title_champion
+		has_minor_title = title_neverwinter_nine
+		has_minor_title = title_shieldbrother
+		has_minor_title = title_shieldsister
+		has_minor_title = title_paramount_knight
+		has_minor_title = title_castellan
 		trait = shieldmaiden
 		trait = gladiator
 	}
@@ -74,6 +83,10 @@ blg_learned = {
 		trait = strategist
 		trait = theologian
 		trait = physician
+		has_minor_title = title_administrator
+		has_minor_title = title_master_engineer
+		has_minor_title = title_guardian_of_knowledge
+		has_minor_title = title_keeper_of_tomes
 	}
 }
 
@@ -93,9 +106,22 @@ blg_modest = {
 # Character covered in mud.
 blg_mudsplatter = {
 	OR = {
+		has_character_modifier = adv_fatigue_5
+		has_character_modifier = adv_fatigue_6
 		has_character_modifier = mud_splatter
 		has_character_modifier = fell_into_the_river
 		has_character_modifier = dung_collector
+	}
+}
+
+# Character has a naval theme.
+blg_naval = {
+	OR = {
+		trait = seaking
+		trait = sea_queen
+		has_minor_title = title_high_admiral
+		has_minor_title = title_lighthouse_custodian
+		has_minor_title = title_master_of_tides
 	}
 }
 
@@ -244,6 +270,10 @@ blg_travelling = {
 		trait = kow_tow_travels
 		has_character_modifier = holding_grand_hunt
 		has_character_flag = holding_tiger_hunt
+		AND = {
+			has_minor_title = title_party_member
+			liege = { has_character_modifier = sent_adventurers }
+		}
 	}
 }
 

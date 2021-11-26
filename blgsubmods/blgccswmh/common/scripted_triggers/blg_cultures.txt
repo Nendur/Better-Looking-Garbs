@@ -95,7 +95,7 @@ blg_default_clothing = {
 
 # Uses Merchant clothing set.
 blg_merchant_clothes = {
-	employer = { is_merchant_republic = yes }
+	employer = { is_patrician = yes }
 	in_command = no
 	OR = {
 		likes_latino_iberians = yes
@@ -110,7 +110,7 @@ blg_merchant_clothes = {
 
 # Uses Merchant headgear set.
 blg_merchant_headgear = {
-	employer = { is_merchant_republic = yes }
+	employer = { is_patrician = yes }
 	in_command = no
 	OR = {
 		likes_latino_iberians = yes

@@ -12,18 +12,18 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_slaaneshprince_male_neck:d0"
+			"GFX_slaaneshprince_male_neck:d0:e"
 			"GFX_blooddragons_male_clothes_behind:p3:c0"
 			"GFX_kurgan_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_slaaneshprince_male_hair_behind:p1:h:y"
 			"GFX_carstein_male_beard_behind:p4:h:y"
-			"GFX_slaaneshprince_male_base:p2"
-			"GFX_slaaneshprince_male_eyes:d6"
+			"GFX_slaaneshprince_male_base:p2:e"
+			"GFX_slaaneshprince_male_eyes:d6:e"
 			"GFX_slaaneshprince_male_eyes2:d6:e"
-			"GFX_slaaneshprince_male_nose:d3"
-			"GFX_slaaneshprince_male_ear:d7"
+			"GFX_slaaneshprince_male_nose:d3:e"
+			"GFX_slaaneshprince_male_ear:d7:e"
 			"GFX_character_freckles:p20"
 			"GFX_character_roman_male_pale:p22"
 			"GFX_character_tattoos:p28:o0x-7"
@@ -34,8 +34,8 @@ spriteTypes = {
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
-			"GFX_slaaneshprince_male_chin:d1"
-			"GFX_slaaneshprince_male_mouth:d2"
+			"GFX_slaaneshprince_male_chin:d1:e"
+			"GFX_slaaneshprince_male_mouth:d2:e"
 			"GFX_creature_harelip:p24:o3x-10"
 			"GFX_chinese_female_makeup1:p14:o0x-7"
 			"GFX_carstein_male_beard:p4:h:y"
@@ -49,7 +49,7 @@ spriteTypes = {
 			"GFX_character_mask:p12:y:o41x37"
 			"GFX_slaaneshprince_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
-			#"GFX_slaaneshprince_male_cheeks:d4"
+			#"GFX_slaaneshprince_male_cheeks:d4:e"
 			"GFX_kurgan_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
@@ -73,18 +73,30 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 } #Black
-			{ 10 10 10 } { 178 80 41 } { 255 255 255 } #Red
-			{ 15 10 3 } { 201 161 99 } { 240 217 182 } #Blond
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+			{ 10 10 10 } {  30 30 30 } { 255 255 255 } # Proper Black
+			{ 10 10 10 } {  70 70 150 } { 255 255 255 } # Mid Grey
+			{ 10 10 10 } {  70 50 50 } { 255 255 255 } # Blood Red
+			{ 10 10 10 } {  150 70 50 } { 255 255 255 } # Fiery Orange
+			{ 10 10 10 } {  150 50 50 } { 255 255 255 } # Scarlet
+			{ 10 10 10 } {  50 50 150 } { 255 255 255 } # Vivid Blue
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 255 240 0 }	#Yellow
-			{ 229 0 0 }	#Red
-			{ 145 4 198 }	#Purple
-			{ 72 103 203 }	#Blue
-			{ 11 211 152 }	#Aquamarine
+			{ 244 190 145 }
+			{ 240 49 11 }
+			{ 170 102 120 }
+			{ 212 131 112 }
+			{ 170 100 140 }
+			{ 180 92 42 }
+			{ 248 58 58 }
+			{ 200 64 44 }
+			{ 150 32 36 }
+			{ 64 80 172 }
+			{ 190 57 70 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -99,18 +111,18 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_slaaneshprince_male_neck:d0"
+			"GFX_slaaneshprince_male_neck:d0:e"
 			"GFX_blooddragons_male_clothes_behind:p3:c0"
 			"GFX_kurgan_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_slaaneshprince_male_hair_behind:p1:h:y"
 			"GFX_carstein_male_beard_behind:p4:h:y"
-			"GFX_slaaneshprince_male_base:p2"
-			"GFX_slaaneshprince_male_eyes:d6"
+			"GFX_slaaneshprince_male_base:p2:e"
+			"GFX_slaaneshprince_male_eyes:d6:e"
 			"GFX_slaaneshprince_male_eyes2:d6:e"
-			"GFX_slaaneshprince_male_nose:d3"
-			"GFX_slaaneshprince_male_ear:d7"
+			"GFX_slaaneshprince_male_nose:d3:e"
+			"GFX_slaaneshprince_male_ear:d7:e"
 			"GFX_character_freckles:p20"
 			"GFX_character_roman_male_pale:p22"
 			"GFX_character_tattoos:p28:o0x-7"
@@ -121,8 +133,8 @@ spriteTypes = {
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
-			"GFX_slaaneshprince_male_chin:d1"
-			"GFX_slaaneshprince_male_mouth:d2"
+			"GFX_slaaneshprince_male_chin:d1:e"
+			"GFX_slaaneshprince_male_mouth:d2:e"
 			"GFX_creature_harelip:p24:o3x-10"
 			"GFX_chinese_female_makeup1:p14:o0x-7"
 			"GFX_carstein_male_beard:p4:h:y"
@@ -137,7 +149,7 @@ spriteTypes = {
 			"GFX_slaaneshprince_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_beastman_male_ear:d4"
-			#"GFX_slaaneshprince_male_cheeks:d4"
+			#"GFX_slaaneshprince_male_cheeks:d4:e"
 			"GFX_kurgan_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
@@ -156,18 +168,30 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
-			{ 10 10 10 } { 178 80 41 } { 255 255 255 } #Red
-			{ 15 10 3 } { 201 161 99 } { 240 217 182 } #Blond
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+			{ 10 10 10 } {  30 30 30 } { 255 255 255 } # Proper Black
+			{ 10 10 10 } {  70 70 150 } { 255 255 255 } # Mid Grey
+			{ 10 10 10 } {  70 50 50 } { 255 255 255 } # Blood Red
+			{ 10 10 10 } {  150 70 50 } { 255 255 255 } # Fiery Orange
+			{ 10 10 10 } {  150 50 50 } { 255 255 255 } # Scarlet
+			{ 10 10 10 } {  50 50 150 } { 255 255 255 } # Vivid Blue
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 255 240 0 }	#Yellow
-			{ 229 0 0 }	#Red
-			{ 145 4 198 }	#Purple
-			{ 72 103 203 }	#Blue
-			{ 11 211 152 }	#Aquamarine
+			{ 244 190 145 }
+			{ 240 49 11 }
+			{ 170 102 120 }
+			{ 212 131 112 }
+			{ 170 100 140 }
+			{ 180 92 42 }
+			{ 248 58 58 }
+			{ 200 64 44 }
+			{ 150 32 36 }
+			{ 64 80 172 }
+			{ 190 57 70 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -182,18 +206,18 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_slaaneshprince_male_neck:d0"
+			"GFX_slaaneshprince_male_neck:d0:e"
 			"GFX_blooddragons_male_clothes_behind:p3:c0"
 			"GFX_kurgan_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_slaaneshprince_male_hair_behind:p1:h:y"
 			"GFX_carstein_male_beard_behind:p4:h:y"
-			"GFX_slaaneshprince_male_base:p2"
-			"GFX_slaaneshprince_male_eyes:d6"
+			"GFX_slaaneshprince_male_base:p2:e"
+			"GFX_slaaneshprince_male_eyes:d6:e"
 			"GFX_slaaneshprince_male_eyes2:d6:e"
-			"GFX_slaaneshprince_male_nose:d3"
-			"GFX_slaaneshprince_male_ear:d7"
+			"GFX_slaaneshprince_male_nose:d3:e"
+			"GFX_slaaneshprince_male_ear:d7:e"
 			"GFX_character_freckles:p20"
 			"GFX_character_roman_male_pale:p22"
 			"GFX_character_tattoos:p28:o0x-7"
@@ -204,8 +228,8 @@ spriteTypes = {
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
-			"GFX_slaaneshprince_male_chin:d1"
-			"GFX_slaaneshprince_male_mouth:d2"
+			"GFX_slaaneshprince_male_chin:d1:e"
+			"GFX_slaaneshprince_male_mouth:d2:e"
 			"GFX_creature_harelip:p24:o3x-10"
 			"GFX_chinese_female_makeup1:p14:o0x-7"
 			"GFX_carstein_male_beard:p4:h:y"
@@ -220,7 +244,7 @@ spriteTypes = {
 			"GFX_slaaneshprince_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_beastman_male_ear:d4"
-			#"GFX_slaaneshprince_male_cheeks:d4"
+			#"GFX_slaaneshprince_male_cheeks:d4:e"
 			"GFX_kurgan_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
@@ -239,18 +263,30 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
-			{ 10 10 10 } { 178 80 41 } { 255 255 255 } #Red
-			{ 15 10 3 } { 201 161 99 } { 240 217 182 } #Blond
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+			{ 10 10 10 } {  30 30 30 } { 255 255 255 } # Proper Black
+			{ 10 10 10 } {  70 70 150 } { 255 255 255 } # Mid Grey
+			{ 10 10 10 } {  70 50 50 } { 255 255 255 } # Blood Red
+			{ 10 10 10 } {  150 70 50 } { 255 255 255 } # Fiery Orange
+			{ 10 10 10 } {  150 50 50 } { 255 255 255 } # Scarlet
+			{ 10 10 10 } {  50 50 150 } { 255 255 255 } # Vivid Blue
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 255 240 0 }	#Yellow
-			{ 229 0 0 }	#Red
-			{ 145 4 198 }	#Purple
-			{ 72 103 203 }	#Blue
-			{ 11 211 152 }	#Aquamarine
+			{ 244 190 145 }
+			{ 240 49 11 }
+			{ 170 102 120 }
+			{ 212 131 112 }
+			{ 170 100 140 }
+			{ 180 92 42 }
+			{ 248 58 58 }
+			{ 200 64 44 }
+			{ 150 32 36 }
+			{ 64 80 172 }
+			{ 190 57 70 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -267,7 +303,7 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_slaaneshprince_female_neck:d0"
+			"GFX_slaaneshprince_female_neck:d0:e"
 			"GFX_blooddragons_male_clothes_behind:p3:c0"
 			"GFX_kurgan_male_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
@@ -276,11 +312,11 @@ spriteTypes = {
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_slaaneshprince_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16:o-3x0"
-			"GFX_slaaneshprince_female_base:p2"
-			"GFX_slaaneshprince_female_ear:d7"
-			"GFX_slaaneshprince_female_eyes:d6"
+			"GFX_slaaneshprince_female_base:p2:e"
+			"GFX_slaaneshprince_female_ear:d7:e"
+			"GFX_slaaneshprince_female_eyes:d6:e"
 			"GFX_slaaneshprince_female_eyes2:d6:e"
-			"GFX_slaaneshprince_female_nose:d3"
+			"GFX_slaaneshprince_female_nose:d3:e"
 			"GFX_character_freckles:p20"
 			"GFX_character_roman_female_pale:p22"
 			"GFX_character_tattoos:p28:o-4x-4"
@@ -290,8 +326,8 @@ spriteTypes = {
 			"GFX_blooddragons_male_clothes:p3:c2"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
-			"GFX_slaaneshprince_female_chin:d1"
-			"GFX_slaaneshprince_female_mouth:d2"
+			"GFX_slaaneshprince_female_chin:d1:e"
+			"GFX_slaaneshprince_female_mouth:d2:e"
 			"GFX_creature_harelip:p24:o-3x-10"
 			"GFX_chinese_female_makeup1:p14:o-3x-5"
 			"GFX_character_scars:p7:y"
@@ -308,7 +344,7 @@ spriteTypes = {
 			"GFX_empty:p5:c7:h"
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
-			#"GFX_slaaneshprince_female_cheeks:d4"
+			#"GFX_slaaneshprince_female_cheeks:d4:e"
 			"GFX_kurgan_male_headgear:p5:c5"
 			"GFX_frankish_female_overlayer:p32"
 			"GFX_character_special_crowns:p19"
@@ -332,18 +368,30 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
-			{ 10 10 10 } { 178 80 41 } { 255 255 255 } #Red
-			{ 15 10 3 } { 201 161 99 } { 240 217 182 } #Blond
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+			{ 10 10 10 } {  30 30 30 } { 255 255 255 } # Proper Black
+			{ 10 10 10 } {  70 70 150 } { 255 255 255 } # Mid Grey
+			{ 10 10 10 } {  70 50 50 } { 255 255 255 } # Blood Red
+			{ 10 10 10 } {  150 70 50 } { 255 255 255 } # Fiery Orange
+			{ 10 10 10 } {  150 50 50 } { 255 255 255 } # Scarlet
+			{ 10 10 10 } {  50 50 150 } { 255 255 255 } # Vivid Blue
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 255 240 0 }	#Yellow
-			{ 229 0 0 }	#Red
-			{ 145 4 198 }	#Purple
-			{ 72 103 203 }	#Blue
-			{ 11 211 152 }	#Aquamarine
+			{ 244 190 145 }
+			{ 240 49 11 }
+			{ 170 102 120 }
+			{ 212 131 112 }
+			{ 170 100 140 }
+			{ 180 92 42 }
+			{ 248 58 58 }
+			{ 200 64 44 }
+			{ 150 32 36 }
+			{ 64 80 172 }
+			{ 190 57 70 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -358,7 +406,7 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_slaaneshprince_female_neck:d0"
+			"GFX_slaaneshprince_female_neck:d0:e"
 			"GFX_blooddragons_male_clothes_behind:p3:c0"
 			"GFX_kurgan_male_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
@@ -367,11 +415,11 @@ spriteTypes = {
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_slaaneshprince_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16:o-3x0"
-			"GFX_slaaneshprince_female_base:p2"
-			"GFX_slaaneshprince_female_ear:d7"
-			"GFX_slaaneshprince_female_eyes:d6"
+			"GFX_slaaneshprince_female_base:p2:e"
+			"GFX_slaaneshprince_female_ear:d7:e"
+			"GFX_slaaneshprince_female_eyes:d6:e"
 			"GFX_slaaneshprince_female_eyes2:d6:e"
-			"GFX_slaaneshprince_female_nose:d3"
+			"GFX_slaaneshprince_female_nose:d3:e"
 			"GFX_character_freckles:p20"
 			"GFX_character_roman_female_pale:p22"
 			"GFX_character_tattoos:p28:o-4x-4"
@@ -381,8 +429,8 @@ spriteTypes = {
 			"GFX_blooddragons_male_clothes:p3:c2"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
-			"GFX_slaaneshprince_female_chin:d1"
-			"GFX_slaaneshprince_female_mouth:d2"
+			"GFX_slaaneshprince_female_chin:d1:e"
+			"GFX_slaaneshprince_female_mouth:d2:e"
 			"GFX_creature_harelip:p24:o-3x-10"
 			"GFX_chinese_female_makeup1:p14:o-3x-5"
 			"GFX_character_scars:p7:y"
@@ -400,7 +448,7 @@ spriteTypes = {
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
 			"GFX_beastman_male_ear:d4"
-			#"GFX_slaaneshprince_female_cheeks:d4"
+			#"GFX_slaaneshprince_female_cheeks:d4:e"
 			"GFX_kurgan_male_headgear:p5:c5"
 			"GFX_frankish_female_overlayer:p32"
 			"GFX_character_special_crowns:p19"
@@ -419,18 +467,30 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
-			{ 10 10 10 } { 178 80 41 } { 255 255 255 } #Red
-			{ 15 10 3 } { 201 161 99 } { 240 217 182 } #Blond
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+			{ 10 10 10 } {  30 30 30 } { 255 255 255 } # Proper Black
+			{ 10 10 10 } {  70 70 150 } { 255 255 255 } # Mid Grey
+			{ 10 10 10 } {  70 50 50 } { 255 255 255 } # Blood Red
+			{ 10 10 10 } {  150 70 50 } { 255 255 255 } # Fiery Orange
+			{ 10 10 10 } {  150 50 50 } { 255 255 255 } # Scarlet
+			{ 10 10 10 } {  50 50 150 } { 255 255 255 } # Vivid Blue
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 255 240 0 }	#Yellow
-			{ 229 0 0 }	#Red
-			{ 145 4 198 }	#Purple
-			{ 72 103 203 }	#Blue
-			{ 11 211 152 }	#Aquamarine
+			{ 244 190 145 }
+			{ 240 49 11 }
+			{ 170 102 120 }
+			{ 212 131 112 }
+			{ 170 100 140 }
+			{ 180 92 42 }
+			{ 248 58 58 }
+			{ 200 64 44 }
+			{ 150 32 36 }
+			{ 64 80 172 }
+			{ 190 57 70 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -445,7 +505,7 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_slaaneshprince_female_neck:d0"
+			"GFX_slaaneshprince_female_neck:d0:e"
 			"GFX_blooddragons_male_clothes_behind:p3:c0"
 			"GFX_kurgan_male_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
@@ -454,11 +514,11 @@ spriteTypes = {
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_slaaneshprince_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16:o-3x0"
-			"GFX_slaaneshprince_female_base:p2"
-			"GFX_slaaneshprince_female_ear:d7"
-			"GFX_slaaneshprince_female_eyes:d6"
+			"GFX_slaaneshprince_female_base:p2:e"
+			"GFX_slaaneshprince_female_ear:d7:e"
+			"GFX_slaaneshprince_female_eyes:d6:e"
 			"GFX_slaaneshprince_female_eyes2:d6:e"
-			"GFX_slaaneshprince_female_nose:d3"
+			"GFX_slaaneshprince_female_nose:d3:e"
 			"GFX_character_freckles:p20"
 			"GFX_character_roman_female_pale:p22"
 			"GFX_character_tattoos:p28:o-4x-4"
@@ -468,8 +528,8 @@ spriteTypes = {
 			"GFX_blooddragons_male_clothes:p3:c2"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
-			"GFX_slaaneshprince_female_chin:d1"
-			"GFX_slaaneshprince_female_mouth:d2"
+			"GFX_slaaneshprince_female_chin:d1:e"
+			"GFX_slaaneshprince_female_mouth:d2:e"
 			"GFX_creature_harelip:p24:o-3x-10"
 			"GFX_chinese_female_makeup1:p14:o-3x-5"
 			"GFX_character_scars:p7:y"
@@ -487,7 +547,7 @@ spriteTypes = {
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
 			"GFX_beastman_male_ear:d4"
-			#"GFX_slaaneshprince_female_cheeks:d4"
+			#"GFX_slaaneshprince_female_cheeks:d4:e"
 			"GFX_kurgan_male_headgear:p5:c5"
 			"GFX_frankish_female_overlayer:p32"
 			"GFX_character_special_crowns:p19"
@@ -506,18 +566,30 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
-			{ 10 10 10 } { 178 80 41 } { 255 255 255 } #Red
-			{ 15 10 3 } { 201 161 99 } { 240 217 182 } #Blond
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+			{ 10 10 10 } {  30 30 30 } { 255 255 255 } # Proper Black
+			{ 10 10 10 } {  70 70 150 } { 255 255 255 } # Mid Grey
+			{ 10 10 10 } {  70 50 50 } { 255 255 255 } # Blood Red
+			{ 10 10 10 } {  150 70 50 } { 255 255 255 } # Fiery Orange
+			{ 10 10 10 } {  150 50 50 } { 255 255 255 } # Scarlet
+			{ 10 10 10 } {  50 50 150 } { 255 255 255 } # Vivid Blue
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 255 240 0 }	#Yellow
-			{ 229 0 0 }	#Red
-			{ 145 4 198 }	#Purple
-			{ 72 103 203 }	#Blue
-			{ 11 211 152 }	#Aquamarine
+			{ 244 190 145 }
+			{ 240 49 11 }
+			{ 170 102 120 }
+			{ 212 131 112 }
+			{ 170 100 140 }
+			{ 180 92 42 }
+			{ 248 58 58 }
+			{ 200 64 44 }
+			{ 150 32 36 }
+			{ 64 80 172 }
+			{ 190 57 70 }
 		}
 
 		headgear_that_hides_hair = { }

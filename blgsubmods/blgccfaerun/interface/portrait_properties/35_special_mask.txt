@@ -14,8 +14,11 @@
 				trait = creature_feyri
 				trait = creature_draegloth
 				trait = creature_spirit_folk
-				trait = deathmask
 				trait = androgynous
+				AND = {
+					is_alive = no
+					trait = deathmask
+				}
 				gfx_culture_scope = { culture = fog_giant }
 			}
 		}
@@ -24,6 +27,7 @@
 	1 = { # Death mask - male
 		factor = 100
 		trigger = {
+			is_alive = no
 			trait = deathmask
 			trigger_if = {
 				limit = { trait = androgynous }
@@ -39,6 +43,7 @@
 	2 = { # Death mask - female
 		factor = 100
 		trigger = {
+			is_alive = no
 			trait = deathmask
 			trigger_if = {
 				limit = { trait = androgynous }

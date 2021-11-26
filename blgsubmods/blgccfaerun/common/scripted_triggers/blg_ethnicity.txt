@@ -107,10 +107,7 @@ blg_ethnicity_byzantine = {
 }
 
 blg_ethnicity_celtic = {
-	OR = {
-		graphical_culture = celticgfx
-		graphical_culture = bretongfx
-	}
+	graphical_culture = lantannagfx
 }
 
 blg_ethnicity_centralasian = {
@@ -147,7 +144,11 @@ blg_ethnicity_eastslavic = {
 }
 
 blg_ethnicity_english = {
-	graphical_culture = englishgfx
+	OR = {
+		graphical_culture = englishgfx
+		graphical_culture = illuskangfx
+		graphical_culture = uthgardtgfx
+	}
 }
 
 blg_ethnicity_egyptian = {
@@ -155,11 +156,17 @@ blg_ethnicity_egyptian = {
 }
 
 blg_ethnicity_frankish = {
-	graphical_culture = frankishgfx
+	OR = {
+		graphical_culture = highcoastergfx
+		graphical_culture = ffolkgfx
+	}
 }
 
 blg_ethnicity_german = {
-	graphical_culture = germangfx
+	OR = {
+		graphical_culture = cormyriangfx
+		graphical_culture = dalesmengfx
+	}
 }
 
 blg_ethnicity_iberian = {
@@ -203,9 +210,8 @@ blg_ethnicity_mongol = {
 
 blg_ethnicity_norse = {
 	OR = {
-		graphical_culture = norsegfx
-		graphical_culture = illuskangfx
-		graphical_culture = uthgardtgfx
+		graphical_culture = northlandergfx
+		graphical_culture = reghedgfx
 	}
 }
 
@@ -272,28 +278,27 @@ blg_ethnicity_westslavic = {
 
 blg_freckles_common = {
 	OR = {
-		graphical_culture = celticgfx
-		graphical_culture = bretongfx
+		graphical_culture = ffolkgfx
 		graphical_culture = lantannagfx
-		graphical_culture = norsegfx
+		graphical_culture = northlandergfx
 	}
 }
 
 blg_freckles_1 = {
-	graphical_culture = celticgfx
+	graphical_culture = ffolkgfx
 }
 
 blg_freckles_2 = {
 	OR = {
-		graphical_culture = bretongfx
 		graphical_culture = lantannagfx
+		graphical_culture = northlandergfx
 	}
 }
 
 blg_freckles_3 = {
 	OR = {
-		graphical_culture = norsegfx
-		graphical_culture = frankishgfx
+		graphical_culture = highcoastergfx
+		graphical_culture = reghedgfx
 	}
 }
 
@@ -303,19 +308,20 @@ blg_freckles_4 = {
 		graphical_culture = hobbitsgfx
 		graphical_culture = dwarfgfx
 		graphical_culture = norsedwarfgfx
+		graphical_culture = satyrgfx
 	}
 }
 
 blg_freckles_5 = {
 	OR = {
 		graphical_culture = gnomesgfx
-		graphical_culture = golddwarfgfx
-		graphical_culture = wilddwarfgfx
 	}
 }
 
 blg_freckles_6 = {
 	OR = {
+		graphical_culture = illuskangfx
+		graphical_culture = uthgardtgfx
 		graphical_culture = westerngfx
 		graphical_culture = southerngfx
 		graphical_culture = asraigfx
@@ -324,8 +330,7 @@ blg_freckles_6 = {
 
 blg_freckles_7 = {
 	OR = {
-		graphical_culture = illuskangfx
-		graphical_culture = uthgardtgfx
+		graphical_culture = cormyriangfx
 		graphical_culture = draevengfx
 		graphical_culture = golddwarfgfx
 		graphical_culture = wilddwarfgfx
@@ -336,7 +341,7 @@ blg_freckles_7 = {
 blg_freckles_8 = {
 	OR = {
 		graphical_culture = chondathangfx
-		graphical_culture = dutchgfx
+		graphical_culture = dalesmengfx
 		graphical_culture = englishgfx
 		graphical_culture = moonelfgfx
 		graphical_culture = greenelfgfx
