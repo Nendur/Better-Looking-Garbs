@@ -777,6 +777,7 @@
 				}
 			}
 			trigger_else = {
+				has_dlc = "Jade Dragon"
 				OR = {
 					culture_group = chinese_group
 					culture = tangut

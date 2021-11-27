@@ -36,6 +36,7 @@ blg_blocked_duke = {
 
 # Wears Chinese clothing.
 blg_clothes_chinese = {
+	has_dlc = "Jade Dragon"
 	OR = {
 		culture_group = chinese_group
 		culture = tangut
@@ -44,6 +45,7 @@ blg_clothes_chinese = {
 
 # Wears Chinese headgear.
 blg_headgear_chinese = {
+	has_dlc = "Jade Dragon"
 	OR = {
 		culture_group = chinese_group
 		culture = tangut

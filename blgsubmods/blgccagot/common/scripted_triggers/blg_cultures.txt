@@ -35,6 +35,7 @@ blg_blocked_duke = {
 
 # Wears Chinese clothing.
 blg_clothes_chinese = {
+	has_dlc = "Jade Dragon"
 	culture = yi_ti
 }
 

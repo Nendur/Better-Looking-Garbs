@@ -5,20 +5,20 @@ imaskari_group = {
 }
 
 chondathan_group = {
-	graphical_cultures = { germangfx occitangfx }
-
 	chondathan = {
-		unit_graphical_cultures = { frankishgfx }
-	}
-	cormyrian = {
-		graphical_cultures = { cormyriangfx germangfx frankishgfx westerngfx }
-		unit_graphical_cultures = { frankishgfx }
+		graphical_cultures = { chondathangfx occitangfx }
 	}
 	dalesman = {
 		graphical_cultures = { dalesmengfx germangfx westerngfx }
 	}
+	draeven = {
+		graphical_cultures = { draevengfx chondathangfx germangfx }
+	}
+	reacher = {
+		graphical_cultures = { draevengfx chondathangfx germangfx }
+	}
 	sembite = {
-		graphical_cultures = { chondathangfx frankishgfx }
+		graphical_cultures = { chondathangfx germangfx occitangfx }
 	}
 }
 

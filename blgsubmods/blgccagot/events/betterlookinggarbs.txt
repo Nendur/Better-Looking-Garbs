@@ -30,6 +30,7 @@ character_event = {
 	option = { # Local province
 		ai_chance = { factor = 3 }
 		trigger = {
+			historical = no
 			employer = {
 				NOT = { character = no }
 				is_landed = yes
@@ -57,6 +58,7 @@ character_event = {
 	option = { # Neighbour of local province
 		ai_chance = { factor = 2 }
 		trigger = {
+			historical = no
 			employer = {
 				NOT = { character = no }
 				is_landed = yes

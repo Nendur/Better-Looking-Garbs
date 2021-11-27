@@ -39,8 +39,6 @@ character_event = {
 	### Post Processing.
 	after = {
 		remove_trait = blgspawn
-
-		blg_character_processing = yes
 	}
 }
 
