@@ -729,4 +729,55 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
+### INDUS MALE ###
+
+	spriteType = {
+		name = "GFX_indus_male_eyes"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_eyes_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_indus_male_eyes_midage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_eyes_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_indus_male_eyes_oldage"
+		texturefile = "gfx\\characters\\egyptian_male\\egyptian_male_eyes_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### INDUS FEMALE ###
+
+	spriteType = {
+		name = "GFX_indus_female_eyes"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_eyes_1.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_indus_female_eyes_midage"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_eyes_2.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_indus_female_eyes_oldage"
+		texturefile = "gfx\\characters\\egyptian_female\\egyptian_female_eyes_3.dds"
+		noOfFrames = 12
+		norefcount = yes
+		can_be_lowres = yes
+	}
 }

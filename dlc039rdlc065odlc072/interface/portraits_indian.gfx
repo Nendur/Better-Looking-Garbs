@@ -248,7 +248,6 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-
 	spriteType = {
 		name = "GFX_indian_male_eyes"
 		texturefile = "gfx\\characters\\southindian_male\\southindian_male_eyes_1.dds"
@@ -644,6 +643,58 @@ spriteTypes = {
 		name = "GFX_character_indian_female_pale"
 		texturefile = "gfx\\characters\\shared\\pale\\southindian_female_pale.dds"
 		noOfFrames = 2
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### INDUS MALE ###
+
+	spriteType = {
+		name = "GFX_indus_male_eyes"
+		texturefile = "gfx\\characters\\southindian_male\\southindian_male_eyes_1.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_indus_male_eyes_midage"
+		texturefile = "gfx\\characters\\southindian_male\\southindian_male_eyes_2.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_indus_male_eyes_oldage"
+		texturefile = "gfx\\characters\\southindian_male\\southindian_male_eyes_3.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+### INDUS FEMALE ###
+
+	spriteType = {
+		name = "GFX_indus_female_eyes"
+		texturefile = "gfx\\characters\\southindian_female\\southindian_female_eyes_1.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_indus_female_eyes_midage"
+		texturefile = "gfx\\characters\\southindian_female\\southindian_female_eyes_2.dds"
+		noOfFrames = 10
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_indus_female_eyes_oldage"
+		texturefile = "gfx\\characters\\southindian_female\\southindian_female_eyes_3.dds"
+		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
 	}
