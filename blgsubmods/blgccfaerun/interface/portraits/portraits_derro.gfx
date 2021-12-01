@@ -1,10 +1,10 @@
-# DUERGAR
+# DERRO
 spriteTypes = {
 
 ### DWARF MALE ####
 
 	portraitType = {
-		name = "PORTRAIT_duergargfx_male"
+		name = "PORTRAIT_derrogfx_male"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_skavens_background:p0"
@@ -16,17 +16,17 @@ spriteTypes = {
 			"GFX_chaosdwarf_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
+			"GFX_dwarf_male_hair_behind:p1:h:y"
 			"GFX_chaosdwarf_male_beard_behind:p4:h:y"
-			"GFX_chaosdwarf_male_base:p2"
-			"GFX_chaosdwarf_male_neck:d0"
-			"GFX_chaosdwarf_male_chin:d1"
-			"GFX_character_chaosdwarf_male_physique:p21:y"
-			"GFX_chaosdwarf_male_mouth:d2"
+			"GFX_derro_male_base:p2"
+			"GFX_derro_male_neck:d0"
+			"GFX_derro_male_chin:d1"
+			"GFX_character_derro_male_physique:p21:y"
+			"GFX_derro_male_mouth:d2"
 			"GFX_character_harelip:p24:o5x-5"
-			"GFX_chaosdwarf_male_eyes:d6"
-			"GFX_dwarf_male_eyes2:d6:e"
-			"GFX_chaosdwarf_male_ear:d7"
-			"GFX_character_east_african_male_pale:p22:o0x-6"
+			"GFX_derro_male_eyes:d6"
+			"GFX_derro_male_ear:d7"
+			"GFX_character_african_male_pale:p22:o0x-6"
 			"GFX_character_tattoos_norse_male:p28:o0x-8"
 			"GFX_character_warpaint_wide:p29:o0x-4"
 			"GFX_character_reddots:p8"
@@ -36,7 +36,7 @@ spriteTypes = {
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_chaosdwarf_male_beard:p4:h:y"
-			"GFX_chaosdwarf_male_nose:d3"
+			"GFX_derro_male_nose:d3"
 			"GFX_child_back:p17"
 			"GFX_dwarf_son_base:p18"
 			"GFX_western_son_eyes:p18:e"
@@ -47,9 +47,10 @@ spriteTypes = {
 			"GFX_western_sonhair:p18:h"
 			"GFX_character_black_eye:p23:y:o3x-4"
 			"GFX_character_blinded_eyes:p10:o3x-4"
-			"GFX_character_possessed:p30:o2x-4"
+			"GFX_empty_possessed:p30:o2x-4"
 			"GFX_character_eyepatch:p13:y:o35x59"
 			"GFX_character_mask:p12:y:o42x39"
+		   	"GFX_dwarf_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_chaosdwarf_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
@@ -58,8 +59,8 @@ spriteTypes = {
 			"GFX_character_special_masks:p35:o0x-8"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_eastern:p43:c4"
-			"GFX_weapons_muslim:p39"
-			"GFX_weapons_muslim_left:p40"
+			"GFX_weapons_western:p39"
+			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
@@ -69,22 +70,23 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 100 100 100 } { 255 250 220 } { 255 255 255 } # White
-			{ 100 100 100 } { 200 200 200 } { 255 255 255 }
-			{ 10 10 10 } { 255 102 0 } { 255 255 255 } #Blaze orange
-			{ 10 10 10 } { 255 63 52 } { 255 255 255 } #Red Orange
+			{ 70 70 70 } { 210 210 210 } { 255 255 255 }
+			{ 50 50 50 } { 173 173 173 } { 255 255 255 }
+			{ 40 40 40 } { 224 206 182 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 10 10 10 }
+			{ 212 207 195 }
+			{ 222 221 220 }
+			{ 255 255 255 }
 		}
 
 		headgear_that_hides_hair = {10}
 	}
 
 	portraitType = {
-		name = "PORTRAIT_duergargfx_male1"
+		name = "PORTRAIT_derrogfx_male1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_skavens_background:p0"
@@ -96,17 +98,17 @@ spriteTypes = {
 			"GFX_chaosdwarf_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
+			"GFX_dwarf_male_hair_behind_midage:p1:h:y"
 			"GFX_chaosdwarf_male_beard_behind_midage:p4:h:y"
-			"GFX_chaosdwarf_male_base_midage:p2"
-			"GFX_chaosdwarf_male_neck_midage:d0"
-			"GFX_chaosdwarf_male_chin_midage:d1"
-			"GFX_character_chaosdwarf_male_physique:p21:y"
-			"GFX_chaosdwarf_male_mouth_midage:d2"
+			"GFX_derro_male_base_midage:p2"
+			"GFX_derro_male_neck_midage:d0"
+			"GFX_derro_male_chin_midage:d1"
+			"GFX_character_derro_male_physique:p21:y"
+			"GFX_derro_male_mouth_midage:d2"
 			"GFX_character_harelip:p24:o5x-5"
-			"GFX_chaosdwarf_male_eyes_midage:d6"
-			"GFX_dwarf_male_eyes2:d6:e"
-			"GFX_chaosdwarf_male_ear_midage:d7"
-			"GFX_character_east_african_male_pale:p22:o0x-6"
+			"GFX_derro_male_eyes_midage:d6"
+			"GFX_derro_male_ear_midage:d7"
+			"GFX_character_african_male_pale:p22:o0x-6"
 			"GFX_character_tattoos_norse_male:p28:o0x-8"
 			"GFX_character_warpaint_wide:p29:o0x-4"
 			"GFX_character_reddots:p8"
@@ -116,16 +118,17 @@ spriteTypes = {
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_chaosdwarf_male_beard_midage:p4:h:y"
-			"GFX_chaosdwarf_male_nose_midage:d3"
+			"GFX_derro_male_nose_midage:d3"
 			"GFX_character_freckles:p20:o0x-6"
 			"GFX_character_scars:p7:y:o0x-6"
 			"GFX_character_scars_mid:p25:y:o0x-6"
 			"GFX_character_scars_high:p26:y:o0x-6"
 			"GFX_character_black_eye:p23:y:o3x-4"
 			"GFX_character_blinded_eyes:p10:o3x-4"
-			"GFX_character_possessed:p30:o2x-4"
+			"GFX_empty_possessed:p30:o2x-4"
 			"GFX_character_eyepatch:p13:y:o35x59"
 			"GFX_character_mask:p12:y:o42x39"
+			"GFX_dwarf_male_hair_midage:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_chaosdwarf_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
@@ -134,8 +137,8 @@ spriteTypes = {
 			"GFX_character_special_masks:p35:o0x-8"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_eastern:p43:c4"
-			"GFX_weapons_muslim:p39"
-			"GFX_weapons_muslim_left:p40"
+			"GFX_weapons_western:p39"
+			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
@@ -145,22 +148,23 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 100 100 100 } { 255 250 220 } { 255 255 255 } # White
-			{ 100 100 100 } { 200 200 200 } { 255 255 255 }
-			{ 10 10 10 } { 255 102 0 } { 255 255 255 } #Blaze orange
-			{ 10 10 10 } { 255 63 52 } { 255 255 255 } #Red Orange
+			{ 70 70 70 } { 210 210 210 } { 255 255 255 }
+			{ 50 50 50 } { 173 173 173 } { 255 255 255 }
+			{ 40 40 40 } { 224 206 182 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 10 10 10 }
+			{ 212 207 195 }
+			{ 222 221 220 }
+			{ 255 255 255 }
 		}
 
 		headgear_that_hides_hair = {10}
 	}
 
 	portraitType = {
-		name = "PORTRAIT_duergargfx_male2"
+		name = "PORTRAIT_derrogfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_skavens_background:p0"
@@ -172,17 +176,17 @@ spriteTypes = {
 			"GFX_chaosdwarf_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
+			"GFX_dwarf_male_hair_behind_oldage:p1:h:y"
 			"GFX_chaosdwarf_male_beard_behind_oldage:p4:h:y"
-			"GFX_chaosdwarf_male_base_oldage:p2"
-			"GFX_chaosdwarf_male_neck_oldage:d0"
-			"GFX_chaosdwarf_male_chin_oldage:d1"
-			"GFX_character_chaosdwarf_male_physique:p21:y"
-			"GFX_chaosdwarf_male_mouth_oldage:d2"
+			"GFX_derro_male_base_oldage:p2"
+			"GFX_derro_male_neck_oldage:d0"
+			"GFX_derro_male_chin_oldage:d1"
+			"GFX_character_derro_male_physique:p21:y"
+			"GFX_derro_male_mouth_oldage:d2"
 			"GFX_character_harelip:p24:o5x-5"
-			"GFX_chaosdwarf_male_eyes_oldage:d6"
-			"GFX_dwarf_male_eyes2:d6:e"
-			"GFX_chaosdwarf_male_ear_oldage:d7"
-			"GFX_character_east_african_male_pale:p22:o0x-6"
+			"GFX_derro_male_eyes_oldage:d6"
+			"GFX_derro_male_ear_oldage:d7"
+			"GFX_character_african_male_pale:p22:o0x-6"
 			"GFX_character_tattoos_norse_male:p28:o0x-8"
 			"GFX_character_warpaint_wide:p29:o0x-4"
 			"GFX_character_reddots:p8"
@@ -192,16 +196,17 @@ spriteTypes = {
 			"GFX_character_special_crowns_mid:p19"
 			"GFX_frankish_male_overlayer_mid:p31"
 			"GFX_chaosdwarf_male_beard_oldage:p4:h:y"
-			"GFX_chaosdwarf_male_nose_oldage:d3"
+			"GFX_derro_male_nose_oldage:d3"
 			"GFX_character_freckles:p20:o0x-6"
 			"GFX_character_scars:p7:y:o0x-6"
 			"GFX_character_scars_mid:p25:y:o0x-6"
 			"GFX_character_scars_high:p26:y:o0x-6"
 			"GFX_character_black_eye:p23:y:o3x-4"
 			"GFX_character_blinded_eyes:p10:o3x-4"
-			"GFX_character_possessed:p30:o2x-4"
+			"GFX_empty_possessed:p30:o2x-4"
 			"GFX_character_eyepatch:p13:y:o35x59"
 			"GFX_character_mask:p12:y:o42x39"
+			"GFX_dwarf_male_hair_oldage:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_chaosdwarf_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
@@ -210,8 +215,8 @@ spriteTypes = {
 			"GFX_character_special_masks:p35:o0x-8"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_eastern:p43:c4"
-			"GFX_weapons_muslim:p39"
-			"GFX_weapons_muslim_left:p40"
+			"GFX_weapons_western:p39"
+			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
@@ -221,15 +226,16 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 100 100 100 } { 255 250 220 } { 255 255 255 } # White
-			{ 100 100 100 } { 200 200 200 } { 255 255 255 }
-			{ 10 10 10 } { 255 102 0 } { 255 255 255 } #Blaze orange
-			{ 10 10 10 } { 255 63 52 } { 255 255 255 } #Red Orange
+			{ 70 70 70 } { 210 210 210 } { 255 255 255 }
+			{ 50 50 50 } { 173 173 173 } { 255 255 255 }
+			{ 40 40 40 } { 224 206 182 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 10 10 10 }
+			{ 212 207 195 }
+			{ 222 221 220 }
+			{ 255 255 255 }
 		}
 
 		headgear_that_hides_hair = {10}
@@ -238,7 +244,7 @@ spriteTypes = {
 ### DWARF FEMALE ####
 
 	portraitType = {
-		name = "PORTRAIT_duergargfx_female"
+		name = "PORTRAIT_derrogfx_female"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_skavens_background:p0"
@@ -251,22 +257,22 @@ spriteTypes = {
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
+			"GFX_dwarf_female_hair_behind:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
-			"GFX_chaosdwarf_female_base:p2"
-			"GFX_chaosdwarf_female_neck:d0"
-			"GFX_chaosdwarf_female_chin:d1"
-			"GFX_character_chaosdwarf_female_physique:p21:y"
-			"GFX_chaosdwarf_female_mouth:d2"
+			"GFX_derro_female_base:p2"
+			"GFX_derro_female_neck:d0"
+			"GFX_derro_female_chin:d1"
+			"GFX_character_derro_female_physique:p21:y"
+			"GFX_derro_female_mouth:d2"
 			"GFX_character_harelip:p24:o3x-2"
-			"GFX_chaosdwarf_female_eyes:d6"
-			"GFX_chaosdwarf_female_nose:d3"
-			"GFX_dwarf_female_eyes2:d6:e"
-			"GFX_chaosdwarf_female_ear:d7"
+			"GFX_derro_female_eyes:d6"
+			"GFX_derro_female_nose:d3"
+			"GFX_derro_female_ear:d7"
 			"GFX_child_back:p17"
 			"GFX_dwarf_daughter_base:p18"
 			"GFX_western_daughter_eyes:p18:e"
 			"GFX_character_freckles:p20:o0x-6"
-			"GFX_character_east_african_female_pale:p22:o0x-6"
+			"GFX_character_african_female_pale:p22:o0x-6"
 			"GFX_character_tattoos:p28:o0x-6"
 			"GFX_character_warpaint_wide:p29:o0x-3"
 			"GFX_character_reddots:p8"
@@ -278,12 +284,13 @@ spriteTypes = {
 			"GFX_western_daughterhair:p18:h"
 			"GFX_character_black_eye:p23:y:o2x-2"
 			"GFX_character_blinded_eyes:p10:o2x-3"
-			"GFX_character_possessed:p30:o2x-3"
+			"GFX_empty_possessed:p30:o2x-3"
 			"GFX_character_eyepatch:p13:y:o32x59"
 			"GFX_character_mask:p12:y:o40x39"
 			"GFX_chaosdwarf_female_clothes:p3"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
+			"GFX_dwarf_female_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_frankish_female_undermain:p33"
 			"GFX_chaosdwarf_female_headgear:p5:c5"
@@ -293,8 +300,8 @@ spriteTypes = {
 			"GFX_character_special_masks:p35:o0x-8"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_eastern:p43:c4"
-			"GFX_weapons_muslim:p39"
-			"GFX_weapons_muslim_left:p40"
+			"GFX_weapons_western:p39"
+			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
@@ -304,22 +311,23 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 100 100 100 } { 255 250 220 } { 255 255 255 } # White
-			{ 100 100 100 } { 200 200 200 } { 255 255 255 }
-			{ 10 10 10 } { 255 102 0 } { 255 255 255 } #Blaze orange
-			{ 10 10 10 } { 255 63 52 } { 255 255 255 } #Red Orange
+			{ 70 70 70 } { 210 210 210 } { 255 255 255 }
+			{ 50 50 50 } { 173 173 173 } { 255 255 255 }
+			{ 40 40 40 } { 224 206 182 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 10 10 10 }
+			{ 212 207 195 }
+			{ 222 221 220 }
+			{ 255 255 255 }
 		}
 
 		headgear_that_hides_hair = {10}
 	}
 
 	portraitType = {
-		name = "PORTRAIT_duergargfx_female1"
+		name = "PORTRAIT_derrogfx_female1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_skavens_background:p0"
@@ -332,19 +340,19 @@ spriteTypes = {
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
+			"GFX_dwarf_female_hair_behind_midage:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
-			"GFX_chaosdwarf_female_base_midage:p2"
-			"GFX_chaosdwarf_female_neck_midage:d0"
-			"GFX_chaosdwarf_female_chin_midage:d1"
-			"GFX_character_chaosdwarf_female_physique:p21:y"
-			"GFX_chaosdwarf_female_mouth_midage:d2"
+			"GFX_derro_female_base_midage:p2"
+			"GFX_derro_female_neck_midage:d0"
+			"GFX_derro_female_chin_midage:d1"
+			"GFX_character_derro_female_physique:p21:y"
+			"GFX_derro_female_mouth_midage:d2"
 			"GFX_character_harelip:p24:o3x-2"
-			"GFX_chaosdwarf_female_eyes_midage:d6"
-			"GFX_chaosdwarf_female_nose_midage:d3"
-			"GFX_dwarf_female_eyes2:d6:e"
-			"GFX_chaosdwarf_female_ear_midage:d7"
+			"GFX_derro_female_eyes_midage:d6"
+			"GFX_derro_female_nose_midage:d3"
+			"GFX_derro_female_ear_midage:d7"
 			"GFX_character_freckles:p20:o0x-6"
-			"GFX_character_east_african_female_pale:p22:o0x-6"
+			"GFX_character_african_female_pale:p22:o0x-6"
 			"GFX_character_tattoos:p28:o0x-6"
 			"GFX_character_warpaint_wide:p29:o0x-3"
 			"GFX_character_reddots:p8"
@@ -355,12 +363,13 @@ spriteTypes = {
 			"GFX_chinese_female_jewelry_front:p16"
 			"GFX_character_black_eye:p23:y:o2x-2"
 			"GFX_character_blinded_eyes:p10:o2x-3"
-			"GFX_character_possessed:p30:o2x-3"
+			"GFX_empty_possessed:p30:o2x-3"
 			"GFX_character_eyepatch:p13:y:o32x59"
 			"GFX_character_mask:p12:y:o40x39"
 			"GFX_chaosdwarf_female_clothes:p3"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
+			"GFX_dwarf_female_hair_midage:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_frankish_female_undermain:p33"
 			"GFX_chaosdwarf_female_headgear:p5:c5"
@@ -370,8 +379,8 @@ spriteTypes = {
 			"GFX_character_special_masks:p35:o0x-8"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_eastern:p43:c4"
-			"GFX_weapons_muslim:p39"
-			"GFX_weapons_muslim_left:p40"
+			"GFX_weapons_western:p39"
+			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
@@ -381,22 +390,23 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 100 100 100 } { 255 250 220 } { 255 255 255 } # White
-			{ 100 100 100 } { 200 200 200 } { 255 255 255 }
-			{ 10 10 10 } { 255 102 0 } { 255 255 255 } #Blaze orange
-			{ 10 10 10 } { 255 63 52 } { 255 255 255 } #Red Orange
+			{ 70 70 70 } { 210 210 210 } { 255 255 255 }
+			{ 50 50 50 } { 173 173 173 } { 255 255 255 }
+			{ 40 40 40 } { 224 206 182 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 10 10 10 }
+			{ 212 207 195 }
+			{ 222 221 220 }
+			{ 255 255 255 }
 		}
 
 		headgear_that_hides_hair = {10}
 	}
 
 	portraitType = {
-		name = "PORTRAIT_duergargfx_female2"
+		name = "PORTRAIT_derrogfx_female2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_skavens_background:p0"
@@ -409,19 +419,19 @@ spriteTypes = {
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
+			"GFX_dwarf_female_hair_behind_oldage:p1:h:y"
 			"GFX_chinese_female_jewelry_behind:p16"
-			"GFX_chaosdwarf_female_base_oldage:p2"
-			"GFX_chaosdwarf_female_neck_oldage:d0"
-			"GFX_chaosdwarf_female_chin_oldage:d1"
-			"GFX_character_chaosdwarf_female_physique:p21:y"
-			"GFX_chaosdwarf_female_mouth_oldage:d2"
+			"GFX_derro_female_base_oldage:p2"
+			"GFX_derro_female_neck_oldage:d0"
+			"GFX_derro_female_chin_oldage:d1"
+			"GFX_character_derro_female_physique:p21:y"
+			"GFX_derro_female_mouth_oldage:d2"
 			"GFX_character_harelip:p24:o3x-2"
-			"GFX_chaosdwarf_female_eyes_oldage:d6"
-			"GFX_chaosdwarf_female_nose_oldage:d3"
-			"GFX_dwarf_female_eyes2:d6:e"
-			"GFX_chaosdwarf_female_ear_oldage:d7"
+			"GFX_derro_female_eyes_oldage:d6"
+			"GFX_derro_female_nose_oldage:d3"
+			"GFX_derro_female_ear_oldage:d7"
 			"GFX_character_freckles:p20:o0x-6"
-			"GFX_character_east_african_female_pale:p22:o0x-6"
+			"GFX_character_african_female_pale:p22:o0x-6"
 			"GFX_character_tattoos:p28:o0x-6"
 			"GFX_character_warpaint_wide:p29:o0x-3"
 			"GFX_character_reddots:p8"
@@ -432,12 +442,13 @@ spriteTypes = {
 			"GFX_chinese_female_jewelry_front:p16"
 			"GFX_character_black_eye:p23:y:o2x-2"
 			"GFX_character_blinded_eyes:p10:o2x-3"
-			"GFX_character_possessed:p30:o2x-3"
+			"GFX_empty_possessed:p30:o2x-3"
 			"GFX_character_eyepatch:p13:y:o32x59"
 			"GFX_character_mask:p12:y:o40x39"
 			"GFX_chaosdwarf_female_clothes:p3"
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19"
+			"GFX_dwarf_female_hair_oldage:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_frankish_female_undermain:p33"
 			"GFX_chaosdwarf_female_headgear:p5:c5"
@@ -447,8 +458,8 @@ spriteTypes = {
 			"GFX_character_special_masks:p35:o0x-8"
 			"GFX_character_special_scepters:p36"
 			"GFX_helmet_eastern:p43:c4"
-			"GFX_weapons_muslim:p39"
-			"GFX_weapons_muslim_left:p40"
+			"GFX_weapons_western:p39"
+			"GFX_weapons_western_left:p40"
 			"GFX_mounts:p41"
 			"GFX_character_blood_splatter:p27"
 			"GFX_lover_overlay:p37"
@@ -458,15 +469,16 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 100 100 100 } { 255 250 220 } { 255 255 255 } # White
-			{ 100 100 100 } { 200 200 200 } { 255 255 255 }
-			{ 10 10 10 } { 255 102 0 } { 255 255 255 } #Blaze orange
-			{ 10 10 10 } { 255 63 52 } { 255 255 255 } #Red Orange
+			{ 70 70 70 } { 210 210 210 } { 255 255 255 }
+			{ 50 50 50 } { 173 173 173 } { 255 255 255 }
+			{ 40 40 40 } { 224 206 182 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 10 10 10 }
+			{ 212 207 195 }
+			{ 222 221 220 }
+			{ 255 255 255 }
 		}
 
 		headgear_that_hides_hair = {10}

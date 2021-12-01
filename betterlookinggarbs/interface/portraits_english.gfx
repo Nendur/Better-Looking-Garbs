@@ -184,7 +184,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_base"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_base_1.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -192,7 +192,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_base_midage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_base_2.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_base_2.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -200,7 +200,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_base_oldage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_base_3.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_base_3.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -208,7 +208,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_neck"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_neck_1.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_neck_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -216,7 +216,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_neck_midage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_neck_2.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_neck_2.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -224,7 +224,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_neck_oldage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_neck_3.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_neck_3.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -232,7 +232,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_cheeks"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_cheeks_1.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_cheeks_1.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -240,7 +240,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_cheeks_midage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_cheeks_2.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_cheeks_2.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -248,7 +248,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_cheeks_oldage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_cheeks_3.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_cheeks_3.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -256,7 +256,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_chin"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_chin_1.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_chin_1.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -264,7 +264,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_chin_midage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_chin_2.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_chin_2.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -272,7 +272,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_chin_oldage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_chin_3.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_chin_3.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -280,7 +280,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_mouth"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_mouth_1.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_mouth_1.dds"
 		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
@@ -288,7 +288,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_mouth_midage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_mouth_2.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_mouth_2.dds"
 		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
@@ -296,7 +296,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_mouth_oldage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_mouth_3.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_mouth_3.dds"
 		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
@@ -304,7 +304,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_eyes"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_eyes_1.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_eyes_1.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -312,7 +312,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_eyes_midage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_eyes_2.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_eyes_2.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -320,7 +320,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_eyes_oldage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_eyes_3.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_eyes_3.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -336,7 +336,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_nose"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_nose_1.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_nose_1.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -344,7 +344,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_nose_midage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_nose_2.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_nose_2.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -352,7 +352,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_nose_oldage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_nose_3.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_nose_3.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -360,7 +360,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_ear"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_ear_1.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_ear_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -368,7 +368,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_ear_midage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_ear_2.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_ear_2.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -376,7 +376,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_male_ear_oldage"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_ear_3.dds"
+		texturefile = "gfx\\characters\\northern_male\\northern_male_ear_3.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -384,7 +384,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_celtic_male_physique"
-		texturefile = "gfx\\fallbacks\\western_male\\western_male_physique.dds"
+		texturefile = "gfx\\characters\\shared\\physique\\northern_male_physique.dds"
 		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
@@ -496,7 +496,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_base"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_base_1.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -504,7 +504,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_base_midage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_base_2.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_base_2.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -512,7 +512,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_base_oldage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_base_3.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_base_3.dds"
 		noOfFrames = 1
 		norefcount = yes
 		can_be_lowres = yes
@@ -520,7 +520,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_neck"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_neck_1.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_neck_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -528,7 +528,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_neck_midage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_neck_2.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_neck_2.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -536,7 +536,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_neck_oldage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_neck_3.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_neck_3.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -544,7 +544,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_cheeks"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_cheeks_1.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_cheeks_1.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -552,7 +552,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_cheeks_midage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_cheeks_2.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_cheeks_2.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -560,7 +560,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_cheeks_oldage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_cheeks_3.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_cheeks_3.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -568,7 +568,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_chin"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_chin_1.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_chin_1.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -576,7 +576,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_chin_midage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_chin_2.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_chin_2.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -584,7 +584,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_chin_oldage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_chin_3.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_chin_3.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -592,7 +592,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_mouth"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_mouth_1.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_mouth_1.dds"
 		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
@@ -600,7 +600,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_mouth_midage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_mouth_2.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_mouth_2.dds"
 		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
@@ -608,7 +608,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_mouth_oldage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_mouth_3.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_mouth_3.dds"
 		noOfFrames = 10
 		norefcount = yes
 		can_be_lowres = yes
@@ -616,7 +616,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_nose"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_nose_1.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_nose_1.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -624,7 +624,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_nose_midage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_nose_2.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_nose_2.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -632,7 +632,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_nose_oldage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_nose_3.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_nose_3.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -640,7 +640,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_eyes"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_eyes_1.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_eyes_1.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -648,7 +648,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_eyes_midage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_eyes_2.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_eyes_2.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -656,7 +656,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_eyes_oldage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_eyes_3.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_eyes_3.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
@@ -672,7 +672,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_ear"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_ear_1.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_ear_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -680,7 +680,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_ear_midage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_ear_2.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_ear_2.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -688,7 +688,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_english_female_ear_oldage"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_ear_3.dds"
+		texturefile = "gfx\\characters\\northern_female\\northern_female_ear_3.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -696,7 +696,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_character_celtic_female_physique"
-		texturefile = "gfx\\fallbacks\\western_female\\western_female_physique.dds"
+		texturefile = "gfx\\characters\\shared\\physique\\northern_female_physique.dds"
 		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes

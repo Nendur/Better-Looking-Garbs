@@ -170,22 +170,22 @@ namespace BetterLookingGarbsInstall
 						using (StreamReader libraryfolders = new StreamReader(Path.Combine(steam, "libraryfolders.vdf")))
 						{
 							String line;
-							libraryfolders.ReadLine();
-							libraryfolders.ReadLine();
-							libraryfolders.ReadLine();
-							libraryfolders.ReadLine();
 							while ((line = libraryfolders.ReadLine()) != null && line != "}")
 							{
-								String path = line.Split(new Char[] { '\"' }, StringSplitOptions.RemoveEmptyEntries)[3];
-								path = Path.Combine(Path.GetFullPath(path), "SteamApps", "common", "Crusader Kings II");
-								log.WriteDebug("Searching " + path);
-								if (Directory.Exists(path))
-								{
-									if (ck2 == null)
-										ck2 = path;
-									else
-										duplicateinstalls = true;
-								}
+                                line = line.TrimStart();
+                                if (line.StartsWith("\"path\""))
+                                {
+                                    String path = line.Substring(6).Trim().Trim('\"');
+                                    path = Path.Combine(Path.GetFullPath(path), "SteamApps", "common", "Crusader Kings II");
+                                    log.WriteDebug("Searching " + path);
+                                    if (Directory.Exists(path))
+                                    {
+                                        if (ck2 == null)
+                                            ck2 = path;
+                                        else
+                                            duplicateinstalls = true;
+                                    }
+                                }
 							}
 						}
 					}
@@ -358,11 +358,7 @@ namespace BetterLookingGarbsInstall
                 bool indian = File.Exists(dlc + "039.dlc");
                 log.WriteDLCCheck("Rajas of India (portraits, units, councillors)", indian);
                 if (indian)
-                {
                     ExtractDirectory(extrazip, "dlc039");
-                    if (persian)
-                        ExtractDirectory(extrazip, "dlc039adlc044");
-                }
 
                 log.WriteDLCCheck("Turkish Unit Pack (units)", turkishunits);
                 if (turkishunits)

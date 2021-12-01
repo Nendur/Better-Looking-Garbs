@@ -1,5 +1,9 @@
 Changelog:
 
+  Fix installation path detection for newer Steam versions.
+  New Baltic portraits using the fallback northern faces.
+  Support some more minor titles.
+
 27-10-2021
   Rewrite and clean up of the portrait properties code.
   Combine various culture specific hairstyling rules into a unified system.

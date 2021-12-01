@@ -51,7 +51,6 @@ maztican_group = {
 
 mulan_group = {
 	chessentan = {
-		graphical_cultures = { georgiangfx byzantinegfx }
 		unit_graphical_cultures = { romangfx byzantinegfx }
 	}
 }
@@ -120,7 +119,7 @@ dwarf_group = {
 		graphical_cultures = { norsedwarfgfx dwarfgfx siberiangfx ugricgfx }
 	}
 	derro = {
-		graphical_cultures = { norsedwarfgfx dwarfgfx siciliangfx }
+		graphical_cultures = { derrogfx dwarfgfx siciliangfx }
 	}
 	duergar = {
 		graphical_cultures = { duergargfx dwarfgfx siciliangfx }
@@ -137,6 +136,9 @@ dwarf_group = {
 }
 
 dark_elf_group = {
+	dark_elf = {
+		unit_graphical_cultures = { cumangfx turkishgfx }
+	}
 	drow = {
 		unit_graphical_cultures = { cumangfx turkishgfx }
 	}

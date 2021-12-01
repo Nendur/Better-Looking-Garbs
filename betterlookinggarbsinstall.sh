@@ -235,11 +235,13 @@ else
 	if [ -d "${BLGSTEAM}common/Crusader Kings II" ]; then
 		CK2="${BLGSTEAM}common/Crusader Kings II"
 	elif [ -r "${BLGSTEAM}libraryfolders.vdf" ]; then
-		for i in `grep '^\s*\"[0-9]\+' "${BLGSTEAM}libraryfolders.vdf"`; do
-			if [ -d ${i:1:-1} ]; then
-				echo Searching ${i:1:-1}/steamapps/common/Crusader Kings II
-				if [ -d "${i:1:-1}/steamapps/common/Crusader Kings II" ]; then
-					CK2="${i:1:-1}/steamapps/common/Crusader Kings II"
+		for i in `grep '^\s*\"path\"\s*\".*\"' "${BLGSTEAM}libraryfolders.vdf"`; do
+			if [ $i != '"path"' ]; then
+				searchpath=${i#\"}
+				searchpath=${searchpath%\"}
+				echo Searching $searchpath/steamapps/common/Crusader Kings II
+				if [ -d "$searchpath/steamapps/common/Crusader Kings II" ]; then
+					CK2="$searchpath/steamapps/common/Crusader Kings II"
 				fi
 			fi
 		done
@@ -411,7 +413,6 @@ if [ -f "${DLC}044.dlc" ]; then
 	echo Persian Portraits present.
 	persian=1
 	LIST="$LIST dlc044/*"
-	[[ $indian -eq 1 ]] && LIST="$LIST dlc039adlc044/*"
 else
 	echo Persian Portraits absent.
 	#if [[ $byzantine -eq 1 ]] || [[ -f "${DLC}047.dlc" ]]; then
