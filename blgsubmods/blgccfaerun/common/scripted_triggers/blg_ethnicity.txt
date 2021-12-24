@@ -99,11 +99,7 @@ blg_ethnicity_berber = {
 }
 
 blg_ethnicity_byzantine = {
-	OR = {
-		graphical_culture = georgiangfx
-		graphical_culture = byzantinegfx
-		graphical_culture = arkaiungfx
-	}
+	graphical_culture = arkaiungfx
 }
 
 blg_ethnicity_celtic = {
@@ -172,7 +168,7 @@ blg_ethnicity_german = {
 blg_ethnicity_iberian = {
 	OR = {
 		graphical_culture = southerngfx
-		graphical_culture = andalusiangfx
+		graphical_culture = chessentangfx
 	}
 }
 
@@ -185,7 +181,10 @@ blg_ethnicity_indian = {
 }
 
 blg_ethnicity_italian = {
-	graphical_culture = berbergfx
+	OR = {
+		graphical_culture = halruaangfx
+		graphical_culture = berbergfx
+	}
 }
 
 blg_ethnicity_levantine = {

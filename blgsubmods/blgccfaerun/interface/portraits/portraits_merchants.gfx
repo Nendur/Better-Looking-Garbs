@@ -70,6 +70,7 @@ spriteTypes = {
 					portrait_has_trait = creature_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
+					portrait_has_trait = creature_yikarian
 				}
 			}
 		}
@@ -114,6 +115,7 @@ spriteTypes = {
 					portrait_has_trait = creature_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
+					portrait_has_trait = creature_yikarian
 				}
 			}
 		}
@@ -149,13 +151,13 @@ spriteTypes = {
 					portrait_culture_group = damaran_group
 					portrait_culture_group = raum_group
 					portrait_culture_group = imaskari_group
-					portrait_culture_group = turami_group
 					portrait_culture_group = netherese_group
 				}
 				NOR = {
 					portrait_has_trait = creature_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
+					portrait_has_trait = creature_yikarian
 				}
 			}
 		}
@@ -189,13 +191,13 @@ spriteTypes = {
 					portrait_culture_group = damaran_group
 					portrait_culture_group = raum_group
 					portrait_culture_group = imaskari_group
-					portrait_culture_group = turami_group
 					portrait_culture_group = netherese_group
 				}
 				NOR = {
 					portrait_has_trait = creature_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
+					portrait_has_trait = creature_yikarian
 				}
 			}
 		}
@@ -225,21 +227,22 @@ spriteTypes = {
 				}
 				portrait_in_command = no
 				OR = {
-					portrait_culture_group = kara_turan_group
+					portrait_culture_group = shou_group
 					portrait_culture_group = zakharan_group
 					portrait_culture_group = katashakan_group
 					portrait_culture_group = mulan_group
-					portrait_culture_group = shaaran_group
 					portrait_culture_group = taan_group
 					portrait_culture_group = scaly_group
 					portrait_culture_group = orc_group
 					portrait_culture_group = gith_group
 					portrait_culture_group = maztican_group
+					portrait_culture_group = abeiran_group
 				}
 				NOR = {
 					portrait_has_trait = creature_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
+					portrait_has_trait = creature_yikarian
 				}
 			}
 		}
@@ -275,6 +278,7 @@ spriteTypes = {
 					portrait_has_trait = creature_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
+					portrait_has_trait = creature_yikarian
 				}
 			}
 		}
@@ -314,6 +318,7 @@ spriteTypes = {
 					portrait_has_trait = creature_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
+					portrait_has_trait = creature_yikarian
 				}
 			}
 		}

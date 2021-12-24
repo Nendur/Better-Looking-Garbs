@@ -123,9 +123,9 @@ blg_artifact_scepter_hellenic = {
 	any_artifact = {
 		is_artifact_equipped = yes
 		OR = {
-			artifact_type = staff_of_frost
 			artifact_type = staff_of_power
-			artifact_type = staff_of_the_magi
+			artifact_type = staff_of_frost
+			artifact_type = scepter_tyrant_eye
 		}
 	}
 }
@@ -176,7 +176,11 @@ blg_artifact_staff_crook = {
 blg_artifact_staff_danda = {
 	any_artifact = {
 		is_artifact_equipped = yes
-		artifact_type = staff_of_woodlands
+		OR = {
+			artifact_type = staff_of_the_magi
+			artifact_type = staff_of_woodlands
+			artifact_type = staff_python
+		}
 	}
 }
 
@@ -206,6 +210,8 @@ blg_artifact_totem = {
 			artifact_type = normal_rod_pact_keeper
 			artifact_type = greater_rod_pact_keeper
 			artifact_type = staff_of_swarming_insects
+			artifact_type = wand_of_binding
+			artifact_type = wand_of_fear
 		}
 	}
 }

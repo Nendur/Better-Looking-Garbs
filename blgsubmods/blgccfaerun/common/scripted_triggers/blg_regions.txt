@@ -202,6 +202,21 @@ blg_steppe = {
 	terrain = steppe
 }
 
+# Underground terrain
+blg_subterranean = {
+	trigger_if = {
+		limit = { location = { always = yes } }
+		location = {
+			terrain = subterranean
+		}
+	}
+	trigger_else = {
+		capital_scope = {
+			terrain = subterranean
+		}
+	}
+}
+
 # Snowy terrain.
 blg_winter = {
 	is_winter = yes

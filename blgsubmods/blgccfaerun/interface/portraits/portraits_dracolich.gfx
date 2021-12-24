@@ -8,19 +8,12 @@ spriteTypes = {
 		norefcount = yes
 	}
 
-	spriteType = {
-		name = "GFX_dracolich_background"
-		texturefile = "gfx\\characters\\shared\\mahtmasi_backgrounds.dds"
-		noOfFrames = 21
-		norefcount = yes
-	}
-
 	portraitType = {
 		name = "PORTRAIT_dracolichgfx_male"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_dracolich_background:p0"
-			"GFX_dracolich_background:p0:c6"
+			"GFX_lahmian_background:p0"
+			"GFX_lahmian_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
@@ -54,8 +47,8 @@ spriteTypes = {
 		name = "PORTRAIT_dracolichgfx_male1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_dracolich_background:p0"
-			"GFX_dracolich_background:p0:c6"
+			"GFX_lahmian_background:p0"
+			"GFX_lahmian_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
@@ -88,8 +81,8 @@ spriteTypes = {
 		name = "PORTRAIT_dracolichgfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_dracolich_background:p0"
-			"GFX_dracolich_background:p0:c6"
+			"GFX_lahmian_background:p0"
+			"GFX_lahmian_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
@@ -123,8 +116,8 @@ spriteTypes = {
 		name = "PORTRAIT_dracolichgfx_female"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_dracolich_background:p0"
-			"GFX_dracolich_background:p0:c6"
+			"GFX_lahmian_background:p0"
+			"GFX_lahmian_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
@@ -158,8 +151,8 @@ spriteTypes = {
 		name = "PORTRAIT_dracolichgfx_female1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_dracolich_background:p0"
-			"GFX_dracolich_background:p0:c6"
+			"GFX_lahmian_background:p0"
+			"GFX_lahmian_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
@@ -193,8 +186,8 @@ spriteTypes = {
 		name = "PORTRAIT_dracolichgfx_female2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
-			"GFX_dracolich_background:p0"
-			"GFX_dracolich_background:p0:c6"
+			"GFX_lahmian_background:p0"
+			"GFX_lahmian_background:p0:c6"
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"

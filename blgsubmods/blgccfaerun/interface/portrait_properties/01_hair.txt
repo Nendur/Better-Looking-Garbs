@@ -117,15 +117,6 @@
 					limit = { is_female = no }
 
 					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_easternslavic = yes
-							blg_hair_african = yes
-							blg_hair_cuman = yes
-						}
-					}
-
-					trigger_if = {
 						limit = {
 							blg_tonsure = yes
 						}
@@ -226,11 +217,6 @@
 				trigger_if = {
 					limit = { is_female = no }
 
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						blg_hair_turkish = yes
-					}
-
 					blg_tonsure = no
 					blg_shaved = no
 
@@ -303,17 +289,6 @@
 
 				trigger_if = {
 					limit = { is_female = no }
-
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_frankish = yes
-							blg_hair_southern = yes
-							blg_hair_easternslavic = yes
-							blg_hair_muslim = yes
-							blg_hair_cuman = yes
-						}
-					}
 
 					blg_tonsure = no
 					blg_shaved = no
@@ -395,15 +370,6 @@
 
 				trigger_if = {
 					limit = { is_female = no }
-
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_easternslavic = yes
-							blg_hair_celtic = yes
-							blg_hair_cuman = yes
-						}
-					}
 
 					blg_tonsure = no
 
@@ -525,11 +491,6 @@
 				trigger_if = {
 					limit = { is_female = no }
 
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						blg_hair_byzantine = yes
-					}
-
 					blg_tonsure = no
 					blg_shaved = no
 
@@ -637,18 +598,6 @@
 
 				trigger_if = {
 					limit = { is_female = no }
-
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_english = yes
-							blg_hair_frankish = yes
-							blg_hair_muslim = yes
-							blg_hair_egyptian = yes
-							blg_hair_african = yes
-							blg_hair_celtic = yes
-						}
-					}
 
 					trigger_if = {
 						limit = {
@@ -788,20 +737,6 @@
 				trigger_if = {
 					limit = { is_female = no }
 
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_frankish = yes
-							blg_hair_norse = yes
-							blg_hair_westernslavic = yes
-							blg_hair_muslim = yes
-							blg_hair_african = yes
-							blg_hair_cuman = yes
-							blg_hair_bodpa = yes
-							blg_hair_southindian = yes
-						}
-					}
-
 					blg_tonsure = no
 					blg_shaved = no
 
@@ -908,16 +843,6 @@
 				trigger_if = {
 					limit = { is_female = no }
 
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_english = yes
-							blg_hair_muslim = yes
-							blg_hair_african = yes
-							blg_hair_cuman = yes
-						}
-					}
-
 					blg_tonsure = no
 					blg_shaved = no
 
@@ -1001,14 +926,6 @@
 
 				trigger_if = {
 					limit = { is_female = no }
-
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_english = yes
-							blg_hair_easternslavic = yes
-						}
-					}
 
 					blg_tonsure = no
 					blg_shaved = no
@@ -1131,17 +1048,6 @@
 					limit = { is_female = no }
 
 					blg_hair_indian = no
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_english = yes
-							blg_hair_norse = yes
-							blg_hair_easternslavic = yes
-							blg_hair_southernslavic = yes
-							blg_hair_ugric = yes
-						}
-					}
-
 					blg_tonsure = no
 					blg_shaved = no
 
@@ -1256,15 +1162,6 @@
 					limit = { is_female = no }
 
 					blg_hair_indian = no
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						# Reverse of others
-						blg_hair_norse = no
-						blg_hair_easternslavic = no
-						blg_hair_ugric = no
-						blg_hair_celtic = no
-					}
-
 					blg_tonsure = no
 					blg_shaved = no
 
@@ -1274,7 +1171,7 @@
 						}
 						# Reverse of others
 						OR = {
-							practical_age >= 70
+							blg_hair_english = yes
 							blg_hair_norse = yes
 							blg_hair_easternslavic = yes
 							blg_hair_ugric = yes
@@ -1383,17 +1280,6 @@
 					limit = { is_female = no }
 
 					blg_hair_indian = no
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_easternslavic = yes
-							blg_hair_westernslavic = yes
-							blg_hair_southernslavic = yes
-							blg_hair_muslim = yes
-							blg_hair_egyptian = yes
-						}
-					}
-
 					blg_tonsure = no
 					blg_shaved = no
 
@@ -1503,15 +1389,6 @@
 					limit = { is_female = no }
 
 					blg_hair_indian = no
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_easternslavic = yes
-							blg_hair_african = yes
-							blg_hair_turkish = yes
-						}
-					}
-
 					trigger_if = {
 						limit = {
 							blg_tonsure = yes
@@ -1631,14 +1508,6 @@
 					limit = { is_female = no }
 
 					blg_hair_indian = no
-					trigger_if = {
-						limit = { practical_age >= 70 }
-						OR = {
-							blg_hair_byzantine = yes
-							blg_hair_celtic = yes
-						}
-					}
-
 					blg_tonsure = no
 					blg_shaved = no
 

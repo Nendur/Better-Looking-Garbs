@@ -228,6 +228,13 @@ blg_headgear_military = {
 				culture = nelanthern
 				culture = reacher
 				culture_group = minotaur_group
+				AND = {
+					culture = illuskan
+					OR = {
+						government = merchant_republic_government
+						government = republic_government
+					}
+				}
 			}
 		}
 		blg_headgear_duke = no
@@ -247,9 +254,10 @@ blg_headgear_intrigue = {
 # More common to cover hair.
 blg_headgear_covered = {
 	OR = {
-		culture_group = netherese_group
-		culture_group = nafili_group
-		true_religion_scope = { likes_muslims = yes }
+		is_muslim_trigger = yes
+		culture = bedine
+		culture = dtarig
+		culture = desert_giant
 	}
 }
 
@@ -356,6 +364,15 @@ blg_clothes_military = {
 				graphical_culture = goblingfx
 				graphical_culture = forestgoblingfx
 				graphical_culture = slanngfx
+				culture = nelanthern
+				culture = reacher
+				AND = {
+					culture = illuskan
+					OR = {
+						government = merchant_republic_government
+						government = republic_government
+					}
+				}
 			}
 		}
 		blg_clothes_noble = no

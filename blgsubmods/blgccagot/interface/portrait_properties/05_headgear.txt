@@ -212,6 +212,7 @@
 				has_portrait_property = { layer = 5 index = 6 }
 				has_portrait_property = { layer = 5 index = 7 }
 				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 9 }
 				has_portrait_property = { layer = 5 index = 11 }
 			}
 		}
@@ -241,6 +242,7 @@
 				has_portrait_property = { layer = 5 index = 5 }
 				has_portrait_property = { layer = 5 index = 7 }
 				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 9 }
 				has_portrait_property = { layer = 5 index = 11 }
 			}
 		}
@@ -265,6 +267,7 @@
 				has_portrait_property = { layer = 5 index = 5 }
 				has_portrait_property = { layer = 5 index = 6 }
 				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 9 }
 				has_portrait_property = { layer = 5 index = 11 }
 			}
 		}
@@ -300,6 +303,7 @@
 				has_portrait_property = { layer = 5 index = 5 }
 				has_portrait_property = { layer = 5 index = 6 }
 				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 9 }
 				has_portrait_property = { layer = 5 index = 11 }
 			}
 		}
@@ -417,6 +421,7 @@
 				has_portrait_property = { layer = 5 index = 6 }
 				has_portrait_property = { layer = 5 index = 7 }
 				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 9 }
 			}
 		}
 

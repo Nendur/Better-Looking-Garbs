@@ -146,12 +146,29 @@ objectTypes = {
 
 	EMFXActorType = {
 		name = "westerngfx_battlemages"
-		actorfile = "gfx\models\Mapindicators\jewish_rabbi.xac"
+		actorfile = "gfx\models\Mapindicators\wizard.xac"
 
-		idle   = "gfx\models\Mapindicators\jewish_rabbi_idle.xsm"
+		idle   = "gfx\models\Archer_Idle.xsm"
 		move   = "gfx\models\Archer_Moving.xsm"
 		attack = "gfx\models\Archer_Attack.xsm"
 
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_battlemages_weapon"
+		actorfile = "gfx\models\Attachments\mages_Arrow.xac"
+
+		idle   = "gfx\models\Attachments\Arrow_idle.xsm"
+		move   = "gfx\models\Attachments\Arrow_idle.xsm"
+		attack = "gfx\models\Attachments\Arrow_attack.xsm"
+
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "muslimgfx_battlemages_helmet"
+		actorfile = "gfx\models\Attachments\Helmet_05_Arab.xac"
 		scale = 1.0f
 	}
 
@@ -162,6 +179,17 @@ objectTypes = {
 		idle   = "gfx\models\Mapindicators\jewish_rabbi_idle.xsm"
 		move   = "gfx\models\Archer_Moving.xsm"
 		attack = "gfx\models\Archer_Attack.xsm"
+
+		scale = 1.0f
+	}
+
+	EMFXActorType = {
+		name = "westerngfx_tongues_weapon"
+		actorfile = "gfx\models\Attachments\mages_Arrow.xac"
+
+		idle   = "gfx\models\Attachments\Arrow_idle.xsm"
+		move   = "gfx\models\Attachments\Arrow_idle.xsm"
+		attack = "gfx\models\Attachments\Arrow_attack.xsm"
 
 		scale = 1.0f
 	}

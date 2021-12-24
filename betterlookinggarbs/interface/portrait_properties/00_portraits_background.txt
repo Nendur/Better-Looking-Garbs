@@ -77,6 +77,7 @@
 				blg_slave = yes
 				trait = cruel
 				trait = impaler
+				blg_subterranean = yes
 			}
 		}
 
@@ -95,6 +96,7 @@
 		modifier = {
 			factor = 0.01
 			blg_travelling = yes
+			blg_subterranean = no
 		}
 	}
 

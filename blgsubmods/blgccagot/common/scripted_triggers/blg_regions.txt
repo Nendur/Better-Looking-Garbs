@@ -179,6 +179,11 @@ blg_steppe = {
 	}
 }
 
+# Underground terrain
+blg_subterranean = {
+	always = no
+}
+
 # Snowy terrain.
 blg_winter = {
 	OR = {

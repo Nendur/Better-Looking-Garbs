@@ -168,6 +168,7 @@ blg_merchant_clothes = {
 		culture_group = lapal_group
 		culture_group = katashakan_group
 		culture_group = mulan_group
+		culture_group = shou_group
 		culture_group = taan_group
 		culture_group = scaly_group
 		culture_group = orc_group
@@ -175,10 +176,17 @@ blg_merchant_clothes = {
 		culture_group = gnome_group
 		culture_group = outworlder_group
 		culture_group = maztican_group
+		culture_group = abeiran_group
 		culture = borderer
 		culture = calishite
 		culture = arnadar
 		culture = aslanlar
+	}
+	NOR = {
+		government = baron_theocracy_government
+		trait = creature_ogre
+		trait = creature_troll
+		trait = creature_goblin
 	}
 }
 
@@ -201,6 +209,12 @@ blg_merchant_headgear = {
 		culture_group = gnome_group
 		culture_group = outworlder_group
 		culture = borderer
+	}
+	NOR = {
+		government = baron_theocracy_government
+		trait = creature_ogre
+		trait = creature_troll
+		trait = creature_goblin
 	}
 }
 
