@@ -41,7 +41,7 @@ blg_dirty = {
 # Attractive character.
 blg_fair = {
 	OR = {
-		trait = fair
+		trait = attractive
 		trait = beauty
 	}
 }
@@ -120,7 +120,7 @@ blg_mudsplatter = {
 # Character has a naval theme.
 blg_naval = {
 	OR = {
-		trait = seaking
+		trait = sea_king
 		trait = sea_queen
 		has_minor_title = title_high_admiral
 		has_minor_title = title_lighthouse_custodian

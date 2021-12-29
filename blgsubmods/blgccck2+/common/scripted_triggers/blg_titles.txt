@@ -69,8 +69,8 @@ blg_knights_templar = {
 # Holy Order - Knights Hospitaler
 blg_knights_hospitaler = {
 	OR = {
-		has_landed_title = d_knights_hospitaler
-		liege = { has_landed_title = d_knights_hospitaler }
+		has_landed_title = d_knights_hospitaller
+		liege = { has_landed_title = d_knights_hospitaller }
 	}
 }
 
@@ -78,9 +78,9 @@ blg_knights_hospitaler = {
 blg_knights_teutonic = {
 	OR = {
 		has_landed_title = d_teutonic_order
-		#has_landed_title = k_teutonic_state
+		has_landed_title = k_teutonic_state
 		liege = { has_landed_title = d_teutonic_order }
-		#liege = { has_landed_title = k_teutonic_state }
+		liege = { has_landed_title = k_teutonic_state }
 	}
 }
 

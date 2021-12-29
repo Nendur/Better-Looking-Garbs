@@ -142,6 +142,11 @@ blg_artifact_scepter_bon = {
 			rightful_religious_head = ROOT
 			religion_openly_bon_or_reformed_trigger = yes
 		}
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = scepter_bon_fylkir
+		}
+		trait = dead_scepter_bon_fylkir
 	}
 }
 
@@ -416,10 +421,7 @@ blg_crown_zunist = {
 		AND = {
 			rightful_religious_head = ROOT
 			blg_priest = yes
-			OR = {
-				religion_openly_zun_or_reformed_trigger = yes
-				religion_group = egyptian_pagan_group
-			}
+			blg_religion_solar_pagan = yes
 		}
 	}
 }
@@ -577,6 +579,7 @@ blg_weapon_polearm = {
 	OR = {
 		has_artifact_flag = polearm
 		artifact_type = chinese_ji
+		artifact_type = achilles_spear
 	}
 }
 

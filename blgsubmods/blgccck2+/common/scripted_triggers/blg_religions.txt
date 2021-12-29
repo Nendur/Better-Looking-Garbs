@@ -2,9 +2,15 @@
 
 ### Christian branches:
 
+# Christian religion.
+blg_religion_christian = {
+	religion_group = christian
+}
+
 # Catholic religions.
 blg_religion_catholic = {
 	OR = {
+		trait = latin_rites
 		religion = catholic
 		is_heresy_of = catholic
 		is_parent_religion = catholic
@@ -57,16 +63,16 @@ blg_religion_eastern = {
 	religion_group = indian_group
 }
 
+# Muslim religions.
+blg_religion_muslim = {
+	religion_group = muslim
+}
+
 ### Pagan religions:
 
 # Pagan religions.
 blg_religion_pagan = {
-	OR = {
-		religion_group = pagan_group
-		religion_group = hellenic_pagan_group
-		religion_group = egyptian_pagan_group
-		religion_group = mesoamerican_group
-	}
+	religion_group = pagan_group
 }
 
 # Aztec religions.
@@ -76,20 +82,15 @@ blg_religion_aztec = {
 
 # Celtic pagan religions.
 blg_religion_celtic = {
-	is_pagan_celtic = yes
+	religion_openly_celtic_or_reformed_trigger = yes
 }
 
-# Far Eastern pagan religions.
-blg_religion_eastern_pagan = {
+# Sun themed pagan religions.
+blg_religion_solar_pagan = {
 	OR = {
 		religion_openly_zun_or_reformed_trigger = yes
-		religion_group = egyptian_pagan_group
+		religion_openly_egyptian_or_reformed_trigger = yes
 	}
-}
-
-# Egyptian pagan religions.
-blg_religion_egyptian = {
-	religion_group = egyptian_pagan_group
 }
 
 ### Portrait override triggers:
@@ -106,7 +107,7 @@ blg_portrait_african_pagan = {
 # Catholic religion.
 blg_portrait_catholic = {
 	OR = {
-		portrait_religion = chalcedonian
+		portrait_has_trait = latin_rites
 		portrait_religion = catholic
 		portrait_religion = cathar
 		portrait_religion = fraticelli
@@ -149,15 +150,6 @@ blg_portrait_hellenic = {
 	}
 }
 
-# Jewish religion.
-blg_portrait_jewish = {
-	OR = {
-		portrait_religion = jewish
-		portrait_religion = samaritan
-		portrait_religion = karaite
-	}
-}
-
 # Muslim religion.
 blg_portrait_muslim = {
 	OR = {
@@ -189,6 +181,13 @@ blg_portrait_orthodox = {
 		portrait_religion = paulician
 		portrait_religion = tondrakian
 		portrait_religion = chalcedonian
+		portrait_religion = jewish
+		portrait_religion = samaritan
+		portrait_religion = karaite
+		portrait_religion = canaan_pagan
+		portrait_religion = egyptian_pagan
+		portrait_religion = aten_pagan
+		portrait_religion = egyptian_pagan
 	}
 }
 
@@ -207,10 +206,10 @@ blg_portrait_zoroastrian = {
 		portrait_religion = mazdaki
 		portrait_religion = khurmazta
 		portrait_religion = zurvanist
-		portrait_religion = manichean
+		portrait_religion = manichaean
 		portrait_religion = mandaean
 		portrait_religion = yazidi
-		portrait_religion = arab_pagan
+		portrait_religion = arabic_pagan
 	}
 }
 

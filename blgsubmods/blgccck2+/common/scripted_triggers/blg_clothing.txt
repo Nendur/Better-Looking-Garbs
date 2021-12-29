@@ -21,7 +21,33 @@ blg_royalty = {
 
 # Has been coronated if necessary.
 blg_crowned = {
-	NOT = { trait = uncrowned }
+	trigger_if = {
+		limit = { is_alive = no }
+		NOT = { trait = uncrowned }
+	}
+	trigger_else_if = {
+		limit = {
+			has_dlc = "Holy Fury"
+			is_feudal = yes
+			primary_title = { is_vice_royalty = no }
+			OR = {
+				religion = catholic
+				religion = fraticelli
+			}
+			OR = {
+				has_game_started = yes
+				is_save_game = yes
+			}
+		}
+		OR = {
+			trait = crowned
+			trait = crowned_by_relhead
+			trait = crowned_by_vip
+			trait = crowned_by_pope
+			trait = strong_basileus
+			trait = weak_basileus
+		}
+	}
 }
 
 # Use the Chinese face jewelry.
@@ -232,7 +258,7 @@ blg_headgear_intrigue = {
 blg_headgear_covered = {
 	true_religion_scope = {
 		OR = {
-			likes_muslims = yes
+			blg_religion_muslim = yes
 			likes_jews = yes
 			likes_mazdans = yes
 		}
@@ -331,7 +357,7 @@ blg_clothes_military = {
 blg_clothes_intrigue = {
 	OR = {
 		has_job_title = job_spymaster
-		trait = schemer
+		trait = master_schemer
 		AND = {
 			intrigue = 12
 			lower_real_tier_than = duke

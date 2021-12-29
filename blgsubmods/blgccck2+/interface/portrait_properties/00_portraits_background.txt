@@ -1,0 +1,990 @@
+# p0 Backgrounds.
+0 = {
+	0 = { # 0 - Castle interior
+		factor = 1
+		hide_layers = { 38 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { siege = { is_attacker = no } }
+				capital_holding = {
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+					}
+				}
+			}
+			trigger_else_if = {
+				limit = { is_abroad = yes }
+				location = { holding_type = castle }
+			}
+			trigger_else = {
+				capital_holding = { holding_type = castle }
+			}
+
+			NOR = {
+				trait = in_hiding
+				blg_travelling = yes
+			}
+		}
+
+		modifier = {
+			factor = 5
+			is_feudal = yes
+			is_landed = yes
+		}
+
+		modifier = {
+			factor = 5
+			has_job_title = job_chancellor
+		}
+
+		modifier = {
+			factor = 100
+			siege = { is_attacker = no }
+		}
+	}
+
+	1 = { # a - Throne room
+		factor = 15
+		hide_layers = { 38 = {} }
+
+		trigger = {
+			blg_royalty = yes
+
+			NOR = {
+				is_abroad = yes
+				trait = in_hiding
+				blg_travelling = yes
+			}
+		}
+
+		modifier = {
+			factor = 4
+			real_tier = emperor
+		}
+	}
+
+	2 = { # b - Dungeon
+		factor = 4
+		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			OR = {
+				blg_prisoner = yes
+				blg_slave = yes
+				trait = cruel
+				trait = impaler
+				blg_subterranean = yes
+			}
+		}
+
+		modifier = {
+			factor = 10000
+			blg_prisoner = yes
+			NOT = { has_character_modifier = house_arrest }
+		}
+
+		modifier = {
+			factor = 10000
+			is_alive = no
+			blg_slave = yes
+		}
+
+		modifier = {
+			factor = 0.01
+			blg_travelling = yes
+			blg_subterranean = no
+		}
+	}
+
+	3 = { # c - Forest
+		factor = 3
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { location = { always = yes } }
+				location = {
+					blg_forest = yes
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					blg_forest = yes
+				}
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 20
+			blg_outdoors = yes
+		}
+	}
+
+	4 = { # d - Bedroom
+		factor = 1
+		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			OR = {
+				is_ill = yes
+				is_incapable = yes
+				trait = lustful
+				trait = infirm
+				trait = slothful
+				trait = decadent
+				trait = master_seducer
+				trait = master_seductress
+				has_character_modifier = house_arrest
+			}
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				is_ill = yes
+				trait = infirm
+			}
+		}
+
+		modifier = {
+			factor = 10
+			is_incapable = yes
+		}
+
+		modifier = {
+			factor = 10000
+			has_character_modifier = house_arrest
+		}
+
+		modifier = {
+			factor = 0.01
+			blg_travelling = yes
+		}
+	}
+
+	5 = { # e - Study
+		factor = 3
+		hide_layers = { 38 = {} }
+
+		trigger = {
+			OR = {
+				has_focus = focus_scholarship
+				has_lifestyle_learning_trigger = yes
+				blg_learned = yes
+				trait = poet
+				trait = game_master
+				trait = architect
+			}
+
+			NOR = {
+				trait = in_hiding
+				blg_travelling = yes
+			}
+		}
+
+		modifier = {
+			factor = 5
+			blg_learned = yes
+		}
+	}
+
+	6 = { # f - Military camp
+		factor = 5
+		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			OR = {
+				blg_warrior = yes
+				blg_duelling = yes
+				blg_tournament = yes
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 100
+			blg_in_combat = yes
+			is_at_sea = no
+		}
+
+		modifier = {
+			factor = 10
+			blg_tournament = yes
+		}
+	}
+
+	7 = { # g - Dolmen / Shrine
+		factor = 1
+		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			OR = {
+				blg_religion_pagan = yes
+				blg_religion_eastern = yes
+				likes_celts = yes
+				trait = mystic
+			}
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = in_meditation
+			OR = {
+				blg_religion_pagan = yes
+				blg_religion_eastern = yes
+			}
+		}
+
+		modifier = {
+			factor = 30
+			blg_priest = yes
+			blg_religion_pagan = yes
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				blg_devout = yes
+				blg_pilgrimage = yes
+				capital_holding = { holding_type = temple }
+			}
+			OR = {
+				blg_religion_pagan = yes
+				blg_religion_eastern = yes
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			OR = {
+				trait = cynical
+				trait = excommunicated
+				has_character_modifier = in_seclusion
+			}
+		}
+	}
+
+	8 = { # h - Gallows
+		factor = 2
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			OR = {
+				trait = cruel
+				trait = impaler
+				death_execution_trigger = yes
+				death_sacrificed_trigger = yes
+				blg_executioner = yes
+			}
+		}
+
+		modifier = {
+			factor = 15
+			trait = impaler
+		}
+
+		modifier = {
+			factor = 10000
+			OR = {
+				death_execution_trigger = yes
+				death_sacrificed_trigger = yes
+				blg_executioner = yes
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			OR = {
+				trait = in_hiding
+				blg_travelling = yes
+				has_character_modifier = in_seclusion
+			}
+		}
+	}
+
+	9 = { # i - Church
+		factor = 2
+		hide_layers = { 38 = {} }
+
+		trigger = {
+			blg_religion_christian = yes
+
+			OR = {
+				employer = {
+					blg_priest = yes
+				}
+				has_focus = focus_theology
+				has_pious_trait_trigger = yes
+				blg_pilgrimage = yes
+				has_character_modifier = doing_penance
+			}
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = doing_penance
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				blg_priest = yes
+				blg_devout = yes
+				blg_pilgrimage = yes
+				capital_holding = { holding_type = temple }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			OR = {
+				trait = cynical
+				trait = excommunicated
+				has_secret_religion = yes
+			}
+		}
+	}
+
+	10 = { # j - Desert
+		factor = 1
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { location = { always = yes } }
+				location = {
+					blg_desert = yes
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					blg_desert = yes
+				}
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 3
+			location = {
+				OR = {
+					terrain = desert
+					terrain = hills
+				}
+			}
+		}
+
+		modifier = {
+			factor = 50
+			blg_desert_journey = yes
+		}
+
+		modifier = {
+			factor = 10
+			blg_outdoors = yes
+		}
+	}
+
+	11 = { # k - Steppe
+		factor = 5
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { location = { always = yes } }
+				location = {
+					blg_steppe = yes
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					blg_steppe = yes
+				}
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 10
+			blg_outdoors = yes
+		}
+	}
+
+	12 = { # l - Ocean
+		factor = 2
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			OR = {
+				is_at_sea = yes
+				location = { has_trade_post = yes port = yes }
+				this_is_sea_raider_trigger = yes
+				employer = {
+					blg_mercenary_fleet = yes
+				}
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 100
+			OR = {
+				is_at_sea = yes
+				blg_naval = yes
+				employer = {
+					blg_mercenary_fleet = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 10
+			is_patrician = yes
+		}
+	}
+
+	13 = { # m - Plain wall
+		factor = 1
+		hide_layers = { 38 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_abroad = yes }
+				location = {
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
+					}
+				}
+			}
+			trigger_else = {
+				capital_holding = {
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
+					}
+				}
+			}
+
+			blg_travelling = no
+		}
+
+		modifier = {
+			factor = 100
+			blg_duelling = yes
+		}
+	}
+
+	14 = { # n - Tavern
+		factor = 1
+		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
+
+		modifier = {
+			factor = 1000
+			blg_feast = yes
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				has_focus = focus_carousing
+				trait = drunkard
+				trait = hedonist
+				trait = decadent
+			}
+		}
+
+		modifier = {
+			factor = 4
+			OR = {
+				blg_socializer = yes
+				trait = gluttonous
+				trait = lustful
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			OR = {
+				trait = temperate
+				trait = shy
+				has_character_flag = ramadan
+			}
+		}
+
+		modifier = {
+			factor = 0.25
+			OR = {
+				higher_real_tier_than = duke
+				spouse_even_if_dead = { higher_real_tier_than = duke }
+			}
+			blg_peasant = no
+		}
+	}
+
+	15 = { # o - Fancy wall
+		factor = 3
+		hide_layers = { 38 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_abroad = yes }
+				location = {
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
+					}
+				}
+			}
+			trigger_else = {
+				capital_holding = {
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
+					}
+				}
+			}
+
+			OR = {
+				is_landed = yes
+				spouse = { is_landed = yes }
+				blg_prince_title = yes
+			}
+
+			NOR = {
+				trait = in_hiding
+				blg_travelling = yes
+			}
+		}
+	}
+
+	16 = { # p - Tribal interior
+		factor = 4
+		hide_layers = { 38 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_abroad = yes }
+				location = {
+					OR = {
+						holding_type = tribal
+						holding_type = nomad
+						holder_scope = { has_tribal_or_nomadic_government_trigger = yes }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					capital_holding = {
+						OR = {
+							holding_type = tribal
+							holding_type = nomad
+						}
+					}
+					has_tribal_or_nomadic_government_trigger = yes
+				}
+			}
+
+			NOR = {
+				trait = in_hiding
+				blg_travelling = yes
+			}
+		}
+	}
+
+	17 = { # q - Tribal village
+		factor = 4
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_abroad = yes }
+				location = {
+					OR = {
+						holding_type = tribal
+						holding_type = nomad
+						holder_scope = { has_tribal_or_nomadic_government_trigger = yes }
+					}
+				}
+			}
+			trigger_else = {
+				OR = {
+					capital_holding = {
+						OR = {
+							holding_type = tribal
+							holding_type = nomad
+						}
+					}
+					has_tribal_or_nomadic_government_trigger = yes
+				}
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 5
+			blg_townsfolk = yes
+		}
+
+		modifier = {
+			factor = 5
+			has_job_title = job_treasurer
+		}
+
+		modifier = {
+			factor = 5
+			has_character_modifier = holding_summer_fair
+		}
+	}
+
+	18 = { # r - European castle
+		factor = 1
+		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_abroad = yes }
+				location = {
+					holding_type = castle
+					blg_region_europe = yes
+				}
+			}
+			trigger_else = {
+				capital_holding = { holding_type = castle }
+				capital_scope = {
+					blg_region_europe = yes
+				}
+			}
+
+			NOR = {
+				trait = in_hiding
+				has_character_modifier = in_seclusion
+			}
+		}
+
+		modifier = {
+			factor = 3
+			is_feudal = yes
+			is_landed = yes
+		}
+
+		modifier = {
+			factor = 10
+			has_job_title = job_chancellor
+		}
+
+		modifier = {
+			factor = 10
+			trait = architect
+		}
+	}
+
+	19 = { # s - Muslim mosque
+		factor = 3
+		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_abroad = yes }
+				location = {
+					blg_religion_muslim = yes
+					OR = {
+						holding_type = castle
+						holding_type = temple
+					}
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					blg_religion_muslim = yes
+				}
+				capital_holding = {
+					OR = {
+						holding_type = castle
+						holding_type = temple
+					}
+				}
+			}
+
+			NOR = {
+				trait = in_hiding
+				has_character_modifier = in_seclusion
+			}
+		}
+
+		modifier = {
+			factor = 5
+			OR = {
+				blg_priest = yes
+				capital_holding = { holding_type = temple }
+			}
+			blg_religion_muslim = yes
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				blg_devout = yes
+				blg_pilgrimage = yes
+			}
+			blg_religion_muslim = yes
+		}
+
+		modifier = {
+			factor = 0.01
+			OR = {
+				has_secret_religion = yes
+				trait = cynical
+			}
+		}
+
+		modifier = {
+			factor = 5
+			trait = architect
+		}
+
+		modifier = {
+			factor = 10000
+			has_character_flag = hajj_arrived_in_mecca
+		}
+	}
+
+	20 = { # t - Town
+		factor = 1
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_abroad = yes }
+				location = {
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
+					}
+				}
+			}
+			trigger_else = {
+				capital_holding = {
+					OR = {
+						holding_type = castle
+						holding_type = city
+						holding_type = temple
+						holding_type = family_palace
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 5
+			blg_townsfolk = yes
+		}
+
+		modifier = {
+			factor = 5
+			has_job_title = job_treasurer
+		}
+
+		modifier = {
+			factor = 5
+			has_character_modifier = holding_summer_fair
+		}
+	}
+
+	21 = { # u - Mountains
+		factor = 3
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { location = { always = yes } }
+				location = {
+					blg_mountain = yes
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					blg_mountain = yes
+				}
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 10
+			blg_outdoors = yes
+		}
+	}
+
+	22 = { # v - Curtains
+		factor = 1
+		hide_layers = { 38 = {} }
+		hide_layers = { 42 = {} }
+
+		modifier = {
+			factor = 100
+			is_alive = no
+		}
+
+		modifier = {
+			factor = 0
+			is_alive = yes
+			OR = {
+				trait = in_hiding
+				blg_travelling = yes
+			}
+		}
+	}
+
+	23 = { # w - Mediterranean farmlands
+		factor = 3
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { location = { always = yes } }
+				location = {
+					terrain = plains
+					blg_region_mediterranean = yes
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					terrain = plains
+					blg_region_mediterranean = yes
+				}
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				trait = gardener
+				blg_outdoors = yes
+			}
+		}
+	}
+
+	24 = { # x - Farmlands
+		factor = 3
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { location = { always = yes } }
+				location = {
+					blg_farmlands = yes
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					blg_farmlands = yes
+				}
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				trait = gardener
+				blg_outdoors = yes
+			}
+		}
+	}
+
+	25 = { # y - Snow
+		factor = 2
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { location = { always = yes } }
+				location = {
+					blg_winter = yes
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					blg_winter = yes
+				}
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 0.3
+			location = { climate = mild_winter }
+		}
+
+		modifier = {
+			factor = 2
+			location = {
+				blg_severe_winter = yes
+			}
+		}
+	}
+
+	26 = { # z - African savanna
+		factor = 2
+		hide_layers = { 42 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { location = { always = yes } }
+				location = {
+					blg_region_africa = yes
+				}
+			}
+			trigger_else = {
+				capital_scope = {
+					blg_region_africa = yes
+				}
+			}
+
+			NOT = { has_character_modifier = in_seclusion }
+		}
+
+		modifier = {
+			factor = 5
+			location = { terrain = plains }
+		}
+
+		modifier = {
+			factor = 25
+			blg_outdoors = yes
+		}
+	}
+}

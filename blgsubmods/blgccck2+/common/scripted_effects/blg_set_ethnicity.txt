@@ -73,7 +73,7 @@ blg_set_ethnicity_berber = {
 		limit = {
 			blg_ethnicity_berber = no
 		}
-		set_graphical_culture = zenati
+		set_graphical_culture = maghreb_arabic
 	}
 }
 
@@ -81,7 +81,7 @@ blg_set_ethnicity_byzantine = {
 	if = {
 		limit = {
 			OR = {
-				likes_latino_iberians = yes
+				blg_culture_mediterranean = yes
 				blg_culture_middleeast = yes
 				blg_culture_israelite = yes
 			}
@@ -116,9 +116,8 @@ blg_set_ethnicity_celtic = {
 			OR = {
 				blg_culture_scottish = yes
 				blg_culture_saxon = yes
-				culture_group = north_germanic
+				blg_culture_northern = yes
 				culture_group = baltic
-				culture_group = finno_ugric
 			}
 		}
 		if = {
@@ -189,16 +188,14 @@ blg_set_ethnicity_east_african = {
 		limit = {
 			OR = {
 				blg_culture_somali = yes
-				likes_muslims = yes
+				blg_religion_muslim = yes
 				blg_culture_middleeast = yes
-				likes_altaics = yes
-				likes_indians = yes
-				likes_dravidians = yes
+				blg_culture_steppes = yes
+				blg_culture_indian = yes
 				likes_tibetans = yes
 				blg_culture_chinese = yes
-				likes_latino_iberians = yes
-				likes_balto_slavics = yes
-				likes_finno_ugrics = yes
+				blg_culture_mediterranean = yes
+				blg_culture_eastern_european = yes
 			}
 		}
 		if = {
@@ -229,9 +226,8 @@ blg_set_ethnicity_egyptian = {
 	if = {
 		limit = {
 			OR = {
-				likes_byzantines = yes
+				blg_culture_byzantine = yes
 				blg_culture_african = yes
-				blg_culture_israelite = yes
 			}
 		}
 		if = {
@@ -282,13 +278,11 @@ blg_set_ethnicity_frankish = {
 			OR = {
 				culture = outremer
 				blg_culture_italian = yes
-				likes_byzantines = yes
+				blg_culture_byzantine = yes
 				blg_culture_middleeast = yes
-				likes_altaics = yes
+				blg_culture_steppes = yes
 				blg_culture_african = yes
-				blg_culture_israelite = yes
-				likes_indians = yes
-				likes_dravidians = yes
+				blg_culture_indian = yes
 				blg_culture_chinese = yes
 			}
 		}
@@ -303,7 +297,7 @@ blg_set_ethnicity_frankish = {
 		limit = {
 			NOT = { graphical_culture = frankishgfx }
 		}
-		set_graphical_culture = frankish
+		set_graphical_culture = french
 	}
 }
 
@@ -319,7 +313,7 @@ blg_set_ethnicity_german = {
 			limit = {
 				NOT = { graphical_culture = oldfrankishgfx }
 			}
-			set_graphical_culture = old_frankish
+			set_graphical_culture = frankish
 		}
 	}
 	else_if = {
@@ -347,13 +341,13 @@ blg_set_ethnicity_iberian = {
 		if = {
 			limit = {
 				OR = {
-					likes_christians = yes
 					blg_culture_france = yes
 					blg_culture_italian = yes
-					likes_germanics = yes
+					blg_culture_western_european = yes
+					blg_culture_eastern_european = yes
 				}
 			}
-			set_graphical_culture = castillan
+			set_graphical_culture = castilian
 		}
 		else = {
 			set_graphical_culture = andalusian_arabic
@@ -398,11 +392,10 @@ blg_set_ethnicity_italian = {
 		limit = {
 			OR = {
 				culture = dalmatian
-				likes_balto_slavics = yes
-				likes_finno_ugrics = yes
-				likes_altaics = yes
+				blg_culture_eastern_european = yes
+				blg_culture_byzantine = yes
+				blg_culture_steppes = yes
 				likes_mesoamericans = yes
-				blg_culture_israelite = yes
 			}
 		}
 		if = {
@@ -424,8 +417,7 @@ blg_set_ethnicity_levantine = {
 	if = {
 		limit = {
 			OR = {
-				likes_byzantines = yes
-				blg_culture_israelite = yes
+				blg_culture_byzantine = yes
 				blg_culture_african = yes
 			}
 		}
@@ -450,7 +442,7 @@ blg_set_ethnicity_lombard = {
 			OR = {
 				culture = lombard
 				blg_culture_italian = yes
-				likes_byzantines = yes
+				blg_culture_byzantine = yes
 			}
 		}
 		if = {
@@ -483,15 +475,11 @@ blg_set_ethnicity_mongol = {
 			OR = {
 				blg_culture_chinese = yes
 				blg_culture_middleeast = yes
-				likes_byzantines = yes
-				likes_germanics = yes
-				likes_latino_iberians = yes
-				likes_balto_slavics = yes
-				likes_finno_ugrics = yes
-				likes_celts = yes
-				likes_indians = yes
-				likes_dravidians = yes
-				blg_culture_israelite = yes
+				blg_culture_indian = yes
+				blg_culture_byzantine = yes
+				blg_culture_western_european = yes
+				blg_culture_eastern_european = yes
+				blg_culture_mediterranean = yes
 			}
 		}
 		if = {
@@ -555,8 +543,7 @@ blg_set_ethnicity_persian = {
 			OR = {
 				blg_culture_afghan = yes
 				blg_culture_sogdian = yes
-				likes_indians = yes
-				likes_dravidians = yes
+				blg_culture_indian = yes
 				likes_tibetans = yes
 				blg_culture_chinese = yes
 			}
@@ -581,7 +568,7 @@ blg_set_ethnicity_romanobalkan = {
 		limit = {
 			blg_ethnicity_romanobalkan = no
 		}
-		set_graphical_culture = romanian
+		set_graphical_culture = vlach
 	}
 }
 
@@ -600,9 +587,8 @@ blg_set_ethnicity_sogdian = {
 			OR = {
 				blg_culture_sogdian = yes
 				blg_culture_afghan = yes
-				likes_altaics = yes
-				likes_indians = yes
-				likes_dravidians = yes
+				blg_culture_steppes = yes
+				blg_culture_indian = yes
 				likes_tibetans = yes
 				blg_culture_chinese = yes
 			}
@@ -627,11 +613,9 @@ blg_set_ethnicity_southindian = {
 		limit = {
 			OR = {
 				likes_indians = yes
-				likes_latino_iberians = yes
-				likes_germanics = yes
-				likes_celts = yes
-				likes_balto_slavics = yes
-				likes_finno_ugrics = yes
+				blg_culture_western_european = yes
+				blg_culture_eastern_european = yes
+				blg_culture_mediterranean = yes
 			}
 		}
 		if = {
@@ -661,8 +645,7 @@ blg_set_ethnicity_southslavic = {
 				}
 				culture_group = east_slavic
 				culture_group = baltic
-				likes_germanics = yes
-				likes_celts = yes
+				blg_culture_western_european = yes
 			}
 		}
 		if = {
@@ -677,7 +660,7 @@ blg_set_ethnicity_southslavic = {
 			year >= 950
 			OR = {
 				likes_finno_ugrics = yes
-				likes_altaics = yes
+				blg_culture_steppes = yes
 				blg_culture_chinese = yes
 			}
 		}
@@ -710,14 +693,11 @@ blg_set_ethnicity_tibetan = {
 		limit = {
 			OR = {
 				blg_culture_middleeast = yes
-				likes_indians = yes
-				likes_dravidians = yes
-				likes_latino_iberians = yes
-				likes_germanics = yes
-				likes_celts = yes
-				likes_balto_slavics = yes
-				likes_finno_ugrics = yes
-				likes_byzantines = yes
+				blg_culture_indian = yes
+				blg_culture_byzantine = yes
+				blg_culture_western_european = yes
+				blg_culture_eastern_european = yes
+				blg_culture_mediterranean = yes
 			}
 		}
 		if = {
@@ -773,12 +753,10 @@ blg_set_ethnicity_turkish = {
 	else_if = {
 		limit = {
 			OR = {
-				likes_byzantines = yes
-				likes_germanics = yes
-				likes_latino_iberians = yes
-				likes_balto_slavics = yes
-				likes_finno_ugrics = yes
-				likes_celts = yes
+				blg_culture_byzantine = yes
+				blg_culture_western_european = yes
+				blg_culture_eastern_european = yes
+				blg_culture_mediterranean = yes
 			}
 		}
 		if = {
@@ -817,7 +795,7 @@ blg_set_ethnicity_westafrican = {
 			limit = {
 				NOT = { graphical_culture = westafricangfx }
 			}
-			set_graphical_culture = manden
+			set_graphical_culture = mande
 		}
 	}
 	else_if = {
@@ -855,17 +833,16 @@ blg_set_ethnicity_western = {
 	}
 	else_if = {
 		limit = {
-			likes_latino_iberians = yes
+			blg_culture_mediterranean = yes
 		}
 		blg_set_ethnicity_norman = yes
 	}
 	else_if = {
 		limit = {
 			OR = {
-				likes_byzantines = yes
-				likes_balto_slavics = yes
-				likes_altaics = yes
-				culture_group = magyar
+				blg_culture_byzantine = yes
+				blg_culture_eastern_european = yes
+				blg_culture_steppes = yes
 				blg_culture_chinese = yes
 			}
 		}
@@ -878,8 +855,8 @@ blg_set_ethnicity_westslavic = {
 		limit = {
 			OR = {
 				culture = bohemian
-				likes_byzantines = yes
-				likes_latino_iberians = yes
+				blg_culture_byzantine = yes
+				blg_culture_mediterranean = yes
 				culture_group = west_germanic
 				culture_group = central_germanic
 				culture_group = south_slavic

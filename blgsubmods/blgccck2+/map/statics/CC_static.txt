@@ -1,6 +1,0 @@
-object = {
-	type = "Landmark_Domeoftherock"
-	position = { 1277.500 22.100 606.000 }
-	rotation = { 0.000 0.000 0.000 }
-	scale = 0.2
-}

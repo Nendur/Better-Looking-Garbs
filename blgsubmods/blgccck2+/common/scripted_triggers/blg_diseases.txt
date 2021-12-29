@@ -17,12 +17,12 @@ blg_blind = {
 
 # Pox boils.
 blg_boils = {
-	trait = has_small_pox
+	trait = smallpox
 }
 
 # Bubonic boils.
 blg_bubonic = {
-	trait = has_bubonic_plague
+	trait = bubonic_plague
 }
 
 # Crippled leg.
@@ -46,7 +46,7 @@ blg_drooling = {
 # Fat or sturdy.
 blg_fat = {
 	OR = {
-		trait = is_fat
+		trait = fat
 		trait = sturdy
 		AND = {
 			trait = dwarf
@@ -59,7 +59,7 @@ blg_fat = {
 blg_fever = {
 	OR = {
 		trait = fever
-		trait = has_typhoid_fever
+		trait = slow_fever
 	}
 }
 
@@ -83,11 +83,11 @@ blg_leper = {
 # Pale and gaunt.
 blg_pale = {
 	OR = {
-		trait = is_malnourished
+		trait = malnourished
 		trait = fatigue
 		trait = malaise
 		trait = cancer
-		trait = has_tuberculosis
+		trait = consumption
 		has_character_modifier = broken_spirit
 		AND = {
 			has_character_modifier = corrupting_magic_major
@@ -104,16 +104,16 @@ blg_pneumonic = {
 # Syphilitic pox.
 blg_pox = {
 	OR = {
-		trait = syphilitic
-		trait = has_aztec_disease
+		trait = great_pox
+		trait = aztec_disease
 	}
 }
 
 # Skin rash.
 blg_rash = {
 	OR = {
-		trait = has_measles
-		trait = has_typhus
+		trait = measles
+		trait = camp_fever
 		trait = rash
 	}
 }
