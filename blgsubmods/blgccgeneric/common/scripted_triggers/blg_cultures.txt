@@ -83,6 +83,10 @@ blg_culture_african = {
 	always = no
 }
 
+blg_culture_byzantine = {
+	always = no
+}
+
 # Uses Cuman hairstyles.
 blg_culture_central_asian = {
 	always = no
@@ -95,6 +99,10 @@ blg_culture_central_germanic = {
 
 # Chinese adjacent cultures.
 blg_culture_chinese = {
+	always = no
+}
+
+blg_culture_eastern_european = {
 	always = no
 }
 
@@ -121,11 +129,19 @@ blg_culture_iberian = {
 	always = no
 }
 
+blg_culture_indian = {
+	always = no
+}
+
 blg_culture_israelite = {
 	always = no
 }
 
 blg_culture_italian = {
+	always = no
+}
+
+blg_culture_mediterranean = {
 	always = no
 }
 
@@ -162,8 +178,11 @@ blg_culture_somali = {
 	always = no
 }
 
-# West-African gold route cultures.
-blg_culture_west_african = {
+blg_culture_steppes = {
+	always = no
+}
+
+blg_culture_western_european = {
 	always = no
 }
 
@@ -182,15 +201,7 @@ blg_portrait_arabic = {
 	always = no
 }
 
-blg_portrait_baltic = {
-	always = no
-}
-
 blg_portrait_byzantine = {
-	always = no
-}
-
-blg_portrait_celtic = {
 	always = no
 }
 
@@ -202,15 +213,11 @@ blg_portrait_east_slavic = {
 	always = no
 }
 
-blg_portrait_germanic = {
+blg_portrait_european = {
 	always = no
 }
 
 blg_portrait_indian = {
-	always = no
-}
-
-blg_portrait_magyar = {
 	always = no
 }
 

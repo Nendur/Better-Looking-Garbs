@@ -2,6 +2,11 @@
 
 ### Christian branches:
 
+# Christian religion.
+blg_religion_christian = {
+	likes_christians = yes
+}
+
 # Catholic religions.
 blg_religion_catholic = {
 	always = no
@@ -36,7 +41,12 @@ blg_religion_chinese = {
 
 # Far Eastern religions.
 blg_religion_eastern = {
-	always = no
+	true_religion_group_indian_group_trigger = yes
+}
+
+# Muslim religions.
+blg_religion_muslim = {
+	likes_muslims = yes
 }
 
 ### Pagan religions:
@@ -56,8 +66,8 @@ blg_religion_celtic = {
 	always = no
 }
 
-# Far Eastern pagan religions.
-blg_religion_eastern_pagan = {
+# Sun themed pagan religions.
+blg_religion_solar_pagan = {
 	always = no
 }
 
@@ -75,16 +85,11 @@ blg_portrait_catholic = {
 
 # Christian religion.
 blg_portrait_christian = {
-	always = no
+	always = yes
 }
 
 # Hellenic religion.
 blg_portrait_hellenic = {
-	always = no
-}
-
-# Jewish religion.
-blg_portrait_jewish = {
 	always = no
 }
 

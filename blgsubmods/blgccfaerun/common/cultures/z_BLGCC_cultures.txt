@@ -79,6 +79,15 @@ lapal_group = {
 	}
 }
 
+taan_group = {
+	tuigan = {
+		unit_graphical_cultures = { cumangfx }
+	}
+	chuchian = {
+		unit_graphical_cultures = { cumangfx }
+	}
+}
+
 tethyrian_group = {
 	ffolk = {
 		graphical_cultures = { ffolkgfx saxongfx celticgfx westerngfx }
@@ -153,17 +162,26 @@ dark_elf_group = {
 	}
 }
 
-elf_group = {
-	green_elf = {
-		graphical_cultures = { greenelfgfx pomeraniangfx bodpagfx mongolgfx }
-	}
-	eladrin = {
-		graphical_cultures = { eladringfx chinesegfx }
-	}
-}
-
 halfling_group = {
 	graphical_cultures = { bretongfx westerngfx }
+}
+
+orc_group = {
+	orc = {
+		unit_graphical_cultures = { westernslavicgfx easterngfx }
+	}
+	gray_orc = {
+		unit_graphical_cultures = { westernslavicgfx easterngfx }
+	}
+	ondonti = {
+		unit_graphical_cultures = { westernslavicgfx easterngfx }
+	}
+	orog = {
+		unit_graphical_cultures = { westernslavicgfx easterngfx }
+	}
+	tanarukk = {
+		unit_graphical_cultures = { westernslavicgfx easterngfx }
+	}
 }
 
 beastfolk_group = {
@@ -184,8 +202,4 @@ scaly_group = {
 	pterafolk = {
 		graphical_cultures = { pterafolkgfx lizardmangfx indiangfx }
 	}
-}
-
-fiendish_group = {
-	graphical_cultures = { turkishgfx muslimgfx }
 }

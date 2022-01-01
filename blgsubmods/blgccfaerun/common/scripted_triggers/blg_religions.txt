@@ -1,16 +1,5 @@
 # Religion triggers.
 
-likes_christians = {
-	olrox_is_good_religion_trigger = yes
-}
-
-likes_muslims = {
-	OR = {
-		religion_group = qismaite_group
-		religion = calishite_faith
-	}
-}
-
 religion_openly_west_african_or_reformed_trigger = {
 	always = no
 }
@@ -29,6 +18,24 @@ religion_openly_finnish_or_reformed_trigger = {
 }
 
 ### Christian branches:
+
+# Christian religion.
+blg_religion_christian = {
+	OR = {
+		religion = triadic
+		religion = arcane
+		religion = rasallesian
+		religion = chessic
+		religion = mercantile
+		religion = inventive
+		religion = joyful
+		religion = halfling_pantheon
+		religion = solar
+		religion_group = dwarven_pantheon_group
+		religion = elven_pantheon
+		religion = asathalfinare
+	}
+}
 
 # Catholic religions.
 blg_religion_catholic = {
@@ -68,8 +75,20 @@ blg_religion_chinese = {
 # Far Eastern religions.
 blg_religion_eastern = {
 	OR = {
-		religion = chauntean_faith
 		religion_group = karaturan_group
+		religion = lapal_faith
+		religion = chauntean_faith
+		religion = mulhorandi_faith
+		religion = untheric_faith
+		religion = enlil
+	}
+}
+
+# Muslim religions.
+blg_religion_muslim = {
+	OR = {
+		religion_group = qismaite_group
+		religion = calishite_faith
 	}
 }
 
@@ -78,10 +97,14 @@ blg_religion_eastern = {
 # Pagan religions.
 blg_religion_pagan = {
 	OR = {
-		is_evil_religion = yes
 		religion_group = wild_human_pantheon_group
-		religion_group = pagan_group
+		religion_group = humanoid_group
 		religion_group = giant_pantheon_group
+		religion_group = unenlightened_group
+		religion_group = aberration_group
+		religion = draconic_pantheon
+		religion = sylvan
+		religion = scale_cult
 	}
 }
 
@@ -95,17 +118,12 @@ blg_religion_celtic = {
 	always = no
 }
 
-# Far Eastern pagan religions.
-blg_religion_eastern_pagan = {
+# Sun themed pagan religions.
+blg_religion_solar_pagan = {
 	religion = mulhorandi_faith
 }
 
 ### Portrait override triggers:
-
-# African religion.
-blg_portrait_african_pagan = {
-	always = no
-}
 
 # Catholic religion.
 blg_portrait_catholic = {
@@ -114,7 +132,7 @@ blg_portrait_catholic = {
 
 # Christian religion.
 blg_portrait_christian = {
-	always = no
+	always = yes
 }
 
 # Hellenic religion.
@@ -122,19 +140,17 @@ blg_portrait_hellenic = {
 	always = no
 }
 
-# Jewish religion.
-blg_portrait_jewish = {
-	always = no
-}
-
 # Muslim religion.
 blg_portrait_muslim = {
-	always = no
-}
-
-# Orthodox religions.
-blg_portrait_orthodox = {
-	always = no
+	OR = {
+		portrait_religion = calishite_faith
+		portrait_religion = lapal_faith
+		portrait_religion = ten_thousand_gods
+		portrait_religion = qisma
+		portrait_religion = pantheist_league
+		portrait_religion = muhjari
+		portrait_religion = kahin
+	}
 }
 
 # Tengri religion.

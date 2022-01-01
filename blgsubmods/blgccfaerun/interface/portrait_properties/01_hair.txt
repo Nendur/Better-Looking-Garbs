@@ -614,7 +614,7 @@
 						OR = {
 							blg_tonsure = yes
 							AND = {
-								likes_christians = yes
+								blg_religion_christian = yes
 								blg_devout = yes
 							}
 						}

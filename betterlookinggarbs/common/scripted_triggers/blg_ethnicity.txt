@@ -303,14 +303,8 @@ blg_freckles_common = {
 		blg_ethnicity_norse = yes
 		graphical_culture = saxongfx
 		graphical_culture = tochariangfx
-		AND = {
-			culture = uyghur
-			blg_ethnicity_centralasian = yes
-		}
-		AND = {
-			culture = komi #udmurt
-			graphical_culture = ugricgfx
-		}
+		gfx_culture_scope = { culture = uyghur }
+		gfx_culture_scope = { culture = komi }
 	}
 }
 
@@ -322,10 +316,7 @@ blg_freckles_2 = {
 	OR = {
 		graphical_culture = bretongfx
 		graphical_culture = romanobritishgfx
-		AND = {
-			culture = komi #udmurt
-			graphical_culture = ugricgfx
-		}
+		gfx_culture_scope = { culture = komi }
 	}
 }
 
@@ -345,8 +336,7 @@ blg_freckles_4 = {
 }
 
 blg_freckles_5 = {
-	culture = uyghur
-	blg_ethnicity_centralasian = yes
+	gfx_culture_scope = { culture = uyghur }
 }
 
 blg_freckles_6 = {

@@ -311,6 +311,12 @@
 				has_job_title = job_marshal
 				death_reason = death_battle
 				death_reason = death_duel
+				death_reason = death_legendary_win_duel
+				death_reason = death_legendary_fail_duel
+				death_reason = death_mission_duel
+				death_reason = death_battle_duel
+				death_reason = death_claim_duel_attacker
+				death_reason = death_claim_duel_defender
 				AND = {
 					mercenary = yes
 					primary_title = {

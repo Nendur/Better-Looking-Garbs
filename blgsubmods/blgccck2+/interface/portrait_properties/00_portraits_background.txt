@@ -231,7 +231,7 @@
 			OR = {
 				blg_religion_pagan = yes
 				blg_religion_eastern = yes
-				likes_celts = yes
+				culture_group = celtic
 				trait = mystic
 			}
 		}

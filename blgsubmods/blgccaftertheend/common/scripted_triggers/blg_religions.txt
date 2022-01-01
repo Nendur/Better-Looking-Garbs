@@ -2,6 +2,15 @@
 
 ### Christian branches:
 
+# Christian religion.
+blg_religion_christian = {
+	OR = {
+		religion_group = christian
+		religion_group = cult_of_saints
+		religion_group = latter_day_saints
+	}
+}
+
 # Catholic religions.
 blg_religion_catholic = {
 	religion_group = christian
@@ -49,6 +58,11 @@ blg_religion_eastern = {
 	}
 }
 
+# Muslim religion.
+blg_religion_muslim = {
+	religion_group = muslim
+}
+
 ### Pagan religions:
 
 # Pagan religions.
@@ -72,8 +86,8 @@ blg_religion_celtic = {
 	}
 }
 
-# Far Eastern pagan religions.
-blg_religion_eastern_pagan = {
+# Sun themed pagan religions.
+blg_religion_solar_pagan = {
 	OR = {
 		religion = occultist
 		religion = occultist_reformed
@@ -158,11 +172,6 @@ blg_portrait_hellenic = {
 	always = no
 }
 
-# Jewish religion.
-blg_portrait_jewish = {
-	always = no
-}
-
 # Muslim religion.
 blg_portrait_muslim = {
 	OR = {
@@ -175,11 +184,6 @@ blg_portrait_muslim = {
 		portrait_religion = orientalist
 		portrait_religion = misrist
 	}
-}
-
-# Orthodox religions.
-blg_portrait_orthodox = {
-	always = no
 }
 
 # Tengri religion.

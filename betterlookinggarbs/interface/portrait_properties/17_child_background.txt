@@ -91,6 +91,8 @@
 				trait = humble
 				trait = content
 				trait = temperate
+				blg_peasant = yes
+				blg_slave = yes
 			}
 		}
 	}
@@ -212,8 +214,8 @@
 				trait = wroth
 				trait = cruel
 				trait = duelist
-				trait = gladiator
 				has_focus = focus_ed_martial
+				blg_guard = yes
 			}
 		}
 
@@ -226,7 +228,7 @@
 				trait = wroth
 				trait = cruel
 				trait = duelist
-				trait = gladiator
+				blg_guard = yes
 			}
 		}
 
@@ -458,8 +460,7 @@
 				trait = conscientious
 				trait = diligent
 				trait = erudite
-				trait = administrator
-				trait = scholar
+				blg_learned = yes
 			}
 		}
 
@@ -509,6 +510,7 @@
 				trait = fussy
 				trait = greedy
 				blg_socializer = yes
+				blg_townsfolk = yes
 			}
 		}
 
@@ -545,8 +547,8 @@
 				trait = deceitful
 				trait = paranoid
 				trait = envious
-				trait = schemer
 				has_focus = focus_ed_intrigue
+				blg_clothes_intrigue = yes
 			}
 		}
 
@@ -557,7 +559,6 @@
 				trait = deceitful
 				trait = paranoid
 				trait = envious
-				trait = schemer
 			}
 		}
 

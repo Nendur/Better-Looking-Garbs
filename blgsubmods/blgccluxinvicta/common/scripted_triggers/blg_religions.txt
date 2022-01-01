@@ -1,13 +1,5 @@
 # Religion triggers.
 
-likes_muslims = {
-	religion_group = muslim
-}
-
-likes_christians = {
-	religion_group = christian
-}
-
 likes_jews = {
 	religion_group = jewish_group
 }
@@ -41,6 +33,11 @@ religion_openly_hellenic_or_reformed_trigger = {
 }
 
 ### Christian branches:
+
+# Christian religion.
+blg_religion_christian = {
+	religion_group = christian
+}
 
 # Catholic religions.
 blg_religion_catholic = {
@@ -124,6 +121,11 @@ blg_religion_eastern = {
 	}
 }
 
+# Muslim religions.
+blg_religion_muslim = {
+	religion_group = muslim
+}
+
 ### Pagan religions:
 
 # Pagan religions.
@@ -169,13 +171,8 @@ blg_religion_celtic = {
 	}
 }
 
-# Far Eastern pagan religions.
-blg_religion_eastern_pagan = {
-	religion_group = egyptian_group
-}
-
-# Egyptian pagan religions.
-blg_religion_egyptian = {
+# Sun themed pagan religions.
+blg_religion_solar_pagan = {
 	religion_group = egyptian_group
 }
 
@@ -308,17 +305,6 @@ blg_portrait_hellenic = {
 	}
 }
 
-# Jewish religion.
-blg_portrait_jewish = {
-	OR = {
-		portrait_religion = judaism
-		portrait_religion = jud_ark_reformed
-		portrait_religion = jud_sabaoth
-		portrait_religion = jud_ark
-		portrait_religion = jud_zion
-	}
-}
-
 # Muslim religion.
 blg_portrait_muslim = {
 	OR = {
@@ -377,6 +363,20 @@ blg_portrait_orthodox = {
 		portrait_religion = montanist_reformed
 		portrait_religion = nasrani_reformed
 		portrait_religion = priscillian_reformed
+		portrait_religion = judaism
+		portrait_religion = jud_ark_reformed
+		portrait_religion = jud_sabaoth
+		portrait_religion = jud_ark
+		portrait_religion = jud_zion
+		portrait_religion = horus_re
+		portrait_religion = amun
+		portrait_religion = aten
+		portrait_religion = isis
+		portrait_religion = set
+		portrait_religion = amun_reformed
+		portrait_religion = aten_reformed
+		portrait_religion = isis_reformed
+		portrait_religion = set_reformed
 	}
 }
 

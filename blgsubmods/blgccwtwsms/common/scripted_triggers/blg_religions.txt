@@ -2,6 +2,11 @@
 
 ### Christian branches:
 
+# Christian religion.
+blg_religion_christian = {
+	religion_group = christian
+}
+
 # Catholic religions.
 blg_religion_catholic = {
 	OR = {
@@ -67,6 +72,11 @@ blg_religion_eastern = {
 	religion_group = indian_group
 }
 
+# Muslim religions.
+blg_religion_muslim = {
+	religion_group = muslim
+}
+
 ### Pagan religions:
 
 # Pagan religions.
@@ -84,19 +94,14 @@ blg_religion_celtic = {
 	religion_openly_celtic_or_reformed_trigger = yes
 }
 
-# Far Eastern pagan religions.
-blg_religion_eastern_pagan = {
+# Sun themed pagan religions.
+blg_religion_solar_pagan = {
 	OR = {
 		religion_openly_zun_or_reformed_trigger = yes
 		religion_openly_root_west_or_reformed_trigger = yes
 		religion_openly_sanamahi_or_reformed_trigger = yes
 		religion_openly_dravidian_or_reformed_trigger = yes
 	}
-}
-
-# Egyptian pagan religions.
-blg_religion_egyptian = {
-	religion_openly_in_egyptian_subgroup_trigger = yes
 }
 
 ### Portrait override triggers:
@@ -193,16 +198,6 @@ blg_portrait_hellenic = {
 	}
 }
 
-# Jewish religion.
-blg_portrait_jewish = {
-	OR = {
-		portrait_religion = jewish
-		portrait_religion = samaritan
-		portrait_religion = karaite
-		portrait_religion = tzadikite
-	}
-}
-
 # Muslim religion.
 blg_portrait_muslim = {
 	OR = {
@@ -242,6 +237,12 @@ blg_portrait_orthodox = {
 		portrait_religion = paulician
 		portrait_religion = nestorian
 		portrait_religion = messalian
+		portrait_religion = jewish
+		portrait_religion = samaritan
+		portrait_religion = karaite
+		portrait_religion = tzadikite
+		portrait_religion = egyptian_pagan
+		portrait_religion = aten_pagan
 	}
 }
 

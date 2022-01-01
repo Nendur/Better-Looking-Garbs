@@ -1,7 +1,9 @@
 Changelog:
 
-  Fix installation path detection for newer Steam versions.
   New Baltic portraits using the fallback northern faces.
+  Fix installation path detection for newer Steam versions.
+  CK2Plus support updated to version 5.
+  Reorganized culture and religion scripted triggers.
   Support some more minor titles.
 
 27-10-2021

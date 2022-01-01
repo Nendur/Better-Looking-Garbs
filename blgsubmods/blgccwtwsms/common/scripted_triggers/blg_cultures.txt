@@ -21,7 +21,7 @@ blg_headgear_alternate_leper = {
 		blg_culture_middleeast = yes
 		blg_culture_african = yes
 		blg_culture_roman = yes
-		likes_finno_ugrics = yes
+		culture_group = finno_ugric
 		likes_tibetans = yes
 	}
 }
@@ -82,10 +82,8 @@ blg_common_ducal_headgear = {
 		blg_culture_middleeast = yes
 		culture_group = west_african
 		culture_group = central_african
-		likes_altaics = yes
-		likes_indians = yes
-		likes_dravidians = yes
-		likes_tibetans = yes
+		culture_group = altaic
+		blg_culture_indian = yes
 		likes_mesoamericans = yes
 		blg_blocked_duke = yes
 	}
@@ -101,13 +99,13 @@ blg_merchant_clothes = {
 	employer = { is_patrician = yes }
 	in_command = no
 	OR = {
-		likes_latino_iberians = yes
-		likes_byzantines = yes
+		blg_culture_mediterranean = yes
 		blg_culture_middleeast = yes
+		blg_culture_byzantine = yes
 		blg_culture_african = yes
-		likes_altaics = yes
+		blg_culture_steppes = yes
 		likes_mesoamericans = yes
-		blg_culture_israelite = yes
+		culture_group = sinic
 	}
 }
 
@@ -116,12 +114,15 @@ blg_merchant_headgear = {
 	employer = { is_patrician = yes }
 	in_command = no
 	OR = {
-		likes_latino_iberians = yes
-		likes_celts = yes
-		culture_group = central_germanic
+		blg_culture_mediterranean = yes
 		culture_group = west_germanic
+		culture_group = central_germanic
+		culture_group = celtic
+		culture_group = continental_celtic
 		culture_group = east_slavic
-		blg_culture_west_slavic = yes
+		culture_group = west_slavic
+		culture_group = south_slavic
+		culture_group = magyar
 	}
 }
 
@@ -162,7 +163,7 @@ blg_petty_king = {
 		culture = gaulish
 		culture = nepali
 		culture = swahili
-		likes_arabs = yes
+		culture_group = central_semitic
 		blg_culture_sogdian = yes
 		likes_tibetans = yes
 	}
@@ -171,7 +172,11 @@ blg_petty_king = {
 # These crowns can be combined with French veils.
 blg_veiled_crown = {
 	OR = {
-		blg_headgear_overlayer = yes
+		culture = frankish
+		culture = occitan
+		culture = gallo_romance
+		culture = romansh
+		culture = romano_frank
 		blg_culture_iberian = yes
 		likes_celts = yes
 		culture_group = east_slavic
@@ -194,9 +199,21 @@ blg_culture_afghan = {
 
 blg_culture_african = {
 	OR = {
-		likes_africans = yes
+		culture_group = west_african
+		culture_group = east_african
 		culture_group = central_african
 		culture_group = cushitic
+	}
+}
+
+blg_culture_byzantine = {
+	OR = {
+		culture_group = byzantine
+		culture_group = caucasian
+		culture_group = proto_carpathian
+		culture_group = anatolian_group
+		culture_group = phrygian_group
+		culture_group = israelite
 	}
 }
 
@@ -238,17 +255,26 @@ blg_culture_chinese = {
 	}
 }
 
+blg_culture_eastern_european = {
+	OR = {
+		culture_group = east_slavic
+		culture_group = west_slavic
+		culture_group = south_slavic
+		culture_group = baltic
+		culture_group = finno_ugric
+		culture_group = magyar
+	}
+}
+
 # Uses French veils.
 blg_culture_european = {
 	OR = {
-		likes_latino_iberians = yes
+		blg_culture_mediterranean = yes
 		AND = {
-			likes_christians = yes
+			religion_group = christian
 			OR = {
-				likes_germanics = yes
-				likes_celts = yes
-				likes_balto_slavics = yes
-				likes_finno_ugrics = yes
+				blg_culture_western_european = yes
+				blg_culture_eastern_european = yes
 			}
 		}
 	}
@@ -256,7 +282,11 @@ blg_culture_european = {
 
 blg_culture_france = {
 	OR = {
-		blg_headgear_overlayer = yes
+		culture = frankish
+		culture = occitan
+		culture = gallo_romance
+		culture = romansh
+		culture = romano_frank
 		culture = old_frankish
 		culture = norman
 		culture = dutch
@@ -294,6 +324,14 @@ blg_culture_iberian = {
 	}
 }
 
+blg_culture_indian = {
+	OR = {
+		culture_group = indo_aryan_group
+		culture_group = dravidian_group
+		culture_group = southeast_asian_group
+	}
+}
+
 blg_culture_israelite = {
 	culture_group = israelite
 }
@@ -309,11 +347,24 @@ blg_culture_italian = {
 	}
 }
 
+blg_culture_mediterranean = {
+	OR = {
+		culture_group = latin
+		culture_group = iberian
+		culture_group = torrean_group
+		culture_group = vasconic
+	}
+}
+
 # Muslim style headgear.
 blg_culture_middleeast = {
 	OR = {
-		likes_arabs = yes
-		likes_iranians = yes
+		culture_group = south_semitic
+		culture_group = east_semitic
+		culture_group = northwest_semitic
+		culture_group = central_semitic
+		culture_group = iranian
+		culture_group = east_iranian
 	}
 }
 
@@ -391,11 +442,23 @@ blg_culture_somali = {
 	}
 }
 
-# West-African gold route cultures.
-blg_culture_west_african = {
+blg_culture_steppes = {
 	OR = {
-		culture_group = west_african
-		culture_group = central_african
+		culture_group = altaic
+		culture_group = east_iranian
+		culture_group = tarim
+		culture_group = siberian_group
+	}
+}
+
+blg_culture_western_european = {
+	OR = {
+		culture_group = central_germanic
+		culture_group = west_germanic
+		culture_group = north_germanic
+		culture_group = east_germanic
+		culture_group = celtic
+		culture_group = continental_celtic
 	}
 }
 
@@ -423,14 +486,10 @@ blg_portrait_african = {
 blg_portrait_arabic = {
 	OR = {
 		portrait_culture_group = south_semitic
-		portrait_culture_group = east_semitic
-		portrait_culture_group = northwest_semitic
 		portrait_culture_group = central_semitic
+		portrait_culture_group = east_african
+		portrait_culture_group = cushitic
 	}
-}
-
-blg_portrait_baltic = {
-	portrait_culture_group = baltic
 }
 
 blg_portrait_byzantine = {
@@ -443,13 +502,6 @@ blg_portrait_byzantine = {
 	}
 }
 
-blg_portrait_celtic = {
-	OR = {
-		portrait_culture_group = celtic
-		portrait_culture_group = continental_celtic
-	}
-}
-
 blg_portrait_chinese = {
 	portrait_culture_group = sinic
 }
@@ -458,10 +510,16 @@ blg_portrait_east_slavic = {
 	portrait_culture_group = east_slavic
 }
 
-blg_portrait_germanic = {
+blg_portrait_european = {
 	OR = {
 		portrait_culture_group = west_germanic
 		portrait_culture_group = central_germanic
+		portrait_culture_group = celtic
+		portrait_culture_group = continental_celtic
+		portrait_culture_group = east_slavic
+		portrait_culture_group = west_slavic
+		portrait_culture_group = south_slavic
+		portrait_culture_group = magyar
 	}
 }
 
@@ -474,13 +532,12 @@ blg_portrait_indian = {
 	}
 }
 
-blg_portrait_magyar = {
-	portrait_culture_group = magyar
-}
-
 blg_portrait_middleeast = {
 	OR = {
-		blg_portrait_arabic = yes
+		portrait_culture_group = south_semitic
+		portrait_culture_group = east_semitic
+		portrait_culture_group = northwest_semitic
+		portrait_culture_group = central_semitic
 		portrait_culture_group = iranian
 		portrait_culture_group = east_iranian
 		portrait_culture_group = east_african
@@ -491,7 +548,8 @@ blg_portrait_middleeast = {
 
 blg_portrait_nordic = {
 	OR = {
-		blg_portrait_germanic = yes
+		portrait_culture_group = west_germanic
+		portrait_culture_group = central_germanic
 		portrait_culture_group = north_germanic
 		portrait_culture_group = east_germanic
 		portrait_culture_group = finno_ugric
@@ -526,12 +584,15 @@ blg_portrait_slavic = {
 		portrait_culture_group = east_slavic
 		portrait_culture_group = west_slavic
 		portrait_culture_group = south_slavic
+		portrait_culture_group = baltic
+		portrait_culture_group = magyar
 	}
 }
 
 blg_portrait_steppes = {
 	OR = {
 		portrait_culture_group = altaic
+		portrait_culture_group = magyar
 		portrait_culture_group = sinic
 		portrait_culture_group = tarim
 		portrait_culture_group = siberian_group

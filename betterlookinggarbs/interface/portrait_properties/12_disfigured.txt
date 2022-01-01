@@ -338,7 +338,7 @@
 							trait = ambitious
 							trait = envious
 							blg_fashionable = yes
-							blg_culture_west_african = yes
+							blg_region_goldmines = yes
 						}
 					}
 				}
@@ -346,6 +346,11 @@
 			trigger_else = {
 				is_variable_equal = { which = ca_mask value = 11 }
 			}
+		}
+
+		modifier = {
+			factor = 3
+			blg_region_goldmines = yes
 		}
 
 		modifier = {

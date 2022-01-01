@@ -429,10 +429,7 @@ blg_crown_zunist = {
 		AND = {
 			rightful_religious_head = ROOT
 			blg_priest = yes
-			OR = {
-				religion_openly_zun_or_reformed_trigger = yes
-				blg_religion_egyptian = yes
-			}
+			blg_religion_solar_pagan = yes
 		}
 	}
 }

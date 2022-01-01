@@ -15,11 +15,7 @@ spriteTypes = {
 				blg_portrait_muslim = yes
 				OR = {
 					blg_portrait_mediterranean = yes
-					blg_portrait_nordic = yes
-					blg_portrait_slavic = yes
-					blg_portrait_baltic = yes
-					blg_portrait_magyar = yes
-					blg_portrait_celtic = yes
+					blg_portrait_european = yes
 				}
 			}
 		}
@@ -49,11 +45,7 @@ spriteTypes = {
 				blg_portrait_muslim = yes
 				OR = {
 					blg_portrait_mediterranean = yes
-					blg_portrait_nordic = yes
-					blg_portrait_slavic = yes
-					blg_portrait_baltic = yes
-					blg_portrait_magyar = yes
-					blg_portrait_celtic = yes
+					blg_portrait_european = yes
 				}
 			}
 		}
@@ -136,10 +128,8 @@ spriteTypes = {
 
 				blg_portrait_tengri = yes
 				OR = {
-					blg_portrait_magyar = yes
+					blg_portrait_european = yes
 					blg_portrait_mediterranean = yes
-					blg_portrait_germanic = yes
-					blg_portrait_celtic = yes
 					blg_portrait_byzantine = yes
 				}
 			}
@@ -169,10 +159,8 @@ spriteTypes = {
 
 				blg_portrait_tengri = yes
 				OR = {
-					blg_portrait_magyar = yes
+					blg_portrait_european = yes
 					blg_portrait_mediterranean = yes
-					blg_portrait_germanic = yes
-					blg_portrait_celtic = yes
 					blg_portrait_byzantine = yes
 				}
 			}
@@ -203,13 +191,9 @@ spriteTypes = {
 
 				OR = {
 					blg_portrait_orthodox = yes
-					blg_portrait_jewish = yes
 					blg_portrait_hellenic = yes
 				}
-				OR = {
-					blg_portrait_arabic = yes
-					blg_portrait_african = yes
-				}
+				blg_portrait_arabic = yes
 			}
 		}
 
@@ -235,13 +219,9 @@ spriteTypes = {
 
 				OR = {
 					blg_portrait_orthodox = yes
-					blg_portrait_jewish = yes
 					blg_portrait_hellenic = yes
 				}
-				OR = {
-					blg_portrait_arabic = yes
-					blg_portrait_african = yes
-				}
+				blg_portrait_arabic = yes
 			}
 		}
 

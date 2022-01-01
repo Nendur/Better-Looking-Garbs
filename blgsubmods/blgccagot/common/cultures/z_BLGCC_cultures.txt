@@ -53,7 +53,7 @@ dornish = {
 }
 
 first_men = {
-	graphical_cultures = { celticgfx }
+	graphical_cultures = { celticgfx westerngfx }
 
 	northman = {
 		graphical_cultures = { northmangfx bretongfx }

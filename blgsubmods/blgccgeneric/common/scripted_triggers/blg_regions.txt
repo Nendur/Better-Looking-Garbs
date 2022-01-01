@@ -88,6 +88,11 @@ blg_region_germania = {
 	always = no
 }
 
+# Regions around gold mines.
+blg_region_goldmines = {
+	always = no
+}
+
 # Himalayas region.
 blg_region_himalayas = {
 	always = no

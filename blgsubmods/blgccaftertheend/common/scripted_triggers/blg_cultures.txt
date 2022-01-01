@@ -109,7 +109,6 @@ blg_merchant_clothes = {
 		culture_group = caribeno
 		culture_group = andino
 		culture_group = louisianais
-		culture_group = orinocense
 		culture_group = mesoamerican
 		culture_group = mayan
 		culture_group = mesanglo
@@ -119,13 +118,11 @@ blg_merchant_clothes = {
 		culture_group = taracahita
 		culture_group = antillais
 		culture_group = caribbanglo
-		culture_group = northwest_coast
-		culture_group = anishinaabe
-		culture_group = athabaskan
-		culture_group = subarctic
+		blg_culture_steppes = yes
 		culture_group = portuguese
 		culture_group = portunhol
 		culture_group = britannic
+		culture_group = novorusskiy
 		culture_group = maghreb
 		culture_group = guinean
 		culture_group = levantine
@@ -140,33 +137,17 @@ blg_merchant_headgear = {
 	employer = { is_patrician = yes }
 	in_command = no
 	OR = {
-		culture_group = mid_atlantic
-		culture_group = gallomerican
-		culture_group = laurentian
-		culture_group = north_atlantic
+		blg_culture_midlands = yes
+		blg_culture_eastcoast = yes
 		culture_group = south_anglo
 		culture_group = californian
-		culture_group = west_anglo
-		culture_group = starfolk
 		culture_group = north_pacific
-		culture_group = rockland
-		culture_group = amerodeutsch
-		culture_group = upland
-		culture_group = anglo_arctic
 		culture_group = mexicano
 		culture_group = norteno
-		culture_group = chicano
 		culture_group = centrolatino
 		culture_group = costero
-		culture_group = caribeno
 		culture_group = andino
 		culture_group = louisianais
-		culture_group = orinocense
-		culture_group = plains
-		culture_group = eastern_woodlands
-		culture_group = plateau
-		culture_group = interior
-		culture_group = novorusskiy
 		culture_group = ozzi
 	}
 }
@@ -212,7 +193,11 @@ blg_petty_king = {
 # These crowns can be combined with French veils.
 blg_veiled_crown = {
 	OR = {
-		blg_headgear_overlayer = yes
+		culture = southron
+		culture = dixie
+		culture = gulfard
+		culture = tuskegean
+		culture = carpetbagger
 		culture = brazilian
 	}
 }
@@ -231,7 +216,6 @@ blg_culture_african = {
 		culture_group = antillais
 		culture_group = caribbanglo
 		culture_group = caribeno
-		culture_group = mesanglo
 		culture_group = guinean
 		culture_group = macaronesian
 	}
@@ -262,18 +246,22 @@ blg_culture_central_germanic = {
 	culture_group = amerodeutsch
 }
 
+blg_culture_eastern_european = {
+	culture_group = novorusskiy
+}
+
 # Uses French veils.
 blg_culture_european = {
 	OR = {
 		culture_group = south_anglo
 		culture_group = starfolk
 		culture_group = mexicano
-		culture_group = chicano
 		culture_group = centrolatino
 		culture_group = costero
 		culture_group = louisianais
 		culture_group = andino
 		culture_group = norteno
+		culture_group = chicano
 		culture = brazilian
 	}
 }
@@ -303,10 +291,24 @@ blg_culture_greek = {
 
 blg_culture_iberian = {
 	OR = {
-		culture_group = andino
 		culture_group = centrolatino
+		culture_group = andino
 		culture_group = costero
+		culture_group = mexicano
+		culture_group = norteno
+		culture_group = chicano
 		culture_group = portuguese
+		culture_group = patagonian
+		culture_group = macaronesian
+	}
+}
+
+blg_culture_indian = {
+	OR = {
+		culture_group = caribbanglo
+		culture_group = malay
+		culture_group = viet
+		culture_group = filipino
 	}
 }
 
@@ -316,6 +318,21 @@ blg_culture_israelite = {
 
 blg_culture_italian = {
 	always = no
+}
+
+blg_culture_mediterranean = {
+	OR = {
+		culture_group = south_anglo
+		culture_group = californian
+		culture_group = mexicano
+		culture_group = norteno
+		culture_group = chicano
+		culture_group = centrolatino
+		culture_group = costero
+		culture_group = caribeno
+		culture_group = andino
+		culture_group = louisianais
+	}
 }
 
 # Muslim style headgear.
@@ -356,9 +373,22 @@ blg_culture_eastcoast = {
 	}
 }
 
-# West-African gold route cultures.
-blg_culture_west_african = {
-	always = no
+blg_culture_saxon = {
+	culture_group = britannic
+}
+
+blg_culture_steppes = {
+	OR = {
+		culture_group = northwest_coast
+		culture_group = anishinaabe
+		culture_group = athabaskan
+		culture_group = interior
+		culture_group = plains
+		culture_group = plateau
+		culture_group = subarctic
+		culture_group = eastern_woodlands
+		culture_group = orinocense
+	}
 }
 
 # Uses West/South-Slavic headgear rules.
@@ -390,20 +420,14 @@ blg_portrait_arabic = {
 	always = no
 }
 
-blg_portrait_baltic = {
-	always = no
-}
-
 blg_portrait_byzantine = {
 	OR = {
 		portrait_culture_group = portuguese
 		portrait_culture_group = portunhol
 		portrait_culture_group = patagonian
+		portrait_culture_group = chicano
+		portrait_culture_group = novorusskiy
 	}
-}
-
-blg_portrait_celtic = {
-	portrait_culture_group = north_atlantic
 }
 
 blg_portrait_chinese = {
@@ -420,29 +444,29 @@ blg_portrait_east_slavic = {
 	}
 }
 
-blg_portrait_germanic = {
+blg_portrait_european = {
 	OR = {
 		portrait_culture_group = mid_atlantic
+		portrait_culture_group = north_atlantic
 		portrait_culture_group = gallomerican
 		portrait_culture_group = laurentian
+		portrait_culture_group = west_anglo
+		portrait_culture_group = starfolk
+		portrait_culture_group = north_pacific
+		portrait_culture_group = rockland
+		portrait_culture_group = amerodeutsch
+		portrait_culture_group = ameronordic
+		portrait_culture_group = upland
+		portrait_culture_group = ozzi
 	}
 }
 
 blg_portrait_indian = {
 	OR = {
+		portrait_culture_group = caribbanglo
 		portrait_culture_group = malay
 		portrait_culture_group = viet
 		portrait_culture_group = filipino
-	}
-}
-
-blg_portrait_magyar = {
-	OR = {
-		portrait_culture_group = plains
-		portrait_culture_group = eastern_woodlands
-		portrait_culture_group = plateau
-		portrait_culture_group = interior
-		portrait_culture_group = ozzi
 	}
 }
 
@@ -451,6 +475,7 @@ blg_portrait_middleeast = {
 		portrait_culture_group = mesoamerican
 		portrait_culture_group = mayan
 		portrait_culture_group = mesanglo
+		portrait_culture_group = caribeno
 		portrait_culture_group = andean
 		portrait_culture_group = arawak
 		portrait_culture_group = taracahita
@@ -462,7 +487,10 @@ blg_portrait_middleeast = {
 }
 
 blg_portrait_nordic = {
-	portrait_culture_group = ameronordic
+	OR = {
+		portrait_culture_group = amerodeutsch
+		portrait_culture_group = ameronordic
+	}
 }
 
 blg_portrait_mediterranean = {
@@ -471,13 +499,10 @@ blg_portrait_mediterranean = {
 		portrait_culture_group = californian
 		portrait_culture_group = mexicano
 		portrait_culture_group = norteno
-		portrait_culture_group = chicano
 		portrait_culture_group = centrolatino
 		portrait_culture_group = costero
-		portrait_culture_group = caribeno
 		portrait_culture_group = andino
 		portrait_culture_group = louisianais
-		portrait_culture_group = orinocense
 	}
 }
 
@@ -491,10 +516,10 @@ blg_portrait_slavic = {
 		portrait_culture_group = starfolk
 		portrait_culture_group = north_pacific
 		portrait_culture_group = rockland
-		portrait_culture_group = amerodeutsch
 		portrait_culture_group = upland
 		portrait_culture_group = anglo_arctic
 		portrait_culture_group = novorusskiy
+		portrait_culture_group = chicano
 	}
 }
 
@@ -504,5 +529,10 @@ blg_portrait_steppes = {
 		portrait_culture_group = anishinaabe
 		portrait_culture_group = athabaskan
 		portrait_culture_group = subarctic
+		portrait_culture_group = plains
+		portrait_culture_group = eastern_woodlands
+		portrait_culture_group = plateau
+		portrait_culture_group = interior
+		portrait_culture_group = orinocense
 	}
 }

@@ -1,3 +1,10 @@
+north_germanic = {
+	jotunn = {
+		graphical_cultures = { norseholygfx norsegfx }
+		unit_graphical_cultures = { }
+	}
+}
+
 arabic = {
 	djinni = {
 		graphical_cultures = { arabicgfx }
@@ -13,5 +20,48 @@ east_african = {
 supernatural_culture_group = {
 	demon_culture = {
 		graphical_cultures = { demongfx levantinegfx africangfx muslimgfx }
+	}
+}
+
+undead_culture_group = {
+	undead_cold_ones = {
+		graphical_cultures = { undeadgfx pagangfx easterngfx }
+		unit_graphical_cultures = { }
+	}
+	undead_aptrganger = {
+		graphical_cultures = { undeadgfx norsegfx }
+		unit_graphical_cultures = { }
+	}
+	undead_draugr = {
+		graphical_cultures = { undeadgfx norsegfx }
+		unit_graphical_cultures = { }
+	}
+	undead_dybbuk = {
+		graphical_cultures = { undeadgfx easterngfx }
+		unit_graphical_cultures = { }
+	}
+	undead_ghoul = {
+		graphical_cultures = { undeadgfx muslimgfx }
+		unit_graphical_cultures = { }
+	}
+	undead_wight = {
+		graphical_cultures = { undeadgfx }
+		unit_graphical_cultures = { }
+	}
+	undead_zombie = {
+		graphical_cultures = { undeadgfx africangfx muslimgfx }
+		unit_graphical_cultures = { }
+	}
+	undead_vetala = {
+		graphical_cultures = { undeadgfx southindiangfx indiangfx muslimgfx }
+		unit_graphical_cultures = { }
+	}
+	undead_vrykolakas = {
+		graphical_cultures = { undeadgfx easterngfx }
+		unit_graphical_cultures = { }
+	}
+	undead_revenant = {
+		graphical_cultures = { undeadgfx }
+		unit_graphical_cultures = { }
 	}
 }

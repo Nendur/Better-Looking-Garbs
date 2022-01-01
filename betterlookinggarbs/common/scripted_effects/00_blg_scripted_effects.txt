@@ -183,7 +183,7 @@ blg_regional_diversity = {
 					if = {
 						limit = {
 							OR = {
-								likes_muslims = yes
+								blg_religion_muslim = yes
 								likes_mazdans = yes
 							}
 						}
@@ -696,11 +696,7 @@ blg_child_mixed = {
 			}
 			if = {
 				limit = {
-					OR = {
-						likes_indians = yes
-						likes_dravidians = yes
-						likes_tibetans = yes
-					}
+					blg_culture_indian = yes
 				}
 				blg_set_ethnicity_indian = yes
 			}
@@ -1069,8 +1065,7 @@ blg_child_mixed = {
 			if = {
 				limit = {
 					OR = {
-						likes_indians = yes
-						likes_dravidians = yes
+						blg_culture_indian = yes
 						likes_tibetans = yes
 						blg_culture_chinese = yes
 					}

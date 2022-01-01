@@ -100,8 +100,6 @@ blg_merchant_clothes = {
 		blg_culture_steppes = yes
 		likes_mesoamericans = yes
 		culture_group = east_romance
-		culture_group = east_germanic
-		culture_group = tocharian_group
 	}
 }
 
@@ -111,12 +109,15 @@ blg_merchant_headgear = {
 	in_command = no
 	OR = {
 		blg_culture_mediterranean = yes
-		likes_celts = yes
-		culture_group = central_germanic
 		culture_group = west_germanic
+		culture_group = central_germanic
 		culture_group = franco_germanic
+		culture_group = east_germanic
+		culture_group = celtic
 		culture_group = east_slavic
-		blg_culture_west_slavic = yes
+		culture_group = west_slavic
+		culture_group = south_slavic
+		culture_group = magyar
 	}
 }
 
@@ -162,9 +163,10 @@ blg_petty_king = {
 # These crowns can be combined with French veils.
 blg_veiled_crown = {
 	OR = {
-		blg_headgear_overlayer = yes
+		culture = french
+		culture = occitan
 		blg_culture_iberian = yes
-		likes_celts = yes
+		culture_group = celtic
 		culture_group = east_slavic
 		culture = outremer
 	}
@@ -256,7 +258,8 @@ blg_culture_european = {
 
 blg_culture_france = {
 	OR = {
-		blg_headgear_overlayer = yes
+		culture = french
+		culture = occitan
 		culture_group = franco_germanic
 		culture = norman
 	}
@@ -444,6 +447,7 @@ blg_portrait_european = {
 		portrait_culture_group = west_germanic
 		portrait_culture_group = central_germanic
 		portrait_culture_group = franco_germanic
+		portrait_culture_group = east_germanic
 		portrait_culture_group = celtic
 		portrait_culture_group = east_slavic
 		portrait_culture_group = west_slavic

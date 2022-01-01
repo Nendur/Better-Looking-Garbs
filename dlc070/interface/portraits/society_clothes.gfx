@@ -83,11 +83,7 @@ spriteTypes = {
 					blg_portrait_nordic = yes
 				}
 				2 = { # Baltic/Slavic
-					OR = {
-						blg_portrait_slavic = yes
-						blg_portrait_baltic = yes
-						blg_portrait_magyar = yes
-					}
+					blg_portrait_slavic = yes
 				}
 				3 = { # Muslim
 					blg_portrait_middleeast = yes
@@ -99,10 +95,7 @@ spriteTypes = {
 					}
 				}
 				5 = { # Central Asian
-					OR = {
-						blg_portrait_steppes = yes
-						blg_portrait_magyar = yes
-					}
+					blg_portrait_steppes = yes
 				}
 				6 = { # West African
 					blg_portrait_african = yes
@@ -137,12 +130,8 @@ spriteTypes = {
 					portrait_has_trait = mystic
 				}
 				2 = { # Baltic/Slavic
-					OR = {
-						blg_portrait_slavic = yes
-						blg_portrait_baltic = yes
-						blg_portrait_magyar = yes
-					}
 					portrait_has_trait = mystic
+					blg_portrait_slavic = yes
 				}
 				3 = { # Muslim
 					blg_portrait_muslim = yes
@@ -154,10 +143,7 @@ spriteTypes = {
 					}
 				}
 				5 = { # Central Asian
-					OR = {
-						blg_portrait_steppes = yes
-						blg_portrait_magyar = yes
-					}
+					blg_portrait_steppes = yes
 					NOR = {
 						portrait_has_trait = scholar
 						portrait_has_trait = theologian
@@ -270,11 +256,7 @@ spriteTypes = {
 					blg_portrait_nordic = yes
 				}
 				2 = { # Baltic/Slavic
-					OR = {
-						blg_portrait_slavic = yes
-						blg_portrait_baltic = yes
-						blg_portrait_magyar = yes
-					}
+					blg_portrait_slavic = yes
 				}
 				3 = { # Muslim
 					blg_portrait_middleeast = yes
@@ -286,10 +268,7 @@ spriteTypes = {
 					}
 				}
 				5 = { # Central Asian
-					OR = {
-						blg_portrait_steppes = yes
-						blg_portrait_magyar = yes
-					}
+					blg_portrait_steppes = yes
 				}
 				6 = { # West African
 					blg_portrait_african = yes
@@ -324,12 +303,8 @@ spriteTypes = {
 					portrait_has_trait = mystic
 				}
 				2 = { # Baltic/Slavic
-					OR = {
-						blg_portrait_slavic = yes
-						blg_portrait_baltic = yes
-						blg_portrait_magyar = yes
-					}
 					portrait_has_trait = mystic
+					blg_portrait_slavic = yes
 				}
 				3 = { # Muslim
 					blg_portrait_muslim = yes
@@ -341,10 +316,7 @@ spriteTypes = {
 					}
 				}
 				5 = { # Central Asian
-					OR = {
-						blg_portrait_steppes = yes
-						blg_portrait_magyar = yes
-					}
+					blg_portrait_steppes = yes
 					NOR = {
 						portrait_has_trait = scholar
 						portrait_has_trait = theologian

@@ -1,13 +1,5 @@
 # Religion triggers.
 
-likes_christians = {
-	religion_group = human_pantheon
-}
-
-likes_muslims = {
-	religion_group = yokudan_pantheon
-}
-
 religion_openly_west_african_or_reformed_trigger = {
 	always = no
 }
@@ -17,6 +9,11 @@ religion_openly_tengri_or_reformed_trigger = {
 }
 
 ### Christian branches:
+
+# Christian religion.
+blg_religion_christian = {
+	religion_group = human_pantheon
+}
 
 # Catholic religions.
 blg_religion_catholic = {
@@ -55,6 +52,11 @@ blg_religion_eastern = {
 	always = no
 }
 
+# Muslim religions.
+blg_religion_muslim = {
+	religion_group = yokudan_pantheon
+}
+
 ### Pagan religions:
 
 # Pagan religions.
@@ -77,68 +79,11 @@ blg_religion_celtic = {
 	always = no
 }
 
-# Far Eastern pagan religions.
-blg_religion_eastern_pagan = {
+# Sun themed pagan religions.
+blg_religion_solar_pagan = {
 	OR = {
 		religion_group = old_faith
 		religion_group = void_religions
 		religion_group = oblivion_religions
 	}
-}
-
-# Egyptian pagan religions.
-blg_religion_egyptian = {
-	always = no
-}
-
-### Portrait override triggers:
-
-# African religion.
-blg_portrait_african_pagan = {
-	always = no
-}
-
-# Catholic religion.
-blg_portrait_catholic = {
-	always = no
-}
-
-# Christian religion.
-blg_portrait_christian = {
-	always = no
-}
-
-# Hellenic religion.
-blg_portrait_hellenic = {
-	always = no
-}
-
-# Jewish religion.
-blg_portrait_jewish = {
-	always = no
-}
-
-# Muslim religion.
-blg_portrait_muslim = {
-	always = no
-}
-
-# Orthodox religions.
-blg_portrait_orthodox = {
-	always = no
-}
-
-# Tengri religion.
-blg_portrait_tengri = {
-	always = no
-}
-
-# Zoroastrian group religions.
-blg_portrait_zoroastrian = {
-	always = no
-}
-
-# Zunist religion.
-blg_portrait_zun = {
-	always = no
 }

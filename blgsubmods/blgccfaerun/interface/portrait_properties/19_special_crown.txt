@@ -411,7 +411,7 @@
 
 		trigger = {
 			blg_priest = yes
-			blg_religion_eastern_pagan = yes
+			blg_religion_solar_pagan = yes
 		}
 	}
 }

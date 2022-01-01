@@ -90,7 +90,85 @@ blg_veiled_crown = {
 
 ### Culture groupings:
 
+blg_culture_african = {
+	OR = {
+		culture_group = summer_islands
+		culture_group = sothoryos_islands
+		culture_group = naath_group
+	}
+}
+
+blg_culture_byzantine = {
+	OR = {
+		culture_group = free_cities
+		culture_group = valyrian
+	}
+}
+
 # Chinese adjacent cultures.
 blg_culture_chinese = {
 	culture_group = yi_ti_group
+}
+
+blg_culture_eastern_european = {
+	culture_group = ibbenese_group
+}
+
+blg_culture_european = {
+	OR = {
+		culture_group = andal
+		culture_group = first_men
+	}
+}
+
+blg_culture_iberian = {
+	culture_group = dornish
+}
+
+blg_culture_indian = {
+	OR = {
+		culture_group = qarth_group
+		culture_group = moraqi_group
+		culture_group = jade_islands_group
+		culture_group = asshai_group
+	}
+}
+
+blg_culture_italian = {
+	OR = {
+		culture_group = free_cities
+		culture_group = valyrian
+	}
+}
+
+blg_culture_mediterranean = {
+	OR = {
+		culture_group = andal
+		culture_group = free_cities
+		culture_group = valyrian
+	}
+}
+
+blg_culture_middleeast = {
+	OR = {
+		culture_group = ghiscari_group
+		culture_group = sarnor_group
+		culture_group = hyrkoon_group
+	}
+}
+
+blg_culture_northern = {
+	OR = {
+		culture_group = free_folk
+		culture_group = iron_isles_culture
+	}
+}
+
+blg_culture_steppes = {
+	OR = {
+		culture_group = dothraki_group
+		culture_group = jogos_nhai_group
+		culture_group = nghai_group
+		culture_group = islander_group
+	}
 }

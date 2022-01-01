@@ -84,7 +84,7 @@ blg_region_europe = {
 		region = world_asia_minor
 		AND = {
 			region = world_steppe_west
-			likes_christians = yes
+			religion_group = christian
 		}
 	}
 }
@@ -102,6 +102,17 @@ blg_region_frisia = {
 # German region.
 blg_region_germania = {
 	region = world_europe_west_germania
+}
+
+# Regions around gold mines.
+blg_region_goldmines = {
+	capital_scope = {
+		OR = {
+			region = world_africa_west
+			region = world_africa_north
+			region = world_africa_central
+		}
+	}
 }
 
 # Himalayas region.

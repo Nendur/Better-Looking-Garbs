@@ -110,12 +110,7 @@ spriteTypes = {
 
 				portrait_is_patrician = yes
 				portrait_in_command = no
-				OR = {
-					blg_portrait_germanic = yes
-					blg_portrait_celtic = yes
-					blg_portrait_slavic = yes
-					blg_portrait_magyar = yes
-				}
+				blg_portrait_european = yes
 			}
 		}
 
@@ -141,12 +136,7 @@ spriteTypes = {
 
 				portrait_is_patrician = yes
 				portrait_in_command = no
-				OR = {
-					blg_portrait_germanic = yes
-					blg_portrait_celtic = yes
-					blg_portrait_slavic = yes
-					blg_portrait_magyar = yes
-				}
+				blg_portrait_european = yes
 			}
 		}
 

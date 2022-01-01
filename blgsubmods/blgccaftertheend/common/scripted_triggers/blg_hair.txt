@@ -7,7 +7,7 @@ blg_shaved = {
 
 # Tonsured hair rules.
 blg_tonsure = {
-	likes_christians = yes
+	blg_religion_christian = yes
 	OR = {
 		blg_priest = yes
 		is_ascetic_trigger = yes
@@ -80,7 +80,7 @@ blg_beard_always = {
 	OR = {
 		true_religion_scope = {
 			OR = {
-				likes_muslims = yes
+				blg_religion_muslim = yes
 				religion = anabaptist
 				religion = batenburger
 			}
@@ -93,7 +93,7 @@ blg_beard_always = {
 # Has a long beard.
 blg_beard_long = {
 	OR = {
-		likes_muslims = yes
+		blg_religion_muslim = yes
 		religion = anabaptist
 		religion = batenburger
 	}

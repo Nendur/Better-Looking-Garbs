@@ -195,7 +195,7 @@ centrolatino = {
 }
 
 chicano = {
-	graphical_cultures = { serbsouthslavicgfx southerngfx }
+	graphical_cultures = { serbsouthslavicgfx southerngfx westerngfx }
 
 	neomexicano = {
 		graphical_cultures = { serbsouthslavicgfx cowboygfx }
@@ -285,7 +285,7 @@ laurentian = {
 }
 
 louisianais = {
-	graphical_cultures = { occitangfx frankishgfx }
+	graphical_cultures = { occitangfx frankishgfx westerngfx }
 
 	cajun = {
 		graphical_cultures = { cajungfx }
@@ -315,7 +315,7 @@ mesanglo = {
 }
 
 mexicano = {
-	graphical_cultures = { mexicangfx serbsouthslavicgfx southerngfx }
+	graphical_cultures = { mexicangfx serbsouthslavicgfx southerngfx westerngfx }
 
 	tapatio = {
 		graphical_cultures = { mexicangfx }
@@ -336,7 +336,7 @@ mexicano = {
 }
 
 mid_atlantic = {
-	graphical_cultures = { englishgfx germangfx }
+	graphical_cultures = { englishgfx germangfx westerngfx }
 
 	beltway = {
 		graphical_cultures = { englishgfx }
@@ -355,7 +355,7 @@ mid_atlantic = {
 }
 
 norteno = {
-	graphical_cultures = { mexicangfx serbsouthslavicgfx southerngfx }
+	graphical_cultures = { mexicangfx serbsouthslavicgfx southerngfx westerngfx }
 
 	bravo = {
 		graphical_cultures = { vaquerogfx }
@@ -424,7 +424,7 @@ northwest_coast = {
 }
 
 orinocense = {
-	graphical_cultures = { andalusiangfx southerngfx }
+	graphical_cultures = { andalusiangfx southerngfx westerngfx }
 
 	bolivarense = {
 		graphical_cultures = { mesoamericangfx }
@@ -474,7 +474,7 @@ plateau = {
 }
 
 portuguese = {
-	graphical_cultures = { croatsouthslavicgfx southerngfx }
+	graphical_cultures = { croatsouthslavicgfx southerngfx westerngfx }
 
 	brazilian = {
 		graphical_cultures = { brazilgfx }
@@ -487,7 +487,7 @@ portuguese = {
 }
 
 portunhol = {
-	graphical_cultures = { southerngfx }
+	graphical_cultures = { southerngfx westerngfx }
 
 	amazonense = {
 		graphical_cultures = { mesoamericangfx andalusiangfx }
@@ -500,7 +500,7 @@ portunhol = {
 }
 
 rockland = {
-	graphical_cultures = { saxongfx }
+	graphical_cultures = { saxongfx westerngfx }
 
 	prairielander = {
 		graphical_cultures = { yukonergfx easterngfx }

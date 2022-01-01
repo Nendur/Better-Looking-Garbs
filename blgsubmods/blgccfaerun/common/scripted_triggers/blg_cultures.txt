@@ -10,31 +10,8 @@ blg_culture_unmixed = {
 	always = no
 }
 
-likes_altaics = {
-	culture_group = taan_group
-}
-
-likes_balto_slavics = {
-	culture_group = damaran_group
-}
-
 likes_celts = {
 	culture = ffolk
-}
-
-likes_finno_ugrics = {
-	culture_group = ulutiun_group
-}
-
-likes_indians = {
-	OR = {
-		culture_group = imaskari_group
-		culture_group = malatran_group
-	}
-}
-
-likes_iranians = {
-	culture_group = lapal_group
 }
 
 likes_mesoamericans = {
@@ -55,6 +32,7 @@ blg_headgear_alternate_leper = {
 	OR = {
 		blg_culture_middleeast = yes
 		blg_culture_african = yes
+		culture_group = ulutiun_group
 	}
 }
 
@@ -187,6 +165,7 @@ blg_merchant_clothes = {
 		trait = creature_ogre
 		trait = creature_troll
 		trait = creature_goblin
+		trait = creature_yikarian
 	}
 }
 
@@ -215,6 +194,7 @@ blg_merchant_headgear = {
 		trait = creature_ogre
 		trait = creature_troll
 		trait = creature_goblin
+		trait = creature_yikarian
 	}
 }
 
@@ -273,6 +253,10 @@ blg_culture_african = {
 	}
 }
 
+blg_culture_byzantine = {
+	culture_group = mulan_group
+}
+
 blg_culture_central_germanic = {
 	culture_group = damaran_group
 }
@@ -282,7 +266,13 @@ blg_culture_chinese = {
 	OR = {
 		culture_group = shou_group
 		culture_group = celestial_sea_group
-		culture_group = amaese_group
+	}
+}
+
+blg_culture_eastern_european = {
+	OR = {
+		culture_group = damaran_group
+		culture_group = raum_group
 	}
 }
 
@@ -298,22 +288,25 @@ blg_culture_france = {
 	culture_group = tethyrian_group
 }
 
-# Uses French headgear accessories.
-blg_culture_french = {
-	OR = {
-		culture = amnian
-		culture = tethyrian
-		culture = borderer
-	}
-}
-
 # Uses Byzantine crowns.
 blg_culture_greek = {
 	always = no
 }
 
 blg_culture_iberian = {
-	culture_group = calishite_group
+	OR = {
+		culture_group = calishite_group
+		culture_group = lapal_group
+		culture_group = netherese_group
+	}
+}
+
+blg_culture_indian = {
+	OR = {
+		culture_group = imaskari_group
+		culture_group = malatran_group
+		culture_group = katakoro_group
+	}
 }
 
 blg_culture_israelite = {
@@ -322,6 +315,13 @@ blg_culture_israelite = {
 
 blg_culture_italian = {
 	culture_group = chondathan_group
+}
+
+blg_culture_mediterranean = {
+	OR = {
+		culture_group = tethyrian_group
+		culture_group = chondathan_group
+	}
 }
 
 # Muslim style headgear.
@@ -342,14 +342,16 @@ blg_culture_roman = {
 	culture_group = netherese_group
 }
 
-# Uses Saxon portraits.
 blg_culture_saxon = {
 	culture_group = illuskan_group
 }
 
-# West-African gold route cultures.
-blg_culture_west_african = {
-	culture_group = mulan_group
+blg_culture_steppes = {
+	OR = {
+		culture_group = ulutiun_group
+		culture_group = taan_group
+		culture_group = amaese_group
+	}
 }
 
 # Uses West/South-Slavic headgear rules.
@@ -363,40 +365,37 @@ blg_portrait_african = {
 	portrait_culture_group = katashakan_group
 }
 
-blg_portrait_arabic = {
-	always = no
-}
-
-blg_portrait_baltic = {
-	always = no
-}
-
 blg_portrait_byzantine = {
-	portrait_culture_group = mulan_group
-}
-
-blg_portrait_celtic = {
-	always = no
+	OR = {
+		portrait_culture_group = mulan_group
+		portrait_culture_group = netherese_group
+	}
 }
 
 blg_portrait_chinese = {
-	always = no
+	OR = {
+		portrait_culture_group = shou_group
+		portrait_culture_group = celestial_sea_group
+	}
 }
 
 blg_portrait_east_slavic = {
 	always = no
 }
 
-blg_portrait_germanic = {
-	always = no
+blg_portrait_european = {
+	OR = {
+		portrait_culture_group = tethyrian_group
+		portrait_culture_group = chondathan_group
+	}
 }
 
 blg_portrait_indian = {
-	always = no
-}
-
-blg_portrait_magyar = {
-	always = no
+	OR = {
+		portrait_culture_group = imaskari_group
+		portrait_culture_group = malatran_group
+		portrait_culture_group = katakoro_group
+	}
 }
 
 blg_portrait_middleeast = {
@@ -412,7 +411,7 @@ blg_portrait_nordic = {
 }
 
 blg_portrait_mediterranean = {
-	portrait_culture_group = tethyrian_group
+	always = no
 }
 
 blg_portrait_roman = {
@@ -420,9 +419,18 @@ blg_portrait_roman = {
 }
 
 blg_portrait_slavic = {
-	always = no
+	OR = {
+		portrait_culture_group = damaran_group
+		portrait_culture_group = raum_group
+	}
 }
 
 blg_portrait_steppes = {
-	always = no
+	OR = {
+		portrait_culture_group = shou_group
+		portrait_culture_group = celestial_sea_group
+		portrait_culture_group = ulutiun_group
+		portrait_culture_group = taan_group
+		portrait_culture_group = amaese_group
+	}
 }

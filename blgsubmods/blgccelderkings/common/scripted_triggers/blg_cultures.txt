@@ -23,10 +23,6 @@ blg_culture_unmixed = {
 	}
 }
 
-chinese_makeup_trigger = {
-	always = no
-}
-
 ### Clothing sets for cultures:
 
 # Wears alternate headgear as leper instead of spy hood.
@@ -142,7 +138,7 @@ blg_petty_king = {
 
 # These crowns can be combined with French veils.
 blg_veiled_crown = {
-	blg_headgear_overlayer = yes
+	culture = breton
 }
 
 blg_ek_clothing = {
@@ -160,37 +156,32 @@ blg_ek_clothing = {
 
 ### Culture groupings:
 
-# Uses afghan portraits.
-blg_culture_afghan = {
-	always = no
-}
-
 blg_culture_african = {
 	culture_group = argonian
 }
 
-# Uses Cuman hairstyles.
-blg_culture_central_asian = {
-	always = no
-}
-
-# Uses German and Dutch portraits.
 blg_culture_central_germanic = {
-	always = no
+	culture = colovian
 }
 
 # Chinese adjacent cultures.
 blg_culture_chinese = {
-	culture = akaviri
+	OR = {
+		culture_group = tsaesci_group
+		culture = akaviri
+	}
 }
 
-# Uses French veils.
+blg_culture_eastern_european = {
+	culture_group = kamal_group
+}
+
 blg_culture_european = {
 	culture_group = nedic
 }
 
 blg_culture_france = {
-	blg_headgear_overlayer = yes
+	culture = breton
 }
 
 # Uses French headgear accessories.
@@ -198,131 +189,51 @@ blg_headgear_overlayer = {
 	culture = breton
 }
 
-# Uses Byzantine crowns.
-blg_culture_greek = {
-	always = no
-}
-
 blg_culture_iberian = {
-	always = no
+	culture_group = khajiit
 }
 
-blg_culture_israelite = {
-	always = no
+blg_culture_indian = {
+	OR = {
+		culture_group = tangmo_group
+		culture_group = potun_group
+		culture_group = islander_group
+	}
+}
+
+blg_culture_byzantine = {
+	culture_group = aldmeris
 }
 
 blg_culture_italian = {
-	always = no
+	OR = {
+		culture = imperial
+		culture = nibenean
+	}
 }
 
 # Muslim style headgear.
 blg_culture_middleeast = {
-	always = no
+	culture_group = yokudan_group
 }
 
-# Uses Norse-like portraits.
 blg_culture_northern = {
-	always = no
-}
-
-blg_culture_roman = {
-	always = no
-}
-
-# Uses Saxon portraits.
-blg_culture_saxon = {
-	always = no
-}
-
-blg_culture_scottish = {
-	always = no
-}
-
-# Uses Sogdian portraits.
-blg_culture_sogdian = {
-	always = no
-}
-
-# Uses Somali portraits.
-blg_culture_somali = {
-	always = no
-}
-
-# West-African gold route cultures.
-blg_culture_west_african = {
 	OR = {
-		culture = altmer
-		culture = dwemer
+		culture = nord
+		culture = skaal
+		culture = atmoran
 	}
+}
+
+blg_culture_saxon = {
+	culture = reachmen
+}
+
+blg_culture_steppes = {
+	culture_group = chimeris
 }
 
 # Uses West/South-Slavic headgear rules.
 blg_culture_west_slavic = {
 	culture = nord
-}
-
-### Portrait overrides:
-
-blg_portrait_african = {
-	always = no
-}
-
-blg_portrait_arabic = {
-	always = no
-}
-
-blg_portrait_baltic = {
-	always = no
-}
-
-blg_portrait_byzantine = {
-	always = no
-}
-
-blg_portrait_celtic = {
-	always = no
-}
-
-blg_portrait_chinese = {
-	always = no
-}
-
-blg_portrait_east_slavic = {
-	always = no
-}
-
-blg_portrait_germanic = {
-	always = no
-}
-
-blg_portrait_indian = {
-	always = no
-}
-
-blg_portrait_magyar = {
-	always = no
-}
-
-blg_portrait_middleeast = {
-	always = no
-}
-
-blg_portrait_nordic = {
-	always = no
-}
-
-blg_portrait_mediterranean = {
-	always = no
-}
-
-blg_portrait_roman = {
-	always = no
-}
-
-blg_portrait_slavic = {
-	always = no
-}
-
-blg_portrait_steppes = {
-	always = no
 }

@@ -317,7 +317,7 @@
 		hide_layers = { 38 = {} }
 
 		trigger = {
-			likes_christians = yes
+			blg_religion_christian = yes
 
 			OR = {
 				employer = {
@@ -712,7 +712,7 @@
 			trigger_if = {
 				limit = { is_abroad = yes }
 				location = {
-					likes_muslims = yes
+					blg_religion_muslim = yes
 					OR = {
 						holding_type = castle
 						holding_type = temple
@@ -720,7 +720,9 @@
 				}
 			}
 			trigger_else = {
-				capital_scope = { likes_muslims = yes }
+				capital_scope = {
+					blg_religion_muslim = yes
+				}
 				capital_holding = {
 					OR = {
 						holding_type = castle
@@ -741,7 +743,7 @@
 				blg_priest = yes
 				capital_holding = { holding_type = temple }
 			}
-			likes_muslims = yes
+			blg_religion_muslim = yes
 		}
 
 		modifier = {
@@ -750,7 +752,7 @@
 				blg_devout = yes
 				blg_pilgrimage = yes
 			}
-			likes_muslims = yes
+			blg_religion_muslim = yes
 		}
 
 		modifier = {

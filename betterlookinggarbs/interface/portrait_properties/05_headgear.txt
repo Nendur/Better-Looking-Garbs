@@ -47,7 +47,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			OR = {
 				has_portrait_property = { layer = 5 index = 2 }
 				has_portrait_property = { layer = 5 index = 3 }
@@ -77,7 +77,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			OR = {
 				has_portrait_property = { layer = 5 index = 1 }
 				has_portrait_property = { layer = 5 index = 3 }
@@ -113,7 +113,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			OR = {
 				has_portrait_property = { layer = 5 index = 1 }
 				has_portrait_property = { layer = 5 index = 2 }
@@ -151,7 +151,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			OR = {
 				has_portrait_property = { layer = 5 index = 1 }
 				has_portrait_property = { layer = 5 index = 2 }
@@ -191,7 +191,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			OR = {
 				has_portrait_property = { layer = 5 index = 4 }
 				has_portrait_property = { layer = 5 index = 6 }
@@ -235,7 +235,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			OR = {
 				has_portrait_property = { layer = 5 index = 4 }
 				has_portrait_property = { layer = 5 index = 5 }
@@ -263,7 +263,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			OR = {
 				has_portrait_property = { layer = 5 index = 4 }
 				has_portrait_property = { layer = 5 index = 5 }
@@ -298,7 +298,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			OR = {
 				has_portrait_property = { layer = 5 index = 4 }
 				has_portrait_property = { layer = 5 index = 5 }
@@ -446,7 +446,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			OR = {
 				has_portrait_property = { layer = 5 index = 4 }
 				has_portrait_property = { layer = 5 index = 5 }
@@ -495,11 +495,6 @@
 			factor = 0.01
 			blg_merchant_headgear = yes
 		}
-
-		modifier = {
-			factor = 0.99
-			blg_headgear_chinese = yes
-		}
 	}
 
 	13 = { # m - Ducal helmet
@@ -517,7 +512,10 @@
 				}
 				trigger_else = {
 					NOT = { check_variable = { which = ca_headgear value = 15 } }
-					blg_headgear_military = yes
+					OR = {
+						blg_headgear_military = yes
+						blg_military_governor = yes
+					}
 					blg_elite_commander = yes
 				}
 			}

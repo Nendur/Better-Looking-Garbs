@@ -1097,7 +1097,7 @@
 		modifier = {
 			factor = 3
 			blg_culture_iberian = yes
-			likes_christians = yes
+			blg_religion_christian = yes
 		}
 
 		modifier = { # Catholic men less likely to wear beards after the 12th century.

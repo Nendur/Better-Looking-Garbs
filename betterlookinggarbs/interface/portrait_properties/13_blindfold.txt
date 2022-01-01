@@ -174,7 +174,7 @@
 
 		modifier = {
 			factor = 2
-			likes_muslims = yes
+			blg_religion_muslim = yes
 		}
 	}
 
@@ -412,7 +412,7 @@
 
 		modifier = {
 			factor = 2
-			likes_muslims = yes
+			blg_religion_muslim = yes
 		}
 	}
 

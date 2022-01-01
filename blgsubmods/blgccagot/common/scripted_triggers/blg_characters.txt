@@ -102,6 +102,7 @@ blg_naval = {
 		has_minor_title = title_high_admiral
 		has_minor_title = title_high_admiral_B
 		has_minor_title = title_lord_of_the_tides
+		has_minor_title = title_maid_seas
 	}
 }
 
@@ -203,6 +204,7 @@ blg_outdoors = {
 		has_character_flag = vassal_finishing_nerge
 		has_character_modifier = enjoying_the_countryside
 		has_nickname = nick_of_the_wilds
+		has_minor_title = title_maid_fields
 	}
 }
 

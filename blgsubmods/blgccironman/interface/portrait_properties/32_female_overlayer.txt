@@ -52,7 +52,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			OR = {
 				culture = frankish
 				culture = occitan

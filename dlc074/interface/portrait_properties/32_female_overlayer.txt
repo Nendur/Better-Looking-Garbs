@@ -35,7 +35,7 @@
 		}
 
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			blg_headgear_overlayer = yes
 		}
 	}
