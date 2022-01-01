@@ -97,7 +97,16 @@ blg_default_clothing = {
 
 # Uses Merchant clothing set.
 blg_merchant_clothes = {
-	employer = { is_patrician = yes }
+	OR = {
+		AND = {
+			is_alive = yes
+			employer = { is_patrician = yes }
+		}
+		AND = {
+			higher_tier_than = baron
+			government = republic_government
+		}
+	}
 	in_command = no
 	OR = {
 		culture_group = south_anglo
@@ -134,7 +143,16 @@ blg_merchant_clothes = {
 
 # Uses Merchant headgear set.
 blg_merchant_headgear = {
-	employer = { is_patrician = yes }
+	OR = {
+		AND = {
+			is_alive = yes
+			employer = { is_patrician = yes }
+		}
+		AND = {
+			higher_tier_than = baron
+			government = republic_government
+		}
+	}
 	in_command = no
 	OR = {
 		blg_culture_midlands = yes

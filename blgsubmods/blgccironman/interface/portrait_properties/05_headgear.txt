@@ -103,7 +103,16 @@
 					}
 				}
 				AND = {
-					employer = { is_patrician = yes }
+					OR = {
+						AND = {
+							is_alive = yes
+							employer = { is_patrician = yes }
+						}
+						AND = {
+							higher_tier_than = baron
+							government = republic_government
+						}
+					}
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -127,7 +136,16 @@
 
 		modifier = {
 			factor = 0.01
-			employer = { is_patrician = yes }
+			OR = {
+				AND = {
+					is_alive = yes
+					employer = { is_patrician = yes }
+				}
+				AND = {
+					higher_tier_than = baron
+					government = republic_government
+				}
+			}
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -294,7 +312,16 @@
 					}
 				}
 				AND = {
-					employer = { is_patrician = yes }
+					OR = {
+						AND = {
+							is_alive = yes
+							employer = { is_patrician = yes }
+						}
+						AND = {
+							higher_tier_than = baron
+							government = republic_government
+						}
+					}
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -477,7 +504,16 @@
 					}
 				}
 				AND = {
-					employer = { is_patrician = yes }
+					OR = {
+						AND = {
+							is_alive = yes
+							employer = { is_patrician = yes }
+						}
+						AND = {
+							higher_tier_than = baron
+							government = republic_government
+						}
+					}
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -660,7 +696,16 @@
 					}
 				}
 				AND = {
-					employer = { is_patrician = yes }
+					OR = {
+						AND = {
+							is_alive = yes
+							employer = { is_patrician = yes }
+						}
+						AND = {
+							higher_tier_than = baron
+							government = republic_government
+						}
+					}
 					in_command = no
 					OR = {
 						culture_group = latin
@@ -1266,7 +1311,16 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					employer = { is_patrician = yes }
+					OR = {
+						AND = {
+							is_alive = yes
+							employer = { is_patrician = yes }
+						}
+						AND = {
+							higher_tier_than = baron
+							government = republic_government
+						}
+					}
 					in_command = no
 				}
 				OR = {
@@ -1318,7 +1372,16 @@
 
 		modifier = {
 			factor = 0.01
-			employer = { is_patrician = yes }
+			OR = {
+				AND = {
+					is_alive = yes
+					employer = { is_patrician = yes }
+				}
+				AND = {
+					higher_tier_than = baron
+					government = republic_government
+				}
+			}
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -1466,7 +1529,16 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					employer = { is_patrician = yes }
+					OR = {
+						AND = {
+							is_alive = yes
+							employer = { is_patrician = yes }
+						}
+						AND = {
+							higher_tier_than = baron
+							government = republic_government
+						}
+					}
 					in_command = no
 				}
 				OR = {
@@ -1636,7 +1708,16 @@
 
 		modifier = {
 			factor = 0.01
-			employer = { is_patrician = yes }
+			OR = {
+				AND = {
+					is_alive = yes
+					employer = { is_patrician = yes }
+				}
+				AND = {
+					higher_tier_than = baron
+					government = republic_government
+				}
+			}
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -1659,7 +1740,16 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					employer = { is_patrician = yes }
+					OR = {
+						AND = {
+							is_alive = yes
+							employer = { is_patrician = yes }
+						}
+						AND = {
+							higher_tier_than = baron
+							government = republic_government
+						}
+					}
 					in_command = no
 				}
 				OR = {
@@ -1700,7 +1790,16 @@
 
 		modifier = {
 			factor = 0.01
-			employer = { is_patrician = yes }
+			OR = {
+				AND = {
+					is_alive = yes
+					employer = { is_patrician = yes }
+				}
+				AND = {
+					higher_tier_than = baron
+					government = republic_government
+				}
+			}
 			in_command = no
 			OR = {
 				culture_group = latin
@@ -1731,7 +1830,16 @@
 		trigger = {
 			trigger_if = {
 				limit = {
-					employer = { is_patrician = yes }
+					OR = {
+						AND = {
+							is_alive = yes
+							employer = { is_patrician = yes }
+						}
+						AND = {
+							higher_tier_than = baron
+							government = republic_government
+						}
+					}
 					in_command = no
 				}
 				OR = {
@@ -1777,7 +1885,16 @@
 
 		modifier = {
 			factor = 0.01
-			employer = { is_patrician = yes }
+			OR = {
+				AND = {
+					is_alive = yes
+					employer = { is_patrician = yes }
+				}
+				AND = {
+					higher_tier_than = baron
+					government = republic_government
+				}
+			}
 			in_command = no
 			OR = {
 				culture_group = latin

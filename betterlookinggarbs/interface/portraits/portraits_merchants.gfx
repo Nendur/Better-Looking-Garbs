@@ -52,7 +52,13 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_is_female = no
 
-				portrait_is_patrician = yes
+				OR = {
+					portrait_is_patrician = yes
+					AND = {
+						portrait_tier = count
+						portrait_government = republic_government
+					}
+				}
 				portrait_in_command = no
 				blg_portrait_mediterranean = yes
 			}
@@ -80,7 +86,13 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_is_female = yes
 
-				portrait_is_patrician = yes
+				OR = {
+					portrait_is_patrician = yes
+					AND = {
+						portrait_tier = count
+						portrait_government = republic_government
+					}
+				}
 				portrait_in_command = no
 				blg_portrait_mediterranean = yes
 			}
@@ -108,7 +120,13 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_is_female = no
 
-				portrait_is_patrician = yes
+				OR = {
+					portrait_is_patrician = yes
+					AND = {
+						portrait_tier = count
+						portrait_government = republic_government
+					}
+				}
 				portrait_in_command = no
 				blg_portrait_european = yes
 			}
@@ -134,7 +152,13 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_is_female = yes
 
-				portrait_is_patrician = yes
+				OR = {
+					portrait_is_patrician = yes
+					AND = {
+						portrait_tier = count
+						portrait_government = republic_government
+					}
+				}
 				portrait_in_command = no
 				blg_portrait_european = yes
 			}
@@ -159,7 +183,13 @@ spriteTypes = {
 				value = 2500
 				portrait_clothing = yes
 
-				portrait_is_patrician = yes
+				OR = {
+					portrait_is_patrician = yes
+					AND = {
+						portrait_tier = count
+						portrait_government = republic_government
+					}
+				}
 				portrait_in_command = no
 				OR = {
 					blg_portrait_middleeast = yes
@@ -186,7 +216,13 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_is_female = no
 
-				portrait_is_patrician = yes
+				OR = {
+					portrait_is_patrician = yes
+					AND = {
+						portrait_tier = count
+						portrait_government = republic_government
+					}
+				}
 				portrait_in_command = no
 				blg_portrait_roman = yes
 			}
