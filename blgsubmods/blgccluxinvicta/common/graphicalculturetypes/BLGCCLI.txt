@@ -1,3 +1,0 @@
-inuitgfx = {
-	skin_tone = 1
-}

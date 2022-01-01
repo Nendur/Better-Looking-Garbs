@@ -261,6 +261,7 @@ blg_ethnicity_tibetan = {
 		graphical_culture = bodpagfx
 		graphical_culture = assamesegfx
 		graphical_culture = tangutgfx
+		graphical_culture = inuitgfx
 	}
 }
 

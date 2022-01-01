@@ -51,7 +51,7 @@ paleosiberian = {
 	graphical_cultures = { mongolgfx cumangfx muslimgfx }
 
 	nivkh = {
-		graphical_cultures = { siberiangfx ugricgfx }
+		graphical_cultures = { inuitgfx siberiangfx ugricgfx }
 	}
 }
 

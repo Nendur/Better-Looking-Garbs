@@ -224,7 +224,7 @@ blg_ethnicity_southslavic = {
 blg_ethnicity_tibetan = {
 	OR = {
 		graphical_culture = haidagfx
-		graphical_culture = siberiangfx
+		graphical_culture = inuitgfx
 		graphical_culture = tangutgfx
 		graphical_culture = assamesegfx
 	}

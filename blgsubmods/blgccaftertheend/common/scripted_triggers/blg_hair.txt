@@ -205,7 +205,7 @@ blg_hair_easternslavic = {
 	OR = {
 		graphical_culture = easternslavicgfx
 		graphical_culture = haidagfx
-		graphical_culture = siberiangfx
+		graphical_culture = inuitgfx
 	}
 }
 
@@ -423,7 +423,7 @@ blg_beard_mongol = {
 	OR = {
 		blg_ethnicity_mesoamerican = yes
 		graphical_culture = haidagfx
-		graphical_culture = siberiangfx
+		graphical_culture = inuitgfx
 		graphical_culture = metisgfx
 	}
 }

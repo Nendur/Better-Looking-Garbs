@@ -637,7 +637,7 @@ blg_set_ethnicity_tibetan = {
 		limit = {
 			NOR = {
 				graphical_culture = haidagfx 
-				graphical_culture = siberiangfx 
+				graphical_culture = inuitgfx 
 			}
 		}
 		set_graphical_culture = haida

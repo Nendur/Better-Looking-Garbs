@@ -543,16 +543,16 @@ subarctic = {
 	graphical_cultures = { siberiangfx ugricgfx mongolgfx steppegfx muslimgfx }
 
 	mikmaq = {
-		graphical_cultures = { siberiangfx northernnativegfx }
+		graphical_cultures = { inuitgfx siberiangfx northernnativegfx }
 	}
 	inuit = {
-		graphical_cultures = { siberiangfx northernnativegfx }
+		graphical_cultures = { inuitgfx siberiangfx northernnativegfx }
 	}
 	innu = {
-		graphical_cultures = { siberiangfx northernnativegfx }
+		graphical_cultures = { inuitgfx siberiangfx northernnativegfx }
 	}
 	iyyu = {
-		graphical_cultures = { siberiangfx northernnativegfx }
+		graphical_cultures = { inuitgfx siberiangfx northernnativegfx }
 	}
 }
 

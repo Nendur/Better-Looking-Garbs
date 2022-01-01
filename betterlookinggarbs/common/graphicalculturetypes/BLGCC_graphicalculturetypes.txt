@@ -65,6 +65,9 @@ hunnicgfx = {
 indusgfx = {
 	skin_tone = 2
 }
+inuitgfx = {
+	skin_tone = 2
+}
 khitangfx = {
 	skin_tone = 1
 }
