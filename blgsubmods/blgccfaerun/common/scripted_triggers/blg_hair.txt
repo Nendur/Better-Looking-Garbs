@@ -289,6 +289,15 @@ blg_hair_norse = {
 	}
 }
 
+blg_hair_persian = {
+	OR = {
+		graphical_culture = persiangfx
+		graphical_culture = ulgariangfx
+		graphical_culture = kurdishgfx
+		graphical_culture = indusgfx
+	}
+}
+
 blg_hair_southern = {
 	OR = {
 		graphical_culture = southerngfx
