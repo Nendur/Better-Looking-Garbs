@@ -110,7 +110,6 @@ blg_ethnicity_eastslavic = {
 blg_ethnicity_english = {
 	OR = {
 		graphical_culture = normangfx
-		graphical_culture = canadiangfx
 		graphical_culture = yankeegfx
 		graphical_culture = cascadiangfx
 		graphical_culture = yukonergfx
@@ -127,7 +126,7 @@ blg_ethnicity_egyptian = {
 }
 
 blg_ethnicity_frankish = {
-	always = no
+	graphical_culture = canadiangfx
 }
 
 blg_ethnicity_german = {
@@ -303,7 +302,10 @@ blg_freckles_7 = {
 }
 
 blg_freckles_8 = {
-	blg_ethnicity_occitan = yes
+	OR = {
+		blg_ethnicity_frankish = yes
+		blg_ethnicity_occitan = yes
+	}
 }
 
 blg_freckles_9 = {

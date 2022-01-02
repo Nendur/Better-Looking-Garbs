@@ -446,7 +446,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 3 5 7 9 10 12 13 }
+		headgear_that_hides_hair = { 3 5 7 8 9 10 12 13 }
 	}
 
 	portraitType = {
@@ -544,7 +544,7 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 3 5 7 9 10 12 13 }
+		headgear_that_hides_hair = { 3 5 7 8 9 10 12 13 }
 	}
 
 	portraitType = {
@@ -642,6 +642,6 @@ spriteTypes = {
 			{ 220 208 255 }
 		}
 
-		headgear_that_hides_hair = { 3 5 7 9 10 12 13 }
+		headgear_that_hides_hair = { 3 5 7 8 9 10 12 13 }
 	}
 }

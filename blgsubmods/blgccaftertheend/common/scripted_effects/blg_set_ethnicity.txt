@@ -256,17 +256,6 @@ blg_set_ethnicity_egyptian = {
 blg_set_ethnicity_english = {
 	if = {
 		limit = {
-			likes_canadians = yes
-		}
-		if = {
-			limit = {
-				NOT = { graphical_culture = canadiangfx }
-			}
-			set_graphical_culture = ontarian
-		}
-	}
-	else_if = {
-		limit = {
 			OR = {
 				culture = alaskan
 				culture = yukoner

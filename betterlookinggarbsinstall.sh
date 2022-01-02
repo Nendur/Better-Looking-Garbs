@@ -540,9 +540,9 @@ if [[ $holyfury -eq 1 ]]; then
 	fi
 else
 	echo "Holy Fury absent."
-	if [[ $monks -eq 1 ]]; then
-		LIST="$LIST dlc074rdlc070/*"
-	fi
+	#if [[ $monks -eq 1 ]]; then
+	#	LIST="$LIST dlc074rdlc070/*"
+	#fi
 fi
 
 if [ -z "$LIST" ]; then

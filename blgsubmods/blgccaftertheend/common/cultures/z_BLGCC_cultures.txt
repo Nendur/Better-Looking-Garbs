@@ -406,7 +406,6 @@ north_pacific = {
 		unit_graphical_cultures = { }
 	}
 	canuck = {
-		graphical_cultures = { cascadiangfx }
 		unit_graphical_cultures = { }
 	}
 	inlander = {

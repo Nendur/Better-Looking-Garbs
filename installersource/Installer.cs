@@ -485,12 +485,12 @@ namespace BetterLookingGarbsInstall
                         ExtractDirectory(extrazip, "dlc074adlc016");
                     if (earlywest)
                         ExtractDirectory(extrazip, "dlc074adlc046");
-                 }
-                else
-                {
-                    if (monks)
-                        ExtractDirectory(extrazip, "dlc074rdlc070");
                 }
+                //else
+                //{
+                //    if (monks)
+                //        ExtractDirectory(extrazip, "dlc074rdlc070");
+                //}
 
                 MergeMod();
                 extrazip.Dispose();
