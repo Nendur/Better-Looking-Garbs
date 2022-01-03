@@ -127,72 +127,15 @@
 	}
 
 	10 = { # j - Necklace
-		factor = 50
-
-		trigger = {
-			is_female = yes
-			practical_age >= 16
-			any_artifact = {
-				is_artifact_equipped = yes
-				quality >= 3
-				has_artifact_flag = necklace
-			}
-
-			blg_artifact_rule = yes
-			NOR = {
-				has_portrait_property = { layer = 3 index = 10 }
-				has_portrait_property = { layer = 3 index = 11 }
-				has_portrait_property = { layer = 3 index = 12 }
-				has_portrait_property = { layer = 3 index = 13 }
-				has_portrait_property = { layer = 3 index = 14 }
-			}
-		}
+		factor = 0
 	}
 
 	11 = { # k - Necklace
-		factor = 50
-
-		trigger = {
-			is_female = yes
-			practical_age >= 16
-			any_artifact = {
-				is_artifact_equipped = yes
-				quality == 2
-				has_artifact_flag = necklace
-			}
-
-			blg_artifact_rule = yes
-			NOR = {
-				has_portrait_property = { layer = 3 index = 10 }
-				has_portrait_property = { layer = 3 index = 11 }
-				has_portrait_property = { layer = 3 index = 12 }
-				has_portrait_property = { layer = 3 index = 13 }
-				has_portrait_property = { layer = 3 index = 14 }
-			}
-		}
+		factor = 0
 	}
 
 	12 = { # l - Necklace
-		factor = 50
-
-		trigger = {
-			is_female = yes
-			practical_age >= 16
-			any_artifact = {
-				is_artifact_equipped = yes
-				quality == 1
-				has_artifact_flag = necklace
-			}
-
-			blg_artifact_rule = yes
-			NOR = {
-				has_portrait_property = { layer = 3 index = 10 }
-				has_portrait_property = { layer = 3 index = 11 }
-				has_portrait_property = { layer = 3 index = 12 }
-				has_portrait_property = { layer = 3 index = 13 }
-				has_portrait_property = { layer = 3 index = 14 }
-			}
-		}
+		factor = 0
 	}
 
 	13 = { # m - African Totem Scepter

@@ -330,6 +330,20 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
+	spriteType = {
+		name = "GFX_chinese_female_jewelry_front"
+		texturefile = "gfx\\characters\\chinese_female\\chinese_female_jewlery_front.dds"
+		noOfFrames = 23
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_chinese_female_jewelry_behind"
+		texturefile = "gfx\\characters\\chinese_female\\chinese_female_jewlery_behind.dds"
+		noOfFrames = 23
+		norefcount = yes
+	}
+
 ### CREATURE SHARED ####
 
 	spriteType = {

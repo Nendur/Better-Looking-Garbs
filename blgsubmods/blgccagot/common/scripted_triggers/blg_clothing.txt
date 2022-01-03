@@ -1,9 +1,5 @@
 # Rules for picking clothing sets.
 
-blg_chinese_makeup = {
-	always = no
-}
-
 # Royalty ranks.
 blg_royalty = {
 	OR = {
@@ -19,9 +15,22 @@ blg_royalty = {
 	blg_peasant = no
 }
 
-# Has been coronated if necessary.
-blg_crowned = {
-	always = yes
+# Uses extra jewelry.
+blg_jewelry = {
+	OR = {
+		higher_tier_than = count
+		is_or_was_offmap_power_ruler = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_tier_than = count
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+	}
+}
+
+blg_chinese_makeup = {
+	always = no
 }
 
 # Prepared for battle.

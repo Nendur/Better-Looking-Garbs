@@ -46,9 +46,18 @@ blg_crowned = {
 	}
 }
 
-# Use the Chinese face jewelry.
-blg_face_jewelry = {
-	always = no
+# Uses extra jewelry.
+blg_jewelry = {
+	OR = {
+		higher_tier_than = count
+		is_or_was_offmap_power_ruler = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_tier_than = count
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
+	}
 }
 
 # Facial makeup expected for those under traditional Han filial piety rules.

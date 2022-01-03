@@ -666,20 +666,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_chinese_female_jewelry_front"
-		texturefile = "gfx\\characters\\chinese_female\\chinese_female_jewlery_front.dds"
-		noOfFrames = 4
-		norefcount = yes
-	}
-
-	spriteType = {
-		name = "GFX_chinese_female_jewelry_behind"
-		texturefile = "gfx\\characters\\chinese_female\\chinese_female_jewlery_behind.dds"
-		noOfFrames = 4
-		norefcount = yes
-	}
-
-	spriteType = {
 		name = "GFX_character_chinese_female_physique"
 		texturefile = "gfx\\characters\\shared\\physique\\chinese_female_physique.dds"
 		noOfFrames = 12

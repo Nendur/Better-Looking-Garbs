@@ -52,6 +52,11 @@ blg_headgear_chinese = {
 	culture = maormer
 }
 
+# Use the Chinese face jewelry.
+blg_face_jewelry = {
+	culture_group = tsaesci_group
+}
+
 # These cultures use commmon headgear in addition for dukes.
 blg_common_ducal_headgear = {
 	NOR = {

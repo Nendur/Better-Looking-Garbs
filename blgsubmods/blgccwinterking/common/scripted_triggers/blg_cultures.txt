@@ -37,6 +37,11 @@ blg_headgear_chinese = {
 	always = no
 }
 
+# Use the Chinese face jewelry.
+blg_face_jewelry = {
+	always = no
+}
+
 # Wears Persian crown.
 blg_headgear_persian_crown = {
 	always = no

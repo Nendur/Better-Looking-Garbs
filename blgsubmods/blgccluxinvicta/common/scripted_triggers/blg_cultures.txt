@@ -64,6 +64,11 @@ blg_headgear_chinese = {
 	blg_culture_chinese = yes
 }
 
+# Use the Chinese face jewelry.
+blg_face_jewelry = {
+	culture = han
+}
+
 # Wears Persian crown.
 blg_headgear_persian_crown = {
 	is_female = no

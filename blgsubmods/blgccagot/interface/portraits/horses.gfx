@@ -56,6 +56,7 @@ spriteTypes = {
 			"GFX_character_scars:p7:y:o-7x-10"
 			"GFX_character_scars_mid:p25:o-7x-10"
 			"GFX_character_scars_high:p26:o-7x-10"
+			"GFX_chinese_female_jewelry_front:p16:o14x49"
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
 			"GFX_right_eye_possessed:p30:o-10x-7"
@@ -72,7 +73,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -119,6 +120,7 @@ spriteTypes = {
 			"GFX_character_scars:p7:y:o-7x-10"
 			"GFX_character_scars_mid:p25:o-7x-10"
 			"GFX_character_scars_high:p26:o-7x-10"
+			"GFX_chinese_female_jewelry_front:p16:o14x49"
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
 			"GFX_right_eye_possessed:p30:o-10x-7"
@@ -135,7 +137,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -182,6 +184,7 @@ spriteTypes = {
 			"GFX_character_scars:p7:y:o-7x-10"
 			"GFX_character_scars_mid:p25:o-7x-10"
 			"GFX_character_scars_high:p26:o-7x-10"
+			"GFX_chinese_female_jewelry_front:p16:o14x49"
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
 			"GFX_right_eye_possessed:p30:o-10x-7"
@@ -198,7 +201,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -271,7 +274,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -334,7 +337,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -397,7 +400,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8

@@ -50,14 +50,18 @@ blg_crowned = {
 	}
 }
 
-# Use the Chinese face jewelry.
-blg_face_jewelry = {
+# Uses extra jewelry.
+blg_jewelry = {
 	OR = {
-		has_character_modifier = jd_princess
-		AND = {
-			blg_headgear_chinese = yes
-			blg_royalty = yes
+		higher_tier_than = count
+		is_or_was_offmap_power_ruler = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_tier_than = count
+				is_or_was_offmap_power_ruler = yes
+			}
 		}
+		has_character_modifier = jd_princess
 	}
 }
 

@@ -63,7 +63,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -141,7 +141,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -219,7 +219,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -252,6 +252,7 @@ spriteTypes = {
 			"GFX_turkish_female_headgear_behind:p5:c1"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_african_female_hair_behind:p1:h:y"
+			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_southindian_female_base:p2"
 			"GFX_southindian_female_neck:d0"
 			"GFX_southindian_female_chin:d1"
@@ -277,6 +278,7 @@ spriteTypes = {
 			"GFX_character_scars_dark:p7:y"
 			"GFX_character_scars_mid_dark:p25:y"
 			"GFX_character_scars_high_dark:p26:y"
+			"GFX_chinese_female_jewelry_front:p16"
 			"GFX_southindian_daughterhair:p18:h"
 			"GFX_character_black_eye:p23:y"
 			"GFX_character_blinded_eyes:p10"
@@ -300,7 +302,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -333,6 +335,7 @@ spriteTypes = {
 			"GFX_turkish_female_headgear_behind:p5:c1"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_african_female_hair_behind_midage:p1:h:y"
+			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_southindian_female_base_midage:p2"
 			"GFX_southindian_female_neck_midage:d0"
 			"GFX_southindian_female_chin_midage:d1"
@@ -355,6 +358,7 @@ spriteTypes = {
 			"GFX_character_scars_dark:p7:y"
 			"GFX_character_scars_mid_dark:p25:y"
 			"GFX_character_scars_high_dark:p26:y"
+			"GFX_chinese_female_jewelry_front:p16"
 			"GFX_character_black_eye:p23:y"
 			"GFX_character_blinded_eyes:p10"
 			"GFX_character_possessed:p30"
@@ -377,7 +381,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -410,6 +414,7 @@ spriteTypes = {
 			"GFX_turkish_female_headgear_behind:p5:c1"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_african_female_hair_behind_oldage:p1:h:y"
+			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_southindian_female_base_oldage:p2"
 			"GFX_southindian_female_neck_oldage:d0"
 			"GFX_southindian_female_chin_oldage:d1"
@@ -432,6 +437,7 @@ spriteTypes = {
 			"GFX_character_scars_dark:p7:y"
 			"GFX_character_scars_mid_dark:p25:y"
 			"GFX_character_scars_high_dark:p26:y"
+			"GFX_chinese_female_jewelry_front:p16"
 			"GFX_character_black_eye:p23:y"
 			"GFX_character_blinded_eyes:p10"
 			"GFX_character_possessed:p30"
@@ -454,7 +460,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8

@@ -44,6 +44,11 @@ blg_headgear_chinese = {
 	always = no
 }
 
+# Use the Chinese face jewelry.
+blg_face_jewelry = {
+	culture_group = yi_ti_group
+}
+
 # These cultures use commmon headgear in addition for dukes.
 blg_common_ducal_headgear = {
 	always = no

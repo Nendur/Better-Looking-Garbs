@@ -1,6 +1,41 @@
-#p32 frankish Culture Overlayer - Female
+#p32 Valyrian steel indicator
 32 = {
-	0 = { # Blank
+	0 = { # blank
 		factor = 100
+
+		trigger = {
+			NOT = {
+				any_artifact = {
+					OR = {
+						has_artifact_flag = valyrian_steel 
+						has_artifact_flag = valyrian_armour
+						artifact_type = lightbringer
+						artifact_type = dragon_egg
+					}
+				}
+			}
+		}
+	}
+
+	1 = { # Valyrian steel indicator
+		factor = 100
+
+		trigger = {
+			any_artifact = {
+				OR = {
+					has_artifact_flag = valyrian_steel 
+					has_artifact_flag = valyrian_armour
+					artifact_type = lightbringer
+				}
+			}
+		}
+	}
+
+	2 = { # Dragon egg indicator
+		factor = 100
+
+		trigger = {
+			has_artifact = dragon_egg
+		}
 	}
 }

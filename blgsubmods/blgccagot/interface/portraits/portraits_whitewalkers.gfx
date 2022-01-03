@@ -97,7 +97,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -157,7 +157,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -217,7 +217,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -325,7 +325,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -383,7 +383,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8
@@ -441,7 +441,7 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
-			"GFX_character_special_artifact:p16"
+			"GFX_character_special_artifact:p32"
 		}
 
 		hair_color_index = 8

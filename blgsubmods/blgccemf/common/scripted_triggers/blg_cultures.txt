@@ -38,7 +38,7 @@ blg_blocked_duke = {
 blg_clothes_chinese = {
 	has_dlc = "Jade Dragon"
 	OR = {
-		culture = han
+		culture_group = chinese_group
 		culture = tangut
 	}
 }
@@ -47,9 +47,14 @@ blg_clothes_chinese = {
 blg_headgear_chinese = {
 	has_dlc = "Jade Dragon"
 	OR = {
-		culture = han
+		culture_group = chinese_group
 		culture = tangut
 	}
+}
+
+# Use the Chinese face jewelry.
+blg_face_jewelry = {
+	culture_group = chinese_group
 }
 
 # Wears Persian crown.

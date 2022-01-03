@@ -23,12 +23,17 @@ blg_crowned = {
 	always = yes
 }
 
-# Use the Chinese face jewelry.
-blg_face_jewelry = {
-	culture_group = tsaesci_group
+# Uses extra jewelry.
+blg_jewelry = {
 	OR = {
-		higher_real_tier_than = duke
-		spouse = { higher_real_tier_than = duke }
+		higher_tier_than = count
+		is_or_was_offmap_power_ruler = yes
+		spouse_even_if_dead = {
+			OR = {
+				higher_tier_than = count
+				is_or_was_offmap_power_ruler = yes
+			}
+		}
 	}
 }
 
