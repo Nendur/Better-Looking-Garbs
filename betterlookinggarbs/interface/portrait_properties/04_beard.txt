@@ -41,38 +41,37 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_frankish = yes
-						blg_beard_southern = yes
-						blg_beard_southslavic = yes
-						blg_beard_westernslavic = yes
-						blg_beard_ugric = yes
-						blg_beard_muslim = yes
-						blg_beard_egyptian = yes
-						blg_beard_african = yes
-						blg_beard_cuman = yes
-						blg_beard_indian = yes
-						blg_beard_southindian = yes
-						blg_beard_turkish = yes
-						blg_beard_easternslavic = yes
-						blg_beard_roman = yes
-						blg_beard_bodpa = yes
-						blg_beard_chinese = yes
-					}
+					blg_beard_byzantine = no
+					blg_beard_celtic = no
+					blg_beard_english = no
+					blg_beard_german = no
+					blg_beard_norse = no
+					blg_beard_persian = no
+					blg_beard_turkish = no
+					blg_beard_easternslavic = no
+					blg_beard_mongol = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_byzantine = yes
-						blg_beard_english = yes
-						blg_beard_german = yes
-						blg_beard_celtic = yes
-						blg_beard_persian = yes
-						blg_beard_mongol = yes
-					}
+					blg_beard_african = no
+					blg_beard_cuman = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_indian = no
+					blg_beard_muslim = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_turkish = no
+					blg_beard_ugric = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
@@ -118,37 +117,41 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_english = yes
-						blg_beard_frankish = yes
-						blg_beard_norse = yes
-						blg_beard_westernslavic = yes
-						blg_beard_african = yes
-						blg_beard_cuman = yes
-						blg_beard_persian = yes
-						blg_beard_chinese = yes
-					}
+					blg_beard_african = no
+					blg_beard_byzantine = no
+					blg_beard_celtic = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_indian = no
+					blg_beard_muslim = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_turkish = no
+					blg_beard_ugric = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_byzantine = yes
-						blg_beard_german = yes
-						blg_beard_southern = yes
-						blg_beard_ugric = yes
-						blg_beard_westernslavic = yes
-						blg_beard_easternslavic = yes
-						blg_beard_celtic = yes
-						blg_beard_muslim = yes
-						blg_beard_egyptian = yes
-						blg_beard_indian = yes
-						blg_beard_southindian = yes
-						blg_beard_turkish = yes
-						blg_beard_mongol = yes
-					}
+					blg_beard_african = no
+					blg_beard_cuman = no
+					blg_beard_english = no
+					blg_beard_frankish = no
+					blg_beard_muslim = no
+					blg_beard_norse = no
+					blg_beard_persian = no
+					blg_beard_southslavic = no
+					blg_beard_bodpa = no
+					blg_beard_mongol = no
+					blg_beard_roman = no
 				}
 
 				trigger_if = {
@@ -189,37 +192,36 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_frankish = yes
-						blg_beard_southslavic = yes
-						blg_beard_westernslavic = yes
-						blg_beard_easternslavic = yes
-						blg_beard_celtic = yes
-						blg_beard_muslim = yes
-						blg_beard_egyptian = yes
-						blg_beard_african = yes
-						blg_beard_cuman = yes
-						blg_beard_persian = yes
-						blg_beard_indian = yes
-						blg_beard_southindian = yes
-						blg_beard_bodpa = yes
-						blg_beard_chinese = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_byzantine = no
+					blg_beard_english = no
+					blg_beard_german = no
+					blg_beard_norse = no
+					blg_beard_southern = no
+					blg_beard_turkish = no
+					blg_beard_ugric = no
+					blg_beard_mongol = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_byzantine = yes
-						blg_beard_english = yes
-						blg_beard_german = yes
-						blg_beard_southern = yes
-						blg_beard_turkish = yes
-						blg_beard_ugric = yes
-					}
+					blg_beard_african = no
+					blg_beard_celtic = no
+					blg_beard_cuman = no
+					blg_beard_egyptian = no
+					blg_beard_english = no
+					blg_beard_frankish = no
+					blg_beard_indian = no
+					blg_beard_muslim = no
+					blg_beard_persian = no
+					blg_beard_southslavic = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
@@ -254,35 +256,39 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_frankish = yes
-						blg_beard_german = yes
-						blg_beard_southslavic = yes
-						blg_beard_celtic = yes
-						blg_beard_easternslavic = yes
-						blg_beard_muslim = yes
-						blg_beard_egyptian = yes
-						blg_beard_african = yes
-						blg_beard_cuman = yes
-						blg_beard_turkish = yes
-						blg_beard_southindian = yes
-						blg_beard_bodpa = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_byzantine = no
+					blg_beard_english = no
+					blg_beard_indian = no
+					blg_beard_persian = no
+					blg_beard_southern = no
+					blg_beard_ugric = no
+					blg_beard_chinese = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_english = yes
-						blg_beard_norse = yes
-						blg_beard_persian = yes
-						blg_beard_ugric = yes
-						blg_beard_chinese = yes
-						blg_beard_mongol = yes
-					}
+					blg_beard_african = no
+					blg_beard_celtic = no
+					blg_beard_cuman = no
+					blg_beard_english = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_indian = no
+					blg_beard_muslim = no
+					blg_beard_norse = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_turkish = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_easternslavic = no
+					blg_beard_mongol = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
@@ -322,33 +328,44 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_byzantine = yes
-						blg_beard_frankish = yes
-						blg_beard_german = yes
-						blg_beard_norse = yes
-						blg_beard_southslavic = yes
-						blg_beard_easternslavic = yes
-						blg_beard_indian = yes
-						blg_beard_persian = yes
-						blg_beard_turkish = yes
-						blg_beard_cuman = yes
-					}
+					blg_beard_african = no
+					blg_beard_celtic = no
+					blg_beard_cuman = no
+					blg_beard_english = no
+					blg_beard_muslim = no
+					blg_beard_southern = no
+					blg_beard_ugric = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_mongol = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_african = yes
-						blg_beard_muslim = yes
-						blg_beard_southindian = yes
-						blg_beard_ugric = yes
-						blg_beard_roman = yes
-						blg_beard_chinese = yes
-						blg_beard_mongol = yes
-					}
+					blg_beard_byzantine = no
+					blg_beard_celtic = no
+					blg_beard_cuman = no
+					blg_beard_english = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_indian = no
+					blg_beard_muslim = no
+					blg_beard_persian = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_turkish = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
@@ -386,36 +403,38 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_frankish = yes
-						blg_beard_german = yes
-						blg_beard_norse = yes
-						blg_beard_southslavic = yes
-						blg_beard_westernslavic = yes
-						blg_beard_bodpa = yes
-						blg_beard_mongol = yes
-					}
+					blg_beard_african = no
+					blg_beard_byzantine = no
+					blg_beard_celtic = no
+					blg_beard_cuman = no
+					blg_beard_indian = no
+					blg_beard_norse = no
+					blg_beard_persian = no
+					blg_beard_southern = no
+					blg_beard_turkish = no
+					blg_beard_ugric = no
+					blg_beard_chinese = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_african = yes
-						blg_beard_byzantine = yes
-						blg_beard_celtic = yes
-						blg_beard_cuman = yes
-						blg_beard_indian = yes
-						blg_beard_norse = yes
-						blg_beard_persian = yes
-						blg_beard_southern = yes
-						blg_beard_southindian = yes
-						blg_beard_turkish = yes
-						blg_beard_ugric = yes
-						blg_beard_easternslavic = yes
-						blg_beard_chinese = yes
-					}
+					blg_beard_celtic = no
+					blg_beard_english = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_muslim = no
+					blg_beard_persian = no
+					blg_beard_southslavic = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_mongol = no
 				}
 
 				trigger_if = {
@@ -467,33 +486,41 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_african = yes
-						blg_beard_byzantine = yes
-						blg_beard_cuman = yes
-						blg_beard_easternslavic = yes
-						blg_beard_southindian = yes
-						blg_beard_turkish = yes
-						blg_beard_ugric = yes
-						blg_beard_bodpa = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_celtic = no
+					blg_beard_english = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_muslim = no
+					blg_beard_norse = no
+					blg_beard_persian = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_westernslavic = no
+					blg_beard_chinese = no
+					blg_beard_roman = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_english = yes
-						blg_beard_norse = yes
-						blg_beard_southern = yes
-						blg_beard_celtic = yes
-						blg_beard_muslim = yes
-						blg_beard_egyptian = yes
-						blg_beard_persian = yes
-						blg_beard_chinese = yes
-					}
+					blg_beard_african = no
+					blg_beard_byzantine = no
+					blg_beard_cuman = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_indian = no
+					blg_beard_southslavic = no
+					blg_beard_turkish = no
+					blg_beard_ugric = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_easternslavic = no
+					blg_beard_mongol = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
@@ -539,37 +566,40 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_muslim = yes
-						blg_beard_turkish = yes
-						blg_beard_ugric = yes
-						blg_beard_celtic = yes
-						blg_beard_persian = yes
-						blg_beard_southindian = yes
-						blg_beard_bodpa = yes
-						blg_beard_chinese = yes
-					}
+					blg_beard_african = no
+					blg_beard_byzantine = no
+					blg_beard_cuman = no
+					blg_beard_english = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_indian = no
+					blg_beard_norse = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_turkish = no
+					blg_beard_westernslavic = no
+					blg_beard_chinese = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_english = yes
-						blg_beard_frankish = yes
-						blg_beard_byzantine = yes
-						blg_beard_norse = yes
-						blg_beard_southern = yes
-						blg_beard_southslavic = yes
-						blg_beard_westernslavic = yes
-						blg_beard_easternslavic = yes
-						blg_beard_african = yes
-						blg_beard_cuman = yes
-						blg_beard_indian = yes
-						blg_beard_turkish = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_byzantine = no
+					blg_beard_celtic = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_muslim = no
+					blg_beard_persian = no
+					blg_beard_turkish = no
+					blg_beard_ugric = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
@@ -616,35 +646,38 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_southern = yes
-						blg_beard_african = yes
-						blg_beard_celtic = yes
-						blg_beard_indian = yes
-						blg_beard_southindian = yes
-						blg_beard_bodpa = yes
-						blg_beard_chinese = yes
-					}
+					blg_beard_byzantine = no
+					blg_beard_celtic = no
+					blg_beard_english = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_muslim = no
+					blg_beard_norse = no
+					blg_beard_persian = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_turkish = no
+					blg_beard_ugric = no
+					blg_beard_westernslavic = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_english = yes
-						blg_beard_frankish = yes
-						blg_beard_german = yes
-						blg_beard_celtic = yes
-						blg_beard_norse = yes
-						blg_beard_southslavic = yes
-						blg_beard_ugric = yes
-						blg_beard_westernslavic = yes
-						blg_beard_easternslavic = yes
-						blg_beard_muslim = yes
-						blg_beard_egyptian = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_african = no
+					blg_beard_byzantine = no
+					blg_beard_german = no
+					blg_beard_indian = no
+					blg_beard_persian = no
+					blg_beard_southern = no
+					blg_beard_turkish = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
@@ -688,35 +721,40 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_byzantine = yes
-						blg_beard_southern = yes
-						blg_beard_celtic = yes
-						blg_beard_cuman = yes
-						blg_beard_easternslavic = yes
-						blg_beard_egyptian = yes
-						blg_beard_indian = yes
-						blg_beard_persian = yes
-						blg_beard_southslavic = yes
-						blg_beard_turkish = yes
-						blg_beard_westernslavic = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_african = no
+					blg_beard_english = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_muslim = no
+					blg_beard_norse = no
+					blg_beard_ugric = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_english = yes
-						blg_beard_frankish = yes
-						blg_beard_norse = yes
-						blg_beard_african = yes
-						blg_beard_southindian = yes
-						blg_beard_chinese = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_byzantine = no
+					blg_beard_celtic = no
+					blg_beard_cuman = no
+					blg_beard_egyptian = no
+					blg_beard_german = no
+					blg_beard_indian = no
+					blg_beard_muslim = no
+					blg_beard_persian = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_turkish = no
+					blg_beard_ugric = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
 				}
 
 				trigger_if = {
@@ -772,33 +810,35 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_english = yes
-						blg_beard_african = yes
-						blg_beard_norse = yes
-						blg_beard_cuman = yes
-						blg_beard_easternslavic = yes
-						blg_beard_ugric = yes
-						blg_beard_bodpa = yes
-						blg_beard_chinese = yes
-					}
+					blg_beard_byzantine = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_indian = no
+					blg_beard_muslim = no
+					blg_beard_norse = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_westernslavic = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_frankish = yes
-						blg_beard_german = yes
-						blg_beard_byzantine = yes
-						blg_beard_southslavic = yes
-						blg_beard_westernslavic = yes
-						blg_beard_muslim = yes
-						blg_beard_egyptian = yes
-						blg_beard_indian = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_african = no
+					blg_beard_cuman = no
+					blg_beard_english = no
+					blg_beard_norse = no
+					blg_beard_southern = no
+					blg_beard_ugric = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_easternslavic = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
@@ -847,36 +887,33 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_frankish = yes
-						blg_beard_byzantine = yes
-						blg_beard_southern = yes
-						blg_beard_southslavic = yes
-						blg_beard_westernslavic = yes
-						blg_beard_egyptian = yes
-						blg_beard_african = yes
-						blg_beard_cuman = yes
-						blg_beard_indian = yes
-						blg_beard_easternslavic = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_byzantine = no
+					blg_beard_cuman = no
+					blg_beard_english = no
+					blg_beard_german = no
+					blg_beard_muslim = no
+					blg_beard_norse = no
+					blg_beard_southslavic = no
+					blg_beard_ugric = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_english = yes
-						blg_beard_german = yes
-						blg_beard_byzantine = yes
-						blg_beard_norse = yes
-						blg_beard_muslim = yes
-						blg_beard_southindian = yes
-						blg_beard_ugric = yes
-						blg_beard_bodpa = yes
-						blg_beard_chinese = yes
-					}
+					blg_beard_african = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_indian = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_westernslavic = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
 				}
 
 				trigger_if = {
@@ -935,33 +972,34 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_english = yes
-						blg_beard_german = yes
-						blg_beard_norse = yes
-						blg_beard_ugric = yes
-						blg_beard_muslim = yes
-						blg_beard_egyptian = yes
-						blg_beard_african = yes
-						blg_beard_southindian = yes
-						blg_beard_chinese = yes
-					}
+					blg_beard_african = no
+					blg_beard_cuman = no
+					blg_beard_frankish = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_easternslavic = no
+					blg_beard_roman = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_frankish = yes
-						blg_beard_southern = yes
-						blg_beard_southslavic = yes
-						blg_beard_westernslavic = yes
-						blg_beard_easternslavic = yes
-						blg_beard_cuman = yes
-						blg_beard_bodpa = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_african = no
+					blg_beard_byzantine = no
+					blg_beard_english = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_muslim = no
+					blg_beard_norse = no
+					blg_beard_southern = no
+					blg_beard_ugric = no
+					blg_beard_chinese = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
@@ -1007,29 +1045,35 @@
 					limit = {
 						blg_beard_short = yes
 					}
-					OR = {
-						blg_beard_german = yes
-						blg_beard_southslavic = yes
-						blg_beard_westernslavic = yes
-						blg_beard_easternslavic = yes
-					}
+					blg_beard_african = no
+					blg_beard_byzantine = no
+					blg_beard_cuman = no
+					blg_beard_english = no
+					blg_beard_muslim = no
+					blg_beard_norse = no
+					blg_beard_southern = no
+					blg_beard_ugric = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_roman = no
+					blg_beard_southindian = no
 				}
 
 				trigger_if = {
 					limit = {
 						blg_beard_long = yes
 					}
-					OR = {
-						blg_beard_english = yes
-						blg_beard_byzantine = yes
-						blg_beard_muslim = yes
-						blg_beard_african = yes
-						blg_beard_norse = yes
-						blg_beard_southindian = yes
-						blg_beard_ugric = yes
-						blg_beard_bodpa = yes
-						blg_beard_roman = yes
-					}
+					blg_beard_byzantine = no
+					blg_beard_cuman = no
+					blg_beard_egyptian = no
+					blg_beard_frankish = no
+					blg_beard_german = no
+					blg_beard_southern = no
+					blg_beard_southslavic = no
+					blg_beard_westernslavic = no
+					blg_beard_bodpa = no
+					blg_beard_chinese = no
+					blg_beard_easternslavic = no
 				}
 
 				trigger_if = {
