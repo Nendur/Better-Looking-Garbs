@@ -2,7 +2,7 @@ Changelog:
 
   New Baltic portraits using the fallback northern faces.
   Give French faces a bit more tan.
-  Add some random jewelry to higher nobles.
+  Add various extra earring jewelry to higher nobles.
   Fix installation path detection for newer Steam versions.
   CK2Plus support updated to version 5.
   Reorganized culture and religion scripted triggers.
