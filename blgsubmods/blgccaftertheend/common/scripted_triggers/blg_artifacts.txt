@@ -20,6 +20,11 @@ blg_artifact_derafsh_kaviani = {
 	}
 }
 
+# Bowl.
+blg_artifact_bowl = {
+	always = no
+}
+
 # Glass candle.
 blg_artifact_candle = {
 	always = no
@@ -132,16 +137,6 @@ blg_artifact_scepter_hellenic = {
 	always = no
 }
 
-# Override for the ruby scepter variant.
-blg_artifact_scepter_ruby = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		quality >= 3
-		has_artifact_flag = staff
-		has_artifact_flag = jewelry
-	}
-}
-
 # Scroll.
 blg_artifact_scroll = {
 	any_artifact = {
@@ -166,6 +161,19 @@ blg_artifact_staff_crook = {
 	society_member_of = monastic_order_benedictine
 }
 
+# Black staff.
+blg_artifact_staff_black = {
+	always = no
+}
+
+# Branch staff.
+blg_artifact_staff_branch = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = living_thyrsus
+	}
+}
+
 # Indian danda staff.
 blg_artifact_staff_danda = {
 	any_artifact = {
@@ -178,7 +186,38 @@ blg_artifact_staff_danda = {
 blg_artifact_staff_of_moses = {
 	any_artifact = {
 		is_artifact_equipped = yes
-		artifact_type = living_thyrsus
+		artifact_type = staff_of_moses
+	}
+}
+
+# Skull staff.
+blg_artifact_staff_skull = {
+	always = no
+}
+
+# Staff of Majesty.
+blg_artifact_staff_3 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		quality >= 3
+		has_artifact_flag = staff
+	}
+}
+
+# Gold Staff.
+blg_artifact_staff_2 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		quality == 2
+		has_artifact_flag = staff
+	}
+}
+
+# Silver Staff.
+blg_artifact_staff_1 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = staff
 	}
 }
 
@@ -203,7 +242,7 @@ blg_artifact_totem = {
 
 # Chinese water clock.
 blg_artifact_waterclock = {
-	has_artifact = water_clock
+	always = no
 }
 
 ### Artifact headgear:
@@ -549,6 +588,7 @@ blg_weapon_polearm = {
 	OR = {
 		has_artifact_flag = polearm
 		artifact_type = chinese_ji
+		artifact_type = golden_lance
 	}
 }
 

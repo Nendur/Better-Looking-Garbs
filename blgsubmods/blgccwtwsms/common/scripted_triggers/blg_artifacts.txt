@@ -32,6 +32,18 @@ blg_artifact_derafsh_kaviani = {
 	}
 }
 
+# Bowl.
+blg_artifact_bowl = {
+	any_artifact = {
+		is_artifact_active = yes
+		OR = {
+			artifact_type = mohammads_bowl
+			artifact_type = water_of_blessed_mantle
+			artifact_type = cup_of_jamshid
+		}
+	}
+}
+
 # Glass candle.
 blg_artifact_candle = {
 	always = no
@@ -59,7 +71,6 @@ blg_artifact_grail = {
 	OR = {
 		has_artifact = holy_grail
 		has_artifact = holy_chalice
-		has_artifact = cup_of_jamshid
 	}
 }
 

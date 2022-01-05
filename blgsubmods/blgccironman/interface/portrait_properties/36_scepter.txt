@@ -87,14 +87,7 @@
 	}
 
 	3 = { # c - Holy Grail
-		factor = 100
-		trigger = {
-			OR = {
-				has_artifact = holy_grail
-				has_artifact = holy_chalice
-				has_artifact = cup_of_jamshid
-			}
-		}
+		factor = 0
 	}
 
 	4 = { # d - Mjolnir
@@ -111,28 +104,11 @@
 	}
 
 	5 = { # e - Tablet
-		factor = 75
-
-		trigger = {
-			any_artifact = {
-				is_artifact_active = yes
-				OR = {
-					has_artifact_flag = tablet
-					artifact_type = yada_tashy
-				}
-			}
-		}
+		factor = 0
 	}
 
 	6 = { # f - Horn
-		factor = 75
-
-		trigger = {
-			any_artifact = {
-				is_artifact_active = yes
-				has_artifact_flag = horn
-			}
-		}
+		factor = 0
 	}
 
 	7 = { # g - Scepter

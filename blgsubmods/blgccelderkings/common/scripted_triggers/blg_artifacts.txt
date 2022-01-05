@@ -29,6 +29,11 @@ blg_artifact_derafsh_kaviani = {
 	always = no
 }
 
+# Bowl.
+blg_artifact_bowl = {
+	always = no
+}
+
 # Glass candle.
 blg_artifact_candle = {
 	always = no
@@ -66,7 +71,7 @@ blg_artifact_jadedragon = {
 
 # Mjolnir hammer.
 blg_artifact_mjolnir = {
-	has_artifact = amulet_of_kings
+	always = no
 }
 
 # Large relic chest.

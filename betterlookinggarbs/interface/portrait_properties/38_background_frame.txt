@@ -9,6 +9,9 @@
 				is_landed = yes
 				spouse = { is_landed = yes }
 				blg_animal_falcon = yes
+				blg_animal_boar = yes
+				blg_animal_ape = yes
+				blg_animal_vulture = yes
 			}
 		}
 
@@ -124,6 +127,33 @@
 		factor = 10
 		trigger = {
 			blg_animal_falcon = yes
+
+			blg_artifact_rule = yes
+		}
+	}
+
+	9 = { # i - Boar
+		factor = 50
+		trigger = {
+			blg_animal_boar = yes
+
+			blg_artifact_rule = yes
+		}
+	}
+
+	10 = { # j - Ape
+		factor = 50
+		trigger = {
+			blg_animal_ape = yes
+
+			blg_artifact_rule = yes
+		}
+	}
+
+	11 = { # k - Vulture
+		factor = 50
+		trigger = {
+			blg_animal_vulture = yes
 
 			blg_artifact_rule = yes
 		}

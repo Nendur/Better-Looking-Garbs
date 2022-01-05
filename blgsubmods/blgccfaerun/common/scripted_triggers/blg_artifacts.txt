@@ -24,6 +24,14 @@ blg_artifact_derafsh_kaviani = {
 	always = no
 }
 
+# Bowl.
+blg_artifact_bowl = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = bowl_of_commanding_water_elementals
+	}
+}
+
 # Glass candle.
 blg_artifact_candle = {
 	any_artifact = {

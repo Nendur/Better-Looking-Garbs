@@ -1,16 +1,21 @@
 # p34 Special Characters
 34 = {
 	0 = { # blank
-		factor = 100
+		factor = 1
+	}
+
+	1 = { #Amulet of Kings
+		factor = 99
 		trigger = {
-			OR = {
-				is_unique_portrait = no
-				blg_adult = no
+			any_artifact = {
+				is_artifact_equipped = yes
+				has_artifact = amulet_of_kings
 			}
+			blg_artifact_rule = yes
 		}
 	}
 
-	1 = { #Patrick Stewart, with hair
+	2 = { #Patrick Stewart, with hair
 		factor = 100
 		trigger = {
 			trait = tiber_portrait
@@ -18,7 +23,7 @@
 		}
 	}
 
-	2 = { #Patrick Stewart, without hair
+	3 = { #Patrick Stewart, without hair
 		factor = 100
 		trigger = {
 			trait = tiber_portrait
@@ -26,12 +31,12 @@
 		}
 	}
 
-	3 = { #Sean Bean
-		factor = 100
-		trigger = {
-			trait = martin_portrait
-		}
-	}
+	#3 = { #Sean Bean
+		#factor = 100
+		#trigger = {
+			#trait = martin_portrait
+		#}
+	#}
 
 	4 = { #Divayth Fyr
 		factor = 100

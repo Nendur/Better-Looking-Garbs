@@ -36,26 +36,24 @@
 		}
 	}
 
-	5 = { # e - Glass candle
+	5 = { # e - Holy Grail
+		factor = 100
+		trigger = {
+			blg_artifact_grail = yes
+		}
+	}
+
+	6 = { # f - Bowl
 		factor = 10
 		trigger = {
-			blg_artifact_candle = yes
+			blg_artifact_bowl = yes
 		}
 	}
 
-	6 = { # f - Hunting Trophy
-		factor = 100
+	7 = { # g - Horn
+		factor = 10
 		trigger = {
-			has_character_flag = achievement_great_hunter
-			has_character_flag = white_stag
-		}
-	}
-
-	7 = { # g - Hunting Trophy
-		factor = 100
-		trigger = {
-			has_character_flag = achievement_great_hunter
-			has_character_flag = white_bear
+			blg_artifact_horn = yes
 		}
 	}
 
@@ -63,7 +61,7 @@
 		factor = 100
 		trigger = {
 			has_character_flag = achievement_great_hunter
-			has_character_flag = white_tiger
+			has_character_flag = white_stag
 		}
 	}
 
@@ -71,21 +69,51 @@
 		factor = 100
 		trigger = {
 			has_character_flag = achievement_great_hunter
+			has_character_flag = white_bear
+		}
+	}
+
+	10 = { # j - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_tiger
+		}
+	}
+
+	11 = { # k - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
 			has_character_flag = white_lion
 		}
 	}
 
-	10 = { # j - Jade Dragon
+	12 = { # l - Tablet
+		factor = 10
+		trigger = {
+			blg_artifact_tablet = yes
+		}
+	}
+
+	13 = { # m - Jade Dragon
 		factor = 10
 		trigger = {
 			blg_artifact_jadedragon = yes
 		}
 	}
 
-	11 = { # k - Water clock
+	14 = { # n - Water clock
 		factor = 10
 		trigger = {
 			blg_artifact_waterclock = yes
+		}
+	}
+
+	15 = { # o - Glass candle
+		factor = 50
+		trigger = {
+			blg_artifact_candle = yes
 		}
 	}
 }

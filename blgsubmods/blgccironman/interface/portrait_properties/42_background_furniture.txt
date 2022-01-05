@@ -59,23 +59,37 @@
 		}
 	}
 
-	5 = { # e - Glass candle
-		factor = 0
-	}
-
-	6 = { # f - Hunting Trophy
+	5 = { # e - Holy Grail
 		factor = 100
 		trigger = {
-			has_character_flag = achievement_great_hunter
-			has_character_flag = white_stag
+			OR = {
+				has_artifact = holy_grail
+				has_artifact = holy_chalice
+			}
 		}
 	}
 
-	7 = { # g - Hunting Trophy
-		factor = 100
+	6 = { # f - Bowl
+		factor = 10
 		trigger = {
-			has_character_flag = achievement_great_hunter
-			has_character_flag = white_bear
+			any_artifact = {
+				is_artifact_active = yes
+				OR = {
+					artifact_type = mohammads_bowl
+					artifact_type = water_of_blessed_mantle
+					artifact_type = cup_of_jamshid
+				}
+			}
+		}
+	}
+
+	7 = { # g - Horn
+		factor = 10
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				has_artifact_flag = horn
+			}
 		}
 	}
 
@@ -83,7 +97,7 @@
 		factor = 100
 		trigger = {
 			has_character_flag = achievement_great_hunter
-			has_character_flag = white_tiger
+			has_character_flag = white_stag
 		}
 	}
 
@@ -91,18 +105,47 @@
 		factor = 100
 		trigger = {
 			has_character_flag = achievement_great_hunter
+			has_character_flag = white_bear
+		}
+	}
+
+	10 = { # j - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
+			has_character_flag = white_tiger
+		}
+	}
+
+	11 = { # k - Hunting Trophy
+		factor = 100
+		trigger = {
+			has_character_flag = achievement_great_hunter
 			has_character_flag = white_lion
 		}
 	}
 
-	10 = { # j - Jade Dragon
+	12 = { # l - Tablet
+		factor = 10
+		trigger = {
+			any_artifact = {
+				is_artifact_active = yes
+				OR = {
+					has_artifact_flag = tablet
+					artifact_type = yada_tashy
+				}
+			}
+		}
+	}
+
+	13 = { # m - Jade Dragon
 		factor = 10
 		trigger = {
 			has_artifact = jade_dragon
 		}
 	}
 
-	11 = { # k - Water clock
+	14 = { # n - Water clock
 		factor = 10
 		trigger = {
 			has_artifact = water_clock

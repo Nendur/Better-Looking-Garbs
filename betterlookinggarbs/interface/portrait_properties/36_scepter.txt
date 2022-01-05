@@ -41,14 +41,7 @@
 		}
 	}
 
-	3 = { # c - Holy Grail
-		factor = 100
-		trigger = {
-			blg_artifact_grail = yes
-		}
-	}
-
-	4 = { # d - Mjolnir
+	3 = { # c - Mjolnir
 		factor = 100
 		hide_layers = { 39 = {} }
 		hide_layers = { 40 = {} }
@@ -58,87 +51,47 @@
 		}
 	}
 
-	5 = { # e - Tablet
-		factor = 75
+	4 = { # d - Jeweled Danda
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
 
 		trigger = {
-			blg_artifact_tablet = yes
+			blg_artifact_staff_danda = yes
 		}
 	}
 
-	6 = { # f - Horn
-		factor = 75
+	5 = { # e - Black Staff
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
 
 		trigger = {
-			blg_artifact_horn = yes
+			blg_artifact_staff_black = yes
 		}
 	}
 
-	7 = { # g - Scepter
-		factor = 25
+	6 = { # f - Branch Staff
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
 
 		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				quality >= 3
-				has_artifact_flag = scepter
-			}
-			blg_artifact_rule = yes
+			blg_artifact_staff_branch = yes
 		}
 	}
 
-	8 = { # h - Scepter
-		factor = 25
+	7 = { # g - Skull Staff
+		factor = 100
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
 
 		trigger = {
-			OR = {
-				any_artifact = {
-					is_artifact_equipped = yes
-					quality == 2
-					has_artifact_flag = scepter
-				}
-				blg_artifact_scepter_ruby = yes
-			}
-			blg_artifact_rule = yes
-		}
-
-		modifier = {
-			factor = 100
-			blg_artifact_scepter_ruby = yes
+			blg_artifact_staff_skull = yes
 		}
 	}
 
-	9 = { # i - Scepter
-		factor = 25
-
-		trigger = {
-			any_artifact = {
-				is_artifact_equipped = yes
-				OR = {
-					AND = {
-						quality == 1
-						has_artifact_flag = scepter
-					}
-					has_artifact_flag = staff
-				}
-			}
-			blg_artifact_rule = yes
-		}
-	}
-
-	10 = { # j - Necklace
-		factor = 0
-	}
-
-	11 = { # k - Necklace
-		factor = 0
-	}
-
-	12 = { # l - Necklace
-		factor = 0
-	}
-
-	13 = { # m - African Totem Scepter
+	8 = { # h - African Totem Scepter
 		factor = 100
 		hide_layers = { 39 = {} }
 		hide_layers = { 40 = {} }
@@ -148,7 +101,40 @@
 		}
 	}
 
-	14 = { # n - Shepherds Crook
+	9 = { # i - Staff of Majesty
+		factor = 25
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			blg_artifact_staff_3 = yes
+			blg_artifact_rule = yes
+		}
+	}
+
+	10 = { # j - Gold Staff
+		factor = 25
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			blg_artifact_staff_2 = yes
+			blg_artifact_rule = yes
+		}
+	}
+
+	11 = { # k - Silver Staff
+		factor = 25
+		hide_layers = { 39 = {} }
+		hide_layers = { 40 = {} }
+
+		trigger = {
+			blg_artifact_staff_1 = yes
+			blg_artifact_rule = yes
+		}
+	}
+
+	12 = { # l - Shepherds Crook
 		factor = 1
 		hide_layers = { 39 = {} }
 		hide_layers = { 40 = {} }
@@ -158,25 +144,17 @@
 		}
 	}
 
-	15 = { # o - Indian Staff
-		factor = 100
+	13 = { # m - Indian Staff
+		factor = 1
 		hide_layers = { 39 = {} }
 		hide_layers = { 40 = {} }
 
 		trigger = {
-			OR = {
-				blg_artifact_staff = yes
-				blg_artifact_staff_danda = yes
-			}
-		}
-
-		modifier = {
-			factor = 0.01
 			blg_artifact_staff = yes
 		}
 	}
 
-	16 = { # p - Indian Staff
+	14 = { # n - Indian Staff
 		factor = 100
 		hide_layers = { 39 = {} }
 		hide_layers = { 40 = {} }
@@ -194,7 +172,46 @@
 		}
 	}
 
-	17 = { # q - Crutch
+	15 = { # o - Scepter
+		factor = 25
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality >= 3
+				has_artifact_flag = scepter
+			}
+			blg_artifact_rule = yes
+		}
+	}
+
+	16 = { # p - Scepter
+		factor = 25
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality == 2
+				has_artifact_flag = scepter
+			}
+			blg_artifact_rule = yes
+		}
+	}
+
+	17 = { # q - Scepter
+		factor = 25
+
+		trigger = {
+			any_artifact = {
+				is_artifact_equipped = yes
+				quality == 1
+				has_artifact_flag = scepter
+			}
+			blg_artifact_rule = yes
+		}
+	}
+
+	18 = { # r - Crutch
 		factor = 50
 
 		trigger = {
@@ -202,7 +219,7 @@
 		}
 	}
 
-	18 = { # r - Dagger
+	19 = { # s - Dagger
 		factor = 25
 
 		trigger = {
@@ -216,7 +233,7 @@
 		}
 	}
 
-	19 = { # s - Dagger
+	20 = { # t - Dagger
 		factor = 10
 
 		trigger = {
@@ -230,7 +247,7 @@
 		}
 	}
 
-	20 = { # t - Book
+	21 = { # u - Book
 		factor = 1
 
 		trigger = {
@@ -239,21 +256,6 @@
 				OR = {
 					has_artifact_flag = book
 					has_artifact_flag = antiquity_book
-				}
-			}
-			blg_artifact_rule = yes
-		}
-	}
-
-	21 = { # u - Ingredients
-		factor = 1
-
-		trigger = {
-			any_artifact = {
-				is_artifact_active = yes
-				OR = {
-					has_artifact_flag = ingredient
-					has_artifact_flag = herb
 				}
 			}
 			blg_artifact_rule = yes
@@ -270,21 +272,26 @@
 		}
 	}
 
-	23 = { # w - Eagle
-		factor = 10
+	23 = { # w - Ingredients
+		factor = 1
 
 		trigger = {
-			blg_animal_eagle = yes
-
+			any_artifact = {
+				is_artifact_active = yes
+				OR = {
+					has_artifact_flag = ingredient
+					has_artifact_flag = herb
+				}
+			}
 			blg_artifact_rule = yes
 		}
 	}
 
-	24 = { # x - Raven
+	24 = { # x - Eagle
 		factor = 10
 
 		trigger = {
-			blg_animal_raven = yes
+			blg_animal_eagle = yes
 
 			blg_artifact_rule = yes
 		}
