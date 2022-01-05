@@ -116,3 +116,11 @@ blg_mercenary_fleet = {
 		}
 	}
 }
+
+# Pope in Rome
+blg_pope = {
+	rightful_religious_head = ROOT
+	location = {
+		province = c_roma
+	}
+}

@@ -105,6 +105,7 @@ blg_religion_pagan = {
 		religion = draconic_pantheon
 		religion = sylvan
 		religion = scale_cult
+		religion = animist
 	}
 }
 

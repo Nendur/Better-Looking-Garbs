@@ -11,10 +11,7 @@ blg_animal_bat = {
 }
 
 blg_animal_boar = {
-	OR = {
-		death_reason = death_accident_boar
-		death_reason = death_execution_boar
-	}
+	always = no
 }
 
 blg_animal_cat = {

@@ -3,28 +3,18 @@
 ### Pets:
 
 blg_animal_ape = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		artifact_type = ape_companion
-	}
+	always = no
 }
 
 blg_animal_bat = {
 	any_artifact = {
 		is_artifact_equipped = yes
-		artifact_type = bat_familiar
+		artifact_type = wiz_familiar_artf
 	}
 }
 
 blg_animal_boar = {
-	OR = {
-		any_artifact = {
-			is_artifact_equipped = yes
-			artifact_type = boar_companion
-		}
-		death_reason = death_accident_boar
-		death_reason = death_execution_boar
-	}
+	always = no
 }
 
 blg_animal_cat = {
@@ -33,10 +23,7 @@ blg_animal_cat = {
 		has_character_modifier = child_cat
 		any_artifact = {
 			is_artifact_equipped = yes
-			OR = {
-				artifact_type = cat_familiar
-				artifact_type = tressym_familiar
-			}
+			artifact_type = wiz_familiar_artf
 		}
 	}
 }
@@ -53,10 +40,6 @@ blg_animal_dog = {
 		has_character_modifier = pet_masterless_dog
 		has_character_modifier = guide_dog
 		has_character_modifier = child_dog
-		any_artifact = {
-			is_artifact_equipped = yes
-			artifact_type = mastiff_companion
-		}
 	}
 	NOT = { has_character_modifier = lost_dog }
 }
@@ -66,31 +49,31 @@ blg_animal_eagle = {
 }
 
 blg_animal_falcon = {
-	OR = {
-		trait = falconer
-		any_artifact = {
-			is_artifact_equipped = yes
-			OR = {
-				artifact_type = hawk_familiar
-				artifact_type = blood_hawk_companion
-			}
-		}
-	}
+	trait = falconer
 }
 
 blg_animal_fox = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = wiz_familiar_artf
+	}
 }
 
 blg_animal_frog = {
 	any_artifact = {
 		is_artifact_equipped = yes
-		artifact_type = frog_familiar
+		artifact_type = wiz_familiar_artf
 	}
 }
 
 blg_animal_hedgehog = {
-	has_character_modifier = pet_hedgehog
+	OR = {
+		has_character_modifier = pet_hedgehog
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = wiz_familiar_artf
+		}
+	}
 }
 
 blg_animal_imp = {
@@ -104,10 +87,7 @@ blg_animal_imp = {
 }
 
 blg_animal_monkey = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		artifact_type = flying_monkey_familiar
-	}
+	always = no
 }
 
 blg_animal_otter = {
@@ -115,7 +95,7 @@ blg_animal_otter = {
 		has_character_modifier = pet_otter
 		any_artifact = {
 			is_artifact_equipped = yes
-			artifact_type = weasel_familiar
+			artifact_type = wiz_familiar_artf
 		}
 	}
 }
@@ -129,7 +109,7 @@ blg_animal_owl = {
 		}
 		any_artifact = {
 			is_artifact_equipped = yes
-			artifact_type = owl_familiar
+			artifact_type = wiz_familiar_artf
 		}
 	}
 }
@@ -144,12 +124,7 @@ blg_animal_rat = {
 		has_character_modifier = rats_in_cell
 		any_artifact = {
 			is_artifact_equipped = yes
-			OR = {
-				artifact_type = rat_familiar
-				artifact_type = cranium_rat_familiar
-				artifact_type = giant_rat_companion
-				artifact_type = mini_giant_space_hamster
-			}
+			artifact_type = wiz_familiar_artf
 		}
 	}
 }
@@ -163,7 +138,7 @@ blg_animal_raven = {
 		}
 		any_artifact = {
 			is_artifact_equipped = yes
-			artifact_type = raven_familiar
+			artifact_type = wiz_familiar_artf
 		}
 	}
 }
@@ -179,10 +154,7 @@ blg_animal_snake = {
 		has_character_flag = diwali_snake_charmer
 		any_artifact = {
 			is_artifact_equipped = yes
-			OR = {
-				artifact_type = snake_familiar
-				artifact_type = giant_poison_snake_companion
-			}
+			artifact_type = wiz_familiar_artf
 		}
 	}
 }
@@ -192,15 +164,9 @@ blg_animal_vulture = {
 }
 
 blg_animal_wolf = {
-	OR = {
-		AND = {
-			has_character_modifier = wolf_familiar
-			blg_visible_society = yes
-		}
-		any_artifact = {
-			is_artifact_equipped = yes
-			artifact_type = wolf_companion
-		}
+	AND = {
+		has_character_modifier = wolf_familiar
+		blg_visible_society = yes
 	}
 }
 
@@ -221,13 +187,7 @@ blg_mount_horse_destrier = {
 
 # Basic Horse.
 blg_mount_horse = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		OR = {
-			artifact_type = mule_companion
-			artifact_type = pony_companion
-		}
-	}
+	always = no
 }
 
 # Armoured horse tier 1.
@@ -257,10 +217,7 @@ blg_mount_horse_white = {
 
 # Bear mount.
 blg_mount_bear = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		artifact_type = bear_companion
-	}
+	always = no
 }
 
 # Camel mount.
@@ -355,10 +312,7 @@ blg_mount_elephant = {
 
 # Lion mount.
 blg_mount_lion = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		artifact_type = hyena_companion
-	}
+	always = no
 }
 
 # Lizard mount.
@@ -373,18 +327,12 @@ blg_mount_polarbear = {
 
 # Reindeer mount.
 blg_mount_reindeer = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		artifact_type = deer_companion
-	}
+	always = no
 }
 
 # Tiger mount.
 blg_mount_tiger = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		artifact_type = panther_companion
-	}
+	always = no
 }
 
 # Yak mount.
@@ -394,10 +342,7 @@ blg_mount_yak = {
 
 # Wolf mount.
 blg_mount_wolf = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		artifact_type = wolf_companion
-	}
+	always = no
 }
 
 ### Unit types:

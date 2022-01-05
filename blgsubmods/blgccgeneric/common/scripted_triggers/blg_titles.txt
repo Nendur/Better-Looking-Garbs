@@ -74,3 +74,8 @@ blg_knights_livonian = {
 blg_mercenary_fleet = {
 	always = no
 }
+
+# Pope in Rome
+blg_pope = {
+	always = no
+}

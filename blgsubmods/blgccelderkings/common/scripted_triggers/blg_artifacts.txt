@@ -113,16 +113,6 @@ blg_artifact_scepter_hellenic = {
 	}
 }
 
-# Override for the ruby scepter variant.
-blg_artifact_scepter_ruby = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		quality >= 3
-		has_artifact_flag = staff
-		has_artifact_flag = jewelry
-	}
-}
-
 # Scroll.
 blg_artifact_scroll = {
 	any_artifact = {
@@ -133,6 +123,16 @@ blg_artifact_scroll = {
 
 # Indian staffs.
 blg_artifact_staff = {
+	always = no
+}
+
+# Black staff.
+blg_artifact_staff_black = {
+	always = no
+}
+
+# Branch staff.
+blg_artifact_staff_branch = {
 	always = no
 }
 
@@ -154,6 +154,41 @@ blg_artifact_staff_of_moses = {
 	always = no
 }
 
+# Skull staff.
+blg_artifact_staff_skull = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = weapon_skull_of_corruption
+	}
+}
+
+# Staff of Majesty.
+blg_artifact_staff_3 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		quality >= 3
+		has_artifact_flag = staff
+	}
+}
+
+# Gold Staff.
+blg_artifact_staff_2 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		quality == 2
+		has_artifact_flag = staff
+	}
+}
+
+# Silver Staff.
+blg_artifact_staff_1 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		quality == 1
+		has_artifact_flag = staff
+	}
+}
+
 # Stone tablet.
 blg_artifact_tablet = {
 	always = no
@@ -164,8 +199,8 @@ blg_artifact_totem = {
 	any_artifact = {
 		is_artifact_equipped = yes
 		OR = {
-			artifact_type = weapon_skull_of_corruption
 			artifact_type = weapon_wabbajack
+			artifact_type = weapon_staff_goblin
 		}
 	}
 }

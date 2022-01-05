@@ -36,7 +36,6 @@ blg_artifact_bowl = {
 		OR = {
 			artifact_type = mohammads_bowl
 			artifact_type = water_of_blessed_mantle
-			artifact_type = cup_of_jamshid
 		}
 	}
 }
@@ -161,16 +160,6 @@ blg_artifact_scepter_hellenic = {
 	}
 }
 
-# Override for the ruby scepter variant.
-blg_artifact_scepter_ruby = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		quality >= 3
-		has_artifact_flag = staff
-		has_artifact_flag = jewelry
-	}
-}
-
 # Scroll.
 blg_artifact_scroll = {
 	any_artifact = {
@@ -184,6 +173,16 @@ blg_artifact_scroll = {
 
 # Indian staffs.
 blg_artifact_staff = {
+	always = no
+}
+
+# Black staff.
+blg_artifact_staff_black = {
+	always = no
+}
+
+# Branch staff.
+blg_artifact_staff_branch = {
 	always = no
 }
 
@@ -202,6 +201,38 @@ blg_artifact_staff_of_moses = {
 	any_artifact = {
 		is_artifact_equipped = yes
 		artifact_type = staff_of_moses
+	}
+}
+
+# Skull staff.
+blg_artifact_staff_skull = {
+	always = no
+}
+
+# Staff of Majesty.
+blg_artifact_staff_3 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		quality >= 3
+		has_artifact_flag = staff
+	}
+}
+
+# Gold Staff.
+blg_artifact_staff_2 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		quality == 2
+		has_artifact_flag = staff
+	}
+}
+
+# Silver Staff.
+blg_artifact_staff_1 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		quality == 1
+		has_artifact_flag = staff
 	}
 }
 

@@ -28,7 +28,10 @@ blg_artifact_derafsh_kaviani = {
 blg_artifact_bowl = {
 	any_artifact = {
 		is_artifact_equipped = yes
-		artifact_type = bowl_of_commanding_water_elementals
+		OR = {
+			artifact_type = bowl_of_commanding_water_elementals
+			artifact_type = censer_of_controlling_air_elementals
+		}
 	}
 }
 
@@ -56,10 +59,7 @@ blg_artifact_glasses = {
 
 # Holy Grail.
 blg_artifact_grail = {
-	any_artifact = {
-		is_artifact_active = yes
-		has_artifact_flag = cup
-	}
+	always = no
 }
 
 # Harp.
@@ -120,10 +120,7 @@ blg_artifact_sampo = {
 
 # Scepter for Bön head.
 blg_artifact_scepter_bon = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		artifact_type = staff_thunder_lightning
-	}
+	always = no
 }
 
 # Scepter for Hellenic head.
@@ -131,26 +128,8 @@ blg_artifact_scepter_hellenic = {
 	any_artifact = {
 		is_artifact_equipped = yes
 		OR = {
-			artifact_type = staff_of_power
-			artifact_type = staff_of_frost
+			artifact_type = staff_thunder_lightning
 			artifact_type = scepter_tyrant_eye
-		}
-	}
-}
-
-# Override for the ruby scepter variant.
-blg_artifact_scepter_ruby = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		OR = {
-			artifact_type = staff_of_fire
-			artifact_type = genuine_ruby_rod_of_asmodeus
-			artifact_type = replica_ruby_rod_of_asmodeus
-			AND = {
-				quality >= 3
-				has_artifact_flag = staff
-				has_artifact_flag = jewelry
-			}
 		}
 	}
 }
@@ -165,10 +144,22 @@ blg_artifact_scroll = {
 
 # Indian staffs.
 blg_artifact_staff = {
+	always = no
+}
+
+# Black staff.
+blg_artifact_staff_black = {
+	always = no
+}
+
+# Branch staff.
+blg_artifact_staff_branch = {
 	any_artifact = {
-		is_artifact_active = yes
-		has_artifact_flag = staff
-		has_artifact_flag = magic
+		is_artifact_equipped = yes
+		OR = {
+			artifact_type = staff_of_woodlands
+			artifact_type = staff_of_swarming_insects
+		}
 	}
 }
 
@@ -185,16 +176,57 @@ blg_artifact_staff_danda = {
 	any_artifact = {
 		is_artifact_equipped = yes
 		OR = {
-			artifact_type = staff_of_the_magi
-			artifact_type = staff_of_woodlands
-			artifact_type = staff_python
+			artifact_type = genuine_ruby_rod_of_asmodeus
+			artifact_type = replica_ruby_rod_of_asmodeus
 		}
 	}
 }
 
 # Humble staff.
 blg_artifact_staff_of_moses = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = staff_of_birdcalls
+	}
+}
+
+# Skull staff.
+blg_artifact_staff_skull = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = staff_python
+	}
+}
+
+# Staff of Majesty.
+blg_artifact_staff_3 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		quality >= 3
+		OR = {
+			has_artifact_flag = staff
+			artifact_type = staff_of_fire
+		}
+	}
+}
+
+# Gold Staff.
+blg_artifact_staff_2 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = staff_of_the_magi
+	}
+}
+
+# Silver Staff.
+blg_artifact_staff_1 = {
+	any_artifact = {
+		is_artifact_equipped = yes
+		OR = {
+			artifact_type = staff_of_power
+			artifact_type = staff_of_frost
+		}
+	}
 }
 
 # Stone tablet.
@@ -217,9 +249,6 @@ blg_artifact_totem = {
 			artifact_type = lesser_rod_pact_keeper
 			artifact_type = normal_rod_pact_keeper
 			artifact_type = greater_rod_pact_keeper
-			artifact_type = staff_of_swarming_insects
-			artifact_type = wand_of_binding
-			artifact_type = wand_of_fear
 		}
 	}
 }

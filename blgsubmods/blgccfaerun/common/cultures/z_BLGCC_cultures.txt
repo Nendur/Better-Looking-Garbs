@@ -79,15 +79,6 @@ lapal_group = {
 	}
 }
 
-taan_group = {
-	tuigan = {
-		unit_graphical_cultures = { cumangfx }
-	}
-	chuchian = {
-		unit_graphical_cultures = { cumangfx }
-	}
-}
-
 tethyrian_group = {
 	ffolk = {
 		graphical_cultures = { ffolkgfx saxongfx celticgfx westerngfx }

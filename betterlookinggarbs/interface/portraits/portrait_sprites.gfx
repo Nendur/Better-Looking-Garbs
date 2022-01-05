@@ -21,7 +21,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_background_items"
 		texturefile = "gfx\\characters\\shared\\background_items.dds"
-		noOfFrames = 22
+		noOfFrames = 23
 		norefcount = yes
 		can_be_lowres = yes
 	}

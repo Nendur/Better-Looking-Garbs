@@ -217,6 +217,7 @@ blg_artifact_staff_2 = {
 blg_artifact_staff_1 = {
 	any_artifact = {
 		is_artifact_equipped = yes
+		quality == 1
 		has_artifact_flag = staff
 	}
 }

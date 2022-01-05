@@ -9,7 +9,6 @@
 				prisoner = yes
 				has_game_rule = { name = blg_artifacts value = off }
 			}
-			blg_saint = no
 		}
 	}
 
@@ -24,12 +23,10 @@
 			factor = 75
 			has_landed_title = e_iron_throne
 		}
-		hide_layers = { 38 = {} }
 	}
 
 	2 = { # The Wall
 		factor = 5
-		hide_layers = { 42 = {} }
 
 		trigger = {
 			location = { region = world_the_wall }
@@ -42,8 +39,7 @@
 	}
 
 	3 = { # Godswood
-		factor = 1
-		hide_layers = { 42 = {} }
+		factor = 25
 
 		trigger = {
 			OR = {
@@ -51,22 +47,23 @@
 				religion_group = wildling_religion
 			}
 
+			OR = {
+				is_theocracy = yes
+				blg_devout = yes
+			}
+
 			NOR = {
 				has_character_modifier = in_seclusion
 				trait = cynical
 			}
 		}
-
-		modifier = {
-			factor = 25
-			OR = {
-				is_theocracy = yes
-				blg_devout = yes
-			}
-		}
 	}
 
-	4 = { # d - Cat
+	4 = { # d - Derafsh Kaviani
+		factor = 0
+	}
+
+	5 = { # e - Cat
 		factor = 10
 
 		trigger = {
@@ -81,26 +78,8 @@
 			}
 			blg_artifact_rule = yes
 			NOR = {
-				has_portrait_property = { layer = 2 index = 13 }
-				has_portrait_property = { layer = 2 index = 14 }
-			}
-		}
-	}
-
-	5 = { # e - Cat
-		factor = 10
-
-		trigger = {
-			blg_animal_cat = yes
-
-			OR = {
-				in_command = no
-				has_character_flag = desc_cat
-			}
-			blg_artifact_rule = yes
-			NOR = {
-				has_portrait_property = { layer = 2 index = 12 }
-				has_portrait_property = { layer = 2 index = 14 }
+				has_portrait_property = { layer = 2 index = 6 }
+				has_portrait_property = { layer = 2 index = 7 }
 			}
 		}
 	}
@@ -117,27 +96,26 @@
 			}
 			blg_artifact_rule = yes
 			NOR = {
-				has_portrait_property = { layer = 2 index = 12 }
-				has_portrait_property = { layer = 2 index = 13 }
+				has_portrait_property = { layer = 2 index = 5 }
+				has_portrait_property = { layer = 2 index = 7 }
 			}
 		}
 	}
 
-	7 = { # g - Dog
+	7 = { # g - Cat
 		factor = 10
 
 		trigger = {
-			blg_animal_dog = yes
+			blg_animal_cat = yes
 
 			OR = {
 				in_command = no
-				has_character_flag = desc_dog
+				has_character_flag = desc_cat
 			}
 			blg_artifact_rule = yes
 			NOR = {
-				has_portrait_property = { layer = 2 index = 16 }
-				has_portrait_property = { layer = 2 index = 17 }
-				has_portrait_property = { layer = 2 index = 18 }
+				has_portrait_property = { layer = 2 index = 5 }
+				has_portrait_property = { layer = 2 index = 6 }
 			}
 		}
 	}
@@ -154,9 +132,9 @@
 			}
 			blg_artifact_rule = yes
 			NOR = {
-				has_portrait_property = { layer = 2 index = 15 }
-				has_portrait_property = { layer = 2 index = 17 }
-				has_portrait_property = { layer = 2 index = 18 }
+				has_portrait_property = { layer = 2 index = 9 }
+				has_portrait_property = { layer = 2 index = 10 }
+				has_portrait_property = { layer = 2 index = 11 }
 			}
 		}
 	}
@@ -173,9 +151,9 @@
 			}
 			blg_artifact_rule = yes
 			NOR = {
-				has_portrait_property = { layer = 2 index = 15 }
-				has_portrait_property = { layer = 2 index = 16 }
-				has_portrait_property = { layer = 2 index = 18 }
+				has_portrait_property = { layer = 2 index = 8 }
+				has_portrait_property = { layer = 2 index = 10 }
+				has_portrait_property = { layer = 2 index = 11 }
 			}
 		}
 	}
@@ -192,14 +170,33 @@
 			}
 			blg_artifact_rule = yes
 			NOR = {
-				has_portrait_property = { layer = 2 index = 15 }
-				has_portrait_property = { layer = 2 index = 16 }
-				has_portrait_property = { layer = 2 index = 17 }
+				has_portrait_property = { layer = 2 index = 8 }
+				has_portrait_property = { layer = 2 index = 9 }
+				has_portrait_property = { layer = 2 index = 11 }
 			}
 		}
 	}
 
-	11 = { # k - Owl
+	11 = { # k - Dog
+		factor = 10
+
+		trigger = {
+			blg_animal_dog = yes
+
+			OR = {
+				in_command = no
+				has_character_flag = desc_dog
+			}
+			blg_artifact_rule = yes
+			NOR = {
+				has_portrait_property = { layer = 2 index = 8 }
+				has_portrait_property = { layer = 2 index = 9 }
+				has_portrait_property = { layer = 2 index = 10 }
+			}
+		}
+	}
+
+	12 = { # l - Owl
 		factor = 10
 
 		trigger = {
@@ -213,7 +210,7 @@
 		}
 	}
 
-	12 = { # l - Hedgehog
+	13 = { # m - Hedgehog
 		factor = 10
 
 		trigger = {
@@ -224,7 +221,7 @@
 		}
 	}
 
-	13 = { # m - Otter
+	14 = { # n - Otter
 		factor = 10
 
 		trigger = {
@@ -235,7 +232,7 @@
 		}
 	}
 
-	14 = { # n - Parrot
+	15 = { # o - Parrot
 		factor = 10
 
 		trigger = {
@@ -246,7 +243,7 @@
 		}
 	}
 
-	15 = { # o - Wolf
+	16 = { # p - Wolf
 		factor = 10
 
 		trigger = {
@@ -256,17 +253,18 @@
 		}
 	}
 
-	16 = { # p - Boar
+	17 = { # q - Raven
 		factor = 10
 
 		trigger = {
-			blg_animal_boar = yes
+			blg_animal_raven = yes
 
+			in_command = no
 			blg_artifact_rule = yes
 		}
 	}
 
-	17 = { # q - Bat
+	18 = { # r - Bat
 		factor = 10
 
 		trigger = {
@@ -276,7 +274,7 @@
 		}
 	}
 
-	18 = { # r - Frog
+	19 = { # s - Frog
 		factor = 10
 
 		trigger = {
@@ -287,7 +285,7 @@
 		}
 	}
 
-	19 = { # s - Monkey
+	20 = { # t - Monkey
 		factor = 10
 
 		trigger = {
@@ -298,27 +296,7 @@
 		}
 	}
 
-	20 = { # t - Ape
-		factor = 10
-
-		trigger = {
-			blg_animal_ape = yes
-
-			blg_artifact_rule = yes
-		}
-	}
-
-	21 = { # u - Vulture
-		factor = 10
-
-		trigger = {
-			blg_animal_vulture = yes
-
-			blg_artifact_rule = yes
-		}
-	}
-
-	22 = { # v - Fox
+	21 = { # u - Fox
 		factor = 10
 
 		trigger = {

@@ -113,3 +113,11 @@ blg_mercenary_fleet = {
 		}
 	}
 }
+
+# Pope in New Rome
+blg_pope = {
+	rightful_religious_head = ROOT
+	location = {
+		province = c_st_louis
+	}
+}

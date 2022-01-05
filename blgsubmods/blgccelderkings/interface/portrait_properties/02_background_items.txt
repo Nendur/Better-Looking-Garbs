@@ -9,6 +9,7 @@
 				prisoner = yes
 				has_game_rule = { name = blg_artifacts value = off }
 			}
+			blg_pope = no
 			blg_saint = no
 		}
 	}
@@ -25,23 +26,19 @@
 		}
 	}
 
-	2 = { # b - Holy Banner of Mohammad
-		factor = 100
-
-		trigger = {
-			blg_artifact_banner_mohammad = yes
-		}
+	2 = { # b - Papal Palace
+		factor = 0
 	}
 
-	3 = { # c - Derafsh Kaviani
-		factor = 100
-
-		trigger = {
-			blg_artifact_derafsh_kaviani = yes
-		}
+	3 = { # c - Holy Banner of Mohammad
+		factor = 0
 	}
 
-	4 = { # d - Cat
+	4 = { # d - Derafsh Kaviani
+		factor = 0
+	}
+
+	5 = { # e - Cat
 		factor = 10
 
 		trigger = {
@@ -56,26 +53,8 @@
 			}
 			blg_artifact_rule = yes
 			NOR = {
-				has_portrait_property = { layer = 2 index = 13 }
-				has_portrait_property = { layer = 2 index = 14 }
-			}
-		}
-	}
-
-	5 = { # e - Cat
-		factor = 10
-
-		trigger = {
-			blg_animal_cat = yes
-
-			OR = {
-				in_command = no
-				has_character_flag = desc_cat
-			}
-			blg_artifact_rule = yes
-			NOR = {
-				has_portrait_property = { layer = 2 index = 12 }
-				has_portrait_property = { layer = 2 index = 14 }
+				has_portrait_property = { layer = 2 index = 6 }
+				has_portrait_property = { layer = 2 index = 7 }
 			}
 		}
 	}
@@ -92,13 +71,31 @@
 			}
 			blg_artifact_rule = yes
 			NOR = {
-				has_portrait_property = { layer = 2 index = 12 }
-				has_portrait_property = { layer = 2 index = 13 }
+				has_portrait_property = { layer = 2 index = 5 }
+				has_portrait_property = { layer = 2 index = 7 }
 			}
 		}
 	}
 
-	7 = { # g - Dog
+	7 = { # g - Cat
+		factor = 10
+
+		trigger = {
+			blg_animal_cat = yes
+
+			OR = {
+				in_command = no
+				has_character_flag = desc_cat
+			}
+			blg_artifact_rule = yes
+			NOR = {
+				has_portrait_property = { layer = 2 index = 5 }
+				has_portrait_property = { layer = 2 index = 6 }
+			}
+		}
+	}
+
+	8 = { # h - Dog
 		factor = 10
 
 		trigger = {
@@ -119,7 +116,7 @@
 		}
 	}
 
-	8 = { # h - Dog
+	9 = { # i - Dog
 		factor = 10
 
 		trigger = {
@@ -139,7 +136,7 @@
 		}
 	}
 
-	9 = { # i - Dog
+	10 = { # j - Dog
 		factor = 10
 
 		trigger = {
@@ -159,7 +156,7 @@
 		}
 	}
 
-	10 = { # j - Dog
+	11 = { # k - Dog
 		factor = 10
 
 		trigger = {
@@ -179,7 +176,7 @@
 		}
 	}
 
-	11 = { # k - Owl
+	12 = { # l - Owl
 		factor = 10
 
 		trigger = {
@@ -193,7 +190,7 @@
 		}
 	}
 
-	12 = { # l - Hedgehog
+	13 = { # m - Hedgehog
 		factor = 10
 
 		trigger = {
@@ -204,7 +201,7 @@
 		}
 	}
 
-	13 = { # m - Otter
+	14 = { # n - Otter
 		factor = 10
 
 		trigger = {
@@ -215,7 +212,7 @@
 		}
 	}
 
-	14 = { # n - Parrot
+	15 = { # o - Parrot
 		factor = 10
 
 		trigger = {
@@ -226,7 +223,7 @@
 		}
 	}
 
-	15 = { # o - Wolf
+	16 = { # p - Wolf
 		factor = 10
 
 		trigger = {
@@ -236,17 +233,18 @@
 		}
 	}
 
-	16 = { # p - Boar
+	17 = { # q - Raven
 		factor = 10
 
 		trigger = {
-			blg_animal_boar = yes
+			blg_animal_raven = yes
 
+			in_command = no
 			blg_artifact_rule = yes
 		}
 	}
 
-	17 = { # q - Bat
+	18 = { # r - Bat
 		factor = 10
 
 		trigger = {
@@ -256,7 +254,7 @@
 		}
 	}
 
-	18 = { # r - Frog
+	19 = { # s - Frog
 		factor = 10
 
 		trigger = {
@@ -267,7 +265,7 @@
 		}
 	}
 
-	19 = { # s - Monkey
+	20 = { # t - Monkey
 		factor = 10
 
 		trigger = {
@@ -278,27 +276,7 @@
 		}
 	}
 
-	20 = { # t - Ape
-		factor = 10
-
-		trigger = {
-			blg_animal_ape = yes
-
-			blg_artifact_rule = yes
-		}
-	}
-
-	21 = { # u - Vulture
-		factor = 10
-
-		trigger = {
-			blg_animal_vulture = yes
-
-			blg_artifact_rule = yes
-		}
-	}
-
-	22 = { # v - Fox
+	21 = { # u - Fox
 		factor = 10
 
 		trigger = {
@@ -309,7 +287,7 @@
 		}
 	}
 
-	23 = { # w - Imp
+	22 = { # v - Imp
 		factor = 10
 
 		trigger = {

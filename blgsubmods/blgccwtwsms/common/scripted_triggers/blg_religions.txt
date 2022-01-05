@@ -97,8 +97,11 @@ blg_religion_celtic = {
 # Sun themed pagan religions.
 blg_religion_solar_pagan = {
 	OR = {
+		religion_openly_in_egyptian_subgroup_trigger = yes
+		religion = african_solar_pagan
+		religion = african_solar_pagan_reformed
+		religion = mandulis_pagan
 		religion_openly_zun_or_reformed_trigger = yes
-		religion_openly_root_west_or_reformed_trigger = yes
 		religion_openly_sanamahi_or_reformed_trigger = yes
 		religion_openly_dravidian_or_reformed_trigger = yes
 	}

@@ -9,9 +9,8 @@
 		trigger = {
 			any_artifact = {
 				is_artifact_equipped = yes
-				has_artifact = amulet_of_kings
+				artifact_type = amulet_of_kings
 			}
-			blg_artifact_rule = yes
 		}
 	}
 
