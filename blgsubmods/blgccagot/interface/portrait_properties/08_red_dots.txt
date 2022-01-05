@@ -50,4 +50,100 @@
 			NOT = { has_game_rule = { name = blg_disease value = off } }
 		}
 	}
+
+	6 = { # Hyrkooni gems
+		factor = 10
+		trigger = {
+			culture_group = hyrkoon_group
+			is_female = yes
+			blg_adult = yes
+			NOR = {
+				has_portrait_property = { layer = 8 index = 7 }
+				has_portrait_property = { layer = 8 index = 8 }
+				has_portrait_property = { layer = 8 index = 9 }
+				has_portrait_property = { layer = 8 index = 10 }
+				has_portrait_property = { layer = 8 index = 11 }
+			}
+		}
+	}
+
+	7 = { # Hyrkooni gems
+		factor = 10
+		trigger = {
+			culture_group = hyrkoon_group
+			is_female = yes
+			blg_adult = yes
+			NOR = {
+				has_portrait_property = { layer = 8 index = 6 }
+				has_portrait_property = { layer = 8 index = 8 }
+				has_portrait_property = { layer = 8 index = 9 }
+				has_portrait_property = { layer = 8 index = 10 }
+				has_portrait_property = { layer = 8 index = 11 }
+			}
+		}
+	}
+
+	8 = { # Hyrkooni gems
+		factor = 10
+		trigger = {
+			culture_group = hyrkoon_group
+			is_female = yes
+			blg_adult = yes
+			NOR = {
+				has_portrait_property = { layer = 8 index = 6 }
+				has_portrait_property = { layer = 8 index = 7 }
+				has_portrait_property = { layer = 8 index = 9 }
+				has_portrait_property = { layer = 8 index = 10 }
+				has_portrait_property = { layer = 8 index = 11 }
+			}
+		}
+	}
+
+	9 = { # Hyrkooni gems
+		factor = 10
+		trigger = {
+			culture_group = hyrkoon_group
+			is_female = yes
+			blg_adult = yes
+			NOR = {
+				has_portrait_property = { layer = 8 index = 6 }
+				has_portrait_property = { layer = 8 index = 7 }
+				has_portrait_property = { layer = 8 index = 8 }
+				has_portrait_property = { layer = 8 index = 10 }
+				has_portrait_property = { layer = 8 index = 11 }
+			}
+		}
+	}
+
+	10 = { # Hyrkooni gems
+		factor = 10
+		trigger = {
+			culture_group = hyrkoon_group
+			is_female = yes
+			blg_adult = yes
+			NOR = {
+				has_portrait_property = { layer = 8 index = 6 }
+				has_portrait_property = { layer = 8 index = 7 }
+				has_portrait_property = { layer = 8 index = 8 }
+				has_portrait_property = { layer = 8 index = 9 }
+				has_portrait_property = { layer = 8 index = 11 }
+			}
+		}
+	}
+
+	11 = { # Hyrkooni gems
+		factor = 10
+		trigger = {
+			culture_group = hyrkoon_group
+			is_female = yes
+			blg_adult = yes
+			NOR = {
+				has_portrait_property = { layer = 8 index = 6 }
+				has_portrait_property = { layer = 8 index = 7 }
+				has_portrait_property = { layer = 8 index = 8 }
+				has_portrait_property = { layer = 8 index = 9 }
+				has_portrait_property = { layer = 8 index = 10 }
+			}
+		}
+	}
 }
