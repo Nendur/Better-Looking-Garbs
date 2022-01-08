@@ -112,7 +112,6 @@ blg_ethnicity_cuman = {
 	OR = {
 		graphical_culture = cumangfx
 		graphical_culture = steppegfx
-		graphical_culture = siberiangfx
 	}
 }
 
@@ -277,6 +276,7 @@ blg_ethnicity_ugric = {
 	OR = {
 		graphical_culture = ugricgfx
 		graphical_culture = balticgfx
+		graphical_culture = siberiangfx
 		graphical_culture = finnishgfx
 	}
 }

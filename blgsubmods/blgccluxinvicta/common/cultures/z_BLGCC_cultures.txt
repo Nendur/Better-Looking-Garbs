@@ -378,7 +378,7 @@ finno_ugric = {
 		graphical_cultures = { ugricgfx }
 	}
 	lappish = {
-		graphical_cultures = { ugricgfx }
+		graphical_cultures = { siberiangfx }
 	}
 	nenets = {
 		graphical_cultures = { siberiangfx }

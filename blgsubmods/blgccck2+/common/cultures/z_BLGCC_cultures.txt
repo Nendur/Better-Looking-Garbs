@@ -86,6 +86,10 @@ celtic = {
 
 finno_ugric = {
 	graphical_cultures = { ugricgfx norsegfx easterngfx }
+
+	sami = {
+		graphical_cultures = { siberiangfx }
+	}
 }
 
 baltic = {
@@ -195,7 +199,7 @@ east_african = {
 		graphical_cultures = { somaligfx africangfx westafricangfx }
 	}
 	daju = {
-		graphical_cultures = { somaligfx africangfx westafricangfx }
+		graphical_cultures = { nubiangfx africangfx westafricangfx }
 	}
 }
 

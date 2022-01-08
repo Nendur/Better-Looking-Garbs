@@ -95,9 +95,7 @@ blg_regional_diversity = {
 			limit = { blg_region_scandinavia = yes }
 			ROOT = {
 				if = {
-					limit = {
-						blg_ethnicity_ugric = no
-					}
+					limit = { blg_ethnicity_ugric = no }
 					blg_set_ethnicity_norse = yes
 				}
 			}
@@ -1310,6 +1308,7 @@ blg_child_mixed = {
 			limit = {
 				OR = {
 					event_target:father = {
+						NOT = { graphical_culture = siberiangfx }
 						OR = {
 							blg_ethnicity_westslavic = yes
 							blg_ethnicity_ugric = yes
@@ -1319,6 +1318,7 @@ blg_child_mixed = {
 						}
 					}
 					mother_even_if_dead = {
+						NOT = { graphical_culture = siberiangfx }
 						OR = {
 							blg_ethnicity_westslavic = yes
 							blg_ethnicity_ugric = yes
@@ -1329,7 +1329,7 @@ blg_child_mixed = {
 					}
 				}
 			}
-			blg_set_ethnicity_eastslavic = yes
+			blg_set_ethnicity_siberian = yes
 		}
 		else_if = { #Steppe-Western
 			limit = {

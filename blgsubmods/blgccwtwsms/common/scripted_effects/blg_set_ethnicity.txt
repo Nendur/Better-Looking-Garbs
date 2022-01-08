@@ -573,6 +573,15 @@ blg_set_ethnicity_romanobalkan = {
 	}
 }
 
+blg_set_ethnicity_siberian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = siberiangfx }
+		}
+		set_graphical_culture = samoyed
+	}
+}
+
 blg_set_ethnicity_sicilian = {
 	if = {
 		limit = {
@@ -778,10 +787,7 @@ blg_set_ethnicity_turkish = {
 blg_set_ethnicity_ugric = {
 	if = {
 		limit = {
-			NOR = {
-				graphical_culture = ugricgfx
-				graphical_culture = finnishgfx
-			}
+			blg_set_ethnicity_ugric = no
 		}
 		set_graphical_culture = finnish
 	}

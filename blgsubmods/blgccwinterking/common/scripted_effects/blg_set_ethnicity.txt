@@ -307,6 +307,9 @@ blg_set_ethnicity_romanobalkan = {
 	}
 }
 
+blg_set_ethnicity_siberian = {
+}
+
 blg_set_ethnicity_sicilian = {
 }
 

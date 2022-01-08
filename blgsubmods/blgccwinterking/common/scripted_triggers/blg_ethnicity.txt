@@ -64,10 +64,7 @@ blg_ethnicity_static = {
 }
 
 blg_ethnicity_african = {
-	OR = {
-		graphical_culture = africangfx
-		graphical_culture = somaligfx
-	}
+	always = no
 }
 
 blg_ethnicity_arabic = {
@@ -85,7 +82,6 @@ blg_ethnicity_byzantine = {
 	OR = {
 		graphical_culture = byzantinegfx
 		graphical_culture = hellenicgfx
-		graphical_culture = siciliangfx
 	}
 }
 
@@ -105,15 +101,11 @@ blg_ethnicity_centralasian = {
 }
 
 blg_ethnicity_chinese = {
-	graphical_culture = chinesegfx
+	always = no
 }
 
 blg_ethnicity_cuman = {
-	OR = {
-		graphical_culture = cumangfx
-		graphical_culture = steppegfx
-		graphical_culture = siberiangfx
-	}
+	always = no
 }
 
 blg_ethnicity_dutch = {
@@ -124,7 +116,7 @@ blg_ethnicity_dutch = {
 }
 
 blg_ethnicity_eastslavic = {
-	graphical_culture = easternslavicgfx
+	always = no
 }
 
 blg_ethnicity_english = {
@@ -166,10 +158,7 @@ blg_ethnicity_iberian = {
 }
 
 blg_ethnicity_indian = {
-	OR = {
-		graphical_culture = indiangfx
-		graphical_culture = indusgfx
-	}
+	always = no
 }
 
 blg_ethnicity_italian = {
@@ -195,14 +184,11 @@ blg_ethnicity_lombard = {
 }
 
 blg_ethnicity_mesoamerican = {
-	graphical_culture = mesoamericangfx
+	always = no
 }
 
 blg_ethnicity_mongol = {
-	OR = {
-		graphical_culture = mongolgfx
-		graphical_culture = khitangfx
-	}
+	always = no
 }
 
 blg_ethnicity_norse = {
@@ -222,10 +208,7 @@ blg_ethnicity_occitan = {
 }
 
 blg_ethnicity_persian = {
-	OR = {
-		graphical_culture = persiangfx
-		graphical_culture = afghangfx
-	}
+	always = no
 }
 
 blg_ethnicity_romanobalkan = {
@@ -243,56 +226,31 @@ blg_ethnicity_sogdian = {
 }
 
 blg_ethnicity_southindian = {
-	OR = {
-		graphical_culture = southindiangfx
-		graphical_culture = centralindiangfx
-	}
+	always = no
 }
 
 blg_ethnicity_southslavic = {
-	OR = {
-		graphical_culture = croatsouthslavicgfx
-		graphical_culture = serbsouthslavicgfx
-	}
+	always = no
 }
 
 blg_ethnicity_tibetan = {
-	OR = {
-		graphical_culture = bodpagfx
-		graphical_culture = assamesegfx
-		graphical_culture = tangutgfx
-	}
+	always = no
 }
 
 blg_ethnicity_turkish = {
-	OR = {
-		graphical_culture = turkishgfx
-		graphical_culture = pecheneggfx
-		graphical_culture = avargfx
-	}
+	always = no
 }
 
 blg_ethnicity_ugric = {
-	OR = {
-		graphical_culture = ugricgfx
-		graphical_culture = balticgfx
-		graphical_culture = finnishgfx
-	}
+	always = no
 }
 
 blg_ethnicity_westafrican = {
-	OR = {
-		graphical_culture = westafricangfx
-		graphical_culture = centralafricangfx
-	}
+	always = no
 }
 
 blg_ethnicity_westslavic = {
-	OR = {
-		graphical_culture = westernslavicgfx
-		graphical_culture = bohemiangfx
-		graphical_culture = pomeraniangfx
-	}
+	always = no
 }
 
 ### Ethnicities with common freckles, in higher to lower chance order:
@@ -302,7 +260,6 @@ blg_freckles_common = {
 		blg_ethnicity_celtic = yes
 		blg_ethnicity_norse = yes
 		graphical_culture = saxongfx
-		graphical_culture = tochariangfx
 	}
 }
 
