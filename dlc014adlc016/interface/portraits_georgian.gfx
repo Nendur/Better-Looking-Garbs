@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_georgian_male_headgear"
+		texturefile = "gfx\\characters\\georgian_male\\georgian_male_headgear.dds"
+		noOfFrames = 14
+		norefcount = yes
+	}
+}

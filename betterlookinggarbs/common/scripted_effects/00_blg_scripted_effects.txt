@@ -169,7 +169,7 @@ blg_regional_diversity = {
 			ROOT = {
 				if = {
 					limit = {
-						blg_ethnicity_byzantine = no
+						#blg_ethnicity_byzantine = no
 						blg_ethnicity_sogdian = no
 						NOR = {
 							graphical_culture = georgiangfx
@@ -178,18 +178,7 @@ blg_regional_diversity = {
 							graphical_culture = outremergfx
 						}
 					}
-					if = {
-						limit = {
-							OR = {
-								blg_religion_muslim = yes
-								likes_mazdans = yes
-							}
-						}
-						blg_set_ethnicity_armenian = yes
-					}
-					else = {
-						blg_set_ethnicity_byzantine = yes
-					}
+					blg_set_ethnicity_armenian = yes
 				}
 			}
 		}
