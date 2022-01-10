@@ -71,14 +71,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_male_eyes_midage"
-		texturefile = "gfx\\fallbacks\\chinese_male\\chinese_male_eyes_2.dds"
+		texturefile = "gfx\\fallbacks\\chinese_male\\chinese_male_eyes_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_male_eyes_oldage"
-		texturefile = "gfx\\fallbacks\\chinese_male\\chinese_male_eyes_3.dds"
+		texturefile = "gfx\\fallbacks\\chinese_male\\chinese_male_eyes_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
@@ -211,14 +211,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_male_base_midage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_base_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_male_base_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_base_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
@@ -232,14 +232,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_male_nose_midage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_nose_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_nose_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_male_nose_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_nose_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_nose_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
@@ -260,14 +260,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_male_cheeks_midage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_cheeks_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_cheeks_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_male_cheeks_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_cheeks_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_cheeks_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
@@ -281,14 +281,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_male_neck_midage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_neck_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_neck_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_male_neck_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_neck_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_neck_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 	}
@@ -302,14 +302,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_male_chin_midage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_chin_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_chin_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_male_chin_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_chin_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_chin_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
@@ -323,14 +323,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_male_mouth_midage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_mouth_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_mouth_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_male_mouth_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_mouth_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_mouth_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
@@ -344,14 +344,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_male_ear_midage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_ear_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_ear_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_male_ear_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_ear_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_male\\cuman_male_ear_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
@@ -383,14 +383,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_eyes_midage"
-		texturefile = "gfx\\fallbacks\\chinese_female\\chinese_female_eyes_2.dds"
+		texturefile = "gfx\\fallbacks\\chinese_female\\chinese_female_eyes_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_female_eyes_oldage"
-		texturefile = "gfx\\fallbacks\\chinese_female\\chinese_female_eyes_3.dds"
+		texturefile = "gfx\\fallbacks\\chinese_female\\chinese_female_eyes_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
@@ -502,14 +502,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_base_midage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_base_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_female_base_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_base_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_base_1.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
@@ -523,14 +523,14 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_nose_midage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_nose_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_nose_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
 
 	spriteType = {
 		name = "GFX_chinese_female_nose_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_nose_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_nose_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 	}
@@ -552,7 +552,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_neck_midage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_neck_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_neck_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -560,7 +560,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_neck_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_neck_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_neck_1.dds"
 		noOfFrames = 4
 		norefcount = yes
 		can_be_lowres = yes
@@ -576,7 +576,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_cheeks_midage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_cheeks_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_cheeks_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 		can_be_lowres = yes
@@ -584,7 +584,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_cheeks_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_cheeks_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_cheeks_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 		can_be_lowres = yes
@@ -600,7 +600,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_chin_midage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_chin_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_chin_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 		can_be_lowres = yes
@@ -608,7 +608,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_chin_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_chin_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_chin_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 		can_be_lowres = yes
@@ -624,7 +624,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_mouth_midage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_mouth_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_mouth_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 		can_be_lowres = yes
@@ -632,7 +632,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_mouth_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_mouth_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_mouth_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 		can_be_lowres = yes
@@ -648,7 +648,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_ear_midage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_ear_2.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_ear_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 		can_be_lowres = yes
@@ -656,7 +656,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_chinese_female_ear_oldage"
-		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_ear_3.dds"
+		texturefile = "gfx\\fallbacks\\steppe_female\\cuman_female_ear_1.dds"
 		noOfFrames = 13
 		norefcount = yes
 		can_be_lowres = yes

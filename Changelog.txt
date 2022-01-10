@@ -1,8 +1,8 @@
 Changelog:
 
   New Baltic portraits using the fallback northern faces.
-  New faces for Sami/Siberian portraits.
   Give French faces more colour.
+  New Sami/Siberian portraits.
   Tweaking the custom face sets.
   Tweaking Ethiopian faces.
   Add various extra earring jewelry to higher nobles.
