@@ -55,6 +55,7 @@ blg_fashionable = {
 # Character of a guard order.
 blg_guard = {
 	OR = {
+		has_minor_title = title_champion
 		has_minor_title = title_paramount_knight
 		has_minor_title = title_castellan
 		trait = varangian

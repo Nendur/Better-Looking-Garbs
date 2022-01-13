@@ -40,7 +40,10 @@ blg_artifact_grail = {
 blg_artifact_harp = {
 	any_artifact = {
 		is_artifact_active = yes
-		has_artifact_flag = harp
+		OR = {
+			has_artifact_flag = harp
+			artifact_type = rhaegar_harp_a
+		}
 	}
 }
 
@@ -92,7 +95,10 @@ blg_artifact_sampo = {
 
 # Scepter for Bön head.
 blg_artifact_scepter_bon = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = high_septon_staff
+	}
 }
 
 # Scepter for Hellenic head.
@@ -127,7 +133,10 @@ blg_artifact_staff_black = {
 
 # Branch staff.
 blg_artifact_staff_branch = {
-	always = no
+	any_artifact = {
+		is_artifact_active = yes
+		artifact_type = weirwood_staff
+	}
 }
 
 # Sheperds crook.
@@ -137,7 +146,10 @@ blg_artifact_staff_crook = {
 
 # Indian danda staff.
 blg_artifact_staff_danda = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = ghiscar_scepter
+	}
 }
 
 # Humble staff.
@@ -366,6 +378,8 @@ blg_weapon_greatsword = {
 		artifact_type = ice
 		artifact_type = heartsbane
 		artifact_type = concession
+		artifact_type = greatjon_greatsword
+		artifact_type = umber_greatsword
 	}
 }
 
@@ -404,6 +418,8 @@ blg_weapon_scimitar_2 = {
 		artifact_type = scimitar_tier_3_golden
 		artifact_type = scimitar_tier_3_fortune
 		artifact_type = scimitar_tier_3_conquest
+		artifact_type = bolton_falchion
+		artifact_type = scimitar_gc
 	}
 }
 

@@ -1,12 +1,13 @@
 Changelog:
 
+13-01-2022
   New Baltic portraits using the fallback northern faces.
   New Georgian/Armenian portraits using the fallback mediterranean faces.
   Give French faces more colour.
   New Sami/Siberian portraits.
   Tweaking the custom face sets.
   Tweaking Ethiopian faces.
-  Add various extra earring jewelry to higher nobles.
+  Add various extra earring jewelry to higher noble women.
   Fix installation path detection for newer Steam versions.
   CK2Plus support updated to version 5.
   Reorganized culture and religion scripted triggers.

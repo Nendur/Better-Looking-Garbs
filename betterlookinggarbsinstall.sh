@@ -46,26 +46,27 @@ if [ -f "${MODS}Historical_Immersion_Project/SWMH_changelog.txt" -a -f "${MODS}H
 		mv "${ADDONS}"/blgcchip* "$MODS"
 	fi
 	echo "HIP compatibility add-on installed."
-fi
-if [ -f "${MODS}Historical Immersion Project/SWMH_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/SWMH_changelog.txt" -o -f "${MODS}blgccswmh.mod" -a ! -f "${MODS}blgcchip.zip" ]; then
-	if [ -f "$BLGZIP" ]; then
-		unzip -uoq "$BLGZIP" "submods/blgccswmh*" -d"$MODS"
+else
+	if [ -f "${MODS}Historical Immersion Project/SWMH_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/SWMH_changelog.txt" -o -f "${MODS}blgccswmh.mod" -a ! -f "${MODS}blgcchip.zip" ]; then
+		if [ -f "$BLGZIP" ]; then
+			unzip -uoq "$BLGZIP" "submods/blgccswmh*" -d"$MODS"
+		fi
+		if [ -f "${ADDONS}/blgccswmh.mod" ]; then
+			[ -d "${MODS}/blgccswmh" ] && rm -r "${MODS}/blgccswmh.mod" "${MODS}/blgccswmh"
+			mv "${ADDONS}"/blgccswmh* "$MODS"
+		fi
+		echo "HIP SWMH compatibility add-on installed."
 	fi
-	if [ -f "${ADDONS}/blgccswmh.mod" ]; then
-		[ -d "${MODS}/blgccswmh" ] && rm -r "${MODS}/blgccswmh.mod" "${MODS}/blgccswmh"
-		mv "${ADDONS}"/blgccswmh* "$MODS"
+	if [ -f "${MODS}Historical Immersion Project/EMF_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/EMF_changelog.txt" -o -f "${MODS}blgccemf.mod" -a ! -f "${MODS}blgcchip.zip" ]; then
+		if [ -f "$BLGZIP" ]; then
+			unzip -uoq "$BLGZIP" "submods/blgccemf*" -d"$MODS"
+		fi
+		if [ -f "${ADDONS}/blgccemf.mod" ]; then
+			[ -d "${MODS}/blgccemf" ] && rm -r "${MODS}/blgccemf.mod" "${MODS}/blgccemf"
+			mv "${ADDONS}"/blgccemf* "$MODS"
+		fi
+		echo "HIP EMF compatibility add-on installed."
 	fi
-	echo "HIP SWMH compatibility add-on installed."
-fi
-if [ -f "${MODS}Historical Immersion Project/EMF_changelog.txt" -o -f "${MODS}Historical_Immersion_Project/EMF_changelog.txt" -o -f "${MODS}blgccemf.mod" -a ! -f "${MODS}blgcchip.zip" ]; then
-	if [ -f "$BLGZIP" ]; then
-		unzip -uoq "$BLGZIP" "submods/blgccemf*" -d"$MODS"
-	fi
-	if [ -f "${ADDONS}/blgccemf.mod" ]; then
-		[ -d "${MODS}/blgccemf" ] && rm -r "${MODS}/blgccemf.mod" "${MODS}/blgccemf"
-		mv "${ADDONS}"/blgccemf* "$MODS"
-	fi
-	echo "HIP EMF compatibility add-on installed."
 fi
 if [ -d "${MODS}CK2Plus" -o -f "${MODS}ck2plus.zip" -o -f "${MODS}blgccck2+.mod" -a ! -f "${MODS}blgccck2+.zip" ]; then
 	if [ -f "$BLGZIP" ]; then

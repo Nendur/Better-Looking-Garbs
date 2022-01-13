@@ -787,7 +787,7 @@ blg_set_ethnicity_turkish = {
 blg_set_ethnicity_ugric = {
 	if = {
 		limit = {
-			blg_set_ethnicity_ugric = no
+			blg_ethnicity_ugric = no
 		}
 		set_graphical_culture = finnish
 	}

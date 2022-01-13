@@ -195,7 +195,7 @@ centrolatino = {
 }
 
 chicano = {
-	graphical_cultures = { serbsouthslavicgfx southerngfx westerngfx }
+	graphical_cultures = { cowboygfx serbsouthslavicgfx southerngfx westerngfx }
 
 	neomexicano = {
 		graphical_cultures = { serbsouthslavicgfx cowboygfx }
