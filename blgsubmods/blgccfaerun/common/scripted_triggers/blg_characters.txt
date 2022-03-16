@@ -44,7 +44,6 @@ blg_fair = {
 	OR = {
 		trait = beautiful
 		trait = pretty
-		trait = infernal_beauty
 	}
 }
 

@@ -201,7 +201,7 @@ blg_ethnicity_mesoamerican = {
 
 blg_ethnicity_mongol = {
 	OR = {
-		graphical_culture = mongolgfx
+		graphical_culture = taangfx
 		graphical_culture = khitangfx
 		graphical_culture = amaesegfx
 	}
@@ -224,6 +224,7 @@ blg_ethnicity_occitan = {
 blg_ethnicity_persian = {
 	OR = {
 		graphical_culture = mulangfx
+		graphical_culture = thayangfx
 		graphical_culture = persiangfx
 	}
 }

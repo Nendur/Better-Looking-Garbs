@@ -174,7 +174,12 @@ blg_animal_wolf = {
 
 # Charger Horse.
 blg_mount_horse_charger = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+		has_artifact_flag = charger
+	}
 }
 
 # Destrier Horse.
@@ -182,47 +187,122 @@ blg_mount_horse_destrier = {
 	OR = {
 		has_character_modifier = nomad_warhorse
 		death_reason = death_execution_horses
+		any_artifact = {
+			is_artifact_equipped = yes
+			has_artifact_flag = horse
+			has_artifact_flag = mount
+			OR = {
+				has_artifact_flag = destrier
+				quality >= 5
+			}
+		}
 	}
 }
 
 # Basic Horse.
 blg_mount_horse = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+	}
 }
 
 # Armoured horse tier 1.
 blg_mount_horse_armor_1 = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+	}
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse_armor
+	}
 }
 
 # Armoured horse tier 2.
 blg_mount_horse_armor_2 = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+	}
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse_armor
+		quality == 2
+	}
 }
 
 # Armoured horse tier 3.
 blg_mount_horse_armor_3 = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+	}
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse_armor
+		quality >= 3
+	}
 }
 
 # Black fierce horse.
 blg_mount_horse_black = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = horse
+		has_artifact_flag = mount
+		OR = {
+			has_artifact_flag = black
+			AND = {
+				has_artifact_flag = unique
+				has_artifact_flag = greek
+			}
+		}
+	}
 }
 
 # White immortal horse.
 blg_mount_horse_white = {
-	has_character_modifier = phantom_steed_mod
+	any_artifact = {
+		OR = {
+			has_character_modifier = phantom_steed_mod
+			AND = {
+				is_artifact_equipped = yes
+				has_artifact_flag = horse
+				has_artifact_flag = mount
+				OR = {
+					has_artifact_flag = white
+					has_artifact_flag = immortal
+					AND = {
+						has_artifact_flag = unique
+						has_artifact_flag = arabian
+					}
+				}
+			}
+		}
+	}
 }
 
 # Bear mount.
 blg_mount_bear = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = bear
+		has_artifact_flag = mount
+	}
 }
 
 # Camel mount.
 blg_mount_camel = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = camel
+		has_artifact_flag = mount
+	}
 }
 
 blg_mount_dragon_black = {
@@ -307,42 +387,74 @@ blg_mount_dragon_gold = {
 
 # Elephant mount.
 blg_mount_elephant = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = elephant
+		has_artifact_flag = mount
+	}
 }
 
 # Lion mount.
 blg_mount_lion = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = lion
+		has_artifact_flag = mount
+	}
 }
 
 # Lizard mount.
 blg_mount_lizard = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = lizard
+		has_artifact_flag = mount
+	}
 }
 
 # Polar Bear mount.
 blg_mount_polarbear = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = polarbear
+		has_artifact_flag = mount
+	}
 }
 
 # Reindeer mount.
 blg_mount_reindeer = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = reindeer
+		has_artifact_flag = mount
+	}
 }
 
 # Tiger mount.
 blg_mount_tiger = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = tiger
+		has_artifact_flag = mount
+	}
 }
 
 # Yak mount.
 blg_mount_yak = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = yak
+		has_artifact_flag = mount
+	}
 }
 
 # Wolf mount.
 blg_mount_wolf = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		has_artifact_flag = wolf
+		has_artifact_flag = mount
+	}
 }
 
 ### Unit types:

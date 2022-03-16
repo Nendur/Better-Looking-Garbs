@@ -90,6 +90,12 @@ zakharan_group = {
 	semphari = {
 		graphical_cultures = { kurdishgfx persiangfx }
 	}
+}
+
+old_zakharan_group = {
+	chun = {
+		graphical_cultures = { arabicgfx berbergfx }
+	}
 	noga = {
 		graphical_cultures = { nubiangfx berbergfx }
 	}
