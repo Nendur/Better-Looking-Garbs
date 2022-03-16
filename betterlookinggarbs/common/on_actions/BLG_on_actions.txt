@@ -4,6 +4,24 @@ on_host_change = {
 	}
 }
 
+on_new_holder = {
+	events = {
+		blg.1 # New spawn ethnic diversity.
+	}
+}
+
+on_new_holder_inheritance = {
+	events = {
+		blg.1 # New spawn ethnic diversity.
+	}
+}
+
+on_new_holder_usurpation = {
+	events = {
+		blg.1 # New spawn ethnic diversity.
+	}
+}
+
 on_birth = {
 	events = {
 		blg.2 # Set graphical culture from parents.

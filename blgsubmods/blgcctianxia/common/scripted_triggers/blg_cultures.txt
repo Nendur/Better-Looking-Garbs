@@ -126,6 +126,7 @@ blg_merchant_clothes = {
 		}
 	}
 	in_command = no
+	is_in_society = no
 	OR = {
 		blg_culture_mediterranean = yes
 		blg_culture_middleeast = yes
@@ -151,6 +152,7 @@ blg_merchant_headgear = {
 		}
 	}
 	in_command = no
+	is_in_society = no
 	OR = {
 		blg_culture_mediterranean = yes
 		culture_group = central_germanic
@@ -253,6 +255,10 @@ blg_culture_byzantine = {
 		culture_group = byzantine
 		culture_group = israelite
 	}
+}
+
+blg_culture_celtic = {
+	culture_group = celtic
 }
 
 # Uses Cuman hairstyles.

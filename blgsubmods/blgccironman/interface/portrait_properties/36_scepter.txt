@@ -134,7 +134,7 @@
 	}
 
 	9 = { # i - Staff of Majesty
-		factor = 25
+		factor = 100
 
 		trigger = {
 			any_artifact = {
@@ -146,7 +146,7 @@
 	}
 
 	10 = { # j - Gold Staff
-		factor = 25
+		factor = 100
 
 		trigger = {
 			any_artifact = {
@@ -158,7 +158,7 @@
 	}
 
 	11 = { # k - Silver Staff
-		factor = 25
+		factor = 100
 
 		trigger = {
 			any_artifact = {

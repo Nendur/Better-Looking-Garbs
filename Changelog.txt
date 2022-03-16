@@ -13,6 +13,7 @@ Changelog:
   Reorganized culture and religion scripted triggers.
   Support some more minor titles.
   Use merchant clothing for republic counts and up.
+  Added several new staff graphics.
 
 27-10-2021
   Rewrite and clean up of the portrait properties code.

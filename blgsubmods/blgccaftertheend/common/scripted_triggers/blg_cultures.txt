@@ -10,10 +10,6 @@ blg_culture_unmixed = {
 	always = no
 }
 
-likes_celts = {
-	culture_group = north_atlantic
-}
-
 ### Clothing sets for cultures:
 
 # Wears alternate headgear as leper instead of spy hood.
@@ -118,6 +114,7 @@ blg_merchant_clothes = {
 		}
 	}
 	in_command = no
+	is_in_society = no
 	OR = {
 		culture_group = south_anglo
 		culture_group = californian
@@ -164,6 +161,7 @@ blg_merchant_headgear = {
 		}
 	}
 	in_command = no
+	is_in_society = no
 	OR = {
 		blg_culture_midlands = yes
 		blg_culture_eastcoast = yes
@@ -247,6 +245,10 @@ blg_culture_african = {
 		culture_group = guinean
 		culture_group = macaronesian
 	}
+}
+
+blg_culture_celtic = {
+	culture_group = north_atlantic
 }
 
 blg_culture_cetic = {

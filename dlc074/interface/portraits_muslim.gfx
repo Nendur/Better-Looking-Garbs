@@ -714,7 +714,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_muslim_female_clothes_behind"
 		texturefile = "gfx\\characters\\muslim_female\\muslim_female_clothes_behind.dds"
-		noOfFrames = 14
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}
@@ -722,7 +722,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_muslim_female_clothes"
 		texturefile = "gfx\\characters\\muslim_female\\muslim_female_clothes.dds"
-		noOfFrames = 14
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}

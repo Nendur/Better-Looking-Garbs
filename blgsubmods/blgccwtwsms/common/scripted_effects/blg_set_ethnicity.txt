@@ -250,7 +250,7 @@ blg_set_ethnicity_english = {
 		limit = {
 			OR = {
 				blg_culture_saxon = yes
-				likes_celts = yes
+				blg_culture_celtic = yes
 				blg_religion_pagan = yes
 			}
 		}
@@ -830,7 +830,7 @@ blg_set_ethnicity_western = {
 		limit = {
 			OR = {
 				culture_group = west_germanic
-				likes_celts = yes
+				blg_culture_celtic = yes
 				blg_culture_iberian = yes
 				blg_culture_middleeast = yes
 				blg_culture_israelite = yes

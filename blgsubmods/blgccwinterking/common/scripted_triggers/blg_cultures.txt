@@ -61,6 +61,7 @@ blg_default_clothing = {
 blg_merchant_clothes = {
 	employer = { is_patrician = yes }
 	in_command = no
+	is_in_society = no
 }
 
 # Uses Merchant headgear set.
@@ -144,6 +145,10 @@ blg_culture_byzantine = {
 		culture = greek
 		culture_group = israelite
 	}
+}
+
+blg_culture_celtic = {
+	culture_group = celtic
 }
 
 # Uses Cuman hairstyles.

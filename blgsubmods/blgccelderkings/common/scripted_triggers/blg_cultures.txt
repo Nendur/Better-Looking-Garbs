@@ -1,13 +1,5 @@
 ### Culture triggers:
 
-likes_celts = {
-	OR = {
-		culture = breton
-		culture = nord
-		culture = reachmen
-	}
-}
-
 # Cultures with a lot of assimilating locals.
 blg_assimilating_culture = {
 	always = no
@@ -85,6 +77,7 @@ blg_default_clothing = {
 blg_merchant_clothes = {
 	employer = { is_patrician = yes }
 	in_command = no
+	is_in_society = no
 	OR = {
 		culture_group = nedic
 		culture_group = yokudan_group
@@ -95,6 +88,7 @@ blg_merchant_clothes = {
 blg_merchant_headgear = {
 	employer = { is_patrician = yes }
 	in_command = no
+	is_in_society = no
 	OR = {
 		culture_group = nedic
 		culture_group = yokudan_group
@@ -163,6 +157,14 @@ blg_ek_clothing = {
 
 blg_culture_african = {
 	culture_group = argonian
+}
+
+blg_culture_celtic = {
+	OR = {
+		culture = breton
+		culture = nord
+		culture = reachmen
+	}
 }
 
 blg_culture_central_germanic = {

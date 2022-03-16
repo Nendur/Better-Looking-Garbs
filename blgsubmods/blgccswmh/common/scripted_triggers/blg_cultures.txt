@@ -228,6 +228,10 @@ blg_culture_byzantine = {
 	}
 }
 
+blg_culture_celtic = {
+	culture_group = celtic
+}
+
 blg_culture_central_asian = {
 	OR = {
 		culture = oghuz

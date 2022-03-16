@@ -227,7 +227,7 @@
 
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_eyepatch value = 0 } }
-				likes_celts = yes
+				blg_culture_celtic = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_eyepatch value = 11 }
@@ -453,7 +453,7 @@
 
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_eyepatch value = 0 } }
-				likes_celts = yes
+				blg_culture_celtic = yes
 			}
 			trigger_else = {
 				is_variable_equal = { which = ca_eyepatch value = 22 }

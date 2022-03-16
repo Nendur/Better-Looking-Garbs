@@ -1,12 +1,5 @@
 ### Culture triggers:
 
-likes_celts = {
-	OR = {
-		culture_group = first_men
-		culture_group = free_folk
-	}
-}
-
 # Cultures with a lot of assimilating locals.
 blg_assimilating_culture = {
 	always = no
@@ -107,6 +100,13 @@ blg_culture_byzantine = {
 	OR = {
 		culture_group = free_cities
 		culture_group = valyrian
+	}
+}
+
+blg_culture_celtic = {
+	OR = {
+		culture_group = first_men
+		culture_group = free_folk
 	}
 }
 

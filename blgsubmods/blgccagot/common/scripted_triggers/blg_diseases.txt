@@ -159,6 +159,7 @@ blg_glowing = {
 	OR = {
 		has_character_modifier = voice_of_jesus
 		has_character_modifier = military_jesus
+		has_character_modifier = killed_an_old_one
 	}
 }
 

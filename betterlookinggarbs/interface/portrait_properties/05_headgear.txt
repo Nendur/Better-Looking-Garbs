@@ -180,7 +180,7 @@
 				trigger_if = {
 					limit = {
 						is_female = no
-						likes_celts = yes
+						blg_culture_celtic = yes
 					}
 					blg_clothes_noble = no
 				}

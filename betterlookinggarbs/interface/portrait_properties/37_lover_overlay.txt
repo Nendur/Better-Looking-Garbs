@@ -71,7 +71,20 @@
 	8 = { # h - Ally
 		factor = 100
 		trigger = {
-			any_player = { is_allied_with = PREV }
+			any_player = {
+				is_allied_with = ROOT
+				ROOT = {
+					trigger_if = {
+						limit = {
+							OR = {
+								is_tribal = yes
+								is_nomadic = yes
+							}
+						}
+						NOT = { de_facto_liege = PREV }
+					}
+				}
+			}
 		}
 	}
 }
