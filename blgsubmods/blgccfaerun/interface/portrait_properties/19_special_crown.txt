@@ -175,12 +175,26 @@
 		hide_layers = {32 = {}}
 
 		trigger = {
-			NOR = {
-				has_game_rule = { name = blg_artifacts value = off }
-				trait = in_hiding
-				blg_prisoner = yes
+			OR = {
+				AND = {
+					higher_real_tier_than = count
+					z_druid = yes
+				}
+				spouse_even_if_dead = {
+					higher_real_tier_than = count
+					z_druid = yes
+				}
 			}
-			blg_crown_finnish = yes
+			OR = {
+				is_in_society = no
+				is_society_discovered = no
+			}
+			employer = {
+				OR = {
+					government = theocracy_government
+					government = baron_theocracy_government
+				}
+			}
 		}
 	}
 
@@ -368,8 +382,17 @@
 		hide_layers = {33 = {}}
 
 		trigger = {
-			blg_priest = yes
-			religion_openly_finnish_or_reformed_trigger = yes
+			z_druid = yes
+			OR = {
+				is_in_society = no
+				is_society_discovered = no
+			}
+			employer = {
+				OR = {
+					government = theocracy_government
+					government = baron_theocracy_government
+				}
+			}
 		}
 	}
 

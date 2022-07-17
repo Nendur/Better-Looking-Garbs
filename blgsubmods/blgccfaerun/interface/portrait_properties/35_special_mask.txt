@@ -150,6 +150,13 @@
 				trait = creature_spirit_folk
 				trait = androgynous
 				gfx_culture_scope = { culture = fog_giant }
+				AND = {
+					culture = ulgarian
+					OR = {
+						is_lowborn = no
+						is_landed = yes
+					}
+				}
 			}
 		}
 	}

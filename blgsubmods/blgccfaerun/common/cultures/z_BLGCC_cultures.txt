@@ -1,9 +1,3 @@
-imaskari_group = {
-	imaskari = {
-		graphical_cultures = { indusgfx }
-	}
-}
-
 chondathan_group = {
 	chondathan = {
 		graphical_cultures = { chondathangfx occitangfx }
@@ -30,9 +24,6 @@ ulutiun_group = {
 		unit_graphical_cultures = { siberiangfx }
 	}
 	nakulutiun = {
-		unit_graphical_cultures = { siberiangfx }
-	}
-	eraka = {
 		unit_graphical_cultures = { siberiangfx }
 	}
 	ice_hunter = {
@@ -83,24 +74,6 @@ tethyrian_group = {
 	ffolk = {
 		graphical_cultures = { ffolkgfx saxongfx celticgfx westerngfx }
 		unit_graphical_cultures = { celticgfx }
-	}
-}
-
-zakharan_group = {
-	semphari = {
-		graphical_cultures = { kurdishgfx persiangfx }
-	}
-}
-
-old_zakharan_group = {
-	chun = {
-		graphical_cultures = { arabicgfx berbergfx }
-	}
-	noga = {
-		graphical_cultures = { nubiangfx berbergfx }
-	}
-	affa = {
-		graphical_cultures = { nubiangfx berbergfx }
 	}
 }
 

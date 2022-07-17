@@ -75,7 +75,6 @@ blg_ethnicity_static = {
 		trait = creature_monster
 		#trait = creature_toad
 		#trait = creature_pig
-		trait = creature_bugbear
 		has_static_portrait = yes
 	}
 }
@@ -83,12 +82,17 @@ blg_ethnicity_static = {
 blg_ethnicity_african = {
 	OR = {
 		graphical_culture = africangfx
-		graphical_culture = nubiangfx
+		graphical_culture = nogagfx
+		graphical_culture = nubarigfx
 	}
 }
 
 blg_ethnicity_arabic = {
-	graphical_culture = arabicgfx
+	OR = {
+		graphical_culture = arabicgfx
+		graphical_culture = berbergfx
+		graphical_culture = oldzakharangfx
+	}
 }
 
 blg_ethnicity_berber = {
@@ -176,14 +180,14 @@ blg_ethnicity_indian = {
 	OR = {
 		graphical_culture = indiangfx
 		graphical_culture = ulgariangfx
-		graphical_culture = indusgfx
+		graphical_culture = imaskarigfx
 	}
 }
 
 blg_ethnicity_italian = {
 	OR = {
 		graphical_culture = halruaangfx
-		graphical_culture = berbergfx
+		graphical_culture = bedinegfx
 	}
 }
 
@@ -244,6 +248,7 @@ blg_ethnicity_southindian = {
 	OR = {
 		graphical_culture = southindiangfx
 		graphical_culture = tashalangfx
+		graphical_culture = marigfx
 	}
 }
 

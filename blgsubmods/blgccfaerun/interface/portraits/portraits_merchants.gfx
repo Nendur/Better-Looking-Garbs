@@ -68,6 +68,7 @@ spriteTypes = {
 				NOR = {
 					portrait_government = baron_theocracy_government
 					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_half_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
 					portrait_has_trait = creature_yikarian
@@ -113,6 +114,7 @@ spriteTypes = {
 				NOR = {
 					portrait_government = baron_theocracy_government
 					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_half_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
 					portrait_has_trait = creature_yikarian
@@ -155,6 +157,7 @@ spriteTypes = {
 				}
 				NOR = {
 					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_half_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
 					portrait_has_trait = creature_yikarian
@@ -195,6 +198,7 @@ spriteTypes = {
 				}
 				NOR = {
 					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_half_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
 					portrait_has_trait = creature_yikarian
@@ -243,6 +247,7 @@ spriteTypes = {
 				}
 				NOR = {
 					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_half_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
 					portrait_has_trait = creature_yikarian
@@ -279,6 +284,7 @@ spriteTypes = {
 				}
 				NOR = {
 					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_half_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
 					portrait_has_trait = creature_yikarian
@@ -319,6 +325,7 @@ spriteTypes = {
 				}
 				NOR = {
 					portrait_has_trait = creature_ogre
+					portrait_has_trait = creature_half_ogre
 					portrait_has_trait = creature_troll
 					portrait_has_trait = creature_goblin
 					portrait_has_trait = creature_yikarian

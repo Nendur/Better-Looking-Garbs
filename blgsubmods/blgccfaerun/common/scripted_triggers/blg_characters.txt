@@ -94,7 +94,7 @@ blg_modest = {
 		trait = celibate
 		blg_devout = yes
 	}
-	NOT = { trait = lustful }
+	blg_seducer = no
 }
 
 # Character covered in mud.
@@ -144,6 +144,15 @@ blg_saint = {
 	OR = {
 		trait = saint
 		has_nickname = nick_the_saint
+	}
+}
+
+# Lustful personality.
+blg_seducer = {
+	OR = {
+		trait = lustful
+		trait = seducer
+		trait = seductress
 	}
 }
 
@@ -252,6 +261,7 @@ blg_travelling = {
 		trait = travelling
 		blg_pilgrimage = yes
 		trait = kow_tow_travels
+		trait = is_spelljamming
 		has_character_modifier = holding_grand_hunt
 		has_character_flag = holding_tiger_hunt
 		AND = {

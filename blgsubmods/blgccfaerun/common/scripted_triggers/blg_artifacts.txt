@@ -479,6 +479,7 @@ blg_weapon_flail = {
 blg_weapon_greatsword = {
 	OR = {
 		has_artifact_flag = greatsword
+		artifact_type = zweihander_sword
 		artifact_type = githyanki_silver_sword
 	}
 }

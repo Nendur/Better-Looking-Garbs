@@ -70,7 +70,12 @@ blg_knights_livonian = {
 
 # Hirable navies.
 blg_mercenary_fleet = {
-	always = no
+	primary_title = {
+		OR = {
+			title = d_wraith_of_the_inner_sea
+			title = d_zaharas_krakens
+		}
+	}
 }
 
 # Pope in Rome

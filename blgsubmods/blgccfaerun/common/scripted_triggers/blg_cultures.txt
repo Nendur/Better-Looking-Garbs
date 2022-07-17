@@ -109,6 +109,8 @@ blg_default_clothing = {
 		culture = untheric
 		culture = uthgardt
 		culture = reghedman
+		culture = imaskari
+		culture = deep_imaskari
 		culture_group = dwarf_group
 		culture_group = high_elf_group
 		culture_group = sylvan_elf_group
@@ -174,9 +176,12 @@ blg_merchant_clothes = {
 	NOR = {
 		government = baron_theocracy_government
 		trait = creature_ogre
+		trait = creature_half_ogre
 		trait = creature_troll
 		trait = creature_goblin
 		trait = creature_yikarian
+		graphical_culture = saurialgfx
+		graphical_culture = troglodytegfx
 	}
 }
 
@@ -204,9 +209,12 @@ blg_merchant_headgear = {
 	NOR = {
 		government = baron_theocracy_government
 		trait = creature_ogre
+		trait = creature_half_ogre
 		trait = creature_troll
 		trait = creature_goblin
 		trait = creature_yikarian
+		graphical_culture = saurialgfx
+		graphical_culture = troglodytegfx
 	}
 }
 
@@ -247,6 +255,7 @@ blg_petty_king = {
 		culture = reacher
 		culture = ffolk
 		culture = talfir
+		culture = nelanthern
 	}
 }
 

@@ -1,0 +1,410 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_society_warrior_lodge_african_male_clothes_behind"
+		textureFile = "gfx/characters/societies/wl_african_male_clothes_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_society_warrior_lodge_african_female_clothes"
+		textureFile = "gfx/characters/societies/wl_african_female_clothes.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_eldreth_veluuthra_clothing"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 15000
+				portrait_clothing = yes
+				portrait_age > child
+				has_dlc = "Holy Fury"
+
+				portrait_society = eldreth_veluuthra
+				blg_wear_society_clothing_off = no
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
+			"GFX_society_warrior_lodge_african_female_clothes:c2"
+		}
+
+		allow_property_values = {
+			3 = {
+				1 = {
+					OR = {
+						portrait_society_rank = 1
+						portrait_society_rank = 2
+					}
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	spriteType = {
+		name = "GFX_society_shaytanist_male_headgear_front"
+		textureFile = "gfx/characters/societies/shaytanist_male_headgear_front.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_society_shaytanist_male_headgear_behind"
+		textureFile = "gfx/characters/societies/shaytanist_male_headgear_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_everlasting_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 15000
+				portrait_clothing = yes
+				portrait_age > child
+				has_dlc = "Mystics"
+				portrait_is_female = no
+
+				portrait_society = everlasting
+				blg_wear_society_clothing_minimal = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
+			"GFX_society_shaytanist_male_headgear_behind:c1"
+			"GFX_society_hermetic_male_clothing_front:c2"
+			"GFX_empty:c3"
+			"GFX_society_shaytanist_male_headgear_front:c5"
+			"GFX_empty:c7"
+		}
+
+		# No hair, correct rank
+		allow_property_values = {
+			3 = {
+				3 = {
+					always = yes
+				}
+				5 = {
+					always = yes
+				}
+				6 = {
+					always = yes
+				}
+				7 = {
+					always = yes
+				}
+				8 = {
+					always = yes
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			31 = {
+				0 = { always = yes }
+			}
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	spriteType = {
+		name = "GFX_society_shaytanist_female_headgear_front"
+		textureFile = "gfx/characters/societies/shaytanist_female_headgear_front.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_society_shaytanist_female_headgear_behind"
+		textureFile = "gfx/characters/societies/shaytanist_female_headgear_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_everlasting_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 15000
+				portrait_clothing = yes
+				portrait_age > child
+				has_dlc = "Mystics"
+				portrait_is_female = yes
+
+				portrait_society = everlasting
+				blg_wear_society_clothing_minimal = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
+			"GFX_society_shaytanist_female_headgear_behind:c1"
+			"GFX_society_hermetic_male_clothing_front:c2"
+			"GFX_empty:c3"
+			"GFX_society_shaytanist_female_headgear_front:c5"
+			"GFX_empty:c7"
+		}
+
+		# No hair, correct rank
+		allow_property_values = {
+			3 = {
+				3 = {
+					always = yes
+				}
+				5 = {
+					always = yes
+				}
+				6 = {
+					always = yes
+				}
+				7 = {
+					always = yes
+				}
+				8 = {
+					always = yes
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+		}
+
+		headgear_that_hides_hair = { }
+	}
+
+	spriteType = {
+		name = "GFX_society_satanist_female_headgear_front"
+		textureFile = "gfx/characters/societies/mom_satanist_female_headgear_front.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_society_satanist_female_headgear_behind"
+		textureFile = "gfx/characters/societies/mom_satanist_female_headgear_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_thieves_clothing"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 15000
+				portrait_clothing = yes
+				portrait_age > child
+				has_dlc = "Mystics"
+
+				OR = {
+					portrait_society = shadow_thieves
+					portrait_society = night_masks
+					portrait_society = shadow_telflamm
+					portrait_society = tsui_tong
+				}
+				blg_wear_society_clothing_minimal = yes
+			}
+		}
+
+		layer = {
+			"GFX_empty:c3"
+			"GFX_society_satanist_female_headgear_front:c5"
+			"GFX_society_satanist_female_headgear_behind:c1"
+			"GFX_empty:c7"
+		}
+
+		# No hair, correct rank
+		allow_property_values = {
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					OR = {
+						portrait_society_rank = 3
+						AND = {
+							portrait_society_rank = 4
+							portrait_has_trait = i_used_to_be_a_player
+						}
+					}
+				}
+				3 = {
+					portrait_society_rank = 4
+					NOT = { portrait_has_trait = i_used_to_be_a_player }
+				}
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+		}
+
+		headgear_that_hides_hair = { 0 1 2 3 }
+	}
+
+	spriteType = {
+		name = "GFX_society_satanist_male_clothing_behind"
+		textureFile = "gfx/characters/societies/mom_satanist_male_clothing_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_society_satanist_male_clothing_front"
+		textureFile = "gfx/characters/societies/mom_satanist_male_clothing_front.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_cabal_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 15000
+				portrait_clothing = yes
+				portrait_age > child
+				has_dlc = "Mystics"
+				portrait_is_female = no
+
+				OR = {
+					portrait_society = storm_rune_society
+					portrait_society = kuo_tan_society
+				}
+				blg_wear_society_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_satanist_male_clothing_behind:c0"
+			"GFX_society_satanist_male_clothing_front:c2"
+		}
+
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	spriteType = {
+		name = "GFX_society_satanist_female_clothing_behind"
+		textureFile = "gfx/characters/societies/mom_satanist_female_clothing_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_society_satanist_female_clothing_front"
+		textureFile = "gfx/characters/societies/mom_satanist_female_clothing_front.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_cabal_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 15000
+				portrait_clothing = yes
+				portrait_age > child
+				has_dlc = "Mystics"
+				portrait_is_female = yes
+
+				OR = {
+					portrait_society = storm_rune_society
+					portrait_society = kuo_tan_society
+				}
+				blg_wear_society_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_satanist_female_clothing_behind:c0"
+			"GFX_society_satanist_female_clothing_front:c2"
+		}
+
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+}
