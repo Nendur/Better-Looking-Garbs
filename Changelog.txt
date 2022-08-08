@@ -1,5 +1,8 @@
 Changelog:
 
+  All clothes extended to a universal fit without shoulders clipping out.
+  Custom faces cleaned up from pixel noise around the eyes.
+
 13-01-2022
   New Baltic portraits using the fallback northern faces.
   New Georgian/Armenian portraits using the fallback mediterranean faces.
