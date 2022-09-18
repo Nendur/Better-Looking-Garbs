@@ -21,6 +21,20 @@ spriteTypes = {
 		norefcount = yes
 	}
 
+	spriteType = {
+		name = "GFX_bear_male_clothes_color"
+		textureFile = "gfx/characters/bear_male/bear_male_clothes_color.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_bear_female_clothes_color"
+		textureFile = "gfx/characters/bear_female/bear_female_clothes_color.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
 ### BROWN BEAR ####
 
 	spriteType = {
@@ -40,6 +54,22 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_brown_bear_male_hair"
+		texturefile = "gfx\\characters\\bear_male\\brown_bear_male_hair.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_brown_bear_female_hair"
+		texturefile = "gfx\\characters\\bear_female\\brown_bear_female_hair.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_brown_bear_son"
 		textureFile = "gfx/characters/bear_male/brown_bear_son.dds"
 		noOfFrames = 7
@@ -49,6 +79,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_brown_bear_daughter"
 		textureFile = "gfx/characters/bear_female/brown_bear_daughter.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_brown_bear_sonhair"
+		textureFile = "gfx/characters/bear_male/brown_bear_son_hair.dds"
 		noOfFrames = 7
 		norefcount = yes
 	}
@@ -70,9 +107,13 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_brown_bear_male:d0"
+			"GFX_brown_bear_male_hair:d0:h"
+			"GFX_bear_male_clothes_color:d0:e"
+			"GFX_dog_male_headgear:p5:o11x-8"
 			"GFX_creature_harelip:p24:o18x6"
 			"GFX_child_back:p17"
 			"GFX_brown_bear_son:p18"
+			"GFX_brown_bear_sonhair:p18:h"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
 			"GFX_creature_warpaint:p29:o8x4"
@@ -97,6 +138,44 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 15 8 0 } { 80 47 22 } { 255 255 255 } #Medium Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Second Brown
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Darkest Brown
+			{ 10 10 10 } { 95 51 23 } { 255 255 255 } #Brown
+			{ 15 8 0 } { 56 35 20 } { 255 255 255 } #Darker Brown
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
+			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 	}
 
@@ -117,6 +196,9 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_brown_bear_male:d0"
+			"GFX_brown_bear_male_hair:d0:h"
+			"GFX_bear_male_clothes_color:d0:e"
+			"GFX_dog_male_headgear:p5:o11x-8"
 			"GFX_creature_harelip:p24:o18x6"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -143,6 +225,44 @@ spriteTypes = {
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
 		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 15 8 0 } { 80 47 22 } { 255 255 255 } #Medium Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Second Brown
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Darkest Brown
+			{ 10 10 10 } { 95 51 23 } { 255 255 255 } #Brown
+			{ 15 8 0 } { 56 35 20 } { 255 255 255 } #Darker Brown
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
+			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
+		}
 	}
 
 	portraitType = {
@@ -162,6 +282,9 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_brown_bear_male:d0"
+			"GFX_brown_bear_male_hair:d0:h"
+			"GFX_bear_male_clothes_color:d0:e"
+			"GFX_dog_male_headgear:p5:o11x-8"
 			"GFX_creature_harelip:p24:o18x6"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -187,6 +310,44 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 30 30 } { 80 47 22 } { 255 255 255 } #Medium Brown
+			{ 30 30 30 } { 78 54 37 } { 255 255 255 } #Second Brown
+			{ 30 30 30 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 30 30 30 } { 78 54 37 } { 255 255 255 } #Darkest Brown
+			{ 30 30 30 } { 95 51 23 } { 255 255 255 } #Brown
+			{ 30 30 30 } { 56 35 20 } { 255 255 255 } #Darker Brown
+			{ 30 30 30 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 30 30 30 } { 78 54 37 } { 255 255 255 } #Dark Brown
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
+			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 	}
 
@@ -208,9 +369,12 @@ spriteTypes = {
 			"GFX_background_items:p2"
 			"GFX_chinese_female_jewelry_behind:p16:o17x22"
 			"GFX_brown_bear_female:d0"
+			"GFX_brown_bear_female_hair:d0:h"
+			"GFX_bear_female_clothes_color:d0:e"
 			"GFX_creature_harelip:p24:o21x4"
 			"GFX_child_back:p17"
 			"GFX_brown_bear_daughter:p18"
+			"GFX_brown_bear_sonhair:p18:h"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
 			"GFX_creature_warpaint:p29:o8x4"
@@ -237,6 +401,44 @@ spriteTypes = {
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
 		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 15 8 0 } { 80 47 22 } { 255 255 255 } #Medium Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Second Brown
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Darkest Brown
+			{ 10 10 10 } { 95 51 23 } { 255 255 255 } #Brown
+			{ 15 8 0 } { 56 35 20 } { 255 255 255 } #Darker Brown
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
+			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
+		}
 	}
 
 	portraitType = {
@@ -257,6 +459,8 @@ spriteTypes = {
 			"GFX_background_items:p2"
 			"GFX_chinese_female_jewelry_behind:p16:o17x22"
 			"GFX_brown_bear_female:d0"
+			"GFX_brown_bear_female_hair:d0:h"
+			"GFX_bear_female_clothes_color:d0:e"
 			"GFX_creature_harelip:p24:o21x4"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -284,6 +488,44 @@ spriteTypes = {
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
 		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 15 8 0 } { 80 47 22 } { 255 255 255 } #Medium Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Second Brown
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Darkest Brown
+			{ 10 10 10 } { 95 51 23 } { 255 255 255 } #Brown
+			{ 15 8 0 } { 56 35 20 } { 255 255 255 } #Darker Brown
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
+			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
+		}
 	}
 
 	portraitType = {
@@ -304,6 +546,8 @@ spriteTypes = {
 			"GFX_background_items:p2"
 			"GFX_chinese_female_jewelry_behind:p16:o17x22"
 			"GFX_brown_bear_female:d0"
+			"GFX_brown_bear_female_hair:d0:h"
+			"GFX_bear_female_clothes_color:d0:e"
 			"GFX_creature_harelip:p24:o21x4"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -330,6 +574,44 @@ spriteTypes = {
 			"GFX_lover_overlay:p37"
 			"GFX_character_imprisoned:p6"
 			"GFX_player_overlay:p11"
+		}
+
+		hair_color_index = 8
+		hair_color = { # dark, base, highlight
+			{ 30 30 30 } { 80 47 22 } { 255 255 255 } #Medium Brown
+			{ 30 30 30 } { 78 54 37 } { 255 255 255 } #Second Brown
+			{ 30 30 30 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 30 30 30 } { 78 54 37 } { 255 255 255 } #Darkest Brown
+			{ 30 30 30 } { 95 51 23 } { 255 255 255 } #Brown
+			{ 30 30 30 } { 56 35 20 } { 255 255 255 } #Darker Brown
+			{ 30 30 30 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 30 30 30 } { 78 54 37 } { 255 255 255 } #Dark Brown
+		}
+
+		eye_color_index = 9
+		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
+			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 	}
 
@@ -361,6 +643,8 @@ spriteTypes = {
 			"GFX_bear_male_headgear:p5:c5"
 			"GFX_bear_male_hair:p5:c7:h"
 			"GFX_bear_male:d0"
+			"GFX_bear_male_clothes_color:d0:e"
+			"GFX_dog_male_headgear:p5:o11x-8"
 			"GFX_creature_harelip:p24:o18x6"
 			"GFX_child_back:p17"
 			"GFX_polar_bear_son:p18"
@@ -403,6 +687,8 @@ spriteTypes = {
 			"GFX_bear_male_headgear:p5:c5"
 			"GFX_bear_male_hair:p5:c7:h"
 			"GFX_bear_male:d0"
+			"GFX_bear_male_clothes_color:d0:e"
+			"GFX_dog_male_headgear:p5:o11x-8"
 			"GFX_creature_harelip:p24:o18x6"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -443,6 +729,8 @@ spriteTypes = {
 			"GFX_bear_male_headgear:p5:c5"
 			"GFX_bear_male_hair:p5:c7:h"
 			"GFX_bear_male:d0"
+			"GFX_bear_male_clothes_color:d0:e"
+			"GFX_dog_male_headgear:p5:o11x-8"
 			"GFX_creature_harelip:p24:o18x6"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -482,6 +770,7 @@ spriteTypes = {
 			"GFX_empty:p5:c3"
 			"GFX_bear_male_headgear:p5:c5"
 			"GFX_bear_female:d0"
+			"GFX_bear_female_clothes_color:d0:e"
 			"GFX_creature_harelip:p24:o21x4"
 			"GFX_child_back:p17"
 			"GFX_polar_bear_daughter:p18"
@@ -524,6 +813,7 @@ spriteTypes = {
 			"GFX_bear_male_headgear:p5:c5"
 			"GFX_bear_male_hair:p5:c7:h"
 			"GFX_bear_female:d0"
+			"GFX_bear_female_clothes_color:d0:e"
 			"GFX_creature_harelip:p24:o21x4"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -565,6 +855,7 @@ spriteTypes = {
 			"GFX_bear_male_headgear:p5:c5"
 			"GFX_bear_male_hair:p5:c7:h"
 			"GFX_bear_female:d0"
+			"GFX_bear_female_clothes_color:d0:e"
 			"GFX_creature_harelip:p24:o21x4"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -643,6 +934,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_black_bear_male:d0"
+			"GFX_bear_male_clothes_color:d0:e"
+			"GFX_dog_male_headgear:p5:o11x-8"
 			"GFX_creature_harelip:p24:o18x6"
 			"GFX_child_back:p17"
 			"GFX_black_bear_son:p18"
@@ -690,6 +983,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_black_bear_male:d0"
+			"GFX_bear_male_clothes_color:d0:e"
+			"GFX_dog_male_headgear:p5:o11x-8"
 			"GFX_creature_harelip:p24:o18x6"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -735,6 +1030,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_black_bear_male:d0"
+			"GFX_bear_male_clothes_color:d0:e"
+			"GFX_dog_male_headgear:p5:o11x-8"
 			"GFX_creature_harelip:p24:o18x6"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -781,6 +1078,7 @@ spriteTypes = {
 			"GFX_background_items:p2"
 			"GFX_chinese_female_jewelry_behind:p16:o17x22"
 			"GFX_black_bear_female:d0"
+			"GFX_bear_female_clothes_color:d0:e"
 			"GFX_creature_harelip:p24:o21x4"
 			"GFX_child_back:p17"
 			"GFX_black_bear_daughter:p18"
@@ -830,6 +1128,7 @@ spriteTypes = {
 			"GFX_background_items:p2"
 			"GFX_chinese_female_jewelry_behind:p16:o17x22"
 			"GFX_black_bear_female:d0"
+			"GFX_bear_female_clothes_color:d0:e"
 			"GFX_creature_harelip:p24:o21x4"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"
@@ -877,6 +1176,7 @@ spriteTypes = {
 			"GFX_background_items:p2"
 			"GFX_chinese_female_jewelry_behind:p16:o17x22"
 			"GFX_black_bear_female:d0"
+			"GFX_bear_female_clothes_color:d0:e"
 			"GFX_creature_harelip:p24:o21x4"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o10x8"

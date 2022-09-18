@@ -26,6 +26,22 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_horse_male_fur"
+		texturefile = "gfx\\characters\\horse_male\\horse_male_fur.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_horse_male_hair"
+		texturefile = "gfx\\characters\\horse_male\\horse_male_hair.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_horse_male_headgear"
 		texturefile = "gfx\\characters\\horse_male\\horse_male_headgear.dds"
 		noOfFrames = 14
@@ -47,6 +63,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_male_base:p18"
+			"GFX_horse_male_fur:p18:e"
+			"GFX_horse_male_hair:p18:h"
 			"GFX_horse_immortal:p20"
 			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
@@ -60,6 +78,7 @@ spriteTypes = {
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
 			"GFX_right_eye_possessed:p30:o-10x-7"
+			"GFX_dog_male_headgear:p5:o0x-8"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -78,20 +97,34 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 36 35 29 } { 196 172 91 } { 255 255 255 }
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
-			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
-			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
-			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
-			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 } #Dark Blonde
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Darkest Brown
+			{ 30 22 18 } { 174 161 151 } { 255 255 255 }
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 10 10 10 } { 51 49 48 } { 255 255 255 } #Black
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 15 15 15 } { 125 85 56 } { 255 255 255 } #Light brown
+			{ 22 13 6 } { 138 99 68 } { 255 255 255 } #Light brown
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
+			{  50 50 50 } #Black
+			{ 176 155 108 } #Dark Blonde
+			{ 125 85 56 } #Darker Brown
+			{ 150 90 55 } #Brown
+			{ 78 54 37 } #Darkest Brown
+			{ 174 161 151 }
+			{ 180 170 151 }
+			{ 51 49 48 } #Black
+			{ 80 64 38 } #Dark Brown
+			{ 80 64 38 } #Dark Brown
+			{ 125 85 56 } #Light brown
+			{ 138 99 68 } #Light brown
 		}
 
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
@@ -111,6 +144,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_male_base:p18"
+			"GFX_horse_male_fur:p18:e"
+			"GFX_horse_male_hair:p18:h"
 			"GFX_horse_immortal:p20"
 			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
@@ -124,6 +159,7 @@ spriteTypes = {
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
 			"GFX_right_eye_possessed:p30:o-10x-7"
+			"GFX_dog_male_headgear:p5:o0x-8"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -142,20 +178,34 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 36 35 29 } { 196 172 91 } { 255 255 255 }
-			{ 10 10 10 } { 50 50 50 } { 255 255 255 }
-			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
-			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
-			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
-			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
-			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 } #Dark Blonde
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Darkest Brown
+			{ 30 22 18 } { 174 161 151 } { 255 255 255 }
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 10 10 10 } { 51 49 48 } { 255 255 255 } #Black
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 15 15 15 } { 125 85 56 } { 255 255 255 } #Light brown
+			{ 22 13 6 } { 138 99 68 } { 255 255 255 } #Light brown
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
+			{  50 50 50 } #Black
+			{ 176 155 108 } #Dark Blonde
+			{ 125 85 56 } #Darker Brown
+			{ 150 90 55 } #Brown
+			{ 78 54 37 } #Darkest Brown
+			{ 174 161 151 }
+			{ 180 170 151 }
+			{ 51 49 48 } #Black
+			{ 80 64 38 } #Dark Brown
+			{ 80 64 38 } #Dark Brown
+			{ 125 85 56 } #Light brown
+			{ 138 99 68 } #Light brown
 		}
 
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
@@ -175,6 +225,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_male_base:p18"
+			"GFX_horse_male_fur:p18:e"
+			"GFX_horse_male_hair:p18:h"
 			"GFX_horse_immortal:p20"
 			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
@@ -188,6 +240,7 @@ spriteTypes = {
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
 			"GFX_right_eye_possessed:p30:o-10x-7"
+			"GFX_dog_male_headgear:p5:o0x-8"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -206,20 +259,34 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
-			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
-			{ 15 8 0 } { 214 210 195 } { 255 255 255 }
-			{ 10 10 10 } { 143 134 127 } { 255 255 255 }
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 } #Dark Blonde
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Darkest Brown
 			{ 30 22 18 } { 174 161 151 } { 255 255 255 }
 			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 10 10 10 } { 51 49 48 } { 255 255 255 } #Black
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 15 15 15 } { 125 85 56 } { 255 255 255 } #Light brown
+			{ 22 13 6 } { 138 99 68 } { 255 255 255 } #Light brown
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
+			{  50 50 50 } #Black
+			{ 176 155 108 } #Dark Blonde
+			{ 125 85 56 } #Darker Brown
+			{ 150 90 55 } #Brown
+			{ 78 54 37 } #Darkest Brown
+			{ 174 161 151 }
+			{ 180 170 151 }
+			{ 51 49 48 } #Black
+			{ 80 64 38 } #Dark Brown
+			{ 80 64 38 } #Dark Brown
+			{ 125 85 56 } #Light brown
+			{ 138 99 68 } #Light brown
 		}
 
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
@@ -230,6 +297,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_horse_female_base"
 		texturefile = "gfx\\characters\\horse_female\\horse_female_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_horse_female_fur"
+		texturefile = "gfx\\characters\\horse_female\\horse_female_fur.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_horse_female_hair"
+		texturefile = "gfx\\characters\\horse_female\\horse_female_hair.dds"
 		noOfFrames = 7
 		norefcount = yes
 		can_be_lowres = yes
@@ -249,6 +332,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_female_base:p18"
+			"GFX_horse_female_fur:p18:e"
+			"GFX_horse_female_hair:p18:h"
 			"GFX_horse_immortal:p20"
 			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
@@ -261,6 +346,7 @@ spriteTypes = {
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
 			"GFX_right_eye_possessed:p30:o-10x-7"
+			"GFX_dog_male_headgear:p5:o0x-8"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -279,20 +365,34 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 36 35 29 } { 196 172 91 } { 255 255 255 }
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
-			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
-			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
-			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
-			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 } #Dark Blonde
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Darkest Brown
+			{ 30 22 18 } { 174 161 151 } { 255 255 255 }
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 10 10 10 } { 51 49 48 } { 255 255 255 } #Black
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 15 15 15 } { 125 85 56 } { 255 255 255 } #Light brown
+			{ 22 13 6 } { 138 99 68 } { 255 255 255 } #Light brown
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
+			{  50 50 50 } #Black
+			{ 176 155 108 } #Dark Blonde
+			{ 125 85 56 } #Darker Brown
+			{ 150 90 55 } #Brown
+			{ 78 54 37 } #Darkest Brown
+			{ 174 161 151 }
+			{ 180 170 151 }
+			{ 51 49 48 } #Black
+			{ 80 64 38 } #Dark Brown
+			{ 80 64 38 } #Dark Brown
+			{ 125 85 56 } #Light brown
+			{ 138 99 68 } #Light brown
 		}
 
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
@@ -312,6 +412,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_female_base:p18"
+			"GFX_horse_female_fur:p18:e"
+			"GFX_horse_female_hair:p18:h"
 			"GFX_horse_immortal:p20"
 			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
@@ -324,6 +426,7 @@ spriteTypes = {
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
 			"GFX_right_eye_possessed:p30:o-10x-7"
+			"GFX_dog_male_headgear:p5:o0x-8"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -342,20 +445,34 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 36 35 29 } { 196 172 91 } { 255 255 255 }
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
-			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
-			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
-			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
-			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 } #Dark Blonde
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Darkest Brown
+			{ 30 22 18 } { 174 161 151 } { 255 255 255 }
+			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 10 10 10 } { 51 49 48 } { 255 255 255 } #Black
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 15 15 15 } { 125 85 56 } { 255 255 255 } #Light brown
+			{ 22 13 6 } { 138 99 68 } { 255 255 255 } #Light brown
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
+			{  50 50 50 } #Black
+			{ 176 155 108 } #Dark Blonde
+			{ 125 85 56 } #Darker Brown
+			{ 150 90 55 } #Brown
+			{ 78 54 37 } #Darkest Brown
+			{ 174 161 151 }
+			{ 180 170 151 }
+			{ 51 49 48 } #Black
+			{ 80 64 38 } #Dark Brown
+			{ 80 64 38 } #Dark Brown
+			{ 125 85 56 } #Light brown
+			{ 138 99 68 } #Light brown
 		}
 
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}
@@ -375,6 +492,8 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_horse_female_base:p18"
+			"GFX_horse_female_fur:p18:e"
+			"GFX_horse_female_hair:p18:h"
 			"GFX_horse_immortal:p20"
 			"GFX_character_harelip:p24:o7x-51"
 			"GFX_creature_pale:p22"
@@ -387,6 +506,7 @@ spriteTypes = {
 			"GFX_creature_black_eye:p23:o-8x-8"
 			"GFX_creature_blinded_eyes:p10:o8x-48"
 			"GFX_right_eye_possessed:p30:o-10x-7"
+			"GFX_dog_male_headgear:p5:o0x-8"
 			"GFX_character_eyepatch:p13:y:o24x55"
 			"GFX_character_mask:p12:y:o33x37"
 			"GFX_character_special_helmets:p34"
@@ -405,20 +525,34 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
-			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
-			{ 15 8 0 } { 214 210 195 } { 255 255 255 }
-			{ 10 10 10 } { 143 134 127 } { 255 255 255 }
+			{ 10 10 10 } {  50 50 50 } { 255 255 255 } #Black
+			{ 15 8 0 } { 176 155 108 } { 255 255 255 } #Dark Blonde
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Darker Brown
+			{ 30 22 18 } { 150 90 55 } { 255 255 255 } #Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Darkest Brown
 			{ 30 22 18 } { 174 161 151 } { 255 255 255 }
 			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 10 10 10 } { 51 49 48 } { 255 255 255 } #Black
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown
+			{ 15 15 15 } { 125 85 56 } { 255 255 255 } #Light brown
+			{ 22 13 6 } { 138 99 68 } { 255 255 255 } #Light brown
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
+			{  50 50 50 } #Black
+			{ 176 155 108 } #Dark Blonde
+			{ 125 85 56 } #Darker Brown
+			{ 150 90 55 } #Brown
+			{ 78 54 37 } #Darkest Brown
+			{ 174 161 151 }
+			{ 180 170 151 }
+			{ 51 49 48 } #Black
+			{ 80 64 38 } #Dark Brown
+			{ 80 64 38 } #Dark Brown
+			{ 125 85 56 } #Light brown
+			{ 138 99 68 } #Light brown
 		}
 
 		headgear_that_hides_hair = {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14}

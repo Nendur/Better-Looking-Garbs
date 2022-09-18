@@ -2,6 +2,8 @@ Changelog:
 
   All clothes extended to a universal fit without shoulders clipping out.
   Custom faces cleaned up from pixel noise around the eyes.
+  Adding various fur and clothing colour layers to the animal portraits.
+  Adding crowns to the animal portraits.
 
 13-01-2022
   New Baltic portraits using the fallback northern faces.

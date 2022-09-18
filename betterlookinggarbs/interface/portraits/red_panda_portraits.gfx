@@ -33,6 +33,30 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_red_panda_male_clothes"
+		texturefile = "gfx\\characters\\red_panda_portraits\\red_panda_male_clothes.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_red_panda_female_headgear"
+		texturefile = "gfx\\characters\\red_panda_portraits\\red_panda_female_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_red_panda_female_clothes"
+		texturefile = "gfx\\characters\\red_panda_portraits\\red_panda_female_clothes.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_red_panda_male_headgear"
 		texturefile = "gfx\\characters\\red_panda_portraits\\red_panda_headgear.dds"
 		noOfFrames = 1
@@ -97,6 +121,7 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_red_panda_male_base:d4"
+			"GFX_red_panda_male_clothes:d4:h"
 			"GFX_child_back:p17"
 			"GFX_red_panda_son_base:p18"
 			"GFX_creature_harelip:p24:o-8x-11"
@@ -113,6 +138,7 @@ spriteTypes = {
 			"GFX_creature_possessed:p30:o-6x-15"
 			"GFX_character_eyepatch:p13:y:o27x51"
 			"GFX_character_mask:p12:y:o33x30"
+			"GFX_dog_male_headgear:p5:o3x-21"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35:o-8x-16"
 			"GFX_character_special_scepters:p36"
@@ -128,12 +154,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -153,6 +213,7 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_red_panda_male_base:d4"
+			"GFX_red_panda_male_clothes:d4:h"
 			"GFX_creature_harelip:p24:o-8x-11"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o0x-12"
@@ -167,6 +228,7 @@ spriteTypes = {
 			"GFX_creature_possessed:p30:o-6x-15"
 			"GFX_character_eyepatch:p13:y:o27x51"
 			"GFX_character_mask:p12:y:o33x30"
+			"GFX_dog_male_headgear:p5:o3x-21"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35:o-8x-16"
 			"GFX_character_special_scepters:p36"
@@ -182,12 +244,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -207,6 +303,7 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_red_panda_male_old_base:d4"
+			"GFX_red_panda_male_clothes:d4:h"
 			"GFX_creature_harelip:p24:o-8x-11"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o0x-12"
@@ -221,6 +318,7 @@ spriteTypes = {
 			"GFX_creature_possessed:p30:o-6x-15"
 			"GFX_character_eyepatch:p13:y:o27x51"
 			"GFX_character_mask:p12:y:o33x30"
+			"GFX_dog_male_headgear:p5:o3x-21"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35:o-8x-16"
 			"GFX_character_special_scepters:p36"
@@ -236,12 +334,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -262,7 +394,10 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
+			"GFX_dog_male_headgear:p5:o-3x4"
 			"GFX_red_panda_female_base:d4"
+			"GFX_red_panda_female_clothes:d4:h"
+			"GFX_red_panda_female_headgear:d4:e"
 			"GFX_creature_harelip:p24:o-8x-11"
 			"GFX_child_back:p17"
 			"GFX_red_panda_daughter_base:p18"
@@ -294,12 +429,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -318,7 +487,10 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
+			"GFX_dog_male_headgear:p5:o-3x4"
 			"GFX_red_panda_female_base:d4"
+			"GFX_red_panda_female_clothes:d4:h"
+			"GFX_red_panda_female_headgear:d4:e"
 			"GFX_creature_harelip:p24:o-8x-11"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o0x-12"
@@ -348,12 +520,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -372,7 +578,10 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
+			"GFX_dog_male_headgear:p5:o-3x4"
 			"GFX_red_panda_female_old_base:d4"
+			"GFX_red_panda_female_clothes:d4:h"
+			"GFX_red_panda_female_headgear:d4:e"
 			"GFX_creature_harelip:p24:o-8x-11"
 			"GFX_creature_pale:p22"
 			"GFX_creature_tattoos:p28:o0x-12"
@@ -402,12 +611,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }

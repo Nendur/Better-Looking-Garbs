@@ -16,6 +16,22 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_duck_male_clothes"
+		texturefile = "gfx\\characters\\duck_portraits\\duck_male_clothes.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_duck_male_cloak"
+		texturefile = "gfx\\characters\\duck_portraits\\duck_male_cloak.dds"
+		noOfFrames = 1
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
 		name = "GFX_duck_male_beak"
 		texturefile = "gfx\\characters\\duck_portraits\\duck_male_headgear.dds"
 		noOfFrames = 1
@@ -68,14 +84,16 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_duck_male_base:p2"
-			"GFX_child_back:p17"
-			"GFX_duck_son_base:p18"
 			"GFX_creature_pale:p22"
 			"GFX_character_scars:p7:y:o-20x0"
 			"GFX_character_scars_mid:p25:o-20x0"
 			"GFX_character_scars_high:p26:o-20x0"
 			"GFX_creature_black_eye:p23:o-4x21"
 			"GFX_right_eye_possessed:p30:o-3x23"
+			"GFX_duck_male_clothes:p2:h"
+			"GFX_duck_male_cloak:p2:e"
+			"GFX_child_back:p17"
+			"GFX_duck_son_base:p18"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -91,12 +109,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -120,6 +172,8 @@ spriteTypes = {
 			"GFX_character_scars_high:p26:o-20x0"
 			"GFX_creature_black_eye:p23:o-4x21"
 			"GFX_right_eye_possessed:p30:o-3x23"
+			"GFX_duck_male_clothes:p2:h"
+			"GFX_duck_male_cloak:p2:e"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -135,12 +189,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -164,6 +252,8 @@ spriteTypes = {
 			"GFX_character_scars_high:p26:o-20x0"
 			"GFX_creature_black_eye:p23:o-4x21"
 			"GFX_right_eye_possessed:p30:o-3x23"
+			"GFX_duck_male_clothes:p2:h"
+			"GFX_duck_male_cloak:p2:e"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -179,12 +269,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -202,8 +326,6 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_duck_female_base:p2"
-			"GFX_child_back:p17"
-			"GFX_duck_daughter_base:p18"
 			"GFX_creature_pale:p22"
 			"GFX_character_scars:p7:y:o-20x0"
 			"GFX_character_scars_mid:p25:o-20x0"
@@ -211,6 +333,10 @@ spriteTypes = {
 			"GFX_chinese_female_jewelry_front:p16:o6x33"
 			"GFX_creature_black_eye:p23:o-4x21"
 			"GFX_right_eye_possessed:p30:o-3x23"
+			"GFX_duck_male_clothes:p2:h"
+			"GFX_duck_male_cloak:p2:e"
+			"GFX_child_back:p17"
+			"GFX_duck_daughter_base:p18"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -226,12 +352,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -256,6 +416,8 @@ spriteTypes = {
 			"GFX_chinese_female_jewelry_front:p16:o6x33"
 			"GFX_creature_black_eye:p23:o-4x21"
 			"GFX_right_eye_possessed:p30:o-3x23"
+			"GFX_duck_male_clothes:p2:h"
+			"GFX_duck_male_cloak:p2:e"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -271,12 +433,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
@@ -301,6 +497,8 @@ spriteTypes = {
 			"GFX_chinese_female_jewelry_front:p16:o6x33"
 			"GFX_creature_black_eye:p23:o-4x21"
 			"GFX_right_eye_possessed:p30:o-3x23"
+			"GFX_duck_male_clothes:p2:h"
+			"GFX_duck_male_cloak:p2:e"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -316,12 +514,46 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 30 22 18 } { 180 170 151 } { 255 255 255 }
+			{ 0 0 0 } { 255 231 93 } { 255 255 255 }		# 0		Gold
+			{ 0 0 0 } { 245 245 245 } { 255 255 255 } 	# 1 	White
+			{ 0 0 0 } { 35 101 29 } { 255 255 255 } 		# 2 	Dark Green
+			{ 0 0 0 } { 176 0 0 } { 255 255 255 } 		# 3		Red
+			{ 0 0 0 } { 83 141 39 } { 255 255 255 } 		# 4 	Green
+			{ 0 0 0 } { 20 20 20 } { 255 255 255 }		# 5 	Black
+			{ 0 0 0 } { 80 40 0 } { 255 255 255 }			# 6 	Brown
+			{ 0 0 0 } { 130 0 0 } { 255 255 255 }			# 7 	Dark Red
+			{ 0 0 0 } { 205 87 10 } { 255 255 255 }		# 8 	Orange
+			{ 0 0 0 } { 119 201 94 } { 255 255 255 } 		# 9 	Light Green
+			{ 0 0 0 } { 128 0 40 } { 255 255 255 }		# 10 	Mulberry
+			{ 0 0 0 } { 15 15 204 } { 255 255 255 }		# 11  	Deep Blue
+			{ 0 0 0 } { 50 153 162 } { 255 255 255 }		# 12	Turqouise
+			{ 0 0 0 } { 190 190 190 } { 255 255 255 }		# 13	Silver
 		}
 
 		eye_color_index = 9
 		eye_color = {
+			{ 164 219 237 }
+			{ 227 231 232 }
+			{ 141 154 158 }
+			{ 182 218 219 }
+			{ 255 0 0 }
+			{ 255 102 0 }
+			{ 255 63 52 }
+			{ 150 50 50 }
+			{ 47 52 121 }
+			{ 98 120 164 }
+			{ 22 44 85 }
 			{ 58 109 193 }
+			{ 134 97 34 }
+			{ 120 74 46 }
+			{ 212 135 19 }
+			{ 209 141 38 }
+			{ 250 243 57 }
+			{ 207 191 17 }
+			{ 70 224 49 }
+			{ 97 189 85 }
+			{ 85 159 189 }
+			{ 19 110 145 }
 		}
 
 		headgear_that_hides_hair = { }
