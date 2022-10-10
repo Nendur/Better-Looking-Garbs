@@ -40,9 +40,11 @@ dornish = {
 
 	stone_dornish = {
 		graphical_cultures = { stonedornishgfx levantinegfx andalusiangfx }
+		unit_graphical_cultures = { andalusiangfx levantinegfx }
 	}
 	sand_dornish = {
 		graphical_cultures = { sanddornishgfx levantinegfx andalusiangfx }
+		unit_graphical_cultures = { andalusiangfx berbergfx }
 	}
 	salt_dornish = {
 		graphical_cultures = { saltdornishgfx levantinegfx andalusiangfx }

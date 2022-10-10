@@ -26,21 +26,12 @@ blg_artifact_derafsh_kaviani = {
 
 # Bowl.
 blg_artifact_bowl = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		OR = {
-			artifact_type = bowl_of_commanding_water_elementals
-			artifact_type = censer_of_controlling_air_elementals
-		}
-	}
+	always = no
 }
 
 # Glass candle.
 blg_artifact_candle = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		artifact_type = brazier_of_commanding_fire_elementals
-	}
+	always = no
 }
 
 # Babr-e-Bayan leopard skin.
@@ -50,11 +41,7 @@ blg_babr_e_bayan = {
 
 # Eye glasses.
 blg_artifact_glasses = {
-	NOT = { has_game_rule = { name = blg_artifacts value = off } }
-	any_artifact = {
-		is_artifact_active = yes
-		artifact_type = hermetic_glasses
-	}
+	always = no
 }
 
 # Holy Grail.
@@ -64,23 +51,12 @@ blg_artifact_grail = {
 
 # Harp.
 blg_artifact_harp = {
-	any_artifact = {
-		is_artifact_active = yes
-		OR = {
-			artifact_type = mundane_harp
-			artifact_type = self_playing_harp
-			artifact_type = mundane_harpsichord
-			artifact_type = self_playing_harpsichord
-		}
-	}
+	always = no
 }
 
 # Horn.
 blg_artifact_horn = {
-	any_artifact = {
-		is_artifact_active = yes
-		artifact_type = mundane_horn
-	}
+	always = no
 }
 
 # Chinese jade dragon.
@@ -173,21 +149,12 @@ blg_artifact_staff_crook = {
 
 # Indian danda staff.
 blg_artifact_staff_danda = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		OR = {
-			artifact_type = genuine_ruby_rod_of_asmodeus
-			artifact_type = replica_ruby_rod_of_asmodeus
-		}
-	}
+	always = no
 }
 
 # Humble staff.
 blg_artifact_staff_of_moses = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		artifact_type = staff_of_birdcalls
-	}
+	always = no
 }
 
 # Skull staff.
@@ -233,10 +200,7 @@ blg_artifact_staff_1 = {
 blg_artifact_tablet = {
 	any_artifact = {
 		is_artifact_active = yes
-		OR = {
-			has_artifact_flag = tablet
-			artifact_type = crenshinibon
-		}
+		has_artifact_flag = tablet
 	}
 }
 

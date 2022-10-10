@@ -1,7 +1,7 @@
 # p8 Red dots - Now used for mutations and scars as well
 8 = {
 	0 = { # blank
-		factor = 1
+		factor = 20
 	}
 
 	1 = { # boils
@@ -21,7 +21,7 @@
 	}
 
 	5 = { # horns
-		factor = 100
+		factor = 80
 		trigger = {
 			OR = {
 				race_is_fiendish = yes
@@ -47,8 +47,11 @@
 				graphical_culture = slaaneshprincegfx
 				graphical_culture = daemonettegfx
 				graphical_culture = nycalothgfx
+				graphical_culture = ultrolothgfx
 				graphical_culture = nurgleprincegfx
+				graphical_culture = nalfeshneegfx
 				graphical_culture = draeglothgfx
+				graphical_culture = yikariangfx
 			}
 		}
 		modifier = {
@@ -58,7 +61,7 @@
 	}
 
 	6 = { # crests
-		factor = 10
+		factor = 5
 		trigger = {
 			OR = {
 				trait = creature_fiend
@@ -70,6 +73,7 @@
 				#graphical_culture = slaaneshprincegfx
 				graphical_culture = daemonettegfx
 				graphical_culture = nycalothgfx
+				graphical_culture = ultrolothgfx
 			}
 		}
 	}
@@ -79,27 +83,30 @@
 	}
 
 	8 = { # scales
-		factor = 100
+		factor = 50
 		trigger = {
 			OR = {
 				trait = half_dragon
 				trait = creature_pureblood
 			}
+			NOT = { graphical_culture = yuantigfx }
 		}
 	}
 
 	9 = { # spines
-		factor = 10
+		factor = 2
 		trigger = {
 			OR = {
 				trait = creature_fiend
 				trait = half_fiend
 			}
 			NOR = {
-				#graphical_culture = khorneprincegfx
+				graphical_culture = nurgleprincegfx
 				#graphical_culture = slaaneshprincegfx
 				graphical_culture = daemonettegfx
 				graphical_culture = nycalothgfx
+				graphical_culture = ultrolothgfx
+				graphical_culture = yikariangfx
 			}
 		}
 	}

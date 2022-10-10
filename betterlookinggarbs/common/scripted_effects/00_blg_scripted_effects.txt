@@ -448,6 +448,11 @@ blg_character_processing = {
 			}
 		}
 	}
+
+	if = {
+		limit = { blg_ethnicity_static = yes }
+		add_trait = blgcaoff
+	}
 }
 
 # Mixed children ethnicity selection.

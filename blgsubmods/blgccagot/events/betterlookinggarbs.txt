@@ -118,6 +118,11 @@ character_event = {
 		remove_trait = blgspawn
 
 		if = {
+			limit = { blg_ethnicity_static = yes }
+			add_trait = blgcaoff
+		}
+
+		if = {
 			limit = { is_father_real_father = yes }
 			father_even_if_dead = { save_event_target_as = father }
 		}

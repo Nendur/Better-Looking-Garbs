@@ -4,7 +4,7 @@
 		factor = 10
 
 		modifier = {
-			factor = 100
+			factor = 1000
 			OR = {
 				NOT = { has_dlc = "Holy Fury" }
 				is_female = no

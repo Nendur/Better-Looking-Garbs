@@ -1,14 +1,6 @@
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_character_eyepatch"
-		texturefile = "gfx\\characters\\shared\\maimed_eyepatch.dds"
-		noOfFrames = 24
-		norefcount = yes
-		can_be_lowres = yes
-	}
-
-	spriteType = {
 		name = "GFX_religious_male_clothes"
 		texturefile = "gfx\\characters\\religious_male_clothes.dds"
 		noOfframes = 26

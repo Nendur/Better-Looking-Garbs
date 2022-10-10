@@ -10,10 +10,6 @@ blg_culture_unmixed = {
 	always = no
 }
 
-likes_celts = {
-	culture = ffolk
-}
-
 likes_mesoamericans = {
 	culture_group = maztican_group
 }

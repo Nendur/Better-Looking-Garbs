@@ -258,7 +258,6 @@
 				trait = theologian
 				trait = physician
 				trait = poet
-				trait = gamer
 				trait = architect
 				has_minor_title = title_administrator
 				has_minor_title = title_master_engineer
@@ -770,6 +769,7 @@
 				trait = lustful
 				trait = gregarious
 				trait = socializer
+				trait = gamer
 			}
 		}
 

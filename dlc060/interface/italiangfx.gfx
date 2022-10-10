@@ -58,12 +58,6 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "italiangfx_HEAVY_INFANTRY_weapon_early"
-		file = "gfx\models\Attachments\fraup_early_sword.mesh"
-		scale = 1.0f
-	}
-
-	pdxmesh = {
 		name = "italiangfx_HEAVY_INFANTRY_shield_early"
 		file = "gfx\models\Attachments\gerup_early_pike_shield.mesh"
 		scale = 1.0f

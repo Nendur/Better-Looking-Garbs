@@ -30,6 +30,7 @@ spriteType = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
+			"GFX_ugric_male_hair:p1:h:y"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -45,11 +46,12 @@ spriteType = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 114 39 141 } { 214 139 241 } { 255 255 255 }
-			{ 39 74 214 } { 139 174 255 } { 255 255 255 }
-			{ 34 103 36 } { 134 203 136 } { 255 255 255 }
-			{ 202 61 53 } { 302 161 153 } { 255 255 255 }
-			{ 203 181 52 } { 303 281 152 } { 255 255 255 }
+			{ 10 10 10 } { 212 135 19 } { 255 255 255 }
+			{ 10 10 10 } { 209 141 38 } { 255 255 255 }
+			{ 10 10 10 } { 250 243 57 } { 255 255 255 }
+			{ 10 10 10 } { 207 191 17 } { 255 255 255 }
+			{ 10 10 10 } { 70 224 49 } { 255 255 255 }
+			{ 10 10 10 } { 97 189 85 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -89,6 +91,7 @@ spriteType = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
+			"GFX_ugric_male_hair:p1:h:y"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -104,11 +107,12 @@ spriteType = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 114 39 141 } { 214 139 241 } { 255 255 255 }
-			{ 39 74 214 } { 139 174 255 } { 255 255 255 }
-			{ 34 103 36 } { 134 203 136 } { 255 255 255 }
-			{ 202 61 53 } { 302 161 153 } { 255 255 255 }
-			{ 203 181 52 } { 303 281 152 } { 255 255 255 }
+			{ 10 10 10 } { 212 135 19 } { 255 255 255 }
+			{ 10 10 10 } { 209 141 38 } { 255 255 255 }
+			{ 10 10 10 } { 250 243 57 } { 255 255 255 }
+			{ 10 10 10 } { 207 191 17 } { 255 255 255 }
+			{ 10 10 10 } { 70 224 49 } { 255 255 255 }
+			{ 10 10 10 } { 97 189 85 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -148,6 +152,7 @@ spriteType = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
+			"GFX_ugric_male_hair:p1:h:y"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -163,11 +168,12 @@ spriteType = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 114 39 141 } { 214 139 241 } { 255 255 255 }
-			{ 39 74 214 } { 139 174 255 } { 255 255 255 }
-			{ 34 103 36 } { 134 203 136 } { 255 255 255 }
-			{ 202 61 53 } { 302 161 153 } { 255 255 255 }
-			{ 203 181 52 } { 303 281 152 } { 255 255 255 }
+			{ 10 10 10 } { 212 135 19 } { 255 255 255 }
+			{ 10 10 10 } { 209 141 38 } { 255 255 255 }
+			{ 10 10 10 } { 250 243 57 } { 255 255 255 }
+			{ 10 10 10 } { 207 191 17 } { 255 255 255 }
+			{ 10 10 10 } { 70 224 49 } { 255 255 255 }
+			{ 10 10 10 } { 97 189 85 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -208,6 +214,7 @@ spriteType = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
+			"GFX_celtic_female_hair:p1:h:y"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -223,13 +230,12 @@ spriteType = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
-			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
-			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
-			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
-			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
-			{ 40 22 18 } { 200 195 0 } { 255 255 255 }
+			{ 10 10 10 } { 212 135 19 } { 255 255 255 }
+			{ 10 10 10 } { 209 141 38 } { 255 255 255 }
+			{ 10 10 10 } { 250 243 57 } { 255 255 255 }
+			{ 10 10 10 } { 207 191 17 } { 255 255 255 }
+			{ 10 10 10 } { 70 224 49 } { 255 255 255 }
+			{ 10 10 10 } { 97 189 85 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -272,6 +278,7 @@ spriteType = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
+			"GFX_celtic_female_hair:p1:h:y"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -287,13 +294,12 @@ spriteType = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
-			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
-			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
-			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
-			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
-			{ 40 22 18 } { 200 195 0 } { 255 255 255 }
+			{ 10 10 10 } { 212 135 19 } { 255 255 255 }
+			{ 10 10 10 } { 209 141 38 } { 255 255 255 }
+			{ 10 10 10 } { 250 243 57 } { 255 255 255 }
+			{ 10 10 10 } { 207 191 17 } { 255 255 255 }
+			{ 10 10 10 } { 70 224 49 } { 255 255 255 }
+			{ 10 10 10 } { 97 189 85 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -336,6 +342,7 @@ spriteType = {
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
+			"GFX_celtic_female_hair:p1:h:y"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
 			"GFX_character_special_scepters:p36"
@@ -351,13 +358,12 @@ spriteType = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
-			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
-			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
-			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
-			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
-			{ 40 22 18 } { 200 195 0 } { 255 255 255 }
+			{ 10 10 10 } { 212 135 19 } { 255 255 255 }
+			{ 10 10 10 } { 209 141 38 } { 255 255 255 }
+			{ 10 10 10 } { 250 243 57 } { 255 255 255 }
+			{ 10 10 10 } { 207 191 17 } { 255 255 255 }
+			{ 10 10 10 } { 70 224 49 } { 255 255 255 }
+			{ 10 10 10 } { 97 189 85 } { 255 255 255 }
 		}
 
 		eye_color_index = 9

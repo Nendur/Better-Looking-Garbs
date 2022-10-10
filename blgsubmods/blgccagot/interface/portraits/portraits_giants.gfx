@@ -11,6 +11,22 @@ spriteTypes = {
 		can_be_lowres = yes
 	}
 
+	spriteType = {
+		name = "GFX_giant_hair"
+		texturefile = "gfx\\characters\\old_races\\giant_hair.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
+	spriteType = {
+		name = "GFX_giant_eyes"
+		texturefile = "gfx\\characters\\old_races\\giant_eyes.dds"
+		noOfFrames = 7
+		norefcount = yes
+		can_be_lowres = yes
+	}
+
 	portraitType = {
 		name = "PORTRAIT_giantgfx_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -18,6 +34,8 @@ spriteTypes = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
 			"GFX_giant_background:p18"
+			"GFX_giant_hair:p18:h"
+			"GFX_giant_eyes:p18:e"
 			"GFX_character_harelip:p24:o-9x-14"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_freckles:p20"
@@ -49,26 +67,39 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 114 39 141 } { 214 139 241 } { 255 255 255 }
-			{ 39 74 214 } { 139 174 255 } { 255 255 255 }
-			{ 34 103 36 } { 134 203 136 } { 255 255 255 }
-			{ 202 61 53 } { 302 161 153 } { 255 255 255 }
-			{ 203 181 52 } { 303 281 152 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown and turns brownish gray
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown but eventually turns white
+			{ 33 19 8 } { 139 69 19 } { 255 255 255 } #Light brown and turns brownish gray
+			{ 41 23 8 } { 127 70 26 } { 255 255 255 } #Light brown and turns white
+			{ 30 28 21 } { 139 124 72 } { 228 207 138 } #Dark blonde and turns grayish blonde
+			{ 30 29 24 } { 85 74 36 } { 219 204 153 } #Dark blonde and turns white
+			{ 30 28 21 } { 215 198 117 } { 250 240 190 } #Light blonde and turns whitish blonde
+			{ 30 29 24 } { 230 213 124 } { 255 255 255 } #Light blonde and turns white
+			{ 23 4 6 } { 128 40 20 } { 255 255 255 } #Red
+			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 90 54 29 } { 255 255 255 } #Dark Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+			{ 60 60 80 } { 206 226 237 } { 255 255 255 }
+			{ 60 60 80 } { 241 242 230 } { 255 255 255 }
+			{ 60 60 80 } { 161 163 142 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 34 103 36 }
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 150 30 150 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 	}
 
@@ -79,6 +110,8 @@ spriteTypes = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
 			"GFX_giant_background:p18"
+			"GFX_giant_hair:p18:h"
+			"GFX_giant_eyes:p18:e"
 			"GFX_character_harelip:p24:o-9x-14"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_freckles:p20"
@@ -110,26 +143,39 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 114 39 141 } { 214 139 241 } { 255 255 255 }
-			{ 39 74 214 } { 139 174 255 } { 255 255 255 }
-			{ 34 103 36 } { 134 203 136 } { 255 255 255 }
-			{ 202 61 53 } { 302 161 153 } { 255 255 255 }
-			{ 203 181 52 } { 303 281 152 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown and turns brownish gray
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown but eventually turns white
+			{ 33 19 8 } { 139 69 19 } { 255 255 255 } #Light brown and turns brownish gray
+			{ 41 23 8 } { 127 70 26 } { 255 255 255 } #Light brown and turns white
+			{ 30 28 21 } { 139 124 72 } { 228 207 138 } #Dark blonde and turns grayish blonde
+			{ 30 29 24 } { 85 74 36 } { 219 204 153 } #Dark blonde and turns white
+			{ 30 28 21 } { 215 198 117 } { 250 240 190 } #Light blonde and turns whitish blonde
+			{ 30 29 24 } { 230 213 124 } { 255 255 255 } #Light blonde and turns white
+			{ 23 4 6 } { 128 40 20 } { 255 255 255 } #Red
+			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 90 54 29 } { 255 255 255 } #Dark Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+			{ 60 60 80 } { 206 226 237 } { 255 255 255 }
+			{ 60 60 80 } { 241 242 230 } { 255 255 255 }
+			{ 60 60 80 } { 161 163 142 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 34 103 36 }
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 150 30 150 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 	}
 
@@ -140,6 +186,8 @@ spriteTypes = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
 			"GFX_giant_background:p18"
+			"GFX_giant_hair:p18:h"
+			"GFX_giant_eyes:p18:e"
 			"GFX_character_harelip:p24:o-9x-14"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_freckles:p20"
@@ -171,26 +219,39 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 114 39 141 } { 214 139 241 } { 255 255 255 }
-			{ 39 74 214 } { 139 174 255 } { 255 255 255 }
-			{ 34 103 36 } { 134 203 136 } { 255 255 255 }
-			{ 202 61 53 } { 302 161 153 } { 255 255 255 }
-			{ 203 181 52 } { 303 281 152 } { 255 255 255 }
+			{ 20 12 8 } { 90 78 69 } { 255 255 255 } #Dark Brown and turns brownish gray
+			{ 17 13 8 } { 108 108 108 } { 255 255 255 } #Dark Brown but eventually turns white
+			{ 33 19 8 } { 148 117 93 } { 255 255 255 } #Light brown and turns brownish gray
+			{ 36 26 17 } { 115 115 115 } { 255 255 255 } #Light brown and turns white
+			{ 30 28 21 } { 135 127 95 } { 235 226 196 } #Dark blonde and turns grayish blonde
+			{ 30 29 24 } { 95 95 95 } { 255 255 255 } #Dark blonde and turns white
+			{ 30 28 21 } { 212 207 182 } { 232 225 192 } #Light blonde and turns whitish blonde
+			{ 30 29 24 } { 110 110 110 } { 255 255 255 } #Light blonde and turns white
+			{ 10 10 10 } { 110 93 91 } { 255 255 255 } #Red
+			{ 36 35 29 } { 154 144 128 } { 255 255 255 } #Chestnut turned white
+			{ 10 10 10 } { 124 110 100 } { 255 255 255 } #Light Brown turned white
+			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
+			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
+			{ 60 60 80 } { 206 226 237 } { 255 255 255 }
+			{ 60 60 80 } { 241 242 230 } { 255 255 255 }
+			{ 60 60 80 } { 161 163 142 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 34 103 36 }
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 150 30 150 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = { 10 }
@@ -213,6 +274,8 @@ spriteTypes = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
 			"GFX_giant2_background:p18"
+			"GFX_giant_hair:p18:h"
+			"GFX_giant_eyes:p18:e"
 			"GFX_character_harelip:p24:o-9x-14"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_freckles:p20"
@@ -244,30 +307,39 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
-			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
-			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
-			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
-			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
-			{ 40 22 18 } { 200 195 0 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown and turns brownish gray
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown but eventually turns white
+			{ 33 19 8 } { 139 69 19 } { 255 255 255 } #Light brown and turns brownish gray
+			{ 41 23 8 } { 127 70 26 } { 255 255 255 } #Light brown and turns white
+			{ 30 28 21 } { 139 124 72 } { 228 207 138 } #Dark blonde and turns grayish blonde
+			{ 30 29 24 } { 85 74 36 } { 219 204 153 } #Dark blonde and turns white
+			{ 30 28 21 } { 215 198 117 } { 250 240 190 } #Light blonde and turns whitish blonde
+			{ 30 29 24 } { 230 213 124 } { 255 255 255 } #Light blonde and turns white
+			{ 23 4 6 } { 128 40 20 } { 255 255 255 } #Red
+			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 90 54 29 } { 255 255 255 } #Dark Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+			{ 60 60 80 } { 206 226 237 } { 255 255 255 }
+			{ 60 60 80 } { 241 242 230 } { 255 255 255 }
+			{ 60 60 80 } { 161 163 142 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 34 103 36 }
-			{ 150 30 150 }
-			{ 118 0 200 }
-			{ 220 208 255 }
-			{ 150 30 150 }
-			{ 118 0 200 }
-			{ 220 208 255 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 	}
 
@@ -278,6 +350,8 @@ spriteTypes = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
 			"GFX_giant2_background:p18"
+			"GFX_giant_hair:p18:h"
+			"GFX_giant_eyes:p18:e"
 			"GFX_character_harelip:p24:o-9x-14"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_freckles:p20"
@@ -309,30 +383,39 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
-			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
-			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
-			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
-			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
-			{ 40 22 18 } { 200 195 0 } { 255 255 255 }
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown and turns brownish gray
+			{ 17 13 8 } { 80 64 38 } { 255 255 255 } #Dark Brown but eventually turns white
+			{ 33 19 8 } { 139 69 19 } { 255 255 255 } #Light brown and turns brownish gray
+			{ 41 23 8 } { 127 70 26 } { 255 255 255 } #Light brown and turns white
+			{ 30 28 21 } { 139 124 72 } { 228 207 138 } #Dark blonde and turns grayish blonde
+			{ 30 29 24 } { 85 74 36 } { 219 204 153 } #Dark blonde and turns white
+			{ 30 28 21 } { 215 198 117 } { 250 240 190 } #Light blonde and turns whitish blonde
+			{ 30 29 24 } { 230 213 124 } { 255 255 255 } #Light blonde and turns white
+			{ 23 4 6 } { 128 40 20 } { 255 255 255 } #Red
+			{ 36 35 29 } { 170 133 74 } { 255 255 255 } #Chestnut
+			{ 10 10 10 } { 125 85 56 } { 255 255 255 } #Light Brown
+			{ 20 12 8 } { 90 54 29 } { 255 255 255 } #Dark Brown
+			{ 20 12 8 } { 78 54 37 } { 255 255 255 } #Dark Brown
+			{ 60 60 80 } { 206 226 237 } { 255 255 255 }
+			{ 60 60 80 } { 241 242 230 } { 255 255 255 }
+			{ 60 60 80 } { 161 163 142 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 34 103 36 }
-			{ 150 30 150 }
-			{ 118 0 200 }
-			{ 220 208 255 }
-			{ 150 30 150 }
-			{ 118 0 200 }
-			{ 220 208 255 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 	}
 
@@ -343,6 +426,8 @@ spriteTypes = {
 			"GFX_northern_background:p0"
 			"GFX_northern_background:p0:c6"
 			"GFX_giant2_background:p18"
+			"GFX_giant_hair:p18:h"
+			"GFX_giant_eyes:p18:e"
 			"GFX_character_harelip:p24:o-9x-14"
 			"GFX_chinese_female_makeup1:p14"
 			"GFX_character_freckles:p20"
@@ -374,30 +459,39 @@ spriteTypes = {
 
 		hair_color_index = 8
 		hair_color = { # dark, base, highlight
-			{ 10 10 10 } {  50 50 50 } { 255 255 255 }
-			{ 15 8 0 } { 176 155 108 } { 255 255 255 }
-			{ 10 10 10 } { 125 85 56 } { 255 255 255 }
-			{ 30 22 18 } { 150 90 55 } { 255 255 255 }
-			{ 30 22 18 } { 178 80 41 } { 255 255 255 }
-			{ 20 12 8 } { 78 54 37 } { 255 255 255 }
-			{ 40 22 18 } { 200 195 0 } { 255 255 255 }
+			{ 20 12 8 } { 90 78 69 } { 255 255 255 } #Dark Brown and turns brownish gray
+			{ 17 13 8 } { 108 108 108 } { 255 255 255 } #Dark Brown but eventually turns white
+			{ 33 19 8 } { 148 117 93 } { 255 255 255 } #Light brown and turns brownish gray
+			{ 36 26 17 } { 115 115 115 } { 255 255 255 } #Light brown and turns white
+			{ 30 28 21 } { 135 127 95 } { 235 226 196 } #Dark blonde and turns grayish blonde
+			{ 30 29 24 } { 95 95 95 } { 255 255 255 } #Dark blonde and turns white
+			{ 30 28 21 } { 212 207 182 } { 232 225 192 } #Light blonde and turns whitish blonde
+			{ 30 29 24 } { 110 110 110 } { 255 255 255 } #Light blonde and turns white
+			{ 10 10 10 } { 110 93 91 } { 255 255 255 } #Red
+			{ 36 35 29 } { 154 144 128 } { 255 255 255 } #Chestnut turned white
+			{ 10 10 10 } { 124 110 100 } { 255 255 255 } #Light Brown turned white
+			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
+			{ 20 12 8 } { 97 97 97 } { 255 255 255 } #Dark Brown turned white
+			{ 60 60 80 } { 206 226 237 } { 255 255 255 }
+			{ 60 60 80 } { 241 242 230 } { 255 255 255 }
+			{ 60 60 80 } { 161 163 142 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
 		eye_color = {
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 58 109 193}
-			{ 120 74 46 }
-			{ 34 103 36 }
-			{ 34 103 36 }
-			{ 150 30 150 }
-			{ 118 0 200 }
-			{ 220 208 255 }
-			{ 150 30 150 }
-			{ 118 0 200 }
-			{ 220 208 255 }
+			{ 177 214 49 }	#Green-yellowish
+			{ 223 221 17 }	#Yellow
+			{ 223 172 17 }	#Orange
+			{ 216 91 0 }	#Dark Orange
+			{ 216 0 0 }	#Red
+			{ 109 26 15 }	#Dark Red
+			{ 50 139 46 }	#Greenish
+			{ 58 109 193 } #Blue
+			{ 122 158 220 } #Blue pale
+			{ 34 103 36 } # Dark green
+			{ 18 148 66 } # Light green
+			{ 83 176 130 } # Acquamarine
+			{ 181 153 41 } # Golden
 		}
 	}
 }

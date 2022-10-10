@@ -121,7 +121,7 @@ caucasian = {
 		graphical_cultures = { georgiangfx byzantinegfx }
 	}
 	aghbanian = {
-		graphical_cultures = { vlachgfx serbsouthslavicgfx byzantinegfx }
+		graphical_cultures = { georgiangfx byzantinegfx }
 	}
 }
 

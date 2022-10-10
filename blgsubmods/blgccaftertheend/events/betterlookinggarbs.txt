@@ -145,6 +145,11 @@ character_event = {
 			}
 		}
 
+		if = {
+			limit = { blg_ethnicity_static = yes }
+			add_trait = blgcaoff
+		}
+
 		# Testing log
 		event_target:father = { gfx_culture_scope = { save_event_target_as = gfxfather } }
 		mother_even_if_dead = { gfx_culture_scope = { save_event_target_as = gfxmother } }

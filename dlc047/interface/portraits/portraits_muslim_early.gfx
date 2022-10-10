@@ -71,7 +71,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_muslim_female_headgear_mid_early"
 		texturefile = "gfx\\characters\\muslim_female\\muslim_female_headgear_mid_early.dds"
-		noOfFrames = 8
+		noOfFrames = 12
 		norefcount = yes
 		can_be_lowres = yes
 	}

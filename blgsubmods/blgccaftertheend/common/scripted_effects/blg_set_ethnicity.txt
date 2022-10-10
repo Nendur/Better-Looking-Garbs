@@ -9,6 +9,15 @@ blg_set_ethnicity_andalusian = {
 	}
 }
 
+blg_set_ethnicity_armenian = {
+	if = {
+		limit = {
+			NOT = { graphical_culture = vaquerogfx }
+		}
+		set_graphical_culture = tejano
+	}
+}
+
 blg_set_ethnicity_ashkenazi = {
 	if = {
 		limit = {
@@ -228,23 +237,23 @@ blg_set_ethnicity_egyptian = {
 			set_graphical_culture = quisqueyano
 		}
 	}
-	else_if = {
-		limit = {
-			OR = {
-				culture = norteno
-				culture = sonorense
-				culture = neomexicano
-				blg_culture_midlands = yes
-				blg_culture_eastcoast = yes
-			}
-		}
-		if = {
-			limit = {
-				NOT = { graphical_culture = vaquerogfx }
-			}
-			set_graphical_culture = norteno
-		}
-	}
+	#else_if = {
+		#limit = {
+			#OR = {
+				#culture = norteno
+				#culture = sonorense
+				#culture = neomexicano
+				#blg_culture_midlands = yes
+				#blg_culture_eastcoast = yes
+			#}
+		#}
+		#if = {
+			#limit = {
+				#NOT = { graphical_culture = vaquerogfx }
+			#}
+			#set_graphical_culture = norteno
+		#}
+	#}
 	else_if = {
 		limit = {
 			NOT = { graphical_culture = mexicangfx }

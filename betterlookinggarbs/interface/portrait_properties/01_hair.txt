@@ -1170,7 +1170,6 @@
 						blg_hair_celtic = no
 						blg_hair_indian = no
 						blg_hair_italian = no
-						blg_hair_italian = no
 						blg_hair_southern = no
 						blg_hair_turkish = no
 						blg_hair_ugric = no

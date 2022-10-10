@@ -913,10 +913,10 @@ anatolian_group = {
 	graphical_cultures = { byzantinegfx easterngfx }
 
 	isaurian = {
-		graphical_cultures = { georgiangfx }
+		graphical_cultures = { byzantinegfx }
 	}
 	lycaonian = {
-		graphical_cultures = { georgiangfx }
+		graphical_cultures = { byzantinegfx }
 	}
 }
 

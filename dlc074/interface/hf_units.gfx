@@ -218,7 +218,7 @@ objectTypes = {
 	}
 	pdxmesh = {
 		name = "berbergfx_KNIGHTS_weapon"
-		file = "gfx\models\hf_berber_heavy_infantry_sword.mesh"
+		file = "gfx\models\hf_berber_light_infantry_sword.mesh"
 
 		scale = 0.9
 	}
@@ -333,7 +333,7 @@ objectTypes = {
 	}
 	pdxmesh = {
 		name = "berbergfx_HEAVY_INFANTRY_weapon"
-		file = "gfx\models\hf_berber_heavy_infantry_sword.mesh"
+		file = "gfx\models\hf_berber_light_infantry_sword.mesh"
 
 		scale = 1.0f
 	}
@@ -356,7 +356,7 @@ objectTypes = {
 	}
 	pdxmesh = {
 		name = "berbergfx_LIGHT_INFANTRY_weapon"
-		file = "gfx\models\hf_berber_light_infantry_sword.mesh"
+		file = "gfx\models\hf_levantine_light_infantry_sword.mesh"
 
 		scale = 1.0f
 	}
@@ -494,6 +494,17 @@ objectTypes = {
 	}
 
 	pdxmesh = {
+		name = "andalusiangfx_LIGHT_INFANTRY"
+		file = "gfx\models\hf_levantine_pikeman.mesh"
+
+		animation = { id = "attack"		type = "hf_infantry_attack_animation" }
+		animation = { id = "idle"		type = "hf_infantry_idle_animation" }
+		animation = { id = "move"		type = "hf_infantry_moving_animation" }
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
 		name = "andalusiangfx_LIGHT_INFANTRY_weapon"
 		file = "gfx\models\hf_levantine_light_infantry_sword.mesh"
 		scale = 1.0f
@@ -501,19 +512,30 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "andalusiangfx_LIGHT_INFANTRY_shield"
-		file = "gfx\models\hf_arabian_light_infantry_shield.mesh"
+		file = "gfx\models\hf_berber_pikeman_shield.mesh"
 		scale = 1.0f
 	}
 
+	pdxmesh = {
+		name = "andalusiangfx_ARCHERS_shield"
+		file = "gfx\models\hf_arabian_archer_bow.mesh"
+
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_PIKEMEN"
+		file = "gfx\models\hf_berber_heavy_infantry.mesh"
+
+		animation = { id = "attack"		type = "hf_pikeman_attack_animation" }
+		animation = { id = "idle"		type = "hf_pikeman_idle_animation" }
+		animation = { id = "move"		type = "hf_pikeman_moving_animation" }
+
+		scale = 1.0f
+	}
 	pdxmesh = {
 		name = "andalusiangfx_PIKEMEN_weapon"
-		file = "gfx\models\hf_levantine_pikeman_spear.mesh"
-		scale = 1.0f
-	}
-
-	pdxmesh = {
-		name = "andalusiangfx_PIKEMEN_shield"
-		file = "gfx\models\hf_levantine_pikeman_shield.mesh"
+		file = "gfx\models\hf_arabian_pikeman_spear.mesh"
 		scale = 1.0f
 	}
 
@@ -525,6 +547,12 @@ objectTypes = {
 		animation = { id = "idle"		type = "hf_infantry_idle_animation" }
 		animation = { id = "move"		type = "hf_infantry_moving_animation" }
 
+		scale = 1.0f
+	}
+
+	pdxmesh = {
+		name = "andalusiangfx_HEAVY_INFANTRY_weapon"
+		file = "gfx\models\hf_levantine_light_infantry_sword.mesh"
 		scale = 1.0f
 	}
 

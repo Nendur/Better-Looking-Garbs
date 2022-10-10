@@ -74,6 +74,7 @@ blg_mercenary_fleet = {
 		OR = {
 			title = d_wraith_of_the_inner_sea
 			title = d_zaharas_krakens
+			title = d_order_of_the_calming_wave
 		}
 	}
 }

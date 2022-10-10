@@ -37,6 +37,11 @@ character_event = {
 
 	immediate = {
 		remove_trait = blgspawn
+
+		if = {
+			limit = { blg_ethnicity_static = yes }
+			add_trait = blgcaoff
+		}
 	}
 }
 

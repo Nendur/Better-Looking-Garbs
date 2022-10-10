@@ -86,6 +86,11 @@ blg_character_processing = {
 	}
 
 	blg_tattoos = yes
+
+	if = {
+		limit = { blg_ethnicity_static = yes }
+		add_trait = blgcaoff
+	}
 }
 
 blg_tattoos = {

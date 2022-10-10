@@ -120,7 +120,6 @@ blg_ethnicity_english = {
 blg_ethnicity_egyptian = {
 	OR = {
 		graphical_culture = mexicangfx
-		graphical_culture = vaquerogfx
 		graphical_culture = caribenogfx
 	}
 }

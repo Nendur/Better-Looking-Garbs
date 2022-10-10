@@ -168,7 +168,10 @@ blg_culture_celtic = {
 }
 
 blg_culture_central_germanic = {
-	culture = colovian
+	OR = {
+		culture = colovian
+		culture = cyronord
+	}
 }
 
 # Chinese adjacent cultures.
@@ -242,5 +245,8 @@ blg_culture_steppes = {
 
 # Uses West/South-Slavic headgear rules.
 blg_culture_west_slavic = {
-	culture = nord
+	OR = {
+		culture = nord
+		culture = cyronord
+	}
 }

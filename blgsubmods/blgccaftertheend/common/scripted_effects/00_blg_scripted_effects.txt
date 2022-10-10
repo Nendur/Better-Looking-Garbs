@@ -57,6 +57,11 @@ blg_character_processing = {
 			}
 		}
 	}
+
+	if = {
+		limit = { blg_ethnicity_static = yes }
+		add_trait = blgcaoff
+	}
 }
 
 # Mixed children ethnicity selection.
@@ -253,6 +258,7 @@ blg_child_mixed = {
 							blg_ethnicity_berber = yes
 							blg_ethnicity_persian = yes
 							blg_ethnicity_indian = yes
+							graphical_culture = vaquerogfx
 						}
 					}
 					mother_even_if_dead = {
@@ -265,6 +271,7 @@ blg_child_mixed = {
 							blg_ethnicity_berber = yes
 							blg_ethnicity_persian = yes
 							blg_ethnicity_indian = yes
+							graphical_culture = vaquerogfx
 						}
 					}
 				}
@@ -395,7 +402,7 @@ blg_child_mixed = {
 					}
 				}
 			}
-			blg_set_ethnicity_southslavic = yes
+			blg_set_ethnicity_armenian = yes
 		}
 	}
 
@@ -460,6 +467,7 @@ blg_child_mixed = {
 						blg_ethnicity_byzantine = yes
 						blg_ethnicity_berber = yes
 						blg_ethnicity_cuman = yes
+						graphical_culture = vaquerogfx
 					}
 				}
 				mother_even_if_dead = {
@@ -468,6 +476,7 @@ blg_child_mixed = {
 						blg_ethnicity_byzantine = yes
 						blg_ethnicity_berber = yes
 						blg_ethnicity_cuman = yes
+						graphical_culture = vaquerogfx
 					}
 				}
 			}

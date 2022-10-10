@@ -123,8 +123,8 @@
 			any_artifact = {
 				is_artifact_equipped = yes
 				OR = {
-					artifact_type = pet_dog_beardog
-					artifact_type = pet_dog_warhound
+					artifact_type = pet_dog_retriever
+					artifact_type = pet_dog_dunehound
 				}
 			}
 
@@ -143,8 +143,8 @@
 			any_artifact = {
 				is_artifact_equipped = yes
 				OR = {
-					artifact_type = pet_dog_retriever
-					artifact_type = pet_dog_dunehound
+					artifact_type = pet_dog_beardog
+					artifact_type = pet_dog_warhound
 				}
 			}
 

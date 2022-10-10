@@ -135,12 +135,10 @@
 			OR = {
 				is_ill = yes
 				is_incapable = yes
-				trait = lustful
+				blg_seducer = yes
 				trait = infirm
 				trait = slothful
 				trait = decadent
-				trait = seducer
-				trait = seductress
 				has_character_modifier = house_arrest
 			}
 		}
@@ -179,7 +177,6 @@
 				has_lifestyle_learning_trigger = yes
 				blg_learned = yes
 				trait = poet
-				trait = gamer
 				trait = architect
 			}
 
@@ -516,8 +513,8 @@
 			factor = 4
 			OR = {
 				blg_socializer = yes
+				blg_seducer = yes
 				trait = gluttonous
-				trait = lustful
 			}
 		}
 

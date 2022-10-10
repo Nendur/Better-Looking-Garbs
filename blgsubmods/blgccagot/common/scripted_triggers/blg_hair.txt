@@ -218,6 +218,7 @@ blg_hair_ugric = {
 	OR = {
 		graphical_culture = nghaigfx
 		graphical_culture = thenngfx
+		graphical_culture = cotfgfx
 	}
 }
 

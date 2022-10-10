@@ -13,26 +13,6 @@
 			factor = 100
 			check_variable = { which = ca_headgear value = 1 }
 		}
-
-		modifier = {
-			factor = 0
-			OR = {
-				trait = half_celestial
-				graphical_culture = angelgfx
-				graphical_culture = asuragfx
-				gfx_culture_scope = { culture = avariel }
-				trait = creature_fiend
-				trait = half_fiend
-			}
-			NOR = {
-				graphical_culture = khorneprincegfx
-				graphical_culture = tzeentchprincegfx
-				graphical_culture = nurgleprincegfx
-				graphical_culture = nycalothgfx
-				graphical_culture = daemonettegfx
-				graphical_culture = kdaaigfx
-			}
-		}
 	}
 
 	1 = { # a - Fiend wings
@@ -47,9 +27,12 @@
 				graphical_culture = khorneprincegfx
 				graphical_culture = tzeentchprincegfx
 				graphical_culture = nurgleprincegfx
+				graphical_culture = nalfeshneegfx
 				graphical_culture = nycalothgfx
+				graphical_culture = ultrolothgfx
 				graphical_culture = daemonettegfx
 				graphical_culture = kdaaigfx
+				graphical_culture = yikariangfx
 			}
 		}
 	}

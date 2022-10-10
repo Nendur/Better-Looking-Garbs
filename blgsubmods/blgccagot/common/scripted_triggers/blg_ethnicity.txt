@@ -49,7 +49,6 @@ blg_ethnicity_static = {
 		graphical_culture = ruingfx
 		graphical_culture = wintergfx
 		graphical_culture = giantgfx
-		graphical_culture = cotfgfx
 		graphical_culture = islandergfx
 		graphical_culture = horsegfx
 		graphical_culture = catgfx

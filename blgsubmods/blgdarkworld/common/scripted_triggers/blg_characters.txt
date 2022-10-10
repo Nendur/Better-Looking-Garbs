@@ -143,6 +143,17 @@ blg_saint = {
 	}
 }
 
+# Lustful personality.
+blg_seducer = {
+	OR = {
+		trait = lustful
+		trait = seducer
+		trait = seductress
+		trait = prostitute
+		trait = lf_insatiable
+	}
+}
+
 # Enslaved.
 blg_slave = {
 	OR = {
@@ -169,6 +180,7 @@ blg_socializer = {
 	OR = {
 		trait = gregarious
 		trait = socializer
+		trait = gamer
 	}
 }
 

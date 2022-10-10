@@ -97,7 +97,7 @@ blg_modest = {
 		trait = celibate
 		blg_devout = yes
 	}
-	NOT = { trait = lustful }
+	blg_seducer = no
 }
 
 # Character covered in mud.
@@ -157,6 +157,15 @@ blg_saint = {
 	}
 }
 
+# Lustful personality.
+blg_seducer = {
+	OR = {
+		trait = lustful
+		trait = seducer
+		trait = seductress
+	}
+}
+
 # Enslaved.
 blg_slave = {
 	death_reason = death_slavery
@@ -167,6 +176,7 @@ blg_socializer = {
 	OR = {
 		trait = gregarious
 		trait = socializer
+		trait = gamer
 	}
 }
 

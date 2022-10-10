@@ -1,0 +1,48 @@
+spriteTypes = {
+
+	portraitType = {
+		name = "PORTRAIT_clothing_cyronord_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_is_female = no
+				portrait_clothing = yes
+				portrait_culture = cyronord
+			}
+		}
+
+		layer = {
+			"GFX_german_male_clothes_behind:c0"
+			"GFX_croatsouthslavic_male_headgear_behind:c1"
+			"GFX_german_male_clothes:c2"
+			"GFX_croatsouthslavic_male_headgear_mid:c3"
+			"GFX_croatsouthslavic_male_headgear:c5"
+			"GFX_helmet_western:c4"
+		}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_clothing_cyronord_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 1000
+				portrait_is_female = yes
+				portrait_clothing = yes
+				portrait_culture = cyronord
+			}
+		}
+
+		layer = {
+			"GFX_german_female_clothes_behind:c0"
+			"GFX_croatsouthslavic_female_headgear_behind:c1"
+			"GFX_german_female_clothes:c2"
+			"GFX_croatsouthslavic_female_headgear_mid:c3"
+			"GFX_croatsouthslavic_female_headgear:c5"
+			"GFX_helmet_western:c4"
+		}
+	}
+}

@@ -92,6 +92,10 @@ blg_culture_byzantine = {
 	always = no
 }
 
+blg_culture_celtic = {
+	always = no
+}
+
 # Uses Cuman hairstyles.
 blg_culture_central_asian = {
 	always = no

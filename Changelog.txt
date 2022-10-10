@@ -1,9 +1,13 @@
 Changelog:
 
+10-10-2022
   All clothes extended to a universal fit without shoulders clipping out.
   Custom faces cleaned up from pixel noise around the eyes.
   Adding various fur and clothing colour layers to the animal portraits.
   Adding crowns to the animal portraits.
+  Updated some background animals.
+  Swapped broken Berber swords.
+  Updated Andalusian units.
 
 13-01-2022
   New Baltic portraits using the fallback northern faces.
