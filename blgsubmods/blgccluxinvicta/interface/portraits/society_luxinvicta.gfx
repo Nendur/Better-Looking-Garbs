@@ -1,0 +1,310 @@
+spriteTypes = {
+	portraitType = {
+		name = "PORTRAIT_society_assassin_christian_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_clothing = yes
+				portrait_age > child
+				portrait_is_female = no
+
+				OR = {
+					portrait_society = the_assassins_priscillian
+					portrait_society = the_assassins_yahyanism
+				}
+				blg_wear_society_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
+			"GFX_society_benedictine_male_clothing_front:c2"
+			"GFX_society_dominican_male_headgear_behind:c1"
+			"GFX_society_dominican_male_headgear_front:c5"
+			"GFX_society_dominican_male_headgear_mid:c3"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			5 = {
+				0 = { portrait_society_rank = 4 }
+				1 = { NOT = { portrait_society_rank = 4 } }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+		}
+
+		headgear_that_hides_hair = {}
+	}
+
+	portraitType = {
+		name = "PORTRAIT_society_assassin_christian_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_clothing = yes
+				portrait_age > child
+				portrait_is_female = yes
+
+				portrait_society = the_assassins_priscillian
+				blg_wear_society_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
+			"GFX_society_benedictine_male_clothing_front:c2"
+			"GFX_society_orthodox_monk_female_headgear_behind:c1"
+			"GFX_society_orthodox_monk_female_headgear_front:c5"
+			"GFX_empty:c3"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			5 = {
+				1 = { NOT = { portrait_society_rank = 4 } }
+				4 = { portrait_society_rank = 4 }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+		}
+
+		headgear_that_hides_hair = {1 4}
+	}
+
+	portraitType = { #Portraits - Male
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_assassin_buddhist_male_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_clothing = yes
+				portrait_age > child
+				portrait_is_female = no
+
+				portrait_society = the_assassins_bud_mahayana
+				blg_wear_society_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_african_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_african_male_clothes:p3:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Female
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_assassin_buddhist_female_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_clothing = yes
+				portrait_age > child
+				portrait_is_female = yes
+
+				portrait_society = the_assassins_bud_mahayana
+				blg_wear_society_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_african_female_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_african_female_clothes:p3:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = { #Portraits - Male
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_assassin_zoroastian_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_clothing = yes
+				portrait_age > child
+
+				OR = {
+					portrait_society = the_assassins_mani_ahriman
+					portrait_society = the_assassins_zor_angra
+				}
+				blg_wear_society_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_african_male_clothes_behind:p3:c0"
+			"GFX_society_satanist_male_clothing_front:p3:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_assassin_norse_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_clothing = yes
+				portrait_age > child
+
+				OR = {
+					portrait_society = the_assassins_ragnarok
+					portrait_society = the_assassins_tengri_ahriman
+				}
+				blg_wear_society_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_vodoun_male_clothing_behind:c0"
+			"GFX_society_vodoun_male_clothing_front:c2"
+			"GFX_society_warrior_lodge_norse_male_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_norse_male_headgear_mid:p5:c3"
+			"GFX_society_warrior_lodge_norse_male_headgear:p5:c5"
+			"GFX_empty:c7"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				2 = {
+					OR = {
+						portrait_society_rank = 2
+						portrait_society_rank = 3
+					}
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_assassin_set_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_clothing = yes
+				portrait_age > child
+
+				portrait_society = the_assassins_set
+				blg_wear_society_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
+			"GFX_society_vodoun_male_clothing_front:c2"
+		}
+
+		# Correct rank
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+}

@@ -94,7 +94,7 @@ objectTypes = {
 		name = "frankishgfx_KNIGHTS_rider"
 		file = "gfx\models\ibup_knight.mesh"
 
-		animation = { id = "attack"		type = "ibup_horse_attack_animation" }
+		animation = { id = "attack"		type = "ibup_light_cavalry_attack_animation" }
 		animation = { id = "idle"		type = "ibup_heavy_cavalry_idle_animation" }
 		animation = { id = "move"		type = "ibup_heavy_cavalry_moving_animation" }
 

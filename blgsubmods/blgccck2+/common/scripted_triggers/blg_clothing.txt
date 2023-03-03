@@ -22,12 +22,9 @@ blg_royalty = {
 # Has been coronated if necessary.
 blg_crowned = {
 	trigger_if = {
-		limit = { is_alive = no }
-		NOT = { trait = uncrowned }
-	}
-	trigger_else_if = {
 		limit = {
 			has_dlc = "Holy Fury"
+			is_alive = yes
 			is_feudal = yes
 			primary_title = { is_vice_royalty = no }
 			OR = {
@@ -40,13 +37,19 @@ blg_crowned = {
 			}
 		}
 		OR = {
+			trait = crowned_by_priest
+			trait = crowned_by_bishop
+			trait = crowned_by_pope
+			trait = crowned_by_myself
 			trait = crowned
 			trait = crowned_by_relhead
 			trait = crowned_by_vip
-			trait = crowned_by_pope
 			trait = strong_basileus
 			trait = weak_basileus
 		}
+	}
+	trigger_else = {
+		NOT = { trait = uncrowned }
 	}
 }
 

@@ -47,7 +47,6 @@ blg_ethnicity_static = {
 		graphical_culture = dragonborngfx
 		graphical_culture = dracolichgfx
 		graphical_culture = wraithgfx
-		graphical_culture = golemgfx
 		graphical_culture = bloodlettergfx
 		graphical_culture = daemonettegfx
 		graphical_culture = gelugongfx
@@ -75,6 +74,10 @@ blg_ethnicity_static = {
 		graphical_culture = wardengfx
 		graphical_culture = marrashgfx
 		graphical_culture = elderbraingfx
+		graphical_culture = golemgfx
+		graphical_culture = warforgedgfx
+		graphical_culture = modrongfx
+		graphical_culture = inevitablegfx
 		trait = creature_monster
 		#trait = creature_toad
 		#trait = creature_pig
@@ -167,7 +170,7 @@ blg_ethnicity_frankish = {
 
 blg_ethnicity_german = {
 	OR = {
-		graphical_culture = cormyriangfx
+		graphical_culture = cormyreangfx
 		graphical_culture = dalesmengfx
 	}
 }
@@ -195,7 +198,10 @@ blg_ethnicity_italian = {
 }
 
 blg_ethnicity_levantine = {
-	graphical_culture = tethyriangfx
+	OR = {
+		graphical_culture = tethyriangfx
+		graphical_culture = amrangfx
+	}
 }
 
 blg_ethnicity_lombard = {
@@ -225,6 +231,7 @@ blg_ethnicity_occitan = {
 	OR = {
 		graphical_culture = chondathangfx
 		graphical_culture = draevengfx
+		graphical_culture = windrisergfx
 	}
 }
 
@@ -259,6 +266,7 @@ blg_ethnicity_southslavic = {
 	OR = {
 		graphical_culture = croatsouthslavicgfx
 		graphical_culture = serbsouthslavicgfx
+		graphical_culture = eskornargfx
 	}
 }
 
@@ -338,7 +346,7 @@ blg_freckles_6 = {
 
 blg_freckles_7 = {
 	OR = {
-		graphical_culture = cormyriangfx
+		graphical_culture = cormyreangfx
 		graphical_culture = draevengfx
 		graphical_culture = golddwarfgfx
 		graphical_culture = wilddwarfgfx

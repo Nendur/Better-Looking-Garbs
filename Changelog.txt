@@ -1,5 +1,7 @@
 Changelog:
 
+  Fixed attack animation on French knights.
+
 10-10-2022
   All clothes extended to a universal fit without shoulders clipping out.
   Custom faces cleaned up from pixel noise around the eyes.

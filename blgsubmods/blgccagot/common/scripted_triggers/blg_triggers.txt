@@ -2,18 +2,15 @@
 
 # Engaged in a duel.
 blg_duelling = {
-	OR = {
-		has_character_flag = battle_event_in_progess
+	#OR = {
+		#has_character_flag = battle_event_in_progess
 		has_character_flag = chivalry_duel_ongoing
-	}
+	#}
 }
 
 # Engaged in any fight.
 blg_fighting = {
-	OR = {
-		blg_in_combat = yes
-		blg_duelling = yes
-	}
+	blg_in_combat = yes
 }
 
 # Holy Order government.

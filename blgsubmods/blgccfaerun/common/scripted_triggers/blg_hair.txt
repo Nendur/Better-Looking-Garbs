@@ -2,40 +2,44 @@
 
 # Has a shaved head.
 blg_shaved = {
-	trigger_if = {
-		limit = {
-			culture = thayan
-		}
-		NAND = {
-			dynasty = none
-			is_landed = no
-		}
-	}
-	trigger_else_if = {
-		limit = {
-			culture = mulhorandi
-		}
-		is_landed = yes
-	}
-	trigger_else_if = {
-		limit = {
-			culture = pazruki
-		}
-		is_female = no
-	}
-	trigger_else = {
-		OR = {
-			religion = the_path
-			religion = padhran
-		}
-		OR = {
-			blg_priest = yes
-			is_ascetic_trigger = yes
-			employer = {
-				blg_holy_order = yes
+	OR = {
+		trigger_if = {
+			limit = {
+				culture = thayan
+			}
+			NAND = {
+				dynasty = none
+				is_landed = no
 			}
 		}
-		NOT = { trait = cynical }
+		trigger_else_if = {
+			limit = {
+				culture = mulhorandi
+			}
+			is_landed = yes
+		}
+		trigger_else_if = {
+			limit = {
+				culture = pazruki
+			}
+			is_female = no
+		}
+		trigger_else = {
+			OR = {
+				religion = the_path
+				religion = padhran
+			}
+			OR = {
+				blg_priest = yes
+				is_ascetic_trigger = yes
+				employer = {
+					blg_holy_order = yes
+				}
+			}
+			NOT = { trait = cynical }
+		}
+		has_character_modifier = durzagon
+		has_character_modifier = mur_zhagul
 	}
 }
 
@@ -209,6 +213,7 @@ blg_hair_byzantine = {
 	OR = {
 		graphical_culture = chessentangfx
 		graphical_culture = halruaangfx
+		graphical_culture = windrisergfx
 	}
 }
 
@@ -264,12 +269,14 @@ blg_hair_frankish = {
 	OR = {
 		graphical_culture = highcoastergfx
 		graphical_culture = tethyriangfx
+		graphical_culture = duskergfx
 	}
 }
 
 blg_hair_german = {
 	OR = {
-		graphical_culture = cormyriangfx
+		graphical_culture = cormyreangfx
+		graphical_culture = gontesegfx
 		graphical_culture = westerngfx
 	}
 }
@@ -296,6 +303,7 @@ blg_hair_muslim = {
 		graphical_culture = mulangfx
 		graphical_culture = arkaiungfx
 		graphical_culture = bedinegfx
+		graphical_culture = amrangfx
 	}
 }
 
@@ -429,13 +437,14 @@ blg_beard_english = {
 	OR = {
 		graphical_culture = illuskangfx
 		graphical_culture = netheresegfx
+		graphical_culture = windrisergfx
 	}
 }
 
 blg_beard_frankish = {
 	OR = {
 		graphical_culture = chondathangfx
-		graphical_culture = cormyriangfx
+		graphical_culture = cormyreangfx
 	}
 }
 
@@ -444,6 +453,7 @@ blg_beard_german = {
 		graphical_culture = highcoastergfx
 		graphical_culture = thariangfx
 		graphical_culture = stormgiantgfx
+		graphical_culture = eskornargfx
 	}
 }
 
@@ -465,6 +475,7 @@ blg_beard_muslim = {
 	OR = {
 		graphical_culture = arabicgfx
 		graphical_culture = kurdishgfx
+		graphical_culture = amrangfx
 	}
 }
 
@@ -492,6 +503,7 @@ blg_beard_southern = {
 	OR = {
 		graphical_culture = southerngfx
 		graphical_culture = tethyriangfx
+		graphical_culture = gontesegfx
 	}
 }
 
@@ -546,5 +558,6 @@ blg_beard_westernslavic = {
 		graphical_culture = croatsouthslavicgfx
 		graphical_culture = nargfx
 		graphical_culture = dalesmengfx
+		graphical_culture = duskergfx
 	}
 }

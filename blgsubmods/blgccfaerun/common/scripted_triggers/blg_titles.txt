@@ -4,7 +4,7 @@
 
 # Cardinal title.
 blg_cardinal_early = {
-	culture = thayan
+	#culture = thayan
 	z_wizard = yes
 	is_landed = yes
 	any_realm_title = { is_zulkirate = yes }

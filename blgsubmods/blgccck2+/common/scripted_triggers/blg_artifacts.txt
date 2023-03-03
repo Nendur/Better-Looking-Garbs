@@ -434,6 +434,10 @@ blg_crown_baltic = {
 			artifact_type = crown_romuva_fylkir
 		}
 		trait = dead_crown_romuva_fylkir
+		any_artifact = {
+			artifact_type = crown_celtic_fylkir
+			is_artifact_equipped = yes
+		}
 		AND = {
 			rightful_religious_head = ROOT
 			blg_priest = yes
@@ -461,6 +465,10 @@ blg_crown_zunist = {
 			artifact_type = crown_zun_fylkir
 		}
 		trait = dead_crown_zun_fylkir
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = crown_egyptian_fylkir
+		}
 		AND = {
 			rightful_religious_head = ROOT
 			blg_priest = yes

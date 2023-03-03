@@ -1,0 +1,139 @@
+spriteTypes = {
+
+	# Warrior Lodges - NORSE
+
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_male_clothes_behind"
+		textureFile = "gfx/characters/societies/wl_norse_male_clothes_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_male_clothes"
+		textureFile = "gfx/characters/societies/wl_norse_male_clothes.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_male_headgear_behind"
+		textureFile = "gfx/characters/societies/wl_norse_male_headgear_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_male_headgear"
+		textureFile = "gfx/characters/societies/wl_norse_male_headgear.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_male_headgear_mid"
+		textureFile = "gfx/characters/societies/wl_norse_male_headgear_mid.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_female_clothes_behind"
+		textureFile = "gfx/characters/societies/wl_norse_female_clothes_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_female_clothes"
+		textureFile = "gfx/characters/societies/wl_norse_female_clothes.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_female_headgear_behind"
+		textureFile = "gfx/characters/societies/wl_norse_female_headgear_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	#spriteType = {
+	#	name = "GFX_society_warrior_lodge_norse_female_hairlayer_behind"
+	#	textureFile = "gfx/characters/societies/wl_norse_female_hairlayer_behind.dds"
+	#	noOfFrames = 4
+	#}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_female_hairlayer_front"
+		textureFile = "gfx/characters/societies/wl_norse_female_hairlayer_front.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_female_headgear"
+		textureFile = "gfx/characters/societies/wl_norse_female_headgear.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_norse_female_headgear_mid"
+		textureFile = "gfx/characters/societies/wl_norse_female_headgear_mid.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	# Warrior Lodges - AFRICAN
+
+	spriteType = {
+		name = "GFX_society_warrior_lodge_african_male_clothes_behind"
+		textureFile = "gfx/characters/societies/wl_african_male_clothes_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_african_male_clothes"
+		textureFile = "gfx/characters/societies/wl_african_male_clothes.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	#spriteType = {
+	#	name = "GFX_society_warrior_lodge_african_male_clothes_infront"
+	#	textureFile = "gfx/characters/societies/wl_african_male_clothes_infront.dds"
+	#	noOfFrames = 4
+	#}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_african_male_headgear_behind"
+		textureFile = "gfx/characters/societies/wl_african_male_headgear_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_african_male_headgear"
+		textureFile = "gfx/characters/societies/wl_african_male_headgear.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_society_warrior_lodge_african_female_clothes_behind"
+		textureFile = "gfx/characters/societies/wl_african_female_clothes_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_african_female_clothes"
+		textureFile = "gfx/characters/societies/wl_african_female_clothes.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	#spriteType = {
+	#	name = "GFX_society_warrior_lodge_african_female_clothes_infront"
+	#	textureFile = "gfx/characters/societies/wl_african_female_clothes_infront.dds"
+	#	noOfFrames = 4
+	#}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_african_female_headgear_behind"
+		textureFile = "gfx/characters/societies/wl_african_female_headgear_behind.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_society_warrior_lodge_african_female_headgear"
+		textureFile = "gfx/characters/societies/wl_african_female_headgear.dds"
+		noOfFrames = 4
+		norefcount = yes
+	}
+}

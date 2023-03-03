@@ -1,0 +1,632 @@
+# p5 Headgear
+5 = {
+	0 = { # 0 - Imperial crown/Caliph turban
+		factor = 99
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_emperor = yes
+					blg_merchant_headgear = yes
+				}
+				NOR = {
+					trait = in_hiding
+					blg_pilgrimage = yes
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 1 }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			blg_merchant_headgear = yes
+		}
+	}
+
+	1 = { # a - Royal crown/turban 1
+		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_king = yes
+					blg_merchant_headgear = yes
+				}
+				NOR = {
+					trait = in_hiding
+					blg_pilgrimage = yes
+				}
+				trigger_if = {
+					limit = {
+						is_female = yes
+						culture = hadhar
+					}
+					OR = {
+						religion = pantheist_league
+						trait = moralist
+					}
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 2 }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			OR = {
+				has_portrait_property = { layer = 5 index = 2 }
+				has_portrait_property = { layer = 5 index = 3 }
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+		}
+	}
+
+	2 = { # b - Royal crown/turban 2
+		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_king = yes
+					blg_merchant_headgear = yes
+					AND = {
+						is_female = yes
+						culture = hadhar
+						OR = {
+							higher_real_tier_than = count
+							spouse_even_if_dead = { higher_real_tier_than = count }
+							has_minor_title = title_prince
+							has_minor_title = title_queen_mother
+						}
+						NOR = {
+							religion = pantheist_league
+							trait = moralist
+						}
+					}
+				}
+				NOR = {
+					trait = in_hiding
+					blg_pilgrimage = yes
+				}
+				trigger_if = {
+					limit = {
+						is_female = yes
+						OR = {
+							culture = badia
+							culture = mari
+						}
+					}
+					OR = {
+						religion = pantheist_league
+						trait = moralist
+					}
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 3 }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			OR = {
+				has_portrait_property = { layer = 5 index = 1 }
+				has_portrait_property = { layer = 5 index = 3 }
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+		}
+	}
+
+	3 = { # c - Royal crown/turban 3
+		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_king = yes
+					blg_merchant_headgear = yes
+					AND = {
+						is_female = yes
+						culture = hadhar
+						OR = {
+							higher_real_tier_than = count
+							spouse_even_if_dead = { higher_real_tier_than = count }
+							has_minor_title = title_prince
+							has_minor_title = title_queen_mother
+						}
+						NOR = {
+							religion = pantheist_league
+							trait = moralist
+						}
+					}
+				}
+				NOR = {
+					trait = in_hiding
+					blg_pilgrimage = yes
+				}
+				trigger_if = {
+					limit = {
+						blg_headgear_chinese = yes
+					}
+					song_dynasty_futou_trigger = yes
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 4 }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			OR = {
+				has_portrait_property = { layer = 5 index = 1 }
+				has_portrait_property = { layer = 5 index = 2 }
+				has_portrait_property = { layer = 5 index = 4 }
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			song_dynasty_futou_trigger = yes
+		}
+
+		modifier = {
+			factor = 99
+			blg_headgear_persian_crown = yes
+		}
+	}
+
+	4 = { # d - Simple golden band/turban
+		factor = 5
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				blg_headgear_duke = yes
+				blg_headgear_king = no
+				NOR = {
+					trait = in_hiding
+					blg_pilgrimage = yes
+				}
+				trigger_if = {
+					limit = {
+						is_female = yes
+						culture = hadhar
+					}
+					OR = {
+						religion = pantheist_league
+						trait = moralist
+					}
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 5 }
+			}
+		}
+
+		modifier = {
+			factor = 0.05
+			OR = {
+				has_portrait_property = { layer = 5 index = 1 }
+				has_portrait_property = { layer = 5 index = 2 }
+				has_portrait_property = { layer = 5 index = 3 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 9 }
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			blg_blocked_duke = yes
+		}
+	}
+
+	5 = { # e - Common headgear 1
+		factor = 1
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				blg_headgear_common = yes
+				trigger_if = {
+					limit = {
+						is_female = no
+						blg_culture_celtic = yes
+					}
+					blg_clothes_noble = no
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 6 }
+			}
+		}
+
+		modifier = {
+			factor = 0.05
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 9 }
+				has_portrait_property = { layer = 5 index = 11 }
+				NAND = {
+					year < 950
+					has_portrait_property = { layer = 31 index = 0 }
+				}
+			}
+		}
+
+		modifier = {
+			factor = 2
+			is_female = yes
+			is_married = no
+			blg_culture_west_slavic = yes
+		}
+
+		modifier = {
+			factor = 1000
+			trait = leper
+			blg_headgear_alternate_leper = yes
+		}
+	}
+
+	6 = { # f - Common headgear 2
+		factor = 1
+		hide_layers = { 31 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				blg_headgear_common = yes
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 7 }
+			}
+		}
+
+		modifier = {
+			factor = 0.05
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 9 }
+				has_portrait_property = { layer = 5 index = 11 }
+				NOT = { has_portrait_property = { layer = 31 index = 0 } }
+			}
+		}
+	}
+
+	7 = { # g - Common headgear 3
+		factor = 1
+		hide_layers = { 31 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				blg_headgear_common = yes
+				trigger_if = {
+					limit = {
+						is_female = yes
+						culture = untheric
+					}
+					OR = {
+						religion = pantheist_league
+						trait = moralist
+					}
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 8 }
+			}
+		}
+
+		modifier = {
+			factor = 0.05
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 9 }
+				has_portrait_property = { layer = 5 index = 11 }
+				NOT = { has_portrait_property = { layer = 31 index = 0 } }
+			}
+		}
+	}
+
+	8 = { # h - Common headgear 4
+		factor = 1
+		hide_layers = { 31 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				blg_headgear_common = yes
+				trigger_if = {
+					limit = {
+						is_female = yes
+						blg_culture_west_slavic = yes
+					}
+					is_married = no
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 9 }
+			}
+		}
+
+		modifier = {
+			factor = 0.05
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 9 }
+				has_portrait_property = { layer = 5 index = 11 }
+				NOT = { has_portrait_property = { layer = 31 index = 0 } }
+			}
+		}
+
+		modifier = {
+			factor = 2
+			is_female = yes
+			is_married = no
+			blg_culture_west_slavic = yes
+		}
+	}
+
+	9 = { # i - Shady headgear
+		factor = 3
+		hide_layers = { 31 = {} }
+		hide_layers = { 32 = {} }
+		hide_layers = { 33 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_intrigue = yes
+					trait = in_hiding
+					trait = leper
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 10 }
+			}
+		}
+
+		modifier = {
+			factor = 33
+			OR = {
+				has_job_title = job_spymaster
+				trait = leper
+			}
+		}
+	}
+
+	10 = { # j - Martial headgear
+		factor = 100
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_headgear value = 11 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_headgear = yes
+					}
+					is_variable_equal = { which = ca_headgear value = 0 }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_headgear value = 13 } }
+					blg_headgear_military = yes
+					OR = {
+						blg_elite_commander = no
+						blg_mercenary = yes
+						blg_peasant = yes
+						blg_default_clothing = yes
+					}
+					NOR = {
+						blg_prisoner = yes
+						blg_saint = yes
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			blg_merchant_headgear = yes
+		}
+	}
+
+	11 = { # k - Blank
+		factor = 4
+
+		trigger = {
+			trigger_if = {
+				limit = { is_variable_equal = { which = ca_headgear value = 0 } }
+				OR = {
+					blg_headgear_duke = no
+					trait = in_hiding
+					blg_prisoner = yes
+					blg_saint = yes
+					blg_pilgrimage = yes
+					blg_peasant = yes
+					blg_holy_order = yes
+				}
+				trigger_if = {
+					limit = {
+						is_female = yes
+						blg_modest = yes
+					}
+					OR = {
+						blg_prisoner = yes
+						blg_saint = yes
+						blg_slave = yes
+					}
+				}
+			}
+			trigger_else = {
+				is_variable_equal = { which = ca_headgear value = 12 }
+			}
+		}
+
+		modifier = {
+			factor = 1000
+			OR = {
+				blg_prisoner = yes
+				blg_saint = yes
+			}
+		}
+
+		modifier = {
+			factor = 10
+			blg_slave = yes
+		}
+
+		modifier = {
+			factor = 0.1
+			blg_headgear_covered = yes
+			NOT = { trait = cynical }
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				has_portrait_property = { layer = 3 index = 10 }
+				has_portrait_property = { layer = 3 index = 12 }
+				has_portrait_property = { layer = 3 index = 13 }
+				has_portrait_property = { layer = 3 index = 14 }
+			}
+			blg_headgear_covered = no
+		}
+
+		modifier = {
+			factor = 0.05
+			OR = {
+				has_portrait_property = { layer = 5 index = 4 }
+				has_portrait_property = { layer = 5 index = 5 }
+				has_portrait_property = { layer = 5 index = 6 }
+				has_portrait_property = { layer = 5 index = 7 }
+				has_portrait_property = { layer = 5 index = 8 }
+				has_portrait_property = { layer = 5 index = 9 }
+			}
+		}
+
+		modifier = {
+			factor = 20
+			has_dlc = "Holy Fury"
+			is_female = yes
+			blg_headgear_overlayer = yes
+		}
+
+		modifier = {
+			factor = 0.25
+			employer = { is_patrician = yes }
+		}
+	}
+
+	12 = { # l - Royal helmet
+		factor = 100
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_headgear value = 13 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_headgear = yes
+					}
+					is_variable_equal = { which = ca_headgear value = 0 }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_headgear value = 14 } }
+					blg_headgear_military = yes
+					blg_headgear_king = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			blg_merchant_headgear = yes
+		}
+	}
+
+	13 = { # m - Ducal helmet
+		factor = 100
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_headgear value = 14 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_headgear = yes
+					}
+					is_variable_equal = { which = ca_headgear value = 0 }
+				}
+				trigger_else = {
+					NOT = { check_variable = { which = ca_headgear value = 15 } }
+					OR = {
+						blg_headgear_military = yes
+						blg_military_governor = yes
+					}
+					blg_elite_commander = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			blg_merchant_headgear = yes
+		}
+
+		modifier = {
+			factor = 0.99
+			blg_headgear_chinese = yes
+		}
+	}
+
+	14 = { # n - Chinese war gear
+		factor = 99
+		hide_layers = { 43 = {} }
+
+		trigger = {
+			trigger_if = {
+				limit = { NOT = { is_variable_equal = { which = ca_headgear value = 15 } } }
+				trigger_if = {
+					limit = {
+						blg_merchant_headgear = yes
+					}
+					is_variable_equal = { which = ca_headgear value = 0 }
+				}
+				trigger_else = {
+					blg_headgear_chinese = yes
+					blg_headgear_military = yes
+					blg_elite_commander = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.01
+			blg_merchant_headgear = yes
+		}
+	}
+}

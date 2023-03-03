@@ -170,10 +170,10 @@ blg_artifact_scepter_hellenic = {
 		}
 		any_artifact = {
 			is_artifact_equipped = yes
-			OR = {
-				artifact_type = scepter_hellenic_fylkir
+			#OR = {
+				#artifact_type = scepter_hellenic_fylkir
 				artifact_type = spear_of_destiny
-			}
+			#}
 		}
 	}
 }
@@ -385,17 +385,9 @@ blg_crown_finnish = {
 
 # African religious crown.
 blg_crown_african = {
-	OR = {
-		any_artifact = {
-			is_artifact_equipped = yes
-			artifact_type = crown_west_african_fylkir
-		}
-		AND = {
-			rightful_religious_head = ROOT
-			blg_priest = yes
-			religion_openly_aztec_or_reformed_trigger = yes
-		}
-	}
+	rightful_religious_head = ROOT
+	blg_priest = yes
+	religion_openly_aztec_or_reformed_trigger = yes
 }
 
 # Slavic religious crown.
@@ -430,21 +422,14 @@ blg_crown_baltic = {
 
 # Aztec religious crown.
 blg_crown_aztec = {
-	OR = {
-		any_artifact = {
-			is_artifact_equipped = yes
-			artifact_type = crown_aztec_fylkir
-		}
-	}
+	always = no
 }
 
 # Zunist religious crown.
 blg_crown_zunist = {
-	AND = {
-		rightful_religious_head = ROOT
-		blg_priest = yes
-		religion_group = egyptian_group
-	}
+	rightful_religious_head = ROOT
+	blg_priest = yes
+	religion_group = egyptian_group
 }
 
 # Crowned Crusader Helmet.

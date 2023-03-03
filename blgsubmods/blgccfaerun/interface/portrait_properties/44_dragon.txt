@@ -61,7 +61,10 @@
 		factor = 100
 		trigger = {
 			gfx_culture_scope = {
-				culture = silver_dragon
+				OR = {
+					culture = silver_dragon
+					culture = steel_dragon
+				}
 			}
 		}
 	}
@@ -79,7 +82,10 @@
 		factor = 100
 		trigger = {
 			gfx_culture_scope = {
-				culture = bronze_dragon
+				OR = {
+					culture = bronze_dragon
+					culture = brown_dragon
+				}
 			}
 		}
 	}
@@ -115,7 +121,10 @@
 		factor = 100
 		trigger = {
 			gfx_culture_scope = {
-				culture = crystal_dragon
+				OR = {
+					culture = crystal_dragon
+					culture = song_dragon
+				}
 			}
 		}
 	}

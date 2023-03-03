@@ -73,7 +73,7 @@ blg_headgear_persian_crown = {
 
 # Uses French headgear accessories.
 blg_headgear_overlayer = {
-	culture = cormyrian
+	culture = cormyrean
 }
 
 # These cultures use commmon headgear in addition for dukes.
@@ -119,6 +119,7 @@ blg_default_clothing = {
 		culture_group = mordrin_group
 		culture_group = goblinoid_group
 		culture_group = minotaur_group
+		culture_group = dragonkin_group
 		culture_group = fish_group
 		culture_group = scaly_group
 		culture_group = centaur_group
@@ -240,12 +241,12 @@ blg_petty_king = {
 	}
 
 	OR = {
-		culture_group = zakharan_group
 		culture_group = goblinoid_group
 		culture_group = ulutiun_group
 		culture = gnome
 		culture = gold_dwarf
 		culture = shield_dwarf
+		culture = duergar
 		culture = troll
 		culture = northlander
 		culture = reacher

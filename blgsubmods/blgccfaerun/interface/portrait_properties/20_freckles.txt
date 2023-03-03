@@ -1,0 +1,67 @@
+# p20 freckles
+#Freckles traits from thinnest to thickest:
+#freckles_3
+#freckles_2
+#freckles
+#freckles_4
+#freckles_5
+20 = {
+	0 = { # 0 - blank
+		factor = 1
+
+		modifier = {
+			factor = 100
+			graphical_culture = horsegfx
+			NOR = {
+				trait = immortal
+				trait = avatar
+				evilcat_is_chosen = yes
+			}
+		}
+	}
+
+	1 = { # a - freckles
+		factor = 100
+		trigger = {
+			trigger_if = {
+				limit = { graphical_culture = horsegfx }
+				OR = {
+					trait = immortal
+					trait = avatar
+					evilcat_is_chosen = yes
+				}
+			}
+			trigger_else = {
+				trait = freckles
+			}
+		}
+	}
+
+	2 = { # b - freckles
+		factor = 100
+		trigger = {
+			trait = freckles_2
+		}
+	}
+
+	3 = { # c - freckles
+		factor = 100
+		trigger = {
+			trait = freckles_3
+		}
+	}
+
+	4 = { # d - freckles
+		factor = 100
+		trigger = {
+			trait = freckles_4
+		}
+	}
+
+	5 = { # e - freckles
+		factor = 100
+		trigger = {
+			trait = freckles_5
+		}
+	}
+}

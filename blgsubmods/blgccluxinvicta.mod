@@ -4,7 +4,6 @@ dependencies=
 {
 	"Lux Invicta"
 	"Lux Invicta v0.6K19"
-	"Lux Invicta (June 2021)"
 	"Lux Invicta v0.6K16"
 	"Cultural Cities Remix"
 	"Better Looking Garbs"

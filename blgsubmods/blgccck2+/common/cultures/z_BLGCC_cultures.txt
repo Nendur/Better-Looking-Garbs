@@ -94,13 +94,13 @@ finno_ugric = {
 
 baltic = {
 	latgalian = {
-		graphical_cultures = { balticgfx westernslavicgfx }
+		graphical_cultures = { balticgfx baltgfx westernslavicgfx }
 	}
 	lithuanian = {
-		graphical_cultures = { balticgfx westernslavicgfx }
+		graphical_cultures = { balticgfx baltgfx westernslavicgfx }
 	}
 	prussian = {
-		graphical_cultures = { balticgfx westernslavicgfx }
+		graphical_cultures = { balticgfx baltgfx westernslavicgfx }
 	}
 }
 
@@ -132,7 +132,7 @@ arabic = {
 
 amazigh = {
 	atlasian = { # Tamazight
-		graphical_cultures = { berbergfx }
+		graphical_cultures = { berbergfx maghrebgfx }
 		secondary_event_pictures = bedouin_arabic
 	}
 	tuareg = { # Tuareg
@@ -140,7 +140,7 @@ amazigh = {
 		secondary_event_pictures = bedouin_arabic
 	}
 	zenati = { # Zenati
-		graphical_cultures = { berbergfx }
+		graphical_cultures = { berbergfx maghrebgfx }
 		secondary_event_pictures = bedouin_arabic
 	}
 	bafour = {
@@ -152,32 +152,32 @@ amazigh = {
 		secondary_event_pictures = bedouin_arabic
 	}
 	guanche = { # Guanche
-		graphical_cultures = { berbergfx }
+		graphical_cultures = { berbergfx maghrebgfx }
 		secondary_event_pictures = bedouin_arabic
 	}
 }
 
 south_slavic = {
 	yugoslavian = {
-		graphical_cultures = { serbsouthslavicgfx }
+		graphical_cultures = { serbsouthslavicgfx southernslavicgfx }
 	}
 	croatian = {
-		graphical_cultures = { croatsouthslavicgfx }
+		graphical_cultures = { croatsouthslavicgfx southernslavicgfx }
 	}
 	serbian = {
-		graphical_cultures = { serbsouthslavicgfx }
+		graphical_cultures = { serbsouthslavicgfx southernslavicgfx }
 	}
 	bulgarian = {
-		graphical_cultures = { serbsouthslavicgfx easternslavicgfx }
+		graphical_cultures = { serbsouthslavicgfx bulgargfx easternslavicgfx }
 	}
 	carantanian = {
-		graphical_cultures = { bohemiangfx westernslavicgfx }
+		graphical_cultures = { bohemiangfx westernslavicgfx southernslavicgfx }
 	}
 }
 
 magyar = {
 	hungarian = {
-		graphical_cultures = { magyargfx }
+		graphical_cultures = { magyargfx hungariangfx }
 	}
 }
 
@@ -310,7 +310,7 @@ crusader_group = {
 }
 
 franco_germanic = {
-	graphical_cultures = { westerngfx }
+	graphical_cultures = { cleanwesterngfx westerngfx }
 
 	dutch = {
 		graphical_cultures = { dutchgfx }

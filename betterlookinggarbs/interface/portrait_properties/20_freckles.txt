@@ -12,7 +12,7 @@
 		modifier = {
 			factor = 100
 			graphical_culture = horsegfx
-			immortal = no
+			NOT = { trait = immortal }
 		}
 	}
 
@@ -21,7 +21,7 @@
 		trigger = {
 			trigger_if = {
 				limit = { graphical_culture = horsegfx }
-				immortal = yes
+				trait = immortal
 			}
 			trigger_else = {
 				trait = freckles

@@ -253,7 +253,7 @@ blg_clothes_military = {
 				is_landed = no
 			}
 		}
-		blg_duelling = yes
+		#blg_duelling = yes
 		has_job_title = job_marshal
 		death_reason = death_battle
 		death_reason = death_duel
