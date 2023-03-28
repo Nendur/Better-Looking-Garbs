@@ -124,6 +124,7 @@
 				OR = {
 					culture = crystal_dragon
 					culture = song_dragon
+					culture = mercury_dragon
 				}
 			}
 		}

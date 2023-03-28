@@ -43,18 +43,11 @@ blg_drooling = {
 	}
 }
 
-# Fat or sturdy.
+# Fat physique.
 blg_fat = {
-	OR = {
-		trait = is_fat
-		trait = sturdy
-		trait = mythos_giant
-		AND = {
-			trait = dwarf
-			blg_fair = no
-		}
-	}
+	trait = is_fat
 }
+
 
 # Feverish.
 blg_fever = {
@@ -123,6 +116,18 @@ blg_rash = {
 # Baggy eyes.
 blg_stressed = {
 	trait = stressed
+}
+
+# Sturdy physique.
+blg_sturdy = {
+	OR = {
+		trait = sturdy
+		trait = mythos_giant
+		AND = {
+			trait = dwarf
+			blg_fair = no
+		}
+	}
 }
 
 # Remaining food drips.

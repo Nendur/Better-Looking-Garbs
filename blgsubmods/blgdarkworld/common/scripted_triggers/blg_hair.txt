@@ -205,6 +205,7 @@ blg_hair_byzantine = {
 	OR = {
 		graphical_culture = byzantinegfx
 		graphical_culture = hellenicgfx
+		graphical_culture = sardiniangfx
 	}
 }
 
@@ -447,6 +448,7 @@ blg_beard_egyptian = {
 	OR = {
 		graphical_culture = egyptiangfx
 		graphical_culture = italiangfx
+		graphical_culture = sardiniangfx
 	}
 }
 

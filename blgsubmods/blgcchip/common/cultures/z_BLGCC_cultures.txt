@@ -118,7 +118,7 @@ celtic = {
 }
 
 finno_ugric = {
-	graphical_cultures = { ugricgfx norsegfx easterngfx }
+	graphical_cultures = { ugricgfx pagangfx norsegfx easterngfx }
 
 	lappish = {
 		graphical_cultures = { siberiangfx }
@@ -363,7 +363,7 @@ italian_group = {
 		graphical_cultures = { siciliangfx }
 	}
 	sardinian = {
-		graphical_cultures = { italiangfx }
+		graphical_cultures = { sardiniangfx }
 	}
 	umbrian = {
 		graphical_cultures = { italiangfx }

@@ -43,16 +43,9 @@ blg_drooling = {
 	}
 }
 
-# Fat or sturdy.
+# Fat physique.
 blg_fat = {
-	OR = {
-		trait = is_fat
-		trait = sturdy
-		AND = {
-			trait = dwarf
-			blg_fair = no
-		}
-	}
+	trait = is_fat
 }
 
 # Feverish.
@@ -140,6 +133,17 @@ blg_stressed = {
 		trait = rtp_sanies_lupinus_tr
 		trait = rtp_corruption_tr
 		trait = rtp_mana_poisoning_tr
+	}
+}
+
+# Sturdy physique.
+blg_sturdy = {
+	OR = {
+		trait = sturdy
+		AND = {
+			trait = dwarf
+			blg_fair = no
+		}
 	}
 }
 

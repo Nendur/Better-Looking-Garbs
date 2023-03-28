@@ -38,6 +38,13 @@ objectTypes = {
 	}
 
 	pdxmesh = {
+		name = "tengrigfx_job_spiritual"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
 		name = "reformedmongolgfx_job_spiritual"
 		file = "gfx/models/Mapindicators/cote_mongol_spiritual.mesh"
 		animation = { id = "idle"		type = "cote_mongol_spiritual_idle_animation" }
@@ -45,9 +52,16 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "arabicgfx_job_spiritual"
+		name = "bongfx_job_spiritual"
 		file = "gfx/models/Mapindicators/cote_mongol_spiritual.mesh"
 		animation = { id = "idle"		type = "cote_mongol_spiritual_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "chinesegfx_job_treasurer"
+		file = "gfx/models/Mapindicators/cote_mongol_steward.mesh"
+		animation = { id = "idle"		type = "cote_mongol_steward_idle_animation" }
 		scale = 0.8
 	}
 
@@ -89,6 +103,13 @@ objectTypes = {
 	}
 
 	pdxmesh = {
+		name = "tengrigfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
 		name = "reformedmongolgfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
 		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
@@ -96,7 +117,7 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "arabicgfx_job_spiritual_female"
+		name = "bongfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
 		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
 		scale = 0.8

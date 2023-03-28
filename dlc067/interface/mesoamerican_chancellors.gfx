@@ -1,6 +1,7 @@
 objectTypes = {
 ###MESOAMERICAN###
 
+# Male
 	pdxmesh = {
 		name = "mesoamericangfx_job_treasurer"
 		file = "gfx/models/Mapindicators/afc_african_steward.mesh"
@@ -22,6 +23,14 @@ objectTypes = {
 		scale = 0.8
 	}
 
+	pdxmesh = {
+		name = "aztecgfx_job_spiritual"
+		file = "gfx/models/Mapindicators/afc_african_spiritual.mesh"
+		animation = { id = "idle"		type = "afc_african_spiritual_idle_animation" }
+		scale = 0.8
+	}
+
+# Female
 	pdxmesh = {
 		name = "mesoamericangfx_job_chancellor_female"
 		file = "gfx/models/Mapindicators/afc_african_chancellor_female.mesh"
@@ -52,6 +61,13 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "mesoamericangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/afc_african_spiritual_female.mesh"
+		animation = { id = "idle"		type = "afc_african_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "aztecgfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/afc_african_spiritual_female.mesh"
 		animation = { id = "idle"		type = "afc_african_spiritual_female_idle_animation" }
 		scale = 0.8

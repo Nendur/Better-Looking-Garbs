@@ -1,6 +1,7 @@
 ###INDIAN FEMALE###
 objectTypes = {
 
+# Indian
 	pdxmesh = {
 		name = "indiangfx_job_chancellor_female"
 		file = "gfx/models/Mapindicators/ifc_indian_chancellor_female.mesh"
@@ -50,6 +51,7 @@ objectTypes = {
 		scale = 0.8
 	}
 
+# Chinese
 	pdxmesh = {
 		name = "chinesegfx_job_treasurer_female"
 		file = "gfx/models/Mapindicators/ifc_indian_steward_female.mesh"
@@ -75,6 +77,42 @@ objectTypes = {
 		name = "chinesegfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/ifc_indian_spiritual_female.mesh"
 		animation = { id = "idle"		type = "ifc_indian_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "taoistgfx_job_spiritual"
+		file = "gfx/models/Mapindicators/ifc_buddhist_female.mesh"
+		animation = { id = "idle"		type = "ifc_buddhist_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "taoistgfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/ifc_indian_spiritual_female.mesh"
+		animation = { id = "idle"		type = "ifc_indian_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+# Kemetic
+	pdxmesh = {
+		name = "egyptiangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/ifc_jain_female.mesh"
+		animation = { id = "idle"		type = "ifc_jain_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "kemeticgfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/ifc_jain_female.mesh"
+		animation = { id = "idle"		type = "ifc_jain_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "mulangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/ifc_jain_female.mesh"
+		animation = { id = "idle"		type = "ifc_jain_female_idle_animation" }
 		scale = 0.8
 	}
 }

@@ -1,5 +1,7 @@
 Changelog:
 
+  Support spiritual councillors for CleanSlates religion setup.
+  Added Sardinian portraits.
   Fixed attack animation on French knights.
 
 10-10-2022

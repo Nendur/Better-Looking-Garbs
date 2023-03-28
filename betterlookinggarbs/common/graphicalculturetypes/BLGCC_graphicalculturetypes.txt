@@ -110,6 +110,9 @@ romanobalkangfx = {
 romanobritishgfx = {
 	skin_tone = 0
 }
+sardiniangfx = {
+	skin_tone = 1
+}
 scandinaviangfx = {
 	skin_tone = 0
 }

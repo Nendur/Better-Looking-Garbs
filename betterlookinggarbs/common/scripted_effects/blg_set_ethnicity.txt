@@ -341,10 +341,19 @@ blg_set_ethnicity_iberian = {
 		if = {
 			limit = {
 				OR = {
-					blg_culture_france = yes
 					blg_culture_italian = yes
-					blg_culture_western_european = yes
+					blg_culture_byzantine = yes
 					blg_culture_eastern_european = yes
+				}
+			}
+			set_graphical_culture = sardinian
+		}
+		else_if = {
+			limit = {
+				OR = {
+					religion_group = christian
+					blg_culture_france = yes
+					blg_culture_western_european = yes
 				}
 			}
 			set_graphical_culture = castillan

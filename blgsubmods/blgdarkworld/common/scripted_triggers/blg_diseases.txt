@@ -45,16 +45,9 @@ blg_drooling = {
 	}
 }
 
-# Fat or sturdy.
+# Fat physique.
 blg_fat = {
-	OR = {
-		trait = is_fat
-		trait = sturdy
-		AND = {
-			trait = dwarf
-			blg_fair = no
-		}
-	}
+	trait = is_fat
 }
 
 # Feverish.
@@ -130,6 +123,17 @@ blg_stressed = {
 	OR = {
 		trait = stressed
 		has_character_modifier = dw_mental_suppression
+	}
+}
+
+# Sturdy physique.
+blg_sturdy = {
+	OR = {
+		trait = sturdy
+		AND = {
+			trait = dwarf
+			blg_fair = no
+		}
 	}
 }
 

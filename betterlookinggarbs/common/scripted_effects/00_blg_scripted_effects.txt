@@ -136,6 +136,7 @@ blg_regional_diversity = {
 						NOR = {
 							graphical_culture = romangfx
 							graphical_culture = bohemiangfx
+							graphical_culture = sardiniangfx
 						}
 					}
 				}

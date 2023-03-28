@@ -5,6 +5,7 @@
 		trigger = {
 			NOR = {
 				blg_fat = yes
+				blg_sturdy = yes
 				trait = ala_regular_tits
 				trait = dw_regular_tits
 				trait = ala_big_tits
@@ -27,35 +28,35 @@
 	1 = { # a - Sturdy young
 		factor = 100
 		trigger = {
-			blg_fat = yes
+			blg_sturdy = yes
+			blg_fat = no
 			practical_age < 30
-			NOT = { trait = is_fat }
 		}
 	}
 
 	2 = { # b - Sturdy mid aged
 		factor = 100
 		trigger = {
-			blg_fat = yes
+			blg_sturdy = yes
+			blg_fat = no
 			practical_age >= 30
 			practical_age < 50
-			NOT = { trait = is_fat }
 		}
 	}
 
 	3 = { # c - Sturdy old
 		factor = 100
 		trigger = {
-			blg_fat = yes
+			blg_sturdy = yes
+			blg_fat = no
 			practical_age >= 50
-			NOT = { trait = is_fat }
 		}
 	}
 
 	4 = { # d - Fat young
 		factor = 100
 		trigger = {
-			trait = is_fat
+			blg_fat = yes
 			practical_age < 30
 		}
 	}
@@ -63,7 +64,7 @@
 	5 = { # e - Fat mid aged
 		factor = 100
 		trigger = {
-			trait = is_fat
+			blg_fat = yes
 			practical_age >= 30
 			practical_age < 50
 		}
@@ -72,7 +73,7 @@
 	6 = { # f - Fat old
 		factor = 100
 		trigger = {
-			trait = is_fat
+			blg_fat = yes
 			practical_age >= 50
 		}
 	}
@@ -85,6 +86,7 @@
 				trait = dw_regular_tits
 			}
 			blg_fat = no
+			blg_sturdy = no
 		}
 	}
 
@@ -96,6 +98,7 @@
 				trait = dw_big_tits
 			}
 			blg_fat = no
+			blg_sturdy = no
 		}
 	}
 
@@ -107,6 +110,7 @@
 				trait = dw_huge_tits
 			}
 			blg_fat = no
+			blg_sturdy = no
 		}
 	}
 
@@ -118,6 +122,7 @@
 				trait = dw_enormous_tits
 			}
 			blg_fat = no
+			blg_sturdy = no
 		}
 	}
 
@@ -129,6 +134,7 @@
 				trait = dw_gigantic_tits
 			}
 			blg_fat = no
+			blg_sturdy = no
 		}
 	}
 }

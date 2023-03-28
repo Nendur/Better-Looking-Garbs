@@ -62,7 +62,7 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
-		name = "easterngfx_job_spiritual"
+		name = "orthodoxgfx_job_spiritual"
 		actorfile = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xsm"
@@ -78,7 +78,7 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
-		name = "copticgfx_job_spiritual"
+		name = "miaphysitegfx_job_spiritual"
 		actorfile = "gfx\models\Mapindicators\Eastern_Copt_Spritual.xac"
 
 		idle   = "gfx\models\Mapindicators\Eastern_Lord_Spritual.xsm"

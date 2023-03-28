@@ -131,6 +131,17 @@ blg_stressed = {
 	}
 }
 
+# Sturdy physique.
+blg_sturdy = {
+	OR = {
+		trait = sturdy
+		AND = {
+			trait = dwarf
+			blg_fair = no
+		}
+	}
+}
+
 # Remaining food drips.
 blg_vomit = {
 	OR = {

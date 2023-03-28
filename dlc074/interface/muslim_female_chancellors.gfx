@@ -49,4 +49,11 @@ objectTypes = {
 		animation = { id = "idle"		type = "mfc_muslim_spiritual_female_idle_animation" }
 		scale = 0.8
 	}
+
+	pdxmesh = {
+		name = "islamicgfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/mfc_muslim_spiritual_female.mesh"
+		animation = { id = "idle"		type = "mfc_muslim_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
 }

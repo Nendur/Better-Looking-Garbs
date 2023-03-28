@@ -44,6 +44,9 @@ latin = {
 	outremer = {
 		graphical_cultures = { outremergfx holygfx italiangfx levantinegfx southerngfx }
 	}
+	sardinian = {
+		graphical_cultures = { sardiniangfx italiangfx southerngfx }
+	}
 }
 
 iberian = {
@@ -92,7 +95,7 @@ celtic = {
 }
 
 finno_ugric = {
-	graphical_cultures = { ugricgfx norsegfx easterngfx }
+	graphical_cultures = { ugricgfx pagangfx norsegfx easterngfx }
 
 	lappish = {
 		graphical_cultures = { siberiangfx }

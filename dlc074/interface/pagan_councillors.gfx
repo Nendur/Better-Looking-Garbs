@@ -1,6 +1,6 @@
 objectTypes = {
 
-### Misc ######################################################
+############################# MALE ###############################
 
 	pdxmesh = {
 		name = "pagangfx_job_chancellor"
@@ -87,20 +87,6 @@ objectTypes = {
 		scale = 0.8f
 	}
 
-	pdxmesh = {
-		name = "oldgodsgfx_job_spiritual"
-		file = "gfx\models\Mapindicators\hf_pagan_priest_male.mesh"
-		animation = { id = "idle"		type = "hf_pagan_priest_male_idle_animation" }
-		scale = 0.8f
-	}
-
-	pdxmesh = {
-		name = "oldgodsgfx_job_spiritual_female"
-		file = "gfx\models\Mapindicators\hf_pagan_priest_female.mesh"
-		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
-		scale = 0.8f
-	}
-
 ### Replacements ######################################################
 
 	pdxmesh = {
@@ -146,6 +132,13 @@ objectTypes = {
 	}
 
 	pdxmesh = {
+		name = "zoroastriangfx_job_spiritual"
+		file = "gfx\models\Mapindicators\hf_roman_chancellor_male.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
+		scale = 0.8f
+	}
+
+	pdxmesh = {
 		name = "persiangfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/ifc_jain_female.mesh"
 		animation = { id = "idle"		type = "ifc_jain_female_idle_animation" }
@@ -153,9 +146,23 @@ objectTypes = {
 	}
 
 	pdxmesh = {
-		name = "egyptiangfx_job_spiritual_female"
+		name = "zoroastriangfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/ifc_jain_female.mesh"
 		animation = { id = "idle"		type = "ifc_jain_female_idle_animation" }
 		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "oldgodsgfx_job_spiritual"
+		file = "gfx\models\Mapindicators\hf_pagan_priest_male.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_male_idle_animation" }
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "oldgodsgfx_job_spiritual_female"
+		file = "gfx\models\Mapindicators\hf_pagan_priest_female.mesh"
+		animation = { id = "idle"		type = "hf_pagan_priest_female_idle_animation" }
+		scale = 0.8f
 	}
 }

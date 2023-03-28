@@ -160,6 +160,7 @@ blg_ethnicity_iberian = {
 		graphical_culture = southerngfx
 		graphical_culture = basquegfx
 		graphical_culture = andalusiangfx
+		graphical_culture = sardiniangfx
 		graphical_culture = celtiberiangfx
 	}
 }

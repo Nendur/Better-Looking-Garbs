@@ -369,7 +369,7 @@ south_slavic = {
 }
 
 finno_ugric = {
-	graphical_cultures = { ugricgfx norsegfx easterngfx }
+	graphical_cultures = { ugricgfx pagangfx norsegfx easterngfx }
 
 	finnish = {
 		graphical_cultures = { ugricgfx }

@@ -1,0 +1,81 @@
+objectTypes = {
+
+# Africangfx
+	pdxmesh = {
+		name = "africangfx_job_chancellor_female"
+		file = "gfx/models/Mapindicators/cote_mongol_chancellor_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_chancellor_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "africangfx_job_treasurer_female"
+		file = "gfx/models/Mapindicators/cote_mongol_steward_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_steward_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "africangfx_job_spymaster_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spymaster_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spymaster_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "africangfx_job_marshal_female"
+		file = "gfx/models/Mapindicators/cote_mongol_marshal_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_marshal_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "africangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "saheliangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "reformedafricangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+# Mesoamerican
+	pdxmesh = {
+		name = "mesoamericangfx_job_spiritual"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "mesoamericangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "aztecgfx_job_spiritual"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "aztecgfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+}

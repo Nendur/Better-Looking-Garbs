@@ -104,7 +104,7 @@ latin = {
 		graphical_cultures = { siciliangfx berbergfx muslimgfx }
 	}
 	sardinian = {
-		graphical_cultures = { italiangfx southerngfx mediterraneangfx }
+		graphical_cultures = { sardiniangfx italiangfx southerngfx mediterraneangfx }
 	}
 	raetoroman = {
 		graphical_cultures = { gallicgfx romangfx }
@@ -184,7 +184,7 @@ torrean_group = {
 	graphical_cultures = { westerngfx }
 
 	corsican = {
-		graphical_cultures = { italiangfx southerngfx }
+		graphical_cultures = { sardiniangfx italiangfx southerngfx }
 	}
 }
 
@@ -336,7 +336,7 @@ celtic = {
 }
 
 finno_ugric = {
-	graphical_cultures = { ugricgfx norsegfx easterngfx }
+	graphical_cultures = { ugricgfx pagangfx norsegfx easterngfx }
 
 	lappish = {
 		graphical_cultures = { siberiangfx }
