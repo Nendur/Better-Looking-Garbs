@@ -4,10 +4,14 @@
 blg_royalty = {
 	OR = {
 		higher_real_tier_than = duke
+		is_the_tenno_trigger = yes
+		is_ryukyuan_tenno_trigger = yes
 		is_or_was_offmap_power_ruler = yes
 		spouse_even_if_dead = {
 			OR = {
 				higher_real_tier_than = duke
+				is_the_tenno_trigger = yes
+				is_ryukyuan_tenno_trigger = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 		}
@@ -161,6 +165,8 @@ blg_crown_emperor = {
 				blg_peasant = yes
 			}
 		}
+		is_the_tenno_trigger = yes
+		is_ryukyuan_tenno_trigger = yes
 		is_or_was_offmap_power_ruler = yes
 	}
 }
@@ -284,10 +290,14 @@ blg_headgear_covered = {
 blg_clothes_royal = {
 	OR = {
 		higher_real_tier_than = duke
+		is_the_tenno_trigger = yes
+		is_ryukyuan_tenno_trigger = yes
 		is_or_was_offmap_power_ruler = yes
 		spouse_even_if_dead = {
 			OR = {
 				higher_real_tier_than = duke
+				is_the_tenno_trigger = yes
+				is_ryukyuan_tenno_trigger = yes
 				is_or_was_offmap_power_ruler = yes
 			}
 		}
@@ -376,7 +386,7 @@ blg_clothes_military = {
 blg_clothes_intrigue = {
 	OR = {
 		has_job_title = job_spymaster
-		trait = schemer
+		trait = master_schemer
 		AND = {
 			intrigue = 12
 			lower_real_tier_than = duke

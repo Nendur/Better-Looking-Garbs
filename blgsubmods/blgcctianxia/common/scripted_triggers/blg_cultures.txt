@@ -56,6 +56,8 @@ blg_clothes_chinese = {
 		culture_group = chinese_group
 		culture = tangut
 		culture = kaifeng
+		culture = nakhi
+		culture = qiang
 	}
 }
 
@@ -66,6 +68,8 @@ blg_headgear_chinese = {
 		culture_group = chinese_group
 		culture = tangut
 		culture = kaifeng
+		culture = nakhi
+		culture = qiang
 	}
 }
 
@@ -98,7 +102,6 @@ blg_common_ducal_headgear = {
 		culture_group = west_african
 		culture_group = central_african
 		culture_group = altaic
-		blg_culture_indian = yes
 		likes_mesoamericans = yes
 		blg_blocked_duke = yes
 	}
@@ -109,7 +112,8 @@ blg_default_clothing = {
 	OR = {
 		culture_group = japonic
 		culture_group = koreanic
-		culture = viet
+		culture_group = mon_khmer_group
+		culture_group = tai_kadai_group
 	}
 }
 
@@ -194,36 +198,35 @@ blg_petty_king = {
 		culture_group = north_germanic
 		culture_group = finno_ugric
 		culture_group = celtic
-		culture_group = koreanic
-		culture = saxon
-		culture = nepali
-		culture = yamato
-		culture = wako
-		culture = ryukyuan
-		culture = tagalog
-		culture = taiwanese
-		culture = dayak
-		culture = minahasan
-		culture = andamanese
-		culture = batak
-		culture = samudran
-		culture = sundanese
-		culture = balinese
-		culture = banjar
-		culture = bugi
-		culture = cebuan
-		culture = papuan
 		culture_group = arabic
+		culture_group = javanese_group
 		blg_culture_sogdian = yes
 		culture_group = east_african
 		likes_tibetans = yes
+		culture = anglo-saxon
+		culture = nepali
+		culture = andamanese
+		culture = banjar
+		culture = bamar
+		culture = pyu
+		culture = chin
+		culture = kayin
+		culture = rakhine
+		culture = ryukyuan
+		culture = jeju
+		culture = malay
+		culture = acehnese
+		culture = samudran
+		culture = taiwanese
+		culture = nivkh
+		culture = papuan
 	}
 }
 
 # These crowns can be combined with French veils.
 blg_veiled_crown = {
 	OR = {
-		culture = frankish
+		culture = french
 		culture = occitan
 		blg_culture_iberian = yes
 		culture_group = celtic
@@ -270,7 +273,6 @@ blg_culture_central_asian = {
 		culture = karluk
 		culture = kirghiz
 		culture = uyghur
-		culture = buryat
 	}
 }
 
@@ -288,11 +290,17 @@ blg_culture_chinese = {
 		culture_group = chinese_group
 		culture_group = japonic
 		culture_group = koreanic
+		culture_group = hmongmien
+		culture_group = rauic_group
+		culture_group = vietic
+		culture_group = taiwanese_group
 		culture = khitan
 		culture = jurchen
 		culture = tangut
-		culture = viet
 		culture = kaifeng
+		culture = nakhi
+		culture = qiang
+		culture = yi
 	}
 }
 
@@ -323,9 +331,9 @@ blg_culture_european = {
 
 blg_culture_france = {
 	OR = {
-		culture = frankish
+		culture = french
 		culture = occitan
-		culture = old_frankish
+		culture = frankish
 		culture = norman
 		culture = dutch
 	}
@@ -334,7 +342,7 @@ blg_culture_france = {
 # Uses French headgear accessories.
 blg_headgear_overlayer = {
 	OR = {
-		culture = frankish
+		culture = french
 		culture = occitan
 	}
 }
@@ -354,7 +362,15 @@ blg_culture_indian = {
 		culture_group = dravidian_group
 		culture_group = mon_khmer_group
 		culture_group = tai_kadai_group
-		culture_group = malayo_polynesian_group
+		culture_group = bornean_group
+		culture_group = chamic
+		culture_group = javanese_group
+		culture_group = ma_i_an
+		culture_group = malay_group
+		culture_group = mekong_group
+		culture_group = sulawesi_group
+		culture_group = andamanese_group
+		culture_group = papuan_group
 	}
 }
 
@@ -400,8 +416,8 @@ blg_culture_roman = {
 # Uses Saxon portraits.
 blg_culture_saxon = {
 	OR = {
+		culture = anglo-saxon
 		culture = saxon
-		culture = old_saxon
 		culture = frisian
 	}
 }
@@ -511,7 +527,16 @@ blg_portrait_indian = {
 		portrait_culture_group = tibetan_group
 		portrait_culture_group = mon_khmer_group
 		portrait_culture_group = tai_kadai_group
-		portrait_culture_group = malayo_polynesian_group
+		portrait_culture_group = bornean_group
+		portrait_culture_group = chamic
+		portrait_culture_group = javanese_group
+		portrait_culture_group = ma_i_an
+		portrait_culture_group = malay_group
+		portrait_culture_group = mekong_group
+		portrait_culture_group = sulawesi_group
+		portrait_culture_group = andamanese_group
+		portrait_culture_group = papuan_group
+		portrait_culture_group = vietic
 	}
 }
 
@@ -564,5 +589,8 @@ blg_portrait_steppes = {
 		portrait_culture_group = koreanic
 		portrait_culture_group = paleosiberian
 		portrait_culture_group = magyar
+		portrait_culture_group = hmongmien
+		portrait_culture_group = rauic_group
+		portrait_culture_group = taiwanese_group
 	}
 }

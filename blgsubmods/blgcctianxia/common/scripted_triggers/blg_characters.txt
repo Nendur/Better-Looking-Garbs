@@ -2,6 +2,11 @@
 
 ### Characters:
 
+# Character is a cannibal.
+blg_cannibal = {
+	trait = cannibal
+}
+
 # Prisoner that is kept gagged.
 blg_dangerous_prisoner = {
 	OR = {
@@ -37,7 +42,7 @@ blg_dirty = {
 
 # Attractive character.
 blg_fair = {
-	trait = fair
+	trait = attractive
 }
 
 # Characters prefers more than common clothing.
@@ -104,7 +109,7 @@ blg_mudsplatter = {
 # Character has a naval theme.
 blg_naval = {
 	OR = {
-		trait = seaking
+		trait = sea_king
 		trait = sea_queen
 		has_minor_title = title_high_admiral
 		has_minor_title = title_lighthouse_custodian
@@ -136,6 +141,7 @@ blg_saint = {
 	OR = {
 		trait = saint
 		has_nickname = nick_the_saint
+		death_reason = death_became_a_god
 	}
 }
 
@@ -143,8 +149,8 @@ blg_saint = {
 blg_seducer = {
 	OR = {
 		trait = lustful
-		trait = seducer
-		trait = seductress
+		trait = master_seducer
+		trait = master_seductress
 	}
 }
 
@@ -158,7 +164,7 @@ blg_socializer = {
 	OR = {
 		trait = gregarious
 		trait = socializer
-		trait = gamer
+		trait = game_master
 	}
 }
 
@@ -200,11 +206,15 @@ blg_feast = {
 		has_character_flag = host_feast_started
 		has_character_flag = guest_feast_started
 		has_character_flag = host_lny_started
-		has_character_flag = coming_to_lny
+		has_character_flag = guest_lny_started
 		has_character_flag = host_hanami_started
-		has_character_flag = coming_to_hanami
+		has_character_flag = guest_hanami_started
 		has_character_flag = host_chuseok_started
 		has_character_flag = guest_chuseok_started
+		has_character_flag = host_bear_festival_started
+		has_character_flag = guest_bear_festival_started
+		has_character_flag = host_iyomante_started
+		has_character_flag = guest_iyomante_started
 		has_character_flag = blot_feast
 		has_character_flag = blot_feast_vassal
 		has_character_flag = holding_ukon_juhla

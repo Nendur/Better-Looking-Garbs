@@ -2,6 +2,7 @@ name="BLG / CC for Tianxia"
 path="mod/blgcctianxia"
 dependencies=
 {
+	"\"Tianxia\""
 	"\"Tianxia: Silk Road Expansion\""
 	"\"Tianxia: Chinese, Khmer, & Tibetan Portraits\""
 	"\"Tianxia: Japanese & Korean Portraits\""

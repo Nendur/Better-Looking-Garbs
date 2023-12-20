@@ -20,7 +20,10 @@ blg_combat_artifacts = {
 blg_artifact_banner_mohammad = {
 	any_artifact = {
 		is_artifact_active = yes
-		artifact_type = holy_banner_of_mohammad
+		OR = {
+			artifact_type = holy_banner_of_mohammad
+			artifact_type = lost_roman_eagle
+		}
 	}
 }
 
@@ -136,6 +139,7 @@ blg_artifact_relic_case = {
 			artifact_type = random_world_mythological_blood
 			artifact_type = random_world_mythological_eye
 			artifact_type = heirloom_seal_of_the_realm
+			artifact_type = gilt_bronze_incense_burner_of_baekje
 			has_artifact_flag = bodypart
 			has_artifact_flag = remains
 			has_artifact_flag = saint_item
@@ -196,6 +200,7 @@ blg_artifact_scroll = {
 			artifact_type = chinese_calligraphy
 			artifact_type = treasure_map
 			artifact_type = fantasy_world_map
+			artifact_type = deed_to_the_dragon_throne
 			has_artifact_flag = scroll
 		}
 	}
@@ -208,12 +213,34 @@ blg_artifact_staff = {
 
 # Black staff.
 blg_artifact_staff_black = {
-	always = no
+	OR = {
+		AND = {
+			blg_priest = yes
+			rightful_religious_head = ROOT
+			religion = andamanese_pagan_reformed
+		}
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = scepter_andamanese_fylkir
+		}
+		trait = dead_scepter_andamanese_fylkir
+	}
 }
 
 # Branch staff.
 blg_artifact_staff_branch = {
-	always = no
+	OR = {
+		any_artifact = {
+			is_artifact_equipped = yes
+			artifact_type = scepter_melanesian_fylkir
+		}
+		trait = dead_scepter_melanesian_fylkir
+		AND = {
+			rightful_religious_head = ROOT
+			blg_priest = yes
+			religion = melanesian_pagan_reformed
+		}
+	}
 }
 
 # Sheperds crook.
@@ -247,28 +274,67 @@ blg_artifact_staff_skull = {
 
 # Staff of Majesty.
 blg_artifact_staff_3 = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		quality >= 3
-		has_artifact_flag = staff
+	OR = {
+		AND = {
+			blg_priest = yes
+			rightful_religious_head = ROOT
+			religion = zhuang_pagan_reformed
+		}
+		any_artifact = {
+			is_artifact_equipped = yes
+			OR = {
+				artifact_type = scepter_zhuang_fylkir
+				AND = {
+					quality >= 3
+					has_artifact_flag = staff
+				}
+			}
+		}
+		trait = dead_scepter_zhuang_fylkir
 	}
 }
 
 # Gold Staff.
 blg_artifact_staff_2 = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		quality == 2
-		has_artifact_flag = staff
+	OR = {
+		AND = {
+			blg_priest = yes
+			rightful_religious_head = ROOT
+			religion = sundanese_pagan_reformed
+		}
+		any_artifact = {
+			is_artifact_equipped = yes
+			OR = {
+				artifact_type = scepter_sundanese_fylkir
+				AND = {
+					quality == 2
+					has_artifact_flag = staff
+				}
+			}
+		}
+		trait = dead_scepter_sundanese_fylkir
 	}
 }
 
 # Silver Staff.
 blg_artifact_staff_1 = {
-	any_artifact = {
-		is_artifact_equipped = yes
-		quality == 1
-		has_artifact_flag = staff
+	OR = {
+		AND = {
+			blg_priest = yes
+			rightful_religious_head = ROOT
+			religion = batak_pagan_reformed
+		}
+		any_artifact = {
+			is_artifact_equipped = yes
+			OR = {
+				artifact_type = scepter_andamanese_fylkir
+				AND = {
+					quality == 1
+					has_artifact_flag = staff
+				}
+			}
+		}
+		trait = dead_scepter_andamanese_fylkir
 	}
 }
 
@@ -279,6 +345,9 @@ blg_artifact_tablet = {
 		OR = {
 			has_artifact_flag = tablet
 			artifact_type = yada_tashy
+			artifact_type = seal_bai_fylkir
+			artifact_type = seal_chinese_fylkir
+			artifact_type = seal_yi_fylkir
 		}
 	}
 }
@@ -329,9 +398,13 @@ blg_crown_diamond = {
 	OR = {
 		any_artifact = {
 			is_artifact_equipped = yes
-			artifact_type = cursed_diamond_crown
+			OR = {
+				artifact_type = cursed_diamond_crown
+				artifact_type = crown_tai_fylkir
+			}
 		}
 		trait = dead_cursed_diamond_crown
+		trait = dead_crown_tai_fylkir
 	}
 }
 
@@ -356,9 +429,13 @@ blg_crown_pahlavi = {
 	OR = {
 		any_artifact = {
 			is_artifact_equipped = yes
-			artifact_type = crown_pahlavi
+			OR = {
+				artifact_type = crown_pahlavi
+				artifact_type = crown_taiwanese_fylkir
+			}
 		}
 		trait = dead_crown_pahlavi
+		trait = dead_crown_taiwanese_fylkir
 	}
 }
 
@@ -367,9 +444,13 @@ blg_crown_fylkir = {
 	OR = {
 		any_artifact = {
 			is_artifact_equipped = yes
-			artifact_type = crown_fylkir
+			OR = {
+				artifact_type = crown_fylkir
+				artifact_type = crown_jurchen_fylkir
+			}
 		}
 		trait = dead_crown_fylkir
+		trait = dead_crown_jurchen_fylkir
 		AND = {
 			rightful_religious_head = ROOT
 			blg_priest = yes
@@ -383,9 +464,13 @@ blg_crown_tengri = {
 	OR = {
 		any_artifact = {
 			is_artifact_equipped = yes
-			artifact_type = crown_tengri_fylkir
+			OR = {
+				artifact_type = crown_tengri_fylkir
+				artifact_type = crown_korean_fylkir
+			}
 		}
 		trait = dead_crown_tengri_fylkir
+		trait = dead_crown_korean_fylkir
 	}
 }
 
@@ -426,9 +511,13 @@ blg_crown_slavic = {
 	OR = {
 		any_artifact = {
 			is_artifact_equipped = yes
-			artifact_type = crown_slavic_fylkir
+			OR = {
+				artifact_type = crown_slavic_fylkir
+				artifact_type = crown_ainu_fylkir
+			}
 		}
 		trait = dead_crown_slavic_fylkir
+		trait = dead_crown_ainu_fylkir
 		AND = {
 			rightful_religious_head = ROOT
 			blg_priest = yes
@@ -469,15 +558,22 @@ blg_crown_zunist = {
 	OR = {
 		any_artifact = {
 			is_artifact_equipped = yes
-			artifact_type = crown_zun_fylkir
+			OR = {
+				artifact_type = crown_zun_fylkir
+				artifact_type = crown_inca_fylkir
+				artifact_type = crown_maian_fylkir
+			}
 		}
 		trait = dead_crown_zun_fylkir
+		trait = dead_crown_inca_fylkir
+		trait = dead_crown_maian_fylkir
 		AND = {
 			rightful_religious_head = ROOT
 			blg_priest = yes
 			OR = {
 				religion_openly_zun_or_reformed_trigger = yes
 				religion_openly_inca_or_reformed_trigger = yes
+				religion = maian_pagan_reformed
 			}
 		}
 	}
@@ -652,6 +748,15 @@ blg_weapon_scimitar_1 = {
 		has_artifact_flag = scimitar
 		artifact_type = scimitar_tier_1_new
 		artifact_type = scimitar_tier_2_new
+		artifact_type = dao
+		artifact_type = dadao
+		artifact_type = talwar
+		artifact_type = celestial_blade
+		artifact_type = balanced_blade
+		artifact_type = heavenly_sword
+		artifact_type = celestial_dragons_blade
+		artifact_type = blade_of_harmonious_balance
+		artifact_type = sword_of_the_heavens_command
 	}
 }
 
@@ -659,12 +764,30 @@ blg_weapon_scimitar_1 = {
 blg_weapon_scimitar_2 = {
 	OR = {
 		has_artifact_flag = scimitar
+		AND = {
+			has_artifact_flag = sword
+			has_artifact_flag = japanese
+		}
 		artifact_type = scimitar_tier_3_golden
 		artifact_type = scimitar_tier_3_fortune
 		artifact_type = scimitar_tier_3_conquest
 		artifact_type = scimitar_tier_4_golden
 		artifact_type = scimitar_tier_4_fortune
 		artifact_type = scimitar_tier_4_conquest
+		artifact_type = tachi
+		artifact_type = odachi
+		artifact_type = rising_sun
+		artifact_type = dragon
+		artifact_type = honor
+		artifact_type = katana_of_the_rising_sun
+		artifact_type = blade_of_the_dragon
+		artifact_type = honor_of_the_samurai
+		artifact_type = destroyer
+		artifact_type = retribution
+		artifact_type = wrath
+		artifact_type = bringer_of_destruction
+		artifact_type = karmic_retribution
+		artifact_type = divine_wrath
 	}
 }
 

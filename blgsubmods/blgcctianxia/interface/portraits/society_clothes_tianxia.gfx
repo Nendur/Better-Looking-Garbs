@@ -2,14 +2,14 @@ spriteTypes = {
 	portraitType = {
 		name = "PORTRAIT_society_ghost_gatherers_clothing"
 		effectFile = "gfx/FX/portrait.lua"
-
+ 
 		weight = {
 			additive_modifier = {
 				value = 10000
 				portrait_clothing = yes
 				portrait_age > child
-
-				portrait_society = the_ghost_gatherers
+ 
+				portrait_society = the_desecrators
 				blg_wear_society_clothing = yes
 				OR = {
 					portrait_in_command = no
@@ -17,7 +17,7 @@ spriteTypes = {
 				}
 			}
 		}
-
+ 
 		layer = {
 			"GFX_society_satanist_female_clothing_behind:c0"
 			"GFX_society_satanist_female_headgear_behind:c1"
@@ -26,7 +26,7 @@ spriteTypes = {
 			"GFX_society_satanist_female_headgear_front:c5"
 			"GFX_empty:c7"
 		}
-
+ 
 		# Correct rank
 		allow_property_values = {
 			3 = {
@@ -77,30 +77,30 @@ spriteTypes = {
 				0 = { always = yes }
 			}
 		}
-
+ 
 		headgear_that_hides_hair = { 0 1 2 3 }
 	}
 
 	portraitType = {
 		name = "PORTRAIT_society_triads_clothing"
 		effectFile = "gfx/FX/portrait.lua"
-
+ 
 		weight = {
 			additive_modifier = {
 				value = 11000
 				portrait_clothing = yes
 				portrait_age > child
-
-				portrait_society = the_underworld_triad
+ 
+				portrait_society = the_mandate_defiers
 				blg_wear_society_clothing = yes
 			}
 		}
-
+ 
 		layer = {
 			"GFX_society_warrior_lodge_african_male_clothes_behind:c0"
 			"GFX_society_satanist_male_clothing_front:c2"
 		}
-
+ 
 		# Correct rank
 		allow_property_values = {
 			3 = {
@@ -373,6 +373,180 @@ spriteTypes = {
 				}
 				3 = {
 					portrait_society_rank = 3
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_nivkh_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 7000
+				portrait_clothing = yes
+				portrait_age > child
+
+				portrait_society = warrior_lodge_nivkh
+				blg_wear_warrior_lodge_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_slavic_male_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_tengri_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_tengri_male_clothes:p3:c2"
+			"GFX_society_warrior_lodge_slavic_male_headgear_mid:p5:c3"
+			"GFX_society_warrior_lodge_slavic_male_headgear:p5:c5"
+			"GFX_empty:c4"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_jurchen_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 7000
+				portrait_clothing = yes
+				portrait_age > child
+
+				portrait_society = warrior_lodge_jurchen
+				blg_wear_warrior_lodge_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_tengri_male_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_bon_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_bon_male_clothes:p3:c2"
+			"GFX_society_warrior_lodge_tengri_male_headgear_mid:p5:c3"
+			"GFX_society_warrior_lodge_tengri_male_headgear:p5:c5"
+			"GFX_empty:c4"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+			5 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
+				}
+			}
+		}
+	}
+
+	portraitType = {
+		effectFile = "gfx/FX/portrait.lua"
+		name = "PORTRAIT_society_warrior_lodge_andamanese_clothing"
+
+		weight = {
+			additive_modifier = {
+				value = 7000
+				portrait_clothing = yes
+				portrait_age > child
+
+				OR = {
+					portrait_society = warrior_lodge_andamanese
+					portrait_society = warrior_lodge_batak
+				}
+				blg_wear_warrior_lodge_clothing = yes
+			}
+		}
+
+		layer = {
+			"GFX_society_warrior_lodge_bon_male_headgear_behind:p5:c1"
+			"GFX_society_warrior_lodge_african_male_clothes_behind:p3:c0"
+			"GFX_society_warrior_lodge_african_male_clothes:p3:c2"
+			"GFX_society_warrior_lodge_bon_male_headgear_mid:p5:c3"
+			"GFX_society_warrior_lodge_bon_male_headgear:p5:c5"
+			"GFX_empty:c4"
+			"GFX_empty:c7"
+		}
+
+		allow_property_values = {
+			3 = {
+				0 = {
+					portrait_society_rank = 1
+				}
+				1 = {
+					portrait_society_rank = 2
+				}
+				2 = {
+					portrait_society_rank = 3
+				}
+				3 = {
+					portrait_society_rank = 4
 				}
 			}
 			5 = {

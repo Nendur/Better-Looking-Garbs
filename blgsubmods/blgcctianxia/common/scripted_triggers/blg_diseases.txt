@@ -1,0 +1,171 @@
+# Diseases and related effects.
+
+### Diseases:
+
+blg_bleeding = {
+	OR = {
+		has_character_modifier = tortured_prisoner
+		has_character_modifier = tortured_witch
+		has_character_modifier = struck_by_lightning
+	}
+}
+
+# Blind, natural or maimed.
+blg_blind = {
+	trait = blinded
+}
+
+# Pox boils.
+blg_boils = {
+	trait = smallpox
+}
+
+# Bubonic boils.
+blg_bubonic = {
+	trait = bubonic_plague
+}
+
+# Crippled leg.
+blg_crippled = {
+	OR = {
+		trait = one_legged
+		trait = mangled
+		has_character_modifier = swollen_ankle
+	}
+}
+
+# Drooling spit.
+blg_drooling = {
+	OR = {
+		trait = incapable
+		trait = infirm
+		trait = rabies
+	}
+}
+
+# Fat physique.
+blg_fat = {
+	trait = fat
+}
+
+# Feverish.
+blg_fever = {
+	OR = {
+		trait = fever
+		trait = slow_fever
+	}
+}
+
+# Nose cold.
+blg_flu = {
+	OR = {
+		trait = ill
+		trait = flu
+	}
+}
+
+# Bandaged sick skin.
+blg_leper = {
+	trait = leper
+	trigger_if = {
+		limit = { has_dlc = "Reapers" }
+		trait = disfigured
+	}
+}
+
+# Pale and gaunt.
+blg_pale = {
+	OR = {
+		trait = malnourished
+		trait = fatigue
+		trait = malaise
+		trait = cancer
+		trait = consumption
+		has_character_modifier = broken_spirit
+		AND = {
+			has_character_modifier = corrupting_magic_major
+			blg_visible_society = yes
+		}
+	}
+}
+
+# Oxygen deprived.
+blg_pneumonic = {
+	trait = pneumonic
+}
+
+# Syphilitic pox.
+blg_pox = {
+	OR = {
+		trait = great_pox
+		trait = aztec_disease
+	}
+}
+
+# Skin rash.
+blg_rash = {
+	OR = {
+		trait = measles
+		trait = camp_fever
+		trait = rash
+	}
+}
+
+# Baggy eyes.
+blg_stressed = {
+	trait = stressed
+}
+
+# Sturdy physique.
+blg_sturdy = {
+	OR = {
+		trait = sturdy
+		AND = {
+			trait = dwarf
+			blg_fair = no
+		}
+	}
+}
+
+# Remaining food drips.
+blg_vomit = {
+	OR = {
+		trait = vomiting
+		trait = food_poisoning
+	}
+}
+
+### Supernatural effects:
+
+# Demon eyes and horns.
+blg_demon = {
+	has_character_modifier = demon_horns
+}
+
+# Glowing eyes.
+blg_glowing = {
+	trait = possessed
+	OR = {
+		has_character_modifier = voice_of_jesus
+		has_character_modifier = military_jesus
+		has_character_modifier = killed_an_old_one
+	}
+}
+
+# Godly glow.
+blg_god = {
+	death_reason = death_became_a_god
+}
+
+# Vampire fangs.
+blg_vampire = {
+	always = no
+}
+
+# Wolf eyes.
+blg_werewolf = {
+	OR = {
+		has_character_modifier = wolf_blood
+		has_character_modifier = lycanthropy
+	}
+}
