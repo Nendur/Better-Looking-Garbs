@@ -167,6 +167,11 @@ blg_glowing = {
 	}
 }
 
+# Godly glow.
+blg_god = {
+	always = no
+}
+
 # Vampire fangs.
 blg_vampire = {
 	always = no

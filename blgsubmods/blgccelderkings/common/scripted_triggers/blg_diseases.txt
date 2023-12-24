@@ -162,6 +162,11 @@ blg_glowing = {
 	trait = lich
 }
 
+# Godly glow.
+blg_god = {
+	always = no
+}
+
 # Vampire fangs.
 blg_vampire = {
 	OR = {

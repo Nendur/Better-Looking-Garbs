@@ -182,7 +182,6 @@ blg_glowing = {
 		has_character_modifier = voice_of_jesus
 		has_character_modifier = military_jesus
 		has_character_modifier = killed_an_old_one
-		trait = lf_angel
 		AND = {
 			trait = angel_kin
 			OR = {
@@ -204,6 +203,11 @@ blg_glowing = {
 			}
 		}
 	}
+}
+
+# Godly glow.
+blg_god = {
+	trait = lf_angel
 }
 
 # Vampire fangs.
