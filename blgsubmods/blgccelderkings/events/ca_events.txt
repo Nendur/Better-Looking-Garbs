@@ -1435,6 +1435,10 @@ character_event = {
 				limit = { has_portrait_property = { layer = 13 index = 21 } }
 				set_variable = { which = ca_eyepatch value = 22 }
 			}
+			else_if = {
+				limit = { has_portrait_property = { layer = 13 index = 23 } }
+				set_variable = { which = ca_eyepatch value = 24 }
+			}
 			else = {
 				set_variable = { which = ca_eyepatch value = 1 }
 			}
@@ -1644,10 +1648,13 @@ character_event = {
 			FROM = {
 				trigger_if = {
 					limit = { trait = blinded }
-					NOT = { check_variable = { which = ca_eyepatch value = 23 } }
+					NOT = { check_variable = { which = ca_eyepatch value = 24 } }
 				}
 				trigger_else = {
-					NOT = { check_variable = { which = ca_eyepatch value = 14 } }
+					OR = {
+						NOT = { check_variable = { which = ca_eyepatch value = 14 } }
+						check_variable = { which = ca_eyepatch value = 24 }
+					}
 				}
 			}
 		}
@@ -1655,6 +1662,10 @@ character_event = {
 		hidden_effect = {
 			FROM = {
 				change_variable = { which = ca_eyepatch value = 1 }
+				if = {
+					limit = { is_variable_equal = { which = ca_eyepatch value = 25 } }
+					set_variable = { which = ca_eyepatch value = 1 }
+				}
 				refresh_portrait = yes
 			}
 		}
@@ -1671,7 +1682,7 @@ character_event = {
 					NOT = { is_variable_equal = { which = ca_eyepatch value = 15 } }
 				}
 				trigger_else = {
-					NOT = { is_variable_equal = { which = ca_eyepatch value = 1 } }
+					NOT = { is_variable_equal = { which = ca_eyepatch value = 24 } }
 				}
 			}
 		}
@@ -1679,6 +1690,10 @@ character_event = {
 		hidden_effect = {
 			FROM = {
 				subtract_variable = { which = ca_eyepatch value = 1 }
+				if = {
+					limit = { is_variable_equal = { which = ca_eyepatch value = 0 } }
+					set_variable = { which = ca_eyepatch value = 24 }
+				}
 				refresh_portrait = yes
 			}
 		}
