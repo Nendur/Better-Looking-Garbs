@@ -45,6 +45,13 @@ objectTypes = {
 	}
 
 	EMFXActorType = {
+		name = "africanpagangfx_job_spiritual"
+		actorfile = "gfx\models\indian_pikemen.xac"
+		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
 		name = "reformedafricangfx_job_spiritual"
 		actorfile = "gfx\models\indian_pikemen.xac"
 		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"

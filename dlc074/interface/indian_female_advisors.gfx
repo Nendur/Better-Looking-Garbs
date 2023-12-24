@@ -51,6 +51,20 @@ objectTypes = {
 		scale = 0.8
 	}
 
+	pdxmesh = {
+		name = "indiangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/ifc_buddhist_female.mesh"
+		animation = { id = "idle"		type = "ifc_buddhist_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "dharmicgfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/ifc_buddhist_female.mesh"
+		animation = { id = "idle"		type = "ifc_buddhist_female_idle_animation" }
+		scale = 0.8
+	}
+
 # Chinese
 	pdxmesh = {
 		name = "chinesegfx_job_treasurer_female"

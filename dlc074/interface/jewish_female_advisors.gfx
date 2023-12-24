@@ -9,6 +9,13 @@ objectTypes = {
 	}
 
 	pdxmesh = {
+		name = "judaicgfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/sfc_jewish_female.mesh"
+		animation = { id = "idle"		type = "sfc_jewish_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
 		name = "hellenicgfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/sfc_jewish_female.mesh"
 		animation = { id = "idle"		type = "sfc_jewish_female_idle_animation" }

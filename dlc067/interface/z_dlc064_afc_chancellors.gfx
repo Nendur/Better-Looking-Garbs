@@ -101,6 +101,13 @@ objectTypes = {
 	}
 
 	pdxmesh = {
+		name = "africanpagangfx_job_spiritual"
+		file = "gfx/models/Mapindicators/afc_african_spiritual.mesh"
+		animation = { id = "idle"		type = "afc_african_spiritual_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
 		name = "reformedafricangfx_job_spiritual"
 		file = "gfx/models/Mapindicators/afc_african_spiritual.mesh"
 		animation = { id = "idle"		type = "afc_african_spiritual_idle_animation" }
@@ -209,6 +216,13 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "africangfx_job_spiritual_female"
+		file = "gfx/models/Mapindicators/afc_african_spiritual_female.mesh"
+		animation = { id = "idle"		type = "afc_african_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "africanpagangfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/afc_african_spiritual_female.mesh"
 		animation = { id = "idle"		type = "afc_african_spiritual_female_idle_animation" }
 		scale = 0.8
