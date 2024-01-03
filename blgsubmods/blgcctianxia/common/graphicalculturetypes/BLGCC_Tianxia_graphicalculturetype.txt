@@ -1,9 +1,6 @@
+andamangfx = {
+	skin_tone = 3
+}
 hmongmiengfx = {
 	skin_tone = 1
-}
-philippinegfx = {
-	skin_tone = 2
-}
-vietgfx = {
-	skin_tone = 2
 }

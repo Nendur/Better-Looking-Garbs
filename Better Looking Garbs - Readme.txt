@@ -92,3 +92,4 @@ Huanglukuzhu, xyq661973 & zerosakikamisiki - Horse Lords Remake+New Mongolian/Kh
 Silfae - Roman clothing
 Norse hair and beards - Proper Northmen
 Erilaz - Real Gjermundbu and Coppergate Helmets
+Tianxia - Japanese, Korean, Khmer and Ainu portraits

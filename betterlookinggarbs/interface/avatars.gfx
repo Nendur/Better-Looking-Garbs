@@ -178,4 +178,21 @@ objectTypes = {
 		scale = 0.0001f
 	}
 
+	EMFXActorType = {
+		name = "japanesegfx_LIGHT_INFANTRY_shield"
+		actorfile = "gfx\models\no_object.xac"
+		scale = 0.0001f
+	}
+
+	EMFXActorType = {
+		name = "japanesegfx_HEAVY_INFANTRY_shield"
+		actorfile = "gfx\models\no_object.xac"
+		scale = 0.0001f
+	}
+
+	EMFXActorType = {
+		name = "japanesegfx_KNIGHTS_shield"
+		actorfile = "gfx\models\no_object.xac"
+		scale = 0.0001f
+	}
 }

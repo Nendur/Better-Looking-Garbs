@@ -272,7 +272,6 @@ blg_hair_indian = {
 		graphical_culture = indiangfx
 		graphical_culture = centralindiangfx
 		graphical_culture = koreangfx
-		graphical_culture = philippinegfx
 		graphical_culture = hmongmiengfx
 		graphical_culture = vietgfx
 	}
@@ -361,7 +360,10 @@ blg_hair_ugric = {
 }
 
 blg_hair_westafrican = {
-	graphical_culture = westafricangfx
+	OR = {
+		graphical_culture = westafricangfx
+		graphical_culture = andamangfx
+	}
 }
 
 blg_hair_westernslavic = {
@@ -380,6 +382,7 @@ blg_beard_african = {
 		graphical_culture = africangfx
 		graphical_culture = westafricangfx
 		graphical_culture = nubiangfx
+		graphical_culture = andamangfx
 	}
 }
 

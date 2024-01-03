@@ -214,6 +214,7 @@ blg_hair_chinese = {
 	OR = {
 		graphical_culture = chinesegfx
 		graphical_culture = khitangfx
+		graphical_culture = khmergfx
 	}
 }
 
@@ -273,6 +274,7 @@ blg_hair_indian = {
 	OR = {
 		graphical_culture = indiangfx
 		graphical_culture = centralindiangfx
+		graphical_culture = koreangfx
 	}
 }
 
@@ -328,7 +330,7 @@ blg_hair_southindian = {
 	OR = {
 		graphical_culture = southindiangfx
 		graphical_culture = assamesegfx
-		graphical_culture = khmergfx
+		graphical_culture = southasiangfx
 	}
 }
 
@@ -386,6 +388,7 @@ blg_beard_bodpa = {
 		graphical_culture = bodpagfx
 		graphical_culture = sogdiangfx
 		graphical_culture = tochariangfx
+		graphical_culture = koreangfx
 	}
 }
 
@@ -416,6 +419,7 @@ blg_beard_chinese = {
 		graphical_culture = chinesegfx
 		graphical_culture = khitangfx
 		graphical_culture = tangutgfx
+		graphical_culture = japanesegfx
 	}
 }
 
@@ -529,6 +533,7 @@ blg_beard_southern = {
 blg_beard_southindian = {
 	OR = {
 		graphical_culture = southindiangfx
+		graphical_culture = southasiangfx
 		graphical_culture = khmergfx
 	}
 }

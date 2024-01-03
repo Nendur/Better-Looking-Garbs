@@ -67,6 +67,7 @@ blg_ethnicity_african = {
 	OR = {
 		graphical_culture = africangfx
 		graphical_culture = somaligfx
+		graphical_culture = andamangfx
 	}
 }
 
@@ -107,6 +108,7 @@ blg_ethnicity_centralasian = {
 blg_ethnicity_chinese = {
 	OR = {
 		graphical_culture = chinesegfx
+		graphical_culture = hmongmiengfx
 		graphical_culture = japanesegfx
 		graphical_culture = koreangfx
 	}
@@ -283,6 +285,7 @@ blg_ethnicity_turkish = {
 		graphical_culture = turkishgfx
 		graphical_culture = pecheneggfx
 		graphical_culture = avargfx
+		graphical_culture = ainugfx
 	}
 }
 

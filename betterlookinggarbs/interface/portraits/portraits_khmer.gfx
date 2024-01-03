@@ -1,10 +1,23 @@
-############## South East Asian ##########################
+############## KHMER ##########################
+# Credits: Tianxia
 spriteTypes = {
 
-### South East Asian male ####
+	spriteType = {
+		name = "GFX_khmer_male_headgear_behind"
+		texturefile = "gfx\\characters\\khmer_male\\khmer_male_headgear_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_khmer_male_headgear"
+		texturefile = "gfx\\characters\\khmer_male\\khmer_male_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
 
 	portraitType = {
-		name = "PORTRAIT_southasiangfx_male"
+		name = "PORTRAIT_khmergfx_male"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
@@ -13,10 +26,10 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_southindian_male_clothes_behind:p3:c0"
-			"GFX_southindian_male_headgear_behind:p5:c1"
+			"GFX_khmer_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_southindian_male_hair_behind:p1:h:y"
+			"GFX_chinese_male_hair_behind:p1:h:y"
 			"GFX_southindian_male_beard_behind:p4:h:y"
 			"GFX_southasian_male_base:p2"
 			"GFX_southasian_male_neck:d0"
@@ -53,9 +66,9 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o1x0"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_southindian_male_hair:p1:h:y"
+			"GFX_chinese_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
-			"GFX_southindian_male_headgear:p5:c5"
+			"GFX_khmer_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -92,7 +105,7 @@ spriteTypes = {
 	}
 
 	portraitType = {
-		name = "PORTRAIT_southasiangfx_male1"
+		name = "PORTRAIT_khmergfx_male1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
@@ -101,10 +114,10 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_southindian_male_clothes_behind:p3:c0"
-			"GFX_southindian_male_headgear_behind:p5:c1"
+			"GFX_khmer_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_southindian_male_hair_behind_midage:p1:h:y"
+			"GFX_chinese_male_hair_behind_midage:p1:h:y"
 			"GFX_southindian_male_beard_behind_midage:p4:h:y"
 			"GFX_southasian_male_base_midage:p2"
 			"GFX_southasian_male_neck_midage:d0"
@@ -137,9 +150,9 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o1x0"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_southindian_male_hair_midage:p1:h:y"
+			"GFX_chinese_male_hair_midage:p1:h:y"
 			"GFX_empty:p5:c7:h"
-			"GFX_southindian_male_headgear:p5:c5"
+			"GFX_khmer_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -176,7 +189,7 @@ spriteTypes = {
 	}
 
 	portraitType = {
-		name = "PORTRAIT_southasiangfx_male2"
+		name = "PORTRAIT_khmergfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
@@ -185,10 +198,10 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_southindian_male_clothes_behind:p3:c0"
-			"GFX_southindian_male_headgear_behind:p5:c1"
+			"GFX_khmer_male_headgear_behind:p5:c1"
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_southindian_male_hair_behind_oldage:p1:h:y"
+			"GFX_chinese_male_hair_behind_oldage:p1:h:y"
 			"GFX_southindian_male_beard_behind_oldage:p4:h:y"
 			"GFX_southasian_male_base_oldage:p2"
 			"GFX_southasian_male_neck_oldage:d0"
@@ -221,9 +234,9 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o1x0"
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
-			"GFX_southindian_male_hair_oldage:p1:h:y"
+			"GFX_chinese_male_hair_oldage:p1:h:y"
 			"GFX_empty:p5:c7:h"
-			"GFX_southindian_male_headgear:p5:c5"
+			"GFX_khmer_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -261,8 +274,22 @@ spriteTypes = {
 
 #### South East Asian female ####
 
+	spriteType = {
+		name = "GFX_khmer_female_headgear_behind"
+		texturefile = "gfx\\characters\\khmer_female\\khmer_female_headgear_behind.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_khmer_female_headgear"
+		texturefile = "gfx\\characters\\khmer_female\\khmer_female_headgear.dds"
+		noOfFrames = 12
+		norefcount = yes
+	}
+
 	portraitType = {
-		name = "PORTRAIT_southasiangfx_female"
+		name = "PORTRAIT_khmergfx_female"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
@@ -271,12 +298,12 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_southindian_female_clothes_behind:p3:c0"
-			"GFX_southindian_female_headgear_behind:p5:c1"
+			"GFX_khmer_female_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_southindian_female_hair_behind:p1:h:y:o0x1"
+			"GFX_chinese_female_hair_behind:p1:h:y:o0x1"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_southasian_female_base:p2"
 			"GFX_southasian_female_neck:d0"
@@ -313,11 +340,11 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_southindian_female_headgear_mid:p5:c3"
-			"GFX_southindian_female_hair:p1:h:y:o0x1"
+			"GFX_chinese_female_hair:p1:h:y:o0x1"
 			"GFX_empty:p5:c7:h"
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
-			"GFX_southindian_female_headgear:p5:c5"
+			"GFX_khmer_female_headgear:p5:c5"
 			"GFX_frankish_female_overlayer:p32"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -354,7 +381,7 @@ spriteTypes = {
 	}
 
 	portraitType = {
-		name = "PORTRAIT_southasiangfx_female1"
+		name = "PORTRAIT_khmergfx_female1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
@@ -363,12 +390,12 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_southindian_female_clothes_behind:p3:c0"
-			"GFX_southindian_female_headgear_behind:p5:c1"
+			"GFX_khmer_female_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_southindian_female_hair_behind_midage:p1:h:y:o0x1"
+			"GFX_chinese_female_hair_behind_midage:p1:h:y:o0x1"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_southasian_female_base_midage:p2"
 			"GFX_southasian_female_neck_midage:d0"
@@ -401,11 +428,11 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_southindian_female_headgear_mid:p5:c3"
-			"GFX_southindian_female_hair_midage:p1:h:y:o0x1"
+			"GFX_chinese_female_hair_midage:p1:h:y:o0x1"
 			"GFX_empty:p5:c7:h"
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
-			"GFX_southindian_female_headgear:p5:c5"
+			"GFX_khmer_female_headgear:p5:c5"
 			"GFX_frankish_female_overlayer:p32"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
@@ -442,7 +469,7 @@ spriteTypes = {
 	}
 
 	portraitType = {
-		name = "PORTRAIT_southasiangfx_female2"
+		name = "PORTRAIT_khmergfx_female2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_indian_background:p0"
@@ -451,12 +478,12 @@ spriteTypes = {
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
 			"GFX_southindian_female_clothes_behind:p3:c0"
-			"GFX_southindian_female_headgear_behind:p5:c1"
+			"GFX_khmer_female_headgear_behind:p5:c1"
 			"GFX_frankish_female_undermain_behind:p33"
 			"GFX_frankish_female_undermain_hair_behind:p33:h"
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p19"
-			"GFX_southindian_female_hair_behind_oldage:p1:h:y:o0x1"
+			"GFX_chinese_female_hair_behind_oldage:p1:h:y:o0x1"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_southasian_female_base_oldage:p2"
 			"GFX_southasian_female_neck_oldage:d0"
@@ -489,11 +516,11 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_southindian_female_headgear_mid:p5:c3"
-			"GFX_southindian_female_hair_oldage:p1:h:y:o0x1"
+			"GFX_chinese_female_hair_oldage:p1:h:y:o0x1"
 			"GFX_empty:p5:c7:h"
 			"GFX_frankish_female_undermain_hair:p33:h"
 			"GFX_frankish_female_undermain:p33"
-			"GFX_southindian_female_headgear:p5:c5"
+			"GFX_khmer_female_headgear:p5:c5"
 			"GFX_frankish_female_overlayer:p32"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"

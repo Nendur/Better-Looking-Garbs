@@ -17,7 +17,7 @@ byzantine = {
 		graphical_cultures = { hellenicgfx chinesegfx mongolgfx indiangfx muslimgfx }
 	}
 	viethellenic = {
-		graphical_cultures = { tangutgfx chinesegfx indiangfx muslimgfx }
+		graphical_cultures = { vietgfx chinesegfx indiangfx muslimgfx }
 	}
 	ashkenazi = {
 		graphical_cultures = { ashkenazigfx }
@@ -442,9 +442,9 @@ austronesian = {
 	graphical_cultures = { southindiangfx indiangfx muslimgfx }
 
 	dienviet = {
-		graphical_cultures = { khitangfx chinesegfx }
+		graphical_cultures = { vietgfx chinesegfx }
 	}
 	javanese = {
-		graphical_cultures = { khmergfx }
+		graphical_cultures = { southasiangfx }
 	}
 }

@@ -81,6 +81,9 @@ byzantine = {
 	crimean_gothic = {
 		unit_graphical_cultures = { germangfx westerngfx }
 	}
+	atlantean = {
+		graphical_cultures = { hellenicgfx }
+	}
 }
 
 celtic = {
@@ -308,6 +311,14 @@ tibetan_group = {
 	}
 }
 
+andamanese_group = {
+	graphical_cultures = { southindiangfx indiangfx muslimgfx }
+
+	andamanese = {
+		graphical_cultures = { andamangfx africangfx westafricangfx }
+	}
+}
+
 bornean_group = {
 	graphical_cultures = { southindiangfx tribalgfx indiangfx muslimgfx }
 
@@ -480,6 +491,14 @@ paleosiberian = {
 
 	nivkh = {
 		graphical_cultures = { inuitgfx siberiangfx ugricgfx }
+	}
+}
+
+papuan_group = {
+	graphical_cultures = { southindiangfx indiangfx muslimgfx }
+
+	papuan = {
+		graphical_cultures = { andamangfx africangfx westafricangfx }
 	}
 }
 

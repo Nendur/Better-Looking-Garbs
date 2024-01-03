@@ -268,7 +268,7 @@ blg_headgear_intrigue = {
 		lower_real_tier_than = king
 	}
 	trigger_else = {
-		intrigue >= 16
+		intrigue >= 18
 		lower_real_tier_than = duke
 	}
 }
@@ -388,7 +388,7 @@ blg_clothes_intrigue = {
 		has_job_title = job_spymaster
 		trait = master_schemer
 		AND = {
-			intrigue = 12
+			intrigue >= 16
 			lower_real_tier_than = duke
 		}
 	}

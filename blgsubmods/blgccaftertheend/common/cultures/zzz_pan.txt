@@ -48,7 +48,7 @@ malay = {
 	graphical_cultures = { southindiangfx indiangfx muslimgfx }
 
 	singaporean = {
-		graphical_cultures = { khmergfx turkishgfx }
+		graphical_cultures = { southasiangfx turkishgfx }
 	}
 }
 
@@ -64,7 +64,7 @@ nihonjin = {
 	graphical_cultures = { chinesegfx mongolgfx indiangfx muslimgfx }
 
 	edokko = {
-		graphical_cultures = { chinesegfx turkishgfx }
+		graphical_cultures = { japanesegfx chinesegfx turkishgfx }
 		unit_graphical_cultures = { }
 	}
 }
@@ -77,7 +77,7 @@ viet = {
 	graphical_cultures = { chinesegfx mongolgfx indiangfx muslimgfx }
 
 	kinh = {
-		graphical_cultures = { chinesegfx turkishgfx }
+		graphical_cultures = { vietgfx chinesegfx turkishgfx }
 	}
 }
 
@@ -85,7 +85,7 @@ filipino = {
 	graphical_cultures = { indiangfx muslimgfx }
 
 	tagalog = {
-		graphical_cultures = { khmergfx southindiangfx }
+		graphical_cultures = { philippinegfx southindiangfx }
 	}
 }
 

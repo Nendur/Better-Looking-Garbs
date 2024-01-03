@@ -247,6 +247,7 @@ blg_hair_indian = {
 	OR = {
 		graphical_culture = indiangfx
 		graphical_culture = chinesepacificgfx
+		graphical_culture = vietgfx
 	}
 }
 
@@ -293,7 +294,7 @@ blg_hair_southern = {
 blg_hair_southindian = {
 	OR = {
 		graphical_culture = blackpacificgfx
-		graphical_culture = khmergfx
+		graphical_culture = southasiangfx
 		graphical_culture = assamesegfx
 	}
 }
@@ -350,6 +351,8 @@ blg_beard_bodpa = {
 		graphical_culture = southerngfx
 		graphical_culture = basquegfx
 		graphical_culture = chinesepacificgfx
+		graphical_culture = vietgfx
+		graphical_culture = philippinegfx
 	}
 }
 
@@ -371,6 +374,7 @@ blg_beard_chinese = {
 	OR = {
 		graphical_culture = chinogfx
 		graphical_culture = chinesegfx
+		graphical_culture = japanesegfx
 		graphical_culture = tangutgfx
 	}
 }
@@ -472,7 +476,7 @@ blg_beard_southindian = {
 		graphical_culture = brownpacificgfx
 		graphical_culture = brazilgfx
 		graphical_culture = hinduafricangfx
-		graphical_culture = khmergfx
+		graphical_culture = southasiangfx
 	}
 }
 

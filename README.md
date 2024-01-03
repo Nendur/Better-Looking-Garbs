@@ -79,17 +79,18 @@ The creation of submods or copying the graphical culture setup is preferred over
 
 Credits:
 
-Pnutmaster - Better Looking Garbs originator
-Shaytana - Better Looking Characters
-Cybrxkhan - many Cultures and Portraits Revamp inclusions
-Crackdtoothgrins - Steppe and religious portraits
-A Game of Thrones Team - Various clothing and beards
-Velorian - Modified Mediterranean GFX
-Euroland - Scarred mod
-AnaxXiphos - Alternate Portraits for Mongol Children
-ahhheygao - Retouched Mongolian Eyes
-rein005 - Chinese Portraits
-Huanglukuzhu, xyq661973 & zerosakikamisiki - Horse Lords Remake+New Mongolian/Khitan/Han Portraits
-Silfae - Roman clothing
-Norse hair and beards - Proper Northmen
-Erilaz - Real Gjermundbu and Coppergate Helmets
+- Pnutmaster - Better Looking Garbs originator
+- Shaytana - Better Looking Characters
+- Cybrxkhan - many Cultures and Portraits Revamp inclusions
+- Crackdtoothgrins - Steppe and religious portraits
+- A Game of Thrones Team - Various clothing and beards
+- Velorian - Modified Mediterranean GFX
+- Euroland - Scarred mod
+- AnaxXiphos - Alternate Portraits for Mongol Children
+- ahhheygao - Retouched Mongolian Eyes
+- rein005 - Chinese Portraits
+- Huanglukuzhu, xyq661973 & zerosakikamisiki - Horse Lords Remake+New Mongolian/Khitan/Han Portraits
+- Silfae - Roman clothing
+- Norse hair and beards - Proper Northmen
+- Erilaz - Real Gjermundbu and Coppergate Helmets
+- Tianxia - Japanese, Korean, Khmer and Ainu portraits

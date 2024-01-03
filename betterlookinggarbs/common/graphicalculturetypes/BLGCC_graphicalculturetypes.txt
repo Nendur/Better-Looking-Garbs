@@ -2,6 +2,9 @@
 afghangfx = {
 	skin_tone = 1
 }
+ainugfx = {
+	skin_tone = 1
+}
 alangfx = {
 	skin_tone = 1
 }
@@ -68,11 +71,17 @@ indusgfx = {
 inuitgfx = {
 	skin_tone = 2
 }
+japanesegfx = {
+	skin_tone = 1
+}
 khitangfx = {
 	skin_tone = 1
 }
 khmergfx = {
 	skin_tone = 2
+}
+koreangfx = {
+	skin_tone = 1
 }
 kurdishgfx = {
 	skin_tone = 1
@@ -97,6 +106,9 @@ pecheneggfx = {
 }
 persiangfx = {
 	skin_tone = 1
+}
+philippinegfx = {
+	skin_tone = 2
 }
 polarbeargfx = {
 	skin_tone = 0
@@ -131,6 +143,9 @@ sogdiangfx = {
 somaligfx = {
 	skin_tone = 3
 }
+southasiangfx = {
+	skin_tone = 2
+}
 steppegfx = {
 	skin_tone = 1
 }
@@ -143,10 +158,12 @@ tochariangfx = {
 turkishgfx = {
 	skin_tone = 1
 }
+vietgfx = {
+	skin_tone = 2
+}
 visigothgfx = {
 	skin_tone = 0
 }
 vlachgfx = {
 	skin_tone = 1
 }
-

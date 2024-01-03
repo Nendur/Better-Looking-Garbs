@@ -96,7 +96,7 @@ blg_common_ducal_headgear = {
 
 # Custom cultures limited to default property set.
 blg_default_clothing = {
-	always = no
+	culture_group = southeast_asian_group
 }
 
 # Uses Merchant clothing set.
