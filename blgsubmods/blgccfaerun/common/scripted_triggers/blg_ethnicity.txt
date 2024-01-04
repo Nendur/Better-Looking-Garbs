@@ -33,7 +33,7 @@ blg_ethnicity_known = {
 		blg_ethnicity_tibetan = yes
 		blg_ethnicity_chinese = yes
 		blg_ethnicity_mesoamerican = yes
-		graphical_culture = khmergfx
+		blg_ethnicity_southasian = yes
 	}
 }
 
@@ -146,6 +146,8 @@ blg_ethnicity_eastslavic = {
 	OR = {
 		graphical_culture = thariangfx
 		graphical_culture = vaasangfx
+		graphical_culture = gontesegfx
+		graphical_culture = duskergfx
 	}
 }
 
@@ -254,11 +256,18 @@ blg_ethnicity_sogdian = {
 	always = no
 }
 
+blg_ethnicity_southasian = {
+	OR = {
+		graphical_culture = marigfx
+		graphical_culture = khmergfx
+		graphical_culture = southasiangfx
+	}
+}
+
 blg_ethnicity_southindian = {
 	OR = {
 		graphical_culture = southindiangfx
 		graphical_culture = tashalangfx
-		graphical_culture = marigfx
 	}
 }
 
@@ -283,7 +292,10 @@ blg_ethnicity_ugric = {
 }
 
 blg_ethnicity_westafrican = {
-	graphical_culture = westafricangfx
+	OR = {
+		graphical_culture = chultangfx
+		graphical_culture = akotangfx
+	}
 }
 
 blg_ethnicity_westslavic = {

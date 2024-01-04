@@ -14,6 +14,6 @@ dependencies=
 	"\"Better Looking Garbs\""
 	"\"Better Looking Garbs Full\""
 }
-supported_checksums = { UACH }
+supported_checksums = { QFGX }
 tags={ Graphics Portraits Units "After the End" }
 picture="blgccaftertheend.jpg"

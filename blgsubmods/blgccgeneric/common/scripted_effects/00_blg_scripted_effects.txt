@@ -92,6 +92,6 @@ evaluate_duel_result_score_effect = {
 # Append bear setup to creature duel.
 spawn_creature_champion_effect = { # Too messy with bear clothes.
 	new_character = {
-		set_graphical_culture = bear
+		blg_set_ethnicity_bear_default = yes
 	}
 }

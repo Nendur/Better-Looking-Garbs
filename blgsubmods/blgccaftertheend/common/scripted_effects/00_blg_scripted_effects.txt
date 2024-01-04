@@ -93,7 +93,7 @@ blg_child_mixed = {
 							blg_ethnicity_tibetan = yes
 							blg_ethnicity_indian = yes
 							blg_ethnicity_cuman = yes
-							graphical_culture = khmergfx
+							blg_ethnicity_southasian = yes
 						}
 					}
 					mother_even_if_dead = {
@@ -102,7 +102,7 @@ blg_child_mixed = {
 							blg_ethnicity_tibetan = yes
 							blg_ethnicity_indian = yes
 							blg_ethnicity_cuman = yes
-							graphical_culture = khmergfx
+							blg_ethnicity_southasian = yes
 						}
 					}
 				}
@@ -117,20 +117,16 @@ blg_child_mixed = {
 						blg_ethnicity_westafrican = no
 						blg_ethnicity_berber = no
 						blg_ethnicity_southindian = no
-						NOR = {
-							graphical_culture = nubiangfx
-							graphical_culture = khmergfx
-						}
+						blg_ethnicity_southasian = no
+						NOT = { graphical_culture = nubiangfx }
 					}
 					mother_even_if_dead = {
 						blg_ethnicity_african = no
 						blg_ethnicity_westafrican = no
 						blg_ethnicity_berber = no
 						blg_ethnicity_southindian = no
-						NOR = {
-							graphical_culture = nubiangfx
-							graphical_culture = khmergfx
-						}
+						blg_ethnicity_southasian = no
+						NOT = { graphical_culture = nubiangfx }
 					}
 				}
 			}
@@ -159,7 +155,7 @@ blg_child_mixed = {
 							blg_ethnicity_tibetan = yes
 							blg_ethnicity_indian = yes
 							blg_ethnicity_cuman = yes
-							graphical_culture = khmergfx
+							blg_ethnicity_southasian = yes
 						}
 					}
 					mother_even_if_dead = {
@@ -168,7 +164,7 @@ blg_child_mixed = {
 							blg_ethnicity_tibetan = yes
 							blg_ethnicity_indian = yes
 							blg_ethnicity_cuman = yes
-							graphical_culture = khmergfx
+							blg_ethnicity_southasian = yes
 						}
 					}
 				}
@@ -207,7 +203,7 @@ blg_child_mixed = {
 						blg_ethnicity_levantine = no
 						blg_ethnicity_berber = no
 						blg_ethnicity_southindian = no
-						NOT = { graphical_culture = khmergfx }
+						blg_ethnicity_southasian = no
 					}
 					mother_even_if_dead = {
 						blg_ethnicity_african = no
@@ -215,7 +211,7 @@ blg_child_mixed = {
 						blg_ethnicity_levantine = no
 						blg_ethnicity_berber = no
 						blg_ethnicity_southindian = no
-						NOT = { graphical_culture = khmergfx }
+						blg_ethnicity_southasian = no
 					}
 				}
 			}
@@ -232,7 +228,7 @@ blg_child_mixed = {
 						blg_ethnicity_mesoamerican = yes
 						blg_ethnicity_tibetan = yes
 						blg_ethnicity_southindian = yes
-						graphical_culture = khmergfx
+						blg_ethnicity_southasian = yes
 					}
 				}
 				mother_even_if_dead = {
@@ -240,7 +236,7 @@ blg_child_mixed = {
 						blg_ethnicity_mesoamerican = yes
 						blg_ethnicity_tibetan = yes
 						blg_ethnicity_southindian = yes
-						graphical_culture = khmergfx
+						blg_ethnicity_southasian = yes
 					}
 				}
 			}
@@ -768,6 +764,6 @@ evaluate_duel_result_score_effect = {
 # Append bear setup to creature duel.
 spawn_creature_champion_effect = { # Too messy with bear clothes.
 	new_character = {
-		set_graphical_culture = bear
+		blg_set_ethnicity_bear_default = yes
 	}
 }

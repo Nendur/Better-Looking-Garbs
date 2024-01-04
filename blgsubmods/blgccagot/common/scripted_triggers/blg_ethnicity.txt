@@ -225,6 +225,10 @@ blg_ethnicity_sogdian = {
 	always = no
 }
 
+blg_ethnicity_southasian = {
+	graphical_culture = asabhadgfx
+}
+
 blg_ethnicity_southindian = {
 	graphical_culture = moraqigfx
 }

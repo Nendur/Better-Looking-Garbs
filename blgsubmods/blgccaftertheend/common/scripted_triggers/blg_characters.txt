@@ -2,6 +2,11 @@
 
 ### Characters:
 
+# Character is a cannibal.
+blg_cannibal = {
+	trait = cannibal_trait
+}
+
 # Prisoner that is kept gagged.
 blg_dangerous_prisoner = {
 	OR = {

@@ -27,6 +27,10 @@ blg_set_ethnicity_ashkenazi = {
 	}
 }
 
+blg_set_ethnicity_bear_default = {
+	set_graphical_culture = bear
+}
+
 blg_set_ethnicity_bear = {
 	if = {
 		limit = { location = { blg_region_polar = yes } }

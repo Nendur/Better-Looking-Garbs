@@ -191,6 +191,17 @@ iranian = {
 	}
 }
 
+island_romance = {
+	graphical_cultures = { italiangfx southerngfx cleanwesterngfx westerngfx }
+
+	corsican = {
+		graphical_cultures = { sardiniangfx }
+	}
+	sardinian = {
+		graphical_cultures = { sardiniangfx }
+	}
+}
+
 east_african = {
 	nubian = {
 		graphical_cultures = { nubiangfx africangfx westafricangfx }

@@ -36,13 +36,13 @@ blg_ethnicity_known = {
 		blg_ethnicity_tibetan = yes
 		blg_ethnicity_chinese = yes
 		blg_ethnicity_mesoamerican = yes
+		blg_ethnicity_southasian = yes
 		graphical_culture = magyargfx
 		graphical_culture = georgiangfx
 		graphical_culture = ashkenazigfx
 		graphical_culture = nubiangfx
 		graphical_culture = kurdishgfx
 		graphical_culture = tochariangfx
-		graphical_culture = khmergfx
 	}
 }
 
@@ -241,6 +241,10 @@ blg_ethnicity_sogdian = {
 		graphical_culture = alangfx
 		graphical_culture = sogdiangfx
 	}
+}
+
+blg_ethnicity_southasian = {
+	graphical_culture = southasiangfx
 }
 
 blg_ethnicity_southindian = {

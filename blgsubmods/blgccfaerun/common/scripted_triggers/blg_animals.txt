@@ -11,12 +11,31 @@ blg_animal_bat = {
 		is_artifact_equipped = yes
 		artifact_type = wiz_familiar_artf
 	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 5 }
+		has_portrait_property = { layer = 2 index = 6 }
+		has_portrait_property = { layer = 2 index = 7 }
+		has_portrait_property = { layer = 2 index = 12 }
+		has_portrait_property = { layer = 2 index = 13 }
+		has_portrait_property = { layer = 2 index = 17 }
+		has_portrait_property = { layer = 2 index = 19 }
+		has_portrait_property = { layer = 36 index = 25 }
+		has_portrait_property = { layer = 36 index = 26 }
+	}
 }
 
 blg_animal_boar = {
 	any_artifact = {
 		is_artifact_equipped = yes
 		artifact_type = animal_companion
+	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 14 }
+		has_portrait_property = { layer = 2 index = 16 }
+		has_portrait_property = { layer = 2 index = 20 }
+		has_portrait_property = { layer = 2 index = 21 }
+		has_portrait_property = { layer = 36 index = 24 }
+		has_portrait_property = { layer = 38 index = 11 }
 	}
 }
 
@@ -28,6 +47,15 @@ blg_animal_cat = {
 			is_artifact_equipped = yes
 			artifact_type = wiz_familiar_artf
 		}
+	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 12 }
+		has_portrait_property = { layer = 2 index = 13 }
+		has_portrait_property = { layer = 2 index = 17 }
+		has_portrait_property = { layer = 2 index = 18 }
+		has_portrait_property = { layer = 2 index = 19 }
+		has_portrait_property = { layer = 36 index = 25 }
+		has_portrait_property = { layer = 36 index = 26 }
 	}
 }
 
@@ -55,6 +83,14 @@ blg_animal_eagle = {
 			artifact_type = animal_companion
 		}
 	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 14 }
+		has_portrait_property = { layer = 2 index = 16 }
+		has_portrait_property = { layer = 2 index = 20 }
+		has_portrait_property = { layer = 2 index = 21 }
+		has_portrait_property = { layer = 38 index = 9 }
+		has_portrait_property = { layer = 38 index = 11 }
+	}
 }
 
 blg_animal_falcon = {
@@ -64,7 +100,15 @@ blg_animal_falcon = {
 blg_animal_fox = {
 	any_artifact = {
 		is_artifact_equipped = yes
-		artifact_type = wiz_familiar_artf
+		artifact_type = animal_companion
+	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 14 }
+		has_portrait_property = { layer = 2 index = 16 }
+		has_portrait_property = { layer = 2 index = 20 }
+		has_portrait_property = { layer = 36 index = 24 }
+		has_portrait_property = { layer = 38 index = 9 }
+		has_portrait_property = { layer = 38 index = 11 }
 	}
 }
 
@@ -72,6 +116,17 @@ blg_animal_frog = {
 	any_artifact = {
 		is_artifact_equipped = yes
 		artifact_type = wiz_familiar_artf
+	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 5 }
+		has_portrait_property = { layer = 2 index = 6 }
+		has_portrait_property = { layer = 2 index = 7 }
+		has_portrait_property = { layer = 2 index = 12 }
+		has_portrait_property = { layer = 2 index = 13 }
+		has_portrait_property = { layer = 2 index = 17 }
+		has_portrait_property = { layer = 2 index = 18 }
+		has_portrait_property = { layer = 36 index = 25 }
+		has_portrait_property = { layer = 36 index = 26 }
 	}
 }
 
@@ -82,6 +137,17 @@ blg_animal_hedgehog = {
 			is_artifact_equipped = yes
 			artifact_type = wiz_familiar_artf
 		}
+	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 5 }
+		has_portrait_property = { layer = 2 index = 6 }
+		has_portrait_property = { layer = 2 index = 7 }
+		has_portrait_property = { layer = 2 index = 12 }
+		has_portrait_property = { layer = 2 index = 17 }
+		has_portrait_property = { layer = 2 index = 18 }
+		has_portrait_property = { layer = 2 index = 19 }
+		has_portrait_property = { layer = 36 index = 25 }
+		has_portrait_property = { layer = 36 index = 26 }
 	}
 }
 
@@ -100,6 +166,14 @@ blg_animal_monkey = {
 		is_artifact_equipped = yes
 		artifact_type = animal_companion
 	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 14 }
+		has_portrait_property = { layer = 2 index = 16 }
+		has_portrait_property = { layer = 2 index = 21 }
+		has_portrait_property = { layer = 36 index = 24 }
+		has_portrait_property = { layer = 38 index = 9 }
+		has_portrait_property = { layer = 38 index = 11 }
+	}
 }
 
 blg_animal_otter = {
@@ -109,6 +183,14 @@ blg_animal_otter = {
 			is_artifact_equipped = yes
 			artifact_type = animal_companion
 		}
+	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 16 }
+		has_portrait_property = { layer = 2 index = 20 }
+		has_portrait_property = { layer = 2 index = 21 }
+		has_portrait_property = { layer = 36 index = 24 }
+		has_portrait_property = { layer = 38 index = 9 }
+		has_portrait_property = { layer = 38 index = 11 }
 	}
 }
 
@@ -123,6 +205,17 @@ blg_animal_owl = {
 			is_artifact_equipped = yes
 			artifact_type = wiz_familiar_artf
 		}
+	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 5 }
+		has_portrait_property = { layer = 2 index = 6 }
+		has_portrait_property = { layer = 2 index = 7 }
+		has_portrait_property = { layer = 2 index = 13 }
+		has_portrait_property = { layer = 2 index = 17 }
+		has_portrait_property = { layer = 2 index = 18 }
+		has_portrait_property = { layer = 2 index = 19 }
+		has_portrait_property = { layer = 36 index = 25 }
+		has_portrait_property = { layer = 36 index = 26 }
 	}
 }
 
@@ -143,6 +236,17 @@ blg_animal_rat = {
 			artifact_type = boo
 		}
 	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 5 }
+		has_portrait_property = { layer = 2 index = 6 }
+		has_portrait_property = { layer = 2 index = 7 }
+		has_portrait_property = { layer = 2 index = 12 }
+		has_portrait_property = { layer = 2 index = 13 }
+		has_portrait_property = { layer = 2 index = 17 }
+		has_portrait_property = { layer = 2 index = 18 }
+		has_portrait_property = { layer = 2 index = 19 }
+		has_portrait_property = { layer = 36 index = 26 }
+	}
 }
 
 blg_animal_raven = {
@@ -156,6 +260,17 @@ blg_animal_raven = {
 			is_artifact_equipped = yes
 			artifact_type = wiz_familiar_artf
 		}
+	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 5 }
+		has_portrait_property = { layer = 2 index = 6 }
+		has_portrait_property = { layer = 2 index = 7 }
+		has_portrait_property = { layer = 2 index = 12 }
+		has_portrait_property = { layer = 2 index = 13 }
+		has_portrait_property = { layer = 2 index = 18 }
+		has_portrait_property = { layer = 2 index = 19 }
+		has_portrait_property = { layer = 36 index = 25 }
+		has_portrait_property = { layer = 36 index = 26 }
 	}
 }
 
@@ -173,10 +288,32 @@ blg_animal_snake = {
 			artifact_type = wiz_familiar_artf
 		}
 	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 5 }
+		has_portrait_property = { layer = 2 index = 6 }
+		has_portrait_property = { layer = 2 index = 7 }
+		has_portrait_property = { layer = 2 index = 12 }
+		has_portrait_property = { layer = 2 index = 13 }
+		has_portrait_property = { layer = 2 index = 17 }
+		has_portrait_property = { layer = 2 index = 18 }
+		has_portrait_property = { layer = 2 index = 19 }
+		has_portrait_property = { layer = 36 index = 25 }
+	}
 }
 
 blg_animal_vulture = {
-	always = no
+	any_artifact = {
+		is_artifact_equipped = yes
+		artifact_type = animal_companion
+	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 14 }
+		has_portrait_property = { layer = 2 index = 16 }
+		has_portrait_property = { layer = 2 index = 20 }
+		has_portrait_property = { layer = 2 index = 21 }
+		has_portrait_property = { layer = 36 index = 24 }
+		has_portrait_property = { layer = 38 index = 9 }
+	}
 }
 
 blg_animal_wolf = {
@@ -189,6 +326,14 @@ blg_animal_wolf = {
 			has_character_modifier = wolf_familiar
 			blg_visible_society = yes
 		}
+	}
+	NOR = {
+		has_portrait_property = { layer = 2 index = 14 }
+		has_portrait_property = { layer = 2 index = 20 }
+		has_portrait_property = { layer = 2 index = 21 }
+		has_portrait_property = { layer = 36 index = 24 }
+		has_portrait_property = { layer = 38 index = 9 }
+		has_portrait_property = { layer = 38 index = 11 }
 	}
 }
 

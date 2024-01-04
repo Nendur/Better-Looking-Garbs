@@ -1287,7 +1287,7 @@
 					lower_real_tier_than = king
 				}
 				trigger_else = {
-					intrigue >= 16
+					intrigue >= 18
 					lower_real_tier_than = duke
 				}
 				trait = in_hiding

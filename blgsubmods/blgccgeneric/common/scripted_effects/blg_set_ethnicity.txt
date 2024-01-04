@@ -11,3 +11,7 @@ blg_set_ethnicity_bear = {
 		set_graphical_culture = bear
 	}
 }
+
+blg_set_ethnicity_bear_default = {
+	set_graphical_culture = bear
+}

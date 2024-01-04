@@ -113,13 +113,14 @@ blg_default_clothing = {
 		culture_group = eladrin_group
 		culture_group = dark_elf_group
 		culture_group = orc_group
+		culture_group = goblinoid_group
+		culture_group = draconic_culture_group
+		culture_group = dragonkin_group
 		culture_group = giant_group
 		culture_group = giantkin_group
 		culture_group = nafili_group
 		culture_group = mordrin_group
-		culture_group = goblinoid_group
 		culture_group = minotaur_group
-		culture_group = dragonkin_group
 		culture_group = fish_group
 		culture_group = scaly_group
 		culture_group = centaur_group
@@ -187,7 +188,13 @@ blg_merchant_headgear = {
 	OR = {
 		government = republic_government
 		government = merchant_republic_government
-		culture = highcoaster
+		AND = {
+			culture = highcoaster
+			NAND = {
+				higher_real_tier_than = duke
+				government = feudal_government
+			}
+		}
 	}
 	in_command = no
 	is_in_society = no
@@ -201,7 +208,6 @@ blg_merchant_headgear = {
 		culture_group = netherese_group
 		culture_group = gnome_group
 		culture_group = outworlder_group
-		culture = borderer
 	}
 	NOR = {
 		government = baron_theocracy_government

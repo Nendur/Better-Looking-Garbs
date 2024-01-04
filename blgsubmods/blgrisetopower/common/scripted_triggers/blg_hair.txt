@@ -322,7 +322,7 @@ blg_hair_southindian = {
 	OR = {
 		graphical_culture = southindiangfx
 		graphical_culture = assamesegfx
-		graphical_culture = khmergfx
+		graphical_culture = southasiangfx
 	}
 }
 
@@ -522,7 +522,7 @@ blg_beard_southern = {
 blg_beard_southindian = {
 	OR = {
 		graphical_culture = southindiangfx
-		graphical_culture = khmergfx
+		graphical_culture = southasiangfx
 	}
 }
 

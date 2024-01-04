@@ -8,6 +8,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_naga_son_skin"
+		textureFile = "gfx/characters/naga_male/naga_son_skin.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
+	spriteType = {
 		name = "GFX_naga_daughter_base"
 		textureFile = "gfx/characters/naga_female/naga_daughter_base.dds"
 		noOfFrames = 7
@@ -58,6 +65,7 @@ spriteTypes = {
 			"GFX_naga_male_mouth:d2"
 			"GFX_child_back:p17"
 			"GFX_naga_son_base:p18"
+			"GFX_naga_son_skin:p18:e"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
@@ -287,6 +295,7 @@ spriteTypes = {
 			"GFX_naga_male_mouth:d2"
 			"GFX_child_back:p17"
 			"GFX_naga_daughter_base:p18"
+			"GFX_naga_son_skin:p18:e"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"

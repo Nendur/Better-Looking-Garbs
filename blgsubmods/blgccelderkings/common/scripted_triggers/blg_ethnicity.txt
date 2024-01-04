@@ -152,6 +152,10 @@ blg_ethnicity_sogdian = {
 	always = no
 }
 
+blg_ethnicity_southasian = {
+	always = no
+}
+
 blg_ethnicity_southindian = {
 	always = no
 }

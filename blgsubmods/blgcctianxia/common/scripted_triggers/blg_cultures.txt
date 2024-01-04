@@ -114,6 +114,8 @@ blg_default_clothing = {
 		culture_group = koreanic
 		culture_group = mon_khmer_group
 		culture_group = tai_kadai_group
+		culture_group = andamanese_group
+		culture_group = papuan_group
 	}
 }
 

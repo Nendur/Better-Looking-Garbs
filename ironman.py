@@ -169,7 +169,7 @@ delete_list = [
 	"graphical_culture = nubiangfx",
 	"graphical_culture = kurdishgfx",
 	"graphical_culture = tochariangfx",
-	"graphical_culture = khmergfx",
+	"graphical_culture = southasiangfx",
 	"graphical_culture = polarbeargfx",
 	"graphical_culture = blackbeargfx"
 ]

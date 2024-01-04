@@ -1,6 +1,13 @@
 # AARAKOCRA
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_aarakocra_male_mouth"
+		texturefile = "gfx\\characters\\tengu\\aarakocra_mouth.dds"
+		noOfFrames = 6
+		norefcount = yes
+	}
+
 ### AARAKOCRA MALE
 
 	portraitType = {
@@ -28,7 +35,7 @@ spriteTypes = {
 			"GFX_frankish_male_overlayer_mid:p31:o4x0"
 			"GFX_character_special_crowns_mid:p19:o4x0"
 			"GFX_empty:p43:c4"
-			"GFX_tengu_male_mouth:d2"
+			"GFX_aarakocra_male_mouth:d2"
 			"GFX_lizardman_male_eyes:d6"
 			"GFX_lizardman_male_eyes2:d6:e"
 			"GFX_child_back:p17"
@@ -98,7 +105,7 @@ spriteTypes = {
 			"GFX_frankish_male_overlayer_mid:p31:o4x0"
 			"GFX_character_special_crowns_mid:p19:o4x0"
 			"GFX_empty:p43:c4"
-			"GFX_tengu_male_mouth:d2"
+			"GFX_aarakocra_male_mouth:d2"
 			"GFX_lizardman_male_eyes:d6"
 			"GFX_lizardman_male_eyes2:d6:e"
 			"GFX_creature_pale:p22"
@@ -166,7 +173,7 @@ spriteTypes = {
 			"GFX_frankish_male_overlayer_mid:p31:o4x0"
 			"GFX_character_special_crowns_mid:p19:o4x0"
 			"GFX_empty:p43:c4"
-			"GFX_tengu_male_mouth:d2"
+			"GFX_aarakocra_male_mouth:d2"
 			"GFX_lizardman_male_eyes:d6"
 			"GFX_lizardman_male_eyes2:d6:e"
 			"GFX_creature_pale:p22"
@@ -235,7 +242,7 @@ spriteTypes = {
 			"GFX_empty:p5:c3:o4x0"
 			"GFX_character_special_crowns_mid:p19:o4x0"
 			"GFX_empty:p43:c4"
-			"GFX_tengu_male_mouth:d2"
+			"GFX_aarakocra_male_mouth:d2"
 			"GFX_lizardman_male_eyes:d6"
 			"GFX_lizardman_male_eyes2:d6:e"
 			"GFX_child_back:p17"
@@ -307,7 +314,7 @@ spriteTypes = {
 			"GFX_empty:p5:c3:o4x0"
 			"GFX_character_special_crowns_mid:p19:o4x0"
 			"GFX_empty:p43:c4"
-			"GFX_tengu_male_mouth:d2"
+			"GFX_aarakocra_male_mouth:d2"
 			"GFX_lizardman_male_eyes:d6"
 			"GFX_lizardman_male_eyes2:d6:e"
 			"GFX_creature_pale:p22"
@@ -377,7 +384,7 @@ spriteTypes = {
 			"GFX_empty:p5:c3:o4x0"
 			"GFX_character_special_crowns_mid:p19:o4x0"
 			"GFX_empty:p43:c4"
-			"GFX_tengu_male_mouth:d2"
+			"GFX_aarakocra_male_mouth:d2"
 			"GFX_lizardman_male_eyes:d6"
 			"GFX_lizardman_male_eyes2:d6:e"
 			"GFX_creature_pale:p22"

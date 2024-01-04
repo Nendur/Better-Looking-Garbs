@@ -31,6 +31,21 @@ ulutiun_group = {
 	}
 }
 
+malatran_group = {
+	seng = {
+		graphical_cultures = { southasiangfx khmergfx }
+	}
+	kuong = {
+		graphical_cultures = { vietgfx khmergfx }
+	}
+	purang = {
+		graphical_cultures = { philippinegfx khmergfx }
+	}
+	bawani = {
+		graphical_cultures = { southasiangfx khmergfx }
+	}
+}
+
 maztican_group = {
 	azuposi = {
 		graphical_cultures = { nativeamericangfx }

@@ -1,6 +1,20 @@
 # SAURIAL
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_saurial_son_base"
+		textureFile = "gfx/characters/lizardfolk/saurial_son_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_saurial_daughter_base"
+		textureFile = "gfx/characters/lizardfolk/saurial_daughter_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
 ### SAURIAL MALE ####
 
 	portraitType = {
@@ -24,7 +38,7 @@ spriteTypes = {
 			"GFX_lizardman_female_eyes2:d6:e"
 			"GFX_lizardman_female_nose:d3"
 			"GFX_child_back:p17"
-			"PORTRAIT_lizardmangfx_child_male:p18"
+			"GFX_saurial_son_base:p18"
 			"GFX_creature_pale:p22"
 			"GFX_goblin_character_boils:p8"
 			"GFX_character_scars_dark:p7:y:o0x-22"
@@ -211,7 +225,7 @@ spriteTypes = {
 			"GFX_lizardman_female_eyes2:d6:e"
 			#"GFX_lizardman_female_nose:d3"
 			"GFX_child_back:p17"
-			"PORTRAIT_lizardmangfx_child_male:p18"
+			"GFX_saurial_daughter_base:p18"
 			"GFX_creature_pale:p22"
 			"GFX_goblin_character_boils:p8"
 			"GFX_character_scars_dark:p7:y:o0x-22"

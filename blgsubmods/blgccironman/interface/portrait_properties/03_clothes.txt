@@ -424,7 +424,7 @@
 			OR = {
 				has_job_title = job_spymaster
 				AND = {
-					intrigue >= 12
+					intrigue >= 16
 					lower_real_tier_than = duke
 				}
 			}

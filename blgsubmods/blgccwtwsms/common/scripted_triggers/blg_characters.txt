@@ -2,6 +2,11 @@
 
 ### Characters:
 
+# Character is a cannibal.
+blg_cannibal = {
+	trait = cannibal_trait
+}
+
 # Prisoner that is kept gagged.
 blg_dangerous_prisoner = {
 	OR = {
@@ -128,7 +133,10 @@ blg_peasant = {
 blg_portrait_monk = {
 	OR = {
 		portrait_has_trait = monk
-		portrait_society = monastic_order_insular
+		AND = {
+			portrait_society = monastic_order_insular
+			blg_wear_christian_monastic_clothing = yes
+		}
 	}
 }
 
@@ -136,7 +144,10 @@ blg_portrait_monk = {
 blg_portrait_nun = {
 	OR = {
 		portrait_has_trait = monk
-		portrait_society = monastic_order_insular
+		AND = {
+			portrait_society = monastic_order_insular
+			blg_wear_christian_monastic_clothing = yes
+		}
 	}
 }
 

@@ -1,6 +1,7 @@
 name="Better Looking Garbs Full"
 path="mod/betterlookinggarbsfull"
 dependencies={
+	"\"CleanSlate\""
 	"\"A Game of Thrones\""
 	"\"AGOT Congenital Overhaul\""
 	"\"AGOT More Bloodlines Submod\""
@@ -17,16 +18,15 @@ dependencies={
 	"\"Elder Kings Dev\""
 	"\"Elder Kings 26-09-2020\""
 	"\"Faerun\""
+	"\"Faerun - Forgotten Realms Total Conversion\""
 	"\"HIP - Historical Immersion Project\""
 	"\"Lux Invicta\""
-	"\"Lux Invicta v0.6K19\""
-	"\"Mythos 2 - Historical Fantasy\""
 	"\"Mythos 3 - Historical Fantasy\""
+	"\"Tianxia\""
 	"\"Tianxia: Silk Road Expansion\""
 	"\"The Winter King\""
 	"\"Western Europe 410-962 - The Winter King\""
 	"\"When the World Stopped Making Sense\""
-	"\"A.D. 633: Rise of Islam\""
 	"\"Cultural Cities Remix\""
 }
 tags={ Graphics Portraits Units Councillors }

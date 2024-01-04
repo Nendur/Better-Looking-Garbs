@@ -41,8 +41,6 @@ blg_ethnicity_known = {
 		graphical_culture = ashkenazigfx
 		graphical_culture = nubiangfx
 		graphical_culture = kurdishgfx
-		graphical_culture = tochariangfx
-		graphical_culture = khmergfx
 	}
 }
 
@@ -223,6 +221,10 @@ blg_ethnicity_sogdian = {
 		graphical_culture = alangfx
 		graphical_culture = sogdiangfx
 	}
+}
+
+blg_ethnicity_southasian = {
+	always = no
 }
 
 blg_ethnicity_southindian = {

@@ -267,6 +267,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = no
+				has_dlc = "Holy Fury"
 
 				portrait_society = hwarang
 				blg_wear_warrior_lodge_clothing = yes
@@ -306,6 +307,7 @@ spriteTypes = {
 				portrait_clothing = yes
 				portrait_age > child
 				portrait_is_female = yes
+				has_dlc = "Holy Fury"
 
 				portrait_society = hwarang
 				blg_wear_warrior_lodge_clothing = yes

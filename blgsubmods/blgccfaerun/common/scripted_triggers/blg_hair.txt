@@ -196,7 +196,7 @@ blg_beard_uncommon = {
 
 blg_hair_african = {
 	OR = {
-		graphical_culture = westafricangfx
+		graphical_culture = chultangfx
 		graphical_culture = tashalangfx
 	}
 }
@@ -233,6 +233,7 @@ blg_hair_chinese = {
 		graphical_culture = chugfx
 		graphical_culture = japanesegfx
 		graphical_culture = maviddigfx
+		graphical_culture = khmergfx
 	}
 }
 
@@ -336,7 +337,7 @@ blg_hair_southindian = {
 		graphical_culture = southindiangfx
 		graphical_culture = africangfx
 		graphical_culture = koagfx
-		graphical_culture = khmergfx
+		graphical_culture = southasiangfx
 	}
 }
 
@@ -376,7 +377,7 @@ blg_hair_westernslavic = {
 blg_beard_african = {
 	OR = {
 		graphical_culture = africangfx
-		graphical_culture = westafricangfx
+		graphical_culture = chultangfx
 		graphical_culture = tashalangfx
 		graphical_culture = berbergfx
 	}
@@ -484,6 +485,7 @@ blg_beard_norse = {
 		graphical_culture = northlandergfx
 		graphical_culture = einheriargfx
 		graphical_culture = nubarigfx
+		graphical_culture = halfgiantgfx
 	}
 }
 
@@ -512,6 +514,7 @@ blg_beard_southindian = {
 		graphical_culture = southindiangfx
 		graphical_culture = levantinegfx
 		graphical_culture = oldzakharangfx
+		graphical_culture = southasiangfx
 		graphical_culture = khmergfx
 		graphical_culture = chugfx
 		graphical_culture = caledoriangfx

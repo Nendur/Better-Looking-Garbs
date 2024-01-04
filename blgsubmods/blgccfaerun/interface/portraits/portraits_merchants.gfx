@@ -55,7 +55,13 @@ spriteTypes = {
 				OR = {
 					portrait_government = merchant_republic_government
 					portrait_government = republic_government
-					portrait_culture = highcoaster
+					AND = {
+						portrait_culture = highcoaster
+						NAND = {
+							portrait_tier = king
+							portrait_government = feudal_government
+						}
+					}
 				}
 				portrait_in_command = no
 				OR = {
@@ -65,14 +71,7 @@ spriteTypes = {
 					portrait_culture_group = gnome_group
 					portrait_culture_group = outworlder_group
 				}
-				NOR = {
-					portrait_government = baron_theocracy_government
-					portrait_has_trait = creature_ogre
-					portrait_has_trait = creature_half_ogre
-					portrait_has_trait = creature_troll
-					portrait_has_trait = creature_goblin
-					portrait_has_trait = creature_yikarian
-				}
+				NOT = { portrait_government = baron_theocracy_government }
 			}
 		}
 
@@ -101,7 +100,13 @@ spriteTypes = {
 				OR = {
 					portrait_government = merchant_republic_government
 					portrait_government = republic_government
-					portrait_culture = highcoaster
+					AND = {
+						portrait_culture = highcoaster
+						NAND = {
+							portrait_tier = king
+							portrait_government = feudal_government
+						}
+					}
 				}
 				portrait_in_command = no
 				OR = {
@@ -111,14 +116,7 @@ spriteTypes = {
 					portrait_culture_group = gnome_group
 					portrait_culture_group = outworlder_group
 				}
-				NOR = {
-					portrait_government = baron_theocracy_government
-					portrait_has_trait = creature_ogre
-					portrait_has_trait = creature_half_ogre
-					portrait_has_trait = creature_troll
-					portrait_has_trait = creature_goblin
-					portrait_has_trait = creature_yikarian
-				}
+				NOT = { portrait_government = baron_theocracy_government }
 			}
 		}
 
@@ -155,13 +153,6 @@ spriteTypes = {
 					portrait_culture_group = imaskari_group
 					portrait_culture_group = netherese_group
 				}
-				NOR = {
-					portrait_has_trait = creature_ogre
-					portrait_has_trait = creature_half_ogre
-					portrait_has_trait = creature_troll
-					portrait_has_trait = creature_goblin
-					portrait_has_trait = creature_yikarian
-				}
 			}
 		}
 
@@ -195,13 +186,6 @@ spriteTypes = {
 					portrait_culture_group = raum_group
 					portrait_culture_group = imaskari_group
 					portrait_culture_group = netherese_group
-				}
-				NOR = {
-					portrait_has_trait = creature_ogre
-					portrait_has_trait = creature_half_ogre
-					portrait_has_trait = creature_troll
-					portrait_has_trait = creature_goblin
-					portrait_has_trait = creature_yikarian
 				}
 			}
 		}
@@ -245,13 +229,6 @@ spriteTypes = {
 					portrait_culture_group = maztican_group
 					portrait_culture_group = abeiran_group
 				}
-				NOR = {
-					portrait_has_trait = creature_ogre
-					portrait_has_trait = creature_half_ogre
-					portrait_has_trait = creature_troll
-					portrait_has_trait = creature_goblin
-					portrait_has_trait = creature_yikarian
-				}
 			}
 		}
 
@@ -281,13 +258,7 @@ spriteTypes = {
 					portrait_culture = calishite
 					portrait_culture = arnadar
 					portrait_culture = aslanlar
-				}
-				NOR = {
-					portrait_has_trait = creature_ogre
-					portrait_has_trait = creature_half_ogre
-					portrait_has_trait = creature_troll
-					portrait_has_trait = creature_goblin
-					portrait_has_trait = creature_yikarian
+					portrait_culture = borderer
 				}
 			}
 		}
@@ -322,13 +293,7 @@ spriteTypes = {
 					portrait_culture = calishite
 					portrait_culture = arnadar
 					portrait_culture = aslanlar
-				}
-				NOR = {
-					portrait_has_trait = creature_ogre
-					portrait_has_trait = creature_half_ogre
-					portrait_has_trait = creature_troll
-					portrait_has_trait = creature_goblin
-					portrait_has_trait = creature_yikarian
+					portrait_culture = borderer
 				}
 			}
 		}

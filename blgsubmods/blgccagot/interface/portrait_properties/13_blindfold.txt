@@ -231,6 +231,7 @@
 
 		trigger = {
 			trait = one_eyed
+			blg_adult = yes
 			NOR = {
 				trait = blinded
 				has_character_modifier = glass_eye
@@ -263,6 +264,7 @@
 
 		trigger = {
 			trait = one_eyed
+			blg_adult = yes
 			NOR = {
 				trait = blinded
 				has_character_modifier = glass_eye
@@ -320,6 +322,7 @@
 
 		trigger = {
 			trait = blinded
+			blg_adult = yes
 
 			trigger_if = {
 				limit = { is_variable_equal = { which = ca_eyepatch value = 0 } }
@@ -459,6 +462,14 @@
 				has_character_modifier = glass_eye
 				has_game_rule = { name = blg_wounds value = off }
 			}
+		}
+	}
+
+	23 = { # w - Shades
+		factor = 100
+
+		trigger = {
+			is_variable_equal = { which = ca_eyepatch value = 24 }
 		}
 	}
 }

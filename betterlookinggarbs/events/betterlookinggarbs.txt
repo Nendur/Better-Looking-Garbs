@@ -892,7 +892,7 @@ long_character_event = {
 		name = bear.6.d
 		trigger = {
 			NOR = {
-				trait = cannibal_trait
+				blg_cannibal = yes
 				trait = lunatic
 			}
 		}
@@ -902,7 +902,7 @@ long_character_event = {
 		tooltip_info = cannibal_trait
 		name = bear.6.e
 		trigger = {
-			trait = cannibal_trait
+			blg_cannibal = yes
 		}
 		event_target:bear_character = {
 			death = {

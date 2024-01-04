@@ -15,6 +15,20 @@ spriteTypes = {
 		norefcount = yes
 	}
 
+	spriteType = {
+		name = "GFX_asabi_son_base"
+		textureFile = "gfx/characters/lizardfolk/asabi_son_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_asabi_daughter_base"
+		textureFile = "gfx/characters/lizardfolk/asabi_daughter_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
 	portraitType = {
 		name = "PORTRAIT_asabigfx_male"
 		effectFile = "gfx/FX/portrait.lua"
@@ -42,9 +56,9 @@ spriteTypes = {
 			"GFX_character_special_crowns_mid:p19:o10x0"
 			"GFX_frankish_male_overlayer_mid:p31:o10x0"
 			"GFX_lizardman_male_chin:d1"
-			"GFX_abomination_male_cheeks:p0:o6x-12"
+			"GFX_serpentkin_male_tongue:p0:o25x-21"
 			"GFX_child_back:p17"
-			"PORTRAIT_lizardmangfx_child_male:p18"
+			"GFX_asabi_son_base:p18"
 			"GFX_creature_pale:p22"
 			"GFX_goblin_character_boils:p9:o26x0"
 			"GFX_character_scars_dark:p7:y:o0x-12"
@@ -115,7 +129,7 @@ spriteTypes = {
 			"GFX_character_special_crowns_mid:p19:o10x0"
 			"GFX_frankish_male_overlayer_mid:p31:o10x0"
 			"GFX_lizardman_male_chin:d1"
-			"GFX_abomination_male_cheeks:p0:o6x-12"
+			"GFX_serpentkin_male_tongue:p0:o25x-21"
 			"GFX_creature_pale:p22"
 			"GFX_goblin_character_boils:p9:o26x0"
 			"GFX_character_scars_dark:p7:y:o0x-12"
@@ -186,7 +200,7 @@ spriteTypes = {
 			"GFX_character_special_crowns_mid:p19:o10x0"
 			"GFX_frankish_male_overlayer_mid:p31:o10x0"
 			"GFX_lizardman_male_chin:d1"
-			"GFX_abomination_male_cheeks:p0:o6x-12"
+			"GFX_serpentkin_male_tongue:p0:o25x-21"
 			"GFX_creature_pale:p22"
 			"GFX_goblin_character_boils:p9:o26x0"
 			"GFX_character_scars_dark:p7:y:o0x-12"
@@ -258,9 +272,9 @@ spriteTypes = {
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19:o10x0"
 			"GFX_lizardman_male_ear:d7"
-			"GFX_abomination_male_cheeks:p0:o6x-12"
+			"GFX_serpentkin_male_tongue:p0:o25x-21"
 			"GFX_child_back:p17"
-			"PORTRAIT_lizardmangfx_child_male:p18"
+			"GFX_asabi_daughter_base:p18"
 			"GFX_creature_pale:p22"
 			"GFX_goblin_character_boils:p9:o26x0"
 			"GFX_character_scars_dark:p7:y:o0x-12"
@@ -331,7 +345,7 @@ spriteTypes = {
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19:o10x0"
 			"GFX_lizardman_male_ear:d7"
-			"GFX_abomination_male_cheeks:p0:o6x-12"
+			"GFX_serpentkin_male_tongue:p0:o25x-21"
 			"GFX_creature_pale:p22"
 			"GFX_goblin_character_boils:p9:o26x0"
 			"GFX_character_scars_dark:p7:y:o0x-12"
@@ -402,7 +416,7 @@ spriteTypes = {
 			"GFX_empty:p5:c3"
 			"GFX_character_special_crowns_mid:p19:o10x0"
 			"GFX_lizardman_male_ear:d7"
-			"GFX_abomination_male_cheeks:p0:o6x-12"
+			"GFX_serpentkin_male_tongue:p0:o25x-21"
 			"GFX_creature_pale:p22"
 			"GFX_goblin_character_boils:p9:o26x0"
 			"GFX_character_scars_dark:p7:y:o0x-12"

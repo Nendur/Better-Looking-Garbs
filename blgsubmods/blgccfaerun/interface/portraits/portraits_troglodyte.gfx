@@ -22,6 +22,20 @@ spriteTypes = {
 		norefcount = yes
 	}
 
+	spriteType = {
+		name = "GFX_troglodyte_son_base"
+		textureFile = "gfx/characters/lizardfolk/troglodyte_son_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_troglodyte_daughter_base"
+		textureFile = "gfx/characters/lizardfolk/troglodyte_daughter_base.dds"
+		noOfFrames = 7
+		norefcount = yes
+	}
+
 ### TROGLODYTE MALE ####
 
 	portraitType = {
@@ -45,7 +59,7 @@ spriteTypes = {
 			"GFX_lizardman_female_eyes2:d6:e"
 			"GFX_troglodyte_female_nose:d3"
 			"GFX_child_back:p17"
-			"PORTRAIT_lizardmangfx_child_male:p18"
+			"GFX_troglodyte_son_base:p18"
 			"GFX_creature_pale:p22"
 			"GFX_goblin_character_boils:p8"
 			"GFX_character_scars:p7:y:o0x-22"
@@ -231,7 +245,7 @@ spriteTypes = {
 			"GFX_creature_boils:p9:o-5x-18"
 			"GFX_lizardman_female_eyes2:d6:e"
 			"GFX_child_back:p17"
-			"PORTRAIT_lizardmangfx_child_male:p18"
+			"GFX_troglodyte_daughter_base:p18"
 			"GFX_creature_pale:p22"
 			"GFX_goblin_character_boils:p8"
 			"GFX_character_scars:p7:y:o0x-22"
