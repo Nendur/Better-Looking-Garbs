@@ -19,10 +19,16 @@
 	3 = { # c - Divine possessed
 		factor = 100
 		trigger = {
-			trait = possessed
 			OR = {
-				has_character_modifier = voice_of_jesus
-				has_character_modifier = military_jesus
+				AND = {
+					trait = possessed
+					OR = {
+						has_character_modifier = voice_of_jesus
+						has_character_modifier = military_jesus
+						has_character_modifier = killed_an_old_one
+					}
+				}
+				trait = immortal
 			}
 			NOT = { has_game_rule = { name = supernatural_events value = off } }
 		}

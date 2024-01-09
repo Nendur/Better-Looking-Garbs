@@ -160,7 +160,10 @@ blg_demon = {
 
 # Glowing eyes.
 blg_glowing = {
-	evilcat_is_chosen = yes
+	OR = {
+		trait = immortal
+		evilcat_is_chosen = yes
+	}
 }
 
 # Godly glow.
@@ -199,13 +202,21 @@ blg_werewolf = {
 		has_character_modifier = wolf_blood
 		has_character_modifier = lycanthropy
 		AND = {
-			trait = werewolf
+			OR = {
+				trait = werewolf
+				trait = weretiger
+			}
 			OR = {
 				has_character_modifier = known_lycan_modifier
 				AND = {
 					multiplayer = no
 					OR = {
-						any_player = { trait = werewolf }
+						any_player = {
+							OR = {
+								trait = werewolf
+								trait = weretiger
+							}
+						}
 						is_local_human_observer = yes
 					}
 				}

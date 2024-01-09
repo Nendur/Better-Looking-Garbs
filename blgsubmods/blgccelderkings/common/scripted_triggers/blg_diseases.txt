@@ -159,7 +159,10 @@ blg_demon = {
 
 # Glowing eyes.
 blg_glowing = {
-	trait = lich
+	OR = {
+		trait = immortal
+		trait = lich
+	}
 }
 
 # Godly glow.

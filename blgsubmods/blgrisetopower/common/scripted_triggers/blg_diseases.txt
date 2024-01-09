@@ -191,6 +191,7 @@ blg_glowing = {
 				has_character_modifier = killed_an_old_one
 			}
 		}
+		trait = immortal
 		AND = {
 			OR = {
 				trait = rtp_mage_tr

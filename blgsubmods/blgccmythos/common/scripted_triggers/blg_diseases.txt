@@ -147,11 +147,16 @@ blg_demon = {
 
 # Glowing eyes.
 blg_glowing = {
-	trait = possessed
 	OR = {
-		has_character_modifier = voice_of_jesus
-		has_character_modifier = military_jesus
-		has_character_modifier = killed_an_old_one
+		AND = {
+			trait = possessed
+			OR = {
+				has_character_modifier = voice_of_jesus
+				has_character_modifier = military_jesus
+				has_character_modifier = killed_an_old_one
+			}
+		}
+		trait = immortal
 	}
 }
 
