@@ -66,15 +66,10 @@ blg_portrait_holy_order = {
 
 # A priest in the council or a theocracy.
 blg_priest = {
+	is_ruler = yes
 	OR = {
-		has_job_title = job_spiritual
-		AND = {
-			OR = {
-				government = theocracy_government
-				government = baron_theocracy_government
-			}
-			is_ruler = yes
-		}
+		government = theocracy_government
+		government = baron_theocracy_government
 	}
 }
 

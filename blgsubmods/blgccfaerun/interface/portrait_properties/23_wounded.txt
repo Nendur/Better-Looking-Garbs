@@ -1,0 +1,345 @@
+#p23 black eye
+23 = {
+	0 = { # 0 - blank
+		factor = 100
+
+		trigger = {
+			OR = {
+				blg_wounded_alive = no
+				NOR = {
+					has_injury_trigger = yes
+					trait = disfigured
+					trait = maimed
+					has_character_modifier = black_eye
+					has_character_modifier = concussion
+					AND = {
+						trait = warlock_elemental
+						trait = angered_patron
+					}
+				}
+				blg_wounded_off = yes
+			}
+		}
+	}
+
+	1 = { # a - Concussion AND Black eye.
+		factor = 1
+
+		trigger = {
+			OR = {
+				trait = severely_injured
+				AND = {
+					has_character_modifier = black_eye
+					has_character_modifier = concussion
+				}
+			}
+
+			NOT = { trait = disfigured }
+
+			blg_wounded_alive = yes
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = concussion
+			has_character_modifier = black_eye
+		}
+	}
+
+	2 = { # b - Concussion.
+		factor = 1
+
+		trigger = {
+			has_injury_trigger = yes
+
+			NOR = {
+				trait = disfigured
+				has_character_modifier = black_eye
+			}
+
+			blg_wounded_alive = yes
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = concussion
+		}
+	}
+
+	3 = { # c - Black eye.
+		factor = 1
+
+		trigger = {
+			OR = {
+				trait = wounded
+				has_character_modifier = black_eye
+			}
+
+			NOR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+
+		modifier = {
+			factor = 100
+			has_character_modifier = black_eye
+		}
+	}
+
+	4 = { # d - Scratches
+		factor = 1
+
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	5 = { # e - Cheek
+		factor = 1
+
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	6 = { # f - Bloody nose
+		factor = 1
+
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	7 = { # g - Busted lip
+		factor = 1
+
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	8 = { # h - Forehead cut
+		factor = 1
+
+		trigger = {
+			trait = wounded
+
+			NOR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	9 = { # i - Jaw cut
+		factor = 1
+
+		trigger = {
+			has_injury_trigger = yes
+
+			NOR = {
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	10 = { # j - Bandaged head
+		factor = 1
+
+		trigger = {
+			OR = {
+				has_injury_trigger = yes
+				has_character_modifier = concussion
+			}
+
+			NOR = {
+				trait = disfigured
+				AND = {
+					has_character_modifier = black_eye
+					has_character_modifier = concussion
+				}
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	11 = { # k - Cheek cut
+		factor = 1
+
+		trigger = {
+			has_injury_trigger = yes
+
+			NOR = {
+				trait = disfigured
+				trait = maimed
+				has_character_modifier = concussion
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	12 = { # l - Eye
+		factor = 1
+
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+			}
+
+			blg_wounded_alive = yes
+		}
+
+		modifier = {
+			factor = 50
+			trait = one_eyed
+		}
+	}
+
+	13 = { # m - Burned
+		factor = 1
+
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+			}
+
+			blg_wounded_alive = yes
+		}
+
+		modifier = {
+			factor = 50
+			trait = one_eyed
+		}
+	}
+
+	14 = { # n - Mangled jaw
+		factor = 1
+
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	15 = { # o - Mangled nose
+		factor = 1
+
+		trigger = {
+			OR = {
+				trait = severely_injured
+				trait = disfigured
+				trait = maimed
+			}
+
+			blg_wounded_alive = yes
+		}
+	}
+
+	16 = { # p - Disfigured nose
+		factor = 1
+
+		trigger = {
+			OR = {
+				trait = disfigured
+				trait = maimed
+			}
+		}
+	}
+
+	17 = { # q - Disfigured lip
+		factor = 1
+
+		trigger = {
+			OR = {
+				trait = disfigured
+				trait = maimed
+			}
+		}
+	}
+
+	18 = { # r - Disfigured ear
+		factor = 1
+
+		trigger = {
+			OR = {
+				trait = disfigured
+				trait = maimed
+			}
+		}
+	}
+
+	19 = { # s - Disfigured forehead
+		factor = 1
+
+		trigger = {
+			OR = {
+				trait = disfigured
+				trait = maimed
+				AND = {
+					trait = warlock_elemental
+					trait = angered_patron
+				}
+			}
+		}
+	}
+}

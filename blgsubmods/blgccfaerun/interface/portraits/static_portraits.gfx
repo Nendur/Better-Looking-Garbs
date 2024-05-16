@@ -1,0 +1,188 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_BR_fixed_portraits"
+		textureFile = "gfx/characters/shared/BR_fixed_portraits.dds"
+		noOfFrames = 27
+	}
+
+	portraitType = {
+		name = "PORTRAIT_BR_fixed_portraits"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 20000
+				# portrait_age > child
+				portrait_clothing = yes
+				has_game_rule = { name = static_portrait_rule value = on }
+				OR = {
+					AND = {
+						OR = {
+							portrait_has_trait = bio_aerie
+							portrait_has_trait = bio_ajantis
+							portrait_has_trait = bio_alora
+							portrait_has_trait = bio_anomen
+							portrait_has_trait = bio_aylin
+							portrait_has_trait = bio_baeloth
+							portrait_has_trait = bio_branwen
+							portrait_has_trait = bio_cernd
+							portrait_has_trait = bio_clara
+							portrait_has_trait = bio_coran
+							portrait_has_trait = bio_alustriel
+							portrait_has_trait = bio_bruenor
+							portrait_has_trait = bio_drizzt
+							AND = {
+								portrait_has_trait = bio_viconia
+								NOR = {
+									portrait_religion = shadow_gods
+									portrait_religion = lolth_cult
+								}
+							}
+							portrait_has_trait = bio_sarya
+							portrait_has_trait = bio_caladorn
+							portrait_has_trait = bio_laeral
+							portrait_has_trait = bio_dorn
+							portrait_has_trait = bio_dynaheir
+							portrait_has_trait = bio_edwin
+							portrait_has_trait = bio_eldoth
+							portrait_has_trait = bio_enver
+							portrait_has_trait = bio_faldorn
+						}
+						NOR = {
+							portrait_has_trait = lich
+							portrait_has_trait = archlich
+							portrait_has_trait = lich_baelnorn
+							portrait_has_trait = undead
+						}
+					}
+					portrait_has_trait = bio_sarevok
+					portrait_has_trait = bio_bhaal
+					portrait_has_trait = bio_balthazar
+					portrait_has_trait = bio_bodhi
+				}
+			}
+		}
+
+		layer = {
+			"GFX_empty:c0"
+			"GFX_empty:c1"
+			"GFX_empty:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+			"GFX_empty:c6"
+			"GFX_empty:c7"
+			"GFX_BR_fixed_portraits:c4"
+		}
+
+		allow_property_values = {
+			43 = {
+				0 = {
+					portrait_has_trait = bio_aerie
+				}
+				1 = {
+					portrait_has_trait = bio_ajantis
+				}
+				2 = {
+					portrait_has_trait = bio_alora
+				}
+				3 = {
+					portrait_has_trait = bio_anomen
+				}
+				4 = {
+					portrait_has_trait = bio_aylin
+				}
+				5 = {
+					portrait_has_trait = bio_baeloth
+				}
+				6 = {
+					portrait_has_trait = bio_balthazar
+				}
+				7 = {
+					portrait_has_trait = bio_bodhi
+				}
+				8 = {
+					portrait_has_trait = bio_branwen
+				}
+				9 = {
+					portrait_has_trait = bio_cernd
+				}
+				10 = {
+					portrait_has_trait = bio_clara
+				}
+				11 = {
+					portrait_has_trait = bio_coran
+				}
+				12 = {
+					portrait_has_trait = bio_alustriel
+				}
+				13 = {
+					portrait_has_trait = bio_bruenor
+				}
+				14 = {
+					portrait_has_trait = bio_drizzt
+				}
+				15 = {
+					AND = {
+						portrait_has_trait = bio_viconia
+						NOR = {
+							portrait_religion = shadow_gods
+							portrait_religion = lolth_cult
+						}
+					}
+				}
+				16 = {
+					portrait_has_trait = bio_bhaal
+				}
+				17 = {
+					portrait_has_trait = bio_sarevok
+				}
+				18 = {
+					portrait_has_trait = bio_sarya
+				}
+				19 = {
+					portrait_has_trait = bio_caladorn
+				}
+				20 = {
+					portrait_has_trait = bio_laeral
+				}
+				21 = {
+					portrait_has_trait = bio_dorn
+				}
+				22 = {
+					portrait_has_trait = bio_dynaheir
+				}
+				23 = {
+					portrait_has_trait = bio_edwin
+				}
+				24 = {
+					portrait_has_trait = bio_eldoth
+				}
+				25 = {
+					portrait_has_trait = bio_enver
+				}
+				26 = {
+					portrait_has_trait = bio_faldorn
+				}
+			}
+			5 = {
+				11 = { always = yes }
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+			34 = {
+				0 = { always = yes }
+			}
+		}
+	}
+}

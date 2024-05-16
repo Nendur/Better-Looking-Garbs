@@ -271,6 +271,7 @@ blg_veiled_crown = {
 
 blg_culture_african = {
 	OR = {
+		is_faerun_jungle_culture = yes
 		culture_group = katashakan_group
 		culture_group = scaly_group
 		culture_group = nafili_group
@@ -291,10 +292,7 @@ blg_culture_central_germanic = {
 
 # Chinese adjacent cultures.
 blg_culture_chinese = {
-	OR = {
-		culture_group = shou_group
-		culture_group = celestial_sea_group
-	}
+	is_kara_turan_culture = yes
 }
 
 blg_culture_eastern_european = {
@@ -356,6 +354,7 @@ blg_culture_mediterranean = {
 blg_culture_middleeast = {
 	OR = {
 		culture_group = zakharan_group
+		culture_group = old_zakharan_group
 		culture_group = calishite_group
 		culture_group = lapal_group
 	}

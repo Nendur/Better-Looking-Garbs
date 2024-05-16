@@ -1,0 +1,131 @@
+#p30 Eye effects.
+30 = {
+	0 = { # 0 - blank
+		factor = 1
+		modifier = {
+			factor = 100
+			OR = {
+				has_game_rule = { name = blg_traits value = notraits }
+				has_game_rule = { name = blg_traits value = off }
+			}
+		}
+	}
+
+	1 = { # a - Demon Child
+		factor = 100
+		trigger = {
+			blg_demon = yes
+
+			NOT = { has_game_rule = { name = supernatural_events value = off } }
+			blg_traits_lunatic_rule = yes
+		}
+	}
+
+	2 = { # b - Godly glow
+		factor = 100
+		trigger = {
+			blg_god = yes
+		}
+	}
+
+	3 = { # c - Divine possessed
+		factor = 100
+		trigger = {
+			blg_glowing = yes
+
+			NOT = { has_game_rule = { name = supernatural_events value = off } }
+			blg_traits_lunatic_rule = yes
+		}
+	}
+
+	4 = { # d - Blind
+		factor = 100
+		trigger = {
+			blg_blind = yes
+		}
+	}
+
+	5 = { # e - Wolfblooded
+		factor = 100
+		trigger = {
+			blg_werewolf = yes
+
+			NOT = { has_game_rule = { name = supernatural_events value = off } }
+			blg_traits_lunatic_rule = yes
+		}
+	}
+
+	6 = { # f - Possessed
+		factor = 100
+		trigger = {
+			OR = {
+				trait = possessed
+				AND = {
+					trait = warlock_celestial
+					trait = angered_patron
+				}
+			}
+
+			blg_disease_alive = yes
+			blg_traits_lunatic_rule = yes
+		}
+	}
+
+	7 = { # g - Incapable
+		factor = 100
+		trigger = {
+			OR = {
+				trait = incapable
+				trait = sick_incapable
+			}
+
+			blg_disease_alive = yes
+		}
+	}
+
+	8 = { # h - Lunatic
+		factor = 100
+		trigger = {
+			OR = {
+				trait = lunatic
+				AND = {
+					trait = warlock_fey
+					trait = angered_patron
+				}
+			}
+
+			blg_disease_alive = yes
+			blg_traits_lunatic_rule = yes
+		}
+	}
+
+	9 = { # i - Depressed
+		factor = 100
+		trigger = {
+			trait = depressed
+
+			blg_disease_alive = yes
+		}
+	}
+
+	10 = { # j - Stressed
+		factor = 100
+		trigger = {
+			blg_stressed = yes
+
+			blg_disease_alive = yes
+		}
+	}
+
+	11 = { # k - Blinded eye
+		factor = 100
+		trigger = {
+			trait = one_eyed
+			NOR = {
+				has_portrait_property = { layer = 13 index = 11 }
+				has_portrait_property = { layer = 13 index = 12 }
+				has_portrait_property = { layer = 13 index = 13 }
+			}
+		}
+	}
+}

@@ -27,6 +27,10 @@
 				race_is_fiendish = yes
 				graphical_culture = merrowgfx
 				has_character_modifier = devil_tiefling
+				AND = {
+					trait = angered_patron
+					trait = warlock_fiend
+				}
 			}
 			NOR = {
 				graphical_culture = tieflinggfx
@@ -104,6 +108,30 @@
 				graphical_culture = ultrolothgfx
 				graphical_culture = yikariangfx
 			}
+		}
+	}
+
+	10 = { # third eye
+		factor = 0
+	}
+
+	11 = { # second head
+		factor = 0
+	}
+
+	12 = { # beak
+		factor = 0
+	}
+
+	13 = { # teeth
+		factor = 0
+	}
+
+	14 = { # eyes
+		factor = 100
+		trigger = {
+			trait = angered_patron
+			trait = warlock_old_one
 		}
 	}
 }

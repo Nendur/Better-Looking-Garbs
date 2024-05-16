@@ -201,6 +201,7 @@ blg_werewolf = {
 		trait = half_dragon
 		has_character_modifier = wolf_blood
 		has_character_modifier = lycanthropy
+		gfx_culture_scope = { culture = tasloi }
 		AND = {
 			OR = {
 				trait = werewolf

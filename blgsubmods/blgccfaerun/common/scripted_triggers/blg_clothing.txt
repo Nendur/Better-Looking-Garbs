@@ -87,7 +87,7 @@ blg_warrior = {
 	}
 	OR = {
 		olrox_artifact_heavyarmor_requirement = yes
-		zz_class = no
+		z_has_class = no
 	}
 }
 
@@ -223,7 +223,7 @@ blg_headgear_military = {
 	blg_headgear_military_off_rule = no
 	OR = {
 		olrox_artifact_heavyarmor_requirement = yes
-		zz_class = no
+		z_has_class = no
 	}
 	trigger_if = {
 		limit = {
@@ -264,7 +264,7 @@ blg_headgear_intrigue = {
 # More common to cover hair.
 blg_headgear_covered = {
 	OR = {
-		is_muslim_trigger = yes
+		blg_religion_muslim = yes
 		culture = bedine
 		culture = dtarig
 		culture = desert_giant
@@ -370,7 +370,7 @@ blg_clothes_military = {
 	}
 	OR = {
 		olrox_artifact_mediumarmor_requirement = yes
-		zz_class = no
+		z_has_class = no
 	}
 	trigger_if = {
 		limit = {

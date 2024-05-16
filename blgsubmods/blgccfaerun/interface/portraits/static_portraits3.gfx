@@ -1,0 +1,195 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ND_fixed_portraits3"
+		textureFile = "gfx/characters/shared/ND_fixed_portraits3.dds"
+		noOfFrames = 27
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ND_fixed_portraits3"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 20000
+				portrait_clothing = yes
+				has_game_rule = { name = static_portrait_rule value = on }
+				OR = {
+					portrait_has_trait = bio_sofina # she keeps the same portrait if undead
+					portrait_has_trait = bio_astarion # ditto
+					portrait_has_trait = bio_dark_urge
+					portrait_has_trait = bio_orin
+					AND = {
+						OR = {
+							portrait_has_trait = bio_doric
+							portrait_has_trait = bio_edgin
+							portrait_has_trait = bio_forge
+							portrait_has_trait = bio_holga
+							portrait_has_trait = bio_simon
+							portrait_has_trait = bio_xenk
+							portrait_has_trait = bio_themberchaud
+							portrait_has_trait = bio_gale
+							portrait_has_trait = bio_laezel
+							portrait_has_trait = bio_shadowheart
+							AND = {
+								portrait_has_trait = bio_wyll
+								NOT = { portrait_has_trait = angered_patron }
+							}
+							portrait_has_trait = bio_karlach
+							portrait_has_trait = bio_jenevelle
+							portrait_has_trait = bio_minsc
+							portrait_has_trait = bio_abdel
+							portrait_has_trait = bio_jaheira
+							portrait_has_trait = bio_nocturne
+							portrait_has_trait = bio_imoen
+							AND = {
+								portrait_has_trait = bio_viconia
+								OR = {
+									portrait_religion = shadow_gods
+									portrait_religion = lolth_cult
+								}
+							}
+							portrait_has_trait = bio_xan
+							portrait_has_trait = bio_mazzy
+						}
+						NOR = {
+							portrait_has_trait = lich
+							portrait_has_trait = archlich
+							portrait_has_trait = lich_baelnorn
+							portrait_has_trait = undead
+						}
+					}
+				}
+			}
+		}
+
+		layer = {
+			"GFX_empty:c0"
+			"GFX_empty:c1"
+			"GFX_empty:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+			"GFX_empty:c6"
+			"GFX_empty:c7"
+			"GFX_ND_fixed_portraits3:c4"
+		}
+
+		allow_property_values = {
+			43 = {
+				0 = {
+					portrait_has_trait = bio_doric
+				}
+				1 = {
+					portrait_has_trait = bio_edgin
+				}
+				2 = {
+					portrait_has_trait = bio_forge
+				}
+				3 = {
+					portrait_has_trait = bio_holga
+				}
+				4 = {
+					portrait_has_trait = bio_simon
+				}
+				5 = {
+					portrait_has_trait = bio_sofina
+				}
+				6 = {
+					portrait_has_trait = bio_xenk
+				}
+				7 = {
+					portrait_has_trait = bio_themberchaud
+				}
+				8 = {
+					portrait_has_trait = bio_astarion
+				}
+				9 = {
+					portrait_has_trait = bio_gale
+				}
+				10 = {
+					portrait_has_trait = bio_laezel
+				}
+				11 = {
+					portrait_has_trait = bio_shadowheart
+				}
+				12 = {
+					AND = {
+						portrait_has_trait = bio_wyll
+						NOT = { portrait_has_trait = angered_patron }
+					}
+				}
+				13 = {
+					portrait_has_trait = bio_karlach
+				}
+				14 = {
+					portrait_has_trait = bio_dark_urge
+				}
+				15 = {
+					portrait_has_trait = bio_jenevelle
+				}
+				16 = {
+					portrait_has_trait = bio_minsc
+				}
+				17 = {
+					portrait_has_trait = bio_orin
+				}
+				18 = {
+					portrait_has_trait = bio_abdel
+					NOT = { portrait_age > midage }
+				}
+				19 = {
+					portrait_has_trait = bio_abdel
+					portrait_age > midage
+				}
+				20 = {
+					portrait_has_trait = bio_jaheira
+					NOT = { portrait_age > midage }
+				}
+				21 = {
+					portrait_has_trait = bio_jaheira
+					portrait_age > midage
+				}
+				22 = {
+					portrait_has_trait = bio_nocturne
+				}
+				23 = {
+					portrait_has_trait = bio_imoen
+				}
+				24 = {
+					AND = {
+						portrait_has_trait = bio_viconia
+						OR = {
+							portrait_religion = shadow_gods
+							portrait_religion = lolth_cult
+						}
+					}
+				}
+				25 = {
+					portrait_has_trait = bio_xan
+				}
+				26 = {
+					portrait_has_trait = bio_mazzy
+				}
+			}
+			5 = {
+				11 = { always = yes }
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+			34 = {
+				0 = { always = yes }
+			}
+		}
+	}
+}

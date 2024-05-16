@@ -1,8 +1,7 @@
-# GOBLINS
+# BATARI GOBLINS
 spriteTypes = {
-
 	portraitType = {
-		name = "PORTRAIT_goblingfx_male"
+		name = "PORTRAIT_forestgoblingfx_male"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_greenskin_background:p0"
@@ -10,16 +9,15 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_commongoblin_male_headgear_behind:p5"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_goblin_male_hair_behind:p1:h:y"
-			"GFX_goblin_male_base:p2"
-			"GFX_character_goblin_male_physique:p21:y"
-			"GFX_goblin_male_mouth:d2"
-			"GFX_goblin_male_nose:d3"
-			"GFX_goblin_male_eyes:d6"
+			"GFX_forestgoblin_male_base:p2"
+			"GFX_character_forestgoblin_male_physique:p21:y"
+			"GFX_forestgoblin_male_mouth:d2"
+			"GFX_forestgoblin_male_nose:d3"
+			"GFX_forestgoblin_male_eyes:d6"
 			"GFX_goblin_male_eyes2:d6:e"
-			"GFX_goblin_male_ear:d7"
+			"GFX_forestgoblin_male_ear:d7"
 			"GFX_character_small_male_pale:p22"
 			"GFX_creature_tattoos:p28:o6x-17"
 			"GFX_creature_warpaint:p29:o0x-11"
@@ -28,20 +26,19 @@ spriteTypes = {
 			"GFX_character_scars_mid:p25:y:o-6x-6"
 			"GFX_character_scars_high:p26:y:o-6x-6"
 			"GFX_goblin_character_boils:p8"
-			"GFX_goblin_male_clothes:p3"
+			"GFX_forestgoblin_male_clothes:p3"
 			"GFX_character_special_crowns_mid:p19"
 			#"GFX_goblin_male_chin:d1"
 			"GFX_creature_black_eye:p23:y:o5x-9"
-			"GFX_creature_blinded_eyes:p10:o4x-13"
+			"GFX_creature_blinded_eyes:p10:o0x-9"
 			"GFX_right_eye_possessed:p30:o3x-9"
 			"GFX_left_eye_possessed:p30:o1x-6"
 			"GFX_character_eyepatch:p13:y:o32x55"
 			"GFX_character_mask:p12:y:o37x38"
 			"GFX_goblin_male_hair:p1:h:y:o0x1"
-			"GFX_goblin_male_clothes_infront:p3"
-			"GFX_commongoblin_male_headgear:p5"
+			"GFX_forestgoblin_male_headgear:p5"
 			"GFX_child_back:p17"
-			"GFX_goblin_son_base:p18"
+			"GFX_forestgoblin_son_base:p18"
 			"GFX_goblin_son_eyes:p18:e"
 			"GFX_goblin_sonhair:p18:h"
 			"GFX_character_special_crowns:p19"
@@ -81,11 +78,11 @@ spriteTypes = {
 			{ 180 240 59 } # Green Yellow
 		}
 
-		headgear_that_hides_hair = { 9 }
+		headgear_that_hides_hair = {}
 	}
 
 	portraitType = {
-		name = "PORTRAIT_goblingfx_male1"
+		name = "PORTRAIT_forestgoblingfx_male1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_greenskin_background:p0"
@@ -93,16 +90,15 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_commongoblin_male_headgear_behind:p5"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_goblin_male_hair_behind_midage:p1:h:y"
-			"GFX_goblin_male_base:p2"
-			"GFX_character_goblin_male_physique:p21:y"
-			"GFX_goblin_male_mouth:d2"
-			"GFX_goblin_male_nose:d3"
-			"GFX_goblin_male_eyes:d6"
+			"GFX_forestgoblin_male_base:p2"
+			"GFX_character_forestgoblin_male_physique:p21:y"
+			"GFX_forestgoblin_male_mouth:d2"
+			"GFX_forestgoblin_male_nose:d3"
+			"GFX_forestgoblin_male_eyes:d6"
 			"GFX_goblin_male_eyes2:d6:e"
-			"GFX_goblin_male_ear:d7"
+			"GFX_forestgoblin_male_ear:d7"
 			"GFX_character_small_male_pale:p22"
 			"GFX_creature_tattoos:p28:o6x-17"
 			"GFX_creature_warpaint:p29:o0x-11"
@@ -111,7 +107,7 @@ spriteTypes = {
 			"GFX_character_scars_mid:p25:y:o-6x-6"
 			"GFX_character_scars_high:p26:y:o-6x-6"
 			"GFX_goblin_character_boils:p8"
-			"GFX_goblin_male_clothes:p3"
+			"GFX_forestgoblin_male_clothes:p3"
 			"GFX_character_special_crowns_mid:p19"
 			#"GFX_goblin_male_chin:d1"
 			"GFX_creature_black_eye:p23:y:o5x-9"
@@ -121,8 +117,7 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x55"
 			"GFX_character_mask:p12:y:o37x38"
 			"GFX_goblin_male_hair_midage:p1:h:y:o0x1"
-			"GFX_goblin_male_clothes_infront:p3"
-			"GFX_commongoblin_male_headgear:p5"
+			"GFX_forestgoblin_male_headgear:p5"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
@@ -160,11 +155,11 @@ spriteTypes = {
 			{ 180 240 59 } # Green Yellow
 		}
 
-		headgear_that_hides_hair = { 9 }
+		headgear_that_hides_hair = {}
 	}
 
 	portraitType = {
-		name = "PORTRAIT_goblingfx_male2"
+		name = "PORTRAIT_forestgoblingfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_greenskin_background:p0"
@@ -172,16 +167,15 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_commongoblin_male_headgear_behind:p5"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_goblin_male_hair_behind_oldage:p1:h:y"
-			"GFX_goblin_male_base:p2"
-			"GFX_character_goblin_male_physique:p21:y"
-			"GFX_goblin_male_mouth:d2"
-			"GFX_goblin_male_nose:d3"
-			"GFX_goblin_male_eyes:d6"
+			"GFX_forestgoblin_male_base:p2"
+			"GFX_character_forestgoblin_male_physique:p21:y"
+			"GFX_forestgoblin_male_mouth:d2"
+			"GFX_forestgoblin_male_nose:d3"
+			"GFX_forestgoblin_male_eyes:d6"
 			"GFX_goblin_male_eyes2:d6:e"
-			"GFX_goblin_male_ear:d7"
+			"GFX_forestgoblin_male_ear:d7"
 			"GFX_character_small_male_pale:p22"
 			"GFX_creature_tattoos:p28:o6x-17"
 			"GFX_creature_warpaint:p29:o0x-11"
@@ -190,7 +184,7 @@ spriteTypes = {
 			"GFX_character_scars_mid:p25:y:o-6x-6"
 			"GFX_character_scars_high:p26:y:o-6x-6"
 			"GFX_goblin_character_boils:p8"
-			"GFX_goblin_male_clothes:p3"
+			"GFX_forestgoblin_male_clothes:p3"
 			"GFX_character_special_crowns_mid:p19"
 			#"GFX_goblin_male_chin:d1"
 			"GFX_creature_black_eye:p23:y:o5x-9"
@@ -200,8 +194,7 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x55"
 			"GFX_character_mask:p12:y:o37x38"
 			"GFX_goblin_male_hair_oldage:p1:h:y:o0x1"
-			"GFX_goblin_male_clothes_infront:p3"
-			"GFX_commongoblin_male_headgear:p5"
+			"GFX_forestgoblin_male_headgear:p5"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
@@ -239,13 +232,11 @@ spriteTypes = {
 			{ 180 240 59 } # Green Yellow
 		}
 
-		headgear_that_hides_hair = { 9 }
+		headgear_that_hides_hair = {}
 	}
 
-### GOBLIN FEMALE ####
-
 	portraitType = {
-		name = "PORTRAIT_goblingfx_female"
+		name = "PORTRAIT_forestgoblingfx_female"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_greenskin_background:p0"
@@ -253,17 +244,16 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_goblin_male_headgear_behind:p5"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_goblin_female_hair_behind:p1:h:y:o26x9"
-			"GFX_goblin_male_base:p2"
-			"GFX_character_goblin_female_physique:p21:y"
-			"GFX_goblin_male_mouth:d2"
-			"GFX_goblin_male_nose:d3"
-			"GFX_goblin_male_eyes:d6"
+			"GFX_forestgoblin_male_base:p2"
+			"GFX_character_forestgoblin_female_physique:p21:y"
+			"GFX_forestgoblin_male_mouth:d2"
+			"GFX_forestgoblin_male_nose:d3"
+			"GFX_forestgoblin_male_eyes:d6"
 			"GFX_goblin_male_eyes2:d6:e"
-			"GFX_goblin_male_ear:d7"
+			"GFX_forestgoblin_male_ear:d7"
 			"GFX_character_small_male_pale:p22"
 			"GFX_creature_tattoos:p28:o6x-17"
 			"GFX_creature_warpaint:p29:o0x-11"
@@ -272,9 +262,8 @@ spriteTypes = {
 			"GFX_character_scars_mid:p25:y:o-6x-6"
 			"GFX_character_scars_high:p26:y:o-6x-6"
 			"GFX_goblin_character_boils:p8"
-			"GFX_goblin_male_clothes:p3"
+			"GFX_forestgoblin_male_clothes:p3"
 			"GFX_character_special_crowns_mid:p19"
-			"GFX_goblin_male_headgear_mid:p5"
 			"GFX_chinese_female_jewelry_front:p16"
 			"GFX_creature_black_eye:p23:y:o5x-9"
 			"GFX_creature_blinded_eyes:p10:o0x-9"
@@ -283,10 +272,9 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x55"
 			"GFX_character_mask:p12:y:o37x38"
 			"GFX_goblin_female_hair:p1:h:y"
-			"GFX_goblin_male_clothes_infront:p3"
-			"GFX_goblin_male_headgear:p5"
+			"GFX_forestgoblin_male_headgear:p5"
 			"GFX_child_back:p17"
-			"GFX_goblin_son_base:p18"
+			"GFX_forestgoblin_son_base:p18"
 			"GFX_goblin_son_eyes:p18:e"
 			"GFX_goblin_daughterhair:p18:h"
 			"GFX_character_special_crowns:p19"
@@ -326,11 +314,11 @@ spriteTypes = {
 			{ 180 240 59 } # Green Yellow
 		}
 
-		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 }
+		headgear_that_hides_hair = {}
 	}
 
 	portraitType = {
-		name = "PORTRAIT_goblingfx_female1"
+		name = "PORTRAIT_forestgoblingfx_female1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_greenskin_background:p0"
@@ -338,17 +326,16 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_goblin_male_headgear_behind:p5"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_goblin_female_hair_behind_midage:p1:h:y:o26x9"
-			"GFX_goblin_male_base:p2"
-			"GFX_character_goblin_female_physique:p21:y"
-			"GFX_goblin_male_mouth:d2"
-			"GFX_goblin_male_nose:d3"
-			"GFX_goblin_male_eyes:d6"
+			"GFX_forestgoblin_male_base:p2"
+			"GFX_character_forestgoblin_female_physique:p21:y"
+			"GFX_forestgoblin_male_mouth:d2"
+			"GFX_forestgoblin_male_nose:d3"
+			"GFX_forestgoblin_male_eyes:d6"
 			"GFX_goblin_male_eyes2:d6:e"
-			"GFX_goblin_male_ear:d7"
+			"GFX_forestgoblin_male_ear:d7"
 			"GFX_character_small_male_pale:p22"
 			"GFX_creature_tattoos:p28:o6x-17"
 			"GFX_creature_warpaint:p29:o0x-11"
@@ -357,9 +344,8 @@ spriteTypes = {
 			"GFX_character_scars_mid:p25:y:o-6x-6"
 			"GFX_character_scars_high:p26:y:o-6x-6"
 			"GFX_goblin_character_boils:p8"
-			"GFX_goblin_male_clothes:p3"
+			"GFX_forestgoblin_male_clothes:p3"
 			"GFX_character_special_crowns_mid:p19"
-			"GFX_goblin_male_headgear_mid:p5"
 			"GFX_chinese_female_jewelry_front:p16"
 			"GFX_creature_black_eye:p23:y:o5x-9"
 			"GFX_creature_blinded_eyes:p10:o0x-9"
@@ -368,8 +354,7 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x55"
 			"GFX_character_mask:p12:y:o37x38"
 			"GFX_goblin_female_hair:p1:h:y"
-			"GFX_goblin_male_clothes_infront:p3"
-			"GFX_goblin_male_headgear:p5"
+			"GFX_forestgoblin_male_headgear:p5"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
@@ -407,11 +392,11 @@ spriteTypes = {
 			{ 180 240 59 } # Green Yellow
 		}
 
-		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 }
+		headgear_that_hides_hair = {}
 	}
 
 	portraitType = {
-		name = "PORTRAIT_goblingfx_female2"
+		name = "PORTRAIT_forestgoblingfx_female2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = {
 			"GFX_greenskin_background:p0"
@@ -419,17 +404,16 @@ spriteTypes = {
 			"GFX_background_frames:p38"
 			"GFX_background_furniture:p42"
 			"GFX_background_items:p2"
-			"GFX_goblin_male_headgear_behind:p5"
 			"GFX_character_special_crowns_behind:p19"
 			"GFX_chinese_female_jewelry_behind:p16"
 			"GFX_goblin_female_hair_behind_oldage:p1:h:y:o26x9"
-			"GFX_goblin_male_base:p2"
-			"GFX_character_goblin_female_physique:p21:y"
-			"GFX_goblin_male_mouth:d2"
-			"GFX_goblin_male_nose:d3"
-			"GFX_goblin_male_eyes:d6"
+			"GFX_forestgoblin_male_base:p2"
+			"GFX_character_forestgoblin_female_physique:p21:y"
+			"GFX_forestgoblin_male_mouth:d2"
+			"GFX_forestgoblin_male_nose:d3"
+			"GFX_forestgoblin_male_eyes:d6"
 			"GFX_goblin_male_eyes2:d6:e"
-			"GFX_goblin_male_ear:d7"
+			"GFX_forestgoblin_male_ear:d7"
 			"GFX_character_small_male_pale:p22"
 			"GFX_creature_tattoos:p28:o6x-17"
 			"GFX_creature_warpaint:p29:o0x-11"
@@ -438,9 +422,8 @@ spriteTypes = {
 			"GFX_character_scars_mid:p25:y:o-6x-6"
 			"GFX_character_scars_high:p26:y:o-6x-6"
 			"GFX_goblin_character_boils:p8"
-			"GFX_goblin_male_clothes:p3"
+			"GFX_forestgoblin_male_clothes:p3"
 			"GFX_character_special_crowns_mid:p19"
-			"GFX_goblin_male_headgear_mid:p5"
 			"GFX_chinese_female_jewelry_front:p16"
 			"GFX_creature_black_eye:p23:y:o5x-9"
 			"GFX_creature_blinded_eyes:p10:o0x-9"
@@ -449,8 +432,7 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x55"
 			"GFX_character_mask:p12:y:o37x38"
 			"GFX_goblin_female_hair:p1:h:y"
-			"GFX_goblin_male_clothes_infront:p3"
-			"GFX_goblin_male_headgear:p5"
+			"GFX_forestgoblin_male_headgear:p5"
 			"GFX_character_special_crowns:p19"
 			"GFX_character_special_helmets:p34"
 			"GFX_character_special_masks:p35"
@@ -488,6 +470,6 @@ spriteTypes = {
 			{ 180 240 59 } # Green Yellow
 		}
 
-		headgear_that_hides_hair = { 0 1 2 3 4 5 6 7 8 9 10 }
+		headgear_that_hides_hair = {}
 	}
 }

@@ -1,0 +1,180 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ND_fixed_portraits4"
+		textureFile = "gfx/characters/shared/ND_fixed_portraits4.dds"
+		noOfFrames = 27
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ND_fixed_portraits4"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 20000
+				# portrait_age > child
+				portrait_clothing = yes
+				has_game_rule = { name = static_portrait_rule value = on }
+				OR = {
+					portrait_has_trait = bio_xzar
+					portrait_has_trait = bio_xzar2
+					portrait_has_trait = bio_halaster
+					AND = {
+						OR = {
+							portrait_has_trait = bio_obould
+							portrait_has_trait = bio_sharwyn
+							portrait_has_trait = bio_skie
+							portrait_has_trait = bio_tiax
+							portrait_has_trait = bio_tomi
+							portrait_has_trait = bio_ulder
+							portrait_has_trait = bio_valen
+							portrait_has_trait = bio_valygar
+							portrait_has_trait = bio_voghiln
+							portrait_has_trait = bio_xanos
+							portrait_has_trait = bio_yeslick
+							portrait_has_trait = bio_yoshimo
+							portrait_has_trait = bio_zariel
+							portrait_has_trait = bio_azoun
+							portrait_has_trait = bio_vajra
+							portrait_has_trait = bio_bel
+							portrait_has_trait = bio_demogorgon
+							portrait_has_trait = bio_orcus
+							portrait_has_trait = bio_anthraxus
+							portrait_has_trait = bio_yeenoghu
+							portrait_has_trait = bio_grazzt
+							portrait_has_trait = bio_malcanthet
+							portrait_has_trait = bio_durnan
+							portrait_has_trait = bio_kyriani
+							portrait_has_trait = bio_sememmon
+						}
+						NOR = {
+							portrait_has_trait = lich
+							portrait_has_trait = archlich
+							portrait_has_trait = lich_baelnorn
+							portrait_has_trait = undead
+						}
+					}
+				}
+			}
+		}
+
+		layer = {
+			"GFX_empty:c0"
+			"GFX_empty:c1"
+			"GFX_empty:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+			"GFX_empty:c6"
+			"GFX_empty:c7"
+			"GFX_ND_fixed_portraits4:c4"
+		}
+
+		allow_property_values = {
+			43 = {
+				0 = {
+					portrait_has_trait = bio_obould
+				}
+				1 = {
+					portrait_has_trait = bio_sharwyn
+				}
+				2 = {
+					portrait_has_trait = bio_skie
+				}
+				3 = {
+					portrait_has_trait = bio_tiax
+				}
+				4 = {
+					portrait_has_trait = bio_tomi
+				}
+				5 = {
+					portrait_has_trait = bio_ulder
+				}
+				6 = {
+					portrait_has_trait = bio_valen
+				}
+				7 = {
+					portrait_has_trait = bio_valygar
+				}
+				8 = {
+					portrait_has_trait = bio_voghiln
+				}
+				9 = {
+					portrait_has_trait = bio_xanos
+				}
+				10 = {
+					OR = {
+						portrait_has_trait = bio_xzar
+						portrait_has_trait = bio_xzar2
+					}
+				}
+				11 = {
+					portrait_has_trait = bio_yeslick
+				}
+				12 = {
+					portrait_has_trait = bio_yoshimo
+				}
+				13 = {
+					portrait_has_trait = bio_zariel
+				}
+				14 = {
+					portrait_has_trait = bio_azoun
+				}
+				15 = {
+					portrait_has_trait = bio_vajra
+				}
+				16 = {
+					portrait_has_trait = bio_bel
+				}
+				17 = {
+					portrait_has_trait = bio_demogorgon
+				}
+				18 = {
+					portrait_has_trait = bio_orcus
+				}
+				19 = {
+					portrait_has_trait = bio_anthraxus
+				}
+				20 = {
+					portrait_has_trait = bio_yeenoghu
+				}
+				21 = {
+					portrait_has_trait = bio_grazzt
+				}
+				22 = {
+					portrait_has_trait = bio_malcanthet
+				}
+				23 = {
+					portrait_has_trait = bio_halaster
+				}
+				24 = {
+					portrait_has_trait = bio_durnan
+				}
+				25 = {
+					portrait_has_trait = bio_kyriani
+				}
+				26 = {
+					portrait_has_trait = bio_sememmon
+				}
+			}
+			5 = {
+				11 = { always = yes }
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+			34 = {
+				0 = { always = yes }
+			}
+		}
+	}
+}

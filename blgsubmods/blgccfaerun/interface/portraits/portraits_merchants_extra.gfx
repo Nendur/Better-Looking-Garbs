@@ -184,7 +184,7 @@ spriteTypes = {
 
 		weight = {
 			additive_modifier = {
-				value = 10000
+				value = 1000
 				portrait_age > child
 				portrait_is_female = no
 				portrait_clothing = yes
@@ -227,7 +227,7 @@ spriteTypes = {
 
 		weight = {
 			additive_modifier = {
-				value = 10000
+				value = 1000
 				portrait_age > child
 				portrait_is_female = yes
 				portrait_clothing = yes
@@ -273,7 +273,7 @@ spriteTypes = {
 
 		weight = {
 			additive_modifier = {
-				value = 11000
+				value = 1100
 				portrait_clothing = yes
 				has_dlc = "The Republic"
 				year = 1485
@@ -313,7 +313,7 @@ spriteTypes = {
 
 		weight = {
 			additive_modifier = {
-				value = 12000
+				value = 1200
 				portrait_clothing = yes
 				has_dlc = "The Republic"
 				year = 1485
