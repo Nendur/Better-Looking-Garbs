@@ -299,7 +299,10 @@ blg_crown_hre = {
 
 # Byzantine crown.
 blg_crown_byzantine = {
-	blg_culture_greek = no
+	NAND = {
+		real_tier = EMPEROR
+		blg_culture_greek = yes
+	}
 	OR = {
 		any_artifact = {
 			is_artifact_equipped = yes

@@ -14,7 +14,6 @@
 		hide_layers = { 39 = {} }
 		hide_layers = { 40 = {} }
 		hide_layers = { 41 = {} }
-		hide_layers = { 43 = {} }
 
 		trigger = {
 			OR = {
