@@ -14,6 +14,9 @@ ashkenazigfx = {
 assamesegfx = {
 	skin_tone = 2
 }
+australomelanesiangfx = {
+	skin_tone = 3
+}
 avargfx = {
 	skin_tone = 1
 }
