@@ -59,6 +59,27 @@ objectTypes = {
 	}
 
 	pdxmesh = {
+		name = "chinesegfx_job_spiritual"
+		file = "gfx/models/Mapindicators/taoist_spiritual.mesh"
+		animation = { id = "idle"		type = "cote_mongol_steward_idle_animation" }
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "taoistgfx_job_spiritual"
+		file = "gfx/models/Mapindicators/taoist_spiritual.mesh"
+		animation = { id = "idle"		type = "cote_mongol_steward_idle_animation" }
+		scale = 0.8f
+	}
+
+	pdxmesh = {
+		name = "cumangfx_job_spymaster"
+		file = "gfx/models/Mapindicators/cote_mongol_spymaster.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spymaster_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
 		name = "chinesegfx_job_treasurer"
 		file = "gfx/models/Mapindicators/cote_mongol_steward.mesh"
 		animation = { id = "idle"		type = "cote_mongol_steward_idle_animation" }
@@ -120,6 +141,13 @@ objectTypes = {
 		name = "bongfx_job_spiritual_female"
 		file = "gfx/models/Mapindicators/cote_mongol_spiritual_female.mesh"
 		animation = { id = "idle"		type = "cote_mongol_spiritual_female_idle_animation" }
+		scale = 0.8
+	}
+
+	pdxmesh = {
+		name = "cumangfx_job_spymaster_female"
+		file = "gfx/models/Mapindicators/cote_mongol_spymaster_female.mesh"
+		animation = { id = "idle"		type = "cote_mongol_spymaster_female_idle_animation" }
 		scale = 0.8
 	}
 }

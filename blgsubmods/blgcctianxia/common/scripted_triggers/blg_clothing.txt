@@ -197,6 +197,7 @@ blg_crown_king = {
 		}
 		is_or_was_offmap_power_ruler = yes
 		blg_royal_title = yes
+		blg_petty_king = yes
 	}
 }
 
@@ -220,7 +221,6 @@ blg_headgear_king = {
 		spouse_even_if_dead = {
 			blg_crown_king = yes
 		}
-		blg_petty_king = yes
 	}
 }
 

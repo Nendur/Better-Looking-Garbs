@@ -28,4 +28,18 @@ objectTypes = {
 		animation = { id = "idle"		type = "afc_african_marshal_female_idle_animation" }
 		scale = 1.0
 	}
+
+	pdxmesh = {
+		name = "bodpagfx_job_chancellor_female"
+		file = "gfx/models/Mapindicators/afc_african_chancellor_female.mesh"
+		animation = { id = "idle"		type = "afc_african_chancellor_female_idle_animation" }
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "bodpagfx_job_spymaster_female"
+		file = "gfx/models/Mapindicators/afc_african_spymaster_female.mesh"
+		animation = { id = "idle"		type = "afc_african_spymaster_female_idle_animation" }
+		scale = 1.0
+	}
 }

@@ -336,6 +336,9 @@ bornean_group = {
 burmese_group = {
 	graphical_cultures = { southindiangfx indiangfx bodpagfx mongolgfx muslimgfx }
 
+	yi = {
+		graphical_cultures = { bodpagfx mongolgfx }
+	}
 	bamar = {
 		graphical_cultures = { assamesegfx }
 	}
@@ -375,19 +378,23 @@ hmongmien = {
 }
 
 japonic = {
-	graphical_cultures = { japanesegfx turkishgfx chinesegfx mongolgfx arabicgfx cumangfx muslimgfx }
+	graphical_cultures = { japanesegfx bretongfx chinesegfx mongolgfx arabicgfx cumangfx indiangfx muslimgfx }
 
 	yamato = {
 		graphical_cultures = { japanesegfx }
+		unit_graphical_cultures = {japanesegfx turkishgfx }
 	}
 	japanese = {
 		graphical_cultures = { japanesegfx }
+		unit_graphical_cultures = {japanesegfx turkishgfx }
 	}
 	wako = {
 		graphical_cultures = { japanesegfx }
+		unit_graphical_cultures = {japanesegfx turkishgfx }
 	}
 	ryukyuan = {
 		graphical_cultures = { japanesegfx }
+		unit_graphical_cultures = {japanesegfx turkishgfx }
 	}
 	emishi = {
 		graphical_cultures = { ainugfx mongolgfx }
@@ -414,8 +421,8 @@ javanese_group = {
 }
 
 koreanic = {
-	graphical_cultures = { koreangfx bretongfx chinesegfx mongolgfx muslimgfx }
-	unit_graphical_cultures = { bodpagfx mongolgfx }
+	graphical_cultures = { koreangfx afghangfx chinesegfx mongolgfx indiangfx muslimgfx }
+	unit_graphical_cultures = { bodpagfx mongolgfx muslimgfx }
 
 	korean = {
 		graphical_cultures = { koreangfx }
@@ -504,13 +511,13 @@ papuan_group = {
 
 rauic_group = {
 	zhuang = { # Uses Yue Chinese names
-		graphical_cultures = { philippinegfx }
+		graphical_cultures = { philippinegfx rauicgfx }
 	}
 	dong = { # Uses Xiang Chinese names
-		graphical_cultures = { philippinegfx }
+		graphical_cultures = { philippinegfx rauicgfx }
 	}
 	hlai = { # Uses Min Chinese names
-		graphical_cultures = { philippinegfx }
+		graphical_cultures = { philippinegfx rauicgfx }
 	}
 }
 

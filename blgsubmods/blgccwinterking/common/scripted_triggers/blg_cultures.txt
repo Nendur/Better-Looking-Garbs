@@ -71,29 +71,8 @@ blg_merchant_headgear = {
 
 # These cultures use higher tier headgear for independent dukes.
 blg_petty_king = {
-	OR = {
-		AND = {
-			real_tier = duke
-			independent = yes
-			NOR = {
-				blg_republic = yes
-				blg_mercenary = yes
-				blg_holy_order = yes
-				blg_peasant = yes
-			}
-		}
-		spouse_even_if_dead = {
-			real_tier = duke
-			independent = yes
-			NOR = {
-				blg_republic = yes
-				blg_mercenary = yes
-				blg_holy_order = yes
-				blg_peasant = yes
-			}
-		}
-	}
-
+	real_tier = duke
+	independent = yes
 	OR = {
 		culture = romanobritish
 		culture = briton
@@ -116,6 +95,12 @@ blg_petty_king = {
 		culture = alemannic
 		culture = oldbavarian
 		culture = bavarian
+	}
+	NOR = {
+		blg_republic = yes
+		blg_mercenary = yes
+		blg_holy_order = yes
+		blg_peasant = yes
 	}
 }
 

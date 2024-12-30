@@ -94,17 +94,18 @@ objectTypes = {
 		scale = 0.8
 	}
 
+# Tibetan
 	pdxmesh = {
-		name = "chinesegfx_job_spiritual"
-		file = "gfx/models/Mapindicators/ifc_buddhist_female.mesh"
-		animation = { id = "idle"		type = "ifc_buddhist_female_idle_animation" }
+		name = "bodpagfx_job_chancellor_female"
+		file = "gfx/models/Mapindicators/ifc_indian_chancellor_female.mesh"
+		animation = { id = "idle"		type = "ifc_indian_chancellor_female_idle_animation" }
 		scale = 0.8
 	}
 
 	pdxmesh = {
-		name = "chinesegfx_job_spiritual_female"
-		file = "gfx/models/Mapindicators/ifc_indian_spiritual_female.mesh"
-		animation = { id = "idle"		type = "ifc_indian_spiritual_female_idle_animation" }
+		name = "bodpagfx_job_spymaster_female"
+		file = "gfx/models/Mapindicators/ifc_indian_spymaster_female.mesh"
+		animation = { id = "idle"		type = "ifc_indian_spymaster_female_idle_animation" }
 		scale = 0.8
 	}
 

@@ -55,7 +55,6 @@ blg_religion_protestant = {
 blg_religion_chinese = {
 	OR = {
 		religion = taoist
-		religion = shinto
 		religion = confucian
 	}
 }

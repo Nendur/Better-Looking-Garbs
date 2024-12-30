@@ -1,4 +1,7 @@
 Changelog:
+  Custom Taoist spiritual councillor model.
+  Set Shinto spiritual councillor model.
+  Restructured petty king scripts.
 
 04-01-2024
   Support spiritual councillors for CleanSlates religion setup.

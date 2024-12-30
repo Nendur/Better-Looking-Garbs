@@ -49,11 +49,18 @@ objectTypes = {
 		scale = 0.8f
 	}
 
+# Other cultures
+	EMFXActorType = {
+		name = "turkishgfx_job_spymaster"
+		actorfile = "gfx\models\Mapindicators\Muslim_Spymaster.xac"
+		idle = "gfx\models\Mapindicators\Muslim_Spymaster_idle.xsm"
+		scale = 0.8f
+	}
+
 	EMFXActorType = {
 		name = "chinesegfx_job_spymaster"
 		actorfile = "gfx\models\Mapindicators\Muslim_Spymaster.xac"
-
-		idle   = "gfx\models\Mapindicators\Muslim_Spymaster_idle.xsm"
+		idle = "gfx\models\Mapindicators\Muslim_Spymaster_idle.xsm"
 		scale = 0.8f
 	}
 }

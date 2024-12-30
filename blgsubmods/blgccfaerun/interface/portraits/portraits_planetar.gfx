@@ -23,7 +23,7 @@ spriteTypes = {
 			"GFX_planetar_male_mouth:d2"
 			"GFX_character_harelip:p24:o0x-6"
 			"GFX_planetar_male_eyes:d6"
-			"GFX_caledorian_male_eyes2:d6:e"
+			"GFX_angel_male_eyes2:d6:e"
 			"GFX_planetar_male_ear:d7"
 			"GFX_planetar_male_nose:d3"
 			"GFX_child_back:p17"
@@ -45,8 +45,8 @@ spriteTypes = {
 			"GFX_norscan_sonhair:p18:h"
 			"GFX_character_black_eye:p23:y:o0x-3"
 			"GFX_creature_blinded_eyes:p10:o0x-3"
-			"GFX_right_eye_possessed:p30:o-1x-2"
-			"GFX_left_eye_possessed:p30:o4x-1"
+			"GFX_right_eye_possessed:p30:o-1x-3"
+			"GFX_left_eye_possessed:p30:o4x-2"
 			"GFX_character_eyepatch:p13:y:o32x61"
 			"GFX_character_mask:p12:y:o40x44"
 			"GFX_empty:p5:c7:h"
@@ -80,9 +80,11 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
+			{ 58 255 193 } #Blue
 			{ 58 109 193 } #Blue
 			{ 122 158 220 } #Blue pale
-			{ 83 176 130 } # Acquamarine
+			{ 47 52 121 } #Dark blue
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = {}
@@ -108,7 +110,7 @@ spriteTypes = {
 			"GFX_planetar_male_mouth:d2"
 			"GFX_character_harelip:p24:o0x-6"
 			"GFX_planetar_male_eyes:d6"
-			"GFX_caledorian_male_eyes2:d6:e"
+			"GFX_angel_male_eyes2:d6:e"
 			"GFX_planetar_male_ear:d7"
 			"GFX_planetar_male_nose:d3"
 			"GFX_chinese_female_makeup1:p14:o2x-2"
@@ -126,8 +128,8 @@ spriteTypes = {
 			"GFX_character_scars_high_light:p26:y"
 			"GFX_character_black_eye:p23:y:o0x-3"
 			"GFX_creature_blinded_eyes:p10:o0x-3"
-			"GFX_right_eye_possessed:p30:o-1x-2"
-			"GFX_left_eye_possessed:p30:o4x-1"
+			"GFX_right_eye_possessed:p30:o-1x-3"
+			"GFX_left_eye_possessed:p30:o4x-2"
 			"GFX_character_eyepatch:p13:y:o32x61"
 			"GFX_character_mask:p12:y:o40x44"
 			"GFX_empty:p5:c7:h"
@@ -161,9 +163,11 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
+			{ 58 255 193 } #Blue
 			{ 58 109 193 } #Blue
 			{ 122 158 220 } #Blue pale
-			{ 83 176 130 } # Acquamarine
+			{ 47 52 121 } #Dark blue
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = {}
@@ -189,7 +193,7 @@ spriteTypes = {
 			"GFX_planetar_male_mouth:d2"
 			"GFX_character_harelip:p24:o0x-6"
 			"GFX_planetar_male_eyes:d6"
-			"GFX_caledorian_male_eyes2:d6:e"
+			"GFX_angel_male_eyes2:d6:e"
 			"GFX_planetar_male_ear:d7"
 			"GFX_planetar_male_nose:d3"
 			"GFX_chinese_female_makeup1:p14:o2x-2"
@@ -207,8 +211,8 @@ spriteTypes = {
 			"GFX_character_scars_high_light:p26:y"
 			"GFX_character_black_eye:p23:y:o0x-3"
 			"GFX_creature_blinded_eyes:p10:o0x-3"
-			"GFX_right_eye_possessed:p30:o-1x-2"
-			"GFX_left_eye_possessed:p30:o4x-1"
+			"GFX_right_eye_possessed:p30:o-1x-3"
+			"GFX_left_eye_possessed:p30:o4x-2"
 			"GFX_character_eyepatch:p13:y:o32x61"
 			"GFX_character_mask:p12:y:o40x44"
 			"GFX_empty:p5:c7:h"
@@ -242,9 +246,11 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
+			{ 58 255 193 } #Blue
 			{ 58 109 193 } #Blue
 			{ 122 158 220 } #Blue pale
-			{ 83 176 130 } # Acquamarine
+			{ 47 52 121 } #Dark blue
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = {}
@@ -275,7 +281,7 @@ spriteTypes = {
 			"GFX_character_harelip:p24:o0x-2"
 			"GFX_planetar_female_eyes:d6"
 			"GFX_planetar_female_nose:d3"
-			"GFX_caledorian_female_eyes2:d6:e"
+			"GFX_angel_female_eyes2:d6:e"
 			"GFX_planetar_female_ear:d7"
 			"GFX_child_back:p17"
 			"GFX_stormgiant_daughter_base:p18"
@@ -333,9 +339,11 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
+			{ 58 255 193 } #Blue
 			{ 58 109 193 } #Blue
 			{ 122 158 220 } #Blue pale
-			{ 83 176 130 } # Acquamarine
+			{ 47 52 121 } #Dark blue
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = {}
@@ -364,7 +372,7 @@ spriteTypes = {
 			"GFX_character_harelip:p24:o0x-2"
 			"GFX_planetar_female_eyes:d6"
 			"GFX_planetar_female_nose:d3"
-			"GFX_caledorian_female_eyes2:d6:e"
+			"GFX_angel_female_eyes2:d6:e"
 			"GFX_planetar_female_ear:d7"
 			"GFX_chinese_female_makeup1:p14:o1x-1"
 			"GFX_chinese_female_makeup2:p15:o0x-5"
@@ -418,9 +426,11 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
+			{ 58 255 193 } #Blue
 			{ 58 109 193 } #Blue
 			{ 122 158 220 } #Blue pale
-			{ 83 176 130 } # Acquamarine
+			{ 47 52 121 } #Dark blue
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = {}
@@ -449,7 +459,7 @@ spriteTypes = {
 			"GFX_character_harelip:p24:o0x-2"
 			"GFX_planetar_female_eyes:d6"
 			"GFX_planetar_female_nose:d3"
-			"GFX_caledorian_female_eyes2:d6:e"
+			"GFX_angel_female_eyes2:d6:e"
 			"GFX_planetar_female_ear:d7"
 			"GFX_chinese_female_makeup1:p14:o1x-1"
 			"GFX_chinese_female_makeup2:p15:o0x-5"
@@ -503,9 +513,11 @@ spriteTypes = {
 
 		eye_color_index = 9
 		eye_color = {
+			{ 58 255 193 } #Blue
 			{ 58 109 193 } #Blue
 			{ 122 158 220 } #Blue pale
-			{ 83 176 130 } # Acquamarine
+			{ 47 52 121 } #Dark blue
+			{ 181 153 41 } # Golden
 		}
 
 		headgear_that_hides_hair = {}

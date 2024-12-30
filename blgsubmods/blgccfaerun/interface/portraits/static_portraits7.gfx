@@ -1,0 +1,152 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ND_fixed_portraits7"
+		textureFile = "gfx/characters/shared/ND_fixed_portraits7.dds"
+		noOfFrames = 27
+	}
+
+	portraitType = {
+		name = "PORTRAIT_ND_fixed_portraits7"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 20000
+				# portrait_age > child
+				portrait_clothing = yes
+				has_game_rule = { name = static_portrait_rule value = on }
+				OR = {
+					portrait_has_trait = bio_dantrag
+					portrait_has_trait = bio_jeggred
+					portrait_has_trait = bio_methil
+					portrait_has_trait = bio_liriel
+					portrait_has_trait = bio_pharaun
+					portrait_has_trait = bio_nahaunglaroth
+					portrait_has_trait = bio_klauth
+					portrait_has_trait = bio_artemis
+					portrait_has_trait = bio_vizeran
+					portrait_has_trait = bio_zaknafein
+					portrait_has_trait = bio_malice
+					portrait_has_trait = bio_volo
+					portrait_has_trait = bio_malaina
+					portrait_has_trait = bio_dagult
+					portrait_has_trait = bio_herzgo
+					portrait_has_trait = bio_hedrun
+					portrait_has_trait = bio_bjornhild
+					portrait_has_trait = bio_remallia
+					portrait_has_trait = bio_arveiaturace
+					portrait_has_trait = bio_severin
+					portrait_has_trait = bio_yamun
+					portrait_has_trait = bio_shandril
+				}
+				NOR = {
+					portrait_has_trait = lich
+					portrait_has_trait = archlich
+					portrait_has_trait = lich_baelnorn
+					portrait_has_trait = undead
+				}
+			}
+		}
+
+		layer = {
+			"GFX_empty:c0"
+			"GFX_empty:c1"
+			"GFX_empty:c2"
+			"GFX_empty:c3"
+			"GFX_empty:c5"
+			"GFX_empty:c6"
+			"GFX_empty:c7"
+			"GFX_ND_fixed_portraits7:c4"
+		}
+
+		allow_property_values = {
+			43 = {
+				0 = {
+					portrait_has_trait = bio_dantrag
+				}
+				1 = {
+					portrait_has_trait = bio_jeggred
+				}
+				2 = {
+					portrait_has_trait = bio_methil
+				}
+				3 = {
+					portrait_has_trait = bio_liriel
+				}
+				4 = {
+					portrait_has_trait = bio_pharaun
+				}
+				5 = {
+					portrait_has_trait = bio_nahaunglaroth
+				}
+				6 = {
+					portrait_has_trait = bio_klauth
+				}
+				7 = {
+					portrait_has_trait = bio_artemis
+				}
+				8 = {
+					portrait_has_trait = bio_vizeran
+				}
+				9 = {
+					portrait_has_trait = bio_zaknafein
+				}
+				10 = {
+					portrait_has_trait = bio_malice
+				}
+				11 = {
+					portrait_has_trait = bio_volo
+				}
+				12 = {
+					portrait_has_trait = bio_malaina
+				}
+				13 = {
+					portrait_has_trait = bio_dagult
+				}
+				14 = {
+					portrait_has_trait = bio_herzgo
+				}
+				15 = {
+					portrait_has_trait = bio_hedrun
+				}
+				16 = {
+					portrait_has_trait = bio_bjornhild
+				}
+				17 = {
+					portrait_has_trait = bio_remallia
+				}
+				18 = {
+					portrait_has_trait = bio_arveiaturace
+				}
+				19 = {
+					portrait_has_trait = bio_severin
+				}
+				20 = {
+					portrait_has_trait = bio_yamun
+				}
+				21 = {
+					portrait_has_trait = bio_shandril
+				}
+			}
+			5 = {
+				11 = { always = yes }
+			}
+			19 = {
+				0 = { always = yes }
+			}
+			31 = {
+				0 = { always = yes }
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+			34 = {
+				0 = { always = yes }
+			}
+		}
+	}
+}

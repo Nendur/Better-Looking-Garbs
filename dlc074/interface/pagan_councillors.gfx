@@ -152,6 +152,13 @@ objectTypes = {
 		scale = 0.8
 	}
 
+	EMFXActorType = {
+		name = "shintogfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\misc_priest.xac"
+		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
+		scale = 0.8f
+	}
+
 	pdxmesh = {
 		name = "oldgodsgfx_job_spiritual"
 		file = "gfx\models\Mapindicators\hf_pagan_priest_male.mesh"

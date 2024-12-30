@@ -61,6 +61,20 @@ objectTypes = {
 # Councillor additions
 
 	EMFXActorType = {
+		name = "bodpagfx_job_chancellor"
+		actorfile = "gfx\models\Mapindicators\indian_chancellor.xac"
+		idle   = "gfx\models\Mapindicators\indian_chancellor_idle.xsm"
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
+		name = "bodpagfx_job_spymaster"
+		actorfile = "gfx\models\Mapindicators\indian_spymaster.xac"
+		idle   = "gfx\models\Mapindicators\indian_spymaster_idle.xsm"
+		scale = 0.8f
+	}
+
+	EMFXActorType = {
 		name = "egyptiangfx_job_spiritual"
 		actorfile = "gfx\models\Mapindicators\priest_jain.xac"
 		idle   = "gfx\models\Mapindicators\priest_jain_idle.xsm"

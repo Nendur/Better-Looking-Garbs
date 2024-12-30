@@ -15,11 +15,4 @@ objectTypes = {
 		idle   = "gfx\models\Mapindicators\priest_buddhist_idle.xsm"
 		scale = 0.8f
 	}
-
-	EMFXActorType = {
-		name = "chinesegfx_job_spiritual"
-		actorfile = "gfx\models\Mapindicators\priest_buddhist.xac"
-		idle   = "gfx\models\Mapindicators\priest_buddhist_idle.xsm"
-		scale = 0.8f
-	}
 }

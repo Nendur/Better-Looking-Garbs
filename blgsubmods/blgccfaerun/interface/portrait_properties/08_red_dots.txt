@@ -38,11 +38,14 @@
 				graphical_culture = feyrigfx
 				graphical_culture = khorneprincegfx
 				graphical_culture = slaaneshprincegfx
+				graphical_culture = balorgfx
 				graphical_culture = daemonettegfx
+				graphical_culture = erinyesgfx
 				graphical_culture = nycalothgfx
 				graphical_culture = ultrolothgfx
 				graphical_culture = nurgleprincegfx
 				graphical_culture = nalfeshneegfx
+				graphical_culture = glabrezugfx
 				graphical_culture = draeglothgfx
 				graphical_culture = yikariangfx
 			}
@@ -69,6 +72,7 @@
 				#graphical_culture = khorneprincegfx
 				#graphical_culture = slaaneshprincegfx
 				graphical_culture = daemonettegfx
+				graphical_culture = erinyesgfx
 				graphical_culture = nycalothgfx
 				graphical_culture = ultrolothgfx
 			}
@@ -104,6 +108,7 @@
 				graphical_culture = nurgleprincegfx
 				#graphical_culture = slaaneshprincegfx
 				graphical_culture = daemonettegfx
+				graphical_culture = erinyesgfx
 				graphical_culture = nycalothgfx
 				graphical_culture = ultrolothgfx
 				graphical_culture = yikariangfx

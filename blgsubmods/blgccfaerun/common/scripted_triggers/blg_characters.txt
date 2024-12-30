@@ -38,6 +38,7 @@ blg_devout = {
 blg_dirty = {
 	OR = {
 		trait = uncouth
+		trait = obnoxious
 		has_character_modifier = adv_fatigue_3
 		has_character_modifier = adv_fatigue_4
 		has_character_modifier = dirty_hands
@@ -49,6 +50,7 @@ blg_fair = {
 	OR = {
 		trait = beautiful
 		trait = pretty
+		trait = immaculate
 	}
 }
 

@@ -53,7 +53,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o2x-1"
 			"GFX_character_eyepatch:p13:y:o31x62"
 			"GFX_character_mask:p12:y:o38x43"
-		   	"GFX_halfwoodelf_male_hair:p1:h:y"
+			"GFX_halfwoodelf_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_asrai_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
@@ -145,7 +145,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o2x-1"
 			"GFX_character_eyepatch:p13:y:o31x62"
 			"GFX_character_mask:p12:y:o38x43"
-		   	"GFX_halfwoodelf_male_hair:p1:h:y"
+			"GFX_halfwoodelf_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_asrai_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
@@ -237,7 +237,7 @@ spriteTypes = {
 			"GFX_character_possessed:p30:o2x-1"
 			"GFX_character_eyepatch:p13:y:o31x62"
 			"GFX_character_mask:p12:y:o38x43"
-		   	"GFX_halfwoodelf_male_hair:p1:h:y"
+			"GFX_halfwoodelf_male_hair:p1:h:y"
 			"GFX_empty:p5:c7:h"
 			"GFX_asrai_male_headgear:p5:c5"
 			"GFX_frankish_male_overlayer:p31"
@@ -263,11 +263,11 @@ spriteTypes = {
 			{ 15 10 3 } { 201 161 150 } { 240 217 182 }
 			{ 10 10 10 } { 178 154 137 } { 255 255 255 }
 			{ 5 5 5 } { 174 150 150 } { 255 255 255 }
-			{ 10 10 10 } { 175 160 160 } { 255 255 255 }
+			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
 			{ 10 10 10 } { 160 150 150 } { 255 255 255 }
 			{ 10 10 10 } { 178 150 150 } { 255 255 255 }
 			{ 10 10 10 } { 197 150 150 } { 255 255 255 }
-			{ 10 10 10 } { 187 150 150 } { 255 255 255 }
+			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
 		}
 
 		eye_color_index = 9
@@ -557,11 +557,11 @@ spriteTypes = {
 			{ 15 10 3 } { 201 161 150 } { 240 217 182 }
 			{ 10 10 10 } { 178 154 137 } { 255 255 255 }
 			{ 5 5 5 } { 174 150 150 } { 255 255 255 }
-			{ 10 10 10 } { 175 160 160 } { 255 255 255 }
+			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
 			{ 10 10 10 } { 160 150 150 } { 255 255 255 }
 			{ 10 10 10 } { 178 150 150 } { 255 255 255 }
 			{ 10 10 10 } { 197 150 150 } { 255 255 255 }
-			{ 10 10 10 } { 187 150 150 } { 255 255 255 }
+			{ 10 10 10 } {  200 200 200 } { 255 255 255 }
 		}
 
 		eye_color_index = 9

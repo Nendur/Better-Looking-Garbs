@@ -41,4 +41,11 @@ objectTypes = {
 		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
 		scale = 0.8f
 	}
+
+	EMFXActorType = {
+		name = "shintogfx_job_spiritual"
+		actorfile = "gfx\models\Mapindicators\misc_priest.xac"
+		idle   = "gfx\models\Mapindicators\Western_lord_spiritual_idle.xsm"
+		scale = 0.8f
+	}
 }

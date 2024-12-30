@@ -1,5 +1,202 @@
 spriteTypes = {
 	portraitType = {
+		name = "PORTRAIT_society_alchemists_clothing_male"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_clothing = yes
+				portrait_age > child
+				portrait_is_female = no
+
+				portrait_society = the_alchemists
+				blg_wear_society_clothing = yes
+				OR = {
+					portrait_in_command = no
+					blg_portrait_theocracy = yes
+				}
+			}
+		}
+
+		layer = {
+			"GFX_society_hermetic_male_headgear_behind:c1"
+			"GFX_society_hermetic_male_headgear_front:c5"
+			"GFX_society_hermetic_male_headgear_mid:c3"
+			"GFX_empty:c7"
+		}
+
+		# Appropriate clothing
+		allow_property_values = {
+			5 = {
+				0 = { # Western
+					NOR = {
+						blg_portrait_african = yes
+						blg_portrait_byzantine = yes
+						blg_portrait_indian = yes
+						blg_portrait_middleeast = yes
+						blg_portrait_steppes = yes
+					}
+				}
+				1 = { # Nordic
+					blg_portrait_nordic = yes
+					portrait_has_trait = mystic
+				}
+				2 = { # Baltic/Slavic
+					always = yes
+				}
+				3 = { # Muslim
+					blg_portrait_muslim = yes
+				}
+				4 = { # Indian
+					OR = {
+						portrait_culture_group = indo_aryan_group
+						portrait_culture_group = dravidian_group
+						portrait_culture_group = bornean_group
+						portrait_culture_group = chamic
+						portrait_culture_group = javanese_group
+						portrait_culture_group = ma_i_an
+						portrait_culture_group = malay_group
+						portrait_culture_group = mekong_group
+						portrait_culture_group = sulawesi_group
+						portrait_culture_group = andamanese_group
+						portrait_culture_group = papuan_group
+					}
+				}
+				5 = { # Central Asian
+					OR = {
+						portrait_culture_group = altaic
+						portrait_culture_group = paleosiberian
+						portrait_culture_group = magyar
+						portrait_culture_group = rauic_group
+						portrait_culture_group = taiwanese_group
+						portrait_culture_group = tibetan_group
+					}
+				}
+				6 = { # West African
+					blg_portrait_african = yes
+				}
+				7 = { # East African
+					always = yes
+				}
+				8 = { # Byzantine
+					OR = {
+						portrait_has_trait = amateurish_plotter
+						portrait_has_trait = flamboyant_schemer
+						portrait_has_trait = intricate_webweaver
+						portrait_has_trait = elusive_shadow
+						portrait_has_trait = master_schemer
+					}
+				}
+			}
+			31 = {
+				0 = { always = yes }
+			}
+		}
+	}
+
+		portraitType = {
+		name = "PORTRAIT_society_alchemists_clothing_female"
+		effectFile = "gfx/FX/portrait.lua"
+
+		weight = {
+			additive_modifier = {
+				value = 10000
+				portrait_clothing = yes
+				portrait_age > child
+				portrait_is_female = yes
+
+				portrait_society = the_alchemists
+				blg_wear_society_clothing = yes
+				OR = {
+					portrait_in_command = no
+					blg_portrait_theocracy = yes
+				}
+			}
+		}
+
+		layer = {
+			"GFX_society_hermetic_female_headgear_behind:c1"
+			"GFX_society_hermetic_female_headgear_front:c5"
+			"GFX_society_hermetic_female_headgear_mid:c3"
+			"GFX_empty:c7"
+		}
+
+		# Appropriate clothing
+		allow_property_values = {
+			5 = {
+				0 = { # Western
+					NOR = {
+						blg_portrait_african = yes
+						blg_portrait_byzantine = yes
+						blg_portrait_indian = yes
+						blg_portrait_middleeast = yes
+						blg_portrait_steppes = yes
+					}
+				}
+				1 = { # Nordic
+					blg_portrait_nordic = yes
+					portrait_has_trait = mystic
+				}
+				2 = { # Baltic/Slavic
+					always = yes
+				}
+				3 = { # Muslim
+					blg_portrait_muslim = yes
+				}
+				4 = { # Indian
+					OR = {
+						portrait_culture_group = indo_aryan_group
+						portrait_culture_group = dravidian_group
+						portrait_culture_group = bornean_group
+						portrait_culture_group = chamic
+						portrait_culture_group = javanese_group
+						portrait_culture_group = ma_i_an
+						portrait_culture_group = malay_group
+						portrait_culture_group = mekong_group
+						portrait_culture_group = sulawesi_group
+						portrait_culture_group = andamanese_group
+						portrait_culture_group = papuan_group
+					}
+				}
+				5 = { # Central Asian
+					OR = {
+						portrait_culture_group = altaic
+						portrait_culture_group = paleosiberian
+						portrait_culture_group = magyar
+						portrait_culture_group = rauic_group
+						portrait_culture_group = taiwanese_group
+					}
+				}
+				6 = { # West African
+					blg_portrait_african = yes
+				}
+				7 = { # East African
+					always = yes
+				}
+				8 = { # Byzantine
+					OR = {
+						portrait_has_trait = amateurish_plotter
+						portrait_has_trait = flamboyant_schemer
+						portrait_has_trait = intricate_webweaver
+						portrait_has_trait = elusive_shadow
+						portrait_has_trait = master_schemer
+					}
+				}
+			}
+			32 = {
+				0 = { always = yes }
+			}
+			33 = {
+				0 = { always = yes }
+			}
+		}
+
+		# Hide hair on 3rd, 4th, and 9th slot ( slavic, muslim, byzantine )
+		headgear_that_hides_hair = { 2 3 8 }
+	}
+
+	portraitType = {
 		name = "PORTRAIT_society_ghost_gatherers_clothing"
 		effectFile = "gfx/FX/portrait.lua"
  

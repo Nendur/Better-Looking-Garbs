@@ -162,6 +162,7 @@ blg_demon = {
 blg_glowing = {
 	OR = {
 		trait = immortal
+		trait = creature_angel
 		evilcat_is_chosen = yes
 	}
 }
@@ -193,6 +194,8 @@ blg_vampire = {
 			}
 		}
 	}
+	blg_adult = yes
+	NOT = { has_game_rule = { name = blg_traits value = off } }
 }
 
 # Wolf eyes.
